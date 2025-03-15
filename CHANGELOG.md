@@ -69,6 +69,7 @@ INTRO TEXT
 
 ### Bug Fixes
 - Fixed being able to skip the Adonian Monsters troop by running away.
+- Fixed a bug where animations would take forever to load.
 - Fixed Player 2's appearance not updating when unequipping Infernal Coin.
 - Fixed Player 2's Flame Body battler sprite not smiling.
 - Fixed Bleeding passive from Shard of Glass displaying as 0 turns remaining in battle.
