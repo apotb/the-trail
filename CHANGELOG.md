@@ -57,6 +57,12 @@ INTRO TEXT
   - Dispell is now learned at level 15 → 16.
   - Dispell now counts as the upgrade to Purify.
   - Removed Curify.
+- Laeryidyean's Forest tweaks:
+  - Less Skeleton Knights guarding the main area.
+  - Skeleton Knights stop moving when unlocking a door.
+  - Added more lamps throughout the dark areas.
+  - Less encounters in the maze.
+  - Streamlined capture processing.
 - All encounters can be run away from.
 - Earth enemies no longer take double damage from wind attacks.
 - Infernal Wand now deals +20% fire damage.
