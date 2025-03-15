@@ -28662,6 +28662,32 @@
               "code": 111,
               "indent": 0,
               "parameters": [
+                1,
+                12,
+                0,
+                10,
+                0
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
                 12,
                 "$gameMap.events()[this._eventId - 1].checkCliff()"
               ]
@@ -28748,14 +28774,14 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 5"
+                  "if ($gameVariables.value(12) != 10) this._chaseRange = 5"
                 ],
                 "indent": null
               },
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseSpeed = 5"
+                  "if ($gameVariables.value(12) != 10) this._chaseSpeed = 5"
                 ],
                 "indent": null
               },
