@@ -47,6 +47,9 @@ INTRO TEXT
   - Earth Spirit
 
 ### Changes
+- Rebalanced Boost Points:
+  - Everyone starts with 1 BP.
+  - Using Guard grants +1 BP.
 - Cleric rebalancing:
   - Purify/Dispell now only cure 1 debuff. However, each BP used will cure an additional debuff.
   - Buffed Purify MP cost from 15 → 8.
