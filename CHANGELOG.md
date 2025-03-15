@@ -57,6 +57,7 @@ INTRO TEXT
   - Dispell is now learned at level 15 → 16.
   - Dispell now counts as the upgrade to Purify.
   - Removed Curify.
+- All encounters can be run away from.
 - Earth enemies no longer take double damage from wind attacks.
 - Infernal Wand now deals +20% fire damage.
 - Nerfed INT Books from +4 → +2 INT.
