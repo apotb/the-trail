@@ -47,7 +47,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Decreases the amount of damage taken.",
+    "description": "Decreases the amount of damage taken. Gain 1 BP.",
     "effects": [
       {
         "code": 21,
@@ -62,7 +62,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Guard",
-    "note": "<Bypass Target Change>\n\n<Require = 0 BP>\n\n<Max Mastery Level: 0>",
+    "note": "<Bypass Target Change>\n\n<Require = 0 BP>\n<User BP: +1>\n\n<Max Mastery Level: 0>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
