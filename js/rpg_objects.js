@@ -5525,7 +5525,7 @@ Game_Party.prototype.gainItem = function(item, amount, includeEquip) {
             OrangeGreenworks.setStat('rareEnemies', $gameSystem._poacher.length);
         }
     }
-    if (item.itemCategory.contains('Foodstuffs')) {
+    if (item.itemCategory?.contains('Foodstuffs')) {
         $gameSystem._food = $gameSystem._food || [];
         if (!$gameSystem._food.contains(item.id)) {
             $gameSystem._food.push(item.id);
