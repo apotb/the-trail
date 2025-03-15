@@ -77,6 +77,7 @@ INTRO TEXT
 - Fixed Mark being able to phase through Blue Slimes.
 - Fixed Player 2's appearance not updating when unequipping Infernal Coin.
 - Fixed Player 2's Flame Body battler sprite not smiling.
+- Fixed a bug where the Solus Guard's level/EXP bar would show instead of Player 2's after defeating Big Mouth.
 - Fixed Bleeding passive from Shard of Glass displaying as 0 turns remaining in battle.
 - Fixed a typo in Cut Down's description.
 - Fixed occasional crash when loading a save file from a different version.
