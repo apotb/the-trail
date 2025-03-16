@@ -66,6 +66,7 @@ INTRO TEXT
   - Streamlined capture processing.
 - All encounters can be run away from.
 - Earth enemies no longer take double damage from wind attacks.
+- Changed Blue Slime x3 encounter in Forest Clearing to Blue Slime x2.
 - Infernal Wand now deals +20% fire damage.
 - Nerfed INT Books from +4 → +2 INT.
 - Increased the size of the damage/treasure popups.
