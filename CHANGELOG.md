@@ -82,6 +82,7 @@ INTRO TEXT
 - Greatly reduced the length of the king's monologue before the Champion's Banquet.
 - Changed the Skeleton random encounter in Laeryidyean's Forest - Forest Arena...? to a map encounter, meaning you get one per moon cycle.
 - Quest journal display is on by default.
+- Removed Made With MV splash screen.
 
 ### Bug Fixes
 - Fixed being able to skip the Adonian Monsters troop by running away.
