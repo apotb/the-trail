@@ -58,6 +58,9 @@ INTRO TEXT
   - Dispell is now learned at level 15 → 16.
   - Dispell now counts as the upgrade to Purify.
   - Removed Curify.
+- Adon tweaks:
+  - Changed Blue Slime x3 encounter in Forest Clearing to Blue Slime x2.
+  - Removed the eastern entrance to the Forest Clearing.
 - Laeryidyean's Forest tweaks:
   - Less Skeleton Knights guarding the main area.
   - Skeleton Knights stop moving when unlocking a door.
@@ -66,7 +69,6 @@ INTRO TEXT
   - Streamlined capture processing.
 - All encounters can be run away from.
 - Earth enemies no longer take double damage from wind attacks.
-- Changed Blue Slime x3 encounter in Forest Clearing to Blue Slime x2.
 - Infernal Wand now deals +20% fire damage.
 - Nerfed INT Books from +4 → +2 INT.
 - Increased the size of the damage/treasure popups.
