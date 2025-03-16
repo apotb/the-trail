@@ -85,6 +85,7 @@ INTRO TEXT
 - Removed Made With MV splash screen.
 
 ### Bug Fixes
+- Fixed name boxes not showing up after battle.
 - Fixed being able to skip the Adonian Monsters troop by running away.
 - Fixed a bug where animations would take forever to load.
 - Fixed Mark being able to phase through Blue Slimes.

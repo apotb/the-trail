@@ -65,7 +65,8 @@
     };
     })(SceneManager.changeScene);
     
-    (function(alias){
+    // This breaks the name box window
+    /*(function(alias){
     SceneManager.goto = function(sceneClass) {
         //preserve map scene before battle and menu
         if(this._scene && this._scene instanceof Scene_Map){
@@ -92,4 +93,4 @@
           }
         }else alias.call(this,sceneClass);
     };
-    })(SceneManager.goto);
+    })(SceneManager.goto);*/
