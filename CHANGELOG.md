@@ -74,6 +74,7 @@ INTRO TEXT
 - Infernal Wand now deals +20% fire damage.
 - Nerfed INT Books from +4 → +2 INT.
 - The tavern questline can now be started as soon as the prologue.
+- Streamlined Haven Harbor progression.
 - Increased the size of the damage/treasure popups.
 - Reduced the length of the long walks in Laeryidyean's Forest, Telluria Castle B1, and True Telluria Castle B5.
 - Banditos will temporarily stop attacking you when Kevin is first defeated.
