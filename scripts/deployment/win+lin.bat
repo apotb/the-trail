@@ -8,19 +8,17 @@ cd ..
 
 call node "%CD%"\pre-commit.js
 
-
 cd ..
 
+call npm prune --production
+
+move "%CD%"\CHANGELOG.md ..
 move "%CD%"\node_modules ..
-move "%CD%"\.itch.toml ..
 move "%CD%"\package.json ..
 move "%CD%"\package-lock.json ..
-move "%CD%"\thetrail.exe ..
+move "%CD%"\steam_appid.txt ..
 
-rmdir /s /q .vscode
 rmdir /s /q nwjs-v0.94.0-win-x64
-rmdir /s /q save
-rmdir /s /q SCREENSHOTS
 
 del /f .gitignore
 del /f CONTRIBUTING.md
@@ -29,8 +27,6 @@ del /f README.md
 del /f supertoolsengine.html
 
 cd ..
-
-call npm prune --production
 
 del /f Game.exe
 

@@ -12,19 +12,17 @@ call node "%CD%"\pre-commit.js
 
 cd ..
 
-move "%CD%"\.itch.toml ..\..\..\..
+call npm prune --production
 
-rmdir /s /q .vscode
+move "%CD%"\CHANGELOG.md ..\..\..\..
+move "%CD%"\steam_appid.txt ..\..\..\..
+
 rmdir /s /q nwjs-v0.94.0-win-x64
-rmdir /s /q save
-rmdir /s /q SCREENSHOTS
 
 del /f .gitignore
 del /f CONTRIBUTING.md
 del /f PLAYTEST.bat
 del /f README.md
 del /f supertoolsengine.html
-
-call npm prune --production
 
 rmdir /s /q "%CD%"\scripts
