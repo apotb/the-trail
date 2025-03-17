@@ -1154,6 +1154,7 @@ Scene_Battle.prototype.terminate = function() {
   $gameParty.onBattleEnd();
   $gameTroop.onBattleEnd();
   AudioManager.stopMe();
+  $gameTemp._recreateNameWindow = true;
 };
 
 //-----------------------------------------------------------------------------

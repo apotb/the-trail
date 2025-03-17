@@ -598,6 +598,10 @@ Scene_Map.prototype.update = function() {
         this.updateEncounterEffect();
     }
     this.updateWaitCount();
+    if ($gameTemp._recreateNameWindow && SceneManager._scene == this && this._messageWindow) {
+        this._messageWindow.createNameWindow();
+        $gameTemp._recreateNameWindow = false;
+    }
     Scene_Base.prototype.update.call(this);
 };
 
