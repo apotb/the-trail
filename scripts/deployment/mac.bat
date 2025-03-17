@@ -15,7 +15,6 @@ cd ..
 call npm prune --production
 
 move "%CD%"\CHANGELOG.md ..\..\..\..
-move "%CD%"\steam_appid.txt ..\..\..\..
 
 rmdir /s /q nwjs-v0.94.0-win-x64
 
@@ -23,6 +22,7 @@ del /f .gitignore
 del /f CONTRIBUTING.md
 del /f PLAYTEST.bat
 del /f README.md
+del /f steam_appid.txt
 del /f supertoolsengine.html
 
 rmdir /s /q "%CD%"\scripts
