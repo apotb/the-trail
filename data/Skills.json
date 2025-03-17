@@ -437,9 +437,9 @@
       "elementId": 11,
       "formula": "b.mhp * 0.1",
       "type": 3,
-      "variance": 5
+      "variance": 0
     },
-    "description": "Gets your friend back up with a sliver of HP left during\nbattle. Doesn't always work, though... \\c[27]\\bp0[60]\\bp=1[64]\\bp=2[68]\\bp=3[72]\\bp=4[76]\\bp=5[80]\\bp=6[84]%\\c[0] success chance.",
+    "description": "Gets your friend back up with a sliver of HP left.\nRecovers \\c[27]\\bpdamage[10]%\\c[0] of the target's MHP.",
     "effects": [
       {
         "code": 22,
@@ -454,7 +454,7 @@
     "message2": "",
     "mpCost": 13,
     "name": "Revival",
-    "note": "<Hide if Learned Skill: 89>\n<Mastery Group: 13>\n\n<setup action>\nhide battle hud\ncamera focus: user\nzoom: 200%\nmotion chant: user\nwait: 45\nmotion spell: user\ncamera focus: target\nwait for camera\naction animation\nshow battle hud\n</setup action>\n\n<target action>\naction effect\nwait for effect\nwait: 15\n</target action>",
+    "note": "<Boost Damage>\n\n<Hide if Learned Skill: 89>\n<Mastery Group: 13>\n\n<setup action>\nhide battle hud\ncamera focus: user\nzoom: 200%\nmotion chant: user\nwait: 45\nmotion spell: user\ncamera focus: target\nwait for camera\naction animation\nshow battle hud\n</setup action>\n\n<target action>\naction effect\nwait for effect\nwait: 15\n</target action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -462,7 +462,7 @@
     "scope": 9,
     "speed": 0,
     "stypeId": 2,
-    "successRate": 60,
+    "successRate": 100,
     "tpCost": 0,
     "tpGain": 0
   },
@@ -3101,13 +3101,19 @@
       "elementId": 11,
       "formula": "b.mhp * 0.3",
       "type": 3,
-      "variance": 5
+      "variance": 0
     },
-    "description": "Revive your friend with a decent bit of health left over. Has a\nmuch better success rate than \\is[13]. \\c[27]\\bp0[80]\\bp=1[84]\\bp=2[88]\\bp=3[92]\\bp=4[96]\\bp=5[100]%\\c[0] success chance.",
+    "description": "Revive your friend with a decent bit of health left over.\nRecovers \\c[27]\\bpdamage[30]%\\c[0] of the target's MHP and applies \\it[28].",
     "effects": [
       {
         "code": 22,
         "dataId": 1,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 28,
         "value1": 1,
         "value2": 0
       }
@@ -3118,7 +3124,7 @@
     "message2": "",
     "mpCost": 31,
     "name": "Resurgence",
-    "note": "<Require <= 5 BP>\n\n<Mastery Group: 13>\n\n<action copy: skill:13>",
+    "note": "<Boost Damage>\n\n<Mastery Group: 13>\n\n<action copy: skill:13>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -3126,7 +3132,7 @@
     "scope": 9,
     "speed": 0,
     "stypeId": 2,
-    "successRate": 80,
+    "successRate": 100,
     "tpCost": 0,
     "tpGain": 0
   },

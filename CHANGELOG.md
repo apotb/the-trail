@@ -52,6 +52,8 @@ INTRO TEXT
   - Using Guard grants +1 BP.
   - Boosted hits are guaranteed to land.
 - Cleric rebalancing:
+  - Revive/Resurgence are now guaranteed to proc. Boosting them increases the amount of HP recovered.
+  - Resurgence grants the Rejuvenation buff.
   - Purify/Dispell now only cure 1 debuff. However, each BP used will cure an additional debuff.
   - Buffed Purify MP cost from 15 → 8.
   - Buffed Dispell MP cost from 50 → 16.
