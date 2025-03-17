@@ -2,19 +2,21 @@
 INTRO TEXT
 
 ### Additions
-- Added Steam support.
-  - 60+ achievements for you to collect!
+- Linux support has returned!
+- New Steam features:
+  - 70+ achievements for you to collect!
   - Leaderboards now automatically use your Steam account.
 - The Ruined Fort is back! It's been blocked off since Alpha 14; now it's finally revamped and ready to play.
-- 7 new skills:
-  - Player 1, 1 new skill:
+- 8 new skills:
+  - Player 1, 2 new skills:
     - [P] Steadfast: Passive @ L27
+    - Prolong: Magic @ L30
   - Player 2, 2 new skills:
     - Magical Breeze: Magic @ L28
     - [P] Topped Off: Passive @ L30
   - Player 3, 2 new skills:
     - Cure II: Magic @ L27
-    - Rejuvenation: Magic @ L30
+    - Channel Divinity II: Magic @ L30
   - Player 4, 2 new skills:
     - [P] Assassin: Passive @ L28
     - Adrenaline: Special @ L30 
@@ -35,6 +37,7 @@ INTRO TEXT
     - Waterfall (Tome)
   - 1 new power:
     - [REDACTED RESISTANCE]
+- Added 2 new INT Book locations.
   
 - 5 new enemies:
   - Tortured Soul
@@ -44,12 +47,52 @@ INTRO TEXT
   - Earth Spirit
 
 ### Changes
+- Rebalanced Boost Points:
+  - Everyone starts with 1 BP.
+  - Using Guard grants +1 BP.
+  - Boosted hits are guaranteed to land.
+- Cleric rebalancing:
+  - Purify/Dispell now only cure 1 debuff. However, each BP used will cure an additional debuff.
+  - Buffed Purify MP cost from 15 → 8.
+  - Buffed Dispell MP cost from 50 → 16.
+  - Dispell is now learned at level 15 → 16.
+  - Dispell now counts as the upgrade to Purify.
+  - Removed Curify.
+- Adon tweaks:
+  - Changed Blue Slime x3 encounter in Forest Clearing to Blue Slime x2.
+  - Removed the eastern entrance to the Forest Clearing.
+- Laeryidyean's Forest tweaks:
+  - Less Skeleton Knights guarding the main area.
+  - Skeleton Knights stop moving when unlocking a door.
+  - Added more lamps throughout the dark areas.
+  - Less encounters in the maze.
+  - Streamlined capture processing.
+- All encounters can be run away from.
 - Earth enemies no longer take double damage from wind attacks.
 - Infernal Wand now deals +20% fire damage.
+- Nerfed INT Books from +4 → +2 INT.
+- Increased the size of the damage/treasure popups.
 - Reduced the length of the long walks in Laeryidyean's Forest, Telluria Castle B1, and True Telluria Castle B5.
+- Banditos will temporarily stop attacking you when Kevin is first defeated.
+- Tellurium Pulse no longer removes buffs.
+- Lowered the amount of Thick-Skinned Herbs needed to craft shields.
+- Parasites can now drop Medicated Eyedrops.
 - Lightning II's 3rd chain deals 33% damage instead of 25%.
+- Using an equipped item as an ingredient will automatically equip the newly crafted upgrade.
+- Greatly reduced the length of the king's monologue before the Champion's Banquet.
+- Changed the Skeleton random encounter in Laeryidyean's Forest - Forest Arena...? to a map encounter, meaning you get one per moon cycle.
+- Quest journal display is on by default.
+- Removed Made With MV splash screen.
 
 ### Bug Fixes
+- Fixed name boxes not showing up after battle.
+- Fixed being able to skip the Adonian Monsters troop by running away.
+- Fixed a bug where animations would take forever to load.
+- Fixed Mark being able to phase through Blue Slimes.
+- Fixed Player 2's appearance not updating when unequipping Infernal Coin.
+- Fixed Player 2's Flame Body battler sprite not smiling.
+- Fixed a bug where the Solus Guard's level/EXP bar would show instead of Player 2's after defeating Big Mouth.
+- Fixed Bleeding passive from Shard of Glass displaying as 0 turns remaining in battle.
 - Fixed a typo in Cut Down's description.
 - Fixed occasional crash when loading a save file from a different version.
 - Fixed issues with the Water Spirit's state overlays and shadow.

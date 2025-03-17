@@ -3247,12 +3247,7 @@ Scene_Title.prototype.onCreditsOk = function() {
   this._creditsWindow.activate();
   var url = this._creditsWindow.currentExt();
   if (url === '') return;
-  var win = window.open(url, '_blank');
-  if (win) {
-    win.focus();
-  } else if (Imported.YEP_ExternalLinks) {
-    SceneManager.openPopupBlockerMessage();
-  }
+  OrangeGreenworks.activateGameOverlayToWebPage(url);
 };
 
 //=============================================================================

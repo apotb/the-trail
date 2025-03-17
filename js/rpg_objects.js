@@ -4217,7 +4217,7 @@ Game_Actor.prototype.refresh = function() {
     this.releaseUnequippableItems(false);
     Game_Battler.prototype.refresh.call(this);
     OrangeGreenworks.setStat('highestAgi', this.agi);
-    OrangeGreenworks.setStat('highestFireResistance', Math.round((1 - this.elementRate(2)) * 100));
+    OrangeGreenworks.setStat('highestFireResistance', Math.floor((1 - Yanfly.Ele.Game_BtlrBase_elementRate.call(this, 2)) * 100));
     if (this.isEquipped($dataWeapons[46]) && this.isEquipped($dataArmors[116])) OrangeGreenworks.activateAchievement('COLLECT_PARADOX');
 };
 
@@ -5510,6 +5510,7 @@ Game_Party.prototype.gainItem = function(item, amount, includeEquip) {
         }
         $gameMap.requestRefresh();
     }
+    if (!item) return;
     if (item == $dataItems[2]) {
         $gameSystem._leeks = ($gameSystem._leeks || 0) + 1;
         OrangeGreenworks.setStat('leeks', $gameSystem._leeks);
@@ -5522,6 +5523,13 @@ Game_Party.prototype.gainItem = function(item, amount, includeEquip) {
         if (!$gameSystem._poacher.contains(item.baseItemId)) {
             $gameSystem._poacher.push(item.baseItemId);
             OrangeGreenworks.setStat('rareEnemies', $gameSystem._poacher.length);
+        }
+    }
+    if (item.itemCategory?.contains('Foodstuffs')) {
+        $gameSystem._food = $gameSystem._food || [];
+        if (!$gameSystem._food.contains(item.id)) {
+            $gameSystem._food.push(item.id);
+            OrangeGreenworks.setStat('uniqueFood', $gameSystem._food.length);
         }
     }
 };

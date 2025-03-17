@@ -3615,14 +3615,14 @@
     ],
     "gold": 100,
     "name": "Earth Spirit",
-    "note": "<Element: Earth>\n<Element Absorb: Earth>\n<Passive State: 136, 147>\n\n<Sideview Battler: Spirit_8>\n<Sideview Shadow Width: 100%>\n<Sideview Shadow Height: 100%>\n<Floating>\n<Attack Animation: 86>\n\n<Enemy Drops>\nBattle Plan: 5%\nStalactite: 3.33%\nATK Scroll ★: 10%\nDEF Scroll ★: 10%\nEarth Essence: 20%\n</Enemy Drops>",
+    "note": "<Element: Earth>\n<Element Absorb: Earth>\n<Passive State: 136, 147>\n\n<Sideview Battler: Spirit_8>\n<Sideview Shadow Width: 100%>\n<Sideview Shadow Height: 100%>\n<Floating>\n<Attack Animation: 86>\n\n<Enemy Drops>\nRock Salt: 75%\nRock Salt: 75%\nBattle Plan: 5%\nStalactite: 3.33%\nATK Scroll ★: 10%\nDEF Scroll ★: 10%\nEarth Essence: 20%\n</Enemy Drops>",
     "params": [
-      4000,
+      3000,
       0,
       42,
       41,
       63,
-      84,
+      74,
       30,
       45
     ]
@@ -5324,7 +5324,7 @@
     ],
     "gold": 72,
     "name": "Parasite",
-    "note": "<Armor Weakness: Piercing>\n<Passive State: 148>\n\n<Sideview Battler: NoMatchingSprite/Parasite>\n<Attack Animation: 11>\n\n<Enemy Drops>\nCloth Mask: 5%\nStinger: 75%\nStinger: 75%\nVial of Poison: 25%\nDismembered Eye: 5%\nRazor-Sharp Fang: 5%\nPDR Scroll: 10%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Piercing>\n<Passive State: 148, 190>\n\n<Sideview Battler: NoMatchingSprite/Parasite>\n<Attack Animation: 11>\n\n<Enemy Drops>\nCloth Mask: 5%\nStinger: 75%\nStinger: 75%\nVial of Poison: 25%\nMedicated Eyedrops: 50%\nDismembered Eye: 5%\nRazor-Sharp Fang: 5%\nPDR Scroll: 10%\n</Enemy Drops>",
     "params": [
       2000,
       0,
@@ -6329,23 +6329,18 @@
         "code": 22,
         "dataId": 2,
         "value": 0.16
-      },
-      {
-        "code": 23,
-        "dataId": 6,
-        "value": 0.8
       }
     ],
     "gold": 100,
     "name": "Water Elemental EX",
-    "note": "<Element: Water>\n<Passive State: 136, 146, 202, 203>\n\n<Sideview Battler: Elemental_2>\n<Attack Animation: 82>\n\n<Element Amplify Water: +50%>\n\n<Boost Skill 36: Full>\n<AI Priority>\nUser HP% param > 50% +++ State !== Weak Point: Nasty Glare\nUser HP% param > 50% +++ User HP% param <= 75% +++ Random 50%: Waterfall\nUser HP% param > 50% +++ State !== Soaked: Bubble\nUser HP% param > 50%: Bubble\n\nUser HP% param <= 50% +++ User HP% param <= 25% +++ Random 50%: Staff Impulse\nUser HP% param <= 50% +++ State !== Burning Up!: Fire II\nUser HP% param <= 50%: Fire II\n</AI Priority>\n\n<Enemy Drops>\nWater Jug: 75%\nWater Jug: 75%\nFiery Blood: 75%\nFiery Blood: 75%\nTideflame Headpiece: 5%\nAqua Gem: 10%\nMAT Scroll ★: 10%\nMDF Scroll ★: 10%\nWater Essence: 20%\nFire Essence: 20%\n</Enemy Drops>",
+    "note": "<Element: Water>\n<Passive State: 136, 146, 202, 203>\n\n<Sideview Battler: Elemental_2>\n<Attack Animation: 82>\n\n<Element Amplify Water: +25%>\n\n<Boost Skill 36: Full>\n<AI Priority>\nUser HP% param > 50% +++ State !== Weak Point: Nasty Glare\nUser HP% param > 50% +++ User HP% param <= 75% +++ Random 50%: Waterfall\nUser HP% param > 50%: Bubble\n\nUser HP% param <= 50% +++ User HP% param <= 25% +++ Random 50%: Staff Impulse\nUser HP% param <= 50% +++ State !== Burning Up!: Fire II\nUser HP% param <= 50%: Fire II\n</AI Priority>\n\n<Enemy Drops>\nWater Jug: 75%\nWater Jug: 75%\nFiery Blood: 75%\nFiery Blood: 75%\nTideflame Headpiece: 5%\nAqua Gem: 10%\nMAT Scroll ★: 10%\nMDF Scroll ★: 10%\nWater Essence: 20%\nFire Essence: 20%\n</Enemy Drops>",
     "params": [
-      5000,
+      3000,
       999,
       33,
-      33,
-      75,
-      80,
+      29,
+      70,
+      70,
       80,
       55
     ]

@@ -174,6 +174,7 @@ Window_StatueList.prototype.initialize = function() {
 
 Window_StatueList.prototype.makeItemList = function() {
     this._data = [];
+    var discovered = 0;
     states = $dataStates.filter(s => s).filter(s => s.meta["Statue Icon"] && s.meta["Statue Buff"]);
     states.forEach(s => {
         var statue = [];
@@ -186,9 +187,10 @@ Window_StatueList.prototype.makeItemList = function() {
             statue[0] = 635;
             statue[1] = "???";
             statue[2] = "???";
-        }
+        } else discovered++;
         this._data.push(statue);
     }, this);
+    OrangeGreenworks.setStat('statues', discovered);
 };
 
 Window_StatueList.prototype.selection = function() {
@@ -211,22 +213,7 @@ Window_StatueSummary.prototype.initialize = function() {
 };
 
 Window_StatueSummary.prototype.makeItemList = function() {
-    this._data = [];
-    states = $dataStates.filter(s => s).filter(s => s.meta["Statue Icon"] && s.meta["Statue Buff"]);
-    states.forEach(s => {
-        var statue = [];
-        statue[0] = s.meta["Statue Icon"]; // Icon
-        statue[1] = s.name.replace("Statue - ", ""); // Name
-        statue[2] = s.meta["Statue Buff"]; // Buff Display
-        statue[3] = s.passiveConditionEval(); // Discovered
-        statue[4] = s.passiveConditionEval.toString().match(/\$gameSystem\.statue\((\d+)\)/i)[1]; // Map ID
-        if (!statue[3]) {
-            statue[0] = 635;
-            statue[1] = "???";
-            statue[2] = "???";
-        }
-        this._data.push(statue);
-    }, this);
+    Window_StatueList.prototype.makeItemList(this);
     
     const length = this._data.filter(s => s[3]).length;
     var desc = "-$% Incoming Light / +$% Outgoing Light".replace("$", length).replace("$", length);
@@ -234,6 +221,111 @@ Window_StatueSummary.prototype.makeItemList = function() {
     var summary = [];
     summary[0] = 102;
     summary[1] = "All Statues";
+    summary[2] = desc;
+    summary[3] = true;
+    summary[4] = 0;
+
+    this._data = [summary];
+};
+
+
+
+
+
+//
+//
+// FOOD
+//
+//
+
+//
+// Scene_Food
+//
+
+function Scene_Food() {
+    this.initialize.apply(this, arguments);
+}
+
+Scene_Food.prototype = Object.create(Scene_Collection.prototype);
+Scene_Food.prototype.constructor = Scene_Collection;
+
+Scene_Food.prototype.initialize = function() {
+    $gameSystem._food = $gameSystem._food || [];
+    Scene_Collection.prototype.initialize.call(this);
+};
+
+Scene_Food.prototype.createListWindow = function() {
+    this._listWindow = new Window_FoodList();
+    Scene_Collection.prototype.createListWindow.call(this);
+};
+
+Scene_Food.prototype.createSummaryWindow = function() {
+    this._summaryWindow = new Window_FoodSummary();
+    Scene_Collection.prototype.createSummaryWindow.call(this);
+};
+
+//
+// Window_FoodList
+//
+
+function Window_FoodList() {
+    this.initialize.apply(this, arguments);
+}
+
+Window_FoodList.prototype = Object.create(Window_CollectionList.prototype);
+Window_FoodList.prototype.constructor = Window_CollectionList;
+
+Window_FoodList.prototype.initialize = function() {
+    Window_CollectionList.prototype.initialize.call(this);
+};
+
+Window_FoodList.prototype.makeItemList = function() {
+    this._data = [];
+    items = $dataItems.filter(s => s).filter(s => s.itemCategory.contains('Foodstuffs')).sort((a, b) => a.name > b.name ? 1 : (b.name > a.name ? -1 : 0));
+    this._total = items.length;
+    items.forEach(i => {
+        var item = [];
+        item[0] = i.iconIndex; // Icon
+        item[1] = i.name; // Name
+        item[2] = ''; // Buff Display
+        item[3] = $gameSystem._food.contains(i.id); // Discovered
+        if (!item[3]) {
+            item[0] = 635;
+            item[1] = "???";
+            item[2] = "";
+        }
+        this._data.push(item);
+    }, this);
+};
+
+Window_FoodList.prototype.maxCols = function() {
+    return 3;
+};
+
+//
+// Window_FoodSummary
+//
+
+function Window_FoodSummary() {
+    this.initialize.apply(this, arguments);
+}
+
+Window_FoodSummary.prototype = Object.create(Window_CollectionSummary.prototype);
+Window_FoodSummary.prototype.constructor = Window_CollectionSummary;
+
+Window_FoodSummary.prototype.initialize = function() {
+    Window_CollectionSummary.prototype.initialize.call(this);
+};
+
+Window_FoodSummary.prototype.makeItemList = function() {
+    Window_FoodList.prototype.makeItemList.call(this);
+    
+    const length = this._data.filter(s => s[3]).length;
+    var desc = `${length}/${this._total} Foodstuffs`;
+
+    var summary = [];
+    summary[0] = 1299;
+    summary[1] = "Total Foodstuffs";
     summary[2] = desc;
     summary[3] = true;
     summary[4] = 0;

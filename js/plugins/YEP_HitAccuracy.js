@@ -163,6 +163,7 @@ Game_Action.prototype.itemHit = function(target) {
     var skillHitRate = this.item().successRate * 0.01;
     if ([13, 89].contains(this._item._itemId)) skillHitRate += ($gameActors._data[this._subjectActorId]._useBP * 0.04);
     var userHitRate = this.userHitRate(target);
+    if (this.subject()._useBP >= 1) userHitRate += 1;
     var targetEvadeRate = this.targetEvadeRate(target);
     var code = Yanfly.Param.HAHitFormula;
     try {

@@ -392,25 +392,19 @@
     "id": 5,
     "members": [
       {
-        "enemyId": 5,
-        "x": 224,
-        "y": 432,
+        "enemyId": 4,
+        "x": 294,
+        "y": 364,
         "hidden": false
       },
       {
-        "enemyId": 5,
-        "x": 336,
-        "y": 336,
-        "hidden": false
-      },
-      {
-        "enemyId": 5,
-        "x": 432,
-        "y": 256,
+        "enemyId": 4,
+        "x": 405,
+        "y": 277,
         "hidden": false
       }
     ],
-    "name": "Blue Slime x3",
+    "name": "Oof Slime x2",
     "pages": [
       {
         "conditions": {
@@ -11679,6 +11673,400 @@
           "turnValid": false
         },
         "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "members": [
+      {
+        "enemyId": 74,
+        "x": 384,
+        "y": 166,
+        "hidden": false
+      },
+      {
+        "enemyId": 74,
+        "x": 349,
+        "y": 319,
+        "hidden": false
+      },
+      {
+        "enemyId": 32,
+        "x": 138,
+        "y": 343,
+        "hidden": true
+      },
+      {
+        "enemyId": 83,
+        "x": 198,
+        "y": 199,
+        "hidden": false
+      }
+    ],
+    "name": "Feral Rat x2, Water Elemental EX",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              2
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "An Albino Rat joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 110,
+    "members": [
+      {
+        "enemyId": 74,
+        "x": 384,
+        "y": 166,
+        "hidden": false
+      },
+      {
+        "enemyId": 74,
+        "x": 349,
+        "y": 319,
+        "hidden": false
+      },
+      {
+        "enemyId": 32,
+        "x": 138,
+        "y": 343,
+        "hidden": true
+      },
+      {
+        "enemyId": 47,
+        "x": 216,
+        "y": 214,
+        "hidden": false
+      }
+    ],
+    "name": "Feral Rat x2, Earth Spirit",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              2
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "An Albino Rat joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "members": [
+      {
+        "enemyId": 83,
+        "x": 525,
+        "y": 109,
+        "hidden": false
+      },
+      {
+        "enemyId": 83,
+        "x": 480,
+        "y": 283,
+        "hidden": false
+      },
+      {
+        "enemyId": 47,
+        "x": 285,
+        "y": 94,
+        "hidden": false
+      },
+      {
+        "enemyId": 47,
+        "x": 243,
+        "y": 280,
+        "hidden": false
+      },
+      {
+        "enemyId": 83,
+        "x": 372,
+        "y": 178,
+        "hidden": true
+      },
+      {
+        "enemyId": 47,
+        "x": 117,
+        "y": 205,
+        "hidden": true
+      },
+      {
+        "enemyId": 83,
+        "x": 363,
+        "y": 364,
+        "hidden": true
+      },
+      {
+        "enemyId": 47,
+        "x": 114,
+        "y": 376,
+        "hidden": true
+      }
+    ],
+    "name": "Water Elemental EX x2, Earth Spirit x2",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 121,
+            "indent": 0,
+            "parameters": [
+              111,
+              111,
+              0
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 3,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 335,
+            "indent": 0,
+            "parameters": [
+              4
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 5,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 335,
+            "indent": 0,
+            "parameters": [
+              5
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 7,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 335,
+            "indent": 0,
+            "parameters": [
+              6
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 0,
+            "parameters": [
+              7
+            ]
+          },
+          {
+            "code": 121,
+            "indent": 0,
+            "parameters": [
+              111,
+              111,
+              1
+            ]
+          },
           {
             "code": 0,
             "indent": 0,

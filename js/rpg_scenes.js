@@ -598,6 +598,10 @@ Scene_Map.prototype.update = function() {
         this.updateEncounterEffect();
     }
     this.updateWaitCount();
+    if ($gameTemp._recreateNameWindow && SceneManager._scene == this && this._messageWindow) {
+        this._messageWindow.createNameWindow();
+        $gameTemp._recreateNameWindow = false;
+    }
     Scene_Base.prototype.update.call(this);
 };
 
@@ -1808,7 +1812,7 @@ Scene_Load.prototype.onLoadFailure = function() {
 };
 
 Scene_Load.prototype.reloadMapIfUpdated = function() {
-    if ($gameSystem.versionId() !== $dataVersion.release) {
+    if ($gameSystem.versionId() !== $dataVersion.release || $gameTemp.isPlaytest()) {
         $gamePlayer.reserveTransfer($gameMap.mapId(), $gamePlayer.x, $gamePlayer.y);
         $gamePlayer.requestMapReload();
     }

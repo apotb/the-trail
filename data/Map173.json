@@ -8296,6 +8296,13 @@
           },
           "list": [
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "StealthMode On"
+              ]
+            },
+            {
               "code": 205,
               "indent": 0,
               "parameters": [
@@ -8714,6 +8721,13 @@
           },
           "list": [
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "StealthMode On"
+              ]
+            },
+            {
               "code": 205,
               "indent": 0,
               "parameters": [
@@ -9091,8 +9105,8 @@
           "walkAnime": true
         }
       ],
-      "x": 11,
-      "y": 13
+      "x": 8,
+      "y": 15
     },
     {
       "id": 8,
@@ -9381,8 +9395,8 @@
           "walkAnime": true
         }
       ],
-      "x": 10,
-      "y": 33
+      "x": 12,
+      "y": 29
     },
     {
       "id": 10,
@@ -9441,129 +9455,11 @@
           "walkAnime": true
         }
       ],
-      "x": 16,
-      "y": 27
-    },
-    {
-      "id": 11,
-      "name": "skeletonmage-copy",
-      "note": "<Copy Event: 158, 85>",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "Monster2",
-            "direction": 2,
-            "pattern": 1,
-            "characterIndex": 1
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 2,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 2,
-          "walkAnime": true
-        }
-      ],
-      "x": 8,
+      "x": 14,
       "y": 19
     },
-    {
-      "id": 12,
-      "name": "skeletonmage-copy",
-      "note": "<Copy Event: 158, 85>",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "Monster2",
-            "direction": 2,
-            "pattern": 1,
-            "characterIndex": 1
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 2,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 2,
-          "walkAnime": true
-        }
-      ],
-      "x": 16,
-      "y": 15
-    },
+    null,
+    null,
     {
       "id": 13,
       "name": "skeletonmage-copy",
@@ -9621,69 +9517,10 @@
           "walkAnime": true
         }
       ],
-      "x": 10,
-      "y": 9
+      "x": 6,
+      "y": 7
     },
-    {
-      "id": 14,
-      "name": "skeletonmage-copy",
-      "note": "<Copy Event: 158, 85>",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "Monster2",
-            "direction": 2,
-            "pattern": 1,
-            "characterIndex": 1
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 2,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 2,
-          "walkAnime": true
-        }
-      ],
-      "x": 20,
-      "y": 26
-    },
+    null,
     {
       "id": 15,
       "name": "skeletonwarrior-copy",
@@ -9741,8 +9578,8 @@
           "walkAnime": true
         }
       ],
-      "x": 4,
-      "y": 21
+      "x": 12,
+      "y": 19
     },
     {
       "id": 16,
@@ -9801,8 +9638,8 @@
           "walkAnime": true
         }
       ],
-      "x": 20,
-      "y": 32
+      "x": 18,
+      "y": 33
     },
     {
       "id": 17,
@@ -9861,8 +9698,8 @@
           "walkAnime": true
         }
       ],
-      "x": 12,
-      "y": 22
+      "x": 10,
+      "y": 19
     },
     {
       "id": 18,
@@ -10064,8 +9901,8 @@
           "walkAnime": true
         }
       ],
-      "x": 18,
-      "y": 11
+      "x": 22,
+      "y": 9
     },
     null,
     {

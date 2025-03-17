@@ -888,6 +888,7 @@ ImageManager.loadParallax = function(filename, hue) {
 
 ImageManager.loadPicture = function(filename, hue) {
     if (filename == "god-rays-png-8") filename = "Godrays"; // DELETE AFTER ALPHA 15
+    if (filename == "MadeWithMv") filename = "Godrays"; // DELETE AFTER ALPHA 16
     return this.loadBitmap('img/pictures/', filename, hue, true);
 };
 

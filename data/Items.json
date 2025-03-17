@@ -2235,7 +2235,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Meant for a single very large eye, but should still work.\nIncreases several stats at the cost of a little stinging.",
+    "description": "Meant for a single very large eye, but should still work on humans.\nIncreases HIT, EVA, CRI, and CEV, at the cost of a little stinging.",
     "effects": [
       {
         "code": 21,
@@ -3625,7 +3625,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A peculiar book that allows an experienced adventurer to permanently\nincrease their intelligence. A single person can only read 5 of these.",
+    "description": "A peculiar book that allows an experienced adventurer to permanently increase their INT.\nMore intelligence equals more crit damage! A single person can only read 5 of these.",
     "effects": [
       {
         "code": 44,
@@ -7205,6 +7205,12 @@
     "description": "Grants \\it[126] for 1200 steps.",
     "effects": [
       {
+        "code": 22,
+        "dataId": 125,
+        "value1": 1,
+        "value2": 0
+      },
+      {
         "code": 21,
         "dataId": 126,
         "value1": 1,
@@ -7215,7 +7221,7 @@
     "iconIndex": 721,
     "itypeId": 1,
     "name": "Fire Resistance Potion",
-    "note": "<Menu Category: Buffs>",
+    "note": "",
     "occasion": 2,
     "price": 20,
     "repeats": 1,

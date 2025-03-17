@@ -243,6 +243,14 @@ DataManager.processStCNotetags2 = function(group) {
         var evalLine = '';
       } else if (evalMode === 'custom remove state category') {
         evalLine = evalLine + line + '\n';
+      } else if (line.match(/<(?:CUSTOM CATEGORY)[ ](.*)[ ](?:TURN)>/i)) {
+        evalMode = 'custom category';
+        evalLine = '';
+      } else if (line.match(/<\/(?:CUSTOM CATEGORY)[ ](.*)[ ](?:TURN)>/i)) {
+        var category = line.match(/<\/(?:CUSTOM CATEGORY)[ ](.*)[ ](?:TURN)>/i)[1].toUpperCase();
+        DataManager.stateCategories[category].forEach(id => obj.modifyTurnStateEval[id] = evalLine);
+      } else if (evalMode == 'custom category') {
+        evalLine = evalLine + line + '\n';
       }
     }
   }
@@ -330,7 +338,7 @@ Game_Battler.prototype.isStateAddable = function(stateId) {
 };
 
 Game_Battler.prototype.removeStateCategoryEffect = function(action) {
-    obj = action.item();
+    let obj = action.item();
     user = action.subject();
     var categories = obj.removeCategory;
     processElements = action.getItemElements();
@@ -347,7 +355,7 @@ Game_Battler.prototype.removeStateCategoryEffect = function(action) {
 };
 
 Game_Battler.prototype.elementalStateCategoryRemoval = function(elementIds) {
-    obj = {};
+    let obj = {};
     if (elementIds.contains(2))  obj['ICE'] = obj['WATER'] = obj['PLANT'] = "ALL";
     if (elementIds.contains(3))  obj['PLANT'] = "ALL";
     if (elementIds.contains(4))  

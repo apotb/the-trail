@@ -467,7 +467,7 @@ DataManager.CGMV_loadGlobalInfo = function() {
 // Save CGMV global data
 //-----------------------------------------------------------------------------
 DataManager.CGMV_saveGlobalInfo = function() {
-    StorageManager.save(-667, JSON.stringify($cgmvGlob.makeData()));
+    // StorageManager.save(-667, JSON.stringify($cgmvGlob.makeData()));
 };
 //=============================================================================
 // StorageManager

@@ -1192,6 +1192,13 @@ Window_Message.prototype.createSubWindows = function() {
     scene.addChild(this._nameWindow);
 };
 
+Window_Message.prototype.createNameWindow = function() {
+    this._nameWindow = new Window_NameBox(this);
+    Yanfly.nameWindow = this._nameWindow;
+    var scene = SceneManager._scene;
+    scene.addChild(this._nameWindow);
+};
+
 Window_Message.prototype.numVisibleRows = function() {
     return $gameSystem.messageRows();
 };

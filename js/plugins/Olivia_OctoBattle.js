@@ -5605,8 +5605,8 @@ if (Olivia.OctoBattle[_0x3084("0x1c")][_0x3084("0x30")]) {
     this[_0x3084("0x20")](this[_0x3084("0xf3")]);
   };
   Window_BattleVictory.prototype[_0x3084("0x40")] = function () {
-    var _0x4a0925 = $gameParty.membersPerm();
-    for (var _0x3f1fe3 = 0; _0x3f1fe3 < _0x4a0925[_0x3084("0x3a")]; _0x3f1fe3++) {
+    var _0x4a0925 = $gameParty.members(); // $gameParty.membersPerm();
+    for (var _0x3f1fe3 = 0; _0x3f1fe3 < Math.min(_0x4a0925[_0x3084("0x3a")], 4); _0x3f1fe3++) {
       var _0x20fb13 = _0x4a0925[_0x3f1fe3];
       if (!!_0x20fb13) {
         var _0x1e9ec7 = new Window_BattleVictoryActor(_0x3f1fe3, _0x20fb13);

@@ -706,7 +706,7 @@
     ],
     "iconIndex": 371,
     "name": "Bubble (Tome)",
-    "note": "<Cannot Rename>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(30);\n</Custom Buy Show Eval>",
+    "note": "<Cannot Rename>",
     "params": [
       0,
       0,
@@ -855,7 +855,7 @@
       0,
       0
     ],
-    "price": 200
+    "price": 250
   },
   {
     "id": 39,
@@ -1153,7 +1153,7 @@
       0,
       0
     ],
-    "price": 250
+    "price": 300
   },
   {
     "id": 50,
@@ -1453,7 +1453,7 @@
       2,
       0
     ],
-    "price": 250
+    "price": 300
   },
   {
     "id": 61,
@@ -2710,7 +2710,7 @@
     ],
     "iconIndex": 510,
     "name": "Vishnu's Aegis",
-    "note": "<Upgrade Slots: 4>\n\n<Synthesis Ingredients>\nVishnu's Shield\nTurtle Shield\nTellurian Knight's Bulwark\nThick-Skinned Herb: 15\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Damage-Soaking Debuff-Stopping Super-Shield>\n\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_SHIELD');\n</Custom Synthesis Effect>",
+    "note": "<Upgrade Slots: 4>\n\n<Synthesis Ingredients>\nVishnu's Shield\nTurtle Shield\nTellurian Knight's Bulwark\nThick-Skinned Herb: 10\nTellurium Alloy\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_SHIELD');\n</Custom Synthesis Effect>",
     "params": [
       0,
       0,
@@ -2885,7 +2885,7 @@
       5,
       0
     ],
-    "price": 750
+    "price": 800
   },
   {
     "id": 116,
@@ -2938,7 +2938,7 @@
     ],
     "iconIndex": 504,
     "name": "Turtle Shield",
-    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nImmovable Object\nGiant Turtle Shell\nTurtle Scute: 10\nThick-Skinned Herb: 5\n</Synthesis Ingredients>\n<Mask Name: Percentage-Based Damage Reducer>",
+    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nImmovable Object\nGiant Turtle Shell\nTurtle Scute: 10\nThick-Skinned Herb: 3\n</Synthesis Ingredients>\n<Mask Name: Percentage-Based Damage Reducer>",
     "params": [
       0,
       0,
@@ -3463,7 +3463,7 @@
     "traits": [],
     "iconIndex": 496,
     "name": "Tellurian Knight's Shield",
-    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nReplica Knight's Shield\nThick-Skinned Herb: 5\n</Synthesis Ingredients>\n<Mask Name: Royal Heavy Shield>",
+    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nReplica Knight's Shield\nThick-Skinned Herb: 3\n</Synthesis Ingredients>\n<Mask Name: Royal Heavy Shield>",
     "params": [
       0,
       0,
@@ -3484,7 +3484,7 @@
     "traits": [],
     "iconIndex": 497,
     "name": "Tellurian Knight's Bulwark",
-    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nTellurian Knight's Shield\nThick-Skinned Herb: 10\nEnchanted Dragon Scale\nFrozen Jewel\n</Synthesis Ingredients>\n<Mask Name: Super Royal Heavy Shield>",
+    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nTellurian Knight's Shield\nThick-Skinned Herb: 5\nEnchanted Dragon Scale\nFrozen Jewel\n</Synthesis Ingredients>\n<Mask Name: Super Royal Heavy Shield>",
     "params": [
       0,
       0,
@@ -5673,7 +5673,7 @@
   {
     "id": 216,
     "atypeId": 1,
-    "description": "It glistens with a enchanting sheen. Doesn't provide\nbase stats, but offers a huge amount of upgrade slots.",
+    "description": "It glistens with an enchanting sheen. Doesn't provide\nbase stats, but offers a huge amount of upgrade slots.",
     "etypeId": 6,
     "traits": [],
     "iconIndex": 512,
