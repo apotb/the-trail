@@ -2185,7 +2185,66 @@
       "x": 10,
       "y": 16
     },
-    null,
+    {
+      "id": 4,
+      "name": "jeremy-copy",
+      "note": "<Copy Event: 158, 151>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "People3",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 4
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 5,
+      "y": 6
+    },
     {
       "id": 5,
       "name": "EV005",
@@ -2382,16 +2441,10 @@
       "x": 9,
       "y": 6
     },
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
     {
-      "id": 12,
-      "name": "bev",
-      "note": "<shadow>",
+      "id": 6,
+      "name": "EV006",
+      "note": "",
       "pages": [
         {
           "conditions": {
@@ -2411,195 +2464,57 @@
           },
           "directionFix": false,
           "image": {
-            "tileId": 0,
-            "characterName": "People3",
+            "characterIndex": 0,
+            "characterName": "",
             "direction": 2,
-            "pattern": 1,
-            "characterIndex": 4
+            "pattern": 0,
+            "tileId": 0
           },
           "list": [
             {
               "code": 111,
               "indent": 0,
               "parameters": [
-                2,
-                "A",
-                0
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People3",
-                4,
                 0,
-                2
+                38,
+                1
               ]
             },
             {
-              "code": 401,
+              "code": 205,
               "indent": 1,
               "parameters": [
-                "\\barQuiet day today... oh, welcome back,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "my friend \\N[1]! Would you like to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "buy some drinks?"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 411,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People3",
                 4,
-                0,
-                2
+                {
+                  "list": [
+                    {
+                      "code": 45,
+                      "parameters": [
+                        "this.setIconOnEvent(576);"
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
               ]
             },
             {
-              "code": 401,
+              "code": 505,
               "indent": 1,
               "parameters": [
-                "\\barOh, hey, it's my favorite"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "team of adventurers!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People3",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\barWelcome to Solus Valley!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People3",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\barQuiet day today, huh? We don't get"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "many groups or extended stays here."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "A lot of takeaway drinks."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People3",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\barBetter than Greenfield, at least. Apparently they're"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "super prohibitionist or something, so alcohol's a sin"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "to them. Setting up a branch of the Tipsy Oyster there"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "was a bad move, I just had to shut it down."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People3",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\barOh, that's enough talking."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "Wanna' buy some drinks?"
+                {
+                  "code": 45,
+                  "parameters": [
+                    "this.setIconOnEvent(576);"
+                  ],
+                  "indent": null
+                }
               ]
             },
             {
@@ -2613,160 +2528,9 @@
               "parameters": []
             },
             {
-              "code": 102,
-              "indent": 0,
-              "parameters": [
-                [
-                  "Yes, please!",
-                  "No, not now."
-                ],
-                1,
-                0,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                0,
-                "Yes, please!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People3",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\barSounds great! Here, I'll pull"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "up my inventory..."
-              ]
-            },
-            {
-              "code": 117,
-              "indent": 1,
-              "parameters": [
-                11
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People3",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\barHope you're glad with"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "what you bought!"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                1,
-                "No, not now."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People3",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\barOof, alright. If your interest is"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "ever piqued, feel free to return!"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 404,
+              "code": 214,
               "indent": 0,
               "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People3",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\barWell, I'll see you around"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "later. Be safe out there!"
-              ]
-            },
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
             },
             {
               "code": 0,
@@ -2788,67 +2552,22 @@
           },
           "moveSpeed": 3,
           "moveType": 0,
-          "priorityType": 1,
+          "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 17,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "People3",
-            "direction": 2,
-            "pattern": 1,
-            "characterIndex": 4
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
+          "trigger": 4,
           "walkAnime": true
         }
       ],
       "x": 5,
-      "y": 6
+      "y": 5
     },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
     null
   ]
 }
