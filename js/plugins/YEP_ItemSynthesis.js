@@ -1955,7 +1955,6 @@ Scene_Synthesis.prototype.doBuy = async function(number) {
           upgradeStats[3] = actor;
           upgradeStats[4] = equipSlot;
         }
-        console.log(upgradeStats);
         $gameParty.gainIndependentItem(item, -1, true)
       });
       number *= this._item.craftAmount;
@@ -1970,7 +1969,7 @@ Scene_Synthesis.prototype.doBuy = async function(number) {
         });
         ItemManager.setPriorityName(item, upgradeStats[2]);
         ItemManager.updateItemName(item);
-        if (upgradeStats[3]) upgradeStats[3].forceChangeEquip(upgradeStats[4], item);
+        if (upgradeStats[3]) upgradeStats[3].changeEquip(upgradeStats[4], item);
       }
       $gameSystem.addSynth(this._item);
       resolve();
