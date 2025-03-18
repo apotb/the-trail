@@ -67,8 +67,8 @@ INTRO TEXT
   - Buffed Woodcutting Axe from 4 → 5 ATK.
   - Mark has been revamped.
   - Improved Blue Slime x3 encounter via custom AI.
-  - Added a healing statue in the Dark Forest.
   - Removed the eastern entrance to the Forest Clearing.
+  - Added a healing statue in the Dark Forest.
   - Banditos will temporarily stop attacking you when Kevin is first defeated.
   - Streamlined Haven Harbor progression.
 - Laeryidyean's Forest tweaks:
@@ -77,14 +77,13 @@ INTRO TEXT
   - Added more lamps throughout the dark areas.
   - Less encounters in the maze.
   - Streamlined capture processing.
-  - Changed the Skeleton random encounter in Forest Arena...? to a map encounter, meaning you only get one per moon cycle.
+  - Changed the Skeleton random encounter in Forest Arena...? to a map encounter, meaning you only get one shot per moon cycle.
 - All encounters can be run away from.
-- Earth enemies no longer take double damage from wind attacks.
 - Infernal Wand now deals +20% fire damage.
 - Nerfed INT Books from +4 → +2 INT.
 - Unmodified equipment will be concatenated in the item list.
 - Increased the size of the damage/treasure popups.
-- Increased the size of the battle UI.
+- Scaled up the battle UI.
 - Reduced the length of the long walks in Laeryidyean's Forest, Telluria Castle B1, and True Telluria Castle B5.
 - Tellurium Pulse no longer removes buffs.
 - Lowered the amount of Thick-Skinned Herbs needed to craft shields.
@@ -199,7 +198,7 @@ Some of these changes seem extreme, but this is all for the sake of maintaining 
   - Steadfast DEF, MDF: 20% → 10%
 
 ### Other Balancing
-- Earth no longer takes double damage from wind.
+- Earth enemies no longer take double damage from wind attacks.
 - Soaked now doubles incoming ice damage.
 - Increased Flashbang duration from 3 → 5 turns.
 - Buffed Focus Up HIT increase from 12.5% → 20%.
@@ -689,7 +688,7 @@ I hope you all feel the power as you progress through Telluria Field! But will y
     - Seshat's Tome
     - Seshat's Teachings
     - Seshat's Opus
-    - EXP Supressor
+    - EXP Suppressor
   - 10 magic equips:
     - Comet Charm
     - Magic Coin
