@@ -58,6 +58,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
   - 1 new power:
     - [REDACTED RESISTANCE]
 - Added 2 new INT Book locations.
+- Added dynamic shadows in battle.
   
 - 5 new enemies:
   - Tortured Soul

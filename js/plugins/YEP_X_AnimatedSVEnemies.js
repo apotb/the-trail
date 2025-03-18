@@ -2340,9 +2340,9 @@ Sprite_Enemy.prototype.initSVSprites = function() {
     this._motionCount = 0;
     this._pattern = 0;
     this._svBattlerEnabled = false;
-    this.createShadowSprite();
     this.createWeaponSprite();
     this.createMainSprite();
+    this.createShadowSprite();
     this.createStateSprite();
     this._effectTarget = this;
 };
@@ -2357,7 +2357,7 @@ Sprite_Enemy.prototype.setTransform = function(battler) {
       this.createWeaponSprite();
       this.createMainSprite();
       this.createStateSprite();
-      this._shadowSprite.opacity = 255;
+      this._shadowSprite.opacity = 127;
       this._weaponSprite.opacity = 255;
       this._mainSprite.opacity = 255;
       this._stateSprite.opacity = 255;
@@ -2369,17 +2369,16 @@ Sprite_Enemy.prototype.createMainSprite = function() {
 };
 
 Sprite_Enemy.prototype.createShadowSprite = function() {
-    this._shadowSprite = new Sprite();
-    if (Yanfly.Param.SVESmoothing) {
-      this._shadowSprite.bitmap = ImageManager.loadSystemSmooth('Shadow2');
-    } else {
-      this._shadowSprite.bitmap = ImageManager.loadSystem('Shadow2');
-    }    
-    this._shadowSprite.anchor.x = 0.5;
-    this._shadowSprite.anchor.y = 0.5;
-    this._shadowSprite.y = -2;
-    this.addChild(this._shadowSprite);
-    this._shadowSprite.opacity = 0;
+    if (!this._shadowSprite) this._shadowSprite = new Sprite_Base();
+    if (!this._mainSprite || !this._mainSprite.bitmap || !this._mainSprite.bitmap.isReady()) {
+        setTimeout(() => this.createShadowSprite(), 50);
+        return;
+    }
+    this._shadowSprite.bitmap = this._mainSprite.bitmap;
+    this._shadowSprite.anchor.set(0.5, 1);
+    this._shadowSprite.tint = 0x000000;
+    this._shadowSprite.z = 0.99;
+    this.addChildAt(this._shadowSprite, this.children.indexOf(this._mainSprite) + 1);
 };
 
 Sprite_Enemy.prototype.createWeaponSprite = function() {
@@ -2526,6 +2525,7 @@ Sprite_Enemy.prototype.updateSVBitmap = function() {
       this.adjustAnchor();
       this.refreshMotion();
       this.updateScale();
+      this._shadowSprite.bitmap = this._mainSprite.bitmap;
     } else if (this._svBattlerName === '') {
       this._svBattlerName = '';
       this._svBattlerEnabled = false;
@@ -2577,6 +2577,7 @@ Sprite_Enemy.prototype.updateSVFrame = function() {
     }
     // this.setFrame(cx * cw, cy * ch, cw, ch);
     this._mainSprite.setFrame(cx * cw, cy * ch, cw, ch - cdh);
+    this._shadowSprite.setFrame(cx * cw, cy * ch, cw, ch - cdh);
     this.adjustMainBitmapSettings(bitmap);
     this.adjustSVShadowSettings();
 };
@@ -2594,13 +2595,13 @@ Sprite_Enemy.prototype.adjustMainBitmapSettings = function(bitmap) {
 };
 
 Sprite_Enemy.prototype.adjustSVShadowSettings = function() {
-    if (this._enemy.showSideviewShadow()) this._shadowSprite.opacity = 255;
+    if (this._enemy.showSideviewShadow()) this._shadowSprite.opacity = 127;
     var scaleX = this._enemy.sideviewShadowScaleX();
     var scaleY = this._enemy.sideviewShadowScaleY();
     if (scaleX === 'auto') scaleX = this._mainSprite.bitmap.width / 9 / 64;
     if (scaleY === 'auto') scaleY = this._mainSprite.bitmap.width / 9 / 64;
-    this._shadowSprite.scale.x = scaleX;
-    this._shadowSprite.scale.y = scaleY;
+    this._shadowSprite.scale.x = scaleX * (1 + this.addFloatingHeight()) / -this._enemy.spriteScaleX();
+    this._shadowSprite.scale.y = scaleY * -0.5 * (1 + this.addFloatingHeight()) / this._enemy.spriteScaleY();
 };
 
 Sprite_Enemy.prototype.updateMotion = function() {
