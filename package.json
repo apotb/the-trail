@@ -1,5 +1,5 @@
 {
-  "name": "thetrail",
+  "name": "thetraildemo",
   "main": "index.html",
   "js-flags": "--exposegc",
   "chromium-args": "--in-process-gpu --disable-direct-composition --disable-raf-throttling",
@@ -13,7 +13,7 @@
     "icon": "icon/icon.png",
     "width": 1280,
     "height": 720,
-    "title": "The Trail"
+    "title": "The Trail Demo"
   },
   "dependencies": {
     "discord-rpc": "^4.0.1",
