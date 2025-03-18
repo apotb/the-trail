@@ -2600,8 +2600,8 @@ Sprite_Enemy.prototype.adjustSVShadowSettings = function() {
     var scaleY = this._enemy.sideviewShadowScaleY();
     if (scaleX === 'auto') scaleX = this._mainSprite.bitmap.width / 9 / 64;
     if (scaleY === 'auto') scaleY = this._mainSprite.bitmap.width / 9 / 64;
-    this._shadowSprite.scale.x = scaleX * (1 + this.addFloatingHeight()) / -this._enemy.spriteScaleX();
-    this._shadowSprite.scale.y = scaleY * -0.5 * (1 + this.addFloatingHeight()) / this._enemy.spriteScaleY();
+    this._shadowSprite.scale.x = scaleX * this._enemy.spriteScaleX() * (1 + this.addFloatingHeight()) / this._enemy.spriteScaleX();
+    this._shadowSprite.scale.y = scaleY * this._enemy.spriteScaleY() * (1 + this.addFloatingHeight()) / this._enemy.spriteScaleY() * -0.5;
 };
 
 Sprite_Enemy.prototype.updateMotion = function() {
