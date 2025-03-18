@@ -1,10 +1,30 @@
-# Alpha 16: The Comeback Update (??/??/????)
-INTRO TEXT
+# Alpha 16: The Comeback Update (3/28/2025)
+Didn't expect the update to come so quick, did ya'? It hasn't even been a month since Alpha 15.6!
+The development processing is changing, and updates will be coming out much more frequently, just like the old days. No more year-long waits!
+Just because this update came out quickly doesn't mean we skimped out on content...
+
+Now that you're back on the hunt for Apocalypse, your next stop is Greenfield. However, things aren't the same as before.
+Will you be able to help the people of Greenfield fight back against new threats?
+Explore a brand new dungeon and collect even more powerful equipment in Alpha 16! And that's not all...
+
+The Ruined Fort has been revamped! This was supposed to happen all the way back in Alpha 14... but hey, better late than never.
+Save the souls being held hostage within the Ruined Fort. Fight new enemies and interact with the Phantasmal Plane to progress.
+A powerful foe awaits you at the top... can you defeat this ancient threat, finally completing Will's quest?
+
+At long last, The Trail is on Steam! Collect 70+ achievements, store your saves in the Steam Cloud, and more!
+Nothing but love for the itch.io launcher, but let's be honest: nobody already had it installed. Everyone has Steam though, making The Trail more accessible than ever!
+All updates will now be downloaded via Steam. The itch.io page and GitHub releases will no longer be maintained.
+
+As with any major update, you'll find plenty of balance changes and improvements. You'll find that the boost system, cleric skills, and more have been polished.
+Oh, and for my Linux players; you're finally supported again! Sorry I abandoned you for Alpha 15... there were complications, but everything should run smoothly now.
+
+That just about summarizes the major features in Alpha 16. If you'd like to know everything that changed, check out the detailed changelog below:
 
 ### Additions
 - Linux support has returned!
 - New Steam features:
   - 70+ achievements for you to collect!
+  - Steam Cloud integration.
   - Leaderboards now automatically use your Steam account.
 - The Ruined Fort is back! It's been blocked off since Alpha 14; now it's finally revamped and ready to play.
 - 8 new skills:
@@ -114,6 +134,14 @@ INTRO TEXT
 - Fixed the Room 1 Key treasure popup appearing over Player 2 instead of the innkeeper.
 - Fixed issues with the Water Spirit's state overlays and shadow.
 - Fixed incorrect Application Menu title on Mac.
+
+The Trail's alpha phase is nearing completion. As soon as the graphics have been revamped, the game will move into beta!
+It's crazy to see how far the game has come. My vision for The Trail is finally coming to fruition.
+
+Thank you for playing! Alpha 17 is on the way, so keep an eye out for Leeks™ and other news. Until then... the journey continues.
+
+Yours truly,
+AP
 
 <br><br>
 
