@@ -84,7 +84,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
   - Dispell now counts as the upgrade to Purify.
   - Removed Curify.
 - Adon tweaks:
-  - The tavern questline can now be started as soon as the prologue.
+  - The tavern questline can now be started as soon as you obtain the Quest Log.
   - Improved the Big Mouth fight in Verdin Village.
   - Dirty Mike and Larry are no longer required to be spoken to.
   - Buffed Woodcutting Axe from 4 → 5 ATK.
