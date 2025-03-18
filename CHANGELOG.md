@@ -98,6 +98,7 @@ INTRO TEXT
 
 ### Bug Fixes
 - Fixed name boxes not showing up after battle.
+- Fixed an occasional crash when loading/deleting a save.
 - Fixed being able to skip the Adonian Monsters troop by running away.
 - Fixed "fake dupe" bug related to equipped crafting ingredients.
 - Fixed a bug where animations would take forever to load.
