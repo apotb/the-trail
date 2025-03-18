@@ -1988,7 +1988,7 @@ Sprite_StateIcon.prototype.drawStateTurns = function(state) {
     if (!state.showTurns) return;
     if (state.autoRemovalTiming <= 0) return;
     var turns = this._battler.stateTurns(state.id);
-    if (turns !== 0 && !turns) return;
+    if ((turns !== 0 && !turns) || turns == 0) return;
     var turns = Yanfly.Util.toGroup(Math.ceil(turns));
     var wx = state.turnBufferX;
     var wy = state.turnBufferY - 2;
@@ -2097,7 +2097,7 @@ Window_Base.prototype.drawActorIconsTurns = function(actor, wx, wy, ww) {
 Window_Base.prototype.drawStateTurns = function(actor, state, wx, wy) {
   if (!state.showTurns) return;
   var turns = actor.stateTurns(state.id);
-  if (turns !== 0 && !turns) return;
+  if ((turns !== 0 && !turns) || turns == 0) return;
   var turns = Yanfly.Util.toGroup(Math.ceil(turns));
   wx += state.turnBufferX;
   wy += state.turnBufferY;
@@ -2124,7 +2124,7 @@ Window_Base.prototype.drawStateSteps = function(actor, state, wx, wy) {
 
 Window_Base.prototype.drawStateCounter = function(actor, state, wx, wy) {
   var value = actor.getStateCounter(state.id);
-  if (value === undefined) return;
+  if (value === undefined || 0) return;
   var settings = state.stateCounterSettings;
   value = Yanfly.Util.toGroup(value);
   wx += settings.bufferX;
