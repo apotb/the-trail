@@ -1,7 +1,7 @@
 @echo off
 echo Move the files in the 'mac' folder to the Resources folder
 pause
-echo Open Contents/Info.plist and change CFBundleDisplayName CFBundleExecutable CFBundleName from nwjs to The Trail
+echo Open Contents/Info.plist and change CFBundleDisplayName CFBundleName from nwjs to The Trail
 pause
 
 call node "%CD%"\deployment.js
