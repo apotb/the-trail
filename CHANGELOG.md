@@ -66,7 +66,7 @@ INTRO TEXT
   - Dirty Mike and Larry are no longer required to be spoken to.
   - Buffed Woodcutting Axe from 4 → 5 ATK.
   - Mark has been revamped.
-  - Changed Blue Slime x3 encounter in Forest Clearing to Blue Slime x2.
+  - Improved Blue Slime x3 encounter via custom AI.
   - Added a healing statue in the Dark Forest.
   - Removed the eastern entrance to the Forest Clearing.
   - Banditos will temporarily stop attacking you when Kevin is first defeated.
