@@ -258,7 +258,7 @@ _.specialCommand201 = function() {
 _.Game_Interpreter_command301 = Game_Interpreter.prototype.command301;
 Game_Interpreter.prototype.command301 = function() {
 	if(!$gameParty.inBattle() && SceneManager._scene.constructor !== Scene_Gameover) {
-		$gameTemp._setUpRetry = null;
+		$gameTemp.initRetry();
 	}
 	return _.Game_Interpreter_command301.apply(this, arguments);
 };
@@ -287,19 +287,19 @@ BattleManager.saveBgmAndBgs = function() {
 _.BattleManager_processVictory = BattleManager.processVictory;
 BattleManager.processVictory = function() {
 	_.BattleManager_processVictory.apply(this, arguments);
-	$gameTemp._setUpRetry = null;
+	$gameTemp.initRetry();
 };
 
 _.BattleManager_processAbort = BattleManager.processAbort;
 BattleManager.processAbort = function() {
 	_.BattleManager_processAbort.apply(this, arguments);
-	$gameTemp._setUpRetry = null;
+	$gameTemp.initRetry();
 };
 
 _.BattleManager_processDefeat = BattleManager.processDefeat;
 BattleManager.processDefeat = function() {
 	_.BattleManager_processDefeat.apply(this, arguments);
-	if(this._canLose) $gameTemp._setUpRetry = null;
+	if(this._canLose) $gameTemp.initRetry();
 };
 
 _.BattleManager_replayBgmAndBgs = BattleManager.replayBgmAndBgs;
@@ -323,7 +323,13 @@ BattleManager.replayBgmAndBgs = function() {
 _.Game_Temp_initialize = Game_Temp.prototype.initialize;
 Game_Temp.prototype.initialize = function() {
 	_.Game_Temp_initialize.apply(this, arguments);
+	this.initRetry();
+};
+
+Game_Temp.prototype.initRetry = function() {
 	this._setUpRetry = null;
+	this._retries = 0;
+	$gameParty?.members().forEach(a => a.clearXParamPlus());
 };
 
 //-----------------------------------------------------------------------------
@@ -539,7 +545,7 @@ Scene_Gameover.prototype.helpWindowText = Scene_Load.prototype.helpWindowText;
 Scene_Gameover.prototype.firstSavefileIndex = Scene_Load.prototype.firstSavefileIndex;
 Scene_Gameover.prototype.onSavefileOk = Scene_Load.prototype.onSavefileOk;
 Scene_Gameover.prototype.onLoadSuccess = function() {
-	$gameTemp._setUpRetry = null;
+	$gameTemp.initRetry();
 	Scene_Load.prototype.onLoadSuccess.apply(this, arguments);
 };
 Scene_Gameover.prototype.onLoadFailure = Scene_Load.prototype.onLoadFailure;
@@ -593,7 +599,7 @@ Scene_Gameover.prototype.cancelLoad = function() {
 };
 
 Scene_Gameover.prototype.titleCommand = function() {
-	$gameTemp._setUpRetry = null;
+	$gameTemp.initRetry();
 	SceneManager.goto(Scene_Title);
 };
 

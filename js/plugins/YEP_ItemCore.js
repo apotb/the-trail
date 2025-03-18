@@ -1353,10 +1353,7 @@ Game_Party.prototype.numNotUpgradedIndependentItems = function(baseItem) {
       var item = group[i];
       if (!item) continue;
       if (item.boostCount && item.boostCount !== 0) continue;
-      // if (item.namePrefix && item.namePrefix !== "") continue;
-      // if (item.nameSuffix && item.nameSuffix !== "") continue;
-      if (item.baseItemName && item.baseItemName !== baseItem.name) continue;
-      // if (item.textColor && item.textColor !== baseItem.textColor) continue;
+      if (item.priorityName && item.priorityName != item.baseItemName) continue;
       if (item.baseItemId && item.baseItemId === id) value += 1;
     }
   }
@@ -1375,16 +1372,21 @@ Game_Party.prototype.getNotUpgradedIndependentItem = function(baseItem) {
     var item = group[i];
     if (!item) continue;
     if (item.boostCount && item.boostCount !== 0) continue;
-    // if (item.namePrefix && item.namePrefix !== "") continue;
-    // if (item.nameSuffix && item.nameSuffix !== "") continue;
-    if (item.baseItemName && item.baseItemName !== baseItem.name) continue;
-    // if (item.textColor && item.textColor !== baseItem.textColor) continue;
+    if (item.priorityName && item.priorityName != item.baseItemName) continue;
     if (item.baseItemId && item.baseItemId === id) value = item;
   }
   return value;
 };
 
-
+DataManager.isBaseItem = function(item, baseItem=DataManager.getBaseItem(item), matchBaseName=false) {
+  if (item.boostCount && item.boostCount != 0) return false;
+  if (matchBaseName) {
+    if (item.baseItemName && item.baseItemName != baseItem.name) return false;
+  } else {
+    if (item.priorityName && item.priorityName != item.baseItemName) return false;
+  }
+  return item.baseItemId && item.baseItemId == baseItem.id;
+};
 
 //=============================================================================
 // Game_Interpreter
@@ -1476,6 +1478,9 @@ Yanfly.Item.Window_ItemList_drawItemNumber =
 Window_ItemList.prototype.drawItemNumber = function(item, dx, dy, dw) {
     if (DataManager.isIndependent(item)) {
       this.drawItemCarryNumber(item, dx, dy, dw);
+      if (DataManager.isBaseItem(item) &&
+          $gameParty.numNotUpgradedIndependentItems(DataManager.getBaseItem(item)) >= 2 &&
+          !$gameParty.allEquips().contains(item)) Yanfly.Item.Window_ItemList_drawItemNumber.call(this, item, dx, dy, dw);
       return;
     }
     Yanfly.Item.Window_ItemList_drawItemNumber.call(this, item, dx, dy, dw);
@@ -1518,6 +1523,7 @@ Window_ItemList.prototype.drawEquippedActor = function(item, dx, dy, dw) {
     if (Yanfly.Param.ItemQuantitySize) {
       this.contents.fontSize = Yanfly.Param.ItemQuantitySize;
     }
+    if (!carrier) return;
     var text = carrier.name();
     this.drawText(text, dx, dy, dw, 'right');
     this.resetFontSettings();

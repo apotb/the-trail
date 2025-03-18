@@ -52,6 +52,8 @@ INTRO TEXT
   - Using Guard grants +1 BP.
   - Boosted hits are guaranteed to land.
 - Cleric rebalancing:
+  - Revive/Resurgence are now guaranteed to proc. Boosting them increases the amount of HP recovered.
+  - Resurgence grants the Rejuvenation buff.
   - Purify/Dispell now only cure 1 debuff. However, each BP used will cure an additional debuff.
   - Buffed Purify MP cost from 15 → 8.
   - Buffed Dispell MP cost from 50 → 16.
@@ -59,34 +61,47 @@ INTRO TEXT
   - Dispell now counts as the upgrade to Purify.
   - Removed Curify.
 - Adon tweaks:
-  - Changed Blue Slime x3 encounter in Forest Clearing to Blue Slime x2.
+  - The tavern questline can now be started as soon as the prologue.
+  - Improved the Big Mouth fight in Verdin Village.
+  - Dirty Mike and Larry are no longer required to be spoken to.
+  - Buffed Woodcutting Axe from 4 → 5 ATK.
+  - Mark has been revamped.
+  - Improved Blue Slime x3 encounter via custom AI.
   - Removed the eastern entrance to the Forest Clearing.
+  - Added a healing statue in the Dark Forest.
+  - Banditos will temporarily stop attacking you when Kevin is first defeated.
+  - Streamlined Haven Harbor progression.
 - Laeryidyean's Forest tweaks:
   - Less Skeleton Knights guarding the main area.
   - Skeleton Knights stop moving when unlocking a door.
   - Added more lamps throughout the dark areas.
   - Less encounters in the maze.
   - Streamlined capture processing.
+  - Changed the Skeleton random encounter in Forest Arena...? to a map encounter, meaning you only get one shot per moon cycle.
 - All encounters can be run away from.
-- Earth enemies no longer take double damage from wind attacks.
 - Infernal Wand now deals +20% fire damage.
 - Nerfed INT Books from +4 → +2 INT.
+- Unmodified equipment will be concatenated in the item list.
 - Increased the size of the damage/treasure popups.
+- Scaled up the battle UI.
 - Reduced the length of the long walks in Laeryidyean's Forest, Telluria Castle B1, and True Telluria Castle B5.
-- Banditos will temporarily stop attacking you when Kevin is first defeated.
 - Tellurium Pulse no longer removes buffs.
 - Lowered the amount of Thick-Skinned Herbs needed to craft shields.
-- Parasites can now drop Medicated Eyedrops.
+- Flytraps and Parasites can now drop Medicated Eyedrops.
+- Darkhounds now drop Silver Wristbraces instead of Iron Wristbraces.
 - Lightning II's 3rd chain deals 33% damage instead of 25%.
 - Using an equipped item as an ingredient will automatically equip the newly crafted upgrade.
+- Pixelated battlebacks.
 - Greatly reduced the length of the king's monologue before the Champion's Banquet.
-- Changed the Skeleton random encounter in Laeryidyean's Forest - Forest Arena...? to a map encounter, meaning you get one per moon cycle.
+- A new "pity" system will increase your HIT, EVA, and CRI after each retry. It resets between encounters.
 - Quest journal display is on by default.
 - Removed Made With MV splash screen.
 
 ### Bug Fixes
 - Fixed name boxes not showing up after battle.
+- Fixed an occasional crash when loading/deleting a save.
 - Fixed being able to skip the Adonian Monsters troop by running away.
+- Fixed "fake dupe" bug related to equipped crafting ingredients.
 - Fixed a bug where animations would take forever to load.
 - Fixed Mark being able to phase through Blue Slimes.
 - Fixed Player 2's appearance not updating when unequipping Infernal Coin.
@@ -184,7 +199,7 @@ Some of these changes seem extreme, but this is all for the sake of maintaining 
   - Steadfast DEF, MDF: 20% → 10%
 
 ### Other Balancing
-- Earth no longer takes double damage from wind.
+- Earth enemies no longer take double damage from wind attacks.
 - Soaked now doubles incoming ice damage.
 - Increased Flashbang duration from 3 → 5 turns.
 - Buffed Focus Up HIT increase from 12.5% → 20%.
@@ -674,7 +689,7 @@ I hope you all feel the power as you progress through Telluria Field! But will y
     - Seshat's Tome
     - Seshat's Teachings
     - Seshat's Opus
-    - EXP Supressor
+    - EXP Suppressor
   - 10 magic equips:
     - Comet Charm
     - Magic Coin

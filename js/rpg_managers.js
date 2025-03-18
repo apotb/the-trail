@@ -1245,7 +1245,7 @@ AudioManager.playBgm = function(bgm, pos) {
         this.updateBgmParameters(bgm);
     } else {
         this.stopBgm();
-        if (bgm.name) {
+        if (bgm?.name) {
             if(Decrypter.hasEncryptedAudio && this.shouldUseHtml5Audio()){
                 this.playEncryptedBgm(bgm, pos);
             }
@@ -1300,10 +1300,10 @@ AudioManager.updateBgmParameters = function(bgm) {
 
 AudioManager.updateCurrentBgm = function(bgm, pos) {
     this._currentBgm = {
-        name: bgm.name,
-        volume: bgm.volume,
-        pitch: bgm.pitch,
-        pan: bgm.pan,
+        name: bgm?.name,
+        volume: bgm?.volume,
+        pitch: bgm?.pitch,
+        pan: bgm?.pan,
         pos: pos
     };
 };
@@ -1334,7 +1334,7 @@ AudioManager.playBgs = function(bgs, pos) {
         this.updateBgsParameters(bgs);
     } else {
         this.stopBgs();
-        if (bgs.name) {
+        if (bgs?.name) {
             this._bgsBuffer = this.createBuffer('bgs', bgs.name);
             this.updateBgsParameters(bgs);
             this._bgsBuffer.play(true, pos || 0);
@@ -1365,10 +1365,10 @@ AudioManager.updateBgsParameters = function(bgs) {
 
 AudioManager.updateCurrentBgs = function(bgs, pos) {
     this._currentBgs = {
-        name: bgs.name,
-        volume: bgs.volume,
-        pitch: bgs.pitch,
-        pan: bgs.pan,
+        name: bgs?.name,
+        volume: bgs?.volume,
+        pitch: bgs?.pitch,
+        pan: bgs?.pan,
         pos: pos
     };
 };

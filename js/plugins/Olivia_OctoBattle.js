@@ -3608,7 +3608,7 @@ if (Olivia[_0x252a("0xa4")][_0x252a("0x4c")].Enabled) {
     var _0x193cb8 = Window_Base[_0x252a("0xbf")];
     if (Olivia[_0x252a("0xa4")][_0x252a("0x4c")].SmallIcon) {
       var _0x3cee42 = _0x4b7c99;
-      _0x193cb8 = Math[_0x252a("0x93")](_0x193cb8 * Olivia[_0x252a("0xa4")][_0x252a("0x4c")][_0x252a("0x66")]);
+      _0x193cb8 = Math[_0x252a("0x93")](_0x193cb8 * Olivia[_0x252a("0xa4")][_0x252a("0x4c")][_0x252a("0x66")] * ($gameParty.size() < 6 ? 1.3 : 1));
     }
     while (storedBP > 0) {
       storedBP--;
@@ -3655,7 +3655,7 @@ if (Olivia[_0x252a("0xa4")][_0x252a("0x4c")].Enabled) {
     var _0x5c4cb0 = Window_Base[_0x252a("0x5e")];
     var _0x991c81 = _0x526901 % 16 * _0x334a2a;
     var _0x501bf9 = Math[_0x252a("0x81")](_0x526901 / 16) * _0x5c4cb0;
-    var _0x211bc7 = Olivia[_0x252a("0xa4")][_0x252a("0x4c")][_0x252a("0x66")];
+    var _0x211bc7 = Olivia[_0x252a("0xa4")][_0x252a("0x4c")][_0x252a("0x66")] * ($gameParty.size() < 6 ? 1.3 : 1);
     this.contents[_0x252a("0x3e")](_0x15009f, _0x991c81, _0x501bf9, _0x334a2a, _0x5c4cb0, _0x2598bd, _0x3639bd, Math[_0x252a("0x93")](_0x334a2a * _0x211bc7), Math.round(_0x5c4cb0 * _0x211bc7));
   };
   Window_Base.prototype[_0x252a("0xc4")] = function (_0x288a77) {
@@ -5071,7 +5071,7 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
     this.refresh();
   };
   Window_BattleSideBase.prototype.scaleRate = function () {
-    return Olivia.OctoBattle.SideBattleUI.StatusScale;
+    return Olivia.OctoBattle.SideBattleUI.StatusScale * ($gameParty.size() < 6 ? 1.6 : 1);
   };
   Window_BattleSideBase.prototype.lineHeight = function () {
     return Math.round(Window_Base.prototype.lineHeight.call(this) * this.scaleRate());
@@ -5491,6 +5491,7 @@ if (Olivia.OctoBattle[_0x3084("0x1c")][_0x3084("0x30")]) {
       actor._expGained = actor.currentExp() - actor._preVictoryExp;
       actor._postVictoryLv = actor._level;
     }, this);
+    $gameTemp.initRetry();
   };
   BattleManager[_0x3084("0x8e")] = function () {
     AudioManager[_0x3084("0x97")](Olivia[_0x3084("0x3")][_0x3084("0x1c")][_0x3084("0x68")]);
