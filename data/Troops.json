@@ -4709,8 +4709,8 @@
     "members": [
       {
         "enemyId": 29,
-        "x": 261,
-        "y": 358,
+        "x": 267,
+        "y": 283,
         "hidden": false
       }
     ],
@@ -4802,23 +4802,6 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\genI certainly did underestimate your power."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Evil1",
-              5,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
               "\\genI'm glad that the fight I've been"
             ]
           },
@@ -4826,96 +4809,21 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "waiting a millenium for is a good one!"
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Evil1",
-              5,
-              0,
-              2
+              "waiting a millenium for is a good"
             ]
           },
           {
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\genI should be angry. I am indeed upset"
+              "one. Now, let the real fun begin!"
             ]
           },
           {
-            "code": 401,
+            "code": 355,
             "indent": 0,
             "parameters": [
-              "that I've been abandoned here all by"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "myself for so long."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Evil1",
-              5,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\genBut..."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Evil1",
-              5,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\gen...this is my destiny, is it not?"
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Evil1",
-              5,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\genWhatever this battle's outcome is,"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "it will be what was intended to happen."
+              "$gameTroop._enemies[0]._phase = 2;"
             ]
           },
           {
@@ -5006,21 +4914,14 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\genI don't know if I should be"
+              "\\genIt can't be... after all this time spent waiting for"
             ]
           },
           {
             "code": 401,
             "indent": 0,
             "parameters": [
-              "furiously angry or quietly"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "reserved."
+              "\\c[18]him\\c[0] to return, I've been defeated by lowly humans."
             ]
           },
           {
@@ -5037,28 +4938,7 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\genOn the inside, I want to immediately"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "leech the souls out of the four of"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "you. You'd each be empty shells"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "forever, just like me."
+              "\\gen..."
             ]
           },
           {
@@ -5075,28 +4955,14 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\genI am beyond raging at the fact that"
+              "\\genBut I must be honest with myself... I know that"
             ]
           },
           {
             "code": 401,
             "indent": 0,
             "parameters": [
-              "after so much waiting for \\c[18]him\\c[0] to"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "return, I've been defeated by four"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "lowly humans."
+              "even with all my hope, \\c[18]he\\c[0]'s not coming back."
             ]
           },
           {
@@ -5113,69 +4979,14 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\genBut on the inside, I know that in"
+              "\\genI've been abandoned. And with my death,"
             ]
           },
           {
             "code": 401,
             "indent": 0,
             "parameters": [
-              "the end, this was meant to happen."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Evil1",
-              5,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\genI know that even with all my"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "hope, \\c[18]he\\c[0]'s not coming back."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Evil1",
-              5,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\genI've been abandoned. And with my"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "death, I've finally come to accept"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "this raw fact."
+              "I've finally come to accept this fact."
             ]
           },
           {

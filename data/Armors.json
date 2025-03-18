@@ -1405,14 +1405,14 @@
   {
     "id": 59,
     "atypeId": 1,
-    "description": "An ancient necklace that allows the wearer to leech\ntheir target's life force, equal to 3% of damage dealt.",
+    "description": "An ancient necklace that allows the wearer to leech\ntheir target's life force, equal to 5% of damage dealt.",
     "etypeId": 6,
     "traits": [],
     "iconIndex": 522,
     "name": "Soulstealer's Necklace",
-    "note": "<Upgrade Slots: 2>\n<HP Life Steal: +3%>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(53);\n</Custom Buy Show Eval>",
+    "note": "<Upgrade Slots: 2>\n<HP Life Steal: +5%>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(53);\n</Custom Buy Show Eval>",
     "params": [
-      0,
+      25,
       0,
       0,
       0,
