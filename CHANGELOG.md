@@ -63,6 +63,7 @@ INTRO TEXT
 - Adon tweaks:
   - The tavern questline can now be started as soon as the prologue.
   - Improved the Big Mouth fight in Verdin Village.
+  - Dirty Mike and Larry are no longer required to be spoken to.
   - Buffed Woodcutting Axe from 4 → 5 ATK.
   - Mark has been revamped.
   - Changed Blue Slime x3 encounter in Forest Clearing to Blue Slime x2.

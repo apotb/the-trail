@@ -5279,31 +5279,13 @@
               "indent": 0,
               "parameters": [
                 0,
-                9,
-                0
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 1,
-              "parameters": [
-                0,
-                10,
-                0
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                0,
                 8,
                 0
               ]
             },
             {
               "code": 122,
-              "indent": 3,
+              "indent": 1,
               "parameters": [
                 3,
                 3,
@@ -5314,7 +5296,7 @@
             },
             {
               "code": 250,
-              "indent": 3,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Move1",
@@ -5326,7 +5308,7 @@
             },
             {
               "code": 201,
-              "indent": 3,
+              "indent": 1,
               "parameters": [
                 0,
                 20,
@@ -5335,156 +5317,6 @@
                 2,
                 0
               ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 411,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 3,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "You should probably talk to all the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "shopkeepers before leaving."
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 3,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 4,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 3,
-              "parameters": [
-                {
-                  "code": 4,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 411,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "You should probably talk to all the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "shopkeepers before leaving."
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 2,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 4,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 4,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 1,
-              "parameters": []
             },
             {
               "code": 0,
@@ -5510,14 +5342,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "You should probably talk to all the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "shopkeepers before leaving."
+                "You promised \\N[2] you'd speak to Matilda!"
               ]
             },
             {
@@ -5703,8 +5528,8 @@
               "indent": 0,
               "parameters": [
                 0,
-                24,
-                0
+                8,
+                1
               ]
             },
             {
@@ -5721,14 +5546,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\matWhy, heeeelloooo, \\N[1]! Soooo"
+                "\\matHello, hello. Weeeeeelcome to my "
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "greaat too seeee youuu agaiin!"
+                "maaaaaaaaagical shop. What would "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "you wish to purchase today, youngling?"
               ]
             },
             {
@@ -5745,14 +5577,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\mat\\{\\}Thaank youu forr taaaking \\N[2]"
+                "\\matAh, yes... \\N[2] toooooooold mee"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "oon thiissss graaand jourrney!"
+                "abouuuuuut you. Youuuuu arrrrreeee..."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\N[1]!"
               ]
             },
             {
@@ -5769,14 +5608,528 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\matWouuuld you liike to buyy "
+                "\\mat\\N[2] toooooold meeeee abouuuttt"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "some iiiitems?"
+                "theee journeeyyyyy that youuuu have"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "inviiiiited hiiim to taaaaake"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "with youuuuuuuuu."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                10,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\matYeeesssss... this is the perrrrfect"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "hands-on experrrrience for hiiiim!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                10,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\matAnd adventuring with a compaaanion"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "is much better then adveeenturing aloooone!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                10,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\matYouuuu can heeelp each ooother when"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "tiiiimes are toough, and heeelp keep"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "eaaaach otherrrr motivated!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                10,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\matYour journey is fooor a gooood cause"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "as weeell! I very much like that!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\matNowwww... in case you are ever"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "split uppp, you maaaay neeeeed a"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "waaaay to shaaare your iteeems."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                10,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\matHmmm... aha! I knooooow just"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "the thiiiing!"
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                7,
+                {
+                  "list": [
+                    {
+                      "code": 3,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 19,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 0,
+                      "indent": null,
+                      "parameters": []
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 3,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 19,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\matHmmm... let me seeeeeee here..."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "wheeeere could they have gone?"
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                7,
+                {
+                  "list": [
+                    {
+                      "code": 2,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 4,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 18,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 0,
+                      "indent": null,
+                      "parameters": []
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 4,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 18,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                10,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\matAh! Theeey fell back heeere!"
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 1,
+              "parameters": [
+                {
+                  "name": "Equip3",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 1,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                7,
+                {
+                  "list": [
+                    {
+                      "code": 1,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 0,
+                      "indent": null,
+                      "parameters": []
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 1,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                10,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\mat\\{\\}These should solve thaaat problem!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Heeeere, take a couple eeextras, in"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "caaase you meet some new frieeeeends."
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 1,
+              "parameters": [
+                {
+                  "name": "Equip3",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 1,
+              "parameters": [
+                17,
+                0,
+                0,
+                4
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 1,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                10,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\mat\\{\\}These will allooow you and aaaall of your"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "friends to aaacess the same items from"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "aaanywhere! It makes shaaaring so much easier!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                10,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\matI dooooo have some iteeems in my"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "shoooop. Would you like to browse"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "theeeem? Maybe buy a thing or two"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "foooor \\N[2]?"
               ]
             },
             {
@@ -5794,8 +6147,8 @@
               "indent": 1,
               "parameters": [
                 0,
-                8,
-                0
+                24,
+                1
               ]
             },
             {
@@ -5846,21 +6199,14 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\matHello, hello. Weeeeeelcome to my "
+                "\\matWhy, heeeelloooo, \\N[1]! Soooo"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "maaaaaaaaagical shop. What would "
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "you wish to purchase today, youngling?"
+                "greaat too seeee youuu agaiin!"
               ]
             },
             {
@@ -5877,21 +6223,14 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\matAh, yes... \\N[2] toooooooold mee"
+                "\\mat\\{\\}Thaank youu forr taaaking \\N[2]"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "abouuuuuut you. Youuuuu arrrrreeee..."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\N[1]!"
+                "oon thiissss graaand jourrney!"
               ]
             },
             {
@@ -5908,657 +6247,14 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\mat\\N[2] toooooold meeeee abouuuttt"
+                "\\matWouuuld you liike to buyy "
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "theee journeeyyyyy that youuuu have"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "inviiiiited hiiim to taaaaake"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "with youuuuuuuuu."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper1",
-                10,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\matYeeesssss... this is the perrrrfect"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "hands-on experrrrience for hiiiim!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper1",
-                10,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\matAnd adventuring with a compaaanion"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "is much better then adveeenturing aloooone!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper1",
-                10,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\matYouuuu can heeelp each ooother when"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "tiiiimes are toough, and heeelp keep"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "eaaaach otherrrr motivated!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper1",
-                10,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\matYour journey is fooor a gooood cause"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "as weeell! I very much like that!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper1",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\matNowwww... in case you are ever"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "split uppp, you maaaay neeeeed a"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "waaaay to shaaare your iteeems."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper1",
-                10,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\matHmmm... aha! I knooooow just"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "the thiiiing!"
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 2,
-              "parameters": [
-                7,
-                {
-                  "list": [
-                    {
-                      "code": 3,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 19,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 0,
-                      "indent": null,
-                      "parameters": []
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 3,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 19,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper1",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\matHmmm... let me seeeeeee here..."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "wheeeere could they have gone?"
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 2,
-              "parameters": [
-                7,
-                {
-                  "list": [
-                    {
-                      "code": 2,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 4,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 18,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 0,
-                      "indent": null,
-                      "parameters": []
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 4,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 18,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper1",
-                10,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\matAh! Theeey fell back heeere!"
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 2,
-              "parameters": [
-                {
-                  "name": "Equip3",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 2,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 2,
-              "parameters": [
-                7,
-                {
-                  "list": [
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 0,
-                      "indent": null,
-                      "parameters": []
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper1",
-                10,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\mat\\{\\}These should solve thaaat problem!"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "Heeeere, take a couple eeextras, in"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "caaase you meet some new frieeeeends."
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 2,
-              "parameters": [
-                {
-                  "name": "Equip3",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 126,
-              "indent": 2,
-              "parameters": [
-                17,
-                0,
-                0,
-                4
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 2,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper1",
-                10,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\mat\\{\\}These will allooow you and aaaall of your"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "friends to aaacess the same items from"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "aaanywhere! It makes shaaaring so much easier!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper1",
-                10,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\matNow, make sure tooo keeeeep \\N[2]"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "saaafe on your jouuuurney! Goooodbye!"
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 2,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 0,
-                      "indent": null,
-                      "parameters": []
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper1",
-                10,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\matActuaaalllyyyy... waaaait a miiinute!"
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 2,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 4,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 15,
-                      "indent": null,
-                      "parameters": [
-                        45
-                      ]
-                    },
-                    {
-                      "code": 0,
-                      "indent": null,
-                      "parameters": []
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 4,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 15,
-                  "indent": null,
-                  "parameters": [
-                    45
-                  ]
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper1",
-                10,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\matI dooooo have some iteeems in my"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "shoooop. Would you like to browse"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "theeeem? Maybe buy a thing or two"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "foooor \\N[2]?"
+                "some iiiitems?"
               ]
             },
             {
@@ -6780,8 +6476,17 @@
               "parameters": []
             },
             {
-              "code": 101,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                0,
+                8,
+                1
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
               "parameters": [
                 "Shopkeeper1",
                 10,
@@ -6791,33 +6496,77 @@
             },
             {
               "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\matNow, make sure tooo keeeeep \\N[2]"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "saaafe on your jouuuurney! Goooodbye!"
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 1,
+              "parameters": [
+                8,
+                8,
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
               "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                10,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
               "parameters": [
                 "\\matGoooood luck on youuur journey! And"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "maaaake sure to say heeeeelo to"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\N[2] for me!"
               ]
             },
             {
-              "code": 121,
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
               "indent": 0,
-              "parameters": [
-                8,
-                8,
-                0
-              ]
+              "parameters": []
             },
             {
               "code": 0,
@@ -6885,8 +6634,8 @@
               "indent": 0,
               "parameters": [
                 0,
-                24,
-                0
+                10,
+                1
               ]
             },
             {
@@ -6903,14 +6652,76 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\larWhy, hello there, \\N[1]! It's"
+                "\\larHello hello! Welcome to my humble"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "great to see you once more!"
+                "shop! I am Larry, the owner! And if"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "the chitchat is correct..."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "you are \\N[1]!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\lar\\}Now, before you say anything, I know"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "this technically isn't a diner, but"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "it's a good name and I'm keeping it."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\larAnyways."
               ]
             },
             {
@@ -6927,7 +6738,119 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\larWanna' buy some food?"
+                "\\larI've heard you have some sort of"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "mission. I wish a warm welcome"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "into Verdin Village, and safe passage"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "on your travels!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                9,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\larOn my behalf, you may have a free"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\ii[16]! Every \\ii[16] is hand-prepared"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "and hand-wrapped, making each"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "one a delicious experience!"
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 1,
+              "parameters": [
+                {
+                  "name": "Equip3",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 1,
+              "parameters": [
+                16,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 1,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                9,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\larYou can't get these anywhere else!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Are you interested in buying some?"
               ]
             },
             {
@@ -6945,8 +6868,8 @@
               "indent": 1,
               "parameters": [
                 0,
-                10,
-                0
+                24,
+                1
               ]
             },
             {
@@ -6997,205 +6920,14 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\larHello hello! Welcome to my humble"
+                "\\larWhy, hello there, \\N[1]! It's always good to"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "shop! I am Larry, the owner! And if"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "the chitchat is correct..."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "you are \\N[1]!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper1",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\lar\\}Now, before you say anything, I know"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "this technically isn't a diner, but"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "it's a good name and I'm keeping it."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper1",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\larAnyways."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper1",
-                9,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\larI've heard you have some sort of"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "mission. I wish a warm welcome"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "into Verdin Village, and safe passage"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "on your travels!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper1",
-                9,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\larOn my behalf, you may have a free"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\ii[16]! Every \\ii[16] is hand-prepared"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "and hand-wrapped, making each"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "one a delicious experience!"
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 2,
-              "parameters": [
-                {
-                  "name": "Equip3",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 126,
-              "indent": 2,
-              "parameters": [
-                16,
-                0,
-                0,
-                1
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 2,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper1",
-                9,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\larYou can't get these anywhere else!"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "Are you interested in buying some?"
+                "see you! Would you like to buy some food?"
               ]
             },
             {
@@ -7444,8 +7176,8 @@
               "indent": 0,
               "parameters": [
                 0,
-                24,
-                0
+                9,
+                1
               ]
             },
             {
@@ -7462,28 +7194,159 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\mikeHaha! It's my world-saving buddy \\N[1]!"
+                "\\mikeWelcome to Dirty Mike's Weapon"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Would you like to see what I've got in"
+                "Smith! I haven't seen your face"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "store for you? Same as before, sorry"
+                "around here, but I've heard the"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "if it's under par for you."
+                "talking in the inn."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\mikeYou are... \\N[1]!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\mike\\}And before you ask, yes, I know, this"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "isn't exclusively a WEAPON smith. But"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "it's still a smithery, and the name is"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "cool, so I'm not changing it."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\mikeI've got a small assortment of items"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "at this point. Business booming, you"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "know. All that stuff. Haven't"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "had time to restock."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\mikeIn terms of weapons, my stuff "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "is better that what you can find "
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "at the general store! Browse and"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "buy to your heart's content!"
               ]
             },
             {
@@ -7501,8 +7364,8 @@
               "indent": 1,
               "parameters": [
                 0,
-                9,
-                0
+                24,
+                1
               ]
             },
             {
@@ -7560,159 +7423,28 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\mikeWelcome to Dirty Mike's Weapon"
+                "\\mikeHaha! It's my world-saving buddy \\N[1]!"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "Smith! I haven't seen your face"
+                "Would you like to see what I've got in"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "around here, but I've heard the"
+                "store for you? Same as before, sorry"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "talking in the inn."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper1",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\mikeYou are... \\N[1]!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper1",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\mike\\}And before you ask, yes, I know, this"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "isn't exclusively a WEAPON smith. But"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "it's still a smithery, and the name is"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "cool, so I'm not changing it."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper1",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\mikeI've got a small assortment of items"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "at this point. Business booming, you"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "know. All that stuff. Haven't"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "had time to restock."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper1",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\mikeIn terms of weapons, my stuff "
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "is better that what you can find "
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "at the general store! Browse and"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "buy to your heart's content!"
+                "if it's under par for you."
               ]
             },
             {
@@ -7779,8 +7511,8 @@
               "indent": 1,
               "parameters": [
                 [
-                  "New Equipment",
-                  "Starting Gear"
+                  "Mike's Equipment",
+                  "Initial Equipment"
                 ],
                 1,
                 0,
@@ -7793,7 +7525,7 @@
               "indent": 1,
               "parameters": [
                 0,
-                "New Equipment"
+                "Mike's Equipment"
               ]
             },
             {
@@ -7871,7 +7603,7 @@
               "indent": 1,
               "parameters": [
                 1,
-                "Starting Gear"
+                "Initial Equipment"
               ]
             },
             {
@@ -7971,6 +7703,15 @@
               "parameters": [
                 9,
                 9,
+                0
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 0,
+              "parameters": [
+                98,
+                98,
                 0
               ]
             },
@@ -10795,28 +10536,45 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2Head to the general store, or any"
+                "\\p2Shop anywhere you'd like! Though can you"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "of the shops in the inn. Once you've"
+                "make sure to at least stop by Matilda's?"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "got everything you need, talk to me"
+                "She's at the end of the hallway."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "outside the inn. See you soon!"
+                "\\p2Once you've got everything you need, talk"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "to me outside the inn. See you soon!"
               ]
             },
             {
