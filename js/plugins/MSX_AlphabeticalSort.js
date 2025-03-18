@@ -44,14 +44,25 @@ DataManager.getSortName = function(item) {
 
 Window_ItemList.prototype.sortItemList = function(data) {
     var allItems = data || $gameParty.allItems();
-    allItems.sort(function(a,b){
+    this._data = allItems.filter(function(item) {
+        return this.includes(item);
+    }, this);
+    this._data = ((arr, key) => {
+        const seen = new Map();
+        return arr.reverse().filter(obj => {
+            if (!DataManager.isBaseItem(obj)) return true;
+            if (!seen.has(obj[key])) {
+                seen.set(obj[key], true);
+                return true;
+            }
+            return false;
+        }).reverse();
+    })(this._data, 'baseItemId');
+    this._data.sort(function(a,b){
         if (DataManager.getSortName(a).toLowerCase() < DataManager.getSortName(b).toLowerCase()) return -1;
         if (DataManager.getSortName(a).toLowerCase() > DataManager.getSortName(b).toLowerCase()) return 1;
         return 0;
     });
-    this._data = allItems.filter(function(item) {
-        return this.includes(item);
-    }, this);
     if (this.includes(null)) {
         this._data.push(null);
     }

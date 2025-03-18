@@ -2578,7 +2578,8 @@ Window_ItemList.prototype.numberWidth = function() {
 
 Window_ItemList.prototype.drawItemNumber = function(item, x, y, width) {
     if (!this.needsNumber()) return;
-    var numItems = Yanfly.Util.toGroup($gameParty.numItems(item));
+    if (DataManager.isIndependent(item)) var numItems = Yanfly.Util.toGroup($gameParty.numNotUpgradedIndependentItems(DataManager.getBaseItem(item)));
+    else var numItems = Yanfly.Util.toGroup($gameParty.numItems(item));
     this.contents.fontSize = Yanfly.Param.ItemQuantitySize;
     this.drawText('\u00d7' + numItems, x, y, width, 'right');
     this.resetFontSettings();

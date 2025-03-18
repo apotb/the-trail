@@ -560,7 +560,7 @@ Game_BattlerBase.prototype.meetAllEquipRequirements = function(item) {
   }
   if (item.id < Yanfly.Param.ItemStartingId) return true; // Non-independent items, if they somehow exist
   if (this.isEquipTypeLocked(item.etypeId)) return true; // Guest party members
-  if (this.equips().filter(e => e).filter(e => e.etypeId == item.etypeId).some(e => e.baseItemId == item.baseItemId) && !this.equips().contains(item)) return false; // No duplicates
+  if ((this.equips().filter(e => e).filter(e => e.etypeId == item.etypeId).some(e => e.baseItemId == item.baseItemId && DataManager.isBaseItem(e)) && DataManager.isBaseItem(item, DataManager.getBaseItem(item), true)) && !this.equips().contains(item)) return false; // No duplicates
   if (!this.checkEquipRequirements(item)) return false; // Per-item equip requirements
   return true;
 };
