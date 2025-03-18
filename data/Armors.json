@@ -5410,7 +5410,7 @@
     "traits": [],
     "iconIndex": 437,
     "name": "Skeletal Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Boss1,0,Boss1,0,Boss_1>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Boss1,0,Boss1,0,Boss1_1>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
