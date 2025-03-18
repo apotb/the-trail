@@ -73,6 +73,7 @@ INTRO TEXT
 - Earth enemies no longer take double damage from wind attacks.
 - Infernal Wand now deals +20% fire damage.
 - Nerfed INT Books from +4 → +2 INT.
+- Buffed Woodcutting Axe from 4 → 5 ATK.
 - The tavern questline can now be started as soon as the prologue.
 - Improved the Big Mouth fight in Verdin Village.
 - Streamlined Haven Harbor progression.
