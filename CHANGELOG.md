@@ -111,6 +111,7 @@ INTRO TEXT
 - Fixed Bleeding passive from Shard of Glass displaying as 0 turns remaining in battle.
 - Fixed a typo in Cut Down's description.
 - Fixed occasional crash when loading a save file from a different version.
+- Fixed the Room 1 Key treasure popup appearing over Player 2 instead of the innkeeper.
 - Fixed issues with the Water Spirit's state overlays and shadow.
 - Fixed incorrect Application Menu title on Mac.
 
