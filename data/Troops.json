@@ -5795,7 +5795,49 @@
             "code": 655,
             "indent": 0,
             "parameters": [
-              "$gameParty.battleMembers().forEach(a => a._watchfulGaze = 0);"
+              "$gameParty.battleMembers().forEach(a => {"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "  a._watchfulGaze = 0"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "  a.clearXParamPlus();"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "  a.addHit($gameTemp._retries * 0.02);"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "  a.addEva($gameTemp._retries * 0.02);"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "  a.addCri($gameTemp._retries * 0.02);"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "});"
             ]
           },
           {

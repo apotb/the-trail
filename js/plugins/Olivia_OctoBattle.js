@@ -5491,6 +5491,7 @@ if (Olivia.OctoBattle[_0x3084("0x1c")][_0x3084("0x30")]) {
       actor._expGained = actor.currentExp() - actor._preVictoryExp;
       actor._postVictoryLv = actor._level;
     }, this);
+    $gameTemp.initRetry();
   };
   BattleManager[_0x3084("0x8e")] = function () {
     AudioManager[_0x3084("0x97")](Olivia[_0x3084("0x3")][_0x3084("0x1c")][_0x3084("0x68")]);

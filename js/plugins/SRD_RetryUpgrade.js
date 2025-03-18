@@ -588,6 +588,7 @@ __.retryBattle = function() {
 		$gameActors = JsonEx.makeDeepCopy($gameTemp._setUpRetry[4]);
 		$gamePlayer.makeEncounterCount();
 		SceneManager.goto(Scene_Retry);
+		$gameTemp._retries++;
 	}
 };
 
