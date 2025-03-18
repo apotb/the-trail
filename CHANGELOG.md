@@ -87,7 +87,8 @@ INTRO TEXT
 - Reduced the length of the long walks in Laeryidyean's Forest, Telluria Castle B1, and True Telluria Castle B5.
 - Tellurium Pulse no longer removes buffs.
 - Lowered the amount of Thick-Skinned Herbs needed to craft shields.
-- Parasites can now drop Medicated Eyedrops.
+- Flytraps and Parasites can now drop Medicated Eyedrops.
+- Darkhounds now drop Silver Wristbraces instead of Iron Wristbraces.
 - Lightning II's 3rd chain deals 33% damage instead of 25%.
 - Using an equipped item as an ingredient will automatically equip the newly crafted upgrade.
 - Pixelated battlebacks.

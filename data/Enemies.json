@@ -3109,7 +3109,7 @@
     ],
     "gold": 100,
     "name": "Darkhound",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 136>\n\n<Sideview Battler: Hound_3>\n<Sideview No Collapse>\n<Battle Select Cursor Position Y: Middle>\n<Attack Animation: 133>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nNecrotic Skull: 20% +30%\nIron Wristbraces: 5% +5%\nEnchanted Anti-Magic Charm: 5% +5%\nINT Scroll: 10% +10%\nDark Essence: 20% +20%\n</Night Boost>\n\n<Conditional Fido's Collar Drop>\nEval !$gameParty.hasItem($dataItems[77]): +1%\n</Conditional Fido's Collar Drop>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 136>\n\n<Sideview Battler: Hound_3>\n<Sideview No Collapse>\n<Battle Select Cursor Position Y: Middle>\n<Attack Animation: 133>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nNecrotic Skull: 20% +30%\nSilver Wristbraces: 5% +5%\nEnchanted Anti-Magic Charm: 5% +5%\nINT Scroll: 10% +10%\nDark Essence: 20% +20%\n</Night Boost>\n\n<Conditional Fido's Collar Drop>\nEval !$gameParty.hasItem($dataItems[77]): +1%\n</Conditional Fido's Collar Drop>",
     "params": [
       1500,
       0,
@@ -3226,7 +3226,7 @@
     ],
     "gold": 48,
     "name": "Flytrap",
-    "note": "<Armor Weakness: Piercing>\n<Element: Plant>\n<Passive State: 136>\n\n<Sideview Battler: Flytrap>\n<Attack Animation: 211>\n\n<Enemy Drops>\nArmor Bracing: 5%\nYellow Flower: 75%\nYellow Flower: 75%\nWorm: 50%\nWorm: 50%\nWorm: 50%\nMedicinal Herb: 25%\nMedicinal Herb: 25%\nMedicinal Root: 10%\nRock: 10%\nRazor-Sharp Fang: 5%\nDismembered Eye: 2.5%\nPlant Essence: 20%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Piercing>\n<Element: Plant>\n<Passive State: 136>\n\n<Sideview Battler: Flytrap>\n<Attack Animation: 211>\n\n<Enemy Drops>\nArmor Bracing: 5%\nYellow Flower: 75%\nYellow Flower: 75%\nWorm: 50%\nWorm: 50%\nWorm: 50%\nMedicinal Herb: 25%\nMedicinal Herb: 25%\nMedicinal Root: 10%\nRock: 10%\nRazor-Sharp Fang: 5%\nMedicated Eyedrops: 25%\nDismembered Eye: 2.5%\nPlant Essence: 20%\n</Enemy Drops>",
     "params": [
       1500,
       0,
