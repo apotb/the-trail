@@ -102,7 +102,7 @@ DataManager.processSELNotetags1 = function() {
 
 DataManager.processSELNotetags2 = function(obj) {
   var notedata = obj?.note.split(/[\r\n]+/);
-  obj?.saveEventLocation = false;
+  if (obj) obj.saveEventLocation = false;
   for (var i = 0; i < notedata.length; i++) {
     var line = notedata[i];
     if (line.match(/<(?:SAVE EVENT LOCATION|save event locations)>/i)) {
