@@ -77,6 +77,7 @@ INTRO TEXT
 - Streamlined Haven Harbor progression.
 - Unmodified equipment will be concatenated in the item list.
 - Increased the size of the damage/treasure popups.
+- Increased the size of the battle UI.
 - Reduced the length of the long walks in Laeryidyean's Forest, Telluria Castle B1, and True Telluria Castle B5.
 - Banditos will temporarily stop attacking you when Kevin is first defeated.
 - Tellurium Pulse no longer removes buffs.
