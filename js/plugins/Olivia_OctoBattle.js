@@ -5315,7 +5315,7 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
     if ($dataSystem.optDisplayTp) {
       height += this.lineHeight();
     }
-    var x = Graphics.boxWidth - width;
+    var x = Graphics.boxWidth - width - 12;
     var y = height * index + Olivia.OctoBattle.SideBattleUI.CeilingBuffer;
     this._targetX = this._homeX = x;
     this._targetY = this._homeY = y;
