@@ -26,6 +26,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
   - 70+ achievements for you to collect!
   - Steam Cloud integration.
   - Leaderboards now automatically use your Steam account.
+- Added the Greenfield-Solus Passage.
 - The Ruined Fort is back! It's been blocked off since Alpha 14; now it's finally revamped and ready to play.
 - 8 new skills:
   - Player 1, 2 new skills:
