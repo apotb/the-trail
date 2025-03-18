@@ -186,9 +186,43 @@
     "pages": [
       {
         "conditions": {
-          "actorHp": 50,
-          "actorId": 1,
+          "actorHp": 0,
+          "actorId": 6,
           "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 313,
+            "indent": 0,
+            "parameters": [
+              0,
+              6,
+              0,
+              24
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 0,
+          "actorId": 6,
+          "actorValid": true,
           "enemyHp": 50,
           "enemyIndex": 0,
           "enemyValid": false,
@@ -200,6 +234,33 @@
           "turnValid": false
         },
         "list": [
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Adon",
+              8,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "\\sol\\N[1]... don't forget... your boosts..."
+            ]
+          },
+          {
+            "code": 313,
+            "indent": 0,
+            "parameters": [
+              0,
+              6,
+              1,
+              24
+            ]
+          },
           {
             "code": 0,
             "indent": 0,

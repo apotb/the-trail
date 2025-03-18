@@ -90,26 +90,26 @@
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.98
+        "value": 10
       },
       {
         "code": 22,
         "dataId": 1,
-        "value": 0.06
+        "value": -10
       },
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.06
+        "value": -10
       }
     ],
     "gold": 30,
     "name": "Big Mouth",
-    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Bandito_2>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Enemy Drops>\nBell: 5%\nBandito Loot: 100%\nWater Bottle: 100%\nSmall Potion: 100%\nBandito Dagger: 12.5%\nBandito Cloak: 12.5%\nBandito Gloves: 12.5%\nAnti-Magic Charm: 5%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Bandito_2>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<AI Priority>\nParty Alive Members === 3: Attack, Lowest DEF\nParty Alive Members === 2: Attack, Highest Level\n</AI Priority>\n\n<Enemy Drops>\nBell: 5%\nBandito Loot: 100%\nWater Bottle: 100%\nSmall Potion: 100%\nBandito Dagger: 12.5%\nBandito Cloak: 12.5%\nBandito Gloves: 12.5%\nAnti-Magic Charm: 5%\n</Enemy Drops>",
     "params": [
-      150,
+      125,
       5,
-      8,
+      10,
       8,
       1,
       6,
@@ -410,7 +410,7 @@
     "params": [
       320,
       10,
-      10,
+      11,
       10,
       1,
       6,

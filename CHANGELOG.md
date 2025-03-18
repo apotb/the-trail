@@ -74,6 +74,7 @@ INTRO TEXT
 - Infernal Wand now deals +20% fire damage.
 - Nerfed INT Books from +4 → +2 INT.
 - The tavern questline can now be started as soon as the prologue.
+- Improved the Big Mouth fight in Verdin Village.
 - Streamlined Haven Harbor progression.
 - Unmodified equipment will be concatenated in the item list.
 - Increased the size of the damage/treasure popups.

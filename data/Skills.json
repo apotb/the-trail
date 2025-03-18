@@ -25,7 +25,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Attack",
-    "note": "<Boost Damage>\n\n<Max Mastery Level: 0>\n\n<setup action>\nmove user: target, front base, 20\nwait for movement\nmotion attack: user\naction animation\nwait for animation\n</setup action>\n\n<target action>\naction effect\nwait for effect\n</target action>",
+    "note": "<Boost Damage>\n\n<Max Mastery Level: 0>\n\n<Critical Rate Formula>\nif (user.isEnemy()) if (user.enemyId() == 2) {\n  if ($gameTroop.turnCount() == 3) rate = 10.0;\n  else rate = -10.0;\n}\n</Critical Rate Formula>\n\n<setup action>\nmove user: target, front base, 20\nwait for movement\nmotion attack: user\naction animation\nwait for animation\n</setup action>\n\n<target action>\naction effect\nwait for effect\n</target action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
