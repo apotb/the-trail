@@ -61,27 +61,30 @@ INTRO TEXT
   - Dispell now counts as the upgrade to Purify.
   - Removed Curify.
 - Adon tweaks:
+  - The tavern questline can now be started as soon as the prologue.
+  - Improved the Big Mouth fight in Verdin Village.
+  - Buffed Woodcutting Axe from 4 → 5 ATK.
+  - Mark has been revamped.
   - Changed Blue Slime x3 encounter in Forest Clearing to Blue Slime x2.
+  - Added a healing statue in the Dark Forest.
   - Removed the eastern entrance to the Forest Clearing.
+  - Banditos will temporarily stop attacking you when Kevin is first defeated.
+  - Streamlined Haven Harbor progression.
 - Laeryidyean's Forest tweaks:
   - Less Skeleton Knights guarding the main area.
   - Skeleton Knights stop moving when unlocking a door.
   - Added more lamps throughout the dark areas.
   - Less encounters in the maze.
   - Streamlined capture processing.
+  - Changed the Skeleton random encounter in Forest Arena...? to a map encounter, meaning you only get one per moon cycle.
 - All encounters can be run away from.
 - Earth enemies no longer take double damage from wind attacks.
 - Infernal Wand now deals +20% fire damage.
 - Nerfed INT Books from +4 → +2 INT.
-- Buffed Woodcutting Axe from 4 → 5 ATK.
-- The tavern questline can now be started as soon as the prologue.
-- Improved the Big Mouth fight in Verdin Village.
-- Streamlined Haven Harbor progression.
 - Unmodified equipment will be concatenated in the item list.
 - Increased the size of the damage/treasure popups.
 - Increased the size of the battle UI.
 - Reduced the length of the long walks in Laeryidyean's Forest, Telluria Castle B1, and True Telluria Castle B5.
-- Banditos will temporarily stop attacking you when Kevin is first defeated.
 - Tellurium Pulse no longer removes buffs.
 - Lowered the amount of Thick-Skinned Herbs needed to craft shields.
 - Parasites can now drop Medicated Eyedrops.
@@ -89,7 +92,6 @@ INTRO TEXT
 - Using an equipped item as an ingredient will automatically equip the newly crafted upgrade.
 - Pixelated battlebacks.
 - Greatly reduced the length of the king's monologue before the Champion's Banquet.
-- Changed the Skeleton random encounter in Laeryidyean's Forest - Forest Arena...? to a map encounter, meaning you get one per moon cycle.
 - A new "pity" system will increase your HIT, EVA, and CRI after each retry. It resets between encounters.
 - Quest journal display is on by default.
 - Removed Made With MV splash screen.
