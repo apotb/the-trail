@@ -125,6 +125,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
 - Fixed the Skeletal Outfit referencing the incorrect filename, causing an error.
 - Fixed "fake dupe" bug related to equipped crafting ingredients.
 - Fixed a bug where animations would take forever to load.
+- Fixed the Give Up feature messing with cutscenes.
 - Fixed Mark being able to phase through Blue Slimes.
 - Fixed Player 2's appearance not updating when unequipping Infernal Coin.
 - Fixed Player 2's Flame Body battler sprite not smiling.

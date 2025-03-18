@@ -5201,14 +5201,24 @@
               ]
             },
             {
-              "code": 122,
+              "code": 355,
               "indent": 0,
               "parameters": [
-                34,
-                34,
-                0,
-                0,
-                1
+                "$gameSelfSwitches.setValue([131, 23, 'A'], true);"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "$gameSelfSwitches.setValue([131, 24, 'A'], true);"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "$gameSelfSwitches.setValue([131, 25, 'A'], true);"
               ]
             },
             {
@@ -8192,13 +8202,13 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": false,
+            "selfSwitchValid": true,
             "switch1Id": 1,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 34,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 1
           },
           "directionFix": false,
@@ -8303,13 +8313,13 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": false,
+            "selfSwitchValid": true,
             "switch1Id": 1,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 34,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 1
           },
           "directionFix": false,
@@ -8414,13 +8424,13 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": false,
+            "selfSwitchValid": true,
             "switch1Id": 1,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 34,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 1
           },
           "directionFix": false,

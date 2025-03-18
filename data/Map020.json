@@ -22848,6 +22848,13 @@
               ]
             },
             {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameTemp._disableGiveUp = true;"
+              ]
+            },
+            {
               "code": 301,
               "indent": 0,
               "parameters": [
@@ -22855,6 +22862,13 @@
                 2,
                 false,
                 false
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameTemp._disableGiveUp = false;"
               ]
             },
             {
