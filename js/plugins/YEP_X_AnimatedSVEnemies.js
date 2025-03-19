@@ -2377,6 +2377,7 @@ Sprite_Enemy.prototype.createShadowSprite = function() {
     this._shadowSprite.bitmap = this._mainSprite.bitmap;
     this._shadowSprite.anchor.set(0.5, 1);
     this._shadowSprite.tint = 0x000000;
+    this._shadowSprite.y = -4;
     this._shadowSprite.z = 0.99;
     this.addChildAt(this._shadowSprite, this.children.indexOf(this._mainSprite) + 1);
 };
@@ -2600,8 +2601,8 @@ Sprite_Enemy.prototype.adjustSVShadowSettings = function() {
     var scaleY = this._enemy.sideviewShadowScaleY();
     if (scaleX === 'auto') scaleX = this._mainSprite.bitmap.width / 9 / 64;
     if (scaleY === 'auto') scaleY = this._mainSprite.bitmap.width / 9 / 64;
-    this._shadowSprite.scale.x = scaleX * this._enemy.spriteScaleX() * (1 + this.addFloatingHeight()) / this._enemy.spriteScaleX();
-    this._shadowSprite.scale.y = scaleY * this._enemy.spriteScaleY() * (1 + this.addFloatingHeight()) / this._enemy.spriteScaleY() * -0.5;
+    this._shadowSprite.scale.x = scaleX * this._enemy.spriteScaleX() * (1 + this.addFloatingHeight()) * (64 / this.width) * -1;
+    this._shadowSprite.scale.y = scaleY * this._enemy.spriteScaleY() * (1 + this.addFloatingHeight()) * (64 / this.height) * -0.5;
 };
 
 Sprite_Enemy.prototype.updateMotion = function() {
