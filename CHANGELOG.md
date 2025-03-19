@@ -58,16 +58,15 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
     - Waterfall (Tome)
   - 1 new power:
     - [REDACTED RESISTANCE]
-- Added 2 new INT Book locations.
-- Added dynamic shadows in battle.
-- Added animated slime battler sprites.
-  
 - 5 new enemies:
   - Tortured Soul
   - Will o' Wisp
   - [REDACTED GENERAL]
   - Water Elemental EX
   - Earth Spirit
+- Added 2 new INT Book locations.
+- Added dynamic shadows in battle.
+- Added animated slime battler sprites.
 
 ### Changes
 - Rebalanced Boost Points:
