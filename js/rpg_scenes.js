@@ -2406,10 +2406,10 @@ Scene_Battle.prototype.createSpriteset = function() {
 
 Scene_Battle.prototype.createAllWindows = function() {
     this.createLogWindow();
+    this.createHelpWindow();
     this.createStatusWindow();
     this.createPartyCommandWindow();
     this.createActorCommandWindow();
-    this.createHelpWindow();
     this.createSkillWindow();
     this.createItemWindow();
     this.createActorWindow();
