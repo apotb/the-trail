@@ -3612,7 +3612,7 @@
     "message1": " casts %1!",
     "message2": "",
     "mpCost": 14,
-    "name": "Staff Impulse",
+    "name": "Impulse",
     "note": "<Boost Damage>\n\n<setup action>\nhide battle hud\ncamera focus: user\nzoom: 200%\nmotion chant: user\nwait: 45\nmotion spell: user\ncamera focus: target\nzoom: 150%\nwait for camera\nwait for zoom\n</setup action>\n\n<whole action>\nshake screen: 1, 9, 60\naction animation\nwait for animation\nshow battle hud\n</whole action>\n\n<target action>\naction effect\nwait for effect\nwait: 5\nclear battle log\n</target action>",
     "occasion": 1,
     "repeats": 1,

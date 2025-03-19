@@ -120,6 +120,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
 - A new "pity" system will increase your HIT, EVA, and CRI after each retry. It resets between encounters.
 - Quest journal display is on by default.
 - Removed Made With MV splash screen.
+- Renamed Staff Impulse to Impulse.
 
 ### Bug Fixes
 - Fixed name boxes not showing up after battle.
