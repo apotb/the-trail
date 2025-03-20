@@ -5279,7 +5279,8 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
   Window_BattleSideStates.prototype = Object.create(Window_BattleSideBase.prototype);
   Window_BattleSideStates.prototype.constructor = Window_BattleSideStates;
   Window_BattleSideStates.prototype.initialize = function (x, y, width, height, index) {
-    width = Olivia.OctoBattle.SideBattleUI.StatesMax * Window_Base._iconWidth + 4;
+    width = 4 + (Olivia.OctoBattle.SideBattleUI.StatesMax * Window_Base._iconWidth) / 2;
+    height = (height - 4) * ($gameParty.size() < 6 ? 3 : 2) + 4;
     x -= width;
     Window_BattleSideBase.prototype.initialize.call(this, x, y, width, height, index);
     this.refresh();
@@ -5290,14 +5291,62 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
   Window_BattleSideStates.prototype.drawIcon = function (iconIndex, x, y) {
     Window_Base.prototype.drawIcon.call(this, iconIndex, x, y);
   };
+  Window_BattleSideStates.prototype.split = function() {
+    return Olivia.OctoBattle.SideBattleUI.StatesMax / 2;
+  };
   Window_BattleSideStates.prototype.refresh = function () {
     Window_BattleSideBase.prototype.refresh.call(this);
     if (!!this._actor) {
       var x = this.contents.width - 2;
-      x -= Math.min(Olivia.OctoBattle.SideBattleUI.StatesMax, this._actor.allIcons().length) * Window_Base._iconWidth;
+      x -= Math.min(this.split(), this._actor.allIcons().length) * Window_Base._iconWidth;
       this.drawActorIcons(this._actor, x, 0, this.contents.width - 2 - x);
       this._actor._needsStatusStateRefresh = undefined;
     }
+  };
+  Window_BattleSideStates.prototype.drawActorIcons = function(actor, wx, wy, ww) {
+    ww = ww || 144;
+    this._icons = actor.allIcons().slice(0, this.split() * ($gameParty.size() < 6 ? 3 : 2));
+    for (var i = 0; i < this._icons.length; i++) {
+        let x = wx + Window_Base._iconWidth * (i % this.split());
+        let y = wy + 2 + (Window_Base._iconHeight * Math.floor(i / this.split()));
+        this.drawIcon(this._icons[i], x, y);
+    }
+    this.drawActorIconsTurns(actor, wx, wy, ww);
+  };
+  Window_BattleSideStates.prototype.drawActorIconsTurns = function(actor, wx, wy, ww) {
+    var iw = Window_Base._iconWidth;
+    var max = this._icons.length;
+    var shownMax = max; // var shownMax = Math.floor(ww / iw);
+    for (var i = 0; i < actor.states().length; ++i) {
+      if (shownMax <= 0) break;
+      var state = actor.states()[i];
+      if (state.iconIndex <= 0) continue;
+      if (state.autoRemovalTiming > 0) {
+        this.drawStateTurns(actor, state, wx, wy);
+      }
+      if (state.removeByWalking && !$gameParty.inBattle()) this.drawStateSteps(actor, state, wx, wy);
+      this.drawStateCounter(actor, state, wx, wy);
+      wx += iw;
+      // NEW
+      if ((i + 1) % (this.split()) == 0) {
+        wx -= iw * this.split();
+        wy += Window_Base._iconHeight;
+      }
+      // END OF NEW
+      --shownMax;
+    }
+    for (var i = 0; i < 8; ++i) {
+      if (shownMax <= 0) break;
+      if (actor._buffs[i] === 0) continue;
+      this.drawBuffTurns(actor, i, wx, wy);
+      if (Yanfly.Param.BSCShowBuffRate) {
+        this.drawBuffRate(actor, i, wx, wy - 12);
+      }
+      wx += iw;
+      --shownMax;
+    }
+    this.resetFontSettings();
+    this.resetTextColor();
   };
   Window_BattleSideStates.prototype.checkRefreshConditions = function () {
     if (!!this._actor) {

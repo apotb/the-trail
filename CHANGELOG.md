@@ -111,6 +111,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
   - Streamlined capture processing.
   - Changed the Skeleton random encounter in Forest Arena...? to a map encounter, meaning you only get one shot per moon cycle.
 - Improvements to battle scene:
+  - Status effects are now shown in a 3x3 grid (used to be a line of 6 icons).
   - Status effects no longer show above party members.
   - Larger party member status windows.
   - Gradient background behind party member status windows.

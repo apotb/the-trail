@@ -715,6 +715,15 @@ if (Olivia[_0x1db1("0x14")] && Olivia[_0x1db1("0x14")][_0x1db1("0x6b")] && Olivi
       this["updateStateIconTooltipWindow"]();
     }
   };
+  Window_BattleSideStates.prototype.isMouseOverStates = function () {
+    let cols = Math.min(this._icons.length, this.split());
+    let width = (this.width - 4) * (cols / this.split()) + 4;
+    let x = this.canvasToLocalX(TouchInput["_mouseOverX"]) - this.width + width;
+    let y = this.canvasToLocalY(TouchInput["_mouseOverY"]);
+    let lines = Math.min(Math.floor((this._icons.length - 1) / this.split()) + 1, this.split());
+    let height = (this.height - 4) * (lines / ($gameParty.size() < 6 ? 3 : 2)) + 4;
+    return this.isFullyVisible() && x >= 0 && y >= 0 && x < width && y < height;
+  };
 }
 if (Olivia[_0x1db1("0x12")]["Enabled"]) {
   Olivia[_0x1db1("0x12")][_0x1db1("0x68")] = Window_BattleStatus["prototype"][_0x1db1("0x92")];
