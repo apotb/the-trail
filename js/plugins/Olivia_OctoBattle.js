@@ -5068,6 +5068,7 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
   };
   Window_BattleSideBase.prototype.setNewActor = function () {
     this._actor = $gameParty.members()[this._index];
+    this._battler = this._actor;
     this.refresh();
   };
   Window_BattleSideBase.prototype.scaleRate = function () {
@@ -5356,6 +5357,9 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
     }
     this.addChild(new Window_BattleSideStates(0, y1, width, height, index));
   };
+  Window_BattleSideStatus.prototype.dimOffset = function () {
+    return 5;
+  };
   Window_BattleSideStatus.prototype.refresh = function () {
     this.contents.clear();
     if (!!this._actor) {
@@ -5363,9 +5367,9 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
       var c2 = this.dimColor2();
       var w1 = Math.ceil(this.width / 4);
       var w2 = this.width - w1;
-      var h = this.height;
-      this.contents.gradientFillRect(0, 0, w1, h, c2, c1);
-      this.contents.fillRect(w1, 0, w2, h, c1);
+      var h = this.height - this.dimOffset();
+      this.contents.gradientFillRect(0, 0 + this.dimOffset(), w1, h, c2, c1);
+      this.contents.fillRect(w1, 0 + this.dimOffset(), w2, h, c1);
     }
   };
   Window_BattleSideStatus.prototype.update = function () {

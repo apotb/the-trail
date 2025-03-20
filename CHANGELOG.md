@@ -110,6 +110,10 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
   - Less encounters in the maze.
   - Streamlined capture processing.
   - Changed the Skeleton random encounter in Forest Arena...? to a map encounter, meaning you only get one shot per moon cycle.
+- Improvements to battle scene:
+  - Larger actor status windows.
+  - Gradient background behind actor status windows.
+  - Pixelated battlebacks.
 - All encounters can be run away from.
 - Infernal Wand now deals +20% fire damage.
 - Nerfed INT Books from +4 → +2 INT.
@@ -123,7 +127,6 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
 - Darkhounds now drop Silver Wristbraces instead of Iron Wristbraces.
 - Lightning II's 3rd chain deals 33% damage instead of 25%.
 - Using an equipped item as an ingredient will automatically equip the newly crafted upgrade.
-- Pixelated battlebacks.
 - Greatly reduced the length of the king's monologue before the Champion's Banquet.
 - Shortened the Village Headman's story of the Great Collapse.
 - A new "pity" system will increase your HIT, EVA, and CRI after each retry. It resets between encounters.

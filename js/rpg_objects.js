@@ -2044,7 +2044,7 @@ Game_Action.prototype.apply = function(target) {
     }
     if ($gameParty.inBattle() && target.isActor()) {
         index = $gameParty.battleMembers().indexOf(target);
-        SceneManager._scene._sideStatusWindows[index].children[6].refresh()
+        if (SceneManager._scene._sideStatusWindows[index].find(c => c instanceof Window_BattleSideName)) SceneManager._scene._sideStatusWindows[index].find(c => c instanceof Window_BattleSideName).refresh()
     }
 };
 
