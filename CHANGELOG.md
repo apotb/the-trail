@@ -15,7 +15,7 @@ At long last, The Trail is on Steam! Collect 70+ achievements, store your saves 
 Nothing but love for the itch.io launcher, but let's be honest: nobody already had it installed. Everyone has Steam though, making The Trail more accessible than ever!
 All updates will now be downloaded via Steam. The itch.io page and GitHub releases will no longer be maintained.
 
-As with any major update, you'll find plenty of balance changes and improvements. You'll find that the boost system, cleric skills, and more have been polished.
+As with any major update, you'll find plenty of balance changes and improvements. You'll find that the boost system, skill pools, and more have been polished.
 Oh, and for my Linux players; you're finally supported again! Sorry I abandoned you for Alpha 15... there were complications, but everything should run smoothly now.
 
 That just about summarizes the major features in Alpha 16. If you'd like to know everything that changed, check out the detailed changelog below:
@@ -28,8 +28,10 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
   - Leaderboards now automatically use your Steam account.
 - Added the Greenfield-Solus Passage.
 - The Ruined Fort is back! It's been blocked off since Alpha 14; now it's finally revamped and ready to play.
-- 8 new skills:
-  - Player 1, 2 new skills:
+- 10 new skills:
+  - Player 1, 4 new skills:
+    - En Garde!: Special @ L1
+    - Taunt: Special @ L1
     - [P] Steadfast: Passive @ L27
     - Prolong: Magic @ L30
   - Player 2, 2 new skills:
@@ -73,15 +75,23 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
   - Everyone starts with 1 BP.
   - Using Guard grants +1 BP.
   - Boosted hits are guaranteed to land.
-- Cleric rebalancing:
-  - Revive/Resurgence are now guaranteed to proc. Boosting them increases the amount of HP recovered.
-  - Resurgence grants the Rejuvenation buff.
-  - Purify/Dispell now only cure 1 debuff. However, each BP used will cure an additional debuff.
-  - Buffed Purify MP cost from 15 → 8.
-  - Buffed Dispell MP cost from 50 → 16.
-  - Dispell is now learned at level 15 → 16.
-  - Dispell now counts as the upgrade to Purify.
-  - Removed Curify.
+- Skill rebalancing:
+  - Mage:
+    - Ice I is now learned at level 5 → 4.
+  - Cleric:
+    - Revive/Resurgence are now guaranteed to proc. Boosting them increases the amount of HP recovered.
+    - Resurgence grants the Rejuvenation buff.
+    - Purify/Dispell now only cure 1 debuff. However, each BP used will cure an additional debuff.
+    - Buffed Purify MP cost from 15 → 8.
+    - Buffed Dispell MP cost from 50 → 16.
+    - Dispell is now learned at level 15 → 16.
+    - Dispell now counts as the upgrade to Purify.
+    - Removed Curify.
+  - Rogue:
+    - Backstab is now learned at level 10 → 5.
+    - Foresight is now learned at level 5 → 7.
+    - Renamed Offensive Stance to Combat Stance.
+    - Combat Stance is now learned at level 7 → 10.
 - Adon tweaks:
   - The tavern questline can now be started as soon as you obtain the Quest Log.
   - Improved the Big Mouth fight in Verdin Village.

@@ -2376,10 +2376,10 @@
     ],
     "hitType": 0,
     "iconIndex": 14,
-    "message1": " gets into an offensive stance!",
+    "message1": " gets into a combat stance!",
     "message2": "",
     "mpCost": 8,
-    "name": "Offensive Stance",
+    "name": "Combat Stance",
     "note": "<Require = 0 BP>\n\n<setup action>\nmotion skill: user\n</setup action>",
     "occasion": 1,
     "repeats": 1,
@@ -4461,7 +4461,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Angers the enemy troop, increasing your AGR and making\nenemies more like to target you. Lasts for \\c[27]\\bpturn[4]\\c[0] to \\c[27]\\bpturn[5]\\c[0] turns.",
+    "description": "Angers the enemy troop. For \\c[27]\\bpturn[4]\\c[0] turns, attacks\nwill be more likely to come your way.",
     "effects": [
       {
         "code": 21,
@@ -4474,7 +4474,7 @@
     "iconIndex": 121,
     "message1": " taunts the enemy!",
     "message2": "",
-    "mpCost": 20,
+    "mpCost": 3,
     "name": "Taunt",
     "note": "<Boost Turns>\n\n<setup action>\nmotion skill: user\nwait: 15\n</setup action>",
     "occasion": 1,
@@ -5146,6 +5146,43 @@
     "scope": 7,
     "speed": 0,
     "stypeId": 2,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 148,
+    "animationId": 53,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Enter a defensive stance, or order an ally to do so.\nThis will decrease incoming damage by 10% for \\c[27]\\bpturn[5]\\c[0] turns.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 204,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 13,
+    "message1": " uses %1!",
+    "message2": "",
+    "mpCost": 3,
+    "name": "En Garde!",
+    "note": "<Boost Turns>\n\n<Hide if Learned Skill: 84>\n<Mastery Group: 84>\n\n<setup action>\nmotion guard: user\nwait: 15\n</setup action>\n\n<whole action>\nmotion guard: targets\naction animation\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\nwait: 5\n</target action>\n\n<follow action>\nmotion standby: targets\n</follow action>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 11,
+    "speed": 0,
+    "stypeId": 1,
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0
