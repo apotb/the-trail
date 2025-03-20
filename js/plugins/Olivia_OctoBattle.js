@@ -4704,6 +4704,7 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
     this._sideStatusWindows = [];
     for (var i = 0; i < $gameParty.maxBattleMembers(); i++) {
       var newStatusWindow = new Window_BattleSideStatus(i);
+      newStatusWindow.x += newStatusWindow.width;
       this._sideStatusWindows.push(newStatusWindow);
       this.addWindow(newStatusWindow);
     }

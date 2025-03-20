@@ -112,8 +112,9 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
   - Changed the Skeleton random encounter in Forest Arena...? to a map encounter, meaning you only get one shot per moon cycle.
 - Improvements to battle scene:
   - Status effects no longer show above party members.
-  - Larger actor status windows.
-  - Gradient background behind actor status windows.
+  - Larger party member status windows.
+  - Gradient background behind party member status windows.
+  - Party member status windows now "slide in".
   - Pixelated battlebacks.
 - All encounters can be run away from.
 - Infernal Wand now deals +20% fire damage.
