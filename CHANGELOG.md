@@ -151,6 +151,8 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
 - Fixed Player 2's Flame Body battler sprite not smiling.
 - Fixed a bug where the Solus Guard's level/EXP bar would show instead of Player 2's after defeating Big Mouth.
 - Fixed Bleeding passive from Shard of Glass displaying as 0 turns remaining in battle.
+- Fixed Fiery Blood not showing an animation.
+- Fixed Red Gel and Icy Gel counting as physical hits instead of certain hits.
 - Fixed a typo in Cut Down's description.
 - Fixed occasional crash when loading a save file from a different version.
 - Fixed the Room 1 Key treasure popup appearing over Player 2 instead of the innkeeper.
