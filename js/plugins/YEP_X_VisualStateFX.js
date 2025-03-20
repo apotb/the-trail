@@ -366,7 +366,7 @@ Sprite_Battler.prototype.initChildStateSprites = function(overlay, icon) {
       this.addChild(this._stateSprite);
     }
   }
-  if (icon) {
+  /*if (icon) {
     if (!this._stateIconSprite) {
       this._stateIconSprite = new Sprite_StateIcon();
     }
@@ -376,7 +376,7 @@ Sprite_Battler.prototype.initChildStateSprites = function(overlay, icon) {
     } else {
       this.addChild(this._stateIconSprite);
     }
-  }
+  }*/
 };
 
 Sprite_Battler.prototype.initStateAnimationSprite = function() {
