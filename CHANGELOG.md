@@ -137,6 +137,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
 - Renamed Staff Impulse to Impulse.
 
 ### Bug Fixes
+- Fixed the status effect tooltip sometimes giving information for the wrong battler.
 - Fixed name boxes not showing up after battle.
 - Fixed an occasional crash when loading/deleting a save.
 - Fixed being able to skip the Adonian Monsters troop by running away.

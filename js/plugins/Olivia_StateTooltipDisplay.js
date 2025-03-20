@@ -364,7 +364,7 @@ Sprite_StateIcon[_0x1db1("0x54")][_0x1db1("0x5")] = function () {
   return true;
 };
 Olivia[_0x1db1("0x12")][_0x1db1("0x60")] = Sprite_StateOverlay[_0x1db1("0x54")][_0x1db1("0x92")];
-Sprite_StateOverlay[_0x1db1("0x54")][_0x1db1("0x92")] = function () {
+/*Sprite_StateOverlay[_0x1db1("0x54")][_0x1db1("0x92")] = function () {
   Olivia[_0x1db1("0x12")][_0x1db1("0x60")][_0x1db1("0x7a")](this);
   if (!!this["tooltipWindow"]() && this[_0x1db1("0x47")]()) {
     this[_0x1db1("0x51")]();
@@ -411,7 +411,7 @@ Sprite_StateOverlay[_0x1db1("0x54")]["isFullyVisible"] = function () {
     }
   }
   return true;
-};
+};*/
 function Window_StateIconTooltip() {
   this[_0x1db1("0x7e")][_0x1db1("0x2a")](this, arguments);
 }
