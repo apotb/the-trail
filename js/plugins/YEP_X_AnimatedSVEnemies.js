@@ -2379,7 +2379,7 @@ Sprite_Enemy.prototype.createShadowSprite = function() {
     this._shadowSprite.tint = 0x000000;
     this._shadowSprite.y = -4;
     this._shadowSprite.z = 0.99;
-    this.addChildAt(this._shadowSprite, this.children.indexOf(this._mainSprite) + 1);
+    this.addChildAt(this._shadowSprite, this.children.indexOf(this._mainSprite));
 };
 
 Sprite_Enemy.prototype.createWeaponSprite = function() {
