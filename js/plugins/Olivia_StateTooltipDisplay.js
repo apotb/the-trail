@@ -682,6 +682,28 @@ if (Imported["YEP_BattleEngineCore"] && Imported["YEP_BuffsStatesCore"] && Olivi
       this[_0x1db1("0x51")]();
     }
   };
+  Window_Help.prototype.isMouseOverStates = function () {
+    var x = this.canvasToLocalX(TouchInput["_mouseOverX"]);
+    var y = this.canvasToLocalY(TouchInput["_mouseOverY"]);
+    return this.isFullyVisible() && x >= this._statesX && y >= this._statesY && x < this._statesX + this._statesW && y < this._statesY + this._statesH;
+  };
+  Window_Help.prototype.drawBattlerWithIcons = function(battler) {
+    var icons = battler.allIcons();
+    var text = battler.name();
+    var wx = 0;
+    var wy = 0;
+    this.drawText(text, wx, wy, this.contents.width, 'center');
+    wy += this.lineHeight();
+    var ww = icons.length * Window_Base._iconWidth;
+    ww = Math.min(ww, this.contents.width);
+    wx = (this.contents.width - ww) / 2;
+    this.drawActorIcons(battler, wx, wy, ww);
+    // NEW
+    this._statesX = wx + (Window_Base._iconWidth / 2) + 2;
+    this._statesY = wy + (Window_Base._iconHeight / 2) + 2;
+    this._statesW = ww;
+    this._statesH = Window_Base._iconHeight + 4;
+  };
 }
 if (Olivia[_0x1db1("0x12")][_0x1db1("0x77")][_0x1db1("0x85")]) {
   Olivia[_0x1db1("0x12")][_0x1db1("0x71")] = Window_SkillStatus["prototype"][_0x1db1("0x93")];
