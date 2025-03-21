@@ -81,6 +81,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
 - Skill rebalancing:
   - Mage:
     - Ice I is now learned at level 5 → 4.
+    - Lightning II's 3rd chain deals 33% damage instead of 25%.
   - Cleric:
     - Revive/Resurgence are now guaranteed to proc. Boosting them increases the amount of HP recovered.
     - Resurgence grants the Rejuvenation buff.
@@ -134,7 +135,6 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
 - Many enemies can now drop the Selfish Candle.
 - Flytraps and Parasites can now drop Medicated Eyedrops.
 - Darkhounds now drop Silver Wristbraces instead of Iron Wristbraces.
-- Lightning II's 3rd chain deals 33% damage instead of 25%.
 - Using an equipped item as an ingredient will automatically equip the newly crafted upgrade.
 - Added sideview battlers for the Werewolf and Chilling Apparition.
 - Changed the Suffering Soul sprite.
