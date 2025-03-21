@@ -22602,7 +22602,7 @@
           "walkAnime": true
         }
       ],
-      "x": 37,
+      "x": 40,
       "y": 17
     },
     {
@@ -22662,7 +22662,7 @@
           "walkAnime": true
         }
       ],
-      "x": 49,
+      "x": 46,
       "y": 17
     },
     {
@@ -22725,192 +22725,7 @@
       "x": 49,
       "y": 23
     },
-    {
-      "id": 57,
-      "name": "EV057",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 59,
-            "switch1Valid": true,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "FortSoul",
-            "direction": 6,
-            "pattern": 1,
-            "characterIndex": 1
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": true,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 153,
-            "itemValid": true,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 59,
-            "switch1Valid": true,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "FortSoul",
-            "direction": 6,
-            "pattern": 1,
-            "characterIndex": 1
-          },
-          "list": [
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "FortSoul",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\solWe're counting our numbers,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "do not interrupt us!"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 52,
-            "switch1Valid": true,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 43,
-      "y": 30
-    },
+    null,
     {
       "id": 58,
       "name": "EV058",
@@ -23094,7 +22909,7 @@
           "walkAnime": true
         }
       ],
-      "x": 45,
+      "x": 47,
       "y": 30
     },
     {
@@ -23666,7 +23481,7 @@
           "walkAnime": true
         }
       ],
-      "x": 41,
+      "x": 39,
       "y": 18
     },
     {
@@ -23852,7 +23667,7 @@
           "walkAnime": true
         }
       ],
-      "x": 44,
+      "x": 45,
       "y": 18
     },
     {
@@ -24075,7 +23890,7 @@
         }
       ],
       "x": 49,
-      "y": 30
+      "y": 28
     },
     {
       "id": 65,
@@ -32076,7 +31891,7 @@
           "walkAnime": true
         }
       ],
-      "x": 41,
+      "x": 39,
       "y": 16
     },
     {
@@ -32624,7 +32439,7 @@
           "walkAnime": true
         }
       ],
-      "x": 44,
+      "x": 45,
       "y": 16
     },
     {
@@ -33377,7 +33192,7 @@
           "walkAnime": true
         }
       ],
-      "x": 45,
+      "x": 47,
       "y": 16
     },
     {
@@ -33896,7 +33711,7 @@
           "walkAnime": true
         }
       ],
-      "x": 41,
+      "x": 39,
       "y": 19
     },
     {
@@ -34816,7 +34631,7 @@
           "walkAnime": true
         }
       ],
-      "x": 42,
+      "x": 41,
       "y": 16
     },
     {
@@ -35002,7 +34817,7 @@
           "walkAnime": true
         }
       ],
-      "x": 40,
+      "x": 37,
       "y": 18
     },
     {
@@ -35188,7 +35003,7 @@
           "walkAnime": true
         }
       ],
-      "x": 40,
+      "x": 37,
       "y": 19
     },
     {
@@ -35374,7 +35189,7 @@
           "walkAnime": true
         }
       ],
-      "x": 40,
+      "x": 37,
       "y": 20
     },
     {
@@ -35560,7 +35375,7 @@
           "walkAnime": true
         }
       ],
-      "x": 40,
+      "x": 37,
       "y": 21
     },
     {
@@ -44859,7 +44674,7 @@
           "walkAnime": true
         }
       ],
-      "x": 40,
+      "x": 37,
       "y": 16
     },
     {
@@ -45045,7 +44860,7 @@
           "walkAnime": true
         }
       ],
-      "x": 42,
+      "x": 41,
       "y": 19
     },
     {
@@ -45231,7 +45046,7 @@
           "walkAnime": true
         }
       ],
-      "x": 42,
+      "x": 41,
       "y": 18
     },
     {
@@ -45417,7 +45232,7 @@
           "walkAnime": true
         }
       ],
-      "x": 42,
+      "x": 41,
       "y": 20
     },
     {
@@ -45603,7 +45418,7 @@
           "walkAnime": true
         }
       ],
-      "x": 42,
+      "x": 41,
       "y": 21
     },
     {
@@ -45789,7 +45604,7 @@
           "walkAnime": true
         }
       ],
-      "x": 42,
+      "x": 41,
       "y": 25
     },
     {
@@ -46337,7 +46152,7 @@
           "walkAnime": true
         }
       ],
-      "x": 46,
+      "x": 49,
       "y": 16
     },
     {
@@ -46523,7 +46338,7 @@
           "walkAnime": true
         }
       ],
-      "x": 45,
+      "x": 47,
       "y": 20
     },
     {
@@ -46709,7 +46524,7 @@
           "walkAnime": true
         }
       ],
-      "x": 46,
+      "x": 49,
       "y": 20
     },
     {
@@ -46895,7 +46710,7 @@
           "walkAnime": true
         }
       ],
-      "x": 45,
+      "x": 47,
       "y": 25
     },
     {
@@ -47081,7 +46896,7 @@
           "walkAnime": true
         }
       ],
-      "x": 45,
+      "x": 47,
       "y": 29
     },
     {
@@ -47267,7 +47082,7 @@
           "walkAnime": true
         }
       ],
-      "x": 45,
+      "x": 47,
       "y": 21
     },
     {
@@ -47453,7 +47268,7 @@
           "walkAnime": true
         }
       ],
-      "x": 45,
+      "x": 47,
       "y": 19
     },
     {
@@ -47639,7 +47454,7 @@
           "walkAnime": true
         }
       ],
-      "x": 45,
+      "x": 47,
       "y": 18
     },
     {
@@ -47825,7 +47640,7 @@
           "walkAnime": true
         }
       ],
-      "x": 46,
+      "x": 49,
       "y": 25
     },
     {
@@ -48011,7 +47826,7 @@
           "walkAnime": true
         }
       ],
-      "x": 46,
+      "x": 49,
       "y": 24
     },
     {
@@ -48197,7 +48012,7 @@
           "walkAnime": true
         }
       ],
-      "x": 46,
+      "x": 49,
       "y": 19
     },
     {
@@ -48383,7 +48198,7 @@
           "walkAnime": true
         }
       ],
-      "x": 46,
+      "x": 49,
       "y": 18
     },
     {
@@ -48569,7 +48384,7 @@
           "walkAnime": true
         }
       ],
-      "x": 47,
+      "x": 46,
       "y": 25
     },
     {
@@ -48755,7 +48570,7 @@
           "walkAnime": true
         }
       ],
-      "x": 46,
+      "x": 49,
       "y": 30
     },
     null
