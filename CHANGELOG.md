@@ -121,6 +121,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
   - Pixelated battlebacks.
 - All encounters can be run away from.
 - Infernal Wand now deals +20% fire damage.
+- Nerfed Hero Sword Replica outgoing element damage from +50% → +25%.
 - Nerfed INT Books from +4 → +2 INT.
 - Unmodified equipment will be concatenated in the item list.
 - Increased the size of the damage/treasure popups.
