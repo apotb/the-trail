@@ -56,10 +56,10 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
     - Tideflame Headpiece
     - Bloodwave Headband
     - Vortex Mask
-  - 2 new accessories:
+  - 1 new accessories:
     - Soulstealer's Necklace
+  - 2 new magic equip:
     - Soul Shackles (Tome)
-  - 1 new magic equip:
     - Waterfall (Tome)
   - 1 new power:
     - [REDACTED RESISTANCE]
