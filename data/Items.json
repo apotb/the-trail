@@ -5529,7 +5529,7 @@
   },
   {
     "id": 190,
-    "animationId": 0,
+    "animationId": 41,
     "consumable": true,
     "damage": {
       "critical": false,
@@ -5538,13 +5538,32 @@
       "type": 0,
       "variance": 20
     },
-    "description": "",
-    "effects": [],
+    "description": "Celebrate the holidays with this tasty pastry!\nRegenerates HP for a few turns after eating.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 28,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 4,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0,
+        "value2": 30
+      }
+    ],
     "hitType": 0,
-    "iconIndex": 0,
+    "iconIndex": 1300,
     "itypeId": 1,
-    "name": "",
-    "note": "Was once the CASTLE FOOD RECIPES.",
+    "name": "Gingerbread Cookie",
+    "note": "<Menu Category: Foodstuffs>\n\n<Item Present Buy Price: 2>\n<Item Present Sell Price: 1>\n\nWas once the CASTLE FOOD RECIPES.",
     "occasion": 0,
     "price": 0,
     "repeats": 1,

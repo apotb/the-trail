@@ -43,7 +43,8 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
   - Player 4, 2 new skills:
     - [P] Assassin: Passive @ L28
     - Adrenaline: Special @ L30 
-- 2 new items:
+- 3 new items:
+  - Gingerbread Cookie
   - Phantasmal Charm
   - [REDACTED HELMET]
 - 1 new weapon:
