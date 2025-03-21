@@ -2108,7 +2108,7 @@
     ],
     "gold": 600,
     "name": "Vessel of the Forgotten General",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 141>\n\n<Sideview Battler: Evil1_6>\n<Weapon Image: 242>\n<Attack Animation: 126>\n<HP Gauge Width: 288>\n\n<Boost Skill 31: Full>\n<Boost Skill 32: Full>\n<Boost Skill 60: Full>\n<AI Priority>\nTurn < 3 +++ State !== Soul Shackles: Soul Shackles, Highest MaxHP\nState !== State 48 +++ Random 50%: Soul Shackles, Highest MaxHP\n\nState !== Magic Enhance +++ User HP% param >= 25%: Magic Enhance, User\n\nEval user.phase() == 1 +++ State === Weak Point: Purify, User\nEval user.phase() == 1 +++ State !== Magic Resistant: Magic Resistance, User\nEval user.phase() == 1 +++ State !== Blinded: Dark Orb\n\nUser HP% param <= 50%: Soulsteal, Highest HP\n\nEval user.phase() == 2 +++ Random 30%: Soulsteal, Highest HP\nEval user.phase() == 2 +++ State !== Magic Prone +++ Random 40%: Magic Proneness, Highest MDF\nEval user.phase() == 2 +++ State !== Burning Up! +++ Random 40%: Fire II\nEval user.phase() == 2 +++ State !== Blinded +++ Random 40%: Dark Orb\nEval user.phase() == 2: Engulfing Darkness\n</AI Priority>\n\n<Enemy Drops>\nForgotten General's Resistance: 100%\nForgotten General's Helmet: 100%\nSoulstealer's Necklace: 100%\nSoul Shackles (Tome): 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 141>\n\n<Sideview Battler: Evil1_6>\n<Weapon Image: 242>\n<Attack Animation: 126>\n<HP Gauge Width: 288>\n\n<Boost Skill 31: Full>\n<Boost Skill 32: Full>\n<Boost Skill 60: Full>\n<AI Priority>\nTurn < 3 +++ State !== Soul Shackles: Soul Shackles, Highest MaxHP\nState !== State 48 +++ Random 50%: Soul Shackles, Highest MaxHP\n\nState !== Magic Enhance +++ User HP% param >= 25%: Magic Enhance, User\n\nEval user.phase() == 1 +++ State === Weak Point: Purify, User\nEval user.phase() == 1 +++ State !== Magic Resistant: Magic Resistance, User\nEval user.phase() == 1 +++ State !== Blinded: Dark Orb\n\nUser HP% param <= 50%: Soulsteal, Highest HP\n\nEval user.phase() == 2 +++ Random 30%: Soulsteal, Highest HP\nEval user.phase() == 2 +++ State !== Magic Prone +++ Random 40%: Magic Proneness, Highest MDF\nEval user.phase() == 2 +++ State !== Burning Up! +++ Random 40%: Fire II\nEval user.phase() == 2 +++ State !== Blinded +++ Random 40%: Dark Orb\nEval user.phase() == 2: Engulfing Darkness\n</AI Priority>\n\n<Enemy Drops>\nPocket Mirror: 5%\nForgotten General's Resistance: 100%\nForgotten General's Helmet: 100%\nSoulstealer's Necklace: 100%\nSoul Shackles (Tome): 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
     "params": [
       12000,
       9999,
@@ -2679,7 +2679,7 @@
     ],
     "gold": 100,
     "name": "Will o' Wisp",
-    "note": "<Element: Fire, Dark>\n<Element Absorb: Fire>\n<Passive State: 57, 129, 147>\n\n<Sideview Battler: NoMatchingSprite/Will o' Wisp>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 3>\n\n<Boost Skill 74: Full>\n<AI Priority>\nUser HP% param <= 75% +++ Random 50%: Steam Therapy, User\n</AI Priority>\n\n<Enemy Drops>\nPhantasmal Charm: 100%\nPocket Mirror: 5%\nFire Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
+    "note": "<Element: Fire, Dark>\n<Element Absorb: Fire>\n<Passive State: 57, 129, 147>\n\n<Sideview Battler: NoMatchingSprite/Will o' Wisp>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 3>\n\n<Boost Skill 74: Full>\n<AI Priority>\nUser HP% param <= 75% +++ Random 50%: Steam Therapy, User\n</AI Priority>\n\n<Enemy Drops>\nPhantasmal Charm: 100%\nSelfish Candle: 5%\nPocket Mirror: 5%\nFire Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
     "params": [
       6000,
       400,
@@ -3048,7 +3048,7 @@
     ],
     "gold": 2500,
     "name": "Phoenix",
-    "note": "<Element: Fire>\n\n<Attack Animation: 107>\n<HP Gauge Width: 360>\n\n<Enemy Drops>\nPhoenix Feather: 100%\nFire Essence: 100%\nFire Essence: 100%\nFire Essence: 100%\nFire Essence: 100%\nFire Essence: 100%\n</Enemy Drops>",
+    "note": "<Element: Fire>\n\n<Attack Animation: 107>\n<HP Gauge Width: 360>\n\n<Enemy Drops>\nPhoenix Feather: 100%\nSelfish Candle: 5%\nFire Essence: 100%\nFire Essence: 100%\nFire Essence: 100%\nFire Essence: 100%\nFire Essence: 100%\n</Enemy Drops>",
     "params": [
       25000,
       0,
@@ -3370,13 +3370,20 @@
         "conditionParam2": 0,
         "conditionType": 0,
         "rating": 5,
+        "skillId": 59
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 1,
         "skillId": 1
       }
     ],
     "battlerHue": 0,
     "battlerName": "Fire Spirit",
     "dropItems": [],
-    "exp": 500,
+    "exp": 45,
     "traits": [
       {
         "code": 31,
@@ -3407,18 +3414,23 @@
         "code": 22,
         "dataId": 2,
         "value": 0.07
+      },
+      {
+        "code": 23,
+        "dataId": 2,
+        "value": 2
       }
     ],
-    "gold": 250,
+    "gold": 35,
     "name": "Fire Spirit",
-    "note": "<Element: Fire, Light>\n<Element Absorb: Fire>\n<Passive State: 147>\n\n<Sideview Battler: Spirit_4>\n<Sideview Shadow Width: 100%>\n<Sideview Shadow Height: 100%>\n<Floating>\n<Attack Animation: 3>\n\n<Enemy Drops>\nFire Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
+    "note": "<Element: Fire>\n<Element Absorb: Fire>\n<Passive State: 136, 147>\n\n<Sideview Battler: Spirit_4>\n<Floating>\n<Attack Animation: 3>\n\n<AI Priority>\nUser HP% param <= 75% +++ Random 50%: Steam Therapy, User\n</AI Priority>\n\n<Enemy Drops>\nSelfish Candle: 5%\nFire Essence: 20%\n</Enemy Drops>",
     "params": [
-      6000,
+      800,
       0,
-      20,
-      25,
-      80,
-      60,
+      17,
+      18,
+      40,
+      40,
       75,
       50
     ]
@@ -3484,7 +3496,7 @@
     ],
     "gold": 30,
     "name": "Water Spirit",
-    "note": "<Element: Water>\n<Element Absorb: Water>\n<Passive State: 136, 146, 147>\n\n<Sideview Battler: Spirit_3>\n<Sideview Shadow Width: 100%>\n<Sideview Shadow Height: 100%>\n<Floating>\n<Attack Animation: 82>\n\n<Enemy Drops>\nWater Jug: 75%\nWater Jug: 75%\nWater Essence: 20%\n</Enemy Drops>",
+    "note": "<Element: Water>\n<Element Absorb: Water>\n<Passive State: 136, 146, 147>\n\n<Sideview Battler: Spirit_3>\n<Floating>\n<Attack Animation: 82>\n\n<Enemy Drops>\nWater Jug: 75%\nWater Jug: 75%\nWater Essence: 20%\n</Enemy Drops>",
     "params": [
       400,
       0,
@@ -3573,7 +3585,7 @@
     ],
     "gold": 100,
     "name": "Earth Spirit",
-    "note": "<Element: Earth>\n<Element Absorb: Earth>\n<Passive State: 136, 147>\n\n<Sideview Battler: Spirit_8>\n<Sideview Shadow Width: 100%>\n<Sideview Shadow Height: 100%>\n<Floating>\n<Attack Animation: 86>\n\n<Enemy Drops>\nRock Salt: 75%\nRock Salt: 75%\nBattle Plan: 5%\nStalactite: 3.33%\nATK Scroll ★: 10%\nDEF Scroll ★: 10%\nEarth Essence: 20%\n</Enemy Drops>",
+    "note": "<Element: Earth>\n<Element Absorb: Earth>\n<Passive State: 136, 147>\n\n<Sideview Battler: Spirit_8>\n<Floating>\n<Attack Animation: 86>\n\n<Enemy Drops>\nRock Salt: 75%\nRock Salt: 75%\nBattle Plan: 5%\nStalactite: 3.33%\nATK Scroll ★: 10%\nDEF Scroll ★: 10%\nEarth Essence: 20%\n</Enemy Drops>",
     "params": [
       3000,
       0,
@@ -3639,7 +3651,7 @@
     ],
     "gold": 250,
     "name": "Wind Spirit",
-    "note": "<Element: Wind, Light>\n<Element Absorb: Wind>\n<Passive State: 147>\n\n<Sideview Battler: Spirit_7>\n<Sideview Shadow Width: 100%>\n<Sideview Shadow Height: 100%>\n<Floating>\n<Attack Animation: 219>\n\n<Enemy Drops>\nWind Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
+    "note": "<Element: Wind, Light>\n<Element Absorb: Wind>\n<Passive State: 147>\n\n<Sideview Battler: Spirit_7>\n<Floating>\n<Attack Animation: 219>\n\n<Enemy Drops>\nWind Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
     "params": [
       6000,
       0,
@@ -6291,7 +6303,7 @@
     ],
     "gold": 100,
     "name": "Water Elemental EX",
-    "note": "<Element: Water>\n<Passive State: 136, 146, 202, 203>\n\n<Sideview Battler: Elemental_2>\n<Attack Animation: 82>\n\n<Element Amplify Water: +25%>\n\n<Boost Skill 36: Full>\n<AI Priority>\nUser HP% param > 50% +++ State !== Weak Point: Nasty Glare\nUser HP% param > 50% +++ User HP% param <= 75% +++ Random 50%: Waterfall\nUser HP% param > 50%: Bubble\n\nUser HP% param <= 50% +++ User HP% param <= 25% +++ Random 50%: Staff Impulse\nUser HP% param <= 50% +++ State !== Burning Up!: Fire II\nUser HP% param <= 50%: Fire II\n</AI Priority>\n\n<Enemy Drops>\nWater Jug: 75%\nWater Jug: 75%\nFiery Blood: 75%\nFiery Blood: 75%\nTideflame Headpiece: 5%\nAqua Gem: 10%\nMAT Scroll ★: 10%\nMDF Scroll ★: 10%\nWater Essence: 20%\nFire Essence: 20%\n</Enemy Drops>",
+    "note": "<Element: Water>\n<Passive State: 136, 146, 202, 203>\n\n<Sideview Battler: Elemental_2>\n<Attack Animation: 82>\n\n<Element Amplify Water: +25%>\n\n<Boost Skill 36: Full>\n<AI Priority>\nUser HP% param > 50% +++ State !== Weak Point: Nasty Glare\nUser HP% param > 50% +++ User HP% param <= 75% +++ Random 50%: Waterfall\nUser HP% param > 50%: Bubble\n\nUser HP% param <= 50% +++ User HP% param <= 25% +++ Random 50%: Staff Impulse\nUser HP% param <= 50% +++ State !== Burning Up!: Fire II\nUser HP% param <= 50%: Fire II\n</AI Priority>\n\n<Enemy Drops>\nWater Jug: 75%\nWater Jug: 75%\nFiery Blood: 75%\nFiery Blood: 75%\nTideflame Headpiece: 5%\nSelfish Candle: 5%\nAqua Gem: 10%\nMAT Scroll ★: 10%\nMDF Scroll ★: 10%\nWater Essence: 20%\nFire Essence: 20%\n</Enemy Drops>",
     "params": [
       3000,
       999,
