@@ -5515,6 +5515,7 @@ if (Olivia.OctoBattle[_0x3084("0x1c")][_0x3084("0x30")]) {
       actor._victoryPhase = true;
       actor._victorySkills = [];
     }, this);
+    SceneManager._scene.slideStatusWindows();
     this[_0x3084("0xdd")][_0x3084("0xa7")]();
     this[_0x3084("0xee")] = true;
     if (this[_0x3084("0xa4")]) {

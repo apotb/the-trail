@@ -2734,12 +2734,14 @@ BattleManager.processEscape = function() {
 
 BattleManager.processAbort = function() {
     $gameParty.removeBattleStates();
+    SceneManager._scene.slideStatusWindows();
     this.replayBgmAndBgs();
     this.endBattle(1);
 };
 
 BattleManager.processDefeat = function() {
     $gameTroop.performVictory();
+    SceneManager._scene.slideStatusWindows();
     this.displayDefeatMessage();
     this.playDefeatMe();
     if (this._canLose) {
