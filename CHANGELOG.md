@@ -69,9 +69,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
   - [REDACTED GENERAL]
   - Water Elemental EX
   - Earth Spirit
-- Added 2 new INT Book locations.
-- Added dynamic shadows in battle.
-- Added animated slime battler sprites.
+- Added 2 new INT Book locations to old areas.
 
 ### Changes
 - Rebalanced Boost Points:
@@ -115,6 +113,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
   - Streamlined capture processing.
   - Changed the Skeleton random encounter in Forest Arena...? to a map encounter, meaning you only get one shot per moon cycle.
 - Improvements to battle scene:
+  - Shadows are now dynamic rather than a static circle.
   - Status effects are now shown in a 3x3 grid (used to be a line of 6 icons).
   - Status effects no longer show above party members.
   - Larger party member status windows.
@@ -136,7 +135,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
 - Flytraps and Parasites can now drop Medicated Eyedrops.
 - Darkhounds now drop Silver Wristbraces instead of Iron Wristbraces.
 - Using an equipped item as an ingredient will automatically equip the newly crafted upgrade.
-- Added sideview battlers for the Werewolf and Chilling Apparition.
+- Added sideview battlers for Slimes, Werewolves, and Chilling Apparitions.
 - Changed the Suffering Soul sprite.
 - Greatly reduced the length of the king's monologue before the Champion's Banquet.
 - Shortened the Village Headman's story of the Great Collapse.
