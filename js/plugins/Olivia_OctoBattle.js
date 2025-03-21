@@ -5306,17 +5306,19 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
   Window_BattleSideStates.prototype.drawActorIcons = function(actor, wx, wy, ww) {
     ww = ww || 144;
     this._icons = actor.allIcons().slice(0, this.split() * ($gameParty.size() < 6 ? 3 : 2));
+    this._maxIcons = actor.allIcons().length <= 9 ? 9 : 8;
     for (var i = 0; i < this._icons.length; i++) {
         let x = wx + Window_Base._iconWidth * (i % this.split());
         let y = wy + 2 + (Window_Base._iconHeight * Math.floor(i / this.split()));
-        this.drawIcon(this._icons[i], x, y);
+        let icon = i < this._maxIcons ? this._icons[i] : 1354;
+        this.drawIcon(icon, x, y);
     }
     this.drawActorIconsTurns(actor, wx, wy, ww);
   };
   Window_BattleSideStates.prototype.drawActorIconsTurns = function(actor, wx, wy, ww) {
     var iw = Window_Base._iconWidth;
     var max = this._icons.length;
-    var shownMax = max; // var shownMax = Math.floor(ww / iw);
+    var shownMax = Math.min(max, this._maxIcons); // var shownMax = Math.floor(ww / iw);
     for (var i = 0; i < actor.states().length; ++i) {
       if (shownMax <= 0) break;
       var state = actor.states()[i];
