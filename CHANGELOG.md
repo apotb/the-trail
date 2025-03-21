@@ -130,6 +130,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
 - Darkhounds now drop Silver Wristbraces instead of Iron Wristbraces.
 - Lightning II's 3rd chain deals 33% damage instead of 25%.
 - Using an equipped item as an ingredient will automatically equip the newly crafted upgrade.
+- Changed the Suffering Soul and Floating Apparition sprites.
 - Greatly reduced the length of the king's monologue before the Champion's Banquet.
 - Shortened the Village Headman's story of the Great Collapse.
 - A new "pity" system will increase your HIT, EVA, and CRI after each retry. It resets between encounters.
