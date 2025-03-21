@@ -4349,7 +4349,14 @@
         "code": 401,
         "indent": 2,
         "parameters": [
-          "You can't use the \\ii[99] here."
+          "You can't use the \\ii[99] in this spot. Something"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "from another plane would appear on top of you!"
         ]
       },
       {
@@ -4367,7 +4374,7 @@
         "indent": 2,
         "parameters": [
           12,
-          "[75,131,132,133,134,135].indexOf($gameMap._mapId) !== -1"
+          "$gameMap.inRuinedFort()"
         ]
       },
       {
@@ -4555,6 +4562,13 @@
         ]
       },
       {
+        "code": 230,
+        "indent": 4,
+        "parameters": [
+          60
+        ]
+      },
+      {
         "code": 101,
         "indent": 4,
         "parameters": [
@@ -4609,79 +4623,14 @@
         "code": 401,
         "indent": 4,
         "parameters": [
-          "\\-I must thank you for bringing"
+          "\\-I must thank you for bringing it right into my hands."
         ]
       },
       {
         "code": 401,
         "indent": 4,
         "parameters": [
-          "it right into my hands."
-        ]
-      },
-      {
-        "code": 101,
-        "indent": 4,
-        "parameters": [
-          "Unknown",
-          0,
-          0,
-          2
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 4,
-        "parameters": [
-          "\\-Oh, but you haven't gotten"
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 4,
-        "parameters": [
-          "a proper welcome."
-        ]
-      },
-      {
-        "code": 101,
-        "indent": 4,
-        "parameters": [
-          "Unknown",
-          0,
-          0,
-          2
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 4,
-        "parameters": [
-          "\\-Welcome to my home for the past millenium."
-        ]
-      },
-      {
-        "code": 101,
-        "indent": 4,
-        "parameters": [
-          "Unknown",
-          0,
-          0,
-          2
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 4,
-        "parameters": [
-          "\\-Your souls will be a fine"
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 4,
-        "parameters": [
-          "addition to my collection."
+          "Your souls will be a fine addition to my collection."
         ]
       },
       {
@@ -4690,15 +4639,34 @@
         "parameters": [
           44,
           44,
-          1,
           0,
-          1
+          0,
+          2
         ]
       },
       {
-        "code": 244,
+        "code": 241,
         "indent": 4,
-        "parameters": []
+        "parameters": [
+          {
+            "name": "dungeon_bladesville_2",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 132,
+        "indent": 4,
+        "parameters": [
+          {
+            "name": "dungeon_bladesville_2",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
       },
       {
         "code": 0,

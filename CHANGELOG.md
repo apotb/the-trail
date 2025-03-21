@@ -60,8 +60,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
     - Waterfall (Tome)
   - 1 new power:
     - [REDACTED RESISTANCE]
-- 5 new enemies:
-  - Tortured Soul
+- 4 new enemies:
   - Will o' Wisp
   - [REDACTED GENERAL]
   - Water Elemental EX
@@ -125,6 +124,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
 - Scaled up the battle UI.
 - Reduced the length of the long walks in Laeryidyean's Forest, Telluria Castle B1, and True Telluria Castle B5.
 - Tellurium Pulse no longer removes buffs.
+- Fire enemies are now immune to Soaked.
 - Lowered the amount of Thick-Skinned Herbs needed to craft shields.
 - Flytraps and Parasites can now drop Medicated Eyedrops.
 - Darkhounds now drop Silver Wristbraces instead of Iron Wristbraces.

@@ -2596,32 +2596,39 @@
         "skillId": 59
       },
       {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 47
+      },
+      {
         "conditionParam1": 0.25,
         "conditionParam2": 0.5,
         "conditionType": 2,
         "rating": 5,
-        "skillId": 10
+        "skillId": 103
       },
       {
         "conditionParam1": 0.15,
         "conditionParam2": 0.25,
         "conditionType": 2,
         "rating": 6,
-        "skillId": 10
+        "skillId": 103
       },
       {
         "conditionParam1": 0.05,
         "conditionParam2": 0.15,
         "conditionType": 2,
         "rating": 7,
-        "skillId": 10
+        "skillId": 103
       },
       {
         "conditionParam1": 0,
         "conditionParam2": 0.05,
         "conditionType": 2,
         "rating": 8,
-        "skillId": 10
+        "skillId": 103
       }
     ],
     "battlerHue": 0,
@@ -2655,24 +2662,24 @@
         "value": 0.08
       },
       {
-        "code": 22,
-        "dataId": 5,
-        "value": 0.05
-      },
-      {
         "code": 32,
         "dataId": 7,
-        "value": 0.4
+        "value": 1
       },
       {
         "code": 23,
         "dataId": 2,
-        "value": 2
+        "value": 3
+      },
+      {
+        "code": 61,
+        "dataId": 0,
+        "value": 1
       }
     ],
-    "gold": 200,
+    "gold": 100,
     "name": "Will o' Wisp",
-    "note": "<Element: Fire, Dark>\n<Element Absorb: Fire>\n<Passive State: 57, 129, 147>\n\n<Sideview Battler: NoMatchingSprite/Will o' Wisp>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 3>\n\n<Boost Skill 74: Full>\n<AI Priority>\nUser HP% param <= 75% +++ Random 50%: Steam Therapy, User\n</AI Priority>\n\n<Enemy Drops>\nPocket Mirror: 5%\nFire Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
+    "note": "<Element: Fire, Dark>\n<Element Absorb: Fire>\n<Passive State: 57, 129, 147>\n\n<Sideview Battler: NoMatchingSprite/Will o' Wisp>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 3>\n\n<Boost Skill 74: Full>\n<AI Priority>\nUser HP% param <= 75% +++ Random 50%: Steam Therapy, User\n</AI Priority>\n\n<Enemy Drops>\nPhantasmal Charm: 100%\nPocket Mirror: 5%\nFire Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
     "params": [
       6000,
       400,
