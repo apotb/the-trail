@@ -47,7 +47,8 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
   - Gingerbread Cookie
   - Phantasmal Charm
   - [REDACTED HELMET]
-- 1 new weapon:
+- 2 new weapons:
+  - Blazing Dagger
   - Stalactite
 - 7 new equipment:
   - 3 new headgear:

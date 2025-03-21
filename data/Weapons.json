@@ -2251,5 +2251,48 @@
     ],
     "price": 1000,
     "wtypeId": 2
+  },
+  {
+    "id": 60,
+    "animationId": 8,
+    "description": "Hot hot hot!\nCan inflict enemies with \\it[7].",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 2,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
+      },
+      {
+        "code": 32,
+        "dataId": 7,
+        "value": 0.2
+      }
+    ],
+    "iconIndex": 823,
+    "name": "Blazing Dagger",
+    "note": "<Weapon Image: 386>\n<Upgrade Slots: 2>\n\n<Disassemble Pool: Advanced>\nx1-3 Fire Essence: 100%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      0,
+      17,
+      0,
+      0,
+      0,
+      13,
+      0
+    ],
+    "price": 600,
+    "wtypeId": 5
   }
 ]
