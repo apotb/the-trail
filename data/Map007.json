@@ -36720,10 +36720,100 @@
               ]
             },
             {
-              "code": 230,
+              "code": 205,
               "indent": 0,
               "parameters": [
-                60
+                15,
+                {
+                  "list": [
+                    {
+                      "code": 15,
+                      "parameters": [
+                        90
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 19,
+                      "indent": null
+                    },
+                    {
+                      "code": 15,
+                      "parameters": [
+                        90
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 16,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "parameters": [
+                    90
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 19,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "parameters": [
+                    90
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 16,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 241,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "scene_apocalypse",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
               ]
             },
             {
@@ -37328,15 +37418,17 @@
               ]
             },
             {
-              "code": 245,
+              "code": 242,
               "indent": 0,
               "parameters": [
-                {
-                  "name": "",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
+                2
+              ]
+            },
+            {
+              "code": 246,
+              "indent": 0,
+              "parameters": [
+                2
               ]
             },
             {
@@ -37799,7 +37891,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "scene_epicprebattle",
+                  "name": "scene_apocalypse",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
