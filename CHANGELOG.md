@@ -120,11 +120,12 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
   - Gradient background behind party member status windows.
   - Party member status windows now slide in and out.
   - Pixelated battlebacks.
-- Replaced the following tracks:
+- Changed the following tracks:
   - The Journey Continues
   - Greenfield
   - Sub-City Emissary
   - Formidable Opponent
+  - True Darkness
 - All encounters can be run away from.
 - Infernal Wand now deals +20% fire damage.
 - Nerfed Hero Sword Replica outgoing element damage from +50% → +25%.
