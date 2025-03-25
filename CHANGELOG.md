@@ -113,6 +113,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
   - Skeleton Knights stop moving when unlocking a door.
   - Added more lamps throughout the dark areas.
   - Less encounters in the maze.
+  - Followers are more transparent while doing the candle puzzle.
   - Streamlined capture processing.
   - Changed the Skeleton random encounter in Forest Arena...? to a map encounter, meaning you only get one shot per moon cycle.
 - Improvements to battle scene:
