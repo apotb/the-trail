@@ -145,7 +145,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
 - Flytraps and Parasites can now drop Medicated Eyedrops.
 - Darkhounds now drop Silver Wristbraces instead of Iron Wristbraces.
 - Using an equipped item as an ingredient will automatically equip the newly crafted upgrade.
-- Added sideview sprites for Slimes, Werewolves, and Chilling Apparitions.
+- Added sideview sprites for the Werewolf, Chilling Apparition, Polar Bear, and all Slimes.
 - Changed sprites for Suffering Soul and Poltergeist.
 - Greatly reduced the length of the king's monologue before the Champion's Banquet.
 - Shortened the Village Headman's story of the Great Collapse.
