@@ -2588,7 +2588,7 @@
     "damage": {
       "critical": true,
       "elementId": 11,
-      "formula": "b.hasState(154) ? a.mat * 4 : 0",
+      "formula": "a.mat * 4",
       "type": 3,
       "variance": 5
     },
@@ -2607,7 +2607,7 @@
     "message2": "",
     "mpCost": 15,
     "name": "Steam Therapy",
-    "note": "<Boost Damage>\n\n<Target: Everybody>\n\n<Multiple Elements: 2>\n\n<setup action>\nanimation 67: user\nwait for animation\nanimation 129: user\nwait for animation\n</setup action>\n\n<target action>\naction effect\nwait for effect\n</target action>",
+    "note": "<Boost Damage>\n\n<Custom Target Eval>\nlet everyone = allies.aliveMembers().concat(foes.aliveMembers());\nfor (var i = 0; i < everyone.length; ++i) {\n  var member = everyone[i];\n  if (member.hasState(154)) targets.push(member);\n}\n</Custom Target Eval>\n\n<setup action>\nanimation 67: user\nwait for animation\nanimation 129: target\nwait for animation\n</setup action>\n\n<target action>\naction effect\nwait for effect\n</target action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,

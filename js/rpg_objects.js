@@ -8744,7 +8744,7 @@ Game_Follower.prototype.isVisible = function() {
 Game_Follower.prototype.update = function() {
     Game_Character.prototype.update.call(this);
     this.setMoveSpeed($gamePlayer.realMoveSpeed());
-    this.setOpacity($gamePlayer.opacity());
+    this.setOpacity($gameSystem._followerOpacity || $gamePlayer.opacity());
     this.setBlendMode($gamePlayer.blendMode());
     this.setWalkAnime($gamePlayer.hasWalkAnime());
     this.setStepAnime($gamePlayer.hasStepAnime());
