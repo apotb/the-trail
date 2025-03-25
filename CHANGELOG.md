@@ -12,10 +12,11 @@ Save the souls being held hostage within the Ruined Fort. Fight new enemies and 
 A powerful foe awaits you at the top... can you defeat this ancient threat, finally completing Will's quest?
 
 At long last, The Trail is on Steam! Collect 70+ achievements, store your saves in the Steam Cloud, and more!
-Nothing but love for the itch.io launcher, but let's be honest: nobody already had it installed. Everyone has Steam though, making The Trail more accessible than ever!
+Nothing but love for the itch.io launcher, but let's be honest —- almost no one had it installed beforehand...
+Everyone has Steam, though. The Trail is more accessible than ever!
 All updates will now be downloaded via Steam. The itch.io page and GitHub releases will no longer be maintained.
 
-As with any major update, you'll find plenty of balance changes and improvements. You'll find that the boost system, skill pools, and more have been polished.
+As with any major update, you'll find plenty of balance changes and improvements. The boost system, skill pools, and more have been polished.
 Oh, and for my Linux players; you're finally supported again! Sorry I abandoned you for Alpha 15... there were complications, but everything should run smoothly now.
 
 That just about summarizes the major features in Alpha 16. If you'd like to know everything that changed, check out the detailed changelog below:
@@ -42,7 +43,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
     - Channel Divinity II: Magic @ L30
   - Player 4, 2 new skills:
     - [P] Assassin: Passive @ L28
-    - Adrenaline: Special @ L30 
+    - Adrenaline: Special @ L30
 - 5 new items:
   - Gingerbread Cookie
   - Flarestone
@@ -57,9 +58,9 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
     - Tideflame Headpiece
     - Bloodwave Headband
     - Vortex Mask
-  - 1 new accessories:
+  - 1 new accessory:
     - Soulstealer's Necklace
-  - 2 new magic equip:
+  - 2 new magic equips:
     - Soul Shackles (Tome)
     - Waterfall (Tome)
   - 1 new power:
@@ -81,7 +82,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
 - Skill rebalancing:
   - Mage:
     - Ice I is now learned at level 5 → 4.
-    - Lightning II's 3rd chain deals 33% damage instead of 25%.
+    - Lightning II's 3rd chain deals 25% → 33% of the initial damage.
   - Cleric:
     - Revive/Resurgence are now guaranteed to proc. Boosting them increases the amount of HP recovered.
     - Resurgence grants the Rejuvenation buff.
@@ -126,13 +127,13 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
   - The Journey Continues
   - Greenfield
   - Sub-City Emissary
-  - Formidable Opponent
+  - Formidable Opponent → APOCALYPSE
   - True Darkness
 - All encounters can be run away from.
 - Infernal Wand now deals +20% fire damage.
 - Nerfed Hero Sword Replica outgoing element damage from +50% → +25%.
 - Nerfed INT Books from +4 → +2 INT.
-- Unmodified equipment will be concatenated in the item list.
+- Duplicate unmodified equipment will be grouped together in the inventory.
 - Increased the size of the damage/treasure popups.
 - Scaled up the battle UI.
 - Reduced the length of the long walks in Laeryidyean's Forest, Telluria Castle B1, and True Telluria Castle B5.
@@ -177,7 +178,8 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
 The Trail's alpha phase is nearing completion. As soon as the graphics have been revamped, the game will move into beta!
 It's crazy to see how far the game has come. My vision for The Trail is finally coming to fruition.
 
-Thank you for playing! Alpha 17 is on the way, so keep an eye out for Leeks™ and other news. Until then... the journey continues.
+Thank you for playing! Alpha 17 is on the way -- you'll be working with the Village Chief to help Solus Valley!
+Keep an eye out for Leeks™ and other news. Until then... the journey continues.
 
 Yours truly,
 AP
