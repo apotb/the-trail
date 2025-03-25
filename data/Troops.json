@@ -12006,5 +12006,55 @@
         "span": 0
       }
     ]
+  },
+  {
+    "id": 112,
+    "members": [
+      {
+        "enemyId": 84,
+        "x": 372,
+        "y": 307,
+        "hidden": false
+      },
+      {
+        "enemyId": 45,
+        "x": 312,
+        "y": 166,
+        "hidden": false
+      },
+      {
+        "enemyId": 45,
+        "x": 192,
+        "y": 328,
+        "hidden": false
+      }
+    ],
+    "name": "Dullahan, Fire Spirit x2",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
   }
 ]

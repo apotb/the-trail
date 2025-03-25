@@ -43,9 +43,10 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
   - Player 4, 2 new skills:
     - [P] Assassin: Passive @ L28
     - Adrenaline: Special @ L30 
-- 4 new items:
+- 5 new items:
   - Gingerbread Cookie
   - Flarestone
+  - Sauna Key
   - Phantasmal Charm
   - [REDACTED HELMET]
 - 2 new weapons:
@@ -63,8 +64,9 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
     - Waterfall (Tome)
   - 1 new power:
     - [REDACTED RESISTANCE]
-- 5 new enemies:
+- 6 new enemies:
   - Fire Spirit
+  - Dullahan
   - Will o' Wisp
   - [REDACTED GENERAL]
   - Water Elemental EX
