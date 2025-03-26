@@ -78,6 +78,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
 - Added 2 new INT Book locations to old areas.
 
 ### Changes
+- All encounters can be run away from.
 - Rebalanced Boost Points:
   - Everyone starts with 1 BP.
   - Using Guard grants +1 BP.
@@ -133,7 +134,6 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
   - Sub-City Emissary
   - Formidable Opponent → APOCALYPSE
   - True Darkness
-- All encounters can be run away from.
 - Buffed Dilong's Wisdom to now grant +1 BP capacity.
 - Buffed Infernal Wand to now deal +20% fire damage.
 - Nerfed Hero Sword Replica outgoing element damage from +50% → +25%.
