@@ -98,6 +98,7 @@ API_LEADERBOARD.setData = function(data) {
 };
 
 API_LEADERBOARD.push = function() {
+    if ($gameTemp.isDemo()) return;
     const promises = this.leaderboards().map(l => this.addToLeaderboard(l[0], l[1]));
     return Promise.all(promises);
 };
