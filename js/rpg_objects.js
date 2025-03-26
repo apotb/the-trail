@@ -5525,7 +5525,7 @@ Game_Party.prototype.gainItem = function(item, amount, includeEquip) {
     if (item == $dataWeapons[34]) {
         OrangeGreenworks.activateAchievement('COLLECT_ORIGINCRYSTAL');
     }
-    if (DataManager.isArmor(item) && [81, 82, 83].contains(item.baseItemId)) {
+    if (DataManager.isArmor(item) && [81, 82, 83, 220].contains(item.baseItemId)) {
         $gameSystem._poacher = $gameSystem._poacher || [];
         if (!$gameSystem._poacher.contains(item.baseItemId)) {
             $gameSystem._poacher.push(item.baseItemId);
