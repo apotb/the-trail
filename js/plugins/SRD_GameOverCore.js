@@ -215,6 +215,10 @@ _.giveUp = function() {
 	this._params = [0].concat($gameSystem.safePlace()).concat(0);
 	_.specialCommand201();
 	$gameMap._interpreter._index = $gameMap._interpreter._list.length;
+	$gameParty.members().forEach(a => a.recoverAll());
+	$gamePlayer.showFollowers();
+	$gameSystem.battleTemplate('normal');
+	if ($gameMap.inTrueTelluriaCastle()) $gameSystem.setBattleBgm('battle_castle');
 };
 
 _.informInvalidCommonEvent = [

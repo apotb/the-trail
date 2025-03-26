@@ -1107,12 +1107,11 @@ Window_SynthesisList.prototype.windowWidth = function() {
 Window_SynthesisList.prototype.updateHelp = function() {
     if (this._commandWindow.active) {
       this._commandWindow.updateCursor();
-    } else if (eval(Yanfly.Param.ISMaskUnknown) &&
-    !$gameSystem.hasSynthed(this.item())) {
-      var text = Yanfly.Param.ISMaskHelpText;
-      if (this._helpWindow) this._helpWindow.setText(text);
     } else {
       this.setHelpWindowItem(this.item());
+      if (eval(Yanfly.Param.ISMaskUnknown) && !$gameSystem.hasSynthed(this.item())) {
+        if (this._helpWindow) this._helpWindow.setText(Yanfly.Param.ISMaskHelpText + this._helpWindow._text);
+      }
     }
     if (this._ingredients) {
       this._ingredients.refresh(this.item());

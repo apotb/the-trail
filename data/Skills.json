@@ -1352,7 +1352,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Run Away",
-    "note": "<Max Mastery Level: 0>\n\n<whole action>\nmotion escape: user\n</whole action>",
+    "note": "<Max Mastery Level: 0>\n\n<whole action>\nmotion escape: user\nmove user: backward, 300, 30\nwait for movement\n</whole action>\n\n<After Eval>\nif (user.isEnemy() && user.enemyId() == 85) {\n  $gameSystem.restoreRareEnemyTries();\n  $gameSystem._gildedGhostEscapes = ($gameSystem._gildedGhostEscapes || 0) + 1;\n  if ($gameSystem._gildedGhostEscapes >= 3) $gameTemp.reserveCommonEvent(27);\n}\n</After Eval>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2376,10 +2376,10 @@
     ],
     "hitType": 0,
     "iconIndex": 14,
-    "message1": " gets into an offensive stance!",
+    "message1": " gets into a combat stance!",
     "message2": "",
     "mpCost": 8,
-    "name": "Offensive Stance",
+    "name": "Combat Stance",
     "note": "<Require = 0 BP>\n\n<setup action>\nmotion skill: user\n</setup action>",
     "occasion": 1,
     "repeats": 1,
@@ -2584,19 +2584,19 @@
   },
   {
     "id": 74,
-    "animationId": 129,
+    "animationId": 0,
     "damage": {
       "critical": true,
       "elementId": 11,
-      "formula": "a.mat * 4 - b.mdf * 2",
-      "type": 1,
+      "formula": "a.mat * 4",
+      "type": 3,
       "variance": 5
     },
     "description": "\\c[27]\\bpdamage[400]%\\c[0] MAT rate.",
     "effects": [
       {
         "code": 21,
-        "dataId": 102,
+        "dataId": 33,
         "value1": 1,
         "value2": 0
       }
@@ -2607,12 +2607,12 @@
     "message2": "",
     "mpCost": 15,
     "name": "Steam Therapy",
-    "note": "<Boost Damage>\n\n<Multiple Elements: 2>\n<Remove State Category: weak debuff>\n\n<setup action>\nanimation 67: user\nwait for animation\nanimation 129: user\nwait for animation\n</setup action>\n\n<target action>\naction effect\nwait for effect\n</target action>",
+    "note": "<Boost Damage>\n\n<Custom Target Eval>\nlet everyone = allies.aliveMembers().concat(foes.aliveMembers());\nfor (var i = 0; i < everyone.length; ++i) {\n  var member = everyone[i];\n  if (member.hasState(154)) targets.push(member);\n}\n</Custom Target Eval>\n\n<setup action>\nanimation 67: user\nwait for animation\nanimation 129: target\nwait for animation\n</setup action>\n\n<target action>\naction effect\nwait for effect\n</target action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
-    "scope": 7,
+    "scope": 0,
     "speed": 0,
     "stypeId": 2,
     "successRate": 100,
@@ -3612,7 +3612,7 @@
     "message1": " casts %1!",
     "message2": "",
     "mpCost": 14,
-    "name": "Staff Impulse",
+    "name": "Impulse",
     "note": "<Boost Damage>\n\n<setup action>\nhide battle hud\ncamera focus: user\nzoom: 200%\nmotion chant: user\nwait: 45\nmotion spell: user\ncamera focus: target\nzoom: 150%\nwait for camera\nwait for zoom\n</setup action>\n\n<whole action>\nshake screen: 1, 9, 60\naction animation\nwait for animation\nshow battle hud\n</whole action>\n\n<target action>\naction effect\nwait for effect\nwait: 5\nclear battle log\n</target action>",
     "occasion": 1,
     "repeats": 1,
@@ -4461,7 +4461,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Angers the enemy troop, increasing your AGR and making\nenemies more like to target you. Lasts for \\c[27]\\bpturn[4]\\c[0] to \\c[27]\\bpturn[5]\\c[0] turns.",
+    "description": "Angers the enemy troop. For \\c[27]\\bpturn[4]\\c[0] turns, attacks\nwill be more likely to come your way.",
     "effects": [
       {
         "code": 21,
@@ -4474,7 +4474,7 @@
     "iconIndex": 121,
     "message1": " taunts the enemy!",
     "message2": "",
-    "mpCost": 20,
+    "mpCost": 3,
     "name": "Taunt",
     "note": "<Boost Turns>\n\n<setup action>\nmotion skill: user\nwait: 15\n</setup action>",
     "occasion": 1,
@@ -5146,6 +5146,43 @@
     "scope": 7,
     "speed": 0,
     "stypeId": 2,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 148,
+    "animationId": 53,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Enter a defensive stance, or order an ally to do so.\nThis will decrease incoming damage by 10% for \\c[27]\\bpturn[5]\\c[0] turns.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 204,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 13,
+    "message1": " uses %1!",
+    "message2": "",
+    "mpCost": 3,
+    "name": "En Garde!",
+    "note": "<Boost Turns>\n\n<Hide if Learned Skill: 84>\n<Mastery Group: 84>\n\n<setup action>\nmotion guard: user\nwait: 15\n</setup action>\n\n<whole action>\nmotion guard: targets\naction animation\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\nwait: 5\n</target action>\n\n<follow action>\nmotion standby: targets\n</follow action>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 11,
+    "speed": 0,
+    "stypeId": 1,
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0

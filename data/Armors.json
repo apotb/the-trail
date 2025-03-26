@@ -1766,7 +1766,7 @@
   {
     "id": 74,
     "atypeId": 1,
-    "description": "A flake of bat skin with a little bit of magic\nwithin. Imbues attacks with the power of Wind.",
+    "description": "A flake of bat skin with a little bit of magic\nwithin. Imbues attacks with the power of \\nl[7].",
     "etypeId": 6,
     "traits": [
       {
@@ -2538,7 +2538,7 @@
       0,
       0
     ],
-    "price": 1000
+    "price": 500
   },
   {
     "id": 103,
@@ -3930,9 +3930,15 @@
   {
     "id": 152,
     "atypeId": 1,
-    "description": "BP keeps generating even on turns that you use it.",
+    "description": "BP keeps generating even on turns that you use it.\nGrants 1 extra BP capacity.",
     "etypeId": 9,
-    "traits": [],
+    "traits": [
+      {
+        "code": 24,
+        "dataId": 0,
+        "value": 1
+      }
+    ],
     "iconIndex": 125,
     "name": "Dilong's Wisdom",
     "note": "<Cannot Rename>\n\nHardcoded in Olivia_OctoBattle.js.",
@@ -5410,7 +5416,7 @@
     "traits": [],
     "iconIndex": 437,
     "name": "Skeletal Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Boss1,0,Boss1,0,Boss_1>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Boss1,0,Boss1,0,Boss1_1>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -5762,6 +5768,33 @@
       0,
       0,
       20,
+      0
+    ],
+    "price": 1000
+  },
+  {
+    "id": 220,
+    "atypeId": 1,
+    "description": "A golden artifact from a forgotten time, this coin whispers\ndreams of boundless treasure. Multiplies bit drops by 1.5x.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 64,
+        "dataId": 4,
+        "value": 1.5
+      }
+    ],
+    "iconIndex": 361,
+    "name": "Gilded Coin",
+    "note": "<Upgrade Slots: 4>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
       0
     ],
     "price": 1000

@@ -305,16 +305,25 @@ Window_Leaderboard.prototype.drawItem = function(index) {
     var align = this.itemTextAlign();
     switch (index % this.maxRows()) {
         case 0:
-            this.resetTextColor();
+            this.changeTextColor(this.textColor(28));
             break;
         case 1:
             this.changeTextColor(this.textColor(14));
             break;
         case 2:
-            this.changeTextColor(this.textColor(8));
+            this.changeTextColor(this.textColor(0));
             break;
         case 3:
             this.changeTextColor(this.textColor(20));
+            break;
+        case 4:
+        case 5:
+        case 6:
+        case 7:
+        case 8:
+        case 9:
+        case 10:
+            this.changeTextColor(this.textColor(8));
             break;
         default:
             this.changeTextColor(this.textColor(7));

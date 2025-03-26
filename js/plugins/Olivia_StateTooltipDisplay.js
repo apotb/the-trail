@@ -364,7 +364,7 @@ Sprite_StateIcon[_0x1db1("0x54")][_0x1db1("0x5")] = function () {
   return true;
 };
 Olivia[_0x1db1("0x12")][_0x1db1("0x60")] = Sprite_StateOverlay[_0x1db1("0x54")][_0x1db1("0x92")];
-Sprite_StateOverlay[_0x1db1("0x54")][_0x1db1("0x92")] = function () {
+/*Sprite_StateOverlay[_0x1db1("0x54")][_0x1db1("0x92")] = function () {
   Olivia[_0x1db1("0x12")][_0x1db1("0x60")][_0x1db1("0x7a")](this);
   if (!!this["tooltipWindow"]() && this[_0x1db1("0x47")]()) {
     this[_0x1db1("0x51")]();
@@ -411,7 +411,7 @@ Sprite_StateOverlay[_0x1db1("0x54")]["isFullyVisible"] = function () {
     }
   }
   return true;
-};
+};*/
 function Window_StateIconTooltip() {
   this[_0x1db1("0x7e")][_0x1db1("0x2a")](this, arguments);
 }
@@ -682,6 +682,28 @@ if (Imported["YEP_BattleEngineCore"] && Imported["YEP_BuffsStatesCore"] && Olivi
       this[_0x1db1("0x51")]();
     }
   };
+  Window_Help.prototype.isMouseOverStates = function () {
+    var x = this.canvasToLocalX(TouchInput["_mouseOverX"]);
+    var y = this.canvasToLocalY(TouchInput["_mouseOverY"]);
+    return this.isFullyVisible() && x >= this._statesX && y >= this._statesY && x < this._statesX + this._statesW && y < this._statesY + this._statesH;
+  };
+  Window_Help.prototype.drawBattlerWithIcons = function(battler) {
+    var icons = battler.allIcons();
+    var text = battler.name();
+    var wx = 0;
+    var wy = 0;
+    this.drawText(text, wx, wy, this.contents.width, 'center');
+    wy += this.lineHeight();
+    var ww = icons.length * Window_Base._iconWidth;
+    ww = Math.min(ww, this.contents.width);
+    wx = (this.contents.width - ww) / 2;
+    this.drawActorIcons(battler, wx, wy, ww);
+    // NEW
+    this._statesX = wx + (Window_Base._iconWidth / 2) + 2;
+    this._statesY = wy + (Window_Base._iconHeight / 2) + 2;
+    this._statesW = ww;
+    this._statesH = Window_Base._iconHeight + 4;
+  };
 }
 if (Olivia[_0x1db1("0x12")][_0x1db1("0x77")][_0x1db1("0x85")]) {
   Olivia[_0x1db1("0x12")][_0x1db1("0x71")] = Window_SkillStatus["prototype"][_0x1db1("0x93")];
@@ -699,10 +721,10 @@ if (Olivia[_0x1db1("0x12")][_0x1db1("0x77")][_0x1db1("0x85")]) {
 }
 if (Olivia[_0x1db1("0x14")] && Olivia[_0x1db1("0x14")][_0x1db1("0x6b")] && Olivia[_0x1db1("0x14")][_0x1db1("0x6b")][_0x1db1("0x77")] && Olivia[_0x1db1("0x12")][_0x1db1("0x77")][_0x1db1("0x90")]) {
   Olivia["StateTooltipDisplay"][_0x1db1("0x8")] = Window_BattleSideBase[_0x1db1("0x54")][_0x1db1("0x6f")];
-  Window_BattleSideBase["prototype"][_0x1db1("0x1f")] = function () {
+  /*Window_BattleSideBase["prototype"][_0x1db1("0x1f")] = function () {
     Olivia["StateTooltipDisplay"][_0x1db1("0x8")][_0x1db1("0x7a")](this);
     this[_0x1db1("0x27")] = this["_actor"];
-  };
+  };*/
   Olivia[_0x1db1("0x12")][_0x1db1("0x4f")] = Window_BattleSideBase[_0x1db1("0x54")][_0x1db1("0x6f")];
   Window_BattleSideBase[_0x1db1("0x54")][_0x1db1("0x6f")] = function () {
     Olivia["StateTooltipDisplay"][_0x1db1("0x4f")][_0x1db1("0x7a")](this);
@@ -714,6 +736,15 @@ if (Olivia[_0x1db1("0x14")] && Olivia[_0x1db1("0x14")][_0x1db1("0x6b")] && Olivi
     if (!!this[_0x1db1("0x27")] && !!this["tooltipWindow"]() && this[_0x1db1("0x47")]() && !BattleManager.isBattleEnd()) {
       this["updateStateIconTooltipWindow"]();
     }
+  };
+  Window_BattleSideStates.prototype.isMouseOverStates = function () {
+    let cols = Math.min(this._icons.length, this.split());
+    let width = (this.width - 4) * (cols / this.split()) + 4;
+    let x = this.canvasToLocalX(TouchInput["_mouseOverX"]) - this.width + width;
+    let y = this.canvasToLocalY(TouchInput["_mouseOverY"]);
+    let lines = Math.min(Math.floor((this._icons.length - 1) / this.split()) + 1, this.split());
+    let height = (this.height - 4) * (lines / ($gameParty.size() < 6 ? 3 : 2)) + 4;
+    return this.isFullyVisible() && x >= 0 && y >= 0 && x < width && y < height;
   };
 }
 if (Olivia[_0x1db1("0x12")]["Enabled"]) {

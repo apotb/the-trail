@@ -410,8 +410,15 @@ Game_System.prototype.rareEnemyRoll = function() {
     if (!$gameSwitches.value(23)) return false; // Laeryidyean must be defeated
     let roll = Math.random() * this.rareEnemyDenominator() < 1;
     this._rareEnemyTries++;
-    if (roll) this._rareEnemyTries = 0;
+    if (roll) {
+        $gameTemp._rareEnemyTries = this._rareEnemyTries;
+        this._rareEnemyTries = 0;
+    }
     return roll;
+};
+
+Game_System.prototype.restoreRareEnemyTries = function() {
+    this._rareEnemyTries = $gameTemp._rareEnemyTries;
 };
 
 // Small Chests
@@ -2044,7 +2051,7 @@ Game_Action.prototype.apply = function(target) {
     }
     if ($gameParty.inBattle() && target.isActor()) {
         index = $gameParty.battleMembers().indexOf(target);
-        SceneManager._scene._sideStatusWindows[index].children[6].refresh()
+        if (SceneManager._scene._sideStatusWindows[index].children.find(c => c instanceof Window_BattleSideName)) SceneManager._scene._sideStatusWindows[index].children.find(c => c instanceof Window_BattleSideName).refresh()
     }
 };
 
@@ -5518,7 +5525,7 @@ Game_Party.prototype.gainItem = function(item, amount, includeEquip) {
     if (item == $dataWeapons[34]) {
         OrangeGreenworks.activateAchievement('COLLECT_ORIGINCRYSTAL');
     }
-    if (DataManager.isArmor(item) && [81, 82, 83].contains(item.baseItemId)) {
+    if (DataManager.isArmor(item) && [81, 82, 83, 220].contains(item.baseItemId)) {
         $gameSystem._poacher = $gameSystem._poacher || [];
         if (!$gameSystem._poacher.contains(item.baseItemId)) {
             $gameSystem._poacher.push(item.baseItemId);
@@ -6864,6 +6871,10 @@ Game_Map.prototype.isAnyEventStarting = function() {
 };
 
 // Return if in certain zones
+
+Game_Map.prototype.inRuinedFort = function() {
+    return [132, 133, 75, 135, 131, 134, 146].contains(this.mapId());
+};
 
 Game_Map.prototype.inTrueTelluriaCastle = function() {
     return [93, 92, 2, 88, 94, 213, 214, 7].contains(this.mapId());
@@ -8740,7 +8751,7 @@ Game_Follower.prototype.isVisible = function() {
 Game_Follower.prototype.update = function() {
     Game_Character.prototype.update.call(this);
     this.setMoveSpeed($gamePlayer.realMoveSpeed());
-    this.setOpacity($gamePlayer.opacity());
+    this.setOpacity($gameSystem._followerOpacity || $gamePlayer.opacity());
     this.setBlendMode($gamePlayer.blendMode());
     this.setWalkAnime($gamePlayer.hasWalkAnime());
     this.setStepAnime($gamePlayer.hasStepAnime());

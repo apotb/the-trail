@@ -2332,6 +2332,10 @@ Scene_Battle.prototype.changeInputWindow = function() {
     }
 };
 
+Scene_Battle.prototype.slideStatusWindows = function() {
+    this._sideStatusWindows.forEach(w => w._homeX += w.width + w.children.find(c => c instanceof Window_BattleSideStates).width);
+};
+
 Scene_Battle.prototype.stop = function() {
     Scene_Base.prototype.stop.call(this);
     if (this.needsSlowFadeOut()) {
@@ -2406,10 +2410,10 @@ Scene_Battle.prototype.createSpriteset = function() {
 
 Scene_Battle.prototype.createAllWindows = function() {
     this.createLogWindow();
+    this.createHelpWindow();
     this.createStatusWindow();
     this.createPartyCommandWindow();
     this.createActorCommandWindow();
-    this.createHelpWindow();
     this.createSkillWindow();
     this.createItemWindow();
     this.createActorWindow();

@@ -491,7 +491,7 @@ Window_GameOverCommand.prototype.makeCommandList = function() {
 	if(__.allowRetry) {
 		this.addCommand(__.retryText, 'retry', !!$gameTemp._setUpRetry);
 	}
-	this.addCommand("Give Up", 'giveup');
+	this.addCommand("Give Up", 'giveup', !$gameTemp._disableGiveUp);
 	this.addCommand(__.loadText, 'load');
 	this.addCommand(__.titleText, 'title');
 };

@@ -191,6 +191,15 @@ Game_Interpreter.prototype.checkTreasurePopup = function(type) {
    	    if (amount > 0 && SceneManager._scene.constructor.name === "Scene_Map") {
 			for (i = 0; i < $gameMap.events().length; i++){
 				var eve = $gameMap.events()[i];
+				if ($gameTemp._popupEventId) {
+					if (eve && ($gameTemp._popupEventId == eve._eventId)) {
+						var x = eve.screenX();
+						var y = eve.screenY();
+						$gameSystem._trspupData.push([this.trPopupType(type),amount,x,y]);
+						delete $gameTemp._popupEventId;
+						break;
+					}
+				}
 				if (eve && (this._eventId === eve._eventId)) {
 					var x = eve.screenX();
 					var y = eve.screenY();

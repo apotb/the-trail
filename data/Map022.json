@@ -8172,21 +8172,7 @@
               "code": 401,
               "indent": 3,
               "parameters": [
-                "\\p2Don't forget to straighten the one in"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "the field south of town. Leave Verdin,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "and you should see the field right away."
+                "\\p2Maybe you should double check?"
               ]
             },
             {
@@ -9003,6 +8989,13 @@
               "indent": 0,
               "parameters": [
                 "\\innCertainly!"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameTemp._popupEventId = 2;"
               ]
             },
             {

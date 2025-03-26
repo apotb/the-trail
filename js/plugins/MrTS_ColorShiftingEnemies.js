@@ -114,7 +114,7 @@
 			var b = Math.floor(((nTone[2] - cTone[2])/paramChangeTime)*this._currentDiscoStep);
 			var gray = Math.floor(((nTone[3] - cTone[3])/paramChangeTime)*this._currentDiscoStep);
 
-			this.setColorTone([cTone[0] + r, cTone[1] + g, cTone[2] + b, cTone[3] + gray]);
+			this._mainSprite.setColorTone([cTone[0] + r, cTone[1] + g, cTone[2] + b, cTone[3] + gray]);
 		}
 	};
 })();

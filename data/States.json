@@ -1959,11 +1959,11 @@
       {
         "code": 23,
         "dataId": 0,
-        "value": 2
+        "value": 3
       }
     ],
     "iconIndex": 30,
-    "maxTurns": 5,
+    "maxTurns": 4,
     "message1": "",
     "message2": "",
     "message3": "",
@@ -1971,7 +1971,7 @@
     "minTurns": 4,
     "motion": 0,
     "name": "Taunt",
-    "note": "<Category: buff>\n\n<Help Description>\nIncreases AGR by 100%.\n</Help Description>",
+    "note": "<Category: buff>\n\n<Help Description>\nIncreases AGR by 200%.\n</Help Description>",
     "overlay": 0,
     "priority": 30,
     "removeAtBattleEnd": true,
@@ -4266,7 +4266,7 @@
     "message4": " relaxed their stance.",
     "minTurns": 1,
     "motion": 0,
-    "name": "Offensive Stance Handling",
+    "name": "Combat Stance Handling",
     "note": "<Custom Apply Effect>\ntarget._offensiveStance = target._offensiveStance || 0;\ntarget._offensiveStance = Math.min(3, target._offensiveStance + 1);\nstack = target._offensiveStance;\nswitch (stack) {\n  case 1:\n    target.addState(131);\n    break;\n  case 2:\n    target.removeState(131);\n    target.addState(132);\n    break;\n  case 3:\n    target.removeState(132);\n    target.addState(133);\n    break;\n  default:\n    break;\n}\n</Custom Apply Effect>\n\n<Custom Remove Effect>\ntarget._offensiveStance = 0;\n</Custom Remove Effect>",
     "overlay": 0,
     "priority": 0,
@@ -4311,7 +4311,7 @@
     "message4": "",
     "minTurns": 4,
     "motion": 0,
-    "name": "Offensive Stance I",
+    "name": "Combat Stance I",
     "note": "<Category: buff>\n\n<Custom Leave Effect>\ntarget.removeState(130);\n</Custom Leave Effect>\n\n<Help Description>\nIncreases ATK and AGI by 20%. Decreases DEF and MDF by 20%. Can stack two more times.\n</Help Description>",
     "overlay": 0,
     "priority": 30,
@@ -4356,7 +4356,7 @@
     "message4": "",
     "minTurns": 5,
     "motion": 0,
-    "name": "Offensive Stance II",
+    "name": "Combat Stance II",
     "note": "<Category: buff>\n\n<Custom Leave Effect>\ntarget.removeState(130);\n</Custom Leave Effect>\n\n<Help Description>\nIncreases ATK and AGI by 40%. Decreases DEF and MDF by 40%. Can stack one more time.\n</Help Description>",
     "overlay": 0,
     "priority": 30,
@@ -4401,7 +4401,7 @@
     "message4": "",
     "minTurns": 6,
     "motion": 0,
-    "name": "Offensive Stance III",
+    "name": "Combat Stance III",
     "note": "<Category: buff>\n\n<Custom Leave Effect>\ntarget.removeState(130);\n</Custom Leave Effect>\n\n<Help Description>\nIncreases ATK and AGI by 60%. Decreases DEF and MDF by 60%. Fully stacked!\n</Help Description>",
     "overlay": 0,
     "priority": 30,
@@ -5278,6 +5278,11 @@
         "code": 11,
         "dataId": 13,
         "value": 0.5
+      },
+      {
+        "code": 14,
+        "dataId": 33,
+        "value": 1
       }
     ],
     "iconIndex": 0,
@@ -6965,22 +6970,33 @@
   },
   {
     "id": 204,
-    "autoRemovalTiming": 0,
+    "autoRemovalTiming": 2,
     "chanceByDamage": 100,
-    "traits": [],
-    "iconIndex": 0,
-    "maxTurns": 1,
-    "message1": "",
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 0.9
+      },
+      {
+        "code": 23,
+        "dataId": 7,
+        "value": 0.9
+      }
+    ],
+    "iconIndex": 29,
+    "maxTurns": 5,
+    "message1": " enters a defensive stance!",
     "message2": "",
     "message3": "",
     "message4": "",
-    "minTurns": 1,
+    "minTurns": 5,
     "motion": 0,
-    "name": "",
-    "note": "",
+    "name": "Defensive Stance",
+    "note": "<Category: buff>\n\n<Help Description>\nDecreases damage taken by 10%.\n</Help Description>",
     "overlay": 0,
-    "priority": 50,
-    "removeAtBattleEnd": false,
+    "priority": 20,
+    "removeAtBattleEnd": true,
     "removeByDamage": false,
     "removeByRestriction": false,
     "removeByWalking": false,

@@ -4704,6 +4704,7 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
     this._sideStatusWindows = [];
     for (var i = 0; i < $gameParty.maxBattleMembers(); i++) {
       var newStatusWindow = new Window_BattleSideStatus(i);
+      newStatusWindow.x += newStatusWindow.width;
       this._sideStatusWindows.push(newStatusWindow);
       this.addWindow(newStatusWindow);
     }
@@ -5068,6 +5069,7 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
   };
   Window_BattleSideBase.prototype.setNewActor = function () {
     this._actor = $gameParty.members()[this._index];
+    this._battler = this._actor;
     this.refresh();
   };
   Window_BattleSideBase.prototype.scaleRate = function () {
@@ -5277,7 +5279,8 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
   Window_BattleSideStates.prototype = Object.create(Window_BattleSideBase.prototype);
   Window_BattleSideStates.prototype.constructor = Window_BattleSideStates;
   Window_BattleSideStates.prototype.initialize = function (x, y, width, height, index) {
-    width = Olivia.OctoBattle.SideBattleUI.StatesMax * Window_Base._iconWidth + 4;
+    width = 4 + (Olivia.OctoBattle.SideBattleUI.StatesMax * Window_Base._iconWidth) / 2;
+    height = (height - 4) * ($gameParty.size() < 6 ? 3 : 2) + 4;
     x -= width;
     Window_BattleSideBase.prototype.initialize.call(this, x, y, width, height, index);
     this.refresh();
@@ -5288,14 +5291,64 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
   Window_BattleSideStates.prototype.drawIcon = function (iconIndex, x, y) {
     Window_Base.prototype.drawIcon.call(this, iconIndex, x, y);
   };
+  Window_BattleSideStates.prototype.split = function() {
+    return Olivia.OctoBattle.SideBattleUI.StatesMax / 2;
+  };
   Window_BattleSideStates.prototype.refresh = function () {
     Window_BattleSideBase.prototype.refresh.call(this);
     if (!!this._actor) {
       var x = this.contents.width - 2;
-      x -= Math.min(Olivia.OctoBattle.SideBattleUI.StatesMax, this._actor.allIcons().length) * Window_Base._iconWidth;
+      x -= Math.min(this.split(), this._actor.allIcons().length) * Window_Base._iconWidth;
       this.drawActorIcons(this._actor, x, 0, this.contents.width - 2 - x);
       this._actor._needsStatusStateRefresh = undefined;
     }
+  };
+  Window_BattleSideStates.prototype.drawActorIcons = function(actor, wx, wy, ww) {
+    ww = ww || 144;
+    this._icons = actor.allIcons().slice(0, this.split() * ($gameParty.size() < 6 ? 3 : 2));
+    this._maxIcons = actor.allIcons().length <= 9 ? 9 : 8;
+    for (var i = 0; i < this._icons.length; i++) {
+        let x = wx + Window_Base._iconWidth * (i % this.split());
+        let y = wy + 2 + (Window_Base._iconHeight * Math.floor(i / this.split()));
+        let icon = i < this._maxIcons ? this._icons[i] : 1354;
+        this.drawIcon(icon, x, y);
+    }
+    this.drawActorIconsTurns(actor, wx, wy, ww);
+  };
+  Window_BattleSideStates.prototype.drawActorIconsTurns = function(actor, wx, wy, ww) {
+    var iw = Window_Base._iconWidth;
+    var max = this._icons.length;
+    var shownMax = Math.min(max, this._maxIcons); // var shownMax = Math.floor(ww / iw);
+    for (var i = 0; i < actor.states().length; ++i) {
+      if (shownMax <= 0) break;
+      var state = actor.states()[i];
+      if (state.iconIndex <= 0) continue;
+      if (state.autoRemovalTiming > 0) {
+        this.drawStateTurns(actor, state, wx, wy);
+      }
+      if (state.removeByWalking && !$gameParty.inBattle()) this.drawStateSteps(actor, state, wx, wy);
+      this.drawStateCounter(actor, state, wx, wy);
+      wx += iw;
+      // NEW
+      if ((i + 1) % (this.split()) == 0) {
+        wx -= iw * this.split();
+        wy += Window_Base._iconHeight;
+      }
+      // END OF NEW
+      --shownMax;
+    }
+    for (var i = 0; i < 8; ++i) {
+      if (shownMax <= 0) break;
+      if (actor._buffs[i] === 0) continue;
+      this.drawBuffTurns(actor, i, wx, wy);
+      if (Yanfly.Param.BSCShowBuffRate) {
+        this.drawBuffRate(actor, i, wx, wy - 12);
+      }
+      wx += iw;
+      --shownMax;
+    }
+    this.resetFontSettings();
+    this.resetTextColor();
   };
   Window_BattleSideStates.prototype.checkRefreshConditions = function () {
     if (!!this._actor) {
@@ -5315,7 +5368,7 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
     if ($dataSystem.optDisplayTp) {
       height += this.lineHeight();
     }
-    var x = Graphics.boxWidth - width;
+    var x = Graphics.boxWidth - width - 12;
     var y = height * index + Olivia.OctoBattle.SideBattleUI.CeilingBuffer;
     this._targetX = this._homeX = x;
     this._targetY = this._homeY = y;
@@ -5356,6 +5409,9 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
     }
     this.addChild(new Window_BattleSideStates(0, y1, width, height, index));
   };
+  Window_BattleSideStatus.prototype.dimOffset = function () {
+    return 5;
+  };
   Window_BattleSideStatus.prototype.refresh = function () {
     this.contents.clear();
     if (!!this._actor) {
@@ -5363,9 +5419,9 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
       var c2 = this.dimColor2();
       var w1 = Math.ceil(this.width / 4);
       var w2 = this.width - w1;
-      var h = this.height;
-      this.contents.gradientFillRect(0, 0, w1, h, c2, c1);
-      this.contents.fillRect(w1, 0, w2, h, c1);
+      var h = this.height - this.dimOffset();
+      this.contents.gradientFillRect(0, 0 + this.dimOffset(), w1, h, c2, c1);
+      this.contents.fillRect(w1, 0 + this.dimOffset(), w2, h, c1);
     }
   };
   Window_BattleSideStatus.prototype.update = function () {
@@ -5461,6 +5517,7 @@ if (Olivia.OctoBattle[_0x3084("0x1c")][_0x3084("0x30")]) {
       actor._victoryPhase = true;
       actor._victorySkills = [];
     }, this);
+    SceneManager._scene.slideStatusWindows();
     this[_0x3084("0xdd")][_0x3084("0xa7")]();
     this[_0x3084("0xee")] = true;
     if (this[_0x3084("0xa4")]) {

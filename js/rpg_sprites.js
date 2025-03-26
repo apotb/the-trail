@@ -678,9 +678,9 @@ Sprite_Actor.prototype.initMembers = function() {
     this._motion = null;
     this._motionCount = 0;
     this._pattern = 0;
-    this.createShadowSprite();
     this.createWeaponSprite();
     this.createMainSprite();
+    this.createShadowSprite();
     this.createStateSprite();
 };
 
@@ -693,12 +693,19 @@ Sprite_Actor.prototype.createMainSprite = function() {
 };
 
 Sprite_Actor.prototype.createShadowSprite = function() {
-    this._shadowSprite = new Sprite();
-    this._shadowSprite.bitmap = ImageManager.loadSystem('Shadow2');
-    this._shadowSprite.anchor.x = 0.5;
-    this._shadowSprite.anchor.y = 0.5;
-    this._shadowSprite.y = -2;
-    this.addChild(this._shadowSprite);
+    if (!this._shadowSprite) this._shadowSprite = new Sprite_Base();
+    if (!this._mainSprite || !this._mainSprite.bitmap || !this._mainSprite.bitmap.isReady()) {
+        setTimeout(() => this.createShadowSprite(), 50);
+        return;
+    }
+    this._shadowSprite.bitmap = this._mainSprite.bitmap;
+    this._shadowSprite.anchor.set(0.5, 1);
+    this._shadowSprite.scale.y = -0.5;
+    this._shadowSprite.tint = 0x000000;
+    this._shadowSprite.alpha = 0.5;
+    this._shadowSprite.y = -4;
+    this._shadowSprite.z = 0.99;
+    this.addChildAt(this._shadowSprite, this.children.indexOf(this._mainSprite));
 };
 
 Sprite_Actor.prototype.createWeaponSprite = function() {
@@ -790,6 +797,7 @@ Sprite_Actor.prototype.updateBitmap = function() {
     if (this._battlerName !== name) {
         this._battlerName = name;
         this._mainSprite.bitmap = ImageManager.loadSvActor(name);
+        this._shadowSprite.bitmap = ImageManager.loadSvActor(name);
     }
 };
 
@@ -804,6 +812,7 @@ Sprite_Actor.prototype.updateFrame = function() {
         var cx = Math.floor(motionIndex / 6) * 3 + pattern;
         var cy = motionIndex % 6;
         this._mainSprite.setFrame(cx * cw, cy * ch, cw, ch);
+        this._shadowSprite.setFrame(cx * cw, cy * ch, cw, ch);
     }
 };
 

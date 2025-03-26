@@ -1608,7 +1608,7 @@
         "parameters": [
           0,
           38,
-          false,
+          true,
           true
         ]
       },
@@ -1622,6 +1622,29 @@
         "indent": 2,
         "parameters": [
           "A",
+          0
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 602,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 123,
+        "indent": 2,
+        "parameters": [
+          "B",
           0
         ]
       },
@@ -4326,7 +4349,14 @@
         "code": 401,
         "indent": 2,
         "parameters": [
-          "You can't use the \\ii[99] here."
+          "You can't use the \\ii[99] in this spot. Something"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "from another plane would appear on top of you!"
         ]
       },
       {
@@ -4344,7 +4374,7 @@
         "indent": 2,
         "parameters": [
           12,
-          "[75,131,132,133,134,135].indexOf($gameMap._mapId) !== -1"
+          "$gameMap.inRuinedFort()"
         ]
       },
       {
@@ -4411,6 +4441,13 @@
         ]
       },
       {
+        "code": 356,
+        "indent": 4,
+        "parameters": [
+          "Light color 10 #e6292c"
+        ]
+      },
+      {
         "code": 223,
         "indent": 4,
         "parameters": [
@@ -4441,6 +4478,13 @@
           59,
           59,
           0
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 4,
+        "parameters": [
+          "Light color 10 #2772e3"
         ]
       },
       {
@@ -4532,6 +4576,13 @@
         ]
       },
       {
+        "code": 230,
+        "indent": 4,
+        "parameters": [
+          60
+        ]
+      },
+      {
         "code": 101,
         "indent": 4,
         "parameters": [
@@ -4586,79 +4637,14 @@
         "code": 401,
         "indent": 4,
         "parameters": [
-          "\\-I must thank you for bringing"
+          "\\-I must thank you for bringing it right into my hands."
         ]
       },
       {
         "code": 401,
         "indent": 4,
         "parameters": [
-          "it right into my hands."
-        ]
-      },
-      {
-        "code": 101,
-        "indent": 4,
-        "parameters": [
-          "Unknown",
-          0,
-          0,
-          2
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 4,
-        "parameters": [
-          "\\-Oh, but you haven't gotten"
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 4,
-        "parameters": [
-          "a proper welcome."
-        ]
-      },
-      {
-        "code": 101,
-        "indent": 4,
-        "parameters": [
-          "Unknown",
-          0,
-          0,
-          2
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 4,
-        "parameters": [
-          "\\-Welcome to my home for the past millenium."
-        ]
-      },
-      {
-        "code": 101,
-        "indent": 4,
-        "parameters": [
-          "Unknown",
-          0,
-          0,
-          2
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 4,
-        "parameters": [
-          "\\-Your souls will be a fine"
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 4,
-        "parameters": [
-          "addition to my collection."
+          "Your souls will be a fine addition to my collection."
         ]
       },
       {
@@ -4667,15 +4653,34 @@
         "parameters": [
           44,
           44,
-          1,
           0,
-          1
+          0,
+          2
         ]
       },
       {
-        "code": 244,
+        "code": 241,
         "indent": 4,
-        "parameters": []
+        "parameters": [
+          {
+            "name": "dungeon_bladesville_2",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 132,
+        "indent": 4,
+        "parameters": [
+          {
+            "name": "dungeon_bladesville_2",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
       },
       {
         "code": 0,
@@ -6124,12 +6129,53 @@
     "id": 27,
     "list": [
       {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "Actor4",
+          2,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "\\p3That thing keeps getting away..."
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "Actor4",
+          2,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "\\p3How can we kill it faster? \\N[1] and \\N[4]"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "can still use items like \\ii[265]..."
+        ]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "Gilded Ghost Hint",
     "switchId": 1,
     "trigger": 0
   },
@@ -12572,7 +12618,7 @@
         "indent": 0,
         "parameters": [
           12,
-          "$gameSystem._moonRespawn"
+          "$gameSystem._moonRespawn && $gameMap.events().some(e => e._monster)"
         ]
       },
       {
@@ -12780,21 +12826,14 @@
         "code": 405,
         "indent": 0,
         "parameters": [
-          "A millenium ago, a massive war was waged across"
+          "A millennium ago, a war ravaged the Overworld, pitting"
         ]
       },
       {
         "code": 405,
         "indent": 0,
         "parameters": [
-          "the entirety of the Overworld, pitting humans"
-        ]
-      },
-      {
-        "code": 405,
-        "indent": 0,
-        "parameters": [
-          "against \\c[18]an evil entity\\c[0] and \\c[18]his\\c[0] enormous army."
+          "humans against \\c[18]an evil entity\\c[0] and \\c[18]his\\c[0] vast army."
         ]
       },
       {
@@ -12815,28 +12854,14 @@
         "code": 405,
         "indent": 0,
         "parameters": [
-          "Two brothers were elected to defeat the threat."
+          "Two brothers, renowned fighters and respected"
         ]
       },
       {
         "code": 405,
         "indent": 0,
         "parameters": [
-          "They were known as skilled fighters, highly"
-        ]
-      },
-      {
-        "code": 405,
-        "indent": 0,
-        "parameters": [
-          "respected travelers, and now the leaders of"
-        ]
-      },
-      {
-        "code": 405,
-        "indent": 0,
-        "parameters": [
-          "the human army."
+          "adventurers, were chosen to defeat the \\c[18]threat\\c[0]."
         ]
       },
       {
@@ -12878,28 +12903,21 @@
         "code": 405,
         "indent": 0,
         "parameters": [
-          "In a duel, any human with proper equipment and"
+          "While a trained human could defeat a single monster,"
         ]
       },
       {
         "code": 405,
         "indent": 0,
         "parameters": [
-          "training would easily dispose of the average"
+          "the real challenge came when hordes of these vile"
         ]
       },
       {
         "code": 405,
         "indent": 0,
         "parameters": [
-          "monster. Problems begin when hordes of these"
-        ]
-      },
-      {
-        "code": 405,
-        "indent": 0,
-        "parameters": [
-          "disgusting creatures overwhelm us."
+          "creatures overwhelm us. We were outnumbered."
         ]
       },
       {
@@ -12920,7 +12938,14 @@
         "code": 405,
         "indent": 0,
         "parameters": [
-          "It's an understatement to say we were out-numbered."
+          "The cost of victory was immense. Cities were pulverized,"
+        ]
+      },
+      {
+        "code": 405,
+        "indent": 0,
+        "parameters": [
+          "landscapes were leveled. And death... so much death."
         ]
       },
       {
@@ -12941,21 +12966,7 @@
         "code": 405,
         "indent": 0,
         "parameters": [
-          "We won this war, but not without great"
-        ]
-      },
-      {
-        "code": 405,
-        "indent": 0,
-        "parameters": [
-          "losses. Cities were pulverized, landscapes"
-        ]
-      },
-      {
-        "code": 405,
-        "indent": 0,
-        "parameters": [
-          "were leveled. And death..."
+          "It's said the rivers ran red with blood for many weeks."
         ]
       },
       {
@@ -12976,77 +12987,28 @@
         "code": 405,
         "indent": 0,
         "parameters": [
-          "So much death."
+          "The greatest loss was the disappearance of the"
         ]
       },
       {
         "code": 405,
         "indent": 0,
         "parameters": [
-          ""
+          "two champions. At the height of the conflict,"
         ]
       },
       {
         "code": 405,
         "indent": 0,
         "parameters": [
-          ""
+          "they vanished, leaving no one to kill the"
         ]
       },
       {
         "code": 405,
         "indent": 0,
         "parameters": [
-          "It's said that the rivers ran red"
-        ]
-      },
-      {
-        "code": 405,
-        "indent": 0,
-        "parameters": [
-          "with blood for many weeks."
-        ]
-      },
-      {
-        "code": 405,
-        "indent": 0,
-        "parameters": [
-          ""
-        ]
-      },
-      {
-        "code": 405,
-        "indent": 0,
-        "parameters": [
-          ""
-        ]
-      },
-      {
-        "code": 405,
-        "indent": 0,
-        "parameters": [
-          "One of the worst losses of all was the loss"
-        ]
-      },
-      {
-        "code": 405,
-        "indent": 0,
-        "parameters": [
-          "of the two champions. At their greatest time of"
-        ]
-      },
-      {
-        "code": 405,
-        "indent": 0,
-        "parameters": [
-          "need, they disappeared, leaving no one left to"
-        ]
-      },
-      {
-        "code": 405,
-        "indent": 0,
-        "parameters": [
-          "kill \\c[18]the leader of the monster army\\c[0]."
+          "\\c[18]leader of the monster army\\c[0]."
         ]
       },
       {
@@ -14087,11 +14049,21 @@
         "code": 302,
         "indent": 0,
         "parameters": [
-          1,
-          35,
+          0,
+          190,
           0,
           0,
           false
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 0,
+        "parameters": [
+          1,
+          35,
+          0,
+          0
         ]
       },
       {
