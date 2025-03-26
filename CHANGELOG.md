@@ -156,6 +156,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
 - A new "pity" system will increase your HIT, EVA, and CRI after each retry. It resets between encounters.
 - The crafting help window now shows descriptions for uncrafted items, albeit in gray.
 - Quest journal display is on by default.
+- Made the leaderboard's colors pop out.
 - Removed Made With MV splash screen.
 - Renamed Staff Impulse to Impulse.
 
