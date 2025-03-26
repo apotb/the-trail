@@ -134,7 +134,8 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
   - Formidable Opponent → APOCALYPSE
   - True Darkness
 - All encounters can be run away from.
-- Infernal Wand now deals +20% fire damage.
+- Buffed Dilong's Wisdom to now grant +1 BP capacity.
+- Buffed Infernal Wand to now deal +20% fire damage.
 - Nerfed Hero Sword Replica outgoing element damage from +50% → +25%.
 - Nerfed INT Books from +4 → +2 INT.
 - Duplicate unmodified equipment will be grouped together in the inventory.

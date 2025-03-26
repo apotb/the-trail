@@ -3930,9 +3930,15 @@
   {
     "id": 152,
     "atypeId": 1,
-    "description": "BP keeps generating even on turns that you use it.",
+    "description": "BP keeps generating even on turns that you use it.\nGrants 1 extra BP capacity.",
     "etypeId": 9,
-    "traits": [],
+    "traits": [
+      {
+        "code": 24,
+        "dataId": 0,
+        "value": 1
+      }
+    ],
     "iconIndex": 125,
     "name": "Dilong's Wisdom",
     "note": "<Cannot Rename>\n\nHardcoded in Olivia_OctoBattle.js.",
