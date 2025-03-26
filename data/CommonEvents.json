@@ -12577,7 +12577,7 @@
         "indent": 0,
         "parameters": [
           12,
-          "$gameSystem._moonRespawn"
+          "$gameSystem._moonRespawn && $gameMap.events().some(e => e._monster)"
         ]
       },
       {
