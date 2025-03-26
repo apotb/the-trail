@@ -44,7 +44,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
   - Player 4, 2 new skills:
     - [P] Assassin: Passive @ L28
     - Adrenaline: Special @ L30
-- 5 new items:
+- 6 new items:
   - Gingerbread Cookie
   - Gold Dust
   - Flarestone
