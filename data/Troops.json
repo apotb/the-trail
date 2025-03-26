@@ -3839,6 +3839,12 @@
         "x": 252,
         "y": 346,
         "hidden": false
+      },
+      {
+        "enemyId": 85,
+        "x": 129,
+        "y": 241,
+        "hidden": true
       }
     ],
     "name": "Lost Soul",
@@ -3856,9 +3862,51 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              1
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Gilded Ghost joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
           {
             "code": 0,
             "indent": 0,
@@ -4476,6 +4524,12 @@
         "x": 177,
         "y": 325,
         "hidden": false
+      },
+      {
+        "enemyId": 85,
+        "x": 84,
+        "y": 400,
+        "hidden": true
       }
     ],
     "name": "Lost Soul x4",
@@ -4493,9 +4547,51 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              4
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Gilded Ghost joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
           {
             "code": 0,
             "indent": 0,
@@ -4544,6 +4640,12 @@
         "x": 273,
         "y": 256,
         "hidden": false
+      },
+      {
+        "enemyId": 85,
+        "x": 75,
+        "y": 247,
+        "hidden": true
       }
     ],
     "name": "Suffering Soul x6",
@@ -4561,9 +4663,51 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              6
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Gilded Ghost joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
           {
             "code": 0,
             "indent": 0,
@@ -8889,6 +9033,12 @@
         "x": 402,
         "y": 226,
         "hidden": false
+      },
+      {
+        "enemyId": 85,
+        "x": 114,
+        "y": 316,
+        "hidden": true
       }
     ],
     "name": "Chilling Apparition x2",
@@ -8906,9 +9056,51 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              3
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Gilded Ghost joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
           {
             "code": 0,
             "indent": 0,
@@ -8939,6 +9131,12 @@
         "x": 405,
         "y": 340,
         "hidden": false
+      },
+      {
+        "enemyId": 85,
+        "x": 141,
+        "y": 208,
+        "hidden": true
       }
     ],
     "name": "Werewolf x2, Chilling Apparition",
@@ -8956,9 +9154,51 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              3
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Gilded Ghost joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
           {
             "code": 0,
             "indent": 0,
@@ -9033,6 +9273,12 @@
         "x": 312,
         "y": 385,
         "hidden": false
+      },
+      {
+        "enemyId": 85,
+        "x": 141,
+        "y": 358,
+        "hidden": true
       }
     ],
     "name": "Chilling Apparition x3",
@@ -9050,9 +9296,51 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              3
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Gilded Ghost joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
           {
             "code": 0,
             "indent": 0,
@@ -9225,6 +9513,12 @@
         "x": 421,
         "y": 190,
         "hidden": false
+      },
+      {
+        "enemyId": 85,
+        "x": 225,
+        "y": 202,
+        "hidden": true
       }
     ],
     "name": "Poltergeist x2",
@@ -9242,9 +9536,51 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              1
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Gilded Ghost joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
           {
             "code": 0,
             "indent": 0,
@@ -9698,6 +10034,12 @@
         "x": 195,
         "y": 163,
         "hidden": false
+      },
+      {
+        "enemyId": 85,
+        "x": 294,
+        "y": 256,
+        "hidden": true
       }
     ],
     "name": "Werewolf x2, Chilling Apparition x2",
@@ -9722,10 +10064,79 @@
             "code": 333,
             "indent": 0,
             "parameters": [
-              -1,
+              0,
               0,
               174
             ]
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              1,
+              0,
+              174
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              2,
+              0,
+              174
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              3,
+              0,
+              174
+            ]
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              4
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Gilded Ghost joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
           },
           {
             "code": 0,
@@ -10630,6 +11041,12 @@
         "x": 162,
         "y": 247,
         "hidden": true
+      },
+      {
+        "enemyId": 85,
+        "x": 93,
+        "y": 154,
+        "hidden": true
       }
     ],
     "name": "Poltergeist x2 + Frozen Labyrinth Enemies",
@@ -10729,6 +11146,48 @@
             "parameters": []
           },
           {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              7
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Gilded Ghost joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
             "code": 0,
             "indent": 0,
             "parameters": []
@@ -10776,10 +11235,118 @@
         "x": 441,
         "y": 319,
         "hidden": false
+      },
+      {
+        "enemyId": 85,
+        "x": 117,
+        "y": 154,
+        "hidden": true
       }
     ],
     "name": "Poltergeist x2 + World Tree Enemies",
     "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              2,
+              0,
+              174
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              3,
+              0,
+              174
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              4,
+              0,
+              174
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              5,
+              0,
+              174
+            ]
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              6
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Gilded Ghost joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
       {
         "conditions": {
           "actorHp": 50,

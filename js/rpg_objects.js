@@ -410,8 +410,15 @@ Game_System.prototype.rareEnemyRoll = function() {
     if (!$gameSwitches.value(23)) return false; // Laeryidyean must be defeated
     let roll = Math.random() * this.rareEnemyDenominator() < 1;
     this._rareEnemyTries++;
-    if (roll) this._rareEnemyTries = 0;
+    if (roll) {
+        $gameTemp._rareEnemyTries = this._rareEnemyTries;
+        this._rareEnemyTries = 0;
+    }
     return roll;
+};
+
+Game_System.prototype.restoreRareEnemyTries = function() {
+    this._rareEnemyTries = $gameTemp._rareEnemyTries;
 };
 
 // Small Chests

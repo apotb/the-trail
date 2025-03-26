@@ -46,6 +46,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
     - Adrenaline: Special @ L30
 - 5 new items:
   - Gingerbread Cookie
+  - Gold Dust
   - Flarestone
   - Sauna Key
   - Phantasmal Charm
@@ -58,14 +59,16 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
     - Tideflame Headpiece
     - Bloodwave Headband
     - Vortex Mask
-  - 1 new accessory:
+  - 2 new accessories:
+    - Gilded Coin
     - Soulstealer's Necklace
   - 2 new magic equips:
     - Soul Shackles (Tome)
     - Waterfall (Tome)
   - 1 new power:
     - [REDACTED RESISTANCE]
-- 6 new enemies:
+- 7 new enemies:
+  - Gilded Ghost
   - Fire Spirit
   - Dullahan
   - Will o' Wisp

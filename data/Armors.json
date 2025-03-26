@@ -2538,7 +2538,7 @@
       0,
       0
     ],
-    "price": 1000
+    "price": 500
   },
   {
     "id": 103,
@@ -5762,6 +5762,33 @@
       0,
       0,
       20,
+      0
+    ],
+    "price": 1000
+  },
+  {
+    "id": 220,
+    "atypeId": 1,
+    "description": "A golden artifact from a forgotten time, this coin whispers\ndreams of boundless treasure. Multiplies bit drops by 1.5x.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 64,
+        "dataId": 4,
+        "value": 1.5
+      }
+    ],
+    "iconIndex": 361,
+    "name": "Gilded Coin",
+    "note": "<Upgrade Slots: 4>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
       0
     ],
     "price": 1000

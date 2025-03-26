@@ -6979,7 +6979,7 @@
   {
     "id": 237,
     "animationId": 0,
-    "consumable": true,
+    "consumable": false,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -6987,17 +6987,17 @@
       "type": 0,
       "variance": 20
     },
-    "description": "",
+    "description": "A pile of powdered gold dust. It glistens in the light,\nechoing back to your hunt for an elusive apparition.",
     "effects": [],
     "hitType": 0,
-    "iconIndex": 0,
+    "iconIndex": 365,
     "itypeId": 1,
-    "name": "",
-    "note": "",
-    "occasion": 0,
+    "name": "Gold Dust",
+    "note": "<Menu Category: Memorabilia>",
+    "occasion": 3,
     "price": 0,
     "repeats": 1,
-    "scope": 7,
+    "scope": 0,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0

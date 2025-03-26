@@ -1352,7 +1352,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Run Away",
-    "note": "<Max Mastery Level: 0>\n\n<whole action>\nmotion escape: user\n</whole action>",
+    "note": "<Max Mastery Level: 0>\n\n<whole action>\nmotion escape: user\nmove user: backward, 300, 30\nwait for movement\n</whole action>\n\n<After Eval>\nif (user.isEnemy() && user.enemyId() == 85) $gameSystem.restoreRareEnemyTries();\n</After Eval>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
