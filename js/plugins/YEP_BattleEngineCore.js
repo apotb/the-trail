@@ -5366,7 +5366,7 @@ Window_BattleLog.prototype.isFastForward = function() {
 
 Window_BattleLog.prototype.updateWaitCount = function() {
     if (this._waitCount > 0) {
-        this._waitCount -= 1;
+        this._waitCount -= 5 - ConfigManager.battleAniSpeed;
         if (this._waitCount < 0) {
             this._waitCount = 0;
         }
