@@ -54,7 +54,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
 - 2 new weapons:
   - Blazing Dagger
   - Stalactite
-- 7 new equipment:
+- 8 new equipment:
   - 3 new headgear:
     - Tideflame Headpiece
     - Bloodwave Headband
