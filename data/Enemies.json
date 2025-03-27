@@ -3430,7 +3430,7 @@
     ],
     "gold": 35,
     "name": "Fire Spirit",
-    "note": "<Element: Fire>\n<Element Absorb: Fire>\n<Passive State: 136, 147>\n\n<Sideview Battler: Spirit_4>\n<Floating>\n<Attack Animation: 3>\n\n<AI Priority>\nUser HP% param <= 75% +++ Random 50%: Steam Therapy, User\n</AI Priority>\n\n<Enemy Drops>\nFiery Powder: 75%\nFiery Powder: 75%\nFlarestone: 10%\nBlazing Dagger: 5%\nSelfish Candle: 5%\nFire Essence: 20%\n</Enemy Drops>",
+    "note": "<Element: Fire>\n<Element Absorb: Fire>\n<Passive State: 147>\n\n<Sideview Battler: Spirit_4>\n<Floating>\n<Attack Animation: 3>\n\n<AI Priority>\nUser HP% param <= 75% +++ Random 50%: Steam Therapy, User\n</AI Priority>\n\n<Enemy Drops>\nFiery Powder: 75%\nFiery Powder: 75%\nFlarestone: 10%\nBlazing Dagger: 5%\nSelfish Candle: 5%\nFire Essence: 20%\n</Enemy Drops>",
     "params": [
       800,
       0,
@@ -3503,7 +3503,7 @@
     ],
     "gold": 30,
     "name": "Water Spirit",
-    "note": "<Element: Water>\n<Element Absorb: Water>\n<Passive State: 136, 146, 147>\n\n<Sideview Battler: Spirit_3>\n<Floating>\n<Attack Animation: 82>\n\n<Enemy Drops>\nWater Jug: 75%\nWater Jug: 75%\nWater Essence: 20%\n</Enemy Drops>",
+    "note": "<Element: Water>\n<Element Absorb: Water>\n<Passive State: 146, 147>\n\n<Sideview Battler: Spirit_3>\n<Floating>\n<Attack Animation: 82>\n\n<Enemy Drops>\nWater Jug: 75%\nWater Jug: 75%\nWater Essence: 20%\n</Enemy Drops>",
     "params": [
       400,
       0,
@@ -3592,7 +3592,7 @@
     ],
     "gold": 100,
     "name": "Earth Spirit",
-    "note": "<Element: Earth>\n<Element Absorb: Earth>\n<Passive State: 136, 147>\n\n<Sideview Battler: Spirit_8>\n<Floating>\n<Attack Animation: 86>\n\n<Enemy Drops>\nRock Salt: 75%\nRock Salt: 75%\nBattle Plan: 5%\nStalactite: 3.33%\nATK Scroll ★: 10%\nDEF Scroll ★: 10%\nEarth Essence: 20%\n</Enemy Drops>",
+    "note": "<Element: Earth>\n<Element Absorb: Earth>\n<Passive State: 147>\n\n<Sideview Battler: Spirit_8>\n<Floating>\n<Attack Animation: 86>\n\n<Enemy Drops>\nRock Salt: 75%\nRock Salt: 75%\nBattle Plan: 5%\nStalactite: 3.33%\nATK Scroll ★: 10%\nDEF Scroll ★: 10%\nEarth Essence: 20%\n</Enemy Drops>",
     "params": [
       3000,
       0,
@@ -6390,7 +6390,7 @@
     ],
     "gold": 50,
     "name": "Dullahan",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 136, 147>\n\n<Sideview Battler: Dullahan_1>\n<Weapon Image: 242>\n<Attack Animation: 126>\n\n<Boost Skill 30: Full>\n<Boost Skill 32: Full>\n<Boost Skill 84: Full>\n<AI Priority>\nTroop Alive Members > 1 +++ State !== Magic Prone +++ Random 40%: Magic Proneness, Highest MDF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire\nTroop Alive Members > 1 +++ State !== Hold the Line I +++ Random 80%: Hold the Line I\n</AI Priority>\n\n<Enemy Drops>\nSauna Key: 100%\nDark Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>\n\n<Night Boost>\nEther: 75% +25%\nEther: 50% +50%\nEther: 25% +25%\nRuby Ring: 5% +5%\nEmerald Ring: 5% +5%\n</Night Boost>\n\n<Conditional Sauna Key Drop>\nSauna Key Count >= 1: +100%\n</Conditional Sauna Key Drop>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 147>\n\n<Sideview Battler: Dullahan_1>\n<Weapon Image: 242>\n<Attack Animation: 126>\n\n<Boost Skill 30: Full>\n<Boost Skill 32: Full>\n<Boost Skill 84: Full>\n<AI Priority>\nTroop Alive Members > 1 +++ State !== Magic Prone +++ Random 40%: Magic Proneness, Highest MDF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire\nTroop Alive Members > 1 +++ State !== Hold the Line I +++ Random 80%: Hold the Line I\n</AI Priority>\n\n<Enemy Drops>\nSauna Key: 100%\nDark Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>\n\n<Night Boost>\nLarge Potion: 75% +25%\nLarge Potion: 50% +50%\nLarge Potion: 25% +25%\nRuby Ring: 5% +5%\nEmerald Ring: 5% +5%\n</Night Boost>\n\n<Conditional Sauna Key Drop>\nSauna Key Count >= 1: +100%\n</Conditional Sauna Key Drop>",
     "params": [
       3000,
       20,
@@ -6441,6 +6441,86 @@
       40,
       1,
       30
+    ]
+  },
+  {
+    "id": 86,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 6,
+        "skillId": 146
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 59
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 121
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Insane Mage",
+    "dropItems": [],
+    "exp": 200,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 8,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.97
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.05
+      },
+      {
+        "code": 61,
+        "dataId": 0,
+        "value": 1
+      }
+    ],
+    "gold": 50,
+    "name": "Insane Mage",
+    "note": "<Element: Light>\n<Passive State: 147>\n\n<Sideview Battler: FortSoul_3>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nState === On Fire!: Bubble\nHP% param <= 30% +++ Random 60%: Cure II, Lowest HP%\n</AI Priority>\n\n<Enemy Drops>\nScroll of Silver Sands: 100%\nLarge Elixir: 75%\nLarge Elixir: 50%\nLarge Elixir: 25%\nLight Essence: 100%\n</Enemy Drops>",
+    "params": [
+      3000,
+      0,
+      12,
+      20,
+      45,
+      55,
+      100,
+      60
     ]
   }
 ]
