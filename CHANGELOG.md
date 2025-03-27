@@ -148,6 +148,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
 - Many enemies can now drop the Selfish Candle.
 - Flytraps and Parasites can now drop Medicated Eyedrops.
 - Darkhounds now drop Silver Wristbraces instead of Iron Wristbraces.
+- Four-Toed Kevin always drops his Enchanted Anti-Magic Charm.
 - Using an equipped item as an ingredient will automatically equip the newly crafted upgrade.
 - Added sideview sprites for the Werewolf, Chilling Apparition, Polar Bear, and all Slimes.
 - Changed sprites for Suffering Soul and Poltergeist.

@@ -649,7 +649,7 @@
     ],
     "gold": 300,
     "name": "Four-Toed Kevin",
-    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Bandito_1>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<HP Gauge Width: 216>\n\n<Boost Skill 15: Full>\n<Boost Skill 18: Full>\n<AI Priority>\nUser HP% param <= 10%: Backstab, Lowest DEF\n\nState !== Foresight +++ User HP% param >= 30% +++ Random 30%: Foresight, User\nState !== Sharpened Dagger +++ User HP% param >= 30%: Sharpen Dagger, User\n\nTroop Alive Members > 1 +++ State !== Inspired: Inspire, First\nTroop Alive Members > 1 +++ Random 50%: Guard, User\n</AI Priority>\n\n<Enemy Drops>\nBell: 5%\nScrap of Kevin's Cape: 100%\nLeader Outfit: 100%\nBandito Dagger: 12.5%\nBandito Cloak: 12.5%\nBandito Gloves: 12.5%\nEnchanted Anti-Magic Charm: 5%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Bandito_1>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<HP Gauge Width: 216>\n\n<Boost Skill 15: Full>\n<Boost Skill 18: Full>\n<AI Priority>\nUser HP% param <= 10%: Backstab, Lowest DEF\n\nState !== Foresight +++ User HP% param >= 30% +++ Random 30%: Foresight, User\nState !== Sharpened Dagger +++ User HP% param >= 30%: Sharpen Dagger, User\n\nTroop Alive Members > 1 +++ State !== Inspired: Inspire, First\nTroop Alive Members > 1 +++ Random 50%: Guard, User\n</AI Priority>\n\n<Enemy Drops>\nBell: 5%\nScrap of Kevin's Cape: 100%\nEnchanted Anti-Magic Charm: 100%\nLeader Outfit: 100%\nBandito Dagger: 12.5%\nBandito Cloak: 12.5%\nBandito Gloves: 12.5%\n</Enemy Drops>",
     "params": [
       1200,
       200,
