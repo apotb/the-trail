@@ -981,11 +981,15 @@ Window_SaveInfo.prototype.drawContents = function(dy) {
   if (!this._saveContents) {
     return setTimeout(this.drawContents.bind(this, dy), 50);
   }
-  this._saveContents = JsonEx.parse(this._saveContents);
-  dy = this.drawPartyGraphics(dy);
-  dy = this.drawPartyNames(dy);
-  dy = this.drawPartyLevels(dy);
-  this.drawColumnData(dy);
+  try {
+    this._saveContents = JsonEx.parse(this._saveContents);
+    dy = this.drawPartyGraphics(dy);
+    dy = this.drawPartyNames(dy);
+    dy = this.drawPartyLevels(dy);
+    this.drawColumnData(dy);
+  } catch (e) {
+    console.error('Failed to parse save contents', e);
+  }
 };
 
 Window_SaveInfo.prototype.drawPartyGraphics = function(dy) {
