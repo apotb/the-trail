@@ -2717,7 +2717,7 @@ Game_BattlerBase.prototype.die = function() {
     this._hp = 0;
     this.clearStates();
     this.clearBuffs();
-    if (this.isEnemy()) if (this.killer().isEquipped($dataWeapons[27])) OrangeGreenworks.activateAchievement('BATTLE_SHOVEL');
+    if (this.isEnemy()) if (this.killer().isEquipped) if (this.killer().isEquipped($dataWeapons[27])) OrangeGreenworks.activateAchievement('BATTLE_SHOVEL');
 };
 
 Game_BattlerBase.prototype.revive = function() {
