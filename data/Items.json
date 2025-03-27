@@ -4020,8 +4020,8 @@
   },
   {
     "id": 135,
-    "animationId": 0,
-    "consumable": false,
+    "animationId": 41,
+    "consumable": true,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -4029,7 +4029,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A heated cluster of blueberries with all\nthe moisture evaporated. Inedible on its own.",
+    "description": "A heated cluster of blueberries with much of its\nmoisture evaporated. Recovers more MP, but no HP.",
     "effects": [
       {
         "code": 12,
@@ -4042,11 +4042,11 @@
     "iconIndex": 553,
     "itypeId": 1,
     "name": "Dried Blueberries",
-    "note": "<Menu Category: Foodstuffs>\n\n<Synthesis Ingredients>\nBlueberries\n</Synthesis Ingredients>\n<Mask Name: Demoisturized Fruit>\n<Synthesis SE: Fire2>",
-    "occasion": 3,
+    "note": "<Menu Category: Foodstuffs>\n\n<Synthesis Ingredients>\nBlueberries\n</Synthesis Ingredients>\n<Mask Name: Demoisturized Fruit>\n<Synthesis SE: Fire2>\n\n<Custom Show Eval>\nvisible = !$gameTemp.bagOrganized();\n</Custom Show Eval>",
+    "occasion": 0,
     "price": 2,
     "repeats": 1,
-    "scope": 0,
+    "scope": 7,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0

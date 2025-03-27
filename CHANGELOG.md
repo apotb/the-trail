@@ -165,6 +165,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
 - Fixed name boxes not showing up after battle.
 - Fixed the Animation Speed option not decreasing the length of pauses.
 - Fixed an occasional crash when loading/deleting a save.
+- Fixed not being able to eat Dried Blueberries.
 - Fixed being able to skip the Adonian Monsters troop by running away.
 - Fixed the Skeletal Outfit referencing the incorrect filename, causing an error.
 - Fixed "fake dupe" bug related to equipped crafting ingredients.
