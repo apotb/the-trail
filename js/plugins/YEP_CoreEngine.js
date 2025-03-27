@@ -1579,6 +1579,7 @@ Game_Actor.prototype.changeClass = function(classId, keepExp) {
     this._classId = classId;
     this.changeExp(this._exp[this._classId] || 0, false);
     this.refresh();
+    this.initSkills();
 };
 
 Game_Actor.prototype.learnSkill = function(skillId) {
