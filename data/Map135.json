@@ -7102,14 +7102,33 @@
           },
           "list": [
             {
-              "code": 236,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                0,
+                52,
+                1
+              ]
+            },
+            {
+              "code": 236,
+              "indent": 1,
               "parameters": [
                 "storm",
                 9,
                 1,
                 false
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 214,
@@ -7767,7 +7786,7 @@
                 0,
                 131,
                 8,
-                16,
+                17,
                 0,
                 0
               ]
@@ -8629,125 +8648,7 @@
     null,
     null,
     null,
-    {
-      "id": 15,
-      "name": "sufferingsoul-copy",
-      "note": "<Copy Event: 158, 155>",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "FloatingSkull",
-            "direction": 2,
-            "pattern": 1,
-            "characterIndex": 4
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 1,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 1,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 2,
-          "walkAnime": true
-        }
-      ],
-      "x": 13,
-      "y": 15
-    },
-    {
-      "id": 16,
-      "name": "sufferingsoul-copy",
-      "note": "<Copy Event: 158, 155>",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "FloatingSkull",
-            "direction": 2,
-            "pattern": 1,
-            "characterIndex": 4
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 1,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 1,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 2,
-          "walkAnime": true
-        }
-      ],
-      "x": 17,
-      "y": 15
-    }
+    null,
+    null
   ]
 }
