@@ -1,5 +1,5 @@
 {
-  "autoplayBgm": true,
+  "autoplayBgm": false,
   "autoplayBgs": true,
   "battleback1Name": "Cobblestones5",
   "battleback2Name": "Fort1",
@@ -28,7 +28,7 @@
   "parallaxSx": 0,
   "parallaxSy": 0,
   "scrollType": 0,
-  "specifyBattleback": false,
+  "specifyBattleback": true,
   "tilesetId": 2,
   "width": 31,
   "data": [
@@ -8661,8 +8661,30 @@
                 44,
                 0,
                 6,
-                1
+                2
               ]
+            },
+            {
+              "code": 241,
+              "indent": 1,
+              "parameters": [
+                {
+                  "name": "dungeon_bladesville_1",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 241,
