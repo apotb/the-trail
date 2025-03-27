@@ -7333,11 +7333,6 @@ Game_CharacterBase.prototype.regionId = function() {
     return $gameMap.regionId(this._x, this._y);
 };
 
-Game_CharacterBase.prototype.checkCliff = function() {
-    this.turnTowardPlayer();
-    return !this.isMapPassable(this._x, this._y, this.direction());
-};
-
 Game_CharacterBase.prototype.increaseSteps = function() {
     if (this.isOnLadder()) {
         this.setDirection(8);
@@ -9279,6 +9274,14 @@ Game_Event.prototype.isNearThePlayer = function() {
     return sx + sy < 20;
 };
 
+Game_Event.prototype.checkCliff = function() {
+    this.turnTowardPlayer();
+    $gamePlayer.setThrough(true);
+    const bool = !this.isMapPassable(this._x, this._y, this.direction());
+    $gamePlayer.setThrough(false);
+    return bool;
+};
+
 Game_Event.prototype.moveTypeCustom = function() {
     this.updateRoutineMove();
 };
@@ -9882,6 +9885,10 @@ Game_Interpreter.prototype.changeHp = function(target, value, allowDeath) {
             target.performCollapse();
         }
     }
+};
+
+Game_Interpreter.prototype.checkCliff() = function() {
+    return $gameMap.event(this.eventId()).checkCliff();
 };
 
 // Show Text
