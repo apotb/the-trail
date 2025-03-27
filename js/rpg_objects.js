@@ -9887,7 +9887,7 @@ Game_Interpreter.prototype.changeHp = function(target, value, allowDeath) {
     }
 };
 
-Game_Interpreter.prototype.checkCliff() = function() {
+Game_Interpreter.prototype.checkCliff = function() {
     return $gameMap.event(this.eventId()).checkCliff();
 };
 
