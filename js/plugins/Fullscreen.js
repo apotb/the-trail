@@ -21,12 +21,15 @@
   extend(Scene_Boot, 'start', function() {
 		if (Graphics._isFullScreen() && !$gameTemp.isPlaytest()) Graphics._switchFullScreen();
   })
+
+  const width = 1280;
+  const height = 720;
   
   extend(Scene_Base, 'create', function() {
-		Graphics.width = 1280;
-		Graphics.height = 720;
-		Graphics.boxWidth = 1280;
-    Graphics.boxHeight = 720;
+		Graphics.width = width;
+		Graphics.height = height;
+		Graphics.boxWidth = width;
+    Graphics.boxHeight = height;
   })
  
 })()
