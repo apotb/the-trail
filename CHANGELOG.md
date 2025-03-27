@@ -55,11 +55,13 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
 - 2 new weapons:
   - Blazing Dagger
   - Stalactite
-- 8 new equipment:
+- 9 new equipment:
   - 3 new headgear:
     - Tideflame Headpiece
     - Bloodwave Headband
     - Vortex Mask
+  - 1 new bodygear:
+    - Dullahan Armor
   - 2 new accessories:
     - Gilded Coin
     - Soulstealer's Necklace

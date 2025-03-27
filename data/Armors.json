@@ -5798,5 +5798,32 @@
       0
     ],
     "price": 1000
+  },
+  {
+    "id": 221,
+    "atypeId": 2,
+    "description": "Although it looks like run-of-the-mill armor, it has\na dark aura surrounding it. Increases HP by a lot.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 0,
+        "value": 1.05
+      }
+    ],
+    "iconIndex": 438,
+    "name": "Dullahan Armor",
+    "note": "<Upgrade Slots: 3>",
+    "params": [
+      50,
+      0,
+      0,
+      8,
+      0,
+      8,
+      -3,
+      0
+    ],
+    "price": 1000
   }
 ]
