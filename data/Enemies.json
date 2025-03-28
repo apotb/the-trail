@@ -2629,13 +2629,6 @@
         "conditionType": 2,
         "rating": 8,
         "skillId": 103
-      },
-      {
-        "conditionParam1": 0,
-        "conditionParam2": 0,
-        "conditionType": 0,
-        "rating": 9,
-        "skillId": 74
       }
     ],
     "battlerHue": 0,
@@ -2676,7 +2669,7 @@
       {
         "code": 23,
         "dataId": 2,
-        "value": 3
+        "value": 2
       },
       {
         "code": 61,
@@ -2686,7 +2679,7 @@
     ],
     "gold": 50,
     "name": "Will o' Wisp",
-    "note": "<Element: Fire, Dark>\n<Element Absorb: Fire>\n<Passive State: 57, 129, 147>\n\n<Sideview Battler: NoMatchingSprite/Will o' Wisp>\n<Floating>\n<Attack Animation: 3>\n\n<Boost Skill 74: Full>\n<AI Priority>\nUser HP% param <= 75% +++ Random 100%: Steam Therapy, User\n</AI Priority>\n\n<Enemy Drops>\nPhantasmal Charm: 100%\nFlarestone: 10%\nBlazing Dagger: 5%\nSelfish Candle: 5%\nPocket Mirror: 5%\nFire Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
+    "note": "<Element: Fire, Dark>\n<Element Absorb: Fire>\n<Passive State: 57, 129, 147>\n\n<Sideview Battler: NoMatchingSprite/Will o' Wisp>\n<Floating>\n<Attack Animation: 3>\n\n<Boost Skill 74: Full>\n<AI Priority>\nUser HP% param <= 75% +++ Random 30%: Steam Therapy, User\n</AI Priority>\n\n<Enemy Drops>\nPhantasmal Charm: 100%\nFlarestone: 10%\nBlazing Dagger: 5%\nSelfish Candle: 5%\nPocket Mirror: 5%\nFire Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
     "params": [
       3000,
       400,
@@ -6390,11 +6383,11 @@
     ],
     "gold": 50,
     "name": "Dullahan",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 147>\n\n<Sideview Battler: Dullahan_1>\n<Weapon Image: 242>\n<Attack Animation: 126>\n\n<Boost Skill 30: Full>\n<Boost Skill 32: Full>\n<Boost Skill 84: Full>\n<AI Priority>\nTroop Alive Members > 1 +++ State !== Magic Prone +++ Random 40%: Magic Proneness, Highest MDF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire\nTroop Alive Members > 1 +++ State !== Hold the Line I +++ Random 80%: Hold the Line I\n</AI Priority>\n\n<Enemy Drops>\nDullahan Armor: 100%\nDark Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>\n\n<Night Boost>\nLarge Potion: 75% +25%\nLarge Potion: 50% +50%\nLarge Potion: 25% +25%\nRuby Ring: 5% +5%\nEmerald Ring: 5% +5%\n</Night Boost>\n\n<Conditional Sauna Key Drop>\nSauna Key Count >= 1: +100%\n</Conditional Sauna Key Drop>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 147>\n\n<Sideview Battler: Dullahan_1>\n<Weapon Image: 242>\n<Attack Animation: 126>\n\n<Boost Skill 30: Full>\n<Boost Skill 32: Full>\n<Boost Skill 84: Full>\n<AI Priority>\nTroop Alive Members > 1 +++ State !== Magic Prone +++ Random 40%: Magic Proneness, Highest MDF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire\nTroop Alive Members > 1 +++ State !== Hold the Line I +++ Random 80%: Hold the Line I\n</AI Priority>\n\n<Enemy Drops>\nDullahan Armor: 100%\nDark Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>\n\n<Night Boost>\nLarge Potion: 75% +25%\nLarge Potion: 50% +50%\nLarge Potion: 25% +25%\nRuby Ring: 5% +5%\nEmerald Ring: 5% +5%\n</Night Boost>\n\n<Conditional Sauna Key Drop>\nSauna Key Count < 1: +100%\n</Conditional Sauna Key Drop>",
     "params": [
       3000,
       20,
-      24,
+      26,
       30,
       1,
       45,
@@ -6502,6 +6495,11 @@
         "code": 22,
         "dataId": 2,
         "value": 0.05
+      },
+      {
+        "code": 23,
+        "dataId": 2,
+        "value": 2
       },
       {
         "code": 61,

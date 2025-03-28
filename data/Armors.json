@@ -1410,7 +1410,7 @@
     "traits": [],
     "iconIndex": 522,
     "name": "Soulstealer's Necklace",
-    "note": "<Upgrade Slots: 2>\n<HP Life Steal: +5%>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(53);\n</Custom Buy Show Eval>",
+    "note": "<Upgrade Slots: 2>\n<HP Life Steal Physical: +5%>\n<HP Life Steal Magical: +5%>\n<HP Life Steal Certain: +5%>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(53);\n</Custom Buy Show Eval>",
     "params": [
       25,
       0,
