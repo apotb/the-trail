@@ -2717,7 +2717,7 @@ Game_BattlerBase.prototype.die = function() {
     this._hp = 0;
     this.clearStates();
     this.clearBuffs();
-    if (this.isEnemy()) if (this.killer().isEquipped($dataWeapons[27])) OrangeGreenworks.activateAchievement('BATTLE_SHOVEL');
+    if (this.isEnemy()) if (this.killer().isEquipped) if (this.killer().isEquipped($dataWeapons[27])) OrangeGreenworks.activateAchievement('BATTLE_SHOVEL');
 };
 
 Game_BattlerBase.prototype.revive = function() {
@@ -6873,7 +6873,7 @@ Game_Map.prototype.isAnyEventStarting = function() {
 // Return if in certain zones
 
 Game_Map.prototype.inRuinedFort = function() {
-    return [132, 133, 75, 135, 131, 134, 146].contains(this.mapId());
+    return [132, 133, 75, 135, 131, 134].contains(this.mapId());
 };
 
 Game_Map.prototype.inTrueTelluriaCastle = function() {
@@ -7331,11 +7331,6 @@ Game_CharacterBase.prototype.terrainTag = function() {
 
 Game_CharacterBase.prototype.regionId = function() {
     return $gameMap.regionId(this._x, this._y);
-};
-
-Game_CharacterBase.prototype.checkCliff = function() {
-    this.turnTowardPlayer();
-    return !this.isMapPassable(this._x, this._y, this.direction());
 };
 
 Game_CharacterBase.prototype.increaseSteps = function() {
@@ -9279,6 +9274,14 @@ Game_Event.prototype.isNearThePlayer = function() {
     return sx + sy < 20;
 };
 
+Game_Event.prototype.checkCliff = function() {
+    this.turnTowardPlayer();
+    $gamePlayer.setThrough(true);
+    const bool = !this.isMapPassable(this._x, this._y, this.direction());
+    $gamePlayer.setThrough(false);
+    return bool;
+};
+
 Game_Event.prototype.moveTypeCustom = function() {
     this.updateRoutineMove();
 };
@@ -9882,6 +9885,10 @@ Game_Interpreter.prototype.changeHp = function(target, value, allowDeath) {
             target.performCollapse();
         }
     }
+};
+
+Game_Interpreter.prototype.checkCliff = function() {
+    return $gameMap.event(this.eventId()).checkCliff();
 };
 
 // Show Text

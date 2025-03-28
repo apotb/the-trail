@@ -5028,7 +5028,7 @@
               "indent": 0,
               "parameters": [
                 12,
-                "$gameMap.events()[this._eventId - 1].checkCliff()"
+                "this.checkCliff()"
               ]
             },
             {

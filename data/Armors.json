@@ -1357,7 +1357,7 @@
     ],
     "iconIndex": 375,
     "name": "Dark Orb (Tome)",
-    "note": "<Cannot Rename>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(56);\n</Custom Buy Show Eval>",
+    "note": "<Cannot Rename>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value([134, 15, 'A']);\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -1410,7 +1410,7 @@
     "traits": [],
     "iconIndex": 522,
     "name": "Soulstealer's Necklace",
-    "note": "<Upgrade Slots: 2>\n<HP Life Steal: +5%>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(53);\n</Custom Buy Show Eval>",
+    "note": "<Upgrade Slots: 2>\n<HP Life Steal Physical: +5%>\n<HP Life Steal Magical: +5%>\n<HP Life Steal Certain: +5%>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(53);\n</Custom Buy Show Eval>",
     "params": [
       25,
       0,
@@ -5795,6 +5795,38 @@
       0,
       0,
       0,
+      0
+    ],
+    "price": 1000
+  },
+  {
+    "id": 221,
+    "atypeId": 2,
+    "description": "Although it looks like run-of-the-mill armor, it has\na dark aura surrounding it. Increases HP by a lot.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 0,
+        "value": 1.05
+      },
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.01
+      }
+    ],
+    "iconIndex": 438,
+    "name": "Dullahan Armor",
+    "note": "<Upgrade Slots: 3>",
+    "params": [
+      50,
+      0,
+      0,
+      8,
+      0,
+      8,
+      -3,
       0
     ],
     "price": 1000

@@ -5763,35 +5763,35 @@
               "indent": 0,
               "parameters": [
                 12,
-                "$gameSelfSwitches.value([168, 36, 'A'])"
+                "!$gameSelfSwitches.value([168, 36, 'A']) && $gameSelfSwitches.value([168, 17, 'A'], true)"
               ]
             },
             {
               "code": 355,
               "indent": 1,
               "parameters": [
-                "$gameSelfSwitches.setValue([168, 17, 'A'], true)"
+                "$gameSelfSwitches.setValue([168, 17, 'A'], false)"
               ]
             },
             {
               "code": 355,
               "indent": 1,
               "parameters": [
-                "$gameSelfSwitches.setValue([168, 57, 'A'], true)"
+                "$gameSelfSwitches.setValue([168, 57, 'A'], false)"
               ]
             },
             {
               "code": 355,
               "indent": 1,
               "parameters": [
-                "$gameSelfSwitches.setValue([168, 58, 'A'], true)"
+                "$gameSelfSwitches.setValue([168, 58, 'A'], false)"
               ]
             },
             {
               "code": 355,
               "indent": 1,
               "parameters": [
-                "$gameSelfSwitches.setValue([168, 59, 'A'], true)"
+                "$gameSelfSwitches.setValue([168, 59, 'A'], false)"
               ]
             },
             {

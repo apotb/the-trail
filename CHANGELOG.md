@@ -44,21 +44,24 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
   - Player 4, 2 new skills:
     - [P] Assassin: Passive @ L28
     - Adrenaline: Special @ L30
-- 5 new items:
+- 7 new items:
   - Gingerbread Cookie
   - Gold Dust
   - Flarestone
   - Sauna Key
   - Phantasmal Charm
+  - Scroll of Silver Sands
   - [REDACTED HELMET]
 - 2 new weapons:
   - Blazing Dagger
   - Stalactite
-- 7 new equipment:
+- 9 new equipment:
   - 3 new headgear:
     - Tideflame Headpiece
     - Bloodwave Headband
     - Vortex Mask
+  - 1 new bodygear:
+    - Dullahan Armor
   - 2 new accessories:
     - Gilded Coin
     - Soulstealer's Necklace
@@ -67,11 +70,12 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
     - Waterfall (Tome)
   - 1 new power:
     - [REDACTED RESISTANCE]
-- 7 new enemies:
+- 8 new enemies:
   - Gilded Ghost
   - Fire Spirit
   - Dullahan
   - Will o' Wisp
+  - Insane Mage
   - [REDACTED GENERAL]
   - Water Elemental EX
   - Earth Spirit
@@ -148,6 +152,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
 - Many enemies can now drop the Selfish Candle.
 - Flytraps and Parasites can now drop Medicated Eyedrops.
 - Darkhounds now drop Silver Wristbraces instead of Iron Wristbraces.
+- Four-Toed Kevin always drops his Enchanted Anti-Magic Charm.
 - Using an equipped item as an ingredient will automatically equip the newly crafted upgrade.
 - Added sideview sprites for the Werewolf, Chilling Apparition, Polar Bear, and all Slimes.
 - Changed sprites for Suffering Soul and Poltergeist.
@@ -165,6 +170,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
 - Fixed name boxes not showing up after battle.
 - Fixed the Animation Speed option not decreasing the length of pauses.
 - Fixed an occasional crash when loading/deleting a save.
+- Fixed not being able to eat Dried Blueberries.
 - Fixed being able to skip the Adonian Monsters troop by running away.
 - Fixed the Skeletal Outfit referencing the incorrect filename, causing an error.
 - Fixed "fake dupe" bug related to equipped crafting ingredients.
@@ -172,6 +178,7 @@ That just about summarizes the major features in Alpha 16. If you'd like to know
 - Fixed the Give Up feature messing with cutscenes.
 - Fixed Mark being able to phase through Blue Slimes.
 - Fixed the new moon respawning enemies while in a dungeon.
+- Fixed all respawnables respawning after Laeryidyean's defeat not working.
 - Fixed Player 2's appearance not updating when unequipping Infernal Coin.
 - Fixed Player 2's Flame Body battler sprite not smiling.
 - Fixed a bug where the Solus Guard's level/EXP bar would show instead of Player 2's after defeating Big Mouth.
