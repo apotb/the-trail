@@ -73,7 +73,7 @@ Download and install [node.js](https://nodejs.org/en/download/).
 
 Afterwards, go to the `scripts` folder and run the file titled `dlnwjs.bat`. NW.js will automatically download and unzip in the root of the repository.
 
-To play the game, run `PLAYTEST.bat`, located in the repository's root.
+To play the game, run `PLAYTEST.bat`, located in the `scripts` folder.
 
 #### Method #2 (no extra downloads)
 1. Download and extract [NW.js v0.94.0 for Windows](https://dl.nwjs.io/v0.94.0/nwjs-v0.94.0-win-x64.zip).

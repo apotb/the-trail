@@ -1,3 +1,5 @@
+cd ..
+
 mkdir "%CD%"\nwjs-v0.94.0-win-x64\www
 
 copy "%CD%"\package.json "%CD%"\nwjs-v0.94.0-win-x64
