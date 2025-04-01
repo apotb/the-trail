@@ -758,6 +758,7 @@ Game_Action.prototype.calcElementRate = function(target) {
     eleRate += this.subject().elementAmplifyRate(elementId);
     eleRate *= Math.max(0, this.subject().elementMagnifyRate(elementId));
     var absorbed = eleRate < 0;
+    if (absorbed) OrangeGreenworks.activateAchievement('BATTLE_ABSORB');
 
     if (rule === 0) { // Lowest Rate
       finalRate = finalRate || eleRate;

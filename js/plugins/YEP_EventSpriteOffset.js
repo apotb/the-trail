@@ -186,17 +186,17 @@ Game_Event.prototype.setupSpriteOffsets = function() {
 };
 
 Game_Event.prototype.setupNotetagSpriteOffsets = function() {
-  if (this.event().note === '') return;
+  if (this.event()?.note === '') return;
   var note1 = /<SPRITE OFFSET X:[ ]([\+\-]\d+)>/i;
   var note2 = /<SPRITE OFFSET Y:[ ]([\+\-]\d+)>/i;
   var note3 = /<SPRITE OFFSET:[ ]([\+\-]\d+),[ ]([\+\-]\d+)>/i;
-  if (this.event().note.match(note1)) {
+  if (this.event()?.note.match(note1)) {
     this._spriteOffsetX = parseInt(RegExp.$1);
   }
-  if (this.event().note.match(note2)) {
+  if (this.event()?.note.match(note2)) {
     this._spriteOffsetY = parseInt(RegExp.$1);
   }
-  if (this.event().note.match(note3)) {
+  if (this.event()?.note.match(note3)) {
     this._spriteOffsetX = parseInt(RegExp.$1);
     this._spriteOffsetY = parseInt(RegExp.$2);
   }

@@ -13773,6 +13773,13 @@
               ]
             },
             {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "OrangeGreenworks.activateAchievement('BOSS_KEVIN');"
+              ]
+            },
+            {
               "code": 205,
               "indent": 0,
               "parameters": [
@@ -14520,6 +14527,13 @@
               ]
             },
             {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameTemp._refuse = 0;"
+              ]
+            },
+            {
               "code": 112,
               "indent": 0,
               "parameters": []
@@ -14594,6 +14608,38 @@
                 1,
                 "No deal."
               ]
+            },
+            {
+              "code": 355,
+              "indent": 2,
+              "parameters": [
+                "$gameTemp._refuse++;"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                12,
+                "$gameTemp._refuse >= 5"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 3,
+              "parameters": [
+                "OrangeGreenworks.activateAchievement('PROGRESS_STUBBORN');"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
             },
             {
               "code": 101,

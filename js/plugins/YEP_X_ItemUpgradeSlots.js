@@ -809,6 +809,7 @@ ItemManager.effectIUSResetStat = function(item, stat) {
         var id = item.id;
         var item = JsonEx.makeDeepCopy(baseItem);
         item.id = id;
+        ItemManager.onCreationEval(baseItem, item);
         DataManager.getDatabase(baseItem)[id] = item;
         ItemManager.setNewIndependentItem(baseItem, item);
         DataManager.getContainer(item)[id - Yanfly.Param.ItemStartingId - 1] = item;

@@ -97,28 +97,38 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\headBoost points are the key to success."
+              "\\headBoost points are the key to success. You'll generate"
             ]
           },
           {
             "code": 401,
             "indent": 0,
             "parameters": [
-              "You'll generate 1 BP per turn, except"
+              "1 BP per turn, except for turns you use a boost."
             ]
           },
           {
             "code": 401,
             "indent": 0,
             "parameters": [
-              "for turns you use a boost. Try out an"
+              "Guarding will net you an extra BP."
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "People1",
+              6,
+              0,
+              2
             ]
           },
           {
             "code": 401,
             "indent": 0,
             "parameters": [
-              "empowered attack against this slime!"
+              "\\headTry out an empowered attack against this slime!"
             ]
           },
           {
@@ -186,9 +196,43 @@
     "pages": [
       {
         "conditions": {
-          "actorHp": 50,
-          "actorId": 1,
+          "actorHp": 0,
+          "actorId": 6,
           "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 313,
+            "indent": 0,
+            "parameters": [
+              0,
+              6,
+              0,
+              24
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 0,
+          "actorId": 6,
+          "actorValid": true,
           "enemyHp": 50,
           "enemyIndex": 0,
           "enemyValid": false,
@@ -200,6 +244,33 @@
           "turnValid": false
         },
         "list": [
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Adon",
+              8,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "\\sol\\N[1]... don't forget... your boosts..."
+            ]
+          },
+          {
+            "code": 313,
+            "indent": 0,
+            "parameters": [
+              0,
+              6,
+              1,
+              24
+            ]
+          },
           {
             "code": 0,
             "indent": 0,
@@ -392,25 +463,19 @@
     "id": 5,
     "members": [
       {
-        "enemyId": 5,
-        "x": 224,
-        "y": 432,
+        "enemyId": 4,
+        "x": 294,
+        "y": 364,
         "hidden": false
       },
       {
-        "enemyId": 5,
-        "x": 336,
-        "y": 336,
-        "hidden": false
-      },
-      {
-        "enemyId": 5,
-        "x": 432,
-        "y": 256,
+        "enemyId": 4,
+        "x": 405,
+        "y": 277,
         "hidden": false
       }
     ],
-    "name": "Blue Slime x3",
+    "name": "Oof Slime x2",
     "pages": [
       {
         "conditions": {
@@ -3774,6 +3839,12 @@
         "x": 252,
         "y": 346,
         "hidden": false
+      },
+      {
+        "enemyId": 85,
+        "x": 129,
+        "y": 241,
+        "hidden": true
       }
     ],
     "name": "Lost Soul",
@@ -3791,9 +3862,51 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              1
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Gilded Ghost joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
           {
             "code": 0,
             "indent": 0,
@@ -4411,6 +4524,12 @@
         "x": 177,
         "y": 325,
         "hidden": false
+      },
+      {
+        "enemyId": 85,
+        "x": 132,
+        "y": 208,
+        "hidden": true
       }
     ],
     "name": "Lost Soul x4",
@@ -4428,9 +4547,51 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              4
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Gilded Ghost joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
           {
             "code": 0,
             "indent": 0,
@@ -4479,6 +4640,12 @@
         "x": 273,
         "y": 256,
         "hidden": false
+      },
+      {
+        "enemyId": 85,
+        "x": 75,
+        "y": 247,
+        "hidden": true
       }
     ],
     "name": "Suffering Soul x6",
@@ -4496,9 +4663,51 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              6
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Gilded Ghost joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
           {
             "code": 0,
             "indent": 0,
@@ -4644,8 +4853,8 @@
     "members": [
       {
         "enemyId": 29,
-        "x": 261,
-        "y": 358,
+        "x": 267,
+        "y": 283,
         "hidden": false
       }
     ],
@@ -4737,23 +4946,6 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\genI certainly did underestimate your power."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Evil1",
-              5,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
               "\\genI'm glad that the fight I've been"
             ]
           },
@@ -4761,96 +4953,21 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "waiting a millenium for is a good one!"
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Evil1",
-              5,
-              0,
-              2
+              "waiting a millenium for is a good"
             ]
           },
           {
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\genI should be angry. I am indeed upset"
+              "one. Now, let the real fun begin!"
             ]
           },
           {
-            "code": 401,
+            "code": 355,
             "indent": 0,
             "parameters": [
-              "that I've been abandoned here all by"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "myself for so long."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Evil1",
-              5,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\genBut..."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Evil1",
-              5,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\gen...this is my destiny, is it not?"
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Evil1",
-              5,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\genWhatever this battle's outcome is,"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "it will be what was intended to happen."
+              "$gameTroop._enemies[0]._phase = 2;"
             ]
           },
           {
@@ -4941,21 +5058,14 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\genI don't know if I should be"
+              "\\genIt can't be... after all this time spent waiting for"
             ]
           },
           {
             "code": 401,
             "indent": 0,
             "parameters": [
-              "furiously angry or quietly"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "reserved."
+              "\\c[18]him\\c[0] to return, I've been defeated by lowly humans."
             ]
           },
           {
@@ -4972,28 +5082,7 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\genOn the inside, I want to immediately"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "leech the souls out of the four of"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "you. You'd each be empty shells"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "forever, just like me."
+              "\\gen..."
             ]
           },
           {
@@ -5010,28 +5099,14 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\genI am beyond raging at the fact that"
+              "\\genBut I must be honest with myself... I know that"
             ]
           },
           {
             "code": 401,
             "indent": 0,
             "parameters": [
-              "after so much waiting for \\c[18]him\\c[0] to"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "return, I've been defeated by four"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "lowly humans."
+              "even with all my hope, \\c[18]he\\c[0]'s not coming back."
             ]
           },
           {
@@ -5048,69 +5123,14 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\genBut on the inside, I know that in"
+              "\\genI've been abandoned. And with my death,"
             ]
           },
           {
             "code": 401,
             "indent": 0,
             "parameters": [
-              "the end, this was meant to happen."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Evil1",
-              5,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\genI know that even with all my"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "hope, \\c[18]he\\c[0]'s not coming back."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Evil1",
-              5,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\genI've been abandoned. And with my"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "death, I've finally come to accept"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "this raw fact."
+              "I've finally come to accept this fact."
             ]
           },
           {
@@ -5162,6 +5182,15 @@
               1,
               1,
               0
+            ]
+          },
+          {
+            "code": 337,
+            "indent": 0,
+            "parameters": [
+              0,
+              127,
+              false
             ]
           },
           {
@@ -5730,7 +5759,49 @@
             "code": 655,
             "indent": 0,
             "parameters": [
-              "$gameParty.battleMembers().forEach(a => a._watchfulGaze = 0);"
+              "$gameParty.battleMembers().forEach(a => {"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "  a._watchfulGaze = 0"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "  a.clearXParamPlus();"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "  a.addHit($gameTemp._retries * 0.02);"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "  a.addEva($gameTemp._retries * 0.02);"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "  a.addCri($gameTemp._retries * 0.02);"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "});"
             ]
           },
           {
@@ -6844,12 +6915,18 @@
     "members": [
       {
         "enemyId": 45,
-        "x": 336,
-        "y": 272,
+        "x": 396,
+        "y": 173,
+        "hidden": false
+      },
+      {
+        "enemyId": 45,
+        "x": 300,
+        "y": 334,
         "hidden": false
       }
     ],
-    "name": "Fire Spirit",
+    "name": "Fire Spirit x2",
     "pages": [
       {
         "conditions": {
@@ -8965,6 +9042,12 @@
         "x": 402,
         "y": 226,
         "hidden": false
+      },
+      {
+        "enemyId": 85,
+        "x": 114,
+        "y": 316,
+        "hidden": true
       }
     ],
     "name": "Chilling Apparition x2",
@@ -8982,9 +9065,51 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              3
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Gilded Ghost joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
           {
             "code": 0,
             "indent": 0,
@@ -9015,6 +9140,12 @@
         "x": 405,
         "y": 340,
         "hidden": false
+      },
+      {
+        "enemyId": 85,
+        "x": 141,
+        "y": 208,
+        "hidden": true
       }
     ],
     "name": "Werewolf x2, Chilling Apparition",
@@ -9032,9 +9163,51 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              3
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Gilded Ghost joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
           {
             "code": 0,
             "indent": 0,
@@ -9109,6 +9282,12 @@
         "x": 312,
         "y": 385,
         "hidden": false
+      },
+      {
+        "enemyId": 85,
+        "x": 141,
+        "y": 358,
+        "hidden": true
       }
     ],
     "name": "Chilling Apparition x3",
@@ -9126,9 +9305,51 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              3
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Gilded Ghost joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
           {
             "code": 0,
             "indent": 0,
@@ -9301,6 +9522,12 @@
         "x": 421,
         "y": 190,
         "hidden": false
+      },
+      {
+        "enemyId": 85,
+        "x": 225,
+        "y": 202,
+        "hidden": true
       }
     ],
     "name": "Poltergeist x2",
@@ -9318,9 +9545,51 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              1
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Gilded Ghost joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
           {
             "code": 0,
             "indent": 0,
@@ -9774,6 +10043,12 @@
         "x": 195,
         "y": 163,
         "hidden": false
+      },
+      {
+        "enemyId": 85,
+        "x": 294,
+        "y": 256,
+        "hidden": true
       }
     ],
     "name": "Werewolf x2, Chilling Apparition x2",
@@ -9798,10 +10073,79 @@
             "code": 333,
             "indent": 0,
             "parameters": [
-              -1,
+              0,
               0,
               174
             ]
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              1,
+              0,
+              174
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              2,
+              0,
+              174
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              3,
+              0,
+              174
+            ]
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              4
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Gilded Ghost joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
           },
           {
             "code": 0,
@@ -10706,6 +11050,12 @@
         "x": 162,
         "y": 247,
         "hidden": true
+      },
+      {
+        "enemyId": 85,
+        "x": 93,
+        "y": 154,
+        "hidden": true
       }
     ],
     "name": "Poltergeist x2 + Frozen Labyrinth Enemies",
@@ -10805,6 +11155,48 @@
             "parameters": []
           },
           {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              7
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Gilded Ghost joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
             "code": 0,
             "indent": 0,
             "parameters": []
@@ -10852,10 +11244,118 @@
         "x": 441,
         "y": 319,
         "hidden": false
+      },
+      {
+        "enemyId": 85,
+        "x": 117,
+        "y": 154,
+        "hidden": true
       }
     ],
     "name": "Poltergeist x2 + World Tree Enemies",
     "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              2,
+              0,
+              174
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              3,
+              0,
+              174
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              4,
+              0,
+              174
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              5,
+              0,
+              174
+            ]
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              6
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Gilded Ghost joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
       {
         "conditions": {
           "actorHp": 50,
@@ -11491,6 +11991,688 @@
               false
             ]
           },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "members": [
+      {
+        "enemyId": 83,
+        "x": 372,
+        "y": 175,
+        "hidden": false
+      },
+      {
+        "enemyId": 83,
+        "x": 282,
+        "y": 337,
+        "hidden": false
+      }
+    ],
+    "name": "Water Elemental EX x2",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "members": [
+      {
+        "enemyId": 47,
+        "x": 351,
+        "y": 157,
+        "hidden": false
+      },
+      {
+        "enemyId": 47,
+        "x": 288,
+        "y": 334,
+        "hidden": false
+      }
+    ],
+    "name": "Earth Spirit x2",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "members": [
+      {
+        "enemyId": 47,
+        "x": 351,
+        "y": 157,
+        "hidden": false
+      },
+      {
+        "enemyId": 47,
+        "x": 288,
+        "y": 334,
+        "hidden": false
+      },
+      {
+        "enemyId": 83,
+        "x": 156,
+        "y": 199,
+        "hidden": false
+      }
+    ],
+    "name": "Earth Spirit x2, Water Elemental EX",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 108,
+    "members": [
+      {
+        "enemyId": 83,
+        "x": 372,
+        "y": 175,
+        "hidden": false
+      },
+      {
+        "enemyId": 83,
+        "x": 282,
+        "y": 337,
+        "hidden": false
+      },
+      {
+        "enemyId": 47,
+        "x": 153,
+        "y": 178,
+        "hidden": false
+      }
+    ],
+    "name": "Water Elemental EX x2, Earth Spirit",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "members": [
+      {
+        "enemyId": 74,
+        "x": 384,
+        "y": 166,
+        "hidden": false
+      },
+      {
+        "enemyId": 74,
+        "x": 349,
+        "y": 319,
+        "hidden": false
+      },
+      {
+        "enemyId": 32,
+        "x": 138,
+        "y": 343,
+        "hidden": true
+      },
+      {
+        "enemyId": 83,
+        "x": 198,
+        "y": 199,
+        "hidden": false
+      }
+    ],
+    "name": "Feral Rat x2, Water Elemental EX",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              2
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "An Albino Rat joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 110,
+    "members": [
+      {
+        "enemyId": 74,
+        "x": 384,
+        "y": 166,
+        "hidden": false
+      },
+      {
+        "enemyId": 74,
+        "x": 349,
+        "y": 319,
+        "hidden": false
+      },
+      {
+        "enemyId": 32,
+        "x": 138,
+        "y": 343,
+        "hidden": true
+      },
+      {
+        "enemyId": 47,
+        "x": 216,
+        "y": 214,
+        "hidden": false
+      }
+    ],
+    "name": "Feral Rat x2, Earth Spirit",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              2
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "An Albino Rat joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "members": [
+      {
+        "enemyId": 83,
+        "x": 525,
+        "y": 109,
+        "hidden": false
+      },
+      {
+        "enemyId": 83,
+        "x": 480,
+        "y": 283,
+        "hidden": false
+      },
+      {
+        "enemyId": 47,
+        "x": 285,
+        "y": 94,
+        "hidden": false
+      },
+      {
+        "enemyId": 47,
+        "x": 243,
+        "y": 280,
+        "hidden": false
+      },
+      {
+        "enemyId": 83,
+        "x": 372,
+        "y": 178,
+        "hidden": true
+      },
+      {
+        "enemyId": 47,
+        "x": 117,
+        "y": 205,
+        "hidden": true
+      },
+      {
+        "enemyId": 83,
+        "x": 363,
+        "y": 364,
+        "hidden": true
+      },
+      {
+        "enemyId": 47,
+        "x": 114,
+        "y": 376,
+        "hidden": true
+      }
+    ],
+    "name": "Water Elemental EX x2, Earth Spirit x2",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 121,
+            "indent": 0,
+            "parameters": [
+              111,
+              111,
+              0
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 3,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 335,
+            "indent": 0,
+            "parameters": [
+              4
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 5,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 335,
+            "indent": 0,
+            "parameters": [
+              5
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 7,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 335,
+            "indent": 0,
+            "parameters": [
+              6
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 0,
+            "parameters": [
+              7
+            ]
+          },
+          {
+            "code": 121,
+            "indent": 0,
+            "parameters": [
+              111,
+              111,
+              1
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 112,
+    "members": [
+      {
+        "enemyId": 84,
+        "x": 372,
+        "y": 307,
+        "hidden": false
+      },
+      {
+        "enemyId": 45,
+        "x": 312,
+        "y": 166,
+        "hidden": false
+      },
+      {
+        "enemyId": 45,
+        "x": 192,
+        "y": 328,
+        "hidden": false
+      }
+    ],
+    "name": "Dullahan, Fire Spirit x2",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 113,
+    "members": [
+      {
+        "enemyId": 86,
+        "x": 351,
+        "y": 328,
+        "hidden": false
+      },
+      {
+        "enemyId": 26,
+        "x": 303,
+        "y": 154,
+        "hidden": false
+      },
+      {
+        "enemyId": 26,
+        "x": 180,
+        "y": 286,
+        "hidden": false
+      }
+    ],
+    "name": "Insane Mage, Lost Soul x2",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
           {
             "code": 0,
             "indent": 0,

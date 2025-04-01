@@ -337,7 +337,7 @@
     2854,
     5932,
     2856,
-    2830,
+    2846,
     2861,
     1604,
     1604,
@@ -364,7 +364,7 @@
     5930,
     6287,
     1604,
-    2860,
+    1604,
     1604,
     2862,
     1604,
@@ -958,7 +958,7 @@
     3046,
     0,
     0,
-    4227,
+    4249,
     4253,
     0,
     0,
@@ -985,7 +985,7 @@
     0,
     0,
     0,
-    4252,
+    0,
     0,
     0,
     0,
@@ -3874,8 +3874,126 @@
       "x": 21,
       "y": 22
     },
-    null,
-    null,
+    {
+      "id": 2,
+      "name": "firebowl-copy",
+      "note": "<Copy Event: 158, 12>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Other2",
+            "direction": 2,
+            "pattern": 0,
+            "characterIndex": 7
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 8,
+      "y": 12
+    },
+    {
+      "id": 3,
+      "name": "firebowl-copy",
+      "note": "<Copy Event: 158, 12>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Other2",
+            "direction": 2,
+            "pattern": 0,
+            "characterIndex": 7
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 9,
+      "y": 5
+    },
     {
       "id": 4,
       "name": "b4",
@@ -3983,6 +4101,13 @@
               "parameters": [
                 12,
                 "$gameMap.event(13).regionId() === 21"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 9,
+              "parameters": [
+                "StealthMode On"
               ]
             },
             {
@@ -4346,6 +4471,13 @@
               "parameters": [
                 12,
                 "$gameMap.event(13).regionId() === 21"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 9,
+              "parameters": [
+                "StealthMode On"
               ]
             },
             {
@@ -5229,6 +5361,13 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 8,
+              "parameters": [
+                "StealthMode On"
+              ]
+            },
+            {
               "code": 230,
               "indent": 8,
               "parameters": [
@@ -5552,6 +5691,13 @@
               "parameters": [
                 12,
                 "$gameMap.event(13).regionId() === 21"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 9,
+              "parameters": [
+                "StealthMode On"
               ]
             },
             {
@@ -5982,6 +6128,13 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 8,
+              "parameters": [
+                "StealthMode On"
+              ]
+            },
+            {
               "code": 230,
               "indent": 8,
               "parameters": [
@@ -6297,6 +6450,13 @@
               "parameters": [
                 12,
                 "$gameMap.event(13).regionId() === 21"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 8,
+              "parameters": [
+                "StealthMode On"
               ]
             },
             {
@@ -7140,6 +7300,13 @@
               "parameters": [
                 12,
                 "$gameMap.event(13).regionId() === 21"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 8,
+              "parameters": [
+                "StealthMode On"
               ]
             },
             {
@@ -8973,8 +9140,126 @@
       "x": 15,
       "y": 7
     },
-    null,
-    null,
+    {
+      "id": 25,
+      "name": "firebowl-copy",
+      "note": "<Copy Event: 158, 12>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Other2",
+            "direction": 2,
+            "pattern": 0,
+            "characterIndex": 7
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 11,
+      "y": 5
+    },
+    {
+      "id": 26,
+      "name": "firebowl-copy",
+      "note": "<Copy Event: 158, 12>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Other2",
+            "direction": 2,
+            "pattern": 0,
+            "characterIndex": 7
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 15,
+      "y": 13
+    },
     null
   ]
 }

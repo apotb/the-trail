@@ -762,6 +762,31 @@ Imported.TerraxLighting = true;
 					$gameVariables.SetLightArrayColor(lightarray_color);
 				}
 
+				// *********************** SWITCH SPECIFIC LIGHT *********************
+				if (args[0] === 'switch') {
+
+					var lightarray_id = $gameVariables.GetLightArrayId();
+					var lightarray_state = $gameVariables.GetLightArrayState();
+					var lightarray_color = $gameVariables.GetLightArrayColor();
+
+					var lightid = Number(args[1]);
+					var idfound = false;
+					for (var i = 0; i < lightarray_id.length; i++) {
+						if (lightarray_id[i] == lightid) {
+							idfound = true;
+							lightarray_state[i] = !lightarray_state[i];
+						}
+					}
+					if (idfound == false) {
+						lightarray_id.push(lightid);
+						lightarray_state.push(false);
+						lightarray_color.push('defaultcolor');
+					}
+					$gameVariables.SetLightArrayId(lightarray_id);
+					$gameVariables.SetLightArrayState(lightarray_state);
+					$gameVariables.SetLightArrayColor(lightarray_color);
+				}
+
 				// *********************** SET COLOR *********************
 
 				if (args[0] === 'color') {
@@ -1011,7 +1036,7 @@ Imported.TerraxLighting = true;
 		for (var i = 0; i < event_eventcount; i++) {
 			if ($gameMap.events()[i]) {
 				if($gameMap.events()[i].event()) {
-					var note = $gameMap.events()[i].event().note;
+					var note = $gameMap.events()[i].event()?.note;
 
 					var note_args = note.split(" ");
 					var note_command = note_args.shift().toLowerCase();
@@ -1915,7 +1940,7 @@ Imported.TerraxLighting = true;
 						for (var i = 0; i < event_note.length; i++) {
 							//if ($gameMap.events()[i]) {
 
-								//var note = $gameMap.events()[i].event().note;
+								//var note = $gameMap.events()[i].event()?.note;
 								//var evid = $gameMap.events()[i]._eventId;
 								var note = event_note[i];
 								var evid = event_id[i];

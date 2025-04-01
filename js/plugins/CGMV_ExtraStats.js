@@ -122,8 +122,9 @@ Scene_Shop.prototype.doBuy = function(number) {
 var alias_CGMV_ExtraStats_SceneShop_doSell = Scene_Shop.prototype.doSell;
 Scene_Shop.prototype.doSell = function(number) {
 	alias_CGMV_ExtraStats_SceneShop_doSell.call(this, number);
-	var oldItemSellCount = $gameVariables.value(CGMV.ExtraStats.ItemsSold);
-	$gameVariables.setValue(CGMV.ExtraStats.ItemsSold, oldItemSellCount + number);
+	number += $gameVariables.value(CGMV.ExtraStats.ItemsSold);
+	$gameVariables.setValue(CGMV.ExtraStats.ItemsSold, number);
+	OrangeGreenworks.setStat('bitsFromSelling', number);
 	/*var oldProfitCount = $gameVariables.value(CGMV.ExtraStats.GoldProfit);
 	$gameVariables.setValue(CGMV.ExtraStats.GoldProfit, oldProfitCount + (number * this.sellingPrice()));*/
 };
@@ -155,8 +156,9 @@ var alias_CGMV_ExtraStats_Game_Party_gainGold = Game_Party.prototype.gainGold;
 Game_Party.prototype.gainGold = function(amount) {
     alias_CGMV_ExtraStats_Game_Party_gainGold.call(this, amount);
 	if (amount < 0) return;
-	var oldGoldLooted = $gameVariables.value(CGMV.ExtraStats.GoldLooted);
-	$gameVariables.setValue(CGMV.ExtraStats.GoldLooted, oldGoldLooted + amount);
+	amount += $gameVariables.value(CGMV.ExtraStats.GoldLooted);
+	$gameVariables.setValue(CGMV.ExtraStats.GoldLooted, amount);
+	OrangeGreenworks.setStat('bitsCollected', amount);
 };
 //=============================================================================
 // Game_Action
@@ -183,5 +185,7 @@ Game_Action.prototype.executeHpDamage = function(target, value) {
 	else if(target.isEnemy()) {
 		var oldDamageDealt = $gameVariables.value(CGMV.ExtraStats.DamageDealt);
 		$gameVariables.setValue(CGMV.ExtraStats.DamageDealt, oldDamageDealt + value);
+		OrangeGreenworks.setStat('damageDealt', oldDamageDealt + value);
+		OrangeGreenworks.setStat('highestDamage', value);
 	}
 };

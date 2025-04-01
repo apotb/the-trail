@@ -2491,6 +2491,8 @@ Window_FishCaught.prototype.doCatch = function(fishId) {
 	var fx = this.contents.width - this.contents.width / 4;
 	// this.drawFish(data,fx,90);
 	this.drawIcon($dataItems[data.item].iconIndex, fx, 80);
+
+	OrangeGreenworks.setStat('fishCaught', Galv.FISH.totalCaught());
 	
 	this.open();
 };

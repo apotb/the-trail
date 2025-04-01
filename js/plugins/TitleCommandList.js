@@ -4,7 +4,7 @@ Window_TitleCommand.prototype.makeCommandList = function() {
     this.addCommand(TextManager.options,            'options');
     this.addCommand("Tutorial Tips",                'tips');
     this.addCommand("Screenshots",                  'screenshots');
-    this.addCommand("Leaderboard",                  'leaderboard');
+    this.addCommand("Leaderboard",                  'leaderboard', !$gameTemp.isDemo());
     this.addCommand(Yanfly.Param.CreditsCmdName,    'credits');
     this.addCommand(TextManager.exitGame,           'exitGame');
 };

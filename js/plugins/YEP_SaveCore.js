@@ -897,14 +897,19 @@ Window_SaveInfo.prototype.drawGameTitle = function(dy) {
   this.resetFontSettings();
 
   // Title and Version
-  var loadedSave = JsonEx.parse(StorageManager.load(this._currentFile));
-  if (loadedSave.version !== undefined) try {
-    versionName = JsonEx.parse(StorageManager.load(this._currentFile)).version.name
+  try {
+    var loadedSave = JsonEx.parse(StorageManager.load(this._currentFile));
+    if (loadedSave.version !== undefined) try {
+      versionName = JsonEx.parse(StorageManager.load(this._currentFile)).version.name
+    } catch (err) {
+      console.error(err);
+      versionName = "Failed to load version";
+    } else versionName = "Unknown version";
+    var text = this._info.title + " (" + versionName + ")";
   } catch (err) {
+    var text = "Failed to load info";
     console.error(err);
-    versionName = "Failed to load version";
-  } else versionName = "Unknown version";
-  var text = this._info.title + " (" + versionName + ")";
+  }
   this.drawText(text, 0, dy, this.contents.width, 'center');
 
   // Save Date and Time Since Last Save
@@ -976,11 +981,15 @@ Window_SaveInfo.prototype.drawContents = function(dy) {
   if (!this._saveContents) {
     return setTimeout(this.drawContents.bind(this, dy), 50);
   }
-  this._saveContents = JsonEx.parse(this._saveContents);
-  dy = this.drawPartyGraphics(dy);
-  dy = this.drawPartyNames(dy);
-  dy = this.drawPartyLevels(dy);
-  this.drawColumnData(dy);
+  try {
+    this._saveContents = JsonEx.parse(this._saveContents);
+    dy = this.drawPartyGraphics(dy);
+    dy = this.drawPartyNames(dy);
+    dy = this.drawPartyLevels(dy);
+    this.drawColumnData(dy);
+  } catch (e) {
+    console.error('Failed to parse save contents', e);
+  }
 };
 
 Window_SaveInfo.prototype.drawPartyGraphics = function(dy) {
@@ -1467,6 +1476,7 @@ Scene_File.prototype.onSaveSuccess = function() {
       this._infoWindow._currentFile = this.savefileId() - 1;
       this.onActionCancel();
     }
+    OrangeGreenworks.setStat('playtime', $gameSystem.playtime());
 };
 
 Scene_Save.prototype.onSaveSuccess = function() {

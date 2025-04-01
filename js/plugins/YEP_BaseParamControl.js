@@ -665,6 +665,7 @@ Game_BattlerBase.prototype.param = function(paramId) {
   var base = this.paramBase(paramId);
   var plus = this.paramPlus(paramId);
   var paramRate = this.paramRate(paramId);
+  if (this._adrenaline) if ([2, 6].contains(paramId)) paramRate += this._adrenaline * 0.1; // Adrenaline skill
   var buffRate = this.paramBuffRate(paramId);
   var flat = this.paramFlat(paramId);
   var minValue = this.paramMin(paramId);

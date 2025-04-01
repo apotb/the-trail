@@ -1050,8 +1050,7 @@ Game_Event.prototype.updateSelfMovement = function() {
 };
 
 Game_Event.prototype.checkUpdateSelfMove = function() {
-  var note = this.event().note;
-  this._isAlwaysUpdateMovement = note.match(/<ALWAYS UPDATE MOVEMENT>/i);
+  this._isAlwaysUpdateMovement = this.event()?.note.match(/<ALWAYS UPDATE MOVEMENT>/i);
 };
 
 Yanfly.MoveRoute.Game_Event_isPlayerCollided =

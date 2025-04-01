@@ -22,6 +22,10 @@ Game_Temp.prototype.isPlaytest = function() {
     return this._isPlaytest;
 };
 
+Game_Temp.prototype.isDemo = function() {
+    return false;
+};
+
 Game_Temp.prototype.reserveCommonEvent = function(commonEventId) {
     this._commonEventId = commonEventId;
 };
@@ -96,7 +100,7 @@ Game_Temp.prototype.recipeTemplate = function(name) {
             arr = [
                 [68, 74, 213, 176, 92, 214, 242, 93, 50, 154, 207],
                 [45, 49, 50, 44, 42, 43, 53, 52, 32, 51, 23, 30, 24, 25, 26, 27],
-                [78, 125, 126, 127, 128, 108, 97, 137, 136, 48, 117, 47, 168, 46, 133, 132, 129, 130, 131, 213, 44, 96, 115, 149, 148, 45, 172, 159, 143, 170, 181, 214, 185, 189, 190, 178, 161, 162, 171, 124]
+                [218, 219, 78, 125, 126, 127, 128, 108, 97, 137, 136, 48, 117, 47, 168, 46, 133, 132, 129, 130, 131, 213, 44, 96, 115, 149, 148, 45, 172, 159, 143, 170, 181, 214, 185, 189, 190, 178, 161, 162, 171, 124, 217]
             ]
             break;
         case 'DALIA':
@@ -406,19 +410,27 @@ Game_System.prototype.rareEnemyRoll = function() {
     if (!$gameSwitches.value(23)) return false; // Laeryidyean must be defeated
     let roll = Math.random() * this.rareEnemyDenominator() < 1;
     this._rareEnemyTries++;
-    if (roll) this._rareEnemyTries = 0;
+    if (roll) {
+        $gameTemp._rareEnemyTries = this._rareEnemyTries;
+        this._rareEnemyTries = 0;
+    }
     return roll;
+};
+
+Game_System.prototype.restoreRareEnemyTries = function() {
+    this._rareEnemyTries = $gameTemp._rareEnemyTries;
 };
 
 // Small Chests
 
 Game_System.prototype.totalSmallChests = function() {
-    return 37;
+    return 38;
 };
 
 Game_System.prototype.smallChest = function() {
     $gameVariables.setValue(48, $gameVariables.value(48) + 1);
     $gameVariables.setValue(50, $gameVariables.value(48) + "/" + this.totalSmallChests());
+    OrangeGreenworks.setStat('smallChests', $gameVariables.value(48));
 };
 
 // Battle Setups
@@ -2039,7 +2051,7 @@ Game_Action.prototype.apply = function(target) {
     }
     if ($gameParty.inBattle() && target.isActor()) {
         index = $gameParty.battleMembers().indexOf(target);
-        SceneManager._scene._sideStatusWindows[index].children[6].refresh()
+        if (SceneManager._scene._sideStatusWindows[index].children.find(c => c instanceof Window_BattleSideName)) SceneManager._scene._sideStatusWindows[index].children.find(c => c instanceof Window_BattleSideName).refresh()
     }
 };
 
@@ -2705,6 +2717,7 @@ Game_BattlerBase.prototype.die = function() {
     this._hp = 0;
     this.clearStates();
     this.clearBuffs();
+    if (this.isEnemy()) if (this.killer().isEquipped) if (this.killer().isEquipped($dataWeapons[27])) OrangeGreenworks.activateAchievement('BATTLE_SHOVEL');
 };
 
 Game_BattlerBase.prototype.revive = function() {
@@ -4210,6 +4223,9 @@ Game_Actor.prototype.isWtypeEquipped = function(wtypeId) {
 Game_Actor.prototype.refresh = function() {
     this.releaseUnequippableItems(false);
     Game_Battler.prototype.refresh.call(this);
+    OrangeGreenworks.setStat('highestAgi', this.agi);
+    OrangeGreenworks.setStat('highestFireResistance', Math.floor((1 - Yanfly.Ele.Game_BtlrBase_elementRate.call(this, 2)) * 100));
+    if (this.isEquipped($dataWeapons[46]) && this.isEquipped($dataArmors[116])) OrangeGreenworks.activateAchievement('COLLECT_PARADOX');
 };
 
 Game_Actor.prototype.isActor = function() {
@@ -4357,6 +4373,7 @@ Game_Actor.prototype.levelUp = function() {
     this.gainHp(Number.MAX_SAFE_INTEGER);
     this.gainMp(Number.MAX_SAFE_INTEGER);
     this.removeStateCategoryAll('debuff');
+    OrangeGreenworks.setStat('highestLevelMember', this._level);
 };
 
 Game_Actor.prototype.levelDown = function() {
@@ -4608,11 +4625,12 @@ Game_Actor.prototype.updateStateSteps = function(state) {
         }
         if (!this._stateSteps[state.id]) this.removeState(state.id);
     }
+    if ($gamePlayer.terrainTag() == 5 && $gameMap.mapId() == 60) this.addState(33); // Water
 };
 
 Game_Actor.prototype.showAddedStates = function() {
     this.result().addedStateObjects().forEach(function(state) {
-        if (state.message1) {
+        if (state.message1 && !($gamePlayer.terrainTag() == 5 && state.id == 33)) { // Water
             $gameMessage.add(this._name + state.message1);
         }
     }, this);
@@ -5434,6 +5452,7 @@ Game_Party.prototype.gold = function() {
 
 Game_Party.prototype.gainGold = function(amount) {
     this._gold = (this._gold + amount).clamp(0, this.maxGold());
+    OrangeGreenworks.setStat('bits', this._gold);
 };
 
 Game_Party.prototype.loseGold = function(amount) {
@@ -5497,6 +5516,28 @@ Game_Party.prototype.gainItem = function(item, amount, includeEquip) {
             this.discardMembersEquip(item, -newNumber);
         }
         $gameMap.requestRefresh();
+    }
+    if (!item) return;
+    if (item == $dataItems[2]) {
+        $gameSystem._leeks = ($gameSystem._leeks || 0) + 1;
+        OrangeGreenworks.setStat('leeks', $gameSystem._leeks);
+    }
+    if (item == $dataWeapons[34]) {
+        OrangeGreenworks.activateAchievement('COLLECT_ORIGINCRYSTAL');
+    }
+    if (DataManager.isArmor(item) && [81, 82, 83, 220].contains(item.baseItemId)) {
+        $gameSystem._poacher = $gameSystem._poacher || [];
+        if (!$gameSystem._poacher.contains(item.baseItemId)) {
+            $gameSystem._poacher.push(item.baseItemId);
+            OrangeGreenworks.setStat('rareEnemies', $gameSystem._poacher.length);
+        }
+    }
+    if (item.itemCategory?.contains('Foodstuffs')) {
+        $gameSystem._food = $gameSystem._food || [];
+        if (!$gameSystem._food.contains(item.id)) {
+            $gameSystem._food.push(item.id);
+            OrangeGreenworks.setStat('uniqueFood', $gameSystem._food.length);
+        }
     }
 };
 
@@ -5774,12 +5815,14 @@ Game_Party.prototype.addPet = function(name) {
             break;
         case 'Fido':
             actor.setCharacterImage('Hound', 1);
+            OrangeGreenworks.activateAchievement('COLLECT_FIDO');
             break;
         case 'Tender':
             actor.setCharacterImage('Fox', 0);
             break;
         case 'Coco':
             actor.setCharacterImage('Monkey1', 0);
+            OrangeGreenworks.activateAchievement('COLLECT_COCO');
             break;
         default: // Remove pet
             this.removeGuestActor(7);
@@ -6552,6 +6595,8 @@ Game_Map.prototype.checkPassage = function(x, y, bit) {
         var flag = flags[tiles[i]];
         if ((flag & 0x10) !== 0)  // [*] No effect on passage
             continue;
+        if (this.terrainTag(x, y) == 5 && this.mapId() == 60) // Water
+            return true;
         if ((flag & bit) === 0)   // [o] Passable
             return true;
         if ((flag & bit) === bit) // [x] Impassable
@@ -6826,6 +6871,10 @@ Game_Map.prototype.isAnyEventStarting = function() {
 };
 
 // Return if in certain zones
+
+Game_Map.prototype.inRuinedFort = function() {
+    return [132, 133, 75, 135, 131, 134].contains(this.mapId());
+};
 
 Game_Map.prototype.inTrueTelluriaCastle = function() {
     return [93, 92, 2, 88, 94, 213, 214, 7].contains(this.mapId());
@@ -7282,13 +7331,6 @@ Game_CharacterBase.prototype.terrainTag = function() {
 
 Game_CharacterBase.prototype.regionId = function() {
     return $gameMap.regionId(this._x, this._y);
-};
-
-Game_CharacterBase.prototype.checkCliff = function() {
-    const arr = [61, 62]; // Elevation regions
-    const enemyRegion = this.regionId();
-    const playerRegion = $gamePlayer.regionId();
-    return arr.contains(enemyRegion) && arr.contains(playerRegion) && enemyRegion != playerRegion;
 };
 
 Game_CharacterBase.prototype.increaseSteps = function() {
@@ -8704,7 +8746,7 @@ Game_Follower.prototype.isVisible = function() {
 Game_Follower.prototype.update = function() {
     Game_Character.prototype.update.call(this);
     this.setMoveSpeed($gamePlayer.realMoveSpeed());
-    this.setOpacity($gamePlayer.opacity());
+    this.setOpacity($gameSystem._followerOpacity || $gamePlayer.opacity());
     this.setBlendMode($gamePlayer.blendMode());
     this.setWalkAnime($gamePlayer.hasWalkAnime());
     this.setStepAnime($gamePlayer.hasStepAnime());
@@ -9127,7 +9169,7 @@ Game_Event.prototype.event = function() {
 };
 
 Game_Event.prototype.page = function() {
-    return this.event().pages[this._pageIndex];
+    return this.event()?.pages[this._pageIndex];
 };
 
 Game_Event.prototype.list = function() {
@@ -9232,6 +9274,14 @@ Game_Event.prototype.isNearThePlayer = function() {
     return sx + sy < 20;
 };
 
+Game_Event.prototype.checkCliff = function() {
+    this.turnTowardPlayer();
+    $gamePlayer.setThrough(true);
+    const bool = !this.isMapPassable(this._x, this._y, this.direction());
+    $gamePlayer.setThrough(false);
+    return bool;
+};
+
 Game_Event.prototype.moveTypeCustom = function() {
     this.updateRoutineMove();
 };
@@ -9269,10 +9319,11 @@ Game_Event.prototype.refresh = function() {
         this._pageIndex = newPageIndex;
         this.setupPage();
     }
-    this._monster = this.event().note.contains("<Monster>");
+    this._monster = this.event()?.note.contains("<Monster>");
 };
 
 Game_Event.prototype.findProperPageIndex = function() {
+    if (!this.event()) return -1;
     var pages = this.event().pages;
     for (var i = pages.length - 1; i >= 0; i--) {
         var page = pages[i];
@@ -9834,6 +9885,10 @@ Game_Interpreter.prototype.changeHp = function(target, value, allowDeath) {
             target.performCollapse();
         }
     }
+};
+
+Game_Interpreter.prototype.checkCliff = function() {
+    return $gameMap.event(this.eventId()).checkCliff();
 };
 
 // Show Text

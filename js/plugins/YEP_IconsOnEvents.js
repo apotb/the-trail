@@ -271,18 +271,18 @@ Game_Event.prototype.setupPageSettings = function() {
 };
 
 Game_Event.prototype.setupIconOnEventNotetags = function() {
-  if (this.event().note === '') return;
+  if (this.event()?.note === '') return;
   var note1 = /<Icon On Event: (\d+)>/i;
   var note2 = /<Icon On Event Buffer X: ([\+\-]\d+)>/i;
   var note3 = /<Icon On Event Buffer Y: ([\+\-]\d+)>/i;
   var note4 = /<Icon On Event Buffer: ([\+\-]\d+),[ ]([\+\-]\d+)>/i;
-  if (this.event().note.match(note1)) {
+  if (this.event()?.note.match(note1)) {
     this.setIconOnEvent(parseInt(RegExp.$1));
-  } else if (this.event().note.match(note2)) {
+  } else if (this.event()?.note.match(note2)) {
     this.setIconOnEventBufferX(parseInt(RegExp.$1));
-  } else if (this.event().note.match(note3)) {
+  } else if (this.event()?.note.match(note3)) {
     this.setIconOnEventBufferY(parseInt(RegExp.$1));
-  } else if (this.event().note.match(note4)) {
+  } else if (this.event()?.note.match(note4)) {
     this.setIconOnEventBufferX(parseInt(RegExp.$1));
     this.setIconOnEventBufferY(parseInt(RegExp.$2));
   }

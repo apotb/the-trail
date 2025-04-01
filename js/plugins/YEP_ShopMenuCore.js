@@ -1070,6 +1070,7 @@ Scene_Shop.prototype.doBuy = function(number) {
     if (Imported.YEP_ItemCore) $gameTemp.enableVarianceStock();
     this.doBuyGold(number);
     this.doBuyItem(number);
+    if ($gameTemp._holidayMerchant) OrangeGreenworks.activateAchievement('COLLECT_HOLIDAY');
     if (Imported.YEP_ItemCore) $gameTemp.disableVarianceStock();
 };
 
@@ -1079,6 +1080,7 @@ Scene_Shop.prototype.doBuyGold = function(number) {
 
 Scene_Shop.prototype.doBuyItem = function(number) {
     $gameParty.gainItem(this._item, number);
+    if (this._item == $dataItems[31]) OrangeGreenworks.activateAchievement('COLLECT_COOLDUST');
 };
 
 Scene_Shop.prototype.doSell = function(number) {

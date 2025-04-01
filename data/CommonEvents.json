@@ -1608,7 +1608,7 @@
         "parameters": [
           0,
           38,
-          false,
+          true,
           true
         ]
       },
@@ -1622,6 +1622,29 @@
         "indent": 2,
         "parameters": [
           "A",
+          0
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 602,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 123,
+        "indent": 2,
+        "parameters": [
+          "B",
           0
         ]
       },
@@ -1826,19 +1849,7 @@
         "code": 230,
         "indent": 0,
         "parameters": [
-          90
-        ]
-      },
-      {
-        "code": 221,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 117,
-        "indent": 0,
-        "parameters": [
-          53
+          30
         ]
       },
       {
@@ -1849,14 +1860,178 @@
           {
             "list": [
               {
-                "code": 16,
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX += 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX += 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX += 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX -= 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX -= 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX -= 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX -= 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX -= 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX -= 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX += 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX += 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX += 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
                 "indent": null
               },
               {
                 "code": 0
               }
             ],
-            "repeat": false,
+            "repeat": true,
             "skippable": false,
             "wait": false
           }
@@ -1867,9 +2042,325 @@
         "indent": 0,
         "parameters": [
           {
-            "code": 16,
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX += 1"
+            ],
             "indent": null
           }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX += 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX += 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX -= 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX -= 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX -= 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX -= 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX -= 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX -= 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX += 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX += 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX += 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          53
         ]
       },
       {
@@ -1880,16 +2371,43 @@
         ]
       },
       {
-        "code": 230,
+        "code": 205,
         "indent": 0,
         "parameters": [
-          90
+          -1,
+          {
+            "list": [
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
         ]
       },
       {
-        "code": 222,
+        "code": 505,
         "indent": 0,
-        "parameters": []
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
       },
       {
         "code": 0,
@@ -1943,7 +2461,7 @@
             "Items",
             "Weapons",
             "Armor",
-            "Starting Gear",
+            "Initial Equipment",
             "I'm done browsing."
           ],
           4,
@@ -2700,7 +3218,7 @@
         "indent": 2,
         "parameters": [
           3,
-          "Starting Gear"
+          "Initial Equipment"
         ]
       },
       {
@@ -3831,7 +4349,14 @@
         "code": 401,
         "indent": 2,
         "parameters": [
-          "You can't use the \\ii[99] here."
+          "You can't use the \\ii[99] in this spot. Something"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "from another plane would appear on top of you!"
         ]
       },
       {
@@ -3849,7 +4374,7 @@
         "indent": 2,
         "parameters": [
           12,
-          "[75,131,132,133,134,135].indexOf($gameMap._mapId) !== -1"
+          "$gameMap.inRuinedFort()"
         ]
       },
       {
@@ -3916,6 +4441,13 @@
         ]
       },
       {
+        "code": 356,
+        "indent": 4,
+        "parameters": [
+          "Light color 10 #e6292c"
+        ]
+      },
+      {
         "code": 223,
         "indent": 4,
         "parameters": [
@@ -3946,6 +4478,13 @@
           59,
           59,
           0
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 4,
+        "parameters": [
+          "Light color 10 #2772e3"
         ]
       },
       {
@@ -4037,6 +4576,13 @@
         ]
       },
       {
+        "code": 230,
+        "indent": 4,
+        "parameters": [
+          60
+        ]
+      },
+      {
         "code": 101,
         "indent": 4,
         "parameters": [
@@ -4091,79 +4637,14 @@
         "code": 401,
         "indent": 4,
         "parameters": [
-          "\\-I must thank you for bringing"
+          "\\-I must thank you for bringing it right into my hands."
         ]
       },
       {
         "code": 401,
         "indent": 4,
         "parameters": [
-          "it right into my hands."
-        ]
-      },
-      {
-        "code": 101,
-        "indent": 4,
-        "parameters": [
-          "Unknown",
-          0,
-          0,
-          2
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 4,
-        "parameters": [
-          "\\-Oh, but you haven't gotten"
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 4,
-        "parameters": [
-          "a proper welcome."
-        ]
-      },
-      {
-        "code": 101,
-        "indent": 4,
-        "parameters": [
-          "Unknown",
-          0,
-          0,
-          2
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 4,
-        "parameters": [
-          "\\-Welcome to my home for the past millenium."
-        ]
-      },
-      {
-        "code": 101,
-        "indent": 4,
-        "parameters": [
-          "Unknown",
-          0,
-          0,
-          2
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 4,
-        "parameters": [
-          "\\-Your souls will be a fine"
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 4,
-        "parameters": [
-          "addition to my collection."
+          "Your souls will be a fine addition to my collection."
         ]
       },
       {
@@ -4172,15 +4653,34 @@
         "parameters": [
           44,
           44,
-          1,
           0,
-          1
+          0,
+          2
         ]
       },
       {
-        "code": 244,
+        "code": 241,
         "indent": 4,
-        "parameters": []
+        "parameters": [
+          {
+            "name": "dungeon_bladesville_2",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 132,
+        "indent": 4,
+        "parameters": [
+          {
+            "name": "dungeon_bladesville_2",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
       },
       {
         "code": 0,
@@ -4875,19 +5375,7 @@
         "code": 230,
         "indent": 0,
         "parameters": [
-          90
-        ]
-      },
-      {
-        "code": 221,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 117,
-        "indent": 0,
-        "parameters": [
-          53
+          30
         ]
       },
       {
@@ -4898,14 +5386,178 @@
           {
             "list": [
               {
-                "code": 16,
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX += 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX += 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX += 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX -= 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX -= 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX -= 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX -= 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX -= 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX -= 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX += 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX += 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX += 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
                 "indent": null
               },
               {
                 "code": 0
               }
             ],
-            "repeat": false,
+            "repeat": true,
             "skippable": false,
             "wait": false
           }
@@ -4916,9 +5568,325 @@
         "indent": 0,
         "parameters": [
           {
-            "code": 16,
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX += 1"
+            ],
             "indent": null
           }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX += 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX += 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX -= 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX -= 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX -= 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX -= 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX -= 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX -= 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX += 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX += 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX += 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          53
         ]
       },
       {
@@ -4929,16 +5897,43 @@
         ]
       },
       {
-        "code": 230,
+        "code": 205,
         "indent": 0,
         "parameters": [
-          90
+          -1,
+          {
+            "list": [
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
         ]
       },
       {
-        "code": 222,
+        "code": 505,
         "indent": 0,
-        "parameters": []
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
       },
       {
         "code": 0,
@@ -4997,12 +5992,136 @@
     "id": 26,
     "list": [
       {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameSystem._demo = $gameSystem._demo || {};"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "!$gameTemp.isDemo()"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "$gameSystem._demo.achievements"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 2,
+        "parameters": [
+          "$gameSystem._demo.achievements.forEach(a => {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  OrangeGreenworks.activateAchievement(a);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "});"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "delete $gameSystem._demo.achievements;"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "$gameSystem._demo.stats"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 2,
+        "parameters": [
+          "for (const stat in $gameSystem._demo.stats) {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  value = $gameSystem._demo.stats[stat];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  OrangeGreenworks.setStat(stat, value);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "}"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "delete $gameSystem._demo.stats;"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "Demo Greenworks",
     "switchId": 1,
     "trigger": 0
   },
@@ -5010,12 +6129,53 @@
     "id": 27,
     "list": [
       {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "Actor4",
+          2,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "\\p3That thing keeps getting away..."
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "Actor4",
+          2,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "\\p3How can we kill it faster? \\N[1] and \\N[4]"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "can still use items like \\ii[265]..."
+        ]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "Gilded Ghost Hint",
     "switchId": 1,
     "trigger": 0
   },
@@ -10634,6 +11794,13 @@
         "parameters": []
       },
       {
+        "code": 216,
+        "indent": 0,
+        "parameters": [
+          1
+        ]
+      },
+      {
         "code": 230,
         "indent": 0,
         "parameters": [
@@ -10720,6 +11887,18 @@
         "code": 201,
         "indent": 0,
         "parameters": [
+          0,
+          145,
+          0,
+          0,
+          2,
+          2
+        ]
+      },
+      {
+        "code": 201,
+        "indent": 0,
+        "parameters": [
           1,
           78,
           79,
@@ -10744,13 +11923,512 @@
         "code": 230,
         "indent": 0,
         "parameters": [
-          90
+          30
         ]
       },
       {
-        "code": 221,
+        "code": 205,
         "indent": 0,
-        "parameters": []
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX += 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX += 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX += 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX -= 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX -= 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX -= 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX -= 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX -= 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX -= 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX += 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX += 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX += 1"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX += 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX += 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX += 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX -= 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX -= 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX -= 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX -= 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX -= 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX -= 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX += 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX += 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX += 1"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          60
+        ]
       },
       {
         "code": 117,
@@ -10760,16 +12438,50 @@
         ]
       },
       {
-        "code": 230,
+        "code": 216,
         "indent": 0,
         "parameters": [
-          90
+          0
         ]
       },
       {
-        "code": 222,
+        "code": 205,
         "indent": 0,
-        "parameters": []
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 14,
+            "parameters": [
+              0,
+              0
+            ],
+            "indent": null
+          }
+        ]
       },
       {
         "code": 0,
@@ -10805,27 +12517,11 @@
         ]
       },
       {
-        "code": 122,
-        "indent": 0,
-        "parameters": [
-          62,
-          62,
-          0,
-          3,
-          7,
-          0,
-          0
-        ]
-      },
-      {
         "code": 111,
         "indent": 0,
         "parameters": [
-          1,
-          62,
-          0,
-          164,
-          5
+          12,
+          "$gameMap.mapId() != 164"
         ]
       },
       {
@@ -10906,7 +12602,7 @@
         "indent": 0,
         "parameters": [
           12,
-          "$gameSystem._moonRespawn"
+          "$gameSystem._moonRespawn && $gameMap.events().some(e => e._monster)"
         ]
       },
       {
@@ -11001,6 +12697,38 @@
         "indent": 1,
         "parameters": [
           "$gameSystem._moonRespawnList.push($gameMap.mapId());"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Ruined Fort music"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameMap.inRuinedFort()"
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 1,
+        "parameters": [
+          63
         ]
       },
       {
@@ -11114,21 +12842,14 @@
         "code": 405,
         "indent": 0,
         "parameters": [
-          "A millenium ago, a massive war was waged across"
+          "A millennium ago, a war ravaged the Overworld, pitting"
         ]
       },
       {
         "code": 405,
         "indent": 0,
         "parameters": [
-          "the entirety of the Overworld, pitting humans"
-        ]
-      },
-      {
-        "code": 405,
-        "indent": 0,
-        "parameters": [
-          "against \\c[18]an evil entity\\c[0] and \\c[18]his\\c[0] enormous army."
+          "humans against \\c[18]an evil entity\\c[0] and \\c[18]his\\c[0] vast army."
         ]
       },
       {
@@ -11149,28 +12870,14 @@
         "code": 405,
         "indent": 0,
         "parameters": [
-          "Two brothers were elected to defeat the threat."
+          "Two brothers, renowned fighters and respected"
         ]
       },
       {
         "code": 405,
         "indent": 0,
         "parameters": [
-          "They were known as skilled fighters, highly"
-        ]
-      },
-      {
-        "code": 405,
-        "indent": 0,
-        "parameters": [
-          "respected travelers, and now the leaders of"
-        ]
-      },
-      {
-        "code": 405,
-        "indent": 0,
-        "parameters": [
-          "the human army."
+          "adventurers, were chosen to defeat the \\c[18]threat\\c[0]."
         ]
       },
       {
@@ -11212,28 +12919,21 @@
         "code": 405,
         "indent": 0,
         "parameters": [
-          "In a duel, any human with proper equipment and"
+          "While a trained human could defeat a single monster,"
         ]
       },
       {
         "code": 405,
         "indent": 0,
         "parameters": [
-          "training would easily dispose of the average"
+          "the real challenge came when hordes of these vile"
         ]
       },
       {
         "code": 405,
         "indent": 0,
         "parameters": [
-          "monster. Problems begin when hordes of these"
-        ]
-      },
-      {
-        "code": 405,
-        "indent": 0,
-        "parameters": [
-          "disgusting creatures overwhelm us."
+          "creatures overwhelm us. We were outnumbered."
         ]
       },
       {
@@ -11254,7 +12954,14 @@
         "code": 405,
         "indent": 0,
         "parameters": [
-          "It's an understatement to say we were out-numbered."
+          "The cost of victory was immense. Cities were pulverized,"
+        ]
+      },
+      {
+        "code": 405,
+        "indent": 0,
+        "parameters": [
+          "landscapes were leveled. And death... so much death."
         ]
       },
       {
@@ -11275,21 +12982,7 @@
         "code": 405,
         "indent": 0,
         "parameters": [
-          "We won this war, but not without great"
-        ]
-      },
-      {
-        "code": 405,
-        "indent": 0,
-        "parameters": [
-          "losses. Cities were pulverized, landscapes"
-        ]
-      },
-      {
-        "code": 405,
-        "indent": 0,
-        "parameters": [
-          "were leveled. And death..."
+          "It's said the rivers ran red with blood for many weeks."
         ]
       },
       {
@@ -11310,77 +13003,28 @@
         "code": 405,
         "indent": 0,
         "parameters": [
-          "So much death."
+          "The greatest loss was the disappearance of the"
         ]
       },
       {
         "code": 405,
         "indent": 0,
         "parameters": [
-          ""
+          "two champions. At the height of the conflict,"
         ]
       },
       {
         "code": 405,
         "indent": 0,
         "parameters": [
-          ""
+          "they vanished, leaving no one to kill the"
         ]
       },
       {
         "code": 405,
         "indent": 0,
         "parameters": [
-          "It's said that the rivers ran red"
-        ]
-      },
-      {
-        "code": 405,
-        "indent": 0,
-        "parameters": [
-          "with blood for many weeks."
-        ]
-      },
-      {
-        "code": 405,
-        "indent": 0,
-        "parameters": [
-          ""
-        ]
-      },
-      {
-        "code": 405,
-        "indent": 0,
-        "parameters": [
-          ""
-        ]
-      },
-      {
-        "code": 405,
-        "indent": 0,
-        "parameters": [
-          "One of the worst losses of all was the loss"
-        ]
-      },
-      {
-        "code": 405,
-        "indent": 0,
-        "parameters": [
-          "of the two champions. At their greatest time of"
-        ]
-      },
-      {
-        "code": 405,
-        "indent": 0,
-        "parameters": [
-          "need, they disappeared, leaving no one left to"
-        ]
-      },
-      {
-        "code": 405,
-        "indent": 0,
-        "parameters": [
-          "kill \\c[18]the leader of the monster army\\c[0]."
+          "\\c[18]leader of the monster army\\c[0]."
         ]
       },
       {
@@ -12421,11 +14065,21 @@
         "code": 302,
         "indent": 0,
         "parameters": [
-          1,
-          35,
+          0,
+          190,
           0,
           0,
           false
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 0,
+        "parameters": [
+          1,
+          35,
+          0,
+          0
         ]
       },
       {
@@ -14356,6 +16010,61 @@
         ]
       },
       {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "### ALPHA 16"
+        ]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Defeat Apocalypse description change"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          55,
+          0,
+          57,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "$gameSystem.getQuestDescriptionIndex(4) == 2"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest 4 Change Description Entry to 3"
+        ]
+      },
+      {
         "code": 0,
         "indent": 2,
         "parameters": []
@@ -14364,6 +16073,462 @@
         "code": 412,
         "indent": 1,
         "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Greenfield Ruins self switches"
+        ]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Small Chest - Top Left"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameSelfSwitches.value([82, 38, 'A'])"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameSelfSwitches.setValue([6, 38, 'A'], true);"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Small Chest - Top Right"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameSelfSwitches.value([82, 41, 'A'])"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameSelfSwitches.setValue([6, 41, 'A'], true);"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Small Chest - Bottom Right"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameSelfSwitches.value([82, 39, 'A'])"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameSelfSwitches.setValue([6, 39, 'A'], true);"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Wood Pile"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameSelfSwitches.value([82, 8, 'A'])"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameSelfSwitches.setValue([6, 8, 'A'], true);"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Reset Riding the Storm"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          55,
+          0,
+          57,
+          1
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "!($gameSystem._ridingTheStorm || $gameTemp.isPlaytest())"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest Remove 37"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest 37 Normalize All Objectives"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest 4 Change Description Entry to 2"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest 4 Normalize Objective 14"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest 4 Hide Objective 15"
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 2,
+        "parameters": [
+          55,
+          55,
+          0,
+          0,
+          54
+        ]
+      },
+      {
+        "code": 223,
+        "indent": 2,
+        "parameters": [
+          [
+            -255,
+            -255,
+            -255,
+            0
+          ],
+          1,
+          true
+        ]
+      },
+      {
+        "code": 242,
+        "indent": 2,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 246,
+        "indent": 2,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 2,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 2,
+        "parameters": [
+          {
+            "name": "Chapter",
+            "volume": 90,
+            "pitch": 50,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 231,
+        "indent": 2,
+        "parameters": [
+          10,
+          "Chapter6",
+          0,
+          0,
+          0,
+          0,
+          100,
+          100,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 232,
+        "indent": 2,
+        "parameters": [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          100,
+          100,
+          255,
+          0,
+          120,
+          true
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 2,
+        "parameters": [
+          120
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 2,
+        "parameters": [
+          {
+            "name": "Move1",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 235,
+        "indent": 2,
+        "parameters": [
+          10
+        ]
+      },
+      {
+        "code": 221,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 223,
+        "indent": 2,
+        "parameters": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          1,
+          false
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 2,
+        "parameters": [
+          96
+        ]
+      },
+      {
+        "code": 201,
+        "indent": 2,
+        "parameters": [
+          0,
+          7,
+          33,
+          9,
+          2,
+          2
+        ]
+      },
+      {
+        "code": 222,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 2,
+        "parameters": [
+          "$gameSystem._ridingTheStorm = true;"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# $gameSystem._food"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "!$gameSystem._food"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameSystem._food = [];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "items = $gameParty.items().filter(i => i).filter(i => i.itemCategory.contains('Foodstuffs'));"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "items.forEach(i => {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  if (!$gameSystem._food.contains(i.id)) $gameSystem._food.push(i.id);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "});"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "OrangeGreenworks.setStat('uniqueFood', $gameSystem._food.length);"
+        ]
       },
       {
         "code": 0,
@@ -15146,6 +17311,13 @@
         ]
       },
       {
+        "code": 355,
+        "indent": 2,
+        "parameters": [
+          "OrangeGreenworks.activateAchievement('BOSS_BAT');"
+        ]
+      },
+      {
         "code": 111,
         "indent": 2,
         "parameters": [
@@ -15519,12 +17691,365 @@
     "id": 63,
     "list": [
       {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          44,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 241,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "dungeon_bladesville_1",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 132,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "dungeon_bladesville_1",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          44,
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "code": 241,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "dungeon_bladesville_2",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 132,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "dungeon_bladesville_2",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          44,
+          0,
+          3,
+          0
+        ]
+      },
+      {
+        "code": 241,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "dungeon_bladesville_3",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 132,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "dungeon_bladesville_3",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          44,
+          0,
+          4,
+          0
+        ]
+      },
+      {
+        "code": 241,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "dungeon_bladesville_4",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 132,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "dungeon_bladesville_4",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          44,
+          0,
+          5,
+          0
+        ]
+      },
+      {
+        "code": 241,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "dungeon_bladesville_5",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 132,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "dungeon_bladesville_5",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          44,
+          0,
+          6,
+          0
+        ]
+      },
+      {
+        "code": 241,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "dungeon_bladesville_6",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 132,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "dungeon_bladesville_6",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 133,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "DisableVictoryMusic"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          44,
+          0,
+          7,
+          0
+        ]
+      },
+      {
+        "code": 241,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "map_desert",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 132,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "battle_normal",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 133,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "Victory1",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "EnableVictoryMusic"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "Fort Music",
     "switchId": 1,
     "trigger": 0
   },
@@ -15532,12 +18057,271 @@
     "id": 64,
     "list": [
       {
+        "code": 242,
+        "indent": 0,
+        "parameters": [
+          2
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          120
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          44,
+          0,
+          3,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "Unknown",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "\\-I was hoping that would strike you down..."
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "Unknown",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "\\-You're still nowhere close to reaching me. You"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "don't stand a chance against my other souls!"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          44,
+          0,
+          4,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "Unknown",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "\\-You're stronger than I expected... but your efforts are"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "in vain. I'll be taking your lives, AND your souls!"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "Unknown",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "\\-I don't even need to get my hands dirty..."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "my most powerful souls will do the job."
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          44,
+          0,
+          5,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "Unknown",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "\\-So you've really done it..."
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "Unknown",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "\\-Out of all the souls I've captured over the"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "past millenium, none could defeat you..."
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "Unknown",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "\\-So I suppose it's time for our battle?"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "Unknown",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "\\-Come and face me, adventurers. We will finally"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "see which side of this endless war prevails."
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          44,
+          44,
+          1,
+          0,
+          1
+        ]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "Next Fort Music",
     "switchId": 1,
     "trigger": 0
   },
@@ -15628,7 +18412,28 @@
         "code": 655,
         "indent": 1,
         "parameters": [
-          "$gameActors._data[$gameTemp._actorId].addParam(7, 4);"
+          "$gameActors._data[$gameTemp._actorId].addParam(7, 2);"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "intBooks = 0;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "$gameActors._data.filter(a => a && a._intBooks).forEach(a => intBooks += a._intBooks);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "OrangeGreenworks.setStat('intBooks', intBooks);"
         ]
       },
       {
@@ -15667,7 +18472,7 @@
         "code": 401,
         "indent": 1,
         "parameters": [
-          "Increased INT by +4!"
+          "Increased INT by +2!"
         ]
       },
       {
@@ -16803,6 +19608,13 @@
         "indent": 0,
         "parameters": [
           55
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          26
         ]
       },
       {

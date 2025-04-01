@@ -199,7 +199,7 @@ Game_Event.prototype.doShadows = function() {
 		if (SceneManager._scene._spriteset) SceneManager._scene._spriteset.destroyBShadow(this._eventId);
 		return;
 	};
-	if (this.event().note.contains("<shadow>")/* && this._characterName != ""*/) {
+	if (this.event()?.note.contains("<shadow>")/* && this._characterName != ""*/) {
 		this._shadow = true;
 	} else {
 		// check if page has shadow

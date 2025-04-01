@@ -6022,7 +6022,7 @@
     434,
     402,
     0,
-    42,
+    0,
     68,
     93,
     392,
@@ -10724,11 +10724,11 @@
           },
           "directionFix": false,
           "image": {
-            "characterIndex": 4,
-            "characterName": "!Door1",
+            "tileId": 0,
+            "characterName": "!Door4",
             "direction": 2,
             "pattern": 0,
-            "tileId": 0
+            "characterIndex": 4
           },
           "list": [
             {
@@ -10814,6 +10814,13 @@
               "parameters": [
                 "A",
                 0
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameSelfSwitches.setValue([6, 8, 'A'], true);"
               ]
             },
             {
@@ -11063,7 +11070,7 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Door1",
+            "characterName": "!Door4",
             "direction": 2,
             "pattern": 0,
             "characterIndex": 4
@@ -11441,7 +11448,7 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Door1",
+            "characterName": "!Door4",
             "direction": 2,
             "pattern": 0,
             "characterIndex": 4
@@ -11602,11 +11609,11 @@
           },
           "directionFix": false,
           "image": {
-            "characterIndex": 4,
-            "characterName": "!Door1",
+            "tileId": 0,
+            "characterName": "!Door4",
             "direction": 2,
             "pattern": 0,
-            "tileId": 0
+            "characterIndex": 4
           },
           "list": [
             {
@@ -11703,11 +11710,11 @@
           },
           "directionFix": false,
           "image": {
-            "characterIndex": 4,
-            "characterName": "!Door1",
+            "tileId": 0,
+            "characterName": "!Door4",
             "direction": 2,
             "pattern": 0,
-            "tileId": 0
+            "characterIndex": 4
           },
           "list": [
             {
@@ -11804,11 +11811,11 @@
           },
           "directionFix": false,
           "image": {
-            "characterIndex": 4,
-            "characterName": "!Door1",
+            "tileId": 0,
+            "characterName": "!Door4",
             "direction": 2,
             "pattern": 0,
-            "tileId": 0
+            "characterIndex": 4
           },
           "list": [
             {
@@ -12927,6 +12934,13 @@
               ]
             },
             {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameSelfSwitches.setValue([6, 38, 'A'], true);"
+              ]
+            },
+            {
               "code": 125,
               "indent": 0,
               "parameters": [
@@ -13160,6 +13174,13 @@
               "parameters": [
                 "A",
                 0
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameSelfSwitches.setValue([6, 39, 'A'], true);"
               ]
             },
             {
@@ -13477,6 +13498,13 @@
               "parameters": [
                 "A",
                 0
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameSelfSwitches.setValue([6, 41, 'A'], true);"
               ]
             },
             {

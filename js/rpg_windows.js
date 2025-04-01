@@ -3848,7 +3848,7 @@ Window_NameInput.prototype.processJump = function() {
 
 Window_NameInput.prototype.processBack = function() {
     if (this._editWindow.back()) {
-        SoundManager.playCancel();
+        this._mode == 'keyboard' ? SoundManager.playCursor() : SoundManager.playCancel();
     }
 };
 

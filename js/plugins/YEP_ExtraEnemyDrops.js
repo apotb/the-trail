@@ -649,8 +649,16 @@ DataManager.createGlobalDrops = function(obj) {
     // Present (1/5 drop during December)
     var item = $dataItems[156];
     var arr = [
-      "Eval $gameSwitches.value(81): +20%",
-      "Eval date.getMonth() == 11: +30%" // 1/2 drop on Christmas
+      "Switch 81 ON: +20%",
+      "Eval date.getMonth() == 11 && date.getDate() == 25: +30%" // 1/2 drop on Christmas
+    ];
+    DataManager.createConditionalEnemyDrop(obj, item, arr);
+
+    // Gingerbread Cookie (1/10 drop during December)
+    var item = $dataItems[190];
+    var arr = [
+      "Switch 81 ON: +10%",
+      "Eval date.getMonth() == 11 && date.getDate() == 25: +15%" // 1/4 drop on Christmas
     ];
     DataManager.createConditionalEnemyDrop(obj, item, arr);
 

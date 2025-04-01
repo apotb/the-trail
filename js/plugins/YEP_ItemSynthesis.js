@@ -811,6 +811,7 @@ Game_System.prototype.addSynth = function(item) {
         this._synthedArmors.push(item.id);
       }
     }
+    OrangeGreenworks.setStat('craftingCompletion', Math.floor(((this.synthedTotal()) / Yanfly.IS.SynthesisRecipeCount) * 100));
 };
 
 Game_System.prototype.synthedItems = function() {
@@ -1106,12 +1107,11 @@ Window_SynthesisList.prototype.windowWidth = function() {
 Window_SynthesisList.prototype.updateHelp = function() {
     if (this._commandWindow.active) {
       this._commandWindow.updateCursor();
-    } else if (eval(Yanfly.Param.ISMaskUnknown) &&
-    !$gameSystem.hasSynthed(this.item())) {
-      var text = Yanfly.Param.ISMaskHelpText;
-      if (this._helpWindow) this._helpWindow.setText(text);
     } else {
       this.setHelpWindowItem(this.item());
+      if (eval(Yanfly.Param.ISMaskUnknown) && !$gameSystem.hasSynthed(this.item())) {
+        if (this._helpWindow) this._helpWindow.setText(Yanfly.Param.ISMaskHelpText + this._helpWindow._text);
+      }
     }
     if (this._ingredients) {
       this._ingredients.refresh(this.item());
@@ -1431,6 +1431,7 @@ Window_SynthesisNumber.prototype.placeButtons = function() {
 
 Window_SynthesisNumber.prototype.updateButtonsVisiblity = function() {
     if (TouchInput.date > Input.date) {
+        this.hideButtons();
         this.showButtons();
     } else {
         this.hideButtons();
@@ -1438,8 +1439,8 @@ Window_SynthesisNumber.prototype.updateButtonsVisiblity = function() {
 };
 
 Window_SynthesisNumber.prototype.showButtons = function() {
-    for (var i = 0; i < this._buttons.length; i++) {
-        this._buttons[i].visible = true;
+    for (var i = 0; i < this._buttons.length - 1; i++) {
+        this._buttons[i].visible = DataManager.isItem(this._item) || i == 4;
     }
 };
 
@@ -1452,7 +1453,7 @@ Window_SynthesisNumber.prototype.hideButtons = function() {
 Window_SynthesisNumber.prototype.refresh = function() {
     this.contents.clear();
     this.drawAmountText()
-    this.drawMultiplicationSign();
+    if (DataManager.isItem(this._item)) this.drawMultiplicationSign();
     this.drawNumber();
     if (!SceneManager._scene._commandWindow.active) this.drawIngredients();
 };
@@ -1480,7 +1481,11 @@ Window_SynthesisNumber.prototype.drawNumber = function() {
     this.resetTextColor();
     number = this._number;
     if (SceneManager._scene._listWindow.item()) number *= SceneManager._scene._listWindow.item().craftAmount;
-    this.drawText(Yanfly.Util.toGroup(number), x, y, width, 'right');
+    if (DataManager.isItem(this._item)) {
+      this.drawText(number, x, y, width, 'right');
+    } else {
+      this.drawText("Confirm?", x - width, y, width * 2, 'right');
+    }
 };
 
 Window_SynthesisNumber.prototype.drawIngredients = function() {
@@ -1545,6 +1550,7 @@ Window_SynthesisNumber.prototype.buttonY = function() {
 };
 
 Window_SynthesisNumber.prototype.cursorWidth = function() {
+    if (!DataManager.isItem(this._item)) return this.textWidth('Confirm?') + this.textPadding() * 7;
     var digitWidth = this.textWidth('0');
     return this.maxDigits() * digitWidth + this.textPadding() * 4;
 };
@@ -1934,9 +1940,20 @@ Scene_Synthesis.prototype.doBuy = async function(number) {
       }
       if (independentItems.contains(0)) return reject();
       items.forEach(item => $gameParty.loseItem(item[0], item[1], false));
-      upgradeStats = [0, [], ''];
+      upgradeStats = [-1, [], '', undefined, undefined];
       independentItems.forEach(item => {
-        if (item._weight) if (item._weight > upgradeStats[0]) upgradeStats = [item._weight, item.slotsApplied, item.priorityName];
+        if ((item._weight || -1) > upgradeStats[0]) {
+          upgradeStats[0] = (item._weight || 0);
+          upgradeStats[1] = item.slotsApplied;
+          upgradeStats[2] = item.priorityName;
+        }
+        if ($gameParty.members().some(a => a.equips().contains(item))) {
+          actor = $gameParty.members().find(a => a.equips().contains(item));
+          equipSlot = $gameParty.members().find(m => m.equips().includes(item))?.equips().findIndex(e => e == item);
+          if (!actor) [actor, equipSlot] = [upgradeStats[3], upgradeStats[4]];
+          upgradeStats[3] = actor;
+          upgradeStats[4] = equipSlot;
+        }
         $gameParty.gainIndependentItem(item, -1, true)
       });
       number *= this._item.craftAmount;
@@ -1951,6 +1968,7 @@ Scene_Synthesis.prototype.doBuy = async function(number) {
         });
         ItemManager.setPriorityName(item, upgradeStats[2]);
         ItemManager.updateItemName(item);
+        if (upgradeStats[3]) upgradeStats[3].changeEquip(upgradeStats[4], item);
       }
       $gameSystem.addSynth(this._item);
       resolve();

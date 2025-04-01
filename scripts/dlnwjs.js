@@ -11,7 +11,7 @@ const zipPath = __dirname + `/` + zipName
 const extractPath = __dirname + `/..`
 
 try {
-    https.get("https://dl.nwjs.io/v0.95.0/nwjs-v0.95.0-win-x64.zip", function(response) {
+    https.get("https://dl.nwjs.io/v0.94.0/nwjs-v0.94.0-win-x64.zip", function(response) {
         console.log("Downloading...")
         response.pipe(file)
         

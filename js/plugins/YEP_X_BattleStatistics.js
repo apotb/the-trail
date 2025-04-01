@@ -257,6 +257,7 @@ Game_Actor.prototype.increaseKillCount = function(value) {
     value = value || 1;
 		if (this._killCount === undefined) this.initBattleStatistics();
 		this._killCount += value;
+	OrangeGreenworks.setStat('enemiesDefeated', $gameParty.killCount());
 };
 
 Game_Actor.prototype.deathCount = function() {
@@ -273,6 +274,7 @@ Game_Actor.prototype.increaseDeathCount = function(value) {
     value = value || 1;
 		if (this._deathCount === undefined) this.initBattleStatistics();
 		this._deathCount += value;
+	OrangeGreenworks.setStat('highestDeathsEach', this._deathCount);
 };
 
 Game_Actor.prototype.assistCount = function() {

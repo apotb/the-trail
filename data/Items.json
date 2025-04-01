@@ -1342,13 +1342,13 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A small bead of water surrounded by a crystalline\nshell. Used to craft a few water-related items.",
+    "description": "A small bead of water surrounded by a crystalline shell.\nCan be applied to a weapon to grant \\nl[5] attacks.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 359,
     "itypeId": 1,
     "name": "Aqua Gem",
-    "note": "",
+    "note": "<Upgrade Weapon Type: 0>\n<Upgrade Effect>\nEval: item.traits.push({code: 31, dataId: 5, value: 0});\nPrefix: Wet\nWeight: +2\n</Upgrade Effect>\n<Upgrade Tooltip: \\nl[5] Attack>\n\n<Disassemble Pool: Advanced>\nx1 Water Essence: 100%\nx1 Water Essence: 75%\n</Disassemble Pool: Advanced>",
     "occasion": 3,
     "price": 120,
     "repeats": 1,
@@ -2235,7 +2235,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Meant for a single very large eye, but should still work.\nIncreases several stats at the cost of a little stinging.",
+    "description": "Meant for a single very large eye, but should still work on humans.\nIncreases HIT, EVA, CRI, and CEV, at the cost of a little stinging.",
     "effects": [
       {
         "code": 21,
@@ -2420,7 +2420,7 @@
         "value2": 0
       }
     ],
-    "hitType": 1,
+    "hitType": 0,
     "iconIndex": 551,
     "itypeId": 1,
     "name": "Red Gel",
@@ -3625,7 +3625,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A peculiar book that allows an experienced adventurer to permanently\nincrease their intelligence. A single person can only read 5 of these.",
+    "description": "A peculiar book that allows an experienced adventurer to permanently increase their INT.\nMore intelligence equals more crit damage! A single person can only read 5 of these.",
     "effects": [
       {
         "code": 44,
@@ -4020,8 +4020,8 @@
   },
   {
     "id": 135,
-    "animationId": 0,
-    "consumable": false,
+    "animationId": 41,
+    "consumable": true,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -4029,7 +4029,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A heated cluster of blueberries with all\nthe moisture evaporated. Inedible on its own.",
+    "description": "A heated cluster of blueberries with much of its\nmoisture evaporated. Recovers more MP, but no HP.",
     "effects": [
       {
         "code": 12,
@@ -4042,11 +4042,11 @@
     "iconIndex": 553,
     "itypeId": 1,
     "name": "Dried Blueberries",
-    "note": "<Menu Category: Foodstuffs>\n\n<Synthesis Ingredients>\nBlueberries\n</Synthesis Ingredients>\n<Mask Name: Demoisturized Fruit>\n<Synthesis SE: Fire2>",
-    "occasion": 3,
+    "note": "<Menu Category: Foodstuffs>\n\n<Synthesis Ingredients>\nBlueberries\n</Synthesis Ingredients>\n<Mask Name: Demoisturized Fruit>\n<Synthesis SE: Fire2>\n\n<Custom Show Eval>\nvisible = !$gameTemp.bagOrganized();\n</Custom Show Eval>",
+    "occasion": 0,
     "price": 2,
     "repeats": 1,
-    "scope": 0,
+    "scope": 7,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
@@ -5251,7 +5251,7 @@
     "iconIndex": 341,
     "itypeId": 1,
     "name": "Andrew's Ancient Crystal of The Trail's Amazing History",
-    "note": "<Menu Category: Memorabilia>\n\n<Synthesis Ingredients>\nMysterious Yellow Badge\nMysterious Green Badge\nMysterious Red Badge\n</Synthesis Ingredients>\n<Mask Name: ???>\n<Synthesis SE: Powerup>\n<Synthesis Volume: 150>\n<Synthesis Pitch: 50>\n\n<Disassemble Pool: Basic>\nx1 Knight Token: 100%\nx1 Mage Token: 100%\nx1 Cleric Token: 100%\nx1 Rogue Token: 100%\n</Disassemble Pool: Basic>",
+    "note": "<Menu Category: Memorabilia>\n\n<Synthesis Ingredients>\nMysterious Yellow Badge\nMysterious Green Badge\nMysterious Red Badge\n</Synthesis Ingredients>\n<Mask Name: ???>\n<Synthesis SE: Powerup>\n<Synthesis Volume: 150>\n<Synthesis Pitch: 50>\n\n<Disassemble Pool: Basic>\nx1 Knight Token: 100%\nx1 Mage Token: 100%\nx1 Cleric Token: 100%\nx1 Rogue Token: 100%\n</Disassemble Pool: Basic>\n\n<Custom Disassembled Effect>\nOrangeGreenworks.activateAchievement('COLLECT_DEMOCRYSTAL');\n</Custom Disassembled Effect>",
     "occasion": 3,
     "price": 0,
     "repeats": 1,
@@ -5529,7 +5529,7 @@
   },
   {
     "id": 190,
-    "animationId": 0,
+    "animationId": 41,
     "consumable": true,
     "damage": {
       "critical": false,
@@ -5538,13 +5538,32 @@
       "type": 0,
       "variance": 20
     },
-    "description": "",
-    "effects": [],
+    "description": "Celebrate the holidays with this tasty pastry!\nRegenerates HP for a few turns after eating.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 28,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 4,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0,
+        "value2": 30
+      }
+    ],
     "hitType": 0,
-    "iconIndex": 0,
+    "iconIndex": 1300,
     "itypeId": 1,
-    "name": "",
-    "note": "Was once the CASTLE FOOD RECIPES.",
+    "name": "Gingerbread Cookie",
+    "note": "<Menu Category: Foodstuffs>\n\n<Item Present Buy Price: 2>\n<Item Present Sell Price: 1>\n\nWas once the CASTLE FOOD RECIPES.",
     "occasion": 0,
     "price": 0,
     "repeats": 1,
@@ -6308,7 +6327,7 @@
         "value2": 0
       }
     ],
-    "hitType": 1,
+    "hitType": 0,
     "iconIndex": 697,
     "itypeId": 1,
     "name": "Icy Gel",
@@ -6778,7 +6797,7 @@
   {
     "id": 230,
     "animationId": 0,
-    "consumable": true,
+    "consumable": false,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -6786,17 +6805,17 @@
       "type": 0,
       "variance": 20
     },
-    "description": "",
+    "description": "A molten-hot clump of magma dropped by a Fire Spirit.\nCan be applied to a weapon to grant \\nl[2] attacks.",
     "effects": [],
     "hitType": 0,
-    "iconIndex": 0,
+    "iconIndex": 824,
     "itypeId": 1,
-    "name": "",
-    "note": "Was once the GOLDEN TABLET RECIPE.",
-    "occasion": 0,
-    "price": 0,
+    "name": "Flarestone",
+    "note": "<Upgrade Weapon Type: 0>\n<Upgrade Effect>\nEval: item.traits.push({code: 31, dataId: 2, value: 0});\nPrefix: Hot\nWeight: +2\n</Upgrade Effect>\n<Upgrade Tooltip: \\nl[2] Attack>\n\n<Disassemble Pool: Advanced>\nx1 Fire Essence: 100%\nx1 Fire Essence: 75%\n</Disassemble Pool: Advanced>\n\nWas once the GOLDEN TABLET RECIPE.",
+    "occasion": 3,
+    "price": 120,
     "repeats": 1,
-    "scope": 7,
+    "scope": 0,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
@@ -6934,7 +6953,7 @@
   {
     "id": 236,
     "animationId": 0,
-    "consumable": true,
+    "consumable": false,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -6942,17 +6961,17 @@
       "type": 0,
       "variance": 20
     },
-    "description": "",
+    "description": "Opens the door to the sauna on the\n2nd floor of the Ruined Fort.",
     "effects": [],
     "hitType": 0,
-    "iconIndex": 0,
-    "itypeId": 1,
-    "name": "",
+    "iconIndex": 240,
+    "itypeId": 2,
+    "name": "Sauna Key",
     "note": "",
-    "occasion": 0,
+    "occasion": 3,
     "price": 0,
     "repeats": 1,
-    "scope": 7,
+    "scope": 0,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
@@ -6960,7 +6979,7 @@
   {
     "id": 237,
     "animationId": 0,
-    "consumable": true,
+    "consumable": false,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -6968,25 +6987,25 @@
       "type": 0,
       "variance": 20
     },
-    "description": "",
+    "description": "A pile of powdered gold dust. It glistens in the light,\nechoing back to your hunt for an elusive apparition.",
     "effects": [],
     "hitType": 0,
-    "iconIndex": 0,
+    "iconIndex": 365,
     "itypeId": 1,
-    "name": "",
-    "note": "",
-    "occasion": 0,
+    "name": "Gold Dust",
+    "note": "<Menu Category: Memorabilia>",
+    "occasion": 3,
     "price": 0,
     "repeats": 1,
-    "scope": 7,
+    "scope": 0,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
   },
   {
     "id": 238,
-    "animationId": 0,
-    "consumable": true,
+    "animationId": 280,
+    "consumable": false,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -6994,17 +7013,17 @@
       "type": 0,
       "variance": 20
     },
-    "description": "",
+    "description": "[NOT YET IMPLEMENTED]\nKills all enemies, long recharge based on enemies killed",
     "effects": [],
     "hitType": 0,
-    "iconIndex": 0,
-    "itypeId": 1,
-    "name": "",
+    "iconIndex": 232,
+    "itypeId": 2,
+    "name": "Scroll of Silver Sands",
     "note": "",
-    "occasion": 0,
+    "occasion": 1,
     "price": 0,
     "repeats": 1,
-    "scope": 7,
+    "scope": 2,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
@@ -7205,6 +7224,12 @@
     "description": "Grants \\it[126] for 1200 steps.",
     "effects": [
       {
+        "code": 22,
+        "dataId": 125,
+        "value1": 1,
+        "value2": 0
+      },
+      {
         "code": 21,
         "dataId": 126,
         "value1": 1,
@@ -7215,7 +7240,7 @@
     "iconIndex": 721,
     "itypeId": 1,
     "name": "Fire Resistance Potion",
-    "note": "<Menu Category: Buffs>",
+    "note": "",
     "occasion": 2,
     "price": 20,
     "repeats": 1,
@@ -7382,7 +7407,7 @@
   },
   {
     "id": 253,
-    "animationId": 0,
+    "animationId": 66,
     "consumable": true,
     "damage": {
       "critical": false,
@@ -7763,7 +7788,7 @@
     },
     "description": "Purified water blessed by Trailia herself. You\nshouldn't drink it, but try using it on a \\nl[9] enemy!",
     "effects": [],
-    "hitType": 1,
+    "hitType": 0,
     "iconIndex": 809,
     "itypeId": 1,
     "name": "Holy Water",

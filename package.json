@@ -1,8 +1,8 @@
 {
-  "name": "thetrail",
+  "name": "The Trail",
   "main": "index.html",
   "js-flags": "--exposegc",
-  "chromium-args": "--disable-raf-throttling",
+  "chromium-args": "--in-process-gpu --disable-direct-composition --disable-raf-throttling",
   "scripts": {
     "compress-bgm": "node scripts/compress-bgm.js"
   },

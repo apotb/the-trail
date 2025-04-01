@@ -45,7 +45,15 @@
     "scrollX": 0,
     "scrollY": 0
   },
-  null,
+  {
+    "id": 6,
+    "expanded": false,
+    "name": "Greenfield Ruins",
+    "order": 186,
+    "parentId": 210,
+    "scrollX": 0,
+    "scrollY": 0
+  },
   {
     "id": 7,
     "expanded": true,
@@ -130,7 +138,7 @@
   {
     "id": 16,
     "expanded": true,
-    "name": "Village Headman's House - F1",
+    "name": "Village Headman's Manor - F1",
     "order": 18,
     "parentId": 9,
     "scrollX": 0,
@@ -139,7 +147,7 @@
   {
     "id": 17,
     "expanded": true,
-    "name": "Village Headman's House - F2",
+    "name": "Village Headman's Manor - F2",
     "order": 19,
     "parentId": 16,
     "scrollX": 0,
@@ -514,12 +522,60 @@
     "scrollX": 0,
     "scrollY": 0
   },
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
+  {
+    "id": 59,
+    "expanded": true,
+    "name": "Mayor's Office Ruins",
+    "order": 191,
+    "parentId": 6,
+    "scrollX": 0,
+    "scrollY": 0
+  },
+  {
+    "id": 60,
+    "expanded": false,
+    "name": "Greenfield-Solus Passage",
+    "order": 192,
+    "parentId": 59,
+    "scrollX": 0,
+    "scrollY": 0
+  },
+  {
+    "id": 61,
+    "expanded": false,
+    "name": "Church Ruins",
+    "order": 187,
+    "parentId": 6,
+    "scrollX": 0,
+    "scrollY": 0
+  },
+  {
+    "id": 62,
+    "expanded": true,
+    "name": "General Store Ruins",
+    "order": 188,
+    "parentId": 6,
+    "scrollX": 0,
+    "scrollY": 0
+  },
+  {
+    "id": 63,
+    "expanded": true,
+    "name": "Inn Ruins - F1",
+    "order": 189,
+    "parentId": 6,
+    "scrollX": 0,
+    "scrollY": 0
+  },
+  {
+    "id": 64,
+    "expanded": true,
+    "name": "Inn Ruins - F2",
+    "order": 190,
+    "parentId": 63,
+    "scrollX": 0,
+    "scrollY": 0
+  },
   null,
   null,
   null,
@@ -1336,7 +1392,7 @@
     "id": 165,
     "expanded": false,
     "name": "Tester Tower",
-    "order": 186,
+    "order": 193,
     "parentId": 0,
     "scrollX": 0,
     "scrollY": 0
@@ -1561,7 +1617,7 @@
   {
     "id": 199,
     "expanded": false,
-    "name": "Smithery",
+    "name": "Castle Town Smithery",
     "order": 155,
     "parentId": 183,
     "scrollX": 0,

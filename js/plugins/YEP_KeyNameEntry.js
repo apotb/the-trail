@@ -190,7 +190,7 @@ Window_NameInput.prototype.processKeyboardHandling = function() {
     var length = text.length;
     for (var i = 0; i < length; ++i) {
       if (this._editWindow.add(text[i])) {
-        SoundManager.playOk();
+        SoundManager.playCursor();
       } else {
         SoundManager.playBuzzer();
       }

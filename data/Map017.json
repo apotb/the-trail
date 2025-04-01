@@ -16,7 +16,7 @@
     "volume": 50
   },
   "disableDashing": false,
-  "displayName": "Village Headman's House - F2",
+  "displayName": "Village Headman's Manor - F2",
   "encounterList": [],
   "encounterStep": 30,
   "height": 25,
@@ -4951,28 +4951,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\headNow now, don't be worried. I'm bestowing this"
+                "\\headNow now, don't be worried. You've done exceptionally"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "sword and suit of armor upon you. They've been"
+                "well in your training thus far. Your swordsmanship"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "in this house for many years, even since before"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "I became headman! Here, try everything on."
+                "is more than good enough to face a true adversary."
               ]
             },
             {
@@ -5494,21 +5487,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\headGreat work during today's training."
+                "\\headGreat work during today's training. You"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "You're naturally talented when it"
+                "were always good with that sword. I'm"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "comes to swordsmanship."
+                "glad to see your skills in training"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "translated to the real thing."
               ]
             },
             {
@@ -7490,6 +7490,13 @@
               ]
             },
             {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                62
+              ]
+            },
+            {
               "code": 205,
               "indent": 0,
               "parameters": [
@@ -8599,24 +8606,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "An old sword."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Probably best to not touch it."
+                "A \\iw[1]."
               ]
             },
             {
@@ -8745,24 +8735,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Some old armor."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Probably best to not touch it."
+                "A set of \\ia[1]."
               ]
             },
             {
@@ -8788,13 +8761,13 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
-            "characterIndex": 0,
+            "tileId": 556,
             "characterName": "",
+            "characterIndex": 0,
             "direction": 2,
-            "pattern": 0,
-            "tileId": 0
+            "pattern": 0
           },
           "list": [
             {
@@ -8817,11 +8790,11 @@
           },
           "moveSpeed": 3,
           "moveType": 0,
-          "priorityType": 0,
+          "priorityType": 1,
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 10,

@@ -76,9 +76,9 @@ Afterwards, go to the `scripts` folder and run the file titled `dlnwjs.bat`. NW.
 To play the game, run `PLAYTEST.bat`, located in the repository's root.
 
 #### Method #2 (no extra downloads)
-1. Download and extract [NW.js v0.95.0 for Windows](https://dl.nwjs.io/v0.95.0/nwjs-v0.95.0-win-x64.zip).
-2. Move `package.json`, `package-lock.json`, and `node_modules` from the repository to the root of `nwjs-v0.95.0-win-x64`.
+1. Download and extract [NW.js v0.94.0 for Windows](https://dl.nwjs.io/v0.94.0/nwjs-v0.94.0-win-x64.zip).
+2. Move `package.json`, `package-lock.json`, and `node_modules` from the repository to the root of `nwjs-v0.94.0-win-x64`.
 3. Open `package.json` with your text editor of choice. Change the value of `"main"` to `"www/index.html"`, and the value of `"icon"` to `"www/icon/icon.png"`. Do NOT delete the commas.
-4. Create a folder titled `www` inside `nwjs-v0.95.0-win-x64`.
+4. Create a folder titled `www` inside `nwjs-v0.94.0-win-x64`.
 5. Move every folder and `index.html` from the download of The Trail to `www`.
 6. Run `nw.exe` to launch the game. If you receive a [Windows SmartScreen error](https://techcommunity.microsoft.com/t5/image/serverpage/image-id/236239i5BF05C3634826BFC/image-dimensions/484x457?v=v2), dismiss it by clicking "More info" and "Run anyways".

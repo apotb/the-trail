@@ -516,6 +516,7 @@ Game_BattlerBase.prototype.xparam = function(id) {
     var base = Yanfly.XParam.Game_BattlerBase_xparam.call(this, id);
     var plus = this.xparamPlus(id);
     var rate = this.xparamRate(id);
+    if (this._adrenaline) if ([0, 1, 2].contains(id)) rate += this._adrenaline * 0.1; // Adrenaline skill
     var flat = this.xparamFlat(id);;
     var a = this;
     var user = this;

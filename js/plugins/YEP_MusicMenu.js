@@ -193,7 +193,7 @@ Yanfly.SetupMusicMenuParameters();
 Yanfly.MusicMenu.AudioManager_playBgm = AudioManager.playBgm;
 AudioManager.playBgm = function(bgm, pos) {
   Yanfly.MusicMenu.AudioManager_playBgm.call(this, bgm, pos);
-  var bgmName = bgm.name;
+  var bgmName = bgm?.name;
   if (bgmName && Yanfly.Param.MusicMenuSongFilenameList.contains(bgmName)) {
     if ($gameSystem) {
       var index = Yanfly.Param.MusicMenuSongFilenameList.indexOf(bgmName);

@@ -10169,7 +10169,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\oriStand back, king."
+                "\\oriStand back, King."
               ]
             },
             {
@@ -10451,7 +10451,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\oriI'm... trying..."
+                "\\oriI'm... looking..."
               ]
             },
             {
@@ -10705,14 +10705,24 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\oriI'm... looking..."
+                "\\oriI see... I see..."
               ]
             },
             {
-              "code": 230,
+              "code": 101,
               "indent": 0,
               "parameters": [
-                180
+                "People4",
+                7,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\oriA... green... field..."
               ]
             },
             {
@@ -11099,6 +11109,35 @@
               ]
             },
             {
+              "code": 241,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "town_castle_castle",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p2Greenfield??"
+              ]
+            },
+            {
               "code": 101,
               "indent": 0,
               "parameters": [
@@ -11112,14 +11151,69 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\oriThere's a large amount of magical interference..."
+                "\\oriYes, and I fear the worst... I saw unimaginable horrors..."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                2,
+                0,
+                2
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "somehow more than when \\c[18]he\\c[0] was just under us."
+                "\\p3This is terrible, who knows what \\c[18]Apocalypse\\c[0]"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "might be doing there? For all we know, the"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "town could be razed to the ground already..."
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                13,
+                {
+                  "list": [
+                    {
+                      "code": 18,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 18,
+                  "indent": null
+                }
               ]
             },
             {
@@ -11136,14 +11230,38 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\oriIf I'm ever going to be able to track him down,"
+                "\\oriRight... not like that should be any of your concern, though."
               ]
             },
             {
-              "code": 401,
+              "code": 205,
               "indent": 0,
               "parameters": [
-                "the world's going to have to get a lot more pure."
+                13,
+                {
+                  "list": [
+                    {
+                      "code": 16,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 16,
+                  "indent": null
+                }
               ]
             },
             {
@@ -11191,28 +11309,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\kingI know you're very against my employment of"
+                "\\kingI know you're very against my employment of the champions,"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "the champions, Oriel, but please... at least"
+                "Oriel, but please... at least these four. You know they're a"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "these four. You know they're a level above the"
+                "level above the others. You can count on them. Besides, the"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "others. You can count on them."
+                "safety of our people is more important than any grudge."
               ]
             },
             {
@@ -11322,14 +11440,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\oriIf you're still set on that, we have nothing more to"
+                "\\oriIf you're still set on that, we have nothing more to speak"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "speak about. I'll be off making another plan for you."
+                "about. I'll be off making another plan for you to ignore..."
               ]
             },
             {
@@ -11404,18 +11522,6 @@
               "parameters": []
             },
             {
-              "code": 241,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "town_castle_castle",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
               "code": 356,
               "indent": 0,
               "parameters": [
@@ -11436,14 +11542,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\kingAnd that's that. The general has all the"
+                "\\kingGreenfield... come to think of it, we've received reports"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "information you need. Good luck out there!"
+                "from Solus Valley, but nothing yet from Greenfield. I fear"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "something terrible has happened to my people..."
               ]
             },
             {
@@ -11460,14 +11573,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4Not so fast... you know we still have"
+                "\\p4Yeah, we can go investigate... but not so fast."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "something to talk about."
+                "You know we still have something to talk about."
               ]
             },
             {
@@ -11711,37 +11824,6 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\kingI figure you don't want to talk to me anymore."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "As I said, the general will debrief you on"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "everything you've missed while underground."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People3",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
                 "\\kingI... um... good luck."
               ]
             },
@@ -11805,6 +11887,34 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Quest 4 Change Description Entry to 3"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Quest 4 Complete Objective 14"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Quest 4 Show Objective 15"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Quest Add 37"
+              ]
+            },
+            {
               "code": 101,
               "indent": 0,
               "parameters": [
@@ -11833,27 +11943,6 @@
               "indent": 0,
               "parameters": [
                 "New Quest!"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 4 Complete Objective 14"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 4 Show Objective 15"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest Add 37"
               ]
             },
             {
@@ -12367,6 +12456,121 @@
       ],
       "x": 20,
       "y": 28
+    },
+    {
+      "id": 19,
+      "name": "EV019",
+      "note": "<shadow>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 55,
+            "variableValid": true,
+            "variableValue": 57
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "People4",
+            "direction": 8,
+            "pattern": 1,
+            "characterIndex": 7
+          },
+          "list": [
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People4",
+                7,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\oriOh... you four again."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People4",
+                7,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\oriWhile you're wasting your time on a wild"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "goose chase, I'm reading the history books."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Maybe the wisdom of our ancestors will"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "guide us to victory against \\c[18]Apocalypse\\c[0]..."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 11,
+      "y": 16
     }
   ]
 }

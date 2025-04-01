@@ -160,7 +160,7 @@
       0,
       0,
       0,
-      3,
+      1,
       0,
       0,
       0,
@@ -181,7 +181,7 @@
       0,
       0,
       0,
-      5,
+      2,
       0,
       0,
       0,
@@ -202,7 +202,7 @@
       0,
       0,
       0,
-      1,
+      0,
       0,
       0,
       6,
@@ -223,7 +223,7 @@
       0,
       0,
       0,
-      2,
+      1,
       0,
       0,
       0,
@@ -706,7 +706,7 @@
     ],
     "iconIndex": 371,
     "name": "Bubble (Tome)",
-    "note": "<Cannot Rename>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(30);\n</Custom Buy Show Eval>",
+    "note": "<Cannot Rename>",
     "params": [
       0,
       0,
@@ -855,7 +855,7 @@
       0,
       0
     ],
-    "price": 200
+    "price": 250
   },
   {
     "id": 39,
@@ -1153,7 +1153,7 @@
       0,
       0
     ],
-    "price": 250
+    "price": 300
   },
   {
     "id": 50,
@@ -1357,7 +1357,7 @@
     ],
     "iconIndex": 375,
     "name": "Dark Orb (Tome)",
-    "note": "<Cannot Rename>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(56);\n</Custom Buy Show Eval>",
+    "note": "<Cannot Rename>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value([134, 15, 'A']);\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -1405,14 +1405,14 @@
   {
     "id": 59,
     "atypeId": 1,
-    "description": "An ancient necklace that allows the wearer to leech\ntheir target's life force, equal to 3% of damage dealt.",
+    "description": "An ancient necklace that allows the wearer to leech\ntheir target's life force, equal to 5% of damage dealt.",
     "etypeId": 6,
     "traits": [],
     "iconIndex": 522,
     "name": "Soulstealer's Necklace",
-    "note": "<Upgrade Slots: 2>\n<HP Life Steal: +3%>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(53);\n</Custom Buy Show Eval>",
+    "note": "<Upgrade Slots: 2>\n<HP Life Steal Physical: +5%>\n<HP Life Steal Magical: +5%>\n<HP Life Steal Certain: +5%>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(53);\n</Custom Buy Show Eval>",
     "params": [
-      0,
+      25,
       0,
       0,
       0,
@@ -1453,7 +1453,7 @@
       2,
       0
     ],
-    "price": 250
+    "price": 300
   },
   {
     "id": 61,
@@ -1766,7 +1766,7 @@
   {
     "id": 74,
     "atypeId": 1,
-    "description": "A flake of bat skin with a little bit of magic\nwithin. Imbues attacks with the power of Wind.",
+    "description": "A flake of bat skin with a little bit of magic\nwithin. Imbues attacks with the power of \\nl[7].",
     "etypeId": 6,
     "traits": [
       {
@@ -2538,7 +2538,7 @@
       0,
       0
     ],
-    "price": 1000
+    "price": 500
   },
   {
     "id": 103,
@@ -2710,7 +2710,7 @@
     ],
     "iconIndex": 510,
     "name": "Vishnu's Aegis",
-    "note": "<Upgrade Slots: 4>\n\n<Synthesis Ingredients>\nVishnu's Shield\nTurtle Shield\nTellurian Knight's Bulwark\nThick-Skinned Herb: 15\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Damage-Soaking Debuff-Stopping Super-Shield>",
+    "note": "<Upgrade Slots: 4>\n\n<Synthesis Ingredients>\nVishnu's Shield\nTurtle Shield\nTellurian Knight's Bulwark\nThick-Skinned Herb: 10\nTellurium Alloy\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_SHIELD');\n</Custom Synthesis Effect>",
     "params": [
       0,
       0,
@@ -2885,7 +2885,7 @@
       5,
       0
     ],
-    "price": 750
+    "price": 800
   },
   {
     "id": 116,
@@ -2938,7 +2938,7 @@
     ],
     "iconIndex": 504,
     "name": "Turtle Shield",
-    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nImmovable Object\nGiant Turtle Shell\nTurtle Scute: 10\nThick-Skinned Herb: 5\n</Synthesis Ingredients>\n<Mask Name: Percentage-Based Damage Reducer>",
+    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nImmovable Object\nGiant Turtle Shell\nTurtle Scute: 10\nThick-Skinned Herb: 3\n</Synthesis Ingredients>\n<Mask Name: Percentage-Based Damage Reducer>",
     "params": [
       0,
       0,
@@ -3463,7 +3463,7 @@
     "traits": [],
     "iconIndex": 496,
     "name": "Tellurian Knight's Shield",
-    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nReplica Knight's Shield\nThick-Skinned Herb: 5\n</Synthesis Ingredients>\n<Mask Name: Royal Heavy Shield>",
+    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nReplica Knight's Shield\nThick-Skinned Herb: 3\n</Synthesis Ingredients>\n<Mask Name: Royal Heavy Shield>",
     "params": [
       0,
       0,
@@ -3484,7 +3484,7 @@
     "traits": [],
     "iconIndex": 497,
     "name": "Tellurian Knight's Bulwark",
-    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nTellurian Knight's Shield\nThick-Skinned Herb: 10\nEnchanted Dragon Scale\nFrozen Jewel\n</Synthesis Ingredients>\n<Mask Name: Super Royal Heavy Shield>",
+    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nTellurian Knight's Shield\nThick-Skinned Herb: 5\nEnchanted Dragon Scale\nFrozen Jewel\n</Synthesis Ingredients>\n<Mask Name: Super Royal Heavy Shield>",
     "params": [
       0,
       0,
@@ -3930,9 +3930,15 @@
   {
     "id": 152,
     "atypeId": 1,
-    "description": "BP keeps generating even on turns that you use it.",
+    "description": "BP keeps generating even on turns that you use it.\nGrants 1 extra BP capacity.",
     "etypeId": 9,
-    "traits": [],
+    "traits": [
+      {
+        "code": 24,
+        "dataId": 0,
+        "value": 1
+      }
+    ],
     "iconIndex": 125,
     "name": "Dilong's Wisdom",
     "note": "<Cannot Rename>\n\nHardcoded in Olivia_OctoBattle.js.",
@@ -5410,7 +5416,7 @@
     "traits": [],
     "iconIndex": 437,
     "name": "Skeletal Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Boss1,0,Boss1,0,Boss_1>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Boss1,0,Boss1,0,Boss1_1>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -5640,35 +5646,40 @@
   },
   {
     "id": 215,
-    "atypeId": 0,
-    "description": "",
-    "etypeId": 2,
+    "atypeId": 1,
+    "description": "Enchanted with the power of \\nl[5] and \\nl[2].\nA powerful piece of equipment sought after by many clerics.",
+    "etypeId": 3,
     "traits": [
       {
-        "code": 22,
-        "dataId": 1,
-        "value": 0
+        "code": 11,
+        "dataId": 2,
+        "value": 0.9
+      },
+      {
+        "code": 11,
+        "dataId": 5,
+        "value": 0.9
       }
     ],
-    "iconIndex": 0,
-    "name": "",
-    "note": "",
+    "iconIndex": 750,
+    "name": "Tideflame Headpiece",
+    "note": "<Upgrade Slots: 3>\n\n<Element Amplify Healing: +15%>\n\n<On Creation Eval>\nitem.iconIndex = 750 + item.id % 2;\n</On Creation Eval>",
     "params": [
+      12,
+      20,
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
+      2,
+      8,
+      12,
       0,
       0
     ],
-    "price": 0
+    "price": 1000
   },
   {
     "id": 216,
     "atypeId": 1,
-    "description": "It glistens with a enchanting sheen. Doesn't provide\nbase stats, but offers a huge amount of upgrade slots.",
+    "description": "It glistens with an enchanting sheen. Doesn't provide\nbase stats, but offers a huge amount of upgrade slots.",
     "etypeId": 6,
     "traits": [],
     "iconIndex": 512,
@@ -5682,6 +5693,140 @@
       0,
       0,
       0,
+      0
+    ],
+    "price": 1000
+  },
+  {
+    "id": 217,
+    "atypeId": 1,
+    "description": "A tome containing the information\nnecessary to cast \\is[38].",
+    "etypeId": 8,
+    "traits": [
+      {
+        "code": 43,
+        "dataId": 38,
+        "value": 1
+      }
+    ],
+    "iconIndex": 371,
+    "name": "Waterfall (Tome)",
+    "note": "<Cannot Rename>\n\n<Synthesis Ingredients>\nBubble (Tome)\nAqua Gem: 2\nWater Essence: 3\n</Synthesis Ingredients>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 1000
+  },
+  {
+    "id": 218,
+    "atypeId": 1,
+    "description": "A deep blue headband with a striking red accent.\nIncreases physical lifesteal by a moderate amount.",
+    "etypeId": 3,
+    "traits": [],
+    "iconIndex": 821,
+    "name": "Bloodwave Headband",
+    "note": "<Upgrade Slots: 3>\n<HP Life Steal Physical: +3%>\n\n<Synthesis Ingredients>\nSilver Headband\nAqua Gem: 2\nWater Essence: 3\n</Synthesis Ingredients>",
+    "params": [
+      20,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0
+    ],
+    "price": 1000
+  },
+  {
+    "id": 219,
+    "atypeId": 1,
+    "description": "A mask styled in the fashion of a swirling vortex.\nFocuses the user's energy onto landing critical hits.",
+    "etypeId": 3,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.07
+      }
+    ],
+    "iconIndex": 822,
+    "name": "Vortex Mask",
+    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nSilver Mask\nAqua Gem: 2\nWater Essence: 3\n</Synthesis Ingredients>",
+    "params": [
+      0,
+      0,
+      5,
+      0,
+      0,
+      0,
+      20,
+      0
+    ],
+    "price": 1000
+  },
+  {
+    "id": 220,
+    "atypeId": 1,
+    "description": "A golden artifact from a forgotten time, this coin whispers\ndreams of boundless treasure. Multiplies bit drops by 1.5x.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 64,
+        "dataId": 4,
+        "value": 1.5
+      }
+    ],
+    "iconIndex": 361,
+    "name": "Gilded Coin",
+    "note": "<Upgrade Slots: 4>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 1000
+  },
+  {
+    "id": 221,
+    "atypeId": 2,
+    "description": "Although it looks like run-of-the-mill armor, it has\na dark aura surrounding it. Increases HP by a lot.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 0,
+        "value": 1.05
+      },
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.01
+      }
+    ],
+    "iconIndex": 438,
+    "name": "Dullahan Armor",
+    "note": "<Upgrade Slots: 3>",
+    "params": [
+      50,
+      0,
+      0,
+      8,
+      0,
+      8,
+      -3,
       0
     ],
     "price": 1000

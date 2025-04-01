@@ -116,17 +116,17 @@ Game_Event.prototype.setupPage = function() {
 };
 
 Game_Event.prototype.setupEventHitboxResizeNotetags = function() {
-  if (this.event().note === '') return;
-  if (this.event().note.match(/<Hitbox (?:HEIGHT|UP):[ ](\d+)>/i)) {
+  if (this.event()?.note === '') return;
+  if (this.event()?.note.match(/<Hitbox (?:HEIGHT|UP):[ ](\d+)>/i)) {
     this._addedHitboxUp = parseInt(RegExp.$1);
   }
-  if (this.event().note.match(/<Hitbox Left:[ ](\d+)>/i)) {
+  if (this.event()?.note.match(/<Hitbox Left:[ ](\d+)>/i)) {
     this._addedHitboxLeft = parseInt(RegExp.$1);
   }
-  if (this.event().note.match(/<Hitbox Right:[ ](\d+)>/i)) {
+  if (this.event()?.note.match(/<Hitbox Right:[ ](\d+)>/i)) {
     this._addedHitboxRight = parseInt(RegExp.$1);
   }
-  if (this.event().note.match(/<Hitbox Down:[ ](\d+)>/i)) {
+  if (this.event()?.note.match(/<Hitbox Down:[ ](\d+)>/i)) {
     this._addedHitboxDown = parseInt(RegExp.$1);
   }
 };

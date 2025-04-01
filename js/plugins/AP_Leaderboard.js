@@ -5,79 +5,33 @@ AP.Leaderboard = AP.Leaderboard || {};
 // API_ITCH
 //=============================================================================
 
-API_ITCH = new Object();
+API_STEAM = new Object();
 
-API_ITCH._authUrl = `https://itch.io/user/oauth?client_id=1f07ac3cbec324309359a4983aedd4a6&scope=profile%3Ame&response_type=token&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob`;
-API_ITCH._keyVariable = 81;
-API_ITCH._dataVariable = 82;
+API_STEAM._dataVariable = 82;
 
-API_ITCH.authenticate = function() {
-    return new Promise((resolve, reject) => {
-        nw.Shell.openExternal(this._authUrl);
-        this.setKey(prompt("Paste in your API key:"));
-
-        fetch(`https://itch.io/api/1/${this.getKey()}/me`, {
-            method: 'GET'
-        })
-        .then(response => response.json())
-        .then(data => {
-            this.setData(data.user);
-            alert("Successfully logged in " + this.username());
-            resolve();
-        })
-        .catch(err => {
-            alert("Error fetching user data: " + err);
-            this.resetKey();
-            reject(err);
-        });
-    });
+API_STEAM.loggedIn = function() {
+    return OrangeGreenworks.isSteamRunning();
 };
 
-
-API_ITCH.logout = function() {
-    return new Promise((resolve) => {
-        alert("You have logged out of " + this.username());
-        this.resetKey();
-        this.resetData();
-        resolve();
-    });
-};
-
-API_ITCH.loggedIn = function() {
-    return API_ITCH.username() != undefined;
-};
-
-API_ITCH.getKey = function() {
-    return $gameVariables.value(this._keyVariable);
-};
-
-API_ITCH.setKey = function(key) {
-    $gameVariables.setValue(this._keyVariable, key);
-};
-
-API_ITCH.resetKey = function() {
-    this.setKey(0);
-};
-
-API_ITCH.getData = function() {
+API_STEAM.getData = function() {
     data = $gameVariables.value(this._dataVariable);
     return data != 0 ? data : {};
 };
 
-API_ITCH.setData = function(data) {
+API_STEAM.setData = function(data) {
     $gameVariables.setValue(this._dataVariable, data);
 };
 
-API_ITCH.resetData = function() {
+API_STEAM.resetData = function() {
     this.setData({});
 };
 
-API_ITCH.username = function() {
-    return this.getData().username;
+API_STEAM.username = function() {
+    return OrangeGreenworks.getScreenName();
 };
 
-API_ITCH.userId = function() {
-    return this.getData().id;
+API_STEAM.userId = function() {
+    return OrangeGreenworks.steamId.steamId;
 };
 
 //=============================================================================
@@ -116,7 +70,7 @@ API_LEADERBOARD.fetchLeaderboard = async function(leaderboard) {
 API_LEADERBOARD.addToLeaderboard = async function(leaderboard, value) {
     return fetch(this._url, {
         method: "POST",
-        body: JSON.stringify([leaderboard, API_ITCH.userId(), API_ITCH.username(), value])
+        body: JSON.stringify([leaderboard, API_STEAM.userId(), API_STEAM.username(), value])
     })
     .catch(error => {
         alert("Error adding data: " + error);
@@ -144,6 +98,7 @@ API_LEADERBOARD.setData = function(data) {
 };
 
 API_LEADERBOARD.push = function() {
+    if ($gameTemp.isDemo()) return;
     const promises = this.leaderboards().map(l => this.addToLeaderboard(l[0], l[1]));
     return Promise.all(promises);
 };
@@ -156,7 +111,7 @@ API_LEADERBOARD.pull = function() {
 API_LEADERBOARD.refresh = function() {
     return new Promise(async (resolve, reject) => {
         try {
-            if (API_ITCH.loggedIn() && $gameTemp._inGame) {
+            if (API_STEAM.loggedIn() && $gameTemp._inGame) {
                 await API_LEADERBOARD.push();
             }
             await API_LEADERBOARD.pull();
@@ -199,7 +154,7 @@ Scene_Title.prototype.commandLeaderboard = function() {
 Scene_File_prototype_onSaveSuccess = Scene_File.prototype.onSaveSuccess;
 Scene_File.prototype.onSaveSuccess = function() {
     Scene_File_prototype_onSaveSuccess.call(this);
-    if (API_ITCH.loggedIn()) {
+    if (API_STEAM.loggedIn()) {
         API_LEADERBOARD.push();
         // Update local leaderboard
         lbData = API_LEADERBOARD.getData();
@@ -207,7 +162,7 @@ Scene_File.prototype.onSaveSuccess = function() {
             const name = lb[0];
             const value = lb[1];
             lbData[name].forEach(entry => {
-                if (entry[0] == API_ITCH.userId() && value > entry[2]) entry[2] = value;
+                if (entry[0] == API_STEAM.userId() && value > entry[2]) entry[2] = value;
             });
         });
         API_LEADERBOARD.setData(lbData);
@@ -256,23 +211,9 @@ Scene_Leaderboard.prototype.createLeaderboardWindow = function() {
 Scene_Leaderboard.prototype.createLoginWindow = function() {
     this._loginWindow = new Window_Login();
     this._loginWindow.y = Graphics.boxHeight - this._loginWindow.windowHeight();
-    this._loginWindow.setHandler('login', this.loginCommand.bind(this));
-    this._loginWindow.setHandler('logout', this.logoutCommand.bind(this));
     this._loginWindow.setHandler('refresh', this.refreshCommand.bind(this));
     this._loginWindow.setHandler('cancel', this.cancel.bind(this));
     this.addWindow(this._loginWindow);
-};
-
-Scene_Leaderboard.prototype.loginCommand = async function() {
-    await API_ITCH.authenticate();
-    this._loginWindow.refresh();
-    this._loginWindow.activate();
-};
-
-Scene_Leaderboard.prototype.logoutCommand = async function() {
-    await API_ITCH.logout();
-    this._loginWindow.refresh();
-    this._loginWindow.activate();
 };
 
 Scene_Leaderboard.prototype.refreshCommand = async function() {
@@ -365,16 +306,25 @@ Window_Leaderboard.prototype.drawItem = function(index) {
     var align = this.itemTextAlign();
     switch (index % this.maxRows()) {
         case 0:
-            this.resetTextColor();
+            this.changeTextColor(this.textColor(28));
             break;
         case 1:
             this.changeTextColor(this.textColor(14));
             break;
         case 2:
-            this.changeTextColor(this.textColor(8));
+            this.changeTextColor(this.textColor(0));
             break;
         case 3:
             this.changeTextColor(this.textColor(20));
+            break;
+        case 4:
+        case 5:
+        case 6:
+        case 7:
+        case 8:
+        case 9:
+        case 10:
+            this.changeTextColor(this.textColor(8));
             break;
         default:
             this.changeTextColor(this.textColor(7));
@@ -400,7 +350,7 @@ Window_Login.prototype.initialize = function() {
 };
 
 Window_Login.prototype.maxCols = function() {
-    return 3;
+    return 2;
 };
 
 Window_Login.prototype.windowWidth = function() {
@@ -416,13 +366,12 @@ Window_Login.prototype.itemTextAlign = function() {
 };
 
 Window_Login.prototype.makeCommandList = function() {
-    this.addCommand(this.loginText(), 'login', !API_ITCH.loggedIn());
-    this.addCommand("Logout", 'logout', API_ITCH.loggedIn());
+    this.addCommand(this.loginText(), 'login', false);
     this.addCommand("Refresh", 'refresh');
 };
 
 Window_Login.prototype.loginText = function() {
-    return API_ITCH.loggedIn() ? "Logged in as " + API_ITCH.username() : "Login";
+    return API_STEAM.loggedIn() ? "Logged in as " + API_STEAM.username() : "No Steam account detected";
 };
 
 Window_Login.prototype.drawItem = function(index) {

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const data = __dirname + "/../nwjs-v0.95.0-win-x64/package.json"
+const data = __dirname + "/../nwjs-v0.94.0-win-x64/package.json"
 const fs = require('fs')
 const { exec } = require('child_process')
 

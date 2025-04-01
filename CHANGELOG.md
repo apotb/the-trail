@@ -1,3 +1,207 @@
+# Alpha 16: The Comeback Update (3/28/2025)
+Didn't expect the update to come so quick, did ya'? It hasn't even been a month since Alpha 15.6!
+The development processing is changing, and updates will be coming out much more frequently, just like the old days. No more year-long waits!
+Just because this update came out quickly doesn't mean we skimped out on content...
+
+Now that you're back on the hunt for Apocalypse, your next stop is Greenfield. However, things aren't the same as before.
+Will you be able to help the people of Greenfield fight back against new threats?
+Explore a brand new dungeon and collect even more powerful equipment in Alpha 16! And that's not all...
+
+The Ruined Fort has been revamped! This was supposed to happen all the way back in Alpha 14... but hey, better late than never.
+Save the souls being held hostage within the Ruined Fort. Fight new enemies and interact with the Phantasmal Plane to progress.
+A powerful foe awaits you at the top... can you defeat this ancient threat, finally completing Will's quest?
+
+At long last, The Trail is on Steam! Collect 70+ achievements, store your saves in the Steam Cloud, and more!
+Nothing but love for the itch.io launcher, but let's be honest —- almost no one had it installed beforehand...
+Everyone has Steam, though. The Trail is more accessible than ever!
+All updates will now be downloaded via Steam. The itch.io page and GitHub releases will no longer be maintained.
+
+As with any major update, you'll find plenty of balance changes and improvements. The boost system, skill pools, and more have been polished.
+Oh, and for my Linux players; you're finally supported again! Sorry I abandoned you for Alpha 15... there were complications, but everything should run smoothly now.
+
+That just about summarizes the major features in Alpha 16. If you'd like to know everything that changed, check out the detailed changelog below:
+
+### Additions
+- Linux support has returned!
+- New Steam features:
+  - 70+ achievements for you to collect!
+  - Steam Cloud integration.
+  - Leaderboards now automatically use your Steam account.
+- Added the Greenfield-Solus Passage.
+- The Ruined Fort is back! It's been blocked off since Alpha 14; now it's finally revamped and ready to play.
+- 10 new skills:
+  - Player 1, 4 new skills:
+    - En Garde!: Special @ L1
+    - Taunt: Special @ L1
+    - [P] Steadfast: Passive @ L27
+    - Prolong: Magic @ L30
+  - Player 2, 2 new skills:
+    - Magical Breeze: Magic @ L28
+    - [P] Topped Off: Passive @ L30
+  - Player 3, 2 new skills:
+    - Cure II: Magic @ L27
+    - Channel Divinity II: Magic @ L30
+  - Player 4, 2 new skills:
+    - [P] Assassin: Passive @ L28
+    - Adrenaline: Special @ L30
+- 7 new items:
+  - Gingerbread Cookie
+  - Gold Dust
+  - Flarestone
+  - Sauna Key
+  - Phantasmal Charm
+  - Scroll of Silver Sands
+  - [REDACTED HELMET]
+- 2 new weapons:
+  - Blazing Dagger
+  - Stalactite
+- 9 new equipment:
+  - 3 new headgear:
+    - Tideflame Headpiece
+    - Bloodwave Headband
+    - Vortex Mask
+  - 1 new bodygear:
+    - Dullahan Armor
+  - 2 new accessories:
+    - Gilded Coin
+    - Soulstealer's Necklace
+  - 2 new magic equips:
+    - Soul Shackles (Tome)
+    - Waterfall (Tome)
+  - 1 new power:
+    - [REDACTED RESISTANCE]
+- 8 new enemies:
+  - Gilded Ghost
+  - Fire Spirit
+  - Dullahan
+  - Will o' Wisp
+  - Insane Mage
+  - [REDACTED GENERAL]
+  - Water Elemental EX
+  - Earth Spirit
+- Added 2 new INT Book locations to old areas.
+
+### Changes
+- All encounters can be run away from.
+- Rebalanced Boost Points:
+  - Everyone starts with 1 BP.
+  - Using Guard grants +1 BP.
+  - Boosted hits are guaranteed to land.
+- Skill rebalancing:
+  - Mage:
+    - Ice I is now learned at level 5 → 4.
+    - Lightning II's 3rd chain deals 25% → 33% of the initial damage.
+  - Cleric:
+    - Revive/Resurgence are now guaranteed to proc. Boosting them increases the amount of HP recovered.
+    - Resurgence grants the Rejuvenation buff.
+    - Purify/Dispell now only cure 1 debuff. However, each BP used will cure an additional debuff.
+    - Buffed Purify MP cost from 15 → 8.
+    - Buffed Dispell MP cost from 50 → 16.
+    - Dispell is now learned at level 15 → 16.
+    - Dispell now counts as the upgrade to Purify.
+    - Removed Curify.
+  - Rogue:
+    - Backstab is now learned at level 10 → 5.
+    - Foresight is now learned at level 5 → 7.
+    - Renamed Offensive Stance to Combat Stance.
+    - Combat Stance is now learned at level 7 → 10.
+- Adon tweaks:
+  - The tavern questline can now be started as soon as you obtain the Quest Log.
+  - Improved the Big Mouth fight in Verdin Village.
+  - Dirty Mike and Larry are no longer required to be spoken to.
+  - Buffed Woodcutting Axe from 4 → 5 ATK.
+  - Mark has been revamped.
+  - Improved Blue Slime x3 encounter via custom AI.
+  - Removed the eastern entrance to the Forest Clearing.
+  - Added a healing statue in the Dark Forest.
+  - Banditos will temporarily stop attacking you when Kevin is first defeated.
+  - Streamlined Haven Harbor progression.
+- Laeryidyean's Forest tweaks:
+  - Less Skeleton Knights guarding the main area.
+  - Skeleton Knights stop moving when unlocking a door.
+  - Added more lamps throughout the dark areas.
+  - Less encounters in the maze.
+  - Followers are more transparent while doing the candle puzzle.
+  - Streamlined capture processing.
+  - Changed the Skeleton random encounter in Forest Arena...? to a map encounter, meaning you only get one shot per moon cycle.
+- Improvements to battle scene:
+  - Shadows are now dynamic rather than a static circle.
+  - Status effects are now shown in a 3x3 grid (used to be a line of 6 icons).
+  - Status effects no longer show above party members.
+  - Larger party member status windows.
+  - Gradient background behind party member status windows.
+  - Party member status windows now slide in and out.
+  - Pixelated battlebacks.
+- Changed the following tracks:
+  - The Journey Continues
+  - Greenfield
+  - Sub-City Emissary
+  - Formidable Opponent → APOCALYPSE
+  - True Darkness
+- Buffed Dilong's Wisdom to now grant +1 BP capacity.
+- Buffed Infernal Wand to now deal +20% fire damage.
+- Nerfed Hero Sword Replica outgoing element damage from +50% → +25%.
+- Nerfed INT Books from +4 → +2 INT.
+- Duplicate unmodified equipment will be grouped together in the inventory.
+- Increased the size of the damage/treasure popups.
+- Scaled up the battle UI.
+- Reduced the length of the long walks in Laeryidyean's Forest, Telluria Castle B1, and True Telluria Castle B5.
+- Tellurium Pulse no longer removes buffs.
+- Fire enemies are now immune to Soaked.
+- Lowered the amount of Thick-Skinned Herbs needed to craft shields.
+- Many enemies can now drop the Selfish Candle.
+- Flytraps and Parasites can now drop Medicated Eyedrops.
+- Darkhounds now drop Silver Wristbraces instead of Iron Wristbraces.
+- Four-Toed Kevin always drops his Enchanted Anti-Magic Charm.
+- Using an equipped item as an ingredient will automatically equip the newly crafted upgrade.
+- Added sideview sprites for the Werewolf, Chilling Apparition, Polar Bear, and all Slimes.
+- Changed sprites for Suffering Soul and Poltergeist.
+- Greatly reduced the length of the king's monologue before the Champion's Banquet.
+- Shortened the Village Headman's story of the Great Collapse.
+- A new "pity" system will increase your HIT, EVA, and CRI after each retry. It resets between encounters.
+- The crafting help window now shows descriptions for uncrafted items, albeit in gray.
+- Quest journal display is on by default.
+- Made the leaderboard's colors pop out.
+- Removed Made With MV splash screen.
+- Renamed Staff Impulse to Impulse.
+
+### Bug Fixes
+- Fixed the status effect tooltip sometimes giving information for the wrong battler.
+- Fixed name boxes not showing up after battle.
+- Fixed the Animation Speed option not decreasing the length of pauses.
+- Fixed an occasional crash when loading/deleting a save.
+- Fixed not being able to eat Dried Blueberries.
+- Fixed being able to skip the Adonian Monsters troop by running away.
+- Fixed the Skeletal Outfit referencing the incorrect filename, causing an error.
+- Fixed "fake dupe" bug related to equipped crafting ingredients.
+- Fixed a bug where animations would take forever to load.
+- Fixed the Give Up feature messing with cutscenes.
+- Fixed Mark being able to phase through Blue Slimes.
+- Fixed the new moon respawning enemies while in a dungeon.
+- Fixed all respawnables respawning after Laeryidyean's defeat not working.
+- Fixed Player 2's appearance not updating when unequipping Infernal Coin.
+- Fixed Player 2's Flame Body battler sprite not smiling.
+- Fixed a bug where the Solus Guard's level/EXP bar would show instead of Player 2's after defeating Big Mouth.
+- Fixed Bleeding passive from Shard of Glass displaying as 0 turns remaining in battle.
+- Fixed Fiery Blood not showing an animation.
+- Fixed Holy Water, Red Gel, and Icy Gel counting as physical hits instead of certain hits.
+- Fixed a typo in Cut Down's description.
+- Fixed occasional crash when loading a save file from a different version.
+- Fixed the Room 1 Key treasure popup appearing over Player 2 instead of the innkeeper.
+- Fixed issues with the Water Spirit's state overlays and shadow.
+- Fixed incorrect Application Menu title on Mac.
+
+The Trail's alpha phase is nearing completion. As soon as the graphics have been revamped, the game will move into beta!
+It's crazy to see how far the game has come. My vision for The Trail is finally coming to fruition.
+
+Thank you for playing! Alpha 17 is on the way -- you'll be working with the Village Chief to help Solus Valley!
+Keep an eye out for Leeks™ and other news. Until then... the journey continues.
+
+Yours truly,
+AP
+
+<br><br>
+
 # Alpha 15.6 (3/3/2025)
 Random encounters have been removed! At long last, The Trail has fully transitioned to encounters being visible and avoidable. No more interruptions while exploring!
 Equipment forging has been reworked! Cleansing Scrolls are no longer needed, and your other scrolls will keep their effects as you upgrade your gear.
@@ -82,7 +286,7 @@ Some of these changes seem extreme, but this is all for the sake of maintaining 
   - Steadfast DEF, MDF: 20% → 10%
 
 ### Other Balancing
-- Earth no longer takes double damage from wind.
+- Earth enemies no longer take double damage from wind attacks.
 - Soaked now doubles incoming ice damage.
 - Increased Flashbang duration from 3 → 5 turns.
 - Buffed Focus Up HIT increase from 12.5% → 20%.
@@ -572,7 +776,7 @@ I hope you all feel the power as you progress through Telluria Field! But will y
     - Seshat's Tome
     - Seshat's Teachings
     - Seshat's Opus
-    - EXP Supressor
+    - EXP Suppressor
   - 10 magic equips:
     - Comet Charm
     - Magic Coin

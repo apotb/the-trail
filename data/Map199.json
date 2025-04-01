@@ -16,7 +16,7 @@
     "volume": 90
   },
   "disableDashing": false,
-  "displayName": "Smithery",
+  "displayName": "Castle Town Smithery",
   "encounterList": [],
   "encounterStep": 30,
   "height": 17,
@@ -2687,12 +2687,12 @@
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
             "switch1Id": 109,
-            "switch1Valid": true,
+            "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableId": 55,
+            "variableValid": true,
+            "variableValue": 57
           },
           "directionFix": true,
           "image": {
@@ -2755,24 +2755,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\n<Blacksmith>Yes, the general told me you four would be coming."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Blacksmith",
-                0,
-                0,
-                2
+                "\\n<Blacksmith>You four... I've seen you in here quite a"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\n<Blacksmith>What was this for again... tellurium equipment?"
+                "bit. You're working with the king, yes?"
               ]
             },
             {
@@ -2780,7 +2770,7 @@
               "indent": 0,
               "parameters": [
                 "Actor4",
-                1,
+                5,
                 0,
                 2
               ]
@@ -2789,7 +2779,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2Beats me."
+                "\\p2You got that right!"
               ]
             },
             {
@@ -2806,7 +2796,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\n<Blacksmith>No, no, it certainly was... here, let me see your \\ii[101]."
+                "\\n<Blacksmith>Perfect. Mind if I see your \\ii[101]?"
               ]
             },
             {
@@ -3085,6 +3075,13 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Quest Add 38"
+              ]
+            },
+            {
               "code": 101,
               "indent": 0,
               "parameters": [
@@ -3113,13 +3110,6 @@
               "indent": 0,
               "parameters": [
                 "New Quest!"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest Add 38"
               ]
             },
             {
@@ -3362,6 +3352,18 @@
               ]
             },
             {
+              "code": 249,
+              "indent": 1,
+              "parameters": [
+                {
+                  "name": "Item",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
               "code": 356,
               "indent": 1,
               "parameters": [
@@ -3380,18 +3382,6 @@
               "indent": 1,
               "parameters": [
                 "Quest Set Completed 38"
-              ]
-            },
-            {
-              "code": 249,
-              "indent": 1,
-              "parameters": [
-                {
-                  "name": "Item",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
               ]
             },
             {

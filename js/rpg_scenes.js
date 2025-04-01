@@ -598,6 +598,10 @@ Scene_Map.prototype.update = function() {
         this.updateEncounterEffect();
     }
     this.updateWaitCount();
+    if ($gameTemp._recreateNameWindow && SceneManager._scene == this && this._messageWindow) {
+        this._messageWindow.createNameWindow();
+        $gameTemp._recreateNameWindow = false;
+    }
     Scene_Base.prototype.update.call(this);
 };
 
@@ -1808,7 +1812,7 @@ Scene_Load.prototype.onLoadFailure = function() {
 };
 
 Scene_Load.prototype.reloadMapIfUpdated = function() {
-    if ($gameSystem.versionId() !== $dataVersion.release) {
+    if ($gameSystem.versionId() !== $dataVersion.release || $gameTemp.isPlaytest()) {
         $gamePlayer.reserveTransfer($gameMap.mapId(), $gamePlayer.x, $gamePlayer.y);
         $gamePlayer.requestMapReload();
     }
@@ -2328,6 +2332,10 @@ Scene_Battle.prototype.changeInputWindow = function() {
     }
 };
 
+Scene_Battle.prototype.slideStatusWindows = function() {
+    this._sideStatusWindows.forEach(w => w._homeX += w.width + w.children.find(c => c instanceof Window_BattleSideStates).width);
+};
+
 Scene_Battle.prototype.stop = function() {
     Scene_Base.prototype.stop.call(this);
     if (this.needsSlowFadeOut()) {
@@ -2402,10 +2410,10 @@ Scene_Battle.prototype.createSpriteset = function() {
 
 Scene_Battle.prototype.createAllWindows = function() {
     this.createLogWindow();
+    this.createHelpWindow();
     this.createStatusWindow();
     this.createPartyCommandWindow();
     this.createActorCommandWindow();
-    this.createHelpWindow();
     this.createSkillWindow();
     this.createItemWindow();
     this.createActorWindow();
