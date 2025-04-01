@@ -13,7 +13,6 @@ cd ..
 call npm prune --production
 
 move "%CD%"\CHANGELOG.md ..
-move "%CD%"\LICENSE.md ..
 move "%CD%"\node_modules ..
 move "%CD%"\package.json ..
 move "%CD%"\package-lock.json ..

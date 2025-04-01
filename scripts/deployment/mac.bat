@@ -15,7 +15,6 @@ cd ..
 call npm prune --production
 
 move "%CD%"\CHANGELOG.md ..\..\..\..
-move "%CD%"\LICENSE.md ..\..\..\..
 
 rmdir /s /q nwjs-v0.94.0-win-x64
 
