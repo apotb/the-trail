@@ -2299,7 +2299,7 @@ Andrew & Brendan
 
 <br><br>
 
-# ALPHA 10.2 (8/9/2018)
+# Alpha 10.2 (8/9/2018)
 Here are some things that I:
 A. Meant to add into Alpha 10 but didn't the time.
 B. Completely forgot to do.
@@ -2323,14 +2323,14 @@ So enjoy, I guess- OH and I made another change to the download: there's no more
 
 <br><br>
 
-# ALPHA 10.1 (8/8/2018)
+# Alpha 10.1 (8/8/2018)
 We're experimenting with a new installer for the game. Other than that, there's no actual content in this update.
 
 **Stable Level: Level 6**
 
 <br><br>
 
-# ALPHA 10: The Double Digits Update!™ (8/7/2018)
+# Alpha 10: The Double Digits Update!™ (8/7/2018)
 Hello all, and welcome to Alpha 10! This incredible effort is the biggest update The Trail has ever seen, and we hope you'll enjoy it! Off with the witty remarks and useless chatter, let's head straight to the changelog!
 
 ### Additions:
@@ -2397,7 +2397,7 @@ Stay tuned for Alpha 11, which will be packed with even more features!
 
 <br><br>
 
-# ALPHA 9 (7/10/2018)
+# Alpha 9 (7/10/2018)
 Woohoo, Alpha 9 is here! Let's cut right to the chase, I'm sure you're excited to see the huge amount of additions.
 
 Here's that chase I was talking about:
@@ -2436,14 +2436,14 @@ Here's that chase I was talking about:
 
 <br><br>
 
-# ALPHA 8.3 (7/7/2018)
+# Alpha 8.3 (7/7/2018)
 - Fixed a glitch where your teammates would get stuck in the doors of the Verdin Village Inn Shops.
 
 **Stable Level: Level 4**
 
 <br><br>
 
-# ALPHA 8.2 (7/6/2018)
+# Alpha 8.2 (7/6/2018)
 An addition and some more changes, including some minor overhauls.
 
 ### Additions:
@@ -2469,14 +2469,14 @@ https://cdn.discordapp.com/attachments/426774670126219274/464890036224131082/unk
 
 <br><br>
 
-# ALPHA 8.1 (7/6/2018)
+# Alpha 8.1 (7/6/2018)
 - Fixed a bug that's complicated to explain. Something about Traveler Swords and Training Vestments and a certain cutscene.
 
 **Stable Level: Level 4**
 
 <br><br>
 
-# ALPHA 8: The Update That Took A Long Time To Make But Adds A Boatload Of Content To The Game Making The Experience Even Better!™ (7/6/2018)
+# Alpha 8: The Update That Took A Long Time To Make But Adds A Boatload Of Content To The Game Making The Experience Even Better!™ (7/6/2018)
 This is it: we've finally moved on to the third sector of Adon! We're making steady, good progress here. Soon enough, we'll get our own little boat and be off to the mainland! There's quite a few things in this changelog, so get ready for reading. Oh yeah, and I didn't elaborate on a few things, just because I wanted there to be an element of surprise...
 
 Also, sorry for the huge wait between updates. A combination of lots of real-life stuff and some boredom prevented me from working on the game much. After I get back from my vacation, I'll be sure to dish out more updates as fast as I can! I also apologize for the fact that your save will not work anymore. You'll need to start the game from the beginning again... sorry! Hey, but at least you get to see all the changes we've made to earlier parts of the game.
@@ -2550,7 +2550,7 @@ Oh, and another thing: we're scrapping Stable Saves. What we're doing instead is
 
 <br><br>
 
-# ALPHA 7.1 (6/1/2018)
+# Alpha 7.1 (6/1/2018)
 Summer is here, and it's time for more updates! This is just some more minor bug fixes and a change, but do not fret - Alpha 8 is on its way!
 
 Now for those minor bug fixes and a change:
@@ -2564,7 +2564,7 @@ Now for those minor bug fixes and a change:
 
 <br><br>
 
-# ALPHA 7 (5/28/2018)
+# Alpha 7 (5/28/2018)
 Yes, it is finally here. After 13 long, long hours of work (I'm not kidding), the new update is finally here... Alpha 7! While it may not have too much content in terms of time (7-9 minutes, I believe), it's some quality gameplay, and it even has a moral! I'm not going to spoil too much in this changelog, so you better play through the update...
 
 Now for the aforementioned changelog:
@@ -2599,19 +2599,19 @@ I think that's it! No bug fixes this time around, Alphas 6.1-6.4 took care of th
 
 <br><br>
 
-# ALPHA 6.4 (5/27/2018)
+# Alpha 6.4 (5/27/2018)
 - Fixed a bug where you could walk on the walls of Green Slime Cavern.
 - Fixed a bug where the Village Headman would still say the battle was 100 years ago, instead of 1000.
 - Made the choices for the Village Headman's helper getting out of your way more flavorful.
 
 <br><br>
 
-# ALPHA 6.3 (5/27/2018)
+# Alpha 6.3 (5/27/2018)
  - Fixed a bug where you couldn't equip the Floppy Hat.
 
 <br><br>
 
-# ALPHA 6.2 (5/26/2018)
+# Alpha 6.2 (5/26/2018)
 Let's just say playing through the game yourself as the programmer is helpful.
 
 ### Bug Fixes:
@@ -2630,7 +2630,7 @@ Also, does anyone know how to put together 40-minute-long clips for a YouTube vi
 
 <br><br>
 
-# ALPHA 6.1 (5/26/2018)
+# Alpha 6.1 (5/26/2018)
 I remembered a few things that I had to do.
 
 ### Additions:
@@ -2647,7 +2647,7 @@ I remembered a few things that I had to do.
 
 <br><br>
 
-# ALPHA 6 (5/26/2018)
+# Alpha 6 (5/26/2018)
 Remember those announcements that said this would be Alpha 5.1? WRONG! There are way more features than I thought there would be, so here we are, another major update!
 
 Of course, it wouldn't be a major update without a major huge changelog. Time for reading:
@@ -2677,7 +2677,7 @@ Of course, it wouldn't be a major update without a major huge changelog. Time fo
 
 <br><br>
 
-# ALPHA 5 (5/26/2018)
+# Alpha 5 (5/26/2018)
 Updates are streaming in fast! Time for some real battling! Oh yeah, and another barrier, like the one from Pre-Alpha 1. Ah, the old days... let's get straight to the changelog!
 
 Here it is, in all its wordy glory:
@@ -2705,7 +2705,7 @@ I wouldn't grind in Green Slime Cavern just yet. Skills have yet to be added int
 
 <br><br>
 
-# ALPHA 4.1 (5/22/2018)
+# Alpha 4.1 (5/22/2018)
 Time for more bug fixes! There's no real additions in this update, just smoothing the game out once more. Remember, Alpha 5 is just around the corner, and with it will come some real adventuring! Finally, what everyone's been waiting for since the Pre-Release!
 
 ### Bug Fixes:
@@ -2722,11 +2722,11 @@ On a side note, I've decided to include the changelog in every game download, ev
 
 <br><br>
 
-# ALPHA 4: LOST CHANGELOG
+# Alpha 4: LOST CHANGELOG
 
 <br><br>
 
-# ALPHA 3.1 (5/19/2018)
+# Alpha 3.1 (5/19/2018)
 Wow, this next update came fast! Haha, no, this is a minor update. Just some bug fixes, and another thing: I forgot to add the Quest Log to the last version!
 
 Bug Fixes:
@@ -2739,7 +2739,7 @@ you can still go ahead with talking to him as long as you have saved before doin
 
 <br><br>
 
-# ALPHA 3: The Update That Added Doors!™ (5/19/2018)
+# Alpha 3: The Update That Added Doors!™ (5/19/2018)
 Oh baby, it's what you've all been waiting for: Alpha 3! This month-long project took a lot of work and dedication, but after all your waiting (and 3 sneak peaks), it's finally here!
 
 Wow that was a lot of exclamation points.
@@ -2790,7 +2790,7 @@ you can still go ahead with talking to him as long as you have saved before doin
 
 <br><br>
 
-# ALPHA 2.4 (4/21/2018)
+# Alpha 2.4 (4/21/2018)
 Forgot to put the player back at the tutorial, heh.
 
 ...
@@ -2801,7 +2801,7 @@ Forgot to put the player back at the tutorial, heh.
 
 <br><br>
 
-# ALPHA 2.3 (4/14/2018)
+# Alpha 2.3 (4/14/2018)
 Sorry again for the lack of a big update! I've been busy and haven't had much time to work on big features. Don't worry - once I have time, I'll get right on it. There are just a couple actual things in this update, but there is a concept: stable saving! Check it out in #save-transferring!
 
 Now for the stuff:
@@ -2814,7 +2814,7 @@ That's it for now.
 
 <br><br>
 
-# ALPHA 2.2 (4/8/2018)
+# Alpha 2.2 (4/8/2018)
 It's been a while since the last release, and we've got some old bugs to fix! @an ok artist went back to Solus Town and found these bugs. Now let's see...
 
 - Fixed a bug with the Village Headman's move route post-prologue.
@@ -2825,7 +2825,7 @@ Apologies that this couldn't be a major update. With school starting again and s
 
 <br><br>
 
-# ALPHA 2.1 (4/1/2018)
+# Alpha 2.1 (4/1/2018)
 Oof! I had some major errors I overlooked in Alpha 2. Let's see what I screwed up this time:
 
 - Fixed a game-breaking bug where the game would freeze in the middle of the Bandito cutscene (thanks @Snooper Dragongem).
@@ -2839,7 +2839,7 @@ This is probably the official final update of our fast update phase. Once again,
 
 <br><br>
 
-# ALPHA 2 (4/1/2018)
+# Alpha 2 (4/1/2018)
 This is the real update. Get April Fooled 😝.
 
 Anyways... this is a real ***t h i c c*** update. There is some good stuff, so I won't spoil it in the changelog. That is why it is so small.
@@ -2861,7 +2861,7 @@ Oh, and Happy Easter to you who are celebrating it today!
 
 <br><br>
 
-# ALPHA 1.4 (3/30/2018)
+# Alpha 1.4 (3/30/2018)
 Again, just a couple little thingies I had to do before I forgot them.
 
 - Fixed a bug where after you've defeated the Mini Green Slime and exit Solus Town again, the map would still scroll to the Forest Arena, when there's nothing to do there (found by @Snooper Dragongem).
@@ -2871,7 +2871,7 @@ Like I've said before, Verdin Village is coming soon, with a lot of new mechanic
 
 <br><br>
 
-# ALPHA 1.3 (3/30/2018)
+# Alpha 1.3 (3/30/2018)
 Nothing too major in this update except for one thing: __we've officially moved out of cheat mode!__
 
 That means that the chest with the map is gone, the vehicles are gone, and most things are gone that give you an unfair advantage. If you notice anything that looks like it shouldn't be there, make sure to point it out to me.
@@ -2882,7 +2882,7 @@ If you're one of our new Alpha Testers, then great! This will help you ease into
 
 <br><br>
 
-# ALPHA 1.2 (3/30/2018)
+# Alpha 1.2 (3/30/2018)
 A few little thingies I thought of randomly.
 
 ### Bug Fixes:
@@ -2898,7 +2898,7 @@ Don't worry, some bigger updates are coming soon! Well, I hope some bigger updat
 
 <br><br>
 
-# ALPHA 1.1 (3/29/2018)
+# Alpha 1.1 (3/29/2018)
 A couple quick little fixes and an announcement:
 If you already have a Map of Adon, don't open that chest next to Solus Town! You'll get another map! - well, that's not much of a problem, but if you want that perfect, perfect run, don't open the chest!
 
@@ -2908,7 +2908,7 @@ If you already have a Map of Adon, don't open that chest next to Solus Town! You
 
 <br><br>
 
-# ALPHA 1 (3/29/2018)
+# Alpha 1 (3/29/2018)
 This is it, baby! Alpha is finally here! Now you are eligible for the @Alpha Tester role!
 
 There's a lot of stuff to cover, so I'm going to get right to the changelog:
@@ -2933,12 +2933,12 @@ We're already working on Alpha 2, so make sure to keep your eyes open for it! Th
 
 <br><br>
 
-# PRE-ALPHA 4.2 (3/27/2018)
+# Pre-Alpha 4.2 (3/27/2018)
 - Changed a couple things with the Village Headman's dialogue.
 
 <br><br>
 
-# PRE-ALPHA 4.1 (3/27/2018)
+# Pre-Alpha 4.1 (3/27/2018)
 Some quick fixes from Pre-Alpha 4.
 
 ### Additions:
@@ -2955,7 +2955,7 @@ Some quick fixes from Pre-Alpha 4.
 
 <br><br>
 
-# PRE-ALPHA 4 (3/27/2018)
+# Pre-Alpha 4 (3/27/2018)
 We're heading into Chapter 1, baby! Next big release should be Alpha!
 
 ### Additions:
@@ -2986,7 +2986,7 @@ Oh, and I forgot to mention, there's some juicy plot in this update... not going
 
 <br><br>
 
-# PRE-ALPHA 3 (3/26/2018)
+# Pre-Alpha 3 (3/26/2018)
 This release may look small, but it's full of more content! The Village Headman will continue in giving you your trials. The last one will be added in soon, with a lot of dialogue... Anyways, I think I made a mistake in not making the changelog as I made the update. I'll make sure to be more vigilant next time.
 
 Now it's the classic boring changelog, with me trying to make it as interesting as I can:
@@ -3005,12 +3005,12 @@ I told you I probably forgot a lot of stuff, and the size of this changelog prov
 
 <br><br>
 
-# PRE-ALPHA 2.3 (3/25/2018)
+# Pre-Alpha 2.3 (3/25/2018)
 - Fixed a long-time bug that no one but @an ok artist noticed: upon re-entering your house, the Village Headman's helper would be in your way.
 
 <br><br>
 
-# PRE-ALPHA 2.2 (3/24/2018)
+# Pre-Alpha 2.2 (3/24/2018)
 Oh dear, our bug fixes have bugs now! Don't worry, @Snooper Dragongem found these out quickly, so you guys don't need to worry about them!
 
 ### Bug Fixes:
@@ -3021,7 +3021,7 @@ That's hopefully the last bit of work I need to do today. I was busy eating and 
 
 <br><br>
 
-# PRE-ALPHA 2.1 (3/24/2018)
+# Pre-Alpha 2.1 (3/24/2018)
 This is just little errors and such that have to be corrected. There's nothing too major in this update. These termites and nails, however, are paving the way to a great game. We're nearing the end of the prologue!
 
 This time you're going to be reading a sort of mini-changelog. It's like one of those little model cars you can get, but more useful:
@@ -3044,7 +3044,7 @@ Now be patient. I was busy with science fair today from 5:30 AM to 4:30 PM, and 
 
 <br><br>
 
-# PRE-ALPHA 2 (3/23/2018)
+# Pre-Alpha 2 (3/23/2018)
 Time for a ~~relatively~~ big update! We've got a ~~nearly~~ legitimate quest and other cool stuff. 2.5 hours of work really pays off! This changelog is so big, in fact, that... actually, I think you're just going to have to read a lot. Yeah, I think that's it.
 
 Time for the boring changelog again. Does anyone actually read these?:
@@ -3081,7 +3081,7 @@ That's it for now. This update is prone to be filled with bugs, so keep an eye o
 
 <br><br>
 
-# PRE-ALPHA 1.1 (3/21/2018)
+# Pre-Alpha 1.1 (3/21/2018)
 Those bugs that my fellow developers noticed have been fixed! Now here's yet another boring list of stuff:
 
 ### Bug Fixes:
@@ -3102,7 +3102,7 @@ That's pretty much it. Yeah. Have fun with our first bug fixes!
 
 <br><br>
 
-# PRE-ALPHA 1 (3/21/2018)
+# Pre-Alpha 1 (3/21/2018)
 Remember that first release right above this? That wasn't even a pre-alpha, more of a pre-pre-alpha. This is a real version of the game.
 
 Now it's time for the usual boring changelog... maybe this one will be more interesting...?
@@ -3128,7 +3128,7 @@ So yeah. The game is really boring. I'll be working more from now on to bring mo
 
 <br><br>
 
-# FIRST RELEASE (3/11/2018)
+# First Release (3/11/2018)
 This is a very bare-bones game right now. It's essentially a sort of pre-alpha. Thanks to the fact that I'm using a game maker, it doesn't look as weak as you might think it would be in a pre-alpha (take *Minecraft* for example).
 
 ### Game Features:
