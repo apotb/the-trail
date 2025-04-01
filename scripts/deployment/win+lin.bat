@@ -28,5 +28,7 @@ del /f supertoolsengine.html
 cd ..
 
 del /f Game.exe
+del /f Game
+del /f Game.desktop
 
 rmdir /s /q "%CD%"\www\scripts
