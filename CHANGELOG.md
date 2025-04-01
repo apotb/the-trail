@@ -1,3 +1,20 @@
+# Alpha 17: The Telluria Update (??/??/2025)
+INTRO
+
+### Additions
+- 
+
+### Changes
+- 
+
+### Bug Fixes
+- 
+
+OUTRO
+
+Yours truly,
+AP
+
 # Alpha 16: The Comeback Update (3/28/2025)
 Didn't expect the update to come so quick, did ya'? It hasn't even been a month since Alpha 15.6!
 The development processing is changing, and updates will be coming out much more frequently, just like the old days. No more year-long waits!
