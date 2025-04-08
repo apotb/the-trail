@@ -2294,5 +2294,48 @@
     ],
     "price": 600,
     "wtypeId": 5
+  },
+  {
+    "id": 61,
+    "animationId": 122,
+    "description": "The refined design of Andy's favorite weapon. Greatly increases damage reduction\nwhile guarding, and has an even higher chance of confusing struck enemies!",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
+      },
+      {
+        "code": 32,
+        "dataId": 23,
+        "value": 0.2
+      },
+      {
+        "code": 23,
+        "dataId": 1,
+        "value": 3
+      }
+    ],
+    "iconIndex": 825,
+    "name": "Andy's Dusters MK. II",
+    "note": "<Weapon Image: 299>\n<Upgrade Slots: 2>",
+    "params": [
+      0,
+      0,
+      21,
+      6,
+      0,
+      0,
+      11,
+      0
+    ],
+    "price": 4000,
+    "wtypeId": 9
   }
 ]

@@ -4243,7 +4243,7 @@
     0,
     0,
     0,
-    121,
+    0,
     0,
     0,
     121,
@@ -5802,8 +5802,8 @@
     0,
     0,
     0,
-    112,
-    113,
+    0,
+    0,
     0,
     112,
     113,
@@ -5842,7 +5842,7 @@
     91,
     0,
     0,
-    120,
+    0,
     112,
     113,
     120,
@@ -17333,7 +17333,159 @@
       "x": 21,
       "y": 26
     },
-    null,
+    {
+      "id": 42,
+      "name": "EV042",
+      "note": "<shadow>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 11,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 109,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "People3",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 7
+          },
+          "list": [
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People3",
+                7,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\solHave you heard the news? Andy's half of"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Andy & Clara's Rogue & Cleric Store"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "has new powerful equipment in stock!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People3",
+                7,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\solYou really should go check it out! And can you please mention"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "me to Andy? I get commissions for each item I help sell."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 5,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 18,
+                "indent": 0
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  90
+                ],
+                "indent": null
+              },
+              {
+                "code": 17,
+                "indent": 0
+              },
+              {
+                "code": 14,
+                "parameters": [
+                  0,
+                  0
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  90
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 10,
+      "y": 25
+    },
     {
       "id": 43,
       "name": "blueberry-test",

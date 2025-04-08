@@ -1432,25 +1432,25 @@
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.06
+        "value": 0.08
       },
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.015
+        "value": 0.02
       }
     ],
     "iconIndex": 481,
     "name": "Henry's Gloves",
-    "note": "<Disassemble Pool: Basic>\nx2-4 Leather: 100%\n</Disassemble Pool: Basic>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(46) >= 3;\n</Custom Buy Show Eval>",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx2-4 Leather: 100%\n</Disassemble Pool: Basic>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(46) >= 3;\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
-      2,
+      4,
       0,
       0,
       0,
-      2,
+      0,
       0
     ],
     "price": 300
@@ -1634,7 +1634,7 @@
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.01
+        "value": 0.005
       }
     ],
     "iconIndex": 174,
@@ -3851,12 +3851,12 @@
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.08
+        "value": 0.06
       },
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.02
+        "value": 0.015
       }
     ],
     "iconIndex": 657,
@@ -3865,11 +3865,11 @@
     "params": [
       0,
       0,
-      5,
+      3,
       0,
       0,
       0,
-      5,
+      0,
       0
     ],
     "price": 150
@@ -5827,6 +5827,48 @@
       0,
       8,
       -3,
+      0
+    ],
+    "price": 1000
+  },
+  {
+    "id": 222,
+    "atypeId": 1,
+    "description": "A very comfortable set of gloves with a little bit of magic woven\nin. Provides offensive boosts and increases MP regeneration by 3%.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.1
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.025
+      },
+      {
+        "code": 22,
+        "dataId": 8,
+        "value": 0.03
+      },
+      {
+        "code": 11,
+        "dataId": 8,
+        "value": 0.9
+      }
+    ],
+    "iconIndex": 482,
+    "name": "Haloweave Gloves",
+    "note": "<Upgrade Slots: 2>",
+    "params": [
+      0,
+      0,
+      5,
+      0,
+      0,
+      1,
+      0,
       0
     ],
     "price": 1000

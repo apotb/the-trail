@@ -2,10 +2,21 @@
 INTRO
 
 ### Additions
-- 
+- 1 new weapon:
+  - Andy's Dusters MK. II
+- 1 new equipment:
+  - 1 new accessory:
+    - Haloweave Gloves
 
 ### Changes
 - 
+
+### Balancing
+- Bandito Gloves: CRI +1% → +0.5%
+- Henry's Gloves: ATK 2 → 4; HIT +6% → +8%; CRI +1.5% → +2%; Upgrade Slots 0 → 1
+- Scaly Gloves: ATK 5 → 3; HIT +8% → +6%; CRI +2% → +1.5%
+  - This change effectively swaps Henry's Gloves and Scaly Gloves in progression.
+    - Although Henry's Gloves can be obtained earlier, they're more "exclusive" as a boss drop.
 
 ### Bug Fixes
 - 
