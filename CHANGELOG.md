@@ -9,7 +9,7 @@ INTRO
     - Haloweave Gloves
 
 ### Changes
-- 
+- Nerfed the Mimic's actions per turn: goes once by default, twice in Chapter 5, and thrice in Chapter 6 and beyond.
 
 ### Balancing
 - Bandito Gloves: CRI +1% → +0.5%

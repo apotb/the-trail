@@ -3703,21 +3703,11 @@
         "code": 32,
         "dataId": 23,
         "value": 1
-      },
-      {
-        "code": 61,
-        "dataId": 0,
-        "value": 1
-      },
-      {
-        "code": 61,
-        "dataId": 0,
-        "value": 1
       }
     ],
     "gold": 500,
     "name": "Mimic",
-    "note": "<Armor Weakness: Piercing>\n<Passive State: 136>\n\n<Sideview Battler: NoMatchingSprite/Mimic>\n<Sideview No Collapse>\n<Attack Animation: 2>\n\n<Conditional Magic Coin Drop>\nEval Date.now() % 4 === 0: +100%\n</Conditional Magic Coin Drop>\n<Conditional EXR Scroll Drop>\nEval Date.now() % 4 === 1: +100%\n</Conditional EXR Scroll Drop>\n<Conditional Bunny Hood Drop>\nEval Date.now() % 4 === 2: +100%\n</Conditional Bunny Hood Drop>\n<Conditional Gold Ring Drop>\nEval Date.now() % 4 === 3: +100%\n</Conditional Gold Ring Drop>",
+    "note": "<Armor Weakness: Piercing>\n<Passive State: 136, 205, 206>\n\n<Sideview Battler: NoMatchingSprite/Mimic>\n<Sideview No Collapse>\n<Attack Animation: 2>\n\n<Conditional Magic Coin Drop>\nEval Date.now() % 4 === 0: +100%\n</Conditional Magic Coin Drop>\n<Conditional EXR Scroll Drop>\nEval Date.now() % 4 === 1: +100%\n</Conditional EXR Scroll Drop>\n<Conditional Bunny Hood Drop>\nEval Date.now() % 4 === 2: +100%\n</Conditional Bunny Hood Drop>\n<Conditional Gold Ring Drop>\nEval Date.now() % 4 === 3: +100%\n</Conditional Gold Ring Drop>",
     "params": [
       2500,
       0,
