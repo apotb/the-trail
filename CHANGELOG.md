@@ -1540,7 +1540,7 @@ Anyways... onto this big, big changelog. So much stuff!
 - Fixed many, many textual errors.
 
 ### Bugs we are aware of:
-- Sprites ocasionally visually clip through certain tiles.
+- Sprites occasionally visually clip through certain tiles.
 - When returning to walking around after completing a battle that was retried, the BGM stops playing.
  
 ### Planned features:
@@ -1613,7 +1613,7 @@ Andrew
 
 Another unstable build is here! This time we got some sweet stuff: the Great Pyramid, some new equipment, smooth camera scrolling, and the long-awaited HD fullscreen!
 
-The first thing you'll probably notice when you open the game, provided that you play in fullscreen, is the definition around the edges of every sprite. Using some brand new tech, we've managed to eliminate most of the bluriness of fullscreen!
+The first thing you'll probably notice when you open the game, provided that you play in fullscreen, is the definition around the edges of every sprite. Using some brand new tech, we've managed to eliminate most of the blurriness of fullscreen!
 
 The next thing you'll notice when you start walking around is how smooth the camera is. That's all there is to it. Smooth camera. Yeah.
 
@@ -1640,7 +1640,7 @@ There's also been quite a few other changes around the game. They shouldn't be t
 
 PLEASE NOTE THIS: Not everything in the changelog is in the game yet! It's most notable that only one dungeon is currently in the game, but there's also some other stuff missing.
 
-Well, I hope y'all enjoy this. It's not too much content, but hopefully it'll keep you busy for a bit. A lot of work on Alpha 13 has been work on mechanics and plugin compatability, so with the base done, be ready to see a lot of updates real fast.
+Well, I hope y'all enjoy this. It's not too much content, but hopefully it'll keep you busy for a bit. A lot of work on Alpha 13 has been work on mechanics and plugin compatibility, so with the base done, be ready to see a lot of updates real fast.
 
 Yours truly,
 luckyandrew13
@@ -1766,7 +1766,7 @@ Anyways, there's also a TON of changes. Once again, I got side-tracked while dev
 - Reduced the drop rate of the "Loaf of Bread" from goblins [1/3 → 1/5].
 - Nerfed the Soldier's Shield [3 DEF → 2 DEF; 70B → 80B].
 - Made the "Loaf of Bread" more expensive [20B → 24B].
-- 20% of damage will penentrate the Shield of Faith.
+- 20% of damage will penetrate the Shield of Faith.
 - Bleeding now does a minimum of 1 damage.
 - Loose items in Adon can now be picked up.
 - The numerical ID of the "Defeat Apocalypse" quest was changed to be 1000 instead of 4. This means that the quest will no longer be the first one to automatically pop up in the quest window every time you clear a quest.
@@ -1836,7 +1836,7 @@ Anyways, here's some bug fixes and changes. Some pretty big ones, too.
 - Fixed a bug where re-entering Solus Town with the guard in tow and then leaving would cause the guard to show up again. Just a visual bug, though, so you wouldn't end up with two guards.
 - Fixed a bug where scene_adonsaved wouldn't play at the start of the Adon celebration.
 - Fixed a bug where Apocalypse's name box wouldn't show up after finding out his name during the dream with him.
-- Fixed some inconsistencies between the seperate maps for Solus Town and Solus Town: After Hours.
+- Fixed some inconsistencies between the separate maps for Solus Town and Solus Town: After Hours.
 - Fixed some textual errors.
  
 ### Bugs we are aware of:
@@ -1875,7 +1875,7 @@ Anyways... short changelog. No bug fixes either.
 
 ### Bugs we are aware of:
 - When returning to walking around after completing a battle that was retried, the BGM stops playing.
-- The game rarely freezes (an unfortunate occurance found in most RMMV games), but it's only visually; if you know how to navigate the game well enough, you can save in the frozen state and then reload the game to avoid losing any progress.
+- The game rarely freezes (an unfortunate occurrence found in most RMMV games), but it's only visually; if you know how to navigate the game well enough, you can save in the frozen state and then reload the game to avoid losing any progress.
  
 ### Planned features:
 - Adding interaction to objects throughout the world.
@@ -1918,7 +1918,7 @@ We hope all of you understand this.
 
 ### Bugs we are aware of:
 - When returning to walking around after completing a battle that was retried, the BGM stops playing.
-- The game rarely freezes (an unfortunate occurance found in most RMMV games), but it's only visually; if you know how to navigate the game well enough, you can save in the frozen state and then reload the game to avoid losing any progress.
+- The game rarely freezes (an unfortunate occurrence found in most RMMV games), but it's only visually; if you know how to navigate the game well enough, you can save in the frozen state and then reload the game to avoid losing any progress.
 - The Map of Adon isn't completely up-to-date: once we're sure where everything is going to be, I'll make new map graphics.
 
 ### Planned features:
@@ -1951,7 +1951,7 @@ A small update that makes a few important changes. Why, you may ask? Well, since
 
 ### Bugs we are aware of:
 - When returning to walking around after completing a battle that was retried, the BGM stops playing
-- The game rarely freezes (an unfortunate occurance found in most RMMV games), but it's only visually; if you know how to navigate the game well enough, you can save in the frozen state and then reload the game to avoid losing any progress
+- The game rarely freezes (an unfortunate occurrence found in most RMMV games), but it's only visually; if you know how to navigate the game well enough, you can save in the frozen state and then reload the game to avoid losing any progress
 - The Map of Adon isn't completely up-to-date: once we're sure where everything is going to be, I'll make new map graphics
  
 ### Planned features:
@@ -2011,7 +2011,7 @@ Anyways, the changelog. It's definitely the longest changelog yet for a minor up
 - The option to skip a boss's dialogue used to only appeared if you read a boss's dialogue on the save before; now, however, it's remembered across all your saves
 - Changed the icon for the Rocky Sip
 - Changed up the dialogue right after the Laeryidyean fight to be less sappy
-- Slighty nerfed the Cool-Looking Hat
+- Slightly nerfed the Cool-Looking Hat
 - You can now faintly hear the music of Verdin Village when at the Cave Entrance
 - Abbreviated "Damage" as "Dmg." on the save screen
 - Buffed Focused Slash's HIT
@@ -2027,7 +2027,7 @@ Anyways, the changelog. It's definitely the longest changelog yet for a minor up
 - Fixed an incorrect wall tile in the Village Headman's house
 - Fixed a bug where you could hear the boat movement sound when walking over the southern bridge at the small island in the center of Adon
 - Fixed a bug where the Somewhat Well Fed buff had two simultaneous regeneration effects
-- Fixed a bug where footwear wouldn't be optimised
+- Fixed a bug where footwear wouldn't be optimized
 - Fixed a bug where you'd have to press space to enter the 4th door under Sam's shop
 - Fixed a bug where one of the tiles that triggered the cutscene in Solus Valley where the team reunites didn't work
 - Fixed a bug where sailing the boat along the river leading to Solus Valley played the default footstep sound
@@ -2037,7 +2037,7 @@ Anyways, the changelog. It's definitely the longest changelog yet for a minor up
 ### Bugs we are aware of:
 - The name input's keyboard support has been temporarily disabled due to a game breaking bug
 - When returning to walking around after completing a battle that was retried, the BGM stops playing
-- The game rarely freezes (an unfortunate occurance found in most RMMV games), but it's only visually; if you know how to navigate the game well enough, you can save in the frozen state and then reload the game to avoid losing any progress
+- The game rarely freezes (an unfortunate occurrence found in most RMMV games), but it's only visually; if you know how to navigate the game well enough, you can save in the frozen state and then reload the game to avoid losing any progress
 - The Map of Adon isn't completely up-to-date: once we're sure where everything is going to be, I'll make new map graphics
  
 ### Planned features:
@@ -2051,7 +2051,7 @@ Anyways, the changelog. It's definitely the longest changelog yet for a minor up
 # Alpha 12.1 (3/22/2020)
 Current Level Cap: 15
 
-Just a few bug fixes and some minor changes/addtions. I'd like to thank twitch.tv/3d_crushergaming for playing through the game so that I could get an outside perspective on the game and see any obvious bugs that we missed during testing!
+Just a few bug fixes and some minor changes/additions. I'd like to thank twitch.tv/3d_crushergaming for playing through the game so that I could get an outside perspective on the game and see any obvious bugs that we missed during testing!
 Unfortunately, the Mac port still isn't working; I'm on it, though.
 Alpha 12.2 is planned to include a variety of side quests, so stay tuned for that!
 
@@ -2210,7 +2210,7 @@ Well, that's enough talking for now. The changelog is just below. It's a lot of 
 - Changed Player 3's eye color
 - A few icons were edited
 - Added new info to the save screen (stuff that you did before this update won't count)
-- Green Slime Cavern and the Dark Forest have had their appearences changed
+- Green Slime Cavern and the Dark Forest have had their appearances changed
 - The "Save" option on the menu has been changed to read "Save & Load"
 - Changed some aspects of the battle log
 - Slightly changed how regen and overtime damage work
@@ -2226,12 +2226,12 @@ Well, that's enough talking for now. The changelog is just below. It's a lot of 
 - Skeleton-type enemies are now immune to Asleep
 - The title screen is now skipped if no saves are present
 - The two splash screens that appear upon opening the game have been modified to only appear when creating a new save
-- Changed the appearence of Verdin Village while in the Overworld
+- Changed the appearance of Verdin Village while in the Overworld
 - Changed the name of the quest "Bandito Control (Again)" to "Bandito Control... Again"
 - Changed the difficulty of the quest "Bandito Control... Again" from "Slight Challenge" to "A Bit Tricky"
 - The borders of the game's windows are now gold
 - Using an upgrader on an item now adds an appropriate prefix to said item
-- Slightly changed some paramaters of the "A Rare Find" quest
+- Slightly changed some parameters of the "A Rare Find" quest
 - Changed the behaviors of the quest window
 - The game's version is now displayed in the bottom left of the title screen instead of the second splash
 - Slightly changed Mark's dialogue in the Dark Forest
@@ -2257,7 +2257,7 @@ Well, that's enough talking for now. The changelog is just below. It's a lot of 
 - Fixed a bug where the sole objective of the quest "Saving The Forest: Part I" would not be marked as completed in the quest log
 - Fixed a bug where some parameters of the quest "A Traveler's Deal" were incorrect
 - Fixed a bug where leaving the Small Grove required using the interact key
-- Fixed a bug where playing the track "Inevitable Confronation" from the music menu would crash the game
+- Fixed a bug where playing the track "Inevitable Confrontation" from the music menu would crash the game
 - Fixed a bug where Adam's door would magically morph into a completely different door that they don't even make in Verdin Village after you gave him the Traveler Sword
 - Fixed countless textual errors
 
@@ -2378,7 +2378,7 @@ Hello all, and welcome to Alpha 10! This incredible effort is the biggest update
   - Status Menu v1.02, which greatly improves the Status tab in the menu.
   - Rename Actor v1.01 - it's pretty self-explanatory.
   - Command Window Icons v1.00... woah! Icons for menu tabs! Awesome!
-- Added in the epic finale of your struggle against the Banditos. Now that they're out of the way, there's nothing stopping you from continuing down Adon and defeating Laeryidyaen...
+- Added in the epic finale of your struggle against the Banditos. Now that they're out of the way, there's nothing stopping you from continuing down Adon and defeating Laeryidyean...
 - Added in 3 new maps:
   - Bandito Hideout Entrance
   - Bandito Hideout F1
@@ -2405,7 +2405,7 @@ Hello all, and welcome to Alpha 10! This incredible effort is the biggest update
 
 ### Changes:
 - Completely overhauled the tutorial! In fact, it's so good that you should make a new save file solely for the purpose of re-completing it! You can thank DMmePlateletMemes#9286 for the awesome suggestion.
-  - Of course, since the tutorial was overhauled, we've made a few changes to the prologue in order to accomodate the change. This includes changing dialogue, autosave locations, and anything that'll improve the prologue's quality.
+  - Of course, since the tutorial was overhauled, we've made a few changes to the prologue in order to accommodate the change. This includes changing dialogue, autosave locations, and anything that'll improve the prologue's quality.
 - Changed the Knight skill Double Slash to Focused Slash. Double Slash will be reintroduced as a later skill, with a few buffs, of course.
 - Scrapped the "Memory" map featured in Player 2's Story, in favor of showing only the inn.
 - Changed the LUK (Luck) stat to INT (Intelligence).
@@ -2478,7 +2478,7 @@ An addition and some more changes, including some minor overhauls.
 - When you battle Big Mouth in Verdin Village and succeed, you'll receive some items and Bits/Experience now.
 
 ### Changes:
-- Removed two swear words used by Player 3 upon the request of one of my fellow developers. Apologies if Player 3's rude langauge offended anyone else.
+- Removed two swear words used by Player 3 upon the request of one of my fellow developers. Apologies if Player 3's rude language offended anyone else.
 - Changed the description of the Small Elixir.
 - Doubled the healing power of Cure I.
 - Now it's time for some major nerfs and buffs. Here we go...
@@ -2644,8 +2644,8 @@ Let's just say playing through the game yourself as the programmer is helpful.
 
 ### Bug Fixes:
 - Fixed a couple errors with the Village Headman's dialogue, such as where he'd as you to "pick a flowers".
-- I realized that techniclly, the "an" in "Legally An Errand" should be lowercase.
-- Fixed a lot of occurences of a character turning and the dialogue boxes not transitioning smoothly.
+- I realized that technically, the "an" in "Legally An Errand" should be lowercase.
+- Fixed a lot of occurrences of a character turning and the dialogue boxes not transitioning smoothly.
   - The Village Headman's dialogue is one case of this happening.
   - Another case is where Four-Toed Kevin turns to Big Mouth ("Big Mouth, go get 'em!").
   - There's even a case when Player 2 turns to Player 1.
@@ -2727,7 +2727,7 @@ Here it is, in all its wordy glory:
 ### Changes:
 - Messed with a couple already-made maps to make transfers look better.
 
-I wouldn't grind in Green Slime Cavern just yet. Skills have yet to be added into the game, so leveling beyond the required level for a skill before it's added into the game may have disastorous consequences! The skills themselves shouldn't be too hard to add into the game - they may even come in a minor update! Alpha 5.1, here we come!
+I wouldn't grind in Green Slime Cavern just yet. Skills have yet to be added into the game, so leveling beyond the required level for a skill before it's added into the game may have disastrous consequences! The skills themselves shouldn't be too hard to add into the game - they may even come in a minor update! Alpha 5.1, here we come!
 
 **Stable Save: once again, there really isn't a game breaking point, but you'll be forced to stop playing after Green Slime Cavern**
 
@@ -2806,7 +2806,7 @@ You're going to have to play the update to understand just how good it is. If an
 
 ### Those Other Additions I Mentioned Earlier:
 - You can now get your second party member!
-- There's a nice tour of Verdin Village. Prepare for more usuable things in future updates!
+- There's a nice tour of Verdin Village. Prepare for more usable things in future updates!
 - Some nice plot has been added in.
 - You can finish "Bandito Control", and there's a new quest as well!
 - The shops in the Verdin Village inn have been mapped. However, you can't get in them yet. They'll be fixed up in a future update!
