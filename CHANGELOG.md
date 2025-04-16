@@ -10,6 +10,7 @@ INTRO
 
 ### Changes
 - Nerfed the Mimic's actions per turn: goes once by default, twice in Chapter 5, and thrice in Chapter 6 and beyond.
+- Completing the quest "The Dandy Toads of Adon" now rewards you with 300B instead of an Enchanted Anti-Magic Charm.
 
 ### Balancing
 - Bandito Gloves: CRI +1% → +0.5%
