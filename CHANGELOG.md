@@ -1,4 +1,4 @@
-# Alpha 17: The Telluria Update (??/??/2025)
+# Alpha 17: Path of the Purple (5/??/2025)
 INTRO
 
 ### Additions
