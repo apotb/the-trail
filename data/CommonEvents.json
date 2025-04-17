@@ -12497,12 +12497,58 @@
     "id": 49,
     "list": [
       {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "!$gameSystem._moonRespawnList.contains($gameMap.mapId()) && $gameSystem._moonCycleComplete"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameMap.events().filter(e => e._monster).forEach(e => {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  $gameSelfSwitches.setValue([$gameMap.mapId(), e.eventId(), 'A'], false)"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "});"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "$gameSystem._moonRespawnList.push($gameMap.mapId());"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "Respawn Map Enemies",
     "switchId": 1,
     "trigger": 0
   },
@@ -12606,6 +12652,27 @@
         ]
       },
       {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameSystem._moonRespawn = false;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "$gameSystem._moonRespawnList = [];"
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 1,
+        "parameters": [
+          49
+        ]
+      },
+      {
         "code": 101,
         "indent": 1,
         "parameters": [
@@ -12640,63 +12707,20 @@
         ]
       },
       {
-        "code": 355,
-        "indent": 1,
-        "parameters": [
-          "$gameSystem._moonRespawn = false;"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "$gameSystem._moonRespawnList = [];"
-        ]
-      },
-      {
         "code": 0,
         "indent": 1,
         "parameters": []
       },
       {
-        "code": 412,
+        "code": 411,
         "indent": 0,
         "parameters": []
       },
       {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          12,
-          "!$gameSystem._moonRespawnList.contains($gameMap.mapId()) && $gameSystem._moonCycleComplete"
-        ]
-      },
-      {
-        "code": 355,
+        "code": 117,
         "indent": 1,
         "parameters": [
-          "$gameMap.events().filter(e => e._monster).forEach(e => {"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "  $gameSelfSwitches.setValue([$gameMap.mapId(), e.eventId(), 'A'], false)"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "});"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "$gameSystem._moonRespawnList.push($gameMap.mapId());"
+          49
         ]
       },
       {
