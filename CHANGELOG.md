@@ -26,6 +26,7 @@ INTRO
 - Fixed a bug where entering Bladesville via the tile on the right would still let you earn the "Trigger Happy" achievement.
 - Fixed Player 3's outdated dialogue in the Telluria Castle night cutscene.
 - Fixed wrong music playing after Telluria Castle night cutscene.
+- Fixed the Crushers in the barracks still talking about the removed rap battle.
 
 OUTRO
 
