@@ -10,6 +10,7 @@ INTRO
 
 ### Changes
 - Nerfed the Mimic's actions per turn: goes once by default, twice in Chapter 5, and thrice in Chapter 6 and beyond.
+- Nerfed the Will o' Wisp's MAT from 45 → 39.
 - Completing the quest "The Dandy Toads of Adon" now rewards you with 300B instead of an Enchanted Anti-Magic Charm.
 
 ### Balancing
