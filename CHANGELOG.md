@@ -20,7 +20,7 @@ INTRO
     - Although Henry's Gloves can be obtained earlier, they're more "exclusive" as a boss drop.
 
 ### Bug Fixes
-- 
+- Fixed the level recommendation for the Ruined Fort not having been updated in Alpha 16.
 
 OUTRO
 
