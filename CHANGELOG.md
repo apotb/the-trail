@@ -23,6 +23,7 @@ INTRO
 - Fixed the level recommendation for the Ruined Fort not having been updated in Alpha 16.
 - Fixed being caught by a Sand Stomper playing the same sound effect as being captured by a Lost Soul.
 - Fixed Flower Boots still using the deprecated OED stat.
+- Fixed a bug where entering Bladesville via the tile on the right would still let you earn the "Trigger Happy" achievement.
 - Fixed Player 3's outdated dialogue in the Telluria Castle night cutscene.
 - Fixed wrong music playing after Telluria Castle night cutscene.
 
