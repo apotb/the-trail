@@ -21,6 +21,7 @@ INTRO
 
 ### Bug Fixes
 - Fixed the level recommendation for the Ruined Fort not having been updated in Alpha 16.
+- Fixed being caught by a Sand Stomper playing the same sound effect as being captured by a Lost Soul.
 
 OUTRO
 
