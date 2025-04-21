@@ -11,6 +11,8 @@ INTRO
 ### Changes
 - Buffed temporary party members:
   - Doubled Claire's outgoing healing.
+- Buffed Seshat's Charm drop change from 1/100 to 1/50.
+- Starting in Chapter 5, Seshat's Tome will drop at a rate of 1/100.
 - Nerfed the Mimic's actions per turn: goes once by default, twice in Chapter 5, and thrice in Chapter 6 and beyond.
 - Nerfed the Will o' Wisp's MAT from 45 → 39.
 - Completing the quest "The Dandy Toads of Adon" now rewards you with 300B instead of an Enchanted Anti-Magic Charm.

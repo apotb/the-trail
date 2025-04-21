@@ -641,10 +641,17 @@ DataManager.createGlobalDrops = function(obj) {
     ];
     DataManager.createConditionalEnemyDrop(obj, item, arr);
 
-    // Seshat's Charm (1/100 drop)
+    // Seshat's Charm (1/50 drop)
     var id = 160;
-    var rate = 0.01;
+    var rate = 0.02;
     this.createEnemyDrop(obj, id, rate, 3);
+
+    // Origin Crystal (1/100 drop starting in Chapter 5)
+    var item = $dataArmors[161];
+    var arr = [
+      "Eval $gameSystem.chapter() >= 5: +0.01%"
+    ];
+    DataManager.createConditionalEnemyDrop(obj, item, arr);
 
     // Present (1/5 drop during December)
     var item = $dataItems[156];
