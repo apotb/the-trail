@@ -495,7 +495,7 @@ TreasureIcons.prototype.refreshIcon = function() {
 // * create Name
 //==============================
 TreasureIcons.prototype.createName = function() {
-	this._name = new Sprite(new Bitmap(150,32));
+	this._name = new Sprite(new Bitmap(window.innerWidth,32));
 	this._name.x = Window_Base._iconWidth + 4;
 	this._name.bitmap.fontSize = Moghunter.trpopup_fontSize;
 	this.addChild(this._name);
@@ -507,7 +507,7 @@ TreasureIcons.prototype.createName = function() {
 TreasureIcons.prototype.refreshName = function() {
 	this._name.bitmap.clear();
 	var name = this._item ? this._item.name + " x " + this._amount : this._amount;
-	this._name.bitmap.drawText(name,0,0,145,32);
+	this._name.bitmap.drawText(name,0,0,window.innerWidth,32);
 };
 
 //==============================
