@@ -11,8 +11,6 @@ INTRO
 ### Changes
 - Buffed temporary party members:
   - Doubled Claire's outgoing healing.
-- Buffed Seshat's Charm drop change from 1/100 to 1/50.
-- Starting in Chapter 5, Seshat's Tome will drop at a rate of 1/100.
 - Nerfed several enemies:
   - Mimic: 1 action by default, 2 in Chapter 5, 3 in Chapter 6+
   - Will o' Wisp: MAT 45 → 39
@@ -21,15 +19,18 @@ INTRO
   - Werewolf: MDF 60 → 55
   - Ice Slime: MDF 75 → 60
   - Polar Bear: MDF 65 → 55
-- Living Plants now drop Worms.
-- Nerfed Gilded Coin Bit Rate from 1.5x → 1.25x
-- Completing the quest "The Dandy Toads of Adon" now rewards you with 300B instead of an Enchanted Anti-Magic Charm.
 - Revamped glove progression:
   - Bandito Gloves: CRI +1% → +0.5%
   - Henry's Gloves: ATK 2 → 4; HIT +6% → +8%; CRI +1.5% → +2%; Upgrade Slots 0 → 1
   - Scaly Gloves: ATK 5 → 3; HIT +8% → +6%; CRI +2% → +1.5%
   - These changes effectively swap Henry's Gloves and Scaly Gloves in progression.
     - Although Henry's Gloves can be obtained earlier, they're more "exclusive" since they are a boss drop.
+- Nerfed Gilded Coin Bit Rate from 1.5x → 1.25x
+- Buffed Seshat's Charm drop rate from 1/100 to 1/50.
+- Starting in Chapter 5, Seshat's Tome will drop at a rate of 1/100.
+- Living Plants now drop Worms.
+- Completing the quest "The Dandy Toads of Adon" now rewards you with 300B instead of an Enchanted Anti-Magic Charm.
+- Replaced the Dark Forest's puzzle hint with the Great Pyramid's.
 
 ### Bug Fixes
 - Fixed a game-breaking bug where one of the buttons in the Frozen Labyrinth could teleport you to a random map.
@@ -42,6 +43,7 @@ INTRO
 - Fixed Player 3's outdated dialogue in the Telluria Castle night cutscene.
 - Fixed wrong music playing after Telluria Castle night cutscene.
 - Fixed the Crushers in the barracks still talking about the removed rap battle.
+- Fixed broken name boxes for a couple knights in Telluria Castle Town.
 
 OUTRO
 
