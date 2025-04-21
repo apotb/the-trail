@@ -22,6 +22,7 @@ INTRO
   - Werewolf: MDF 60 → 55
   - Ice Slime: MDF 75 → 60
   - Polar Bear: MDF 65 → 55
+- Living Plants now drop Worms.
 - Completing the quest "The Dandy Toads of Adon" now rewards you with 300B instead of an Enchanted Anti-Magic Charm.
 - Revamped glove progression:
   - Bandito Gloves: CRI +1% → +0.5%
