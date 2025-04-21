@@ -2977,7 +2977,7 @@
     ],
     "gold": 4000,
     "name": "Laeryidyean EX",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 136, 137, 139, 141>\n<Light Break: 3>\n\n<Sideview Battler: NoMatchingSprite/Laeryidyean EX>\n<Weapon Image: 266>\n<Attack Animation: 8>\n<HP Gauge Width: 360>\n<HP Gauge Color 1: 15>\n<HP Gauge Color 2: 14>\n\n<AI Priority>\nState === State 7 +++ User HP% param >= 35%: Bubble\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nPocket Mirror: 5%\nBattle Plan: 5%\nSleepy Hourglass: 5%\nSelfish Candle: 5%\nOrigin Crystal: 100%\nSemi-Automatic Glizzy: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>\n<Conditional Ancient Key Drop>\nEval !$gameParty.hasItem($dataItems[1]): +100%\n</Conditional Ancient Key Drop>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 136, 137, 139, 141>\n<Light Break: 3>\n\n<Sideview Battler: NoMatchingSprite/Laeryidyean EX>\n<Weapon Image: 266>\n<Attack Animation: 8>\n<HP Gauge Width: 360>\n<HP Gauge Color 1: 15>\n<HP Gauge Color 2: 14>\n\n<AI Priority>\nState === State 7 +++ User HP% param >= 35%: Bubble\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nPocket Mirror: 5%\nBattle Plan: 5%\nSleepy Hourglass: 5%\nSelfish Candle: 5%\nAncient Key: 100%\nSemi-Automatic Glizzy: 100%\nOrigin Crystal: 1%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
     "params": [
       120000,
       9999,
