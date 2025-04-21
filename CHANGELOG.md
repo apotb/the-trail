@@ -14,7 +14,14 @@ INTRO
 - Buffed Seshat's Charm drop change from 1/100 to 1/50.
 - Starting in Chapter 5, Seshat's Tome will drop at a rate of 1/100.
 - Nerfed the Mimic's actions per turn: goes once by default, twice in Chapter 5, and thrice in Chapter 6 and beyond.
-- Nerfed the Will o' Wisp's MAT from 45 → 39.
+- Nerfed several enemies:
+  - Mimic: 1 action by default, 2 in Chapter 5, 3 in Chapter 6+
+  - Will o' Wisp: MAT 45 → 39
+  - Ice Golem: DEF 45 → 40, MDF 70 → 60, Ice Barrier chance 50% → 25
+  - Chilling Apparition: MDF 85 → 75
+  - Werewolf: MDF 60 → 55
+  - Ice Slime: MDF 75 → 60
+  - Polar Bear: MDF 65 → 55
 - Completing the quest "The Dandy Toads of Adon" now rewards you with 300B instead of an Enchanted Anti-Magic Charm.
 - Revamped glove progression:
   - Bandito Gloves: CRI +1% → +0.5%

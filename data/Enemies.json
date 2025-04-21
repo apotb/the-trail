@@ -4088,14 +4088,14 @@
     ],
     "gold": 100,
     "name": "Ice Golem",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Ice>\n<Passive State: 136, 140, 144>\n\n<Breathing Speed: 20>\n<Attack Animation: 4>\n\n<AI Priority>\nState !== Icy Barrier +++ Random 50%: Ice Barrier\n</AI Priority>\n\n<Enemy Drops>\nWarm Scarf: 5%\nGlacial Bulwark: 5%\nIce Cube: 100%\nIce Cube: 100%\nIce Cube: 100%\nIce Cube: 75%\nIce Cube: 75%\nIce Cube: 75%\nFrozen Jewel: 50%\nGRD Scroll: 10%\nIce Essence: 20%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Ice>\n<Passive State: 136, 140, 144>\n\n<Breathing Speed: 20>\n<Attack Animation: 4>\n\n<AI Priority>\nState !== Icy Barrier +++ Random 25%: Ice Barrier\n</AI Priority>\n\n<Enemy Drops>\nWarm Scarf: 5%\nGlacial Bulwark: 5%\nIce Cube: 100%\nIce Cube: 100%\nIce Cube: 100%\nIce Cube: 75%\nIce Cube: 75%\nIce Cube: 75%\nFrozen Jewel: 50%\nGRD Scroll: 10%\nIce Essence: 20%\n</Enemy Drops>",
     "params": [
       6000,
       0,
       26,
-      45,
+      40,
       60,
-      70,
+      60,
       20,
       35
     ]
@@ -4166,7 +4166,7 @@
       22,
       30,
       60,
-      85,
+      75,
       30,
       15
     ]
@@ -4232,7 +4232,7 @@
       34,
       35,
       5,
-      60,
+      55,
       90,
       45
     ]
@@ -4558,7 +4558,7 @@
       24,
       40,
       52,
-      75,
+      60,
       15,
       6
     ]
@@ -5144,7 +5144,7 @@
       30,
       35,
       1,
-      65,
+      55,
       60,
       50
     ]
