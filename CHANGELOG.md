@@ -9,16 +9,17 @@ INTRO
     - Haloweave Gloves
 
 ### Changes
+- Buffed temporary party members:
+  - Doubled Claire's outgoing healing.
 - Nerfed the Mimic's actions per turn: goes once by default, twice in Chapter 5, and thrice in Chapter 6 and beyond.
 - Nerfed the Will o' Wisp's MAT from 45 → 39.
 - Completing the quest "The Dandy Toads of Adon" now rewards you with 300B instead of an Enchanted Anti-Magic Charm.
-
-### Balancing
-- Bandito Gloves: CRI +1% → +0.5%
-- Henry's Gloves: ATK 2 → 4; HIT +6% → +8%; CRI +1.5% → +2%; Upgrade Slots 0 → 1
-- Scaly Gloves: ATK 5 → 3; HIT +8% → +6%; CRI +2% → +1.5%
-  - This change effectively swaps Henry's Gloves and Scaly Gloves in progression.
-    - Although Henry's Gloves can be obtained earlier, they're more "exclusive" as a boss drop.
+- Revamped glove progression:
+  - Bandito Gloves: CRI +1% → +0.5%
+  - Henry's Gloves: ATK 2 → 4; HIT +6% → +8%; CRI +1.5% → +2%; Upgrade Slots 0 → 1
+  - Scaly Gloves: ATK 5 → 3; HIT +8% → +6%; CRI +2% → +1.5%
+  - These changes effectively swap Henry's Gloves and Scaly Gloves in progression.
+    - Although Henry's Gloves can be obtained earlier, they're more "exclusive" since they are a boss drop.
 
 ### Bug Fixes
 - Fixed a game-breaking bug where one of the buttons in the Frozen Labyrinth could teleport you to a random map.

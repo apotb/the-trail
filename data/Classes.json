@@ -5780,7 +5780,7 @@
       }
     ],
     "name": "Hero",
-    "note": "<Icon: 457>\n\n<Equip Slot>\nWeapon\nOffhand\nHead\nBody\nFeet\nAccessory\nAccessory\nAccessory\nM. Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nParty Dead Members >= 1: Revival\nHP% param <= 40%: Cure I, Lowest HP%\nState !== Incorporeal: Focused Slash, Lowest HP\nState !== Incorporeal: Attack, Lowest HP\nAlways: Guard\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 50 + Math.floor(level / 5);\n</Custom LUK Formula>",
+    "note": "<Icon: 457>\n\n<Element Magnify Healing: +100%>\n\n<Equip Slot>\nWeapon\nOffhand\nHead\nBody\nFeet\nAccessory\nAccessory\nAccessory\nM. Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nParty Dead Members >= 1: Revival\nHP% param <= 40%: Cure I, Lowest HP%\nState !== Incorporeal: Focused Slash, Lowest HP\nState !== Incorporeal: Attack, Lowest HP\nAlways: Guard\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 50 + Math.floor(level / 5);\n</Custom LUK Formula>",
     "params": [
       [
         1,
