@@ -40,6 +40,7 @@ INTRO
 - Fixed treasure popups for items with long names appearing squished and in the wrong position.
 - Fixed achievements "Big Bang" and "Poacher" being unobtainable.
 - Fixed light break HP bars not showing.
+- Fixed a bug where name boxes would stop showing after opening any crafting menu; this wouldn't go away until changing maps.
 - Fixed the Trailia statue summary window always showing +/- 0% outgoing/incoming light damage.
 - Fixed the level recommendation for the Ruined Fort not having been updated in Alpha 16.
 - Fixed being caught by a Sand Stomper playing the same sound effect as being captured by a Lost Soul.

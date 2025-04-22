@@ -1774,6 +1774,7 @@ Scene_Synthesis.prototype.createCommandWindow = function() {
 
 Scene_Synthesis.prototype.onCancelOk = function() {
     $gameTemp._synthRecipe = undefined;
+    $gameMessage._itemChoiceVariableId = 0;
     this.popScene();
 };
 
