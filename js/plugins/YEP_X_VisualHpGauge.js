@@ -730,7 +730,7 @@ function(dx, dy, dw, rate, color1, color2) {
 
     lb = this._battler._lightBreak;
     if (lb > 0) {
-      var lbFillW = Math.min(0, dw * (lb / this._battler.mhp));
+      var lbFillW = Math.min(dw * (lb / this._battler.mhp), fillW);
       this.contents.gradientFillRect(dx + fillW - lbFillW, gaugeY, lbFillW, gaugeH, this.textColor(Yanfly.Param.VHGHpColor1), this.textColor(Yanfly.Param.VHGHpColor2));
     }
 };
