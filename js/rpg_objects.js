@@ -644,7 +644,7 @@ Game_System.prototype.statuesFound = function(total) {
 // Constants
 
 Game_System.prototype.exhaustionTime = function() {
-    return 36;
+    return 48;
 };
 
 Game_System.prototype.coreStatIcons = function() {

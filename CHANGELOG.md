@@ -30,6 +30,7 @@ INTRO
 - Starting in Chapter 5, Seshat's Tome will drop at a rate of 1/100.
 - Gaining/losing status effects now shows a short popup instead of using the intrusive message box.
 - Living Plants now drop Worms.
+- Increased time for Exhaustion to set in from 36 → 48 hours.
 - Completing the quest "The Dandy Toads of Adon" now rewards you with 300B instead of an Enchanted Anti-Magic Charm.
 - Replaced the Dark Forest's puzzle hint with the Great Pyramid's.
 
