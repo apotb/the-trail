@@ -281,9 +281,9 @@ Window_ItemCategory.prototype.makeCommandList = function() {
     for (i = 0; i < wtypes.length; i++) this.addItemCategory("WType:" + wtypes[i]);
   } else if (this._type == 'armors') {
     this.addItemCategory("Armors");
-    var atypes = [1, 8, 9, 2, 3, 4, 5, 10, 6, 7];
+    /*var atypes = [1, 8, 9, 2, 3, 4, 5, 10, 6, 7];
     for (i = 0; i < atypes.length; i++) this.addItemCategory("AType:" + atypes[i]);
-    if (atypes.length < $dataSystem.armorTypes.length - 1) console.error('error', "MISSING ARMOR TYPES");
+    if (atypes.length < $dataSystem.armorTypes.length - 1) console.error('error', "MISSING ARMOR TYPES");*/
     var etypes = [3, 4, 5, 2, 6, 8, 9];
     if (etypes.length < $dataSystem.equipTypes.length - 3) console.error('error', "MISSING EQUIP TYPES");
     for (i = 0; i < etypes.length; i++) this.addItemCategory("EType:" + etypes[i]);

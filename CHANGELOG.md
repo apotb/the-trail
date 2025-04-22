@@ -37,6 +37,7 @@ INTRO
 - Moved the Voyager Boots and Globetrotter Boots out of the General Store and into actual shops.
 - Removed the Crude Hammer.
 - Changed how Incorporeal enemies react to physical damage to make it more clear it's not just a miss.
+- Simplified the armor menu by removing unnecessary categories.
 - Replaced the Dark Forest's puzzle hint with the Great Pyramid's.
 
 ### Bug Fixes
