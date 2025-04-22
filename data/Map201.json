@@ -17056,110 +17056,32 @@
           "directionFix": true,
           "image": {
             "tileId": 0,
-            "characterName": "!Chest",
+            "characterName": "!Flame",
             "direction": 2,
             "pattern": 1,
-            "characterIndex": 4
+            "characterIndex": 7
           },
           "list": [
+            {
+              "code": 127,
+              "indent": 0,
+              "parameters": [
+                54,
+                0,
+                0,
+                1,
+                false
+              ]
+            },
             {
               "code": 250,
               "indent": 0,
               "parameters": [
                 {
-                  "name": "Chest1",
-                  "pan": 0,
+                  "name": "Equip3",
+                  "volume": 90,
                   "pitch": 100,
-                  "volume": 90
-                }
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                0,
-                {
-                  "list": [
-                    {
-                      "code": 36
-                    },
-                    {
-                      "code": 17
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        3
-                      ]
-                    },
-                    {
-                      "code": 18
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        3
-                      ]
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 36
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 17
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    3
-                  ]
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 18
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    3
-                  ]
+                  "pan": 0
                 }
               ]
             },
@@ -17172,13 +17094,10 @@
               ]
             },
             {
-              "code": 127,
+              "code": 355,
               "indent": 0,
               "parameters": [
-                54,
-                0,
-                0,
-                1
+                "$gameSelfSwitches.setValue([201, 18, 'A'], true)"
               ]
             },
             {
@@ -17202,7 +17121,7 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": false,
+          "stepAnime": true,
           "through": false,
           "trigger": 0,
           "walkAnime": false
@@ -17223,12 +17142,12 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": true,
+          "directionFix": false,
           "image": {
-            "characterIndex": 4,
-            "characterName": "!Chest",
-            "direction": 8,
-            "pattern": 1,
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
             "tileId": 0
           },
           "list": [
@@ -17252,15 +17171,126 @@
           },
           "moveSpeed": 3,
           "moveType": 0,
-          "priorityType": 1,
+          "priorityType": 0,
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         }
       ],
       "x": 9,
       "y": 18
+    },
+    {
+      "id": 18,
+      "name": "EV018",
+      "note": "<Sprite Offset Y: +48>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 564,
+            "characterName": "",
+            "characterIndex": 0,
+            "direction": 2,
+            "pattern": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 9,
+      "y": 17
     }
   ]
 }
