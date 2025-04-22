@@ -3,7 +3,7 @@
     Game_Actor.prototype.changeEquip = function(slotId, item) {
         _Game_Actor_changeEquip.call(this, slotId, item);
         if (!item) {
-            if (slotId == 8) updateVanity(this, 10, $dataArmors[this.equips()[10].baseItemId]);
+            if (slotId == 8) updateVanity(this, 10, $dataArmors[this.equips()[10]?.baseItemId]);
             return;
         }
         baseItem = $dataArmors[item.baseItemId];

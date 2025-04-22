@@ -738,12 +738,15 @@ DataManager.isNewItemValid = function(item) {
 };
 
 DataManager.addNewIndependentItem = function(baseItem, newItem) {
-    newItem.id = this.getDatabase(baseItem).length;
+    let db = this.getDatabase(baseItem);
+    let id = db.findIndex((e, i) => e === null && i > Yanfly.Param.ItemStartingId);
+    if (id == -1) id = db.length;
+    newItem.id = id;
     ItemManager.setNewIndependentItem(baseItem, newItem);
     ItemManager.customizeNewIndependentItem(baseItem, newItem);
     ItemManager.onCreationEval(baseItem, newItem);
-    this.getDatabase(baseItem).push(newItem);
-    this.getContainer(baseItem).push(newItem);
+    db[newItem.id] = newItem;
+    this.getContainer(baseItem)[newItem.id - Yanfly.Param.ItemStartingId - 1] = newItem;
 };
 
 DataManager.removeIndependentItem = function(item) {
