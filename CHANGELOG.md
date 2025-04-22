@@ -13,7 +13,7 @@ INTRO
 - Buffed temporary party members:
   - Doubled Claire's outgoing healing.
 - Nerfed several enemies:
-  - Mimic: 1 action by default, 2 in Chapter 5, 3 in Chapter 6+
+  - Mimic: Actions 3 → 1 for Ruined Fort encounter.
   - Will o' Wisp: MAT 45 → 39
   - Ice Golem: DEF 45 → 40, MDF 70 → 60, Ice Barrier chance 50% → 25
   - Chilling Apparition: MDF 85 → 75
