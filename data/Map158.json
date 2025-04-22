@@ -23606,7 +23606,7 @@
               "indent": 0,
               "parameters": [
                 12,
-                "Date.now() % 3 === 0"
+                "Date.now() % 3 === 0 || $gameVariables.value(81) >= 3"
               ]
             },
             {
@@ -23629,6 +23629,17 @@
               "indent": 2,
               "parameters": [
                 "A",
+                0
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 2,
+              "parameters": [
+                81,
+                81,
+                0,
+                0,
                 0
               ]
             },
@@ -23691,6 +23702,17 @@
               "parameters": [
                 "A",
                 0
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 2,
+              "parameters": [
+                81,
+                81,
+                1,
+                0,
+                1
               ]
             },
             {
