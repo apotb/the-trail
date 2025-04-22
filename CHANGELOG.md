@@ -32,6 +32,7 @@ INTRO
 - Living Plants now drop Worms.
 - Increased time for Exhaustion to set in from 36 → 48 hours.
 - Completing the quest "The Dandy Toads of Adon" now rewards you with 300B instead of an Enchanted Anti-Magic Charm.
+- Moved the Voyager Boots and Globetrotter Boots out of the General Store and into actual shops.
 - Removed the Crude Hammer.
 - Replaced the Dark Forest's puzzle hint with the Great Pyramid's.
 
