@@ -15440,6 +15440,13 @@
               ]
             },
             {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameTemp._mimic = $gameMap.event(this.eventId());"
+              ]
+            },
+            {
               "code": 301,
               "indent": 0,
               "parameters": [
@@ -15447,6 +15454,13 @@
                 57,
                 false,
                 false
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "delete $gameTemp._mimic;"
               ]
             },
             {

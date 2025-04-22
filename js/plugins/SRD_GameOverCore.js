@@ -252,6 +252,10 @@ _.specialCommand201 = function() {
 		// this.setWaitMode('transfer');
 		this._index++;
 	}
+	if ($gameTemp._mimic) {
+		$gameMap._interpreter.setSelfVariableValue($gameTemp._mimic._mapId, $gameTemp._mimic.eventId(), 75, 0);
+		delete $gameTemp._mimic;
+	}
 	return false;
 };
 
