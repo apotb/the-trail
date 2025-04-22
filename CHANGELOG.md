@@ -42,6 +42,7 @@ INTRO
 - Fixed a game-breaking bug where one of the buttons in the Frozen Labyrinth could teleport you to a random map.
 - Fixed a softlock where if you leave Mark's house then go back without following him, you'd be stuck outside his house.
 - Fixed a hardlock during the cutscene in front of Telluria Castle where the soldier stops you.
+- Fixed being able to go straight to the boss in the Ruined Fort without completing the dungeon.
 - Fixed treasure popups for items with long names appearing squished and in the wrong position.
 - Fixed achievements "Big Bang" and "Poacher" being unobtainable.
 - Fixed light break HP bars not showing.
