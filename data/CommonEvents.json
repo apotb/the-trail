@@ -6123,14 +6123,91 @@
     "id": 28,
     "list": [
       {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "let minutes = 5;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "this.wait(minutes * 60 * 60);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "//"
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "Save",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 231,
+        "indent": 0,
+        "parameters": [
+          16,
+          "Autosave",
+          1,
+          0,
+          640,
+          48,
+          200,
+          200,
+          255,
+          0
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "DataManager.saveGame(DataManager.maxSavefiles());"
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          59
+        ]
+      },
+      {
+        "code": 235,
+        "indent": 0,
+        "parameters": [
+          16
+        ]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "Autosave",
     "switchId": 1,
-    "trigger": 0
+    "trigger": 2
   },
   {
     "id": 29,

@@ -681,7 +681,7 @@ DataManager.setIndependentLength = function(group) {
 DataManager.saveGameWithoutRescue = function(savefileId) {
     var json = JsonEx.stringify(this.makeSaveContents());
     StorageManager.save(savefileId, json);
-    this._lastAccessedId = savefileId;
+    if (savefileId < this.maxSavefiles()) this._lastAccessedId = savefileId;
     var globalInfo = this.loadGlobalInfo() || [];
     globalInfo[savefileId] = this.makeSavefileInfo();
     this.saveGlobalInfo(globalInfo);

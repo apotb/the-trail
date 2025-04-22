@@ -2,6 +2,7 @@
 INTRO
 
 ### Additions
+- Autosaving is here! Every 5 minutes, your progress will be automatically backed up in a unique save slot.
 - 1 new weapon:
   - Andy's Dusters MK. II
 - 1 new equipment:
@@ -54,6 +55,7 @@ INTRO
 - Fixed being caught by a Sand Stomper playing the same sound effect as being captured by a Lost Soul.
 - Fixed Flower Boots still using the deprecated OED stat.
 - Fixed a bug where entering Bladesville via the tile on the right would still let you earn the "Trigger Happy" achievement.
+- Fixed the save list's width changing depending on whether you're saving or loading.
 - Fixed Player 3's outdated dialogue in the Telluria Castle night cutscene.
 - Fixed wrong music playing after Telluria Castle night cutscene.
 - Fixed the Crushers in the barracks still talking about the removed rap battle.
