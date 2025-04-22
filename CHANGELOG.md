@@ -49,6 +49,7 @@ INTRO
 - Fixed a bug where name boxes would stop showing after opening any crafting menu; this wouldn't go away until changing maps.
 - Fixed not being able to run away from Ice Golems.
 - Fixed the Trailia statue summary window always showing +/- 0% outgoing/incoming light damage.
+- Fixed being able to go to Telluria using Sam's door without having triggered the Telluria intro cutscene.
 - Fixed the level recommendation for the Ruined Fort not having been updated in Alpha 16.
 - Fixed being caught by a Sand Stomper playing the same sound effect as being captured by a Lost Soul.
 - Fixed Flower Boots still using the deprecated OED stat.
