@@ -300,6 +300,7 @@ Game_Interpreter.prototype.pluginCommand = function(command, args) {
     if (command === 'GabPartyFace') this.setGabPartyFace(args);
     if (command === 'GabSound') this.setGabSound(args);
     if (command === 'GabSwitch') this.setGabSwitch(args);
+    if (command === 'GabTime') this.setGabTime(args);
     if (command === 'ShowGab') this.showGab();
     if (command === 'ForceGab') this.forceGab();
     if (command === 'ClearGab') this.clearGab();
@@ -313,12 +314,14 @@ Game_Interpreter.prototype.clearGabInformation = function() {
     this._gabGraphicIndex = 0;
     this._gabSoundName = '';
     this._gabSwitch = 0;
+    this._gabTime = Yanfly.Param.GabBaseTime;
 };
 
 Game_Interpreter.prototype.setGabText = function(args) {
     var text = '';
     for (var i = 0; i < args.length; ++i) {
-      text = text + args[i] + ' ';
+      // text = text + args[i] + ' ';
+      text = text + args[i];
     }
     this._gabText = text;
 };
@@ -408,6 +411,10 @@ Game_Interpreter.prototype.setGabSwitch = function(args) {
     this._gabSwitch = parseInt(args[0]);
 };
 
+Game_Interpreter.prototype.setGabTime = function(args) {
+    this._gabTime = parseInt(args[0]);
+};
+
 Game_Interpreter.prototype.showGab = function() {
     if (!this._gabText) return;
     var gabData = [
@@ -416,7 +423,8 @@ Game_Interpreter.prototype.showGab = function() {
         this._gabGraphicName,
         this._gabGraphicIndex,
         this._gabSoundName,
-        this._gabSwitch
+        this._gabSwitch,
+        this._gabTime
     ];
     var scene = SceneManager._scene;
     if (scene._gabWindow) scene.startGabWindow(gabData);
@@ -431,7 +439,8 @@ Game_Interpreter.prototype.forceGab = function() {
         this._gabGraphicName,
         this._gabGraphicIndex,
         this._gabSoundName,
-        this._gabSwitch
+        this._gabSwitch,
+        this._gabTime
     ];
     var scene = SceneManager._scene;
     if (scene._gabWindow) scene.forceGabWindow(gabData);
@@ -593,6 +602,7 @@ Window_Gab.prototype.checkCurrentGab = function(gabData) {
     if (iteration[3] !== gabData[3]) return false;
     if (iteration[4] !== gabData[4]) return false;
     if (iteration[5] !== gabData[5]) return false;
+    if (iteration[6] !== gabData[6]) return false;
     return true;
 };
 
@@ -605,6 +615,7 @@ Window_Gab.prototype.checkQueuedGabs = function(gabData) {
       if (iteration[3] !== gabData[3]) continue;
       if (iteration[4] !== gabData[4]) continue;
       if (iteration[5] !== gabData[5]) continue;
+      if (iteration[6] !== gabData[6]) continue;
       return true;
     }
     return false;
@@ -621,6 +632,7 @@ Window_Gab.prototype.processNewGabData = function() {
     this._graphicIndex = gabData[3] || 0;
     this._soundName = gabData[4] || 0;
     this._gabSwitch = gabData[5] || 0;
+    this._gabTime = gabData[6] || Yanfly.Param.GabBaseTime;
     this.setupLoadGraphic();
     this._gabLoaded = true;
 };
@@ -656,7 +668,7 @@ WindowLayer.prototype._webglMaskWindow = function(renderSession, win) {
 Window_Gab.prototype.startCountdown = function() {
     this._graphicLoading = false;
     this.contentsOpacity = 255;
-    this._showCount = Yanfly.Param.GabBaseTime;
+    this._showCount = this._gabTime;
     var text = this._text.replace(/\\(.*?)\[(.*?)\]/gi, '');
     this._showCount += text.length * Yanfly.Param.GabTimePerChar;
 };

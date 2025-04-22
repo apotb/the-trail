@@ -28,6 +28,7 @@ INTRO
 - Nerfed Gilded Coin Bit Rate from 1.5x → 1.25x
 - Buffed Seshat's Charm drop rate from 1/100 to 1/50.
 - Starting in Chapter 5, Seshat's Tome will drop at a rate of 1/100.
+- Gaining/losing status effects now shows a short popup instead of using the intrusive message box.
 - Living Plants now drop Worms.
 - Completing the quest "The Dandy Toads of Adon" now rewards you with 300B instead of an Enchanted Anti-Magic Charm.
 - Replaced the Dark Forest's puzzle hint with the Great Pyramid's.

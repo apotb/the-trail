@@ -4631,7 +4631,8 @@ Game_Actor.prototype.updateStateSteps = function(state) {
 Game_Actor.prototype.showAddedStates = function() {
     this.result().addedStateObjects().forEach(function(state) {
         if (state.message1 && !($gamePlayer.terrainTag() == 5 && state.id == 33)) { // Water
-            $gameMessage.add(this._name + state.message1);
+            // $gameMessage.add(this._name + state.message1);
+            this.stateGab(`${this._name}${state.message1} \\c[3]+\\it[${state.id}]`)
         }
     }, this);
 };
@@ -4639,9 +4640,18 @@ Game_Actor.prototype.showAddedStates = function() {
 Game_Actor.prototype.showRemovedStates = function() {
     this.result().removedStateObjects().forEach(function(state) {
         if (state.message4) {
-            $gameMessage.add(this._name + state.message4);
+            // $gameMessage.add(this._name + state.message4);
+            this.stateGab(`${this._name}${state.message4} \\c[2]-\\it[${state.id}]`)
         }
     }, this);
+};
+
+Game_Actor.prototype.stateGab = function(text) {
+    const interpreter = $gameMap._interpreter;
+    interpreter.setGabText(text);
+    interpreter.setGabActorSprite([this.actorId()]);
+    interpreter.setGabTime([0]);
+    interpreter.showGab();
 };
 
 Game_Actor.prototype.stepsForTurn = function() {
