@@ -5528,27 +5528,6 @@ Game_Party.prototype.gainItem = function(item, amount, includeEquip) {
         $gameMap.requestRefresh();
     }
     if (!item) return;
-    if (item == $dataItems[2]) {
-        $gameSystem._leeks = ($gameSystem._leeks || 0) + 1;
-        OrangeGreenworks.setStat('leeks', $gameSystem._leeks);
-    }
-    if (item == $dataWeapons[34]) {
-        OrangeGreenworks.activateAchievement('COLLECT_ORIGINCRYSTAL');
-    }
-    if (DataManager.isArmor(item) && [81, 82, 83, 220].contains(item.baseItemId)) {
-        $gameSystem._poacher = $gameSystem._poacher || [];
-        if (!$gameSystem._poacher.contains(item.baseItemId)) {
-            $gameSystem._poacher.push(item.baseItemId);
-            OrangeGreenworks.setStat('rareEnemies', $gameSystem._poacher.length);
-        }
-    }
-    if (item.itemCategory?.contains('Foodstuffs')) {
-        $gameSystem._food = $gameSystem._food || [];
-        if (!$gameSystem._food.contains(item.id)) {
-            $gameSystem._food.push(item.id);
-            OrangeGreenworks.setStat('uniqueFood', $gameSystem._food.length);
-        }
-    }
 };
 
 Game_Party.prototype.discardMembersEquip = function(item, amount) {

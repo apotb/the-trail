@@ -1123,12 +1123,38 @@ Game_Party.prototype.initActorEquips = function() {
 
 Yanfly.Item.Game_Party_gainItem = Game_Party.prototype.gainItem;
 Game_Party.prototype.gainItem = function(item, amount, includeEquip) {
+    if (!item) return;
     if (DataManager.isIndependent(item)) {
       this.gainIndependentItem(item, amount, includeEquip);
     } else {
       Yanfly.Item.Game_Party_gainItem.call(this, item, amount, includeEquip);
     }
     this.seenItem(item);
+    // Leek
+    if (item == $dataItems[2]) {
+      $gameSystem._leeks = ($gameSystem._leeks || 0) + 1;
+      OrangeGreenworks.setStat('leeks', $gameSystem._leeks);
+    }
+    // Origin Crystal
+    if (item == $dataWeapons[34]) {
+      OrangeGreenworks.activateAchievement('COLLECT_ORIGINCRYSTAL');
+    }
+    // Rare enemy accessories
+    if (DataManager.isArmor(item) && [81, 82, 83, 220].contains(item.id)) {
+      $gameSystem._poacher = $gameSystem._poacher || [];
+      if (!$gameSystem._poacher.contains(item.id)) {
+        $gameSystem._poacher.push(item.id);
+        OrangeGreenworks.setStat('rareEnemies', $gameSystem._poacher.length);
+      }
+    }
+    // Food
+    if (item.itemCategory?.contains('Foodstuffs')) {
+      $gameSystem._food = $gameSystem._food || [];
+      if (!$gameSystem._food.contains(item.id)) {
+        $gameSystem._food.push(item.id);
+        OrangeGreenworks.setStat('uniqueFood', $gameSystem._food.length);
+      }
+    }
 };
 
 Game_Party.prototype.seenItem = function(item) {

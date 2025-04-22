@@ -38,6 +38,7 @@ INTRO
 - Fixed a game-breaking bug where one of the buttons in the Frozen Labyrinth could teleport you to a random map.
 - Fixed a softlock during the cutscene in front of Telluria Castle where the soldier stops you.
 - Fixed treasure popups for items with long names appearing squished and in the wrong position.
+- Fixed achievements "Big Bang" and "Poacher" being unobtainable.
 - Fixed the Trailia statue summary window always showing +/- 0% outgoing/incoming light damage.
 - Fixed the level recommendation for the Ruined Fort not having been updated in Alpha 16.
 - Fixed being caught by a Sand Stomper playing the same sound effect as being captured by a Lost Soul.
