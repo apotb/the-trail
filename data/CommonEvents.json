@@ -14980,13 +14980,6 @@
         ]
       },
       {
-        "code": 355,
-        "indent": 0,
-        "parameters": [
-          "if (!$gameSystem._oneTimeItems) $gameSystem._oneTimeItems = [];"
-        ]
-      },
-      {
         "code": 111,
         "indent": 0,
         "parameters": [
@@ -19321,7 +19314,7 @@
         "indent": 1,
         "parameters": [
           12,
-          "!$gameSystem._oneTimeItems[256]"
+          "!$gameSystem.isQuestObjectiveCompleted(33, 1)"
         ]
       },
       {
@@ -19357,13 +19350,6 @@
           0,
           0,
           1
-        ]
-      },
-      {
-        "code": 355,
-        "indent": 3,
-        "parameters": [
-          "$gameSystem._oneTimeItems[256] = true;"
         ]
       },
       {
@@ -19443,13 +19429,6 @@
     "list": [
       {
         "code": 355,
-        "indent": 0,
-        "parameters": [
-          "$gameSystem._oneTimeItems[258] = true;"
-        ]
-      },
-      {
-        "code": 655,
         "indent": 0,
         "parameters": [
           "$gameSelfSwitches.setValue([43, 103, 'A'], true);"
