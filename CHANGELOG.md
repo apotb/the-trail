@@ -2,7 +2,7 @@
 INTRO
 
 ### Additions
-- Autosaving is here! Every 5 minutes, your progress will be automatically backed up in a unique save slot.
+- Autosaving is here! After a configurable time has passed, your progress will be automatically backed up in a unique save slot.
 - 1 new weapon:
   - Andy's Dusters MK. II
 - 1 new equipment:

@@ -6126,7 +6126,14 @@
         "code": 355,
         "indent": 0,
         "parameters": [
-          "let minutes = 5;"
+          "let minutes = $gameSystem.getAutosaveInterval();"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "if (minutes == 0) minutes = 1 / 60;"
         ]
       },
       {
@@ -6144,8 +6151,16 @@
         ]
       },
       {
-        "code": 250,
+        "code": 111,
         "indent": 0,
+        "parameters": [
+          12,
+          "$gameSystem.getAutosaveInterval() > 0"
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 1,
         "parameters": [
           {
             "name": "Save",
@@ -6157,7 +6172,7 @@
       },
       {
         "code": 231,
-        "indent": 0,
+        "indent": 1,
         "parameters": [
           16,
           "Autosave",
@@ -6173,31 +6188,41 @@
       },
       {
         "code": 230,
-        "indent": 0,
+        "indent": 1,
         "parameters": [
           1
         ]
       },
       {
         "code": 355,
-        "indent": 0,
+        "indent": 1,
         "parameters": [
           "DataManager.saveGame(DataManager.maxSavefiles());"
         ]
       },
       {
         "code": 230,
-        "indent": 0,
+        "indent": 1,
         "parameters": [
           59
         ]
       },
       {
         "code": 235,
-        "indent": 0,
+        "indent": 1,
         "parameters": [
           16
         ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
       },
       {
         "code": 0,
