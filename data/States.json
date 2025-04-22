@@ -4214,16 +4214,6 @@
     "chanceByDamage": 100,
     "traits": [
       {
-        "code": 22,
-        "dataId": 1,
-        "value": 10
-      },
-      {
-        "code": 23,
-        "dataId": 6,
-        "value": 0
-      },
-      {
         "code": 14,
         "dataId": 34,
         "value": 1
@@ -4243,7 +4233,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Incorporeal",
-    "note": "<Custom Passive Condition>\nid = user.enemy().id;\nswitch (id) {\n  case 26:\n    condition = user._uncloaked;\n    break;\n  default:\n    condition = true;\n}\n</Custom Passive Condition>\n\n<Help Description>\nCannot be hit by physical attacks. Immune to \\it[34] and \\it[39].\n</Help Description>",
+    "note": "<Custom React Effect>\nif (this.isPhysical()) value = 0;\n</Custom React Effect>\n\n<Custom Passive Condition>\nid = user.enemy().id;\nswitch (id) {\n  case 26:\n    condition = user._uncloaked;\n    break;\n  default:\n    condition = true;\n}\n</Custom Passive Condition>\n\n<Help Description>\nCannot be hit by physical attacks. Immune to \\it[34] and \\it[39].\n</Help Description>",
     "overlay": 0,
     "priority": 5,
     "removeAtBattleEnd": false,
