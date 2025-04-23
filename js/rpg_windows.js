@@ -5831,7 +5831,11 @@ Window_TitleCommand.initCommandPosition = function() {
 };
 
 Window_TitleCommand.prototype.windowWidth = function() {
-    return 240;
+    return 240 * this.maxCols();
+};
+
+Window_TitleCommand.prototype.maxCols = function() {
+    return 4;
 };
 
 Window_TitleCommand.prototype.updatePlacement = function() {

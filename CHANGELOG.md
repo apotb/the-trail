@@ -3,6 +3,7 @@ INTRO
 
 ### Additions
 - Autosaving is here! After a configurable time has passed, your progress will be automatically backed up in a unique save slot.
+- Added a new title screen.
 - 1 new weapon:
   - Andy's Dusters MK. II
 - 2 new equipment:
