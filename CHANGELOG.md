@@ -39,6 +39,7 @@ INTRO
 - Removed the Crude Hammer.
 - Changed how Incorporeal enemies react to physical damage to make it more clear it's not just a miss.
 - Simplified the armor menu by removing unnecessary categories.
+- Updated the chapter images.
 - Replaced the Dark Forest's puzzle hint with the Great Pyramid's.
 
 ### Bug Fixes
