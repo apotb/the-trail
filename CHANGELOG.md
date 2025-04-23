@@ -46,6 +46,7 @@ INTRO
 - Fixed a hardlock during the cutscene in front of Telluria Castle where the soldier stops you.
 - Fixed being able to go straight to the boss in the Ruined Fort without completing the dungeon.
 - Fixed treasure popups for items with long names appearing squished and in the wrong position.
+- Fixed being able to equip duplicate accessories if at least 1 is modified.
 - Fixed achievements "Big Bang" and "Poacher" being unobtainable.
 - Fixed light break HP bars not showing.
 - Fixed a bug where name boxes would stop showing after opening any crafting menu; this wouldn't go away until changing maps.

@@ -4145,7 +4145,7 @@ Game_Actor.prototype.releaseUnequippableItems = function(forcing) {
         var changed = false;
         for (var i = 0; i < equips.length; i++) {
             var item = equips[i];
-            if (item && (!this.canEquip(item) || item.etypeId !== slots[i])) {
+            if (item && (!this.canEquip(item, i) || item.etypeId !== slots[i])) {
                 if (!forcing) {
                     this.tradeItemWithParty(null, item);
                 }

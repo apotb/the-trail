@@ -550,7 +550,7 @@ Game_BattlerBase.prototype.equips = function() {
     return [];
 };
 
-Game_BattlerBase.prototype.meetAllEquipRequirements = function(item) {
+Game_BattlerBase.prototype.meetAllEquipRequirements = function(item, slot=-1) {
   if (!item.equipRequirements) {
     if (item.baseItemId) {
       item.equipRequirements = DataManager.getBaseItem(item).equipRequirements;
@@ -560,7 +560,7 @@ Game_BattlerBase.prototype.meetAllEquipRequirements = function(item) {
   }
   if (item.id < Yanfly.Param.ItemStartingId) return true; // Non-independent items, if they somehow exist
   if (this.isEquipTypeLocked(item.etypeId)) return true; // Guest party members
-  if ((this.equips().filter(e => e).filter(e => e.etypeId == item.etypeId).some(e => e.baseItemId == item.baseItemId && DataManager.isBaseItem(e)) && DataManager.isBaseItem(item, DataManager.getBaseItem(item), true)) && !this.equips().contains(item)) return false; // No duplicates
+  if (this.equips().some((e, i) => e && e.baseItemId == item.baseItemId && i != slot && e != item)) return false; // No duplicates
   if (!this.checkEquipRequirements(item)) return false; // Per-item equip requirements
   return true;
 };
@@ -693,7 +693,7 @@ Yanfly.EqReq.Window_EquipItem_isEnabled = Window_EquipItem.prototype.isEnabled;
 Window_EquipItem.prototype.isEnabled = function(item) {
     if (item !== null && this._actor) {
       equips = this._actor.equips();
-      if (!this._actor.meetAllEquipRequirements(item)) return false;
+      if (!this._actor.meetAllEquipRequirements(item, this._slotId)) return false;
     }
     return Yanfly.EqReq.Window_EquipItem_isEnabled.call(this, item);
 };
