@@ -1803,610 +1803,43 @@
         ]
       },
       {
-        "code": 117,
+        "code": 122,
         "indent": 0,
         "parameters": [
-          22
-        ]
-      },
-      {
-        "code": 201,
-        "indent": 0,
-        "parameters": [
-          0,
-          145,
+          78,
+          78,
           0,
           0,
-          2,
-          2
+          125
         ]
       },
       {
-        "code": 201,
+        "code": 122,
         "indent": 0,
         "parameters": [
+          79,
+          79,
           0,
-          125,
-          28,
-          48,
-          2,
-          2
+          0,
+          28
         ]
       },
       {
-        "code": 230,
+        "code": 122,
         "indent": 0,
         "parameters": [
-          60
-        ]
-      },
-      {
-        "code": 222,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 230,
-        "indent": 0,
-        "parameters": [
-          30
-        ]
-      },
-      {
-        "code": 205,
-        "indent": 0,
-        "parameters": [
-          -1,
-          {
-            "list": [
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX += 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX += 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX += 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX -= 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX -= 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX -= 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX -= 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX -= 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX -= 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX += 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX += 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX += 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 0
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX += 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX += 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX += 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX -= 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX -= 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX -= 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX -= 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX -= 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX -= 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX += 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX += 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX += 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 230,
-        "indent": 0,
-        "parameters": [
-          60
+          80,
+          80,
+          0,
+          0,
+          48
         ]
       },
       {
         "code": 117,
         "indent": 0,
         "parameters": [
-          53
-        ]
-      },
-      {
-        "code": 216,
-        "indent": 0,
-        "parameters": [
-          0
-        ]
-      },
-      {
-        "code": 205,
-        "indent": 0,
-        "parameters": [
-          -1,
-          {
-            "list": [
-              {
-                "code": 14,
-                "parameters": [
-                  0,
-                  0
-                ],
-                "indent": null
-              },
-              {
-                "code": 0
-              }
-            ],
-            "repeat": false,
-            "skippable": false,
-            "wait": true
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 14,
-            "parameters": [
-              0,
-              0
-            ],
-            "indent": null
-          }
+          29
         ]
       },
       {
@@ -5269,6 +4702,408 @@
         ]
       },
       {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          78,
+          78,
+          0,
+          0,
+          57
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          79,
+          79,
+          0,
+          0,
+          23
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          80,
+          80,
+          0,
+          0,
+          55
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          29
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Sand Stomper Capture",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 24,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Screenshot",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 25,
+    "list": [
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "The rare enemy encounter rate has returned to normal."
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Lure End",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 26,
+    "list": [
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameSystem._demo = $gameSystem._demo || {};"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "!$gameTemp.isDemo()"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "$gameSystem._demo.achievements"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 2,
+        "parameters": [
+          "$gameSystem._demo.achievements.forEach(a => {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  OrangeGreenworks.activateAchievement(a);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "});"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "delete $gameSystem._demo.achievements;"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "$gameSystem._demo.stats"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 2,
+        "parameters": [
+          "for (const stat in $gameSystem._demo.stats) {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  value = $gameSystem._demo.stats[stat];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  OrangeGreenworks.setStat(stat, value);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "}"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "delete $gameSystem._demo.stats;"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Demo Greenworks",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 27,
+    "list": [
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "Actor4",
+          2,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "\\p3That thing keeps getting away..."
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "Actor4",
+          2,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "\\p3How can we kill it faster? \\N[1] and \\N[4]"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "can still use items like \\ii[265]..."
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Gilded Ghost Hint",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 28,
+    "list": [
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "let minutes = $gameSystem.getAutosaveInterval();"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "if (minutes == 0) minutes = 1 / 60;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "this.wait(minutes * 60 * 60);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "//"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameSystem.getAutosaveInterval() > 0"
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "Save",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 231,
+        "indent": 1,
+        "parameters": [
+          16,
+          "Autosave",
+          1,
+          0,
+          640,
+          48,
+          200,
+          200,
+          255,
+          0
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "DataManager.saveGame(DataManager.maxSavefiles());"
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          59
+        ]
+      },
+      {
+        "code": 235,
+        "indent": 1,
+        "parameters": [
+          16
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Autosave",
+    "switchId": 1,
+    "trigger": 2
+  },
+  {
+    "id": 29,
+    "list": [
+      {
         "code": 117,
         "indent": 0,
         "parameters": [
@@ -5291,10 +5126,10 @@
         "code": 201,
         "indent": 0,
         "parameters": [
-          0,
-          57,
-          23,
-          55,
+          1,
+          78,
+          79,
+          80,
           2,
           2
         ]
@@ -5303,7 +5138,7 @@
         "code": 230,
         "indent": 0,
         "parameters": [
-          60
+          30
         ]
       },
       {
@@ -5315,7 +5150,7 @@
         "code": 230,
         "indent": 0,
         "parameters": [
-          30
+          20
         ]
       },
       {
@@ -5819,7 +5654,7 @@
         "code": 230,
         "indent": 0,
         "parameters": [
-          60
+          40
         ]
       },
       {
@@ -5881,369 +5716,7 @@
         "parameters": []
       }
     ],
-    "name": "Sand Stomper Capture",
-    "switchId": 1,
-    "trigger": 0
-  },
-  {
-    "id": 24,
-    "list": [
-      {
-        "code": 0,
-        "indent": 0,
-        "parameters": []
-      }
-    ],
-    "name": "Screenshot",
-    "switchId": 1,
-    "trigger": 0
-  },
-  {
-    "id": 25,
-    "list": [
-      {
-        "code": 101,
-        "indent": 0,
-        "parameters": [
-          "",
-          0,
-          0,
-          2
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 0,
-        "parameters": [
-          "The rare enemy encounter rate has returned to normal."
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 0,
-        "parameters": []
-      }
-    ],
-    "name": "Lure End",
-    "switchId": 1,
-    "trigger": 0
-  },
-  {
-    "id": 26,
-    "list": [
-      {
-        "code": 355,
-        "indent": 0,
-        "parameters": [
-          "$gameSystem._demo = $gameSystem._demo || {};"
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          12,
-          "!$gameTemp.isDemo()"
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 1,
-        "parameters": [
-          12,
-          "$gameSystem._demo.achievements"
-        ]
-      },
-      {
-        "code": 355,
-        "indent": 2,
-        "parameters": [
-          "$gameSystem._demo.achievements.forEach(a => {"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 2,
-        "parameters": [
-          "  OrangeGreenworks.activateAchievement(a);"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 2,
-        "parameters": [
-          "});"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 2,
-        "parameters": [
-          "delete $gameSystem._demo.achievements;"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 1,
-        "parameters": [
-          12,
-          "$gameSystem._demo.stats"
-        ]
-      },
-      {
-        "code": 355,
-        "indent": 2,
-        "parameters": [
-          "for (const stat in $gameSystem._demo.stats) {"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 2,
-        "parameters": [
-          "  value = $gameSystem._demo.stats[stat];"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 2,
-        "parameters": [
-          "  OrangeGreenworks.setStat(stat, value);"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 2,
-        "parameters": [
-          "}"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 2,
-        "parameters": [
-          "delete $gameSystem._demo.stats;"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 0,
-        "indent": 0,
-        "parameters": []
-      }
-    ],
-    "name": "Demo Greenworks",
-    "switchId": 1,
-    "trigger": 0
-  },
-  {
-    "id": 27,
-    "list": [
-      {
-        "code": 101,
-        "indent": 0,
-        "parameters": [
-          "Actor4",
-          2,
-          0,
-          2
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 0,
-        "parameters": [
-          "\\p3That thing keeps getting away..."
-        ]
-      },
-      {
-        "code": 101,
-        "indent": 0,
-        "parameters": [
-          "Actor4",
-          2,
-          0,
-          2
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 0,
-        "parameters": [
-          "\\p3How can we kill it faster? \\N[1] and \\N[4]"
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 0,
-        "parameters": [
-          "can still use items like \\ii[265]..."
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 0,
-        "parameters": []
-      }
-    ],
-    "name": "Gilded Ghost Hint",
-    "switchId": 1,
-    "trigger": 0
-  },
-  {
-    "id": 28,
-    "list": [
-      {
-        "code": 355,
-        "indent": 0,
-        "parameters": [
-          "let minutes = $gameSystem.getAutosaveInterval();"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 0,
-        "parameters": [
-          "if (minutes == 0) minutes = 1 / 60;"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 0,
-        "parameters": [
-          "this.wait(minutes * 60 * 60);"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 0,
-        "parameters": [
-          "//"
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          12,
-          "$gameSystem.getAutosaveInterval() > 0"
-        ]
-      },
-      {
-        "code": 250,
-        "indent": 1,
-        "parameters": [
-          {
-            "name": "Save",
-            "volume": 90,
-            "pitch": 100,
-            "pan": 0
-          }
-        ]
-      },
-      {
-        "code": 231,
-        "indent": 1,
-        "parameters": [
-          16,
-          "Autosave",
-          1,
-          0,
-          640,
-          48,
-          200,
-          200,
-          255,
-          0
-        ]
-      },
-      {
-        "code": 230,
-        "indent": 1,
-        "parameters": [
-          1
-        ]
-      },
-      {
-        "code": 355,
-        "indent": 1,
-        "parameters": [
-          "DataManager.saveGame(DataManager.maxSavefiles());"
-        ]
-      },
-      {
-        "code": 230,
-        "indent": 1,
-        "parameters": [
-          59
-        ]
-      },
-      {
-        "code": 235,
-        "indent": 1,
-        "parameters": [
-          16
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 0,
-        "indent": 0,
-        "parameters": []
-      }
-    ],
-    "name": "Autosave",
-    "switchId": 1,
-    "trigger": 2
-  },
-  {
-    "id": 29,
-    "list": [
-      {
-        "code": 0,
-        "indent": 0,
-        "parameters": []
-      }
-    ],
-    "name": "",
+    "name": "Capture",
     "switchId": 1,
     "trigger": 0
   },
@@ -11922,607 +11395,7 @@
         "code": 117,
         "indent": 0,
         "parameters": [
-          22
-        ]
-      },
-      {
-        "code": 201,
-        "indent": 0,
-        "parameters": [
-          0,
-          145,
-          0,
-          0,
-          2,
-          2
-        ]
-      },
-      {
-        "code": 201,
-        "indent": 0,
-        "parameters": [
-          1,
-          78,
-          79,
-          80,
-          2,
-          2
-        ]
-      },
-      {
-        "code": 230,
-        "indent": 0,
-        "parameters": [
-          60
-        ]
-      },
-      {
-        "code": 222,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 230,
-        "indent": 0,
-        "parameters": [
-          30
-        ]
-      },
-      {
-        "code": 205,
-        "indent": 0,
-        "parameters": [
-          -1,
-          {
-            "list": [
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX += 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX += 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX += 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX -= 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX -= 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX -= 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX -= 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX -= 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX -= 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX += 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX += 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX += 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 0
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX += 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX += 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX += 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX -= 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX -= 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX -= 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX -= 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX -= 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX -= 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX += 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX += 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX += 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 230,
-        "indent": 0,
-        "parameters": [
-          60
-        ]
-      },
-      {
-        "code": 117,
-        "indent": 0,
-        "parameters": [
-          53
-        ]
-      },
-      {
-        "code": 216,
-        "indent": 0,
-        "parameters": [
-          0
-        ]
-      },
-      {
-        "code": 205,
-        "indent": 0,
-        "parameters": [
-          -1,
-          {
-            "list": [
-              {
-                "code": 14,
-                "parameters": [
-                  0,
-                  0
-                ],
-                "indent": null
-              },
-              {
-                "code": 0
-              }
-            ],
-            "repeat": false,
-            "skippable": false,
-            "wait": true
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 14,
-            "parameters": [
-              0,
-              0
-            ],
-            "indent": null
-          }
+          29
         ]
       },
       {
