@@ -393,6 +393,7 @@ if(!Imported["SumRndmDde Game Upgrade"]) {
 //-----------------------------------------------------------------------------
 
 const params = PluginManager.parameters('SRD_PreloaderCore');
+const isPlaytest = !!Utils.isOptionValid('test');
 
 if(params['Preload Path 20']) {
 	alert("Please update the parameters for 'SRD_PreloaderCore'!");
@@ -418,8 +419,7 @@ _.preloadME = String(params['Preload ME']).trim();
 _.preloadSE = String(params['Preload SE']).trim();
 
 _.preloadSystem = String(params['Preload System']).trim();
-_.preloadAnimations = String(params['Preload Animations']).trim();
-if (Utils.isOptionValid('test') == 1) _.preloadAnimations = "none";
+_.preloadAnimations = isPlaytest ? "none" : String(params['Preload Animations']).trim();
 _.preloadBattlebacks1 = String(params['Preload Battlebacks1']).trim();
 _.preloadBattlebacks2 = String(params['Preload Battlebacks2']).trim();
 _.preloadCharacters = String(params['Preload Characters']).trim();
@@ -535,7 +535,7 @@ _.preloadAudioFolder = function(folder, variable) {
 
 _.setupAudioPreloads = function() {
 	this.audioPreloadCount = 0;
-	if (Utils.isOptionValid('test') == 1) {
+	if (isPlaytest) {
 		this.preloadAudioFolder('bgm', "important");
 	} else {
 		this.preloadAudioFolder('bgm', this.preloadBGM);
