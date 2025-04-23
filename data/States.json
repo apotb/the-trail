@@ -7037,7 +7037,13 @@
     "id": 206,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "traits": [],
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 6,
+        "value": 2
+      }
+    ],
     "iconIndex": 0,
     "maxTurns": 1,
     "message1": "",
@@ -7046,10 +7052,10 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "",
-    "note": "",
+    "name": "Ice Skates",
+    "note": "<AGI Plus: +100>\n\n<Custom Passive Condition>\ncondition = $gamePlayer.terrainTag() == 6;\n</Custom Passive Condition>",
     "overlay": 0,
-    "priority": 50,
+    "priority": 0,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,

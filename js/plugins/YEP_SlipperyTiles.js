@@ -173,6 +173,11 @@ Game_CharacterBase.prototype.realMoveSpeed = function() {
 // Game_Player
 //=============================================================================
 
+Game_Player.prototype.onSlipperyFloor = function() {
+  if ($gameParty.leader().hasArmor($dataArmors[223])) return false;
+  return Game_CharacterBase.prototype.onSlipperyFloor.call(this);
+};
+
 Yanfly.Slip.Game_Player_isDashing = Game_Player.prototype.isDashing;
 Game_Player.prototype.isDashing = function() {
     if (this.onSlipperyFloor()) return false;

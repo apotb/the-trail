@@ -5,9 +5,9 @@ INTRO
 - Autosaving is here! After a configurable time has passed, your progress will be automatically backed up in a unique save slot.
 - 1 new weapon:
   - Andy's Dusters MK. II
-- 1 new equipment:
-  - 1 new accessory:
-    - Haloweave Gloves
+- 2 new equipment:
+  - Ice Skates
+  - Haloweave Gloves
 
 ### Changes
 - Buffed temporary party members:

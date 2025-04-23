@@ -5867,5 +5867,32 @@
       0
     ],
     "price": 1000
+  },
+  {
+    "id": 223,
+    "atypeId": 1,
+    "description": "Sturdy skates that grip even the slickest of surfaces. Grants a ridiculous amount\nof AGI on icy surfaces. Prevents sliding on ice if equipped by the party leader.",
+    "etypeId": 5,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 0.8
+      }
+    ],
+    "iconIndex": 826,
+    "name": "Ice Skates",
+    "note": "<Passive State: 206>",
+    "params": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      10,
+      0
+    ],
+    "price": 50
   }
 ]
