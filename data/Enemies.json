@@ -1962,7 +1962,7 @@
     ],
     "gold": 400,
     "name": "The Warden",
-    "note": "<Armor Weakness: Slashing>\n<Element: Dark>\n\n<Sideview Battler: Evil1_4>\n<Weapon Image: 229>\n<Attack Animation: 6>\n<HP Gauge Width: 216>\n\n\n<AI Priority>\nState === Bleeding +++ User HP% param >= 33%: Purify, User\nState === Poisoned +++ User HP% param >= 33%: Purify, User\n</AI Priority>\n\n<Enemy Drops>\nThe Warden's Trade-off: 100%\nThe Warden's Belt: 100%\nShadowplate Armor: 100%\nPhantasmal Robes: 100%\nPhantasmal Vestments: 100%\nShadowspec Leathers: 100%\nPhantasmal Scarf: 100%\nAncient Outfit: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n<Element: Dark>\n\n<Sideview Battler: Evil1_4>\n<Weapon Image: 229>\n<Attack Animation: 6>\n<HP Gauge Width: 216>\n\n<AI Priority>\nState === Poisoned +++ User HP% param >= 33%: Dispell, User\n</AI Priority>\n\n<Enemy Drops>\nThe Warden's Trade-off: 100%\nThe Warden's Belt: 100%\nShadowplate Armor: 100%\nPhantasmal Robes: 100%\nPhantasmal Vestments: 100%\nShadowspec Leathers: 100%\nPhantasmal Scarf: 100%\nAncient Outfit: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
     "params": [
       7500,
       999,

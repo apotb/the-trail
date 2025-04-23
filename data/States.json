@@ -1168,7 +1168,7 @@
     "minTurns": 3,
     "motion": 0,
     "name": "Bleeding",
-    "note": "<Category: debuff>\n<Category: weak debuff>\n\n<animationRow:23>\n<yAnchor: 0.75>\n\n<Custom DoT Formula>\nvalue = Math.ceil(b.hp * 0.2);\n</Custom DoT Formula>\n\n<Help Description>\n20% of this battler's HP will be lost at the end of every turn.\n</Help Description>",
+    "note": "<Category: debuff>\n<Category: severe debuff>\n\n<animationRow:23>\n<yAnchor: 0.75>\n\n<Custom DoT Formula>\nvalue = Math.ceil(b.hp * 0.2);\n</Custom DoT Formula>\n\n<Help Description>\n20% of this battler's HP will be lost at the end of every turn.\n</Help Description>",
     "overlay": 0,
     "priority": 48,
     "removeAtBattleEnd": true,
