@@ -11,6 +11,7 @@ INTRO
   - Haloweave Gloves
 
 ### Changes
+- Various graphical improvements have been made.
 - Buffed temporary party members:
   - Doubled Claire's outgoing healing.
 - Nerfed several enemies:
