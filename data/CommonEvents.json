@@ -3462,6 +3462,10 @@
           {
             "list": [
               {
+                "code": 36,
+                "indent": null
+              },
+              {
                 "code": 11,
                 "indent": null
               },
@@ -3478,12 +3482,26 @@
                 "indent": null
               },
               {
+                "code": 35,
+                "indent": null
+              },
+              {
                 "code": 0
               }
             ],
             "repeat": false,
             "skippable": true,
             "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 36,
+            "indent": null
           }
         ]
       },
@@ -3511,6 +3529,16 @@
                 "pan": 0
               }
             ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 35,
             "indent": null
           }
         ]
