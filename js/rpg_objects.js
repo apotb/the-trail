@@ -4647,7 +4647,7 @@ Game_Actor.prototype.showRemovedStates = function() {
 
 Game_Actor.prototype.stateGab = function(text) {
     const interpreter = $gameMap._interpreter;
-    interpreter.setGabText(text);
+    interpreter.setGabText([text]);
     interpreter.setGabActorSprite([this.actorId()]);
     interpreter.setGabTime([0]);
     interpreter.showGab();

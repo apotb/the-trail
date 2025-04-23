@@ -320,8 +320,7 @@ Game_Interpreter.prototype.clearGabInformation = function() {
 Game_Interpreter.prototype.setGabText = function(args) {
     var text = '';
     for (var i = 0; i < args.length; ++i) {
-      // text = text + args[i] + ' ';
-      text = text + args[i];
+      text = text + args[i] + ' ';
     }
     this._gabText = text;
 };
