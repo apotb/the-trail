@@ -55,6 +55,7 @@ INTRO
 - Fixed the Trailia statue summary window always showing +/- 0% outgoing/incoming light damage.
 - Fixed being able to go to Telluria using Sam's door without having triggered the Telluria intro cutscene.
 - Fixed Ice Golems not respawning.
+- Fixed Heedup Berry not being usable outside of battle if at full HP.
 - Fixed followers standing on spikes after pressing button in Laeryidyean's Forest - Left Connector puzzle.
 - Fixed Mimics not resetting after Give Up.
 - Fixed the level recommendation for the Ruined Fort not having been updated in Alpha 16.

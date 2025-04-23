@@ -1943,15 +1943,16 @@ Game_Action.prototype.evaluateWithTarget = function(target) {
 };
 
 Game_Action.prototype.testApply = function(target) {
-    if (this._item._dataClass === "skill") {
-        var _return;
-        var skill = $dataSkills[this._item._itemId];
-        target.states().forEach(function(state) {
-            state.category.forEach(function(category) {
-                if (!!skill.removeCategory[category]) _return = true;
-            })
+    let db;
+    if (this._item._dataClass === "skill") db = $dataSkills;
+    if (this._item._dataClass === "item") db = $dataItems;
+    var _return;
+    var item = db[this._item._itemId];
+    target.states().forEach(function(state) {
+        state.category.forEach(function(category) {
+            if (!!item.removeCategory[category]) _return = true;
         })
-    }
+    })
     return (this.isForDeadFriend() === target.isDead() &&
             ($gameParty.inBattle() || this.isForOpponent() ||
             (this.isHpRecover() && target.hp < target.mhp) ||
