@@ -3176,12 +3176,12 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Blow a magical gust of wind at an enemy, decreasing their\nATK and MAT. Has a high critical hit chance. \\c[27]\\bpdamage[400]%\\c[0] MAT rate.",
+    "description": "Blow a magical gust of wind at an enemy, with a chance of decreasing\ntheir ATK and MAT. Has a high critical hit chance. \\c[27]\\bpdamage[400]%\\c[0] MAT rate.",
     "effects": [
       {
         "code": 21,
         "dataId": 162,
-        "value1": 1,
+        "value1": 0.25,
         "value2": 0
       }
     ],

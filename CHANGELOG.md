@@ -15,6 +15,7 @@ INTRO
 - Various graphical improvements have been made.
 - Skill rebalancing:
   - Nerfed Wand Impulse MAT rate from 400% → 325%
+  - Nerfed Magical Breeze Winded rate from 100% → 25%
   - Nerfed Cure II MAT rate from 180% → 150%
   - Buffed Channel Divinity II MAT rate from 400% → 450%
   - Removed Soul Barrier I from Player 3's skill pool.
