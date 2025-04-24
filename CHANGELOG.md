@@ -34,10 +34,11 @@ INTRO
   - Scaly Gloves: ATK 5 → 3; HIT +8% → +6%; CRI +2% → +1.5%
   - These changes effectively swap Henry's Gloves and Scaly Gloves in progression.
     - Although Henry's Gloves can be obtained earlier, they're more "exclusive" since they are a boss drop.
+- Gaining/losing status effects now shows a short popup instead of using the intrusive message box.
 - Nerfed Gilded Coin Bit Rate from 1.5x → 1.25x
 - Buffed Seshat's Charm drop rate from 1/100 to 1/50.
 - Starting in Chapter 5, Seshat's Tome will drop at a rate of 1/100.
-- Gaining/losing status effects now shows a short popup instead of using the intrusive message box.
+- Buffed Stalactite drop rate from 1/30 → 1/20.
 - Living Plants now drop Worms.
 - Increased time for Exhaustion to set in from 36 → 48 hours.
 - Completing the quest "The Dandy Toads of Adon" now rewards you with 300B instead of an Enchanted Anti-Magic Charm.
