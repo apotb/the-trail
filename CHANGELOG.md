@@ -9,6 +9,7 @@ INTRO
 - 2 new equipment:
   - Ice Skates
   - Haloweave Gloves
+- Added a golden First Cleric statue in the Frozen Labyrinth.
 
 ### Changes
 - Various graphical improvements have been made.
