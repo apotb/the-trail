@@ -5930,7 +5930,7 @@
         "code": 108,
         "indent": 0,
         "parameters": [
-          "# Only runs every 30 frames"
+          "# 1 in-game second per 1 real-life second"
         ]
       },
       {
@@ -5946,7 +5946,7 @@
         "code": 230,
         "indent": 1,
         "parameters": [
-          60
+          30
         ]
       },
       {
@@ -5963,7 +5963,7 @@
         "code": 230,
         "indent": 1,
         "parameters": [
-          30
+          60
         ]
       },
       {
@@ -15871,7 +15871,7 @@
         "parameters": [
           0,
           93,
-          0
+          1
         ]
       },
       {
@@ -15889,7 +15889,7 @@
         "parameters": [
           93,
           93,
-          1
+          0
         ]
       },
       {
@@ -15906,7 +15906,7 @@
         "code": 401,
         "indent": 1,
         "parameters": [
-          "The flow of time has returned to its normal speed!"
+          "The flow of time has sped up!"
         ]
       },
       {
@@ -15934,7 +15934,7 @@
         "parameters": [
           93,
           93,
-          0
+          1
         ]
       },
       {
@@ -15951,7 +15951,7 @@
         "code": 401,
         "indent": 1,
         "parameters": [
-          "The flow of time has slowed down!"
+          "The flow of time has returned to normal."
         ]
       },
       {
