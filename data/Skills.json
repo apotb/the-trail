@@ -417,7 +417,7 @@
     "message2": "",
     "mpCost": 13,
     "name": "Cure II",
-    "note": "<Boost Damage>\n<Boost Turns>\n\n<Mastery Group: 11>\n\n<Damage Formula>\nvalue = a.mat * 1.5;\nif ($gameParty.inBattle()) b.addState(28);\n</Damage Formula>\n\n<action copy: skill:11>",
+    "note": "<Boost Damage>\n<Boost Turns>\n\n<Mastery Group: 11>\n\n<Damage Formula>\nvalue = a.mat * 1.5;\nif ($gameParty.inBattle() && b.isActor()) b.addState(28);\n</Damage Formula>\n\n<action copy: skill:11>",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,

@@ -36,6 +36,7 @@ INTRO
   - These changes effectively swap Henry's Gloves and Scaly Gloves in progression.
     - Although Henry's Gloves can be obtained earlier, they're more "exclusive" since they are a boss drop.
 - Gaining/losing status effects now shows a short popup instead of using the intrusive message box.
+- Enemies using Cure II will no longer apply Rejuvenation.
 - Nerfed Gilded Coin Bit Rate from 1.5x → 1.25x
 - Buffed Seshat's Charm drop rate from 1/100 to 1/50.
 - Starting in Chapter 5, Seshat's Tome will drop at a rate of 1/100.
