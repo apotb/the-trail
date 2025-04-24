@@ -14,9 +14,10 @@ INTRO
 - Various graphical improvements have been made.
 - Skill rebalancing:
   - Nerfed Wand Impulse MAT rate from 400% → 325%
-  - Nerfed Cure II MAT rate from 180% → 150%.
+  - Nerfed Cure II MAT rate from 180% → 150%
+  - Buffed Channel Divinity II MAT rate from 400% → 450%
   - Removed Soul Barrier I from Player 3's skill pool.
-  - Player 3 now learns Dispell at level 16 → 17.
+  - Player 3 now learns Dispell at level 16 → 17
 - Buffed temporary party members:
   - Doubled Claire's outgoing healing.
 - Rebalanced several enemies:
@@ -27,7 +28,7 @@ INTRO
   - Werewolf: MDF 60 → 55
   - Ice Slime: MDF 75 → 60
   - Polar Bear: MDF 65 → 55
-  - Tellurium Golems: Tellurium Pulse deals an additional 20% of the target's HP
+  - Tellurium Golems: Tellurium Pulse deals an additional 20% of the target's HP.
 - Revamped glove progression:
   - Bandito Gloves: CRI +1% → +0.5%
   - Henry's Gloves: ATK 2 → 4; HIT +6% → +8%; CRI +1.5% → +2%; Upgrade Slots 0 → 1
