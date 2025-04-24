@@ -69,6 +69,7 @@ INTRO
 - Fixed a softlock where if you leave Mark's house then go back without following him, you'd be stuck outside his house.
 - Fixed a hardlock during the cutscene in front of Telluria Castle where the soldier stops you.
 - Fixed being able to go straight to the boss in the Ruined Fort without completing the dungeon.
+- Fixed sleeping at the inn while Exhausted causing you to wake up with only 90% of your HP.
 - Fixed treasure popups for items with long names appearing squished and in the wrong position.
 - Fixed the Fish-Flavored Fish being unobtainable.
 - Fixed being able to equip duplicate accessories if at least 1 is modified.
