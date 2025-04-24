@@ -338,11 +338,11 @@
     "damage": {
       "critical": false,
       "elementId": 2,
-      "formula": "a.mat * 4 - b.mdf * 2",
+      "formula": "a.mat * 3.25 - b.mdf * 2",
       "type": 1,
       "variance": 5
     },
-    "description": "Creates an explosion behind enemy lines. It isn't too effective against single enemies, but\nit devastates groups. Reduces MAT by 50% the next turn. \\c[27]\\bpdamage[400]%\\c[0] MAT rate.",
+    "description": "Creates an explosion behind enemy lines. It isn't too effective against single enemies, but\nit devastates groups. Reduces MAT by 50% the next turn. \\c[27]\\bpdamage[325]%\\c[0] MAT rate.",
     "effects": [
       {
         "code": 21,
