@@ -4159,7 +4159,7 @@
     ],
     "gold": 60,
     "name": "Chilling Apparition",
-    "note": "<Element: Ice, Dark>\n<Element Absorb: Ice>\n<Passive State: 57, 129, 144>\n\n<Sideview Battler: FloatingSkull_6>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 4>\n\n<AI Priority>\nRandom 50% +++ State !== Deep Freeze: Ice II\nRandom 50% +++ State !== Blinded: Dark Orb\nAlways: Attack\n</AI Priority>\n\n<Enemy Drops>\nPocket Mirror: 5%\nWarm Scarf: 5%\nIce Cube: 75%\nIce Cube: 75%\nFrozen Jewel: 20%\nIce Skates: 1%\nMAT Scroll ★: 10%\nIce Essence: 20%\n</Enemy Drops>\n\n<Night Boost>\nDark Essence: 20% +20%\n</Night Boost>",
+    "note": "<Element: Ice, Dark>\n<Element Absorb: Ice>\n<Passive State: 57, 129, 144>\n\n<Sideview Battler: FloatingSkull_6>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 4>\n\n<AI Priority>\nRandom 50% +++ State !== Deep Freeze: Ice II\nRandom 50% +++ State !== Blinded: Dark Orb\nAlways: Attack\n</AI Priority>\n\n<Enemy Drops>\nPocket Mirror: 5%\nWarm Scarf: 5%\nFrozen Jewel: 20%\nIce Skates: 1%\nMAT Scroll ★: 10%\nIce Essence: 20%\n</Enemy Drops>\n\n<Night Boost>\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       2000,
       0,
@@ -4225,7 +4225,7 @@
     ],
     "gold": 60,
     "name": "Werewolf",
-    "note": "<Armor Weakness: Slashing>\n<Element: Ice>\n<Passive State: 144>\n\n<Sideview Battler: Werewolf_4>\n<Scale Sprite: 200%>\n<Attack Animation: 19>\n\n<Enemy Drops>\nWarm Scarf: 5%\nIce Cube: 75%\nIce Cube: 75%\nFrozen Jewel: 20%\nIce Skates: 1%\nRazor-Sharp Fang: 5%\nIce Essence: 20%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n<Element: Ice>\n<Passive State: 144>\n\n<Sideview Battler: Werewolf_4>\n<Scale Sprite: 200%>\n<Attack Animation: 19>\n\n<Enemy Drops>\nWarm Scarf: 5%\nFrozen Jewel: 20%\nIce Skates: 1%\nRazor-Sharp Fang: 5%\nIce Essence: 20%\n</Enemy Drops>",
     "params": [
       2500,
       0,
@@ -4551,7 +4551,7 @@
     ],
     "gold": 48,
     "name": "Ice Slime",
-    "note": "<Element: Ice>\n<Element Absorb: Ice>\n<Passive State: 136, 144>\n\n<Sideview Battler: Monster2_6>\n<Scale Sprite: 200%>\n<Attack Animation: 4>\n\n<AI Priority>\nState === Confused: Purify\nState === Poisoned: Purify\nState === Paralyzed: Purify\n</AI Priority>\n\n<Enemy Drops>\nSlime Scarf: 5%\nWarm Scarf: 5%\nIcy Gel: 75%\nIcy Gel: 75%\nIce Cube: 75%\nIce Cube: 75%\nElixir: 20%\nLarge Elixir: 10%\nFrozen Jewel: 20%\nIce Skates: 0.5%\nCondensed Icy Gel: 5%\nIce Essence: 20%\n</Enemy Drops>",
+    "note": "<Element: Ice>\n<Element Absorb: Ice>\n<Passive State: 136, 144>\n\n<Sideview Battler: Monster2_6>\n<Scale Sprite: 200%>\n<Attack Animation: 4>\n\n<AI Priority>\nState === Confused: Purify\nState === Poisoned: Purify\nState === Paralyzed: Purify\n</AI Priority>\n\n<Enemy Drops>\nSlime Scarf: 5%\nWarm Scarf: 5%\nIcy Gel: 75%\nIcy Gel: 75%\nElixir: 20%\nLarge Elixir: 10%\nFrozen Jewel: 20%\nIce Skates: 0.5%\nCondensed Icy Gel: 5%\nIce Essence: 20%\n</Enemy Drops>",
     "params": [
       1500,
       60,
