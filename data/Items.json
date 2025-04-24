@@ -4560,7 +4560,7 @@
   {
     "id": 154,
     "animationId": 0,
-    "consumable": false,
+    "consumable": true,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -4568,17 +4568,17 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A special salvage kit that allows\nyou to take apart \\ii[43].",
+    "description": "",
     "effects": [],
     "hitType": 0,
-    "iconIndex": 268,
+    "iconIndex": 0,
     "itypeId": 1,
-    "name": "Wood Salvage Kit",
-    "note": "<Disassembler: Wood>\n\n<Synthesis Ingredients>\nWoodcutting Axe\nCopper Cluster: 3\n</Synthesis Ingredients>\n<Mask Name: Another Salvager>\n<Synthesis SE: Equip3>",
-    "occasion": 3,
-    "price": 50,
+    "name": "",
+    "note": "Was once the Wood Salvage Kit.",
+    "occasion": 0,
+    "price": 0,
     "repeats": 1,
-    "scope": 0,
+    "scope": 7,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0

@@ -469,20 +469,20 @@ DataManager.processIDANotetags1 = function(group) {
         obj.disassembleItems[evalType] = obj.disassembleItems[evalType] || [];
         obj.disassembleItems[evalType].push(line.trim());
       } else if (line.match(/<DISASSEMBLER>/i)) {
-        obj.nonIndependent = true;
+        // obj.nonIndependent = true;
         if (!obj.disassemblerTypes.contains('ALL')) {
           obj.disassemblerTypes.push('ALL');
           obj.disassemblerRates.push(0);
         }
       } else if (line.match(/<DISASSEMBLER:[ ]([\+\-]\d+)([%％])>/i)) {
-        obj.nonIndependent = true;
+        // obj.nonIndependent = true;
         var rate = parseFloat(RegExp.$1) * 0.01;
         if (!obj.disassemblerTypes.contains('ALL')) {
           obj.disassemblerTypes.push('ALL');
           obj.disassemblerRates.push(rate);
         }
       } else if (line.match(/<DISASSEMBLER:[ ](.*)[ ]([\+\-]\d+)([%％])>/i)) {
-        obj.nonIndependent = true;
+        // obj.nonIndependent = true;
         var type = String(RegExp.$1).toUpperCase().trim();
         var rate = parseFloat(RegExp.$2) * 0.01;
         if (!obj.disassemblerTypes.contains('ALL')) {
@@ -494,7 +494,7 @@ DataManager.processIDANotetags1 = function(group) {
           obj.disassemblerRates.push(rate);
         }
       } else if (line.match(/<DISASSEMBLER:[ ](.*)>/i)) {
-        obj.nonIndependent = true;
+        // obj.nonIndependent = true;
         var type = String(RegExp.$1).toUpperCase().trim();
         if (!obj.disassemblerTypes.contains('ALL')) {
           obj.disassemblerTypes.push('ALL');
@@ -927,7 +927,7 @@ Window_DisassemblerList.prototype.setItem = function(item) {
 
 Window_DisassemblerList.prototype.includes = function(item) {
     if (!item) return false;
-    if (DataManager.isIndependent(item)) return false;
+    if (item.id > Yanfly.Param.ItemStartingId) return false;
     if (!this.containsType(item)) return false;
     return true;
 };
@@ -953,7 +953,7 @@ Window_DisassemblerList.prototype.isEnabled = function(item) {
 };
 
 Window_DisassemblerList.prototype.makeItemList = function() {
-    this._data = $dataItems.filter(function(item) {
+    this._data = $dataItems.concat($dataWeapons).concat($dataArmors).filter(function(item) {
         return this.includes(item);
     }, this);
 };

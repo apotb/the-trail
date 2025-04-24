@@ -56,6 +56,7 @@ INTRO
 - Moved the Voyager Boots and Globetrotter Boots out of the General Store and into actual shops.
 - The Dispel Potion's description now shows what status effects it cures.
 - Removed the Crude Hammer.
+- Removed the Wood Salvage Kit; the Woodcutting Axe now serves its original function.
 - Changed how Incorporeal enemies react to physical damage to make it more clear it's not just a miss.
 - Simplified the armor menu by removing unnecessary categories.
 - Updated the chapter images.
