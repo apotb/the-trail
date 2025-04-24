@@ -224,5 +224,5 @@ var $plugins =
 {"name":"TelluriaCastleTownMapsFix","status":true,"description":"","parameters":{}},
 {"name":"Vanity","status":true,"description":"","parameters":{}},
 {"name":"AutosaveInterval","status":true,"description":"","parameters":{}},
-{"name":"Filter","status":true,"description":"","parameters":{}}
+{"name":"Filter","status":false,"description":"","parameters":{}}
 ];
