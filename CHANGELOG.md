@@ -47,6 +47,7 @@ INTRO
 - Replaced the Dark Forest's puzzle hint with the Great Pyramid's.
 
 ### Bug Fixes
+- Fixed Mark not being in his house, preventing the player from completing the Prophecy Defiers quest.
 - Fixed a game-breaking bug where one of the buttons in the Frozen Labyrinth could teleport you to a random map.
 - Fixed a softlock where if you leave Mark's house then go back without following him, you'd be stuck outside his house.
 - Fixed a hardlock during the cutscene in front of Telluria Castle where the soldier stops you.
