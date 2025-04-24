@@ -3728,6 +3728,7 @@ Game_Battler.prototype.onAllActionsEnd = function() {
     this.clearResult();
     this.removeStatesAuto(1);
     this.removeBuffsAuto();
+    delete this._preMP; // Used for [P] Topped Off
 };
 
 Game_Battler.prototype.onTurnEnd = function() {

@@ -2275,6 +2275,7 @@ BattleManager.updateActionTargetList = function() {
 BattleManager.startAction = function() {
     var subject = this._subject;
     if (!subject) return this.endAction();
+    subject._preMP = subject.mp; // Used for [P] Topped Off
     var action = subject.currentAction();
     this._action = action;
     if (!this._action) return this.endAction();

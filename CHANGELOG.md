@@ -77,6 +77,7 @@ INTRO
 - Fixed Ice Golems not respawning.
 - Fixed Ice Guard not granting +1 BP.
 - Fixed Heedup Berry not being usable outside of battle if at full HP.
+- Fixed [P] Topped Off always being on regardless of MP.
 - Fixed followers standing on spikes after pressing button in Laeryidyean's Forest - Left Connector puzzle.
 - Fixed Mimics not resetting after Give Up.
 - Fixed Baby Turtles being practically invisible due to their shadow.
