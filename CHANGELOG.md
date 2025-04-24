@@ -53,6 +53,7 @@ INTRO
 - Completing the quest "The Dandy Toads of Adon" now rewards you with 300B instead of an Enchanted Anti-Magic Charm.
 - Made the Advanced Salvage Kit recipe much easier.
 - Moved the Voyager Boots and Globetrotter Boots out of the General Store and into actual shops.
+- The Dispel Potion's description now shows what status effects it cures.
 - Removed the Crude Hammer.
 - Changed how Incorporeal enemies react to physical damage to make it more clear it's not just a miss.
 - Simplified the armor menu by removing unnecessary categories.
