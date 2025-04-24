@@ -42,6 +42,7 @@ INTRO
     - Although Henry's Gloves can be obtained earlier, they're more "exclusive" since they are a boss drop.
 - Gaining/losing status effects now shows a short popup instead of using the intrusive message box.
 - Simplified the General Store's stock.
+- Harmony, Grass Knuckles, and Frost Edge no longer use earlier staves/daggers as ingredients.
 - Enemies using Cure II will no longer apply Rejuvenation.
 - Nerfed Gilded Coin Bit Rate from 1.5x → 1.25x
 - Buffed Seshat's Charm drop rate from 1/100 to 1/50.
