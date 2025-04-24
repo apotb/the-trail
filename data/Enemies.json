@@ -3116,7 +3116,7 @@
     ],
     "gold": 100,
     "name": "Darkhound",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 136>\n\n<Sideview Battler: Hound_3>\n<Sideview No Collapse>\n<Battle Select Cursor Position Y: Middle>\n<Attack Animation: 133>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nNecrotic Skull: 20% +30%\nSilver Wristbraces: 5% +5%\nEnchanted Anti-Magic Charm: 5% +5%\nINT Scroll: 10% +10%\nDark Essence: 20% +20%\n</Night Boost>\n\n<Conditional Fido's Collar Drop>\nEval !$gameParty.hasItem($dataItems[77]): +1%\n</Conditional Fido's Collar Drop>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 136>\n\n<Sideview Battler: Hound_3>\n<Sideview No Collapse>\n<Battle Select Cursor Position Y: Middle>\n<Attack Animation: 133>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nNecrotic Skull: 20% +30%\nIron Wristbraces: 5% +5%\nEnchanted Anti-Magic Charm: 5% +5%\nINT Scroll: 10% +10%\nDark Essence: 20% +20%\n</Night Boost>\n\n<Conditional Fido's Collar Drop>\nEval !$gameParty.hasItem($dataItems[77]): +1%\n</Conditional Fido's Collar Drop>",
     "params": [
       1500,
       0,
