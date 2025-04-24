@@ -562,7 +562,10 @@ Window_Base.prototype.drawActorIcons = function(actor, x, y, width) {
     width = width || 144;
     var icons = actor.allIcons().slice(0, Math.floor(width / Window_Base._iconWidth));
     for (var i = 0; i < icons.length; i++) {
-        this.drawIcon(icons[i], x + Window_Base._iconWidth * i, y + 2);
+        // If there's too many icons to display, replace the last one with a +
+        if (i + 1 == icons.length && actor.allIcons().length > icons.length) icon = 1354;
+        else icon = icons[i];
+        this.drawIcon(icon, x + Window_Base._iconWidth * i, y + 2);
     }
 };
 

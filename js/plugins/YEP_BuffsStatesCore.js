@@ -2070,6 +2070,8 @@ Window_Base.prototype.drawActorIconsTurns = function(actor, wx, wy, ww) {
   var shownMax = Math.floor(ww / iw);
   for (var i = 0; i < actor.states().length; ++i) {
     if (shownMax <= 0) break;
+    // If there's too many icons to display, replace the last one with a +
+    if (shownMax == 1 && actor.allIcons().length > max) break;
     var state = actor.states()[i];
     if (state.iconIndex <= 0) continue;
     if (state.autoRemovalTiming > 0) {
