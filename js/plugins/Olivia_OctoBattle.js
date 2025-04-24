@@ -5303,10 +5303,13 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
       this._actor._needsStatusStateRefresh = undefined;
     }
   };
+  Window_BattleSideStates.prototype.iconCap = function () {
+    return $gameParty.size() < 6 ? 9 : 6;
+  };
   Window_BattleSideStates.prototype.drawActorIcons = function(actor, wx, wy, ww) {
     ww = ww || 144;
     this._icons = actor.allIcons().slice(0, this.split() * ($gameParty.size() < 6 ? 3 : 2));
-    this._maxIcons = actor.allIcons().length <= 9 ? 9 : 8;
+    this._maxIcons = actor.allIcons().length <= this.iconCap() ? this.iconCap() : this.iconCap() - 1;
     for (var i = 0; i < this._icons.length; i++) {
         let x = wx + Window_Base._iconWidth * (i % this.split());
         let y = wy + 2 + (Window_Base._iconHeight * Math.floor(i / this.split()));
