@@ -16863,7 +16863,7 @@
     {
       "id": 33,
       "name": "EV033",
-      "note": "<Sprite Offset Y: -48>",
+      "note": "",
       "pages": [
         {
           "conditions": {
@@ -20096,7 +20096,7 @@
     {
       "id": 55,
       "name": "EV055",
-      "note": "<Sprite Offset Y: -48> <shadow>",
+      "note": "<shadow>",
       "pages": [
         {
           "conditions": {
@@ -20255,6 +20255,92 @@
       "x": 39,
       "y": 36
     },
-    null
+    {
+      "id": 56,
+      "name": "EV056",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 203,
+              "indent": 0,
+              "parameters": [
+                33,
+                0,
+                38,
+                35,
+                0
+              ]
+            },
+            {
+              "code": 203,
+              "indent": 0,
+              "parameters": [
+                55,
+                0,
+                39,
+                35,
+                0
+              ]
+            },
+            {
+              "code": 214,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 3,
+          "walkAnime": true
+        }
+      ],
+      "x": 49,
+      "y": 41
+    }
   ]
 }

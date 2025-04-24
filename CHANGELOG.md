@@ -80,6 +80,7 @@ INTRO
 - Fixed being caught by a Sand Stomper playing the same sound effect as being captured by a Lost Soul.
 - Fixed boulders still animating even if they failed to move.
 - Fixed buggy snowball in Frozen Labyrinth.
+- Fixed being unable to walk to the small chest in the Greenfield-Solus Passage while the soldiers were clearing the dirt.
 - Fixed Flower Boots still using the deprecated OED stat.
 - Fixed a bug where entering Bladesville via the tile on the right would still let you earn the "Trigger Happy" achievement.
 - Fixed the save list's width changing depending on whether you're saving or loading.
