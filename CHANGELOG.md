@@ -19,7 +19,7 @@ INTRO
   - Player 3 now learns Dispell at level 16 → 17.
 - Buffed temporary party members:
   - Doubled Claire's outgoing healing.
-- Nerfed several enemies:
+- Rebalanced several enemies:
   - Mimic: Actions 3 → 1 for Ruined Fort encounter.
   - Will o' Wisp: MAT 45 → 39
   - Ice Golem: DEF 45 → 40, MDF 70 → 60, Ice Barrier chance 50% → 25
@@ -27,6 +27,7 @@ INTRO
   - Werewolf: MDF 60 → 55
   - Ice Slime: MDF 75 → 60
   - Polar Bear: MDF 65 → 55
+  - Tellurium Golems: Tellurium Pulse deals an additional 20% of the target's HP
 - Revamped glove progression:
   - Bandito Gloves: CRI +1% → +0.5%
   - Henry's Gloves: ATK 2 → 4; HIT +6% → +8%; CRI +1.5% → +2%; Upgrade Slots 0 → 1

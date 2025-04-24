@@ -4939,7 +4939,7 @@
     "damage": {
       "critical": true,
       "elementId": 14,
-      "formula": "a.mat * 5 - b.mdf * 2",
+      "formula": "(b.hp / 5) + (a.mat * 5 - b.mdf * 2)",
       "type": 1,
       "variance": 5
     },
