@@ -5034,15 +5034,70 @@
         "code": 655,
         "indent": 0,
         "parameters": [
-          "this.wait(minutes * 60 * 60);"
+          "$gameSystem.setAutosaveInterval(minutes);"
         ]
       },
       {
-        "code": 655,
+        "code": 112,
         "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 1,
         "parameters": [
-          "//"
+          12,
+          "$gameSystem._secUntilAutosave > 0"
         ]
+      },
+      {
+        "code": 230,
+        "indent": 2,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 2,
+        "parameters": [
+          "$gameSystem._secUntilAutosave--;"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 113,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 413,
+        "indent": 0,
+        "parameters": []
       },
       {
         "code": 111,
