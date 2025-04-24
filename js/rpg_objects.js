@@ -4102,6 +4102,7 @@ Game_Actor.prototype.changeEquip = function(slotId, item) {
         this._equips[slotId].setObject(item);
         this.refresh();
     }
+    if (this.isEquipped($dataWeapons[46]) && this.isEquipped($dataArmors[116])) OrangeGreenworks.activateAchievement('COLLECT_PARADOX');
 };
 
 Game_Actor.prototype.forceChangeEquip = function(slotId, item) {
@@ -4226,7 +4227,6 @@ Game_Actor.prototype.refresh = function() {
     Game_Battler.prototype.refresh.call(this);
     OrangeGreenworks.setStat('highestAgi', this.agi);
     OrangeGreenworks.setStat('highestFireResistance', Math.floor((1 - Yanfly.Ele.Game_BtlrBase_elementRate.call(this, 2)) * 100));
-    if (this.isEquipped($dataWeapons[46]) && this.isEquipped($dataArmors[116])) OrangeGreenworks.activateAchievement('COLLECT_PARADOX');
 };
 
 Game_Actor.prototype.isActor = function() {
