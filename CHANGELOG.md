@@ -12,6 +12,11 @@ INTRO
 
 ### Changes
 - Various graphical improvements have been made.
+- Skill rebalancing:
+  - Nerfed Wand Impulse MAT rate from 400% → 325%
+  - Nerfed Cure II MAT rate from 180% → 150%.
+  - Removed Soul Barrier I from Player 3's skill pool.
+  - Player 3 now learns Dispell at level 16 → 17.
 - Buffed temporary party members:
   - Doubled Claire's outgoing healing.
 - Nerfed several enemies:
@@ -28,9 +33,6 @@ INTRO
   - Scaly Gloves: ATK 5 → 3; HIT +8% → +6%; CRI +2% → +1.5%
   - These changes effectively swap Henry's Gloves and Scaly Gloves in progression.
     - Although Henry's Gloves can be obtained earlier, they're more "exclusive" since they are a boss drop.
-- Nerfed Wand Impulse MAT rate from 400% → 325%
-- Removed Soul Barrier I from Player 3's skill pool.
-- Player 3 now learns Dispell at level 16 → 17.
 - Nerfed Gilded Coin Bit Rate from 1.5x → 1.25x
 - Buffed Seshat's Charm drop rate from 1/100 to 1/50.
 - Starting in Chapter 5, Seshat's Tome will drop at a rate of 1/100.

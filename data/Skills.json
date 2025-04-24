@@ -409,7 +409,7 @@
       "type": 3,
       "variance": 5
     },
-    "description": "A stronger version of \\is[11]. It heals a considerably higher amount\nof HP and provides a rejuvenating effect for \\c[27]\\bpturn[3]\\c[0] to \\c[27]\\bpturn[4]\\c[0] turns. \\c[27]\\bpdamage[180]%\\c[0] MAT rate.",
+    "description": "A stronger version of \\is[11]. It heals a considerably higher amount\nof HP and provides a rejuvenating effect for \\c[27]\\bpturn[3]\\c[0] to \\c[27]\\bpturn[4]\\c[0] turns. \\c[27]\\bpdamage[150]%\\c[0] MAT rate.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 1444,
@@ -417,7 +417,7 @@
     "message2": "",
     "mpCost": 13,
     "name": "Cure II",
-    "note": "<Boost Damage>\n<Boost Turns>\n\n<Mastery Group: 11>\n\n<Damage Formula>\nvalue = a.mat * 1.8;\nif ($gameParty.inBattle()) b.addState(28);\n</Damage Formula>\n\n<action copy: skill:11>",
+    "note": "<Boost Damage>\n<Boost Turns>\n\n<Mastery Group: 11>\n\n<Damage Formula>\nvalue = a.mat * 1.5;\nif ($gameParty.inBattle()) b.addState(28);\n</Damage Formula>\n\n<action copy: skill:11>",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
