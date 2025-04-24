@@ -15226,7 +15226,7 @@
         "indent": 1,
         "parameters": [
           12,
-          "!($gameSystem._ridingTheStorm || $gameTemp.isPlaytest())"
+          "!($gameSystem._ridingTheStorm || $gameTemp.isPlaytest() || $gameSelfSwitches.value(6, 2, 'A'))"
         ]
       },
       {

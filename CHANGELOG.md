@@ -55,6 +55,7 @@ INTRO
 ### Bug Fixes
 - Fixed Mark not being in his house, preventing the player from completing the Prophecy Defiers quest.
 - Fixed being unable to speak to the knight outside Telluria Castle when it's time to go to the Chamber of the Seal, preventing the player from progressing.
+- Fixed the player being teleported back to the start of Chapter 6 upon loading a save past that point.
 - Fixed a game-breaking bug where one of the buttons in the Frozen Labyrinth could teleport you to a random map.
 - Fixed a softlock where if you leave Mark's house then go back without following him, you'd be stuck outside his house.
 - Fixed a hardlock during the cutscene in front of Telluria Castle where the soldier stops you.
