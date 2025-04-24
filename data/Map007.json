@@ -33348,8 +33348,8 @@
     },
     {
       "id": 12,
-      "name": "EV012",
-      "note": "",
+      "name": "goldangel-copy",
+      "note": "<Copy Event: 158, 153>",
       "pages": [
         {
           "conditions": {
@@ -33376,106 +33376,6 @@
             "characterIndex": 0
           },
           "list": [
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "This statue of the First Cleric has a"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "magical aura around it..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Interact with the statue?"
-              ]
-            },
-            {
-              "code": 102,
-              "indent": 0,
-              "parameters": [
-                [
-                  "Yes.",
-                  "Not now."
-                ],
-                1,
-                0,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                0,
-                "Yes."
-              ]
-            },
-            {
-              "code": 117,
-              "indent": 1,
-              "parameters": [
-                62
-              ]
-            },
-            {
-              "code": 355,
-              "indent": 1,
-              "parameters": [
-                "$gameSystem.setSafePlace();"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                1,
-                "Not now."
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 404,
-              "indent": 0,
-              "parameters": []
-            },
             {
               "code": 0,
               "indent": 0,
