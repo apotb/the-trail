@@ -2171,7 +2171,7 @@ Game_Enemy.prototype.sideviewHeight = function() {
 };
 
 Game_Enemy.prototype.sideviewCollapse = function() {
-    return this.enemy().sideviewCollapse || this._forceCollapse;
+    return (this.enemy().sideviewCollapse || this._forceCollapse) && !this._noCollapse;
 };
 
 Game_Enemy.prototype.showSideviewShadow = function() {

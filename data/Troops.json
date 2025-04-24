@@ -3610,6 +3610,31 @@
             "parameters": []
           },
           {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameMap.inTrueTelluriaCastle()"
+            ]
+          },
+          {
+            "code": 355,
+            "indent": 1,
+            "parameters": [
+              "$gameTroop._enemies[0]._noCollapse = true;"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
             "code": 0,
             "indent": 0,
             "parameters": []
