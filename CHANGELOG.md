@@ -86,6 +86,7 @@ INTRO
 - Fixed Player 3's outdated dialogue in the Telluria Castle night cutscene.
 - Fixed wrong music playing after Telluria Castle night cutscene.
 - Fixed the Crushers in the barracks still talking about the removed rap battle.
+- Fixed the player's head clipping into the Fancy Stew's pot.
 - Fixed broken name boxes for a couple knights in Telluria Castle Town.
 
 OUTRO
