@@ -3,7 +3,7 @@ INTRO
 
 ### Additions
 - Autosaving is here! After a configurable time has passed, your progress will be automatically backed up in a unique save slot.
-- Added a new title screen.
+- Added 2 warp doors in Sam's basement that lead to Bladesville and Telluria Castle Town.
 - 1 new weapon:
   - Andy's Dusters MK. II
 - 2 new equipment:
@@ -12,7 +12,7 @@ INTRO
 - Added a golden First Cleric statue in the Frozen Labyrinth.
 
 ### Changes
-- Various graphical improvements have been made.
+- Various graphical improvements have been made, such as the title screen, font, and window skin.
 - Time moves slower:
   - By default, 1 real-life second is 2 → 1 in-game seconds.
   - If the Magical Ocarina is used, 1 real-life second is 1 → 2 in-game seconds.

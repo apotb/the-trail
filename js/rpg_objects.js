@@ -5845,6 +5845,10 @@ Game_Party.prototype.killCount = function() {
     return sum;
 };
 
+Game_Party.prototype.hasMembership = function() {
+    return this.hasItem($dataItems[231]) || this.hasItem($dataItems[232]) || this.hasItem($dataItems[233]);
+};
+
 //-----------------------------------------------------------------------------
 // Game_Troop
 //
