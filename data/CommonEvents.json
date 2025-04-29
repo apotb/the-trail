@@ -10897,7 +10897,7 @@
         "indent": 0,
         "parameters": [
           12,
-          "$gameSystem._moonRespawn && $gameMap.events().some(e => e._monster)"
+          "$gameSystem._moonRespawn && (!$gameMap.events().some(e => e._monster) || $gameMap.mapId() == 8) && !$gameMap.indoors()"
         ]
       },
       {

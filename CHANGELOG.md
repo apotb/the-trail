@@ -41,6 +41,7 @@ INTRO
   - These changes effectively swap Henry's Gloves and Scaly Gloves in progression.
     - Although Henry's Gloves can be obtained earlier, they're more "exclusive" since they are a boss drop.
 - Gaining/losing status effects now shows a short popup instead of using the intrusive message box.
+- Monsters won't respawn while you're in a dungeon.
 - Simplified the General Store's stock.
 - Harmony, Grass Knuckles, and Frost Edge no longer use earlier staves/daggers as ingredients.
 - Enemies using Cure II will no longer apply Rejuvenation.
