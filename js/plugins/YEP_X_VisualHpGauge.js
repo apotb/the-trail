@@ -583,7 +583,7 @@ Window_VisualHPGauge.prototype.updateWindowPosition = function() {
     this.x = this.x.clamp(this._minX, this._maxX);
     this.y = battler.spritePosY();
     if (Yanfly.Param.VHGGaugePos) {
-      this.y -= battler.spriteHeight();
+      this.y -= battler.spriteHeight() / (battler.spriteScaleY ? battler.spriteScaleY() : 1);
     } else {
       this.y -= this.standardPadding();
     }
