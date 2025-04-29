@@ -3126,27 +3126,39 @@
     "damage": {
       "critical": false,
       "elementId": 0,
-      "formula": "b.hp - 1",
-      "type": 1,
+      "formula": "",
+      "type": 0,
       "variance": 0
     },
     "description": "A variation of mushroom that is extremely poisonous.\nNot something you want to eat under any circumstances!",
     "effects": [
       {
         "code": 21,
-        "dataId": 39,
+        "dataId": 24,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": -1,
+        "value2": 0
+      },
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0,
+        "value2": 1
+      },
+      {
+        "code": 22,
+        "dataId": 24,
         "value1": 1,
         "value2": 0
       },
       {
         "code": 21,
-        "dataId": 73,
-        "value1": 1,
-        "value2": 0
-      },
-      {
-        "code": 22,
-        "dataId": 73,
+        "dataId": 39,
         "value1": 1,
         "value2": 0
       }
@@ -3155,7 +3167,7 @@
     "iconIndex": 319,
     "itypeId": 1,
     "name": "Red Mushroom",
-    "note": "",
+    "note": "<Effects Display>\n{\"code\":11,\"dataId\":0,\"value1\":\"-100\",\"value2\":1}\n</Effects Display>",
     "occasion": 0,
     "price": 30,
     "repeats": 1,
