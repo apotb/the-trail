@@ -10,6 +10,8 @@ tips[19] = "There's a total of " + tips.length + " Tutorial Tips that you can se
 
 pushSeen = [];
 
+const FONT_SIZE = 22;
+
 //=============================================================================
 // Scene_Preload
 //=============================================================================
@@ -25,7 +27,7 @@ Scene_Preload.prototype.create = function() {
 Scene_Preload.prototype.createTip = function() {
 	this._tipHeight = Graphics.boxHeight;
 	this._tip = new Sprite(new Bitmap(Graphics.boxWidth, this._tipHeight));
-	this._tip.bitmap.fontSize = 20;
+	this._tip.bitmap.fontSize = FONT_SIZE;
 	this._tip.y = -400;
 	this._tip.move = 0;
 	this._tip.tipSpeed = 1.1; // speed that tutorial tip slides in/out
@@ -104,17 +106,21 @@ Window_TipsPage.prototype.initialize = function() {
 };
 
 Window_TipsPage.prototype.windowWidth = function() {
-  return 96;
+  return SceneManager._scene._commandWindow.width;
 };
 
-Window_TipsPage.prototype.windowHeight = function() {
-    return SceneManager._scene._commandWindow.height;
-}
+Window_TipsPage.prototype.maxCols = function() {
+    return SceneManager._scene._commandWindow.maxCols() * 3;
+};
 
 Window_TipsPage.prototype.updatePlacement = function() {
-    this.x = 760;
-    this.y = SceneManager._scene._commandWindow.y;
-}
+    this.x = SceneManager._scene._commandWindow.x;
+    this.y = (SceneManager._scene._commandWindow.y / 4) + this.lineHeight();
+};
+
+Window_TipsPage.prototype.itemTextAlign = function() {
+    return 'center';
+};
 
 Window_TipsPage.prototype.makeCommandList = function() {
   for (var i = 0; i < tips.length; ++i) {
@@ -135,7 +141,7 @@ Window_TipsPage.prototype.drawItem = function(index) {
   var text = this.commandName(index);
   this.resetTextColor();
   this.changePaintOpacity(this.isCommandEnabled(index));
-  this.drawTextEx(text, rect.x, rect.y, rect.width, align);
+  this.drawText(text, rect.x, rect.y, rect.width, align);
 };
 
 Window_TipsPage.prototype.playOkSound = function() {
@@ -166,6 +172,7 @@ Scene_Title.prototype.commandTips = function() {
     this._tipsWindow.select(0);
     this._tipsWindow.activate();
     this._tipsWindow.open();
+    this._titleSprite.visible = false;
 }
 
 Scene_Title.prototype.onTipsCancel = function() {
@@ -173,6 +180,7 @@ Scene_Title.prototype.onTipsCancel = function() {
     this._tip.bitmap.clear();
     this._commandWindow.activate();
     this._commandWindow.open();
+    this._titleSprite.visible = true;
 }
 
 Scene_Title.prototype.onTipsOk = function() {
@@ -183,7 +191,7 @@ Scene_Title.prototype.onTipsOk = function() {
 Scene_Title.prototype.createTip = function() {
 	this._tipHeight = Graphics.boxHeight;
 	this._tip = new Sprite(new Bitmap(Graphics.boxWidth, this._tipHeight));
-	this._tip.bitmap.fontSize = 20;
+	this._tip.bitmap.fontSize = FONT_SIZE;
 	this._tip.y = -250;
 	this.addChild(this._tip);
 }
