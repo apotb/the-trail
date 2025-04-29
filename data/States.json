@@ -2291,7 +2291,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Comet Charm",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Battle Effect>\nuser._cometCharm = false;\n</Custom Battle Effect>\n\n<Custom Victory Effect>\nuser._cometCharm = false;\n</Custom Victory Effect>\n\n<Custom Escape Effect>\nuser._cometCharm = false;\n</Custom Escape Effect>\n\n<Custom Defeat Effect>\nuser._cometCharm = false;\n</Custom Defeat Effect>\n\n<Custom Conclude Effect>\nvar rate = 0.25;\nvar toGain = Math.ceil(user.mmp * 0.5);\nif ($gameParty.inBattle() && user.isAlive() && user.mpRate() <= rate && !user._cometCharm) {\n  user._cometCharm = true;\n  user.gainMp(toGain);\n  user.startAnimation(139);\n  user.startDamagePopup();\n}\n</Custom Conclude Effect>",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Battle Effect>\nuser._cometCharm = false;\n</Custom Battle Effect>\n\n<Custom Victory Effect>\nuser._cometCharm = false;\n</Custom Victory Effect>\n\n<Custom Escape Effect>\nuser._cometCharm = false;\n</Custom Escape Effect>\n\n<Custom Defeat Effect>\nuser._cometCharm = false;\n</Custom Defeat Effect>\n\n<Custom Establish Effect>\nvar rate = 0.25;\nvar toGain = Math.ceil(user.mmp * 0.5);\nif ($gameParty.inBattle() && user.isAlive() && user.mpRate() <= rate && !user._cometCharm) {\n  user._cometCharm = true;\n  user.gainMp(toGain);\n  user.startAnimation(139);\n}\n</Custom Establish Effect>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,

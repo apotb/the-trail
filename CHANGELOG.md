@@ -103,6 +103,7 @@ INTRO
 - Fixed being caught by a Sand Stomper playing the same sound effect as being captured by a Lost Soul.
 - Fixed boulders still animating even if they failed to move.
 - Fixed buggy snowball in Frozen Labyrinth.
+- Fixed the Comet Charm creating a duplicate damage popup.
 - Fixed uncrafted item descriptions reverting to the default white color after a color code or element was referenced.
 - Fixed being able to change the party member comparison while choosing an ingredient.
 - Fixed being unable to walk to the small chest in the Greenfield-Solus Passage while the soldiers were clearing the dirt.
