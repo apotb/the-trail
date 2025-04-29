@@ -289,7 +289,7 @@ Game_Party.prototype.payItemRetryCosts = function() {
 };
 
 Game_Party.prototype.payJavaScriptRetryCosts = function() {
-	var $gameParty = $gameTemp._setUpRetry[3];
+	var $gameParty = $gameTemp._setUpRetry ? $gameTemp._setUpRetry[3] : $gameParty;
 	eval($gameSystem.codeRetryEval);
 };
 
