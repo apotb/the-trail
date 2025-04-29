@@ -410,35 +410,3 @@ Window_MapName.prototype.dimColor2 = function() {
 Window_MapName.prototype.textWidthEx = function(text) {
     return this.drawTextEx(text, 0, this.contents.height);
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

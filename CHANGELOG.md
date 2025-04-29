@@ -66,6 +66,7 @@ INTRO
 - Changed how Incorporeal enemies react to physical damage to make it more clear it's not just a miss.
 - Simplified the armor menu by removing unnecessary categories.
 - The map display name is now centered horizontally.
+- Merged sub-location name display into map display name window.
 - Updated the chapter images.
 - Replaced the Dark Forest's puzzle hint with the Great Pyramid's.
 

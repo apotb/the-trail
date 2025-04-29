@@ -170,6 +170,7 @@ var $plugins =
 {"name":"Olivia_MetaControls","status":true,"description":"<MetaControls> for RPG Maker MV version 1.6.1.","parameters":{"":"","ATTENTION!!!":"READ THE HELP FILE","Common Event on New Game":"0","Common Event on Load":"0","Variables on Save":"","Map ID":"0","Map X":"0","Map Y":"0"}},
 {"name":"AP_TutorialTips","status":true,"description":"Requires SRD_PreloaderCore, Olivia_MetaControls. Overrides Scene_Preload, Window_TitleCommand, Scene_Title. Adds Window_TipsPage.","parameters":{}},
 {"name":"Olivia_MapDisplayNameCore","status":true,"description":"<MapDisplayNameCore> for RPG Maker MV version 1.6.1.","parameters":{"":"","ATTENTION!!!":"READ THE HELP FILE","Text Distance":"80","Window Height":"36","Y Position":"","Starting Y":"20","Middle Y":"50","Ending Y":"80","Fade":"","Fade In Time":"30","Middle Time":"180","Fade Out Time":"30","Dim Color":"","Dim Color 1":"rgba(0, 0, 0, 0.6)","Dim Color 2":"rgba(0, 0, 0, 0)"}},
+{"name":"ShowLocation","status":true,"description":"","parameters":{}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"GALV_CamControl","status":true,"description":"Allows greater control over where the game camera is focused. View HELP for plugin commands.","parameters":{"Tile Size":"48"}},
