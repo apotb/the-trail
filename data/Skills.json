@@ -4768,11 +4768,11 @@
     "damage": {
       "critical": true,
       "elementId": -1,
-      "formula": "a.atk * 6 - b.def * 2",
+      "formula": "a.atk * 4 - b.def * 2",
       "type": 1,
-      "variance": 80
+      "variance": 100
     },
-    "description": "Imbue your blade with the power of stew! Requires at least \\c[27]1 BP\\c[0]\nto use, and has a very large damage variation. \\c[27]\\bpdamage[600]%\\c[0] ATK rate.",
+    "description": "Imbue your blade with the power of stew! Requires at least \\c[27]2 BP\\c[0]\nto use, and has a very large damage variation. \\c[27]\\bpdamage[400]%\\c[0] ATK rate.",
     "effects": [
       {
         "code": 21,
@@ -4787,7 +4787,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Stew Slash",
-    "note": "<Require >= 1 BP>\n<Boost Damage>\n\n<Critical Rate: 20%>\n<Max Mastery Level: 0>\n\n<Custom Requirement>\nvalue = (!user.isActor()\n|| user.isWtypeEquipped(2)\n|| user.isWtypeEquipped(5)\n|| user.isWtypeEquipped(7)\n|| user.isWtypeEquipped(11));\n</Custom Requirement>\n\n<action copy: skill:3>",
+    "note": "<Require >= 2 BP>\n<Boost Damage>\n\n<Critical Rate: 20%>\n<Max Mastery Level: 0>\n\n<Custom Requirement>\nvalue = (!user.isActor()\n|| user.isWtypeEquipped(2)\n|| user.isWtypeEquipped(5)\n|| user.isWtypeEquipped(7)\n|| user.isWtypeEquipped(11));\n</Custom Requirement>\n\n<action copy: skill:3>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -4913,7 +4913,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Work against your stewy surroundings and use\na random non-stew skill you've learned.",
+    "description": "Work against your stewy surroundings and use a random\nnon-stew skill you've learned. Requires \\c[27]3 BP\\c[0].",
     "effects": [],
     "hitType": 0,
     "iconIndex": 780,
@@ -4921,7 +4921,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Melting Pot",
-    "note": "<Require = 0 BP>\n\n<Max Mastery Level: 0>\n\n<No Action>\n\n<Custom Execution>\nvar skills = this.skills().filter(s => [1, 2].contains(s.stypeId)).map(s => s.id);\nvar index = Math.randomInt(skills.length);\nthis.forceAction(skills[index], -1);\nBattleManager.forceAction(this);\n</Custom Execution>",
+    "note": "<Require = 3 BP>\n\n<Max Mastery Level: 0>\n\n<No Action>\n\n<Custom Execution>\nvar skills = this.skills().filter(s => [1, 2].contains(s.stypeId)).map(s => s.id);\nvar index = Math.randomInt(skills.length);\nthis.forceAction(skills[index], -1);\nBattleManager.forceAction(this);\n</Custom Execution>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
