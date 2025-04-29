@@ -135,6 +135,12 @@ Window_TipsPage.prototype.makeCommandList = function() {
   }
 };
 
+___Window_TipsPage__prototype__processCursorMove___ = Window_TipsPage.prototype.processCursorMove;
+Window_TipsPage.prototype.processCursorMove = function() {
+    ___Window_TipsPage__prototype__processCursorMove___.call(this);
+    if (this.isOpen()) this.callOkHandler();
+};
+
 Window_TipsPage.prototype.drawItem = function(index) {
   var rect = this.itemRectForText(index);
   var align = this.itemTextAlign();
@@ -165,22 +171,23 @@ Scene_Title.prototype.createTipsWindow = function() {
     this._tipsWindow = new Window_TipsPage();
     this._tipsWindow.setHandler('cancel', this.onTipsCancel.bind(this));
     this._tipsWindow.setHandler('ok', this.onTipsOk.bind(this));
+    this._tipsWindow.select(Math.ceil(Math.random() * this._tipsWindow._list.length));
     this.addWindow(this._tipsWindow);
 }
 
 Scene_Title.prototype.commandTips = function() {
-    this._tipsWindow.select(0);
     this._tipsWindow.activate();
     this._tipsWindow.open();
-    this._titleSprite.visible = false;
+    this._tip.fadeIn();
+    this._titleSprite.fadeOut();
 }
 
 Scene_Title.prototype.onTipsCancel = function() {
     this._tipsWindow.close();
-    this._tip.bitmap.clear();
+    this._tip.fadeOut();
     this._commandWindow.activate();
     this._commandWindow.open();
-    this._titleSprite.visible = true;
+    this._titleSprite.fadeIn();
 }
 
 Scene_Title.prototype.onTipsOk = function() {
@@ -193,6 +200,7 @@ Scene_Title.prototype.createTip = function() {
 	this._tip = new Sprite(new Bitmap(Graphics.boxWidth, this._tipHeight));
 	this._tip.bitmap.fontSize = FONT_SIZE;
 	this._tip.y = -250;
+    this._tip.alpha = 0;
 	this.addChild(this._tip);
 }
 
