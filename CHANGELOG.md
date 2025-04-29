@@ -4,6 +4,7 @@ INTRO
 ### Additions
 - Autosaving is here! After a configurable time has passed, your progress will be automatically backed up in a unique save slot.
 - Added 2 warp doors in Sam's basement that lead to Bladesville and Telluria Castle Town.
+- Added a leaderboard for Fish Caught. It can be accessed by speaking to the fisherman in Telluria Castle Town.
 - 1 new item:
   - Cleansing Scroll ★
 - 1 new weapon:

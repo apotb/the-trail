@@ -83499,9 +83499,10 @@
                 [
                   "Here's your stuff! <<$gameParty.numItems($dataItems[125]) > 0>>",
                   "Career stats",
+                  "Leaderboard",
                   "..."
                 ],
-                2,
+                3,
                 0,
                 2,
                 0
@@ -83702,6 +83703,40 @@
               "indent": 0,
               "parameters": [
                 2,
+                "Leaderboard"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameTemp._lbFish = true;"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "SceneManager.push(Scene_Leaderboard);"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "delete $gameTemp._lbFish;"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                3,
                 "..."
               ]
             },

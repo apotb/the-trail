@@ -48,7 +48,8 @@ API_LEADERBOARD.leaderboards = function() {
         ["Bits Collected", $gameVariables.value(CGMV.ExtraStats.GoldLooted)],
         ["Damage Dealt", $gameVariables.value(CGMV.ExtraStats.DamageDealt)],
         ["Enemies Defeated", $gameParty.killCount()],
-        ["Playtime", $gameSystem.playtime()]
+        ["Playtime", $gameSystem.playtime()],
+        ["Fish Caught", Galv.FISH.totalCaught()]
     ];
 };
 
@@ -245,8 +246,15 @@ Window_Leaderboard.prototype.initialize = function() {
     this.deactivate();
 };
 
+Window_Leaderboard.prototype.leaderboards = function() {
+    let lb = API_LEADERBOARD.leaderboards();
+    if ($gameTemp._lbFish) lb = lb.slice(4);
+    else lb = lb.slice(0, 4);
+    return lb;
+};
+
 Window_Leaderboard.prototype.maxCols = function() {
-    return API_LEADERBOARD.leaderboards().length;
+    return this.leaderboards().length;
 };
 
 Window_Leaderboard.prototype.maxRows = function() {
@@ -266,7 +274,7 @@ Window_Leaderboard.prototype.itemTextAlign = function() {
 };
 
 Window_Leaderboard.prototype.makeCommandList = function() {
-    for (const lb of API_LEADERBOARD.leaderboards()) {
+    for (const lb of this.leaderboards()) {
         this.addCommand(lb[0], '');
         i = 0;
         leaderboard = API_LEADERBOARD.getLeaderboard(lb[0])
