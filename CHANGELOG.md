@@ -64,6 +64,7 @@ INTRO
 - Removed the Crude Hammer.
 - Removed the Wood Salvage Kit; the Woodcutting Axe now serves its original function.
 - Changed how Incorporeal enemies react to physical damage to make it more clear it's not just a miss.
+- Salvage kits and higher tiers of Bloodlust will be hidden from the crafting menu once obtained.
 - Simplified the armor menu by removing unnecessary categories.
 - Updated battle select cursor sprites.
 - The map display name is now centered horizontally.

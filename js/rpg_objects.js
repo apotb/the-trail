@@ -107,7 +107,7 @@ Game_Temp.prototype.recipeTemplate = function(name) {
         case 'CASTLE FOOD':
         case 'FOOD':
             arr = [
-                [71, 72, 70, 98, 111, 129, 223, 221, 136, 131, 134].concat(Game_Temp.unlockFoodRecipes()).concat([117, 196, 197]),
+                [71, 72, 70, 98, 111, 129, 223, 221, 136, 131, 134, 259, 117, 196, 197],
                 [],
                 []
             ]
@@ -144,12 +144,6 @@ Game_Temp.prototype.recipeTemplate = function(name) {
             arr = [[], [], []];
     }
     [this._synthItems, this._synthWeapons, this._synthArmors] = arr;
-};
-
-Game_Temp.unlockFoodRecipes = function() {
-    let arr = [];
-    if ($gameSystem.isQuestObjectiveCompleted(33, 6)) arr.push(259);
-    return arr;
 };
 
 // Calculate open hours
