@@ -5065,9 +5065,9 @@
     101,
     101,
     0,
-    48,
     0,
-    48,
+    0,
+    0,
     0,
     0,
     0,
@@ -5105,9 +5105,9 @@
     0,
     77,
     0,
-    56,
+    41,
+    41,
     0,
-    56,
     68,
     93,
     0,
@@ -12199,7 +12199,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "TOWN STOREROOM"
+                "TOWN JAIL"
               ]
             },
             {
@@ -12216,7 +12216,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Please do not rob!"
+                "Access is strictly forbidden without express"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "permission from the Village Chief!"
               ]
             },
             {
