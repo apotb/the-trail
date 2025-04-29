@@ -6510,5 +6510,209 @@
       100,
       60
     ]
+  },
+  {
+    "id": 87,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Purple Cultist",
+    "dropItems": [],
+    "exp": 0,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.95
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      }
+    ],
+    "gold": 0,
+    "name": "Purple Cultist",
+    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Evil1_3>\n<Sideview No Collapse>\n\n<Enemy Drops>\nEsoteric Tome: 5%\n</Enemy Drops>",
+    "params": [
+      100,
+      0,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": 88,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Purple Assassin",
+    "dropItems": [],
+    "exp": 0,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.95
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      }
+    ],
+    "gold": 0,
+    "name": "Purple Assassin",
+    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: NoMatchingSprite/Purple Assassin>\n<Sideview No Collapse>\n<Weapon Image: 277>\n<Attack Animation: 6>\n\n<Enemy Drops>\nLast Breath: 5%\n</Enemy Drops>",
+    "params": [
+      100,
+      0,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": 89,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Cleftface Zealot",
+    "dropItems": [],
+    "exp": 0,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.95
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      }
+    ],
+    "gold": 0,
+    "name": "Cleftface Zealot",
+    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Horror1_7>\n<Weapon Image: 281>\n<Attack Animation: 1>\n\n<Enemy Drops>\nViolet Tendril: 5%\n</Enemy Drops>",
+    "params": [
+      100,
+      0,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": 90,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Sentinel",
+    "dropItems": [],
+    "exp": 0,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.95
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      }
+    ],
+    "gold": 0,
+    "name": "Sentinel",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n\n<Sideview Battler: NoMatchingSprite/Sentinel Phase 1>\n<Attack Animation: 122>\n<HP Gauge Width: 288>\n\n<Enemy Drops>\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "params": [
+      100,
+      0,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
   }
 ]

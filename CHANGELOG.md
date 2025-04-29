@@ -7,11 +7,19 @@ INTRO
 - Added a leaderboard for Fish Caught. It can be accessed by speaking to the fisherman in Telluria Castle Town.
 - 1 new item:
   - Cleansing Scroll ★
-- 1 new weapon:
+- 4 new weapons:
   - Andy's Dusters MK. II
+  - Esoteric Tome
+  - Last Breath
+  - Violet Tendril
 - 2 new equipment:
   - Ice Skates
   - Haloweave Gloves
+- 4 new enemies:
+  - Purple Cultist
+  - Purple Assassin
+  - Cleftface Zealot
+  - Sentinel
 - Added a golden First Cleric statue in the Frozen Labyrinth.
 
 ### Changes

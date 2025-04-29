@@ -411,7 +411,7 @@ DataManager.defaultClassRestrictions = function(obj) {
   if (DataManager.isWeapon(obj)) switch (obj.wtypeId) {
     case 1:  // Generic
       return;
-    case 2:  // Plate Armor
+    case 2:  // Sword
     case 6:  // Spear
     case 7:  // Axe
     case 11: // Greatsword
@@ -421,6 +421,7 @@ DataManager.defaultClassRestrictions = function(obj) {
       return 2;
     case 4:  // Staff
     case 8:  // Hammer
+    case 12: // Whip
       return 3;
     case 5:  // Dagger
     case 9:  // Knuckles
@@ -435,7 +436,7 @@ DataManager.defaultClassRestrictions = function(obj) {
       case 6:  // Light Shield
         return [1, 2, 3];
       case 2:  // Plate Armor
-      case 7:  // Heavy Armor
+      case 7:  // Heavy Shield
         return 1;
       case 3:  // Robes
         return 2;
