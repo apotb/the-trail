@@ -65,6 +65,7 @@ INTRO
 - Removed the Wood Salvage Kit; the Woodcutting Axe now serves its original function.
 - Changed how Incorporeal enemies react to physical damage to make it more clear it's not just a miss.
 - Simplified the armor menu by removing unnecessary categories.
+- The map display name is now centered horizontally.
 - Updated the chapter images.
 - Replaced the Dark Forest's puzzle hint with the Great Pyramid's.
 
