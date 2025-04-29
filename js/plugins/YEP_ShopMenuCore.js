@@ -844,6 +844,7 @@ Window_ShopStatus.prototype.isUpdateTrigger = function() {
 
 Window_ShopStatus.prototype.updateParamSwitch = function() {
     if (!this.isEquipItem()) return;
+    if (SceneManager._scene instanceof Scene_Synthesis && SceneManager._scene._itemChoiceWindow.active) return; // Fix for Scene_Synthesis
     if (this.isTouched(-1) || this.getInput('left')) {
       SoundManager.playCursor();
       this.adjustLeft();
