@@ -92,6 +92,7 @@ INTRO
 - Fixed Baby Turtles being practically invisible due to their shadow.
 - Fixed enemies being able to climb up vines in the World Tree.
 - Fixed the level recommendation for the Ruined Fort not having been updated in Alpha 16.
+- Fixed a visual bug with the cutscene right before the Chamber of the Seal.
 - Fixed frozen enemies not stopping motion.
 - Fixed being caught by a Sand Stomper playing the same sound effect as being captured by a Lost Soul.
 - Fixed boulders still animating even if they failed to move.
