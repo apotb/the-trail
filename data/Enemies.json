@@ -161,7 +161,7 @@
     ],
     "gold": 6,
     "name": "Green Slime",
-    "note": "<Passive State: 136>\n\n<Sideview Battler: Monster2_4>\n<Scale Sprite: 200%>\n\n<Enemy Drops>\nGreen Gel: 75%\nGreen Gel: 75%\nWater Bottle: 20%\nSmall Potion: 10%\nCondensed Green Gel: 5%\nSlime Scarf: 5%\n</Enemy Drops>",
+    "note": "<Passive State: 136>\n\n<Sideview Battler: Monster2_4>\n<Scale Sprite: 200%>\n<Battle Select Cursor Position Y: Middle>\n\n<Enemy Drops>\nGreen Gel: 75%\nGreen Gel: 75%\nWater Bottle: 20%\nSmall Potion: 10%\nCondensed Green Gel: 5%\nSlime Scarf: 5%\n</Enemy Drops>",
     "params": [
       50,
       1,
@@ -224,7 +224,7 @@
     ],
     "gold": 8,
     "name": "Blue Slime",
-    "note": "<Passive State: 136>\n\n<Sideview Battler: Monster1_2>\n<Scale Sprite: 200%>\n\n<AI Priority>\nVariable 7 <= 8 +++ Troop Alive Members === 1: Slimeball, Highest HP\nVariable 7 <= 8: Attack, Highest HP\n\nState === On Fire!: Purify\n</AI Priority>\n\n<Enemy Drops>\nBlue Gel: 75%\nBlue Gel: 75%\nRation: 20%\nSmall Elixir: 20%\nCondensed Blue Gel: 5%\nRing of the Woods: 5%\nSlime Scarf: 5%\n</Enemy Drops>",
+    "note": "<Passive State: 136>\n\n<Sideview Battler: Monster1_2>\n<Scale Sprite: 200%>\n<Battle Select Cursor Position Y: Middle>\n\n<AI Priority>\nVariable 7 <= 8 +++ Troop Alive Members === 1: Slimeball, Highest HP\nVariable 7 <= 8: Attack, Highest HP\n\nState === On Fire!: Purify\n</AI Priority>\n\n<Enemy Drops>\nBlue Gel: 75%\nBlue Gel: 75%\nRation: 20%\nSmall Elixir: 20%\nCondensed Blue Gel: 5%\nRing of the Woods: 5%\nSlime Scarf: 5%\n</Enemy Drops>",
     "params": [
       75,
       30,
@@ -280,7 +280,7 @@
     ],
     "gold": 0,
     "name": "Blue Slime",
-    "note": "<Passive State: 136>\n\n<Sideview Battler: Monster1_2>\n<Scale Sprite: 200%>",
+    "note": "<Passive State: 136>\n\n<Sideview Battler: Monster1_2>\n<Scale Sprite: 200%>\n<Battle Select Cursor Position Y: Middle>",
     "params": [
       75,
       30,
@@ -1633,7 +1633,7 @@
     ],
     "gold": 25,
     "name": "Red Slime",
-    "note": "<Element: Fire>\n<Element Absorb: Fire>\n<Passive State: 136>\n\n<Sideview Battler: Monster2_7>\n<Scale Sprite: 200%>\n<Attack Animation: 3>\n\n<AI Priority>\nState === Confused: Purify\nState === Poisoned: Purify\nState === Paralyzed: Purify\n</AI Priority>\n\n<Enemy Drops>\nSlime Scarf: 5%\nRed Gel: 75%\nRed Gel: 75%\nFulfilling Ration: 20%\nElixir: 10%\nHeedup Berry: 10%\nCoal: 50%\nCopper Cluster: 33.33%\nIron Cluster: 20%\nCondensed Red Gel: 5%\nFire Essence: 20%\n</Enemy Drops>",
+    "note": "<Element: Fire>\n<Element Absorb: Fire>\n<Passive State: 136>\n\n<Sideview Battler: Monster2_7>\n<Scale Sprite: 200%>\n<Battle Select Cursor Position Y: Middle>\n<Attack Animation: 3>\n\n<AI Priority>\nState === Confused: Purify\nState === Poisoned: Purify\nState === Paralyzed: Purify\n</AI Priority>\n\n<Enemy Drops>\nSlime Scarf: 5%\nRed Gel: 75%\nRed Gel: 75%\nFulfilling Ration: 20%\nElixir: 10%\nHeedup Berry: 10%\nCoal: 50%\nCopper Cluster: 33.33%\nIron Cluster: 20%\nCondensed Red Gel: 5%\nFire Essence: 20%\n</Enemy Drops>",
     "params": [
       300,
       60,
@@ -2566,7 +2566,7 @@
     ],
     "gold": 500,
     "name": "Rainbow Slime",
-    "note": "<Passive State: 124, 136>\n<Max atk Buff: +50>\n\n<Sideview Battler: NoMatchingSprite/Rainbow Slime>\n<Scale Sprite: 200%>\n\n<DiscoDisco>\n\n<Enemy Drops>\nRare Enemy Certificate: 100%\nWhite Gel: 100%\nCondensed White Gel: 100%\nSlime Scarf: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\n</Enemy Drops>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>",
+    "note": "<Passive State: 124, 136>\n<Max atk Buff: +50>\n\n<Sideview Battler: NoMatchingSprite/Rainbow Slime>\n<Scale Sprite: 200%>\n<Battle Select Cursor Position Y: Middle>\n\n<DiscoDisco>\n\n<Enemy Drops>\nRare Enemy Certificate: 100%\nWhite Gel: 100%\nCondensed White Gel: 100%\nSlime Scarf: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\n</Enemy Drops>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>",
     "params": [
       2000,
       50,
@@ -4551,7 +4551,7 @@
     ],
     "gold": 48,
     "name": "Ice Slime",
-    "note": "<Element: Ice>\n<Element Absorb: Ice>\n<Passive State: 136, 144>\n\n<Sideview Battler: Monster2_6>\n<Scale Sprite: 200%>\n<Attack Animation: 4>\n\n<AI Priority>\nState === Confused: Purify\nState === Poisoned: Purify\nState === Paralyzed: Purify\n</AI Priority>\n\n<Enemy Drops>\nSlime Scarf: 5%\nWarm Scarf: 5%\nIcy Gel: 75%\nIcy Gel: 75%\nElixir: 20%\nLarge Elixir: 10%\nFrozen Jewel: 20%\nIce Skates: 0.5%\nCondensed Icy Gel: 5%\nIce Essence: 20%\n</Enemy Drops>",
+    "note": "<Element: Ice>\n<Element Absorb: Ice>\n<Passive State: 136, 144>\n\n<Sideview Battler: Monster2_6>\n<Scale Sprite: 200%>\n<Battle Select Cursor Position Y: Middle>\n<Attack Animation: 4>\n\n<AI Priority>\nState === Confused: Purify\nState === Poisoned: Purify\nState === Paralyzed: Purify\n</AI Priority>\n\n<Enemy Drops>\nSlime Scarf: 5%\nWarm Scarf: 5%\nIcy Gel: 75%\nIcy Gel: 75%\nElixir: 20%\nLarge Elixir: 10%\nFrozen Jewel: 20%\nIce Skates: 0.5%\nCondensed Icy Gel: 5%\nIce Essence: 20%\n</Enemy Drops>",
     "params": [
       1500,
       60,

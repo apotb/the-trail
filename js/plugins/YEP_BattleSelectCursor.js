@@ -441,6 +441,7 @@ Sprite_BattleSelectCursor.prototype.updatePosition = function() {
     } else {
       this.y = height / -2;
     }
+    this.y /= this.parent.scale.y;
 };
 
 Sprite_BattleSelectCursor.prototype.updateFrame = function() {
