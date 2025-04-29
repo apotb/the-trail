@@ -26,8 +26,6 @@ INTRO
   - Buffed Channel Divinity II MAT rate from 400% → 450%
   - Removed Soul Barrier I from Player 3's skill pool.
   - Player 3 now learns Dispell at level 16 → 17
-- Buffed temporary party members:
-  - Doubled Claire's outgoing healing.
 - Rebalanced several enemies:
   - Mimic: Actions 3 → 1 for Ruined Fort encounter.
   - Will o' Wisp: MAT 45 → 39
@@ -48,6 +46,7 @@ INTRO
 - Simplified the General Store's stock.
 - Harmony, Grass Knuckles, and Frost Edge no longer use earlier staves/daggers as ingredients.
 - Moved many cooking recipes from the pot to the campfire.
+- Doubled Claire's outgoing healing.
 - Enemies using Cure II will no longer apply Rejuvenation.
 - Nerfed Gilded Coin Bit Rate from 1.5x → 1.25x
 - Buffed Seshat's Charm drop rate from 1/100 to 1/50.
