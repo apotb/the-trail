@@ -1142,6 +1142,14 @@ Game_Party.prototype.gainItem = function(item, amount, includeEquip) {
     if (item == $dataWeapons[34]) {
       OrangeGreenworks.activateAchievement('COLLECT_ORIGINCRYSTAL');
     }
+    // Ice Skates
+    if (item == $dataArmors[223]) {
+      OrangeGreenworks.activateAchievement('COLLECT_ICESKATES');
+    }
+    // Globetrotter Membership
+    if (item == $dataItems[233]) {
+      OrangeGreenworks.activateAchievement('COLLECT_GLOBETROTTER');
+    }
     // Rare enemy accessories
     if (DataManager.isArmor(item) && [81, 82, 83, 220].contains(item.id)) {
       $gameSystem._poacher = $gameSystem._poacher || [];
