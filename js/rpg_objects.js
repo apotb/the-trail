@@ -4897,7 +4897,7 @@ Game_Enemy.prototype.screenY = function() {
 };
 
 Game_Enemy.prototype.battlerName = function() {
-    return this.enemy().battlerName;
+    return this._battlerName || this.enemy().battlerName;
 };
 
 Game_Enemy.prototype.battlerHue = function() {

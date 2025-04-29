@@ -4571,7 +4571,7 @@
     "minTurns": 3,
     "motion": 0,
     "name": "Heated Metal",
-    "note": "<Element Absorb: Metal>\n\n<Custom Respond Effect>\nif (this.hasElement([3, 5])) target.removeState(138);\n</Custom Respond Effect>\n\n<animationRow:28>\n\n<Help Description>\nIncreases AGI by 50%. Decreases DEF by 20%. Weak to \\nl[3] and \\nl[5], normal damage from \\nl[2]. \\nl[14] attacks will be absorbed.\n</Help Description>",
+    "note": "<Element Absorb: Metal>\n\n<Custom Respond Effect>\nif (this.hasElement([3, 5])) target.removeState(138);\n</Custom Respond Effect>\n\n<Custom Apply Effect>\ntarget.startAnimation(221);\nsetTimeout(() => {\n  target._battlerName = \"Heated \" + target.battlerName();\n}, 500);\n</Custom Apply Effect>\n\n<Custom Remove Effect>\ndelete target._battlerName;\n</Custom Remove Effect>\n\n<Help Description>\nIncreases AGI by 50%. Decreases DEF by 20%. Weak to \\nl[3] and \\nl[5], normal damage from \\nl[2]. \\nl[14] attacks will be absorbed.\n</Help Description>",
     "overlay": 0,
     "priority": 30,
     "removeAtBattleEnd": true,
