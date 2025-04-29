@@ -91,6 +91,7 @@ INTRO
 - Fixed Mimics not resetting after Give Up.
 - Fixed Baby Turtles being practically invisible due to their shadow.
 - Fixed enemies being able to climb up vines in the World Tree.
+- Fixed active quest being set to Defeat Apocalypse on every load.
 - Fixed bug where tracked quest wouldn't update until changing maps.
 - Fixed the level recommendation for the Ruined Fort not having been updated in Alpha 16.
 - Fixed a visual bug with the cutscene right before the Chamber of the Seal.

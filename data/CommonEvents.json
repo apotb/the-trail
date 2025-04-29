@@ -12894,7 +12894,7 @@
         "indent": 1,
         "parameters": [
           12,
-          "!$gameSystem.questObjectivesShowEval(4, 3)"
+          "!$gameSystem._questsObjectives[4].contains(3)"
         ]
       },
       {
