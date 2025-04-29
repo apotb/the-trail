@@ -2607,6 +2607,7 @@ Sprite_Enemy.prototype.adjustSVShadowSettings = function() {
 
 Sprite_Enemy.prototype.updateMotion = function() {
     if (!this._svBattlerEnabled) return;
+    if (!this._battler.spriteCanMove()) return;
     this.setupMotion();
     this.setupWeaponAnimation();
     if (this._enemy.isMotionRefreshRequested()) {

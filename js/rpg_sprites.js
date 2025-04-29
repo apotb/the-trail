@@ -824,13 +824,7 @@ Sprite_Actor.prototype.updateMove = function() {
 };
 
 Sprite_Actor.prototype.updateMotion = function() {
-    this.setupMotion();
-    this.setupWeaponAnimation();
-    if (this._actor.isMotionRefreshRequested()) {
-        this.refreshMotion();
-        this._actor.clearMotion();
-    }
-    this.updateMotionCount();
+    // YEP_BattleEngineCore.js
 };
 
 Sprite_Actor.prototype.updateMotionCount = function() {

@@ -3147,7 +3147,7 @@ Sprite_Actor.prototype.updateTargetPosition = function() {
 };
 
 Sprite_Actor.prototype.updateMotion = function() {
-    this.updateMotionCount();
+    if (this._battler.spriteCanMove()) this.updateMotionCount();
 };
 
 Sprite_Actor.prototype.onMoveEnd = function() {
