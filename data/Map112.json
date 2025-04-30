@@ -2384,7 +2384,7 @@
     {
       "id": 1,
       "name": "EV001",
-      "note": "Fire 200 #EEFEFF",
+      "note": "Fire 150 #36E8F6",
       "pages": [
         {
           "conditions": {
@@ -2444,7 +2444,7 @@
     {
       "id": 2,
       "name": "EV002",
-      "note": "Fire 200 #EEFEFF",
+      "note": "Fire 150 #36E8F6",
       "pages": [
         {
           "conditions": {
@@ -2504,7 +2504,7 @@
     {
       "id": 3,
       "name": "EV003",
-      "note": "Fire 200 #EEFEFF",
+      "note": "Fire 150 #36E8F6",
       "pages": [
         {
           "conditions": {
@@ -2564,7 +2564,7 @@
     {
       "id": 4,
       "name": "EV004",
-      "note": "Fire 200 #EEFEFF",
+      "note": "Fire 150 #36E8F6",
       "pages": [
         {
           "conditions": {
@@ -2799,7 +2799,7 @@
     {
       "id": 7,
       "name": "EV007",
-      "note": "Fire 150 #FFFEEE D1",
+      "note": "Fire 100 #e6292c D1 <Sprite Offset Y: +48>",
       "pages": [
         {
           "conditions": {
@@ -2854,12 +2854,12 @@
         }
       ],
       "x": 5,
-      "y": 3
+      "y": 2
     },
     {
       "id": 8,
       "name": "EV008",
-      "note": "Fire 150 #FFFEEE D1",
+      "note": "Fire 100 #e6292c D1 <Sprite Offset Y: +48>",
       "pages": [
         {
           "conditions": {
@@ -2914,12 +2914,12 @@
         }
       ],
       "x": 11,
-      "y": 3
+      "y": 2
     },
     {
       "id": 9,
       "name": "EV009",
-      "note": "Fire 150 #FFFEEE D2",
+      "note": "Fire 100 #e6292c D2",
       "pages": [
         {
           "conditions": {
@@ -2979,7 +2979,7 @@
     {
       "id": 10,
       "name": "EV010",
-      "note": "Fire 150 #FFFEEE D4",
+      "note": "Fire 100 #e6292c D4",
       "pages": [
         {
           "conditions": {
@@ -3039,7 +3039,7 @@
     {
       "id": 11,
       "name": "EV011",
-      "note": "Fire 150 #FFFEEE D2",
+      "note": "Fire 100 #e6292c D2",
       "pages": [
         {
           "conditions": {
@@ -3099,7 +3099,7 @@
     {
       "id": 12,
       "name": "EV012",
-      "note": "Fire 150 #FFFEEE D2",
+      "note": "Fire 100 #e6292c D2",
       "pages": [
         {
           "conditions": {
@@ -3159,7 +3159,7 @@
     {
       "id": 13,
       "name": "EV013",
-      "note": "Fire 150 #FFFEEE D4",
+      "note": "Fire 100 #e6292c D4",
       "pages": [
         {
           "conditions": {
@@ -3216,12 +3216,10 @@
       "x": 2,
       "y": 12
     },
-    null,
-    null,
     {
-      "id": 16,
-      "name": "EV016",
-      "note": "Fire 150 #FFFEEE D4",
+      "id": 14,
+      "name": "EV014",
+      "note": "Fire 100 #e6292c D4",
       "pages": [
         {
           "conditions": {
@@ -3277,6 +3275,8 @@
       ],
       "x": 6,
       "y": 18
-    }
+    },
+    null,
+    null
   ]
 }
