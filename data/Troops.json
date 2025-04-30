@@ -13075,6 +13075,180 @@
           }
         ],
         "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 0,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": true,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              5,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "code": 111,
+            "indent": 1,
+            "parameters": [
+              5,
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "code": 111,
+            "indent": 2,
+            "parameters": [
+              5,
+              3,
+              1,
+              1
+            ]
+          },
+          {
+            "code": 111,
+            "indent": 3,
+            "parameters": [
+              5,
+              4,
+              1,
+              1
+            ]
+          },
+          {
+            "code": 337,
+            "indent": 4,
+            "parameters": [
+              0,
+              120,
+              false
+            ]
+          },
+          {
+            "code": 355,
+            "indent": 4,
+            "parameters": [
+              "$gameTroop._enemies[0]._phase = 2;"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 4,
+            "parameters": [
+              "$gameTroop._enemies[0]._svBattlerName = \"NoMatchingSprite/Sentinel Phase 2\";"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 4,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 3,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 3,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 2,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 2,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": true,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": true,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 337,
+            "indent": 0,
+            "parameters": [
+              0,
+              226,
+              false
+            ]
+          },
+          {
+            "code": 355,
+            "indent": 0,
+            "parameters": [
+              "$gameTroop._enemies[0]._phase = 3;"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "$gameTroop._enemies[0]._svBattlerName = \"NoMatchingSprite/Sentinel Phase 3\";"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
       }
     ]
   }
