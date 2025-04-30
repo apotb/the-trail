@@ -2341,7 +2341,7 @@
   {
     "id": 62,
     "animationId": 122,
-    "description": "",
+    "description": "A worn book pulsing with illegible glyphs. Whispers of\nevil flood your mind when opened. Increases OMD by 10%.",
     "etypeId": 1,
     "traits": [
       {
@@ -2357,6 +2357,11 @@
       {
         "code": 21,
         "dataId": 1,
+        "value": 1.1
+      },
+      {
+        "code": 25,
+        "dataId": 0,
         "value": 1.1
       }
     ],
