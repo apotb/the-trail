@@ -134,7 +134,7 @@ var $plugins =
 {"name":"WAY_Core","status":true,"description":"v2.0.0 WAY Core Utility Plugin. Place it above all WAY plugins. <WAY_Core>","parameters":{}},
 {"name":"WAY_YEP_ItemCore","status":true,"description":"v1.2.0 Addon to Yanfly's Item Core Plugin. <WAY_YEP_ItemCore>","parameters":{}},
 {"name":"WAY_YEP_ShopMenuCore","status":true,"description":"v1.1.1 Addon to Yanfly's Shop Menu Core Plugin. <WAY_YEP_ShopMenuCore>","parameters":{}},
-{"name":"WAY_AP_YEP_ItemSynthesis","status":false,"description":"v1.0.0 Addon to Yanfly's Item Synthesis Plugin. <WAY_AP_YEP_ShopMenuCore>","parameters":{}},
+{"name":"WAY_AP_YEP_ItemSynthesis","status":true,"description":"v1.0.0 Addon to Yanfly's Item Synthesis Plugin. <WAY_AP_YEP_ShopMenuCore>","parameters":{}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"CGMV_Core","status":true,"description":"Core CGMV Script.","parameters":{}},
