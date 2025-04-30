@@ -60,6 +60,7 @@ INTRO
 - Enemies using Cure II will no longer apply Rejuvenation.
 - Nerfed Gilded Coin Bit Rate from 1.5x → 1.25x
 - Nerfed the Dark damage reduction of tellurium equipment.
+- Nerfed Shield of the Hero Darkfire resistance from 100% → 50%.
 - Buffed Seshat's Charm drop rate from 1/100 to 1/50.
 - Starting in Chapter 5, Seshat's Tome will drop at a rate of 1/100.
 - Buffed Stalactite drop rate from 1/30 → 1/20.

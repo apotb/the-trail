@@ -4969,7 +4969,7 @@
   {
     "id": 188,
     "atypeId": 7,
-    "description": "An ancient shield forged a millenium ago for the chosen hero. Specially\nenchanted to provide immunity to \\it[163]\\c[0], \\c[18]Apocalypse\\c[0]'s signature move.",
+    "description": "An ancient shield forged a millenium ago for the chosen hero. Specially\nenchanted to provide resistance to \\it[163]\\c[0], \\c[18]Apocalypse\\c[0]'s signature move.",
     "etypeId": 2,
     "traits": [
       {
@@ -4978,9 +4978,9 @@
         "value": 0.9
       },
       {
-        "code": 14,
+        "code": 13,
         "dataId": 163,
-        "value": 2
+        "value": 0.5
       }
     ],
     "iconIndex": 506,
