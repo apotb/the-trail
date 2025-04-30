@@ -1476,6 +1476,13 @@
         "conditionType": 0,
         "rating": 5,
         "skillId": 64
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 1,
+        "skillId": 1
       }
     ],
     "battlerHue": 0,
@@ -1511,7 +1518,7 @@
     ],
     "gold": 80,
     "name": "Dandy Toad Mage",
-    "note": "<Armor Weakness: Slashing>\n<Passive State: 150, 193>\n\n<Sideview Battler: DandyToad_5>\n<Sideview No Collapse>\n\n<Boost Skill 15: Full>\n<AI Priority>\nState === On Fire!: Bubble\nHP% param <= 30% +++ Random 60%: Cure II, Lowest HP%\n</AI Priority>\n\n<Enemy Drops>\nBell: 5%\nFulfilling Ration: 50%\nElixir: 16.66%\nElixir: 16.66%\n</Enemy Drops>\n<Conditional Green Mage Crystal Drop>\nSwitch 45 OFF: +95%\nAlways: +5%\n</Conditional Green Mage Crystal Drop>",
+    "note": "<Armor Weakness: Slashing>\n<Passive State: 150, 193>\n\n<Sideview Battler: DandyToad_5>\n<Sideview No Collapse>\n<Weapon Image: 25>\n<Attack Animation: 122>\n\n<Boost Skill 15: Full>\n<AI Priority>\nState === On Fire!: Bubble\nHP% param <= 30% +++ Random 60%: Cure II, Lowest HP%\n</AI Priority>\n\n<Enemy Drops>\nBell: 5%\nFulfilling Ration: 50%\nElixir: 16.66%\nElixir: 16.66%\n</Enemy Drops>\n<Conditional Green Mage Crystal Drop>\nSwitch 45 OFF: +95%\nAlways: +5%\n</Conditional Green Mage Crystal Drop>",
     "params": [
       1500,
       0,
@@ -6449,6 +6456,13 @@
         "conditionType": 0,
         "rating": 5,
         "skillId": 121
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 1,
+        "skillId": 1
       }
     ],
     "battlerHue": 0,
@@ -6499,7 +6513,7 @@
     ],
     "gold": 50,
     "name": "Insane Mage",
-    "note": "<Element: Light>\n<Passive State: 147>\n\n<Sideview Battler: FortSoul_3>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nState === On Fire!: Bubble\nHP% param <= 30% +++ Random 60%: Cure II, Lowest HP%\n</AI Priority>\n\n<Enemy Drops>\nScroll of Silver Sands: 100%\nLarge Elixir: 75%\nLarge Elixir: 50%\nLarge Elixir: 25%\nLight Essence: 100%\n</Enemy Drops>",
+    "note": "<Element: Light>\n<Passive State: 147>\n\n<Sideview Battler: FortSoul_3>\n<Sideview No Collapse>\n<Weapon Image: 25>\n<Attack Animation: 122>\n\n<Boost Skill 15: Full>\n<AI Priority>\nState === On Fire!: Bubble\nHP% param <= 30% +++ Random 60%: Cure II, Lowest HP%\n</AI Priority>\n\n<Enemy Drops>\nScroll of Silver Sands: 100%\nLarge Elixir: 75%\nLarge Elixir: 50%\nLarge Elixir: 25%\nLight Essence: 100%\n</Enemy Drops>",
     "params": [
       3000,
       0,
@@ -6550,7 +6564,7 @@
     ],
     "gold": 0,
     "name": "Purple Cultist",
-    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Evil1_3>\n<Sideview No Collapse>\n\n<Enemy Drops>\nEsoteric Tome: 5%\nPurple Mage Crystal: 5%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Evil1_3>\n<Sideview No Collapse>\n<Weapon Image: 26>\n<Attack Animation: 122>\n\n<Enemy Drops>\nEsoteric Tome: 5%\nPurple Mage Crystal: 5%\n</Enemy Drops>",
     "params": [
       100,
       0,
