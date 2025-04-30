@@ -70,6 +70,7 @@ INTRO
 - Completing the quest "The Dandy Toads of Adon" now rewards you with 300B instead of an Enchanted Anti-Magic Charm.
 - Made the Advanced Salvage Kit recipe much easier.
 - Added Raw Truffle x2 to the Mana Fritters recipe.
+- Added Gazer Goop x5 to the Charm of Duality recipe.
 - Added Feral Rat Fur x3 to the Bloodwave Headband and Vortex Headband recipes.
 - Greaves can now be worn by everyone.
 - Moved the Voyager Boots and Globetrotter Boots out of the General Store and into actual shops.
