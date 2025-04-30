@@ -12,9 +12,10 @@ INTRO
   - Esoteric Tome
   - Last Breath
   - Violet Tendril
-- 2 new equipment:
+- 3 new equipment:
   - Ice Skates
   - Haloweave Gloves
+  - Purple Mage Crystal
 - 4 new enemies:
   - Purple Cultist
   - Purple Assassin
