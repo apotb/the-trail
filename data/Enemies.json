@@ -4410,7 +4410,7 @@
     ],
     "gold": 500,
     "name": "Big Mouth",
-    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: ThiefDuo_1>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nTurn % 4 === 0: Combat Stance\nState !== Sharpened Dagger: Sharpen Dagger, User\nTurn % 4 === 1: Attack\nTurn % 4 === 2: Focused Slash\nTurn % 4 === 3: Double Slash\n\nUser HP% param <= 15%: Backstab, Lowest HP%\n</AI Priority>\n\n<Enemy Drops>\nBell: 5%\nScrap of Big Mouth's Cape: 100%\nLarge Potion: 100%\nLarge Potion: 100%\nLarge Potion: 100%\nScaly Gloves: 12.5%\nEnchanted Anti-Magic Charm: 5%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: ThiefDuo_1>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nTurn % 4 === 1: Combat Stance\nState !== Sharpened Dagger: Sharpen Dagger, User\nTurn % 4 === 2: Attack\nTurn % 4 === 3: Focused Slash\nTurn % 4 === 0: Double Slash\n\nUser HP% param <= 15%: Backstab, Lowest HP%\n</AI Priority>\n\n<Enemy Drops>\nBell: 5%\nScrap of Big Mouth's Cape: 100%\nLarge Potion: 100%\nLarge Potion: 100%\nLarge Potion: 100%\nScaly Gloves: 12.5%\nEnchanted Anti-Magic Charm: 5%\n</Enemy Drops>",
     "params": [
       4000,
       0,
