@@ -94713,10 +94713,6 @@
                       "indent": null
                     },
                     {
-                      "code": 39,
-                      "indent": null
-                    },
-                    {
                       "code": 0
                     }
                   ],
@@ -94752,6 +94748,47 @@
                   "code": 45,
                   "parameters": [
                     "JUMP TO: 106, 52"
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 15,
+                      "parameters": [
+                        10
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 39,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "parameters": [
+                    10
                   ],
                   "indent": null
                 }
@@ -94881,7 +94918,7 @@
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
-          "trigger": 1,
+          "trigger": 0,
           "walkAnime": false
         }
       ],
