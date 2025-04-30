@@ -1833,6 +1833,7 @@ DataManager.processSVENotetags1 = function(group) {
     obj.sideviewShadowShow = Yanfly.Param.SVEShowShadow;
     obj.sideviewShadowScaleX = Yanfly.Param.SVEShadowScaleX;
     obj.sideviewShadowScaleY = Yanfly.Param.SVEShadowScaleY;
+    obj.sideviewShadowShift = 0;
     obj.spriteScaleX = 1;
     obj.spriteScaleY = 1;
     obj.sideviewFrameSpeed = Yanfly.Param.SVEFrameSpeed;
@@ -1913,6 +1914,8 @@ DataManager.processSVENotetags1 = function(group) {
         obj.sideviewShadowScaleX = parseFloat(RegExp.$1 * 0.01);
       } else if (line.match(/<(?:SIDEVIEW SHADOW HEIGHT):[ ](\d+)([%％])>/i)) {
         obj.sideviewShadowScaleY = parseFloat(RegExp.$1 * 0.01);
+      } else if (line.match(/<(?:SIDEVIEW SHADOW SHIFT):[ ]([\+\-]\d+(?:\.\d+)?)>/i)) {
+        obj.sideviewShadowShift = parseInt(RegExp.$1);
       } else if (line.match(/<(?:SIDEVIEW FRAME SPEED):[ ](\d+)>/i)) {
         obj.sideviewFrameSpeed = parseInt(RegExp.$1);
       } else if (line.match(/<(?:FLOATING|float)>/i)) {
@@ -2186,6 +2189,10 @@ Game_Enemy.prototype.sideviewShadowScaleY = function() {
     return this.enemy().sideviewShadowScaleY;
 };
 
+Game_Enemy.prototype.sideviewShadowShift = function() {
+    return this.enemy().sideviewShadowShift;
+};
+
 Game_Enemy.prototype.spriteScaleX = function() {
     if (this.hasSVBattler()) return this.enemy().spriteScaleX * -1;
     return this.enemy().spriteScaleX;
@@ -2348,7 +2355,7 @@ Sprite_Enemy.prototype.initSVSprites = function() {
 };
 
 Sprite_Enemy.prototype.setTransform = function(battler) {
-    this._shadowSprite.opacity = 0;
+    this._shadowSprite.alpha = 0;
     this._weaponSprite.opacity = 0;
     this._mainSprite.opacity = 0;
     this._stateSprite.opacity = 0;
@@ -2357,7 +2364,7 @@ Sprite_Enemy.prototype.setTransform = function(battler) {
       this.createWeaponSprite();
       this.createMainSprite();
       this.createStateSprite();
-      this._shadowSprite.opacity = 127;
+      this._shadowSprite.alpha = 0.5;
       this._weaponSprite.opacity = 255;
       this._mainSprite.opacity = 255;
       this._stateSprite.opacity = 255;
@@ -2377,7 +2384,7 @@ Sprite_Enemy.prototype.createShadowSprite = function() {
     this._shadowSprite.bitmap = this._mainSprite.bitmap;
     this._shadowSprite.anchor.set(0.5, 1);
     this._shadowSprite.tint = 0x000000;
-    this._shadowSprite.y = -4;
+    this._shadowSprite.y = -4 + this._enemy.sideviewShadowShift();
     this._shadowSprite.z = 0.99;
     this.addChildAt(this._shadowSprite, this.children.indexOf(this._mainSprite));
 };
@@ -2596,7 +2603,7 @@ Sprite_Enemy.prototype.adjustMainBitmapSettings = function(bitmap) {
 };
 
 Sprite_Enemy.prototype.adjustSVShadowSettings = function() {
-    if (this._enemy.showSideviewShadow()) this._shadowSprite.opacity = 127;
+    if (this._enemy.showSideviewShadow()) this._shadowSprite.alpha = 0.5;
     var scaleX = this._enemy.sideviewShadowScaleX();
     var scaleY = this._enemy.sideviewShadowScaleY();
     if (scaleX === 'auto') scaleX = this._mainSprite.bitmap.width / 9 / 64;
