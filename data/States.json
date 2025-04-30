@@ -6578,7 +6578,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Crystal Aura",
-    "note": "<Custom React Effect>\nvalue = Math.ceil(value / 1.5);\n</Custom React Effect>\n\n<Custom Aura Condition>\ncondition = !user.hasState(191);\n</Custom Aura Condition>\n\n<Help Description>\nReduces incoming damage by 1/3.\n</Help Description>",
+    "note": "<animationRow:30>\n\n<Custom React Effect>\nvalue = Math.ceil(value / 1.5);\n</Custom React Effect>\n\n<Custom Aura Condition>\ncondition = !user.hasState(191);\n</Custom Aura Condition>\n\n<Help Description>\nReduces incoming damage by 1/3.\n</Help Description>",
     "overlay": 0,
     "priority": 5,
     "removeAtBattleEnd": false,
@@ -7157,7 +7157,18 @@
     "id": 210,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "traits": [],
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 2,
+        "value": 1.5
+      },
+      {
+        "code": 21,
+        "dataId": 3,
+        "value": 1.5
+      }
+    ],
     "iconIndex": 833,
     "maxTurns": 1,
     "message1": "",
@@ -7167,7 +7178,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Crystal Aura",
-    "note": "<Custom Confirm Effect>\nvalue = Math.ceil(value * 1.5);\n</Custom Confirm Effect>\n\n<Custom Aura Condition>\ncondition = !user.hasState(209);\n</Custom Aura Condition>\n\n<Help Description>\nIncreases outgoing damage by 50%.\n</Help Description>",
+    "note": "<animationRow:31>\n\n<Custom Confirm Effect>\nvalue = Math.ceil(value * 1.5);\n</Custom Confirm Effect>\n\n<Custom Aura Condition>\ncondition = !user.hasState(209);\n</Custom Aura Condition>\n\n<Help Description>\nIncreases ATK and MAT by 50%.\n</Help Description>",
     "overlay": 0,
     "priority": 5,
     "removeAtBattleEnd": false,

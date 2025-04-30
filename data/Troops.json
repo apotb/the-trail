@@ -12707,5 +12707,375 @@
         "span": 0
       }
     ]
+  },
+  {
+    "id": 114,
+    "members": [
+      {
+        "enemyId": 87,
+        "x": 354,
+        "y": 336,
+        "hidden": false
+      },
+      {
+        "enemyId": 89,
+        "x": 240,
+        "y": 192,
+        "hidden": false
+      },
+      {
+        "enemyId": 89,
+        "x": 162,
+        "y": 352,
+        "hidden": false
+      }
+    ],
+    "name": "Purple Cultist, Cleftface Zealot x2",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 0,
+          "enemyIndex": 0,
+          "enemyValid": true,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              1,
+              0,
+              143
+            ]
+          },
+          {
+            "code": 337,
+            "indent": 0,
+            "parameters": [
+              1,
+              215,
+              false
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              2,
+              0,
+              143
+            ]
+          },
+          {
+            "code": 337,
+            "indent": 0,
+            "parameters": [
+              2,
+              215,
+              false
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 115,
+    "members": [
+      {
+        "enemyId": 88,
+        "x": 360,
+        "y": 320,
+        "hidden": false
+      },
+      {
+        "enemyId": 89,
+        "x": 240,
+        "y": 208,
+        "hidden": false
+      },
+      {
+        "enemyId": 89,
+        "x": 174,
+        "y": 368,
+        "hidden": false
+      }
+    ],
+    "name": "Purple Assassin, Cleftface Zealot x2",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 0,
+          "enemyIndex": 0,
+          "enemyValid": true,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              1,
+              0,
+              143
+            ]
+          },
+          {
+            "code": 337,
+            "indent": 0,
+            "parameters": [
+              1,
+              215,
+              false
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              2,
+              0,
+              143
+            ]
+          },
+          {
+            "code": 337,
+            "indent": 0,
+            "parameters": [
+              2,
+              215,
+              false
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 116,
+    "members": [
+      {
+        "enemyId": 90,
+        "x": 210,
+        "y": 322,
+        "hidden": false
+      },
+      {
+        "enemyId": 87,
+        "x": 448,
+        "y": 304,
+        "hidden": false
+      },
+      {
+        "enemyId": 88,
+        "x": 368,
+        "y": 368,
+        "hidden": false
+      },
+      {
+        "enemyId": 89,
+        "x": 405,
+        "y": 192,
+        "hidden": false
+      },
+      {
+        "enemyId": 89,
+        "x": 255,
+        "y": 418,
+        "hidden": false
+      }
+    ],
+    "name": "Sentinel",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 0,
+          "enemyIndex": 1,
+          "enemyValid": true,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              5,
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 1,
+            "parameters": [
+              1,
+              0,
+              143
+            ]
+          },
+          {
+            "code": 337,
+            "indent": 1,
+            "parameters": [
+              1,
+              215,
+              false
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 1,
+            "parameters": [
+              2,
+              0,
+              143
+            ]
+          },
+          {
+            "code": 337,
+            "indent": 1,
+            "parameters": [
+              2,
+              215,
+              false
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 0,
+          "enemyIndex": 2,
+          "enemyValid": true,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              5,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 1,
+            "parameters": [
+              1,
+              0,
+              143
+            ]
+          },
+          {
+            "code": 337,
+            "indent": 1,
+            "parameters": [
+              1,
+              215,
+              false
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 1,
+            "parameters": [
+              2,
+              0,
+              143
+            ]
+          },
+          {
+            "code": 337,
+            "indent": 1,
+            "parameters": [
+              2,
+              215,
+              false
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
   }
 ]

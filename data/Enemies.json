@@ -6533,7 +6533,7 @@
         "conditionParam2": 0,
         "conditionType": 0,
         "rating": 5,
-        "skillId": 59
+        "skillId": 104
       },
       {
         "conditionParam1": 0,
@@ -6547,6 +6547,20 @@
         "conditionParam2": 0,
         "conditionType": 0,
         "rating": 5,
+        "skillId": 91
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 4,
+        "skillId": 92
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 4,
         "skillId": 64
       },
       {
@@ -6585,13 +6599,13 @@
     ],
     "gold": 120,
     "name": "Purple Cultist",
-    "note": "<Armor Weakness: Slashing>\n<Passive State: 150, 208>\n\n<Sideview Battler: Evil1_3>\n<Sideview No Collapse>\n<Weapon Image: 26>\n<Attack Animation: 122>\n\n<AI Priority>\nState === On Fire!: Bubble\nHP% param <= 75% +++ Random 60%: Cure II, Lowest HP%\n</AI Priority>\n\n<Enemy Drops>\nEsoteric Tome: 5%\nPurple Mage Crystal: 5%\nLarge Elixir: 16.66%\nLarge Elixir: 16.66%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n<Passive State: 150, 208>\n\n<Sideview Battler: Evil1_3>\n<Sideview No Collapse>\n<Weapon Image: 26>\n<Attack Animation: 122>\n\n<AI Priority>\nState === On Fire!: Bubble\n</AI Priority>\n\n<Enemy Drops>\nEsoteric Tome: 10%\nPurple Mage Crystal: 10%\nLarge Elixir: 16.66%\nLarge Elixir: 16.66%\n</Enemy Drops>",
     "params": [
       5000,
       0,
       25,
       30,
-      70,
+      80,
       85,
       80,
       60
@@ -6605,6 +6619,20 @@
         "conditionParam2": 0,
         "conditionType": 0,
         "rating": 5,
+        "skillId": 3
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 6
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 1,
         "skillId": 1
       }
     ],
@@ -6642,18 +6670,23 @@
         "code": 32,
         "dataId": 21,
         "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 128,
+        "value": 1
       }
     ],
     "gold": 120,
     "name": "Purple Assassin",
-    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: NoMatchingSprite/Purple Assassin>\n<Sideview No Collapse>\n<Weapon Image: 277>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nTurn % 3 === 0: Combat Stance\nState !== Sharpened Dagger: Sharpen Dagger, User\nTurn % 3 === 1 +++ State === Magical Barrier: Shield Break, Highest HP%\nTurn % 3 === 1: Focused Slash\nTurn % 3 === 2: Double Slash\nUser HP% param <= 15%: Backstab, Lowest HP%\n</AI Priority>\n\n<Enemy Drops>\nLast Breath: 5%\nLarge Potion: 16.66%\nLarge Potion: 16.66%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: NoMatchingSprite/Purple Assassin>\n<Sideview No Collapse>\n<Weapon Image: 277>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest HP%\nTurn % 4 === 1: Combat Stance\nState !== Sharpened Dagger +++ Random 30%: Sharpen Dagger, User\nState !== Broken Armor +++ Random 30%: Cut Down, Highest DEF\nState === Magical Barrier +++ Random 30%: Shield Break, Highest HP%\n</AI Priority>\n\n<Enemy Drops>\nLast Breath: 10%\nLarge Potion: 16.66%\nLarge Potion: 16.66%\n</Enemy Drops>",
     "params": [
       5000,
       0,
       50,
-      36,
+      40,
       10,
-      70,
+      65,
       150,
       60
     ]
@@ -6666,6 +6699,13 @@
         "conditionParam2": 0,
         "conditionType": 0,
         "rating": 5,
+        "skillId": 104
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 1,
         "skillId": 1
       }
     ],
@@ -6702,14 +6742,14 @@
     ],
     "gold": 100,
     "name": "Cleftface Zealot",
-    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Horror1_7>\n<Weapon Image: 281>\n<Attack Animation: 1>\n\n<Enemy Drops>\nViolet Tendril: 5%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Horror1_7>\n<Sideview No Collapse>\n<Weapon Image: 281>\n<Attack Animation: 1>\n\n<AI Priority>\nEval user.hasState(143) +++ Random 25%: Sacrifice\nUser HP% param <= 20%: Sacrifice\nState !== Low Blow +++ Random 30%: Low Blow, Highest ATK\nState !== Amnesia +++ Random 30%: Amnesia, Highest ATK\nState !== Silenced +++ Random 30%: Silence, Highest MAT\nState === Magical Barrier +++ Random 30%: Shield Break, Highest HP%\n</AI Priority>\n\n<Enemy Drops>\nViolet Tendril: 5%\n</Enemy Drops>",
     "params": [
       3000,
       0,
+      40,
       35,
-      30,
       60,
-      70,
+      75,
       110,
       40
     ]
@@ -6753,7 +6793,7 @@
     ],
     "gold": 0,
     "name": "Sentinel",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n\n<Sideview Battler: NoMatchingSprite/Sentinel Phase 1>\n<Attack Animation: 122>\n<HP Gauge Width: 288>\n\n<Enemy Drops>\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n\n<Sideview Battler: NoMatchingSprite/Sentinel Phase 1>\n<Scale Sprite: 200%>\n<Attack Animation: 122>\n<HP Gauge Width: 288>\n\n<Enemy Drops>\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
     "params": [
       100,
       0,

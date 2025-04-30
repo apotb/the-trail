@@ -5186,5 +5186,35 @@
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0
+  },
+  {
+    "id": 149,
+    "animationId": 109,
+    "damage": {
+      "critical": true,
+      "elementId": 0,
+      "formula": "a.mat * 5 - b.mdf",
+      "type": 1,
+      "variance": 5
+    },
+    "description": "",
+    "effects": [],
+    "hitType": 2,
+    "iconIndex": 119,
+    "message1": " casts %1!",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Sacrifice",
+    "note": "<Boost Damage>\n\n<setup action>\nmotion chant: user\nwait: 45\nmotion spell: user\n</setup action>\n\n<whole action>\nshake screen: 1, 9, 60\naction animation: user\nwait for animation\nshow battle hud\n</whole action>\n\n<target action>\naction effect\nwait for effect\nwait: 5\nclear battle log\n</target action>\n\n<follow action>\ncollapse: user, force\n</follow action>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 2,
+    "speed": 0,
+    "stypeId": 2,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
   }
 ]
