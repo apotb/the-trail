@@ -82,6 +82,7 @@ INTRO
 - Changed how Incorporeal enemies react to physical damage to make it more clear it's not just a miss.
 - Salvage kits and higher tiers of Bloodlust will be hidden from the crafting menu once obtained.
 - Simplified the armor menu by removing unnecessary categories.
+- Enemies no longer show their names all the time.
 - Updated battle select cursor sprites.
 - The map display name is now centered horizontally.
 - Merged sub-location name display into map display name window.
