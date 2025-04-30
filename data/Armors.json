@@ -5898,15 +5898,21 @@
   {
     "id": 224,
     "atypeId": 1,
-    "description": "",
+    "description": "When your soul begins to crack, the Purple listens. And it\nwill answer. Reduces MP usage by 25% when below 50% MP.",
     "etypeId": 6,
-    "traits": [],
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 8,
+        "value": 0.02
+      }
+    ],
     "iconIndex": 830,
     "name": "Purple Mage Crystal",
-    "note": "",
+    "note": "<Passive State: 207>",
     "params": [
       0,
-      0,
+      15,
       0,
       0,
       0,
@@ -5914,6 +5920,6 @@
       0,
       0
     ],
-    "price": 0
+    "price": 2000
   }
 ]

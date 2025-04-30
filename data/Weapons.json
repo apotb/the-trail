@@ -2336,7 +2336,7 @@
   {
     "id": 62,
     "animationId": 122,
-    "description": "A worn book pulsing with illegible glyphs. Whispers of\nevil flood your mind when opened. Increases OMD by 10%.",
+    "description": "A worn book pulsing with dark glyphs. Evil whispers flood your\nmind when opened. Increases magic damage and MP costs by 10%.",
     "etypeId": 1,
     "traits": [
       {
@@ -2358,6 +2358,11 @@
         "code": 25,
         "dataId": 0,
         "value": 1.1
+      },
+      {
+        "code": 23,
+        "dataId": 4,
+        "value": 1.1
       }
     ],
     "iconIndex": 1233,
@@ -2366,7 +2371,7 @@
     "params": [
       0,
       200,
-      0,
+      3,
       0,
       60,
       0,
@@ -2379,7 +2384,7 @@
   {
     "id": 63,
     "animationId": 6,
-    "description": "",
+    "description": "Silence your victims before they can even scream.\nGrants high CRI and can inflict \\it[21].",
     "etypeId": 1,
     "traits": [
       {
@@ -2394,8 +2399,13 @@
       },
       {
         "code": 22,
-        "dataId": 0,
-        "value": 0
+        "dataId": 2,
+        "value": 0.1
+      },
+      {
+        "code": 32,
+        "dataId": 21,
+        "value": 0.2
       }
     ],
     "iconIndex": 828,
@@ -2404,11 +2414,11 @@
     "params": [
       0,
       0,
+      25,
       0,
       0,
       0,
-      0,
-      0,
+      10,
       0
     ],
     "price": 2000,
@@ -2417,7 +2427,7 @@
   {
     "id": 64,
     "animationId": 1,
-    "description": "",
+    "description": "A sacrificial ritual turned the zealot carrying this\ninto something more resembling a monster than a human.",
     "etypeId": 1,
     "traits": [
       {
@@ -2433,18 +2443,18 @@
       {
         "code": 22,
         "dataId": 0,
-        "value": 0
+        "value": 0.1
       }
     ],
     "iconIndex": 829,
     "name": "Violet Tendril",
-    "note": "<Weapon Image: 281>\n<Upgrade Slots: 3>",
+    "note": "<Weapon Image: 281>\n<Upgrade Slots: 3>\n\n<Element Amplify Healing: +25%>\n<Element Amplify Dark: +25%>",
     "params": [
+      25,
+      25,
+      25,
       0,
-      0,
-      0,
-      0,
-      0,
+      25,
       0,
       0,
       0

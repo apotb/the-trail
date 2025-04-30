@@ -7067,8 +7067,14 @@
     "id": 207,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "traits": [],
-    "iconIndex": 0,
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 4,
+        "value": 0.75
+      }
+    ],
+    "iconIndex": 831,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -7076,10 +7082,10 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "",
-    "note": "",
+    "name": "Arcane Crystal",
+    "note": "<animationRow:31>\n\n<Custom Passive Condition>\ncondition = user.mpRate() <= 0.5;\n</Custom Passive Condition>\n\n<Help Description>\nReduces MP usage by 25% when below 50% MP.\n</Help Description>",
     "overlay": 0,
-    "priority": 50,
+    "priority": 5,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
