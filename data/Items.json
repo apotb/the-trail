@@ -6063,7 +6063,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A vial of a dangerous toxin taken from a\nvenomous enemy. You can drink it... but why?",
+    "description": "A vial of a dangerous toxin taken from a venomous enemy. Coating a weapon\nin this will make it apply \\it[39]. You could drink it... but why?",
     "effects": [
       {
         "code": 21,
@@ -6076,9 +6076,9 @@
     "iconIndex": 688,
     "itypeId": 1,
     "name": "Vial of Poison",
-    "note": "<Enemy or Actor Select>",
+    "note": "<Upgrade Weapon Type: 0>\n<Upgrade Effect>\nEval: item.traits.push({code: 32, dataId: 39, value: 1});\nPrefix: Venomous\nWeight: +2\n</Upgrade Effect>\n<Upgrade Tooltip: Inflict \\it[39]>\n\n<Enemy or Actor Select>",
     "occasion": 0,
-    "price": 16,
+    "price": 120,
     "repeats": 1,
     "scope": 7,
     "speed": 0,

@@ -56,6 +56,7 @@ INTRO
 - Harmony, Grass Knuckles, and Frost Edge no longer use earlier staves/daggers as ingredients.
 - Moved many cooking recipes from the pot to the campfire.
 - Doubled Claire's outgoing healing.
+- Vial of Poison can be used as an upgrader, making a weapon inflict Poisoned.
 - Enemies using Cure II will no longer apply Rejuvenation.
 - Nerfed Gilded Coin Bit Rate from 1.5x → 1.25x
 - Buffed Seshat's Charm drop rate from 1/100 to 1/50.
