@@ -1518,7 +1518,7 @@
     ],
     "gold": 80,
     "name": "Dandy Toad Mage",
-    "note": "<Armor Weakness: Slashing>\n<Passive State: 150, 193>\n\n<Sideview Battler: DandyToad_5>\n<Sideview No Collapse>\n<Weapon Image: 25>\n<Attack Animation: 122>\n\n<Boost Skill 15: Full>\n<AI Priority>\nState === On Fire!: Bubble\nHP% param <= 30% +++ Random 60%: Cure II, Lowest HP%\n</AI Priority>\n\n<Enemy Drops>\nBell: 5%\nFulfilling Ration: 50%\nElixir: 16.66%\nElixir: 16.66%\n</Enemy Drops>\n<Conditional Green Mage Crystal Drop>\nSwitch 45 OFF: +95%\nAlways: +5%\n</Conditional Green Mage Crystal Drop>",
+    "note": "<Armor Weakness: Slashing>\n<Passive State: 150, 193>\n\n<Sideview Battler: DandyToad_5>\n<Sideview No Collapse>\n<Weapon Image: 25>\n<Attack Animation: 122>\n\n<AI Priority>\nState === On Fire!: Bubble\n</AI Priority>\n\n<Enemy Drops>\nBell: 5%\nFulfilling Ration: 50%\nElixir: 16.66%\nElixir: 16.66%\n</Enemy Drops>\n<Conditional Green Mage Crystal Drop>\nSwitch 45 OFF: +95%\nAlways: +5%\n</Conditional Green Mage Crystal Drop>",
     "params": [
       1500,
       0,
@@ -6533,13 +6533,34 @@
         "conditionParam2": 0,
         "conditionType": 0,
         "rating": 5,
+        "skillId": 59
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 121
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 64
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 1,
         "skillId": 1
       }
     ],
     "battlerHue": 0,
     "battlerName": "Purple Cultist",
     "dropItems": [],
-    "exp": 0,
+    "exp": 180,
     "traits": [
       {
         "code": 31,
@@ -6554,7 +6575,7 @@
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.95
+        "value": 1
       },
       {
         "code": 22,
@@ -6562,18 +6583,18 @@
         "value": 0.05
       }
     ],
-    "gold": 0,
+    "gold": 120,
     "name": "Purple Cultist",
-    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Evil1_3>\n<Sideview No Collapse>\n<Weapon Image: 26>\n<Attack Animation: 122>\n\n<Enemy Drops>\nEsoteric Tome: 5%\nPurple Mage Crystal: 5%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n<Passive State: 150, 208>\n\n<Sideview Battler: Evil1_3>\n<Sideview No Collapse>\n<Weapon Image: 26>\n<Attack Animation: 122>\n\n<AI Priority>\nState === On Fire!: Bubble\nHP% param <= 75% +++ Random 60%: Cure II, Lowest HP%\n</AI Priority>\n\n<Enemy Drops>\nEsoteric Tome: 5%\nPurple Mage Crystal: 5%\nLarge Elixir: 16.66%\nLarge Elixir: 16.66%\n</Enemy Drops>",
     "params": [
-      100,
+      5000,
       0,
-      10,
-      10,
-      10,
-      10,
-      10,
-      10
+      25,
+      30,
+      70,
+      85,
+      80,
+      60
     ]
   },
   {
@@ -6590,7 +6611,7 @@
     "battlerHue": 0,
     "battlerName": "Purple Assassin",
     "dropItems": [],
-    "exp": 0,
+    "exp": 180,
     "traits": [
       {
         "code": 31,
@@ -6605,26 +6626,36 @@
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.95
+        "value": 1.05
       },
       {
         "code": 22,
         "dataId": 1,
-        "value": 0.05
+        "value": 0.1
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.1
+      },
+      {
+        "code": 32,
+        "dataId": 21,
+        "value": 1
       }
     ],
-    "gold": 0,
+    "gold": 120,
     "name": "Purple Assassin",
-    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: NoMatchingSprite/Purple Assassin>\n<Sideview No Collapse>\n<Weapon Image: 277>\n<Attack Animation: 6>\n\n<Enemy Drops>\nLast Breath: 5%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: NoMatchingSprite/Purple Assassin>\n<Sideview No Collapse>\n<Weapon Image: 277>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nTurn % 3 === 0: Combat Stance\nState !== Sharpened Dagger: Sharpen Dagger, User\nTurn % 3 === 1 +++ State === Magical Barrier: Shield Break, Highest HP%\nTurn % 3 === 1: Focused Slash\nTurn % 3 === 2: Double Slash\nUser HP% param <= 15%: Backstab, Lowest HP%\n</AI Priority>\n\n<Enemy Drops>\nLast Breath: 5%\nLarge Potion: 16.66%\nLarge Potion: 16.66%\n</Enemy Drops>",
     "params": [
-      100,
+      5000,
       0,
+      50,
+      36,
       10,
-      10,
-      10,
-      10,
-      10,
-      10
+      70,
+      150,
+      60
     ]
   },
   {
@@ -6641,7 +6672,7 @@
     "battlerHue": 0,
     "battlerName": "Cleftface Zealot",
     "dropItems": [],
-    "exp": 0,
+    "exp": 150,
     "traits": [
       {
         "code": 31,
@@ -6656,26 +6687,31 @@
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.95
+        "value": 1.03
       },
       {
         "code": 22,
         "dataId": 1,
+        "value": 0.08
+      },
+      {
+        "code": 22,
+        "dataId": 2,
         "value": 0.05
       }
     ],
-    "gold": 0,
+    "gold": 100,
     "name": "Cleftface Zealot",
     "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Horror1_7>\n<Weapon Image: 281>\n<Attack Animation: 1>\n\n<Enemy Drops>\nViolet Tendril: 5%\n</Enemy Drops>",
     "params": [
-      100,
+      3000,
       0,
-      10,
-      10,
-      10,
-      10,
-      10,
-      10
+      35,
+      30,
+      60,
+      70,
+      110,
+      40
     ]
   },
   {
