@@ -594,8 +594,24 @@
     "scrollX": 0,
     "scrollY": 0
   },
-  null,
-  null,
+  {
+    "id": 67,
+    "expanded": false,
+    "name": "Order of the Purple - Entrance",
+    "order": 195,
+    "parentId": 210,
+    "scrollX": 0,
+    "scrollY": 0
+  },
+  {
+    "id": 68,
+    "expanded": true,
+    "name": "Order of the Purple - B1",
+    "order": 196,
+    "parentId": 67,
+    "scrollX": 0,
+    "scrollY": 0
+  },
   {
     "id": 69,
     "expanded": true,
@@ -695,7 +711,15 @@
     "scrollX": 0,
     "scrollY": 0
   },
-  null,
+  {
+    "id": 80,
+    "expanded": false,
+    "name": "Order of the Purple - Engraving",
+    "order": 197,
+    "parentId": 68,
+    "scrollX": 0,
+    "scrollY": 0
+  },
   {
     "id": 81,
     "expanded": false,
@@ -858,7 +882,15 @@
     "scrollX": 0,
     "scrollY": 0
   },
-  null,
+  {
+    "id": 99,
+    "expanded": true,
+    "name": "Order of the Purple - B2",
+    "order": 198,
+    "parentId": 68,
+    "scrollX": 0,
+    "scrollY": 0
+  },
   {
     "id": 100,
     "expanded": false,
@@ -967,7 +999,15 @@
     "scrollX": 0,
     "scrollY": 0
   },
-  null,
+  {
+    "id": 112,
+    "expanded": false,
+    "name": "Order of the Purple - Ritual Room",
+    "order": 199,
+    "parentId": 99,
+    "scrollX": 0,
+    "scrollY": 0
+  },
   null,
   null,
   {
@@ -1408,7 +1448,7 @@
     "id": 165,
     "expanded": false,
     "name": "Tester Tower",
-    "order": 195,
+    "order": 200,
     "parentId": 0,
     "scrollX": 0,
     "scrollY": 0

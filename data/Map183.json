@@ -94713,6 +94713,10 @@
                       "indent": null
                     },
                     {
+                      "code": 39,
+                      "indent": null
+                    },
+                    {
                       "code": 0
                     }
                   ],
@@ -94754,6 +94758,16 @@
               ]
             },
             {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 39,
+                  "indent": null
+                }
+              ]
+            },
+            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -94790,15 +94804,53 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Tint set #6e6e6e"
+              ]
+            },
+            {
               "code": 201,
               "indent": 0,
               "parameters": [
                 0,
-                183,
-                105,
-                52,
-                0,
+                67,
+                11,
+                6,
+                2,
                 2
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 40,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 40,
+                  "indent": null
+                }
               ]
             },
             {
