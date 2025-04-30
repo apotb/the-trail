@@ -3177,12 +3177,7 @@ Game_BattlerBase.prototype.mostImportantStateText = function() {
 };
 
 Game_BattlerBase.prototype.stateMotionIndex = function() {
-    var states = this.states();
-    if (states.length > 0) {
-        return states[0].motion;
-    } else {
-        return 0;
-    }
+    // YEP_X_VisualStateFX.js
 };
 
 Game_BattlerBase.prototype.stateOverlayIndex = function() {
@@ -3344,11 +3339,11 @@ Game_Battler.prototype.requestEffect = function(effectType) {
 };
 
 Game_Battler.prototype.requestMotion = function(motionType) {
-    this._motionType = motionType;
+    // YEP_BattleEngineCore.js
 };
 
 Game_Battler.prototype.requestMotionRefresh = function() {
-    this._motionRefresh = true;
+    // YEP_BattleEngineCore.js
 };
 
 Game_Battler.prototype.select = function() {
