@@ -4006,7 +4006,7 @@ Game_Battler.prototype.spriteCanMove = function() {
       var state = this.states()[i];
       if (state.spriteCannotMove) return false;
     }
-    return this.canMove();
+    return true; // this.canMove();
 };
 
 Game_Battler.prototype.spritePosX = function() {
