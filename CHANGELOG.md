@@ -1,10 +1,18 @@
 # Alpha 17: Path of the Purple (5/??/2025)
-INTRO
+Now that you've witnessed the destructive power of Apocalypse first-hand, it's time to take up arms! The thing is, no one really knows where Apocalypse is... so it's up to you to track him down.
+A member of a mysterious cult has been captured, and is being held in the Solus Valley Jail. It'll take some intimidation to get anything out of this guy, but for now, he's your only hint. And who knows? Maybe this lead will take you right to Apocalypse...
+
+Alpha 17 brings an all new challenge, and even more powerful equipment! Deck your party out with the latest additions to the game; you'll need to use everything you can get your hands on to take down your latest foes.
+Alongside the additions, there's a ton of quality-of-life changes and graphical improvements. The Trail is looking better than ever!
+
+The changelog below may be lengthy, but if you take the time to read it, I think you'll find it very interesting. There's been a lot of balance changes and major bug fixes you might wanna' know about!
 
 ### Additions
+- Added the Solus Valley Jail and Castle Town Sewers.
 - Autosaving is here! After a configurable time has passed, your progress will be automatically backed up in a unique save slot.
 - Added 2 warp doors in Sam's basement that lead to Bladesville and Telluria Castle Town.
 - Added a leaderboard for Fish Caught. It can be accessed by speaking to the fisherman in Telluria Castle Town.
+- Added a golden First Cleric statue in the Frozen Labyrinth.
 - 2 new items:
   - Cleansing Scroll ★
   - CRI Scroll
@@ -22,7 +30,6 @@ INTRO
   - Purple Assassin
   - Cleftface Zealot
   - Sentinel
-- Added a golden First Cleric statue in the Frozen Labyrinth.
 
 ### Changes
 - Time moves slower:
@@ -38,7 +45,7 @@ INTRO
 - Rebalanced several enemies:
   - Mimic: Actions 3 → 1 for Ruined Fort encounter.
   - Will o' Wisp: MAT 45 → 39
-  - Ice Golem: DEF 45 → 40, MDF 70 → 60, Ice Barrier chance 50% → 25
+  - Ice Golem: DEF 45 → 40, MDF 70 → 60, Ice Barrier chance 50% → 25%
   - Chilling Apparition: MDF 85 → 75
   - Werewolf: MDF 60 → 55
   - Ice Slime: MDF 75 → 60
@@ -57,14 +64,16 @@ INTRO
     - Although Henry's Gloves can be obtained earlier, they're more "exclusive" since they are a boss drop.
 - Graphical improvements:
   - Changed the title screen, chapter splash screens, font, and window skin.
-  - Gaining/losing status effects now shows a short popup instead of using the intrusive message box.
-  - The map display name is now centered horizontally.
-  - Merged sub-location name display into map display name window.
-  - Doubled the scale of everyone in battle.
-  - Damage popups are much larger, last longer, and use a bolded font for readability.
-  - Improved scaling of floating enemies' shadows.
-  - Enemies no longer show their names all the time.
-  - Updated battle select cursor sprites.
+  - Map:
+    - Gaining/losing status effects now shows a short popup instead of using the intrusive message box.
+    - The map display name is now centered horizontally.
+    - Merged sub-location name display into map display name window.
+  - Battle:
+    - Doubled the scale of everyone in battle.
+    - Damage popups are much larger, last longer, and use a bolded font for readability.
+    - Improved scaling of floating enemies' shadows.
+    - Enemies no longer show their names all the time.
+    - Updated battle select cursor sprites.
 - Monsters won't respawn while you're in a dungeon.
 - Simplified the General Store's stock.
 - Harmony, Grass Knuckles, and Frost Edge no longer use earlier staves/daggers as ingredients.
@@ -75,7 +84,7 @@ INTRO
 - Nerfed Gilded Coin Bit Rate from 1.5x → 1.25x
 - Nerfed the Dark damage reduction of tellurium equipment.
 - Nerfed Shield of the Hero Darkfire resistance from 100% → 50%.
-- Buffed Seshat's Charm drop rate from 1/100 to 1/50.
+- Buffed Seshat's Charm drop rate from 1/100 → 1/50.
 - Starting in Chapter 5, Seshat's Tome will drop at a rate of 1/100.
 - Buffed Stalactite drop rate from 1/30 → 1/20.
 - Darkhounds now drop Iron Wristbraces instead of Silver Wristbraces.
