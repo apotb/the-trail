@@ -1230,7 +1230,7 @@ Sprite_Battler.prototype.updateStateSprites = function() {
       this._stateIconSprite.y = height;
     }
     if (this._stateSprite) {
-      var height = (this._battler.spriteHeight() - 64 * this.scale.y) * -1;
+      var height = (this._battler.spriteHeight() - 64 * this.scale.y / Sprite_Battler.scale) * -1;
       this._stateSprite.y = height;
     }
     var heightRate = 0;

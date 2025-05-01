@@ -24,7 +24,6 @@ INTRO
 - Added a golden First Cleric statue in the Frozen Labyrinth.
 
 ### Changes
-- Various graphical improvements have been made, such as the title screen, font, and window skin.
 - Time moves slower:
   - By default, 1 real-life second is 2 → 1 in-game seconds.
   - If the Magical Ocarina is used, 1 real-life second is 1 → 2 in-game seconds.
@@ -50,7 +49,15 @@ INTRO
   - Scaly Gloves: ATK 5 → 3; HIT +8% → +6%; CRI +2% → +1.5%
   - These changes effectively swap Henry's Gloves and Scaly Gloves in progression.
     - Although Henry's Gloves can be obtained earlier, they're more "exclusive" since they are a boss drop.
-- Gaining/losing status effects now shows a short popup instead of using the intrusive message box.
+- Graphical improvements:
+  - Changed the title screen, chapter splash screens, font, and window skin.
+  - Gaining/losing status effects now shows a short popup instead of using the intrusive message box.
+  - The map display name is now centered horizontally.
+  - Merged sub-location name display into map display name window.
+  - Doubled the scale of everyone in battle.
+  - Improved scaling of floating enemies' shadows.
+  - Enemies no longer show their names all the time.
+  - Updated battle select cursor sprites.
 - Monsters won't respawn while you're in a dungeon.
 - Simplified the General Store's stock.
 - Harmony, Grass Knuckles, and Frost Edge no longer use earlier staves/daggers as ingredients.
@@ -82,11 +89,6 @@ INTRO
 - Changed how Incorporeal enemies react to physical damage to make it more clear it's not just a miss.
 - Salvage kits and higher tiers of Bloodlust will be hidden from the crafting menu once obtained.
 - Simplified the armor menu by removing unnecessary categories.
-- Enemies no longer show their names all the time.
-- Updated battle select cursor sprites.
-- The map display name is now centered horizontally.
-- Merged sub-location name display into map display name window.
-- Updated the chapter images.
 - Replaced the Dark Forest's puzzle hint with the Great Pyramid's.
 
 ### Bug Fixes
@@ -123,6 +125,7 @@ INTRO
 - Fixed the level recommendation for the Ruined Fort not having been updated in Alpha 16.
 - Fixed the battle select cursor hovering way too high over some enemies.
 - Fixed inconsistent HP bar positions.
+- Fixed shadows rendering above enemy sprites.
 - Fixed a visual bug with the cutscene right before the Chamber of the Seal.
 - Fixed frozen enemies not stopping motion.
 - Fixed being caught by a Sand Stomper playing the same sound effect as being captured by a Lost Soul.

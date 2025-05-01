@@ -2386,7 +2386,7 @@ Sprite_Enemy.prototype.createShadowSprite = function() {
     this._shadowSprite.tint = 0x000000;
     this._shadowSprite.y = -4 + this._enemy.sideviewShadowShift();
     this._shadowSprite.z = 0.99;
-    this.addChildAt(this._shadowSprite, this.children.indexOf(this._mainSprite));
+    this.addChildAt(this._shadowSprite, 0);
 };
 
 Sprite_Enemy.prototype.createWeaponSprite = function() {
@@ -2478,6 +2478,8 @@ Sprite_Enemy.prototype.updateBreathing = function() {
     this.scale.x = this._enemy.spriteScaleX() + scaleX;
     this.scale.x = Math.abs(this.scale.x) * mirror;
     this.scale.y = this._enemy.spriteScaleY() + scaleY;
+    this.scale.x *= Sprite_Battler.scale;
+    this.scale.y *= Sprite_Battler.scale;
 };
 
 if (Imported.YEP_X_ActSeqPack2) {
@@ -2608,8 +2610,9 @@ Sprite_Enemy.prototype.adjustSVShadowSettings = function() {
     var scaleY = this._enemy.sideviewShadowScaleY();
     if (scaleX === 'auto') scaleX = this._mainSprite.bitmap.width / 9 / 64;
     if (scaleY === 'auto') scaleY = this._mainSprite.bitmap.width / 9 / 64;
-    this._shadowSprite.scale.x = scaleX * this._enemy.spriteScaleX() * (1 + this.addFloatingHeight()) * (64 / this.width) * -1;
-    this._shadowSprite.scale.y = scaleY * this._enemy.spriteScaleY() * (1 + this.addFloatingHeight()) * (64 / this.height) * -0.5;
+    const heightFactor = Math.pow(1 + this.addFloatingHeight(), 1/5);
+    this._shadowSprite.scale.x = scaleX * this._enemy.spriteScaleX() * heightFactor * (64 / this.width) * -1;
+    this._shadowSprite.scale.y = scaleY * this._enemy.spriteScaleY() * heightFactor * (64 / this.height) * -0.5;
 };
 
 Sprite_Enemy.prototype.updateMotion = function() {
