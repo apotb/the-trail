@@ -12921,6 +12921,37 @@
           "actorHp": 50,
           "actorId": 1,
           "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 355,
+            "indent": 0,
+            "parameters": [
+              "$gameTroop._enemies[0]._name = \"Statue\";"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
           "enemyHp": 0,
           "enemyIndex": 1,
           "enemyValid": true,
@@ -13153,6 +13184,13 @@
             "indent": 4,
             "parameters": [
               "$gameTroop._enemies[0]._svBattlerName = \"NoMatchingSprite/Sentinel Phase 2\";"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 4,
+            "parameters": [
+              "delete $gameTroop._enemies[0]._name;"
             ]
           },
           {

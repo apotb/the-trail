@@ -4898,7 +4898,7 @@ Game_Enemy.prototype.originalName = function() {
 };
 
 Game_Enemy.prototype.name = function() {
-    return this.originalName() + (this._plural ? this._letter : '');
+    return this._name || this.originalName() + (this._plural ? this._letter : '');
 };
 
 Game_Enemy.prototype.isLetterEmpty = function() {
