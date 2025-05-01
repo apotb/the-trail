@@ -6742,7 +6742,7 @@
     ],
     "gold": 100,
     "name": "Cleftface Zealot",
-    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Horror1_7>\n<Sideview No Collapse>\n<Weapon Image: 281>\n<Attack Animation: 1>\n\n<AI Priority>\nEval user.hasState(143) +++ Random 25%: Sacrifice\nUser HP% param <= 20%: Sacrifice\nState !== Low Blow +++ Random 30%: Low Blow, Highest ATK\nState !== Amnesia +++ Random 30%: Amnesia, Highest ATK\nState !== Silenced +++ Random 30%: Silence, Highest MAT\nState === Magical Barrier +++ Random 30%: Shield Break, Highest HP%\n</AI Priority>\n\n<Enemy Drops>\nViolet Tendril: 5%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n<Element: Dark>\n<Passive State: 57, 137>\n\n<Sideview Battler: Horror1_7>\n<Sideview No Collapse>\n<Weapon Image: 281>\n<Attack Animation: 1>\n\n<AI Priority>\nEval user.hasState(143) +++ Random 25%: Sacrifice\nUser HP% param <= 20%: Sacrifice\nState !== Low Blow +++ Random 30%: Low Blow, Highest ATK\nState !== Amnesia +++ Random 30%: Amnesia, Highest ATK\nState !== Silenced +++ Random 30%: Silence, Highest MAT\nState === Magical Barrier +++ Random 30%: Shield Break, Highest HP%\n</AI Priority>\n\n<Night Boost>\nViolet Tendril: 5% +5%\nLarge Ether: 10% +6.66%\nLarge Ether: 10% +6.66%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       3000,
       0,
