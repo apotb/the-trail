@@ -488,6 +488,8 @@ LGP.Param.BDPdebuffAddOC = LGP.Parameters['Debuff Add Outline Color'];
 LGP.Param.BDPbuffRemoveC = LGP.Parameters['Buff Remove Color'];
 LGP.Param.BDPbuffRemoveOC = LGP.Parameters['Buff Remove Outline Color'];
 
+LGP.Param.BDPoutlineWidth = 6;
+
 //=============================================================================
 // Game_Action
 //=============================================================================
@@ -1005,6 +1007,7 @@ Sprite_Damage.prototype.drawDefaultNumber = function() {
     var bitmap = sprite.bitmap;  
     bitmap.fontFace = this._fontFace;
     bitmap.fontSize = this._fontSize;
+    bitmap.outlineWidth = LGP.Param.BDPoutlineWidth;
     if (Imported.LGP_CustomWindowText) bitmap.textShadow = LGP.Param.BDPtextShadow;
 
     if (result.hpAffected) {
@@ -1064,12 +1067,13 @@ Sprite_Damage.prototype.drawDefaultNumber = function() {
     	var rw = this.getTextWidth(resistText) + LGP.Param.BDPfontSizeBuffer;
     	var rh = this._fontSize;
     	resSprite.bitmap = new Bitmap(rw, rh);
-        resSprite.bitmap.textColor = textColor;        
-        resSprite.bitmap.outlineColor = outlineColor;   		
+        resSprite.bitmap.textColor = textColor;      
+        resSprite.bitmap.outlineWidth = LGP.Param.BDPoutlineWidth;  
+        resSprite.bitmap.outlineColor = outlineColor;
         if (Imported.LGP_CustomWindowText) resSprite.bitmap.textShadow = LGP.Param.BDPtextShadow;
-    	resSprite.bitmap.drawText(resistText, 0, 0, rw, h);
-    	resSprite.scale.x = 0.8;
-    	resSprite.scale.y = 0.8;
+    	resSprite.bitmap.drawText(resistText, 0 + rw/8, 0, rw, h);
+    	/*resSprite.scale.x = 0.8;
+    	resSprite.scale.y = 0.8;*/
     }
     bitmap.drawText(Yanfly.Util.toGroup(number), 0, 0, w, h);
 };

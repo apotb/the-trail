@@ -55,6 +55,7 @@ INTRO
   - The map display name is now centered horizontally.
   - Merged sub-location name display into map display name window.
   - Doubled the scale of everyone in battle.
+  - Damage popups are much larger, last longer, and use a bolded font for readability.
   - Improved scaling of floating enemies' shadows.
   - Enemies no longer show their names all the time.
   - Updated battle select cursor sprites.
