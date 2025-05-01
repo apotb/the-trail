@@ -433,6 +433,7 @@ Game_Actor.prototype.hpGaugeColor2 = function() {
 Game_Enemy.prototype.hpGaugeVisible = function() {
     if (this.isHidden()) return false;
 		if (this.enemy().hideHpGauge) return false;
+    if (this._hideHpGauge) return false;
     if (BattleManager.isBattleTest()) return true;
 		if (this.enemy().showHpGauge) return true;
 		if (!$gameSystem.showHpGaugeEnemy(this._enemyId)) return false;

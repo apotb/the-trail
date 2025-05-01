@@ -12940,6 +12940,20 @@
             ]
           },
           {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "$gameTroop._enemies[0]._hideHpGauge = true;"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "$gameTroop._enemies[0]._motionOverride = 'walk';"
+            ]
+          },
+          {
             "code": 0,
             "indent": 0,
             "parameters": []
@@ -13191,6 +13205,20 @@
             "indent": 4,
             "parameters": [
               "delete $gameTroop._enemies[0]._name;"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 4,
+            "parameters": [
+              "delete $gameTroop._enemies[0]._hideHpGauge;"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 4,
+            "parameters": [
+              "delete $gameTroop._enemies[0]._motionOverride;"
             ]
           },
           {

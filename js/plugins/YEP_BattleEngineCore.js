@@ -3916,7 +3916,8 @@ Game_Battler.prototype.battler = function() {
 };
 
 Game_Battler.prototype.requestMotion = function(motionType) {
-    this._motionType = this._motionOverride ? this._motionOverride : motionType;
+    motionType = this._motionOverride ? this._motionOverride : motionType;
+    this._motionType = motionType;
     if (this.battler()) {
       this.battler().startMotion(motionType);
     }
