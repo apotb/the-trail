@@ -2580,6 +2580,7 @@ if (Olivia[_0x3565("0x2c")][_0x3565("0x65")][_0x3565("0x2e")]) {
       _0x2d1dc5 -= this.lineHeight();
     }
     this[_0x3565("0x3f")].x = _0x22e264;
+    if (!Olivia.OctoBattle.WeaknessDisplay.ShowName) this._stateIconSprite.x -= Math.round(Window_Base._iconWidth / 2); // Center icon if ShowName is off
     this[_0x3565("0x3f")].y = _0x2d1dc5;
   };
   Window_WeaknessDisplay[_0x3565("0x84")][_0x3565("0x25")] = function () {
