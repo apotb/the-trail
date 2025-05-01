@@ -44,6 +44,11 @@ INTRO
   - Ice Slime: MDF 75 → 60
   - Polar Bear: MDF 65 → 55
   - Tellurium Golems: Tellurium Pulse deals an additional 20% of the target's HP.
+- Rebalanced several scrolls:
+  - DEF/MDF Scroll: +2 → +1
+  - DEF ★/MDF ★ Scroll: +3 → +2
+  - EVA Scroll: +1% → +2%
+  - MCR Scroll: -1.5% → -3%
 - Revamped glove progression:
   - Bandito Gloves: CRI +1% → +0.5%
   - Henry's Gloves: ATK 2 → 4; HIT +6% → +8%; CRI +1.5% → +2%; Upgrade Slots 0 → 1
