@@ -72,6 +72,7 @@ The changelog below may be lengthy, but if you take the time to read it, I think
     - Doubled the scale of everyone in battle.
     - Damage popups are much larger, last longer, and use a bolded font for readability.
     - Critical hits flash rainbow.
+    - Sprites update between 11-13 frames rather than always 12.
     - Improved scaling of floating enemies' shadows.
     - Enemies no longer show their names all the time.
     - Updated battle select cursor sprites.

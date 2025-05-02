@@ -845,7 +845,7 @@ Sprite_Actor.prototype.updateMotionCount = function() {
 };
 
 Sprite_Actor.prototype.motionSpeed = function() {
-    return 12;
+    return 11 + Math.floor(Math.random() * 3);
 };
 
 Sprite_Actor.prototype.refreshMotion = function() {

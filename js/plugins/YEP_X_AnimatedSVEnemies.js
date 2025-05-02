@@ -2203,7 +2203,7 @@ Game_Enemy.prototype.spriteScaleY = function() {
 };
 
 Game_Enemy.prototype.sideviewFrameSpeed = function() {
-    return this.enemy().sideviewFrameSpeed;
+    return this.enemy().sideviewFrameSpeed - 1 + Math.floor(Math.random() * 3);
 };
 
 Game_Enemy.prototype.performAttack = function() {
@@ -2691,8 +2691,8 @@ Sprite_Enemy.prototype.refreshMotion = function() {
 };
 
 Sprite_Enemy.prototype.motionSpeed = function() {
-    if (!this._enemy) return 12;
-    return this._enemy.sideviewFrameSpeed() || 12;
+    if (!this._enemy) return Sprite_Actor.prototype.motionSpeed();
+    return this._enemy.sideviewFrameSpeed() || Sprite_Actor.prototype.motionSpeed();
 };
 
 Sprite_Enemy.prototype.updateSelectionEffect = function() {
