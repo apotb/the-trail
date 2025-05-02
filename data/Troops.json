@@ -13324,5 +13324,55 @@
         "span": 0
       }
     ]
+  },
+  {
+    "id": 117,
+    "members": [
+      {
+        "enemyId": 89,
+        "x": 393,
+        "y": 178,
+        "hidden": false
+      },
+      {
+        "enemyId": 89,
+        "x": 330,
+        "y": 289,
+        "hidden": false
+      },
+      {
+        "enemyId": 89,
+        "x": 249,
+        "y": 388,
+        "hidden": false
+      }
+    ],
+    "name": "Cleftface Zealot x3",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
   }
 ]
