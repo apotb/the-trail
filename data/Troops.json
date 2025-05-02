@@ -13204,6 +13204,13 @@
             "code": 655,
             "indent": 4,
             "parameters": [
+              "$gameTroop._enemies[0].overrideArmorWeaknesses = ['BLUDGEONING'];"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 4,
+            "parameters": [
               "delete $gameTroop._enemies[0]._name;"
             ]
           },
