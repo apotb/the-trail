@@ -899,7 +899,13 @@ Sprite_Damage.prototype.defaultMovementCode = function() {
         var sprite = this.getChild("number");
         var d = this._critDuration;
         sprite.scale.x = Math.min(2, Math.max(1, (this.getFullCritDuration() / 100 * d)));
-        sprite.scale.y = sprite.scale.x;   
+        sprite.scale.y = sprite.scale.x;
+        
+        // Rainbow effect
+        const hue = (Graphics.frameCount * 6) % 360;
+        sprite.bitmap.clear();
+        sprite.bitmap.textColor = `hsl(${hue}, 100%, 60%)`;
+        sprite.bitmap.drawText(this._number, 0, 0, sprite.bitmap.width, sprite.bitmap.height);
     }
 
     
@@ -999,8 +1005,10 @@ Sprite_Damage.prototype.drawDefaultNumber = function() {
     if (value > 0) number = eval(LGP.Param.BDPdamageFormat.replace(number,value)); 
     if (result.critical) number = eval(LGP.Param.BDPcritFormat.replace(number,value));
     if (Imported.YEP_AbsorptionBarrier && result._barrierAffected) number = eval(LGP.Param.BDPblockFormat.replace(number,value));
+
+    this._number = Yanfly.Util.toGroup(number);
     
-    var w = this.getTextWidth(Yanfly.Util.toGroup(number)) + LGP.Param.BDPfontSizeBuffer;
+    var w = this.getTextWidth(this._number) + LGP.Param.BDPfontSizeBuffer;
     var h = this._fontSize;
     
     sprite.bitmap = new Bitmap(w, h);
@@ -1075,7 +1083,7 @@ Sprite_Damage.prototype.drawDefaultNumber = function() {
     	/*resSprite.scale.x = 0.8;
     	resSprite.scale.y = 0.8;*/
     }
-    bitmap.drawText(Yanfly.Util.toGroup(number), 0, 0, w, h);
+    bitmap.drawText(this._number, 0, 0, w, h);
 };
 
 Sprite_Damage.prototype.drawDefaultMiss = function() {
