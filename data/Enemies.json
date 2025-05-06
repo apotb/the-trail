@@ -6679,7 +6679,7 @@
     ],
     "gold": 120,
     "name": "Purple Assassin",
-    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: NoMatchingSprite/Purple Assassin>\n<Sideview No Collapse>\n<Weapon Image: 277>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest HP%\nTurn % 4 === 1: Combat Stance\nState !== Sharpened Dagger +++ Random 30%: Sharpen Dagger, User\nState !== Broken Armor +++ Random 30%: Cut Down, Highest DEF\nState === Magical Barrier +++ Random 30%: Shield Break, Highest HP%\n</AI Priority>\n\n<Enemy Drops>\nLast Breath: 10%\nLarge Potion: 16.66%\nLarge Potion: 16.66%\nATK Scroll ★: 20%\nEVA Scroll: 20%\nCRI Scroll: 20%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Evil2_4>\n<Sideview No Collapse>\n<Weapon Image: 277>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest HP%\nTurn % 4 === 1: Combat Stance\nState !== Sharpened Dagger +++ Random 30%: Sharpen Dagger, User\nState !== Broken Armor +++ Random 30%: Cut Down, Highest DEF\nState === Magical Barrier +++ Random 30%: Shield Break, Highest HP%\n</AI Priority>\n\n<Enemy Drops>\nLast Breath: 10%\nLarge Potion: 16.66%\nLarge Potion: 16.66%\nATK Scroll ★: 20%\nEVA Scroll: 20%\nCRI Scroll: 20%\n</Enemy Drops>",
     "params": [
       5000,
       0,
