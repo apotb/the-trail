@@ -7069,7 +7069,7 @@
   {
     "id": 240,
     "animationId": 0,
-    "consumable": true,
+    "consumable": false,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -7077,17 +7077,17 @@
       "type": 0,
       "variance": 20
     },
-    "description": "",
+    "description": "A piece of the Sentinel that broke off during your\nbattle. Radiates with the energy of the \\c[30]Purple\\c[0].",
     "effects": [],
     "hitType": 0,
-    "iconIndex": 0,
+    "iconIndex": 834,
     "itypeId": 1,
-    "name": "",
-    "note": "",
-    "occasion": 0,
+    "name": "Chunk of Purple Stone",
+    "note": "<Menu Category: Memorabilia>",
+    "occasion": 3,
     "price": 0,
     "repeats": 1,
-    "scope": 7,
+    "scope": 0,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
