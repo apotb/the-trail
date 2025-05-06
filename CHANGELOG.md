@@ -78,6 +78,8 @@ The changelog below may be lengthy, but if you take the time to read it, I think
     - Improved scaling of floating enemies' shadows.
     - Enemies no longer show their names all the time.
     - Updated battle select cursor sprites.
+- Laeryidyean's forest improvements:
+  - Skeleton knights revive much more gradually.
 - Monsters won't respawn while you're in a dungeon.
 - Simplified the General Store's stock.
 - Harmony, Grass Knuckles, and Frost Edge no longer use earlier staves/daggers as ingredients.
