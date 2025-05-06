@@ -80,6 +80,7 @@ The changelog below may be lengthy, but if you take the time to read it, I think
     - Updated battle select cursor sprites.
 - Laeryidyean's forest improvements:
   - Skeleton knights revive much more gradually.
+  - The first boulder in the Left Connector can be pushed from either side.
 - Monsters won't respawn while you're in a dungeon.
 - Simplified the General Store's stock.
 - Harmony, Grass Knuckles, and Frost Edge no longer use earlier staves/daggers as ingredients.
