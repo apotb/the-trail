@@ -41097,13 +41097,13 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
-            "characterIndex": 0,
-            "characterName": "",
+            "tileId": 0,
+            "characterName": "Damage3",
             "direction": 2,
-            "pattern": 0,
-            "tileId": 0
+            "pattern": 1,
+            "characterIndex": 3
           },
           "list": [
             {
@@ -41128,9 +41128,9 @@
           "moveType": 0,
           "priorityType": 0,
           "stepAnime": false,
-          "through": false,
+          "through": true,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 41,
@@ -41466,13 +41466,13 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
+            "tileId": 0,
+            "characterName": "Damage2",
+            "direction": 6,
+            "pattern": 1,
+            "characterIndex": 0
           },
           "list": [
             {
@@ -41497,9 +41497,9 @@
           "moveType": 0,
           "priorityType": 0,
           "stepAnime": false,
-          "through": false,
+          "through": true,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 42,
@@ -41835,13 +41835,13 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
+            "tileId": 0,
+            "characterName": "Damage3",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 3
           },
           "list": [
             {
@@ -41866,9 +41866,9 @@
           "moveType": 0,
           "priorityType": 0,
           "stepAnime": false,
-          "through": false,
+          "through": true,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 43,
