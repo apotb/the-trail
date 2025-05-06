@@ -22,10 +22,11 @@ The changelog below may be lengthy, but if you take the time to read it, I think
   - Esoteric Tome
   - Last Breath
   - Violet Tendril
-- 3 new equipment:
+- 4 new equipment:
   - Ice Skates
   - Haloweave Gloves
   - Purple Mage Crystal
+  - SENTINEL POWER
 - 4 new enemies:
   - Purple Cultist
   - Purple Assassin

@@ -4635,7 +4635,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Golem",
-    "note": "<Help Description>\nImmune to \\it[22], \\it[34], and \\it[39].\n</Help Description>",
+    "note": "<Custom Passive Condition>\nswitch (user.enemy().id) {\n  case 90:\n    condition = user.phase() >= 2;\n    break;\n  default:\n    condition = true;\n}\n</Custom Passive Condition>\n\n<Help Description>\nImmune to \\it[22], \\it[34], and \\it[39].\n</Help Description>",
     "overlay": 0,
     "priority": 5,
     "removeAtBattleEnd": false,
@@ -7201,7 +7201,7 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "Sentinel Phase 1",
+    "name": "Sentinel Phase 0",
     "note": "<Category Resist: All>\n\n<Custom React Effect>\nvalue = 1;\n</Custom React Effect>\n\n<Sprite Cannot Move>\n\n<Custom Passive Condition>\ncondition = user.phase() == 1;\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 0,
@@ -7225,7 +7225,7 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "Sentinel Phase 2",
+    "name": "Sentinel Phase 1",
     "note": "<Custom Passive Condition>\ncondition = user.phase() == 2;\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 0,
@@ -7240,7 +7240,13 @@
     "id": 213,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "traits": [],
+    "traits": [
+      {
+        "code": 61,
+        "dataId": 0,
+        "value": 1
+      }
+    ],
     "iconIndex": 0,
     "maxTurns": 1,
     "message1": "",
@@ -7249,7 +7255,7 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "Sentinel Phase 3",
+    "name": "Sentinel Phase 2",
     "note": "<Custom Passive Condition>\ncondition = user.phase() == 3;\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 0,
@@ -7264,7 +7270,18 @@
     "id": 214,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "traits": [],
+    "traits": [
+      {
+        "code": 61,
+        "dataId": 0,
+        "value": 1
+      },
+      {
+        "code": 61,
+        "dataId": 0,
+        "value": 1
+      }
+    ],
     "iconIndex": 0,
     "maxTurns": 1,
     "message1": "",
@@ -7273,10 +7290,10 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "",
-    "note": "",
+    "name": "Sentinel Phase 3",
+    "note": "<Custom Passive Condition>\ncondition = user.phase() == 4;\n</Custom Passive Condition>",
     "overlay": 0,
-    "priority": 50,
+    "priority": 0,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
@@ -7288,8 +7305,14 @@
     "id": 215,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "traits": [],
-    "iconIndex": 0,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 21,
+        "value": 1
+      }
+    ],
+    "iconIndex": 835,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -7297,10 +7320,10 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "",
-    "note": "",
+    "name": "Mute",
+    "note": "<Custom Passive Condition>\nswitch (user.enemy().id) {\n  case 90:\n    condition = user.phase() >= 2;\n    break;\n  default:\n    condition = true;\n}\n</Custom Passive Condition>\n\n<Help Description>\nImmune to \\it[21].\n</Help Description>",
     "overlay": 0,
-    "priority": 50,
+    "priority": 5,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
