@@ -3306,6 +3306,99 @@
           },
           "list": [
             {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                1,
+                84,
+                0,
+                6,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\p2Where are we going? Let's join the meeting!"
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 4,
+                      "indent": null
+                    },
+                    {
+                      "code": 4,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 4,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 4,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 217,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 115,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -3440,6 +3533,85 @@
             "characterIndex": 6
           },
           "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                1,
+                84,
+                0,
+                6,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\p2Where are we going? Let's join the meeting!"
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 3,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 3,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 217,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 115,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
             {
               "code": 250,
               "indent": 0,
@@ -3612,25 +3784,892 @@
           },
           "list": [
             {
-              "code": 108,
+              "code": 101,
               "indent": 0,
               "parameters": [
-                "[hint]"
+                "Telluria1",
+                1,
+                0,
+                2
               ]
             },
             {
-              "code": 408,
+              "code": 401,
               "indent": 0,
               "parameters": [
-                "End of Alpha 16"
+                "\\chiefSo it IS you four! When I heard these soldiers"
               ]
             },
             {
-              "code": 408,
+              "code": 401,
               "indent": 0,
               "parameters": [
-                "Come back here when Alpha 17 is out!"
+                "were assisted by a group of brave adventurers,"
               ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "your team was my first thought."
+              ]
+            },
+            {
+              "code": 221,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                84,
+                84,
+                0,
+                0,
+                7
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 45,
+                      "parameters": [
+                        "TELEPORT TO: 10, 6"
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 18,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 45,
+                  "parameters": [
+                    "TELEPORT TO: 10, 6"
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 18,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 16,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 16,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 216,
+              "indent": 0,
+              "parameters": [
+                1
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameTemp._events = [7, 8, 9, 10, 11, 12, 13, 14, 15];"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "let lookAt = 7;"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "for (const id of $gameTemp._events) $gameMap.event(id).turnTowardEvent(lookAt);"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "$gamePlayer.turnTowardEvent(lookAt);"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 222,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Telluria1",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\chiefWe need a plan moving forward. What happened to"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Greenfield is horrific, but there's nothing we"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "can do about it. We need to make sure the same"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "thing doesn't happen to Solus Valley!"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "let lookAt = 8;"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "for (const id of $gameTemp._events) $gameMap.event(id).turnTowardEvent(lookAt);"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "$gamePlayer.turnTowardEvent(lookAt);"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People3",
+                6,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\knightRight... but is there really anything we CAN do?"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\c[18]Apocalypse\\c[0]'s attack came without warning. It's"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "like we blinked, then the town was suddenly"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "up in flames."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People3",
+                6,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\knightClearly \\c[18]his\\c[0] army is extremely mobile. We'll need"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "guards posted quite literally everywhere."
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "let lookAt = 13;"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "for (const id of $gameTemp._events) $gameMap.event(id).turnTowardEvent(lookAt);"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "$gamePlayer.turnTowardEvent(lookAt);"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p3But how are we going to track \\c[18]him\\c[0] down if all our manpower"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "is on defense? The attacks aren't going to stop until"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\c[18]he\\c[0]'s razed every last city to the ground."
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "let lookAt = 7;"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "for (const id of $gameTemp._events) $gameMap.event(id).turnTowardEvent(lookAt);"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "$gamePlayer.turnTowardEvent(lookAt);"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Telluria1",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\chiefI hear what you're saying. The fact of the matter is that we"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "don't stand a chance against \\c[18]him\\c[0] if more cities fall. Losing"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Solus Valley would relinquish control of the Easin Plains"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "to \\c[18]Apocalypse\\c[0]. Who knows what \\c[18]he\\c[0]'ll be able to do then?"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "let lookAt = 15;"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "for (const id of $gameTemp._events) $gameMap.event(id).turnTowardEvent(lookAt);"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "$gamePlayer.turnTowardEvent(lookAt);"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p4You're right... and honestly, tracking down \\c[18]Apocalypse\\c[0]"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "is OUR job. After all, that's what we've been doing"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "for most of our adventure."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p4Do you have any leads that could help us"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "track \\c[18]him\\c[0] down? Anything helps, we're"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "kind of at a dead end right now."
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "let lookAt = 7;"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "for (const id of $gameTemp._events) $gameMap.event(id).turnTowardEvent(lookAt);"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "$gamePlayer.turnTowardEvent(lookAt);"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Telluria1",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\chiefHmm... nothing comes to mind."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Telluria1",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\chiefWell, actually... I DO know someone that might"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "have pertinent information. I'm not sure how"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "willing they are to give it up, though."
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 16,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 16,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Telluria1",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\chiefHow about this? You three from Greenfield need to work on"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "moving the survivors. You four, come outside with me."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "We're going to pay a visit to the town jail."
+              ]
+            },
+            {
+              "code": 221,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Quest 37 Complete Objective 4"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Quest 37 Show Objective 5"
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "a_Move1",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                84,
+                84,
+                0,
+                0,
+                8
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 16,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 16,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                8,
+                {
+                  "list": [
+                    {
+                      "code": 19,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 19,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                9,
+                {
+                  "list": [
+                    {
+                      "code": 18,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 18,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                10,
+                {
+                  "list": [
+                    {
+                      "code": 17,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 17,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                11,
+                {
+                  "list": [
+                    {
+                      "code": 18,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 18,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                12,
+                {
+                  "list": [
+                    {
+                      "code": 17,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 17,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 216,
+              "indent": 0,
+              "parameters": [
+                0
+              ]
+            },
+            {
+              "code": 217,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "delete $gameTemp._events;"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 222,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,
@@ -3653,6 +4692,57 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 84,
+            "variableValid": true,
+            "variableValue": 8
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
           "stepAnime": false,
           "through": false,
           "trigger": 0,
@@ -3692,6 +4782,30 @@
             "characterIndex": 6
           },
           "list": [
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People3",
+                6,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\knightOn behalf of the town of Greenfield... well, whatever's left of it..."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "thank you for your help. We are most certainly in your debt."
+              ]
+            },
             {
               "code": 0,
               "indent": 0,
@@ -3753,6 +4867,37 @@
           },
           "list": [
             {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People3",
+                7,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\solI know we need to start moving the survivors, but"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "those monsters did a number on me. I just need to"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "rest for a moment..."
+              ]
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -3812,6 +4957,30 @@
             "characterIndex": 7
           },
           "list": [
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People3",
+                7,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\solWe'll help the survivors soon. I just need some of"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "that peace and quiet Solus Valley is known for."
+              ]
+            },
             {
               "code": 0,
               "indent": 0,
@@ -4015,6 +5184,339 @@
       ],
       "x": 13,
       "y": 9
+    },
+    {
+      "id": 13,
+      "name": "p3",
+      "note": "<shadow>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 84,
+            "variableValid": true,
+            "variableValue": 7
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Actor4",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 2
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 84,
+            "variableValid": true,
+            "variableValue": 8
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 12,
+      "y": 6
+    },
+    {
+      "id": 14,
+      "name": "p2",
+      "note": "<shadow>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 84,
+            "variableValid": true,
+            "variableValue": 7
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Actor4",
+            "direction": 6,
+            "pattern": 1,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 84,
+            "variableValid": true,
+            "variableValue": 8
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 9,
+      "y": 7
+    },
+    {
+      "id": 15,
+      "name": "p4",
+      "note": "<shadow>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 84,
+            "variableValid": true,
+            "variableValue": 7
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Actor4",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 3
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 84,
+            "variableValid": true,
+            "variableValue": 8
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 13,
+      "y": 7
     }
   ]
 }

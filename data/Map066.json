@@ -1420,7 +1420,7 @@
     0,
     0,
     0,
-    0,
+    286,
     0,
     0,
     0,
@@ -1464,7 +1464,7 @@
     0,
     0,
     0,
-    0,
+    279,
     106,
     0,
     106,
@@ -1491,7 +1491,7 @@
     0,
     0,
     0,
-    0,
+    316,
     0,
     0,
     0,
@@ -2797,7 +2797,7 @@
             "tileId": 0,
             "characterName": "!Door1",
             "direction": 2,
-            "pattern": 0,
+            "pattern": 1,
             "characterIndex": 6
           },
           "moveFrequency": 3,
@@ -3234,9 +3234,60 @@
             "skippable": false,
             "wait": false
           },
-          "moveSpeed": 3,
+          "moveSpeed": 4,
           "moveType": 0,
           "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 84,
+            "variableValid": true,
+            "variableValue": 10
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
           "stepAnime": false,
           "through": false,
           "trigger": 0,
@@ -3276,6 +3327,23 @@
             "characterIndex": 7
           },
           "list": [
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People3",
+                7,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\solWelcome to the Solus Valley Jail... thrilling, isn't it?"
+              ]
+            },
             {
               "code": 0,
               "indent": 0,
@@ -3794,6 +3862,1147 @@
       ],
       "x": 10,
       "y": 11
+    },
+    {
+      "id": 15,
+      "name": "EV015",
+      "note": "<shadow>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Telluria1",
+            "direction": 8,
+            "pattern": 1,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Telluria1",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\chiefLook, it doesn't matter that he's \"dangerous\"..."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "these four are on a mission grander than we"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "can comprehend. If there's any chance we"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "can learn something, we have to take it!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People3",
+                6,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\knightYou mean those four right there?"
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 16,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 16,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Telluria1",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\chiefRight wh- ah, yes! Welcome to the Solus Valley Jail, my friends!"
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 19,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 19,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Telluria1",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\chiefAnyways, now that we're all here,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "can you show us to his cell?"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People3",
+                6,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\knightI really advise against it... but your word"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "is law, chief. Let's pay him a visit."
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                6,
+                {
+                  "list": [
+                    {
+                      "code": 4,
+                      "indent": null
+                    },
+                    {
+                      "code": 4,
+                      "indent": null
+                    },
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 4,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 4,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 19,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 19,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Open3",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                5,
+                {
+                  "list": [
+                    {
+                      "code": 17,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 15,
+                      "indent": null,
+                      "parameters": [
+                        3
+                      ]
+                    },
+                    {
+                      "code": 18,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 15,
+                      "indent": null,
+                      "parameters": [
+                        3
+                      ]
+                    },
+                    {
+                      "code": 19,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 37,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 0,
+                      "indent": null,
+                      "parameters": []
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 17,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "indent": null,
+                  "parameters": [
+                    3
+                  ]
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 18,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "indent": null,
+                  "parameters": [
+                    3
+                  ]
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 19,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 37,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 37,
+                      "indent": null
+                    },
+                    {
+                      "code": 12,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 12,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 0,
+                      "indent": null,
+                      "parameters": []
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": true,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 37,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 12,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 12,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                5,
+                {
+                  "list": [
+                    {
+                      "code": 18,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 15,
+                      "indent": null,
+                      "parameters": [
+                        3
+                      ]
+                    },
+                    {
+                      "code": 17,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 15,
+                      "indent": null,
+                      "parameters": [
+                        3
+                      ]
+                    },
+                    {
+                      "code": 16,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 38,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 44,
+                      "parameters": [
+                        {
+                          "name": "Open2",
+                          "volume": 90,
+                          "pitch": 100,
+                          "pan": 0
+                        }
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0,
+                      "indent": null,
+                      "parameters": []
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 18,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "indent": null,
+                  "parameters": [
+                    3
+                  ]
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 17,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "indent": null,
+                  "parameters": [
+                    3
+                  ]
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 16,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 38,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 44,
+                  "parameters": [
+                    {
+                      "name": "Open2",
+                      "volume": 90,
+                      "pitch": 100,
+                      "pan": 0
+                    }
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 4,
+                      "indent": null
+                    },
+                    {
+                      "code": 4,
+                      "indent": null
+                    },
+                    {
+                      "code": 0,
+                      "indent": null,
+                      "parameters": []
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 4,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 4,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 0,
+                      "indent": null,
+                      "parameters": []
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 221,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Quest 37 Complete Objective 5"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Quest 37 Show Objective 6"
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                84,
+                84,
+                0,
+                0,
+                10
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "a_Move1",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "a_Move1",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 222,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 3,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 84,
+            "variableValid": true,
+            "variableValue": 10
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 17,
+      "y": 10
     }
   ]
 }
