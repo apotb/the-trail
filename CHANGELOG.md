@@ -131,6 +131,7 @@ The changelog below may be lengthy, but if you take the time to read it, I think
 - Fixed achievements "Big Bang" and "Poacher" being unobtainable.
 - Fixed light break HP bars not showing.
 - Fixed a bug where name boxes would stop showing after opening any crafting menu; this wouldn't go away until changing maps.
+- Fixed a really old softlock caused by getting stuck in the movement of the Village Headman's Helper and Verdin Village cows.
 - Fixed not being able to run away from Ice Golems.
 - Fixed the Trailia statue summary window always showing +/- 0% outgoing/incoming light damage.
 - Fixed being able to go to Telluria using Sam's door without having triggered the Telluria intro cutscene.
