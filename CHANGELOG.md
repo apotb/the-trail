@@ -28,7 +28,11 @@ The changelog below may be lengthy, but if you take the time to read it, I think
   - Haloweave Gloves
   - Purple Mage Crystal
   - SENTINEL POWER
-- 1 new vanity:
+- 5 new vanities:
+  - Blue Sleeping Garments
+  - Green Sleeping Garments
+  - Purple Sleeping Garments
+  - Red Sleeping Garments
   - Green Developer Outfit
 - 4 new enemies:
   - Purple Cultist

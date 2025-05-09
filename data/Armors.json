@@ -5963,5 +5963,89 @@
       0
     ],
     "price": 0
+  },
+  {
+    "id": 227,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[1]. Part of the \\c[19]Nighty Night\\c[0] set.\nA set of blue sleeping garments.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 438,
+    "name": "Blue Sleeping Garments",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,0,Actor4_Night,0,Actor4_Night_1>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 228,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[2]. Part of the \\c[19]Nighty Night\\c[0] set.\nA set of green sleeping garments.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 440,
+    "name": "Green Sleeping Garments",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,5,Actor4_Night,1,Actor4_Night_2>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 229,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[3]. Part of the \\c[19]Nighty Night\\c[0] set.\nA set of purple sleeping garments.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 623,
+    "name": "Purple Sleeping Garments",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,2,Actor4_Night,2,Actor4_Night_3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 3;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 3 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(3).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 230,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[4]. Part of the \\c[19]Nighty Night\\c[0] set.\nA set of red sleeping garments.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 455,
+    "name": "Red Sleeping Garments",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,3,Actor4_Night,3,Actor4_Night_4>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 4;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 4 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
   }
 ]

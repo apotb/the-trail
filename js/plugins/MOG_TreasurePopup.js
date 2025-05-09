@@ -192,6 +192,7 @@ Game_Interpreter.prototype.checkTreasurePopup = function(type) {
 			let event;
 			if ($gameTemp._popupEventId) event = $gameMap.event($gameTemp._popupEventId);
 			else event = $gameMap.event(this._eventId);
+			if (!event) return;
 
 			var x = event.screenX();
 			var y = event.screenY();

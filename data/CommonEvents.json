@@ -11549,13 +11549,6 @@
         "code": 108,
         "indent": 0,
         "parameters": [
-          "# Player 1"
-        ]
-      },
-      {
-        "code": 108,
-        "indent": 0,
-        "parameters": [
           "# Also needs updating:"
         ]
       },
@@ -11567,879 +11560,11 @@
         ]
       },
       {
-        "code": 111,
+        "code": 355,
         "indent": 0,
         "parameters": [
-          4,
-          1,
-          5,
-          84
+          "$gameParty.members().forEach(m => m.updateVanity());"
         ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          1,
-          "Adon",
-          4,
-          "Adon",
-          4,
-          "Adon_5"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          1,
-          5,
-          85
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          1,
-          "Actor4",
-          0,
-          "Actor4",
-          0,
-          "Actor4_1"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          1,
-          5,
-          206
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          1,
-          "Boss1",
-          0,
-          "Boss1",
-          0,
-          "Boss1_1"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          1,
-          5,
-          120
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          1,
-          "Actor4",
-          4,
-          "Champions",
-          0,
-          "Actor4_5"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          1,
-          5,
-          109
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          1,
-          "Actor4_Old",
-          0,
-          "Actor4",
-          0,
-          "Actor4_1"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          1,
-          5,
-          211
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          1,
-          "Developers",
-          0,
-          "Developers",
-          0,
-          "Developers_1"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          1,
-          5,
-          212
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          1,
-          "Developers",
-          1,
-          "Developers",
-          1,
-          "Developers_2"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          1,
-          5,
-          226
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          1,
-          "Developers",
-          2,
-          "Developers",
-          2,
-          "Developers_3"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          1,
-          55,
-          0,
-          16,
-          1
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 1,
-        "parameters": [
-          1,
-          55,
-          0,
-          21,
-          2
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 2,
-        "parameters": [
-          1,
-          "Actor4_Night",
-          0,
-          "Actor4",
-          0,
-          "Actor4_1"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 108,
-        "indent": 0,
-        "parameters": [
-          "# Player 2"
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          2,
-          5,
-          86
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          2,
-          "Actor4",
-          1,
-          "Actor4",
-          5,
-          "Actor4_2"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          2,
-          5,
-          207
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          2,
-          "Evil1",
-          3,
-          "Evil1",
-          11,
-          "Evil1_4"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          2,
-          5,
-          121
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          2,
-          "Actor4",
-          5,
-          "Champions",
-          1,
-          "Actor4_6"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          2,
-          5,
-          110
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          2,
-          "Actor4_Old",
-          1,
-          "Actor4",
-          5,
-          "Actor4_2"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          2,
-          5,
-          211
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          2,
-          "Developers",
-          0,
-          "Developers",
-          0,
-          "Developers_1"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          2,
-          5,
-          212
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          2,
-          "Developers",
-          1,
-          "Developers",
-          1,
-          "Developers_2"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          2,
-          5,
-          226
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          2,
-          "Developers",
-          2,
-          "Developers",
-          2,
-          "Developers_3"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          2,
-          5,
-          199
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          2,
-          "$FlameBody",
-          0,
-          "FlameBody",
-          0,
-          "FlameBody"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 108,
-        "indent": 0,
-        "parameters": [
-          "# Player 3"
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          3,
-          5,
-          87
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          3,
-          "Actor4",
-          2,
-          "Actor4",
-          2,
-          "Actor4_3"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          3,
-          5,
-          208
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          3,
-          "Elemental",
-          0,
-          "Elemental",
-          0,
-          "Elemental_1"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          3,
-          5,
-          122
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          3,
-          "Actor4",
-          6,
-          "Champions",
-          2,
-          "Actor4_7"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          3,
-          5,
-          111
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          3,
-          "Actor4_Old",
-          2,
-          "Actor4",
-          2,
-          "Actor4_3"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 108,
-        "indent": 0,
-        "parameters": [
-          "# Player 4"
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          4,
-          5,
-          138
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          4,
-          "Adon",
-          5,
-          "Adon",
-          5,
-          "Adon_6"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          4,
-          5,
-          88
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          4,
-          "Actor4",
-          3,
-          "Actor4",
-          3,
-          "Actor4_4"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          4,
-          5,
-          209
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          4,
-          "Bandito",
-          0,
-          "Bandito",
-          0,
-          "Bandito_1"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          4,
-          5,
-          123
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          4,
-          "Actor4",
-          7,
-          "Champions",
-          3,
-          "Actor4_8"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          4,
-          5,
-          112
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          4,
-          "Actor4_Old",
-          3,
-          "Actor4",
-          3,
-          "Actor4_4"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
       },
       {
         "code": 0,
@@ -15075,6 +14200,107 @@
           0,
           6
         ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Sleeping Garments"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          10,
+          227,
+          true
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          55,
+          0,
+          22,
+          1
+        ]
+      },
+      {
+        "code": 128,
+        "indent": 2,
+        "parameters": [
+          227,
+          0,
+          0,
+          1,
+          false
+        ]
+      },
+      {
+        "code": 128,
+        "indent": 2,
+        "parameters": [
+          228,
+          0,
+          0,
+          1,
+          false
+        ]
+      },
+      {
+        "code": 128,
+        "indent": 2,
+        "parameters": [
+          229,
+          0,
+          0,
+          1,
+          false
+        ]
+      },
+      {
+        "code": 128,
+        "indent": 2,
+        "parameters": [
+          230,
+          0,
+          0,
+          1,
+          false
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
       },
       {
         "code": 0,
