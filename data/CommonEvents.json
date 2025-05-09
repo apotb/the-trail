@@ -12689,7 +12689,7 @@
         "code": 355,
         "indent": 0,
         "parameters": [
-          "$gameActors._data.forEach(a => {"
+          "$gameParty.members().forEach(a => {"
         ]
       },
       {
