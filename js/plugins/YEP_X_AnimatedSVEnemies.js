@@ -2675,7 +2675,7 @@ Sprite_Enemy.prototype.refreshMotion = function() {
     var stateMotion = enemy.stateMotionIndex();
     if (enemy.isInputting() || enemy.isActing()) {
         this.startMotion('walk');
-    } else if (stateMotion === 3) {
+    } else if (stateMotion === 3 || enemy.isDead()) {
         this.startMotion(enemy.deadMotion());
     } else if (stateMotion === 2) {
         this.startMotion(enemy.sleepMotion());
