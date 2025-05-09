@@ -689,7 +689,7 @@
     ],
     "iconIndex": 391,
     "name": "Bronze Sword",
-    "note": "<Weapon Image: 337>\n<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1 Bronze Ingot: 50%\n</Disassemble Pool: Advanced>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value(85, 10, 'A');\n</Custom Buy Show Eval>",
+    "note": "<Weapon Image: 337>\n<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1 Bronze Ingot: 50%\n</Disassemble Pool: Advanced>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value([85, 10, 'A']);\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -722,7 +722,7 @@
     ],
     "iconIndex": 555,
     "name": "Enchanted Stick",
-    "note": "<Weapon Image: 39>\n<Upgrade Slots: 1>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value(85, 9, 'A');\n</Custom Buy Show Eval>",
+    "note": "<Weapon Image: 39>\n<Upgrade Slots: 1>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value([85, 9, 'A']);\n</Custom Buy Show Eval>",
     "params": [
       0,
       6,
