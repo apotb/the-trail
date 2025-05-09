@@ -562,7 +562,7 @@ Game_BattlerBase.prototype.meetAllEquipRequirements = function(item, slot=-1) {
   }
   if (item.id < Yanfly.Param.ItemStartingId) return true; // Non-independent items, if they somehow exist
   if (this.isEquipTypeLocked(item.etypeId)) return true; // Guest party members
-  if (this.equips().some((e, i) => e && (e.baseItemId == item.baseItemId || (e.atypeId === 11 && item.atypeId === 11)) && i != slot && e != item)) return false; // No duplicates; includes gloves
+  if (slot > -1) if (this.equips().some((e, i) => e && (e.baseItemId == item.baseItemId || (e.atypeId === 11 && item.atypeId === 11)) && i != slot && e != item)) return false; // No duplicates; includes gloves
   if (!this.checkEquipRequirements(item)) return false; // Per-item equip requirements
   return true;
 };
