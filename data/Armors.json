@@ -5942,5 +5942,26 @@
       0
     ],
     "price": 0
+  },
+  {
+    "id": 226,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[1] and \\N[2]. Part of the \\c[16]Trail Team\\c[0] set.\nMakes you look like a tablet-wielding artist.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 836,
+    "name": "Green Developer Outfit",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Developers,2,Developers,2,Developers_3>\n\n<Custom Equip Requirement Condition>\ncondition = [1, 2].contains(user.actorId());\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name();\ntext += \"\\\\c[0] or \";\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name();\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
   }
 ]

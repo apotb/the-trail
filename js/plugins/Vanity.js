@@ -11,6 +11,22 @@
         if (baseItem.meta['Vanity'] && !($gameVariables.value(55) >= 16 && $gameVariables.value(55) <= 21)) updateVanity(this, slotId, baseItem);
     };
 
+    Game_Event.prototype.actorCharacter = function(image) {
+        let index = image.characterIndex;
+        let actor = $gameActors.actor(index % 4 + 1);
+        let equips = actor.equips();
+        let item;
+
+        if (DataManager.getBaseItem(equips[8])?.meta['Vanity']) item = DataManager.getBaseItem(equips[8]); // Magic Equip slot takes priority
+        else if (DataManager.getBaseItem(equips[10])?.meta['Vanity']) item = DataManager.getBaseItem(equips[10]); // Vanity slot
+        else return image;
+        
+        let params = item.meta['Vanity'].split(',');
+        image.characterName = params[2];
+        image.characterIndex = params[3];
+        return image;
+    };
+
     function updateVanity(actor, slotId, item) {
         if (!item) return;
         if (slotId != 8) if (actor.equips()[8]) if (actor.equips()[8].baseItemId == 199) return;
