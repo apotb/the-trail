@@ -7143,7 +7143,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Crystallized",
-    "note": "<Alive Ally Aura: 210>\n\n<Custom React Effect>\nif (!this.isMagical()) value = Math.ceil(value / 2);\n</Custom React Effect>\n\n<Custom Deselect Effect>\nif (target.hpRate() == 0) {\n  target.startAnimation(56);\n  target._svBattlerName = \"Evil1_3\";\n  delete target._forceFloating;\n  delete target.overrideArmorWeaknesses;\n  target.removeState(209);\n}\n</Custom Deselect Effect>\n\n<Custom Remove Effect>\nuser.friends().refreshMembers();\n</Custom Remove Effect>\n\n<Help Description>\nCannot move. Reflects magic attacks. Halves all other incoming damage. Allies deal more damage.\n</Help Description>",
+    "note": "<Alive Ally Aura: 210>\n\n<Custom React Effect>\nif (!this.isMagical()) value = Math.ceil(value * 0.75);\n</Custom React Effect>\n\n<Custom Deselect Effect>\nif (target.hpRate() == 0) {\n  target.startAnimation(56);\n  target._svBattlerName = \"Evil1_3\";\n  delete target._forceFloating;\n  delete target.overrideArmorWeaknesses;\n  target.removeState(209);\n}\n</Custom Deselect Effect>\n\n<Custom Remove Effect>\nuser.friends().refreshMembers();\n</Custom Remove Effect>\n\n<Help Description>\nCannot move. Reflects magic attacks. Decreases incoming damage by 25%. Allies deal more damage.\n</Help Description>",
     "overlay": 0,
     "priority": 70,
     "removeAtBattleEnd": false,
