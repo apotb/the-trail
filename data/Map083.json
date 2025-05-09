@@ -12362,7 +12362,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\solNow hold on a second..."
+                "\\coNow hold on a second..."
               ]
             },
             {
@@ -12379,7 +12379,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\solOh, are you four with the Village Chief?"
+                "\\coOh, are you four with the Village Chief?"
               ]
             },
             {
@@ -12658,7 +12658,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\solYou four may come and go as you please!"
+                "\\coYou four may come and go as you please!"
               ]
             },
             {
@@ -12699,7 +12699,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\solOh, it's you four. You've done"
+                "\\coOh, it's you four. You've done"
               ]
             },
             {
@@ -12733,7 +12733,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\solSorry, no matter how many monsters"
+                "\\coSorry, no matter how many monsters"
               ]
             },
             {
@@ -12830,7 +12830,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\solOuch..."
+                "\\coOuch..."
               ]
             },
             {
@@ -12898,7 +12898,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\solYou four aren't scary assassins, so"
+                "\\coYou four aren't scary assassins, so"
               ]
             },
             {
@@ -22092,7 +22092,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\knightWho are you four, and why are you here?"
+                "\\coWho are you four, and why are you here?"
               ]
             },
             {
@@ -22116,7 +22116,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\knightCome on, speak your mind! What do you want from us?"
+                "\\coCome on, speak your mind! What do you want from us?"
               ]
             },
             {
@@ -22178,7 +22178,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\knightOh, really? Well, if it's a fight you want,"
+                "\\coOh, really? Well, if it's a fight you want,"
               ]
             },
             {
@@ -22422,6 +22422,62 @@
               ]
             },
             {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameSystem.battleSetup("
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "  \"battle_normal\","
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "  \"\","
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "  \"Battle1\","
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "  false,"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "  false,"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "  false"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                ");"
+              ]
+            },
+            {
               "code": 129,
               "indent": 0,
               "parameters": [
@@ -22447,6 +22503,13 @@
                 18,
                 1,
                 false
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameSystem.battleTemplate('normal');"
               ]
             },
             {
@@ -22543,7 +22606,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\knightGreat work, you four. Now for that other assassin..."
+                "\\coGreat work, you four. Now for that other assassin..."
               ]
             },
             {
@@ -23009,9 +23072,9 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableId": 84,
+            "variableValid": true,
+            "variableValue": 12
           },
           "directionFix": false,
           "image": {
@@ -23171,9 +23234,9 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableId": 84,
+            "variableValid": true,
+            "variableValue": 12
           },
           "directionFix": false,
           "image": {
@@ -23282,9 +23345,9 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableId": 84,
+            "variableValid": true,
+            "variableValue": 12
           },
           "directionFix": false,
           "image": {
@@ -23444,9 +23507,9 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableId": 84,
+            "variableValid": true,
+            "variableValue": 12
           },
           "directionFix": false,
           "image": {

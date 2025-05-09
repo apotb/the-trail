@@ -189,23 +189,14 @@ Game_Interpreter.prototype.checkTreasurePopup = function(type) {
 		   var amount = this.operateValue(this._params[1], this._params[2], this._params[3]);
 		};
    	    if (amount > 0 && SceneManager._scene.constructor.name === "Scene_Map") {
-			for (i = 0; i < $gameMap.events().length; i++){
-				var eve = $gameMap.events()[i];
-				if ($gameTemp._popupEventId) {
-					if (eve && ($gameTemp._popupEventId == eve._eventId)) {
-						var x = eve.screenX();
-						var y = eve.screenY();
-						$gameSystem._trspupData.push([this.trPopupType(type),amount,x,y]);
-						delete $gameTemp._popupEventId;
-						break;
-					}
-				}
-				if (eve && (this._eventId === eve._eventId)) {
-					var x = eve.screenX();
-					var y = eve.screenY();
-					$gameSystem._trspupData.push([this.trPopupType(type),amount,x,y]);
-				};
-			};
+			let event;
+			if ($gameTemp._popupEventId) event = $gameMap.event($gameTemp._popupEventId);
+			else event = $gameMap.event(this._eventId);
+
+			var x = event.screenX();
+			var y = event.screenY();
+			$gameSystem._trspupData.push([this.trPopupType(type),amount,x,y]);
+			if ($gameTemp._popupEventId) delete $gameTemp._popupEventId;
 	   };
 	};
 };
