@@ -7095,7 +7095,7 @@
   {
     "id": 241,
     "animationId": 0,
-    "consumable": true,
+    "consumable": false,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -7103,17 +7103,17 @@
       "type": 0,
       "variance": 20
     },
-    "description": "",
+    "description": "A corroded iron key. Smells faintly of sulfur.\nWill get you into the Castle Town Sewers.",
     "effects": [],
     "hitType": 0,
-    "iconIndex": 0,
-    "itypeId": 1,
-    "name": "",
+    "iconIndex": 241,
+    "itypeId": 2,
+    "name": "Rusted Sewer Key",
     "note": "",
-    "occasion": 0,
+    "occasion": 3,
     "price": 0,
     "repeats": 1,
-    "scope": 7,
+    "scope": 0,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0

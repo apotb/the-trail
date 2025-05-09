@@ -12823,6 +12823,89 @@
           "actorHp": 50,
           "actorId": 1,
           "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameMap.mapId() == 83"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "Actor4",
+              3,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "\\p4That other guy jumped past us!"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "People3",
+              6,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "\\knightSomeone else will have to deal with him."
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "For now, let's take out these three!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
           "enemyHp": 0,
           "enemyIndex": 0,
           "enemyValid": true,

@@ -178,7 +178,7 @@
       }
     ],
     "name": "Knight",
-    "note": "<Icon: 164>\n\n<Equip Slot>\nWeapon\nOffhand\nHead\nBody\nFeet\nAccessory\nAccessory\nAccessory\nM. Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nState !== Hold the Line I: Hold the Line I\nState !== Inspire: Inspire\nRandom 75%: Focused Slash, Lowest HP\nState !== Incorporeal: Attack, Lowest HP\nAlways: Guard\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 50 + Math.floor(level / 5);\n</Custom LUK Formula>",
+    "note": "<Icon: 164>\n\n<Equip Slot>\nWeapon\nOffhand\nHead\nBody\nFeet\nAccessory\nAccessory\nAccessory\nM. Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nState !== Hold the Line I +++ Level param < 25: Hold the Line I\nState !== Hold the Line II +++ Level param < 50: Hold the Line II\nState !== Inspire: Inspire\nRandom 75%: Focused Slash, Lowest HP\nState !== Incorporeal: Attack, Lowest HP\nAlways: Guard\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 50 + Math.floor(level / 5);\n</Custom LUK Formula>",
     "params": [
       [
         1,

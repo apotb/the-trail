@@ -1512,8 +1512,16 @@
           },
           "list": [
             {
-              "code": 250,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                8,
+                241
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Open3",
@@ -1525,7 +1533,7 @@
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 0,
                 {
@@ -1575,7 +1583,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 17
@@ -1584,7 +1592,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 15,
@@ -1597,7 +1605,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 18
@@ -1606,7 +1614,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 15,
@@ -1619,7 +1627,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 19
@@ -1628,7 +1636,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 15,
@@ -1641,7 +1649,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 37
@@ -1650,7 +1658,7 @@
             },
             {
               "code": 123,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "A",
                 0
@@ -1658,7 +1666,7 @@
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
@@ -1678,7 +1686,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 12
@@ -1687,7 +1695,7 @@
             },
             {
               "code": 250,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Move1",
@@ -1699,7 +1707,7 @@
             },
             {
               "code": 201,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 0,
                 68,
@@ -1711,11 +1719,48 @@
             },
             {
               "code": 123,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "A",
                 1
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "The door is locked."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,

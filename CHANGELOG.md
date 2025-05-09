@@ -13,9 +13,10 @@ The changelog below may be lengthy, but if you take the time to read it, I think
 - Added 2 warp doors in Sam's basement that lead to Bladesville and Telluria Castle Town.
 - Added a leaderboard for Fish Caught. It can be accessed by speaking to the fisherman in Telluria Castle Town.
 - Added a golden First Cleric statue in the Frozen Labyrinth.
-- 3 new items:
+- 4 new items:
   - Cleansing Scroll ★
   - CRI Scroll
+  - Sewer Key
   - Chunk of Purple Stone
 - 4 new weapons:
   - Andy's Dusters MK. II
