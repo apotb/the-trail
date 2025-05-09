@@ -86,6 +86,7 @@ The changelog below may be lengthy, but if you take the time to read it, I think
 - Monsters won't respawn while you're in a dungeon.
 - Simplified the General Store's stock.
 - Harmony, Grass Knuckles, and Frost Edge no longer use earlier staves/daggers as ingredients.
+- Condensed Gel variants and the Vigilante's Charm no longer provide ATK, MAT, or AGI.
 - Moved many cooking recipes from the pot to the campfire.
 - Doubled Claire's outgoing healing.
 - Vial of Poison can be used as an upgrader, making a weapon inflict Poisoned.
