@@ -166,6 +166,7 @@ The changelog below may be lengthy, but if you take the time to read it, I think
 - Fixed boulders still animating even if they failed to move.
 - Fixed buggy snowball in Frozen Labyrinth.
 - Fixed the Comet Charm creating a duplicate damage popup.
+- Fixed Player 3's message bust updating based on vanity.
 - Fixed uncrafted item descriptions reverting to the default white color after a color code or element was referenced.
 - Fixed being able to change the party member comparison while choosing an ingredient.
 - Fixed being unable to walk to the small chest in the Greenfield-Solus Passage while the soldiers were clearing the dirt.

@@ -356,16 +356,23 @@ Sprite_GalvBust.prototype.loadBitmap = function() {
 			id = $gameActors.actor(2).equips()[10].baseItemId;
 			if ($gameActors.actor(2).equips()[8]) if ($gameActors.actor(2).equips()[8].baseItemId == 199) {
 				name += "_F";
-			} else if (id === 121) name += "_C";
+			} else if (id === 121) {
+				name += "_C";
+			} else if (id === 228) name += "_Night";
 		}
-		if (index % 4 === 1 && $gameActors.actor(3).equips()[10]) { // Player 3
+		if (index % 4 === 3 && $gameActors.actor(3).equips()[10]) { // Player 3
 			id = $gameActors.actor(3).equips()[10].baseItemId;
-			if (id === 122) name += "_C";
+			if (id === 122) {
+				name += "_C";
+			} else if (id === 229) name += "_Night";
 		}
 		if (index % 4 === 0 && $gameActors.actor(4).equips()[10]) { // Player 4
 			id = $gameActors.actor(4).equips()[10].baseItemId;
-			if (id === 123) name += "_C";
-			else if (id === 138) name += "_B";
+			if (id === 123) {
+				name += "_C";
+			} else if (id === 138) {
+				name += "_B";
+			} else if (id === 230) name += "_Night";
 		}
 	}
 
