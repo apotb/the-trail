@@ -55,7 +55,7 @@ The changelog below may be lengthy, but if you take the time to read it, I think
   - Nerfed Magical Breeze Winded rate from 100% → 25%
   - Buffed Magical Breeze MAT rate from 400% → 450%
   - Nerfed Cure II MAT rate from 180% → 150%
-  - Buffed Channel Divinity II MAT rate from 400% → 450%
+  - Buffed Channel Divinity II MAT rate from 400% → 500%
   - Removed Soul Barrier I from Player 3's skill pool.
   - Player 3 now learns Dispell at level 16 → 17
 - Rebalanced several enemies:

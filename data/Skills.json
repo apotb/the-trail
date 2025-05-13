@@ -5092,15 +5092,15 @@
   },
   {
     "id": 146,
-    "animationId": 97,
+    "animationId": 96,
     "damage": {
       "critical": true,
       "elementId": 8,
-      "formula": "a.mat * 4.5 - b.mdf * 2",
+      "formula": "a.mat * 5 - b.mdf * 2",
       "type": 1,
       "variance": 5
     },
-    "description": "Channel the divine energy of Trailia with greater intensity, dealing\nhigh damage and devastating dark enemies. \\c[27]\\bpdamage[450]%\\c[0] MAT rate.",
+    "description": "Channel the divine energy of Trailia with greater intensity, dealing\nhigh damage and devastating dark enemies. \\c[27]\\bpdamage[500]%\\c[0] MAT rate.",
     "effects": [],
     "hitType": 2,
     "iconIndex": 1509,
