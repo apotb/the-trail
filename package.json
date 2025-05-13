@@ -5,6 +5,7 @@
   "chromium-args": "--in-process-gpu --disable-direct-composition --disable-raf-throttling",
   "scripts": {
     "windows": "node scripts/deployment/deployment.js windows",
+    "mac": "node scripts/deployment/deployment.js mac",
     "linux": "node scripts/deployment/deployment.js linux",
     "compress-bgm": "node scripts/compress-bgm.js"
   },

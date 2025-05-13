@@ -152,22 +152,8 @@ async function deployment(directory, fixPackage=true) {
     }
 
     const rootPath = path.join(__dirname, "..", "..");
-    const config = {
-        windows: {
-            platform: "win-x64",
-            extension: "zip",
-            execFile: "windows/thetrail.exe",
-            extraFiles: [],
-            nwBinary: "nw.exe"
-        },
-        linux: {
-            platform: "linux-x64",
-            extension: "tar.gz",
-            execFile: "linux/thetrail",
-            extraFiles: ["linux/thetrail.desktop"],
-            nwBinary: "nw"
-        }
-    }[platform];
+    const configPath = path.join(__dirname, '..', 'config.json');
+    const config = JSON.parse(fs.readFileSync(configPath)).deployment.platforms[platform];
 
     if (!config) throw new Error(`Unsupported build target: ${platform}`);
 
