@@ -3630,11 +3630,11 @@
           },
           "directionFix": false,
           "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
+            "tileId": 0,
+            "characterName": "!$Citadel",
+            "direction": 8,
+            "pattern": 2,
+            "characterIndex": 0
           },
           "list": [
             {
@@ -3657,7 +3657,7 @@
           },
           "moveSpeed": 3,
           "moveType": 0,
-          "priorityType": 0,
+          "priorityType": 1,
           "stepAnime": false,
           "through": false,
           "trigger": 0,
