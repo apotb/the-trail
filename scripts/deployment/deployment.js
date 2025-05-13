@@ -158,7 +158,7 @@ async function deployment(directory, fixPackage=true) {
     if (!config) throw new Error(`Unsupported build target: ${platform}`);
 
     const extractedPath = await dlNwjs(config.platform, rootPath, "out", config.extension);
-    const finalPath = path.join(rootPath, "out", platform);
+    const finalPath = path.join(rootPath, "out", `${platform}-demo`);
     if (fs.existsSync(finalPath)) fs.rmSync(finalPath, { recursive: true, force: true });
     try {
         fs.renameSync(extractedPath, finalPath);

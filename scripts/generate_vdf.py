@@ -3,20 +3,20 @@ import platform
 import json
 import subprocess
 
-APP_ID = "3544920"
+APP_ID = "3580480"
 LOG_PATH = r"C:\SteamCMD\logs"
 
 DEPOTS = {
     "windows": {
-        "id": "3544921",
+        "id": "3580481",
         "folder": "../out/windows"
     },
     "mac": {
-        "id": "3544922",
+        "id": "3580482",
         "folder": "../out/mac"
     },
     "linux": {
-        "id": "3544923",
+        "id": "3580483",
         "folder": "../out/linux"
     }
 }
