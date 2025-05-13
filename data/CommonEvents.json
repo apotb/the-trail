@@ -4331,7 +4331,7 @@
         "indent": 1,
         "parameters": [
           12,
-          "$gameSystem._secUntilAutosave > 0"
+          "$gameSystem._secUntilAutosave > 0 && !$gameSystem._forceAutosave"
         ]
       },
       {
@@ -4388,7 +4388,7 @@
         "indent": 0,
         "parameters": [
           12,
-          "$gameSystem.getAutosaveInterval() > 0"
+          "$gameSystem.getAutosaveInterval() > 0 || $gameSystem._forceAutosave"
         ]
       },
       {
@@ -4483,6 +4483,13 @@
       },
       {
         "code": 355,
+        "indent": 1,
+        "parameters": [
+          "if ($gameSystem._forceAutosave) delete $gameSystem._forceAutosave;"
+        ]
+      },
+      {
+        "code": 655,
         "indent": 1,
         "parameters": [
           "DataManager.saveGame(DataManager.maxSavefiles());"
