@@ -63,7 +63,7 @@ API_LEADERBOARD.fetchLeaderboard = async function(leaderboard) {
         this.setLeaderboard(leaderboard, data);
     })
     .catch(error => {
-        alert("Error fetching data: " + error);
+        if ($gameTemp.isPlaytest()) alert("Error fetching data: " + error);
         throw error;
     });
 };
@@ -74,7 +74,7 @@ API_LEADERBOARD.addToLeaderboard = async function(leaderboard, value) {
         body: JSON.stringify([leaderboard, API_STEAM.userId(), API_STEAM.username(), value])
     })
     .catch(error => {
-        alert("Error adding data: " + error);
+        if ($gameTemp.isPlaytest()) alert("Error adding data: " + error);
         throw error;
     });
 };
