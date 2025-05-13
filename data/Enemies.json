@@ -6768,7 +6768,7 @@
     "battlerHue": 0,
     "battlerName": "Sentinel",
     "dropItems": [],
-    "exp": 0,
+    "exp": 6000,
     "traits": [
       {
         "code": 31,
@@ -6788,24 +6788,34 @@
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.95
+        "value": 1
       },
       {
         "code": 22,
         "dataId": 1,
         "value": 0.05
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.05
+      },
+      {
+        "code": 63,
+        "dataId": 1,
+        "value": 1
       }
     ],
-    "gold": 0,
+    "gold": 3000,
     "name": "Sentinel",
-    "note": "<Element: Dark>\n<Passive State: 140, 215, 211, 212, 213, 214>\n\n<Sideview Battler: NoMatchingSprite/Sentinel Phase 1>\n<Sideview No Collapse>\n<Sideview Shadow Shift: -6>\n<Attack Animation: 143>\n<HP Gauge Width: 288>\n\n<Enemy Drops>\nChunk of Purple Stone: 100%\nSENTINEL POWER: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "note": "<Element: Earth, Dark>\n<Passive State: 140, 215, 211, 212, 213, 214>\n\n<Sideview Battler: NoMatchingSprite/Sentinel Phase 1>\n<Sideview No Collapse>\n<Sideview Shadow Shift: -6>\n<Attack Animation: 143>\n<HP Gauge Width: 288>\n\n<Enemy Drops>\nChunk of Purple Stone: 100%\nSentinel's Persistence: 100%\nTwilight: 100%\nStoneheart Aegis: 100%\nStone Dragon Horns: 100%\nEarth Essence: 100%\nEarth Essence: 100%\nEarth Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
     "params": [
       80000,
       0,
-      10,
-      10,
-      10,
-      10,
+      45,
+      40,
+      70,
+      70,
       10,
       10
     ]

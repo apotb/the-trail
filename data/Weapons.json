@@ -2466,5 +2466,38 @@
     ],
     "price": 1200,
     "wtypeId": 12
+  },
+  {
+    "id": 65,
+    "animationId": 126,
+    "description": "A large two-handed blade twisted with the \\c[30]Purple\\c[0]'s evil.\nDishes out heavy \\nl[9]-type attacks like it's nothing!",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 9,
+        "value": 0
+      }
+    ],
+    "iconIndex": 1206,
+    "name": "Twilight",
+    "note": "<Weapon Image: 278>\n<Upgrade Slots: 2>\n\n<Element Amplify Dark: +10%>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(84) >= 16;\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      0,
+      45,
+      0,
+      0,
+      0,
+      -36,
+      0
+    ],
+    "price": 5000,
+    "wtypeId": 11
   }
 ]

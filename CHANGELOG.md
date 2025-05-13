@@ -20,16 +20,19 @@ The changelog below may be lengthy, but if you take the time to read it, I think
   - CRI Scroll
   - Sewer Key
   - Chunk of Purple Stone
-- 4 new weapons:
+- 5 new weapons:
   - Andy's Dusters MK. II
   - Esoteric Tome
   - Last Breath
   - Violet Tendril
-- 4 new equipment:
+  - Twilight
+- 6 new equipment:
   - Ice Skates
   - Haloweave Gloves
   - Purple Mage Crystal
-  - SENTINEL POWER
+  - Stoneheart Aegis
+  - Stone Dragon Horns
+  - Sentinel's Persistence
 - 5 new vanities:
   - Blue Sleeping Garments
   - Green Sleeping Garments
