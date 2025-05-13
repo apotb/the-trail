@@ -1,3 +1,5 @@
+# RUN `NPM INSTALL` AFTER CLONING
+
 # The Trail
 The Overworld and the Above were separated hundreds of thousands of years ago, preventing the humans from contacting the Immortals. Since then, the corrupted soul of an evil god has wrought constant terror and destruction upon the Overworld.
 
