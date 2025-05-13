@@ -22,8 +22,8 @@ DEPOTS = {
 }
 
 SCRIPT_DIR = os.path.dirname(__file__)
-OUT_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, "../out"))
-VERSION_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, "../data/Version.json"))
+OUT_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, "../../out"))
+VERSION_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, "../../data/Version.json"))
 
 
 def detect_platform():
