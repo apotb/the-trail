@@ -174,7 +174,7 @@ DataManager.isDatabaseLoaded = function() {
   return true;
 };
 
-DataManager.stateCategories = {};
+DataManager.stateCategories = {"ALL": []};
 
 DataManager.processStCNotetags1 = function(group) {
   for (var n = 1; n < group.length; n++) {
@@ -192,6 +192,8 @@ DataManager.processStCNotetags1 = function(group) {
         DataManager.stateCategories[note].push(n);
       }
     }
+
+    DataManager.stateCategories["ALL"].push(n);
   }
 };
 

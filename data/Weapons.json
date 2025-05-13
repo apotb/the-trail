@@ -250,7 +250,7 @@
     ],
     "iconIndex": 144,
     "name": "Woodcutting Axe",
-    "note": "<Disassemble Pool: Advanced>\nx1 Iron Cluster: 10%\n</Disassemble Pool: Advanced>",
+    "note": "<Disassembler: Wood>\n\n<Disassemble Pool: Advanced>\nx1 Iron Cluster: 10%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
@@ -349,7 +349,7 @@
     ],
     "iconIndex": 416,
     "name": "Orb Staff",
-    "note": "<Weapon Image: 121>",
+    "note": "<Weapon Image: 121>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(9) >= 4;\n</Custom Buy Show Eval>",
     "params": [
       0,
       4,
@@ -689,7 +689,7 @@
     ],
     "iconIndex": 391,
     "name": "Bronze Sword",
-    "note": "<Weapon Image: 337>\n<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1 Bronze Ingot: 50%\n</Disassemble Pool: Advanced>",
+    "note": "<Weapon Image: 337>\n<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1 Bronze Ingot: 50%\n</Disassemble Pool: Advanced>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value([85, 10, 'A']);\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -722,7 +722,7 @@
     ],
     "iconIndex": 555,
     "name": "Enchanted Stick",
-    "note": "<Weapon Image: 39>\n<Upgrade Slots: 1>",
+    "note": "<Weapon Image: 39>\n<Upgrade Slots: 1>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value([85, 9, 'A']);\n</Custom Buy Show Eval>",
     "params": [
       0,
       6,
@@ -869,7 +869,7 @@
     ],
     "iconIndex": 691,
     "name": "Bloodlust ★",
-    "note": "<Weapon Image: 206>\n<Upgrade Slots: 1>\n<HP Life Steal Physical: +4%>\n\n<Synthesis Ingredients>\nBloodlust\nBronze Ingot: 2\nSteel Ingot: 2\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>",
+    "note": "<Weapon Image: 206>\n<Upgrade Slots: 1>\n<HP Life Steal Physical: +4%>\n\n<Synthesis Ingredients>\nBloodlust\nBronze Ingot: 2\nSteel Ingot: 2\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>\n\n<Custom Craft Show Eval>\nvisible = !$gameSystem.hasSynthed($dataWeapons[26]);\n</Custom Craft Show Eval>",
     "params": [
       5,
       2,
@@ -1614,16 +1614,11 @@
         "code": 32,
         "dataId": 34,
         "value": 0.2
-      },
-      {
-        "code": 22,
-        "dataId": 2,
-        "value": 0.015
       }
     ],
     "iconIndex": 692,
     "name": "Bloodlust ★★",
-    "note": "<Weapon Image: 206>\n<Upgrade Slots: 3>\n<HP Life Steal Physical: +6%>\n\n<Synthesis Ingredients>\nBloodlust ★\nStinger: 5\nTellurium Alloy\nTellurium Core\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>",
+    "note": "<Weapon Image: 206>\n<Upgrade Slots: 3>\n<HP Life Steal Physical: +6%>\n\n<Synthesis Ingredients>\nBloodlust ★\nStinger: 5\nTellurium Alloy\nTellurium Core\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>\n\n<Custom Craft Show Eval>\nvisible = !$gameSystem.hasSynthed($dataWeapons[44]);\n</Custom Craft Show Eval>",
     "params": [
       10,
       5,
@@ -1856,7 +1851,7 @@
     ],
     "iconIndex": 414,
     "name": "Harmony",
-    "note": "<Weapon Image: 294>\n<Upgrade Slots: 3>\n<HP Life Steal Physical: +15%>\n<HP Life Steal Magical: +7.5%>\n<MP Life Steal Physical: +10%>\n\n<Synthesis Ingredients>\nLife Crystal Staff\nMana Crystal Staff\nPassion\nMana Staff\nTellurium Alloy\nTellurium Core\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>",
+    "note": "<Weapon Image: 294>\n<Upgrade Slots: 3>\n<HP Life Steal Physical: +15%>\n<HP Life Steal Magical: +7.5%>\n<MP Life Steal Physical: +10%>\n\n<Synthesis Ingredients>\nLife Crystal Staff\nMana Crystal Staff\nTellurium Alloy\nTellurium Core\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>",
     "params": [
       0,
       25,
@@ -1947,7 +1942,7 @@
     ],
     "iconIndex": 545,
     "name": "Frost Edge",
-    "note": "<Weapon Image: 373>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nSacrificial Dagger\nSwift\nFrozen Jewel: 5\nIce Essence: 5\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>",
+    "note": "<Weapon Image: 373>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nSacrificial Dagger\nFrozen Jewel: 5\nIce Essence: 5\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>",
     "params": [
       0,
       0,
@@ -1995,7 +1990,7 @@
     ],
     "iconIndex": 706,
     "name": "Grass Knuckles",
-    "note": "<Weapon Image: 202>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nKnuckle Spikes\nAndy's Dusters\nEnchanted Dragon Scale\nDragon Scale: 6\nBronze Ingot: 2\nEarth Essence: 5\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>",
+    "note": "<Weapon Image: 202>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nKnuckle Spikes\nEnchanted Dragon Scale\nDragon Scale: 6\nBronze Ingot: 2\nEarth Essence: 5\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>",
     "params": [
       0,
       0,
@@ -2294,5 +2289,182 @@
     ],
     "price": 600,
     "wtypeId": 5
+  },
+  {
+    "id": 61,
+    "animationId": 122,
+    "description": "The refined design of Andy's favorite weapon. Greatly increases damage reduction\nwhile guarding, and has an even higher chance of confusing struck enemies!",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
+      },
+      {
+        "code": 32,
+        "dataId": 23,
+        "value": 0.2
+      },
+      {
+        "code": 23,
+        "dataId": 1,
+        "value": 3
+      }
+    ],
+    "iconIndex": 825,
+    "name": "Andy's Dusters MK. II",
+    "note": "<Weapon Image: 299>\n<Upgrade Slots: 3>",
+    "params": [
+      0,
+      0,
+      21,
+      6,
+      0,
+      0,
+      11,
+      0
+    ],
+    "price": 4000,
+    "wtypeId": 9
+  },
+  {
+    "id": 62,
+    "animationId": 122,
+    "description": "A worn book pulsing with dark glyphs. Evil whispers flood your\nmind when opened. Increases magic damage and MP costs by 10%.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
+      },
+      {
+        "code": 21,
+        "dataId": 1,
+        "value": 1.1
+      },
+      {
+        "code": 25,
+        "dataId": 0,
+        "value": 1.1
+      },
+      {
+        "code": 23,
+        "dataId": 4,
+        "value": 1.1
+      }
+    ],
+    "iconIndex": 1233,
+    "name": "Esoteric Tome",
+    "note": "<Weapon Image: 26>\n<Upgrade Slots: 3>",
+    "params": [
+      0,
+      200,
+      3,
+      0,
+      60,
+      0,
+      0,
+      0
+    ],
+    "price": 1200,
+    "wtypeId": 10
+  },
+  {
+    "id": 63,
+    "animationId": 6,
+    "description": "Silence your victims before they can even scream.\nGrants high CRI and can inflict \\it[21].",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.1
+      },
+      {
+        "code": 32,
+        "dataId": 21,
+        "value": 0.2
+      }
+    ],
+    "iconIndex": 828,
+    "name": "Last Breath",
+    "note": "<Weapon Image: 277>\n<Upgrade Slots: 3>",
+    "params": [
+      0,
+      0,
+      25,
+      0,
+      0,
+      0,
+      10,
+      0
+    ],
+    "price": 1200,
+    "wtypeId": 5
+  },
+  {
+    "id": 64,
+    "animationId": 1,
+    "description": "A sacrificial ritual turned the zealot carrying this\ninto something more resembling a monster than a human.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.1
+      },
+      {
+        "code": 25,
+        "dataId": 0,
+        "value": 1.25
+      }
+    ],
+    "iconIndex": 829,
+    "name": "Violet Tendril",
+    "note": "<Weapon Image: 281>\n<Upgrade Slots: 3>\n\n<Element Amplify Healing: +25%>\n<Element Amplify Dark: +25%>",
+    "params": [
+      25,
+      25,
+      25,
+      0,
+      50,
+      0,
+      0,
+      0
+    ],
+    "price": 1200,
+    "wtypeId": 12
   }
 ]

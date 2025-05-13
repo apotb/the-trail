@@ -681,7 +681,7 @@ DataManager.setIndependentLength = function(group) {
 DataManager.saveGameWithoutRescue = function(savefileId) {
     var json = JsonEx.stringify(this.makeSaveContents());
     StorageManager.save(savefileId, json);
-    this._lastAccessedId = savefileId;
+    if (savefileId < this.maxSavefiles()) this._lastAccessedId = savefileId;
     var globalInfo = this.loadGlobalInfo() || [];
     globalInfo[savefileId] = this.makeSavefileInfo();
     this.saveGlobalInfo(globalInfo);
@@ -738,12 +738,15 @@ DataManager.isNewItemValid = function(item) {
 };
 
 DataManager.addNewIndependentItem = function(baseItem, newItem) {
-    newItem.id = this.getDatabase(baseItem).length;
+    let db = this.getDatabase(baseItem);
+    let id = db.findIndex((e, i) => e === null && i > Yanfly.Param.ItemStartingId);
+    if (id == -1) id = db.length;
+    newItem.id = id;
     ItemManager.setNewIndependentItem(baseItem, newItem);
     ItemManager.customizeNewIndependentItem(baseItem, newItem);
     ItemManager.onCreationEval(baseItem, newItem);
-    this.getDatabase(baseItem).push(newItem);
-    this.getContainer(baseItem).push(newItem);
+    db[newItem.id] = newItem;
+    this.getContainer(baseItem)[newItem.id - Yanfly.Param.ItemStartingId - 1] = newItem;
 };
 
 DataManager.removeIndependentItem = function(item) {
@@ -1123,12 +1126,46 @@ Game_Party.prototype.initActorEquips = function() {
 
 Yanfly.Item.Game_Party_gainItem = Game_Party.prototype.gainItem;
 Game_Party.prototype.gainItem = function(item, amount, includeEquip) {
+    if (!item) return;
     if (DataManager.isIndependent(item)) {
       this.gainIndependentItem(item, amount, includeEquip);
     } else {
       Yanfly.Item.Game_Party_gainItem.call(this, item, amount, includeEquip);
     }
     this.seenItem(item);
+    // Leek
+    if (item == $dataItems[2]) {
+      $gameSystem._leeks = ($gameSystem._leeks || 0) + 1;
+      OrangeGreenworks.setStat('leeks', $gameSystem._leeks);
+    }
+    // Origin Crystal
+    if (item == $dataWeapons[34]) {
+      OrangeGreenworks.activateAchievement('COLLECT_ORIGINCRYSTAL');
+    }
+    // Ice Skates
+    if (item == $dataArmors[223]) {
+      OrangeGreenworks.activateAchievement('COLLECT_ICESKATES');
+    }
+    // Globetrotter Membership
+    if (item == $dataItems[233]) {
+      OrangeGreenworks.activateAchievement('COLLECT_GLOBETROTTER');
+    }
+    // Rare enemy accessories
+    if (DataManager.isArmor(item) && [81, 82, 83, 220].contains(item.id)) {
+      $gameSystem._poacher = $gameSystem._poacher || [];
+      if (!$gameSystem._poacher.contains(item.id)) {
+        $gameSystem._poacher.push(item.id);
+        OrangeGreenworks.setStat('rareEnemies', $gameSystem._poacher.length);
+      }
+    }
+    // Food
+    if (item.itemCategory?.contains('Foodstuffs')) {
+      $gameSystem._food = $gameSystem._food || [];
+      if (!$gameSystem._food.contains(item.id)) {
+        $gameSystem._food.push(item.id);
+        OrangeGreenworks.setStat('uniqueFood', $gameSystem._food.length);
+      }
+    }
 };
 
 Game_Party.prototype.seenItem = function(item) {

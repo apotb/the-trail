@@ -12091,14 +12091,7 @@
               "code": 356,
               "indent": 1,
               "parameters": [
-                "GabText Storage Room"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "ForceGab"
+                "ShowLocation Storage Room"
               ]
             },
             {
@@ -12185,14 +12178,7 @@
               "code": 356,
               "indent": 1,
               "parameters": [
-                "GabText Dining Room"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "ForceGab"
+                "ShowLocation Dining Room"
               ]
             },
             {
@@ -12279,14 +12265,7 @@
               "code": 356,
               "indent": 1,
               "parameters": [
-                "GabText General's Office"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "ForceGab"
+                "ShowLocation General's Office"
               ]
             },
             {
@@ -12373,14 +12352,7 @@
               "code": 356,
               "indent": 1,
               "parameters": [
-                "GabText Officers' Quarters"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "ForceGab"
+                "ShowLocation Officers' Quarters"
               ]
             },
             {
@@ -13516,30 +13488,6 @@
               ]
             },
             {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                6,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p3It feels like déjà vu standing in front of"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "this statue having a deep conversation, haha."
-              ]
-            },
-            {
               "code": 230,
               "indent": 0,
               "parameters": [
@@ -13701,10 +13649,93 @@
               ]
             },
             {
-              "code": 117,
+              "code": 313,
               "indent": 0,
               "parameters": [
-                53
+                0,
+                0,
+                1,
+                216
+              ]
+            },
+            {
+              "code": 319,
+              "indent": 0,
+              "parameters": [
+                1,
+                7,
+                85
+              ]
+            },
+            {
+              "code": 319,
+              "indent": 0,
+              "parameters": [
+                2,
+                7,
+                86
+              ]
+            },
+            {
+              "code": 319,
+              "indent": 0,
+              "parameters": [
+                3,
+                7,
+                87
+              ]
+            },
+            {
+              "code": 319,
+              "indent": 0,
+              "parameters": [
+                4,
+                7,
+                88
+              ]
+            },
+            {
+              "code": 128,
+              "indent": 0,
+              "parameters": [
+                85,
+                1,
+                0,
+                1,
+                false
+              ]
+            },
+            {
+              "code": 128,
+              "indent": 0,
+              "parameters": [
+                86,
+                1,
+                0,
+                1,
+                false
+              ]
+            },
+            {
+              "code": 128,
+              "indent": 0,
+              "parameters": [
+                87,
+                1,
+                0,
+                1,
+                false
+              ]
+            },
+            {
+              "code": 128,
+              "indent": 0,
+              "parameters": [
+                88,
+                1,
+                0,
+                1,
+                false
               ]
             },
             {
@@ -13877,7 +13908,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "town_castle",
+                  "name": "town_castle_castle",
                   "volume": 75,
                   "pitch": 100,
                   "pan": 0
@@ -13992,14 +14023,7 @@
               "code": 356,
               "indent": 1,
               "parameters": [
-                "GabText Officers' Quarters"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "ForceGab"
+                "ShowLocation Officers' Quarters"
               ]
             },
             {
@@ -14086,14 +14110,7 @@
               "code": 356,
               "indent": 1,
               "parameters": [
-                "GabText Bedroom"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "ForceGab"
+                "ShowLocation Bedroom"
               ]
             },
             {
@@ -14119,14 +14136,7 @@
               "code": 356,
               "indent": 1,
               "parameters": [
-                "GabText Officers' Quarters"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "ForceGab"
+                "ShowLocation Officers' Quarters"
               ]
             },
             {
@@ -14175,14 +14185,7 @@
               "code": 356,
               "indent": 0,
               "parameters": [
-                "GabText Bedroom"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "ForceGab"
+                "ShowLocation Bedroom"
               ]
             },
             {
@@ -14425,10 +14428,49 @@
               ]
             },
             {
-              "code": 117,
+              "code": 319,
               "indent": 0,
               "parameters": [
-                53
+                1,
+                7,
+                227
+              ]
+            },
+            {
+              "code": 319,
+              "indent": 0,
+              "parameters": [
+                2,
+                7,
+                228
+              ]
+            },
+            {
+              "code": 319,
+              "indent": 0,
+              "parameters": [
+                3,
+                7,
+                229
+              ]
+            },
+            {
+              "code": 319,
+              "indent": 0,
+              "parameters": [
+                4,
+                7,
+                230
+              ]
+            },
+            {
+              "code": 313,
+              "indent": 0,
+              "parameters": [
+                0,
+                0,
+                0,
+                216
               ]
             },
             {
@@ -14698,14 +14740,7 @@
               "code": 356,
               "indent": 1,
               "parameters": [
-                "GabText Bedroom"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "ForceGab"
+                "ShowLocation Bedroom"
               ]
             },
             {
@@ -14731,14 +14766,7 @@
               "code": 356,
               "indent": 1,
               "parameters": [
-                "GabText Officers' Quarters"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "ForceGab"
+                "ShowLocation Officers' Quarters"
               ]
             },
             {
@@ -14825,14 +14853,7 @@
               "code": 356,
               "indent": 1,
               "parameters": [
-                "GabText Dining Room"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "ForceGab"
+                "ShowLocation Dining Room"
               ]
             },
             {
@@ -14858,14 +14879,7 @@
               "code": 356,
               "indent": 1,
               "parameters": [
-                "GabText Kitchen"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "ForceGab"
+                "ShowLocation Kitchen"
               ]
             },
             {

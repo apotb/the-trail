@@ -4409,6 +4409,52 @@ Sprite.prototype._renderWebGL = function(renderer) {
     }
 };
 
+/**
+ * @method _fadeTo
+ * @param {Number} targetAlpha
+ * @param {Number} duration
+ * @private
+ */
+Sprite.prototype._fadeTo = function(targetAlpha, duration=0.5) {
+    duration *= 1000;
+    const interval = 10;
+    const steps = duration / interval;
+    const startAlpha = this.alpha;
+    const delta = targetAlpha - startAlpha;
+
+    let step = 0;
+    const fadeInterval = setInterval(() => {
+        step++;
+        this.alpha = startAlpha + delta * (step / steps);
+        if (step >= steps) {
+            this.alpha = targetAlpha;
+            clearInterval(fadeInterval);
+        }
+    }, interval);
+};
+
+/**
+ * @method _fadeIn
+ * @param {Number} duration
+ * @public
+ */
+Sprite.prototype.fadeIn = function(duration=0.25) {
+    // this.alpha = 0;
+    this._fadeTo(1, duration);
+};
+
+
+
+/**
+ * @method _fadeOut
+ * @param {Number} duration
+ * @public
+ */
+Sprite.prototype.fadeOut = function(duration=0.25) {
+    // this.alpha = 1;
+    this._fadeTo(0, duration);
+};
+
 // The important members from Pixi.js
 
 /**

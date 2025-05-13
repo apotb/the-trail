@@ -213,7 +213,7 @@ Window_StatueSummary.prototype.initialize = function() {
 };
 
 Window_StatueSummary.prototype.makeItemList = function() {
-    Window_StatueList.prototype.makeItemList(this);
+    Window_StatueList.prototype.makeItemList.call(this);
     
     const length = this._data.filter(s => s[3]).length;
     var desc = "-$% Incoming Light / +$% Outgoing Light".replace("$", length).replace("$", length);

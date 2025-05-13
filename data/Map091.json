@@ -8468,14 +8468,7 @@
               "code": 356,
               "indent": 1,
               "parameters": [
-                "GabText Princess's Bedroom"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "ForceGab"
+                "ShowLocation Princess's Bedroom"
               ]
             },
             {
@@ -8562,14 +8555,7 @@
               "code": 356,
               "indent": 1,
               "parameters": [
-                "GabText Prince's Bedroom"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "ForceGab"
+                "ShowLocation Prince's Bedroom"
               ]
             },
             {
@@ -8656,14 +8642,7 @@
               "code": 356,
               "indent": 1,
               "parameters": [
-                "GabText Royal Bedroom"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "ForceGab"
+                "ShowLocation Royal Bedroom"
               ]
             },
             {
@@ -8750,14 +8729,7 @@
               "code": 356,
               "indent": 1,
               "parameters": [
-                "GabText Meeting Room"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "ForceGab"
+                "ShowLocation Meeting Room"
               ]
             },
             {
@@ -8845,14 +8817,7 @@
               "code": 356,
               "indent": 1,
               "parameters": [
-                "GabText Throne Room"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "ForceGab"
+                "ShowLocation Throne Room"
               ]
             },
             {
@@ -15817,7 +15782,31 @@
               "code": 356,
               "indent": 3,
               "parameters": [
-                "Quest 4 Show Objective 10"
+                "Quest 4 Complete Objective 10"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 3,
+              "parameters": [
+                "People3",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 3,
+              "parameters": [
+                "\\kingSo, you've done everything I asked you to?"
+              ]
+            },
+            {
+              "code": 119,
+              "indent": 3,
+              "parameters": [
+                "All Done"
               ]
             },
             {
@@ -15914,6 +15903,13 @@
               "indent": 3,
               "parameters": [
                 "\\kingYou've finished everything, I assume?"
+              ]
+            },
+            {
+              "code": 118,
+              "indent": 3,
+              "parameters": [
+                "All Done"
               ]
             },
             {
@@ -16172,22 +16168,44 @@
                 {
                   "list": [
                     {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 3,
-                      "indent": null
-                    },
-                    {
-                      "code": 19,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
+                      "code": 29,
                       "parameters": [
-                        60
+                        2
                       ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 3,
+              "parameters": [
+                {
+                  "code": 29,
+                  "parameters": [
+                    2
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 3,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 1,
                       "indent": null
                     },
                     {
@@ -16211,12 +16229,54 @@
               ]
             },
             {
+              "code": 205,
+              "indent": 3,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 3,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
               "code": 505,
               "indent": 3,
               "parameters": [
                 {
                   "code": 3,
                   "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 3,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 19,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
                 }
               ]
             },
@@ -16231,16 +16291,10 @@
               ]
             },
             {
-              "code": 505,
+              "code": 230,
               "indent": 3,
               "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    60
-                  ],
-                  "indent": null
-                }
+                60
               ]
             },
             {
@@ -16937,26 +16991,6 @@
                       "indent": null
                     },
                     {
-                      "code": 3,
-                      "indent": null
-                    },
-                    {
-                      "code": 3,
-                      "indent": null
-                    },
-                    {
-                      "code": 3,
-                      "indent": null
-                    },
-                    {
-                      "code": 4,
-                      "indent": null
-                    },
-                    {
-                      "code": 4,
-                      "indent": null
-                    },
-                    {
                       "code": 0
                     }
                   ],
@@ -16980,12 +17014,23 @@
               ]
             },
             {
-              "code": 505,
+              "code": 205,
               "indent": 3,
               "parameters": [
+                0,
                 {
-                  "code": 3,
-                  "indent": null
+                  "list": [
+                    {
+                      "code": 3,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
                 }
               ]
             },
@@ -17000,12 +17045,85 @@
               ]
             },
             {
+              "code": 205,
+              "indent": 3,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 3,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
               "code": 505,
               "indent": 3,
               "parameters": [
                 {
                   "code": 3,
                   "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 3,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 3,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 3,
+              "parameters": [
+                {
+                  "code": 3,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 3,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 4,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
                 }
               ]
             },
@@ -17016,6 +17134,27 @@
                 {
                   "code": 4,
                   "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 3,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 4,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
                 }
               ]
             },
@@ -17072,22 +17211,34 @@
                       "indent": null
                     },
                     {
-                      "code": 2,
-                      "indent": null
-                    },
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 3,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 3,
+              "parameters": [
+                0,
+                {
+                  "list": [
                     {
                       "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        60
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 16,
                       "indent": null
                     },
                     {
@@ -17111,35 +17262,61 @@
               ]
             },
             {
-              "code": 505,
+              "code": 205,
               "indent": 3,
               "parameters": [
+                0,
                 {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 3,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 3,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    60
+                  "list": [
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
                   ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 3,
+              "parameters": [
+                {
+                  "code": 2,
                   "indent": null
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 3,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 3,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 16,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
                 }
               ]
             },

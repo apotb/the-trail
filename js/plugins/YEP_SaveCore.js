@@ -726,7 +726,7 @@ Window_SavefileList.prototype.drawItem = function(index) {
     this.resetTextColor();
     //if (this._mode === 'load') this.changePaintOpacity(valid);
     this.changePaintOpacity(valid);
-    var icon = valid ? ($gameVariables.value(77)[id] || Yanfly.Param.SaveIconSaved) : Yanfly.Param.SaveIconEmpty;
+    var icon = id == this.maxItems() ? 1373 : valid ? ($gameVariables.value(77)[id] || Yanfly.Param.SaveIconSaved) : Yanfly.Param.SaveIconEmpty;
     this.drawIcon(icon, rect.x + 2, rect.y + 2);
     this.drawFileId(id, rect.x + Window_Base._iconWidth + 4, rect.y);
 };
@@ -772,7 +772,7 @@ Window_SaveAction.prototype.makeCommandList = function() {
     var enabled = DataManager.isThisGameFile(id);
     var valid = DataManager.loadSavefileInfo(id);
     this.addCommand(this.getCommandName('load'), 'load', valid);
-    this.addCommand(this.getCommandName('save'), 'save', this.isSaveEnabled());
+    this.addCommand(this.getCommandName('save'), 'save', this.isSaveEnabled() && id < DataManager.maxSavefiles());
     this.addCommand(this.getCommandName('delete'), 'delete', enabled);
 };
 

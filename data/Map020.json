@@ -12274,6 +12274,7 @@
     0,
     0,
     0,
+    202,
     0,
     0,
     0,
@@ -12543,9 +12544,8 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
+    202,
+    202,
     0,
     0,
     0,
@@ -34232,69 +34232,19 @@
             "pattern": 1,
             "characterIndex": 1
           },
-          "moveFrequency": 1,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
               {
-                "code": 4,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 15,
-                "indent": null,
+                "code": 45,
                 "parameters": [
-                  300
-                ]
+                  "this._waitCount = Math.floor((Math.random() * 121) + 180);"
+                ],
+                "indent": null
               },
               {
-                "code": 3,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 3,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 4,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 15,
-                "indent": null,
-                "parameters": [
-                  240
-                ]
-              },
-              {
-                "code": 1,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 1,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 15,
-                "indent": null,
-                "parameters": [
-                  210
-                ]
+                "code": 9,
+                "indent": null
               },
               {
                 "code": 0,
@@ -34545,72 +34495,19 @@
             "pattern": 1,
             "characterIndex": 5
           },
-          "moveFrequency": 1,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
               {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 1,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 4,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 4,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 3,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 15,
-                "indent": null,
+                "code": 45,
                 "parameters": [
-                  450
-                ]
+                  "this._waitCount = Math.floor((Math.random() * 121) + 180);"
+                ],
+                "indent": 0
               },
               {
-                "code": 3,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 3,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 1,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 15,
-                "indent": null,
-                "parameters": [
-                  300
-                ]
+                "code": 9,
+                "indent": 0
               },
               {
                 "code": 0,
@@ -38325,23 +38222,13 @@
               ]
             },
             {
-              "code": 125,
+              "code": 126,
               "indent": 0,
               "parameters": [
+                14,
                 0,
                 0,
-                50
-              ]
-            },
-            {
-              "code": 128,
-              "indent": 0,
-              "parameters": [
-                61,
-                0,
-                0,
-                1,
-                false
+                3
               ]
             },
             {

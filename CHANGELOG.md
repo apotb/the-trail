@@ -1,3 +1,191 @@
+# Alpha 17: Path of the Purple (5/??/2025)
+Now that you've witnessed the destructive power of Apocalypse first-hand, it's time to take up arms! The thing is, no one really knows where Apocalypse is... so it's up to you to track him down.
+A member of a mysterious cult has been captured, and is being held in the Solus Valley Jail. It'll take some intimidation to get anything out of this guy, but for now, he's your only hint. And who knows? Maybe this lead will take you right to Apocalypse...
+
+Alpha 17 brings an all new challenge, and even more powerful equipment! Deck your party out with the latest additions to the game; you'll need to use everything you can get your hands on to take down your latest foes.
+Alongside the additions, there's a ton of quality-of-life changes and graphical improvements. The Trail is looking better than ever!
+
+The changelog below may be lengthy, but if you take the time to read it, I think you'll find it very interesting. There's been a lot of balance changes and major bug fixes you might wanna' know about!
+
+### Additions
+- Added the Solus Valley Jail and Castle Town Sewers.
+- Autosaving is here! After a configurable time has passed, your progress will be automatically backed up in a unique save slot.
+- Added 2 warp doors in Sam's basement that lead to Bladesville and Telluria Castle Town.
+- Added a leaderboard for Fish Caught. It can be accessed by speaking to the fisherman in Telluria Castle Town.
+- Added a golden First Cleric statue in the Frozen Labyrinth.
+- 4 new items:
+  - Cleansing Scroll ★
+  - CRI Scroll
+  - Sewer Key
+  - Chunk of Purple Stone
+- 4 new weapons:
+  - Andy's Dusters MK. II
+  - Esoteric Tome
+  - Last Breath
+  - Violet Tendril
+- 4 new equipment:
+  - Ice Skates
+  - Haloweave Gloves
+  - Purple Mage Crystal
+  - SENTINEL POWER
+- 5 new vanities:
+  - Blue Sleeping Garments
+  - Green Sleeping Garments
+  - Purple Sleeping Garments
+  - Red Sleeping Garments
+  - Green Developer Outfit
+- 4 new enemies:
+  - Purple Cultist
+  - Purple Assassin
+  - Cleftface Zealot
+  - Sentinel
+
+### Changes
+- Time moves slower:
+  - By default, 1 real-life second is 2 → 1 in-game seconds.
+  - If the Magical Ocarina is used, 1 real-life second is 1 → 2 in-game seconds.
+- Everyone gets less DEF/MDF from leveling up. They will gain more MHP to compensate.
+- Skill rebalancing:
+  - Nerfed Wand Impulse MAT rate from 400% → 325%
+  - Nerfed Magical Breeze Winded rate from 100% → 25%
+  - Buffed Magical Breeze MAT rate from 400% → 450%
+  - Nerfed Cure II MAT rate from 180% → 150%
+  - Buffed Channel Divinity II MAT rate from 400% → 450%
+  - Removed Soul Barrier I from Player 3's skill pool.
+  - Player 3 now learns Dispell at level 16 → 17
+- Rebalanced several enemies:
+  - Mimic: Actions 3 → 1 for Ruined Fort encounter.
+  - Will o' Wisp: MAT 45 → 39
+  - Ice Golem: DEF 45 → 40, MDF 70 → 60, Ice Barrier chance 50% → 25%
+  - Chilling Apparition: MDF 85 → 75
+  - Werewolf: MDF 60 → 55
+  - Ice Slime: MDF 75 → 60
+  - Polar Bear: MDF 65 → 55
+  - Tellurium Golems: Tellurium Pulse deals an additional 20% of the target's HP.
+- Rebalanced several scrolls:
+  - DEF/MDF Scroll: +2 → +1
+  - DEF ★/MDF ★ Scroll: +3 → +2
+  - EVA Scroll: +1% → +2%
+  - MCR Scroll: -1.5% → -3%
+- Revamped glove progression:
+  - Bandito Gloves: CRI +1% → +0.5%
+  - Henry's Gloves: ATK 2 → 4; HIT +6% → +8%; CRI +1.5% → +2%; Upgrade Slots 0 → 1
+  - Scaly Gloves: ATK 5 → 3; HIT +8% → +6%; CRI +2% → +1.5%
+  - These changes effectively swap Henry's Gloves and Scaly Gloves in progression.
+    - Although Henry's Gloves can be obtained earlier, they're more "exclusive" since they are a boss drop.
+- Graphical improvements:
+  - Changed the title screen, chapter splash screens, font, and window skin.
+  - Map:
+    - Gaining/losing status effects now shows a short popup instead of using the intrusive message box.
+    - The map display name is now centered horizontally.
+    - Merged sub-location name display into map display name window.
+  - Battle:
+    - Doubled the scale of everyone in battle.
+    - Damage popups are much larger, last longer, and use a bolded font for readability.
+    - Critical hits flash rainbow.
+    - Sprites update between 11-13 frames rather than always 12.
+    - Improved scaling of floating enemies' shadows.
+    - Enemies no longer show their names all the time.
+    - Updated battle select cursor sprites.
+- Laeryidyean's forest improvements:
+  - Skeleton knights revive much more gradually.
+  - The first boulder in the Left Connector can be pushed from either side.
+- Monsters won't respawn while you're in a dungeon.
+- Simplified the General Store's stock.
+- Harmony, Grass Knuckles, and Frost Edge no longer use earlier staves/daggers as ingredients.
+- Condensed Gel variants and the Vigilante's Charm no longer provide ATK, MAT, or AGI.
+- Moved many cooking recipes from the pot to the campfire.
+- Doubled Claire's outgoing healing.
+- Vial of Poison can be used as an upgrader, making a weapon inflict Poisoned.
+- Enemies using Cure II will no longer apply Rejuvenation.
+- Nerfed Gilded Coin Bit Rate from 1.5x → 1.25x
+- Nerfed the Dark damage reduction of tellurium equipment.
+- Nerfed Shield of the Hero Darkfire resistance from 100% → 50%.
+- Buffed Seshat's Charm drop rate from 1/100 → 1/50.
+- Starting in Chapter 5, Seshat's Tome will drop at a rate of 1/100.
+- Buffed Stalactite drop rate from 1/30 → 1/20.
+- Darkhounds now drop Iron Wristbraces instead of Silver Wristbraces.
+- Living Plants now drop Worms.
+- Werewolves, Chilling Apparitions, and Ice Slimes no longer drop Ice Cubes.
+- Tellurium Golems change appearance after inflicted with Heated Metal.
+- Increased time for Exhaustion to set in from 36 → 48 hours.
+- Completing the quest "The Dandy Toads of Adon" now rewards you with 300B instead of an Enchanted Anti-Magic Charm.
+- Made the Advanced Salvage Kit recipe much easier.
+- Added Raw Truffle x2 to the Mana Fritters recipe.
+- Added Gazer Goop x5 to the Charm of Duality recipe.
+- Added Feral Rat Fur x3 to the Bloodwave Headband and Vortex Headband recipes.
+- Greaves can now be worn by everyone.
+- Moved the Voyager Boots and Globetrotter Boots out of the General Store and into actual shops.
+- The Dispel Potion's description now shows what status effects it cures.
+- Removed the Crude Hammer.
+- Removed the Wood Salvage Kit; the Woodcutting Axe now serves its original function.
+- Changed how Incorporeal enemies react to physical damage to make it more clear it's not just a miss.
+- Salvage kits and higher tiers of Bloodlust will be hidden from the crafting menu once obtained.
+- Simplified the armor menu by removing unnecessary categories.
+- Replaced the Dark Forest's puzzle hint with the Great Pyramid's.
+
+### Bug Fixes
+- Fixed Mark not being in his house, preventing the player from completing the Prophecy Defiers quest.
+- Fixed being unable to speak to the knight outside Telluria Castle when it's time to go to the Chamber of the Seal, preventing the player from progressing.
+- Fixed the player being teleported back to the start of Chapter 6 upon loading a save past that point.
+- Fixed a game-breaking bug where one of the buttons in the Frozen Labyrinth could teleport you to a random map.
+- Fixed a softlock where if you leave Mark's house then go back without following him, you'd be stuck outside his house.
+- Fixed a hardlock during the cutscene in front of Telluria Castle where the soldier stops you.
+- Fixed being able to go straight to the boss in the Ruined Fort without completing the dungeon.
+- Fixed sleeping at the inn while Exhausted causing you to wake up with only 90% of your HP.
+- Fixed treasure popups for items with long names appearing squished and in the wrong position.
+- Fixed the Fish-Flavored Fish being unobtainable.
+- Fixed being able to equip duplicate accessories if at least 1 is modified.
+- Fixed being able to equip multiple pairs of gloves.
+- Fixed achievements "Big Bang" and "Poacher" being unobtainable.
+- Fixed light break HP bars not showing.
+- Fixed a bug where name boxes would stop showing after opening any crafting menu; this wouldn't go away until changing maps.
+- Fixed a really old softlock caused by getting stuck in the movement of the Village Headman's Helper and Verdin Village cows.
+- Fixed not being able to run away from Ice Golems.
+- Fixed the Trailia statue summary window always showing +/- 0% outgoing/incoming light damage.
+- Fixed being able to go to Telluria using Sam's door without having triggered the Telluria intro cutscene.
+- Fixed Ice Golems not respawning.
+- Fixed Ice Guard not granting +1 BP.
+- Fixed Heedup Berry not being usable outside of battle if at full HP.
+- Fixed Conjurer's/Fiery Harp queueing heals outside of battle.
+- Fixed inconsistent Red Mushroom behavior.
+- Fixed [P] Topped Off always being on regardless of MP.
+- Fixed followers standing on spikes after pressing button in Laeryidyean's Forest - Left Connector puzzle.
+- Fixed Mimics not resetting after Give Up.
+- Fixed Baby Turtles being practically invisible due to their shadow.
+- Fixed enemies being able to climb up vines in the World Tree.
+- Fixed active quest being set to Defeat Apocalypse on every load.
+- Fixed bug where tracked quest wouldn't update until changing maps.
+- Fixed the level recommendation for the Ruined Fort not having been updated in Alpha 16.
+- Fixed the battle select cursor hovering way too high over some enemies.
+- Fixed inconsistent HP bar positions.
+- Fixed shadows rendering above enemy sprites.
+- Fixed a visual bug with the cutscene right before the Chamber of the Seal.
+- Fixed frozen enemies not stopping motion.
+- Fixed being caught by a Sand Stomper playing the same sound effect as being captured by a Lost Soul.
+- Fixed boulders still animating even if they failed to move.
+- Fixed buggy snowball in Frozen Labyrinth.
+- Fixed the Comet Charm creating a duplicate damage popup.
+- Fixed Player 3's message bust updating based on vanity.
+- Fixed uncrafted item descriptions reverting to the default white color after a color code or element was referenced.
+- Fixed being able to change the party member comparison while choosing an ingredient.
+- Fixed being unable to walk to the small chest in the Greenfield-Solus Passage while the soldiers were clearing the dirt.
+- Fixed Flower Boots still using the deprecated OED stat.
+- Fixed a bug where entering Bladesville via the tile on the right would still let you earn the "Trigger Happy" achievement.
+- Fixed party members rendering on top of enemies.
+- Fixed + state icon not showing on compact battle HUD.
+- Fixed the save list's width changing depending on whether you're saving or loading.
+- Fixed Player 3's outdated dialogue in the Telluria Castle night cutscene.
+- Fixed wrong music playing after Telluria Castle night cutscene.
+- Fixed the Crushers in the barracks still talking about the removed rap battle.
+- Fixed the player's head clipping into the Fancy Stew's pot.
+- Fixed broken name boxes for a couple knights in Telluria Castle Town.
+
+OUTRO
+
+Yours truly,
+AP
+
 # Alpha 16: The Comeback Update (3/28/2025)
 Didn't expect the update to come so quick, did ya'? It hasn't even been a month since Alpha 15.6!
 The development processing is changing, and updates will be coming out much more frequently, just like the old days. No more year-long waits!
@@ -1512,7 +1700,7 @@ Anyways... onto this big, big changelog. So much stuff!
 - Fixed many, many textual errors.
 
 ### Bugs we are aware of:
-- Sprites ocasionally visually clip through certain tiles.
+- Sprites occasionally visually clip through certain tiles.
 - When returning to walking around after completing a battle that was retried, the BGM stops playing.
  
 ### Planned features:
@@ -1585,7 +1773,7 @@ Andrew
 
 Another unstable build is here! This time we got some sweet stuff: the Great Pyramid, some new equipment, smooth camera scrolling, and the long-awaited HD fullscreen!
 
-The first thing you'll probably notice when you open the game, provided that you play in fullscreen, is the definition around the edges of every sprite. Using some brand new tech, we've managed to eliminate most of the bluriness of fullscreen!
+The first thing you'll probably notice when you open the game, provided that you play in fullscreen, is the definition around the edges of every sprite. Using some brand new tech, we've managed to eliminate most of the blurriness of fullscreen!
 
 The next thing you'll notice when you start walking around is how smooth the camera is. That's all there is to it. Smooth camera. Yeah.
 
@@ -1612,7 +1800,7 @@ There's also been quite a few other changes around the game. They shouldn't be t
 
 PLEASE NOTE THIS: Not everything in the changelog is in the game yet! It's most notable that only one dungeon is currently in the game, but there's also some other stuff missing.
 
-Well, I hope y'all enjoy this. It's not too much content, but hopefully it'll keep you busy for a bit. A lot of work on Alpha 13 has been work on mechanics and plugin compatability, so with the base done, be ready to see a lot of updates real fast.
+Well, I hope y'all enjoy this. It's not too much content, but hopefully it'll keep you busy for a bit. A lot of work on Alpha 13 has been work on mechanics and plugin compatibility, so with the base done, be ready to see a lot of updates real fast.
 
 Yours truly,
 luckyandrew13
@@ -1738,7 +1926,7 @@ Anyways, there's also a TON of changes. Once again, I got side-tracked while dev
 - Reduced the drop rate of the "Loaf of Bread" from goblins [1/3 → 1/5].
 - Nerfed the Soldier's Shield [3 DEF → 2 DEF; 70B → 80B].
 - Made the "Loaf of Bread" more expensive [20B → 24B].
-- 20% of damage will penentrate the Shield of Faith.
+- 20% of damage will penetrate the Shield of Faith.
 - Bleeding now does a minimum of 1 damage.
 - Loose items in Adon can now be picked up.
 - The numerical ID of the "Defeat Apocalypse" quest was changed to be 1000 instead of 4. This means that the quest will no longer be the first one to automatically pop up in the quest window every time you clear a quest.
@@ -1808,7 +1996,7 @@ Anyways, here's some bug fixes and changes. Some pretty big ones, too.
 - Fixed a bug where re-entering Solus Town with the guard in tow and then leaving would cause the guard to show up again. Just a visual bug, though, so you wouldn't end up with two guards.
 - Fixed a bug where scene_adonsaved wouldn't play at the start of the Adon celebration.
 - Fixed a bug where Apocalypse's name box wouldn't show up after finding out his name during the dream with him.
-- Fixed some inconsistencies between the seperate maps for Solus Town and Solus Town: After Hours.
+- Fixed some inconsistencies between the separate maps for Solus Town and Solus Town: After Hours.
 - Fixed some textual errors.
  
 ### Bugs we are aware of:
@@ -1847,7 +2035,7 @@ Anyways... short changelog. No bug fixes either.
 
 ### Bugs we are aware of:
 - When returning to walking around after completing a battle that was retried, the BGM stops playing.
-- The game rarely freezes (an unfortunate occurance found in most RMMV games), but it's only visually; if you know how to navigate the game well enough, you can save in the frozen state and then reload the game to avoid losing any progress.
+- The game rarely freezes (an unfortunate occurrence found in most RMMV games), but it's only visually; if you know how to navigate the game well enough, you can save in the frozen state and then reload the game to avoid losing any progress.
  
 ### Planned features:
 - Adding interaction to objects throughout the world.
@@ -1890,7 +2078,7 @@ We hope all of you understand this.
 
 ### Bugs we are aware of:
 - When returning to walking around after completing a battle that was retried, the BGM stops playing.
-- The game rarely freezes (an unfortunate occurance found in most RMMV games), but it's only visually; if you know how to navigate the game well enough, you can save in the frozen state and then reload the game to avoid losing any progress.
+- The game rarely freezes (an unfortunate occurrence found in most RMMV games), but it's only visually; if you know how to navigate the game well enough, you can save in the frozen state and then reload the game to avoid losing any progress.
 - The Map of Adon isn't completely up-to-date: once we're sure where everything is going to be, I'll make new map graphics.
 
 ### Planned features:
@@ -1923,7 +2111,7 @@ A small update that makes a few important changes. Why, you may ask? Well, since
 
 ### Bugs we are aware of:
 - When returning to walking around after completing a battle that was retried, the BGM stops playing
-- The game rarely freezes (an unfortunate occurance found in most RMMV games), but it's only visually; if you know how to navigate the game well enough, you can save in the frozen state and then reload the game to avoid losing any progress
+- The game rarely freezes (an unfortunate occurrence found in most RMMV games), but it's only visually; if you know how to navigate the game well enough, you can save in the frozen state and then reload the game to avoid losing any progress
 - The Map of Adon isn't completely up-to-date: once we're sure where everything is going to be, I'll make new map graphics
  
 ### Planned features:
@@ -1983,7 +2171,7 @@ Anyways, the changelog. It's definitely the longest changelog yet for a minor up
 - The option to skip a boss's dialogue used to only appeared if you read a boss's dialogue on the save before; now, however, it's remembered across all your saves
 - Changed the icon for the Rocky Sip
 - Changed up the dialogue right after the Laeryidyean fight to be less sappy
-- Slighty nerfed the Cool-Looking Hat
+- Slightly nerfed the Cool-Looking Hat
 - You can now faintly hear the music of Verdin Village when at the Cave Entrance
 - Abbreviated "Damage" as "Dmg." on the save screen
 - Buffed Focused Slash's HIT
@@ -1999,7 +2187,7 @@ Anyways, the changelog. It's definitely the longest changelog yet for a minor up
 - Fixed an incorrect wall tile in the Village Headman's house
 - Fixed a bug where you could hear the boat movement sound when walking over the southern bridge at the small island in the center of Adon
 - Fixed a bug where the Somewhat Well Fed buff had two simultaneous regeneration effects
-- Fixed a bug where footwear wouldn't be optimised
+- Fixed a bug where footwear wouldn't be optimized
 - Fixed a bug where you'd have to press space to enter the 4th door under Sam's shop
 - Fixed a bug where one of the tiles that triggered the cutscene in Solus Valley where the team reunites didn't work
 - Fixed a bug where sailing the boat along the river leading to Solus Valley played the default footstep sound
@@ -2009,7 +2197,7 @@ Anyways, the changelog. It's definitely the longest changelog yet for a minor up
 ### Bugs we are aware of:
 - The name input's keyboard support has been temporarily disabled due to a game breaking bug
 - When returning to walking around after completing a battle that was retried, the BGM stops playing
-- The game rarely freezes (an unfortunate occurance found in most RMMV games), but it's only visually; if you know how to navigate the game well enough, you can save in the frozen state and then reload the game to avoid losing any progress
+- The game rarely freezes (an unfortunate occurrence found in most RMMV games), but it's only visually; if you know how to navigate the game well enough, you can save in the frozen state and then reload the game to avoid losing any progress
 - The Map of Adon isn't completely up-to-date: once we're sure where everything is going to be, I'll make new map graphics
  
 ### Planned features:
@@ -2023,7 +2211,7 @@ Anyways, the changelog. It's definitely the longest changelog yet for a minor up
 # Alpha 12.1 (3/22/2020)
 Current Level Cap: 15
 
-Just a few bug fixes and some minor changes/addtions. I'd like to thank twitch.tv/3d_crushergaming for playing through the game so that I could get an outside perspective on the game and see any obvious bugs that we missed during testing!
+Just a few bug fixes and some minor changes/additions. I'd like to thank twitch.tv/3d_crushergaming for playing through the game so that I could get an outside perspective on the game and see any obvious bugs that we missed during testing!
 Unfortunately, the Mac port still isn't working; I'm on it, though.
 Alpha 12.2 is planned to include a variety of side quests, so stay tuned for that!
 
@@ -2182,7 +2370,7 @@ Well, that's enough talking for now. The changelog is just below. It's a lot of 
 - Changed Player 3's eye color
 - A few icons were edited
 - Added new info to the save screen (stuff that you did before this update won't count)
-- Green Slime Cavern and the Dark Forest have had their appearences changed
+- Green Slime Cavern and the Dark Forest have had their appearances changed
 - The "Save" option on the menu has been changed to read "Save & Load"
 - Changed some aspects of the battle log
 - Slightly changed how regen and overtime damage work
@@ -2198,12 +2386,12 @@ Well, that's enough talking for now. The changelog is just below. It's a lot of 
 - Skeleton-type enemies are now immune to Asleep
 - The title screen is now skipped if no saves are present
 - The two splash screens that appear upon opening the game have been modified to only appear when creating a new save
-- Changed the appearence of Verdin Village while in the Overworld
+- Changed the appearance of Verdin Village while in the Overworld
 - Changed the name of the quest "Bandito Control (Again)" to "Bandito Control... Again"
 - Changed the difficulty of the quest "Bandito Control... Again" from "Slight Challenge" to "A Bit Tricky"
 - The borders of the game's windows are now gold
 - Using an upgrader on an item now adds an appropriate prefix to said item
-- Slightly changed some paramaters of the "A Rare Find" quest
+- Slightly changed some parameters of the "A Rare Find" quest
 - Changed the behaviors of the quest window
 - The game's version is now displayed in the bottom left of the title screen instead of the second splash
 - Slightly changed Mark's dialogue in the Dark Forest
@@ -2229,7 +2417,7 @@ Well, that's enough talking for now. The changelog is just below. It's a lot of 
 - Fixed a bug where the sole objective of the quest "Saving The Forest: Part I" would not be marked as completed in the quest log
 - Fixed a bug where some parameters of the quest "A Traveler's Deal" were incorrect
 - Fixed a bug where leaving the Small Grove required using the interact key
-- Fixed a bug where playing the track "Inevitable Confronation" from the music menu would crash the game
+- Fixed a bug where playing the track "Inevitable Confrontation" from the music menu would crash the game
 - Fixed a bug where Adam's door would magically morph into a completely different door that they don't even make in Verdin Village after you gave him the Traveler Sword
 - Fixed countless textual errors
 
@@ -2299,7 +2487,7 @@ Andrew & Brendan
 
 <br><br>
 
-# ALPHA 10.2 (8/9/2018)
+# Alpha 10.2 (8/9/2018)
 Here are some things that I:
 A. Meant to add into Alpha 10 but didn't the time.
 B. Completely forgot to do.
@@ -2323,14 +2511,14 @@ So enjoy, I guess- OH and I made another change to the download: there's no more
 
 <br><br>
 
-# ALPHA 10.1 (8/8/2018)
+# Alpha 10.1 (8/8/2018)
 We're experimenting with a new installer for the game. Other than that, there's no actual content in this update.
 
 **Stable Level: Level 6**
 
 <br><br>
 
-# ALPHA 10: The Double Digits Update!™ (8/7/2018)
+# Alpha 10: The Double Digits Update!™ (8/7/2018)
 Hello all, and welcome to Alpha 10! This incredible effort is the biggest update The Trail has ever seen, and we hope you'll enjoy it! Off with the witty remarks and useless chatter, let's head straight to the changelog!
 
 ### Additions:
@@ -2350,7 +2538,7 @@ Hello all, and welcome to Alpha 10! This incredible effort is the biggest update
   - Status Menu v1.02, which greatly improves the Status tab in the menu.
   - Rename Actor v1.01 - it's pretty self-explanatory.
   - Command Window Icons v1.00... woah! Icons for menu tabs! Awesome!
-- Added in the epic finale of your struggle against the Banditos. Now that they're out of the way, there's nothing stopping you from continuing down Adon and defeating Laeryidyaen...
+- Added in the epic finale of your struggle against the Banditos. Now that they're out of the way, there's nothing stopping you from continuing down Adon and defeating Laeryidyean...
 - Added in 3 new maps:
   - Bandito Hideout Entrance
   - Bandito Hideout F1
@@ -2377,7 +2565,7 @@ Hello all, and welcome to Alpha 10! This incredible effort is the biggest update
 
 ### Changes:
 - Completely overhauled the tutorial! In fact, it's so good that you should make a new save file solely for the purpose of re-completing it! You can thank DMmePlateletMemes#9286 for the awesome suggestion.
-  - Of course, since the tutorial was overhauled, we've made a few changes to the prologue in order to accomodate the change. This includes changing dialogue, autosave locations, and anything that'll improve the prologue's quality.
+  - Of course, since the tutorial was overhauled, we've made a few changes to the prologue in order to accommodate the change. This includes changing dialogue, autosave locations, and anything that'll improve the prologue's quality.
 - Changed the Knight skill Double Slash to Focused Slash. Double Slash will be reintroduced as a later skill, with a few buffs, of course.
 - Scrapped the "Memory" map featured in Player 2's Story, in favor of showing only the inn.
 - Changed the LUK (Luck) stat to INT (Intelligence).
@@ -2397,7 +2585,7 @@ Stay tuned for Alpha 11, which will be packed with even more features!
 
 <br><br>
 
-# ALPHA 9 (7/10/2018)
+# Alpha 9 (7/10/2018)
 Woohoo, Alpha 9 is here! Let's cut right to the chase, I'm sure you're excited to see the huge amount of additions.
 
 Here's that chase I was talking about:
@@ -2436,21 +2624,21 @@ Here's that chase I was talking about:
 
 <br><br>
 
-# ALPHA 8.3 (7/7/2018)
+# Alpha 8.3 (7/7/2018)
 - Fixed a glitch where your teammates would get stuck in the doors of the Verdin Village Inn Shops.
 
 **Stable Level: Level 4**
 
 <br><br>
 
-# ALPHA 8.2 (7/6/2018)
+# Alpha 8.2 (7/6/2018)
 An addition and some more changes, including some minor overhauls.
 
 ### Additions:
 - When you battle Big Mouth in Verdin Village and succeed, you'll receive some items and Bits/Experience now.
 
 ### Changes:
-- Removed two swear words used by Player 3 upon the request of one of my fellow developers. Apologies if Player 3's rude langauge offended anyone else.
+- Removed two swear words used by Player 3 upon the request of one of my fellow developers. Apologies if Player 3's rude language offended anyone else.
 - Changed the description of the Small Elixir.
 - Doubled the healing power of Cure I.
 - Now it's time for some major nerfs and buffs. Here we go...
@@ -2469,14 +2657,14 @@ https://cdn.discordapp.com/attachments/426774670126219274/464890036224131082/unk
 
 <br><br>
 
-# ALPHA 8.1 (7/6/2018)
+# Alpha 8.1 (7/6/2018)
 - Fixed a bug that's complicated to explain. Something about Traveler Swords and Training Vestments and a certain cutscene.
 
 **Stable Level: Level 4**
 
 <br><br>
 
-# ALPHA 8: The Update That Took A Long Time To Make But Adds A Boatload Of Content To The Game Making The Experience Even Better!™ (7/6/2018)
+# Alpha 8: The Update That Took A Long Time To Make But Adds A Boatload Of Content To The Game Making The Experience Even Better!™ (7/6/2018)
 This is it: we've finally moved on to the third sector of Adon! We're making steady, good progress here. Soon enough, we'll get our own little boat and be off to the mainland! There's quite a few things in this changelog, so get ready for reading. Oh yeah, and I didn't elaborate on a few things, just because I wanted there to be an element of surprise...
 
 Also, sorry for the huge wait between updates. A combination of lots of real-life stuff and some boredom prevented me from working on the game much. After I get back from my vacation, I'll be sure to dish out more updates as fast as I can! I also apologize for the fact that your save will not work anymore. You'll need to start the game from the beginning again... sorry! Hey, but at least you get to see all the changes we've made to earlier parts of the game.
@@ -2550,7 +2738,7 @@ Oh, and another thing: we're scrapping Stable Saves. What we're doing instead is
 
 <br><br>
 
-# ALPHA 7.1 (6/1/2018)
+# Alpha 7.1 (6/1/2018)
 Summer is here, and it's time for more updates! This is just some more minor bug fixes and a change, but do not fret - Alpha 8 is on its way!
 
 Now for those minor bug fixes and a change:
@@ -2564,7 +2752,7 @@ Now for those minor bug fixes and a change:
 
 <br><br>
 
-# ALPHA 7 (5/28/2018)
+# Alpha 7 (5/28/2018)
 Yes, it is finally here. After 13 long, long hours of work (I'm not kidding), the new update is finally here... Alpha 7! While it may not have too much content in terms of time (7-9 minutes, I believe), it's some quality gameplay, and it even has a moral! I'm not going to spoil too much in this changelog, so you better play through the update...
 
 Now for the aforementioned changelog:
@@ -2599,25 +2787,25 @@ I think that's it! No bug fixes this time around, Alphas 6.1-6.4 took care of th
 
 <br><br>
 
-# ALPHA 6.4 (5/27/2018)
+# Alpha 6.4 (5/27/2018)
 - Fixed a bug where you could walk on the walls of Green Slime Cavern.
 - Fixed a bug where the Village Headman would still say the battle was 100 years ago, instead of 1000.
 - Made the choices for the Village Headman's helper getting out of your way more flavorful.
 
 <br><br>
 
-# ALPHA 6.3 (5/27/2018)
+# Alpha 6.3 (5/27/2018)
  - Fixed a bug where you couldn't equip the Floppy Hat.
 
 <br><br>
 
-# ALPHA 6.2 (5/26/2018)
+# Alpha 6.2 (5/26/2018)
 Let's just say playing through the game yourself as the programmer is helpful.
 
 ### Bug Fixes:
 - Fixed a couple errors with the Village Headman's dialogue, such as where he'd as you to "pick a flowers".
-- I realized that techniclly, the "an" in "Legally An Errand" should be lowercase.
-- Fixed a lot of occurences of a character turning and the dialogue boxes not transitioning smoothly.
+- I realized that technically, the "an" in "Legally An Errand" should be lowercase.
+- Fixed a lot of occurrences of a character turning and the dialogue boxes not transitioning smoothly.
   - The Village Headman's dialogue is one case of this happening.
   - Another case is where Four-Toed Kevin turns to Big Mouth ("Big Mouth, go get 'em!").
   - There's even a case when Player 2 turns to Player 1.
@@ -2630,7 +2818,7 @@ Also, does anyone know how to put together 40-minute-long clips for a YouTube vi
 
 <br><br>
 
-# ALPHA 6.1 (5/26/2018)
+# Alpha 6.1 (5/26/2018)
 I remembered a few things that I had to do.
 
 ### Additions:
@@ -2647,7 +2835,7 @@ I remembered a few things that I had to do.
 
 <br><br>
 
-# ALPHA 6 (5/26/2018)
+# Alpha 6 (5/26/2018)
 Remember those announcements that said this would be Alpha 5.1? WRONG! There are way more features than I thought there would be, so here we are, another major update!
 
 Of course, it wouldn't be a major update without a major huge changelog. Time for reading:
@@ -2677,7 +2865,7 @@ Of course, it wouldn't be a major update without a major huge changelog. Time fo
 
 <br><br>
 
-# ALPHA 5 (5/26/2018)
+# Alpha 5 (5/26/2018)
 Updates are streaming in fast! Time for some real battling! Oh yeah, and another barrier, like the one from Pre-Alpha 1. Ah, the old days... let's get straight to the changelog!
 
 Here it is, in all its wordy glory:
@@ -2699,13 +2887,13 @@ Here it is, in all its wordy glory:
 ### Changes:
 - Messed with a couple already-made maps to make transfers look better.
 
-I wouldn't grind in Green Slime Cavern just yet. Skills have yet to be added into the game, so leveling beyond the required level for a skill before it's added into the game may have disastorous consequences! The skills themselves shouldn't be too hard to add into the game - they may even come in a minor update! Alpha 5.1, here we come!
+I wouldn't grind in Green Slime Cavern just yet. Skills have yet to be added into the game, so leveling beyond the required level for a skill before it's added into the game may have disastrous consequences! The skills themselves shouldn't be too hard to add into the game - they may even come in a minor update! Alpha 5.1, here we come!
 
 **Stable Save: once again, there really isn't a game breaking point, but you'll be forced to stop playing after Green Slime Cavern**
 
 <br><br>
 
-# ALPHA 4.1 (5/22/2018)
+# Alpha 4.1 (5/22/2018)
 Time for more bug fixes! There's no real additions in this update, just smoothing the game out once more. Remember, Alpha 5 is just around the corner, and with it will come some real adventuring! Finally, what everyone's been waiting for since the Pre-Release!
 
 ### Bug Fixes:
@@ -2722,11 +2910,11 @@ On a side note, I've decided to include the changelog in every game download, ev
 
 <br><br>
 
-# ALPHA 4: LOST CHANGELOG
+# Alpha 4: LOST CHANGELOG
 
 <br><br>
 
-# ALPHA 3.1 (5/19/2018)
+# Alpha 3.1 (5/19/2018)
 Wow, this next update came fast! Haha, no, this is a minor update. Just some bug fixes, and another thing: I forgot to add the Quest Log to the last version!
 
 Bug Fixes:
@@ -2739,7 +2927,7 @@ you can still go ahead with talking to him as long as you have saved before doin
 
 <br><br>
 
-# ALPHA 3: The Update That Added Doors!™ (5/19/2018)
+# Alpha 3: The Update That Added Doors!™ (5/19/2018)
 Oh baby, it's what you've all been waiting for: Alpha 3! This month-long project took a lot of work and dedication, but after all your waiting (and 3 sneak peaks), it's finally here!
 
 Wow that was a lot of exclamation points.
@@ -2778,7 +2966,7 @@ You're going to have to play the update to understand just how good it is. If an
 
 ### Those Other Additions I Mentioned Earlier:
 - You can now get your second party member!
-- There's a nice tour of Verdin Village. Prepare for more usuable things in future updates!
+- There's a nice tour of Verdin Village. Prepare for more usable things in future updates!
 - Some nice plot has been added in.
 - You can finish "Bandito Control", and there's a new quest as well!
 - The shops in the Verdin Village inn have been mapped. However, you can't get in them yet. They'll be fixed up in a future update!
@@ -2790,7 +2978,7 @@ you can still go ahead with talking to him as long as you have saved before doin
 
 <br><br>
 
-# ALPHA 2.4 (4/21/2018)
+# Alpha 2.4 (4/21/2018)
 Forgot to put the player back at the tutorial, heh.
 
 ...
@@ -2801,7 +2989,7 @@ Forgot to put the player back at the tutorial, heh.
 
 <br><br>
 
-# ALPHA 2.3 (4/14/2018)
+# Alpha 2.3 (4/14/2018)
 Sorry again for the lack of a big update! I've been busy and haven't had much time to work on big features. Don't worry - once I have time, I'll get right on it. There are just a couple actual things in this update, but there is a concept: stable saving! Check it out in #save-transferring!
 
 Now for the stuff:
@@ -2814,7 +3002,7 @@ That's it for now.
 
 <br><br>
 
-# ALPHA 2.2 (4/8/2018)
+# Alpha 2.2 (4/8/2018)
 It's been a while since the last release, and we've got some old bugs to fix! @an ok artist went back to Solus Town and found these bugs. Now let's see...
 
 - Fixed a bug with the Village Headman's move route post-prologue.
@@ -2825,7 +3013,7 @@ Apologies that this couldn't be a major update. With school starting again and s
 
 <br><br>
 
-# ALPHA 2.1 (4/1/2018)
+# Alpha 2.1 (4/1/2018)
 Oof! I had some major errors I overlooked in Alpha 2. Let's see what I screwed up this time:
 
 - Fixed a game-breaking bug where the game would freeze in the middle of the Bandito cutscene (thanks @Snooper Dragongem).
@@ -2839,7 +3027,7 @@ This is probably the official final update of our fast update phase. Once again,
 
 <br><br>
 
-# ALPHA 2 (4/1/2018)
+# Alpha 2 (4/1/2018)
 This is the real update. Get April Fooled 😝.
 
 Anyways... this is a real ***t h i c c*** update. There is some good stuff, so I won't spoil it in the changelog. That is why it is so small.
@@ -2861,7 +3049,7 @@ Oh, and Happy Easter to you who are celebrating it today!
 
 <br><br>
 
-# ALPHA 1.4 (3/30/2018)
+# Alpha 1.4 (3/30/2018)
 Again, just a couple little thingies I had to do before I forgot them.
 
 - Fixed a bug where after you've defeated the Mini Green Slime and exit Solus Town again, the map would still scroll to the Forest Arena, when there's nothing to do there (found by @Snooper Dragongem).
@@ -2871,7 +3059,7 @@ Like I've said before, Verdin Village is coming soon, with a lot of new mechanic
 
 <br><br>
 
-# ALPHA 1.3 (3/30/2018)
+# Alpha 1.3 (3/30/2018)
 Nothing too major in this update except for one thing: __we've officially moved out of cheat mode!__
 
 That means that the chest with the map is gone, the vehicles are gone, and most things are gone that give you an unfair advantage. If you notice anything that looks like it shouldn't be there, make sure to point it out to me.
@@ -2882,7 +3070,7 @@ If you're one of our new Alpha Testers, then great! This will help you ease into
 
 <br><br>
 
-# ALPHA 1.2 (3/30/2018)
+# Alpha 1.2 (3/30/2018)
 A few little thingies I thought of randomly.
 
 ### Bug Fixes:
@@ -2898,7 +3086,7 @@ Don't worry, some bigger updates are coming soon! Well, I hope some bigger updat
 
 <br><br>
 
-# ALPHA 1.1 (3/29/2018)
+# Alpha 1.1 (3/29/2018)
 A couple quick little fixes and an announcement:
 If you already have a Map of Adon, don't open that chest next to Solus Town! You'll get another map! - well, that's not much of a problem, but if you want that perfect, perfect run, don't open the chest!
 
@@ -2908,7 +3096,7 @@ If you already have a Map of Adon, don't open that chest next to Solus Town! You
 
 <br><br>
 
-# ALPHA 1 (3/29/2018)
+# Alpha 1 (3/29/2018)
 This is it, baby! Alpha is finally here! Now you are eligible for the @Alpha Tester role!
 
 There's a lot of stuff to cover, so I'm going to get right to the changelog:
@@ -2933,12 +3121,12 @@ We're already working on Alpha 2, so make sure to keep your eyes open for it! Th
 
 <br><br>
 
-# PRE-ALPHA 4.2 (3/27/2018)
+# Pre-Alpha 4.2 (3/27/2018)
 - Changed a couple things with the Village Headman's dialogue.
 
 <br><br>
 
-# PRE-ALPHA 4.1 (3/27/2018)
+# Pre-Alpha 4.1 (3/27/2018)
 Some quick fixes from Pre-Alpha 4.
 
 ### Additions:
@@ -2955,7 +3143,7 @@ Some quick fixes from Pre-Alpha 4.
 
 <br><br>
 
-# PRE-ALPHA 4 (3/27/2018)
+# Pre-Alpha 4 (3/27/2018)
 We're heading into Chapter 1, baby! Next big release should be Alpha!
 
 ### Additions:
@@ -2986,7 +3174,7 @@ Oh, and I forgot to mention, there's some juicy plot in this update... not going
 
 <br><br>
 
-# PRE-ALPHA 3 (3/26/2018)
+# Pre-Alpha 3 (3/26/2018)
 This release may look small, but it's full of more content! The Village Headman will continue in giving you your trials. The last one will be added in soon, with a lot of dialogue... Anyways, I think I made a mistake in not making the changelog as I made the update. I'll make sure to be more vigilant next time.
 
 Now it's the classic boring changelog, with me trying to make it as interesting as I can:
@@ -3005,12 +3193,12 @@ I told you I probably forgot a lot of stuff, and the size of this changelog prov
 
 <br><br>
 
-# PRE-ALPHA 2.3 (3/25/2018)
+# Pre-Alpha 2.3 (3/25/2018)
 - Fixed a long-time bug that no one but @an ok artist noticed: upon re-entering your house, the Village Headman's helper would be in your way.
 
 <br><br>
 
-# PRE-ALPHA 2.2 (3/24/2018)
+# Pre-Alpha 2.2 (3/24/2018)
 Oh dear, our bug fixes have bugs now! Don't worry, @Snooper Dragongem found these out quickly, so you guys don't need to worry about them!
 
 ### Bug Fixes:
@@ -3021,7 +3209,7 @@ That's hopefully the last bit of work I need to do today. I was busy eating and 
 
 <br><br>
 
-# PRE-ALPHA 2.1 (3/24/2018)
+# Pre-Alpha 2.1 (3/24/2018)
 This is just little errors and such that have to be corrected. There's nothing too major in this update. These termites and nails, however, are paving the way to a great game. We're nearing the end of the prologue!
 
 This time you're going to be reading a sort of mini-changelog. It's like one of those little model cars you can get, but more useful:
@@ -3044,7 +3232,7 @@ Now be patient. I was busy with science fair today from 5:30 AM to 4:30 PM, and 
 
 <br><br>
 
-# PRE-ALPHA 2 (3/23/2018)
+# Pre-Alpha 2 (3/23/2018)
 Time for a ~~relatively~~ big update! We've got a ~~nearly~~ legitimate quest and other cool stuff. 2.5 hours of work really pays off! This changelog is so big, in fact, that... actually, I think you're just going to have to read a lot. Yeah, I think that's it.
 
 Time for the boring changelog again. Does anyone actually read these?:
@@ -3081,7 +3269,7 @@ That's it for now. This update is prone to be filled with bugs, so keep an eye o
 
 <br><br>
 
-# PRE-ALPHA 1.1 (3/21/2018)
+# Pre-Alpha 1.1 (3/21/2018)
 Those bugs that my fellow developers noticed have been fixed! Now here's yet another boring list of stuff:
 
 ### Bug Fixes:
@@ -3102,7 +3290,7 @@ That's pretty much it. Yeah. Have fun with our first bug fixes!
 
 <br><br>
 
-# PRE-ALPHA 1 (3/21/2018)
+# Pre-Alpha 1 (3/21/2018)
 Remember that first release right above this? That wasn't even a pre-alpha, more of a pre-pre-alpha. This is a real version of the game.
 
 Now it's time for the usual boring changelog... maybe this one will be more interesting...?
@@ -3128,7 +3316,7 @@ So yeah. The game is really boring. I'll be working more from now on to bring mo
 
 <br><br>
 
-# FIRST RELEASE (3/11/2018)
+# First Release (3/11/2018)
 This is a very bare-bones game right now. It's essentially a sort of pre-alpha. Thanks to the fact that I'm using a game maker, it doesn't look as weak as you might think it would be in a pre-alpha (take *Minecraft* for example).
 
 ### Game Features:

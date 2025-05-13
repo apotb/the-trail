@@ -1,4 +1,5 @@
 .DS_Store
+node_modules/
 
 # File only necessary for playtesting
 supertoolsengine.html
@@ -7,5 +8,8 @@ supertoolsengine.html
 .vscode/
 .idea/
 
-# Nw.js folder that may be created by contributors
+# PLAYTEST.bat directory
 nwjs-v0.94.0-win-x64/
+
+# Build output
+out/

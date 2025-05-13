@@ -2580,6 +2580,7 @@ if (Olivia[_0x3565("0x2c")][_0x3565("0x65")][_0x3565("0x2e")]) {
       _0x2d1dc5 -= this.lineHeight();
     }
     this[_0x3565("0x3f")].x = _0x22e264;
+    if (!Olivia.OctoBattle.WeaknessDisplay.ShowName) this._stateIconSprite.x -= Math.round(Window_Base._iconWidth / 2); // Center icon if ShowName is off
     this[_0x3565("0x3f")].y = _0x2d1dc5;
   };
   Window_WeaknessDisplay[_0x3565("0x84")][_0x3565("0x25")] = function () {
@@ -5303,10 +5304,13 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
       this._actor._needsStatusStateRefresh = undefined;
     }
   };
+  Window_BattleSideStates.prototype.iconCap = function () {
+    return $gameParty.size() < 6 ? 9 : 6;
+  };
   Window_BattleSideStates.prototype.drawActorIcons = function(actor, wx, wy, ww) {
     ww = ww || 144;
     this._icons = actor.allIcons().slice(0, this.split() * ($gameParty.size() < 6 ? 3 : 2));
-    this._maxIcons = actor.allIcons().length <= 9 ? 9 : 8;
+    this._maxIcons = actor.allIcons().length <= this.iconCap() ? this.iconCap() : this.iconCap() - 1;
     for (var i = 0; i < this._icons.length; i++) {
         let x = wx + Window_Base._iconWidth * (i % this.split());
         let y = wy + 2 + (Window_Base._iconHeight * Math.floor(i / this.split()));
@@ -7287,7 +7291,7 @@ if (Imported[_0x3014("0x76")] && Olivia[_0x3014("0x1ad")][_0x3014("0x105")][_0x3
       this[_0x3014("0xad")] = this[_0x3014("0x1ef")].isInstantCast(_0x1b0b5b);
     }
   };
-  BattleManager[_0x3014("0x1ee")] = function () {
+  /*BattleManager[_0x3014("0x1ee")] = function () {
     if (this[_0x3014("0x1ef")] && this[_0x3014("0x1ef")].isActor()) {
       return 1;
     } else if (this._subject && this._subject.isEnemy()) {
@@ -7295,7 +7299,7 @@ if (Imported[_0x3014("0x76")] && Olivia[_0x3014("0x1ad")][_0x3014("0x105")][_0x3
     } else {
       return 0;
     }
-  };
+  };*/
   Olivia[_0x3014("0x1ad")].Battle[_0x3014("0x17e")] = BattleManager[_0x3014("0x23c")];
   BattleManager[_0x3014("0x23c")] = function () {
     if (this.isOTB()) {
@@ -7697,7 +7701,7 @@ if (Imported[_0x3014("0x76")] && Olivia[_0x3014("0x1ad")][_0x3014("0x105")][_0x3
       this._helpWindow[_0x3014("0x1fd")](BattleManager[_0x3014("0x226")]());
     };
   }
-  Spriteset_Battle[_0x3014("0xa7")][_0x3014("0xbc")] = function () {
+  /*Spriteset_Battle[_0x3014("0xa7")][_0x3014("0xbc")] = function () {
     if (Imported[_0x3014("0x65")]) {
       this.updateBattlebackGroupRemove();
     } else {
@@ -7713,7 +7717,7 @@ if (Imported[_0x3014("0x76")] && Olivia[_0x3014("0x1ad")][_0x3014("0x105")][_0x3
       this._battleField.addChildAt(this[_0x3014("0x13c")], 0);
       this[_0x3014("0x23f")][_0x3014("0x14f")](this[_0x3014("0x7b")], 0);
     }
-  };
+  };*/
   Spriteset_Battle[_0x3014("0xa7")][_0x3014("0x1d6")] = function (_0x487b19, _0x3a05e6) {
     var _0x546743 = BattleManager[_0x3014("0x1ee")]();
     if (_0x487b19[_0x3014("0x1f9")] && _0x3a05e6[_0x3014("0x1f9")] && _0x546743 !== 0) {

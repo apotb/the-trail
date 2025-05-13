@@ -214,7 +214,7 @@ _.giveUp = function() {
 	$gameParty.payRetryCosts();
 	this._params = [0].concat($gameSystem.safePlace()).concat(0);
 	_.specialCommand201();
-	$gameMap._interpreter._index = $gameMap._interpreter._list.length;
+	$gameMap._interpreter._index = $gameMap._interpreter._list?.length;
 	$gameParty.members().forEach(a => a.recoverAll());
 	$gamePlayer.showFollowers();
 	$gameSystem.battleTemplate('normal');
@@ -251,6 +251,10 @@ _.specialCommand201 = function() {
 		$gamePlayer.reserveTransfer(mapId, x, y, this._params[4], this._params[5]);
 		// this.setWaitMode('transfer');
 		this._index++;
+	}
+	if ($gameTemp._mimic) {
+		$gameMap._interpreter.setSelfVariableValue($gameTemp._mimic._mapId, $gameTemp._mimic.eventId(), 75, 0);
+		delete $gameTemp._mimic;
 	}
 	return false;
 };

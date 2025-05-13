@@ -474,6 +474,8 @@ Scene_Title.prototype.createForeground = function() {
     this.addChild(this._gameTitleSprite);
     if ($dataSystem.optDrawTitle) {
         this.drawGameTitle();
+    } else {
+        this.createTitleSprite();
     }
 };
 
@@ -486,6 +488,13 @@ Scene_Title.prototype.drawGameTitle = function() {
     this._gameTitleSprite.bitmap.outlineWidth = 8;
     this._gameTitleSprite.bitmap.fontSize = 72;
     this._gameTitleSprite.bitmap.drawText(text, x, y, maxWidth, 48, 'center');
+};
+
+Scene_Title.prototype.createTitleSprite = function() {
+    this._titleSprite = new Sprite(ImageManager.loadTitleChar('Title'));
+    this.centerSprite(this._titleSprite);
+    this._titleSprite.y = Graphics.height / 2.7;
+    this.addChild(this._titleSprite);
 };
 
 Scene_Title.prototype.centerSprite = function(sprite) {

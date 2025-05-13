@@ -4,6 +4,10 @@
   "js-flags": "--exposegc",
   "chromium-args": "--in-process-gpu --disable-direct-composition --disable-raf-throttling",
   "scripts": {
+    "windows": "node scripts/deployment/deployment.js windows",
+    "mac": "node scripts/deployment/deployment.js mac",
+    "linux": "node scripts/deployment/deployment.js linux",
+    "vdf": "python scripts/generate_vdf.py",
     "compress-bgm": "node scripts/compress-bgm.js"
   },
   "window": {
@@ -23,6 +27,7 @@
   "devDependencies": {
     "fluent-ffmpeg": "^2.1.3",
     "path": "^0.12.7",
+    "tar": "^7.4.3",
     "yauzl": "^2.10.0"
   }
 }

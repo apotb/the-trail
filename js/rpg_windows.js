@@ -562,7 +562,10 @@ Window_Base.prototype.drawActorIcons = function(actor, x, y, width) {
     width = width || 144;
     var icons = actor.allIcons().slice(0, Math.floor(width / Window_Base._iconWidth));
     for (var i = 0; i < icons.length; i++) {
-        this.drawIcon(icons[i], x + Window_Base._iconWidth * i, y + 2);
+        // If there's too many icons to display, replace the last one with a +
+        if (i + 1 == icons.length && actor.allIcons().length > icons.length) icon = 1354;
+        else icon = icons[i];
+        this.drawIcon(icon, x + Window_Base._iconWidth * i, y + 2);
     }
 };
 
@@ -4246,7 +4249,7 @@ function Window_EventItem() {
 Window_EventItem.prototype = Object.create(Window_ItemList.prototype);
 Window_EventItem.prototype.constructor = Window_EventItem;
 
-Window_EventItem.prototype.initialize = function(messageWindow = new Window_Message) {
+Window_EventItem.prototype.initialize = function(messageWindow=null) {
     this._messageWindow = messageWindow;
     var width = Graphics.boxWidth;
     var height = this.windowHeight();
@@ -4274,7 +4277,7 @@ Window_EventItem.prototype.start = function() {
 };
 
 Window_EventItem.prototype.updatePlacement = function() {
-    if (this._messageWindow.y >= Graphics.boxHeight / 2) {
+    if (this._messageWindow?.y >= Graphics.boxHeight / 2) {
         this.y = 0;
     } else {
         this.y = Graphics.boxHeight - this.height;
@@ -4307,13 +4310,13 @@ Window_EventItem.prototype.onOk = function() {
     var item = this.item();
     var itemId = item ? item.id : 0;
     $gameVariables.setValue($gameMessage.itemChoiceVariableId(), DataManager.isItem(item) ? itemId : item);
-    this._messageWindow.terminateMessage();
+    this._messageWindow?.terminateMessage();
     this.close();
 };
 
 Window_EventItem.prototype.onCancel = function() {
     $gameVariables.setValue($gameMessage.itemChoiceVariableId(), 0);
-    this._messageWindow.terminateMessage();
+    this._messageWindow?.terminateMessage();
     this.close();
 };
 
@@ -5831,7 +5834,11 @@ Window_TitleCommand.initCommandPosition = function() {
 };
 
 Window_TitleCommand.prototype.windowWidth = function() {
-    return 240;
+    return 240 * this.maxCols();
+};
+
+Window_TitleCommand.prototype.maxCols = function() {
+    return 4;
 };
 
 Window_TitleCommand.prototype.updatePlacement = function() {

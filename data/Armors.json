@@ -191,7 +191,7 @@
   },
   {
     "id": 10,
-    "atypeId": 2,
+    "atypeId": 1,
     "description": "It's a soldier's greaves. What more is there to say?",
     "etypeId": 5,
     "traits": [],
@@ -790,7 +790,7 @@
     "traits": [],
     "iconIndex": 169,
     "name": "Crystalline Plate Armor",
-    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1 Iron Cluster: 50%\n</Disassemble Pool: Advanced>",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1 Iron Cluster: 50%\n</Disassemble Pool: Advanced>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value([85, 11, 'A']);\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -817,7 +817,7 @@
     ],
     "iconIndex": 581,
     "name": "Earthen Grassrobes",
-    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx2-3 Rock: 100%\nx2-x4 item 51: 100%\n</Disassemble Pool: Basic>",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx2-3 Rock: 100%\nx2-x4 item 51: 100%\n</Disassemble Pool: Basic>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value([85, 8, 'A']);\n</Custom Buy Show Eval>",
     "params": [
       0,
       3,
@@ -912,7 +912,7 @@
   },
   {
     "id": 41,
-    "atypeId": 1,
+    "atypeId": 11,
     "description": "Slim black gloves that give you a better grip\non your weapon, boosting your HIT and CRI.",
     "etypeId": 6,
     "traits": [
@@ -1003,7 +1003,7 @@
   },
   {
     "id": 44,
-    "atypeId": 2,
+    "atypeId": 1,
     "description": "A set of heavily reinforced greaves meant to\nboost your defense and agility simultaneously.",
     "etypeId": 5,
     "traits": [
@@ -1019,7 +1019,7 @@
       }
     ],
     "iconIndex": 469,
-    "name": "Knight's Greaves",
+    "name": "Iron Greaves",
     "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nLeather: 4\nWorn Cloth: 5\nIron Cluster: 4\n</Synthesis Ingredients>\n<Mask Name: Protective Footwear>\n\n<Disassemble Pool: Advanced>\nx1-2 Iron Cluster: 60%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
@@ -1425,32 +1425,32 @@
   },
   {
     "id": 60,
-    "atypeId": 1,
+    "atypeId": 11,
     "description": "Padded leather gloves that combine comfort and\npracticality. They once belonged to Henry.",
     "etypeId": 6,
     "traits": [
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.06
+        "value": 0.08
       },
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.015
+        "value": 0.02
       }
     ],
     "iconIndex": 481,
     "name": "Henry's Gloves",
-    "note": "<Disassemble Pool: Basic>\nx2-4 Leather: 100%\n</Disassemble Pool: Basic>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(46) >= 3;\n</Custom Buy Show Eval>",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx2-4 Leather: 100%\n</Disassemble Pool: Basic>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(46) >= 3;\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
-      2,
+      4,
       0,
       0,
       0,
-      2,
+      0,
       0
     ],
     "price": 300
@@ -1467,11 +1467,11 @@
     "params": [
       3,
       3,
+      0,
       1,
+      0,
       1,
-      1,
-      1,
-      1,
+      0,
       0
     ],
     "price": 120
@@ -1488,11 +1488,11 @@
     "params": [
       5,
       5,
+      0,
       2,
+      0,
       2,
-      2,
-      2,
-      2,
+      0,
       0
     ],
     "price": 180
@@ -1622,7 +1622,7 @@
   },
   {
     "id": 68,
-    "atypeId": 1,
+    "atypeId": 11,
     "description": "A basic pair of gloves that most Banditos can\nbe found wearing. They boost your HIT and CRI.",
     "etypeId": 6,
     "traits": [
@@ -1634,7 +1634,7 @@
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.01
+        "value": 0.005
       }
     ],
     "iconIndex": 174,
@@ -1727,11 +1727,11 @@
     "params": [
       7,
       7,
+      0,
       3,
+      0,
       3,
-      3,
-      3,
-      3,
+      0,
       0
     ],
     "price": 240
@@ -1968,11 +1968,11 @@
     "params": [
       11,
       11,
+      0,
       5,
+      0,
       5,
-      5,
-      5,
-      5,
+      0,
       0
     ],
     "price": 500
@@ -2878,11 +2878,11 @@
     "params": [
       11,
       11,
+      0,
       5,
+      0,
       5,
-      5,
-      5,
-      5,
+      0,
       0
     ],
     "price": 800
@@ -3221,11 +3221,6 @@
         "code": 22,
         "dataId": 2,
         "value": 0.005
-      },
-      {
-        "code": 25,
-        "dataId": 1,
-        "value": 1.05
       }
     ],
     "iconIndex": 473,
@@ -3656,7 +3651,7 @@
       {
         "code": 11,
         "dataId": 9,
-        "value": 0.8
+        "value": 0.9
       },
       {
         "code": 22,
@@ -3698,7 +3693,7 @@
       {
         "code": 11,
         "dataId": 9,
-        "value": 0.8
+        "value": 0.9
       },
       {
         "code": 22,
@@ -3740,7 +3735,7 @@
       {
         "code": 11,
         "dataId": 9,
-        "value": 0.8
+        "value": 0.9
       },
       {
         "code": 22,
@@ -3782,7 +3777,7 @@
       {
         "code": 11,
         "dataId": 9,
-        "value": 0.8
+        "value": 0.9
       },
       {
         "code": 22,
@@ -3844,19 +3839,19 @@
   },
   {
     "id": 149,
-    "atypeId": 1,
+    "atypeId": 11,
     "description": "A set of gloves covered with tough dragon scales.\nProvides the wearer with good offensive boosts.",
     "etypeId": 6,
     "traits": [
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.08
+        "value": 0.06
       },
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.02
+        "value": 0.015
       }
     ],
     "iconIndex": 657,
@@ -3865,11 +3860,11 @@
     "params": [
       0,
       0,
-      5,
+      3,
       0,
       0,
       0,
-      5,
+      0,
       0
     ],
     "price": 150
@@ -4042,7 +4037,7 @@
   },
   {
     "id": 156,
-    "atypeId": 1,
+    "atypeId": 11,
     "description": "A pair of warm gloves bought from the\ngeneral store. Reduces incoming \\nl[3] damage.",
     "etypeId": 6,
     "traits": [
@@ -4181,7 +4176,7 @@
       0,
       0
     ],
-    "price": 100
+    "price": 1
   },
   {
     "id": 161,
@@ -4208,7 +4203,7 @@
       0,
       0
     ],
-    "price": 400
+    "price": 4
   },
   {
     "id": 162,
@@ -4235,7 +4230,7 @@
       0,
       0
     ],
-    "price": 1600
+    "price": 16
   },
   {
     "id": 163,
@@ -4260,11 +4255,11 @@
     "params": [
       9,
       9,
+      0,
       4,
+      0,
       4,
-      4,
-      4,
-      4,
+      0,
       0
     ],
     "price": 300
@@ -4486,7 +4481,7 @@
       0,
       0
     ],
-    "price": 6400
+    "price": 64
   },
   {
     "id": 172,
@@ -4803,7 +4798,7 @@
     ],
     "iconIndex": 727,
     "name": "Charm of Duality",
-    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nGazer Charm\nRuby Ring\nEmerald Ring\n</Synthesis Ingredients>\n<Mask Name: Combination Charm>",
+    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nGazer Charm\nRuby Ring\nEmerald Ring\nGazer Goop: 5\n</Synthesis Ingredients>\n<Mask Name: Combination Charm>",
     "params": [
       8,
       8,
@@ -4974,7 +4969,7 @@
   {
     "id": 188,
     "atypeId": 7,
-    "description": "An ancient shield forged a millenium ago for the chosen hero. Specially\nenchanted to provide immunity to \\it[163]\\c[0], \\c[18]Apocalypse\\c[0]'s signature move.",
+    "description": "An ancient shield forged a millenium ago for the chosen hero. Specially\nenchanted to provide resistance to \\it[163]\\c[0], \\c[18]Apocalypse\\c[0]'s signature move.",
     "etypeId": 2,
     "traits": [
       {
@@ -4983,9 +4978,9 @@
         "value": 0.9
       },
       {
-        "code": 14,
+        "code": 13,
         "dataId": 163,
-        "value": 2
+        "value": 0.5
       }
     ],
     "iconIndex": 506,
@@ -5272,8 +5267,8 @@
     "traits": [
       {
         "code": 25,
-        "dataId": 1,
-        "value": 1.1
+        "dataId": 0,
+        "value": 1.05
       }
     ],
     "iconIndex": 770,
@@ -5557,14 +5552,14 @@
   },
   {
     "id": 213,
-    "atypeId": 2,
+    "atypeId": 1,
     "description": "Now enhanced with tellurium, these powerful greaves\nprovide a hefty amount of stats and resistances.",
     "etypeId": 5,
     "traits": [
       {
         "code": 11,
         "dataId": 9,
-        "value": 0.9
+        "value": 0.95
       },
       {
         "code": 22,
@@ -5732,7 +5727,7 @@
     "traits": [],
     "iconIndex": 821,
     "name": "Bloodwave Headband",
-    "note": "<Upgrade Slots: 3>\n<HP Life Steal Physical: +3%>\n\n<Synthesis Ingredients>\nSilver Headband\nAqua Gem: 2\nWater Essence: 3\n</Synthesis Ingredients>",
+    "note": "<Upgrade Slots: 3>\n<HP Life Steal Physical: +3%>\n\n<Synthesis Ingredients>\nSilver Headband\nFeral Rat Fur: 3\nAqua Gem: 2\nWater Essence: 3\n</Synthesis Ingredients>",
     "params": [
       20,
       0,
@@ -5759,7 +5754,7 @@
     ],
     "iconIndex": 822,
     "name": "Vortex Mask",
-    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nSilver Mask\nAqua Gem: 2\nWater Essence: 3\n</Synthesis Ingredients>",
+    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nSilver Mask\nFeral Rat Fur: 3\nAqua Gem: 2\nWater Essence: 3\n</Synthesis Ingredients>",
     "params": [
       0,
       0,
@@ -5775,13 +5770,13 @@
   {
     "id": 220,
     "atypeId": 1,
-    "description": "A golden artifact from a forgotten time, this coin whispers\ndreams of boundless treasure. Multiplies bit drops by 1.5x.",
+    "description": "A golden artifact from a forgotten time, this coin whispers\ndreams of boundless treasure. Multiplies bit drops by 1.25x.",
     "etypeId": 6,
     "traits": [
       {
         "code": 64,
         "dataId": 4,
-        "value": 1.5
+        "value": 1.25
       }
     ],
     "iconIndex": 361,
@@ -5830,5 +5825,227 @@
       0
     ],
     "price": 1000
+  },
+  {
+    "id": 222,
+    "atypeId": 11,
+    "description": "A very comfortable set of gloves with a little bit of magic woven in. Provides\noffensive boosts, increases MP regeneration, and enhances \\nl[8] damage.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.1
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.025
+      },
+      {
+        "code": 22,
+        "dataId": 8,
+        "value": 0.03
+      },
+      {
+        "code": 11,
+        "dataId": 8,
+        "value": 0.9
+      }
+    ],
+    "iconIndex": 482,
+    "name": "Haloweave Gloves",
+    "note": "<Upgrade Slots: 2>\n\n<Element Amplify Light: +10%>",
+    "params": [
+      0,
+      0,
+      5,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "price": 1000
+  },
+  {
+    "id": 223,
+    "atypeId": 1,
+    "description": "Sturdy skates that grip even the slickest of surfaces. Grants a ridiculous amount\nof AGI on icy surfaces. Prevents sliding on ice if equipped by the party leader.",
+    "etypeId": 5,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 0.8
+      }
+    ],
+    "iconIndex": 826,
+    "name": "Ice Skates",
+    "note": "<Passive State: 206>",
+    "params": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      10,
+      0
+    ],
+    "price": 50
+  },
+  {
+    "id": 224,
+    "atypeId": 1,
+    "description": "When your soul begins to crack, the \\c[30]Purple\\c[0] listens. And it\nwill answer. Reduces MP usage by 25% when below 50% MP.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 8,
+        "value": 0.02
+      }
+    ],
+    "iconIndex": 830,
+    "name": "Purple Mage Crystal",
+    "note": "<Upgrade Slots: 2>\n\n<Passive State: 207>",
+    "params": [
+      0,
+      15,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 1200
+  },
+  {
+    "id": 225,
+    "atypeId": 1,
+    "description": "Rename this in the Sentinel's drops and changelog once it's ready!",
+    "etypeId": 9,
+    "traits": [],
+    "iconIndex": 126,
+    "name": "SENTINEL POWER",
+    "note": "<Cannot Rename>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 226,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[1] and \\N[2]. Part of the \\c[16]Trail Team\\c[0] set.\nMakes you look like a tablet-wielding artist.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 836,
+    "name": "Green Developer Outfit",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Developers,2,Developers,2,Developers_3>\n\n<Custom Equip Requirement Condition>\ncondition = [1, 2].contains(user.actorId());\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name();\ntext += \"\\\\c[0] or \";\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name();\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 227,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[1]. Part of the \\c[19]Nighty Night\\c[0] set.\nA set of blue sleeping garments.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 837,
+    "name": "Blue Sleeping Garments",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4_Night,0,Actor4_Night,0,Actor4_Night_1>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 228,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[2]. Part of the \\c[19]Nighty Night\\c[0] set.\nA set of green sleeping garments.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 838,
+    "name": "Green Sleeping Garments",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4_Night,1,Actor4_Night,1,Actor4_Night_2>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 229,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[3]. Part of the \\c[19]Nighty Night\\c[0] set.\nA set of purple sleeping garments.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 839,
+    "name": "Purple Sleeping Garments",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4_Night,2,Actor4_Night,2,Actor4_Night_3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 3;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 3 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(3).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 230,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[4]. Part of the \\c[19]Nighty Night\\c[0] set.\nA set of red sleeping garments.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 840,
+    "name": "Red Sleeping Garments",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4_Night,3,Actor4_Night,3,Actor4_Night_4>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 4;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 4 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
   }
 ]

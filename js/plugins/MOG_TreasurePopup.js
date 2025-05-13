@@ -189,23 +189,15 @@ Game_Interpreter.prototype.checkTreasurePopup = function(type) {
 		   var amount = this.operateValue(this._params[1], this._params[2], this._params[3]);
 		};
    	    if (amount > 0 && SceneManager._scene.constructor.name === "Scene_Map") {
-			for (i = 0; i < $gameMap.events().length; i++){
-				var eve = $gameMap.events()[i];
-				if ($gameTemp._popupEventId) {
-					if (eve && ($gameTemp._popupEventId == eve._eventId)) {
-						var x = eve.screenX();
-						var y = eve.screenY();
-						$gameSystem._trspupData.push([this.trPopupType(type),amount,x,y]);
-						delete $gameTemp._popupEventId;
-						break;
-					}
-				}
-				if (eve && (this._eventId === eve._eventId)) {
-					var x = eve.screenX();
-					var y = eve.screenY();
-					$gameSystem._trspupData.push([this.trPopupType(type),amount,x,y]);
-				};
-			};
+			let event;
+			if ($gameTemp._popupEventId) event = $gameMap.event($gameTemp._popupEventId);
+			else event = $gameMap.event(this._eventId);
+			if (!event) return;
+
+			var x = event.screenX();
+			var y = event.screenY();
+			$gameSystem._trspupData.push([this.trPopupType(type),amount,x,y]);
+			if ($gameTemp._popupEventId) delete $gameTemp._popupEventId;
 	   };
 	};
 };
@@ -495,7 +487,7 @@ TreasureIcons.prototype.refreshIcon = function() {
 // * create Name
 //==============================
 TreasureIcons.prototype.createName = function() {
-	this._name = new Sprite(new Bitmap(150,32));
+	this._name = new Sprite(new Bitmap(window.innerWidth,32));
 	this._name.x = Window_Base._iconWidth + 4;
 	this._name.bitmap.fontSize = Moghunter.trpopup_fontSize;
 	this.addChild(this._name);
@@ -507,7 +499,7 @@ TreasureIcons.prototype.createName = function() {
 TreasureIcons.prototype.refreshName = function() {
 	this._name.bitmap.clear();
 	var name = this._item ? this._item.name + " x " + this._amount : this._amount;
-	this._name.bitmap.drawText(name,0,0,145,32);
+	this._name.bitmap.drawText(name,0,0,window.innerWidth,32);
 };
 
 //==============================

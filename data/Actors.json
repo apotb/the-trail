@@ -7,15 +7,13 @@
     "characterName": "Adon",
     "classId": 5,
     "equips": [
-      0,
-      0,
+      null,
+      null,
       5,
       6,
       7,
-      0,
-      84,
-      0,
-      0
+      null,
+      84
     ],
     "faceIndex": 4,
     "faceName": "Adon",
@@ -35,11 +33,11 @@
     "classId": 2,
     "equips": [
       2,
-      0,
-      0,
+      null,
+      null,
       2,
       7,
-      0,
+      null,
       86
     ],
     "faceIndex": 5,
@@ -60,8 +58,8 @@
     "classId": 3,
     "equips": [
       3,
-      0,
-      0,
+      null,
+      null,
       3,
       14,
       16,
@@ -85,8 +83,8 @@
     "classId": 4,
     "equips": [
       4,
-      0,
-      0,
+      null,
+      null,
       4,
       40,
       41,
@@ -109,11 +107,7 @@
     "characterName": "Otherworldly1",
     "classId": 5,
     "equips": [
-      0,
-      0,
-      0,
-      0,
-      0
+      null
     ],
     "faceIndex": 0,
     "faceName": "Otherworldly",
@@ -155,11 +149,7 @@
     "characterName": "Nature1",
     "classId": 5,
     "equips": [
-      0,
-      0,
-      0,
-      0,
-      0
+      null
     ],
     "faceIndex": 0,
     "faceName": "",
@@ -426,5 +416,31 @@
     "nickname": "",
     "note": "<Passive State: 3, 196>\n<Max Level: 22>",
     "profile": "Calm and collected. His desire to avoid conflict sometimes\nstops him from stepping in when his wisdom is most needed."
+  },
+  {
+    "id": 18,
+    "battlerName": "People3_7",
+    "characterIndex": 6,
+    "characterName": "People3",
+    "classId": 1,
+    "equips": [
+      46,
+      137,
+      151,
+      144,
+      213,
+      45,
+      null,
+      101
+    ],
+    "faceIndex": 6,
+    "faceName": "People3",
+    "traits": [],
+    "initialLevel": 25,
+    "maxLevel": 25,
+    "name": "Correctional Officer",
+    "nickname": "",
+    "note": "<Passive State: 3, 196>\n<Max Level: 25>",
+    "profile": "Correctional officer working for the Solus Valley Jail."
   }
 ]

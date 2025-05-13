@@ -2275,6 +2275,7 @@ BattleManager.updateActionTargetList = function() {
 BattleManager.startAction = function() {
     var subject = this._subject;
     if (!subject) return this.endAction();
+    subject._preMP = subject.mp; // Used for [P] Topped Off
     var action = subject.currentAction();
     this._action = action;
     if (!this._action) return this.endAction();
@@ -3146,7 +3147,7 @@ Sprite_Actor.prototype.updateTargetPosition = function() {
 };
 
 Sprite_Actor.prototype.updateMotion = function() {
-    this.updateMotionCount();
+    if (this._battler.spriteCanMove()) this.updateMotionCount();
 };
 
 Sprite_Actor.prototype.onMoveEnd = function() {
@@ -3915,6 +3916,7 @@ Game_Battler.prototype.battler = function() {
 };
 
 Game_Battler.prototype.requestMotion = function(motionType) {
+    motionType = this._motionOverride ? this._motionOverride : motionType;
     this._motionType = motionType;
     if (this.battler()) {
       this.battler().startMotion(motionType);
@@ -4005,7 +4007,7 @@ Game_Battler.prototype.spriteCanMove = function() {
       var state = this.states()[i];
       if (state.spriteCannotMove) return false;
     }
-    return this.canMove();
+    return true; // this.canMove();
 };
 
 Game_Battler.prototype.spritePosX = function() {
@@ -4245,6 +4247,7 @@ Game_Battler.prototype.abnormalMotion = function() {
 };
 
 Game_Battler.prototype.dyingMotion = function() {
+    if (this._motionOverride) return this._motionOverride;
     return 'dying';
 };
 

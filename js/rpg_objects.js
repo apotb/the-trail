@@ -91,14 +91,14 @@ Game_Temp.prototype.recipeTemplate = function(name) {
     switch (name.toUpperCase()) {
         case 'WILL':
             arr = [
-                [68, 74, 213, 92, 93, 50, 154],
+                [68, 74, 213, 92, 93, 50],
                 [32, 51, 23, 30, 24, 25, 26, 27],
                 [78, 48, 47, 46, 129, 44, 96, 45]
             ]
             break;
         case 'CASTLE FORGE':
             arr = [
-                [68, 74, 213, 176, 92, 214, 242, 93, 50, 154, 207],
+                [68, 74, 213, 176, 92, 214, 242, 154, 93, 50, 207],
                 [45, 49, 50, 44, 42, 43, 53, 52, 32, 51, 23, 30, 24, 25, 26, 27],
                 [218, 219, 78, 125, 126, 127, 128, 108, 97, 137, 136, 48, 117, 47, 168, 46, 133, 132, 129, 130, 131, 213, 44, 96, 115, 149, 148, 45, 172, 159, 143, 170, 181, 214, 185, 189, 190, 178, 161, 162, 171, 124, 217]
             ]
@@ -107,14 +107,14 @@ Game_Temp.prototype.recipeTemplate = function(name) {
         case 'CASTLE FOOD':
         case 'FOOD':
             arr = [
-                [71, 72, 70, 98, 111, 129, 223, 221, 136, 131, 134].concat(Game_Temp.unlockFoodRecipes()).concat([117, 196, 197]),
+                [71, 72, 111, 129, 117, 196, 197],
                 [],
                 []
             ]
             break;
         case 'FIRE':
             arr = [
-                [135, 177, 108, 229, 151],
+                [135, 177, 108, 70, 98, 221, 223, 136, 131, 134, 259],
                 [],
                 []
             ]
@@ -144,12 +144,6 @@ Game_Temp.prototype.recipeTemplate = function(name) {
             arr = [[], [], []];
     }
     [this._synthItems, this._synthWeapons, this._synthArmors] = arr;
-};
-
-Game_Temp.unlockFoodRecipes = function() {
-    let arr = [];
-    if ($gameSystem.isQuestObjectiveCompleted(33, 6)) arr.push(259);
-    return arr;
 };
 
 // Calculate open hours
@@ -195,7 +189,6 @@ Game_System.prototype.initialize = function() {
     this._savedBgm = null;
     this._walkingBgm = null;
     this._rareEnemyTries = 0;
-    this._oneTimeItems = [];
     this._moonPhase = 0;
     this._moonRespawn = false;
     this._moonRespawnList = [];
@@ -644,7 +637,7 @@ Game_System.prototype.statuesFound = function(total) {
 // Constants
 
 Game_System.prototype.exhaustionTime = function() {
-    return 36;
+    return 48;
 };
 
 Game_System.prototype.coreStatIcons = function() {
@@ -1944,15 +1937,16 @@ Game_Action.prototype.evaluateWithTarget = function(target) {
 };
 
 Game_Action.prototype.testApply = function(target) {
-    if (this._item._dataClass === "skill") {
-        var _return;
-        var skill = $dataSkills[this._item._itemId];
-        target.states().forEach(function(state) {
-            state.category.forEach(function(category) {
-                if (!!skill.removeCategory[category]) _return = true;
-            })
+    let db;
+    if (this._item._dataClass === "skill") db = $dataSkills;
+    if (this._item._dataClass === "item") db = $dataItems;
+    var _return;
+    var item = db[this._item._itemId];
+    target.states().forEach(function(state) {
+        state.category.forEach(function(category) {
+            if (!!item.removeCategory[category]) _return = true;
         })
-    }
+    })
     return (this.isForDeadFriend() === target.isDead() &&
             ($gameParty.inBattle() || this.isForOpponent() ||
             (this.isHpRecover() && target.hp < target.mhp) ||
@@ -3183,12 +3177,7 @@ Game_BattlerBase.prototype.mostImportantStateText = function() {
 };
 
 Game_BattlerBase.prototype.stateMotionIndex = function() {
-    var states = this.states();
-    if (states.length > 0) {
-        return states[0].motion;
-    } else {
-        return 0;
-    }
+    // YEP_X_VisualStateFX.js
 };
 
 Game_BattlerBase.prototype.stateOverlayIndex = function() {
@@ -3350,11 +3339,11 @@ Game_Battler.prototype.requestEffect = function(effectType) {
 };
 
 Game_Battler.prototype.requestMotion = function(motionType) {
-    this._motionType = motionType;
+    // YEP_BattleEngineCore.js
 };
 
 Game_Battler.prototype.requestMotionRefresh = function() {
-    this._motionRefresh = true;
+    // YEP_BattleEngineCore.js
 };
 
 Game_Battler.prototype.select = function() {
@@ -3728,6 +3717,7 @@ Game_Battler.prototype.onAllActionsEnd = function() {
     this.clearResult();
     this.removeStatesAuto(1);
     this.removeBuffsAuto();
+    delete this._preMP; // Used for [P] Topped Off
 };
 
 Game_Battler.prototype.onTurnEnd = function() {
@@ -4101,6 +4091,7 @@ Game_Actor.prototype.changeEquip = function(slotId, item) {
         this._equips[slotId].setObject(item);
         this.refresh();
     }
+    if (this.isEquipped($dataWeapons[46]) && this.isEquipped($dataArmors[116])) OrangeGreenworks.activateAchievement('COLLECT_PARADOX');
 };
 
 Game_Actor.prototype.forceChangeEquip = function(slotId, item) {
@@ -4146,7 +4137,7 @@ Game_Actor.prototype.releaseUnequippableItems = function(forcing) {
         var changed = false;
         for (var i = 0; i < equips.length; i++) {
             var item = equips[i];
-            if (item && (!this.canEquip(item) || item.etypeId !== slots[i])) {
+            if (item && (!this.canEquip(item, i) || item.etypeId !== slots[i])) {
                 if (!forcing) {
                     this.tradeItemWithParty(null, item);
                 }
@@ -4225,7 +4216,6 @@ Game_Actor.prototype.refresh = function() {
     Game_Battler.prototype.refresh.call(this);
     OrangeGreenworks.setStat('highestAgi', this.agi);
     OrangeGreenworks.setStat('highestFireResistance', Math.floor((1 - Yanfly.Ele.Game_BtlrBase_elementRate.call(this, 2)) * 100));
-    if (this.isEquipped($dataWeapons[46]) && this.isEquipped($dataArmors[116])) OrangeGreenworks.activateAchievement('COLLECT_PARADOX');
 };
 
 Game_Actor.prototype.isActor = function() {
@@ -4631,7 +4621,8 @@ Game_Actor.prototype.updateStateSteps = function(state) {
 Game_Actor.prototype.showAddedStates = function() {
     this.result().addedStateObjects().forEach(function(state) {
         if (state.message1 && !($gamePlayer.terrainTag() == 5 && state.id == 33)) { // Water
-            $gameMessage.add(this._name + state.message1);
+            // $gameMessage.add(this._name + state.message1);
+            this.stateGab(`${this._name}${state.message1} \\c[3]+\\it[${state.id}]`)
         }
     }, this);
 };
@@ -4639,9 +4630,18 @@ Game_Actor.prototype.showAddedStates = function() {
 Game_Actor.prototype.showRemovedStates = function() {
     this.result().removedStateObjects().forEach(function(state) {
         if (state.message4) {
-            $gameMessage.add(this._name + state.message4);
+            // $gameMessage.add(this._name + state.message4);
+            this.stateGab(`${this._name}${state.message4} \\c[2]-\\it[${state.id}]`)
         }
     }, this);
+};
+
+Game_Actor.prototype.stateGab = function(text) {
+    const interpreter = $gameMap._interpreter;
+    interpreter.setGabText([text]);
+    interpreter.setGabActorSprite([this.actorId()]);
+    interpreter.setGabTime([0]);
+    interpreter.showGab();
 };
 
 Game_Actor.prototype.stepsForTurn = function() {
@@ -4886,7 +4886,7 @@ Game_Enemy.prototype.screenY = function() {
 };
 
 Game_Enemy.prototype.battlerName = function() {
-    return this.enemy().battlerName;
+    return this._battlerName || this.enemy().battlerName;
 };
 
 Game_Enemy.prototype.battlerHue = function() {
@@ -4898,7 +4898,7 @@ Game_Enemy.prototype.originalName = function() {
 };
 
 Game_Enemy.prototype.name = function() {
-    return this.originalName() + (this._plural ? this._letter : '');
+    return this._name || this.originalName() + (this._plural ? this._letter : '');
 };
 
 Game_Enemy.prototype.isLetterEmpty = function() {
@@ -5518,27 +5518,6 @@ Game_Party.prototype.gainItem = function(item, amount, includeEquip) {
         $gameMap.requestRefresh();
     }
     if (!item) return;
-    if (item == $dataItems[2]) {
-        $gameSystem._leeks = ($gameSystem._leeks || 0) + 1;
-        OrangeGreenworks.setStat('leeks', $gameSystem._leeks);
-    }
-    if (item == $dataWeapons[34]) {
-        OrangeGreenworks.activateAchievement('COLLECT_ORIGINCRYSTAL');
-    }
-    if (DataManager.isArmor(item) && [81, 82, 83, 220].contains(item.baseItemId)) {
-        $gameSystem._poacher = $gameSystem._poacher || [];
-        if (!$gameSystem._poacher.contains(item.baseItemId)) {
-            $gameSystem._poacher.push(item.baseItemId);
-            OrangeGreenworks.setStat('rareEnemies', $gameSystem._poacher.length);
-        }
-    }
-    if (item.itemCategory?.contains('Foodstuffs')) {
-        $gameSystem._food = $gameSystem._food || [];
-        if (!$gameSystem._food.contains(item.id)) {
-            $gameSystem._food.push(item.id);
-            OrangeGreenworks.setStat('uniqueFood', $gameSystem._food.length);
-        }
-    }
 };
 
 Game_Party.prototype.discardMembersEquip = function(item, amount) {
@@ -5853,6 +5832,10 @@ Game_Party.prototype.killCount = function() {
     var sum = 0;
     this.membersPerm().forEach(m => sum += m.killCount());
     return sum;
+};
+
+Game_Party.prototype.hasMembership = function() {
+    return this.hasItem($dataItems[231]) || this.hasItem($dataItems[232]) || this.hasItem($dataItems[233]);
 };
 
 //-----------------------------------------------------------------------------
@@ -6468,6 +6451,7 @@ Game_Map.prototype.autoplay = function() {
         if ($gameSwitches.value(109)) $dataMap.bgm.name = "map_hunting";
     }
     if ($gameMap._mapId == 77 && $gameSwitches.value(109)) $dataMap.bgm.name = "dungeon_cave";
+    if ($dataMap.bgm.name == "town_solusvalley" && $gameVariables.value(84) >= 12 && $gameVariables.value(84) < 15) $dataMap.bgm.name = "battle_normal";
     if ($dataMap.autoplayBgm) {
         if ($gamePlayer.isInVehicle()) {
             $gameSystem.saveWalkingBgm2();
@@ -9425,122 +9409,6 @@ Game_Event.prototype.setupPageSettings = function() {
     } else {
         this._interpreter = null;
     }
-};
-
-Game_Event.prototype.actorCharacter = function(image) {
-    var name = image.characterName;
-    var index = image.characterIndex;
-    var actor = $gameActors.actor(index % 4 + 1);
-    var equips = actor.equips();
-
-    // Vanity slot
-    if (equips[10]) {
-        var vanity = equips[10].baseItemId;
-        switch (vanity) {
-            // Player 1
-            case 84: // Traveling Outfit
-                name = "Adon";
-                index = 4;
-                break;
-            case 85: // Knight Outfit
-                name = "Actor4";
-                index = 0;
-                break;
-            case 206: // Skeletal Outfit
-                name = "Boss1";
-                index = 0;
-                break;
-            case 120: // Cavalier Outfit
-                name = "Actor4";
-                index = 4;
-                break;
-            case 109: // Retro Knight Outfit
-                name = "Actor4_Old";
-                index = 0;
-                break;
-            case 211: // Blue Developer Outfit
-                name = "Developers";
-                index = 0;
-                break;
-            case 212: // Red Developer Outfit
-                name = "Developers";
-                index = 1;
-                break;
-            
-            // Player 2
-            case 86: // Mage Outfit
-                name = "Actor4";
-                index = 1;
-                break;
-            case 207: // Ancient Outfit
-                name = "Evil1";
-                index = 3;
-                break;
-            case 121: // Sorcerer Outfit
-                name = "Actor4";
-                index = 5;
-                break;
-            case 110: // Retro Mage Outfit
-                name = "Actor4_Old";
-                index = 1;
-                break;
-            // Blue/Red Developer outfits handled by Player 1
-            
-            // Player 3
-            case 87: // Cleric Outfit
-                name = "Actor4";
-                index = 2;
-                break;
-            case 208: // Watery Outfit
-                name = "Elemental";
-                index = 0;
-                break;
-            case 122: // Bishop Outfit
-                name = "Actor4";
-                index = 6;
-                break;
-            case 111: // Retro Cleric Outfit
-                name = "Actor4_Old";
-                index = 2;
-                break;
-
-            // Player 4
-            case 138: // Bandito Outfit
-                name = "Adon";
-                index = 5;
-                break;
-            case 88: // Rogue Outfit
-                name = "Actor4";
-                index = 3;
-                break;
-            case 209: // Leader Outfit
-                name = "Bandito";
-                index = 0;
-                break;
-            case 123: // Scapegrace Outfit
-                name = "Actor4";
-                index = 7;
-                break;
-            case 112: // Retro Rogue Outfit
-                name = "Actor4_Old";
-                index = 3;
-                break;
-        }
-    }
-
-    // Magic Equip Slot
-    if (equips[8]) {
-        var magic = equips[8].baseItemId;
-        switch (magic) {
-            case 199: // Infernal Coin
-                name = "$FlameBody";
-                index = 0;
-        }
-    }
-
-    image.characterName = name;
-    image.characterIndex = index;
-    return image;
 };
 
 Game_Event.prototype.isOriginalPattern = function() {

@@ -156,7 +156,7 @@ Hudell.OrangeGreenworks = Hudell.OrangeGreenworks || {};
         console.log('Achievement activated', arguments);
       };
 
-      $._achievementError = function(){
+      $._achievementError = function(achievementName){
         console.log('Achievement activation error', arguments);
       };
 
@@ -193,7 +193,7 @@ Hudell.OrangeGreenworks = Hudell.OrangeGreenworks || {};
           return;
         }
         
-        $.greenworks.activateAchievement(achievementName, $._achievementSuccess, $._achievementError);
+        $.greenworks.activateAchievement(achievementName, $._achievementSuccess, $._achievementError(achievementName));
       };
 
       $.getAchievement = function(achievementName) {

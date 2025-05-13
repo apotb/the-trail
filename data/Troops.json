@@ -3610,6 +3610,31 @@
             "parameters": []
           },
           {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameMap.inTrueTelluriaCastle()"
+            ]
+          },
+          {
+            "code": 355,
+            "indent": 1,
+            "parameters": [
+              "$gameTroop._enemies[0]._noCollapse = true;"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
             "code": 0,
             "indent": 0,
             "parameters": []
@@ -6865,8 +6890,8 @@
     "members": [
       {
         "enemyId": 54,
-        "x": 366,
-        "y": 304,
+        "x": 426,
+        "y": 340,
         "hidden": false
       },
       {
@@ -8351,8 +8376,8 @@
     "members": [
       {
         "enemyId": 58,
-        "x": 312,
-        "y": 352,
+        "x": 315,
+        "y": 409,
         "hidden": false
       }
     ],
@@ -8390,7 +8415,7 @@
       {
         "enemyId": 59,
         "x": 282,
-        "y": 409,
+        "y": 444,
         "hidden": false
       }
     ],
@@ -12656,6 +12681,863 @@
       }
     ],
     "name": "Insane Mage, Lost Soul x2",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 114,
+    "members": [
+      {
+        "enemyId": 87,
+        "x": 354,
+        "y": 336,
+        "hidden": false
+      },
+      {
+        "enemyId": 89,
+        "x": 240,
+        "y": 192,
+        "hidden": false
+      },
+      {
+        "enemyId": 89,
+        "x": 162,
+        "y": 352,
+        "hidden": false
+      }
+    ],
+    "name": "Purple Cultist, Cleftface Zealot x2",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 0,
+          "enemyIndex": 0,
+          "enemyValid": true,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              1,
+              0,
+              143
+            ]
+          },
+          {
+            "code": 337,
+            "indent": 0,
+            "parameters": [
+              1,
+              215,
+              false
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              2,
+              0,
+              143
+            ]
+          },
+          {
+            "code": 337,
+            "indent": 0,
+            "parameters": [
+              2,
+              215,
+              false
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 115,
+    "members": [
+      {
+        "enemyId": 88,
+        "x": 360,
+        "y": 320,
+        "hidden": false
+      },
+      {
+        "enemyId": 89,
+        "x": 240,
+        "y": 208,
+        "hidden": false
+      },
+      {
+        "enemyId": 89,
+        "x": 174,
+        "y": 368,
+        "hidden": false
+      }
+    ],
+    "name": "Purple Assassin, Cleftface Zealot x2",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameMap.mapId() == 83"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "Actor4",
+              3,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "\\p4That other guy jumped past us!"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "People3",
+              6,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "\\coSomeone else will have to deal with him."
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "For now, let's take out these three!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 0,
+          "enemyIndex": 0,
+          "enemyValid": true,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              1,
+              0,
+              143
+            ]
+          },
+          {
+            "code": 337,
+            "indent": 0,
+            "parameters": [
+              1,
+              215,
+              false
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              2,
+              0,
+              143
+            ]
+          },
+          {
+            "code": 337,
+            "indent": 0,
+            "parameters": [
+              2,
+              215,
+              false
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 116,
+    "members": [
+      {
+        "enemyId": 90,
+        "x": 256,
+        "y": 322,
+        "hidden": false
+      },
+      {
+        "enemyId": 87,
+        "x": 496,
+        "y": 288,
+        "hidden": false
+      },
+      {
+        "enemyId": 88,
+        "x": 432,
+        "y": 368,
+        "hidden": false
+      },
+      {
+        "enemyId": 89,
+        "x": 464,
+        "y": 192,
+        "hidden": false
+      },
+      {
+        "enemyId": 89,
+        "x": 320,
+        "y": 418,
+        "hidden": false
+      }
+    ],
+    "name": "Sentinel",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 355,
+            "indent": 0,
+            "parameters": [
+              "$gameTroop._enemies[0]._name = \"Statue\";"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "$gameTroop._enemies[0]._hideHpGauge = true;"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "$gameTroop._enemies[0]._motionOverride = 'walk';"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 0,
+          "enemyIndex": 1,
+          "enemyValid": true,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              5,
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 1,
+            "parameters": [
+              1,
+              0,
+              143
+            ]
+          },
+          {
+            "code": 337,
+            "indent": 1,
+            "parameters": [
+              1,
+              215,
+              false
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 1,
+            "parameters": [
+              2,
+              0,
+              143
+            ]
+          },
+          {
+            "code": 337,
+            "indent": 1,
+            "parameters": [
+              2,
+              215,
+              false
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 0,
+          "enemyIndex": 2,
+          "enemyValid": true,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              5,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 1,
+            "parameters": [
+              1,
+              0,
+              143
+            ]
+          },
+          {
+            "code": 337,
+            "indent": 1,
+            "parameters": [
+              1,
+              215,
+              false
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 1,
+            "parameters": [
+              2,
+              0,
+              143
+            ]
+          },
+          {
+            "code": 337,
+            "indent": 1,
+            "parameters": [
+              2,
+              215,
+              false
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 0,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": true,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              5,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "code": 111,
+            "indent": 1,
+            "parameters": [
+              5,
+              2,
+              1,
+              1
+            ]
+          },
+          {
+            "code": 111,
+            "indent": 2,
+            "parameters": [
+              5,
+              3,
+              1,
+              1
+            ]
+          },
+          {
+            "code": 111,
+            "indent": 3,
+            "parameters": [
+              5,
+              4,
+              1,
+              1
+            ]
+          },
+          {
+            "code": 111,
+            "indent": 4,
+            "parameters": [
+              5,
+              0,
+              1,
+              211
+            ]
+          },
+          {
+            "code": 242,
+            "indent": 5,
+            "parameters": [
+              2
+            ]
+          },
+          {
+            "code": 230,
+            "indent": 5,
+            "parameters": [
+              60
+            ]
+          },
+          {
+            "code": 355,
+            "indent": 5,
+            "parameters": [
+              "$gameTroop._enemies[0]._phase = 2;"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 5,
+            "parameters": [
+              "$gameTroop._enemies[0].overrideArmorWeaknesses = ['BLUDGEONING'];"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 5,
+            "parameters": [
+              "delete $gameTroop._enemies[0]._name;"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 5,
+            "parameters": [
+              "delete $gameTroop._enemies[0]._hideHpGauge;"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 5,
+            "parameters": [
+              "delete $gameTroop._enemies[0]._motionOverride;"
+            ]
+          },
+          {
+            "code": 337,
+            "indent": 5,
+            "parameters": [
+              0,
+              131,
+              false
+            ]
+          },
+          {
+            "code": 230,
+            "indent": 5,
+            "parameters": [
+              60
+            ]
+          },
+          {
+            "code": 241,
+            "indent": 5,
+            "parameters": [
+              {
+                "name": "battle_sentinel",
+                "volume": 90,
+                "pitch": 100,
+                "pan": 0
+              }
+            ]
+          },
+          {
+            "code": 356,
+            "indent": 5,
+            "parameters": [
+              "SetPartyLimitGaugeValue 0"
+            ]
+          },
+          {
+            "code": 356,
+            "indent": 5,
+            "parameters": [
+              "ShowPartyLimitGauge"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 5,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 4,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 4,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 3,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 3,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 2,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 2,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 1
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 66,
+          "enemyIndex": 0,
+          "enemyValid": true,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": true,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 337,
+            "indent": 0,
+            "parameters": [
+              0,
+              120,
+              false
+            ]
+          },
+          {
+            "code": 355,
+            "indent": 0,
+            "parameters": [
+              "$gameTroop._enemies[0]._phase = 3;"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "$gameTroop._enemies[0]._svBattlerName = \"NoMatchingSprite/Sentinel Phase 2\";"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 33,
+          "enemyIndex": 0,
+          "enemyValid": true,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": true,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 337,
+            "indent": 0,
+            "parameters": [
+              0,
+              226,
+              false
+            ]
+          },
+          {
+            "code": 355,
+            "indent": 0,
+            "parameters": [
+              "$gameTroop._enemies[0]._phase = 4;"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "$gameTroop._enemies[0]._svBattlerName = \"NoMatchingSprite/Sentinel Phase 3\";"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 117,
+    "members": [
+      {
+        "enemyId": 89,
+        "x": 393,
+        "y": 178,
+        "hidden": false
+      },
+      {
+        "enemyId": 89,
+        "x": 330,
+        "y": 289,
+        "hidden": false
+      },
+      {
+        "enemyId": 89,
+        "x": 249,
+        "y": 388,
+        "hidden": false
+      }
+    ],
+    "name": "Cleftface Zealot x3",
     "pages": [
       {
         "conditions": {

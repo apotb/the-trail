@@ -390,7 +390,13 @@ Window_MapName.prototype.refresh = function() {
         width += distance * 2;
         this.drawBackground(0, 0, width, this.windowHeight());
         this.drawTextEx(text, distance, 0);
+        this.centerWindow();
     }
+};
+
+Window_MapName.prototype.centerWindow = function() {
+    const windowWidth = this.textWidthEx(this._text) + Olivia.MapDisplayNameCore.TextDistance * 2;
+    this.x = (Graphics.boxWidth - windowWidth) / 2;
 };
 
 Window_MapName.prototype.dimColor1 = function() {
@@ -404,35 +410,3 @@ Window_MapName.prototype.dimColor2 = function() {
 Window_MapName.prototype.textWidthEx = function(text) {
     return this.drawTextEx(text, 0, this.contents.height);
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

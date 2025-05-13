@@ -338,11 +338,11 @@
     "damage": {
       "critical": false,
       "elementId": 2,
-      "formula": "a.mat * 4 - b.mdf * 2",
+      "formula": "a.mat * 3.25 - b.mdf * 2",
       "type": 1,
       "variance": 5
     },
-    "description": "Creates an explosion behind enemy lines. It isn't too effective against single enemies, but\nit devastates groups. Reduces MAT by 50% the next turn. \\c[27]\\bpdamage[400]%\\c[0] MAT rate.",
+    "description": "Creates an explosion behind enemy lines. It isn't too effective against single enemies, but\nit devastates groups. Reduces MAT by 50% the next turn. \\c[27]\\bpdamage[325]%\\c[0] MAT rate.",
     "effects": [
       {
         "code": 21,
@@ -409,7 +409,7 @@
       "type": 3,
       "variance": 5
     },
-    "description": "A stronger version of \\is[11]. It heals a considerably higher amount\nof HP and provides a rejuvenating effect for \\c[27]\\bpturn[3]\\c[0] to \\c[27]\\bpturn[4]\\c[0] turns. \\c[27]\\bpdamage[180]%\\c[0] MAT rate.",
+    "description": "A stronger version of \\is[11]. It heals a considerably higher amount\nof HP and provides a rejuvenating effect for \\c[27]\\bpturn[3]\\c[0] to \\c[27]\\bpturn[4]\\c[0] turns. \\c[27]\\bpdamage[150]%\\c[0] MAT rate.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 1444,
@@ -417,7 +417,7 @@
     "message2": "",
     "mpCost": 13,
     "name": "Cure II",
-    "note": "<Boost Damage>\n<Boost Turns>\n\n<Mastery Group: 11>\n\n<Damage Formula>\nvalue = a.mat * 1.8;\nif ($gameParty.inBattle()) b.addState(28);\n</Damage Formula>\n\n<action copy: skill:11>",
+    "note": "<Boost Damage>\n<Boost Turns>\n\n<Mastery Group: 11>\n\n<Damage Formula>\nvalue = a.mat * 1.5;\nif ($gameParty.inBattle() && b.isActor()) b.addState(28);\n</Damage Formula>\n\n<action copy: skill:11>",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2697,7 +2697,7 @@
     "message2": "",
     "mpCost": 690,
     "name": "Origin Beam",
-    "note": "<Require = 3 BP>\n\n<setup action>\nhide battle hud\nimmortal: targets, true\ndisplay action\nperform start\ncamera focus: user\nzoom: 200%\nwait for camera\nwait for zoom\nmotion chant: user\nanimation 117: user\nanimation 248: user\nwait: 60\nse: Flash1, 100\nbattleback 3 add: battlebacks1, DarkSpace\nbattleback 4 add: battlebacks2, DarkSpace\ntint screen: 34, -34, -68, 170, 30\nwait for animation\nbgm: memorize\nbgm: stop\nbgs: Clock, 100\nmotion spell: user\nreset camera\nreset zoom\nwait for camera\nwait for zoom\n</setup action>\n\n<whole action>\nanimation 125: all enemies\nwait for animation\naction animation\nwait for animation\nanimation 253: all enemies\nanimation 254: all enemies\nwait for animation\nshow battle hud\n</whole action>\n\n<target action>\naction effect\nclear battle log\nwait for effect\nwait: 15\n</target action>\n\n<follow action>\nse: Flash1, 100\nbgs: stop\nbgm: memory\nbattleback 3 remove\nbattleback 4 remove\ntint screen: normal, 30\nanimation 247: user\nse: Skill3, 100\nwait: 60\n</follow action>\n\n<finish action>\nanimation 236: all enemies\nimmortal: targets, false\nclear battle log\nperform finish\n</finish action>",
+    "note": "<Require = 3 BP>\n\n<setup action>\nwait: 60\nhide battle hud\nimmortal: targets, true\ndisplay action\nperform start\ncamera focus: user\nzoom: 200%\nwait for camera\nwait for zoom\nmotion chant: user\nanimation 117: user\nanimation 248: user\nwait: 60\nse: Flash1, 100\nbattleback 3 add: battlebacks1, DarkSpace\nbattleback 4 add: battlebacks2, DarkSpace\ntint screen: 34, -34, -68, 170, 30\nwait for animation\nbgm: memorize\nbgm: stop\nbgs: Clock, 100\nmotion spell: user\nreset camera\nreset zoom\nwait for camera\nwait for zoom\n</setup action>\n\n<whole action>\nanimation 125: all enemies\nwait for animation\naction animation\nwait for animation\nanimation 253: all enemies\nanimation 254: all enemies\nwait for animation\nshow battle hud\n</whole action>\n\n<target action>\naction effect\nclear battle log\nwait for effect\nwait: 15\n</target action>\n\n<follow action>\nse: Flash1, 100\nbgs: stop\nbgm: memory\nbattleback 3 remove\nbattleback 4 remove\ntint screen: normal, 30\nanimation 247: user\nse: Skill3, 100\nwait: 60\n</follow action>\n\n<finish action>\nanimation 236: all enemies\nimmortal: targets, false\nclear battle log\nperform finish\n</finish action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -3172,16 +3172,16 @@
     "damage": {
       "critical": true,
       "elementId": 7,
-      "formula": "a.mat * 4 - b.mdf * 2",
+      "formula": "a.mat * 4.5 - b.mdf * 2",
       "type": 1,
       "variance": 5
     },
-    "description": "Blow a magical gust of wind at an enemy, decreasing their\nATK and MAT. Has a high critical hit chance. \\c[27]\\bpdamage[400]%\\c[0] MAT rate.",
+    "description": "Blow a magical gust of wind at an enemy, with a chance of decreasing\ntheir ATK and MAT. Has a high critical hit chance. \\c[27]\\bpdamage[450]%\\c[0] MAT rate.",
     "effects": [
       {
         "code": 21,
         "dataId": 162,
-        "value1": 1,
+        "value1": 0.25,
         "value2": 0
       }
     ],
@@ -3502,7 +3502,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Ice Guard",
-    "note": "<Bypass Target Change>\n\n<Require = 0 BP>\n\n<Max Mastery Level: 0>",
+    "note": "<Bypass Target Change>\n\n<Require = 0 BP>\n<User BP: +1>\n\n<Max Mastery Level: 0>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -4768,11 +4768,11 @@
     "damage": {
       "critical": true,
       "elementId": -1,
-      "formula": "a.atk * 6 - b.def * 2",
+      "formula": "a.atk * 4 - b.def * 2",
       "type": 1,
-      "variance": 80
+      "variance": 100
     },
-    "description": "Imbue your blade with the power of stew! Requires at least \\c[27]1 BP\\c[0]\nto use, and has a very large damage variation. \\c[27]\\bpdamage[600]%\\c[0] ATK rate.",
+    "description": "Imbue your blade with the power of stew! Requires at least \\c[27]2 BP\\c[0]\nto use, and has a very large damage variation. \\c[27]\\bpdamage[400]%\\c[0] ATK rate.",
     "effects": [
       {
         "code": 21,
@@ -4787,7 +4787,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Stew Slash",
-    "note": "<Require >= 1 BP>\n<Boost Damage>\n\n<Critical Rate: 20%>\n<Max Mastery Level: 0>\n\n<Custom Requirement>\nvalue = (!user.isActor()\n|| user.isWtypeEquipped(2)\n|| user.isWtypeEquipped(5)\n|| user.isWtypeEquipped(7)\n|| user.isWtypeEquipped(11));\n</Custom Requirement>\n\n<action copy: skill:3>",
+    "note": "<Require >= 2 BP>\n<Boost Damage>\n\n<Critical Rate: 20%>\n<Max Mastery Level: 0>\n\n<Custom Requirement>\nvalue = (!user.isActor()\n|| user.isWtypeEquipped(2)\n|| user.isWtypeEquipped(5)\n|| user.isWtypeEquipped(7)\n|| user.isWtypeEquipped(11));\n</Custom Requirement>\n\n<action copy: skill:3>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -4913,7 +4913,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Work against your stewy surroundings and use\na random non-stew skill you've learned.",
+    "description": "Work against your stewy surroundings and use a random\nnon-stew skill you've learned. Requires \\c[27]3 BP\\c[0].",
     "effects": [],
     "hitType": 0,
     "iconIndex": 780,
@@ -4921,7 +4921,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Melting Pot",
-    "note": "<Require = 0 BP>\n\n<Max Mastery Level: 0>\n\n<No Action>\n\n<Custom Execution>\nvar skills = this.skills().filter(s => [1, 2].contains(s.stypeId)).map(s => s.id);\nvar index = Math.randomInt(skills.length);\nthis.forceAction(skills[index], -1);\nBattleManager.forceAction(this);\n</Custom Execution>",
+    "note": "<Require = 3 BP>\n\n<Max Mastery Level: 0>\n\n<No Action>\n\n<Custom Execution>\nvar skills = this.skills().filter(s => [1, 2].contains(s.stypeId)).map(s => s.id);\nvar index = Math.randomInt(skills.length);\nthis.forceAction(skills[index], -1);\nBattleManager.forceAction(this);\n</Custom Execution>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -4939,7 +4939,7 @@
     "damage": {
       "critical": true,
       "elementId": 14,
-      "formula": "a.mat * 5 - b.mdf * 2",
+      "formula": "(b.hp / 5) + (a.mat * 5 - b.mdf * 2)",
       "type": 1,
       "variance": 5
     },
@@ -5096,11 +5096,11 @@
     "damage": {
       "critical": true,
       "elementId": 8,
-      "formula": "a.mat * 4 - b.mdf * 2",
+      "formula": "a.mat * 4.5 - b.mdf * 2",
       "type": 1,
       "variance": 5
     },
-    "description": "Channel the divine energy of Trailia with greater intensity, dealing\nhigh damage and devastating dark enemies. \\c[27]\\bpdamage[400]%\\c[0] MAT rate.",
+    "description": "Channel the divine energy of Trailia with greater intensity, dealing\nhigh damage and devastating dark enemies. \\c[27]\\bpdamage[450]%\\c[0] MAT rate.",
     "effects": [],
     "hitType": 2,
     "iconIndex": 1509,
@@ -5183,6 +5183,36 @@
     "scope": 11,
     "speed": 0,
     "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 149,
+    "animationId": 109,
+    "damage": {
+      "critical": true,
+      "elementId": 0,
+      "formula": "a.mat * 5 - b.mdf",
+      "type": 1,
+      "variance": 5
+    },
+    "description": "",
+    "effects": [],
+    "hitType": 2,
+    "iconIndex": 119,
+    "message1": " casts %1!",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Sacrifice",
+    "note": "<Boost Damage>\n\n<setup action>\nmotion chant: user\nwait: 45\nmotion spell: user\n</setup action>\n\n<whole action>\nshake screen: 1, 9, 60\naction animation: user\nwait for animation\nshow battle hud\n</whole action>\n\n<target action>\naction effect\nwait for effect\nwait: 5\nclear battle log\n</target action>\n\n<follow action>\ncollapse: user, force\n</follow action>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 2,
+    "speed": 0,
+    "stypeId": 2,
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0

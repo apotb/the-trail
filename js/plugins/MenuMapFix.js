@@ -47,6 +47,7 @@
                 }else{
                   this._scene._active=true;
                   this._scene.menuCalling = false;
+                  if (this._scene instanceof Scene_Map) this._scene.refreshActiveQuestWindow(); // Fix bug where active quest window doesn't refresh after changing
                   if(this._previousClass==Scene_Battle){
                     this._scene.startFadeIn(this._scene.fadeSpeed(), false);
                     this._scene._spriteset.showCharacters();

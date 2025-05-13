@@ -446,7 +446,7 @@ ItemManager.payIUSEffects = function(mainItem, effectItem) {
 ItemManager.addIUSLine = function(mainItem, effectItem) {
     if (!mainItem.slotsApplied) this.initSlotUpgradeNotes(mainItem);
     var line = '\\i[' + effectItem.iconIndex + ']' + effectItem.name + " \\c[8](" + effectItem.upgradeTooltip + ")";
-    mainItem.slotsApplied.push(line);
+    mainItem.slotsApplied.push([line, effectItem]);
 };
 
 ItemManager.checkIUSEffects = function(mainItem, effectItem) {
@@ -1045,7 +1045,7 @@ Window_ItemInfo.prototype.drawSlotUpgradesUsed = function(dy) {
     var dx = this.textPadding();
     var fmt = Yanfly.Param.IUSSlotFmt;
     for (var i = 0; i < item.slotsApplied.length; ++i) {
-      var text = fmt.format(i + 1, item.slotsApplied[i]);
+      var text = fmt.format(i + 1, item.slotsApplied[i][0]);
       this.drawTextEx(text, dx, dy);
       dy += this.lineHeight();
     }

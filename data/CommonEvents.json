@@ -1803,610 +1803,43 @@
         ]
       },
       {
-        "code": 117,
+        "code": 122,
         "indent": 0,
         "parameters": [
-          22
-        ]
-      },
-      {
-        "code": 201,
-        "indent": 0,
-        "parameters": [
-          0,
-          145,
+          78,
+          78,
           0,
           0,
-          2,
-          2
+          125
         ]
       },
       {
-        "code": 201,
+        "code": 122,
         "indent": 0,
         "parameters": [
+          79,
+          79,
           0,
-          125,
-          28,
-          48,
-          2,
-          2
+          0,
+          28
         ]
       },
       {
-        "code": 230,
+        "code": 122,
         "indent": 0,
         "parameters": [
-          60
-        ]
-      },
-      {
-        "code": 222,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 230,
-        "indent": 0,
-        "parameters": [
-          30
-        ]
-      },
-      {
-        "code": 205,
-        "indent": 0,
-        "parameters": [
-          -1,
-          {
-            "list": [
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX += 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX += 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX += 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX -= 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX -= 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX -= 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX -= 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX -= 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX -= 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX += 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX += 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX += 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 0
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX += 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX += 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX += 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX -= 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX -= 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX -= 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX -= 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX -= 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX -= 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX += 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX += 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX += 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 230,
-        "indent": 0,
-        "parameters": [
-          60
+          80,
+          80,
+          0,
+          0,
+          48
         ]
       },
       {
         "code": 117,
         "indent": 0,
         "parameters": [
-          53
-        ]
-      },
-      {
-        "code": 216,
-        "indent": 0,
-        "parameters": [
-          0
-        ]
-      },
-      {
-        "code": 205,
-        "indent": 0,
-        "parameters": [
-          -1,
-          {
-            "list": [
-              {
-                "code": 14,
-                "parameters": [
-                  0,
-                  0
-                ],
-                "indent": null
-              },
-              {
-                "code": 0
-              }
-            ],
-            "repeat": false,
-            "skippable": false,
-            "wait": true
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 14,
-            "parameters": [
-              0,
-              0
-            ],
-            "indent": null
-          }
+          29
         ]
       },
       {
@@ -2432,475 +1865,19 @@
         ]
       },
       {
-        "code": 112,
+        "code": 302,
         "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 101,
-        "indent": 2,
-        "parameters": [
-          "People1",
-          4,
-          0,
-          2
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 2,
-        "parameters": [
-          "\\joeWhat would you like to browse?"
-        ]
-      },
-      {
-        "code": 102,
-        "indent": 2,
-        "parameters": [
-          [
-            "Items",
-            "Weapons",
-            "Armor",
-            "Initial Equipment",
-            "I'm done browsing."
-          ],
-          4,
-          0,
-          2,
-          0
-        ]
-      },
-      {
-        "code": 402,
-        "indent": 2,
-        "parameters": [
-          0,
-          "Items"
-        ]
-      },
-      {
-        "code": 101,
-        "indent": 3,
-        "parameters": [
-          "People1",
-          4,
-          0,
-          2
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 3,
-        "parameters": [
-          "\\joeSure! Here's our stock of those..."
-        ]
-      },
-      {
-        "code": 302,
-        "indent": 3,
-        "parameters": [
-          0,
-          192,
-          0,
-          0,
-          false
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          0,
-          193,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          0,
-          76,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          0,
-          32,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          0,
-          33,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          0,
-          72,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          0,
-          9,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          0,
-          14,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          0,
-          71,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          0,
-          163,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          0,
-          8,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          0,
-          34,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          0,
-          23,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          0,
-          54,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          0,
-          53,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          0,
-          43,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 3,
-        "parameters": []
-      },
-      {
-        "code": 402,
-        "indent": 2,
-        "parameters": [
-          1,
-          "Weapons"
-        ]
-      },
-      {
-        "code": 101,
-        "indent": 3,
-        "parameters": [
-          "People1",
-          4,
-          0,
-          2
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 3,
-        "parameters": [
-          "\\joeSure! Let me grab those real quick..."
-        ]
-      },
-      {
-        "code": 302,
-        "indent": 3,
-        "parameters": [
-          1,
-          21,
-          0,
-          0,
-          false
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          1,
-          22,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          1,
-          20,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          1,
-          19,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          1,
-          14,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          1,
-          16,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          1,
-          17,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          1,
-          56,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          1,
-          15,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          1,
-          10,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          1,
-          8,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          1,
-          9,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          1,
-          7,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          1,
-          11,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          1,
-          12,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
         "parameters": [
           1,
           5,
           0,
-          0
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 3,
-        "parameters": []
-      },
-      {
-        "code": 402,
-        "indent": 2,
-        "parameters": [
-          2,
-          "Armor"
-        ]
-      },
-      {
-        "code": 101,
-        "indent": 3,
-        "parameters": [
-          "People1",
-          4,
-          0,
-          2
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 3,
-        "parameters": [
-          "\\joeSure! Let me show you what we have to offer..."
-        ]
-      },
-      {
-        "code": 302,
-        "indent": 3,
-        "parameters": [
-          2,
-          20,
-          0,
           0,
           false
         ]
       },
       {
         "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          21,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
+        "indent": 1,
         "parameters": [
           2,
           100,
@@ -2910,7 +1887,7 @@
       },
       {
         "code": 605,
-        "indent": 3,
+        "indent": 1,
         "parameters": [
           2,
           12,
@@ -2920,187 +1897,7 @@
       },
       {
         "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          77,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          194,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          34,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          22,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          23,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          15,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          76,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          29,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          193,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          36,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          37,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          35,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          33,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          19,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          24,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          25,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          28,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          13,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
+        "indent": 1,
         "parameters": [
           2,
           40,
@@ -3110,57 +1907,7 @@
       },
       {
         "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          99,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          27,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          14,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          16,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          17,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
+        "indent": 1,
         "parameters": [
           2,
           41,
@@ -3170,7 +1917,7 @@
       },
       {
         "code": 605,
-        "indent": 3,
+        "indent": 1,
         "parameters": [
           2,
           142,
@@ -3180,7 +1927,7 @@
       },
       {
         "code": 605,
-        "indent": 3,
+        "indent": 1,
         "parameters": [
           2,
           156,
@@ -3190,98 +1937,143 @@
       },
       {
         "code": 605,
-        "indent": 3,
+        "indent": 1,
         "parameters": [
-          2,
-          26,
+          0,
+          192,
           0,
           0
         ]
       },
       {
         "code": 605,
-        "indent": 3,
+        "indent": 1,
+        "parameters": [
+          0,
+          193,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          0,
+          76,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          0,
+          32,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          0,
+          33,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          0,
+          72,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          0,
+          9,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          0,
+          14,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          0,
+          71,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          0,
+          163,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          0,
+          8,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          0,
+          53,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          0,
+          43,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
         "parameters": [
           2,
           176,
           0,
           0
         ]
-      },
-      {
-        "code": 0,
-        "indent": 3,
-        "parameters": []
-      },
-      {
-        "code": 402,
-        "indent": 2,
-        "parameters": [
-          3,
-          "Initial Equipment"
-        ]
-      },
-      {
-        "code": 101,
-        "indent": 3,
-        "parameters": [
-          "People1",
-          4,
-          0,
-          2
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 3,
-        "parameters": [
-          "\\joeSure! We've got these laying around..."
-        ]
-      },
-      {
-        "code": 117,
-        "indent": 3,
-        "parameters": [
-          75
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 3,
-        "parameters": []
-      },
-      {
-        "code": 402,
-        "indent": 2,
-        "parameters": [
-          4,
-          "I'm done browsing."
-        ]
-      },
-      {
-        "code": 113,
-        "indent": 3,
-        "parameters": []
-      },
-      {
-        "code": 0,
-        "indent": 3,
-        "parameters": []
-      },
-      {
-        "code": 404,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 0,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 413,
-        "indent": 1,
-        "parameters": []
       },
       {
         "code": 0,
@@ -3309,7 +2101,7 @@
         "indent": 2,
         "parameters": [
           1,
-          21,
+          5,
           0,
           0,
           false
@@ -3319,118 +2111,8 @@
         "code": 605,
         "indent": 2,
         "parameters": [
-          1,
-          22,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 2,
-        "parameters": [
-          1,
-          10,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 2,
-        "parameters": [
-          1,
-          8,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 2,
-        "parameters": [
-          1,
-          9,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 2,
-        "parameters": [
-          1,
-          7,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 2,
-        "parameters": [
-          1,
-          11,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 2,
-        "parameters": [
-          1,
-          12,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 2,
-        "parameters": [
-          1,
-          5,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 2,
-        "parameters": [
           2,
           12,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 2,
-        "parameters": [
-          2,
-          36,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 2,
-        "parameters": [
-          2,
-          37,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 2,
-        "parameters": [
-          2,
-          13,
           0,
           0
         ]
@@ -3450,17 +2132,7 @@
         "indent": 2,
         "parameters": [
           2,
-          27,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 2,
-        "parameters": [
-          2,
-          14,
+          41,
           0,
           0
         ]
@@ -3530,6 +2202,16 @@
         "indent": 2,
         "parameters": [
           0,
+          163,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 2,
+        "parameters": [
+          0,
           8,
           0,
           0
@@ -3589,7 +2271,7 @@
         "indent": 3,
         "parameters": [
           1,
-          10,
+          5,
           0,
           0,
           false
@@ -3599,98 +2281,8 @@
         "code": 605,
         "indent": 3,
         "parameters": [
-          1,
-          8,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          1,
-          9,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          1,
-          7,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          1,
-          11,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          1,
-          12,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          1,
-          5,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
           2,
           12,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          13,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          27,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          14,
           0,
           0
         ]
@@ -3759,6 +2351,26 @@
         "code": 605,
         "indent": 3,
         "parameters": [
+          0,
+          53,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 3,
+        "parameters": [
+          0,
+          43,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 3,
+        "parameters": [
           2,
           176,
           0,
@@ -3791,7 +2403,7 @@
         "indent": 4,
         "parameters": [
           1,
-          10,
+          5,
           0,
           0,
           false
@@ -3801,98 +2413,8 @@
         "code": 605,
         "indent": 4,
         "parameters": [
-          1,
-          8,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 4,
-        "parameters": [
-          1,
-          9,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 4,
-        "parameters": [
-          1,
-          7,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 4,
-        "parameters": [
-          1,
-          11,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 4,
-        "parameters": [
-          1,
-          12,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 4,
-        "parameters": [
-          1,
-          5,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 4,
-        "parameters": [
           2,
           12,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 4,
-        "parameters": [
-          2,
-          13,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 4,
-        "parameters": [
-          2,
-          27,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 4,
-        "parameters": [
-          2,
-          14,
           0,
           0
         ]
@@ -3951,6 +2473,26 @@
         "code": 605,
         "indent": 4,
         "parameters": [
+          0,
+          53,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 4,
+        "parameters": [
+          0,
+          43,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 4,
+        "parameters": [
           2,
           176,
           0,
@@ -4014,6 +2556,26 @@
         "parameters": [
           0,
           8,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 4,
+        "parameters": [
+          0,
+          53,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 4,
+        "parameters": [
+          0,
+          43,
           0,
           0
         ]
@@ -4089,6 +2651,10 @@
           {
             "list": [
               {
+                "code": 36,
+                "indent": null
+              },
+              {
                 "code": 11,
                 "indent": null
               },
@@ -4105,12 +2671,26 @@
                 "indent": null
               },
               {
+                "code": 35,
+                "indent": null
+              },
+              {
                 "code": 0
               }
             ],
             "repeat": false,
             "skippable": true,
             "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 36,
+            "indent": null
           }
         ]
       },
@@ -4138,6 +2718,16 @@
                 "pan": 0
               }
             ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 35,
             "indent": null
           }
         ]
@@ -5199,6 +3789,101 @@
         "parameters": []
       },
       {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          4,
+          1,
+          5,
+          226
+        ]
+      },
+      {
+        "code": 322,
+        "indent": 1,
+        "parameters": [
+          1,
+          "Damage4",
+          7,
+          "Developers",
+          2,
+          "Developers_3"
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 1,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 18,
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": false
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 18,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          4,
+          1,
+          5,
+          227
+        ]
+      },
+      {
+        "code": 322,
+        "indent": 1,
+        "parameters": [
+          1,
+          "Damage5",
+          0,
+          "Actor4",
+          0,
+          "Actor4_Night_1"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
@@ -5321,13 +4006,525 @@
         "indent": 0,
         "parameters": [
           {
-            "name": "Darkness1",
+            "name": "Sword2",
             "volume": 90,
             "pitch": 100,
             "pan": 0
           }
         ]
       },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          78,
+          78,
+          0,
+          0,
+          57
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          79,
+          79,
+          0,
+          0,
+          23
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          80,
+          80,
+          0,
+          0,
+          55
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          29
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Sand Stomper Capture",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 24,
+    "list": [
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Screenshot",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 25,
+    "list": [
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "The rare enemy encounter rate has returned to normal."
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Lure End",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 26,
+    "list": [
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameSystem._demo = $gameSystem._demo || {};"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "!$gameTemp.isDemo()"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "$gameSystem._demo.achievements"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 2,
+        "parameters": [
+          "$gameSystem._demo.achievements.forEach(a => {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  OrangeGreenworks.activateAchievement(a);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "});"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "delete $gameSystem._demo.achievements;"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "$gameSystem._demo.stats"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 2,
+        "parameters": [
+          "for (const stat in $gameSystem._demo.stats) {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  value = $gameSystem._demo.stats[stat];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  OrangeGreenworks.setStat(stat, value);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "}"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "delete $gameSystem._demo.stats;"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Demo Greenworks",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 27,
+    "list": [
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "Actor4",
+          2,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "\\p3That thing keeps getting away..."
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "Actor4",
+          2,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "\\p3How can we kill it faster? \\N[1] and \\N[4]"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "can still use items like \\ii[265]..."
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Gilded Ghost Hint",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 28,
+    "list": [
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "let minutes = $gameSystem.getAutosaveInterval();"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "if (minutes == 0) minutes = 1 / 60;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "$gameSystem.setAutosaveInterval(minutes);"
+        ]
+      },
+      {
+        "code": 112,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "$gameSystem._secUntilAutosave > 0"
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 2,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 2,
+        "parameters": [
+          "$gameSystem._secUntilAutosave--;"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 113,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 413,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameSystem.getAutosaveInterval() > 0"
+        ]
+      },
+      {
+        "code": 112,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 2,
+        "parameters": [
+          12,
+          "$gameMap.isEventRunQuick()"
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 3,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 113,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 413,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "Save",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 231,
+        "indent": 1,
+        "parameters": [
+          16,
+          "Autosave",
+          1,
+          0,
+          640,
+          48,
+          200,
+          200,
+          255,
+          0
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "DataManager.saveGame(DataManager.maxSavefiles());"
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          59
+        ]
+      },
+      {
+        "code": 235,
+        "indent": 1,
+        "parameters": [
+          16
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Autosave",
+    "switchId": 1,
+    "trigger": 2
+  },
+  {
+    "id": 29,
+    "list": [
       {
         "code": 117,
         "indent": 0,
@@ -5351,10 +4548,10 @@
         "code": 201,
         "indent": 0,
         "parameters": [
-          0,
-          57,
-          23,
-          55,
+          1,
+          78,
+          79,
+          80,
           2,
           2
         ]
@@ -5363,7 +4560,7 @@
         "code": 230,
         "indent": 0,
         "parameters": [
-          60
+          30
         ]
       },
       {
@@ -5375,7 +4572,7 @@
         "code": 230,
         "indent": 0,
         "parameters": [
-          30
+          20
         ]
       },
       {
@@ -5879,7 +5076,7 @@
         "code": 230,
         "indent": 0,
         "parameters": [
-          60
+          40
         ]
       },
       {
@@ -5941,267 +5138,7 @@
         "parameters": []
       }
     ],
-    "name": "Sand Stomper Capture",
-    "switchId": 1,
-    "trigger": 0
-  },
-  {
-    "id": 24,
-    "list": [
-      {
-        "code": 0,
-        "indent": 0,
-        "parameters": []
-      }
-    ],
-    "name": "Screenshot",
-    "switchId": 1,
-    "trigger": 0
-  },
-  {
-    "id": 25,
-    "list": [
-      {
-        "code": 101,
-        "indent": 0,
-        "parameters": [
-          "",
-          0,
-          0,
-          2
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 0,
-        "parameters": [
-          "The rare enemy encounter rate has returned to normal."
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 0,
-        "parameters": []
-      }
-    ],
-    "name": "Lure End",
-    "switchId": 1,
-    "trigger": 0
-  },
-  {
-    "id": 26,
-    "list": [
-      {
-        "code": 355,
-        "indent": 0,
-        "parameters": [
-          "$gameSystem._demo = $gameSystem._demo || {};"
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          12,
-          "!$gameTemp.isDemo()"
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 1,
-        "parameters": [
-          12,
-          "$gameSystem._demo.achievements"
-        ]
-      },
-      {
-        "code": 355,
-        "indent": 2,
-        "parameters": [
-          "$gameSystem._demo.achievements.forEach(a => {"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 2,
-        "parameters": [
-          "  OrangeGreenworks.activateAchievement(a);"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 2,
-        "parameters": [
-          "});"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 2,
-        "parameters": [
-          "delete $gameSystem._demo.achievements;"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 1,
-        "parameters": [
-          12,
-          "$gameSystem._demo.stats"
-        ]
-      },
-      {
-        "code": 355,
-        "indent": 2,
-        "parameters": [
-          "for (const stat in $gameSystem._demo.stats) {"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 2,
-        "parameters": [
-          "  value = $gameSystem._demo.stats[stat];"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 2,
-        "parameters": [
-          "  OrangeGreenworks.setStat(stat, value);"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 2,
-        "parameters": [
-          "}"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 2,
-        "parameters": [
-          "delete $gameSystem._demo.stats;"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 0,
-        "indent": 0,
-        "parameters": []
-      }
-    ],
-    "name": "Demo Greenworks",
-    "switchId": 1,
-    "trigger": 0
-  },
-  {
-    "id": 27,
-    "list": [
-      {
-        "code": 101,
-        "indent": 0,
-        "parameters": [
-          "Actor4",
-          2,
-          0,
-          2
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 0,
-        "parameters": [
-          "\\p3That thing keeps getting away..."
-        ]
-      },
-      {
-        "code": 101,
-        "indent": 0,
-        "parameters": [
-          "Actor4",
-          2,
-          0,
-          2
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 0,
-        "parameters": [
-          "\\p3How can we kill it faster? \\N[1] and \\N[4]"
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 0,
-        "parameters": [
-          "can still use items like \\ii[265]..."
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 0,
-        "parameters": []
-      }
-    ],
-    "name": "Gilded Ghost Hint",
-    "switchId": 1,
-    "trigger": 0
-  },
-  {
-    "id": 28,
-    "list": [
-      {
-        "code": 0,
-        "indent": 0,
-        "parameters": []
-      }
-    ],
-    "name": "",
-    "switchId": 1,
-    "trigger": 0
-  },
-  {
-    "id": 29,
-    "list": [
-      {
-        "code": 0,
-        "indent": 0,
-        "parameters": []
-      }
-    ],
-    "name": "",
+    "name": "Capture",
     "switchId": 1,
     "trigger": 0
   },
@@ -6277,7 +5214,7 @@
         "code": 108,
         "indent": 0,
         "parameters": [
-          "# Only runs every 30 frames"
+          "# 1 in-game second per 1 real-life second"
         ]
       },
       {
@@ -6293,7 +5230,7 @@
         "code": 230,
         "indent": 1,
         "parameters": [
-          60
+          30
         ]
       },
       {
@@ -6310,7 +5247,7 @@
         "code": 230,
         "indent": 1,
         "parameters": [
-          30
+          60
         ]
       },
       {
@@ -11385,6 +10322,13 @@
         ]
       },
       {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameParty.refreshMembers();"
+        ]
+      },
+      {
         "code": 314,
         "indent": 0,
         "parameters": [
@@ -11880,607 +10824,7 @@
         "code": 117,
         "indent": 0,
         "parameters": [
-          22
-        ]
-      },
-      {
-        "code": 201,
-        "indent": 0,
-        "parameters": [
-          0,
-          145,
-          0,
-          0,
-          2,
-          2
-        ]
-      },
-      {
-        "code": 201,
-        "indent": 0,
-        "parameters": [
-          1,
-          78,
-          79,
-          80,
-          2,
-          2
-        ]
-      },
-      {
-        "code": 230,
-        "indent": 0,
-        "parameters": [
-          60
-        ]
-      },
-      {
-        "code": 222,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 230,
-        "indent": 0,
-        "parameters": [
-          30
-        ]
-      },
-      {
-        "code": 205,
-        "indent": 0,
-        "parameters": [
-          -1,
-          {
-            "list": [
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX += 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX += 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX += 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX -= 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX -= 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX -= 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX -= 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX -= 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX -= 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX += 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX += 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._spriteOffsetX += 1"
-                ],
-                "indent": null
-              },
-              {
-                "code": 15,
-                "parameters": [
-                  1
-                ],
-                "indent": null
-              },
-              {
-                "code": 0
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX += 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX += 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX += 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX -= 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX -= 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX -= 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX -= 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX -= 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX -= 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX += 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX += 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 45,
-            "parameters": [
-              "this._spriteOffsetX += 1"
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 15,
-            "parameters": [
-              1
-            ],
-            "indent": null
-          }
-        ]
-      },
-      {
-        "code": 230,
-        "indent": 0,
-        "parameters": [
-          60
-        ]
-      },
-      {
-        "code": 117,
-        "indent": 0,
-        "parameters": [
-          53
-        ]
-      },
-      {
-        "code": 216,
-        "indent": 0,
-        "parameters": [
-          0
-        ]
-      },
-      {
-        "code": 205,
-        "indent": 0,
-        "parameters": [
-          -1,
-          {
-            "list": [
-              {
-                "code": 14,
-                "parameters": [
-                  0,
-                  0
-                ],
-                "indent": null
-              },
-              {
-                "code": 0
-              }
-            ],
-            "repeat": false,
-            "skippable": false,
-            "wait": true
-          }
-        ]
-      },
-      {
-        "code": 505,
-        "indent": 0,
-        "parameters": [
-          {
-            "code": 14,
-            "parameters": [
-              0,
-              0
-            ],
-            "indent": null
-          }
+          29
         ]
       },
       {
@@ -12497,12 +10841,58 @@
     "id": 49,
     "list": [
       {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "!$gameSystem._moonRespawnList.contains($gameMap.mapId()) && $gameSystem._moonCycleComplete"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameMap.events().filter(e => e._monster).forEach(e => {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  $gameSelfSwitches.setValue([$gameMap.mapId(), e.eventId(), 'A'], false)"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "});"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "$gameSystem._moonRespawnList.push($gameMap.mapId());"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "Respawn Map Enemies",
     "switchId": 1,
     "trigger": 0
   },
@@ -12602,7 +10992,28 @@
         "indent": 0,
         "parameters": [
           12,
-          "$gameSystem._moonRespawn && $gameMap.events().some(e => e._monster)"
+          "$gameSystem._moonRespawn && (!$gameMap.events().some(e => e._monster) || $gameMap.mapId() == 8) && !$gameMap.indoors()"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameSystem._moonRespawn = false;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "$gameSystem._moonRespawnList = [];"
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 1,
+        "parameters": [
+          49
         ]
       },
       {
@@ -12640,63 +11051,20 @@
         ]
       },
       {
-        "code": 355,
-        "indent": 1,
-        "parameters": [
-          "$gameSystem._moonRespawn = false;"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "$gameSystem._moonRespawnList = [];"
-        ]
-      },
-      {
         "code": 0,
         "indent": 1,
         "parameters": []
       },
       {
-        "code": 412,
+        "code": 411,
         "indent": 0,
         "parameters": []
       },
       {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          12,
-          "!$gameSystem._moonRespawnList.contains($gameMap.mapId()) && $gameSystem._moonCycleComplete"
-        ]
-      },
-      {
-        "code": 355,
+        "code": 117,
         "indent": 1,
         "parameters": [
-          "$gameMap.events().filter(e => e._monster).forEach(e => {"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "  $gameSelfSwitches.setValue([$gameMap.mapId(), e.eventId(), 'A'], false)"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "});"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "$gameSystem._moonRespawnList.push($gameMap.mapId());"
+          49
         ]
       },
       {
@@ -13213,13 +11581,6 @@
         "code": 108,
         "indent": 0,
         "parameters": [
-          "# Player 1"
-        ]
-      },
-      {
-        "code": 108,
-        "indent": 0,
-        "parameters": [
           "# Also needs updating:"
         ]
       },
@@ -13234,819 +11595,15 @@
         "code": 408,
         "indent": 0,
         "parameters": [
-          "### Game_Event.prototype.actorCharacter (rpg_objects.js)"
+          "### Sprite_GalvBust.prototype.loadBitmap (GALV_MessageBusts.js)"
         ]
       },
       {
-        "code": 111,
+        "code": 355,
         "indent": 0,
         "parameters": [
-          4,
-          1,
-          5,
-          84
+          "$gameParty.members().forEach(m => m.updateVanity());"
         ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          1,
-          "Adon",
-          4,
-          "Adon",
-          4,
-          "Adon_5"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          1,
-          5,
-          85
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          1,
-          "Actor4",
-          0,
-          "Actor4",
-          0,
-          "Actor4_1"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          1,
-          5,
-          206
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          1,
-          "Boss1",
-          0,
-          "Boss1",
-          0,
-          "Boss1_1"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          1,
-          5,
-          120
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          1,
-          "Actor4",
-          4,
-          "Champions",
-          0,
-          "Actor4_5"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          1,
-          5,
-          109
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          1,
-          "Actor4_Old",
-          0,
-          "Actor4",
-          0,
-          "Actor4_1"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          1,
-          5,
-          211
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          1,
-          "Developers",
-          0,
-          "Developers",
-          0,
-          "Developers_1"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          1,
-          5,
-          212
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          1,
-          "Developers",
-          1,
-          "Developers",
-          1,
-          "Developers_2"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          1,
-          55,
-          0,
-          16,
-          1
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 1,
-        "parameters": [
-          1,
-          55,
-          0,
-          21,
-          2
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 2,
-        "parameters": [
-          1,
-          "Actor4_Night",
-          0,
-          "Actor4",
-          0,
-          "Actor4_1"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 108,
-        "indent": 0,
-        "parameters": [
-          "# Player 2"
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          2,
-          5,
-          86
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          2,
-          "Actor4",
-          1,
-          "Actor4",
-          5,
-          "Actor4_2"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          2,
-          5,
-          207
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          2,
-          "Evil1",
-          3,
-          "Evil1",
-          11,
-          "Evil1_4"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          2,
-          5,
-          121
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          2,
-          "Actor4",
-          5,
-          "Champions",
-          1,
-          "Actor4_6"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          2,
-          5,
-          110
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          2,
-          "Actor4_Old",
-          1,
-          "Actor4",
-          5,
-          "Actor4_2"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          2,
-          5,
-          211
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          2,
-          "Developers",
-          0,
-          "Developers",
-          0,
-          "Developers_1"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          2,
-          5,
-          212
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          2,
-          "Developers",
-          1,
-          "Developers",
-          1,
-          "Developers_2"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          2,
-          5,
-          199
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          2,
-          "$FlameBody",
-          0,
-          "FlameBody",
-          0,
-          "FlameBody"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 108,
-        "indent": 0,
-        "parameters": [
-          "# Player 3"
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          3,
-          5,
-          87
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          3,
-          "Actor4",
-          2,
-          "Actor4",
-          2,
-          "Actor4_3"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          3,
-          5,
-          208
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          3,
-          "Elemental",
-          0,
-          "Elemental",
-          0,
-          "Elemental_1"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          3,
-          5,
-          122
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          3,
-          "Actor4",
-          6,
-          "Champions",
-          2,
-          "Actor4_7"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          3,
-          5,
-          111
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          3,
-          "Actor4_Old",
-          2,
-          "Actor4",
-          2,
-          "Actor4_3"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 108,
-        "indent": 0,
-        "parameters": [
-          "# Player 4"
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          4,
-          5,
-          138
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          4,
-          "Adon",
-          5,
-          "Adon",
-          5,
-          "Adon_6"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          4,
-          5,
-          88
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          4,
-          "Actor4",
-          3,
-          "Actor4",
-          3,
-          "Actor4_4"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          4,
-          5,
-          209
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          4,
-          "Bandito",
-          0,
-          "Bandito",
-          0,
-          "Bandito_1"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          4,
-          5,
-          123
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          4,
-          "Actor4",
-          7,
-          "Champions",
-          3,
-          "Actor4_8"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          4,
-          4,
-          5,
-          112
-        ]
-      },
-      {
-        "code": 322,
-        "indent": 1,
-        "parameters": [
-          4,
-          "Actor4_Old",
-          3,
-          "Actor4",
-          3,
-          "Actor4_4"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
       },
       {
         "code": 0,
@@ -14416,7 +11973,7 @@
         "code": 355,
         "indent": 0,
         "parameters": [
-          "$gameActors._data.forEach(a => {"
+          "$gameParty.members().forEach(a => {"
         ]
       },
       {
@@ -14621,7 +12178,7 @@
         "indent": 1,
         "parameters": [
           12,
-          "!$gameSystem.questObjectivesShowEval(4, 3)"
+          "!$gameSystem._questsObjectives[4].contains(3)"
         ]
       },
       {
@@ -14939,19 +12496,31 @@
         ]
       },
       {
-        "code": 355,
-        "indent": 0,
-        "parameters": [
-          "if (!$gameSystem._oneTimeItems) $gameSystem._oneTimeItems = [];"
-        ]
-      },
-      {
         "code": 111,
         "indent": 0,
         "parameters": [
           12,
-          "!$gameSelfSwitches.value([184, 30, 'A'])"
+          "$gameSelfSwitches.value([183, 164, 'A'])"
         ]
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          68,
+          68,
+          0
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 0,
+        "parameters": []
       },
       {
         "code": 121,
@@ -16247,7 +13816,7 @@
         "indent": 1,
         "parameters": [
           12,
-          "!($gameSystem._ridingTheStorm || $gameTemp.isPlaytest())"
+          "!($gameSystem._ridingTheStorm || $gameTemp.isPlaytest() || $gameSelfSwitches.value([6, 2, 'A']))"
         ]
       },
       {
@@ -16541,6 +14110,248 @@
         "parameters": []
       },
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "### ALPHA 17"
+        ]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Refactor upgrade slots"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "!$gameSystem._refactoredUpgradeSlots"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "equipment = $gameParty.allEquips().concat($gameParty.equipItems());"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "upgradedEquipment = equipment.filter(i => i.slotsApplied.length > 0);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "upgradedEquipment.forEach(i => {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  i.slotsApplied = i.slotsApplied.map(slot => {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "    const match = slot.match(/\\\\i\\[\\d+\\](.*?)\\\\c\\[\\d+\\]/);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "    const scrollName = match ? match[1].trim() : \"\";"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "    return [slot, $dataItems[Yanfly.ItemIdRef[scrollName.toUpperCase()]]];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  });"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "});"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "$gameSystem._refactoredUpgradeSlots = true;"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Greenfield events"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          84,
+          0,
+          7,
+          0
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          84,
+          84,
+          0,
+          0,
+          6
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Sleeping Garments"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          10,
+          227,
+          true
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          55,
+          0,
+          22,
+          1
+        ]
+      },
+      {
+        "code": 128,
+        "indent": 2,
+        "parameters": [
+          227,
+          0,
+          0,
+          1,
+          false
+        ]
+      },
+      {
+        "code": 128,
+        "indent": 2,
+        "parameters": [
+          228,
+          0,
+          0,
+          1,
+          false
+        ]
+      },
+      {
+        "code": 128,
+        "indent": 2,
+        "parameters": [
+          229,
+          0,
+          0,
+          1,
+          false
+        ]
+      },
+      {
+        "code": 128,
+        "indent": 2,
+        "parameters": [
+          230,
+          0,
+          0,
+          1,
+          false
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
@@ -16782,7 +14593,7 @@
         "parameters": [
           0,
           93,
-          0
+          1
         ]
       },
       {
@@ -16800,7 +14611,7 @@
         "parameters": [
           93,
           93,
-          1
+          0
         ]
       },
       {
@@ -16817,7 +14628,7 @@
         "code": 401,
         "indent": 1,
         "parameters": [
-          "The flow of time has returned to its normal speed!"
+          "The flow of time has sped up!"
         ]
       },
       {
@@ -16845,7 +14656,7 @@
         "parameters": [
           93,
           93,
-          0
+          1
         ]
       },
       {
@@ -16862,7 +14673,7 @@
         "code": 401,
         "indent": 1,
         "parameters": [
-          "The flow of time has slowed down!"
+          "The flow of time has returned to normal."
         ]
       },
       {
@@ -19280,7 +17091,7 @@
         "indent": 1,
         "parameters": [
           12,
-          "!$gameSystem._oneTimeItems[256]"
+          "!$gameSystem.isQuestObjectiveCompleted(33, 1)"
         ]
       },
       {
@@ -19316,13 +17127,6 @@
           0,
           0,
           1
-        ]
-      },
-      {
-        "code": 355,
-        "indent": 3,
-        "parameters": [
-          "$gameSystem._oneTimeItems[256] = true;"
         ]
       },
       {
@@ -19402,13 +17206,6 @@
     "list": [
       {
         "code": 355,
-        "indent": 0,
-        "parameters": [
-          "$gameSystem._oneTimeItems[258] = true;"
-        ]
-      },
-      {
-        "code": 655,
         "indent": 0,
         "parameters": [
           "$gameSelfSwitches.setValue([43, 103, 'A'], true);"
@@ -19615,6 +17412,13 @@
         "indent": 0,
         "parameters": [
           26
+        ]
+      },
+      {
+        "code": 235,
+        "indent": 0,
+        "parameters": [
+          16
         ]
       },
       {
