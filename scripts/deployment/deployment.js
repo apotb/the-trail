@@ -15,9 +15,12 @@ const DEMO = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'config.json'
 function dlNwjs(platform, directory, extract=".", extension="zip") {
     const versionName = `nwjs-v0.94.0-${platform}`;
     const archiveName = `${versionName}.${extension}`;
-    const archivePath = path.join(directory, archiveName);
+    const cachePath = path.join(directory, ".nwcache");
+    const archivePath = path.join(cachePath, archiveName);
     const extractPath = path.join(directory, extract);
-    const file = fs.createWriteStream(archivePath);
+    const finalPath = path.join(extractPath, versionName);
+
+    fs.mkdirSync(cachePath, { recursive: true });
 
     const extractArchive = async () => {
         if (extension === "zip") {
@@ -72,8 +75,20 @@ function dlNwjs(platform, directory, extract=".", extension="zip") {
         } else throw new Error(`Unsupported extension: ${extension}`);
     }
 
-    return new Promise((resolve, reject) => {
+    return new Promise(async (resolve, reject) => {
+        if (fs.existsSync(archivePath)) {
+            console.log("NW.js archive found in cache. Extracting...");
+            try {
+                await extractArchive();
+                return resolve(finalPath);
+            } catch (err) {
+                console.warn("Cached archive is corrupted. Deleting and redownloading...");
+                fs.unlinkSync(archivePath);
+            }
+        }
+
         const url = `https://dl.nwjs.io/v0.94.0/${archiveName}`;
+        const file = fs.createWriteStream(archivePath);
         https.get(url, (response) => {
             console.log("Downloading...");
             response.pipe(file);
@@ -82,8 +97,7 @@ function dlNwjs(platform, directory, extract=".", extension="zip") {
                     console.log("Download finished!");
                     try {
                         await extractArchive();
-                        fs.unlinkSync(archivePath);
-                        resolve(path.join(extractPath, versionName));
+                        resolve(finalPath);
                     } catch (err) {
                         reject(err);
                     }
@@ -164,9 +178,11 @@ async function deployment(directory, platform) {
 
     if (!config) throw new Error(`Unsupported build target: ${platform}`);
 
-    const extractedPath = await dlNwjs(config.platform, rootPath, "out", config.extension);
     const finalPath = path.join(rootPath, "out", `${platform}${DEMO ? "-demo" : ""}`);
     if (fs.existsSync(finalPath)) fs.rmSync(finalPath, { recursive: true, force: true });
+
+    const extractedPath = await dlNwjs(config.platform, rootPath, "out", config.extension);
+    
     try {
         fs.renameSync(extractedPath, finalPath);
     } catch (err) {
