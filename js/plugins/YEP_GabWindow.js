@@ -831,7 +831,11 @@ SceneManager.isSceneBattle = function() {
 //=============================================================================
 
 Scene_Base.prototype.createGabWindow = function(battle) {
-    this._gabWindow = new Window_Gab(battle);
+    if (!battle && $gameTemp._gabWindow) {
+      this._gabWindow = $gameTemp._gabWindow;
+      delete $gameTemp._gabWindow;
+    }
+    else this._gabWindow = new Window_Gab(battle);
     this.addChild(this._gabWindow);
 };
 

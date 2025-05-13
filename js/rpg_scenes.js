@@ -642,6 +642,7 @@ Scene_Map.prototype.stop = function() {
     if (this.needsSlowFadeOut()) {
         this.startFadeOut(this.slowFadeSpeed(), false);
     } else if (SceneManager.isNextScene(Scene_Map)) {
+        $gameTemp._gabWindow = this._gabWindow;
         this.fadeOutForTransfer();
     } else if (SceneManager.isNextScene(Scene_Battle)) {
         this.launchBattle();
