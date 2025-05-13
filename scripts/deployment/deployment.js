@@ -142,4 +142,60 @@ async function deployment(directory, fixPackage=true) {
     }
 }
 
-module.exports = { dlNwjs, copy, deployment };
+(async function main() {
+    const args = process.argv.slice(2);
+    const platform = args[0];
+    
+    if (!["windows", "mac", "linux"].includes(platform)) {
+        console.error("Usage: node deployment.js <windows|mac|linux>");
+        process.exit(1);
+    }
+
+    const rootPath = path.join(__dirname, "..", "..");
+    const config = {
+        windows: {
+            platform: "win-x64",
+            extension: "zip",
+            execFile: "windows/thetrail.exe",
+            extraFiles: [],
+            nwBinary: "nw.exe"
+        },
+        linux: {
+            platform: "linux-x64",
+            extension: "tar.gz",
+            execFile: "linux/thetrail",
+            extraFiles: ["linux/thetrail.desktop"],
+            nwBinary: "nw"
+        }
+    }[platform];
+
+    if (!config) throw new Error(`Unsupported build target: ${platform}`);
+
+    const nwjsPath = await dlNwjs(config.platform, rootPath, "out", config.extension);
+    const wwwPath = path.join(nwjsPath, "www");
+    const scriptsPath = path.join(wwwPath, "scripts");
+
+    const wwwSrc = ['audio', 'data', 'fonts', 'icon', 'img', 'js', 'lib', 'scripts', 'greenworks.js', 'index.html'];
+    const nwjsSrc = ['node_modules', 'CHANGELOG.md', 'package.json', 'package-lock.json'];
+
+    for (const src of wwwSrc) {
+        await copy(path.join(rootPath, src), wwwPath);
+    }
+
+    for (const src of nwjsSrc) {
+        await copy(path.join(rootPath, src), nwjsPath);
+    }
+
+    await copy(path.join(__dirname, config.execFile), nwjsPath);
+    for (const extra of config.extraFiles) {
+        await copy(path.join(__dirname, extra), nwjsPath);
+    }
+
+    await deployment(path.join(scriptsPath, "deployment"));
+    require(path.join(scriptsPath, "pre-commit.js"));
+
+    fs.rmSync(scriptsPath, { recursive: true, force: true });
+    fs.rmSync(path.join(nwjsPath, config.nwBinary), { force: true });
+
+    console.log(`${platform.toUpperCase()} build completed.`);
+})();
