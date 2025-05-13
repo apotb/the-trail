@@ -3,27 +3,31 @@ import platform
 import json
 import subprocess
 
-APP_ID = "3544920"
 LOG_PATH = r"C:\SteamCMD\logs"
-
-DEPOTS = {
-    "windows": {
-        "id": "3544921",
-        "folder": "../out/windows"
-    },
-    "mac": {
-        "id": "3544922",
-        "folder": "../out/mac"
-    },
-    "linux": {
-        "id": "3544923",
-        "folder": "../out/linux"
-    }
-}
 
 SCRIPT_DIR = os.path.dirname(__file__)
 OUT_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, "../../out"))
 VERSION_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, "../../data/Version.json"))
+CONFIG_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, "../config.json"))
+with open(CONFIG_PATH, "r", encoding="utf-8") as f:
+    DEMO = json.load(f).get("demo", False)
+
+APP_ID = "3544920" if not DEMO else "3580480"
+
+DEPOTS = {
+    "windows": {
+        "id": APP_ID + 1,
+        "folder": "../out/windows" if not DEMO else "../out/windows-demo"
+    },
+    "mac": {
+        "id": APP_ID + 2,
+        "folder": "../out/mac" if not DEMO else "../out/mac-demo"
+    },
+    "linux": {
+        "id": APP_ID + 3,
+        "folder": "../out/linux" if not DEMO else "../out/linux-demo"
+    }
+}
 
 
 def detect_platform():

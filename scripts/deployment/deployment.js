@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-const DEMO = false;
-
 const { exec } = require('child_process');
 const https = require('https');
 const fs = require('fs');
@@ -11,6 +9,8 @@ const yauzl = require('yauzl');
 const tar = require('tar');
 const util = require('util');
 const execPromise = util.promisify(exec);
+
+const DEMO = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'config.json'))).demo;
 
 function dlNwjs(platform, directory, extract=".", extension="zip") {
     const versionName = `nwjs-v0.94.0-${platform}`;
