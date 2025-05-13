@@ -12,20 +12,20 @@ CONFIG_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, "../config.json"))
 with open(CONFIG_PATH, "r", encoding="utf-8") as f:
     DEMO = json.load(f).get("demo", False)
 
-APP_ID = "3544920" if not DEMO else "3580480"
+APP_ID = 3544920 if not DEMO else 3580480
 
 DEPOTS = {
     "windows": {
-        "id": APP_ID + 1,
-        "folder": "../out/windows" if not DEMO else "../out/windows-demo"
+        "id": str(APP_ID + 1),
+        "folder": "../../out/windows" if not DEMO else "../../out/windows-demo"
     },
     "mac": {
-        "id": APP_ID + 2,
-        "folder": "../out/mac" if not DEMO else "../out/mac-demo"
+        "id": str(APP_ID + 2),
+        "folder": "../../out/mac" if not DEMO else "../../out/mac-demo"
     },
     "linux": {
-        "id": APP_ID + 3,
-        "folder": "../out/linux" if not DEMO else "../out/linux-demo"
+        "id": str(APP_ID + 3),
+        "folder": "../../out/linux" if not DEMO else "../../out/linux-demo"
     }
 }
 
