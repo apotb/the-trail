@@ -157,7 +157,22 @@ async function deployment(directory, fixPackage=true) {
 
     if (!config) throw new Error(`Unsupported build target: ${platform}`);
 
-    const nwjsPath = await dlNwjs(config.platform, rootPath, "out", config.extension);
+    const extractedPath = await dlNwjs(config.platform, rootPath, "out", config.extension);
+    const finalPath = path.join(rootPath, "out", platform);
+    if (fs.existsSync(finalPath)) fs.rmSync(finalPath, { recursive: true, force: true });
+    try {
+        fs.renameSync(extractedPath, finalPath);
+    } catch (err) {
+        if (err.code === "EPERM") {
+            console.warn("Rename failed (possibly locked). Retrying...");
+            await new Promise(res => setTimeout(res, 500));
+            fs.renameSync(extractedPath, finalPath);
+        } else {
+            throw err;
+        }
+    }
+    const nwjsPath = finalPath;
+
     const wwwPath = path.join(nwjsPath, "www");
     const scriptsPath = path.join(wwwPath, "scripts");
 
