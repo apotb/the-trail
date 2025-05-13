@@ -4,6 +4,7 @@
   "js-flags": "--exposegc",
   "chromium-args": "--in-process-gpu --disable-direct-composition --disable-raf-throttling",
   "scripts": {
+    "windows": "node scripts/deployment/windows.js",
     "compress-bgm": "node scripts/compress-bgm.js"
   },
   "window": {
