@@ -5,6 +5,7 @@
   "chromium-args": "--in-process-gpu --disable-direct-composition --disable-raf-throttling",
   "scripts": {
     "windows": "node scripts/deployment/windows.js",
+    "linux": "node scripts/deployment/linux.js",
     "compress-bgm": "node scripts/compress-bgm.js"
   },
   "window": {
@@ -24,6 +25,7 @@
   "devDependencies": {
     "fluent-ffmpeg": "^2.1.3",
     "path": "^0.12.7",
+    "tar": "^7.4.3",
     "yauzl": "^2.10.0"
   }
 }

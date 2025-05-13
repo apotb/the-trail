@@ -6,71 +6,84 @@ const fs = require('fs');
 const fsp = fs.promises;
 const path = require('path');
 const yauzl = require('yauzl');
+const tar = require('tar');
+const util = require('util');
+const execPromise = util.promisify(exec);
 
-function dlNwjs(platform, directory, extract) {
-    const name = `nwjs-v0.94.0-${platform}`;
-    const zipName = `${name}.zip`;
-    const file = fs.createWriteStream(zipName);
-    let zipPath = path.join(directory, zipName);
-    let extractPath = path.join(directory, extract);
+function dlNwjs(platform, directory, extract=".", extension="zip") {
+    const versionName = `nwjs-v0.94.0-${platform}`;
+    const archiveName = `${versionName}.${extension}`;
+    const archivePath = path.join(directory, archiveName);
+    const extractPath = path.join(directory, extract);
+    const file = fs.createWriteStream(archivePath);
 
-    const unzip = () => {
-        return new Promise((resolve, reject) => {
-            console.log("Unzipping...");
-            yauzl.open(zipPath, {lazyEntries: true}, function(err, zipfile) {
-                if (err) return reject(err);
-                zipfile.readEntry();
+    const extractArchive = async () => {
+        if (extension === "zip") {
+            return new Promise((resolve, reject) => {
+                console.log("Unzipping...");
+                yauzl.open(archivePath, { lazyEntries: true }, function (err, zipfile) {
+                    if (err) return reject(err);
+                    zipfile.readEntry();
 
-                zipfile.on("entry", function(entry) {
-                    if (/\/$/.test(entry.fileName)) {
-                        zipfile.readEntry();
-                    } else {
-                        fs.mkdir(
-                            path.join(extractPath, path.dirname(entry.fileName)),
-                            { recursive: true },
-                            (err) => {
+                    zipfile.on("entry", function (entry) {
+                        const destination = path.join(extractPath, entry.fileName);
+                        if (/\/$/.test(entry.fileName)) {
+                            fs.mkdir(destination, { recursive: true }, (err) => {
                                 if (err) return reject(err);
-                                zipfile.openReadStream(entry, function (err, readStream) {
+                                zipfile.readEntry();
+                            });
+                        } else {
+                            fs.mkdir(path.dirname(destination), { recursive: true }, (err) => {
+                                if (err) return reject(err);
+                                zipfile.openReadStream(entry, (err, readStream) => {
                                     if (err) return reject(err);
-                                    readStream.on("end", function () {
-                                        zipfile.readEntry();
-                                    });
-                                    const writer = fs.createWriteStream(
-                                        path.join(extractPath, entry.fileName)
-                                    );
+                                    const writer = fs.createWriteStream(destination);
                                     readStream.pipe(writer);
+                                    writer.on("finish", () => zipfile.readEntry());
+                                    writer.on("error", reject);
+                                    readStream.on("error", reject);
                                 });
-                            }
-                        );
-                    }
-                });
+                            });
+                        }
+                    });
 
-                zipfile.on("end", () => {
-                    console.log("Unzipped!");
-                    resolve();
-                });
+                    zipfile.on("end", () => {
+                        console.log("Unzip complete.");
+                        resolve();
+                    });
 
-                zipfile.on("error", reject);
+                    zipfile.on("error", reject);
+                });
             });
-        });
+        } else if (extension === "tar.gz") {
+            console.log("Extracting tar.gz...");
+            await fsp.mkdir(extractPath, { recursive: true });
+            await tar.x({
+                file: archivePath,
+                cwd: extractPath,
+            });
+        } else throw new Error(`Unsupported extension: ${extension}`);
     }
 
     return new Promise((resolve, reject) => {
-        https.get(`https://dl.nwjs.io/v0.94.0/nwjs-v0.94.0-${platform}.zip`, function(response) {
+        const url = `https://dl.nwjs.io/v0.94.0/${archiveName}`;
+        https.get(url, (response) => {
             console.log("Downloading...");
             response.pipe(file);
-            
             file.on("finish", () => {
-                file.close(() => {
+                file.close(async () => {
                     console.log("Download finished!");
-                    unzip().then(() => {
-                        fs.unlinkSync(zipPath);
-                        resolve(path.join(extractPath, name));
-                    }).catch(reject);
+                    try {
+                        await extractArchive();
+                        fs.unlinkSync(archivePath);
+                        resolve(path.join(extractPath, versionName));
+                    } catch (err) {
+                        reject(err);
+                    }
                 });
-
             });
-        });        
+            file.on("error", reject);
+        }).on("error", reject);
     });
 }
 
@@ -99,45 +112,34 @@ async function copy(src, dest) {
     }
 }
 
-function deployment(directory, fixPackage=false) {
-    return new Promise((resolve, reject) => {
-        try {
-            // Config edits
-            const path_config = path.join(directory, '..', 'config.json');
-            let config = JSON.parse(fs.readFileSync(path_config));
+async function deployment(directory, fixPackage=true) {
+    try {
+        // Config edits
+        const path_config = path.join(directory, '..', 'config.json');
+        let config = JSON.parse(fs.readFileSync(path_config));
+        config['pre-commit'].minify = true; // Force all files to be mini-fied
+        config.deployment.extraPath = path.join(directory, '..', '..'); // Make sure the pre-commit is being run in the right path
+        fs.writeFileSync(path_config, JSON.stringify(config, null, 0));
 
-            // # Force all files to be mini-fied
-            config['pre-commit'].minify = true;
-            
-            // # Make sure the pre-commit is being run in the right path
-            config.deployment.extraPath = path.join(directory, '..', '..');
-
-            fs.writeFileSync(path_config, JSON.stringify(config, null, 0));
-
-            // Fix package.json
-            if (fixPackage) {
-                const path_package = path.join(directory, '..', '..', '..', 'package.json');
-                let package = JSON.parse(fs.readFileSync(path_package));
-                package.main = "www/index.html";
-                package.window.icon = "www/icon/icon.png";
-                fs.writeFileSync(path_package, JSON.stringify(package, null, 0));
-            }
-
-            exec('npm prune --omit=dev', { cwd: path.join(directory, '..', '..', '..') }, (err, stdout, stderr) => {
-                if (err) {
-                    console.error('Error running npm prune:', err);
-                    return;
-                }
-                console.log('npm prune output:\n', stdout);
-                if (stderr) console.warn('npm warnings:\n', stderr);
-            });
-
-            resolve();
-        } catch (err) {
-            console.error(err);
-            reject(err);
+        // Fix package.json
+        if (fixPackage) {
+            const path_package = path.join(directory, '..', '..', '..', 'package.json');
+            let package = JSON.parse(fs.readFileSync(path_package));
+            package.main = "www/index.html";
+            package.window.icon = "www/icon/icon.png";
+            fs.writeFileSync(path_package, JSON.stringify(package, null, 0));
         }
-    });
+
+        // Run npm prune --omit=dev
+        const { stdout, stderr } = await execPromise('npm prune --omit=dev', {
+            cwd: path.join(directory, '..', '..', '..'),
+        });
+        console.log('npm prune output:\n', stdout);
+        if (stderr) console.warn('npm warnings:\n', stderr);
+    } catch (err) {
+        console.error(err);
+        throw err;
+    }
 }
 
 module.exports = { dlNwjs, copy, deployment };
