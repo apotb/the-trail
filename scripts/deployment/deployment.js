@@ -179,7 +179,18 @@ async function deployment(directory, platform) {
     if (!config) throw new Error(`Unsupported build target: ${platform}`);
 
     const finalPath = path.join(rootPath, "out", `${platform}${DEMO ? "-demo" : ""}`);
-    if (fs.existsSync(finalPath)) fs.rmSync(finalPath, { recursive: true, force: true });
+    if (fs.existsSync(finalPath)) {
+        try {
+            fs.rmSync(finalPath, { recursive: true, force: true, maxRetries: 3 });
+        } catch (err) {
+            console.warn(`Failed to remove ${finalPath}: ${err.message}. Attempting manual cleanup...`);
+            for (const entry of fs.readdirSync(finalPath)) {
+                const entryPath = path.join(finalPath, entry);
+                fs.rmSync(entryPath, { recursive: true, force: true });
+            }
+            fs.rmdirSync(finalPath);
+        }
+    }
 
     const extractedPath = await dlNwjs(config.platform, rootPath, "out", config.extension);
     
