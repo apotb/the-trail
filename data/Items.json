@@ -6607,6 +6607,12 @@
     "description": "This fruit, while lightly poisonous, isn't dangerous to humans. It's\nsaid that it contains magical qualities that can spice up any dish.",
     "effects": [
       {
+        "code": 21,
+        "dataId": 4,
+        "value1": 1,
+        "value2": 0
+      },
+      {
         "code": 11,
         "dataId": 0,
         "value1": 0.05,
@@ -6615,7 +6621,7 @@
       {
         "code": 12,
         "dataId": 0,
-        "value1": 0.05,
+        "value1": 0.2,
         "value2": 0
       }
     ],

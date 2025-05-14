@@ -115,6 +115,7 @@ The changelog below may be lengthy, but if you take the time to read it, I think
 - Living Plants now drop Worms.
 - Werewolves, Chilling Apparitions, and Ice Slimes no longer drop Ice Cubes.
 - Tellurium Golems change appearance after inflicted with Heated Metal.
+- Buffed Starfruit MP recovery from 5% → 20%, and it now gives Well Fed.
 - Increased time for Exhaustion to set in from 36 → 48 hours.
 - Completing the quest "The Dandy Toads of Adon" now rewards you with 300B instead of an Enchanted Anti-Magic Charm.
 - Made the Advanced Salvage Kit recipe much easier.
