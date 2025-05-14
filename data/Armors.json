@@ -6083,7 +6083,7 @@
   {
     "id": 232,
     "atypeId": 1,
-    "description": "Crimson horns taken from a reanimated statue. Though carved from stone, they radiate heat.\nBoosts ATK, increases CRI by 10%, and grants a chance to inflict \\it[102].",
+    "description": "Crimson horns taken from a reanimated statue. Though carved from stone, they radiate heat. Boosts ATK,\nincreases CRI by 10%, amplifies \\nl[2] and \\nl[6] damage, and grants a chance to inflict \\it[102].",
     "etypeId": 6,
     "traits": [
       {
@@ -6099,7 +6099,7 @@
     ],
     "iconIndex": 1321,
     "name": "Stone Dragon Horns",
-    "note": "<Upgrade Slots: 3>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(84) >= 16;\n</Custom Buy Show Eval>",
+    "note": "<Upgrade Slots: 3>\n\n<Element Amplify Fire: +20%>\n<Element Amplify Earth: +20%>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(84) >= 16;\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
