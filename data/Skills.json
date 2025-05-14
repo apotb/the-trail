@@ -5216,5 +5216,42 @@
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0
+  },
+  {
+    "id": 150,
+    "animationId": 270,
+    "damage": {
+      "critical": true,
+      "elementId": 9,
+      "formula": "a.mat * 5 - b.mdf * 2",
+      "type": 1,
+      "variance": 5
+    },
+    "description": "",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 217,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 2,
+    "iconIndex": 1461,
+    "message1": " casts %1!",
+    "message2": "",
+    "mpCost": 7,
+    "name": "Hex",
+    "note": "<Boost Damage>\n\n<Pre-Damage Eval>\nthis._preSP = target.barrierPoints();\n</Pre-Damage Eval>\n\n<Post-Damage Eval>\nvar darkness = value - (this._preSP - target.barrierPoints());\ntarget._trueDarkness = target.hp != 0 ? (target.trueDarkness() + darkness) : 0;\n</Post-Damage Eval>\n\n<action copy: skill:7>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 1,
+    "speed": 0,
+    "stypeId": 2,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
   }
 ]

@@ -3641,7 +3641,10 @@ Game_Battler.prototype.gainHp = function(value) {
         var resist = this.trueDarkness();
         this._trueDarkness = Math.max(this.trueDarkness() - value, 0);
         value = Math.max(value - resist, 0);
-        if (this.trueDarkness() == 0) this.removeState(198);
+        if (this.trueDarkness() == 0) {
+            this.removeState(198); // True Darkness
+            this.removeState(217); // Hex
+        }
     }
     this.setHp(this.hp + value);
 };
