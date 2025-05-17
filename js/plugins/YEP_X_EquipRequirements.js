@@ -536,7 +536,7 @@ Game_BattlerBase.prototype.refresh = function() {
 };
 
 Yanfly.EqReq.Game_BattlerBase_canEquip = Game_BattlerBase.prototype.canEquip;
-Game_BattlerBase.prototype.canEquip = function(item) {
+Game_BattlerBase.prototype.canEquip = function(item, slot=-1) {
     var value = Yanfly.EqReq.Game_BattlerBase_canEquip.call(this, item);
     if (!value) return false;
     if (BattleManager.isBattleTest() && Yanfly.Param.EqReqBTest) return value;
@@ -544,7 +544,7 @@ Game_BattlerBase.prototype.canEquip = function(item) {
       if (SceneManager._scene instanceof Scene_Equip) return value;
       if (this._equipReq !== undefined) return this._equipReq;
     }
-    this._equipReq = this.meetAllEquipRequirements(item)
+    this._equipReq = this.meetAllEquipRequirements(item, slot);
     return this._equipReq;
 };
 

@@ -4,3 +4,7 @@ battle = function(troop) {
     $gamePlayer.makeEncounterCount();
     SceneManager.push(Scene_Battle);
 };
+
+resetItems = function() {
+    $dataWeapons.concat($dataArmors).filter(i => i && i.id > Yanfly.Param.ItemStartingId).forEach(i => ItemManager.effectIUSResetStat(i, 'FULL'));
+}

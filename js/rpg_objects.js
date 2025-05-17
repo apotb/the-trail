@@ -4176,7 +4176,7 @@ Game_Actor.prototype.optimizeEquipments = function() {
 Game_Actor.prototype.bestEquipItem = function(slotId) {
     var etypeId = this.equipSlots()[slotId];
     var items = $gameParty.equipItems().filter(function(item) {
-        return item.etypeId === etypeId && this.canEquip(item);
+        return item.etypeId === etypeId && this.canEquip(item, slotId);
     }, this);
     var bestItem = null;
     var bestPerformance = -1000;
@@ -4196,7 +4196,7 @@ Game_Actor.prototype.calcEquipItemPerformance = function(item) {
     let xparam = item.traits.filter(trait => trait.code === Game_BattlerBase.TRAIT_XPARAM && !optimizeIgnore.includes(trait.dataId + 8)).map(trait => trait.value * 100);
     return params.concat(xparam).reduce(function(a, b) {
         return a + b;
-    });
+    }) * Number(item.meta['Optimize Weight'] || 1);
 };
 
 Game_Actor.prototype.isSkillWtypeOk = function(skill) {
