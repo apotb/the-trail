@@ -79,7 +79,7 @@ The changelog below may be lengthy, but if you take the time to read it, I think
   - Vial of Poison can be used as an upgrader, making a weapon inflict Poisoned.
 - Equipment balancing:
   - Daggers, Knuckles, Masks, and Headbands no longer grant AGI.
-  - Condensed Gel variants and the Vigilante's Charm no longer provide ATK, MAT, or AGI.
+  - Condensed Gel variants and the Vigilante's Charm no longer provide ATK, MAT, or AGI. They also provide less MHP/MMP.
   - Reduced Water Elemental's Flow effects from 15%/30% → 10%/20%
   - Greaves can now be worn by everyone.
   - Revamped glove progression:
