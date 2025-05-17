@@ -634,7 +634,7 @@
       0,
       0,
       0,
-      3,
+      0,
       0
     ],
     "price": 50
@@ -756,7 +756,7 @@
       0,
       0,
       0,
-      3,
+      0,
       0
     ],
     "price": 120
@@ -4307,7 +4307,7 @@
       0,
       0,
       0,
-      5,
+      0,
       0
     ],
     "price": 750
@@ -4334,7 +4334,7 @@
       0,
       0,
       0,
-      10,
+      0,
       0
     ],
     "price": 750
@@ -5104,7 +5104,7 @@
       0,
       0,
       0,
-      1,
+      0,
       0
     ],
     "price": 50
@@ -5131,7 +5131,7 @@
       0,
       0,
       0,
-      6,
+      0,
       0
     ],
     "price": 120
@@ -5722,12 +5722,12 @@
   {
     "id": 218,
     "atypeId": 1,
-    "description": "A deep blue headband with a striking red accent.\nIncreases physical lifesteal by a moderate amount.",
+    "description": "A deep blue headband with a striking red accent. Increases physical\nlifesteal by a moderate amount. Amplifies outgoing \\nl[5] by 20%.",
     "etypeId": 3,
     "traits": [],
     "iconIndex": 821,
     "name": "Bloodwave Headband",
-    "note": "<Upgrade Slots: 3>\n<HP Life Steal Physical: +3%>\n\n<Synthesis Ingredients>\nSilver Headband\nFeral Rat Fur: 3\nAqua Gem: 2\nWater Essence: 3\n</Synthesis Ingredients>",
+    "note": "<Upgrade Slots: 3>\n<HP Life Steal Physical: +3%>\n\n<Element Amplify Water: +20%>\n\n<Synthesis Ingredients>\nSilver Headband\nFeral Rat Fur: 3\nAqua Gem: 2\nWater Essence: 3\n</Synthesis Ingredients>",
     "params": [
       20,
       0,
@@ -5735,7 +5735,7 @@
       0,
       0,
       0,
-      10,
+      0,
       0
     ],
     "price": 1000
@@ -5743,7 +5743,7 @@
   {
     "id": 219,
     "atypeId": 1,
-    "description": "A mask styled in the fashion of a swirling vortex.\nFocuses the user's energy onto landing critical hits.",
+    "description": "A mask styled in the fashion of a swirling vortex. Focuses the user's\nenergy onto landing critical hits. Amplifies outgoing \\nl[5] by 20%.",
     "etypeId": 3,
     "traits": [
       {
@@ -5754,7 +5754,7 @@
     ],
     "iconIndex": 822,
     "name": "Vortex Mask",
-    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nSilver Mask\nFeral Rat Fur: 3\nAqua Gem: 2\nWater Essence: 3\n</Synthesis Ingredients>",
+    "note": "<Upgrade Slots: 3>\n\n<Element Amplify Water: +20%>\n\n<Synthesis Ingredients>\nSilver Mask\nFeral Rat Fur: 3\nAqua Gem: 2\nWater Essence: 3\n</Synthesis Ingredients>",
     "params": [
       0,
       0,
@@ -5762,7 +5762,7 @@
       0,
       0,
       0,
-      20,
+      0,
       0
     ],
     "price": 1000
