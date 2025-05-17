@@ -149,6 +149,7 @@ The changelog below may be lengthy, but if you take the time to read it, I think
 - Fixed the Fish-Flavored Fish being unobtainable.
 - Fixed being able to equip duplicate accessories if at least 1 is modified.
 - Fixed being able to equip multiple pairs of gloves.
+- Fixed equipment optimization granting physical equipment to magical characters, and vice-versa.
 - Fixed achievements "Big Bang" and "Poacher" being unobtainable.
 - Fixed light break HP bars not showing.
 - Fixed a bug where name boxes would stop showing after opening any crafting menu; this wouldn't go away until changing maps.

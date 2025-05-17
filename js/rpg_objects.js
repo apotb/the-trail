@@ -4191,7 +4191,10 @@ Game_Actor.prototype.bestEquipItem = function(slotId) {
 };
 
 Game_Actor.prototype.calcEquipItemPerformance = function(item) {
-    return item.params.reduce(function(a, b) {
+    let optimizeIgnore = this.actor().meta['Optimize Ignore'].split(",").map(s => s.trim());
+    let params = item.params.filter((_, index) => !optimizeIgnore.includes(index));
+    let xparam = item.traits.filter(trait => trait.code === Game_BattlerBase.TRAIT_XPARAM && !optimizeIgnore.includes(trait.dataId + 8)).map(trait => trait.value * 100);
+    return params.concat(xparam).reduce(function(a, b) {
         return a + b;
     });
 };
