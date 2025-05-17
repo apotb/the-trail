@@ -2593,6 +2593,8 @@ Window_ItemList.prototype.drawItemNumber = function(item, x, y, width) {
 Window_SkillStatus.prototype.refresh = function() {
     this.contents.clear();
     if (this._actor) {
+        for (const gauge of Object.values(this._gauges || {})) gauge._curVal = this._actor[gauge._type]; // Fix for equip change not updating HP/MP text
+
         var w = this.width - this.padding * 2;
         var h = this.height - this.padding * 2;
         if (!Yanfly.Param.MenuTpGauge) {
