@@ -2139,18 +2139,18 @@
   {
     "id": 89,
     "atypeId": 1,
-    "description": "Increases outgoing magical damage by 15%,\nbut also increases all MP costs by 30%.",
+    "description": "Increases outgoing magical damage by 10%,\nbut also increases all MP costs by 20%.",
     "etypeId": 9,
     "traits": [
       {
         "code": 25,
         "dataId": 0,
-        "value": 1.15
+        "value": 1.1
       },
       {
         "code": 23,
         "dataId": 4,
-        "value": 1.3
+        "value": 1.2
       }
     ],
     "iconIndex": 127,

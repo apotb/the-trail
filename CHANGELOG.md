@@ -105,6 +105,7 @@ The changelog below may be lengthy, but if you take the time to read it, I think
 - Doubled Claire's outgoing healing.
 - Vial of Poison can be used as an upgrader, making a weapon inflict Poisoned.
 - Enemies using Cure II will no longer apply Rejuvenation.
+- Reduced Water Elemental's Flow effects from 15%/30% → 10%/20%
 - Nerfed Gilded Coin Bit Rate from 1.5x → 1.25x
 - Nerfed the Dark damage reduction of tellurium equipment.
 - Nerfed Shield of the Hero Darkfire resistance from 100% → 50%.
