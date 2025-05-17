@@ -1233,7 +1233,7 @@
     ],
     "gold": 25,
     "name": "Goblin",
-    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Goblin_1>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<Enemy Drops>\nHorn: 5%\nWorn Cloth: 75%\nWorn Cloth: 75%\nLeather: 33.33%\nLoaf of Bread: 10%\nLeather Charm: 5%\nGoblin Fang: 5%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Goblin_1>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<Enemy Drops>\nHorn: 5%\nWorn Cloth: 75%\nLeather: 75%\nLoaf of Bread: 10%\nLeather Charm: 5%\nGoblin Fang: 5%\n</Enemy Drops>",
     "params": [
       300,
       30,
@@ -1289,7 +1289,7 @@
     ],
     "gold": 35,
     "name": "Goblin Captain",
-    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Goblin_2>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<AI Priority>\nTroop Alive Members > 1 +++ State !== Weak Point +++ Random 20%: Weak Point, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire, First\n</AI Priority>\n\n<Enemy Drops>\nHorn: 5%\nWorn Cloth: 75%\nWorn Cloth: 75%\nLeather: 50%\nLoaf of Bread: 20%\nLeather Charm: 5%\nGoblin Fang: 5%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Goblin_2>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<AI Priority>\nTroop Alive Members > 1 +++ State !== Weak Point +++ Random 20%: Weak Point, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire, First\n</AI Priority>\n\n<Enemy Drops>\nHorn: 5%\nWorn Cloth: 75%\nWorn Cloth: 75%\nLeather: 75%\nLeather: 75%\nLoaf of Bread: 20%\nLeather Charm: 5%\nGoblin Fang: 5%\n</Enemy Drops>",
     "params": [
       450,
       30,
@@ -1385,7 +1385,7 @@
     ],
     "gold": 300,
     "name": "Giant Goblin",
-    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Goblin_2>\n<Scale Sprite: 200%>\n<HP Gauge Width: 216>\n\n<Enemy Drops>\nHorn: 5%\nGiant Goblin's Fang: 100%\nGiant Goblin's Rage: 100%\nTerra: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Goblin_2>\n<Scale Sprite: 200%>\n<HP Gauge Width: 216>\n\n<Enemy Drops>\nHorn: 5%\nGiant Goblin's Fang: 100%\nGiant Goblin's Rage: 100%\nTerra: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 75%\nLeather: 75%\nLeather: 75%\nLeather: 50%\nLeather: 50%\nLeather: 50%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 75%\nWorn Cloth: 75%\nWorn Cloth: 50%\nWorn Cloth: 50%\n</Enemy Drops>",
     "params": [
       5000,
       999,
@@ -1441,7 +1441,7 @@
     ],
     "gold": 40,
     "name": "Dandy Toad",
-    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: DandyToad_1>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Enemy Drops>\nBell: 5%\nLoaf of Bread: 50%\nPotion: 10%\nPotion: 10%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: DandyToad_1>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Enemy Drops>\nBell: 5%\nLoaf of Bread: 50%\nBlack Gloves: 12.5%\nPotion: 10%\nPotion: 10%\n</Enemy Drops>",
     "params": [
       600,
       40,

@@ -2319,7 +2319,7 @@
     ],
     "iconIndex": 825,
     "name": "Andy's Dusters MK. II",
-    "note": "<Weapon Image: 299>\n<Upgrade Slots: 3>",
+    "note": "<Weapon Image: 299>\n<Upgrade Slots: 3>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(109);\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
