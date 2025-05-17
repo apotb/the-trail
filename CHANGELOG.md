@@ -49,7 +49,7 @@ The changelog below may be lengthy, but if you take the time to read it, I think
 - Time moves slower:
   - By default, 1 real-life second is 2 → 1 in-game seconds.
   - If the Magical Ocarina is used, 1 real-life second is 1 → 2 in-game seconds.
-- Everyone gets less DEF/MDF from leveling up. They will gain more MHP to compensate.
+- Everyone gets less DEF, MDF, and AGI from leveling up. They will gain more MHP to compensate.
 - Skill rebalancing:
   - Nerfed Wand Impulse MAT rate from 400% → 325%
   - Nerfed Magical Breeze Winded rate from 100% → 25%
