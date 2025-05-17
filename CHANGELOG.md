@@ -59,12 +59,16 @@ The changelog below may be lengthy, but if you take the time to read it, I think
   - Removed Soul Barrier I from Player 3's skill pool.
   - Player 3 now learns Dispell at level 16 → 17
 - Rebalanced several enemies:
+  - Enemies using Cure II no longer apply Rejuvenation.
+  - Living Plants now drop Worms.
   - Mimic: Actions 3 → 1 for Ruined Fort encounter.
   - Will o' Wisp: MAT 45 → 39
+  - Darkhounds now drop Iron Wristbraces instead of Silver Wristbraces.
   - Ice Golem: DEF 45 → 40, MDF 70 → 60, Ice Barrier chance 50% → 25%
   - Chilling Apparition: MDF 85 → 75
   - Werewolf: MDF 60 → 55
   - Ice Slime: MDF 75 → 60
+  - Werewolves, Chilling Apparitions, and Ice Slimes no longer drop Ice Cubes.
   - Polar Bear: MDF 65 → 55
   - Tellurium Golems: Tellurium Pulse deals an additional 20% of the target's HP.
 - Rebalanced several scrolls:
@@ -72,12 +76,28 @@ The changelog below may be lengthy, but if you take the time to read it, I think
   - DEF ★/MDF ★ Scroll: +3 → +2
   - EVA Scroll: +1% → +2%
   - MCR Scroll: -1.5% → -3%
-- Revamped glove progression:
-  - Bandito Gloves: CRI +1% → +0.5%
-  - Henry's Gloves: ATK 2 → 4; HIT +6% → +8%; CRI +1.5% → +2%; Upgrade Slots 0 → 1
-  - Scaly Gloves: ATK 5 → 3; HIT +8% → +6%; CRI +2% → +1.5%
-  - These changes effectively swap Henry's Gloves and Scaly Gloves in progression.
-    - Although Henry's Gloves can be obtained earlier, they're more "exclusive" since they are a boss drop.
+  - Vial of Poison can be used as an upgrader, making a weapon inflict Poisoned.
+- Equipment balancing:
+  - Daggers and Knuckles no longer grant AGI.
+  - Condensed Gel variants and the Vigilante's Charm no longer provide ATK, MAT, or AGI.
+  - Reduced Water Elemental's Flow effects from 15%/30% → 10%/20%
+  - Greaves can now be worn by everyone.
+  - Revamped glove progression:
+    - Bandito Gloves: CRI +1% → +0.5%
+    - Henry's Gloves: ATK 2 → 4; HIT +6% → +8%; CRI +1.5% → +2%; Upgrade Slots 0 → 1
+    - Scaly Gloves: ATK 5 → 3; HIT +8% → +6%; CRI +2% → +1.5%
+    - These changes effectively swap Henry's Gloves and Scaly Gloves in progression.
+      - Although Henry's Gloves can be obtained earlier, they're more "exclusive" since they are a boss drop.
+  - Harmony, Grass Knuckles, and Frost Edge no longer use earlier staves/daggers as ingredients.
+  - Nerfed Gilded Coin Bit Rate from 1.5x → 1.25x
+  - Nerfed the Dark damage reduction of tellurium equipment.
+  - Nerfed Shield of the Hero Darkfire resistance from 100% → 50%
+  - Buffed Seshat's Charm drop rate from 1/100 → 1/50
+  - Starting in Chapter 5, Seshat's Tome will drop at a rate of 1/100
+  - Buffed Stalactite drop rate from 1/30 → 1/20
+  - Added Gazer Goop x5 to the Charm of Duality recipe.
+  - Added Feral Rat Fur x3 to the Bloodwave Headband and Vortex Headband recipes.
+- Added Raw Truffle x2 to the Mana Fritters recipe.
 - Graphical improvements:
   - Changed the title screen, chapter splash screens, font, and window skin.
   - Map:
@@ -99,31 +119,13 @@ The changelog below may be lengthy, but if you take the time to read it, I think
 - Simplified the General Store's stock.
 - Rather than teleporting to his bed or throne, the king will walk from one to the other.
   - This is the first instance of a character with a "schedule", we plan to implement a lot more of this in the future!
-- Harmony, Grass Knuckles, and Frost Edge no longer use earlier staves/daggers as ingredients.
-- Condensed Gel variants and the Vigilante's Charm no longer provide ATK, MAT, or AGI.
 - Moved many cooking recipes from the pot to the campfire.
 - Doubled Claire's outgoing healing.
-- Vial of Poison can be used as an upgrader, making a weapon inflict Poisoned.
-- Enemies using Cure II will no longer apply Rejuvenation.
-- Reduced Water Elemental's Flow effects from 15%/30% → 10%/20%
-- Nerfed Gilded Coin Bit Rate from 1.5x → 1.25x
-- Nerfed the Dark damage reduction of tellurium equipment.
-- Nerfed Shield of the Hero Darkfire resistance from 100% → 50%.
-- Buffed Seshat's Charm drop rate from 1/100 → 1/50.
-- Starting in Chapter 5, Seshat's Tome will drop at a rate of 1/100.
-- Buffed Stalactite drop rate from 1/30 → 1/20.
-- Darkhounds now drop Iron Wristbraces instead of Silver Wristbraces.
-- Living Plants now drop Worms.
-- Werewolves, Chilling Apparitions, and Ice Slimes no longer drop Ice Cubes.
 - Tellurium Golems change appearance after inflicted with Heated Metal.
 - Buffed Starfruit MP recovery from 5% → 20%, and it now gives Well Fed.
 - Increased time for Exhaustion to set in from 36 → 48 hours.
 - Completing the quest "The Dandy Toads of Adon" now rewards you with 300B instead of an Enchanted Anti-Magic Charm.
 - Made the Advanced Salvage Kit recipe much easier.
-- Added Raw Truffle x2 to the Mana Fritters recipe.
-- Added Gazer Goop x5 to the Charm of Duality recipe.
-- Added Feral Rat Fur x3 to the Bloodwave Headband and Vortex Headband recipes.
-- Greaves can now be worn by everyone.
 - Moved the Voyager Boots and Globetrotter Boots out of the General Store and into actual shops.
 - The Dispel Potion's description now shows what status effects it cures.
 - Removed the Crude Hammer.
