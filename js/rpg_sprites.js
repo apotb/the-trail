@@ -56,8 +56,9 @@ Sprite_Base.prototype.updateAnimationSprites = function() {
     }
 };
 
-Sprite_Base.prototype.startAnimation = function(animation, mirror, delay) {
+Sprite_Base.prototype.startAnimation = function(animation, mirror, delay, muteSE=false) {
     var sprite = new Sprite_Animation();
+    sprite._muteSE = muteSE;
     sprite.setup(this._effectTarget, animation, mirror, delay);
     this.parent.addChild(sprite);
     this._animationSprites.push(sprite);
@@ -1459,7 +1460,7 @@ Sprite_Animation.prototype.processTimingData = function(timing) {
         this.startHiding(duration);
         break;
     }
-    if (!this._duplicated && timing.se) {
+    if (!this._duplicated && timing.se && !this._muteSE) {
         AudioManager.playSe(timing.se);
     }
 };

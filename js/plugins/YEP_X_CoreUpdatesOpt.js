@@ -1112,6 +1112,7 @@ Scene_Skill.prototype.create = function() {
   this.createSkillTypeWindow();
   this.createStatusWindow();
   this.createItemWindow();
+  this.createAnimationWindow();
   this.createActorWindow();
   this.refreshActor();
 };

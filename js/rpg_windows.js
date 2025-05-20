@@ -2311,6 +2311,49 @@ Window_SkillList.prototype.refresh = function() {
 };
 
 //-----------------------------------------------------------------------------
+// Window_SkillAnimation
+//
+// The window for display skill animations on the skill screen.
+
+function Window_SkillAnimation() {
+    this.initialize.apply(this, arguments);
+}
+
+Window_SkillAnimation.prototype = Object.create(Window_Base.prototype);
+Window_SkillAnimation.prototype.constructor = Window_SkillAnimation;
+
+Window_SkillAnimation.prototype.initialize = function(x, y, width, height) {
+    Window_Base.prototype.initialize.call(this, x, y, width, height);
+    this._mirror = false;
+    this._delay = 60;
+    this.createBackground();
+    this.createTargetSprite();
+};
+
+Window_SkillAnimation.prototype.createBackground = function() {
+    const bitmap = new Bitmap(this.width, this.height);
+    bitmap.fillRect(0, 0, this.width, this.height, 'black');
+    this._windowBackSprite.bitmap = bitmap;
+    this.backOpacity = 255;
+};
+
+Window_SkillAnimation.prototype.createTargetSprite = function() {
+    this._targetSprite = new Sprite_Base();
+    this._targetSprite.x = this.width / 2;
+    this._targetSprite.y = this.height * 3/4;
+    this.addChild(this._targetSprite);
+};
+
+Window_SkillAnimation.prototype.animation = function() {
+    return this.parent.parent.item()?.animationId || null;
+};
+
+Window_SkillAnimation.prototype.update = function() {
+    Window_Base.prototype.update.call(this);
+    if (this.animation() && !this._targetSprite.isAnimationPlaying()) this._targetSprite.startAnimation($dataAnimations[this.animation()], this._mirror, this._delay, true);
+};
+
+//-----------------------------------------------------------------------------
 // Window_EquipStatus
 //
 // The window for displaying parameter changes on the equipment screen.
