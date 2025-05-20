@@ -2649,7 +2649,7 @@ Window_SkillType.prototype.makeCommandList = function() {
         skillTypes.sort(function(a, b){return a-b});
         skillTypes.forEach(function(stypeId) {
             var name = $dataSystem.skillTypes[stypeId];
-            this.addCommand(name, 'skill', true, stypeId);
+            this.addCommand(name, 'skill', this._actor.hasSkillType(stypeId), stypeId);
         }, this);
     }
 };
@@ -2660,8 +2660,8 @@ Window_SkillType.prototype.makeCommandList = function() {
 
 Window_ActorCommand.prototype.addSkillCommands = function() {
     var skillTypes = this._actor.addedSkillTypes();
-    skillTypes.splice(2,1); // splices Passive skill category from Window_ActorCommand
-    if ($gameMap.mapId() == 4) skillTypes = [4];
+    if ($gameMap.mapId() == 4) skillTypes = [4]; // Inside Fancy Stew
+    else skillTypes = skillTypes.filter(stypeId => this._actor.hasSkillType(stypeId) && stypeId !== 3); // Filter out Passive and empty skill types
     skillTypes.sort(function(a, b){return a-b});
     skillTypes.forEach(function(stypeId) {
         var name = $dataSystem.skillTypes[stypeId];

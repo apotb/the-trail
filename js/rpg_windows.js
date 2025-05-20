@@ -2145,8 +2145,12 @@ Window_SkillType.prototype.selectLast = function() {
     if (skill) {
         this.selectExt(skill.stypeId);
     } else {
-        this.select(0);
+        this.selectExt(this.firstEnabledExt());
     }
+};
+
+Window_SkillType.prototype.firstEnabledExt = function() {
+    return this._list.find(command => this._actor.hasSkillType(command.ext))?.ext || 0;
 };
 
 //-----------------------------------------------------------------------------
