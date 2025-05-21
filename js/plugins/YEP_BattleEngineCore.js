@@ -3231,14 +3231,16 @@ Sprite_Actor.prototype.refreshMotion = function() {
 Sprite_Enemy.prototype.preSpriteInitialize = function(battler) {
     Sprite_Battler.prototype.preSpriteInitialize.call(this, battler);
     this._visualSelect = Yanfly.Param.BECEnemySelect;
-    if (this._visualSelect) this.createVisualSelectWindow();
+    if (this._visualSelect && SceneManager._scene instanceof Scene_Battle) this.createVisualSelectWindow();
 };
 
 Yanfly.BEC.Sprite_Enemy_update = Sprite_Enemy.prototype.update;
 Sprite_Enemy.prototype.update = function() {
     Yanfly.BEC.Sprite_Enemy_update.call(this);
-    this.addVisualSelectWindow();
-    this.checkExistInSceneChildren()
+    if (SceneManager._scene instanceof Scene_Battle) {
+      this.addVisualSelectWindow();
+      this.checkExistInSceneChildren();
+    }
 };
 
 Sprite_Enemy.prototype.addVisualSelectWindow = function() {

@@ -2613,6 +2613,7 @@ Sprite_Enemy.prototype.adjustSVShadowSettings = function() {
     const heightFactor = Math.pow(1 + this.addFloatingHeight(), 1/5);
     this._shadowSprite.scale.x = scaleX * this._enemy.spriteScaleX() * heightFactor * (64 / this.width) * -1;
     this._shadowSprite.scale.y = scaleY * this._enemy.spriteScaleY() * heightFactor * (64 / this.height) * -0.5;
+    this._shadowSprite.visible = SceneManager._scene instanceof Scene_Battle;
 };
 
 Sprite_Enemy.prototype.updateMotion = function() {

@@ -2302,6 +2302,7 @@ Window_SkillList.prototype.drawSkillCost = function(skill, x, y, width) {
 
 Window_SkillList.prototype.updateHelp = function() {
     this.setHelpWindowItem(this.item());
+    SceneManager._scene._animationWindow._forceNewAnimation = true;
 };
 
 Window_SkillList.prototype.refresh = function() {
@@ -2327,7 +2328,6 @@ Window_SkillAnimation.prototype.initialize = function(x, y, width, height) {
     this._mirror = false;
     this._delay = 60;
     this.createBackground();
-    this.createTargetSprite();
 };
 
 Window_SkillAnimation.prototype.createBackground = function() {
@@ -2338,19 +2338,86 @@ Window_SkillAnimation.prototype.createBackground = function() {
 };
 
 Window_SkillAnimation.prototype.createTargetSprite = function() {
-    this._targetSprite = new Sprite_Base();
-    this._targetSprite.x = this.width / 2;
-    this._targetSprite.y = this.height * 3/4;
+    if (this._targetSprite) this.removeTargetSprite();
+    let x = this.width / 2;
+    let y = this.height / 3;
+    this._targetSprite = new Sprite_Enemy(new Game_Enemy(3, x, y));
+    this._targetSprite._battler._svBattlerName = this.dummyBattler();
     this.addChild(this._targetSprite);
 };
 
-Window_SkillAnimation.prototype.animation = function() {
-    return this.parent.parent.item()?.animationId || null;
+Window_SkillAnimation.prototype.removeTargetSprite = function() {
+    if (!this._targetSprite) return;
+    this.removeAnimationSprite();
+    this.removeChild(this._targetSprite);
+    this._targetSprite = null;
+};
+
+Window_SkillAnimation.prototype.removeAnimationSprite = function() {
+    if (this._targetSprite?._animationSprites[0]) this.removeChild(this._targetSprite._animationSprites[0]);
+};
+
+Window_SkillAnimation.prototype.skill = function() {
+    return SceneManager._scene.item();
+};
+
+Window_SkillAnimation.prototype.actor = function() {
+    return SceneManager._scene.actor();
 };
 
 Window_SkillAnimation.prototype.update = function() {
     Window_Base.prototype.update.call(this);
-    if (this.animation() && !this._targetSprite.isAnimationPlaying()) this._targetSprite.startAnimation($dataAnimations[this.animation()], this._mirror, this._delay, true);
+
+    if (!SceneManager._scene._itemWindow.active) return this.removeTargetSprite();
+
+    if (this._forceNewAnimation) {
+        this._forceNewAnimation = false;
+        this.createTargetSprite();
+        this._targetSprite._battler.requestMotion([9, 10].contains(this.skill()?.scope) ? 'dead' : 'walk');
+    }
+    
+    if (this.skill() && !this._targetSprite.isAnimationPlaying()) {
+        this._targetSprite.startAnimation($dataAnimations[this.skill().animationId], this._mirror, this._delay, true);
+
+        // Mask
+        if (!this._animationMask) {
+            this._animationMask = new PIXI.Graphics();
+            this._animationMask.beginFill(0xFFFFFF);
+            this._animationMask.drawRect(0, 0, this.width, this.height);
+            this._animationMask.endFill();
+            this._animationMask.x = this.x;
+            this._animationMask.y = this.y;
+            SceneManager._scene.addChild(this._animationMask);
+        }
+        if (this._targetSprite._animationSprites[0]) this._targetSprite._animationSprites[0].mask = this._animationMask;
+    }
+
+    this._targetSprite.setMirror(this.skill()?.scope >= 7);
+};
+
+Window_SkillAnimation.prototype.dummyBattler = function() {
+    let otherMembers = $gameParty.members().filter(m => m !== this.actor());
+    let actor = otherMembers[Math.floor(Math.random() * otherMembers.length)];
+    switch (this.skill()?.scope) {
+        case 1:         // 1 Enemy
+        case 2:         // All Enemies
+        case 3:         // 1 Random Enemy
+        case 4:         // 2 Random Enemies
+        case 5:         // 3 Random Enemies
+        case 6:         // 4 Random Enemies
+            return $dataEnemies[3].sideviewBattler[0];
+        case 7:         // 1 Ally
+        case 8:         // All Allies
+            return actor.battlerName();
+        case 9:         // 1 Ally (Dead)
+        case 10:        // All Allies (Dead)
+            return actor.battlerName();
+        case 11:        // The User
+            return this.actor().battlerName();
+        case 0:         // None
+        default:        // No skill
+            return 'Null';
+    }
 };
 
 //-----------------------------------------------------------------------------
