@@ -158,6 +158,7 @@ The changelog below may be lengthy, but if you take the time to read it, I think
 - Fixed not being able to run away from Ice Golems.
 - Fixed the Trailia statue summary window always showing +/- 0% outgoing/incoming light damage.
 - Fixed being able to go to Telluria using Sam's door without having triggered the Telluria intro cutscene.
+- Fixed blurry text on the tracked quest window.
 - Fixed Ice Golems not respawning.
 - Fixed Ice Guard not granting +1 BP.
 - Fixed Heedup Berry not being usable outside of battle if at full HP.
