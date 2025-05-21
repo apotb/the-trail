@@ -14773,6 +14773,128 @@
         "parameters": []
       },
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Back in Blood"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "!$gameSystem._backInBlood"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameSystem._backInBlood = true;"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "Quest Add 42"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          9,
+          44,
+          true
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest 42 Complete Objective 1"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest 42 Complete Objective 2"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest 42 Show Objective 3"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 2,
+        "parameters": [
+          9,
+          26,
+          true
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 3,
+        "parameters": [
+          "Quest 42 Complete Objective 1"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 3,
+        "parameters": [
+          "Quest 42 Show Objective 2"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
