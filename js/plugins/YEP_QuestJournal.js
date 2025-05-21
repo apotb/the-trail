@@ -3076,6 +3076,7 @@ Game_System.prototype.questSetCompletedRange = function(range) {
     var questId = range[i];
     this.questSetCompleted(questId);
   }
+  OrangeGreenworks.setStat('questCompletion', this.questCompletionRate());
 };
 
 Game_System.prototype.questSetFailed = function(questId) {
@@ -3633,6 +3634,10 @@ Game_System.prototype.totalQuestsKnown = function() {
 
 Game_System.prototype.totalQuestsInGame = function() {
   return Yanfly.Quest.totalCount - Yanfly.Param.UnusedQuests;
+};
+
+Game_System.prototype.questCompletionRate = function() {
+  return Math.floor((this.totalQuestsCompleted() / this.totalQuestsInGame()) * 100)
 };
 
 Game_System.prototype.totalQuestTypes = function(category, type) {

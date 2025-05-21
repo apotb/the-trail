@@ -16,7 +16,6 @@ The changelog below may be lengthy, but if you take the time to read it, I think
 - Added a leaderboard for Fish Caught. It can be accessed by speaking to the fisherman in Telluria Castle Town.
 - Added an animation preview to the skill menu.
 - Added a golden First Cleric statue in the Frozen Labyrinth.
-- 1 new quest: Back in Blood
 - 4 new items:
   - Cleansing Scroll ★
   - CRI Scroll
@@ -46,6 +45,10 @@ The changelog below may be lengthy, but if you take the time to read it, I think
   - Purple Assassin
   - Cleftface Zealot
   - Sentinel
+- 1 new quest: Back in Blood
+- 2 new achievements:
+  - It's Super Effective!
+  - No Stone Unturned
 
 ### Changes
 - Time moves slower:

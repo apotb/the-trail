@@ -1862,6 +1862,7 @@ Game_Action.prototype.executeDamage = function(target, value) {
       }
       result.rate = this.calcElementRate(target);
     // End of copy from LGP_BetterDamagePopup
+    OrangeGreenworks.setStat('highestEffectiveRate', Math.round(result.rate * 100));
     value = this.onRespondStateEffects(target, value);
     value = this.onPostDamageStateEffects(target, value);
 };
