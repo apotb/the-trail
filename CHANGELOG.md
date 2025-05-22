@@ -56,6 +56,7 @@ The changelog below may be lengthy, but if you take the time to read it, I think
   - If the Magical Ocarina is used, 1 real-life second is 1 → 2 in-game seconds.
 - Everyone gets less DEF, MDF, and AGI from leveling up. They will gain more MHP to compensate.
 - Skill rebalancing:
+  - Nerfed [P] Steadfast duration from 5 → 3 turns
   - Nerfed Wand Impulse MAT rate from 400% → 325%
   - Nerfed Magical Breeze Winded rate from 100% → 25%
   - Buffed Magical Breeze MAT rate from 400% → 500%
@@ -63,6 +64,8 @@ The changelog below may be lengthy, but if you take the time to read it, I think
   - Buffed Channel Divinity II MAT rate from 400% → 500%
   - Removed Soul Barrier I from Player 3's skill pool.
   - Player 3 now learns Dispell at level 16 → 17
+  - Nerfed [P] Masterful from +10% → +5% physical lifesteal after 2500 → 5000 kills
+  - Nerfed [P] Assassin from +30% → +20% damage against enemies with full HP
 - Rebalanced several enemies:
   - Enemies using Cure II no longer apply Rejuvenation.
   - Living Plants now drop Worms.

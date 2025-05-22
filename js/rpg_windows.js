@@ -2302,7 +2302,7 @@ Window_SkillList.prototype.drawSkillCost = function(skill, x, y, width) {
 
 Window_SkillList.prototype.updateHelp = function() {
     this.setHelpWindowItem(this.item());
-    SceneManager._scene._animationWindow._forceNewAnimation = true;
+    if (SceneManager._scene instanceof Scene_Skill) SceneManager._scene._animationWindow._forceNewAnimation = true;
 };
 
 Window_SkillList.prototype.refresh = function() {
