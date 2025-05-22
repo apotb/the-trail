@@ -105,6 +105,9 @@ The changelog below may be lengthy, but if you take the time to read it, I think
   - Harmony, Grass Knuckles, and Frost Edge no longer use earlier staves/daggers as ingredients.
   - Nerfed Gilded Coin Bit Rate from 1.5x → 1.25x
   - Nerfed the Dark damage reduction of tellurium equipment.
+  - Nerfed Elemental/Fiery Lace outgoing elemental damage from +10%/+20% → +8%/15%
+  - Nerfed Fiery Harp's heal chance/rate from 60%/12% → 50%/8%
+  - Nerfed Conjurer's Harp heal rate from 8% → 6%
   - Nerfed Shield of the Hero Darkfire resistance from 100% → 50%
   - Buffed Seshat's Charm drop rate from 1/100 → 1/50
   - Starting in Chapter 5, Seshat's Tome will drop at a rate of 1/100
