@@ -7,4 +7,8 @@ battle = function(troop) {
 
 resetItems = function() {
     $dataWeapons.concat($dataArmors).filter(i => i && i.id > Yanfly.Param.ItemStartingId).forEach(i => ItemManager.effectIUSResetStat(i, 'FULL'));
-}
+};
+
+allItems = function() {
+    $dataItems.filter(item => item && item.name !== '').forEach(item => $gameParty.gainItem(item, 9999));
+};

@@ -7805,12 +7805,19 @@
       "variance": 0
     },
     "description": "Purified water blessed by Trailia herself. You\nshouldn't drink it, but try using it on a \\nl[9] enemy!",
-    "effects": [],
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 66,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
     "iconIndex": 809,
     "itypeId": 1,
     "name": "Holy Water",
-    "note": "<Post-Damage Eval>\nelements = target.enemy().elements;\nif (elements.contains(\"DARK\")) target.addState(66);\n</Post-Damage Eval>",
+    "note": "",
     "occasion": 1,
     "price": 20,
     "repeats": 1,
