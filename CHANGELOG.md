@@ -83,6 +83,7 @@ The changelog below may be lengthy, but if you take the time to read it, I think
   - Ice Slime: MDF 75 → 60
   - Werewolves, Chilling Apparitions, and Ice Slimes no longer drop Ice Cubes.
   - Polar Bear: MDF 65 → 55
+  - Apocalypse: True Darkness now bypasses Shield of Faith.
   - Tellurium Golems: Tellurium Pulse deals an additional 20% of the target's HP.
 - Rebalanced several scrolls:
   - DEF/MDF Scroll: +2 → +1

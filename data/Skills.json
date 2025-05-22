@@ -3688,12 +3688,12 @@
       }
     ],
     "hitType": 2,
-    "iconIndex": 1459,
+    "iconIndex": 1463,
     "message1": " casts %1!",
     "message2": "",
     "mpCost": 7,
     "name": "True Darkness",
-    "note": "<Boost Damage>\n\n<Pre-Damage Eval>\nthis._preSP = target.barrierPoints();\n</Pre-Damage Eval>\n\n<Post-Damage Eval>\nvar darkness = value - (this._preSP - target.barrierPoints());\ntarget._trueDarkness = target.hp != 0 ? (target.trueDarkness() + darkness) : 0;\n</Post-Damage Eval>\n\n<action copy: skill:7>",
+    "note": "<Boost Damage>\n<Barrier Penetration: 100%>\n\n<Post-Damage Eval>\ntarget._trueDarkness = target.hp !== 0 ? (target.trueDarkness() + value) : 0;\nif (target.trueDarkness() === 0) target.removeState(198);\n</Post-Damage Eval>\n\n<action copy: skill:7>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -5242,7 +5242,7 @@
     "message2": "",
     "mpCost": 7,
     "name": "Hex",
-    "note": "<Boost Damage>\n\n<Pre-Damage Eval>\nthis._preSP = target.barrierPoints();\n</Pre-Damage Eval>\n\n<Post-Damage Eval>\nvar darkness = value - (this._preSP - target.barrierPoints());\ntarget._trueDarkness = target.hp != 0 ? (target.trueDarkness() + darkness) : 0;\n</Post-Damage Eval>\n\n<action copy: skill:7>",
+    "note": "<Boost Damage>\n<Barrier Penetration: 100%>\n\n<Post-Damage Eval>\ntarget._trueDarkness = target.hp !== 0 ? (target.trueDarkness() + value) : 0;\nif (target.trueDarkness() === 0) target.removeState(217);\n</Post-Damage Eval>\n\n<action copy: skill:7>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -5264,7 +5264,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Engulf an enemy in solid stone. Affects DEF just like \\it[63],\nand has a higher chance to stun enemies. \\c[27]\\bpdamage[500]%\\c[0] MAT rate.",
+    "description": "Engulf an enemy in solid stone. Affects DEF just like \\is[63],\nand has a higher chance to stun enemies. \\c[27]\\bpdamage[500]%\\c[0] MAT rate.",
     "effects": [
       {
         "code": 21,
