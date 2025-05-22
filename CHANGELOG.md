@@ -14,7 +14,6 @@ The changelog below may be lengthy, but if you take the time to read it, I think
   - The game will also autosave before boss fights.
 - Added 2 warp doors in Sam's basement that lead to Bladesville and Telluria Castle Town.
 - Added a leaderboard for Fish Caught. It can be accessed by speaking to the fisherman in Telluria Castle Town.
-- Added an animation preview to the skill menu.
 - Added a golden First Cleric statue in the Frozen Labyrinth.
 - 4 new skills:
   - [P] Elemental I: P1 Passive @ L30
@@ -127,6 +126,9 @@ The changelog below may be lengthy, but if you take the time to read it, I think
     - Improved scaling of floating enemies' shadows.
     - Enemies no longer show their names all the time.
     - Updated battle select cursor sprites.
+  - Menus:
+    - Added an animation preview to the skill menu.
+    - The "Damage Types" section of the status menu now indicates which damage types are currently active.
 - Laeryidyean's forest improvements:
   - Skeleton knights revive much more gradually.
   - The first boulder in the Left Connector can be pushed from either side.

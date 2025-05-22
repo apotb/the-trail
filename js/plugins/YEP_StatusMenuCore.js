@@ -1109,8 +1109,12 @@ Window_StatusInfo.prototype.drawElementData = function(eleId, dx, dy, dw) {
     var text2 = "↗ " + (eleRateOut * 100).toFixed(Yanfly.Param.StatusEleDec) + '%';
     this.setRateColor(eleRate);
     this.drawText(text1, dx - 140, dy, dw, 'right');
-    this.setRateColor(eleRateOut);
-    this.drawText(text2, dx, dy, dw, 'right');
+    if (this._actor.attackElements().contains(eleId) || eleId === 11) { // 11: Healing element
+      this.setRateColor(eleRateOut);
+      this.drawText(text2, dx, dy, dw, 'right');
+    } else {
+      this.drawTextEx('\x1bMSGCORE[2]\\c[8]' + text2, dx + dw - this.textWidthEx(text2), dy);
+    }
 };
 
 Window_StatusInfo.prototype.drawStates = function() {
