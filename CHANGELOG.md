@@ -16,6 +16,12 @@ The changelog below may be lengthy, but if you take the time to read it, I think
 - Added a leaderboard for Fish Caught. It can be accessed by speaking to the fisherman in Telluria Castle Town.
 - Added an animation preview to the skill menu.
 - Added a golden First Cleric statue in the Frozen Labyrinth.
+- 4 new skills:
+  - [P] Elemental I: P1 Passive @ L30
+    - Prolong is now learned at level 35 → 30
+  - Earth Power II: P2 Magic @ L35
+  - Aegis of Trailia: P3 Magic @ L35
+  - [P] Agility II: P4 Passive @ L35
 - 4 new items:
   - Cleansing Scroll ★
   - CRI Scroll
