@@ -2713,6 +2713,7 @@ Game_BattlerBase.prototype.die = function() {
     this._hp = 0;
     this.clearStates();
     this.clearBuffs();
+    delete this._motionOverride;
     if (this.isEnemy()) if (this.killer().isEquipped) if (this.killer().isEquipped($dataWeapons[27])) OrangeGreenworks.activateAchievement('BATTLE_SHOVEL');
 };
 

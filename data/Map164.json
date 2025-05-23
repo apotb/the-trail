@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 35,
-  "note": "",
+  "note": "<Indoors>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -9296,43 +9296,6 @@
               "code": 205,
               "indent": 0,
               "parameters": [
-                2,
-                {
-                  "list": [
-                    {
-                      "code": 42,
-                      "parameters": [
-                        0
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 42,
-                  "parameters": [
-                    0
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
                 3,
                 {
                   "list": [
@@ -9570,50 +9533,6 @@
               "indent": 0,
               "parameters": [
                 120
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                2,
-                {
-                  "list": [
-                    {
-                      "code": 45,
-                      "parameters": [
-                        "this.fade(3);"
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 45,
-                  "parameters": [
-                    "this.fade(3);"
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                180
               ]
             },
             {
@@ -10042,23 +9961,6 @@
               ]
             },
             {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                1,
-                0
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Everything changed forever when the evil god attacked."
-              ]
-            },
-            {
               "code": 205,
               "indent": 0,
               "parameters": [
@@ -10257,7 +10159,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "An attack that could not be carried out by pure violence... no, something worse."
+                "It attacked. An attack that could not be carried out by pure violence... no, something worse."
               ]
             },
             {

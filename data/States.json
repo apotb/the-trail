@@ -7380,7 +7380,7 @@
     "minTurns": 3,
     "motion": 1,
     "name": "Hex",
-    "note": "<Category: Dark>\n<Category: debuff>\n<Category: severe debuff>\n\n<Reapply Ignore Turns>\n\n<Custom Apply Effect>\ntarget._trueDarkness = target.hp !== 0 ? (target.trueDarkness() + value) : 0;\nif (target.trueDarkness() === 0) target.removeState(217);\n</Custom Apply Effect>\n\n<Custom Remove Effect>\ntarget._trueDarkness = 0;\n</Custom Remove Effect>\n\n<Custom Leave Effect>\nuser.startAnimation(236);\nuser.gainHp(-user.mhp);\n</Custom Leave Effect>\n\n<Cannot Select: Skill 116>\n\n<Help Description>\nThis battler will die once this state expires. Remove by healing away \\c[30]\\evalText<<this._battler.trueDarkness()>> darkness\\c[0].\n</Help Description>",
+    "note": "<Category: Dark>\n<Category: debuff>\n<Category: severe debuff>\n\n<Reapply Ignore Turns>\n\n<Custom Apply Effect>\ntarget._trueDarkness = target.hp !== 0 ? (target.trueDarkness() + value * 2) : 0;\nif (target.trueDarkness() === 0) target.removeState(217);\n</Custom Apply Effect>\n\n<Custom Remove Effect>\ntarget._trueDarkness = 0;\n</Custom Remove Effect>\n\n<Custom Leave Effect>\nuser.startAnimation(236);\nuser.gainHp(-user.mhp);\n</Custom Leave Effect>\n\n<Cannot Select: Skill 116>\n\n<Help Description>\nThis battler will die once this state expires. Remove by healing away \\c[30]\\evalText<<this._battler.trueDarkness()>> darkness\\c[0].\n</Help Description>",
     "overlay": 9,
     "priority": 80,
     "removeAtBattleEnd": true,

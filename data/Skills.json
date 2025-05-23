@@ -3687,7 +3687,7 @@
         "value2": 0
       }
     ],
-    "hitType": 2,
+    "hitType": 0,
     "iconIndex": 1463,
     "message1": " casts %1!",
     "message2": "",
@@ -5223,7 +5223,7 @@
     "damage": {
       "critical": true,
       "elementId": 9,
-      "formula": "a.mat * 4 - b.mdf * 2",
+      "formula": "a.mat * 4 - b.mdf * 1",
       "type": 1,
       "variance": 5
     },
@@ -5236,7 +5236,7 @@
         "value2": 0
       }
     ],
-    "hitType": 2,
+    "hitType": 0,
     "iconIndex": 1461,
     "message1": " casts %1!",
     "message2": "",
