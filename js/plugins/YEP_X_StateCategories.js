@@ -209,7 +209,9 @@ DataManager.processStCResNotetags = function(group) {
         var arr = [];
         note.forEach(c => arr = arr.concat(DataManager.stateCategories[c]));
         arr = arr.filter(n => n);
-        arr.forEach(s => obj.traits.push({code: 14, dataId: s, value: 1}));
+        arr.forEach(s => {
+          if (obj.id !== s) obj.traits.push({code: 14, dataId: s, value: 1}); // States won't resist themselves
+        });
       }
     }
   }

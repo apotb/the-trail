@@ -13009,7 +13009,7 @@
           "enemyValid": false,
           "switchId": 1,
           "switchValid": false,
-          "turnA": 0,
+          "turnA": 1,
           "turnB": 0,
           "turnEnding": false,
           "turnValid": true
@@ -13043,6 +13043,13 @@
             "indent": 0,
             "parameters": [
               "$gameTroop._enemies[0]._motionOverride = 'walk';"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "$gameTroop._enemies[0].addState(211);"
             ]
           },
           {
@@ -13435,6 +13442,24 @@
             ]
           },
           {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              0,
+              1,
+              212
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              0,
+              0,
+              213
+            ]
+          },
+          {
             "code": 355,
             "indent": 0,
             "parameters": [
@@ -13479,6 +13504,33 @@
               0,
               226,
               false
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              0,
+              1,
+              212
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              0,
+              1,
+              213
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              0,
+              0,
+              214
             ]
           },
           {
