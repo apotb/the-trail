@@ -105,6 +105,7 @@ The changelog below may be lengthy, but if you take the time to read it, I think
   - Leather Boots are now crafted rather than purchased.
   - Harmony, Grass Knuckles, and Frost Edge no longer use earlier staves/daggers as ingredients.
   - Nerfed Gilded Coin Bit Rate from 1.5x → 1.25x
+  - Nerfed Hero Sword Replica outgoing element damage from +25% → +10%
   - Nerfed the Dark damage reduction of tellurium equipment.
   - Nerfed Elemental/Fiery Lace outgoing elemental damage from +10%/+20% → +8%/15%
   - Nerfed Fiery Harp's heal chance/rate from 60%/12% → 50%/8%
