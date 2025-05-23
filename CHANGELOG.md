@@ -2,10 +2,10 @@
 Now that you've witnessed the destructive power of Apocalypse first-hand, it's time to take up arms! The thing is, no one really knows where Apocalypse is... so it's up to you to track him down.
 A member of a mysterious cult has been captured, and is being held in the Solus Valley Jail. It'll take some intimidation to get anything out of this guy, but for now, he's your only hint. And who knows? Maybe this lead will take you right to Apocalypse...
 
-Alpha 17 brings an all new challenge, and even more powerful equipment! Deck your party out with the latest additions to the game; you'll need to use everything you can get your hands on to take down your latest foes.
+Alpha 17 brings an all new challenge, and with that comes powerful new equipment! Deck your party out with the latest additions to the game; you'll need to use everything you can get your hands on to take down your latest foes.
 Alongside the additions, there's a ton of quality-of-life changes and graphical improvements. The Trail is looking better than ever!
 
-The changelog below may be lengthy, but if you take the time to read it, I think you'll find it very interesting. There's been a lot of balance changes and major bug fixes you might wanna' know about!
+The changelog below may be lengthy, but if you take the time to read it, I think you'll find it very interesting. There's been a lot of balance changes and major bug fixes you might want to be aware of!
 
 ### Additions
 - Added the Solus Valley Jail and Castle Town Sewers.
@@ -57,7 +57,7 @@ The changelog below may be lengthy, but if you take the time to read it, I think
 
 ### Changes
 - Time moves slower:
-  - By default, 1 real-life second is 2 → 1 in-game seconds.
+  - By default, 1 real-life second is 2 → 1 in-game second.
   - If the Magical Ocarina is used, 1 real-life second is 1 → 2 in-game seconds.
 - Everyone gets less DEF, MDF, and AGI from leveling up. They will gain more MHP to compensate.
 - Skill rebalancing:
@@ -127,7 +127,7 @@ The changelog below may be lengthy, but if you take the time to read it, I think
     - Damage popups are much larger, last longer, and use a bolded font for readability.
     - The item window includes information about damage and added/removed states.
     - Critical hits flash rainbow.
-    - Sprites update between 11-13 frames rather than always 12.
+    - Battler animation speeds are slightly randomized for less robotic movement.
     - Improved scaling of floating enemies' shadows.
     - Enemies no longer show their names all the time.
     - Updated battle select cursor sprites.
@@ -152,7 +152,7 @@ The changelog below may be lengthy, but if you take the time to read it, I think
 - The Dispel Potion's description now shows what status effects it cures.
 - Removed the Crude Hammer.
 - Removed the Wood Salvage Kit; the Woodcutting Axe now serves its original function.
-- Changed how Incorporeal enemies react to physical damage to make it more clear it's not just a miss.
+- Changed how Incorporeal enemies react to physical damage to make it clearer that it's not just a miss.
 - Salvage kits and higher tiers of Bloodlust will be hidden from the crafting menu once obtained.
 - Simplified the armor menu by removing unnecessary categories.
 - Replaced the Dark Forest's puzzle hint with the Great Pyramid's.
@@ -217,7 +217,12 @@ The changelog below may be lengthy, but if you take the time to read it, I think
 - Fixed the player's head clipping into the Fancy Stew's pot.
 - Fixed broken name boxes for a couple knights in Telluria Castle Town.
 
-OUTRO
+Even disregarding the new content, this update brought a lot of polish to The Trail. Every little feature adds up; it's not much longer until The Trail enters beta!
+
+Alpha 18 will see the party facing their most dangerous challenges yet. What lays within the vast wasteland?
+
+Until then...
+the journey continues.
 
 Yours truly,
 AP
