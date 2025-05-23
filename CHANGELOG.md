@@ -141,6 +141,7 @@ The changelog below may be lengthy, but if you take the time to read it, I think
 - Monsters won't respawn while you're in a dungeon.
 - Confused and Paralyzed no longer consume BP on failed actions.
 - Simplified the General Store's stock.
+- All inns grant Well Rested.
 - Rather than teleporting to his bed or throne, the king will walk from one to the other.
   - This is the first instance of a character with a "schedule", we plan to implement a lot more of this in the future!
 - Moved many cooking recipes from the pot to the campfire.
