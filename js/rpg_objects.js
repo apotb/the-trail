@@ -501,6 +501,7 @@ Game_System.prototype.battleTemplate = function(name) {
 // Chapters
 
 Game_System.prototype.chapter = function() {
+    if ($gameVariables.value(84) >= 17)             return 7;
     if ($gameSwitches.value(109))                   return 6;
     if ($gameSelfSwitches.value([8, 122, 'A']))     return 5;
     if ($gameSelfSwitches.value([8, 80, 'B']))      return 4;
@@ -518,7 +519,8 @@ Game_System.prototype.championsTalisman = function() {
         [4, 3, 2, 2, 2, 2, 3, 1],       // 3
         [8, 5, 3, 3, 3, 3, 5, 2],       // 4
         [12, 7, 4, 4, 5, 5, 7, 2],      // 5
-        [16, 10, 6, 6, 8, 8, 9, 3],     // 6
+        [16, 10, 5, 5, 7, 7, 9, 3],     // 6
+        [20, 15, 5, 5, 7, 7, 11, 3]     // 7
     ][this.chapter()];
 };
 
@@ -6056,6 +6058,7 @@ Game_Troop.prototype.performVictory = function() {
 
 Game_Troop.prototype.weaken = function() {
     this.members().filter(e => e.isAlive()).forEach(e => e.setHp(1));
+    this.refreshMembers();
 };
 
 //-----------------------------------------------------------------------------
