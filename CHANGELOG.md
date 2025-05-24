@@ -107,7 +107,8 @@ The changelog below may be lengthy, but if you take the time to read it, I think
   - Nerfed Gilded Coin Bit Rate from 1.5x → 1.25x
   - Nerfed Hero Sword Replica outgoing element damage from +25% → +10%
   - Nerfed the Dark damage reduction of tellurium equipment.
-  - Nerfed Elemental/Fiery Lace outgoing elemental damage from +10%/+20% → +8%/15%
+  - Nerfed Bionomic Globe outgoing elemental damage from +20% → +15%
+  - Nerfed Elemental/Fiery Lace outgoing elemental damage from +10%/+20% → +8%/12%
   - Nerfed Fiery Harp's heal chance/rate from 60%/12% → 50%/8%
   - Nerfed Conjurer's Harp heal rate from 8% → 6%
   - Nerfed Shield of the Hero Darkfire resistance from 100% → 50%
