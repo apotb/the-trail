@@ -103,6 +103,7 @@ The changelog below may be lengthy, but if you take the time to read it, I think
     - Scaly Gloves: ATK 5 → 3; HIT +8% → +6%; CRI +2% → +1.5%
     - These changes effectively swap Henry's Gloves and Scaly Gloves in progression.
       - Although Henry's Gloves can be obtained earlier, they're more "exclusive" since they are a boss drop.
+  - Buffed the physical life steal of all Headbands.
   - Leather Boots are now crafted rather than purchased.
   - Harmony, Grass Knuckles, and Frost Edge no longer use earlier staves/daggers as ingredients.
   - Nerfed Gilded Coin Bit Rate from 1.5x → 1.25x
