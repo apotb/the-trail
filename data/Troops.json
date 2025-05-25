@@ -13019,6 +13019,13 @@
             "code": 355,
             "indent": 0,
             "parameters": [
+              "$gameSelfSwitches.setValue([112, 22, 'A'], false);"
+            ]
+          },
+          {
+            "code": 355,
+            "indent": 0,
+            "parameters": [
               "$gameTroop._enemies[0]._name = \"Statue\";"
             ]
           },
