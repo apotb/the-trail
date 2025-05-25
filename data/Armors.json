@@ -5337,18 +5337,18 @@
   {
     "id": 203,
     "atypeId": 1,
-    "description": "Wisdom passed down in the form of a story over thousands of years.\nReduces \\nl[9] damage by 10% and increases outgoing \\nl[8] damage by 10%.",
-    "etypeId": 6,
+    "description": "Wisdom passed down in the form of a story over thousands of years.\nReduces \\nl[9] damage by 5% and increases outgoing \\nl[8] damage by 5%.",
+    "etypeId": 8,
     "traits": [
       {
         "code": 11,
         "dataId": 9,
-        "value": 0.9
+        "value": 0.95
       }
     ],
     "iconIndex": 808,
     "name": "Holy Scriptures",
-    "note": "<Element Amplify Light: +10%>",
+    "note": "<Element Amplify Light: +5%>",
     "params": [
       0,
       0,

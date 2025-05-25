@@ -97,6 +97,7 @@ The changelog below may be lengthy, but if you take the time to read it, I think
   - Condensed Gel variants and the Vigilante's Charm no longer provide ATK, MAT, or AGI. They also provide less MHP/MMP.
   - Reduced Water Elemental's Flow effects from 15%/30% → 10%/20%
   - Greaves can now be worn by everyone.
+  - Holy Scriptures are now a magic equip, with its effect lowered from 10% → 5%
   - Revamped glove progression:
     - Bandito Gloves: CRI +1% → +0.5%
     - Henry's Gloves: ATK 2 → 4; HIT +6% → +8%; CRI +1.5% → +2%; Upgrade Slots 0 → 1
