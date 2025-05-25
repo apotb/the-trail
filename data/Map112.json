@@ -2889,8 +2889,86 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "The story will repeat after a confirmation."
+                "Will you read the story of the fallen god?"
               ]
+            },
+            {
+              "code": 102,
+              "indent": 1,
+              "parameters": [
+                [
+                  "Yes!",
+                  "No, too long..."
+                ],
+                1,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                0,
+                "Yes!"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 2,
+              "parameters": [
+                "$gameSelfSwitches.setValue([164, 13, 'A'], false);"
+              ]
+            },
+            {
+              "code": 223,
+              "indent": 2,
+              "parameters": [
+                [
+                  -255,
+                  -255,
+                  -255,
+                  0
+                ],
+                180,
+                true
+              ]
+            },
+            {
+              "code": 201,
+              "indent": 2,
+              "parameters": [
+                0,
+                164,
+                13,
+                8,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                1,
+                "No, too long..."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 1,
+              "parameters": []
             },
             {
               "code": 0,

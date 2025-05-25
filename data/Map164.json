@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 35,
-  "note": "<Indoors>",
+  "note": "<Inside>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -8173,11 +8173,9 @@
               "code": 111,
               "indent": 0,
               "parameters": [
-                1,
-                84,
-                0,
-                17,
-                1
+                2,
+                "A",
+                0
               ]
             },
             {
@@ -9321,8 +9319,19 @@
               ]
             },
             {
-              "code": 250,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                1,
+                84,
+                0,
+                16,
+                0
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Chapter",
@@ -9334,7 +9343,7 @@
             },
             {
               "code": 231,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 10,
                 "Chapter7",
@@ -9350,7 +9359,7 @@
             },
             {
               "code": 232,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 10,
                 0,
@@ -9368,14 +9377,14 @@
             },
             {
               "code": 230,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 120
               ]
             },
             {
               "code": 250,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Move1",
@@ -9387,17 +9396,27 @@
             },
             {
               "code": 235,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 10
               ]
             },
             {
               "code": 230,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 120
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 201,
@@ -9450,12 +9469,30 @@
               "code": 230,
               "indent": 0,
               "parameters": [
-                60
+                15
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                1,
+                84,
+                0,
+                16,
+                0
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 1,
+              "parameters": [
+                45
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 1,
@@ -9465,14 +9502,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p2\\lsonThat was something... what do you three make of this?"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 2,
@@ -9482,14 +9519,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p3This... this can't be!"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 3,
@@ -9499,14 +9536,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p4What's wrong, \\N[3]?"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 2,
@@ -9516,35 +9553,35 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p3I don't want any of this to be true... but the evidence"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "is so damning! Everything makes sense! So that's why"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Trailia seems so distant? And that stuff Dilong was"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "telling us about an evil god's \\c[30]soul\\c[0]..."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 2,
@@ -9554,14 +9591,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p3...I think the \\c[30]Purple\\c[0] IS the \\c[30]soul\\c[0] of the evil god!"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 1,
@@ -9571,21 +9608,21 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p2Wha!? So you're saying we just fought a statue"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "possessed by the \\c[30]soul\\c[0] of the evil god?"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 2,
@@ -9595,14 +9632,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p3Not the entire \\c[30]soul\\c[0], but at least a fragment of \\c[30]it\\c[0]."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 3,
@@ -9612,35 +9649,35 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p4Well, that's terrifying. I don't know how these guys could"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "have even gotten their hands on the \\c[30]soul\\c[0]... but now that"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "we've hit another dead end, at least we don't have to"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "engage with the Order of the \\c[30]Purple\\c[0] anymore."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 2,
@@ -9650,21 +9687,21 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p3Not exactly. If that ritual to possess the statue was really"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "just practice... then I think I know what it's practice for."
               ]
             },
             {
               "code": 249,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Mystery",
@@ -9676,7 +9713,7 @@
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 2,
@@ -9686,21 +9723,21 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p3These lunatics... they plan on finding the corpse of the"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "fallen god and reviving it using the \\c[30]Purple\\c[0]!!"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 3,
@@ -9710,14 +9747,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p4What the- why?! That thing is going to kill all of us!"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 2,
@@ -9727,28 +9764,28 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p3Their obsession over \\c[18]Apocalypse\\c[0] has gone too far. They think"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "they'll be spared from \\c[30]his\\c[0] destruction if they contribute to"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\c[30]his\\c[0] plan of world domination. How can they be so stupid?"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 1,
@@ -9758,21 +9795,21 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p2This is crazy. We need to report back to the king straight away! I'm sure"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "he'll know how to get to the wasteland mentioned on the tablet."
               ]
             },
             {
               "code": 122,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 84,
                 84,
@@ -9783,9 +9820,27 @@
             },
             {
               "code": 356,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Quest 37 Show Objective 10"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
               ]
             },
             {
