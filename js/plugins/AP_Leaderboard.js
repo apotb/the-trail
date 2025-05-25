@@ -40,7 +40,7 @@ API_STEAM.userId = function() {
 
 API_LEADERBOARD = new Object();
 
-API_LEADERBOARD._url = `https://script.google.com/macros/s/AKfycby0KHaXUKbUi4aXDCE7eNp-JRbLMJC_86OcgzmZ3gpmI7YUIOTXkWljjeU78kRRsTs/exec`;
+API_LEADERBOARD._url = `https://script.google.com/macros/s/AKfycbxYCy8EA_cRaI62Ijd2-RIWLsGzhrvsOpc_zwJG2YMW2haf7OPfk8mnunYK2d7IZqk/exec`;
 API_LEADERBOARD._dataVariable = 83;
 
 API_LEADERBOARD.leaderboards = function() {
