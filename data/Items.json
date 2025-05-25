@@ -7031,13 +7031,26 @@
       "type": 0,
       "variance": 20
     },
-    "description": "[NOT YET IMPLEMENTED]\nKills all enemies, long recharge based on enemies killed",
-    "effects": [],
+    "description": "Summon an unimaginably powerful force that wipes every enemy off the battlefield.\nDoesn't work on bosses. \\c[2]\\evalText<<$gameVariables.value(86) > 0 ? (\"COOLDOWN: \" + $gameVariables.value(86) + \" HOURS\") : \"This item has a cooldown of 10 days / 240 hours!\">>",
+    "effects": [
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": -1,
+        "value2": 0
+      },
+      {
+        "code": 44,
+        "dataId": 33,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
     "iconIndex": 232,
     "itypeId": 2,
     "name": "Scroll of Silver Sands",
-    "note": "",
+    "note": "<Custom Show Eval>\nvisible = $gameVariables.value(86) === 0;\n</Custom Show Eval>",
     "occasion": 1,
     "price": 0,
     "repeats": 1,

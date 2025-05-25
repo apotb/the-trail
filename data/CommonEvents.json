@@ -5810,12 +5810,23 @@
     "id": 33,
     "list": [
       {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          86,
+          86,
+          0,
+          0,
+          240
+        ]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "Scroll of Silver Sands",
     "switchId": 1,
     "trigger": 0
   },
@@ -5823,12 +5834,91 @@
     "id": 34,
     "list": [
       {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          86,
+          0,
+          0,
+          3
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          86,
+          86,
+          2,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          86,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 2,
+        "parameters": [
+          {
+            "name": "Powerup",
+            "volume": 90,
+            "pitch": 50,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "GabText The \\ii[238] has recharged!"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "ShowGab"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "TIME - Cooldowns",
     "switchId": 1,
     "trigger": 0
   },
@@ -6864,6 +6954,13 @@
         "indent": 0,
         "parameters": [
           41
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          34
         ]
       },
       {
