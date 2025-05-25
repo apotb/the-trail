@@ -5068,6 +5068,13 @@
           {
             "list": [
               {
+                "code": 45,
+                "parameters": [
+                  "this._spriteOffsetX = 0"
+                ],
+                "indent": null
+              },
+              {
                 "code": 14,
                 "parameters": [
                   0,
@@ -5082,6 +5089,19 @@
             "repeat": false,
             "skippable": false,
             "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._spriteOffsetX = 0"
+            ],
+            "indent": null
           }
         ]
       },
