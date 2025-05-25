@@ -1033,8 +1033,8 @@ Sprite_Damage.prototype.drawDefaultNumber = function() {
                 }
             }
         } else {
-            bitmap.textColor = !result.trueDarkness ? LGP.Param.BDPhpRecC : 'rgb(160, 96, 224)';   
-            bitmap.outlineColor = !result.trueDarkness ? LGP.Param.BDPhpRecOC : 'rgb(0, 0, 0)';    
+            bitmap.textColor = !result.trueDarkness ? LGP.Param.BDPhpRecC : 'rgb(160, 96, 224)';
+            bitmap.outlineColor = !result.trueDarkness ? LGP.Param.BDPhpRecOC : 'rgb(0, 0, 0)';
         }
     } else if (result.mpDamage !== 0) {
         if (value > 0) {
