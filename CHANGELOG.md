@@ -113,6 +113,7 @@ The changelog below may be lengthy, but if you take the time to read it, I think
   - Nerfed Fiery Harp's heal chance/rate from 60%/12% → 50%/8%
   - Nerfed Conjurer's Harp heal rate from 8% → 6%
   - Nerfed Shield of the Hero Darkfire resistance from 100% → 50%
+  - Buffed Bandito Cloak DEF from 1 → 2 and EVA from +5% → +10%
   - Buffed Seshat's Charm drop rate from 1/100 → 1/50
   - Starting in Chapter 5, Seshat's Tome will drop at a rate of 1/100
   - Buffed Stalactite drop rate from 1/30 → 1/20
