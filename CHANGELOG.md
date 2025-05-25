@@ -26,7 +26,8 @@ The changelog below may be lengthy, but if you take the time to read it, I think
   - CRI Scroll
   - Sewer Key
   - Chunk of Purple Stone
-- 5 new weapons:
+- 6 new weapons:
+  - Enamor
   - Andy's Dusters MK. II
   - Esoteric Tome
   - Last Breath

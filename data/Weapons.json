@@ -1868,7 +1868,7 @@
   {
     "id": 51,
     "animationId": 143,
-    "description": "A large dark hammer that increases offensive prowess more\nthan a staff, at the cost of substantial healing reduction.",
+    "description": "A large dark hammer that increases outgoing magic damage by\nby 20%, at the cost of 45% reduced outgoing \\nl[11].",
     "etypeId": 1,
     "traits": [
       {
@@ -1894,7 +1894,7 @@
     ],
     "iconIndex": 562,
     "name": "Shadowspec Warhammer",
-    "note": "<Weapon Image: 58>\n<Upgrade Slots: 2>\n\n<Element Magnify Healing: -50%>\n\n<Synthesis Ingredients>\nShadowspec Ingot: 4\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>\n\n<Disassemble Pool: Advanced>\nx2-4 Shadowspec Ingot: 100%\nx1-2 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "note": "<Weapon Image: 58>\n<Upgrade Slots: 2>\n\n<Element Magnify Healing: -45%>\n\n<Synthesis Ingredients>\nShadowspec Ingot: 4\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>\n\n<Disassemble Pool: Advanced>\nx2-4 Shadowspec Ingot: 100%\nx1-2 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       22,
@@ -2083,7 +2083,7 @@
   {
     "id": 56,
     "animationId": 122,
-    "description": "Provides offensive capabilities for a cleric\nat the cost of heavily reduced healing.",
+    "description": "Provides offensive capabilities for a cleric, at\nthe cost of heavily reduced outgoing \\nl[11].",
     "etypeId": 1,
     "traits": [
       {
@@ -2453,7 +2453,7 @@
     ],
     "iconIndex": 829,
     "name": "Violet Tendril",
-    "note": "<Weapon Image: 281>\n<Upgrade Slots: 3>\n\n<Element Amplify Healing: +25%>\n<Element Amplify Dark: +25%>",
+    "note": "<Weapon Image: 281>\n<Upgrade Slots: 3>\n\n<Element Amplify Healing: -40%>\n<Element Amplify Dark: +25%>",
     "params": [
       25,
       25,
@@ -2509,5 +2509,48 @@
     ],
     "price": 5000,
     "wtypeId": 11
+  },
+  {
+    "id": 66,
+    "animationId": 1,
+    "description": "A whip embued with the essence of unrequited love. Essential for a cleric wishing to specialize\nin a hybrid of physical and magical damage. Amplifies outgoing magic damage by 15%.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.05
+      },
+      {
+        "code": 25,
+        "dataId": 0,
+        "value": 1.5
+      }
+    ],
+    "iconIndex": 1207,
+    "name": "Enamor",
+    "note": "<Weapon Image: 281>\n<Upgrade Slots: 1>\n\n<Element Magnify Healing: -50%>\n<Element Amplify Dark: +15%>",
+    "params": [
+      15,
+      15,
+      15,
+      0,
+      30,
+      0,
+      0,
+      0
+    ],
+    "price": 200,
+    "wtypeId": 12
   }
 ]
