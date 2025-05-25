@@ -13943,19 +13943,19 @@
         ]
       },
       {
-        "code": 356,
-        "indent": 1,
-        "parameters": [
-          "Quest Add 42"
-        ]
-      },
-      {
         "code": 111,
         "indent": 1,
         "parameters": [
           9,
           44,
           true
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest Add 42"
         ]
       },
       {
@@ -14009,6 +14009,13 @@
         "code": 356,
         "indent": 3,
         "parameters": [
+          "Quest Add 42"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 3,
+        "parameters": [
           "Quest 42 Complete Objective 1"
         ]
       },
@@ -14018,6 +14025,52 @@
         "parameters": [
           "Quest 42 Show Objective 2"
         ]
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 3,
+        "parameters": [
+          9,
+          18,
+          true
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 4,
+        "parameters": [
+          "Quest Add 42"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 4,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 4,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 3,
+        "parameters": []
       },
       {
         "code": 0,
