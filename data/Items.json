@@ -7283,7 +7283,7 @@
   {
     "id": 247,
     "animationId": 0,
-    "consumable": true,
+    "consumable": false,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -7291,17 +7291,17 @@
       "type": 0,
       "variance": 20
     },
-    "description": "",
+    "description": "A slimy substance secreted by a Cleftface Zealot after its death. Must be a side effect of whatever ritual\nturned it into such a vile creature. Applying this to a weapon increases outgoing \\nl[9] damage by 10%.",
     "effects": [],
     "hitType": 0,
-    "iconIndex": 0,
+    "iconIndex": 1461,
     "itypeId": 1,
-    "name": "",
-    "note": "",
-    "occasion": 0,
-    "price": 0,
+    "name": "Ritual Residue",
+    "note": "<Upgrade Weapon Type: 0>\n<Upgrade Effect>\nEval: item.elementAmplify[9] = item.elementAmplify[9] || 0.0;\nEval: item.elementAmplify[9] += 0.1;\nPrefix: Malicious\nWeight: +2\n</Upgrade Effect>\n<Upgrade Tooltip: +10% \\nl[9] Damage>\n\n<Disassemble Pool: Monster>\nx6-9 Ground Monster Parts: 100%\n</Disassemble Pool: Monster>\n\n<Disassemble Pool: Advanced>\nx1 Dark Essence: 100%\nx1 Dark Essence: 75%\n</Disassemble Pool: Advanced>",
+    "occasion": 3,
+    "price": 120,
     "repeats": 1,
-    "scope": 7,
+    "scope": 0,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0

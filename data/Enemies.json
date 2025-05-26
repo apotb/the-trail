@@ -6735,7 +6735,7 @@
     ],
     "gold": 100,
     "name": "Cleftface Zealot",
-    "note": "<Armor Weakness: Slashing>\n<Element: Dark>\n<Passive State: 57, 137>\n\n<Sideview Battler: Horror1_7>\n<Sideview No Collapse>\n<Weapon Image: 281>\n<Attack Animation: 1>\n\n<AI Priority>\nEval user.hasState(143) +++ Random 20%: Sacrifice\nUser HP% param <= 15%: Sacrifice\nState !== Low Blow +++ Random 30%: Low Blow, Highest ATK\nState === Magical Barrier +++ Random 30%: Shield Break, Highest HP%\nState !== Amnesia +++ Random 10%: Amnesia, Highest ATK\nState !== Silenced +++ Random 10%: Silence, Highest MAT\n</AI Priority>\n\n<Night Boost>\nViolet Tendril: 5% +5%\nLarge Ether: 8.33% +8.33%\nLarge Ether: 8.33% +8.33%\nATK Scroll ★: 10% +10%\nMAT Scroll ★: 10% +10%\nDark Essence: 20% +20%\n</Night Boost>",
+    "note": "<Armor Weakness: Slashing>\n<Element: Dark>\n<Passive State: 57, 137>\n\n<Sideview Battler: Horror1_7>\n<Sideview No Collapse>\n<Weapon Image: 281>\n<Attack Animation: 1>\n\n<AI Priority>\nEval user.hasState(143) +++ Random 20%: Sacrifice\nUser HP% param <= 15%: Sacrifice\nState !== Low Blow +++ Random 30%: Low Blow, Highest ATK\nState === Magical Barrier +++ Random 30%: Shield Break, Highest HP%\nState !== Amnesia +++ Random 10%: Amnesia, Highest ATK\nState !== Silenced +++ Random 10%: Silence, Highest MAT\n</AI Priority>\n\n<Night Boost>\nRitual Residue: 10% +10%\nViolet Tendril: 5% +5%\nLarge Ether: 8.33% +8.33%\nLarge Ether: 8.33% +8.33%\nATK Scroll ★: 10% +10%\nMAT Scroll ★: 10% +10%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       3000,
       0,

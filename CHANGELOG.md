@@ -21,11 +21,12 @@ The changelog below may be lengthy, but if you take the time to read it, I think
   - Earth Power II: P2 Magic @ L35
   - Aegis of Trailia: P3 Magic @ L35
   - [P] Agility II: P4 Passive @ L35
-- 5 new items:
+- 6 new items:
   - Scroll of Silver Sands (implemented!)
   - Cleansing Scroll ★
   - CRI Scroll
   - Sewer Key
+  - Ritual Residue
   - Chunk of Purple Stone
 - 6 new weapons:
   - Enamor
@@ -34,10 +35,11 @@ The changelog below may be lengthy, but if you take the time to read it, I think
   - Last Breath
   - Violet Tendril
   - Twilight
-- 6 new equipment:
+- 7 new equipment:
   - Ice Skates
   - Haloweave Gloves
   - Purple Mage Crystal
+  - Eclipse (Tome)
   - Stoneheart Aegis
   - Stone Dragon Horns
   - Sentinel's Persistence

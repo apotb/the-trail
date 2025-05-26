@@ -12,3 +12,12 @@ resetItems = function() {
 allItems = function() {
     $dataItems.filter(item => item && item.name !== '').forEach(item => $gameParty.gainItem(item, 9999));
 };
+
+allEquips = function() {
+    $dataWeapons.concat($dataArmors).filter(i => i && i.id < Yanfly.Param.ItemStartingId).forEach(i => $gameParty.gainItem(i, 1));
+};
+
+all = function() {
+    allItems();
+    allEquips();
+};
