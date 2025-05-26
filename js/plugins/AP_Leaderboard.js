@@ -219,7 +219,12 @@ Scene_Leaderboard.prototype.createLoginWindow = function() {
 
 Scene_Leaderboard.prototype.refreshCommand = async function() {
     await API_LEADERBOARD.refresh();
-    alert("Leaderboard refreshed");
+    AudioManager.playSe({
+        "name": "Absorb1",
+        "volume": 100,
+        "pitch": 100,
+        "pan": 0
+    });
     this._leaderboardWindow.refresh();
     this._loginWindow.activate();
 };
