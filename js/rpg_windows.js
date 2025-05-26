@@ -5618,7 +5618,10 @@ Window_ActorCommand.prototype.addItemCommand = function() {
 };
 
 Window_ActorCommand.prototype.setup = function(actor) {
-    this._actor = actor;
+    if (actor !== this._actor) {
+        this._actor = actor;
+        this._confirmEscape = false;
+    }
     this.clearCommandList();
     this.makeCommandList();
     this.refresh();
@@ -5628,6 +5631,8 @@ Window_ActorCommand.prototype.setup = function(actor) {
 
     if (this._boosting) this.selectSymbol(this._boosting);
     this._boosting = null;
+
+    if (this._confirmEscape) this.selectSymbol('escape');
 };
 
 Window_ActorCommand.prototype.processOk = function() {
@@ -5652,6 +5657,15 @@ Window_ActorCommand.prototype.selectLast = function() {
                 this.selectExt(skill.stypeId);
             }
         }
+    }
+};
+
+Window_ActorCommand.prototype.processCursorMove = function() {
+    Window_Selectable.prototype.processCursorMove.call(this);
+    if (this.currentSymbol() !== 'escape' && this._confirmEscape) {
+        this._confirmEscape = false;
+        this.makeCommandList();
+        this.refresh();
     }
 };
 

@@ -1823,6 +1823,12 @@ BattleManager.processVictory = function() {
 };
 
 BattleManager.processEscape = function() {
+    const commandWindow = SceneManager._scene._actorCommandWindow;
+    if (!commandWindow._confirmEscape) {
+      commandWindow._confirmEscape = true;
+      commandWindow.setup(commandWindow._actor);
+      return false;
+    }
     $gameParty.performEscape();
     SoundManager.playEscape();
     if ($gameTroop.turnCount() == 1) {

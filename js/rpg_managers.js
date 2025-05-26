@@ -2697,22 +2697,9 @@ BattleManager.processVictory = function() {
     this.endBattle(0);
 };
 
-BattleManager.processEscape = function() {
-    $gameParty.performEscape();
-    SoundManager.playEscape();
-    var success = this._preemptive ? true : (Math.random() < this._escapeRatio);
-    if (success) {
-        this.displayEscapeSuccessMessage();
-        this._escaped = true;
-        this.processAbort();
-    } else {
-        this.displayEscapeFailureMessage();
-        this._escapeRatio += 0.1;
-        $gameParty.clearActions();
-        this.startTurn();
-    }
-    return success;
-};
+/*BattleManager.processEscape = function() {
+    // YEP_BattleEngineCore.js
+};*/
 
 BattleManager.processAbort = function() {
     $gameParty.removeBattleStates();

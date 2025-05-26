@@ -160,6 +160,7 @@ The changelog below may be lengthy, but if you take the time to read it, I think
 - Made the Advanced Salvage Kit recipe much easier.
 - Moved the Voyager Boots and Globetrotter Boots out of the General Store and into actual shops.
 - The Dispel Potion's description now shows what status effects it cures.
+- Running away now requires confirmation.
 - Removed the Crude Hammer.
 - Removed the Wood Salvage Kit; the Woodcutting Axe now serves its original function.
 - Changed how Incorporeal enemies react to physical damage to make it clearer that it's not just a miss.
