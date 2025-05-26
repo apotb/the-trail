@@ -71,6 +71,7 @@ The changelog below may be lengthy, but if you take the time to read it, I think
   - Buffed Channel Divinity II MAT rate from 400% → 500%
   - Removed Soul Barrier I from Player 3's skill pool.
   - Player 3 now learns Dispell at level 16 → 17
+  - Panacea now applies Rejuvenation
   - Nerfed [P] Masterful from +10% → +5% physical lifesteal after 2500 → 5000 kills
   - Nerfed [P] Assassin from +30% → +20% damage against enemies with full HP
 - Rebalanced several enemies:

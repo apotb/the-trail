@@ -810,8 +810,15 @@
       "type": 3,
       "variance": 0
     },
-    "description": "A wave of healing energy flows out from your body.\nRestores \\c[27]\\bp0[75]\\bp=1[80]\\bp=2[85]\\bp=3[90]\\bp=4[95]\\bp=5[100]%\\c[0] of everyone's HP and cures all debuffs.",
-    "effects": [],
+    "description": "A wave of healing energy flows out from your body.\nRestores \\c[27]\\bp0[75]\\bp=1[80]\\bp=2[85]\\bp=3[90]\\bp=4[95]\\bp=5[100]%\\c[0] of everyone's HP, cures all debuffs, and applies \\it[28].",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 28,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
     "iconIndex": 1446,
     "message1": " casts %1!",
