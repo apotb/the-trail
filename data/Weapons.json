@@ -1885,16 +1885,11 @@
         "code": 31,
         "dataId": 16,
         "value": 0
-      },
-      {
-        "code": 25,
-        "dataId": 0,
-        "value": 1.2
       }
     ],
     "iconIndex": 562,
     "name": "Shadowspec Warhammer",
-    "note": "<Weapon Image: 58>\n<Upgrade Slots: 2>\n\n<Element Magnify Healing: -45%>\n\n<Synthesis Ingredients>\nShadowspec Ingot: 4\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>\n\n<Disassemble Pool: Advanced>\nx2-4 Shadowspec Ingot: 100%\nx1-2 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "note": "<Weapon Image: 58>\n<Upgrade Slots: 2>\n\n<Element Magnify Magical: +20%>\n<Element Magnify Healing: -45%>\n\n<Synthesis Ingredients>\nShadowspec Ingot: 4\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>\n\n<Disassemble Pool: Advanced>\nx2-4 Shadowspec Ingot: 100%\nx1-2 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       22,
@@ -2095,16 +2090,11 @@
         "code": 31,
         "dataId": 16,
         "value": 0
-      },
-      {
-        "code": 25,
-        "dataId": 0,
-        "value": 1.1
       }
     ],
     "iconIndex": 412,
     "name": "Steel Hammer",
-    "note": "<Weapon Image: 54>\n<Upgrade Slots: 1>\n\n<Element Magnify Healing: -55%>\n\n<Disassemble Pool: Advanced>\nx1 Steel Ingot: 40%\n</Disassemble Pool: Advanced>",
+    "note": "<Weapon Image: 54>\n<Upgrade Slots: 1>\n\n<Element Magnify Magical: +10%>\n<Element Magnify Healing: -55%>\n\n<Disassemble Pool: Advanced>\nx1 Steel Ingot: 40%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       11,
@@ -2355,11 +2345,6 @@
         "value": 1.1
       },
       {
-        "code": 25,
-        "dataId": 0,
-        "value": 1.1
-      },
-      {
         "code": 23,
         "dataId": 4,
         "value": 1.1
@@ -2367,7 +2352,7 @@
     ],
     "iconIndex": 1233,
     "name": "Esoteric Tome",
-    "note": "<Weapon Image: 26>\n<Upgrade Slots: 3>",
+    "note": "<Weapon Image: 26>\n<Upgrade Slots: 3>\n\n<Element Amplify Magical: +10%>",
     "params": [
       0,
       200,
@@ -2444,16 +2429,11 @@
         "code": 22,
         "dataId": 0,
         "value": 0.1
-      },
-      {
-        "code": 25,
-        "dataId": 0,
-        "value": 1.25
       }
     ],
     "iconIndex": 829,
     "name": "Violet Tendril",
-    "note": "<Weapon Image: 281>\n<Upgrade Slots: 3>\n\n<Element Amplify Healing: -40%>\n<Element Amplify Dark: +25%>",
+    "note": "<Weapon Image: 281>\n<Upgrade Slots: 3>\n\n<Element Magnify Magical: +25%>\n<Element Amplify Dark: +25%>\n<Element Magnify Healing: -40%>",
     "params": [
       25,
       25,
@@ -2530,16 +2510,11 @@
         "code": 22,
         "dataId": 0,
         "value": 0.05
-      },
-      {
-        "code": 25,
-        "dataId": 0,
-        "value": 1.5
       }
     ],
     "iconIndex": 1207,
     "name": "Enamor",
-    "note": "<Weapon Image: 281>\n<Upgrade Slots: 1>\n\n<Element Magnify Healing: -50%>\n<Element Amplify Dark: +15%>",
+    "note": "<Weapon Image: 281>\n<Upgrade Slots: 1>\n\n<Element Magnify Magical: +15%>\n<Element Magnify Healing: -50%>",
     "params": [
       15,
       15,

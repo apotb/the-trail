@@ -299,16 +299,10 @@
     "atypeId": 1,
     "description": "One of those cool floppy hats you see on the\nwizards in books. Provides some extra magic ability.",
     "etypeId": 3,
-    "traits": [
-      {
-        "code": 25,
-        "dataId": 0,
-        "value": 1.01
-      }
-    ],
+    "traits": [],
     "iconIndex": 165,
     "name": "Floppy Hat",
-    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx1-x2 item 51: 100%\n</Disassemble Pool: Basic>",
+    "note": "<Upgrade Slots: 1>\n\n<Element Amplify Magical: +1%>\n\n<Disassemble Pool: Basic>\nx1-x2 item 51: 100%\n</Disassemble Pool: Basic>",
     "params": [
       0,
       3,
@@ -479,16 +473,10 @@
     "atypeId": 1,
     "description": "The floppier the hat, the stronger the magic.",
     "etypeId": 3,
-    "traits": [
-      {
-        "code": 25,
-        "dataId": 0,
-        "value": 1.02
-      }
-    ],
+    "traits": [],
     "iconIndex": 693,
     "name": "Floppier Hat",
-    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx2-x3 item 51: 100%\nx1 Yarn: 70%\n</Disassemble Pool: Basic>",
+    "note": "<Upgrade Slots: 1>\n\n<Element Amplify Magical: +2%>\n\n<Disassemble Pool: Basic>\nx2-x3 item 51: 100%\nx1 Yarn: 70%\n</Disassemble Pool: Basic>",
     "params": [
       0,
       8,
@@ -2143,11 +2131,6 @@
     "etypeId": 9,
     "traits": [
       {
-        "code": 25,
-        "dataId": 0,
-        "value": 1.1
-      },
-      {
         "code": 23,
         "dataId": 4,
         "value": 1.2
@@ -2155,7 +2138,7 @@
     ],
     "iconIndex": 127,
     "name": "Water Elemental's Flow",
-    "note": "<Cannot Rename>",
+    "note": "<Cannot Rename>\n\n<Element Magnify Magical: +10%>",
     "params": [
       0,
       0,
@@ -4344,16 +4327,10 @@
     "atypeId": 1,
     "description": "Floppy to the max! The tip of the hat now sags enough to attract stray\nmagical particles in the air, increasing its power more than ever.",
     "etypeId": 3,
-    "traits": [
-      {
-        "code": 25,
-        "dataId": 0,
-        "value": 1.03
-      }
-    ],
+    "traits": [],
     "iconIndex": 694,
     "name": "Floppiest Hat",
-    "note": "<Upgrade Slots: 2>\n<Optimize Weight: 0.8>\n\n<Disassemble Pool: Basic>\nx4-x7 item 51: 100%\nx3-5 Yarn: 100%\n</Disassemble Pool: Basic>",
+    "note": "<Upgrade Slots: 2>\n<Optimize Weight: 0.8>\n\n<Element Amplify Magical: +3%>\n\n<Disassemble Pool: Basic>\nx4-x7 item 51: 100%\nx3-5 Yarn: 100%\n</Disassemble Pool: Basic>",
     "params": [
       0,
       15,
@@ -4899,7 +4876,7 @@
     "traits": [],
     "iconIndex": 770,
     "name": "Fiery Wristbraces",
-    "note": "<Upgrade Slots: 3>\n\n\n\n<Synthesis Ingredients>\nSilver Wristbraces\nFiery Blood: 5\nEctoplasm: 3\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Upgraded Wristbraces>",
+    "note": "<Upgrade Slots: 3>\n\n<Element Amplify Fire: +5%>\n\n<Synthesis Ingredients>\nSilver Wristbraces\nFiery Blood: 5\nEctoplasm: 3\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Upgraded Wristbraces>",
     "params": [
       0,
       16,
@@ -5262,18 +5239,12 @@
   {
     "id": 200,
     "atypeId": 1,
-    "description": "This is the next level of wristbraces after the\n\\ia[185]! Power creep, am I right?",
+    "description": "This is the next level of wristbraces after the \\ia[185]!\nPower creep, am I right? Icon is temporary.",
     "etypeId": 6,
-    "traits": [
-      {
-        "code": 25,
-        "dataId": 0,
-        "value": 1.05
-      }
-    ],
-    "iconIndex": 770,
+    "traits": [],
+    "iconIndex": 178,
     "name": "Andrew's Wristbraces",
-    "note": "<Upgrade Slots: 4>\n\n<Element Amplify Fire: +10%>\n<Element Amplify Ice: +10%>\n<Element Amplify Electric: +10%>\n<Element Amplify Water: +10%>\n<Element Amplify Earth: +10%>\n<Element Amplify Wind: +10%>\n<Element Amplify Plant: +10%>\n<Element Amplify Metal: +10%>\n<Element Amplify Light: +10%>\n<Element Amplify Dark: +10%>",
+    "note": "<Upgrade Slots: 4>\n\n<Element Amplify Magical: +5%>\n<Element Amplify Fire: +5%>",
     "params": [
       0,
       32,

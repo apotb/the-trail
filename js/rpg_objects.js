@@ -2051,27 +2051,9 @@ Game_Action.prototype.apply = function(target) {
     }
 };
 
-Game_Action.prototype.makeDamageValue = function(target, critical) {
-    var item = this.item();
-    var baseValue = this.evalDamageFormula(target);
-    var value = baseValue * this.calcElementRate(target);
-    if (this.isPhysical()) {
-        value *= target.pdr;
-    }
-    if (this.isMagical()) {
-        value *= target.mdr;
-    }
-    if (baseValue < 0) {
-        value *= target.rec;
-    }
-    if (critical) {
-        value = this.applyCritical(value);
-    }
-    value = this.applyVariance(value, item.damage.variance);
-    value = this.applyGuard(value, target);
-    value = Math.round(value);
-    return value;
-};
+/*Game_Action.prototype.makeDamageValue = function(target, critical) {
+    // YEP_DamageCore.js
+};*/
 
 Game_Action.prototype.evalDamageFormula = function(target) {
     try {
@@ -2863,11 +2845,7 @@ Game_BattlerBase.prototype.bparam = function(bparamId) {
 };
 
 Game_BattlerBase.prototype.otherparam = function(otherparamId) { 
-    var boost = 1;
-    if (otherparamId == 0 && this.isActor()) {
-        if (this.hasSkill(98)) boost += Math.min(this.totalMpUsed(), 100000) * 0.000001; // Hardcoded Residual Mana
-    }
-    return this.traitsPi(Game_BattlerBase.TRAIT_OTHERPARAM, otherparamId) * boost;
+    return this.traitsPi(Game_BattlerBase.TRAIT_OTHERPARAM, otherparamId);
 };
 
 Game_BattlerBase.prototype.elementRate = function(elementId) {

@@ -1405,7 +1405,7 @@ Game_Action.prototype.applyCriticalRate = function(value, baseDamage, target) {
 };
 
 Game_Action.prototype.applyPhysicalRate = function(value, baseDamage, target) {
-    value *= target.pdr;
+    value *= target.elementRate(1);
     return value;
 };
 
@@ -1414,7 +1414,7 @@ Game_Action.prototype.applyFlatPhysical = function(value, baseDamage, target) {
 };
 
 Game_Action.prototype.applyMagicalRate = function(value, baseDamage, target) {
-    value *= target.mdr;
+    value *= target.elementRate(18);
     return value;
 };
 

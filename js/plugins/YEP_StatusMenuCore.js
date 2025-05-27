@@ -1113,7 +1113,8 @@ Window_StatusInfo.prototype.drawElementData = function(eleId, dx, dy, dw) {
       this.setRateColor(eleRateOut);
       this.drawText(text2, dx, dy, dw, 'right');
     } else {
-      this.drawTextEx('\x1bMSGCORE[2]\\c[8]' + text2, dx + dw - this.textWidthEx(text2), dy);
+      if (![11, 18].contains(eleId)) text2 = '\\c[8]' + text2;
+      this.drawTextEx('\x1bMSGCORE[2]' + text2, dx + dw - this.textWidthEx(text2), dy);
     }
 };
 
