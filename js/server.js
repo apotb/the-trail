@@ -15,7 +15,7 @@ wss.on('connection', (ws) => {
     // Handle messages from clients
     ws.on('message', (raw) => {
         try {
-            const data = JSON.parse(raw);
+            const data = JSON.parse(raw.toString());
             if (data.type === "chat" && data.name && data.text) {
                 console.log(`[CHAT] ${data.name}: ${data.text}`);
 
@@ -27,6 +27,14 @@ wss.on('connection', (ws) => {
 
                 for (const client of clients) {
                     if (client.readyState === WebSocket.OPEN) {
+                        client.send(payload);
+                    }
+                }
+            } else if (["player", "move", "vanity"].includes(data.type)) {
+                const payload = JSON.stringify(data); // relay as-is to all clients
+
+                for (const client of clients) {
+                    if (client.readyState === WebSocket.OPEN && client !== ws) {
                         client.send(payload);
                     }
                 }

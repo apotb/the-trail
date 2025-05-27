@@ -21,6 +21,7 @@
         this.setCharacterImage(params[2], params[3]);
         this.setBattlerImage(params[4]);
         this.refresh();
+        if (this === $gameParty.leader()) sendVanity(params[2], params[3]);
     };
 
     Game_Event.prototype.actorCharacter = function(image) {

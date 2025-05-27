@@ -1,4 +1,14 @@
 //=============================================================================
+// Game_Player
+//=============================================================================
+
+___Game_Player__prototype__moveStraight___ = Game_Player.prototype.moveStraight;
+Game_Player.prototype.moveStraight = function(d) {
+    ___Game_Player__prototype__moveStraight___.call(this, d);
+    if (this.isMovementSucceeded()) sendMove(d);
+};
+
+//=============================================================================
 // Scene_Menu
 //=============================================================================
 
