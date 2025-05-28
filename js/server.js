@@ -1,10 +1,10 @@
 // server.js
 const WebSocket = require('ws');
 
-const wss = new WebSocket.Server({ port: 54000 });
+const wss = new WebSocket.Server({ port: 17404 });
 const clients = new Map();
 
-console.log("Server running at ws://localhost:54000");
+console.log("Server running on port 17404");
 
 wss.on('connection', (ws) => {
     function broadcast(data, exclude=[ws]) {

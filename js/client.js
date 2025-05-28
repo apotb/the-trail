@@ -7,10 +7,10 @@ window.chat = [];
 const CHAT_LIMIT = 10;
 const CHAT_TIME = 15 * 1000;
 
-function startMultiplayerConnection(playerName = "Player") {
+function startMultiplayerConnection(playerName="Guest", ip="the-trail.apotb.com", port="17404") {
     if (socket && socket.readyState === WebSocket.OPEN) return; // prevent duplicates
 
-    socket = new WebSocket("ws://192.168.8.128:54000");
+    socket = new WebSocket(`ws://${ip}:${port}`);
 
     socket.onopen = async () => {
         console.log("✅ Connected to server!");

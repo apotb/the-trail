@@ -557,7 +557,7 @@ Scene_Map.prototype.initialize = function() {
     this._mapLoaded = false;
     this._touchCount = 0;
     this._canFastForward = true;
-    $gameTemp._inGame = true
+    $gameTemp._inGame = true;
 };
 
 Scene_Map.prototype.create = function() {

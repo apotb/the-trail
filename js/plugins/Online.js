@@ -36,43 +36,53 @@ Game_Map.prototype.setupEvents = function() {
 // Scene_Menu
 //=============================================================================
 
-Scene_Menu.prototype.commandLAN = function() {
-    SceneManager.push(Scene_LAN);
+Scene_Menu.prototype.commandOnline = function() {
+    SceneManager.push(Scene_Online);
 };
 
 //=============================================================================
-// Scene_LAN
+// Scene_Map
 //=============================================================================
 
-function Scene_LAN() {
+___Scene_Map__prototype__onMapLoaded___ = Scene_Map.prototype.onMapLoaded;
+Scene_Map.prototype.onMapLoaded = function() {
+    ___Scene_Map__prototype__onMapLoaded___.call(this);
+    if (!(socket && socket.readyState === WebSocket.OPEN) && !$gameTemp._forceDisconnect) startMultiplayerConnection(API_STEAM.username());
+};
+
+//=============================================================================
+// Scene_Online
+//=============================================================================
+
+function Scene_Online() {
     this.initialize.apply(this, arguments);
 }
 
-Scene_LAN.prototype = Object.create(Scene_MenuBase.prototype);
-Scene_LAN.prototype.constructor = Scene_LAN;
+Scene_Online.prototype = Object.create(Scene_MenuBase.prototype);
+Scene_Online.prototype.constructor = Scene_Online;
 
-Scene_LAN.prototype.initialize = function() {
+Scene_Online.prototype.initialize = function() {
     Scene_MenuBase.prototype.initialize.call(this);
 };
 
-Scene_LAN.prototype.create = function() {
+Scene_Online.prototype.create = function() {
     Scene_MenuBase.prototype.create.call(this);
     this.createWindows();
     if (!$gameTemp._inGame) this.startFadeIn(this.fadeSpeed(), false);
 };
 
-Scene_LAN.prototype.createWindows = function() {
+Scene_Online.prototype.createWindows = function() {
     // this.createLeaderboardWindow();
     this.createCommandWindow();
 };
 
-Scene_LAN.prototype.createLeaderboardWindow = function() {
+Scene_Online.prototype.createLeaderboardWindow = function() {
     this._leaderboardWindow = new Window_Leaderboard();
     this.addWindow(this._leaderboardWindow);
 };
 
-Scene_LAN.prototype.createCommandWindow = function() {
-    this._commandWindow = new Window_LANCommand();
+Scene_Online.prototype.createCommandWindow = function() {
+    this._commandWindow = new Window_OnlineCommand();
     this._commandWindow.y = Graphics.boxHeight - this._commandWindow.windowHeight();
     this._commandWindow.setHandler('connect', this.connectCommand.bind(this));
     this._commandWindow.setHandler('disconnect', this.disconnectCommand.bind(this));
@@ -80,19 +90,22 @@ Scene_LAN.prototype.createCommandWindow = function() {
     this.addWindow(this._commandWindow);
 };
 
-Scene_LAN.prototype.connectCommand = function() {
+Scene_Online.prototype.connectCommand = function() {
+    const input = window.prompt('Enter the IP you wish to connect to:').split(':');
     SceneManager.push(Scene_Map);
-    startMultiplayerConnection(API_STEAM.username());
+    if (input[1]) startMultiplayerConnection(API_STEAM.username(), input[0], input[1]);
+    else startMultiplayerConnection(API_STEAM.username(), input[0]);
     this._commandWindow.activate();
 };
 
-Scene_LAN.prototype.disconnectCommand = function() {
+Scene_Online.prototype.disconnectCommand = function() {
     SceneManager.push(Scene_Map);
     disconnectFromServer();
     this._commandWindow.activate();
+    $gameTemp._forceDisconnect = true;
 };
 
-Scene_LAN.prototype.cancel = function() {
+Scene_Online.prototype.cancel = function() {
     if (!$gameTemp._inGame) this.startFadeOut(this.fadeSpeed(), false);
     this.popScene();
 };
@@ -211,42 +224,42 @@ Window_Leaderboard.prototype.drawItem = function(index) {
 };*/
 
 //=============================================================================
-// Window_LANCommand
+// Window_OnlineCommand
 //=============================================================================
 
-function Window_LANCommand() {
+function Window_OnlineCommand() {
     this.initialize.apply(this, arguments);
 }
 
-Window_LANCommand.prototype = Object.create(Window_Command.prototype);
-Window_LANCommand.prototype.constructor = Window_LANCommand;
+Window_OnlineCommand.prototype = Object.create(Window_Command.prototype);
+Window_OnlineCommand.prototype.constructor = Window_OnlineCommand;
 
-Window_LANCommand.prototype.initialize = function() {
+Window_OnlineCommand.prototype.initialize = function() {
     Window_Command.prototype.initialize.call(this, 0, 0);
 };
 
-Window_LANCommand.prototype.maxCols = function() {
+Window_OnlineCommand.prototype.maxCols = function() {
     return 2;
 };
 
-Window_LANCommand.prototype.windowWidth = function() {
+Window_OnlineCommand.prototype.windowWidth = function() {
     return Graphics.boxWidth;
 };
 
-Window_LANCommand.prototype.windowHeight = function () {
+Window_OnlineCommand.prototype.windowHeight = function () {
     return this.lineHeight() * 2;
 };
 
-Window_LANCommand.prototype.itemTextAlign = function() {
+Window_OnlineCommand.prototype.itemTextAlign = function() {
     return 'center';
 };
 
-Window_LANCommand.prototype.makeCommandList = function() {
-    this.addCommand("Connect to LAN", 'connect', !(socket && socket.readyState === WebSocket.OPEN));
-    this.addCommand("Disconnect from LAN", 'disconnect', socket && socket.readyState === WebSocket.OPEN);
+Window_OnlineCommand.prototype.makeCommandList = function() {
+    this.addCommand("Connect to IP", 'connect', !(socket && socket.readyState === WebSocket.OPEN));
+    this.addCommand("Disconnect", 'disconnect', socket && socket.readyState === WebSocket.OPEN);
 };
 
-Window_LANCommand.prototype.drawItem = function(index) {
+Window_OnlineCommand.prototype.drawItem = function(index) {
     var rect = this.itemRectForText(index);
     var align = this.itemTextAlign();
     var text = this.commandName(index);
