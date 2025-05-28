@@ -79,23 +79,33 @@ Scene_Online.prototype.createWindows = function() {
 Scene_Online.prototype.createCommandWindow = function() {
     this._commandWindow = new Window_OnlineCommand();
     this._commandWindow.y = Graphics.boxHeight - this._commandWindow.windowHeight();
-    this._commandWindow.setHandler('connect', this.connectCommand.bind(this));
     this._commandWindow.setHandler('actor', this.actorCommand.bind(this));
+    this._commandWindow.setHandler('main', this.mainServerCommand.bind(this));
+    this._commandWindow.setHandler('connect', this.connectCommand.bind(this));
     this._commandWindow.setHandler('disconnect', this.disconnectCommand.bind(this));
     this._commandWindow.setHandler('cancel', this.cancel.bind(this));
     this.addWindow(this._commandWindow);
 };
 
-Scene_Online.prototype.connectCommand = function() {
-    const input = window.prompt('Enter the IP you wish to connect to:').split(':');
+Scene_Online.prototype.actorCommand = function() {
+    this._actorWindow.activate();
+};
+
+Scene_Online.prototype.mainServerCommand = function() {
     SceneManager.push(Scene_Map);
-    if (input[1]) startMultiplayerConnection(API_STEAM.username(), input[0], input[1]);
-    else startMultiplayerConnection(API_STEAM.username(), input[0]);
+    startMultiplayerConnection(API_STEAM.username());
     this._commandWindow.activate();
 };
 
-Scene_Online.prototype.actorCommand = function() {
-    this._actorWindow.activate();
+Scene_Online.prototype.connectCommand = function() {
+    const input = window.prompt('Enter the IP you wish to connect to:');
+    if (input) {
+        const params = input.split(':');
+        SceneManager.push(Scene_Map);
+        if (input[1]) startMultiplayerConnection(API_STEAM.username(), params[0], params[1]);
+        else startMultiplayerConnection(API_STEAM.username(), params[0]);
+    }
+    this._commandWindow.activate();
 };
 
 Scene_Online.prototype.disconnectCommand = function() {
@@ -150,7 +160,7 @@ Window_OnlineCommand.prototype.initialize = function() {
 };
 
 Window_OnlineCommand.prototype.maxCols = function() {
-    return 3;
+    return 4;
 };
 
 Window_OnlineCommand.prototype.windowWidth = function() {
@@ -166,8 +176,9 @@ Window_OnlineCommand.prototype.itemTextAlign = function() {
 };
 
 Window_OnlineCommand.prototype.makeCommandList = function() {
-    this.addCommand("Connect to IP", 'connect', !(socket && socket.readyState === WebSocket.OPEN));
     this.addCommand("Change representative", 'actor');
+    this.addCommand("Connect to main server", 'main', !(socket && socket.readyState === WebSocket.OPEN))
+    this.addCommand("Connect to IP", 'connect', !(socket && socket.readyState === WebSocket.OPEN));
     this.addCommand("Disconnect", 'disconnect', socket && socket.readyState === WebSocket.OPEN);
 };
 
