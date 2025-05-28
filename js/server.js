@@ -43,6 +43,15 @@ wss.on('connection', (ws) => {
                 player.y = data.y
                 player.direction = data.direction;
                 clients.set(ws, player);
+            } else if (data.type === "transfer") {
+                let player = clients.get(ws);
+                if (!player || player.mapId === data.mapId) return;
+                player.mapId = data.mapId;
+                player.x = data.x;
+                player.y = data.y;
+                player.direction = data.direction;
+                clients.set(ws, player);
+                console.log(clients.get(ws));
             } else if (data.type === "vanity") {
 
             } else if (data.type === "ping") {

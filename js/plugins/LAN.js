@@ -8,6 +8,30 @@ Game_Player.prototype.moveStraight = function(d) {
     if (this.isMovementSucceeded()) sendMove(d);
 };
 
+Game_Player.prototype.performTransfer = function() {
+    if (this.isTransferring()) {
+        this.setDirection(this._newDirection);
+        if (this._newMapId !== $gameMap.mapId() || this._needsMapReload) {
+            $gameMap.setup(this._newMapId);
+            this._needsMapReload = false;
+        }
+        this.locate(this._newX, this._newY);
+        sendTransfer($gameMap.mapId(), this._newMapId, this._newX, this._newY, this._newDirection); // Multiplayer
+        this.refresh();
+        this.clearTransferInfo();
+    }
+};
+
+//=============================================================================
+// Game_Map
+//=============================================================================
+
+___Game_Map__prototype__setupEvents___ = Game_Map.prototype.setupEvents;
+Game_Map.prototype.setupEvents = function() {
+    ___Game_Map__prototype__setupEvents___.call(this);
+    sendPlayer({ mapId: $gamePlayer._newMapId, x: $gamePlayer._newX, y: $gamePlayer._newY });
+};
+
 //=============================================================================
 // Scene_Menu
 //=============================================================================

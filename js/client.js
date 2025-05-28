@@ -27,6 +27,7 @@ function startMultiplayerConnection(playerName = "Player") {
 
             if (data.type === "player") {
                 if (data.id === API_STEAM.userId()) return;
+                if (data.mapId !== $gameMap.mapId()) return;
 
                 let player = window.players[data.id];
                 if (!player) {
@@ -53,6 +54,10 @@ function startMultiplayerConnection(playerName = "Player") {
                 }
             }
 
+            if (data.type === "transfer") {
+                deletePlayer(data.id);
+            }
+
             if (data.type === "vanity") {
                 let player = window.players[data.id];
                 if (player) player.setImage(data.spriteName, data.spriteIndex);
@@ -65,8 +70,7 @@ function startMultiplayerConnection(playerName = "Player") {
             // Internal
 
             if (data.type === "disconnect") {
-                Yanfly.DespawnEvent(window.players[data.id]);
-                delete window.players[data.id];
+                deletePlayer(data.id);
             }
 
         } catch (e) {
@@ -82,11 +86,17 @@ function startMultiplayerConnection(playerName = "Player") {
             text: "Disconnected",
             time: getDate()
         });
-        for (const playerID in window.players) {
-            const player = window.players[playerID];
-            Yanfly.DespawnEvent(player);
-            delete player;
+        for (const playerId in window.players) {
+            deletePlayer(playerId);
         }
+    }
+}
+
+function deletePlayer(playerId) {
+    const player = window.players[playerId];
+    if (player) {
+        Yanfly.DespawnEvent(player);
+        delete window.players[playerId];
     }
 }
 
@@ -151,7 +161,7 @@ function getDate() {
     return Date.now() + serverTimeOffset;
 }
 
-function sendPlayer() {
+function sendPlayer(override={}) {
     if (socket && socket.readyState === WebSocket.OPEN) {
         socket.send(JSON.stringify({
             type: "player",
@@ -162,7 +172,8 @@ function sendPlayer() {
             y: $gamePlayer.y,
             direction: $gamePlayer.direction(),
             spriteName: $gamePlayer._characterName,
-            spriteIndex: $gamePlayer._characterIndex
+            spriteIndex: $gamePlayer._characterIndex,
+            ...override
         }));
     }
 }
@@ -176,6 +187,19 @@ function sendMove(direction) {
             y: $gamePlayer.y,
             direction: direction,
             speed: $gamePlayer.realMoveSpeed()
+        }));
+    }
+}
+
+function sendTransfer(currentMapId, mapId, x, y, direction) {
+    if (currentMapId === mapId) return;
+    Yanfly.ClearSpawnedEvents(currentMapId);
+    window.players = {};
+    if (socket && socket.readyState === WebSocket.OPEN) {
+        socket.send(JSON.stringify({
+            type: "transfer",
+            id: API_STEAM.userId(),
+            mapId, x, y, direction
         }));
     }
 }
@@ -208,4 +232,5 @@ window.sendMessage = sendMessage;
 window.getChat = getChat;
 window.sendPlayer = sendPlayer;
 window.sendMove = sendMove;
+window.sendTransfer = sendTransfer;
 window.sendVanity = sendVanity;
