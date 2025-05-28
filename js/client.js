@@ -170,8 +170,8 @@ function sendPlayer(override={}) {
             x: $gamePlayer.x,
             y: $gamePlayer.y,
             direction: $gamePlayer.direction(),
-            spriteName: $gamePlayer._characterName,
-            spriteIndex: $gamePlayer._characterIndex,
+            spriteName: representative().characterName(),
+            spriteIndex: representative().characterIndex(),
             ...override
         }));
     }
@@ -203,16 +203,20 @@ function sendTransfer(currentMapId, mapId, x, y, direction) {
     }
 }
 
-function sendVanity(characterName, characterIndex) {
+function sendVanity() {
     if (socket && socket.readyState === WebSocket.OPEN) {
         socket.send(JSON.stringify({
             type: "vanity",
             id: API_STEAM.userId(),
-            spriteName: characterName,
-            spriteIndex: characterIndex
+            spriteName: representative().characterName(),
+            spriteIndex: representative().characterIndex()
         }));
     }
 }
+
+function representative() {
+    return $gameActors.actor($gameVariables.value(87) + 1);
+};
 
 function disconnectFromServer() {
     if (socket && socket.readyState === WebSocket.OPEN) {

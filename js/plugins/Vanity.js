@@ -2,7 +2,7 @@
     var _Game_Actor_changeEquip = Game_Actor.prototype.changeEquip;
     Game_Actor.prototype.changeEquip = function(slotId, item) {
         _Game_Actor_changeEquip.call(this, slotId, item);
-        this.updateVanity();
+        if (item.meta['Vanity']) this.updateVanity();
     };
 
     Game_Actor.prototype.getVanity = function () {
@@ -21,7 +21,7 @@
         this.setCharacterImage(params[2], params[3]);
         this.setBattlerImage(params[4]);
         this.refresh();
-        if (this === $gameParty.leader()) sendVanity(params[2], params[3]);
+        if (this.actorId() === $gameVariables.value(87) + 1) sendVanity();
     };
 
     Game_Event.prototype.actorCharacter = function(image) {
