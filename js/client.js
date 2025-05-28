@@ -11,6 +11,7 @@ function startMultiplayerConnection(playerName = "Player") {
     socket.onopen = () => {
         console.log("✅ Connected to server!");
         sendChat(`${playerName} has joined.`);
+        sendPlayer();
     };
 
     socket.onmessage = (event) => {
