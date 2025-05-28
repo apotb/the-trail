@@ -45,7 +45,7 @@
   {
     "type": "Text",
     "Value": "${getChat()[0]}",
-    "Condition": "getChat()[0] && socket && socket.readyState === WebSocket.OPEN",
+    "Condition": "getChat()[0]",
     "Layer": "0",
     "Font": "GameFont",
     "Max Width": "600",
@@ -88,7 +88,7 @@
   {
     "type": "Text",
     "Value": "${getChat()[1]}",
-    "Condition": "getChat()[1] && socket && socket.readyState === WebSocket.OPEN",
+    "Condition": "getChat()[1]",
     "Layer": "0",
     "Font": "GameFont",
     "Max Width": "600",
@@ -131,7 +131,7 @@
   {
     "type": "Text",
     "Value": "${getChat()[2]}",
-    "Condition": "getChat()[2] && socket && socket.readyState === WebSocket.OPEN",
+    "Condition": "getChat()[2]",
     "Layer": "0",
     "Font": "GameFont",
     "Max Width": "600",
@@ -174,7 +174,7 @@
   {
     "type": "Text",
     "Value": "${getChat()[3]}",
-    "Condition": "getChat()[3] && socket && socket.readyState === WebSocket.OPEN",
+    "Condition": "getChat()[3]",
     "Layer": "0",
     "Font": "GameFont",
     "Max Width": "600",
@@ -217,7 +217,7 @@
   {
     "type": "Text",
     "Value": "${getChat()[4]}",
-    "Condition": "getChat()[4] && socket && socket.readyState === WebSocket.OPEN",
+    "Condition": "getChat()[4]",
     "Layer": "0",
     "Font": "GameFont",
     "Max Width": "600",
@@ -260,7 +260,7 @@
   {
     "type": "Text",
     "Value": "${getChat()[5]}",
-    "Condition": "getChat()[5] && socket && socket.readyState === WebSocket.OPEN",
+    "Condition": "getChat()[5]",
     "Layer": "0",
     "Font": "GameFont",
     "Max Width": "600",
@@ -303,7 +303,7 @@
   {
     "type": "Text",
     "Value": "${getChat()[6]}",
-    "Condition": "getChat()[6] && socket && socket.readyState === WebSocket.OPEN",
+    "Condition": "getChat()[6]",
     "Layer": "0",
     "Font": "GameFont",
     "Max Width": "600",
@@ -346,7 +346,7 @@
   {
     "type": "Text",
     "Value": "${getChat()[7]}",
-    "Condition": "getChat()[7] && socket && socket.readyState === WebSocket.OPEN",
+    "Condition": "getChat()[7]",
     "Layer": "0",
     "Font": "GameFont",
     "Max Width": "600",
@@ -389,7 +389,7 @@
   {
     "type": "Text",
     "Value": "${getChat()[8]}",
-    "Condition": "getChat()[8] && socket && socket.readyState === WebSocket.OPEN",
+    "Condition": "getChat()[8]",
     "Layer": "0",
     "Font": "GameFont",
     "Max Width": "600",
@@ -432,7 +432,7 @@
   {
     "type": "Text",
     "Value": "${getChat()[9]}",
-    "Condition": "getChat()[9] && socket && socket.readyState === WebSocket.OPEN",
+    "Condition": "getChat()[9]",
     "Layer": "0",
     "Font": "GameFont",
     "Max Width": "600",

@@ -218,8 +218,8 @@ Window_LANCommand.prototype.itemTextAlign = function() {
 };
 
 Window_LANCommand.prototype.makeCommandList = function() {
-    this.addCommand("Connect to LAN", 'connect');
-    this.addCommand("Disconnect from LAN", 'disconnect');
+    this.addCommand("Connect to LAN", 'connect', !(socket && socket.readyState === WebSocket.OPEN));
+    this.addCommand("Disconnect from LAN", 'disconnect', socket && socket.readyState === WebSocket.OPEN);
 };
 
 Window_LANCommand.prototype.drawItem = function(index) {

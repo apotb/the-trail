@@ -19,12 +19,10 @@ wss.on('connection', (ws) => {
     ws.on('message', (raw) => {
         try {
             const data = JSON.parse(raw.toString());
-            if (data.type === "chat" && data.name && data.text) {
-                console.log(`[CHAT] ${data.name}: ${data.text}`);
-                broadcast(data, [])
+            if (data.type === "chat") {
+                console.log(`[CHAT] ${data.name}: ${data.message}`);
             } else if (data.type === "message") {
                 console.log(data.message);
-                broadcast(data, []);
             } else if (data.type === "player") {
                 clients.set(ws, data);
 
@@ -47,6 +45,11 @@ wss.on('connection', (ws) => {
                 clients.set(ws, player);
             } else if (data.type === "vanity") {
 
+            } else if (data.type === "ping") {
+                return ws.send(JSON.stringify({
+                    type: "pong",
+                    serverTime: Date.now()
+                }));
             }
 
             broadcast(data);
@@ -60,7 +63,13 @@ wss.on('connection', (ws) => {
         console.log(`${player.name} left the game`);
         clients.delete(ws);
         broadcast({
+            type: "message",
+            message: `${player.name} left the game`,
+            time: Date.now()
+        });
+        broadcast({
             type: "disconnect",
+            name: player.name,
             id: player.id
         });
     });

@@ -1,6 +1,6 @@
 // client.js
 let socket;
-
+let serverTimeOffset = 0;
 window.players = {};
 window.chat = [];
 
@@ -15,23 +15,12 @@ function startMultiplayerConnection(playerName = "Player") {
     socket.onopen = () => {
         console.log("✅ Connected to server!");
         sendPlayer();
-        sendMessage(`${playerName} joined the game`);        
+        sendMessage(`${playerName} joined the game (time offset: ${serverTimeOffset})`);
     };
 
     socket.onmessage = (event) => {
         try {
             const data = JSON.parse(event.data);
-
-            // Messages
-
-            if (data.type === "chat") data.text = `${data.name}: ${data.text}`;
-
-            if (data.type === "message") data.text = `${data.message}`
-
-            if (data.text) {
-                console.log(`💬 ${data.text}`)
-                window.chat.push(data);
-            }
 
             // Player data
 
@@ -68,6 +57,10 @@ function startMultiplayerConnection(playerName = "Player") {
                 if (player) player.setImage(data.spriteName, data.spriteIndex);
             }
 
+            // Messages
+
+            if (["chat", "message"].includes(data.type)) addChat(data);
+
             // Internal
 
             if (data.type === "disconnect") {
@@ -82,32 +75,76 @@ function startMultiplayerConnection(playerName = "Player") {
     };
 
     socket.onerror = (err) => console.error("❌ WebSocket error:", err);
-    socket.onclose = () => console.warn("🔌 Disconnected.");
-}
-
-function sendChat(text) {
-    if (socket && socket.readyState === WebSocket.OPEN) {
-        socket.send(JSON.stringify({
-            type: "chat",
-            name: API_STEAM.username(),
-            text,
-            time: Date.now()
-        }));
+    socket.onclose = () => {
+        console.warn("🔌 Disconnected.");
+        addChat({
+            text: "Disconnected",
+            time: getDate()
+        });
+        for (const playerID in window.players) {
+            const player = window.players[playerID];
+            Yanfly.DespawnEvent(player);
+            delete player;
+        }
     }
 }
 
+function syncTimeWithServer() {
+    const start = Date.now();
+    const listener = (event) => {
+        const data = JSON.parse(event.data);
+        if (data.type === "pong") {
+            const end = Date.now();
+            const roundTrip = end - start;
+            serverTimeOffset = data.serverTime + roundTrip / 2 - end;
+            console.log("⏱️ Server time offset:", serverTimeOffset);
+            socket.removeEventListener("message", listener);
+        }
+    };
+    socket.addEventListener("message", listener);
+    socket.send(JSON.stringify({ type: "ping" }));
+}
+
+function sendChat(message) {
+    syncTimeWithServer();
+    const chat = {
+        type: "chat",
+        name: API_STEAM.username(),
+        message,
+        time: getDate()
+    }
+    addChat(chat);
+    if (socket && socket.readyState === WebSocket.OPEN) socket.send(JSON.stringify(chat));
+}
+
 function sendMessage(message) {
-    if (socket && socket.readyState === WebSocket.OPEN) {
-        socket.send(JSON.stringify({
-            type: "message",
-            message,
-            time: Date.now()
-        }))
+    syncTimeWithServer();
+    const chat = {
+        type: "message",
+        message,
+        time: getDate()
+    }
+    addChat(chat);
+    if (socket && socket.readyState === WebSocket.OPEN) socket.send(JSON.stringify(chat));
+}
+
+function addChat(chat) {
+    if (chat.type === "chat") chat.text = `${chat.name}: ${chat.message}`;
+
+    if (chat.type === "message") chat.text = `${chat.message}`
+
+    if (chat.text) {
+        console.log(`💬 ${chat.text}`);
+        window.chat.push(chat);
     }
 }
 
 function getChat() {
-    return window.chat.filter(chat => Date.now() - chat.time < CHAT_TIME).slice(-CHAT_LIMIT).reverse().map(chat => chat.text);
+    return window.chat.filter(chat => getDate() - chat.time < CHAT_TIME).slice(-CHAT_LIMIT).reverse().map(chat => chat.text);
+}
+
+function getDate() {
+    return Date.now() + serverTimeOffset;
 }
 
 function sendPlayer() {
@@ -154,7 +191,6 @@ function disconnectFromServer() {
     if (socket && socket.readyState === WebSocket.OPEN) {
         socket.close(1000, "Client closed connection"); // Normal close code
         console.log("🔌 Disconnected from server.");
-        window.chat = [];
     } else {
         console.warn("⚠️ No active connection to disconnect.");
     }
