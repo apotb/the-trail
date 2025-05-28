@@ -12,10 +12,11 @@ function startMultiplayerConnection(playerName = "Player") {
 
     socket = new WebSocket("ws://192.168.8.128:54000");
 
-    socket.onopen = () => {
+    socket.onopen = async () => {
         console.log("✅ Connected to server!");
+        await syncTimeWithServer();
         sendPlayer();
-        sendMessage(`${playerName} joined the game (time offset: ${serverTimeOffset})`);
+        sendMessage(`${playerName} joined the game`);
     };
 
     socket.onmessage = (event) => {
@@ -90,19 +91,22 @@ function startMultiplayerConnection(playerName = "Player") {
 }
 
 function syncTimeWithServer() {
-    const start = Date.now();
-    const listener = (event) => {
-        const data = JSON.parse(event.data);
-        if (data.type === "pong") {
-            const end = Date.now();
-            const roundTrip = end - start;
-            serverTimeOffset = data.serverTime + roundTrip / 2 - end;
-            console.log("⏱️ Server time offset:", serverTimeOffset);
-            socket.removeEventListener("message", listener);
-        }
-    };
-    socket.addEventListener("message", listener);
-    socket.send(JSON.stringify({ type: "ping" }));
+    return new Promise((resolve) => {
+        const start = Date.now();
+        const listener = (event) => {
+            const data = JSON.parse(event.data);
+            if (data.type === "pong") {
+                const end = Date.now();
+                const roundTrip = end - start;
+                serverTimeOffset = data.serverTime + roundTrip / 2 - end;
+                console.log("⏱️ Server time offset:", serverTimeOffset);
+                socket.removeEventListener("message", listener);
+                resolve();
+            }
+        };
+        socket.addEventListener("message", listener);
+        socket.send(JSON.stringify({ type: "ping" }));
+    });
 }
 
 function sendChat(message) {
