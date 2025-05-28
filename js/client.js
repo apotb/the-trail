@@ -23,10 +23,11 @@ function startMultiplayerConnection(playerName = "Player") {
             }
 
             if (data.type === "player") {
-                if (data.name === API_STEAM.username()) return; // skip own data
+                if (data.id === API_STEAM.userId()) return;
 
                 let player = window.players[data.id];
                 if (!player) {
+                    if (!(SceneManager._scene instanceof Scene_Map)) return;
                     Yanfly.SpawnEventTemplateAt('Player', data.x, data.y, true);
                     player = $gameMap.LastSpawnedEvent();
                     window.players[data.id] = player;
@@ -52,6 +53,11 @@ function startMultiplayerConnection(playerName = "Player") {
             if (data.type === "vanity") {
                 let player = window.players[data.id];
                 if (player) player.setImage(data.spriteName, data.spriteIndex);
+            }
+
+            if (data.type === "disconnect") {
+                Yanfly.DespawnEvent(window.players[data.id]);
+                delete window.players[data.id];
             }
 
         } catch (e) {

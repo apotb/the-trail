@@ -11,23 +11,20 @@ console.log("✅ Server running at ws://localhost:54000");
 wss.on('connection', (ws) => {
     console.log("🔌 New client connected.");
 
+    function broadcast(data) {
+        const payload = JSON.stringify(data);
+        for (const client of clients.keys()) {
+            if (client.readyState === WebSocket.OPEN && client !== ws) {
+                client.send(payload);
+            }
+        }
+    }
+
     ws.on('message', (raw) => {
         try {
             const data = JSON.parse(raw.toString());
             if (data.type === "chat" && data.name && data.text) {
                 console.log(`[CHAT] ${data.name}: ${data.text}`);
-
-                const payload = JSON.stringify({
-                    type: "chat",
-                    name: data.name,
-                    text: data.text
-                });
-
-                for (const client of clients.keys()) {
-                    if (client.readyState === WebSocket.OPEN) {
-                        client.send(payload);
-                    }
-                }
             } else if (data.type === "player") {
                 clients.set(ws, data);
 
@@ -37,7 +34,10 @@ wss.on('connection', (ws) => {
                     .filter((pdata) => pdata.id !== data.id);
                 
                 for (const player of otherPlayers) {
-                    ws.send(JSON.stringify(player));
+                    ws.send(JSON.stringify({
+                        type: "player",
+                        ...player
+                    }));
                 }
             } else if (data.type === "move") {
                 let player = clients.get(ws);
@@ -49,12 +49,7 @@ wss.on('connection', (ws) => {
 
             }
 
-            const payload = JSON.stringify(data);
-            for (const client of clients.keys()) {
-                if (client.readyState === WebSocket.OPEN && client !== ws) {
-                    client.send(payload);
-                }
-            }
+            broadcast(data);
         } catch (err) {
             console.warn("❌ Invalid message:", raw);
         }
@@ -63,6 +58,11 @@ wss.on('connection', (ws) => {
     // Handle disconnection
     ws.on('close', () => {
         console.log("❎ Client disconnected.");
+        const player = clients.get(ws);
         clients.delete(ws);
+        broadcast({
+            type: "disconnect",
+            id: player.id
+        });
     });
 });

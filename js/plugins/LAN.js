@@ -63,6 +63,7 @@ Scene_LAN.prototype.connectCommand = function() {
 };
 
 Scene_LAN.prototype.disconnectCommand = function() {
+    SceneManager.push(Scene_Map);
     disconnectFromServer();
     this._commandWindow.activate();
 };

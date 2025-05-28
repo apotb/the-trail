@@ -486,7 +486,7 @@ Yanfly.SpawnEventTemplateInRegion = function(template, regions, preserved) {
 Yanfly.DespawnEvent = function(ev) {
   if (!ev) return;
   var eventId = ev.eventId();
-  if (!ev.this._spawned) {
+  if (!ev._spawned) {
     if ($gameTemp.isPlaytest()) {
       console.log('Event ' + eventId + ' is not a valid spawned event.');
       return;
