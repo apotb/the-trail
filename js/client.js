@@ -36,6 +36,7 @@ function startMultiplayerConnection(playerName="Guest", ip="the-trail.apotb.com"
                     player = $gameMap.LastSpawnedEvent();
                     window.players[data.id] = player;
                     SceneManager._scene._spriteset.createBShadow(player.eventId(), player);
+                    SceneManager._scene._spriteset._characterSprites.find(sprite => sprite && sprite._miniLabel._character._eventId === player.eventId())._miniLabel.setText(data.name);
                 }
 
                 player.setImage(data.spriteName, data.spriteIndex);
