@@ -1871,6 +1871,7 @@ Scene_GameEnd.prototype.createCommandWindow = function() {
 };
 
 Scene_GameEnd.prototype.commandToTitle = function() {
+    disconnectFromServer();
     this.fadeOutAll();
     $gameTemp._inGame = false;
     SceneManager.goto(Scene_Title);
@@ -2747,5 +2748,6 @@ Scene_Gameover.prototype.isTriggered = function() {
 };
 
 Scene_Gameover.prototype.gotoTitle = function() {
+    disconnectFromServer();
     SceneManager.goto(Scene_Title);
 };

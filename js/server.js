@@ -1,20 +1,16 @@
 // server.js
 const WebSocket = require('ws');
 
-// Create a WebSocket server on port 54000
 const wss = new WebSocket.Server({ port: 54000 });
 const clients = new Map();
 
-console.log("✅ Server running at ws://localhost:54000");
+console.log("Server running at ws://localhost:54000");
 
-// Handle new connections
 wss.on('connection', (ws) => {
-    console.log("🔌 New client connected.");
-
-    function broadcast(data) {
+    function broadcast(data, exclude=[ws]) {
         const payload = JSON.stringify(data);
         for (const client of clients.keys()) {
-            if (client.readyState === WebSocket.OPEN && client !== ws) {
+            if (client.readyState === WebSocket.OPEN && !exclude.includes(client)) {
                 client.send(payload);
             }
         }
@@ -25,6 +21,10 @@ wss.on('connection', (ws) => {
             const data = JSON.parse(raw.toString());
             if (data.type === "chat" && data.name && data.text) {
                 console.log(`[CHAT] ${data.name}: ${data.text}`);
+                broadcast(data, [])
+            } else if (data.type === "message") {
+                console.log(data.message);
+                broadcast(data, []);
             } else if (data.type === "player") {
                 clients.set(ws, data);
 
@@ -55,10 +55,9 @@ wss.on('connection', (ws) => {
         }
     });
 
-    // Handle disconnection
     ws.on('close', () => {
-        console.log("❎ Client disconnected.");
         const player = clients.get(ws);
+        console.log(`${player.name} left the game`);
         clients.delete(ws);
         broadcast({
             type: "disconnect",

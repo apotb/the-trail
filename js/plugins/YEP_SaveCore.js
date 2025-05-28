@@ -1421,6 +1421,7 @@ Scene_File.prototype.performActionLoad = function() {
 };
 
 Scene_File.prototype.onLoadSuccess = function() {
+    if (socket && socket.readyState === WebSocket.OPEN) disconnectFromServer();
     SoundManager.playLoad();
     this.fadeOutAll();
     this.reloadMapIfUpdated();

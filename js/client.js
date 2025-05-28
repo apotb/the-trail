@@ -2,6 +2,9 @@
 let socket;
 
 window.players = {};
+window.chat = [];
+
+const CHAT_LIMIT = 10;
 
 function startMultiplayerConnection(playerName = "Player") {
     if (socket && socket.readyState === WebSocket.OPEN) return; // prevent duplicates
@@ -10,16 +13,24 @@ function startMultiplayerConnection(playerName = "Player") {
 
     socket.onopen = () => {
         console.log("✅ Connected to server!");
-        sendChat(`${playerName} has joined.`);
         sendPlayer();
+        sendMessage(`${playerName} joined the game`);        
     };
 
     socket.onmessage = (event) => {
         try {
             const data = JSON.parse(event.data);
+
             if (data.type === "chat") {
-                console.log(`💬 ${data.name}: ${data.text}`);
-                // TODO: show in UI
+                const text = `${data.name}: ${data.text}`;
+                console.log(`💬 ${text}`);
+                window.chat.push(text);
+            }
+
+            if (data.type === "message") {
+                const text = `${data.message}`
+                console.log(`💬 ${text}`)
+                window.chat.push(text);
             }
 
             if (data.type === "player") {
@@ -80,6 +91,23 @@ function sendChat(text) {
     }
 }
 
+function sendMessage(message) {
+    if (socket && socket.readyState === WebSocket.OPEN) {
+        socket.send(JSON.stringify({
+            type: "message",
+            message
+        }))
+    }
+}
+
+function getChat() {
+    let chatString = "";
+    window.chat.slice(-CHAT_LIMIT).forEach(chat => {
+        chatString += chat + "\n";
+    });
+    return chatString;
+}
+
 function sendPlayer() {
     if (socket && socket.readyState === WebSocket.OPEN) {
         socket.send(JSON.stringify({
@@ -124,6 +152,7 @@ function disconnectFromServer() {
     if (socket && socket.readyState === WebSocket.OPEN) {
         socket.close(1000, "Client closed connection"); // Normal close code
         console.log("🔌 Disconnected from server.");
+        window.chat = [];
     } else {
         console.warn("⚠️ No active connection to disconnect.");
     }
@@ -133,6 +162,8 @@ function disconnectFromServer() {
 window.startMultiplayerConnection = startMultiplayerConnection;
 window.disconnectFromServer = disconnectFromServer;
 window.sendChat = sendChat;
+window.sendMessage = sendMessage;
+window.getChat = getChat;
 window.sendPlayer = sendPlayer;
 window.sendMove = sendMove;
 window.sendVanity = sendVanity;
