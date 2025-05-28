@@ -5,6 +5,7 @@ window.players = {};
 window.chat = [];
 
 const CHAT_LIMIT = 10;
+const CHAT_TIME = 15 * 1000;
 
 function startMultiplayerConnection(playerName = "Player") {
     if (socket && socket.readyState === WebSocket.OPEN) return; // prevent duplicates
@@ -21,17 +22,18 @@ function startMultiplayerConnection(playerName = "Player") {
         try {
             const data = JSON.parse(event.data);
 
-            if (data.type === "chat") {
-                const text = `${data.name}: ${data.text}`;
-                console.log(`💬 ${text}`);
-                window.chat.push(text);
+            // Messages
+
+            if (data.type === "chat") data.text = `${data.name}: ${data.text}`;
+
+            if (data.type === "message") data.text = `${data.message}`
+
+            if (data.text) {
+                console.log(`💬 ${data.text}`)
+                window.chat.push(data);
             }
 
-            if (data.type === "message") {
-                const text = `${data.message}`
-                console.log(`💬 ${text}`)
-                window.chat.push(text);
-            }
+            // Player data
 
             if (data.type === "player") {
                 if (data.id === API_STEAM.userId()) return;
@@ -66,6 +68,8 @@ function startMultiplayerConnection(playerName = "Player") {
                 if (player) player.setImage(data.spriteName, data.spriteIndex);
             }
 
+            // Internal
+
             if (data.type === "disconnect") {
                 Yanfly.DespawnEvent(window.players[data.id]);
                 delete window.players[data.id];
@@ -86,7 +90,8 @@ function sendChat(text) {
         socket.send(JSON.stringify({
             type: "chat",
             name: API_STEAM.username(),
-            text
+            text,
+            time: Date.now()
         }));
     }
 }
@@ -95,17 +100,14 @@ function sendMessage(message) {
     if (socket && socket.readyState === WebSocket.OPEN) {
         socket.send(JSON.stringify({
             type: "message",
-            message
+            message,
+            time: Date.now()
         }))
     }
 }
 
 function getChat() {
-    let chatString = "";
-    window.chat.slice(-CHAT_LIMIT).forEach(chat => {
-        chatString += chat + "\n";
-    });
-    return chatString;
+    return window.chat.filter(chat => Date.now() - chat.time < CHAT_TIME).slice(-CHAT_LIMIT).reverse().map(chat => chat.text);
 }
 
 function sendPlayer() {
