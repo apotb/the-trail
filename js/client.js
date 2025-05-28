@@ -1,5 +1,6 @@
 // client.js
 let socket;
+
 window.players = {};
 
 function startMultiplayerConnection(playerName = "Player") {
@@ -10,7 +11,6 @@ function startMultiplayerConnection(playerName = "Player") {
     socket.onopen = () => {
         console.log("✅ Connected to server!");
         sendChat(`${playerName} has joined.`);
-        sendPlayer();
     };
 
     socket.onmessage = (event) => {
@@ -28,12 +28,8 @@ function startMultiplayerConnection(playerName = "Player") {
                 if (!player) {
                     Yanfly.SpawnEventTemplateAt('Player', data.x, data.y, true);
                     player = $gameMap.LastSpawnedEvent();
-                    players[data.id] = player;
-                    $gameMap._events[data.userId] = player;
-                    /*if (SceneManager._scene instanceof Game_Map) {
-                        SceneManager._scene._spriteset.destroyAllBShadows();
-                        SceneManager._scene._spriteset.createCharacterShadows();
-                    }*/
+                    window.players[data.id] = player;
+                    SceneManager._scene._spriteset.createBShadow(player.eventId(), player);
                 }
 
                 player.setImage(data.spriteName, data.spriteIndex);
@@ -47,6 +43,8 @@ function startMultiplayerConnection(playerName = "Player") {
                 if (player) {
                     player.setMoveSpeed(data.speed);
                     player.moveToPoint(data.x, data.y);
+                    player.x = data.x;
+                    player.y = data.y;
                 }
             }
 

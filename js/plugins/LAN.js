@@ -57,6 +57,7 @@ Scene_LAN.prototype.createCommandWindow = function() {
 };
 
 Scene_LAN.prototype.connectCommand = function() {
+    SceneManager.push(Scene_Map);
     startMultiplayerConnection(API_STEAM.username());
     this._commandWindow.activate();
 };

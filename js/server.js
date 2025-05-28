@@ -3,16 +3,14 @@ const WebSocket = require('ws');
 
 // Create a WebSocket server on port 54000
 const wss = new WebSocket.Server({ port: 54000 });
-const clients = new Set();
+const clients = new Map();
 
 console.log("✅ Server running at ws://localhost:54000");
 
 // Handle new connections
 wss.on('connection', (ws) => {
     console.log("🔌 New client connected.");
-    clients.add(ws);
 
-    // Handle messages from clients
     ws.on('message', (raw) => {
         try {
             const data = JSON.parse(raw.toString());
@@ -25,18 +23,36 @@ wss.on('connection', (ws) => {
                     text: data.text
                 });
 
-                for (const client of clients) {
+                for (const client of clients.keys()) {
                     if (client.readyState === WebSocket.OPEN) {
                         client.send(payload);
                     }
                 }
-            } else if (["player", "move", "vanity"].includes(data.type)) {
-                const payload = JSON.stringify(data); // relay as-is to all clients
+            } else if (data.type === "player") {
+                clients.set(ws, data);
 
-                for (const client of clients) {
-                    if (client.readyState === WebSocket.OPEN && client !== ws) {
-                        client.send(payload);
-                    }
+                // Send the full player list to the new client
+                const otherPlayers = Array.from(clients.entries())
+                    .map(([_, pdata]) => pdata)
+                    .filter((pdata) => pdata.id !== data.id);
+                
+                for (const player of otherPlayers) {
+                    ws.send(JSON.stringify(player));
+                }
+            } else if (data.type === "move") {
+                let player = clients.get(ws);
+                player.x = data.x;
+                player.y = data.y
+                player.direction = data.direction;
+                clients.set(ws, player);
+            } else if (data.type === "vanity") {
+
+            }
+
+            const payload = JSON.stringify(data);
+            for (const client of clients.keys()) {
+                if (client.readyState === WebSocket.OPEN && client !== ws) {
+                    client.send(payload);
                 }
             }
         } catch (err) {
