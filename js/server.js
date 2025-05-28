@@ -51,7 +51,6 @@ wss.on('connection', (ws) => {
                 player.y = data.y;
                 player.direction = data.direction;
                 clients.set(ws, player);
-                console.log(clients.get(ws));
             } else if (data.type === "vanity") {
 
             } else if (data.type === "ping") {

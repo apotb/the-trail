@@ -109,7 +109,6 @@ function syncTimeWithServer() {
                 const end = Date.now();
                 const roundTrip = end - start;
                 serverTimeOffset = data.serverTime + roundTrip / 2 - end;
-                console.log("⏱️ Server time offset:", serverTimeOffset);
                 socket.removeEventListener("message", listener);
                 resolve();
             }

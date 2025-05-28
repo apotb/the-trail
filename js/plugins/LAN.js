@@ -10,13 +10,13 @@ Game_Player.prototype.moveStraight = function(d) {
 
 Game_Player.prototype.performTransfer = function() {
     if (this.isTransferring()) {
+        sendTransfer($gameMap.mapId(), this._newMapId, this._newX, this._newY, this._newDirection); // Multiplayer
         this.setDirection(this._newDirection);
         if (this._newMapId !== $gameMap.mapId() || this._needsMapReload) {
             $gameMap.setup(this._newMapId);
             this._needsMapReload = false;
         }
         this.locate(this._newX, this._newY);
-        sendTransfer($gameMap.mapId(), this._newMapId, this._newX, this._newY, this._newDirection); // Multiplayer
         this.refresh();
         this.clearTransferInfo();
     }
