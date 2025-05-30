@@ -5210,9 +5210,8 @@
         "code": 111,
         "indent": 5,
         "parameters": [
-          0,
-          118,
-          0
+          12,
+          "$gameSwitches.value(118) || $gameTemp._bossRush"
         ]
       },
       {
