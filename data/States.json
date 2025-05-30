@@ -319,7 +319,13 @@
     "removeByWalking": false,
     "restriction": 4,
     "stepsToRemove": 100,
-    "traits": []
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 2,
+        "value": 2
+      }
+    ]
   },
   {
     "id": 9,
@@ -2853,6 +2859,11 @@
     "restriction": 4,
     "stepsToRemove": 100,
     "traits": [
+      {
+        "code": 11,
+        "dataId": 2,
+        "value": 2
+      },
       {
         "code": 21,
         "dataId": 3,
