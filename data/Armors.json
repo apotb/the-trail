@@ -299,16 +299,10 @@
     "atypeId": 1,
     "description": "One of those cool floppy hats you see on the\nwizards in books. Provides some extra magic ability.",
     "etypeId": 3,
-    "traits": [
-      {
-        "code": 25,
-        "dataId": 0,
-        "value": 1.01
-      }
-    ],
+    "traits": [],
     "iconIndex": 165,
     "name": "Floppy Hat",
-    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx1-x2 item 51: 100%\n</Disassemble Pool: Basic>",
+    "note": "<Upgrade Slots: 1>\n\n<Element Amplify Magical: +1%>\n\n<Disassemble Pool: Basic>\nx1-x2 item 51: 100%\n</Disassemble Pool: Basic>",
     "params": [
       0,
       3,
@@ -372,7 +366,7 @@
       {
         "code": 22,
         "dataId": 1,
-        "value": 0.05
+        "value": 0.1
       }
     ],
     "iconIndex": 450,
@@ -382,7 +376,7 @@
       0,
       0,
       0,
-      1,
+      2,
       0,
       0,
       1,
@@ -479,16 +473,10 @@
     "atypeId": 1,
     "description": "The floppier the hat, the stronger the magic.",
     "etypeId": 3,
-    "traits": [
-      {
-        "code": 25,
-        "dataId": 0,
-        "value": 1.02
-      }
-    ],
+    "traits": [],
     "iconIndex": 693,
     "name": "Floppier Hat",
-    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx2-x3 item 51: 100%\nx1 Yarn: 70%\n</Disassemble Pool: Basic>",
+    "note": "<Upgrade Slots: 1>\n\n<Element Amplify Magical: +2%>\n\n<Disassemble Pool: Basic>\nx2-x3 item 51: 100%\nx1 Yarn: 70%\n</Disassemble Pool: Basic>",
     "params": [
       0,
       8,
@@ -634,7 +622,7 @@
       0,
       0,
       0,
-      3,
+      0,
       0
     ],
     "price": 50
@@ -743,12 +731,12 @@
   {
     "id": 34,
     "atypeId": 1,
-    "description": "A yarn-woven headband dyed with a bloody red identical\nto the \\ia[33]. Boosts physical lifesteal.",
+    "description": "A yarn-woven headband dyed with a bloody red identical\nto the \\ia[33]. Boosts physical lifesteal by 2%.",
     "etypeId": 3,
     "traits": [],
     "iconIndex": 585,
     "name": "Blood-Red Headband",
-    "note": "<HP Life Steal Physical: +1%>\n\n<Disassemble Pool: Basic>\nx1-x2 Yarn: 100%\n</Disassemble Pool: Basic>",
+    "note": "<HP Life Steal Physical: +2%>\n\n<Disassemble Pool: Basic>\nx1-x2 Yarn: 100%\n</Disassemble Pool: Basic>",
     "params": [
       6,
       0,
@@ -756,7 +744,7 @@
       0,
       0,
       0,
-      3,
+      0,
       0
     ],
     "price": 120
@@ -881,7 +869,7 @@
   {
     "id": 40,
     "atypeId": 1,
-    "description": "Boots made out of a fine leather, boosting AGI, CRI,\nand EVA at the cost of less protection than metal boots.",
+    "description": "Boots made out of coarse leather, boosting agility, crit rate,\nand evasion -- at the cost of less protection than metal boots.",
     "etypeId": 5,
     "traits": [
       {
@@ -897,7 +885,7 @@
     ],
     "iconIndex": 467,
     "name": "Leather Boots",
-    "note": "<Disassemble Pool: Basic>\nx2-5 Leather: 100%\n</Disassemble Pool: Basic>",
+    "note": "<Synthesis Ingredients>\nLeather: 3\nWorn Cloth: 3\n</Synthesis Ingredients>\n\n<Disassemble Pool: Basic>\nx1 Leather: 75%\nx1 Leather: 75%\nx1 Leather: 50%\n</Disassemble Pool: Basic>",
     "params": [
       0,
       0,
@@ -977,7 +965,7 @@
   {
     "id": 43,
     "atypeId": 1,
-    "description": "The warding effect of this charm is much stronger than\nusual. Its negative effect on the user has also increased.",
+    "description": "The warding effect of this charm is much stronger than usual. Its negative effect\non the user has also increased. Decreases incoming magical damage by 5%.",
     "etypeId": 6,
     "traits": [
       {
@@ -1020,7 +1008,7 @@
     ],
     "iconIndex": 469,
     "name": "Iron Greaves",
-    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nLeather: 4\nWorn Cloth: 5\nIron Cluster: 4\n</Synthesis Ingredients>\n<Mask Name: Protective Footwear>\n\n<Disassemble Pool: Advanced>\nx1-2 Iron Cluster: 60%\n</Disassemble Pool: Advanced>",
+    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nLeather: 4\nWorn Cloth: 4\nIron Cluster: 4\n</Synthesis Ingredients>\n<Mask Name: Protective Footwear>\n\n<Disassemble Pool: Advanced>\nx1-2 Iron Cluster: 60%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
@@ -1463,10 +1451,10 @@
     "traits": [],
     "iconIndex": 340,
     "name": "Condensed Green Gel",
-    "note": "<Disassemble Pool: Advanced>\nx5-10 Green Gel: 100%\n</Disassemble Pool: Advanced>",
+    "note": "<Optimize Weight: 0.5>\n\n<Disassemble Pool: Advanced>\nx5-10 Green Gel: 100%\n</Disassemble Pool: Advanced>",
     "params": [
-      3,
-      3,
+      1,
+      1,
       0,
       1,
       0,
@@ -1484,10 +1472,10 @@
     "traits": [],
     "iconIndex": 359,
     "name": "Condensed Blue Gel",
-    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx5-10 Blue Gel: 100%\n</Disassemble Pool: Advanced>",
+    "note": "<Upgrade Slots: 1>\n<Optimize Weight: 0.5>\n\n<Disassemble Pool: Advanced>\nx5-10 Blue Gel: 100%\n</Disassemble Pool: Advanced>",
     "params": [
-      5,
-      5,
+      2,
+      2,
       0,
       2,
       0,
@@ -1723,10 +1711,10 @@
     "traits": [],
     "iconIndex": 358,
     "name": "Condensed Red Gel",
-    "note": "<Upgrade Slots: 2>\n\n<Disassemble Pool: Advanced>\nx5-10 Red Gel: 100%\n</Disassemble Pool: Advanced>",
+    "note": "<Upgrade Slots: 2>\n<Optimize Weight: 0.5>\n\n<Disassemble Pool: Advanced>\nx5-10 Red Gel: 100%\n</Disassemble Pool: Advanced>",
     "params": [
-      7,
-      7,
+      3,
+      3,
       0,
       3,
       0,
@@ -1964,10 +1952,10 @@
     ],
     "iconIndex": 345,
     "name": "Condensed White Gel",
-    "note": "<Upgrade Slots: 3>",
+    "note": "<Upgrade Slots: 3>\n<Optimize Weight: 0.5>",
     "params": [
-      11,
-      11,
+      5,
+      5,
       0,
       5,
       0,
@@ -2139,23 +2127,18 @@
   {
     "id": 89,
     "atypeId": 1,
-    "description": "Increases outgoing magical damage by 15%,\nbut also increases all MP costs by 30%.",
+    "description": "Increases outgoing magical damage by 10%,\nbut also increases all MP costs by 20%.",
     "etypeId": 9,
     "traits": [
       {
-        "code": 25,
-        "dataId": 0,
-        "value": 1.15
-      },
-      {
         "code": 23,
         "dataId": 4,
-        "value": 1.3
+        "value": 1.2
       }
     ],
     "iconIndex": 127,
     "name": "Water Elemental's Flow",
-    "note": "<Cannot Rename>",
+    "note": "<Cannot Rename>\n\n<Element Magnify Magical: +10%>",
     "params": [
       0,
       0,
@@ -2543,12 +2526,12 @@
   {
     "id": 103,
     "atypeId": 1,
-    "description": "An enchanted strip of lace taken from an old dress. Boosts the\ndamage of skills that harness any of the ten elements by 10%.",
+    "description": "An enchanted strip of lace taken from an old dress. Boosts the\ndamage of skills that harness any of the ten elements by 8%.",
     "etypeId": 8,
     "traits": [],
     "iconIndex": 182,
     "name": "Elemental Lace",
-    "note": "<Element Amplify Fire: +10%>\n<Element Amplify Ice: +10%>\n<Element Amplify Electric: +10%>\n<Element Amplify Water: +10%>\n<Element Amplify Earth: +10%>\n<Element Amplify Wind: +10%>\n<Element Amplify Plant: +10%>\n<Element Amplify Metal: +10%>\n<Element Amplify Light: +10%>\n<Element Amplify Dark: +10%>",
+    "note": "<Element Amplify Fire: +8%>\n<Element Amplify Ice: +8%>\n<Element Amplify Electric: +8%>\n<Element Amplify Water: +8%>\n<Element Amplify Earth: +8%>\n<Element Amplify Wind: +8%>\n<Element Amplify Plant: +8%>\n<Element Amplify Metal: +8%>\n<Element Amplify Light: +8%>\n<Element Amplify Dark: +8%>",
     "params": [
       0,
       0,
@@ -2564,7 +2547,7 @@
   {
     "id": 104,
     "atypeId": 1,
-    "description": "A beautifully crafted harp. Any hit on an enemy has a 40% chance to generate\na healing orb that will heal the most injured party member by 8% of damage dealt.",
+    "description": "A beautifully crafted harp. Any hit on an enemy has a 40% chance to generate\na healing orb that will heal the most injured party member by 6% of damage dealt.",
     "etypeId": 8,
     "traits": [],
     "iconIndex": 248,
@@ -2874,10 +2857,10 @@
     ],
     "iconIndex": 180,
     "name": "Vigilante's Charm",
-    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nHenry's Charm\nCondensed White Gel\n</Synthesis Ingredients>\n<Mask Name: HRG/CEV Charm>\n\n<Disassemble Pool: Advanced>\nx1 Henry's Charm: 90%\nx1 Condensed White Gel: 90%\n</Disassemble Pool: Advanced>",
+    "note": "<Upgrade Slots: 3>\n<Optimize Weight: 0.5>\n\n<Synthesis Ingredients>\nHenry's Charm\nCondensed White Gel\n</Synthesis Ingredients>\n<Mask Name: HRG/CEV Charm>\n\n<Disassemble Pool: Advanced>\nx1 Henry's Charm: 90%\nx1 Condensed White Gel: 90%\n</Disassemble Pool: Advanced>",
     "params": [
-      11,
-      11,
+      5,
+      5,
       0,
       5,
       0,
@@ -3262,7 +3245,7 @@
     ],
     "iconIndex": 480,
     "name": "Padded Boots",
-    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nLeather Boots\nWorn Cloth: 8\nTarantula Silk: 3\n</Synthesis Ingredients>\n<Mask Name: Comfortable Footwear>\n<Synthesis SE: Equip3>\n\n<Disassemble Pool: Basic>\nx2-5 Leather: 100%\n</Disassemble Pool: Basic>\n<Disassemble Pool: Advanced>\nx1 Leather Boots: 80%\n</Disassemble Pool: Advanced>",
+    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nLeather Boots\nWorn Cloth: 5\nTarantula Silk\n</Synthesis Ingredients>\n<Mask Name: Comfortable Footwear>\n<Synthesis SE: Equip3>\n\n<Disassemble Pool: Basic>\nx2-5 Leather: 100%\n</Disassemble Pool: Basic>\n<Disassemble Pool: Advanced>\nx1 Leather Boots: 80%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
@@ -3877,7 +3860,7 @@
     "traits": [],
     "iconIndex": 658,
     "name": "Sorrowful Headpiece",
-    "note": "<Upgrade Slots: 2>\n\n<Element Amplify Healing: +10%>",
+    "note": "<Upgrade Slots: 2>\n<Optimize Weight: 0.5>\n\n<Element Amplify Healing: +10%>",
     "params": [
       8,
       15,
@@ -4251,10 +4234,10 @@
     ],
     "iconIndex": 342,
     "name": "Condensed Icy Gel",
-    "note": "<Upgrade Slots: 2>\n\n<Disassemble Pool: Advanced>\nx5-10 Icy Gel: 100%\n</Disassemble Pool: Advanced>",
+    "note": "<Upgrade Slots: 2>\n<Optimize Weight: 0.5>\n\n<Disassemble Pool: Advanced>\nx5-10 Icy Gel: 100%\n</Disassemble Pool: Advanced>",
     "params": [
-      9,
-      9,
+      4,
+      4,
       0,
       4,
       0,
@@ -4294,12 +4277,12 @@
   {
     "id": 165,
     "atypeId": 1,
-    "description": "A stylish silver headband with a cloth lining that makes it sit comfortably\naround one's head. Provides a decent increase to physical life steal.",
+    "description": "A stylish silver headband with a cloth lining that makes it sit comfortably\naround one's head. Provides a moderate increase of 3% to physical life steal.",
     "etypeId": 3,
     "traits": [],
     "iconIndex": 460,
     "name": "Silver Headband",
-    "note": "<Upgrade Slots: 2>\n<HP Life Steal Physical: +1.5%>",
+    "note": "<Upgrade Slots: 2>\n<HP Life Steal Physical: +3%>",
     "params": [
       10,
       0,
@@ -4307,7 +4290,7 @@
       0,
       0,
       0,
-      5,
+      0,
       0
     ],
     "price": 750
@@ -4334,7 +4317,7 @@
       0,
       0,
       0,
-      10,
+      0,
       0
     ],
     "price": 750
@@ -4344,16 +4327,10 @@
     "atypeId": 1,
     "description": "Floppy to the max! The tip of the hat now sags enough to attract stray\nmagical particles in the air, increasing its power more than ever.",
     "etypeId": 3,
-    "traits": [
-      {
-        "code": 25,
-        "dataId": 0,
-        "value": 1.03
-      }
-    ],
+    "traits": [],
     "iconIndex": 694,
     "name": "Floppiest Hat",
-    "note": "<Upgrade Slots: 2>\n\n<Disassemble Pool: Basic>\nx4-x7 item 51: 100%\nx3-5 Yarn: 100%\n</Disassemble Pool: Basic>",
+    "note": "<Upgrade Slots: 2>\n<Optimize Weight: 0.8>\n\n<Element Amplify Magical: +3%>\n\n<Disassemble Pool: Basic>\nx4-x7 item 51: 100%\nx3-5 Yarn: 100%\n</Disassemble Pool: Basic>",
     "params": [
       0,
       15,
@@ -4542,7 +4519,7 @@
     ],
     "iconIndex": 354,
     "name": "Bionomic Globe",
-    "note": "<Upgrade Slots: 3>\n\n<Passive State: 199, 200>\n\n<Element Amplify Ice: +20%>\n<Element Amplify Earth: +20%>\n<Element Amplify Wind: +20%>\n\n<Synthesis Ingredients>\nForest Exploration Kit\nSnow Globe\nRing of the Forest\nBat Sling\nWarmer Scarf\nEnchanted Dragon Scale: 3\nFrozen Jewel: 5\nEarth Essence: 5\nPlant Essence: 5\nWind Essence: 5\nIce Essence: 5\n</Synthesis Ingredients>\n<Mask Name: Telluria Field Conquerer>",
+    "note": "<Upgrade Slots: 3>\n\n<Passive State: 199, 200>\n\n<Element Amplify Ice: +15%>\n<Element Amplify Earth: +15%>\n<Element Amplify Wind: +15%>\n\n<Synthesis Ingredients>\nForest Exploration Kit\nSnow Globe\nRing of the Forest\nBat Sling\nWarmer Scarf\nEnchanted Dragon Scale: 3\nFrozen Jewel: 5\nEarth Essence: 5\nPlant Essence: 5\nWind Essence: 5\nIce Essence: 5\n</Synthesis Ingredients>\n<Mask Name: Telluria Field Conquerer>",
     "params": [
       0,
       0,
@@ -4589,6 +4566,11 @@
     "etypeId": 3,
     "traits": [
       {
+        "code": 21,
+        "dataId": 1,
+        "value": 1.05
+      },
+      {
         "code": 22,
         "dataId": 8,
         "value": 0.03
@@ -4599,10 +4581,10 @@
     "note": "<Upgrade Slots: 2>",
     "params": [
       0,
-      75,
+      100,
       0,
       0,
-      0,
+      5,
       0,
       0,
       0
@@ -4729,7 +4711,7 @@
     ],
     "iconIndex": 722,
     "name": "Fiery Tablet",
-    "note": "<Upgrade Slots: 1>\n<Passive State: 126>\n\n<Element Amplify Fire: +5%>\n\n<Synthesis Ingredients>\nSelfish Candle\nWanted Poster\nSleepy Hourglass\nFire Resistance Potion: 5\nFiery Blood: 10\n</Synthesis Ingredients>\n<Mask Name: Hot Dungeon Resistance Item>",
+    "note": "<Upgrade Slots: 1>\n<Passive State: 126>\n\n<Element Amplify Fire: +10%>\n\n<Synthesis Ingredients>\nSelfish Candle\nWanted Poster\nSleepy Hourglass\nFire Resistance Potion: 5\nFiery Blood: 10\n</Synthesis Ingredients>\n<Mask Name: Hot Dungeon Resistance Item>",
     "params": [
       0,
       0,
@@ -4899,7 +4881,7 @@
     "traits": [],
     "iconIndex": 770,
     "name": "Fiery Wristbraces",
-    "note": "<Upgrade Slots: 3>\n\n\n\n<Synthesis Ingredients>\nSilver Wristbraces\nFiery Blood: 5\nEctoplasm: 3\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Upgraded Wristbraces>",
+    "note": "<Upgrade Slots: 3>\n\n<Element Amplify Fire: +5%>\n\n<Synthesis Ingredients>\nSilver Wristbraces\nFiery Blood: 5\nEctoplasm: 3\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Upgraded Wristbraces>",
     "params": [
       0,
       16,
@@ -5001,7 +4983,7 @@
   {
     "id": 189,
     "atypeId": 1,
-    "description": "Tellurium and imp blood have enhanced this magic equip. Attacks have a 60% chance\nto generate an orb that heals the lowest HP party member by 12% of damage dealt.",
+    "description": "Tellurium and imp blood have enhanced this magic equip. Attacks have a 50% chance\nto generate an orb that heals the lowest HP party member by 8% of damage dealt.",
     "etypeId": 8,
     "traits": [],
     "iconIndex": 774,
@@ -5022,12 +5004,12 @@
   {
     "id": 190,
     "atypeId": 1,
-    "description": "Increases outgoing elemental damage by a\nwhopping 20%. Tellurium is powerful!",
+    "description": "Increases all outgoing elemental damage by a\nwhopping 12%. Tellurium is powerful!",
     "etypeId": 8,
     "traits": [],
     "iconIndex": 775,
     "name": "Fiery Lace",
-    "note": "<Upgrade Slots: 3>\n\n<Element Amplify Fire: +20%>\n<Element Amplify Ice: +20%>\n<Element Amplify Electric: +20%>\n<Element Amplify Water: +20%>\n<Element Amplify Earth: +20%>\n<Element Amplify Wind: +20%>\n<Element Amplify Plant: +20%>\n<Element Amplify Metal: +20%>\n<Element Amplify Light: +20%>\n<Element Amplify Dark: +20%>\n\n<Synthesis Ingredients>\nElemental Lace\nFiery Blood: 5\nEctoplasm: 3\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Upgraded Lace>",
+    "note": "<Upgrade Slots: 3>\n\n<Element Amplify Fire: +12%>\n<Element Amplify Ice: +12%>\n<Element Amplify Electric: +12%>\n<Element Amplify Water: +12%>\n<Element Amplify Earth: +12%>\n<Element Amplify Wind: +12%>\n<Element Amplify Plant: +12%>\n<Element Amplify Metal: +12%>\n<Element Amplify Light: +12%>\n<Element Amplify Dark: +12%>\n\n<Synthesis Ingredients>\nElemental Lace\nFiery Blood: 5\nEctoplasm: 3\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Upgraded Lace>",
     "params": [
       0,
       0,
@@ -5091,12 +5073,12 @@
   {
     "id": 193,
     "atypeId": 1,
-    "description": "A unique yarn-woven head accessory. Its red coloration\nis faded yet seemingly vivid. Boosts physical lifesteal.",
+    "description": "A unique yarn-woven head accessory. Its red coloration is faded yet\nseemingly vivid. You heal back 1% of physical damage you deal.",
     "etypeId": 3,
     "traits": [],
     "iconIndex": 793,
     "name": "Red Headband",
-    "note": "<HP Life Steal Physical: +0.5%>\n\n<Disassemble Pool: Basic>\nx1-x2 Yarn: 100%\n</Disassemble Pool: Basic>",
+    "note": "<HP Life Steal Physical: +1%>\n\n<Disassemble Pool: Basic>\nx1-x2 Yarn: 100%\n</Disassemble Pool: Basic>",
     "params": [
       3,
       0,
@@ -5104,7 +5086,7 @@
       0,
       0,
       0,
-      1,
+      0,
       0
     ],
     "price": 50
@@ -5131,7 +5113,7 @@
       0,
       0,
       0,
-      6,
+      0,
       0
     ],
     "price": 120
@@ -5262,18 +5244,12 @@
   {
     "id": 200,
     "atypeId": 1,
-    "description": "This is the next level of wristbraces after the\n\\ia[185]! Power creep, am I right?",
+    "description": "This is the next level of wristbraces after the \\ia[185]!\nPower creep, am I right? Icon is temporary.",
     "etypeId": 6,
-    "traits": [
-      {
-        "code": 25,
-        "dataId": 0,
-        "value": 1.05
-      }
-    ],
-    "iconIndex": 770,
+    "traits": [],
+    "iconIndex": 178,
     "name": "Andrew's Wristbraces",
-    "note": "<Upgrade Slots: 4>\n\n<Element Amplify Fire: +10%>\n<Element Amplify Ice: +10%>\n<Element Amplify Electric: +10%>\n<Element Amplify Water: +10%>\n<Element Amplify Earth: +10%>\n<Element Amplify Wind: +10%>\n<Element Amplify Plant: +10%>\n<Element Amplify Metal: +10%>\n<Element Amplify Light: +10%>\n<Element Amplify Dark: +10%>",
+    "note": "<Upgrade Slots: 4>\n\n<Element Amplify Magical: +5%>\n<Element Amplify Fire: +5%>",
     "params": [
       0,
       32,
@@ -5321,7 +5297,7 @@
     ],
     "iconIndex": 347,
     "name": "Green Mage Crystal",
-    "note": "<Passive State: 194>",
+    "note": "<Upgrade Slots: 1>\n\n<Passive State: 194>",
     "params": [
       0,
       0,
@@ -5337,18 +5313,18 @@
   {
     "id": 203,
     "atypeId": 1,
-    "description": "Wisdom passed down in the form of a story over thousands of years.\nReduces \\nl[9] damage by 10% and increases outgoing \\nl[8] damage by 10%.",
-    "etypeId": 6,
+    "description": "Wisdom passed down in the form of a story over thousands of years.\nReduces \\nl[9] damage by 5% and increases outgoing \\nl[8] damage by 5%.",
+    "etypeId": 8,
     "traits": [
       {
         "code": 11,
         "dataId": 9,
-        "value": 0.9
+        "value": 0.95
       }
     ],
     "iconIndex": 808,
     "name": "Holy Scriptures",
-    "note": "<Element Amplify Light: +10%>",
+    "note": "<Element Amplify Light: +5%>",
     "params": [
       0,
       0,
@@ -5495,7 +5471,7 @@
     "traits": [],
     "iconIndex": 176,
     "name": "Ring of the Forest",
-    "note": "<Passive State: 199>",
+    "note": "<Passive State: 199>\n<Optimize Weight: 0.6>",
     "params": [
       25,
       0,
@@ -5658,7 +5634,7 @@
     ],
     "iconIndex": 750,
     "name": "Tideflame Headpiece",
-    "note": "<Upgrade Slots: 3>\n\n<Element Amplify Healing: +15%>\n\n<On Creation Eval>\nitem.iconIndex = 750 + item.id % 2;\n</On Creation Eval>",
+    "note": "<Upgrade Slots: 3>\n<Optimize Weight: 0.5>\n\n<Element Amplify Healing: +15%>\n\n<On Creation Eval>\nitem.iconIndex = 750 + item.id % 2;\n</On Creation Eval>",
     "params": [
       12,
       20,
@@ -5722,12 +5698,12 @@
   {
     "id": 218,
     "atypeId": 1,
-    "description": "A deep blue headband with a striking red accent.\nIncreases physical lifesteal by a moderate amount.",
+    "description": "A deep blue headband with a striking red accent. Increases\nphysical lifesteal by 4%. Amplifies outgoing \\nl[5] by 10%.",
     "etypeId": 3,
     "traits": [],
     "iconIndex": 821,
     "name": "Bloodwave Headband",
-    "note": "<Upgrade Slots: 3>\n<HP Life Steal Physical: +3%>\n\n<Synthesis Ingredients>\nSilver Headband\nFeral Rat Fur: 3\nAqua Gem: 2\nWater Essence: 3\n</Synthesis Ingredients>",
+    "note": "<Upgrade Slots: 3>\n<HP Life Steal Physical: +4%>\n\n<Element Amplify Water: +10%>\n\n<Synthesis Ingredients>\nSilver Headband\nFeral Rat Fur: 3\nAqua Gem: 2\nWater Essence: 3\n</Synthesis Ingredients>",
     "params": [
       20,
       0,
@@ -5735,7 +5711,7 @@
       0,
       0,
       0,
-      10,
+      0,
       0
     ],
     "price": 1000
@@ -5743,7 +5719,7 @@
   {
     "id": 219,
     "atypeId": 1,
-    "description": "A mask styled in the fashion of a swirling vortex.\nFocuses the user's energy onto landing critical hits.",
+    "description": "A mask styled in the fashion of a swirling vortex. Focuses the user's\nenergy onto landing critical hits. Amplifies outgoing \\nl[5] by 10%.",
     "etypeId": 3,
     "traits": [
       {
@@ -5754,7 +5730,7 @@
     ],
     "iconIndex": 822,
     "name": "Vortex Mask",
-    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nSilver Mask\nFeral Rat Fur: 3\nAqua Gem: 2\nWater Essence: 3\n</Synthesis Ingredients>",
+    "note": "<Upgrade Slots: 3>\n\n<Element Amplify Water: +10%>\n\n<Synthesis Ingredients>\nSilver Mask\nFeral Rat Fur: 3\nAqua Gem: 2\nWater Essence: 3\n</Synthesis Ingredients>",
     "params": [
       0,
       0,
@@ -5762,7 +5738,7 @@
       0,
       0,
       0,
-      20,
+      0,
       0
     ],
     "price": 1000
@@ -5855,7 +5831,7 @@
     ],
     "iconIndex": 482,
     "name": "Haloweave Gloves",
-    "note": "<Upgrade Slots: 2>\n\n<Element Amplify Light: +10%>",
+    "note": "<Upgrade Slots: 2>\n\n<Element Amplify Light: +10%>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(109);\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -5898,13 +5874,13 @@
   {
     "id": 224,
     "atypeId": 1,
-    "description": "When your soul begins to crack, the \\c[30]Purple\\c[0] listens. And it\nwill answer. Reduces MP usage by 25% when below 50% MP.",
+    "description": "When your soul begins to crack, the \\c[30]Purple\\c[0] listens. And it\nwill answer. Reduces MP usage by 50% when below 50% MP.",
     "etypeId": 6,
     "traits": [
       {
         "code": 22,
         "dataId": 8,
-        "value": 0.02
+        "value": 0.03
       }
     ],
     "iconIndex": 830,
@@ -5925,12 +5901,12 @@
   {
     "id": 225,
     "atypeId": 1,
-    "description": "Rename this in the Sentinel's drops and changelog once it's ready!",
+    "description": "Gain +2 ATK and MAT for each turn elapsed in battle.",
     "etypeId": 9,
     "traits": [],
     "iconIndex": 126,
-    "name": "SENTINEL POWER",
-    "note": "<Cannot Rename>",
+    "name": "Sentinel's Persistence",
+    "note": "<Custom Parameters>\nconst turns = $gameParty.inBattle() ? $gameTroop.turnCount() : 1;\natk = mat = turns * 2;\n</Custom Parameters>\n\n<Cannot Rename>",
     "params": [
       0,
       0,
@@ -6047,5 +6023,96 @@
       0
     ],
     "price": 0
+  },
+  {
+    "id": 231,
+    "atypeId": 6,
+    "description": "Despite the fact that it's a giant hunk of stone, it's pretty easy\nto pick up. Must be some of the \\c[30]Purple\\c[0] still lingering within.",
+    "etypeId": 2,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 9,
+        "value": 0.95
+      },
+      {
+        "code": 11,
+        "dataId": 6,
+        "value": 0.8
+      }
+    ],
+    "iconIndex": 1320,
+    "name": "Stoneheart Aegis",
+    "note": "<Upgrade Slots: 3>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(84) >= 16;\n</Custom Buy Show Eval>",
+    "params": [
+      20,
+      10,
+      0,
+      10,
+      0,
+      5,
+      -10,
+      0
+    ],
+    "price": 5000
+  },
+  {
+    "id": 232,
+    "atypeId": 1,
+    "description": "Crimson horns taken from a reanimated statue. Though carved from stone, they radiate heat. Boosts ATK,\nincreases CRI by 10%, amplifies \\nl[2] and \\nl[6] damage, and grants a chance to inflict \\it[102].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.1
+      },
+      {
+        "code": 32,
+        "dataId": 102,
+        "value": 0.2
+      }
+    ],
+    "iconIndex": 1321,
+    "name": "Stone Dragon Horns",
+    "note": "<Upgrade Slots: 3>\n\n<Element Amplify Fire: +15%>\n<Element Amplify Earth: +15%>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(84) >= 16;\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 5000
+  },
+  {
+    "id": 233,
+    "atypeId": 1,
+    "description": "A tome containing the information\nnecessary to cast \\is[104].",
+    "etypeId": 8,
+    "traits": [
+      {
+        "code": 43,
+        "dataId": 104,
+        "value": 1
+      }
+    ],
+    "iconIndex": 375,
+    "name": "Eclipse (Tome)",
+    "note": "<Cannot Rename>\n\n<Synthesis Ingredients>\nDark Orb (Tome)\nRitual Residue: 2\nDark Essence: 10\n</Synthesis Ingredients>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 500
   }
 ]

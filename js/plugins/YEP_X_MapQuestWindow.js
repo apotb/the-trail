@@ -854,9 +854,9 @@ Window_MapActiveQuest.prototype.textWidthEx = function(text) {
 };
 
 Window_MapActiveQuest.prototype.drawHorzLine = function(y) {
-  var lineY = y;
+  var lineY = y + 1;
   this.contents.paintOpacity = 128;
-  this.contents.fillRect(0, lineY, this.contentsWidth(), 2, this.normalColor());
+  this.contents.fillRect(0, lineY, this.contentsWidth(), 1, this.normalColor());
   this.contents.paintOpacity = 255;
 };
 
@@ -914,6 +914,24 @@ Window_MapActiveQuest.prototype.drawQuestTextEx = function(text, x, y) {
   } else {
     return 0;
   }
+};
+
+Window_MapActiveQuest.prototype.drawIcon = function(iconIndex, x, y) {
+    var bitmap = ImageManager.loadSystem('IconSet');
+    var pw = Window_Base._iconWidth;
+    var ph = Window_Base._iconHeight;
+    var sx = iconIndex % 16 * pw;
+    var sy = Math.floor(iconIndex / 16) * ph;
+    const iconWidth = pw * 0.5 / Yanfly.Param.MQWSettings.Scale;
+    const iconHeight = ph * 0.5 / Yanfly.Param.MQWSettings.Scale;
+    const yOffset = (this.lineHeight() - iconHeight) / 2;
+
+    this.contents.blt(bitmap, sx, sy, pw, ph, x, y + yOffset, iconWidth, iconHeight);
+};
+
+Window_MapActiveQuest.prototype.processDrawIcon = function(iconIndex, textState) {
+    this.drawIcon(iconIndex, textState.x + 2, textState.y + 2);
+    textState.x += (Window_Base._iconWidth * 0.5 / Yanfly.Param.MQWSettings.Scale) + 4;
 };
 
 Window_MapActiveQuest.prototype.update = function() {

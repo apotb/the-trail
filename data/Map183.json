@@ -79789,7 +79789,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\n<Captain>I'd heard plenty of McBearnold's, but"
+                "\\n<Captain>I'd heard plenty about McBearnold's, but"
               ]
             },
             {
@@ -95115,18 +95115,36 @@
               "parameters": []
             },
             {
-              "code": 356,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                12,
+                "!$gameSystem.isQuestObjectiveCompleted(37, 8)"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
               "parameters": [
                 "Quest 37 Complete Objective 8"
               ]
             },
             {
               "code": 356,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Quest 37 Show Objective 9"
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 250,
@@ -95208,6 +95226,78 @@
               "code": 222,
               "indent": 0,
               "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 84,
+            "variableValid": true,
+            "variableValue": 17
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 108,
+              "indent": 0,
+              "parameters": [
+                "<Icon on Event: 608>"
+              ]
+            },
+            {
+              "code": 408,
+              "indent": 0,
+              "parameters": [
+                "<Icon on Event Buffer Y: -24>"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "CallEvent 255, Page 2"
+              ]
             },
             {
               "code": 0,

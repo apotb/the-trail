@@ -1173,7 +1173,8 @@ Window_SaveInfo.prototype.drawLocation = function(dx, dy, dw) {
       this.changeTextColor(this.normalColor());
       this.drawText(text, dx, dy, dw, 'right');
     } else {
-      this.drawText(text, dx, dy, dw, 'center');
+      text = `\\fs[${Yanfly.Param.SaveInfoDataSz - Math.floor((text.length - 36) / 4)}]` + text;
+      this.drawTextEx(text, dx + (dw - this.textWidthEx(text)) / 2, dy);
     }
 };
 

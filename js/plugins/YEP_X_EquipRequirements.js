@@ -536,7 +536,7 @@ Game_BattlerBase.prototype.refresh = function() {
 };
 
 Yanfly.EqReq.Game_BattlerBase_canEquip = Game_BattlerBase.prototype.canEquip;
-Game_BattlerBase.prototype.canEquip = function(item) {
+Game_BattlerBase.prototype.canEquip = function(item, slot=-1) {
     var value = Yanfly.EqReq.Game_BattlerBase_canEquip.call(this, item);
     if (!value) return false;
     if (BattleManager.isBattleTest() && Yanfly.Param.EqReqBTest) return value;
@@ -544,7 +544,7 @@ Game_BattlerBase.prototype.canEquip = function(item) {
       if (SceneManager._scene instanceof Scene_Equip) return value;
       if (this._equipReq !== undefined) return this._equipReq;
     }
-    this._equipReq = this.meetAllEquipRequirements(item)
+    this._equipReq = this.meetAllEquipRequirements(item, slot);
     return this._equipReq;
 };
 
@@ -562,7 +562,7 @@ Game_BattlerBase.prototype.meetAllEquipRequirements = function(item, slot=-1) {
   }
   if (item.id < Yanfly.Param.ItemStartingId) return true; // Non-independent items, if they somehow exist
   if (this.isEquipTypeLocked(item.etypeId)) return true; // Guest party members
-  if (slot > -1) if (this.equips().some((e, i) => e && (e.baseItemId == item.baseItemId || (e.atypeId === 11 && item.atypeId === 11)) && i != slot && e != item)) return false; // No duplicates; includes gloves
+  if (slot > -1) if (this.equips().some((e, i) => e && e.groupType === item.groupType && (e.baseItemId === item.baseItemId || (e.atypeId === 11 && item.atypeId === 11)) && i !== slot && e !== item)) return false; // No duplicates; includes gloves
   if (!this.checkEquipRequirements(item)) return false; // Per-item equip requirements
   return true;
 };

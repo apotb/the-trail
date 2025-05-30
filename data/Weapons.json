@@ -126,7 +126,7 @@
       0,
       0,
       0,
-      2,
+      0,
       0
     ],
     "price": 0,
@@ -423,7 +423,7 @@
       0,
       0,
       0,
-      1,
+      0,
       0
     ],
     "price": 30,
@@ -489,7 +489,7 @@
       0,
       0,
       0,
-      6,
+      5,
       0
     ],
     "price": 100,
@@ -593,7 +593,7 @@
       0,
       0,
       0,
-      8,
+      0,
       0
     ],
     "price": 0,
@@ -631,7 +631,7 @@
       2,
       0,
       0,
-      5,
+      0,
       0
     ],
     "price": 200,
@@ -869,7 +869,7 @@
     ],
     "iconIndex": 691,
     "name": "Bloodlust ★",
-    "note": "<Weapon Image: 206>\n<Upgrade Slots: 1>\n<HP Life Steal Physical: +4%>\n\n<Synthesis Ingredients>\nBloodlust\nBronze Ingot: 2\nSteel Ingot: 2\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>\n\n<Custom Craft Show Eval>\nvisible = !$gameSystem.hasSynthed($dataWeapons[26]);\n</Custom Craft Show Eval>",
+    "note": "<Weapon Image: 206>\n<Upgrade Slots: 1>\n<HP Life Steal Physical: +4%>\n\n<Synthesis Ingredients>\nBloodlust\nBronze Ingot: 2\nSteel Ingot: 2\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\nif (!$gameSystem.isQuestObjectiveCompleted(42, 1)) {\n  $gameSystem.questObjectivesComplete(42, 1);\n  $gameSystem.questObjectivesShow(42, 2);\n}\n</Custom Synthesis Effect>\n\n<Custom Craft Show Eval>\nvisible = !$gameSystem.hasSynthed($dataWeapons[26]);\n</Custom Craft Show Eval>",
     "params": [
       5,
       2,
@@ -877,7 +877,7 @@
       0,
       0,
       0,
-      11,
+      0,
       0
     ],
     "price": 0,
@@ -973,7 +973,7 @@
       0,
       0,
       0,
-      3,
+      0,
       0
     ],
     "price": 300,
@@ -1036,7 +1036,7 @@
       0,
       0,
       0,
-      5,
+      0,
       0
     ],
     "price": 300,
@@ -1112,7 +1112,7 @@
       0,
       0,
       0,
-      12,
+      0,
       0
     ],
     "price": 600,
@@ -1408,7 +1408,7 @@
       0,
       0,
       0,
-      5,
+      0,
       0
     ],
     "price": 0,
@@ -1618,7 +1618,7 @@
     ],
     "iconIndex": 692,
     "name": "Bloodlust ★★",
-    "note": "<Weapon Image: 206>\n<Upgrade Slots: 3>\n<HP Life Steal Physical: +6%>\n\n<Synthesis Ingredients>\nBloodlust ★\nStinger: 5\nTellurium Alloy\nTellurium Core\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>\n\n<Custom Craft Show Eval>\nvisible = !$gameSystem.hasSynthed($dataWeapons[44]);\n</Custom Craft Show Eval>",
+    "note": "<Weapon Image: 206>\n<Upgrade Slots: 3>\n<HP Life Steal Physical: +6%>\n\n<Synthesis Ingredients>\nBloodlust ★\nStinger: 5\nTellurium Alloy\nTellurium Core\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\nif (!$gameSystem.isQuestObjectiveCompleted(42, 2)) {\n  $gameSystem.questObjectivesComplete(42, 2);\n  $gameSystem.questObjectivesShow(42, 3);\n}\n</Custom Synthesis Effect>\n\n<Custom Craft Show Eval>\nvisible = !$gameSystem.hasSynthed($dataWeapons[44]);\n</Custom Craft Show Eval>",
     "params": [
       10,
       5,
@@ -1626,7 +1626,7 @@
       0,
       0,
       0,
-      15,
+      0,
       0
     ],
     "price": 0,
@@ -1656,7 +1656,7 @@
     ],
     "iconIndex": 1204,
     "name": "Hero Sword Replica",
-    "note": "<Weapon Image: 346>\n<Upgrade Slots: 3>\n\n<Element Amplify Fire: +25%>\n<Element Amplify Ice: +25%>\n<Element Amplify Electric: +25%>\n<Element Amplify Water: +25%>\n<Element Amplify Earth: +25%>\n<Element Amplify Wind: +25%>\n<Element Amplify Plant: +25%>\n<Element Amplify Metal: +25%>\n<Element Amplify Light: +25%>\n<Element Amplify Dark: +25%>\n\n<Synthesis Ingredients>\nSquire Sword\nCopper Sword\nSteel Sword\nBronze Sword\nShadowspec Sword\nBronze Greatsword\nSteel Greatsword\nSteel Axe\nUnstoppable Force\nTellurium Alloy\nTellurium Core\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>",
+    "note": "<Weapon Image: 346>\n<Upgrade Slots: 3>\n\n<Element Amplify Fire: +10%>\n<Element Amplify Ice: +10%>\n<Element Amplify Electric: +10%>\n<Element Amplify Water: +10%>\n<Element Amplify Earth: +10%>\n<Element Amplify Wind: +10%>\n<Element Amplify Plant: +10%>\n<Element Amplify Metal: +10%>\n<Element Amplify Light: +10%>\n<Element Amplify Dark: +10%>\n\n<Synthesis Ingredients>\nSquire Sword\nCopper Sword\nSteel Sword\nBronze Sword\nShadowspec Sword\nBronze Greatsword\nSteel Greatsword\nSteel Axe\nUnstoppable Force\nTellurium Alloy\nTellurium Core\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>",
     "params": [
       0,
       0,
@@ -1788,7 +1788,7 @@
       4,
       0,
       0,
-      8,
+      0,
       0
     ],
     "price": 2000,
@@ -1868,7 +1868,7 @@
   {
     "id": 51,
     "animationId": 143,
-    "description": "A large dark hammer that increases offensive prowess more\nthan a staff, at the cost of substantial healing reduction.",
+    "description": "A large dark hammer that increases outgoing magic damage by\nby 20%, at the cost of 45% reduced outgoing \\nl[11].",
     "etypeId": 1,
     "traits": [
       {
@@ -1885,16 +1885,11 @@
         "code": 31,
         "dataId": 16,
         "value": 0
-      },
-      {
-        "code": 25,
-        "dataId": 0,
-        "value": 1.2
       }
     ],
     "iconIndex": 562,
     "name": "Shadowspec Warhammer",
-    "note": "<Weapon Image: 58>\n<Upgrade Slots: 2>\n\n<Element Magnify Healing: -50%>\n\n<Synthesis Ingredients>\nShadowspec Ingot: 4\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>\n\n<Disassemble Pool: Advanced>\nx2-4 Shadowspec Ingot: 100%\nx1-2 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "note": "<Weapon Image: 58>\n<Upgrade Slots: 2>\n\n<Element Magnify Magical: +20%>\n<Element Magnify Healing: -45%>\n\n<Synthesis Ingredients>\nShadowspec Ingot: 4\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>\n\n<Disassemble Pool: Advanced>\nx2-4 Shadowspec Ingot: 100%\nx1-2 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       22,
@@ -1950,7 +1945,7 @@
       0,
       0,
       0,
-      13,
+      0,
       0
     ],
     "price": 1500,
@@ -1998,7 +1993,7 @@
       5,
       0,
       0,
-      10,
+      0,
       0
     ],
     "price": 3000,
@@ -2074,7 +2069,7 @@
       1,
       0,
       0,
-      3,
+      0,
       0
     ],
     "price": 100,
@@ -2083,7 +2078,7 @@
   {
     "id": 56,
     "animationId": 122,
-    "description": "Provides offensive capabilities for a cleric\nat the cost of heavily reduced healing.",
+    "description": "Provides offensive capabilities for a cleric, at\nthe cost of heavily reduced outgoing \\nl[11].",
     "etypeId": 1,
     "traits": [
       {
@@ -2095,16 +2090,11 @@
         "code": 31,
         "dataId": 16,
         "value": 0
-      },
-      {
-        "code": 25,
-        "dataId": 0,
-        "value": 1.1
       }
     ],
     "iconIndex": 412,
     "name": "Steel Hammer",
-    "note": "<Weapon Image: 54>\n<Upgrade Slots: 1>\n\n<Element Magnify Healing: -55%>\n\n<Disassemble Pool: Advanced>\nx1 Steel Ingot: 40%\n</Disassemble Pool: Advanced>",
+    "note": "<Weapon Image: 54>\n<Upgrade Slots: 1>\n\n<Element Magnify Magical: +10%>\n<Element Magnify Healing: -55%>\n\n<Disassemble Pool: Advanced>\nx1 Steel Ingot: 40%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       11,
@@ -2233,7 +2223,7 @@
     ],
     "iconIndex": 390,
     "name": "Stalactite",
-    "note": "<Weapon Image: 77>\n<Upgrade Slots: 3>",
+    "note": "<Weapon Image: 77>\n<Upgrade Slots: 3>\n\n<Element Amplify Earth: +10%>",
     "params": [
       0,
       0,
@@ -2284,7 +2274,7 @@
       0,
       0,
       0,
-      13,
+      0,
       0
     ],
     "price": 600,
@@ -2319,7 +2309,7 @@
     ],
     "iconIndex": 825,
     "name": "Andy's Dusters MK. II",
-    "note": "<Weapon Image: 299>\n<Upgrade Slots: 3>",
+    "note": "<Weapon Image: 299>\n<Upgrade Slots: 3>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(109);\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -2327,7 +2317,7 @@
       6,
       0,
       0,
-      11,
+      0,
       0
     ],
     "price": 4000,
@@ -2355,11 +2345,6 @@
         "value": 1.1
       },
       {
-        "code": 25,
-        "dataId": 0,
-        "value": 1.1
-      },
-      {
         "code": 23,
         "dataId": 4,
         "value": 1.1
@@ -2367,7 +2352,7 @@
     ],
     "iconIndex": 1233,
     "name": "Esoteric Tome",
-    "note": "<Weapon Image: 26>\n<Upgrade Slots: 3>",
+    "note": "<Weapon Image: 26>\n<Upgrade Slots: 3>\n\n<Element Amplify Magical: +10%>",
     "params": [
       0,
       200,
@@ -2418,7 +2403,7 @@
       0,
       0,
       0,
-      10,
+      0,
       0
     ],
     "price": 1200,
@@ -2444,16 +2429,11 @@
         "code": 22,
         "dataId": 0,
         "value": 0.1
-      },
-      {
-        "code": 25,
-        "dataId": 0,
-        "value": 1.25
       }
     ],
     "iconIndex": 829,
     "name": "Violet Tendril",
-    "note": "<Weapon Image: 281>\n<Upgrade Slots: 3>\n\n<Element Amplify Healing: +25%>\n<Element Amplify Dark: +25%>",
+    "note": "<Weapon Image: 281>\n<Upgrade Slots: 3>\n\n<Element Magnify Magical: +25%>\n<Element Amplify Dark: +25%>\n<Element Magnify Healing: -40%>",
     "params": [
       25,
       25,
@@ -2465,6 +2445,87 @@
       0
     ],
     "price": 1200,
+    "wtypeId": 12
+  },
+  {
+    "id": 65,
+    "animationId": 126,
+    "description": "A large two-handed blade twisted with the \\c[30]Purple\\c[0]'s evil.\nDishes out heavy \\nl[9]-type attacks like it's nothing!",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 9,
+        "value": 0
+      },
+      {
+        "code": 54,
+        "dataId": 2,
+        "value": 1
+      }
+    ],
+    "iconIndex": 1206,
+    "name": "Twilight",
+    "note": "<Weapon Image: 278>\n<Upgrade Slots: 3>\n\n<Element Amplify Dark: +10%>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(84) >= 16;\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      0,
+      50,
+      0,
+      0,
+      0,
+      -40,
+      0
+    ],
+    "price": 5000,
+    "wtypeId": 11
+  },
+  {
+    "id": 66,
+    "animationId": 1,
+    "description": "A whip embued with the essence of unrequited love. Essential for a cleric wishing to specialize\nin a hybrid of physical and magical damage. Amplifies outgoing magic damage by 15%.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.05
+      }
+    ],
+    "iconIndex": 1207,
+    "name": "Enamor",
+    "note": "<Weapon Image: 281>\n<Upgrade Slots: 1>\n\n<Element Magnify Magical: +15%>\n<Element Magnify Healing: -50%>",
+    "params": [
+      15,
+      15,
+      15,
+      0,
+      30,
+      0,
+      0,
+      0
+    ],
+    "price": 200,
     "wtypeId": 12
   }
 ]

@@ -10,6 +10,10 @@ Game_System.prototype.setAutosaveInterval = function(minutes) {
   this._secUntilAutosave = minutes * 60;
 };
 
+Game_System.prototype.forceAutosave = function() {
+  this._forceAutosave = true;
+};
+
 ___Window_Options__prototype__statusText___ = Window_Options.prototype.statusText;
 Window_Options.prototype.statusText = function(index) {
   var symbol = this.commandSymbol(index);

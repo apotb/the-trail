@@ -3,10 +3,9 @@ import platform
 import json
 import subprocess
 
-LOG_PATH = r"C:\SteamCMD\logs"
-
 SCRIPT_DIR = os.path.dirname(__file__)
 OUT_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, "../../out"))
+LOG_PATH = os.path.join(OUT_DIR, "logs")
 VERSION_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, "../../data/Version.json"))
 CONFIG_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, "../config.json"))
 with open(CONFIG_PATH, "r", encoding="utf-8") as f:

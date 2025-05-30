@@ -2829,7 +2829,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A simple mushroom plucked from the ground. It restores barely\nany HP raw, but it can make or break a recipe.",
+    "description": "A simple mushroom. They prefer to live at the base of a cliff, but they'll grow almost\nanywhere. It restores barely any HP raw, but cooking with it opens up a lot of possibilities!",
     "effects": [
       {
         "code": 11,
@@ -4958,13 +4958,13 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Reduces the PDR of an offhand equip by 1%.",
+    "description": "Reduces the incoming physical damage of an offhand equip by 1%.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 625,
     "itypeId": 1,
-    "name": "PDR Scroll",
-    "note": "<Upgrade Armor Type: 2>\n<Upgrade Effect>\nEval: item.traits.push({code: 23, dataId: 6, value: 0.99});\nPrefix: Tough\nWeight: +2\n</Upgrade Effect>\n<Upgrade Tooltip: PDR -1%>",
+    "name": "Physical Defense Scroll",
+    "note": "<Upgrade Armor Type: 2>\n<Upgrade Effect>\nEval: item.traits.push({code: 23, dataId: 6, value: 0.99});\nPrefix: Tough\nWeight: +2\n</Upgrade Effect>\n<Upgrade Tooltip: Incoming Physical Damage -1%>",
     "occasion": 3,
     "price": 240,
     "repeats": 1,
@@ -4984,13 +4984,13 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Reduces the MDR of an offhand equip by 1%.",
+    "description": "Reduces the incoming magical damage of an offhand equip by 1%.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 625,
     "itypeId": 1,
-    "name": "MDR Scroll",
-    "note": "<Upgrade Armor Type: 2>\n<Upgrade Effect>\nEval: item.traits.push({code: 23, dataId: 7, value: 0.99});\nPrefix: Spiritual\nWeight: +2\n</Upgrade Effect>\n<Upgrade Tooltip: MDR -1%>",
+    "name": "Magical Defense Scroll",
+    "note": "<Upgrade Armor Type: 2>\n<Upgrade Effect>\nEval: item.traits.push({code: 23, dataId: 7, value: 0.99});\nPrefix: Spiritual\nWeight: +2\n</Upgrade Effect>\n<Upgrade Tooltip: Incoming Magical Damage -1%>",
     "occasion": 3,
     "price": 240,
     "repeats": 1,
@@ -6607,6 +6607,12 @@
     "description": "This fruit, while lightly poisonous, isn't dangerous to humans. It's\nsaid that it contains magical qualities that can spice up any dish.",
     "effects": [
       {
+        "code": 21,
+        "dataId": 4,
+        "value1": 1,
+        "value2": 0
+      },
+      {
         "code": 11,
         "dataId": 0,
         "value1": 0.05,
@@ -6615,7 +6621,7 @@
       {
         "code": 12,
         "dataId": 0,
-        "value1": 0.05,
+        "value1": 0.2,
         "value2": 0
       }
     ],
@@ -7025,13 +7031,26 @@
       "type": 0,
       "variance": 20
     },
-    "description": "[NOT YET IMPLEMENTED]\nKills all enemies, long recharge based on enemies killed",
-    "effects": [],
+    "description": "Summon an unimaginably powerful force that wipes every enemy off the battlefield.\nDoesn't work on bosses. \\c[2]\\evalText<<$gameVariables.value(86) > 0 ? (\"COOLDOWN: \" + $gameVariables.value(86) + \" HOURS\") : \"This item has a cooldown of 10 days / 240 hours!\">>",
+    "effects": [
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": -1,
+        "value2": 0
+      },
+      {
+        "code": 44,
+        "dataId": 33,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
     "iconIndex": 232,
     "itypeId": 2,
     "name": "Scroll of Silver Sands",
-    "note": "",
+    "note": "<Custom Show Eval>\nvisible = $gameVariables.value(86) === 0;\n</Custom Show Eval>",
     "occasion": 1,
     "price": 0,
     "repeats": 1,
@@ -7264,7 +7283,7 @@
   {
     "id": 247,
     "animationId": 0,
-    "consumable": true,
+    "consumable": false,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -7272,17 +7291,17 @@
       "type": 0,
       "variance": 20
     },
-    "description": "",
+    "description": "A slimy substance secreted by a Cleftface Zealot after its death. Must be a side effect of whatever ritual\nturned it into such a vile creature. Applying this to a weapon increases outgoing \\nl[9] damage by 10%.",
     "effects": [],
     "hitType": 0,
-    "iconIndex": 0,
+    "iconIndex": 1461,
     "itypeId": 1,
-    "name": "",
-    "note": "",
-    "occasion": 0,
-    "price": 0,
+    "name": "Ritual Residue",
+    "note": "<Upgrade Weapon Type: 0>\n<Upgrade Effect>\nEval: item.elementAmplify[9] = item.elementAmplify[9] || 0.0;\nEval: item.elementAmplify[9] += 0.1;\nPrefix: Malicious\nWeight: +2\n</Upgrade Effect>\n<Upgrade Tooltip: +10% \\nl[9] Damage>\n\n<Disassemble Pool: Monster>\nx6-9 Ground Monster Parts: 100%\n</Disassemble Pool: Monster>\n\n<Disassemble Pool: Advanced>\nx1 Dark Essence: 100%\nx1 Dark Essence: 75%\n</Disassemble Pool: Advanced>",
+    "occasion": 3,
+    "price": 120,
     "repeats": 1,
-    "scope": 7,
+    "scope": 0,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
@@ -7799,12 +7818,19 @@
       "variance": 0
     },
     "description": "Purified water blessed by Trailia herself. You\nshouldn't drink it, but try using it on a \\nl[9] enemy!",
-    "effects": [],
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 66,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
     "iconIndex": 809,
     "itypeId": 1,
     "name": "Holy Water",
-    "note": "<Post-Damage Eval>\nelements = target.enemy().elements;\nif (elements.contains(\"DARK\")) target.addState(66);\n</Post-Damage Eval>",
+    "note": "",
     "occasion": 1,
     "price": 20,
     "repeats": 1,

@@ -1,33 +1,48 @@
-# Alpha 17: Path of the Purple (5/??/2025)
+# Alpha 17: Path of the Purple (5/30/2025)
 Now that you've witnessed the destructive power of Apocalypse first-hand, it's time to take up arms! The thing is, no one really knows where Apocalypse is... so it's up to you to track him down.
 A member of a mysterious cult has been captured, and is being held in the Solus Valley Jail. It'll take some intimidation to get anything out of this guy, but for now, he's your only hint. And who knows? Maybe this lead will take you right to Apocalypse...
 
-Alpha 17 brings an all new challenge, and even more powerful equipment! Deck your party out with the latest additions to the game; you'll need to use everything you can get your hands on to take down your latest foes.
+Alpha 17 brings an all new challenge, and with that comes powerful new equipment! Deck your party out with the latest additions to the game; you'll need to use everything you can get your hands on to take down your latest foes.
 Alongside the additions, there's a ton of quality-of-life changes and graphical improvements. The Trail is looking better than ever!
 
-The changelog below may be lengthy, but if you take the time to read it, I think you'll find it very interesting. There's been a lot of balance changes and major bug fixes you might wanna' know about!
+The changelog below may be lengthy, but if you take the time to read it, I think you'll find it very interesting. There's been a lot of balance changes and major bug fixes you might want to be aware of!
 
 ### Additions
 - Added the Solus Valley Jail and Castle Town Sewers.
-- Autosaving is here! After a configurable time has passed, your progress will be automatically backed up in a unique save slot.
+- Autosaving is here! Every now and then, your progress will be automatically backed up in a unique save slot.
+  - The interval between autosaves can be changed in the options menu.
+  - The game will also autosave before boss fights.
 - Added 2 warp doors in Sam's basement that lead to Bladesville and Telluria Castle Town.
 - Added a leaderboard for Fish Caught. It can be accessed by speaking to the fisherman in Telluria Castle Town.
 - Added a golden First Cleric statue in the Frozen Labyrinth.
-- 4 new items:
+- 4 new skills:
+  - [P] Elemental I: P1 Passive @ L30
+    - Prolong is now learned at level 30 → 35
+  - Earth Power II: P2 Magic @ L35
+  - Aegis of Trailia: P3 Magic @ L35
+  - [P] Agility II: P4 Passive @ L35
+- 6 new items:
+  - Scroll of Silver Sands (implemented!)
   - Cleansing Scroll ★
   - CRI Scroll
   - Sewer Key
+  - Ritual Residue
   - Chunk of Purple Stone
-- 4 new weapons:
+- 6 new weapons:
+  - Enamor
   - Andy's Dusters MK. II
   - Esoteric Tome
   - Last Breath
   - Violet Tendril
-- 4 new equipment:
+  - Twilight
+- 7 new equipment:
   - Ice Skates
   - Haloweave Gloves
   - Purple Mage Crystal
-  - SENTINEL POWER
+  - Eclipse (Tome)
+  - Stoneheart Aegis
+  - Stone Dragon Horns
+  - Sentinel's Persistence
 - 5 new vanities:
   - Blue Sleeping Garments
   - Green Sleeping Garments
@@ -39,40 +54,78 @@ The changelog below may be lengthy, but if you take the time to read it, I think
   - Purple Assassin
   - Cleftface Zealot
   - Sentinel
+- 1 new quest: Back in Blood
+- 2 new achievements:
+  - It's Super Effective!
+  - No Stone Unturned
 
 ### Changes
 - Time moves slower:
-  - By default, 1 real-life second is 2 → 1 in-game seconds.
+  - By default, 1 real-life second is 2 → 1 in-game second.
   - If the Magical Ocarina is used, 1 real-life second is 1 → 2 in-game seconds.
-- Everyone gets less DEF/MDF from leveling up. They will gain more MHP to compensate.
+- Everyone gets less DEF, MDF, and AGI from leveling up. They will gain more MHP to compensate.
 - Skill rebalancing:
+  - Nerfed [P] Steadfast duration from 5 → 3 turns
   - Nerfed Wand Impulse MAT rate from 400% → 325%
   - Nerfed Magical Breeze Winded rate from 100% → 25%
-  - Buffed Magical Breeze MAT rate from 400% → 450%
+  - Buffed Magical Breeze MAT rate from 400% → 500%
   - Nerfed Cure II MAT rate from 180% → 150%
-  - Buffed Channel Divinity II MAT rate from 400% → 450%
+  - Buffed Channel Divinity II MAT rate from 400% → 500%
   - Removed Soul Barrier I from Player 3's skill pool.
   - Player 3 now learns Dispell at level 16 → 17
+  - Panacea now applies Rejuvenation
+  - Nerfed [P] Masterful from +10% → +5% physical lifesteal after 2500 → 5000 kills
+  - Nerfed [P] Assassin from +30% → +20% damage against enemies with full HP
 - Rebalanced several enemies:
+  - Enemies using Cure II no longer apply Rejuvenation.
+  - Living Plants now drop Worms.
   - Mimic: Actions 3 → 1 for Ruined Fort encounter.
   - Will o' Wisp: MAT 45 → 39
+  - Darkhounds now drop Iron Wristbraces instead of Silver Wristbraces.
   - Ice Golem: DEF 45 → 40, MDF 70 → 60, Ice Barrier chance 50% → 25%
   - Chilling Apparition: MDF 85 → 75
   - Werewolf: MDF 60 → 55
   - Ice Slime: MDF 75 → 60
+  - Werewolves, Chilling Apparitions, and Ice Slimes no longer drop Ice Cubes.
   - Polar Bear: MDF 65 → 55
+  - Apocalypse: True Darkness now bypasses Shield of Faith.
   - Tellurium Golems: Tellurium Pulse deals an additional 20% of the target's HP.
 - Rebalanced several scrolls:
   - DEF/MDF Scroll: +2 → +1
   - DEF ★/MDF ★ Scroll: +3 → +2
   - EVA Scroll: +1% → +2%
   - MCR Scroll: -1.5% → -3%
-- Revamped glove progression:
-  - Bandito Gloves: CRI +1% → +0.5%
-  - Henry's Gloves: ATK 2 → 4; HIT +6% → +8%; CRI +1.5% → +2%; Upgrade Slots 0 → 1
-  - Scaly Gloves: ATK 5 → 3; HIT +8% → +6%; CRI +2% → +1.5%
-  - These changes effectively swap Henry's Gloves and Scaly Gloves in progression.
-    - Although Henry's Gloves can be obtained earlier, they're more "exclusive" since they are a boss drop.
+  - Vial of Poison can be used as an upgrader, making a weapon inflict Poisoned.
+- Equipment balancing:
+  - Daggers, Knuckles, Masks, and Headbands no longer grant AGI.
+  - Condensed Gel variants and the Vigilante's Charm no longer provide ATK, MAT, or AGI. They also provide less MHP/MMP.
+  - Reduced Water Elemental's Flow effects from 15%/30% → 10%/20%
+  - Greaves can now be worn by everyone.
+  - Holy Scriptures are now a magic equip, with its effect lowered from 10% → 5%
+  - Revamped glove progression:
+    - Bandito Gloves: CRI +1% → +0.5%
+    - Henry's Gloves: ATK 2 → 4; HIT +6% → +8%; CRI +1.5% → +2%; Upgrade Slots 0 → 1
+    - Scaly Gloves: ATK 5 → 3; HIT +8% → +6%; CRI +2% → +1.5%
+    - These changes effectively swap Henry's Gloves and Scaly Gloves in progression.
+      - Although Henry's Gloves can be obtained earlier, they're more "exclusive" since they are a boss drop.
+  - Buffed the physical life steal of all Headbands.
+  - Leather Boots are now crafted rather than purchased.
+  - Harmony, Grass Knuckles, and Frost Edge no longer use earlier staves/daggers as ingredients.
+  - Nerfed Gilded Coin Bit Rate from 1.5x → 1.25x
+  - Nerfed Hero Sword Replica outgoing element damage from +25% → +10%
+  - Nerfed the Dark damage reduction of tellurium equipment.
+  - Nerfed Bionomic Globe outgoing elemental damage from +20% → +15%
+  - Nerfed Elemental/Fiery Lace outgoing elemental damage from +10%/+20% → +8%/12%
+  - Nerfed Fiery Harp's heal chance/rate from 60%/12% → 50%/8%
+  - Nerfed Conjurer's Harp heal rate from 8% → 6%
+  - Nerfed Shield of the Hero Darkfire resistance from 100% → 50%
+  - Buffed Bandito Cloak DEF from 1 → 2 and EVA from +5% → +10%
+  - Buffed Seshat's Charm drop rate from 1/100 → 1/50
+  - Starting in Chapter 5, Seshat's Tome will drop at a rate of 1/100
+  - Buffed Stalactite drop rate from 1/30 → 1/20
+  - Added Gazer Goop x5 to the Charm of Duality recipe.
+  - Added Feral Rat Fur x3 to the Bloodwave Headband and Vortex Headband recipes.
+- Added Raw Truffle x2 to the Mana Fritters recipe.
 - Graphical improvements:
   - Changed the title screen, chapter splash screens, font, and window skin.
   - Map:
@@ -82,44 +135,38 @@ The changelog below may be lengthy, but if you take the time to read it, I think
   - Battle:
     - Doubled the scale of everyone in battle.
     - Damage popups are much larger, last longer, and use a bolded font for readability.
+    - The item window includes information about damage and added/removed states.
     - Critical hits flash rainbow.
-    - Sprites update between 11-13 frames rather than always 12.
+    - Battler animation speeds are slightly randomized for less robotic movement.
     - Improved scaling of floating enemies' shadows.
     - Enemies no longer show their names all the time.
     - Updated battle select cursor sprites.
+  - Menus:
+    - Added an animation preview to the skill menu.
+    - The "Damage Types" section of the status menu now indicates which damage types are currently active.
 - Laeryidyean's forest improvements:
   - Skeleton knights revive much more gradually.
   - The first boulder in the Left Connector can be pushed from either side.
 - Monsters won't respawn while you're in a dungeon.
+- Confused and Paralyzed no longer consume BP on failed actions.
 - Simplified the General Store's stock.
-- Harmony, Grass Knuckles, and Frost Edge no longer use earlier staves/daggers as ingredients.
-- Condensed Gel variants and the Vigilante's Charm no longer provide ATK, MAT, or AGI.
+- All inns grant Well Rested.
+- Rather than teleporting to his bed or throne, the king will walk from one to the other.
+  - This is the first instance of a character with a "schedule", we plan to implement a lot more of this in the future!
 - Moved many cooking recipes from the pot to the campfire.
 - Doubled Claire's outgoing healing.
-- Vial of Poison can be used as an upgrader, making a weapon inflict Poisoned.
-- Enemies using Cure II will no longer apply Rejuvenation.
-- Nerfed Gilded Coin Bit Rate from 1.5x → 1.25x
-- Nerfed the Dark damage reduction of tellurium equipment.
-- Nerfed Shield of the Hero Darkfire resistance from 100% → 50%.
-- Buffed Seshat's Charm drop rate from 1/100 → 1/50.
-- Starting in Chapter 5, Seshat's Tome will drop at a rate of 1/100.
-- Buffed Stalactite drop rate from 1/30 → 1/20.
-- Darkhounds now drop Iron Wristbraces instead of Silver Wristbraces.
-- Living Plants now drop Worms.
-- Werewolves, Chilling Apparitions, and Ice Slimes no longer drop Ice Cubes.
 - Tellurium Golems change appearance after inflicted with Heated Metal.
+- Buffed Starfruit MP recovery from 5% → 20%, and it now gives Well Fed.
 - Increased time for Exhaustion to set in from 36 → 48 hours.
 - Completing the quest "The Dandy Toads of Adon" now rewards you with 300B instead of an Enchanted Anti-Magic Charm.
 - Made the Advanced Salvage Kit recipe much easier.
-- Added Raw Truffle x2 to the Mana Fritters recipe.
-- Added Gazer Goop x5 to the Charm of Duality recipe.
-- Added Feral Rat Fur x3 to the Bloodwave Headband and Vortex Headband recipes.
-- Greaves can now be worn by everyone.
 - Moved the Voyager Boots and Globetrotter Boots out of the General Store and into actual shops.
 - The Dispel Potion's description now shows what status effects it cures.
+- Life steal now ignores damage past an enemy's remaining HP.
+- Running away now requires confirmation.
 - Removed the Crude Hammer.
 - Removed the Wood Salvage Kit; the Woodcutting Axe now serves its original function.
-- Changed how Incorporeal enemies react to physical damage to make it more clear it's not just a miss.
+- Changed how Incorporeal enemies react to physical damage to make it clearer that it's not just a miss.
 - Salvage kits and higher tiers of Bloodlust will be hidden from the crafting menu once obtained.
 - Simplified the armor menu by removing unnecessary categories.
 - Replaced the Dark Forest's puzzle hint with the Great Pyramid's.
@@ -137,6 +184,8 @@ The changelog below may be lengthy, but if you take the time to read it, I think
 - Fixed the Fish-Flavored Fish being unobtainable.
 - Fixed being able to equip duplicate accessories if at least 1 is modified.
 - Fixed being able to equip multiple pairs of gloves.
+- Fixed equipment optimization granting physical equipment to magical characters, and vice-versa.
+- Fixed HP/MP text not updating when changing equipment.
 - Fixed achievements "Big Bang" and "Poacher" being unobtainable.
 - Fixed light break HP bars not showing.
 - Fixed a bug where name boxes would stop showing after opening any crafting menu; this wouldn't go away until changing maps.
@@ -144,6 +193,7 @@ The changelog below may be lengthy, but if you take the time to read it, I think
 - Fixed not being able to run away from Ice Golems.
 - Fixed the Trailia statue summary window always showing +/- 0% outgoing/incoming light damage.
 - Fixed being able to go to Telluria using Sam's door without having triggered the Telluria intro cutscene.
+- Fixed blurry text on the tracked quest window.
 - Fixed Ice Golems not respawning.
 - Fixed Ice Guard not granting +1 BP.
 - Fixed Heedup Berry not being usable outside of battle if at full HP.
@@ -181,7 +231,12 @@ The changelog below may be lengthy, but if you take the time to read it, I think
 - Fixed the player's head clipping into the Fancy Stew's pot.
 - Fixed broken name boxes for a couple knights in Telluria Castle Town.
 
-OUTRO
+Even disregarding the new content, this update brought a lot of polish to The Trail. Every little feature adds up; it's not much longer until The Trail enters beta!
+
+Alpha 18 will see the party facing their most dangerous challenges yet. What lays within the vast wasteland?
+
+Until then...
+the journey continues.
 
 Yours truly,
 AP

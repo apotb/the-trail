@@ -13659,83 +13659,24 @@
               ]
             },
             {
-              "code": 319,
+              "code": 355,
               "indent": 0,
               "parameters": [
-                1,
-                7,
-                85
+                "$gameParty.members().forEach((m, i) => m.changeEquip(10, $dataArmors[$gameTemp._vanity[i]]));"
               ]
             },
             {
-              "code": 319,
+              "code": 655,
               "indent": 0,
               "parameters": [
-                2,
-                7,
-                86
+                "delete $gameTemp._vanity;"
               ]
             },
             {
-              "code": 319,
+              "code": 117,
               "indent": 0,
               "parameters": [
-                3,
-                7,
-                87
-              ]
-            },
-            {
-              "code": 319,
-              "indent": 0,
-              "parameters": [
-                4,
-                7,
-                88
-              ]
-            },
-            {
-              "code": 128,
-              "indent": 0,
-              "parameters": [
-                85,
-                1,
-                0,
-                1,
-                false
-              ]
-            },
-            {
-              "code": 128,
-              "indent": 0,
-              "parameters": [
-                86,
-                1,
-                0,
-                1,
-                false
-              ]
-            },
-            {
-              "code": 128,
-              "indent": 0,
-              "parameters": [
-                87,
-                1,
-                0,
-                1,
-                false
-              ]
-            },
-            {
-              "code": 128,
-              "indent": 0,
-              "parameters": [
-                88,
-                1,
-                0,
-                1,
-                false
+                53
               ]
             },
             {
@@ -14340,6 +14281,20 @@
               ]
             },
             {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameTemp._vanity = [];"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "$gameParty.members().forEach(m => $gameTemp._vanity.push(m.equips()[10].id));"
+              ]
+            },
+            {
               "code": 221,
               "indent": 0,
               "parameters": []
@@ -14471,6 +14426,13 @@
                 0,
                 0,
                 216
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                53
               ]
             },
             {
@@ -14639,8 +14601,8 @@
                 1,
                 "$Player1Kid",
                 0,
-                "Adon",
-                4,
+                "Actor4_Night",
+                0,
                 "Adon_5"
               ]
             },

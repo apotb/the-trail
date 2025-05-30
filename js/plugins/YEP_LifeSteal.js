@@ -676,9 +676,10 @@ Game_Enemy.prototype.isLifeStealState = function(type) {
 
 Yanfly.LS.Game_Action_executeHpDamage = Game_Action.prototype.executeHpDamage;
 Game_Action.prototype.executeHpDamage = function(target, value) {
+    let preHP = target.hp;
     Yanfly.LS.Game_Action_executeHpDamage.call(this, target, value);
-    var damage = target._result.hpDamage;
-    this.performLifeSteal(damage, target, value);
+    let damage = target._result.hpDamage;
+    this.performLifeSteal(Math.min(damage, preHP), target, value);
 };
 
 Yanfly.LS.Game_Action_executeMpDamage = Game_Action.prototype.executeMpDamage;

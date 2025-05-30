@@ -2593,6 +2593,8 @@ Window_ItemList.prototype.drawItemNumber = function(item, x, y, width) {
 Window_SkillStatus.prototype.refresh = function() {
     this.contents.clear();
     if (this._actor) {
+        for (const gauge of Object.values(this._gauges || {})) gauge._curVal = this._actor[gauge._type]; // Fix for equip change not updating HP/MP text
+
         var w = this.width - this.padding * 2;
         var h = this.height - this.padding * 2;
         if (!Yanfly.Param.MenuTpGauge) {
@@ -2647,7 +2649,7 @@ Window_SkillType.prototype.makeCommandList = function() {
         skillTypes.sort(function(a, b){return a-b});
         skillTypes.forEach(function(stypeId) {
             var name = $dataSystem.skillTypes[stypeId];
-            this.addCommand(name, 'skill', true, stypeId);
+            this.addCommand(name, 'skill', this._actor.hasSkillType(stypeId), stypeId);
         }, this);
     }
 };
@@ -2658,8 +2660,8 @@ Window_SkillType.prototype.makeCommandList = function() {
 
 Window_ActorCommand.prototype.addSkillCommands = function() {
     var skillTypes = this._actor.addedSkillTypes();
-    skillTypes.splice(2,1); // splices Passive skill category from Window_ActorCommand
-    if ($gameMap.mapId() == 4) skillTypes = [4];
+    if ($gameMap.mapId() == 4) skillTypes = [4]; // Inside Fancy Stew
+    else skillTypes = skillTypes.filter(stypeId => this._actor.hasSkillType(stypeId) && stypeId !== 3); // Filter out Passive and empty skill types
     skillTypes.sort(function(a, b){return a-b});
     skillTypes.forEach(function(stypeId) {
         var name = $dataSystem.skillTypes[stypeId];

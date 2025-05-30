@@ -479,7 +479,7 @@ Game_Enemy.prototype.hpGaugeColor2 = function() {
 Yanfly.VHG.Sprite_Battler_update = Sprite_Battler.prototype.update;
 Sprite_Battler.prototype.update = function() {
     Yanfly.VHG.Sprite_Battler_update.call(this);
-    this.createVisualHpGaugeWindow();
+    if (SceneManager._scene instanceof Scene_Battle) this.createVisualHpGaugeWindow();
 };
 
 Sprite_Battler.prototype.createVisualHpGaugeWindow = function() {

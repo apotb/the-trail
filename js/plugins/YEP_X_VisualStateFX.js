@@ -382,7 +382,7 @@ Sprite_Battler.prototype.initChildStateSprites = function(overlay, icon) {
 Sprite_Battler.prototype.initStateAnimationSprite = function() {
   if (this._stateAniSprite) return;
   this._stateAniSprite = new Sprite_StateAnimation();
-  this.parent.addChild(this._stateAniSprite);
+  if (this.parent) this.parent.addChild(this._stateAniSprite);
 };
 
 Sprite_Battler.prototype.setStateSpriteBattler = function(battler) {

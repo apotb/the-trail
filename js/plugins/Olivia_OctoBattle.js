@@ -5028,34 +5028,83 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
   };
   Window_BattleItem.prototype.drawItemName = function (item, x, y, width) {
     Window_BattleSkill.prototype.drawItemName.call(this, item, x, y, width);
-    x = this.contents.measureTextWidth(item.name + " ") + Math.round(Window_Base._iconWidth * this.scaleRate()) + 4;
+    x = this.contents.measureTextWidth(item.name) + Math.round(Window_Base._iconWidth * this.scaleRate()) + 4;
     this.contents.fontSize = 12;
+    // Damage
+    this.changeTextColor(this.textColor(18));
+    if (item.damage.type === 1) {
+      text = " -" + item.damage.formula;
+      this.drawText(text, x, y, width);
+      x += this.contents.measureTextWidth(text);
+    }
+    // HP
     this.changeTextColor(this.textColor(31));
     item.effects.filter(e => e.code == 11).forEach(e => {
       if (e.value1 > 0) {
-        text = "+" + (e.value1 * 100) + "% ";
+        text = " +" + (e.value1 * 100) + "%";
         this.drawText(text, x, y, width);
         x += this.contents.measureTextWidth(text);
       }
       if (e.value2 > 0) {
-        text = "+" + e.value2 + "  ";
+        text = " +" + e.value2;
         this.drawText(text, x, y, width);
         x += this.contents.measureTextWidth(text);
       }
     });
+    // MP
     this.changeTextColor(this.textColor(16));
     item.effects.filter(e => e.code == 12).forEach(e => {
       if (e.value1 > 0) {
-        text = "+" + (e.value1 * 100) + "% ";
+        text = " +" + (e.value1 * 100) + "%";
         this.drawText(text, x, y, width);
         x += this.contents.measureTextWidth(text);
       }
       if (e.value2 > 0) {
-        text = "+" + e.value2 + "  ";
+        text = " +" + e.value2;
         this.drawText(text, x, y, width);
         x += this.contents.measureTextWidth(text);
       }
     });
+    // Add Buffs
+    this.changeTextColor(this.textColor(3));
+    item.effects.filter(e => e.code === 21).forEach(e => {
+      let state = $dataStates[e.dataId];
+      if (state.iconIndex > 0) {
+        // Draw +
+        text = " +"
+        this.drawText(text, x, y, width);
+        x += this.contents.measureTextWidth(text);
+        // Draw icon
+        this.drawIcon(state.iconIndex, x - 1, y + 2);
+        x += Math.floor(Window_Base._iconWidth * this.scaleRate()) - 1;
+      }
+    });
+    // Remove Buffs
+    this.changeTextColor(this.textColor(2));
+    let icons = [];
+    item.effects.filter(e => e.code === 22).forEach(e => {
+      let state = $dataStates[e.dataId];
+      if (state.iconIndex > 0) icons.push(state.iconIndex);
+    });
+    // Category-based removal
+    for (const c in item.removeCategory) if (DataManager.stateCategories[c]) DataManager.stateCategories[c].forEach(s => {
+      let state = $dataStates[s];
+      if (state.iconIndex > 0) icons.push(state.iconIndex);
+    });
+    icons = [...new Set(icons)]; // Ensure unique icons
+    if (icons.length >= 3) {
+      icons.length = 3;
+      icons[2] = 1354;
+    }
+    icons.forEach(icon => {
+      // Draw -
+      text = " -"
+      this.drawText(text, x, y, width);
+      x += this.contents.measureTextWidth(text);
+      // Draw icon
+      this.drawIcon(icon, x - 1, y + 2);
+      x += Math.floor(Window_Base._iconWidth * this.scaleRate()) - 1;
+    })
     this.resetTextColor();
   };
   function Window_BattleSideBase() {
@@ -8047,7 +8096,7 @@ if (Imported[_0x3014("0x76")] && Olivia[_0x3014("0x1ad")][_0x3014("0x105")][_0x3
     }
   };
   Window_ActorCommand.prototype[_0x3014("0x13f")] = function () {
-    this[_0x3014("0x13")](TextManager[_0x3014("0x189")], _0x3014("0x189"), BattleManager[_0x3014("0x19")]() && BattleManager.actor()._useBP == 0);
+    this[_0x3014("0x13")](this._confirmEscape ? "Confirm?" : TextManager[_0x3014("0x189")], _0x3014("0x189"), BattleManager[_0x3014("0x19")]() && BattleManager.actor()._useBP == 0);
   };
   Window_ActorCommand[_0x3014("0xa7")][_0x3014("0x10d")] = function () {
     if (this[_0x3014("0x17c")]() === _0x3014("0x181")) {

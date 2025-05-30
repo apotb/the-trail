@@ -4890,35 +4890,6 @@
               ]
             },
             {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                12,
-                "$gameParty.fortunatePickaxe()"
-              ]
-            },
-            {
-              "code": 122,
-              "indent": 3,
-              "parameters": [
-                59,
-                59,
-                1,
-                0,
-                1
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
               "code": 122,
               "indent": 2,
               "parameters": [
@@ -5018,6 +4989,28 @@
               "parameters": [
                 58,
                 58,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 5,
+              "parameters": [
+                60,
+                60,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 5,
+              "parameters": [
+                59,
+                59,
                 1,
                 0,
                 1
@@ -5210,20 +5203,15 @@
               ]
             },
             {
-              "code": 101,
+              "code": 250,
               "indent": 3,
               "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "Your pickaxe gave you an additional \\V[34]B!"
+                {
+                  "name": "Shop2",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
               ]
             },
             {
@@ -5232,7 +5220,7 @@
               "parameters": [
                 0,
                 1,
-                34
+                60
               ]
             },
             {
@@ -5570,35 +5558,6 @@
               ]
             },
             {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                12,
-                "$gameParty.fortunatePickaxe()"
-              ]
-            },
-            {
-              "code": 122,
-              "indent": 3,
-              "parameters": [
-                59,
-                59,
-                1,
-                0,
-                1
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
               "code": 122,
               "indent": 2,
               "parameters": [
@@ -5698,6 +5657,28 @@
               "parameters": [
                 58,
                 58,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 5,
+              "parameters": [
+                60,
+                60,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 5,
+              "parameters": [
+                59,
+                59,
                 1,
                 0,
                 1
@@ -5849,20 +5830,15 @@
               ]
             },
             {
-              "code": 101,
+              "code": 250,
               "indent": 3,
               "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "Your pickaxe gave you an additional \\V[34]B!"
+                {
+                  "name": "Shop2",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
               ]
             },
             {
@@ -5871,7 +5847,7 @@
               "parameters": [
                 0,
                 1,
-                34
+                60
               ]
             },
             {
@@ -6685,6 +6661,74 @@
               "indent": 0,
               "parameters": [
                 "OpenSynthesis"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Flame",
+            "direction": 8,
+            "pattern": 1,
+            "characterIndex": 2
+          },
+          "list": [
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "The ashes of a once-burning flame."
               ]
             },
             {
@@ -9364,35 +9408,6 @@
               ]
             },
             {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                12,
-                "$gameParty.fortunatePickaxe()"
-              ]
-            },
-            {
-              "code": 122,
-              "indent": 3,
-              "parameters": [
-                59,
-                59,
-                1,
-                0,
-                1
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
               "code": 122,
               "indent": 2,
               "parameters": [
@@ -9492,6 +9507,28 @@
               "parameters": [
                 58,
                 58,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 5,
+              "parameters": [
+                60,
+                60,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 5,
+              "parameters": [
+                59,
+                59,
                 1,
                 0,
                 1
@@ -9716,20 +9753,15 @@
               ]
             },
             {
-              "code": 101,
+              "code": 250,
               "indent": 3,
               "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "Your pickaxe gave you an additional \\V[34]B!"
+                {
+                  "name": "Shop2",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
               ]
             },
             {
@@ -9738,7 +9770,7 @@
               "parameters": [
                 0,
                 1,
-                34
+                60
               ]
             },
             {
@@ -10100,35 +10132,6 @@
               ]
             },
             {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                12,
-                "$gameParty.fortunatePickaxe()"
-              ]
-            },
-            {
-              "code": 122,
-              "indent": 3,
-              "parameters": [
-                59,
-                59,
-                1,
-                0,
-                1
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
               "code": 122,
               "indent": 2,
               "parameters": [
@@ -10228,6 +10231,28 @@
               "parameters": [
                 58,
                 58,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 5,
+              "parameters": [
+                60,
+                60,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 5,
+              "parameters": [
+                59,
+                59,
                 1,
                 0,
                 1
@@ -10452,20 +10477,15 @@
               ]
             },
             {
-              "code": 101,
+              "code": 250,
               "indent": 3,
               "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "Your pickaxe gave you an additional \\V[34]B!"
+                {
+                  "name": "Shop2",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
               ]
             },
             {
@@ -10474,7 +10494,7 @@
               "parameters": [
                 0,
                 1,
-                34
+                60
               ]
             },
             {
@@ -14135,35 +14155,6 @@
               ]
             },
             {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                12,
-                "$gameParty.fortunatePickaxe()"
-              ]
-            },
-            {
-              "code": 122,
-              "indent": 3,
-              "parameters": [
-                59,
-                59,
-                1,
-                0,
-                1
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
               "code": 122,
               "indent": 2,
               "parameters": [
@@ -14251,6 +14242,28 @@
               "parameters": [
                 58,
                 58,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 5,
+              "parameters": [
+                60,
+                60,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 5,
+              "parameters": [
+                59,
+                59,
                 1,
                 0,
                 1
@@ -14357,24 +14370,19 @@
                 60,
                 3,
                 0,
-                120
+                40
               ]
             },
             {
-              "code": 101,
+              "code": 250,
               "indent": 3,
               "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "Your pickaxe gave you an additional \\V[34]B!"
+                {
+                  "name": "Shop2",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
               ]
             },
             {
@@ -14383,7 +14391,7 @@
               "parameters": [
                 0,
                 1,
-                34
+                60
               ]
             },
             {
@@ -14411,11 +14419,29 @@
               ]
             },
             {
-              "code": 356,
+              "code": 111,
               "indent": 2,
+              "parameters": [
+                12,
+                "!$gameSystem.isQuestObjectiveCompleted(38, 1)"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 3,
               "parameters": [
                 "Quest 38 Complete Objective 1"
               ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
             },
             {
               "code": 0,
@@ -14745,35 +14771,6 @@
               ]
             },
             {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                12,
-                "$gameParty.fortunatePickaxe()"
-              ]
-            },
-            {
-              "code": 122,
-              "indent": 3,
-              "parameters": [
-                59,
-                59,
-                1,
-                0,
-                1
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
               "code": 122,
               "indent": 2,
               "parameters": [
@@ -14861,6 +14858,28 @@
               "parameters": [
                 58,
                 58,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 5,
+              "parameters": [
+                60,
+                60,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 5,
+              "parameters": [
+                59,
+                59,
                 1,
                 0,
                 1
@@ -14999,24 +15018,19 @@
                 60,
                 3,
                 0,
-                120
+                40
               ]
             },
             {
-              "code": 101,
+              "code": 250,
               "indent": 3,
               "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "Your pickaxe gave you an additional \\V[34]B!"
+                {
+                  "name": "Shop2",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
               ]
             },
             {
@@ -15025,7 +15039,7 @@
               "parameters": [
                 0,
                 1,
-                34
+                60
               ]
             },
             {
@@ -15053,11 +15067,29 @@
               ]
             },
             {
-              "code": 356,
+              "code": 111,
               "indent": 2,
+              "parameters": [
+                12,
+                "!$gameSystem.isQuestObjectiveCompleted(38, 1)"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 3,
               "parameters": [
                 "Quest 38 Complete Objective 1"
               ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
             },
             {
               "code": 0,
@@ -28800,7 +28832,7 @@
     {
       "id": 121,
       "name": "bandito-template",
-      "note": "<Save Event Location> <shadow> <Monster>",
+      "note": "<shadow> <Monster>",
       "pages": [
         {
           "conditions": {
@@ -40830,7 +40862,7 @@
     {
       "id": 163,
       "name": "zealot-template",
-      "note": "<Save Event Location> <shadow> <Monster>",
+      "note": "<shadow> <Monster>",
       "pages": [
         {
           "conditions": {
@@ -41199,7 +41231,7 @@
     {
       "id": 165,
       "name": "cultist-template",
-      "note": "<Save Event Location> <shadow> <Monster>",
+      "note": "<shadow> <Monster>",
       "pages": [
         {
           "conditions": {
@@ -41568,7 +41600,7 @@
     {
       "id": 167,
       "name": "assassin-template",
-      "note": "<Save Event Location> <shadow> <Monster>",
+      "note": "<shadow> <Monster>",
       "pages": [
         {
           "conditions": {

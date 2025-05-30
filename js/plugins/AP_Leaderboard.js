@@ -40,7 +40,7 @@ API_STEAM.userId = function() {
 
 API_LEADERBOARD = new Object();
 
-API_LEADERBOARD._url = `https://script.google.com/macros/s/AKfycby0KHaXUKbUi4aXDCE7eNp-JRbLMJC_86OcgzmZ3gpmI7YUIOTXkWljjeU78kRRsTs/exec`;
+API_LEADERBOARD._url = `https://script.google.com/macros/s/AKfycbxYCy8EA_cRaI62Ijd2-RIWLsGzhrvsOpc_zwJG2YMW2haf7OPfk8mnunYK2d7IZqk/exec`;
 API_LEADERBOARD._dataVariable = 83;
 
 API_LEADERBOARD.leaderboards = function() {
@@ -63,7 +63,7 @@ API_LEADERBOARD.fetchLeaderboard = async function(leaderboard) {
         this.setLeaderboard(leaderboard, data);
     })
     .catch(error => {
-        alert("Error fetching data: " + error);
+        if ($gameTemp.isPlaytest()) alert("Error fetching data: " + error);
         throw error;
     });
 };
@@ -74,7 +74,7 @@ API_LEADERBOARD.addToLeaderboard = async function(leaderboard, value) {
         body: JSON.stringify([leaderboard, API_STEAM.userId(), API_STEAM.username(), value])
     })
     .catch(error => {
-        alert("Error adding data: " + error);
+        if ($gameTemp.isPlaytest()) alert("Error adding data: " + error);
         throw error;
     });
 };
@@ -219,7 +219,12 @@ Scene_Leaderboard.prototype.createLoginWindow = function() {
 
 Scene_Leaderboard.prototype.refreshCommand = async function() {
     await API_LEADERBOARD.refresh();
-    alert("Leaderboard refreshed");
+    AudioManager.playSe({
+        "name": "Absorb1",
+        "volume": 100,
+        "pitch": 100,
+        "pan": 0
+    });
     this._leaderboardWindow.refresh();
     this._loginWindow.activate();
 };

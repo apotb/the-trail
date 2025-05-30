@@ -100,7 +100,7 @@ Game_Temp.prototype.recipeTemplate = function(name) {
             arr = [
                 [68, 74, 213, 176, 92, 214, 242, 154, 93, 50, 207],
                 [45, 49, 50, 44, 42, 43, 53, 52, 32, 51, 23, 30, 24, 25, 26, 27],
-                [218, 219, 78, 125, 126, 127, 128, 108, 97, 137, 136, 48, 117, 47, 168, 46, 133, 132, 129, 130, 131, 213, 44, 96, 115, 149, 148, 45, 172, 159, 143, 170, 181, 214, 185, 189, 190, 178, 161, 162, 171, 124, 217]
+                [218, 219, 78, 125, 126, 127, 128, 108, 97, 137, 136, 48, 117, 47, 168, 46, 133, 132, 129, 130, 131, 213, 44, 96, 115, 149, 148, 45, 172, 159, 143, 170, 181, 214, 185, 189, 190, 178, 161, 162, 171, 124, 217, 233]
             ]
             break;
         case 'DALIA':
@@ -501,6 +501,7 @@ Game_System.prototype.battleTemplate = function(name) {
 // Chapters
 
 Game_System.prototype.chapter = function() {
+    if ($gameVariables.value(84) >= 17)             return 7;
     if ($gameSwitches.value(109))                   return 6;
     if ($gameSelfSwitches.value([8, 122, 'A']))     return 5;
     if ($gameSelfSwitches.value([8, 80, 'B']))      return 4;
@@ -518,7 +519,8 @@ Game_System.prototype.championsTalisman = function() {
         [4, 3, 2, 2, 2, 2, 3, 1],       // 3
         [8, 5, 3, 3, 3, 3, 5, 2],       // 4
         [12, 7, 4, 4, 5, 5, 7, 2],      // 5
-        [16, 10, 6, 6, 8, 8, 9, 3],     // 6
+        [16, 10, 5, 5, 7, 7, 9, 3],     // 6
+        [20, 15, 5, 5, 7, 7, 11, 3]     // 7
     ][this.chapter()];
 };
 
@@ -2049,27 +2051,9 @@ Game_Action.prototype.apply = function(target) {
     }
 };
 
-Game_Action.prototype.makeDamageValue = function(target, critical) {
-    var item = this.item();
-    var baseValue = this.evalDamageFormula(target);
-    var value = baseValue * this.calcElementRate(target);
-    if (this.isPhysical()) {
-        value *= target.pdr;
-    }
-    if (this.isMagical()) {
-        value *= target.mdr;
-    }
-    if (baseValue < 0) {
-        value *= target.rec;
-    }
-    if (critical) {
-        value = this.applyCritical(value);
-    }
-    value = this.applyVariance(value, item.damage.variance);
-    value = this.applyGuard(value, target);
-    value = Math.round(value);
-    return value;
-};
+/*Game_Action.prototype.makeDamageValue = function(target, critical) {
+    // YEP_DamageCore.js
+};*/
 
 Game_Action.prototype.evalDamageFormula = function(target) {
     try {
@@ -2711,6 +2695,7 @@ Game_BattlerBase.prototype.die = function() {
     this._hp = 0;
     this.clearStates();
     this.clearBuffs();
+    delete this._motionOverride;
     if (this.isEnemy()) if (this.killer().isEquipped) if (this.killer().isEquipped($dataWeapons[27])) OrangeGreenworks.activateAchievement('BATTLE_SHOVEL');
 };
 
@@ -2860,11 +2845,7 @@ Game_BattlerBase.prototype.bparam = function(bparamId) {
 };
 
 Game_BattlerBase.prototype.otherparam = function(otherparamId) { 
-    var boost = 1;
-    if (otherparamId == 0 && this.isActor()) {
-        if (this.hasSkill(98)) boost += Math.min(this.totalMpUsed(), 100000) * 0.000001; // Hardcoded Residual Mana
-    }
-    return this.traitsPi(Game_BattlerBase.TRAIT_OTHERPARAM, otherparamId) * boost;
+    return this.traitsPi(Game_BattlerBase.TRAIT_OTHERPARAM, otherparamId);
 };
 
 Game_BattlerBase.prototype.elementRate = function(elementId) {
@@ -3641,7 +3622,10 @@ Game_Battler.prototype.gainHp = function(value) {
         var resist = this.trueDarkness();
         this._trueDarkness = Math.max(this.trueDarkness() - value, 0);
         value = Math.max(value - resist, 0);
-        if (this.trueDarkness() == 0) this.removeState(198);
+    }
+    if (this.trueDarkness() === 0) {
+        this.removeState(198); // True Darkness
+        this.removeState(217); // Hex
     }
     this.setHp(this.hp + value);
 };
@@ -4173,7 +4157,7 @@ Game_Actor.prototype.optimizeEquipments = function() {
 Game_Actor.prototype.bestEquipItem = function(slotId) {
     var etypeId = this.equipSlots()[slotId];
     var items = $gameParty.equipItems().filter(function(item) {
-        return item.etypeId === etypeId && this.canEquip(item);
+        return item.etypeId === etypeId && this.canEquip(item, slotId);
     }, this);
     var bestItem = null;
     var bestPerformance = -1000;
@@ -4188,9 +4172,12 @@ Game_Actor.prototype.bestEquipItem = function(slotId) {
 };
 
 Game_Actor.prototype.calcEquipItemPerformance = function(item) {
-    return item.params.reduce(function(a, b) {
+    let optimizeIgnore = this.actor().meta['Optimize Ignore'].split(",").map(s => s.trim());
+    let params = item.params.filter((_, index) => !optimizeIgnore.includes(index));
+    let xparam = item.traits.filter(trait => trait.code === Game_BattlerBase.TRAIT_XPARAM && !optimizeIgnore.includes(trait.dataId + 8)).map(trait => trait.value * 100);
+    return params.concat(xparam).reduce(function(a, b) {
         return a + b;
-    });
+    }) * Number(item.meta['Optimize Weight'] || 1);
 };
 
 Game_Actor.prototype.isSkillWtypeOk = function(skill) {
@@ -6050,6 +6037,7 @@ Game_Troop.prototype.performVictory = function() {
 
 Game_Troop.prototype.weaken = function() {
     this.members().filter(e => e.isAlive()).forEach(e => e.setHp(1));
+    this.refreshMembers();
 };
 
 //-----------------------------------------------------------------------------
@@ -6865,7 +6853,7 @@ Game_Map.prototype.inTrueTelluriaCastle = function() {
 };
 
 Game_Map.prototype.indoors = function() {
-    return !!this.tileset().meta['Inside'];
+    return !!this.tileset().meta['Inside'] || !!$dataMap.meta['Inside'];
 };
 
 //-----------------------------------------------------------------------------

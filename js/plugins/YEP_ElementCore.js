@@ -498,6 +498,8 @@ Game_BattlerBase.prototype.elementRate = function(elementId) {
   if (this.isAbsorbElement(elementId) && result > 0) {
     result = Math.min(0 - result, 0);
   }
+  if (elementId === 1) result *= this.pdr; // Physical Damage Rate
+  if (elementId === 18) result *= this.mdr; // Magical Damage Rate
   return result;
 };
 
@@ -571,7 +573,10 @@ Game_Battler.prototype.elementMagnifyRate = function(elementId) {
 };
 
 Game_Battler.prototype.elementOutgoingRate = function(elementId) {
-  return (1 + this.elementAmplifyRate(elementId)) * this.elementMagnifyRate(elementId);
+  let oedPatch = [2, 3, 4, 5, 6, 7, 13, 14, 8, 9].contains(elementId) ? this.oed : 1;
+  let omdPatch = elementId === 18 ? this.omd : 1;
+  let residualMana = this.hasSkill(98) && elementId === 18 ? Math.min(this.totalMpUsed(), 100000) * 0.000001 : 0; // Residual Mana
+  return ((1 + this.elementAmplifyRate(elementId)) * this.elementMagnifyRate(elementId) + residualMana) * oedPatch * omdPatch;
 };
 
 Game_Battler.prototype.isNullElement = function() {
@@ -737,6 +742,8 @@ Game_Action.prototype.getItemElements = function() {
   if (this._addedElements !== undefined) {
     Yanfly.Util.extend(elements, this._addedElements); // Mainly for Bat Sling
   }
+  if (this.item().hitType === 1) elements.push(1); // Outgoing Physical Rate
+  if (this.item().hitType === 2) elements.push(18); // Outgoing Magical Rate
   return elements.filter(Yanfly.Util.onlyUnique);
 };
 
