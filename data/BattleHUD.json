@@ -41,5 +41,220 @@
     "id": 5,
     "x": 25,
     "y": 53
+  },
+  {
+    "type": "Text",
+    "Value": "${getChat()[0]}",
+    "Condition": "getChat()[0]",
+    "Layer": "0",
+    "Font": "GameFont",
+    "Max Width": "600",
+    "Align": "left",
+    "Font Size": "18",
+    "Text Color": "#ffffff",
+    "Text Alpha": "255",
+    "Outline Color": "#000000",
+    "Outline Alpha": "127",
+    "animateInfo": {
+      "x": {
+        "spd": 5,
+        "loop": true,
+        "min": 0,
+        "max": 0
+      },
+      "y": {
+        "spd": 0,
+        "loop": false,
+        "min": 0,
+        "max": 0
+      },
+      "s": {
+        "spd": 0,
+        "loop": false,
+        "min": 1,
+        "max": 1
+      },
+      "r": {
+        "spd": 0,
+        "loop": false,
+        "min": 0,
+        "max": 0
+      }
+    },
+    "id": 2,
+    "x": 304,
+    "y": 705
+  },
+  {
+    "type": "Text",
+    "Value": "${getChat()[1]}",
+    "Condition": "getChat()[1]",
+    "Layer": "0",
+    "Font": "GameFont",
+    "Max Width": "600",
+    "Align": "left",
+    "Font Size": "18",
+    "Text Color": "#ffffff",
+    "Text Alpha": "255",
+    "Outline Color": "#000000",
+    "Outline Alpha": "127",
+    "animateInfo": {
+      "x": {
+        "spd": 5,
+        "loop": true,
+        "min": 0,
+        "max": 0
+      },
+      "y": {
+        "spd": 0,
+        "loop": false,
+        "min": 0,
+        "max": 0
+      },
+      "s": {
+        "spd": 0,
+        "loop": false,
+        "min": 1,
+        "max": 1
+      },
+      "r": {
+        "spd": 0,
+        "loop": false,
+        "min": 0,
+        "max": 0
+      }
+    },
+    "id": 3,
+    "x": 304,
+    "y": 675
+  },
+  {
+    "type": "Text",
+    "Value": "${getChat()[2]}",
+    "Condition": "getChat()[2]",
+    "Layer": "0",
+    "Font": "GameFont",
+    "Max Width": "600",
+    "Align": "left",
+    "Font Size": "18",
+    "Text Color": "#ffffff",
+    "Text Alpha": "255",
+    "Outline Color": "#000000",
+    "Outline Alpha": "127",
+    "animateInfo": {
+      "x": {
+        "spd": 5,
+        "loop": true,
+        "min": 0,
+        "max": 0
+      },
+      "y": {
+        "spd": 0,
+        "loop": false,
+        "min": 0,
+        "max": 0
+      },
+      "s": {
+        "spd": 0,
+        "loop": false,
+        "min": 1,
+        "max": 1
+      },
+      "r": {
+        "spd": 0,
+        "loop": false,
+        "min": 0,
+        "max": 0
+      }
+    },
+    "id": 3,
+    "x": 304,
+    "y": 645
+  },
+  {
+    "type": "Text",
+    "Value": "${getChat()[3]}",
+    "Condition": "getChat()[3]",
+    "Layer": "0",
+    "Font": "GameFont",
+    "Max Width": "600",
+    "Align": "left",
+    "Font Size": "18",
+    "Text Color": "#ffffff",
+    "Text Alpha": "255",
+    "Outline Color": "#000000",
+    "Outline Alpha": "127",
+    "animateInfo": {
+      "x": {
+        "spd": 5,
+        "loop": true,
+        "min": 0,
+        "max": 0
+      },
+      "y": {
+        "spd": 0,
+        "loop": false,
+        "min": 0,
+        "max": 0
+      },
+      "s": {
+        "spd": 0,
+        "loop": false,
+        "min": 1,
+        "max": 1
+      },
+      "r": {
+        "spd": 0,
+        "loop": false,
+        "min": 0,
+        "max": 0
+      }
+    },
+    "id": 3,
+    "x": 304,
+    "y": 615
+  },
+  {
+    "type": "Text",
+    "Value": "${getChat()[4]}",
+    "Condition": "getChat()[4]",
+    "Layer": "0",
+    "Font": "GameFont",
+    "Max Width": "600",
+    "Align": "left",
+    "Font Size": "18",
+    "Text Color": "#ffffff",
+    "Text Alpha": "255",
+    "Outline Color": "#000000",
+    "Outline Alpha": "127",
+    "animateInfo": {
+      "x": {
+        "spd": 5,
+        "loop": true,
+        "min": 0,
+        "max": 0
+      },
+      "y": {
+        "spd": 0,
+        "loop": false,
+        "min": 0,
+        "max": 0
+      },
+      "s": {
+        "spd": 0,
+        "loop": false,
+        "min": 1,
+        "max": 1
+      },
+      "r": {
+        "spd": 0,
+        "loop": false,
+        "min": 0,
+        "max": 0
+      }
+    },
+    "id": 3,
+    "x": 304,
+    "y": 585
   }
 ]

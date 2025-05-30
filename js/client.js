@@ -4,7 +4,8 @@ let serverTimeOffset = 0;
 window.players = {};
 window.chat = [];
 
-const CHAT_LIMIT = 10;
+const MAP_CHAT_LIMIT = 10;
+const BATTLE_CHAT_LIMIT = 5;
 const CHAT_TIME = 15 * 1000;
 
 function startMultiplayerConnection(playerName="Guest", ip="the-trail.apotb.com", port="17404") {
@@ -154,7 +155,7 @@ function addChat(chat) {
 }
 
 function getChat() {
-    return window.chat.filter(chat => getDate() - chat.time < CHAT_TIME).slice(-CHAT_LIMIT).reverse().map(chat => chat.text);
+    return window.chat.filter(chat => getDate() - chat.time < CHAT_TIME).slice(-($gameParty.inBattle() ? BATTLE_CHAT_LIMIT : MAP_CHAT_LIMIT)).reverse().map(chat => chat.text);
 }
 
 function getDate() {
