@@ -2704,7 +2704,7 @@
     "message2": "",
     "mpCost": 690,
     "name": "Origin Beam",
-    "note": "<Require = 3 BP>\n\n<setup action>\nwait: 60\nhide battle hud\nimmortal: targets, true\ndisplay action\nperform start\ncamera focus: user\nzoom: 200%\nwait for camera\nwait for zoom\nmotion chant: user\nanimation 117: user\nanimation 248: user\nwait: 60\nse: Flash1, 100\nbattleback 3 add: battlebacks1, DarkSpace\nbattleback 4 add: battlebacks2, DarkSpace\ntint screen: 34, -34, -68, 170, 30\nwait for animation\nbgm: memorize\nbgm: stop\nbgs: Clock, 100\nmotion spell: user\nreset camera\nreset zoom\nwait for camera\nwait for zoom\n</setup action>\n\n<whole action>\nanimation 125: all enemies\nwait for animation\naction animation\nwait for animation\nanimation 253: all enemies\nanimation 254: all enemies\nwait for animation\nshow battle hud\n</whole action>\n\n<target action>\naction effect\nclear battle log\nwait for effect\nwait: 15\n</target action>\n\n<follow action>\nse: Flash1, 100\nbgs: stop\nbgm: memory\nbattleback 3 remove\nbattleback 4 remove\ntint screen: normal, 30\nanimation 247: user\nse: Skill3, 100\nwait: 60\n</follow action>\n\n<finish action>\nanimation 236: all enemies\nimmortal: targets, false\nclear battle log\nperform finish\n</finish action>",
+    "note": "<Require = 3 BP>\n\n<setup action>\nwait: 60\nhide battle hud\nimmortal: targets, true\ndisplay action\nperform start\ncamera focus: user\nzoom: 200%\nwait for camera\nwait for zoom\nmotion chant: user\nanimation 117: user\nanimation 248: user\nwait: 60\nse: Flash1, 100\nbattleback 3 add: battlebacks1, DarkSpace\nbattleback 4 add: battlebacks2, DarkSpace\ntint screen: 34, -34, -68, 170, 30\nwait for animation\nbgm: memorize\nbgm: stop\nbgs: Clock, 100\nmotion spell: user\nreset camera\nreset zoom\nwait for camera\nwait for zoom\n</setup action>\n\n<whole action>\nanimation 125: enemies\nwait for animation\naction animation\nwait for animation\nanimation 253: enemies\nanimation 254: enemies\nwait for animation\nshow battle hud\n</whole action>\n\n<target action>\naction effect\nclear battle log\nwait for effect\nwait: 15\n</target action>\n\n<follow action>\nse: Flash1, 100\nbgs: stop\nbgm: memory\nbattleback 3 remove\nbattleback 4 remove\ntint screen: normal, 30\nanimation 247: user\nse: Skill3, 100\nwait: 60\n</follow action>\n\n<finish action>\nanimation 236: enemies\nimmortal: targets, false\nclear battle log\nperform finish\n</finish action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2821,7 +2821,7 @@
   },
   {
     "id": 81,
-    "animationId": 104,
+    "animationId": 103,
     "damage": {
       "critical": false,
       "elementId": 9,
@@ -3093,7 +3093,7 @@
     "repeats": 1,
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
-    "scope": 8,
+    "scope": 10,
     "speed": 0,
     "stypeId": 3,
     "successRate": 100,
@@ -3642,7 +3642,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Summon a mystifyingly bright orb of dark energy. Can leave an enemy\n\\it[] or \\it[]. \\c[27]\\bpdamage[600]%\\c[0] MAT rate.",
+    "description": "Summon a mystifyingly bright orb of dark energy. Can leave an enemy\n\\it[20] and/or \\it[36]. \\c[27]\\bpdamage[600]%\\c[0] MAT rate.",
     "effects": [
       {
         "code": 21,
@@ -3661,7 +3661,7 @@
     "iconIndex": 1457,
     "message1": " casts %1!",
     "message2": "",
-    "mpCost": 30,
+    "mpCost": 50,
     "name": "Eclipse",
     "note": "<Boost Damage>\n\n<action copy: skill:7>",
     "occasion": 1,
@@ -4453,7 +4453,7 @@
     "requiredWtypeId2": 0,
     "scope": 11,
     "speed": 0,
-    "stypeId": 2,
+    "stypeId": 0,
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0

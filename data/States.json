@@ -2755,7 +2755,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "[P] Topped Off",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Element Magnify Magical: +20%>\n\nHardcoded in:\nrpg_objects.js - Game_Battler.prototype.onAllActionsEnd\nYEP_BattleEngineCore - BattleManager.startAction\n\n<Custom Passive Condition>\ncondition = user.mpRate() >= 1 || user._preMP >= user.mmp;\n</Custom Passive Condition>\n\n<Help Description>\nIncreases outgoing magical damage by 20% when at full MP.\n</Help Description>",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Element Magnify Magical: +20%>\n\nHardcoded in:\nrpg_objects.js - Game_Battler.prototype.onAllActionsEnd\nYEP_BattleEngineCore - BattleManager.startAction\n\n<Custom Passive Condition>\ncondition = $gameActors.actor(user.actorId()).mpRate() >= 1 || $gameActors.actor(user.actorId())._preMP >= $gameActors.actor(user.actorId()).mmp;\n</Custom Passive Condition>\n\n<Help Description>\nIncreases outgoing magical damage by 20% when at full MP.\n</Help Description>",
     "overlay": 0,
     "priority": 10,
     "removeAtBattleEnd": false,
@@ -7065,7 +7065,7 @@
       {
         "code": 23,
         "dataId": 4,
-        "value": 0.75
+        "value": 0.5
       }
     ],
     "iconIndex": 831,
