@@ -4566,6 +4566,11 @@
     "etypeId": 3,
     "traits": [
       {
+        "code": 21,
+        "dataId": 1,
+        "value": 1.05
+      },
+      {
         "code": 22,
         "dataId": 8,
         "value": 0.03
@@ -4576,10 +4581,10 @@
     "note": "<Upgrade Slots: 2>",
     "params": [
       0,
-      75,
+      100,
       0,
       0,
-      0,
+      5,
       0,
       0,
       0
@@ -5292,7 +5297,7 @@
     ],
     "iconIndex": 347,
     "name": "Green Mage Crystal",
-    "note": "<Passive State: 194>",
+    "note": "<Upgrade Slots: 1>\n\n<Passive State: 194>",
     "params": [
       0,
       0,
@@ -5869,13 +5874,13 @@
   {
     "id": 224,
     "atypeId": 1,
-    "description": "When your soul begins to crack, the \\c[30]Purple\\c[0] listens. And it\nwill answer. Reduces MP usage by 25% when below 50% MP.",
+    "description": "When your soul begins to crack, the \\c[30]Purple\\c[0] listens. And it\nwill answer. Reduces MP usage by 50% when below 50% MP.",
     "etypeId": 6,
     "traits": [
       {
         "code": 22,
         "dataId": 8,
-        "value": 0.02
+        "value": 0.03
       }
     ],
     "iconIndex": 830,

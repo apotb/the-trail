@@ -1,4 +1,4 @@
-# Alpha 17: Path of the Purple (5/??/2025)
+# Alpha 17: Path of the Purple (5/30/2025)
 Now that you've witnessed the destructive power of Apocalypse first-hand, it's time to take up arms! The thing is, no one really knows where Apocalypse is... so it's up to you to track him down.
 A member of a mysterious cult has been captured, and is being held in the Solus Valley Jail. It'll take some intimidation to get anything out of this guy, but for now, he's your only hint. And who knows? Maybe this lead will take you right to Apocalypse...
 
