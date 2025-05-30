@@ -31,7 +31,7 @@ API_STEAM.username = function() {
 };
 
 API_STEAM.userId = function() {
-    return this.loggedIn() ? OrangeGreenworks.steamId?.steamId : "12345678987654321";
+    return this.loggedIn() ? OrangeGreenworks.steamId.steamId : Array.from({ length: 17 }, () => Math.floor(Math.random() * 10)).join('');
 };
 
 //=============================================================================

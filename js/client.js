@@ -168,6 +168,7 @@ function sendPlayer(override={}) {
             name: API_STEAM.username(),
             id: API_STEAM.userId(),
             mapId: $gameMap.mapId(),
+            mapName: $gameMap.displayName(),
             x: $gamePlayer.x,
             y: $gamePlayer.y,
             direction: $gamePlayer.direction(),

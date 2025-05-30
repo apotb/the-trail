@@ -1,21 +1,76 @@
 // server.js
 const WebSocket = require('ws');
+const readline = require('readline');
 
 const wss = new WebSocket.Server({ port: 17404 });
 const clients = new Map();
 
-console.log("Server running on port 17404");
+console.log("! Server running on port 17404");
 
-wss.on('connection', (ws) => {
-    function broadcast(data, exclude=[ws]) {
-        const payload = JSON.stringify(data);
-        for (const client of clients.keys()) {
-            if (client.readyState === WebSocket.OPEN && !exclude.includes(client)) {
-                client.send(payload);
-            }
+// Setup command interface
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.setPrompt('> ');
+rl.prompt();
+
+// Broadcast to all clients except those excluded
+function broadcast(data, exclude = []) {
+    const payload = JSON.stringify(data);
+    for (const client of clients.keys()) {
+        if (client.readyState === WebSocket.OPEN && !exclude.includes(client)) {
+            client.send(payload);
         }
     }
+}
 
+// Command handler
+rl.on('line', (input) => {
+    const args = input.trim().split(' ');
+    const command = args.shift();
+
+    if (command === 'players') {
+        console.log(`Players connected: ${clients.size}`);
+        for (const [_, player] of clients.entries()) {
+            console.log(` - ${player.name} | ${player.id} | ${player.mapName}`);
+        }
+    } else if (command === 'say') {
+        const message = `[SERVER] ${args.join(' ')}`;
+        broadcast({
+            type: 'message',
+            message,
+            time: Date.now()
+        });
+        console.log(message);
+    } else if (command === 'kick') {
+        const targetId = args.join(' ').toLowerCase();
+        let kicked = false;
+        for (const [ws, player] of clients.entries()) {
+            if (player.id === targetId) {
+                ws.close();
+                kicked = true;
+                console.log(`! Kicked ${player.name}`);
+                break;
+            }
+        }
+        if (!kicked) console.log(`⚠️ No player named "${targetName}" found.`);
+    } else if (command === 'help') {
+        console.log(`\nAvailable commands:
+  players               List all connected players
+  say <message>         Broadcast a message to all players
+  kick <id>             Kick a player by ID
+  help                  Show this help message
+        `);
+    } else {
+        console.log(`Unknown command: ${command}. Type 'help' for list of commands.`);
+    }
+
+    rl.prompt();
+});
+
+wss.on('connection', (ws) => {
     ws.on('message', (raw) => {
         try {
             const data = JSON.parse(raw.toString());
@@ -26,11 +81,10 @@ wss.on('connection', (ws) => {
             } else if (data.type === "player") {
                 clients.set(ws, data);
 
-                // Send the full player list to the new client
                 const otherPlayers = Array.from(clients.entries())
                     .map(([_, pdata]) => pdata)
                     .filter((pdata) => pdata.id !== data.id);
-                
+
                 for (const player of otherPlayers) {
                     ws.send(JSON.stringify({
                         type: "player",
@@ -40,7 +94,7 @@ wss.on('connection', (ws) => {
             } else if (data.type === "move") {
                 let player = clients.get(ws);
                 player.x = data.x;
-                player.y = data.y
+                player.y = data.y;
                 player.direction = data.direction;
                 clients.set(ws, player);
             } else if (data.type === "transfer") {
@@ -60,7 +114,7 @@ wss.on('connection', (ws) => {
                 }));
             }
 
-            broadcast(data);
+            broadcast(data, [ws]);
         } catch (err) {
             console.warn("❌ Invalid message:", raw);
         }
