@@ -606,6 +606,7 @@ Game_Map.prototype.despawnEventId = function(eventId) {
   if (eventId < Yanfly.Param.EventSpawnerID) return;
   if (!this._spawnedEvents) return;
   var ev = this.event(eventId);
+  if (!ev) return;
   ev.locate(-1, -1);
   this.eraseEvent(eventId);
   this._spawnedEvents[eventId - Yanfly.Param.EventSpawnerID] = null;

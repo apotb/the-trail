@@ -2,12 +2,13 @@ var AP = AP || {};
 AP.Leaderboard = AP.Leaderboard || {};
 
 //=============================================================================
-// API_ITCH
+// API_STEAM
 //=============================================================================
 
 API_STEAM = new Object();
 
 API_STEAM._dataVariable = 82;
+API_STEAM._backupId = Array.from({ length: 17 }, () => Math.floor(Math.random() * 10)).join('');
 
 API_STEAM.loggedIn = function() {
     return OrangeGreenworks.isSteamRunning();
@@ -31,7 +32,7 @@ API_STEAM.username = function() {
 };
 
 API_STEAM.userId = function() {
-    return this.loggedIn() ? OrangeGreenworks.steamId.steamId : Array.from({ length: 17 }, () => Math.floor(Math.random() * 10)).join('');
+    return this.loggedIn() ? OrangeGreenworks.steamId.steamId : this._backupId;
 };
 
 //=============================================================================

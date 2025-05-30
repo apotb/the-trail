@@ -1,14 +1,4 @@
 //=============================================================================
-// Game_Map
-//=============================================================================
-
-___Game_Map__prototype__setupEvents___ = Game_Map.prototype.setupEvents;
-Game_Map.prototype.setupEvents = function() {
-    ___Game_Map__prototype__setupEvents___.call(this);
-    sendPlayer({ mapId: $gamePlayer._newMapId, x: $gamePlayer._newX, y: $gamePlayer._newY });
-};
-
-//=============================================================================
 // Game_Player
 //=============================================================================
 
@@ -30,6 +20,18 @@ Game_Player.prototype.performTransfer = function() {
         this.refresh();
         this.clearTransferInfo();
     }
+};
+
+___Game_Player__prototype__locate___ = Game_Player.prototype.locate;
+Game_Player.prototype.locate = function(x, y) {
+    ___Game_Player__prototype__locate___.call(this, x, y);
+    sendTransfer($gameMap.mapId(), $gameMap.mapId(), x, y, $gamePlayer.direction());
+};
+
+___Game_Player__prototype__jump___ = Game_Player.prototype.jump;
+Game_Player.prototype.jump = function(xPlus, yPlus) {
+    ___Game_Player__prototype__jump___.call(this, xPlus, yPlus);
+    sendJump(xPlus, yPlus);
 };
 
 //=============================================================================
@@ -64,6 +66,7 @@ ___Scene_Map__prototype__onMapLoaded___ = Scene_Map.prototype.onMapLoaded;
 Scene_Map.prototype.onMapLoaded = function() {
     ___Scene_Map__prototype__onMapLoaded___.call(this);
     if (!(socket && socket.readyState === WebSocket.OPEN) && !$gameTemp._forceDisconnect) startMultiplayerConnection(API_STEAM.username());
+    if (socket && socket.readyState === WebSocket.OPEN) sendPlayer();
 };
 
 //=============================================================================

@@ -35,15 +35,17 @@ function startMultiplayerConnection(playerName="Guest", ip="the-trail.apotb.com"
                     if (!(SceneManager._scene instanceof Scene_Map)) return;
                     Yanfly.SpawnEventTemplateAt('Player', data.x, data.y, true);
                     player = $gameMap.LastSpawnedEvent();
-                    window.players[data.id] = player;
-                    SceneManager._scene._spriteset.createBShadow(player.eventId(), player);
-                    SceneManager._scene._spriteset._characterSprites.find(sprite => sprite && sprite._miniLabel._character._eventId === player.eventId())._miniLabel.setText(data.name);
                 }
 
-                player.setImage(data.spriteName, data.spriteIndex);
-                player._mapId = data.mapId;
-                player.locate(data.x, data.y);
-                player.setDirection(data.direction);
+                if (player) {
+                    window.players[data.id] = player;
+                    SceneManager._scene._spriteset.createBShadow(player.eventId(), player);
+                    SceneManager._scene._spriteset._characterSprites.find(sprite => sprite && sprite._miniLabel?._character._eventId === player.eventId())._miniLabel.setText(data.name);
+                    player.setImage(data.spriteName, data.spriteIndex);
+                    player._mapId = data.mapId;
+                    player.locate(data.x, data.y);
+                    player.setDirection(data.direction);
+                }
             }
 
             if (data.type === "move") {
@@ -58,6 +60,13 @@ function startMultiplayerConnection(playerName="Guest", ip="the-trail.apotb.com"
 
             if (data.type === "transfer") {
                 deletePlayer(data.id);
+            }
+
+            if (data.type === "jump") {
+                let player = window.players[data.id];
+                if (player) {
+                    player.jump(data.plusX, data.plusY);
+                }
             }
 
             if (data.type === "vanity") {
@@ -194,10 +203,11 @@ function sendMove(direction) {
 }
 
 function sendTransfer(currentMapId, mapId, x, y, direction) {
-    if (currentMapId === mapId) return;
-    Yanfly.ClearSpawnedEvents(currentMapId);
-    window.players = {};
     if (socket && socket.readyState === WebSocket.OPEN) {
+        if (currentMapId !== mapId) {
+            Yanfly.ClearSpawnedEvents(currentMapId);
+            window.players = {};
+        };
         socket.send(JSON.stringify({
             type: "transfer",
             id: API_STEAM.userId(),
@@ -205,6 +215,16 @@ function sendTransfer(currentMapId, mapId, x, y, direction) {
         }));
     }
 }
+
+function sendJump(xPlus, yPlus) {
+    if (socket && socket.readyState === WebSocket.OPEN) {
+        socket.send(JSON.stringify({
+            type: "jump",
+            id: API_STEAM.userId(),
+            xPlus, yPlus
+        }));
+    }
+};
 
 function sendVanity(spriteName=undefined, spriteIndex=undefined) {
     if (socket && socket.readyState === WebSocket.OPEN) {
@@ -240,4 +260,5 @@ window.getChat = getChat;
 window.sendPlayer = sendPlayer;
 window.sendMove = sendMove;
 window.sendTransfer = sendTransfer;
+window.sendJump = sendJump;
 window.sendVanity = sendVanity;

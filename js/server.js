@@ -118,12 +118,22 @@ wss.on('connection', (ws) => {
                 clients.set(ws, player);
             } else if (data.type === "transfer") {
                 let player = clients.get(ws);
-                if (!player || player.mapId === data.mapId) return;
+                if (!player) return;
                 player.mapId = data.mapId;
                 player.x = data.x;
                 player.y = data.y;
                 player.direction = data.direction;
                 clients.set(ws, player);
+                return broadcast(data, [ws, ...(Array.from(clients.entries())
+                    .map(([_, pdata]) => pdata)
+                    .filter((pdata) => pdata.mapId !== data.mapId))])
+            } else if (data.type === "jump") {
+                let player = clients.get(ws);
+                if (player) {
+                    player.x += data.plusX;
+                    player.y += data.plusY;
+                    clients.set(ws, player);
+                }
             } else if (data.type === "vanity") {
 
             } else if (data.type === "ping") {
