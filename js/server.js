@@ -49,13 +49,25 @@ rl.on('line', (input) => {
         let kicked = false;
         for (const [ws, player] of clients.entries()) {
             if (player.id === targetId) {
-                ws.close();
+                if (ws.readyState === WebSocket.OPEN) {
+                    ws.send(JSON.stringify({
+                        type: "message",
+                        message: "You were kicked from the server",
+                        time: Date.now()
+                    }));
+
+                    setTimeout(() => {
+                        ws.close();
+                    }, 10);
+                } else {
+                    ws.close();
+                }
                 kicked = true;
                 console.log(`! Kicked ${player.name}`);
                 break;
             }
         }
-        if (!kicked) console.log(`⚠️ No player named "${targetName}" found.`);
+        if (!kicked) console.log(`⚠️ No player named "${targetId}" found.`);
     } else if (command === 'help') {
         console.log(`\nAvailable commands:
   players               List all connected players
