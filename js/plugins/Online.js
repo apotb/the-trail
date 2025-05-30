@@ -1,4 +1,14 @@
 //=============================================================================
+// Game_Map
+//=============================================================================
+
+___Game_Map__prototype__setupEvents___ = Game_Map.prototype.setupEvents;
+Game_Map.prototype.setupEvents = function() {
+    ___Game_Map__prototype__setupEvents___.call(this);
+    sendPlayer({ mapId: $gamePlayer._newMapId, x: $gamePlayer._newX, y: $gamePlayer._newY });
+};
+
+//=============================================================================
 // Game_Player
 //=============================================================================
 
@@ -23,13 +33,19 @@ Game_Player.prototype.performTransfer = function() {
 };
 
 //=============================================================================
-// Game_Map
+// Game_Vehicle
 //=============================================================================
 
-___Game_Map__prototype__setupEvents___ = Game_Map.prototype.setupEvents;
-Game_Map.prototype.setupEvents = function() {
-    ___Game_Map__prototype__setupEvents___.call(this);
-    sendPlayer({ mapId: $gamePlayer._newMapId, x: $gamePlayer._newX, y: $gamePlayer._newY });
+___Game_Vehicle__prototype__getOn___ = Game_Vehicle.prototype.getOn;
+Game_Vehicle.prototype.getOn = function() {
+    ___Game_Vehicle__prototype__getOn___.call(this);
+    sendVanity(this.characterName(), this.characterIndex());
+};
+
+___Game_Vehicle__prototype__getOff___ = Game_Vehicle.prototype.getOff;
+Game_Vehicle.prototype.getOff = function() {
+    ___Game_Vehicle__prototype__getOff___.call(this);
+    sendVanity();
 };
 
 //=============================================================================

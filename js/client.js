@@ -205,16 +205,17 @@ function sendTransfer(currentMapId, mapId, x, y, direction) {
     }
 }
 
-function sendVanity() {
+function sendVanity(spriteName=undefined, spriteIndex=undefined) {
     if (socket && socket.readyState === WebSocket.OPEN) {
+        spriteName = spriteName || representative().characterName();
+        spriteIndex = spriteIndex || representative().characterIndex();
         socket.send(JSON.stringify({
             type: "vanity",
             id: API_STEAM.userId(),
-            spriteName: representative().characterName(),
-            spriteIndex: representative().characterIndex()
+            spriteName, spriteIndex
         }));
     }
-}
+};
 
 function representative() {
     return $gameActors.actor($gameVariables.value(87) + 1);
