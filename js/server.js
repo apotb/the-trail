@@ -26,6 +26,13 @@ function broadcast(data, exclude = []) {
     }
 }
 
+function log(message) {
+    readline.clearLine(process.stdout, 0); // Clear current input line
+    readline.cursorTo(process.stdout, 0); // Move cursor to start
+    console.log(message); // Print the message
+    rl.prompt(true); // Re-show prompt on new line
+}
+
 // Command handler
 rl.on('line', (input) => {
     const args = input.trim().split(' ');
@@ -43,7 +50,7 @@ rl.on('line', (input) => {
             message,
             time: Date.now()
         });
-        console.log(message);
+        log(message);
     } else if (command === 'kick') {
         const targetId = args.join(' ').toLowerCase();
         let kicked = false;
@@ -67,7 +74,7 @@ rl.on('line', (input) => {
                 break;
             }
         }
-        if (!kicked) console.log(`⚠️ No player named "${targetId}" found.`);
+        if (!kicked) console.log(`No player named "${targetId}" found.`);
     } else if (command === 'help') {
         console.log(`\nAvailable commands:
   players               List all connected players
@@ -87,9 +94,9 @@ wss.on('connection', (ws) => {
         try {
             const data = JSON.parse(raw.toString());
             if (data.type === "chat") {
-                console.log(`[CHAT] ${data.name}: ${data.message}`);
+                log(`${data.name}: ${data.message}`);
             } else if (data.type === "message") {
-                console.log(data.message);
+                log(data.message);
             } else if (data.type === "player") {
                 clients.set(ws, data);
 
@@ -134,7 +141,7 @@ wss.on('connection', (ws) => {
 
     ws.on('close', () => {
         const player = clients.get(ws);
-        console.log(`${player.name} left the game`);
+        log(`${player.name} left the game`);
         clients.delete(ws);
         broadcast({
             type: "message",
