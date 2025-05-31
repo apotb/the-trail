@@ -40,17 +40,28 @@ def detect_platform():
         raise RuntimeError(f"Unsupported OS: {system}")
 
 
-def get_git_hash():
+def get_git_info():
     try:
-        result = subprocess.run(
+        branch = subprocess.run(
+            ["git", "rev-parse", "--abbrev-ref", "HEAD"],
+            cwd=os.path.abspath(os.path.join(SCRIPT_DIR, "..")),
+            stdout=subprocess.PIPE,
+            stderr=subprocess.DEVNULL,
+            check=True,
+            text=True
+        ).stdout.strip()
+        hash = subprocess.run(
             ["git", "rev-parse", "--short", "HEAD"],
             cwd=os.path.abspath(os.path.join(SCRIPT_DIR, "..")),
             stdout=subprocess.PIPE,
             stderr=subprocess.DEVNULL,
             check=True,
             text=True
-        )
-        return result.stdout.strip()
+        ).stdout.strip()
+        return {
+            "branch": branch,
+            "hash": hash
+        }
     except Exception:
         return "nogit"
 
@@ -64,8 +75,8 @@ def get_build_description():
         print(f"⚠ Failed to read Version.json: {e}")
         version_id = "Unnamed Build"
 
-    git_hash = get_git_hash()
-    return f"{version_id} ({git_hash})"
+    git_info = get_git_info()
+    return f"{version_id} {git_info['branch']}@{git_info['hash']}"
 
 
 def generate_depot_vdf(name, depot):

@@ -3,6 +3,10 @@
 # File only necessary for playtesting
 supertoolsengine.html
 
+# Python
+__pycache__/
+*.pyc
+
 # IDE Directories
 .vscode/
 .idea/
