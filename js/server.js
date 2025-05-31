@@ -75,11 +75,28 @@ rl.on('line', (input) => {
             }
         }
         if (!kicked) console.log(`No player named "${targetId}" found.`);
+    } else if (command === 'stop') {
+        console.log("! Shutting down server...");
+        broadcast({
+            type: "message",
+            message: "[SERVER] Server is shutting down.",
+            time: Date.now()
+        });
+
+        for (const client of clients.keys()) {
+            client.close();
+        }
+
+        wss.close(() => {
+            log("! Server stopped.");
+            process.exit(0);
+        });
     } else if (command === 'help') {
         console.log(`\nAvailable commands:
   players               List all connected players
   say <message>         Broadcast a message to all players
   kick <id>             Kick a player by ID
+  stop                  Stops the server
   help                  Show this help message
         `);
     } else {

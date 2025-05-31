@@ -8,6 +8,7 @@
     "mac": "node scripts/deployment/deployment.js mac",
     "linux": "node scripts/deployment/deployment.js linux",
     "vdf": "python scripts/deployment/generate_vdf.py",
+    "server": "node js/server.js",
     "compress-bgm": "node scripts/compress-bgm.js"
   },
   "window": {
