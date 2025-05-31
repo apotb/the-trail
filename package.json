@@ -7,7 +7,7 @@
     "windows": "node scripts/deployment/deployment.js windows",
     "mac": "node scripts/deployment/deployment.js mac",
     "linux": "node scripts/deployment/deployment.js linux",
-    "vdf": "python scripts/deployment/generate_vdf.py",
+    "vdf": "python scripts/generate_vdf.py",
     "compress-bgm": "node scripts/compress-bgm.js"
   },
   "window": {

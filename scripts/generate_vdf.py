@@ -2,12 +2,13 @@ import os
 import platform
 import json
 import subprocess
+import env
 
 SCRIPT_DIR = os.path.dirname(__file__)
-OUT_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, "../../out"))
+OUT_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, "../out"))
 LOG_PATH = os.path.join(OUT_DIR, "logs")
-VERSION_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, "../../data/Version.json"))
-CONFIG_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, "../config.json"))
+VERSION_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, "../data/Version.json"))
+CONFIG_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, "config.json"))
 with open(CONFIG_PATH, "r", encoding="utf-8") as f:
     DEMO = json.load(f).get("demo", False)
 
@@ -16,15 +17,15 @@ APP_ID = 3544920 if not DEMO else 3580480
 DEPOTS = {
     "windows": {
         "id": str(APP_ID + 1),
-        "folder": "../../out/windows" if not DEMO else "../../out/windows-demo"
+        "folder": "../out/windows" if not DEMO else "../out/windows-demo"
     },
     "mac": {
         "id": str(APP_ID + 2),
-        "folder": "../../out/mac" if not DEMO else "../../out/mac-demo"
+        "folder": "../out/mac" if not DEMO else "../out/mac-demo"
     },
     "linux": {
         "id": str(APP_ID + 3),
-        "folder": "../../out/linux" if not DEMO else "../../out/linux-demo"
+        "folder": "../out/linux" if not DEMO else "../out/linux-demo"
     }
 }
 
@@ -101,7 +102,7 @@ def generate_app_build_vdf(platform_keys):
 }}'''
 
 
-def write_files():
+def write_files(env):
     platform_keys = detect_platform()
     os.makedirs(OUT_DIR, exist_ok=True)
 
@@ -118,9 +119,10 @@ def write_files():
     print(f"✔ Wrote {app_path}")
 
     escaped_app_path = app_path.replace('"', '\\"')
-    print("\n➡ Run this command to upload build:")
-    print(f'steamcmd +login STEAM_USERNAME +run_app_build "{escaped_app_path}" +quit')
+    print("\n➡ Run this command to upload build:\n")
+    print(f'steamcmd +login {env.get("STEAM_USERNAME")} +run_app_build "{escaped_app_path}" +quit\n')
 
 
 if __name__ == "__main__":
-    write_files()
+    env.load()
+    write_files(env)
