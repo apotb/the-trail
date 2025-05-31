@@ -16658,12 +16658,40 @@
     "id": 68,
     "list": [
       {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "if (socket && socket.readyState === WebSocket.OPEN) {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  const message = window.prompt('Send message:');"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  if (message) sendChat(message);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "}"
+        ]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "Chat",
     "switchId": 1,
     "trigger": 0
   },
