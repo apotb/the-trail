@@ -79,7 +79,7 @@ def get_build_description():
     return f"{version_id} {git_info['branch']}@{git_info['hash']}"
 
 
-def generate_depot_vdf(name, depot):
+def generate_depot_vdf(depot):
     content_root = os.path.abspath(os.path.join(SCRIPT_DIR, depot["folder"]))
     return f'''"DepotBuildConfig"
 {{
@@ -121,7 +121,7 @@ def write_files(env):
         depot = DEPOTS[key]
         path = os.path.join(OUT_DIR, f'depot_build_{depot["id"]}.vdf')
         with open(path, "w", encoding="utf-8") as f:
-            f.write(generate_depot_vdf(key, depot))
+            f.write(generate_depot_vdf(depot))
         print(f"✔ Wrote {path}")
 
     app_path = os.path.join(OUT_DIR, f'app_build_{APP_ID}.vdf')
