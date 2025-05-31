@@ -517,7 +517,7 @@ Yanfly.Item.version = 1.30;
 Yanfly.Parameters = PluginManager.parameters('YEP_ItemCore');
 Yanfly.Param = Yanfly.Param || {};
 
-Yanfly.Param.ItemMaxItems = Number(Yanfly.Parameters['Max Items']);
+Yanfly.Param.ItemMaxItems = eval(Yanfly.Parameters['Max Items']);
 Yanfly.Param.ItemMaxWeapons = eval(Yanfly.Parameters['Max Weapons']);
 Yanfly.Param.ItemMaxArmors = eval(Yanfly.Parameters['Max Armors']);
 Yanfly.Param.ItemStartingId = Number(Yanfly.Parameters['Starting ID']);
@@ -568,6 +568,7 @@ DataManager.isDatabaseLoaded = function() {
 DataManager.processItemCoreNotetags = function(group) {
   var note1 = /<(?:RANDOM VARIANCE):[ ](\d+)>/i;
   var note2 = /<(?:NONINDEPENDENT ITEM|not independent item)>/i;
+  var note4 = /<(?:INDEPENDENT ITEM|independent item)>/i;
   var note3 = /<(?:PRIORITY NAME)>/i;
   for (var n = 1; n < group.length; n++) {
     var obj = group[n];
@@ -576,7 +577,7 @@ DataManager.processItemCoreNotetags = function(group) {
     obj.randomVariance = Yanfly.Param.ItemRandomVariance;
     obj.textColor = 0;
     if (Imported.YEP_CoreEngine) obj.textColor = Yanfly.Param.ColorNormal;
-    obj.nonIndependent = false;
+    obj.nonIndependent = DataManager.isItem(obj); // Items are not independent by default
     obj.setPriorityName = false;
     obj.infoEval = '';
     obj.infoTextTop = '';
@@ -591,6 +592,8 @@ DataManager.processItemCoreNotetags = function(group) {
        obj.randomVariance = parseInt(RegExp.$1);
       } else if (line.match(note2)) {
         obj.nonIndependent = true;
+      } else if (line.match(note4)) {
+        obj.nonIndependent = false;
       } else if (line.match(note3)) {
         obj.setPriorityName = true;
       } else if (line.match(/<(?:INFO EVAL)>/i)) {
@@ -1044,7 +1047,10 @@ Game_Actor.prototype.hasArmor = function(armor) {
 
 Game_Actor.prototype.hasBaseItem = function(baseItem) {
     if (!DataManager.isIndependent(baseItem)) return false;
-    var type = (DataManager.isWeapon(baseItem)) ? 'weapon' : 'armor';
+    var type = '';
+    if (DataManager.isWeapon(baseItem)) type = 'weapon';
+    if (DataManager.isArmor(baseItem)) type = 'armor';
+    if (type === '') false;
     for (var i = 0; i < this.equips().length; ++i) {
       var equip = this.equips()[i];
       if (!equip) continue;
@@ -1422,6 +1428,7 @@ DataManager.isBaseItem = function(item, baseItem=DataManager.getBaseItem(item), 
   } else {
     if (item.priorityName && item.priorityName != item.baseItemName) return false;
   }
+  if (item.effects && item.effects !== baseItem.effects) return false;
   return item.baseItemId && item.baseItemId == baseItem.id;
 };
 

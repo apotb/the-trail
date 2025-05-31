@@ -3607,6 +3607,7 @@ Game_Battler.prototype.useItem = function(item) {
         this.paySkillCost(item);
     } else if (DataManager.isItem(item)) {
         this.consumeItem(item);
+        if (DataManager.isIndependent(item)) DataManager.removeIndependentItem(item);
     }
 };
 
