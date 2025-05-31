@@ -5,7 +5,7 @@ INTRO
 -
 
 ### Changes
--
+- Buffed the CRI of Rat Claw, Sharp Tooth, Goblin Fang, and Razor-Sharp Fang.
 
 ### Bug Fixes
 -
