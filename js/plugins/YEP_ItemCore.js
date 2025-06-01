@@ -517,7 +517,7 @@ Yanfly.Item.version = 1.30;
 Yanfly.Parameters = PluginManager.parameters('YEP_ItemCore');
 Yanfly.Param = Yanfly.Param || {};
 
-Yanfly.Param.ItemMaxItems = Number(Yanfly.Parameters['Max Items']);
+Yanfly.Param.ItemMaxItems = eval(Yanfly.Parameters['Max Items']);
 Yanfly.Param.ItemMaxWeapons = eval(Yanfly.Parameters['Max Weapons']);
 Yanfly.Param.ItemMaxArmors = eval(Yanfly.Parameters['Max Armors']);
 Yanfly.Param.ItemStartingId = Number(Yanfly.Parameters['Starting ID']);
@@ -568,6 +568,7 @@ DataManager.isDatabaseLoaded = function() {
 DataManager.processItemCoreNotetags = function(group) {
   var note1 = /<(?:RANDOM VARIANCE):[ ](\d+)>/i;
   var note2 = /<(?:NONINDEPENDENT ITEM|not independent item)>/i;
+  var note4 = /<(?:INDEPENDENT ITEM|independent item)>/i;
   var note3 = /<(?:PRIORITY NAME)>/i;
   for (var n = 1; n < group.length; n++) {
     var obj = group[n];
@@ -576,7 +577,7 @@ DataManager.processItemCoreNotetags = function(group) {
     obj.randomVariance = Yanfly.Param.ItemRandomVariance;
     obj.textColor = 0;
     if (Imported.YEP_CoreEngine) obj.textColor = Yanfly.Param.ColorNormal;
-    obj.nonIndependent = false;
+    obj.nonIndependent = DataManager.isItem(obj); // Items are not independent by default
     obj.setPriorityName = false;
     obj.infoEval = '';
     obj.infoTextTop = '';
@@ -591,6 +592,8 @@ DataManager.processItemCoreNotetags = function(group) {
        obj.randomVariance = parseInt(RegExp.$1);
       } else if (line.match(note2)) {
         obj.nonIndependent = true;
+      } else if (line.match(note4)) {
+        obj.nonIndependent = false;
       } else if (line.match(note3)) {
         obj.setPriorityName = true;
       } else if (line.match(/<(?:INFO EVAL)>/i)) {
@@ -1044,7 +1047,10 @@ Game_Actor.prototype.hasArmor = function(armor) {
 
 Game_Actor.prototype.hasBaseItem = function(baseItem) {
     if (!DataManager.isIndependent(baseItem)) return false;
-    var type = (DataManager.isWeapon(baseItem)) ? 'weapon' : 'armor';
+    var type = '';
+    if (DataManager.isWeapon(baseItem)) type = 'weapon';
+    if (DataManager.isArmor(baseItem)) type = 'armor';
+    if (type === '') false;
     for (var i = 0; i < this.equips().length; ++i) {
       var equip = this.equips()[i];
       if (!equip) continue;
@@ -1422,6 +1428,7 @@ DataManager.isBaseItem = function(item, baseItem=DataManager.getBaseItem(item), 
   } else {
     if (item.priorityName && item.priorityName != item.baseItemName) return false;
   }
+  if (DataManager.isItem(item) && item.baseItemId === 248) return false; // Food
   return item.baseItemId && item.baseItemId == baseItem.id;
 };
 
@@ -1963,9 +1970,15 @@ Window_ItemStatus.prototype.drawItemData = function(i, dx, dy, dw) {
 };
 
 Window_ItemStatus.prototype.getEffect = function(code) {
-    var targetEffect;
+    let targetEffect = null;
     this._item.effects.forEach(function(effect) {
-      if (effect.code === code) targetEffect = effect;
+      if (effect.code === code) {
+        if (!targetEffect) targetEffect = JsonEx.makeDeepCopy(effect);
+        else {
+          targetEffect.value1 += effect.value1;
+          targetEffect.value2 += effect.value2;
+        }
+      }
     }, this);
     this._item.effectsDisplay.forEach(function(effect) {
       if (effect.code === code) targetEffect = effect;
@@ -2118,8 +2131,9 @@ Window_ItemInfo.prototype.drawInfoTextBottom = function(dy) {
     if (item.infoTextBottom === undefined) {
       item.infoTextBottom = DataManager.getBaseItem(item).infoTextBottom;
     }
-    if (item.infoTextBottom === '') return dy;
-    var info = item.infoTextBottom.split(/[\r\n]+/);
+    let infoText = item.infoTextBottom + this.extraInfoText();
+    if (infoText === '') return dy;
+    var info = infoText.split(/[\r\n]+/);
     for (var i = 0; i < info.length; ++i) {
       var line = info[i];
       this.resetFontSettings();
@@ -2127,6 +2141,13 @@ Window_ItemInfo.prototype.drawInfoTextBottom = function(dy) {
       dy += this.contents.fontSize + 8;
     }
     return dy;
+};
+
+Window_ItemInfo.prototype.extraInfoText = function() {
+    let info = "";
+    const item = this._item;
+    if (DataManager.isMaterial(item)) info += "Material\n"
+    return info;
 };
 
 //=============================================================================

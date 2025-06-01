@@ -1511,7 +1511,13 @@
     "atypeId": 1,
     "description": "A pristine claw once belonging to a very large rat.",
     "etypeId": 6,
-    "traits": [],
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.01
+      }
+    ],
     "iconIndex": 326,
     "name": "Rat Claw",
     "note": "",
@@ -1687,7 +1693,13 @@
     "atypeId": 1,
     "description": "A rather clean fang that once belonged to\na goblin. It was dislodged during battle.",
     "etypeId": 6,
-    "traits": [],
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.03
+      }
+    ],
     "iconIndex": 325,
     "name": "Goblin Fang",
     "note": "<Upgrade Slots: 1>",
@@ -3941,7 +3953,7 @@
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.01
+        "value": 0.05
       }
     ],
     "iconIndex": 335,
@@ -5267,7 +5279,13 @@
     "atypeId": 1,
     "description": "Slightly stained. A plant was pleasantly surprised\nto find it could bite people trying to pick it.",
     "etypeId": 6,
-    "traits": [],
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.01
+      }
+    ],
     "iconIndex": 807,
     "name": "Sharp Tooth",
     "note": "",
