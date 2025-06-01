@@ -530,8 +530,8 @@ Sprite_Character.prototype.positionMiniLabel = function() {
 };
 
 Sprite_Character.prototype.updateMiniLabelZoom = function() {
-  if (!this._miniLabel) return;
   var spriteset = SceneManager._scene._spriteset;
+  if (!this._miniLabel || !spriteset) return;
   this._miniLabel.scale.x = 1 / spriteset.scale.x;
   this._miniLabel.scale.y = 1 / spriteset.scale.y;
 };

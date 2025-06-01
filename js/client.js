@@ -63,7 +63,7 @@ function startMultiplayerConnection(playerName="Guest", ip="the-trail.apotb.com"
             if (data.type === "jump") {
                 let player = $gameTemp._players[data.id];
                 if (player) {
-                    player.jump(data.plusX, data.plusY);
+                    player.jump(data.xPlus, data.yPlus);
                 }
             }
 
@@ -96,7 +96,7 @@ function startMultiplayerConnection(playerName="Guest", ip="the-trail.apotb.com"
             time: getDate()
         });
         for (const playerId in $gameTemp._players) {
-            deletePlayer(playerId);
+            deletePlayer(playerId.toString());
         }
     }
 }

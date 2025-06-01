@@ -147,8 +147,8 @@ wss.on('connection', (ws) => {
             } else if (data.type === "jump") {
                 let player = clients.get(ws);
                 if (player) {
-                    player.x += data.plusX;
-                    player.y += data.plusY;
+                    player.x += data.xPlus;
+                    player.y += data.yPlus;
                     clients.set(ws, player);
                 }
             } else if (data.type === "vanity") {
