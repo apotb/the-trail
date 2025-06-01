@@ -1,8 +1,6 @@
 // client.js
 let socket;
 let serverTimeOffset = 0;
-window.players = {};
-window.chat = [];
 
 const MAP_CHAT_LIMIT = 10;
 const BATTLE_CHAT_LIMIT = 5;
@@ -30,7 +28,7 @@ function startMultiplayerConnection(playerName="Guest", ip="the-trail.apotb.com"
                 if (data.id === API_STEAM.userId()) return;
                 if (data.mapId !== $gameMap.mapId()) return;
 
-                let player = window.players[data.id];
+                let player = $gameTemp._players[data.id];
                 if (!player) {
                     if (!(SceneManager._scene instanceof Scene_Map)) return;
                     Yanfly.SpawnEventTemplateAt('Player', data.x, data.y, true);
@@ -38,7 +36,7 @@ function startMultiplayerConnection(playerName="Guest", ip="the-trail.apotb.com"
                 }
 
                 if (player) {
-                    window.players[data.id] = player;
+                    $gameTemp._players[data.id] = player;
                     SceneManager._scene._spriteset.createBShadow(player.eventId(), player);
                     SceneManager._scene._spriteset._characterSprites.find(sprite => sprite && sprite._miniLabel?._character._eventId === player.eventId())._miniLabel.setText(data.name);
                     player.setImage(data.spriteName, data.spriteIndex);
@@ -49,7 +47,7 @@ function startMultiplayerConnection(playerName="Guest", ip="the-trail.apotb.com"
             }
 
             if (data.type === "move") {
-                let player = window.players[data.id];
+                let player = $gameTemp._players[data.id];
                 if (player) {
                     player.setMoveSpeed(data.speed);
                     player.moveToPoint(data.x, data.y);
@@ -63,14 +61,14 @@ function startMultiplayerConnection(playerName="Guest", ip="the-trail.apotb.com"
             }
 
             if (data.type === "jump") {
-                let player = window.players[data.id];
+                let player = $gameTemp._players[data.id];
                 if (player) {
                     player.jump(data.plusX, data.plusY);
                 }
             }
 
             if (data.type === "vanity") {
-                let player = window.players[data.id];
+                let player = $gameTemp._players[data.id];
                 if (player) player.setImage(data.spriteName, data.spriteIndex);
             }
 
@@ -97,17 +95,17 @@ function startMultiplayerConnection(playerName="Guest", ip="the-trail.apotb.com"
             text: "Disconnected",
             time: getDate()
         });
-        for (const playerId in window.players) {
+        for (const playerId in $gameTemp._players) {
             deletePlayer(playerId);
         }
     }
 }
 
 function deletePlayer(playerId) {
-    const player = window.players[playerId];
+    const player = $gameTemp._players[playerId];
     if (player) {
         Yanfly.DespawnEvent(player);
-        delete window.players[playerId];
+        delete $gameTemp._players[playerId];
     }
 }
 
@@ -159,12 +157,12 @@ function addChat(chat) {
 
     if (chat.text) {
         console.log(`💬 ${chat.text}`);
-        window.chat.push(chat);
+        $gameTemp._chat.push(chat);
     }
 }
 
 function getChat() {
-    return window.chat.filter(chat => getDate() - chat.time < CHAT_TIME).slice(-($gameParty.inBattle() ? BATTLE_CHAT_LIMIT : MAP_CHAT_LIMIT)).reverse().map(chat => chat.text);
+    return $gameTemp._chat.filter(chat => getDate() - chat.time < CHAT_TIME).slice(-($gameParty.inBattle() ? BATTLE_CHAT_LIMIT : MAP_CHAT_LIMIT)).reverse().map(chat => chat.text);
 }
 
 function getDate() {
@@ -206,7 +204,7 @@ function sendTransfer(currentMapId, mapId, x, y, direction) {
     if (socket && socket.readyState === WebSocket.OPEN) {
         if (currentMapId !== mapId) {
             Yanfly.ClearSpawnedEvents(currentMapId);
-            window.players = {};
+            $gameTemp._players = {};
         };
         socket.send(JSON.stringify({
             type: "transfer",
@@ -250,15 +248,3 @@ function disconnectFromServer() {
         console.warn("⚠️ No active connection to disconnect.");
     }
 }
-
-// Expose to RPG Maker
-window.startMultiplayerConnection = startMultiplayerConnection;
-window.disconnectFromServer = disconnectFromServer;
-window.sendChat = sendChat;
-window.sendMessage = sendMessage;
-window.getChat = getChat;
-window.sendPlayer = sendPlayer;
-window.sendMove = sendMove;
-window.sendTransfer = sendTransfer;
-window.sendJump = sendJump;
-window.sendVanity = sendVanity;
