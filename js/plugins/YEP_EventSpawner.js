@@ -414,13 +414,13 @@ Yanfly.SpawnEventFailChecks = function(mapId, eventId, x, y) {
     }
     return true;
   }
-  if ($gameMap.eventsXy(x, y).length > 0) {
+  /*if ($gameMap.eventsXy(x, y).length > 0) {
     if ($gameTemp.isPlaytest()) {
       console.log('Cannot spawn event at ' + x + ', ' + y + '.' + 
         'There is already an event there.');
     }
     return true;
-  }
+  }*/
   if ($gameMap.boat().posNt(x, y) || $gameMap.ship().posNt(x, y)) {
     if ($gameTemp.isPlaytest()) {
       console.log('Cannot spawn event at ' + x + ', ' + y + '.' + 
@@ -619,10 +619,10 @@ Game_Map.prototype.validSpawnPoints = function(regions) {
   for (var x = 0; x < width; ++x) {
     for (var y = 0; y < height; ++y) {
       if (!regions.contains(this.regionId(x, y))) continue;
-      if (this.eventsXy(x, y).length > 0) continue;
+      /*if (this.eventsXy(x, y).length > 0) continue;
       if ($gamePlayer.x == x && $gamePlayer.y == y) continue;
       if (this.boat().posNt(x, y)) continue;
-      if (this.ship().posNt(x, y)) continue;
+      if (this.ship().posNt(x, y)) continue;*/
       data.push([x, y]);
     }
   }
