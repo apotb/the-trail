@@ -127,8 +127,8 @@ function syncTimeWithServer() {
     });
 }
 
-function sendChat(message) {
-    syncTimeWithServer();
+async function sendChat(message) {
+    await syncTimeWithServer();
     const chat = {
         type: "chat",
         name: API_STEAM.username(),
@@ -139,8 +139,8 @@ function sendChat(message) {
     if (socket && socket.readyState === WebSocket.OPEN) socket.send(JSON.stringify(chat));
 }
 
-function sendMessage(message) {
-    syncTimeWithServer();
+async function sendMessage(message) {
+    await syncTimeWithServer();
     const chat = {
         type: "message",
         message,
@@ -226,8 +226,8 @@ function sendJump(xPlus, yPlus) {
 
 function sendVanity(spriteName=undefined, spriteIndex=undefined) {
     if (socket && socket.readyState === WebSocket.OPEN) {
-        spriteName = spriteName || representative().characterName();
-        spriteIndex = spriteIndex || representative().characterIndex();
+        spriteName = spriteName ?? representative().characterName();
+        spriteIndex = spriteIndex ?? representative().characterIndex();
         socket.send(JSON.stringify({
             type: "vanity",
             id: API_STEAM.userId(),

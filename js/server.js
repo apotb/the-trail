@@ -110,6 +110,7 @@ wss.on('connection', (ws) => {
     ws.on('message', (raw) => {
         try {
             const data = JSON.parse(raw.toString());
+            let exclude = [ws];
             if (data.type === "chat") {
                 log(`${data.name}: ${data.message}`);
             } else if (data.type === "message") {
@@ -129,6 +130,7 @@ wss.on('connection', (ws) => {
                 }
             } else if (data.type === "move") {
                 let player = clients.get(ws);
+                if (!player) return;
                 player.x = data.x;
                 player.y = data.y;
                 player.direction = data.direction;
@@ -141,9 +143,9 @@ wss.on('connection', (ws) => {
                 player.y = data.y;
                 player.direction = data.direction;
                 clients.set(ws, player);
-                return broadcast(data, [ws, ...(Array.from(clients.entries())
+                exclude.concat(...(Array.from(clients.entries())
                     .map(([_, pdata]) => pdata)
-                    .filter((pdata) => pdata.mapId !== data.mapId))])
+                    .filter((pdata) => pdata.mapId !== data.mapId)));
             } else if (data.type === "jump") {
                 let player = clients.get(ws);
                 if (player) {
@@ -152,7 +154,7 @@ wss.on('connection', (ws) => {
                     clients.set(ws, player);
                 }
             } else if (data.type === "vanity") {
-
+                // Empty
             } else if (data.type === "ping") {
                 return ws.send(JSON.stringify({
                     type: "pong",
@@ -160,7 +162,7 @@ wss.on('connection', (ws) => {
                 }));
             }
 
-            broadcast(data, [ws]);
+            broadcast(data, exclude);
         } catch (err) {
             console.warn("❌ Invalid message:", raw);
         }
