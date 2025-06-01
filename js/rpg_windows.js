@@ -1751,6 +1751,10 @@ Window_MenuStatus.prototype.initialize = function(x, y) {
     this.refresh();
 };
 
+Window_MenuStatus.prototype.actors = function() {
+    return SceneManager._scene instanceof Scene_Online ? $gameParty.membersPerm() : $gameParty.members();
+};
+
 Window_MenuStatus.prototype.windowWidth = function() {
     return Graphics.boxWidth - 240;
 };
@@ -1760,7 +1764,7 @@ Window_MenuStatus.prototype.windowHeight = function() {
 };
 
 Window_MenuStatus.prototype.maxItems = function() {
-    return $gameParty.size();
+    return this.actors().length;
 };
 
 Window_MenuStatus.prototype.itemHeight = function() {
@@ -1769,11 +1773,11 @@ Window_MenuStatus.prototype.itemHeight = function() {
 };
 
 Window_MenuStatus.prototype.numVisibleRows = function() {
-    return $gameParty.members().length;
+    return this.actors().length;
 };
 
 Window_MenuStatus.prototype.loadImages = function() {
-    $gameParty.members().forEach(function(actor) {
+    this.actors().forEach(function(actor) {
         ImageManager.reserveFace(actor.faceName());
     }, this);
 };
@@ -1795,7 +1799,7 @@ Window_MenuStatus.prototype.drawItemBackground = function(index) {
 };
 
 Window_MenuStatus.prototype.drawItemImage = function(index) {
-    var actor = $gameParty.members()[index];
+    var actor = this.actors()[index];
     var rect = this.itemRect(index);
     this.changePaintOpacity(actor.isBattleMember());
     this.drawActorFace(actor, rect.x + 1, rect.y + 1, Window_Base._faceWidth, Window_Base._faceHeight);
@@ -1803,7 +1807,7 @@ Window_MenuStatus.prototype.drawItemImage = function(index) {
 };
 
 Window_MenuStatus.prototype.drawItemStatus = function(index) {
-    var actor = $gameParty.members()[index];
+    var actor = this.actors()[index];
     var rect = this.itemRect(index);
     var x = rect.x + 162;
     var y = rect.y + rect.height / 2 - this.lineHeight() * 1.5;
@@ -1838,12 +1842,12 @@ Window_MenuStatus.prototype.drawActorSimpleStatus = function(actor, x, y, width)
 
 Window_MenuStatus.prototype.processOk = function() {
     Window_Selectable.prototype.processOk.call(this);
-    $gameParty.setMenuActor($gameParty.members()[this.index()]);
+    $gameParty.setMenuActor(this.actors()[this.index()]);
 };
 
 Window_MenuStatus.prototype.isCurrentItemEnabled = function() {
     if (this._formationMode) {
-        var actor = $gameParty.members()[this.index()];
+        var actor = this.actors()[this.index()];
         return actor && actor.isFormationChangeOk();
     } else {
         return true;
@@ -1892,7 +1896,7 @@ Window_MenuActor.prototype.initialize = function() {
 
 Window_MenuActor.prototype.processOk = function() {
     if (!this.cursorAll()) {
-        $gameParty.setTargetActor($gameParty.members()[this.index()]);
+        $gameParty.setTargetActor(this.actors()[this.index()]);
     }
     this.callOkHandler();
 };

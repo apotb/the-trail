@@ -10,6 +10,14 @@ Game_Temp.prototype.initialize = function() {
 };
 
 //=============================================================================
+// Game_Event
+//=============================================================================
+
+Game_Event.prototype.isOtherPlayer = function() {
+    return this._spawned && this._spawnMapId === '172' && this._spawnEventId === '3';
+};
+
+//=============================================================================
 // Game_Player
 //=============================================================================
 
@@ -31,20 +39,24 @@ Game_Player.prototype.jump = function(xPlus, yPlus) {
     sendJump(xPlus, yPlus);
 };
 
-//=============================================================================
-// Game_Vehicle
-//=============================================================================
-
-___Game_Vehicle__prototype__getOn___ = Game_Vehicle.prototype.getOn;
-Game_Vehicle.prototype.getOn = function() {
-    ___Game_Vehicle__prototype__getOn___.call(this);
-    sendVanity(this.characterName(), this.characterIndex());
+___Game_Player__prototype__updateVehicleGetOn___ = Game_Player.prototype.updateVehicleGetOn;
+Game_Player.prototype.updateVehicleGetOn = function() {
+    ___Game_Player__prototype__updateVehicleGetOn___.call(this);
+    sendPlayer({
+        shadow: false,
+        stepAnime: true
+    });
 };
 
-___Game_Vehicle__prototype__getOff___ = Game_Vehicle.prototype.getOff;
-Game_Vehicle.prototype.getOff = function() {
-    ___Game_Vehicle__prototype__getOff___.call(this);
-    sendVanity();
+___Game_Player__prototype__getOffVehicle___ = Game_Player.prototype.getOffVehicle;
+Game_Player.prototype.getOffVehicle = function() {
+    sendPlayer({
+        shadow: true,
+        stepAnime: false,
+        spriteName: representative().characterName(),
+        spriteIndex: representative().characterIndex()
+    });
+    ___Game_Player__prototype__getOffVehicle___.call(this);
 };
 
 //=============================================================================
@@ -63,7 +75,10 @@ ___Scene_Map__prototype__onMapLoaded___ = Scene_Map.prototype.onMapLoaded;
 Scene_Map.prototype.onMapLoaded = function() {
     ___Scene_Map__prototype__onMapLoaded___.call(this);
     if (!(socket && socket.readyState === WebSocket.OPEN) && !$gameTemp._forceDisconnect) startMultiplayerConnection(API_STEAM.username());
-    if (socket && socket.readyState === WebSocket.OPEN) sendPlayer();
+    if (socket && socket.readyState === WebSocket.OPEN) {
+        clearPlayers();
+        sendPlayer();
+    }
 };
 
 //=============================================================================

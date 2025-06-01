@@ -198,29 +198,35 @@ Game_Event.prototype.doShadows = function() {
 	if (!$gameSystem._eventShadows) {
 		if (SceneManager._scene._spriteset) SceneManager._scene._spriteset.destroyBShadow(this._eventId);
 		return;
-	};
-	if (this.event()?.note.contains("<shadow>")/* && this._characterName != ""*/) {
-		this._shadow = true;
-	} else {
-		// check if page has shadow
-		var page = this.page();
-		var shadow = false;
-		if (page) {
-			for (var i = 0; i < page.list.length; i++) {
-				if (page.list[i].code == 108 && page.list[i].parameters[0].contains("<shadow>")) {
-					var shadow = true;
-				};
-			};
-		};
-		if (shadow) {
+	}
+	if (!this.isOtherPlayer()) {
+		if (this.event()?.note.contains("<shadow>")/* && this._characterName != ""*/) {
 			this._shadow = true;
-			if (SceneManager._scene._spriteset)	SceneManager._scene._spriteset.createBShadow(this._eventId,this);
 		} else {
-			this._shadow = false;
-			if (SceneManager._scene._spriteset)	SceneManager._scene._spriteset.destroyBShadow(this._eventId);
-			this._shadSprite = false;
-		};
-	};
+			// check if page has shadow
+			var page = this.page();
+			var shadow = false;
+			if (page) {
+				for (var i = 0; i < page.list.length; i++) {
+					if (page.list[i].code == 108 && page.list[i].parameters[0].contains("<shadow>")) {
+						var shadow = true;
+					}
+				};
+			}
+			if (shadow) {
+				this._shadow = true;
+				
+			} else {
+				this._shadow = false;
+				
+				this._shadSprite = false;
+			}
+		}
+	}
+	if (SceneManager._scene._spriteset)	{
+		if (this._shadow) SceneManager._scene._spriteset.createBShadow(this._eventId,this);
+		else SceneManager._scene._spriteset.destroyBShadow(this._eventId);
+	}
 };
 
 Galv.BES.Game_Event_erase = Game_Event.prototype.erase;

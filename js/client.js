@@ -14,6 +14,7 @@ function startMultiplayerConnection(playerName="Guest", ip="the-trail.apotb.com"
     socket.onopen = async () => {
         console.log("✅ Connected to server!");
         await syncTimeWithServer();
+        clearPlayers();
         sendPlayer();
         sendMessage(`${playerName} joined the game`);
     };
@@ -36,13 +37,16 @@ function startMultiplayerConnection(playerName="Guest", ip="the-trail.apotb.com"
                 }
 
                 if (player) {
-                    $gameTemp._players[data.id] = player;
                     SceneManager._scene._spriteset.createBShadow(player.eventId(), player);
                     SceneManager._scene._spriteset._characterSprites.find(sprite => sprite && sprite._miniLabel?._character._eventId === player.eventId())._miniLabel.setText(data.name);
                     player.setImage(data.spriteName, data.spriteIndex);
                     player._mapId = data.mapId;
                     player.locate(data.x, data.y);
                     player.setDirection(data.direction);
+                    if (player.hasStepAnime() !== data.stepAnime) player.setStepAnime(data.stepAnime);
+                    player._shadow = data.shadow;
+                    player.refresh();
+                    $gameTemp._players[data.id] = player;
                 }
             }
 
@@ -53,6 +57,7 @@ function startMultiplayerConnection(playerName="Guest", ip="the-trail.apotb.com"
                     player.moveToPoint(data.x, data.y);
                     player.x = data.x;
                     player.y = data.y;
+                    player.setDirection(data.direction);
                 }
             }
 
@@ -171,6 +176,9 @@ function getDate() {
 
 function sendPlayer(override={}) {
     if (socket && socket.readyState === WebSocket.OPEN) {
+        const spriteName = $gamePlayer.isInVehicle() ? $gamePlayer.vehicle().characterName() : representative().characterName();
+        const spriteIndex = $gamePlayer.isInVehicle() ? $gamePlayer.vehicle().characterIndex() : representative().characterIndex();
+        const shadow = $gamePlayer.isInVehicle() ? false : true;
         socket.send(JSON.stringify({
             type: "player",
             name: API_STEAM.username(),
@@ -180,10 +188,27 @@ function sendPlayer(override={}) {
             x: $gamePlayer.x,
             y: $gamePlayer.y,
             direction: $gamePlayer.direction(),
-            spriteName: representative().characterName(),
-            spriteIndex: representative().characterIndex(),
+            stepAnime: $gamePlayer.hasStepAnime(),
+            spriteName, spriteIndex, shadow,
             ...override
         }));
+    }
+}
+
+function clearPlayers(mapId=undefined) {
+    mapId = mapId ?? $gameMap.mapId();
+    var data = $gameSystem.getMapSpawnedEventData(mapId);
+    var length = data.length;
+    for (var i = 1; i < length; ++i) {
+        var eventData = data[i];
+        if (!eventData) continue;
+        if (!eventData.isOtherPlayer()) continue;
+        var eventId = eventData.eventId();
+        if (mapId === $gameMap.mapId()) {
+            Yanfly.DespawnEventID(eventId);
+        } else {
+            data[eventId - Yanfly.Param.EventSpawnerID] = null;
+        }
     }
 }
 
@@ -242,6 +267,7 @@ function representative() {
 
 function disconnectFromServer() {
     if (socket && socket.readyState === WebSocket.OPEN) {
+        clearPlayers();
         socket.close(1000, "Client closed connection"); // Normal close code
         console.log("🔌 Disconnected from server.");
     } else {
