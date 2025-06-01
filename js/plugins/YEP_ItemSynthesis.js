@@ -720,6 +720,13 @@ DataManager.processRecipeCounts = function(obj) {
     }
 };
 
+DataManager.isMaterial = function(item) {
+    if (DataManager.isItem(item)) if (Yanfly.IS.ItemIngredientIDs.contains(item.id)) return true;
+    if (DataManager.isWeapon(item)) if (Yanfly.IS.WeaponIngredientIDs.contains(item.baseItemId)) return true;
+    if (DataManager.isArmor(item)) if (Yanfly.IS.ArmorIngredientIDs.contains(item.baseItemId)) return true;
+    return false;
+};
+
 //=============================================================================
 // Game_System
 //=============================================================================

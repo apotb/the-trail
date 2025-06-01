@@ -435,9 +435,7 @@ Window_ItemList.prototype.includes = function(item) {
   case 'Category':
     switch (this._ext) {
       case 'Materials':
-        if (DataManager.isItem(item)) if (Yanfly.IS.ItemIngredientIDs.contains(item.id)) return item;
-        if (DataManager.isWeapon(item)) if (Yanfly.IS.WeaponIngredientIDs.contains(item.baseItemId)) return item;
-        if (DataManager.isArmor(item)) if (Yanfly.IS.ArmorIngredientIDs.contains(item.baseItemId)) return item;
+        if (DataManager.isMaterial(item)) return item;
         break;
       case 'Drops':
         if (DataManager.isItem(item)) if (Yanfly.EED.ItemDropIDs.contains(item.id)) return item;

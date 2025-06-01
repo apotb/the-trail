@@ -3607,7 +3607,6 @@ Game_Battler.prototype.useItem = function(item) {
         this.paySkillCost(item);
     } else if (DataManager.isItem(item)) {
         this.consumeItem(item);
-        if (DataManager.isIndependent(item)) DataManager.removeIndependentItem(item);
     }
 };
 
@@ -5520,6 +5519,7 @@ Game_Party.prototype.discardMembersEquip = function(item, amount) {
 
 Game_Party.prototype.loseItem = function(item, amount, includeEquip) {
     this.gainItem(item, -amount, includeEquip);
+    if (DataManager.isIndependent(item)) setTimeout(() => DataManager.removeIndependentItem(item), 100);
 };
 
 Game_Party.prototype.consumeItem = function(item) {

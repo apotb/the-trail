@@ -10,7 +10,7 @@ resetItems = function() {
 };
 
 allItems = function() {
-    $dataItems.filter(item => item && item.name !== '').forEach(item => $gameParty.gainItem(item, 9999));
+    $dataItems.filter(item => item && item.name !== '' && !DataManager.isIndependent(item)).forEach(item => $gameParty.gainItem(item, 9999));
 };
 
 allEquips = function() {
