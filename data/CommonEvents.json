@@ -10493,7 +10493,7 @@
         "indent": 0,
         "parameters": [
           12,
-          "!$gameSystem._moonRespawnList.contains($gameMap.mapId()) && $gameSystem._moonCycleComplete"
+          "!$gameSystem._moonRespawnList.contains($gameMap.mapId()) && $gameSystem.chapter() >= 3"
         ]
       },
       {

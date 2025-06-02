@@ -560,7 +560,6 @@ Game_System.prototype.nextMoonPhase = function() {
     if (this._moonPhase > 7) {
         this._moonPhase = 0;
         this._moonRespawn = true;
-        this._moonCycleComplete = true;
     }
     $gameVariables.setValue(76, this._moonPhase);
 };

@@ -6,6 +6,7 @@ INTRO
 
 ### Changes
 - Buffed the CRI of Rat Claw, Sharp Tooth, Goblin Fang, and Razor-Sharp Fang.
+- All monsters respawn after Laeryidyean is defeated.
 
 ### Bug Fixes
 -
