@@ -378,6 +378,7 @@ Window_ItemList.prototype.setExt = function(ext) {
 };
 
 Window_ItemList.prototype.includes = function(item) {
+  if (this._ext !== 'Meals' && item?.itemCategory.contains('Meals')) return false;
   switch (this._category) {
   case 'AllItems':
     return DataManager.isItem(item);
@@ -448,14 +449,16 @@ Window_ItemList.prototype.includes = function(item) {
         if (DataManager.isWeapon(item) || DataManager.isArmor(item)) if (item.meta['Disassemble Pool']) return item;
         break;
       case 'Recovery':
-        if (DataManager.isItem(item)) if (item.effects.some(e => ([11, 12].contains(e.code) && (e.value1 > 0 || e.value2 > 0)) || (e.code == 22 && e.dataId == 1))) return item;
+        if (DataManager.isItem(item) && !item.itemCategory.contains('Foodstuffs') && !item.itemCategory.contains('Debuffs')) if (item.effects.some(e => ([11, 12].contains(e.code) && (e.value1 > 0 || e.value2 > 0)) || (e.code == 22 && e.dataId == 1))) return item;
         break;
       case 'Buffs':
-        if (DataManager.isItem(item)) if (item.effects.some(e => e.code == 21 && $dataStates[e.dataId].category.contains('BUFF'))) return item;
+        if (DataManager.isItem(item) && !item.itemCategory.contains('Foodstuffs')) if (item.effects.some(e => e.code == 21 && $dataStates[e.dataId].category.contains('BUFF'))) return item;
         break;
       case 'Debuffs':
-        if (DataManager.isItem(item)) if (item.effects.some(e => [21, 22].contains(e.code) && $dataStates[e.dataId].category.contains('DEBUFF'))) return item;
-        if (DataManager.isItem(item)) if (Object.keys(item.removeCategory).length > 0) return item;
+        if (DataManager.isItem(item) && !item.itemCategory.contains('Foodstuffs')) {
+          if (item.effects.some(e => [21, 22].contains(e.code) && $dataStates[e.dataId].category.contains('DEBUFF'))) return item;
+          if (Object.keys(item.removeCategory).length > 0) return item;
+        }
         break;
     }
     return item && item.itemCategory.contains(this._ext);
