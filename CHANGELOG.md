@@ -9,7 +9,7 @@ INTRO
 - All monsters respawn after Laeryidyean is defeated.
 
 ### Bug Fixes
--
+- Fixed P2 still appearing to give the Under Construction quest.
 
 OUTRO
 
