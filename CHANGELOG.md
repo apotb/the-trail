@@ -9,6 +9,8 @@ INTRO
 - All monsters respawn after Laeryidyean is defeated.
 
 ### Bug Fixes
+- Fixed many issues with mouse-based movement:
+  - Fixed being forced to sprint.
 - Fixed P2 still appearing to give the Under Construction quest.
 
 OUTRO
