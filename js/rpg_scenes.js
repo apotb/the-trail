@@ -699,7 +699,9 @@ Scene_Map.prototype.updateDestination = function() {
     if (this.isMapTouchOk()) {
         this.processMapTouch();
     } else {
-        $gameTemp.clearDestination();
+        setTimeout(() => {
+            if (!this.isMapTouchOk()) $gameTemp.clearDestination();
+        }, 100);
         this._touchCount = 0;
     }
 };

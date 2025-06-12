@@ -10,6 +10,7 @@ INTRO
 
 ### Bug Fixes
 - Fixed many issues with mouse-based movement:
+  - Fixed abrupt stops caused by invisible events triggered by player touch.
   - Fixed being forced to sprint.
 - Fixed P2 still appearing to give the Under Construction quest.
 
