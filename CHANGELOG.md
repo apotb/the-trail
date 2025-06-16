@@ -6,9 +6,13 @@ INTRO
 
 ### Changes
 - Buffed the CRI of Rat Claw, Sharp Tooth, Goblin Fang, and Razor-Sharp Fang.
+- All monsters respawn after Laeryidyean is defeated.
 
 ### Bug Fixes
--
+- Fixed many issues with mouse-based movement:
+  - Fixed abrupt stops caused by invisible events triggered by player touch.
+  - Fixed being forced to sprint.
+- Fixed P2 still appearing to give the Under Construction quest.
 
 OUTRO
 

@@ -560,7 +560,6 @@ Game_System.prototype.nextMoonPhase = function() {
     if (this._moonPhase > 7) {
         this._moonPhase = 0;
         this._moonRespawn = true;
-        this._moonCycleComplete = true;
     }
     $gameVariables.setValue(76, this._moonPhase);
 };
@@ -8358,7 +8357,7 @@ Game_Player.prototype.updateDashing = function() {
         return;
     }
     if (this.canMove() && !this.isInVehicle() && !$gameMap.isDashDisabled()) {
-        this._dashing = this.isDashButtonPressed() || $gameTemp.isDestinationValid();
+        this._dashing = this.isDashButtonPressed()/* || $gameTemp.isDestinationValid()*/;
     } else {
         this._dashing = false;
     }

@@ -8,6 +8,8 @@
     "mac": "node scripts/deployment/deployment.js mac",
     "linux": "node scripts/deployment/deployment.js linux",
     "vdf": "python scripts/generate_vdf.py",
+    "deploy-windows": "npm run windows && npm run linux && npm run vdf",
+    "deploy-mac": "npm run mac && npm run vdf",
     "server": "node js/server.js",
     "compress-bgm": "node scripts/compress-bgm.js"
   },

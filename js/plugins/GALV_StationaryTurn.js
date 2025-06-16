@@ -59,7 +59,7 @@ Game_Player.prototype.initMembers = function() {
 Galv.STURN.Game_Player_moveStraight = Game_Player.prototype.moveStraight;
 Game_Player.prototype.moveStraight = function(d) {
 	if (this.direction() != d && this._stopCount > 0) {
-		this._turnPause = this.isDashing() || this.isMoveRouteForcing() ? 0 : Galv.STURN.delay;
+		this._turnPause = this.isDashing() || this.isMoveRouteForcing() || $gameTemp.isDestinationValid() ? 0 : Galv.STURN.delay;
 	}
 	if (this._turnPause > 0) {
 		this.setDirection(d);
