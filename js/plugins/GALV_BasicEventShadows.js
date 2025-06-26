@@ -225,7 +225,7 @@ Game_Event.prototype.doShadows = function() {
 	}
 	if (SceneManager._scene._spriteset)	{
 		if (this._shadow) SceneManager._scene._spriteset.createBShadow(this._eventId,this);
-		else SceneManager._scene._spriteset.destroyBShadow(this._eventId);
+		else if (SceneManager._scene._spriteset.destroyBShadow) SceneManager._scene._spriteset.destroyBShadow(this._eventId);
 	}
 };
 
