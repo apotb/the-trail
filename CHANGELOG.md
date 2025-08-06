@@ -1,8 +1,6 @@
-# Alpha 18: ??? (??/??/2025)
-INTRO
-
-### Additions
--
+# Alpha 17.1 (8/5/2025)
+Howdy everyone! It's been a couple months since the last update, but development is finally picking up again!
+This is just a minor patch that comes with a few changes and squashed bugs. Notably, a softlock preventing the player from entering the Greenfield-Solus Passage has been fixed.
 
 ### Changes
 - Buffed the CRI of Rat Claw, Sharp Tooth, Goblin Fang, and Razor-Sharp Fang.
@@ -18,10 +16,7 @@ INTRO
 - Fixed autosave graphic lingering when changing maps during an autosave.
 - Fixed a visual bug with part of the floor in True Telluria Castle - B3.
 
-OUTRO
-
-Yours truly,
-AP
+Expect more news on Alpha 18 within the coming weeks!
 
 # Alpha 17: Path of the Purple (5/30/2025)
 Now that you've witnessed the destructive power of Apocalypse first-hand, it's time to take up arms! The thing is, no one really knows where Apocalypse is... so it's up to you to track him down.
