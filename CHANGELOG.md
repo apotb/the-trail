@@ -6,6 +6,7 @@ This is just a minor patch that comes with a few changes and squashed bugs. Nota
 - Buffed the CRI of Rat Claw, Sharp Tooth, Goblin Fang, and Razor-Sharp Fang.
 - Decrease Flashbang duration from 5 → 4 turns.
 - All monsters respawn after Laeryidyean is defeated.
+- Added a new item category "Meals" which should help de-clutter the Buffs category.
 
 ### Bug Fixes
 - Fixed a softlock where the Greenfield-Solus Passage was permanently blocked by an NPC, preventing any further progress.
