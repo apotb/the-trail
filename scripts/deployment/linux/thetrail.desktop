@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=The Trail
+Comment=Top-down RPG adventure
+Exec=sh -c "$(dirname %k)/thetrail"
+Icon=www/icon/icon.png
+Terminal=false
+Categories=Game;RolePlaying;

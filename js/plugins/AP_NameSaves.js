@@ -8,22 +8,28 @@ const maxNameLength = 32;
 //=============================================================================
 
 Window_SavefileList.prototype.drawFileId = function(id, x, y) {
-    var saveNames = [];
-    if ($gameVariables.value(74) !== 0) {
-        saveNames = $gameVariables.value(74);
-    } else {
-        for (i = 1; i <= 16; i++) {
-            saveNames[i] = "Save Slot " + i;
+    let text = '';
+    if (id < this.maxItems()) {
+        var saveNames = [];
+        if ($gameVariables.value(74) !== 0) {
+            saveNames = $gameVariables.value(74);
+        } else {
+            for (i = 1; i < this.maxItems(); i++) {
+                saveNames[i] = "Save Slot " + i;
+            }
+            $gameVariables.setValue(74, saveNames);
         }
-        $gameVariables.setValue(74, saveNames);
+        text = saveNames[id];
+    } else {
+        text = 'Autosave';
     }
-    this.drawText(saveNames[id], x, y, this.width - 80);
+    this.drawText(text, x, y, this.width - 80);
 };
 
 var Window_SaveAction_makeCommandList = Window_SaveAction.prototype.makeCommandList;
 Window_SaveAction.prototype.makeCommandList = function() {
     Window_SaveAction_makeCommandList.call(this);
-    this.addCommand("Rename Save", 'rename', DataManager.loadSavefileInfo(this.savefileId()));
+    this.addCommand("Rename Save", 'rename', DataManager.loadSavefileInfo(this.savefileId()) && this.savefileId() < DataManager.maxSavefiles());
 };
 
 var Scene_File_createActionWindow = Scene_File.prototype.createActionWindow;

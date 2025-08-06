@@ -276,14 +276,14 @@ Window_ItemCategory.prototype.makeCommandList = function() {
     this.addItemCategory(category);
   } else if (this._type == 'weapons') {
     this.addItemCategory("Weapons");
-    var wtypes = [1, 2, 11, 7, 6, 3, 10, 4, 8, 5, 9];
+    var wtypes = [1, 2, 11, 7, 6, 3, 10, 4, 12, 8, 5, 9];
     if (wtypes.length < $dataSystem.weaponTypes.length - 1) console.error('error', "MISSING WEAPON TYPES");
     for (i = 0; i < wtypes.length; i++) this.addItemCategory("WType:" + wtypes[i]);
   } else if (this._type == 'armors') {
     this.addItemCategory("Armors");
-    var atypes = [1, 8, 9, 2, 3, 4, 5, 10, 6, 7];
+    /*var atypes = [1, 8, 9, 2, 3, 4, 5, 10, 6, 7];
     for (i = 0; i < atypes.length; i++) this.addItemCategory("AType:" + atypes[i]);
-    if (atypes.length < $dataSystem.armorTypes.length - 1) console.error('error', "MISSING ARMOR TYPES");
+    if (atypes.length < $dataSystem.armorTypes.length - 1) console.error('error', "MISSING ARMOR TYPES");*/
     var etypes = [3, 4, 5, 2, 6, 8, 9];
     if (etypes.length < $dataSystem.equipTypes.length - 3) console.error('error', "MISSING EQUIP TYPES");
     for (i = 0; i < etypes.length; i++) this.addItemCategory("EType:" + etypes[i]);
@@ -378,6 +378,7 @@ Window_ItemList.prototype.setExt = function(ext) {
 };
 
 Window_ItemList.prototype.includes = function(item) {
+  if (this._ext !== 'Meals' && item?.itemCategory.contains('Meals')) return false;
   switch (this._category) {
   case 'AllItems':
     return DataManager.isItem(item);
@@ -435,9 +436,7 @@ Window_ItemList.prototype.includes = function(item) {
   case 'Category':
     switch (this._ext) {
       case 'Materials':
-        if (DataManager.isItem(item)) if (Yanfly.IS.ItemIngredientIDs.contains(item.id)) return item;
-        if (DataManager.isWeapon(item)) if (Yanfly.IS.WeaponIngredientIDs.contains(item.baseItemId)) return item;
-        if (DataManager.isArmor(item)) if (Yanfly.IS.ArmorIngredientIDs.contains(item.baseItemId)) return item;
+        if (DataManager.isMaterial(item)) return item;
         break;
       case 'Drops':
         if (DataManager.isItem(item)) if (Yanfly.EED.ItemDropIDs.contains(item.id)) return item;
@@ -450,14 +449,16 @@ Window_ItemList.prototype.includes = function(item) {
         if (DataManager.isWeapon(item) || DataManager.isArmor(item)) if (item.meta['Disassemble Pool']) return item;
         break;
       case 'Recovery':
-        if (DataManager.isItem(item)) if (item.effects.some(e => ([11, 12].contains(e.code) && (e.value1 > 0 || e.value2 > 0)) || (e.code == 22 && e.dataId == 1))) return item;
+        if (DataManager.isItem(item) && !item.itemCategory.contains('Foodstuffs') && !item.itemCategory.contains('Debuffs')) if (item.effects.some(e => ([11, 12].contains(e.code) && (e.value1 > 0 || e.value2 > 0)) || (e.code == 22 && e.dataId == 1))) return item;
         break;
       case 'Buffs':
-        if (DataManager.isItem(item)) if (item.effects.some(e => e.code == 21 && $dataStates[e.dataId].category.contains('BUFF'))) return item;
+        if (DataManager.isItem(item) && !item.itemCategory.contains('Foodstuffs')) if (item.effects.some(e => e.code == 21 && $dataStates[e.dataId].category.contains('BUFF'))) return item;
         break;
       case 'Debuffs':
-        if (DataManager.isItem(item)) if (item.effects.some(e => [21, 22].contains(e.code) && $dataStates[e.dataId].category.contains('DEBUFF'))) return item;
-        if (DataManager.isItem(item)) if (Object.keys(item.removeCategory).length > 0) return item;
+        if (DataManager.isItem(item) && !item.itemCategory.contains('Foodstuffs')) {
+          if (item.effects.some(e => [21, 22].contains(e.code) && $dataStates[e.dataId].category.contains('DEBUFF'))) return item;
+          if (Object.keys(item.removeCategory).length > 0) return item;
+        }
         break;
     }
     return item && item.itemCategory.contains(this._ext);

@@ -23,7 +23,8 @@
     "Heavy Shield",
     "Gambeson",
     "Chainmail",
-    "Cloak"
+    "Cloak",
+    "Gloves"
   ],
   "attackMotions": [
     {
@@ -128,7 +129,8 @@
     "\\i[778]\\c[8]Metal\\c[0]",
     "\\i[131]Slashing",
     "\\i[135]Bludgeoning",
-    "\\i[130]Piercing"
+    "\\i[130]Piercing",
+    "\\i[117]Magical"
   ],
   "equipTypes": [
     "",
@@ -162,7 +164,7 @@
     true
   ],
   "optDisplayTp": false,
-  "optDrawTitle": true,
+  "optDrawTitle": false,
   "optExtraExp": true,
   "optFloorDeath": false,
   "optFollowers": true,
@@ -457,10 +459,10 @@
     "In Boat",
     "In Ship",
     "In Airship",
-    "",
-    "",
-    "",
-    "",
+    "Sleepy King",
+    "Sentinel Dialogue 1 <Global Meta>",
+    "Sentinel Dialogue 2 <Global Meta>",
+    "Was Sentinel Dialogue Skipped?",
     "",
     ""
   ],
@@ -708,12 +710,12 @@
     "Capture Map ID",
     "Capture Player X",
     "Capture Player Y",
-    "",
+    "Giant Turtle RNG",
     "API Data <Global Meta>",
     "Leaderboard <Global Meta>",
     "Greenfield Events",
     "RF - Library Orb",
-    "",
+    "Scroll of Silver Sands",
     "",
     "",
     "",
@@ -748,7 +750,8 @@
     "Hammer",
     "Knuckles",
     "Spellbook",
-    "Greatsword"
+    "Greatsword",
+    "Whip"
   ],
   "windowTone": [
     120,

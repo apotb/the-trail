@@ -562,7 +562,10 @@ Window_Base.prototype.drawActorIcons = function(actor, x, y, width) {
     width = width || 144;
     var icons = actor.allIcons().slice(0, Math.floor(width / Window_Base._iconWidth));
     for (var i = 0; i < icons.length; i++) {
-        this.drawIcon(icons[i], x + Window_Base._iconWidth * i, y + 2);
+        // If there's too many icons to display, replace the last one with a +
+        if (i + 1 == icons.length && actor.allIcons().length > icons.length) icon = 1354;
+        else icon = icons[i];
+        this.drawIcon(icon, x + Window_Base._iconWidth * i, y + 2);
     }
 };
 
@@ -2142,8 +2145,12 @@ Window_SkillType.prototype.selectLast = function() {
     if (skill) {
         this.selectExt(skill.stypeId);
     } else {
-        this.select(0);
+        this.selectExt(this.firstEnabledExt());
     }
+};
+
+Window_SkillType.prototype.firstEnabledExt = function() {
+    return this._list.find(command => this._actor.hasSkillType(command.ext))?.ext || 0;
 };
 
 //-----------------------------------------------------------------------------
@@ -2295,12 +2302,122 @@ Window_SkillList.prototype.drawSkillCost = function(skill, x, y, width) {
 
 Window_SkillList.prototype.updateHelp = function() {
     this.setHelpWindowItem(this.item());
+    if (SceneManager._scene instanceof Scene_Skill) SceneManager._scene._animationWindow._forceNewAnimation = true;
 };
 
 Window_SkillList.prototype.refresh = function() {
     this.makeItemList();
     this.createContents();
     this.drawAllItems();
+};
+
+//-----------------------------------------------------------------------------
+// Window_SkillAnimation
+//
+// The window for display skill animations on the skill screen.
+
+function Window_SkillAnimation() {
+    this.initialize.apply(this, arguments);
+}
+
+Window_SkillAnimation.prototype = Object.create(Window_Base.prototype);
+Window_SkillAnimation.prototype.constructor = Window_SkillAnimation;
+
+Window_SkillAnimation.prototype.initialize = function(x, y, width, height) {
+    Window_Base.prototype.initialize.call(this, x, y, width, height);
+    this._mirror = false;
+    this._delay = 60;
+    this.createBackground();
+};
+
+Window_SkillAnimation.prototype.createBackground = function() {
+    const bitmap = new Bitmap(this.width, this.height);
+    bitmap.fillRect(0, 0, this.width, this.height, 'black');
+    this._windowBackSprite.bitmap = bitmap;
+    this.backOpacity = 255;
+};
+
+Window_SkillAnimation.prototype.createTargetSprite = function() {
+    if (this._targetSprite) this.removeTargetSprite();
+    let x = this.width / 2;
+    let y = this.height / 3;
+    this._targetSprite = new Sprite_Enemy(new Game_Enemy(3, x, y));
+    this._targetSprite._battler._svBattlerName = this.dummyBattler();
+    this.addChild(this._targetSprite);
+};
+
+Window_SkillAnimation.prototype.removeTargetSprite = function() {
+    if (!this._targetSprite) return;
+    this.removeAnimationSprite();
+    this.removeChild(this._targetSprite);
+    this._targetSprite = null;
+};
+
+Window_SkillAnimation.prototype.removeAnimationSprite = function() {
+    if (this._targetSprite?._animationSprites[0]) this.removeChild(this._targetSprite._animationSprites[0]);
+};
+
+Window_SkillAnimation.prototype.skill = function() {
+    return SceneManager._scene.item();
+};
+
+Window_SkillAnimation.prototype.actor = function() {
+    return SceneManager._scene.actor();
+};
+
+Window_SkillAnimation.prototype.update = function() {
+    Window_Base.prototype.update.call(this);
+
+    if (!SceneManager._scene._itemWindow.active) return this.removeTargetSprite();
+
+    if (this._forceNewAnimation) {
+        this._forceNewAnimation = false;
+        this.createTargetSprite();
+        this._targetSprite._battler.requestMotion([9, 10].contains(this.skill()?.scope) ? 'dead' : 'walk');
+    }
+    
+    if (this.skill() && !this._targetSprite.isAnimationPlaying()) {
+        this._targetSprite.startAnimation($dataAnimations[this.skill().animationId], this._mirror, this._delay, true);
+
+        // Mask
+        if (!this._animationMask) {
+            this._animationMask = new PIXI.Graphics();
+            this._animationMask.beginFill(0xFFFFFF);
+            this._animationMask.drawRect(0, 0, this.width, this.height);
+            this._animationMask.endFill();
+            this._animationMask.x = this.x;
+            this._animationMask.y = this.y;
+            SceneManager._scene.addChild(this._animationMask);
+        }
+        if (this._targetSprite._animationSprites[0]) this._targetSprite._animationSprites[0].mask = this._animationMask;
+    }
+
+    this._targetSprite.setMirror(this.skill()?.scope >= 7);
+};
+
+Window_SkillAnimation.prototype.dummyBattler = function() {
+    let otherMembers = $gameParty.members().filter(m => m !== this.actor());
+    let actor = otherMembers[Math.floor(Math.random() * otherMembers.length)];
+    switch (this.skill()?.scope) {
+        case 1:         // 1 Enemy
+        case 2:         // All Enemies
+        case 3:         // 1 Random Enemy
+        case 4:         // 2 Random Enemies
+        case 5:         // 3 Random Enemies
+        case 6:         // 4 Random Enemies
+            return $dataEnemies[3].sideviewBattler[0];
+        case 7:         // 1 Ally
+        case 8:         // All Allies
+            return actor.battlerName();
+        case 9:         // 1 Ally (Dead)
+        case 10:        // All Allies (Dead)
+            return actor.battlerName();
+        case 11:        // The User
+            return this.actor().battlerName();
+        case 0:         // None
+        default:        // No skill
+            return 'Null';
+    }
 };
 
 //-----------------------------------------------------------------------------
@@ -4246,7 +4363,7 @@ function Window_EventItem() {
 Window_EventItem.prototype = Object.create(Window_ItemList.prototype);
 Window_EventItem.prototype.constructor = Window_EventItem;
 
-Window_EventItem.prototype.initialize = function(messageWindow = new Window_Message) {
+Window_EventItem.prototype.initialize = function(messageWindow=null) {
     this._messageWindow = messageWindow;
     var width = Graphics.boxWidth;
     var height = this.windowHeight();
@@ -4274,7 +4391,7 @@ Window_EventItem.prototype.start = function() {
 };
 
 Window_EventItem.prototype.updatePlacement = function() {
-    if (this._messageWindow.y >= Graphics.boxHeight / 2) {
+    if (this._messageWindow?.y >= Graphics.boxHeight / 2) {
         this.y = 0;
     } else {
         this.y = Graphics.boxHeight - this.height;
@@ -4307,13 +4424,13 @@ Window_EventItem.prototype.onOk = function() {
     var item = this.item();
     var itemId = item ? item.id : 0;
     $gameVariables.setValue($gameMessage.itemChoiceVariableId(), DataManager.isItem(item) ? itemId : item);
-    this._messageWindow.terminateMessage();
+    this._messageWindow?.terminateMessage();
     this.close();
 };
 
 Window_EventItem.prototype.onCancel = function() {
     $gameVariables.setValue($gameMessage.itemChoiceVariableId(), 0);
-    this._messageWindow.terminateMessage();
+    this._messageWindow?.terminateMessage();
     this.close();
 };
 
@@ -5501,7 +5618,10 @@ Window_ActorCommand.prototype.addItemCommand = function() {
 };
 
 Window_ActorCommand.prototype.setup = function(actor) {
-    this._actor = actor;
+    if (actor !== this._actor) {
+        this._actor = actor;
+        this._confirmEscape = false;
+    }
     this.clearCommandList();
     this.makeCommandList();
     this.refresh();
@@ -5511,6 +5631,8 @@ Window_ActorCommand.prototype.setup = function(actor) {
 
     if (this._boosting) this.selectSymbol(this._boosting);
     this._boosting = null;
+
+    if (this._confirmEscape) this.selectSymbol('escape');
 };
 
 Window_ActorCommand.prototype.processOk = function() {
@@ -5535,6 +5657,15 @@ Window_ActorCommand.prototype.selectLast = function() {
                 this.selectExt(skill.stypeId);
             }
         }
+    }
+};
+
+Window_ActorCommand.prototype.processCursorMove = function() {
+    Window_Selectable.prototype.processCursorMove.call(this);
+    if (this.currentSymbol() !== 'escape' && this._confirmEscape) {
+        this._confirmEscape = false;
+        this.makeCommandList();
+        this.refresh();
     }
 };
 
@@ -5831,7 +5962,11 @@ Window_TitleCommand.initCommandPosition = function() {
 };
 
 Window_TitleCommand.prototype.windowWidth = function() {
-    return 240;
+    return 240 * this.maxCols();
+};
+
+Window_TitleCommand.prototype.maxCols = function() {
+    return 4;
 };
 
 Window_TitleCommand.prototype.updatePlacement = function() {

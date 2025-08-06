@@ -24098,14 +24098,7 @@
               "code": 356,
               "indent": 1,
               "parameters": [
-                "GabText Central Haven Harbor"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "ForceGab"
+                "ShowLocation Central Haven Harbor"
               ]
             },
             {
@@ -24131,14 +24124,7 @@
               "code": 356,
               "indent": 1,
               "parameters": [
-                "GabText Port"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "ForceGab"
+                "ShowLocation Port"
               ]
             },
             {
@@ -24187,14 +24173,7 @@
               "code": 356,
               "indent": 0,
               "parameters": [
-                "GabText Port"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "ForceGab"
+                "ShowLocation Port"
               ]
             },
             {
@@ -25000,14 +24979,7 @@
               "code": 356,
               "indent": 1,
               "parameters": [
-                "GabText Central Haven Harbor"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "ForceGab"
+                "ShowLocation Central Haven Harbor"
               ]
             },
             {
@@ -25033,14 +25005,7 @@
               "code": 356,
               "indent": 1,
               "parameters": [
-                "GabText Port"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "ForceGab"
+                "ShowLocation Port"
               ]
             },
             {
@@ -30684,14 +30649,12 @@
               ]
             },
             {
-              "code": 128,
+              "code": 125,
               "indent": 1,
               "parameters": [
-                43,
                 0,
                 0,
-                1,
-                false
+                300
               ]
             },
             {
@@ -30699,44 +30662,6 @@
               "indent": 1,
               "parameters": [
                 60
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Bandito",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\kevI used to wear this all the time. That's how I"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "was able to be so surprisingly resistant to magic"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "attacks during our battle. I'm not fighting anymore,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "so rather than collect dust, it'll be in your care."
               ]
             },
             {
@@ -33865,7 +33790,6 @@
               "parameters": [
                 [
                   "MCR",
-                  "PDR/MDR",
                   "FDR",
                   "EXR",
                   "Next Page",
@@ -33926,64 +33850,6 @@
               "indent": 1,
               "parameters": [
                 1,
-                "PDR/MDR"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "People3",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\solPDR stands for Physical Damage Rate, while"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "MDR is short for Magical Damage Rate. They are"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "used to determine the amount of damage dealt"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "by physical and magical attacks, respectively."
-              ]
-            },
-            {
-              "code": 119,
-              "indent": 2,
-              "parameters": [
-                "5"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 1,
-              "parameters": [
-                2,
                 "FDR"
               ]
             },
@@ -34034,7 +33900,7 @@
               "code": 402,
               "indent": 1,
               "parameters": [
-                3,
+                2,
                 "EXR"
               ]
             },
@@ -34085,7 +33951,7 @@
               "code": 402,
               "indent": 1,
               "parameters": [
-                4,
+                3,
                 "Next Page"
               ]
             },
@@ -34105,7 +33971,7 @@
               "code": 402,
               "indent": 1,
               "parameters": [
-                5,
+                4,
                 "Goodbye."
               ]
             },

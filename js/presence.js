@@ -42,7 +42,7 @@ async function setActivity() {
                     smallImageText = smallImageText.slice(0, -2);
                     break;
                 case `quests`:
-                    smallImageText = "Quests Completed: " + Math.round(($gameSystem.totalQuestsCompleted() / $gameSystem.totalQuestsInGame()) * 100) + "%";
+                    smallImageText = "Quests Completed: " + $gameSystem.questCompletionRate() + "%";
                     break;
                 case `bits`:
                     smallImageText = "Bits: " + $gameParty.gold();

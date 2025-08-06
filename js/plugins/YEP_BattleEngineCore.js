@@ -1823,6 +1823,12 @@ BattleManager.processVictory = function() {
 };
 
 BattleManager.processEscape = function() {
+    const commandWindow = SceneManager._scene._actorCommandWindow;
+    if (!commandWindow._confirmEscape) {
+      commandWindow._confirmEscape = true;
+      commandWindow.setup(commandWindow._actor);
+      return false;
+    }
     $gameParty.performEscape();
     SoundManager.playEscape();
     if ($gameTroop.turnCount() == 1) {
@@ -2275,6 +2281,7 @@ BattleManager.updateActionTargetList = function() {
 BattleManager.startAction = function() {
     var subject = this._subject;
     if (!subject) return this.endAction();
+    subject._preMP = subject.mp; // Used for [P] Topped Off
     var action = subject.currentAction();
     this._action = action;
     if (!this._action) return this.endAction();
@@ -3146,7 +3153,7 @@ Sprite_Actor.prototype.updateTargetPosition = function() {
 };
 
 Sprite_Actor.prototype.updateMotion = function() {
-    this.updateMotionCount();
+    if (this._battler.spriteCanMove()) this.updateMotionCount();
 };
 
 Sprite_Actor.prototype.onMoveEnd = function() {
@@ -3230,14 +3237,16 @@ Sprite_Actor.prototype.refreshMotion = function() {
 Sprite_Enemy.prototype.preSpriteInitialize = function(battler) {
     Sprite_Battler.prototype.preSpriteInitialize.call(this, battler);
     this._visualSelect = Yanfly.Param.BECEnemySelect;
-    if (this._visualSelect) this.createVisualSelectWindow();
+    if (this._visualSelect && SceneManager._scene instanceof Scene_Battle) this.createVisualSelectWindow();
 };
 
 Yanfly.BEC.Sprite_Enemy_update = Sprite_Enemy.prototype.update;
 Sprite_Enemy.prototype.update = function() {
     Yanfly.BEC.Sprite_Enemy_update.call(this);
-    this.addVisualSelectWindow();
-    this.checkExistInSceneChildren()
+    if (SceneManager._scene instanceof Scene_Battle) {
+      this.addVisualSelectWindow();
+      this.checkExistInSceneChildren();
+    }
 };
 
 Sprite_Enemy.prototype.addVisualSelectWindow = function() {
@@ -3915,6 +3924,7 @@ Game_Battler.prototype.battler = function() {
 };
 
 Game_Battler.prototype.requestMotion = function(motionType) {
+    motionType = this._motionOverride ? this._motionOverride : motionType;
     this._motionType = motionType;
     if (this.battler()) {
       this.battler().startMotion(motionType);
@@ -4005,7 +4015,7 @@ Game_Battler.prototype.spriteCanMove = function() {
       var state = this.states()[i];
       if (state.spriteCannotMove) return false;
     }
-    return this.canMove();
+    return true; // this.canMove();
 };
 
 Game_Battler.prototype.spritePosX = function() {
@@ -4245,6 +4255,7 @@ Game_Battler.prototype.abnormalMotion = function() {
 };
 
 Game_Battler.prototype.dyingMotion = function() {
+    if (this._motionOverride) return this._motionOverride;
     return 'dying';
 };
 

@@ -40,7 +40,7 @@ API_STEAM.userId = function() {
 
 API_LEADERBOARD = new Object();
 
-API_LEADERBOARD._url = `https://script.google.com/macros/s/AKfycby0KHaXUKbUi4aXDCE7eNp-JRbLMJC_86OcgzmZ3gpmI7YUIOTXkWljjeU78kRRsTs/exec`;
+API_LEADERBOARD._url = `https://script.google.com/macros/s/AKfycbxYCy8EA_cRaI62Ijd2-RIWLsGzhrvsOpc_zwJG2YMW2haf7OPfk8mnunYK2d7IZqk/exec`;
 API_LEADERBOARD._dataVariable = 83;
 
 API_LEADERBOARD.leaderboards = function() {
@@ -48,7 +48,8 @@ API_LEADERBOARD.leaderboards = function() {
         ["Bits Collected", $gameVariables.value(CGMV.ExtraStats.GoldLooted)],
         ["Damage Dealt", $gameVariables.value(CGMV.ExtraStats.DamageDealt)],
         ["Enemies Defeated", $gameParty.killCount()],
-        ["Playtime", $gameSystem.playtime()]
+        ["Playtime", $gameSystem.playtime()],
+        ["Fish Caught", Galv.FISH.totalCaught()]
     ];
 };
 
@@ -62,7 +63,7 @@ API_LEADERBOARD.fetchLeaderboard = async function(leaderboard) {
         this.setLeaderboard(leaderboard, data);
     })
     .catch(error => {
-        alert("Error fetching data: " + error);
+        if ($gameTemp.isPlaytest()) alert("Error fetching data: " + error);
         throw error;
     });
 };
@@ -73,7 +74,7 @@ API_LEADERBOARD.addToLeaderboard = async function(leaderboard, value) {
         body: JSON.stringify([leaderboard, API_STEAM.userId(), API_STEAM.username(), value])
     })
     .catch(error => {
-        alert("Error adding data: " + error);
+        if ($gameTemp.isPlaytest()) alert("Error adding data: " + error);
         throw error;
     });
 };
@@ -218,7 +219,12 @@ Scene_Leaderboard.prototype.createLoginWindow = function() {
 
 Scene_Leaderboard.prototype.refreshCommand = async function() {
     await API_LEADERBOARD.refresh();
-    alert("Leaderboard refreshed");
+    AudioManager.playSe({
+        "name": "Absorb1",
+        "volume": 100,
+        "pitch": 100,
+        "pan": 0
+    });
     this._leaderboardWindow.refresh();
     this._loginWindow.activate();
 };
@@ -245,8 +251,15 @@ Window_Leaderboard.prototype.initialize = function() {
     this.deactivate();
 };
 
+Window_Leaderboard.prototype.leaderboards = function() {
+    let lb = API_LEADERBOARD.leaderboards();
+    if ($gameTemp._lbFish) lb = lb.slice(4);
+    else lb = lb.slice(0, 4);
+    return lb;
+};
+
 Window_Leaderboard.prototype.maxCols = function() {
-    return API_LEADERBOARD.leaderboards().length;
+    return this.leaderboards().length;
 };
 
 Window_Leaderboard.prototype.maxRows = function() {
@@ -266,7 +279,7 @@ Window_Leaderboard.prototype.itemTextAlign = function() {
 };
 
 Window_Leaderboard.prototype.makeCommandList = function() {
-    for (const lb of API_LEADERBOARD.leaderboards()) {
+    for (const lb of this.leaderboards()) {
         this.addCommand(lb[0], '');
         i = 0;
         leaderboard = API_LEADERBOARD.getLeaderboard(lb[0])

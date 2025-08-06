@@ -302,7 +302,7 @@ DataManager.latestSavefileId = function() {
     var savefileId = 1;
     var timestamp = 0;
     if (globalInfo) {
-        for (var i = 1; i < globalInfo.length; i++) {
+        for (var i = 1; i < this.maxSavefiles(); i++) {
             if (this.isThisGameFile(i) && globalInfo[i].timestamp2 > timestamp) {
                 timestamp = globalInfo[i].timestamp2;
                 savefileId = i;
@@ -375,16 +375,7 @@ DataManager.lastAccessedSavefileId = function() {
 };
 
 DataManager.saveGameWithoutRescue = function(savefileId) {
-    var json = JsonEx.stringify(this.makeSaveContents());
-    if (json.length >= 200000) {
-        console.warn('Save data too big!');
-    }
-    StorageManager.save(savefileId, json);
-    this._lastAccessedId = savefileId;
-    var globalInfo = this.loadGlobalInfo() || [];
-    globalInfo[savefileId] = this.makeSavefileInfo();
-    this.saveGlobalInfo(globalInfo);
-    return true;
+    // YEP_ItemCore.js
 };
 
 DataManager.loadGameWithoutRescue = function(savefileId) {
@@ -2577,16 +2568,7 @@ BattleManager.makeActionOrders = function() {
 };
 
 BattleManager.startAction = function() {
-    var subject = this._subject;
-    var action = subject.currentAction();
-    var targets = action.makeTargets();
-    this._phase = 'action';
-    this._action = action;
-    this._targets = targets;
-    subject.useItem(action.item());
-    this._action.applyGlobal();
-    this.refreshStatus();
-    this._logWindow.startAction(subject, action, targets);
+    // YEP_BattleEngineCore.js
 };
 
 BattleManager.updateAction = function() {
@@ -2715,22 +2697,9 @@ BattleManager.processVictory = function() {
     this.endBattle(0);
 };
 
-BattleManager.processEscape = function() {
-    $gameParty.performEscape();
-    SoundManager.playEscape();
-    var success = this._preemptive ? true : (Math.random() < this._escapeRatio);
-    if (success) {
-        this.displayEscapeSuccessMessage();
-        this._escaped = true;
-        this.processAbort();
-    } else {
-        this.displayEscapeFailureMessage();
-        this._escapeRatio += 0.1;
-        $gameParty.clearActions();
-        this.startTurn();
-    }
-    return success;
-};
+/*BattleManager.processEscape = function() {
+    // YEP_BattleEngineCore.js
+};*/
 
 BattleManager.processAbort = function() {
     $gameParty.removeBattleStates();

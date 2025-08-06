@@ -1519,7 +1519,7 @@ HUDManager.checkInternet = function() {
 			this._internet = true;
 		}
 		this._checkComplete = true;
-		this.checkForUpdates();
+		if (SRD.PluginUpgrader) this.checkForUpdates();
 	}.bind(this));
 };
 

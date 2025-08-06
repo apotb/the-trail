@@ -103,7 +103,7 @@ DataManager.processSELNotetags1 = function() {
 DataManager.processSELNotetags2 = function(obj) {
   var notedata = obj?.note.split(/[\r\n]+/);
   if (obj) obj.saveEventLocation = false;
-  for (var i = 0; i < notedata.length; i++) {
+  for (var i = 0; i < notedata?.length; i++) {
     var line = notedata[i];
     if (line.match(/<(?:SAVE EVENT LOCATION|save event locations)>/i)) {
       obj.saveEventLocation = true;
@@ -217,7 +217,7 @@ Game_Event.prototype.isSaveLocation = function() {
     if (this.event()?.saveEventLocation === undefined) {
       DataManager.processSELNotetags2(this.event());
     }
-    return this.event().saveEventLocation;
+    return this.event()?.saveEventLocation;
 };
 
 Game_Event.prototype.saveLocation = function() {

@@ -156,7 +156,7 @@ Sprite_StateOverlay.prototype.updatePattern = function() {
     this._pattern++;
     this._pattern %= 8;
     if (this._battler) {
-        states = this.priorityOverlay();
+        let states = this.priorityOverlay();
         if(states.length > 0) {
             // Move through every state
             if (this._pattern == 0 && this._nextIndex) {
@@ -168,7 +168,7 @@ Sprite_StateOverlay.prototype.updatePattern = function() {
             }
             this._index %= states.length
             // Individual state processing
-            state = states[this._index];
+            let state = states[this._index];
             if(state.meta.animationRow)
             {
                 this._overlayIndex = state.meta.animationRow;

@@ -474,6 +474,8 @@ Scene_Title.prototype.createForeground = function() {
     this.addChild(this._gameTitleSprite);
     if ($dataSystem.optDrawTitle) {
         this.drawGameTitle();
+    } else {
+        this.createTitleSprite();
     }
 };
 
@@ -486,6 +488,13 @@ Scene_Title.prototype.drawGameTitle = function() {
     this._gameTitleSprite.bitmap.outlineWidth = 8;
     this._gameTitleSprite.bitmap.fontSize = 72;
     this._gameTitleSprite.bitmap.drawText(text, x, y, maxWidth, 48, 'center');
+};
+
+Scene_Title.prototype.createTitleSprite = function() {
+    this._titleSprite = new Sprite(ImageManager.loadTitleChar('Title'));
+    this.centerSprite(this._titleSprite);
+    this._titleSprite.y = Graphics.height / 2.7;
+    this.addChild(this._titleSprite);
 };
 
 Scene_Title.prototype.centerSprite = function(sprite) {
@@ -633,6 +642,7 @@ Scene_Map.prototype.stop = function() {
     if (this.needsSlowFadeOut()) {
         this.startFadeOut(this.slowFadeSpeed(), false);
     } else if (SceneManager.isNextScene(Scene_Map)) {
+        $gameTemp._gabWindow = this._gabWindow;
         this.fadeOutForTransfer();
     } else if (SceneManager.isNextScene(Scene_Battle)) {
         this.launchBattle();
@@ -689,7 +699,9 @@ Scene_Map.prototype.updateDestination = function() {
     if (this.isMapTouchOk()) {
         this.processMapTouch();
     } else {
-        $gameTemp.clearDestination();
+        setTimeout(() => {
+            if (!this.isMapTouchOk()) $gameTemp.clearDestination();
+        }, 100);
         this._touchCount = 0;
     }
 };
@@ -1337,12 +1349,7 @@ Scene_Skill.prototype.initialize = function() {
 };
 
 Scene_Skill.prototype.create = function() {
-    Scene_ItemBase.prototype.create.call(this);
-    this.createHelpWindow();
-    this.createSkillTypeWindow();
-    this.createStatusWindow();
-    this.createItemWindow();
-    this.createActorWindow();
+    // YEP_X_CoreUpdatesOpt.js
 };
 
 Scene_Skill.prototype.start = function() {
@@ -1374,7 +1381,7 @@ Scene_Skill.prototype.createStatusWindow = function() {
 Scene_Skill.prototype.createItemWindow = function() {
     var wx = 0;
     var wy = this._statusWindow.y + this._statusWindow.height;
-    var ww = Graphics.boxWidth;
+    var ww = Graphics.boxWidth / 2;
     var wh = Graphics.boxHeight - wy;
     this._itemWindow = new Window_SkillList(wx, wy, ww, wh);
     this._itemWindow.setHelpWindow(this._helpWindow);
@@ -1382,6 +1389,15 @@ Scene_Skill.prototype.createItemWindow = function() {
     this._itemWindow.setHandler('cancel', this.onItemCancel.bind(this));
     this._skillTypeWindow.setSkillWindow(this._itemWindow);
     this.addWindow(this._itemWindow);
+};
+
+Scene_Skill.prototype.createAnimationWindow = function() {
+    var wx = this._itemWindow.x + this._itemWindow.width;
+    var wy = this._itemWindow.y;
+    var ww = Graphics.boxWidth - wx;
+    var wh = this._itemWindow.height;
+    this._animationWindow = new Window_SkillAnimation(wx, wy, ww, wh);
+    this.addWindow(this._animationWindow);
 };
 
 Scene_Skill.prototype.refreshActor = function() {

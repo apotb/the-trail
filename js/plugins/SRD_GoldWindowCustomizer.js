@@ -567,7 +567,10 @@ Imported["SumRndmDde Gold Window Customizer"] = 1.06;
 			} else if(_.info[i].match(/battles/i)) {
 				this.drawCurrencyValue($gameSystem.battleCount(), _.battleLabel, x, y + (i * lh), width, 'override');
 			} else if(_.info[i].match(/map-display/i)) {
-				this.drawCurrencyValue($gameMap.displayName(), " " + _.dmapLabel, x, y + (i * lh), width, 'override');
+				// this.drawCurrencyValue($gameMap.displayName(), " " + _.dmapLabel, x, y + (i * lh), width, 'override');
+				let text = $gameMap.displayName();
+      			text = `\\fs[${20 - Math.max(0, Math.floor((text.length - 25) / 2.5))}]` + text;
+      			this.drawTextEx(text, x + width - this.textWidthEx(text), y + (i * lh));
 			} else if(_.info[i].match(/map/i)) {
 				this.drawCurrencyValue($dataMapInfos[$gameMap.mapId()].name, " " + _.mapLabel, x, y + (i * lh), width, 'override');
 			} else if(_.info[i].match(/bgm/i)) {

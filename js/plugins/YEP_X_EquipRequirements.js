@@ -411,7 +411,7 @@ DataManager.defaultClassRestrictions = function(obj) {
   if (DataManager.isWeapon(obj)) switch (obj.wtypeId) {
     case 1:  // Generic
       return;
-    case 2:  // Plate Armor
+    case 2:  // Sword
     case 6:  // Spear
     case 7:  // Axe
     case 11: // Greatsword
@@ -421,6 +421,7 @@ DataManager.defaultClassRestrictions = function(obj) {
       return 2;
     case 4:  // Staff
     case 8:  // Hammer
+    case 12: // Whip
       return 3;
     case 5:  // Dagger
     case 9:  // Knuckles
@@ -430,11 +431,12 @@ DataManager.defaultClassRestrictions = function(obj) {
       case 1:  // Generic
       case 8:  // Gambeson
       case 9:  // Chainmail
+      case 11: // Gloves
         return;
       case 6:  // Light Shield
         return [1, 2, 3];
       case 2:  // Plate Armor
-      case 7:  // Heavy Armor
+      case 7:  // Heavy Shield
         return 1;
       case 3:  // Robes
         return 2;
@@ -534,7 +536,7 @@ Game_BattlerBase.prototype.refresh = function() {
 };
 
 Yanfly.EqReq.Game_BattlerBase_canEquip = Game_BattlerBase.prototype.canEquip;
-Game_BattlerBase.prototype.canEquip = function(item) {
+Game_BattlerBase.prototype.canEquip = function(item, slot=-1) {
     var value = Yanfly.EqReq.Game_BattlerBase_canEquip.call(this, item);
     if (!value) return false;
     if (BattleManager.isBattleTest() && Yanfly.Param.EqReqBTest) return value;
@@ -542,7 +544,7 @@ Game_BattlerBase.prototype.canEquip = function(item) {
       if (SceneManager._scene instanceof Scene_Equip) return value;
       if (this._equipReq !== undefined) return this._equipReq;
     }
-    this._equipReq = this.meetAllEquipRequirements(item)
+    this._equipReq = this.meetAllEquipRequirements(item, slot);
     return this._equipReq;
 };
 
@@ -550,7 +552,7 @@ Game_BattlerBase.prototype.equips = function() {
     return [];
 };
 
-Game_BattlerBase.prototype.meetAllEquipRequirements = function(item) {
+Game_BattlerBase.prototype.meetAllEquipRequirements = function(item, slot=-1) {
   if (!item.equipRequirements) {
     if (item.baseItemId) {
       item.equipRequirements = DataManager.getBaseItem(item).equipRequirements;
@@ -560,7 +562,7 @@ Game_BattlerBase.prototype.meetAllEquipRequirements = function(item) {
   }
   if (item.id < Yanfly.Param.ItemStartingId) return true; // Non-independent items, if they somehow exist
   if (this.isEquipTypeLocked(item.etypeId)) return true; // Guest party members
-  if ((this.equips().filter(e => e).filter(e => e.etypeId == item.etypeId).some(e => e.baseItemId == item.baseItemId && DataManager.isBaseItem(e)) && DataManager.isBaseItem(item, DataManager.getBaseItem(item), true)) && !this.equips().contains(item)) return false; // No duplicates
+  if (slot > -1) if (this.equips().some((e, i) => e && e.groupType === item.groupType && (e.baseItemId === item.baseItemId || (e.atypeId === 11 && item.atypeId === 11)) && i !== slot && e !== item)) return false; // No duplicates; includes gloves
   if (!this.checkEquipRequirements(item)) return false; // Per-item equip requirements
   return true;
 };
@@ -693,7 +695,7 @@ Yanfly.EqReq.Window_EquipItem_isEnabled = Window_EquipItem.prototype.isEnabled;
 Window_EquipItem.prototype.isEnabled = function(item) {
     if (item !== null && this._actor) {
       equips = this._actor.equips();
-      if (!this._actor.meetAllEquipRequirements(item)) return false;
+      if (!this._actor.meetAllEquipRequirements(item, this._slotId)) return false;
     }
     return Yanfly.EqReq.Window_EquipItem_isEnabled.call(this, item);
 };

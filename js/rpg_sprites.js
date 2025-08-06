@@ -56,8 +56,9 @@ Sprite_Base.prototype.updateAnimationSprites = function() {
     }
 };
 
-Sprite_Base.prototype.startAnimation = function(animation, mirror, delay) {
+Sprite_Base.prototype.startAnimation = function(animation, mirror, delay, muteSE=false) {
     var sprite = new Sprite_Animation();
+    sprite._muteSE = muteSE;
     sprite.setup(this._effectTarget, animation, mirror, delay);
     this.parent.addChild(sprite);
     this._animationSprites.push(sprite);
@@ -453,6 +454,8 @@ function Sprite_Battler() {
     this.initialize.apply(this, arguments);
 }
 
+Sprite_Battler.scale = 2.0;
+
 Sprite_Battler.prototype = Object.create(Sprite_Base.prototype);
 Sprite_Battler.prototype.constructor = Sprite_Battler;
 
@@ -465,6 +468,8 @@ Sprite_Battler.prototype.initialize = function(battler) {
 Sprite_Battler.prototype.initMembers = function() {
     this.anchor.x = 0.5;
     this.anchor.y = 1;
+    this.scale.x *= Sprite_Battler.scale;
+    this.scale.y *= Sprite_Battler.scale;
     this._battler = null;
     this._damages = [];
     this._homeX = 0;
@@ -700,7 +705,7 @@ Sprite_Actor.prototype.createShadowSprite = function() {
     }
     this._shadowSprite.bitmap = this._mainSprite.bitmap;
     this._shadowSprite.anchor.set(0.5, 1);
-    this._shadowSprite.scale.y = -0.5;
+    this._shadowSprite.scale.y *= -0.5;
     this._shadowSprite.tint = 0x000000;
     this._shadowSprite.alpha = 0.5;
     this._shadowSprite.y = -4;
@@ -824,13 +829,7 @@ Sprite_Actor.prototype.updateMove = function() {
 };
 
 Sprite_Actor.prototype.updateMotion = function() {
-    this.setupMotion();
-    this.setupWeaponAnimation();
-    if (this._actor.isMotionRefreshRequested()) {
-        this.refreshMotion();
-        this._actor.clearMotion();
-    }
-    this.updateMotionCount();
+    // YEP_BattleEngineCore.js
 };
 
 Sprite_Actor.prototype.updateMotionCount = function() {
@@ -847,7 +846,7 @@ Sprite_Actor.prototype.updateMotionCount = function() {
 };
 
 Sprite_Actor.prototype.motionSpeed = function() {
-    return 12;
+    return 11 + Math.floor(Math.random() * 3);
 };
 
 Sprite_Actor.prototype.refreshMotion = function() {
@@ -1461,7 +1460,7 @@ Sprite_Animation.prototype.processTimingData = function(timing) {
         this.startHiding(duration);
         break;
     }
-    if (!this._duplicated && timing.se) {
+    if (!this._duplicated && timing.se && !this._muteSE) {
         AudioManager.playSe(timing.se);
     }
 };
@@ -2661,7 +2660,6 @@ Spriteset_Battle.prototype.createActors = function() {
     this._actorSprites = [];
     for (var i = 0; i < $gameParty.maxBattleMembers(); i++) {
         this._actorSprites[i] = new Sprite_Actor();
-        this._actorSprites[i].z += i * 0.01;
         this._battleField.addChild(this._actorSprites[i]);
     }
 };

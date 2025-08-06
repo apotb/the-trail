@@ -2580,6 +2580,7 @@ if (Olivia[_0x3565("0x2c")][_0x3565("0x65")][_0x3565("0x2e")]) {
       _0x2d1dc5 -= this.lineHeight();
     }
     this[_0x3565("0x3f")].x = _0x22e264;
+    if (!Olivia.OctoBattle.WeaknessDisplay.ShowName) this._stateIconSprite.x -= Math.round(Window_Base._iconWidth / 2); // Center icon if ShowName is off
     this[_0x3565("0x3f")].y = _0x2d1dc5;
   };
   Window_WeaknessDisplay[_0x3565("0x84")][_0x3565("0x25")] = function () {
@@ -5027,34 +5028,83 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
   };
   Window_BattleItem.prototype.drawItemName = function (item, x, y, width) {
     Window_BattleSkill.prototype.drawItemName.call(this, item, x, y, width);
-    x = this.contents.measureTextWidth(item.name + " ") + Math.round(Window_Base._iconWidth * this.scaleRate()) + 4;
+    x = this.contents.measureTextWidth(item.name) + Math.round(Window_Base._iconWidth * this.scaleRate()) + 4;
     this.contents.fontSize = 12;
+    // Damage
+    this.changeTextColor(this.textColor(18));
+    if (item.damage.type === 1) {
+      text = " -" + item.damage.formula;
+      this.drawText(text, x, y, width);
+      x += this.contents.measureTextWidth(text);
+    }
+    // HP
     this.changeTextColor(this.textColor(31));
     item.effects.filter(e => e.code == 11).forEach(e => {
       if (e.value1 > 0) {
-        text = "+" + (e.value1 * 100) + "% ";
+        text = " +" + (e.value1 * 100) + "%";
         this.drawText(text, x, y, width);
         x += this.contents.measureTextWidth(text);
       }
       if (e.value2 > 0) {
-        text = "+" + e.value2 + "  ";
+        text = " +" + e.value2;
         this.drawText(text, x, y, width);
         x += this.contents.measureTextWidth(text);
       }
     });
+    // MP
     this.changeTextColor(this.textColor(16));
     item.effects.filter(e => e.code == 12).forEach(e => {
       if (e.value1 > 0) {
-        text = "+" + (e.value1 * 100) + "% ";
+        text = " +" + (e.value1 * 100) + "%";
         this.drawText(text, x, y, width);
         x += this.contents.measureTextWidth(text);
       }
       if (e.value2 > 0) {
-        text = "+" + e.value2 + "  ";
+        text = " +" + e.value2;
         this.drawText(text, x, y, width);
         x += this.contents.measureTextWidth(text);
       }
     });
+    // Add Buffs
+    this.changeTextColor(this.textColor(3));
+    item.effects.filter(e => e.code === 21).forEach(e => {
+      let state = $dataStates[e.dataId];
+      if (state.iconIndex > 0) {
+        // Draw +
+        text = " +"
+        this.drawText(text, x, y, width);
+        x += this.contents.measureTextWidth(text);
+        // Draw icon
+        this.drawIcon(state.iconIndex, x - 1, y + 2);
+        x += Math.floor(Window_Base._iconWidth * this.scaleRate()) - 1;
+      }
+    });
+    // Remove Buffs
+    this.changeTextColor(this.textColor(2));
+    let icons = [];
+    item.effects.filter(e => e.code === 22).forEach(e => {
+      let state = $dataStates[e.dataId];
+      if (state.iconIndex > 0) icons.push(state.iconIndex);
+    });
+    // Category-based removal
+    for (const c in item.removeCategory) if (DataManager.stateCategories[c]) DataManager.stateCategories[c].forEach(s => {
+      let state = $dataStates[s];
+      if (state.iconIndex > 0) icons.push(state.iconIndex);
+    });
+    icons = [...new Set(icons)]; // Ensure unique icons
+    if (icons.length >= 3) {
+      icons.length = 3;
+      icons[2] = 1354;
+    }
+    icons.forEach(icon => {
+      // Draw -
+      text = " -"
+      this.drawText(text, x, y, width);
+      x += this.contents.measureTextWidth(text);
+      // Draw icon
+      this.drawIcon(icon, x - 1, y + 2);
+      x += Math.floor(Window_Base._iconWidth * this.scaleRate()) - 1;
+    })
     this.resetTextColor();
   };
   function Window_BattleSideBase() {
@@ -5303,10 +5353,13 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
       this._actor._needsStatusStateRefresh = undefined;
     }
   };
+  Window_BattleSideStates.prototype.iconCap = function () {
+    return $gameParty.size() < 6 ? 9 : 6;
+  };
   Window_BattleSideStates.prototype.drawActorIcons = function(actor, wx, wy, ww) {
     ww = ww || 144;
     this._icons = actor.allIcons().slice(0, this.split() * ($gameParty.size() < 6 ? 3 : 2));
-    this._maxIcons = actor.allIcons().length <= 9 ? 9 : 8;
+    this._maxIcons = actor.allIcons().length <= this.iconCap() ? this.iconCap() : this.iconCap() - 1;
     for (var i = 0; i < this._icons.length; i++) {
         let x = wx + Window_Base._iconWidth * (i % this.split());
         let y = wy + 2 + (Window_Base._iconHeight * Math.floor(i / this.split()));
@@ -7287,7 +7340,7 @@ if (Imported[_0x3014("0x76")] && Olivia[_0x3014("0x1ad")][_0x3014("0x105")][_0x3
       this[_0x3014("0xad")] = this[_0x3014("0x1ef")].isInstantCast(_0x1b0b5b);
     }
   };
-  BattleManager[_0x3014("0x1ee")] = function () {
+  /*BattleManager[_0x3014("0x1ee")] = function () {
     if (this[_0x3014("0x1ef")] && this[_0x3014("0x1ef")].isActor()) {
       return 1;
     } else if (this._subject && this._subject.isEnemy()) {
@@ -7295,7 +7348,7 @@ if (Imported[_0x3014("0x76")] && Olivia[_0x3014("0x1ad")][_0x3014("0x105")][_0x3
     } else {
       return 0;
     }
-  };
+  };*/
   Olivia[_0x3014("0x1ad")].Battle[_0x3014("0x17e")] = BattleManager[_0x3014("0x23c")];
   BattleManager[_0x3014("0x23c")] = function () {
     if (this.isOTB()) {
@@ -7697,7 +7750,7 @@ if (Imported[_0x3014("0x76")] && Olivia[_0x3014("0x1ad")][_0x3014("0x105")][_0x3
       this._helpWindow[_0x3014("0x1fd")](BattleManager[_0x3014("0x226")]());
     };
   }
-  Spriteset_Battle[_0x3014("0xa7")][_0x3014("0xbc")] = function () {
+  /*Spriteset_Battle[_0x3014("0xa7")][_0x3014("0xbc")] = function () {
     if (Imported[_0x3014("0x65")]) {
       this.updateBattlebackGroupRemove();
     } else {
@@ -7713,7 +7766,7 @@ if (Imported[_0x3014("0x76")] && Olivia[_0x3014("0x1ad")][_0x3014("0x105")][_0x3
       this._battleField.addChildAt(this[_0x3014("0x13c")], 0);
       this[_0x3014("0x23f")][_0x3014("0x14f")](this[_0x3014("0x7b")], 0);
     }
-  };
+  };*/
   Spriteset_Battle[_0x3014("0xa7")][_0x3014("0x1d6")] = function (_0x487b19, _0x3a05e6) {
     var _0x546743 = BattleManager[_0x3014("0x1ee")]();
     if (_0x487b19[_0x3014("0x1f9")] && _0x3a05e6[_0x3014("0x1f9")] && _0x546743 !== 0) {
@@ -8043,7 +8096,7 @@ if (Imported[_0x3014("0x76")] && Olivia[_0x3014("0x1ad")][_0x3014("0x105")][_0x3
     }
   };
   Window_ActorCommand.prototype[_0x3014("0x13f")] = function () {
-    this[_0x3014("0x13")](TextManager[_0x3014("0x189")], _0x3014("0x189"), BattleManager[_0x3014("0x19")]() && BattleManager.actor()._useBP == 0);
+    this[_0x3014("0x13")](this._confirmEscape ? "Confirm?" : TextManager[_0x3014("0x189")], _0x3014("0x189"), BattleManager[_0x3014("0x19")]() && BattleManager.actor()._useBP == 0);
   };
   Window_ActorCommand[_0x3014("0xa7")][_0x3014("0x10d")] = function () {
     if (this[_0x3014("0x17c")]() === _0x3014("0x181")) {

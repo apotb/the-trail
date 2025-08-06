@@ -433,6 +433,7 @@ Game_Actor.prototype.hpGaugeColor2 = function() {
 Game_Enemy.prototype.hpGaugeVisible = function() {
     if (this.isHidden()) return false;
 		if (this.enemy().hideHpGauge) return false;
+    if (this._hideHpGauge) return false;
     if (BattleManager.isBattleTest()) return true;
 		if (this.enemy().showHpGauge) return true;
 		if (!$gameSystem.showHpGaugeEnemy(this._enemyId)) return false;
@@ -478,7 +479,7 @@ Game_Enemy.prototype.hpGaugeColor2 = function() {
 Yanfly.VHG.Sprite_Battler_update = Sprite_Battler.prototype.update;
 Sprite_Battler.prototype.update = function() {
     Yanfly.VHG.Sprite_Battler_update.call(this);
-    this.createVisualHpGaugeWindow();
+    if (SceneManager._scene instanceof Scene_Battle) this.createVisualHpGaugeWindow();
 };
 
 Sprite_Battler.prototype.createVisualHpGaugeWindow = function() {
@@ -583,7 +584,7 @@ Window_VisualHPGauge.prototype.updateWindowPosition = function() {
     this.x = this.x.clamp(this._minX, this._maxX);
     this.y = battler.spritePosY();
     if (Yanfly.Param.VHGGaugePos) {
-      this.y -= battler.spriteHeight();
+      this.y -= battler.spriteHeight() / (battler.spriteScaleY ? battler.spriteScaleY() : 1);
     } else {
       this.y -= this.standardPadding();
     }
@@ -730,7 +731,7 @@ function(dx, dy, dw, rate, color1, color2) {
 
     lb = this._battler._lightBreak;
     if (lb > 0) {
-      var lbFillW = Math.min(0, dw * (lb / this._battler.mhp));
+      var lbFillW = Math.min(dw * (lb / this._battler.mhp), fillW);
       this.contents.gradientFillRect(dx + fillW - lbFillW, gaugeY, lbFillW, gaugeH, this.textColor(Yanfly.Param.VHGHpColor1), this.textColor(Yanfly.Param.VHGHpColor2));
     }
 };

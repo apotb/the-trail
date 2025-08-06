@@ -720,6 +720,13 @@ DataManager.processRecipeCounts = function(obj) {
     }
 };
 
+DataManager.isMaterial = function(item) {
+    if (DataManager.isItem(item)) if (Yanfly.IS.ItemIngredientIDs.contains(item.id)) return true;
+    if (DataManager.isWeapon(item)) if (Yanfly.IS.WeaponIngredientIDs.contains(item.baseItemId)) return true;
+    if (DataManager.isArmor(item)) if (Yanfly.IS.ArmorIngredientIDs.contains(item.baseItemId)) return true;
+    return false;
+};
+
 //=============================================================================
 // Game_System
 //=============================================================================
@@ -1110,7 +1117,10 @@ Window_SynthesisList.prototype.updateHelp = function() {
     } else {
       this.setHelpWindowItem(this.item());
       if (eval(Yanfly.Param.ISMaskUnknown) && !$gameSystem.hasSynthed(this.item())) {
-        if (this._helpWindow) this._helpWindow.setText(Yanfly.Param.ISMaskHelpText + this._helpWindow._text);
+        let text = Yanfly.Param.ISMaskHelpText + this._helpWindow._text;
+        text = text.replaceAll('\\c[0]', Yanfly.Param.ISMaskHelpText); // Color codes
+        text = text.replace(/\\nl\[.\]/g, match => match + Yanfly.Param.ISMaskHelpText); // Element codes
+        if (this._helpWindow) this._helpWindow.setText(text);
       }
     }
     if (this._ingredients) {
@@ -1774,6 +1784,7 @@ Scene_Synthesis.prototype.createCommandWindow = function() {
 
 Scene_Synthesis.prototype.onCancelOk = function() {
     $gameTemp._synthRecipe = undefined;
+    $gameMessage._itemChoiceVariableId = 0;
     this.popScene();
 };
 
