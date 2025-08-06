@@ -6,13 +6,17 @@ INTRO
 
 ### Changes
 - Buffed the CRI of Rat Claw, Sharp Tooth, Goblin Fang, and Razor-Sharp Fang.
+- Decrease Flashbang duration from 5 → 4 turns.
 - All monsters respawn after Laeryidyean is defeated.
 
 ### Bug Fixes
-- Fixed many issues with mouse-based movement:
+- Fixed a softlock where the Greenfield-Solus Passage was permanently blocked by an NPC, preventing any further progress.
+- Fixed 2 issues with mouse-based movement:
   - Fixed abrupt stops caused by invisible events triggered by player touch.
   - Fixed being forced to sprint.
 - Fixed P2 still appearing to give the Under Construction quest.
+- Fixed autosave graphic lingering when changing maps during an autosave.
+- Fixed a visual bug with part of the floor in True Telluria Castle - B3.
 
 OUTRO
 
