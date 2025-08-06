@@ -180,7 +180,7 @@ var $plugins =
 {"name":"Ponds","status":true,"description":"","parameters":{}},
 {"name":"Galv_NewItemIndication","status":true,"description":"(v.1.2) Adds a 'new' icon over items that have been obtained for the first time","parameters":{"New Icon Image":"NewIcon","Icon X Offset":"0","Icon Y Offset":"0"}},
 {"name":"GALV_StationaryTurn","status":true,"description":"(v.1.3) Change movement so the player turns on the spot if direction is tapped.","parameters":{"Delay":"5"}},
-{"name":"GALV_BasicEventShadows","status":true,"description":"(v.1.2) Display shadows under the player or events on the map.","parameters":{"Shadow Image":"Shadow1","Shadow Offset":"5"}},
+{"name":"GALV_BasicEventShadows","status":false,"description":"(v.1.2) Display shadows under the player or events on the map.","parameters":{"Shadow Image":"Shadow1","Shadow Offset":"5"}},
 {"name":"GALV_MenuFade","status":true,"description":"Adds a fade in and fade out to the main menu only.","parameters":{"Fade Speed":"10","Dont Fade Scenes":"Scene_Title,Scene_Load,Scene_Name"}},
 {"name":"Galv_RandEncounterConditions","status":true,"description":"(v.1.2) Have random encounter troops only appear in certain conditions","parameters":{}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
@@ -227,5 +227,6 @@ var $plugins =
 {"name":"AutosaveInterval","status":true,"description":"","parameters":{}},
 {"name":"Filter","status":false,"description":"","parameters":{}},
 {"name":"Food","status":true,"description":"","parameters":{}},
-{"name":"Playtest","status":true,"description":"","parameters":{}}
+{"name":"Playtest","status":true,"description":"","parameters":{}},
+{"name":"VisualEquipment","status":true,"description":"Version: 1.1b -\nVisualize your Equipment!","parameters":{"Debug":"false","One Sprite Per Layer":"true","Show Fadeout":"false"}}
 ];
