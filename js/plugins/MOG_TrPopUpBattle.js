@@ -233,26 +233,69 @@ SpriteEnemyTrP.prototype.gainDropItems = function() {
 //==============================
 // * create Icon
 //==============================
-SpriteEnemyTrP.prototype.createIcon = function() {
-	this._iconImg = ImageManager.loadSystem("IconSet")
+const RARITY_COLORS = {
+    1: 0x80ff80,	// Uncommon
+    2: 0x84aaff,	// Rare
+    3: 0xa060e0,	// Epic
+    4: 0xf0c040,	// Legendary
+    5: 0xff80ff,	// Mythic
+};
+
+SpriteEnemyTrP.prototype.createIcon = function () {
+    this._iconImg = ImageManager.loadSystem("IconSet");
+    this._glowImg = ImageManager.loadSystem("Glow");
     this._icons = [];
-    for (var i = 0; i < this._enemy._treasure.item.length; i++) {
-		 var item = this._enemy._treasure.item[i];
-		 if (item) {
-			 this._icons[i] = new Sprite(this._iconImg) 
-			 this._icons[i].item = item;
-			 this._icons[i].index = i;
-			 this._icons[i].anchor.x = 0.5;
-			 this._icons[i].anchor.y = 1;
-			 this.refreshIcons(this._icons[i]);
-			 this.addChild(this._icons[i]);
-		 };
-	};
-	this._icons.sort(function(a, b){return b.intY-a.intY});
-	this.children.sort(function(a, b){return b.intY-a.intY});
-	for (var i = 0; i < this._icons.length; i++) {
-		 this.refreshWait(this._icons[i],i,this._icons.length);
-	};
+    this._glows = [];
+    this._iconContainers = [];
+
+    const items = this._enemy._treasure.item;
+    for (let i = 0; i < items.length; i++) {
+        const item = items[i];
+        if (!item) continue;
+
+        const group = new Sprite();
+        const icon = new Sprite(this._iconImg);
+        icon.item = item;
+        icon.index = i;
+        icon.anchor.set(0.5, 1);
+        this.refreshIcons(icon);
+        group.icon = icon;
+
+        if (item.rarity >= 1) {
+            const glow = new Sprite(this._glowImg);
+            glow.anchor.set(0.5, 0.5);
+            glow.scale.set(0.6 + item.rarity * 0.4);
+            glow.tint = RARITY_COLORS[item.rarity] || 0xffffff;
+            glow.alpha = 0.8;
+            glow._baseScale = glow.scale.x;
+            glow._pulseTime = 0;
+            glow._icon = icon;
+            glow.update = function () {
+                this._pulseTime += 0.06;
+                const scaleMod = 0.1 * Math.sin(this._pulseTime);
+                this.scale.set(this._baseScale + scaleMod);
+                if (this._icon) {
+                    this.x = this._icon.x;
+                    this.y = this._icon.y - Window_Base._iconHeight / 2;
+                    this.opacity = this._icon.opacity;
+                    this.visible = this._icon.visible;
+                }
+            };
+            this._glows.push(glow);
+            group.addChild(glow);
+        }
+
+        group.addChild(icon);
+        icon.z = 1;
+        group.intY = icon.intY || 0;
+
+        this._icons.push(group);
+        this._iconContainers.push(group);
+        this.addChild(group);
+        this.refreshWait(icon, i, items.length);
+    }
+
+    this.children.sort((a, b) => (a.intY || 0) - (b.intY || 0));
 };
 
 //==============================
@@ -338,21 +381,36 @@ SpriteEnemyTrP.prototype.updateFade = function(sprite) {
 // * Update Sprites
 //==============================
 SpriteEnemyTrP.prototype.updateSprites = function(sprite) {
-	 this.visible = true;
-     this.updateAnimation(sprite);
-	 if (sprite.opacity <= 0) {sprite.visible = false};
+	this.visible = true;
+	this.updateAnimation(sprite);
+
+	for (let i = 0; i < sprite.children.length; i++) {
+		if (sprite.children[i].update) {
+			sprite.children[i].update();
+		}
+	}
+
+	if (sprite.opacity <= 0) {
+		sprite.visible = false;
+	}
 };
 
 //==============================
 // * Update
 //==============================
-SpriteEnemyTrP.prototype.update = function() {
-    Sprite.prototype.update.call(this);	
-	this.x = this._sprite.x;
-	this.y = this._sprite.y;
-	if (this._iconImg.isReady()) {
-		for (var i = 0; i < this._icons.length; i++) {
-			if (this._icons[i].visible) {this.updateSprites(this._icons[i])};
-		};
-	};
+SpriteEnemyTrP.prototype.update = function () {
+    Sprite.prototype.update.call(this);
+    this.x = this._sprite.x;
+    this.y = this._sprite.y;
+
+    if (this._iconImg.isReady()) {
+        for (const group of this._icons) {
+            const icon = group?.icon;
+            if (icon?.visible) this.updateSprites(icon);
+        }
+    }
+
+    for (const glow of this._glows) {
+        glow.update?.();
+    }
 };
