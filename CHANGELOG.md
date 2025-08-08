@@ -3,6 +3,7 @@ Howdy everyone! It's been a couple months since the last update, but development
 This is just a minor patch that comes with a few changes and squashed bugs. Notably, a softlock preventing the player from entering the Greenfield-Solus Passage has been fixed.
 
 ### Changes
+- Reworked the Purple Mage Crystal. It now increases damage dealt by 30% when below 50% HP.
 - Buffed the CRI of Rat Claw, Sharp Tooth, Goblin Fang, and Razor-Sharp Fang.
 - Damage is now softcapped rather than abruptly cut off at the Dandy Toad Mage and Purple Cultist's transformations.
 - Decrease Flashbang duration from 5 → 4 turns.

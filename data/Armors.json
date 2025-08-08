@@ -5320,7 +5320,7 @@
       0,
       0,
       0,
-      0,
+      3,
       0,
       5,
       0,
@@ -5892,7 +5892,7 @@
   {
     "id": 224,
     "atypeId": 1,
-    "description": "When your soul begins to crack, the \\c[30]Purple\\c[0] listens. And it\nwill answer. Reduces MP usage by 50% when below 50% MP.",
+    "description": "If you have this, you probably just used a \\ii[54] on a \\ia[234]\ndropped before \\c[4]Alpha 17.1\\c[0]. Reduces MP usage by 50% when below 50% MP.",
     "etypeId": 6,
     "traits": [
       {
@@ -5902,8 +5902,8 @@
       }
     ],
     "iconIndex": 830,
-    "name": "Purple Mage Crystal",
-    "note": "<Upgrade Slots: 2>\n\n<Passive State: 207>",
+    "name": "Blue Mage Crystal",
+    "note": "<Upgrade Slots: 3>\n\n<Passive State: 207>",
     "params": [
       0,
       15,
@@ -6132,5 +6132,26 @@
       0
     ],
     "price": 500
+  },
+  {
+    "id": 234,
+    "atypeId": 1,
+    "description": "When your soul begins to crack, the \\c[30]Purple\\c[0] listens. And it will answer.\nIncreases \\nl[1] and \\nl[18] damage dealt by 30% when below 50% HP.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 830,
+    "name": "Purple Mage Crystal",
+    "note": "<Upgrade Slots: 2>\n\n<Element Amplify Physical: +5%>\n<Element Amplify Magical: +5%>\n\n<Passive State: 222>",
+    "params": [
+      0,
+      0,
+      3,
+      0,
+      5,
+      0,
+      0,
+      0
+    ],
+    "price": 1200
   }
 ]
