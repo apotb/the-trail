@@ -4,6 +4,7 @@ This is just a minor patch that comes with a few changes and squashed bugs. Nota
 
 ### Changes
 - Buffed the CRI of Rat Claw, Sharp Tooth, Goblin Fang, and Razor-Sharp Fang.
+- Damage is now softcapped rather than abruptly cut off at the Dandy Toad Mage and Purple Cultist's transformations.
 - Decrease Flashbang duration from 5 → 4 turns.
 - Soaked is no longer removed when downed.
 - All monsters respawn after Laeryidyean is defeated.
