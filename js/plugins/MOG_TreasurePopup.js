@@ -496,9 +496,18 @@ TreasureIcons.prototype.createName = function() {
 //==============================
 // * refresh Name
 //==============================
+const RARITY_COLORS_HEX = {
+    1: '#80ff80',	// Uncommon
+    2: '#84aaff',	// Rare
+    3: '#a060e0',	// Epic
+    4: '#f0c040',	// Legendary
+    5: '#ff80ff',	// Mythic
+};
+
 TreasureIcons.prototype.refreshName = function() {
 	this._name.bitmap.clear();
 	var name = this._item ? this._item.name + " x " + this._amount : this._amount;
+	this._name.bitmap.textColor = RARITY_COLORS_HEX[this._item ? this._item.rarity : 0] || '#ffffff';
 	this._name.bitmap.drawText(name,0,0,window.innerWidth,32);
 };
 
