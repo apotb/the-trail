@@ -5027,6 +5027,7 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
     Window_PartyCommand.prototype.updateFadeOut.call(this);
   };
   Window_BattleItem.prototype.drawItemName = function (item, x, y, width) {
+    this.setItemTextColor(item);
     Window_BattleSkill.prototype.drawItemName.call(this, item, x, y, width);
     x = this.contents.measureTextWidth(item.name) + Math.round(Window_Base._iconWidth * this.scaleRate()) + 4;
     this.contents.fontSize = 12;
