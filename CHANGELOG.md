@@ -9,7 +9,9 @@ This is just a minor patch featuring a few additions/changes, as well as more sq
 - Reworked the Purple Mage Crystal. It now increases damage dealt by 30% when below 50% HP.
 - Buffed the CRI of Rat Claw, Sharp Tooth, Goblin Fang, and Razor-Sharp Fang.
 - Damage is now softcapped rather than abruptly cut off at the Dandy Toad Mage and Purple Cultist's transformations.
-- Decrease Flashbang duration from 5 → 4 turns.
+- Nerfed Flashbang:
+  - Decreased duration from 5 → 4 turns.
+  - Each use in battle increases TP cost by 0.2.
 - Soaked is no longer removed when downed.
 - All monsters respawn after Laeryidyean is defeated.
 - Added a new item category "Meals" which should help de-clutter the Buffs category.
