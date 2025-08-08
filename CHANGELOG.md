@@ -5,6 +5,7 @@ This is just a minor patch that comes with a few changes and squashed bugs. Nota
 ### Changes
 - Buffed the CRI of Rat Claw, Sharp Tooth, Goblin Fang, and Razor-Sharp Fang.
 - Decrease Flashbang duration from 5 → 4 turns.
+- Soaked is no longer removed when downed.
 - All monsters respawn after Laeryidyean is defeated.
 - Added a new item category "Meals" which should help de-clutter the Buffs category.
 
