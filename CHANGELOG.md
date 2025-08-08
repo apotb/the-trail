@@ -1,4 +1,4 @@
-# Alpha 17.1 (8/5/2025)
+# Alpha 17.1 (8/??/2025)
 Howdy everyone! It's been a couple months since the last update, but development is finally picking up again!
 This is just a minor patch featuring a few additions/changes, as well as more squashed bugs. Notably, a softlock preventing the player from entering the Greenfield-Solus Passage has been fixed.
 
