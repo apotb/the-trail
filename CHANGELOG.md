@@ -1,6 +1,9 @@
 # Alpha 17.1 (8/5/2025)
 Howdy everyone! It's been a couple months since the last update, but development is finally picking up again!
-This is just a minor patch that comes with a few changes and squashed bugs. Notably, a softlock preventing the player from entering the Greenfield-Solus Passage has been fixed.
+This is just a minor patch featuring a few additions/changes, as well as more squashed bugs. Notably, a softlock preventing the player from entering the Greenfield-Solus Passage has been fixed.
+
+### Additions
+- Implemented a rarity system. Collect COMMON, UNCOMMON, RARE, EPIC, and LEGENDARY items!
 
 ### Changes
 - Reworked the Purple Mage Crystal. It now increases damage dealt by 30% when below 50% HP.

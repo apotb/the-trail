@@ -476,7 +476,7 @@
     "traits": [],
     "iconIndex": 693,
     "name": "Floppier Hat",
-    "note": "<Upgrade Slots: 1>\n\n<Element Amplify Magical: +2%>\n\n<Disassemble Pool: Basic>\nx2-x3 item 51: 100%\nx1 Yarn: 70%\n</Disassemble Pool: Basic>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>\n\n<Element Amplify Magical: +2%>\n\n<Disassemble Pool: Basic>\nx2-x3 item 51: 100%\nx1 Yarn: 70%\n</Disassemble Pool: Basic>",
     "params": [
       0,
       8,
@@ -646,7 +646,7 @@
     ],
     "iconIndex": 126,
     "name": "Laeryidyean's Strength",
-    "note": "<Cannot Rename>",
+    "note": "<Rarity: 2>\n<Cannot Rename>",
     "params": [
       0,
       0,
@@ -667,7 +667,7 @@
     "traits": [],
     "iconIndex": 541,
     "name": "Matt's Fedora",
-    "note": "<Menu Category: Memorabilia>\n<Upgrade Slots: 2>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
+    "note": "<Rarity: 2>\n<Menu Category: Memorabilia>\n<Upgrade Slots: 2>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
     "params": [
       20,
       8,
@@ -694,7 +694,7 @@
     ],
     "iconIndex": 371,
     "name": "Bubble (Tome)",
-    "note": "<Cannot Rename>",
+    "note": "<Rarity: 1>\n<Cannot Rename>",
     "params": [
       0,
       0,
@@ -736,7 +736,7 @@
     "traits": [],
     "iconIndex": 585,
     "name": "Blood-Red Headband",
-    "note": "<HP Life Steal Physical: +2%>\n\n<Disassemble Pool: Basic>\nx1-x2 Yarn: 100%\n</Disassemble Pool: Basic>",
+    "note": "<Rarity: 1>\n<HP Life Steal Physical: +2%>\n\n<Disassemble Pool: Basic>\nx1-x2 Yarn: 100%\n</Disassemble Pool: Basic>",
     "params": [
       6,
       0,
@@ -832,7 +832,7 @@
     ],
     "iconIndex": 583,
     "name": "Terra",
-    "note": "<Upgrade Slots: 1>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>",
     "params": [
       0,
       8,
@@ -853,7 +853,7 @@
     "traits": [],
     "iconIndex": 177,
     "name": "Iron Wristbraces",
-    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1-2 Iron Cluster: 100%\nx2-4 Iron Cluster: 50%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1-2 Iron Cluster: 100%\nx2-4 Iron Cluster: 50%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       4,
@@ -949,7 +949,7 @@
     ],
     "iconIndex": 127,
     "name": "Giant Goblin's Rage",
-    "note": "<Cannot Rename>",
+    "note": "<Rarity: 1>\n<Cannot Rename>",
     "params": [
       0,
       0,
@@ -976,7 +976,7 @@
     ],
     "iconIndex": 707,
     "name": "Enchanted Anti-Magic Charm",
-    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1-2 Iron Cluster: 100%\nx2-4 Iron Cluster: 50%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1-2 Iron Cluster: 100%\nx2-4 Iron Cluster: 50%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
@@ -1061,7 +1061,7 @@
     ],
     "iconIndex": 573,
     "name": "Speedster Boots",
-    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nLeather Boots\nFeather: 2\nBat Wing: 2\nYarn\nWind Essence\n</Synthesis Ingredients>\n<Mask Name: Speedy Footwear>\n<Synthesis SE: Equip3>\n\n<Disassemble Pool: Basic>\nx2-x4 Leather: 100%\nx1 Feather: 100%\nx1 Feather: 50%\n</Disassemble Pool: Basic>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nLeather Boots\nFeather: 2\nBat Wing: 2\nYarn\nWind Essence\n</Synthesis Ingredients>\n<Mask Name: Speedy Footwear>\n<Synthesis SE: Equip3>\n\n<Disassemble Pool: Basic>\nx2-x4 Leather: 100%\nx1 Feather: 100%\nx1 Feather: 50%\n</Disassemble Pool: Basic>",
     "params": [
       0,
       0,
@@ -1130,7 +1130,7 @@
     ],
     "iconIndex": 514,
     "name": "Henry's Charm",
-    "note": "<Upgrade Slots: 1>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(46) >= 3;\n</Custom Buy Show Eval>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 1>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(46) >= 3;\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -1157,7 +1157,7 @@
     ],
     "iconIndex": 272,
     "name": "Soulfire Lantern",
-    "note": "<Cannot Rename>",
+    "note": "<Rarity: 3>\n<Cannot Rename>",
     "params": [
       0,
       0,
@@ -1184,7 +1184,7 @@
     ],
     "iconIndex": 435,
     "name": "Shadowplate Armor",
-    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1-2 Dark Essence: 100%\n</Disassemble Pool: Advanced>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(56);\n</Custom Buy Show Eval>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1-2 Dark Essence: 100%\n</Disassemble Pool: Advanced>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(56);\n</Custom Buy Show Eval>",
     "params": [
       0,
       5,
@@ -1211,7 +1211,7 @@
     ],
     "iconIndex": 447,
     "name": "Phantasmal Robes",
-    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1-2 Light Essence: 100%\n</Disassemble Pool: Advanced>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(56);\n</Custom Buy Show Eval>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1-2 Light Essence: 100%\n</Disassemble Pool: Advanced>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(56);\n</Custom Buy Show Eval>",
     "params": [
       0,
       6,
@@ -1232,7 +1232,7 @@
     "traits": [],
     "iconIndex": 736,
     "name": "Phantasmal Vestments",
-    "note": "<Upgrade Slots: 1>\n\n<Element Amplify Healing: +5%>\n\n<Disassemble Pool: Basic>\nx3-5 Yarn: 100%\n</Disassemble Pool: Basic>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(56);\n</Custom Buy Show Eval>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>\n\n<Element Amplify Healing: +5%>\n\n<Disassemble Pool: Basic>\nx3-5 Yarn: 100%\n</Disassemble Pool: Basic>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(56);\n</Custom Buy Show Eval>",
     "params": [
       0,
       4,
@@ -1259,7 +1259,7 @@
     ],
     "iconIndex": 456,
     "name": "Shadowspec Leathers",
-    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1-2 Dark Essence: 100%\n</Disassemble Pool: Advanced>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(56);\n</Custom Buy Show Eval>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1-2 Dark Essence: 100%\n</Disassemble Pool: Advanced>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(56);\n</Custom Buy Show Eval>",
     "params": [
       0,
       3,
@@ -1286,7 +1286,7 @@
     ],
     "iconIndex": 682,
     "name": "Phantasmal Scarf",
-    "note": "<Upgrade Slots: 1>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>",
     "params": [
       0,
       5,
@@ -1318,7 +1318,7 @@
     ],
     "iconIndex": 127,
     "name": "The Warden's Trade-off",
-    "note": "<Cannot Rename>",
+    "note": "<Rarity: 1>\n<Cannot Rename>",
     "params": [
       0,
       0,
@@ -1345,7 +1345,7 @@
     ],
     "iconIndex": 375,
     "name": "Dark Orb (Tome)",
-    "note": "<Cannot Rename>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value([134, 15, 'A']);\n</Custom Buy Show Eval>",
+    "note": "<Rarity: 1>\n<Cannot Rename>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value([134, 15, 'A']);\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -1377,7 +1377,7 @@
     ],
     "iconIndex": 126,
     "name": "Forgotten General's Resistance",
-    "note": "<Cannot Rename>",
+    "note": "<Rarity: 2>\n<Cannot Rename>",
     "params": [
       0,
       0,
@@ -1398,7 +1398,7 @@
     "traits": [],
     "iconIndex": 522,
     "name": "Soulstealer's Necklace",
-    "note": "<Upgrade Slots: 2>\n<HP Life Steal Physical: +5%>\n<HP Life Steal Magical: +5%>\n<HP Life Steal Certain: +5%>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(53);\n</Custom Buy Show Eval>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 2>\n<HP Life Steal Physical: +5%>\n<HP Life Steal Magical: +5%>\n<HP Life Steal Certain: +5%>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(53);\n</Custom Buy Show Eval>",
     "params": [
       25,
       0,
@@ -1430,7 +1430,7 @@
     ],
     "iconIndex": 481,
     "name": "Henry's Gloves",
-    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx2-4 Leather: 100%\n</Disassemble Pool: Basic>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(46) >= 3;\n</Custom Buy Show Eval>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx2-4 Leather: 100%\n</Disassemble Pool: Basic>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(46) >= 3;\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -1451,7 +1451,7 @@
     "traits": [],
     "iconIndex": 340,
     "name": "Condensed Green Gel",
-    "note": "<Optimize Weight: 0.5>\n\n<Disassemble Pool: Advanced>\nx5-10 Green Gel: 100%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 1>\n<Optimize Weight: 0.5>\n\n<Disassemble Pool: Advanced>\nx5-10 Green Gel: 100%\n</Disassemble Pool: Advanced>",
     "params": [
       1,
       1,
@@ -1472,7 +1472,7 @@
     "traits": [],
     "iconIndex": 359,
     "name": "Condensed Blue Gel",
-    "note": "<Upgrade Slots: 1>\n<Optimize Weight: 0.5>\n\n<Disassemble Pool: Advanced>\nx5-10 Blue Gel: 100%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>\n<Optimize Weight: 0.5>\n\n<Disassemble Pool: Advanced>\nx5-10 Blue Gel: 100%\n</Disassemble Pool: Advanced>",
     "params": [
       2,
       2,
@@ -1547,7 +1547,7 @@
     ],
     "iconIndex": 252,
     "name": "Horn",
-    "note": "",
+    "note": "<Rarity: 1>",
     "params": [
       0,
       0,
@@ -1574,7 +1574,7 @@
     ],
     "iconIndex": 283,
     "name": "Pocket Mirror",
-    "note": "",
+    "note": "<Rarity: 1>",
     "params": [
       0,
       0,
@@ -1601,7 +1601,7 @@
     ],
     "iconIndex": 254,
     "name": "Bell",
-    "note": "",
+    "note": "<Rarity: 1>",
     "params": [
       0,
       0,
@@ -1654,7 +1654,7 @@
     "traits": [],
     "iconIndex": 726,
     "name": "Emerald Ring",
-    "note": "<Upgrade Slots: 1>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>",
     "params": [
       8,
       0,
@@ -1675,7 +1675,7 @@
     "traits": [],
     "iconIndex": 513,
     "name": "Ruby Ring",
-    "note": "<Upgrade Slots: 1>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>",
     "params": [
       0,
       8,
@@ -1702,7 +1702,7 @@
     ],
     "iconIndex": 325,
     "name": "Goblin Fang",
-    "note": "<Upgrade Slots: 1>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>",
     "params": [
       0,
       0,
@@ -1723,7 +1723,7 @@
     "traits": [],
     "iconIndex": 358,
     "name": "Condensed Red Gel",
-    "note": "<Upgrade Slots: 2>\n<Optimize Weight: 0.5>\n\n<Disassemble Pool: Advanced>\nx5-10 Red Gel: 100%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 2>\n<Optimize Weight: 0.5>\n\n<Disassemble Pool: Advanced>\nx5-10 Red Gel: 100%\n</Disassemble Pool: Advanced>",
     "params": [
       3,
       3,
@@ -1750,7 +1750,7 @@
     ],
     "iconIndex": 554,
     "name": "Shard of Glass",
-    "note": "<Passive State: 34>",
+    "note": "<Rarity: 2>\n<Passive State: 34>",
     "params": [
       0,
       0,
@@ -1777,7 +1777,7 @@
     ],
     "iconIndex": 329,
     "name": "Enchanted Bat Skin",
-    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1-2 Wind Essence: 100%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1-2 Wind Essence: 100%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
@@ -1804,7 +1804,7 @@
     ],
     "iconIndex": 515,
     "name": "Jade Charm",
-    "note": "<Upgrade Slots: 2>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 2>",
     "params": [
       0,
       6,
@@ -1900,7 +1900,7 @@
     ],
     "iconIndex": 495,
     "name": "Andrew's Guidance",
-    "note": "<Cannot Rename>",
+    "note": "<Rarity: 4>\n<Cannot Rename>",
     "params": [
       0,
       0,
@@ -1937,7 +1937,7 @@
     ],
     "iconIndex": 495,
     "name": "Andrew's Guidance+",
-    "note": "<Cannot Rename>",
+    "note": "<Rarity: 4>\n<Cannot Rename>",
     "params": [
       0,
       0,
@@ -1964,7 +1964,7 @@
     ],
     "iconIndex": 345,
     "name": "Condensed White Gel",
-    "note": "<Upgrade Slots: 3>\n<Optimize Weight: 0.5>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 3>\n<Optimize Weight: 0.5>",
     "params": [
       5,
       5,
@@ -1991,7 +1991,7 @@
     ],
     "iconIndex": 501,
     "name": "Metallic Rat Pelt",
-    "note": "<Upgrade Slots: 3>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 3>",
     "params": [
       0,
       0,
@@ -2018,7 +2018,7 @@
     ],
     "iconIndex": 618,
     "name": "Arcane Leather Charm",
-    "note": "<Upgrade Slots: 3>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 3>",
     "params": [
       0,
       0,
@@ -2150,7 +2150,7 @@
     ],
     "iconIndex": 127,
     "name": "Water Elemental's Flow",
-    "note": "<Cannot Rename>\n\n<Element Magnify Magical: +10%>",
+    "note": "<Rarity: 1>\n<Cannot Rename>\n\n<Element Magnify Magical: +10%>",
     "params": [
       0,
       0,
@@ -2312,7 +2312,7 @@
     ],
     "iconIndex": 255,
     "name": "Music Box",
-    "note": "",
+    "note": "<Rarity: 1>",
     "params": [
       0,
       0,
@@ -2359,7 +2359,7 @@
     ],
     "iconIndex": 511,
     "name": "Vishnu's Charm",
-    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nHorn\nPocket Mirror\nBell\nMusic Box\nSlime Scarf\n</Synthesis Ingredients>\n<Mask Name: Status Effect Preventer>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nHorn\nPocket Mirror\nBell\nMusic Box\nSlime Scarf\n</Synthesis Ingredients>\n<Mask Name: Status Effect Preventer>",
     "params": [
       0,
       0,
@@ -2411,7 +2411,7 @@
     ],
     "iconIndex": 507,
     "name": "Vishnu's Shield",
-    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nMetallic Rat Pelt\nVishnu's Charm\n</Synthesis Ingredients>\n<Mask Name: Powerful Debuff Blocker>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nMetallic Rat Pelt\nVishnu's Charm\n</Synthesis Ingredients>\n<Mask Name: Powerful Debuff Blocker>",
     "params": [
       0,
       0,
@@ -2432,7 +2432,7 @@
     "traits": [],
     "iconIndex": 617,
     "name": "Leather Charm",
-    "note": "<Upgrade Slots: 2>\n\n<Disassemble Pool: Basic>\nx4-9 Leather: 100%\n</Disassemble Pool: Basic>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 2>\n\n<Disassemble Pool: Basic>\nx4-9 Leather: 100%\n</Disassemble Pool: Basic>",
     "params": [
       0,
       0,
@@ -2474,7 +2474,7 @@
     "traits": [],
     "iconIndex": 565,
     "name": "Dapper-Looking Hat",
-    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx1 Feather: 100%\nx2-5 Yarn: 100%\n</Disassemble Pool: Basic>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx1 Feather: 100%\nx2-5 Yarn: 100%\n</Disassemble Pool: Basic>",
     "params": [
       15,
       3,
@@ -2495,7 +2495,7 @@
     "traits": [],
     "iconIndex": 574,
     "name": "Comet Charm",
-    "note": "<Upgrade Slots: 2>\n<Passive State: 70>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 2>\n<Passive State: 70>",
     "params": [
       0,
       10,
@@ -2522,7 +2522,7 @@
     ],
     "iconIndex": 199,
     "name": "Magic Coin",
-    "note": "<Upgrade Slots: 1>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 1>",
     "params": [
       0,
       0,
@@ -2543,7 +2543,7 @@
     "traits": [],
     "iconIndex": 182,
     "name": "Elemental Lace",
-    "note": "<Element Amplify Fire: +8%>\n<Element Amplify Ice: +8%>\n<Element Amplify Electric: +8%>\n<Element Amplify Water: +8%>\n<Element Amplify Earth: +8%>\n<Element Amplify Wind: +8%>\n<Element Amplify Plant: +8%>\n<Element Amplify Metal: +8%>\n<Element Amplify Light: +8%>\n<Element Amplify Dark: +8%>",
+    "note": "<Rarity: 1>\n\n<Element Amplify Fire: +8%>\n<Element Amplify Ice: +8%>\n<Element Amplify Electric: +8%>\n<Element Amplify Water: +8%>\n<Element Amplify Earth: +8%>\n<Element Amplify Wind: +8%>\n<Element Amplify Plant: +8%>\n<Element Amplify Metal: +8%>\n<Element Amplify Light: +8%>\n<Element Amplify Dark: +8%>",
     "params": [
       0,
       0,
@@ -2564,7 +2564,7 @@
     "traits": [],
     "iconIndex": 248,
     "name": "Conjurer's Harp",
-    "note": "<Upgrade Slots: 2>\n<Passive State: 74>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 2>\n<Passive State: 74>",
     "params": [
       0,
       0,
@@ -2585,7 +2585,7 @@
     "traits": [],
     "iconIndex": 352,
     "name": "Orb of Wrath",
-    "note": "<Upgrade Slots: 2>\n<Passive State: 75>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 2>\n<Passive State: 75>",
     "params": [
       0,
       0,
@@ -2606,7 +2606,7 @@
     "traits": [],
     "iconIndex": 353,
     "name": "Orb of Protection",
-    "note": "<Upgrade Slots: 2>\n<Passive State: 77>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 2>\n<Passive State: 77>",
     "params": [
       0,
       0,
@@ -2638,7 +2638,7 @@
     ],
     "iconIndex": 334,
     "name": "Giant Turtle Shell",
-    "note": "<Upgrade Slots: 2>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 2>",
     "params": [
       0,
       0,
@@ -2705,7 +2705,7 @@
     ],
     "iconIndex": 510,
     "name": "Vishnu's Aegis",
-    "note": "<Upgrade Slots: 4>\n\n<Synthesis Ingredients>\nVishnu's Shield\nTurtle Shield\nTellurian Knight's Bulwark\nThick-Skinned Herb: 10\nTellurium Alloy\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_SHIELD');\n</Custom Synthesis Effect>",
+    "note": "<Rarity: 4>\n<Upgrade Slots: 4>\n\n<Synthesis Ingredients>\nVishnu's Shield\nTurtle Shield\nTellurian Knight's Bulwark\nThick-Skinned Herb: 10\nTellurium Alloy\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_SHIELD');\n</Custom Synthesis Effect>",
     "params": [
       0,
       0,
@@ -2726,7 +2726,7 @@
     "traits": [],
     "iconIndex": 629,
     "name": "Retro Knight Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,0,Actor4_Old,0,Actor4_1>\n\n<Synthesis Ingredients>\nKnight Token\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Knight Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
+    "note": "<Rarity: 3>\n<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,0,Actor4_Old,0,Actor4_1>\n\n<Synthesis Ingredients>\nKnight Token\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Knight Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -2747,7 +2747,7 @@
     "traits": [],
     "iconIndex": 433,
     "name": "Retro Mage Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,1,Actor4_Old,1,Actor4_2>\n\n<Synthesis Ingredients>\nMage Token\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Mage Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
+    "note": "<Rarity: 3>\n<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,1,Actor4_Old,1,Actor4_2>\n\n<Synthesis Ingredients>\nMage Token\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Mage Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -2768,7 +2768,7 @@
     "traits": [],
     "iconIndex": 630,
     "name": "Retro Cleric Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,2,Actor4_Old,2,Actor4_3>\n\n<Synthesis Ingredients>\nCleric Token\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Cleric Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 3;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 3 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(3).name()\n</Custom Equip Requirement Text>",
+    "note": "<Rarity: 3>\n<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,2,Actor4_Old,2,Actor4_3>\n\n<Synthesis Ingredients>\nCleric Token\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Cleric Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 3;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 3 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(3).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -2789,7 +2789,7 @@
     "traits": [],
     "iconIndex": 631,
     "name": "Retro Rogue Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,3,Actor4_Old,3,Actor4_4>\n\n<Synthesis Ingredients>\nRogue Token\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Rogue Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 4;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 4 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
+    "note": "<Rarity: 3>\n<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,3,Actor4_Old,3,Actor4_4>\n\n<Synthesis Ingredients>\nRogue Token\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Rogue Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 4;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 4 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -2837,7 +2837,7 @@
     ],
     "iconIndex": 448,
     "name": "Slime Scarf",
-    "note": "",
+    "note": "<Rarity: 1>",
     "params": [
       0,
       0,
@@ -2869,7 +2869,7 @@
     ],
     "iconIndex": 180,
     "name": "Vigilante's Charm",
-    "note": "<Upgrade Slots: 3>\n<Optimize Weight: 0.5>\n\n<Synthesis Ingredients>\nHenry's Charm\nCondensed White Gel\n</Synthesis Ingredients>\n<Mask Name: HRG/CEV Charm>\n\n<Disassemble Pool: Advanced>\nx1 Henry's Charm: 90%\nx1 Condensed White Gel: 90%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 3>\n<Optimize Weight: 0.5>\n\n<Synthesis Ingredients>\nHenry's Charm\nCondensed White Gel\n</Synthesis Ingredients>\n<Mask Name: HRG/CEV Charm>\n\n<Disassemble Pool: Advanced>\nx1 Henry's Charm: 90%\nx1 Condensed White Gel: 90%\n</Disassemble Pool: Advanced>",
     "params": [
       5,
       5,
@@ -2896,7 +2896,7 @@
     ],
     "iconIndex": 503,
     "name": "Immovable Object",
-    "note": "<Upgrade Slots: 2>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 2>",
     "params": [
       0,
       0,
@@ -2933,7 +2933,7 @@
     ],
     "iconIndex": 504,
     "name": "Turtle Shield",
-    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nImmovable Object\nGiant Turtle Shell\nTurtle Scute: 10\nThick-Skinned Herb: 3\n</Synthesis Ingredients>\n<Mask Name: Percentage-Based Damage Reducer>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nImmovable Object\nGiant Turtle Shell\nTurtle Scute: 10\nThick-Skinned Herb: 3\n</Synthesis Ingredients>\n<Mask Name: Percentage-Based Damage Reducer>",
     "params": [
       0,
       0,
@@ -2954,7 +2954,7 @@
     "traits": [],
     "iconIndex": 166,
     "name": "Phoenix Bracelet",
-    "note": "<Upgrade Slots: 3>\n\n</Synthesis Ingredients>\nPhoenix Feather Replica\nGold Ring\nSteel Ingot: 5\n</Synthesis Ingredients>\n<Mask Name: Auto Reviver>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 3>\n\n</Synthesis Ingredients>\nPhoenix Feather Replica\nGold Ring\nSteel Ingot: 5\n</Synthesis Ingredients>\n<Mask Name: Auto Reviver>",
     "params": [
       0,
       0,
@@ -2996,7 +2996,7 @@
     "traits": [],
     "iconIndex": 437,
     "name": "Cavalier Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Champions,0,Actor4,4,Actor4_5>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
+    "note": "<Rarity: 1>\n<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Champions,0,Actor4,4,Actor4_5>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -3017,7 +3017,7 @@
     "traits": [],
     "iconIndex": 627,
     "name": "Sorcerer Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Champions,1,Actor4,5,Actor4_6>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
+    "note": "<Rarity: 1>\n<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Champions,1,Actor4,5,Actor4_6>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -3038,7 +3038,7 @@
     "traits": [],
     "iconIndex": 628,
     "name": "Bishop Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Champions,2,Actor4,6,Actor4_7>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 3;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 3 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(3).name()\n</Custom Equip Requirement Text>",
+    "note": "<Rarity: 1>\n<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Champions,2,Actor4,6,Actor4_7>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 3;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 3 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(3).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -3059,7 +3059,7 @@
     "traits": [],
     "iconIndex": 446,
     "name": "Scapegrace Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Champions,3,Actor4,7,Actor4_8>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 4;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 4 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
+    "note": "<Rarity: 1>\n<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Champions,3,Actor4,7,Actor4_8>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 4;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 4 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -3086,7 +3086,7 @@
     ],
     "iconIndex": 373,
     "name": "Wyvern's Fury (Tome)",
-    "note": "<Cannot Rename>\n\n<Synthesis Ingredients>\nDraconic Wand\nEnchanted Dragon Scale\nWind Catalyst\nWind Essence: 5\n</Synthesis Ingredients>\n<Mask Name: AoE Wind Spell>\n<Synthesis SE: Book2>",
+    "note": "<Rarity: 2>\n<Cannot Rename>\n\n<Synthesis Ingredients>\nDraconic Wand\nEnchanted Dragon Scale\nWind Catalyst\nWind Essence: 5\n</Synthesis Ingredients>\n<Mask Name: AoE Wind Spell>\n<Synthesis SE: Book2>",
     "params": [
       0,
       0,
@@ -3113,7 +3113,7 @@
     ],
     "iconIndex": 737,
     "name": "True Shadowplate Armor",
-    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nShadowplate Armor\nTurtle Scute: 5\nShadowspec Ingot: 2\n</Synthesis Ingredients>\n<Mask Name: Repaired Dark Heavy Armor>\n\n<Disassemble Pool: Advanced>\nx1-4 Turtle Scute: 100%\nx1 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nShadowplate Armor\nTurtle Scute: 5\nShadowspec Ingot: 2\n</Synthesis Ingredients>\n<Mask Name: Repaired Dark Heavy Armor>\n\n<Disassemble Pool: Advanced>\nx1-4 Turtle Scute: 100%\nx1 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       8,
@@ -3140,7 +3140,7 @@
     ],
     "iconIndex": 738,
     "name": "True Phantasmal Robes",
-    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nPhantasmal Robes\nIcy Gel: 5\nShadowspec Ingot: 2\n</Synthesis Ingredients>\n<Mask Name: Repaired Light Robes>\n\n<Disassemble Pool: Advanced>\nx1-4 Icy Gel: 100%\nx1 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nPhantasmal Robes\nIcy Gel: 5\nShadowspec Ingot: 2\n</Synthesis Ingredients>\n<Mask Name: Repaired Light Robes>\n\n<Disassemble Pool: Advanced>\nx1-4 Icy Gel: 100%\nx1 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       9,
@@ -3161,7 +3161,7 @@
     "traits": [],
     "iconIndex": 739,
     "name": "True Phantasmal Vestments",
-    "note": "<Upgrade Slots: 2>\n\n<Element Amplify Healing: +7.5%>\n\n<Synthesis Ingredients>\nPhantasmal Vestments\nTarantula Silk: 5\nShadowspec Ingot: 2\n</Synthesis Ingredients>\n<Mask Name: Repaired Basic Vestments>\n\n<Disassemble Pool: Advanced>\nx1-4 Tarantula Silk: 100%\nx1 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>\n\n<Element Amplify Healing: +7.5%>\n\n<Synthesis Ingredients>\nPhantasmal Vestments\nTarantula Silk: 5\nShadowspec Ingot: 2\n</Synthesis Ingredients>\n<Mask Name: Repaired Basic Vestments>\n\n<Disassemble Pool: Advanced>\nx1-4 Tarantula Silk: 100%\nx1 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       6,
@@ -3188,7 +3188,7 @@
     ],
     "iconIndex": 740,
     "name": "True Shadowspec Leathers",
-    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nShadowspec Leathers\nFeral Bat Wing: 5\nShadowspec Ingot: 2\n</Synthesis Ingredients>\n<Mask Name: Repaired Dark Leathers>\n\n<Disassemble Pool: Advanced>\nx1-4 Feral Bat Wing: 100%\nx1 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nShadowspec Leathers\nFeral Bat Wing: 5\nShadowspec Ingot: 2\n</Synthesis Ingredients>\n<Mask Name: Repaired Dark Leathers>\n\n<Disassemble Pool: Advanced>\nx1-4 Feral Bat Wing: 100%\nx1 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       5,
@@ -3220,7 +3220,7 @@
     ],
     "iconIndex": 473,
     "name": "Flower Boots",
-    "note": "<Upgrade Slots: 1>\n\n<Element Amplify Fire: +5%>\n<Element Amplify Ice: +5%>\n<Element Amplify Electric: +5%>\n<Element Amplify Water: +5%>\n<Element Amplify Earth: +5%>\n<Element Amplify Wind: +5%>\n<Element Amplify Plant: +5%>\n<Element Amplify Metal: +5%>\n<Element Amplify Light: +5%>\n<Element Amplify Dark: +5%>\n\n<Synthesis Ingredients>\nLeather Boots\nYellow Flower: 10\nRed Flower: 10\nBlue Flower: 10\n</Synthesis Ingredients>\n<Mask Name: Natural Footwear>\n<Synthesis SE: Equip3>\n\n<Disassemble Pool: Basic>\nx2-5 Leather: 100%\n</Disassemble Pool: Basic>\n<Disassemble Pool: Advanced>\nx1 Leather Boots: 80%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>\n\n<Element Amplify Fire: +5%>\n<Element Amplify Ice: +5%>\n<Element Amplify Electric: +5%>\n<Element Amplify Water: +5%>\n<Element Amplify Earth: +5%>\n<Element Amplify Wind: +5%>\n<Element Amplify Plant: +5%>\n<Element Amplify Metal: +5%>\n<Element Amplify Light: +5%>\n<Element Amplify Dark: +5%>\n\n<Synthesis Ingredients>\nLeather Boots\nYellow Flower: 10\nRed Flower: 10\nBlue Flower: 10\n</Synthesis Ingredients>\n<Mask Name: Natural Footwear>\n<Synthesis SE: Equip3>\n\n<Disassemble Pool: Basic>\nx2-5 Leather: 100%\n</Disassemble Pool: Basic>\n<Disassemble Pool: Advanced>\nx1 Leather Boots: 80%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
@@ -3257,7 +3257,7 @@
     ],
     "iconIndex": 480,
     "name": "Padded Boots",
-    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nLeather Boots\nWorn Cloth: 5\nTarantula Silk\n</Synthesis Ingredients>\n<Mask Name: Comfortable Footwear>\n<Synthesis SE: Equip3>\n\n<Disassemble Pool: Basic>\nx2-5 Leather: 100%\n</Disassemble Pool: Basic>\n<Disassemble Pool: Advanced>\nx1 Leather Boots: 80%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nLeather Boots\nWorn Cloth: 5\nTarantula Silk\n</Synthesis Ingredients>\n<Mask Name: Comfortable Footwear>\n<Synthesis SE: Equip3>\n\n<Disassemble Pool: Basic>\nx2-5 Leather: 100%\n</Disassemble Pool: Basic>\n<Disassemble Pool: Advanced>\nx1 Leather Boots: 80%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
@@ -3294,7 +3294,7 @@
     ],
     "iconIndex": 479,
     "name": "Snow Boots",
-    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nLeather Boots\nFire Essence\nIce Essence\n</Synthesis Ingredients>\n<Mask Name: Insulated Footwear>\n<Synthesis SE: Equip3>\n\n<Disassemble Pool: Basic>\nx2-5 Leather: 100%\n</Disassemble Pool: Basic>\n<Disassemble Pool: Advanced>\nx1 Leather Boots: 80%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nLeather Boots\nFire Essence\nIce Essence\n</Synthesis Ingredients>\n<Mask Name: Insulated Footwear>\n<Synthesis SE: Equip3>\n\n<Disassemble Pool: Basic>\nx2-5 Leather: 100%\n</Disassemble Pool: Basic>\n<Disassemble Pool: Advanced>\nx1 Leather Boots: 80%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
@@ -3336,7 +3336,7 @@
     ],
     "iconIndex": 477,
     "name": "Survivalist Boots",
-    "note": "<Upgrade Slots: 1>\n\n<Element Amplify Fire: +2.5%>\n<Element Amplify Ice: +2.5%>\n<Element Amplify Electric: +2.5%>\n<Element Amplify Water: +2.5%>\n<Element Amplify Earth: +2.5%>\n<Element Amplify Wind: +2.5%>\n<Element Amplify Plant: +2.5%>\n<Element Amplify Metal: +2.5%>\n<Element Amplify Light: +2.5%>\n<Element Amplify Dark: +2.5%>\n\n<Synthesis Ingredients>\nFlower Boots\nPadded Boots\nSnow Boots\nDragon Scale: 2\nFrozen Jewel\n</Synthesis Ingredients>\n<Mask Name: General Purpose Footwear>\n<Synthesis SE: Equip3>\n\n<Disassemble Pool: Basic>\nx2-x4 Leather: 100%\n</Disassemble Pool: Basic>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 1>\n\n<Element Amplify Fire: +2.5%>\n<Element Amplify Ice: +2.5%>\n<Element Amplify Electric: +2.5%>\n<Element Amplify Water: +2.5%>\n<Element Amplify Earth: +2.5%>\n<Element Amplify Wind: +2.5%>\n<Element Amplify Plant: +2.5%>\n<Element Amplify Metal: +2.5%>\n<Element Amplify Light: +2.5%>\n<Element Amplify Dark: +2.5%>\n\n<Synthesis Ingredients>\nFlower Boots\nPadded Boots\nSnow Boots\nDragon Scale: 2\nFrozen Jewel\n</Synthesis Ingredients>\n<Mask Name: General Purpose Footwear>\n<Synthesis SE: Equip3>\n\n<Disassemble Pool: Basic>\nx2-x4 Leather: 100%\n</Disassemble Pool: Basic>",
     "params": [
       0,
       0,
@@ -3378,7 +3378,7 @@
     ],
     "iconIndex": 741,
     "name": "Trailblazing Boots",
-    "note": "<Upgrade Slots: 2>\n\n<Element Amplify Fire: +5%>\n<Element Amplify Ice: +5%>\n<Element Amplify Electric: +5%>\n<Element Amplify Water: +5%>\n<Element Amplify Earth: +5%>\n<Element Amplify Wind: +5%>\n<Element Amplify Plant: +5%>\n<Element Amplify Metal: +5%>\n<Element Amplify Light: +5%>\n<Element Amplify Dark: +5%>\n\n<Synthesis Ingredients>\nSurvivalist Boots\nElemental Lace\nHRG Scroll\nFire Essence: 3\nIce Essence: 3\nEnchanted Dragon Scale\nFrozen Jewel\n</Synthesis Ingredients>\n<Mask Name: Super Strong Footwear>\n<Synthesis SE: Equip3>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 2>\n\n<Element Amplify Fire: +5%>\n<Element Amplify Ice: +5%>\n<Element Amplify Electric: +5%>\n<Element Amplify Water: +5%>\n<Element Amplify Earth: +5%>\n<Element Amplify Wind: +5%>\n<Element Amplify Plant: +5%>\n<Element Amplify Metal: +5%>\n<Element Amplify Light: +5%>\n<Element Amplify Dark: +5%>\n\n<Synthesis Ingredients>\nSurvivalist Boots\nElemental Lace\nHRG Scroll\nFire Essence: 3\nIce Essence: 3\nEnchanted Dragon Scale\nFrozen Jewel\n</Synthesis Ingredients>\n<Mask Name: Super Strong Footwear>\n<Synthesis SE: Equip3>",
     "params": [
       0,
       0,
@@ -3405,7 +3405,7 @@
     ],
     "iconIndex": 632,
     "name": "Cloth Mask",
-    "note": "<Disassemble Pool: Basic>\nx2-5 Worn Cloth: 100%\n</Disassemble Pool: Basic>",
+    "note": "<Rarity: 1>\n\n<Disassemble Pool: Basic>\nx2-5 Worn Cloth: 100%\n</Disassemble Pool: Basic>",
     "params": [
       0,
       0,
@@ -3432,7 +3432,7 @@
     ],
     "iconIndex": 462,
     "name": "Bunny Hood",
-    "note": "<Upgrade Slots: 1>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 1>",
     "params": [
       0,
       0,
@@ -3453,7 +3453,7 @@
     "traits": [],
     "iconIndex": 496,
     "name": "Tellurian Knight's Shield",
-    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nReplica Knight's Shield\nThick-Skinned Herb: 3\n</Synthesis Ingredients>\n<Mask Name: Royal Heavy Shield>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nReplica Knight's Shield\nThick-Skinned Herb: 3\n</Synthesis Ingredients>\n<Mask Name: Royal Heavy Shield>",
     "params": [
       0,
       0,
@@ -3474,7 +3474,7 @@
     "traits": [],
     "iconIndex": 497,
     "name": "Tellurian Knight's Bulwark",
-    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nTellurian Knight's Shield\nThick-Skinned Herb: 5\nEnchanted Dragon Scale\nFrozen Jewel\n</Synthesis Ingredients>\n<Mask Name: Super Royal Heavy Shield>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nTellurian Knight's Shield\nThick-Skinned Herb: 5\nEnchanted Dragon Scale\nFrozen Jewel\n</Synthesis Ingredients>\n<Mask Name: Super Royal Heavy Shield>",
     "params": [
       0,
       0,
@@ -3522,7 +3522,7 @@
     ],
     "iconIndex": 3,
     "name": "Storm Lens",
-    "note": "",
+    "note": "<Rarity: 1>",
     "params": [
       0,
       0,
@@ -3549,7 +3549,7 @@
     ],
     "iconIndex": 683,
     "name": "Warm Scarf",
-    "note": "",
+    "note": "<Rarity: 1>",
     "params": [
       0,
       0,
@@ -3570,7 +3570,7 @@
     "traits": [],
     "iconIndex": 509,
     "name": "Glacial Bulwark",
-    "note": "<Upgrade Slots: 2>\n<Replace Guard: 100>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 2>\n<Replace Guard: 100>",
     "params": [
       0,
       0,
@@ -3624,7 +3624,7 @@
     ],
     "iconIndex": 353,
     "name": "Snow Globe",
-    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nFrozen Jewel: 2\nIcy Gel: 5\nIce Cube: 30\n</Synthesis Ingredients>\n<Mask Name: Ice Resistance Accessory>\n<Synthesis SE: Equip3>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nFrozen Jewel: 2\nIcy Gel: 5\nIce Cube: 30\n</Synthesis Ingredients>\n<Mask Name: Ice Resistance Accessory>\n<Synthesis SE: Equip3>",
     "params": [
       0,
       0,
@@ -3666,7 +3666,7 @@
     ],
     "iconIndex": 436,
     "name": "Tellurium Plate Armor",
-    "note": "<Upgrade Slots: 3>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 31;\n</Custom Buy Show Eval>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 3>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 31;\n</Custom Buy Show Eval>",
     "params": [
       10,
       5,
@@ -3708,7 +3708,7 @@
     ],
     "iconIndex": 653,
     "name": "Tellurium Robes",
-    "note": "<Upgrade Slots: 3>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 31;\n</Custom Buy Show Eval>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 3>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 31;\n</Custom Buy Show Eval>",
     "params": [
       10,
       10,
@@ -3750,7 +3750,7 @@
     ],
     "iconIndex": 654,
     "name": "Tellurium Vestments",
-    "note": "<Upgrade Slots: 3>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 31;\n</Custom Buy Show Eval>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 3>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 31;\n</Custom Buy Show Eval>",
     "params": [
       10,
       5,
@@ -3792,7 +3792,7 @@
     ],
     "iconIndex": 451,
     "name": "Tellurium Leathers",
-    "note": "<Upgrade Slots: 3>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 31;\n</Custom Buy Show Eval>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 3>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 31;\n</Custom Buy Show Eval>",
     "params": [
       10,
       5,
@@ -3819,7 +3819,7 @@
     ],
     "iconIndex": 656,
     "name": "Dragonforce Gauntlets",
-    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nKnight's Gauntlets\nEnchanted Dragon Scale\nDragon Scale: 6\nSteel Ingot: 3\nEarth Essence: 3\n</Synthesis Ingredients>\n<Mask Name: Offensive Armwear>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nKnight's Gauntlets\nEnchanted Dragon Scale\nDragon Scale: 6\nSteel Ingot: 3\nEarth Essence: 3\n</Synthesis Ingredients>\n<Mask Name: Offensive Armwear>",
     "params": [
       0,
       0,
@@ -3851,7 +3851,7 @@
     ],
     "iconIndex": 657,
     "name": "Scaly Gloves",
-    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nBlack Gloves\nDragon Scale: 3\nVicious Herb: 10\n</Synthesis Ingredients>\n<Mask Name: Covered Gloves>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nBlack Gloves\nDragon Scale: 3\nVicious Herb: 10\n</Synthesis Ingredients>\n<Mask Name: Covered Gloves>",
     "params": [
       0,
       0,
@@ -3872,7 +3872,7 @@
     "traits": [],
     "iconIndex": 658,
     "name": "Sorrowful Headpiece",
-    "note": "<Upgrade Slots: 2>\n<Optimize Weight: 0.5>\n\n<Element Amplify Healing: +10%>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>\n<Optimize Weight: 0.5>\n\n<Element Amplify Healing: +10%>",
     "params": [
       8,
       15,
@@ -3904,7 +3904,7 @@
     ],
     "iconIndex": 659,
     "name": "Dragon Scale Helmet",
-    "note": "<Upgrade Slots: 2>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>",
     "params": [
       0,
       0,
@@ -3931,7 +3931,7 @@
     ],
     "iconIndex": 125,
     "name": "Dilong's Wisdom",
-    "note": "<Cannot Rename>\n\nHardcoded in Olivia_OctoBattle.js.",
+    "note": "<Rarity: 3>\n<Cannot Rename>\n\nHardcoded in Olivia_OctoBattle.js.",
     "params": [
       0,
       0,
@@ -3958,7 +3958,7 @@
     ],
     "iconIndex": 335,
     "name": "Razor-Sharp Fang",
-    "note": "<Upgrade Slots: 2>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>",
     "params": [
       0,
       0,
@@ -3990,7 +3990,7 @@
     ],
     "iconIndex": 1313,
     "name": "Dismembered Eye",
-    "note": "<Upgrade Slots: 2>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 2>",
     "params": [
       0,
       0,
@@ -4017,7 +4017,7 @@
     ],
     "iconIndex": 236,
     "name": "Battle Plan",
-    "note": "",
+    "note": "<Rarity: 1>",
     "params": [
       0,
       0,
@@ -4065,7 +4065,7 @@
     "traits": [],
     "iconIndex": 167,
     "name": "Champion's Talisman",
-    "note": "<Custom Parameters>\n[maxhp, maxmp, atk, def, mat, mdf, agi, luk] = $gameSystem.championsTalisman();\n</Custom Parameters>",
+    "note": "<Rarity: 3>\n\n<Custom Parameters>\n[maxhp, maxmp, atk, def, mat, mdf, agi, luk] = $gameSystem.championsTalisman();\n</Custom Parameters>",
     "params": [
       0,
       0,
@@ -4086,7 +4086,7 @@
     "traits": [],
     "iconIndex": 158,
     "name": "Bat Sling",
-    "note": "<Passive State: 200>",
+    "note": "<Rarity: 1>\n<Passive State: 200>",
     "params": [
       0,
       0,
@@ -4133,7 +4133,7 @@
     ],
     "iconIndex": 709,
     "name": "Forest Exploration Kit",
-    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nCloth Mask\nTaut Rope\nStorm Lens\nArmor Bracing\nBattle Plan\n</Synthesis Ingredients>\n<Mask Name: Nature Immunities>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nCloth Mask\nTaut Rope\nStorm Lens\nArmor Bracing\nBattle Plan\n</Synthesis Ingredients>\n<Mask Name: Nature Immunities>",
     "params": [
       0,
       0,
@@ -4160,7 +4160,7 @@
     ],
     "iconIndex": 228,
     "name": "Seshat's Charm",
-    "note": "<Upgrade Slots: 1>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>",
     "params": [
       0,
       0,
@@ -4187,7 +4187,7 @@
     ],
     "iconIndex": 712,
     "name": "Seshat's Tome",
-    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nSeshat's Charm: 4\n</Synthesis Ingredients>\n<Mask Name: EXR Increaser Tier 2>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nSeshat's Charm: 4\n</Synthesis Ingredients>\n<Mask Name: EXR Increaser Tier 2>",
     "params": [
       0,
       0,
@@ -4214,7 +4214,7 @@
     ],
     "iconIndex": 713,
     "name": "Seshat's Teachings",
-    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nSeshat's Tome: 4\n</Synthesis Ingredients>\n<Mask Name: EXR Increaser Tier 3>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nSeshat's Tome: 4\n</Synthesis Ingredients>\n<Mask Name: EXR Increaser Tier 3>",
     "params": [
       0,
       0,
@@ -4246,7 +4246,7 @@
     ],
     "iconIndex": 342,
     "name": "Condensed Icy Gel",
-    "note": "<Upgrade Slots: 2>\n<Optimize Weight: 0.5>\n\n<Disassemble Pool: Advanced>\nx5-10 Icy Gel: 100%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 2>\n<Optimize Weight: 0.5>\n\n<Disassemble Pool: Advanced>\nx5-10 Icy Gel: 100%\n</Disassemble Pool: Advanced>",
     "params": [
       4,
       4,
@@ -4273,7 +4273,7 @@
     ],
     "iconIndex": 369,
     "name": "Ice II (Tome)",
-    "note": "<Cannot Rename>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value([209, 17, 'A']);\n</Custom Buy Show Eval>",
+    "note": "<Rarity: 2>\n<Cannot Rename>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value([209, 17, 'A']);\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -4294,7 +4294,7 @@
     "traits": [],
     "iconIndex": 460,
     "name": "Silver Headband",
-    "note": "<Upgrade Slots: 2>\n<HP Life Steal Physical: +3%>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>\n<HP Life Steal Physical: +3%>",
     "params": [
       10,
       0,
@@ -4321,7 +4321,7 @@
     ],
     "iconIndex": 465,
     "name": "Silver Mask",
-    "note": "<Upgrade Slots: 2>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>",
     "params": [
       0,
       0,
@@ -4342,7 +4342,7 @@
     "traits": [],
     "iconIndex": 694,
     "name": "Floppiest Hat",
-    "note": "<Upgrade Slots: 2>\n<Optimize Weight: 0.8>\n\n<Element Amplify Magical: +3%>\n\n<Disassemble Pool: Basic>\nx4-x7 item 51: 100%\nx3-5 Yarn: 100%\n</Disassemble Pool: Basic>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>\n<Optimize Weight: 0.8>\n\n<Element Amplify Magical: +3%>\n\n<Disassemble Pool: Basic>\nx4-x7 item 51: 100%\nx3-5 Yarn: 100%\n</Disassemble Pool: Basic>",
     "params": [
       0,
       15,
@@ -4374,7 +4374,7 @@
     ],
     "iconIndex": 474,
     "name": "Hermes Boots",
-    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nSpeedster Boots\nWind Catalyst\nEnchanted Bat Skin\nFeral Bat Wing: 5\nWind Essence: 5\nEnchanted Dragon Scale\nFrozen Jewel\n</Synthesis Ingredients>\n<Mask Name: Ridiculously Fast Footwear>\n<Synthesis SE: Equip3>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nSpeedster Boots\nWind Catalyst\nEnchanted Bat Skin\nFeral Bat Wing: 5\nWind Essence: 5\nEnchanted Dragon Scale\nFrozen Jewel\n</Synthesis Ingredients>\n<Mask Name: Ridiculously Fast Footwear>\n<Synthesis SE: Equip3>",
     "params": [
       0,
       0,
@@ -4395,7 +4395,7 @@
     "traits": [],
     "iconIndex": 127,
     "name": "Ethereal Bat's Spirit",
-    "note": "<Passive State: 119 to 122>\n<Cannot Rename>",
+    "note": "<Rarity: 1>\n<Passive State: 119 to 122>\n<Cannot Rename>",
     "params": [
       0,
       0,
@@ -4432,7 +4432,7 @@
     ],
     "iconIndex": 742,
     "name": "Warmer Scarf",
-    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nWarm Scarf\nFrozen Jewel\nIce Cube: 10\nIce Essence: 3\n</Synthesis Ingredients>\n<Mask Name: Better Cold State Protection>\n<Synthesis SE: Equip3>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nWarm Scarf\nFrozen Jewel\nIce Cube: 10\nIce Essence: 3\n</Synthesis Ingredients>\n<Mask Name: Better Cold State Protection>\n<Synthesis SE: Equip3>",
     "params": [
       0,
       0,
@@ -4459,7 +4459,7 @@
     ],
     "iconIndex": 714,
     "name": "Seshat's Opus",
-    "note": "<Upgrade Slots: 4>\n\n<Synthesis Ingredients>\nSeshat's Teachings: 4\n</Synthesis Ingredients>\n<Mask Name: EXR Increaser Tier 4>",
+    "note": "<Rarity: 4>\n<Upgrade Slots: 4>\n\n<Synthesis Ingredients>\nSeshat's Teachings: 4\n</Synthesis Ingredients>\n<Mask Name: EXR Increaser Tier 4>",
     "params": [
       0,
       0,
@@ -4531,7 +4531,7 @@
     ],
     "iconIndex": 354,
     "name": "Bionomic Globe",
-    "note": "<Upgrade Slots: 3>\n\n<Passive State: 199, 200>\n\n<Element Amplify Ice: +15%>\n<Element Amplify Earth: +15%>\n<Element Amplify Wind: +15%>\n\n<Synthesis Ingredients>\nForest Exploration Kit\nSnow Globe\nRing of the Forest\nBat Sling\nWarmer Scarf\nEnchanted Dragon Scale: 3\nFrozen Jewel: 5\nEarth Essence: 5\nPlant Essence: 5\nWind Essence: 5\nIce Essence: 5\n</Synthesis Ingredients>\n<Mask Name: Telluria Field Conquerer>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 3>\n\n<Passive State: 199, 200>\n\n<Element Amplify Ice: +15%>\n<Element Amplify Earth: +15%>\n<Element Amplify Wind: +15%>\n\n<Synthesis Ingredients>\nForest Exploration Kit\nSnow Globe\nRing of the Forest\nBat Sling\nWarmer Scarf\nEnchanted Dragon Scale: 3\nFrozen Jewel: 5\nEarth Essence: 5\nPlant Essence: 5\nWind Essence: 5\nIce Essence: 5\n</Synthesis Ingredients>\n<Mask Name: Telluria Field Conquerer>",
     "params": [
       0,
       0,
@@ -4558,7 +4558,7 @@
     ],
     "iconIndex": 719,
     "name": "Gazer Charm",
-    "note": "<Upgrade Slots: 2>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 2>",
     "params": [
       0,
       0,
@@ -4590,7 +4590,7 @@
     ],
     "iconIndex": 464,
     "name": "Faux-Gold Headband",
-    "note": "<Upgrade Slots: 2>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>",
     "params": [
       0,
       100,
@@ -4617,7 +4617,7 @@
     ],
     "iconIndex": 233,
     "name": "Wanted Poster",
-    "note": "",
+    "note": "<Rarity: 1>",
     "params": [
       0,
       0,
@@ -4671,7 +4671,7 @@
     ],
     "iconIndex": 280,
     "name": "Sleepy Hourglass",
-    "note": "",
+    "note": "<Rarity: 1>",
     "params": [
       0,
       0,
@@ -4723,7 +4723,7 @@
     ],
     "iconIndex": 722,
     "name": "Fiery Tablet",
-    "note": "<Upgrade Slots: 1>\n<Passive State: 126>\n\n<Element Amplify Fire: +10%>\n\n<Synthesis Ingredients>\nSelfish Candle\nWanted Poster\nSleepy Hourglass\nFire Resistance Potion: 5\nFiery Blood: 10\n</Synthesis Ingredients>\n<Mask Name: Hot Dungeon Resistance Item>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 1>\n<Passive State: 126>\n\n<Element Amplify Fire: +10%>\n\n<Synthesis Ingredients>\nSelfish Candle\nWanted Poster\nSleepy Hourglass\nFire Resistance Potion: 5\nFiery Blood: 10\n</Synthesis Ingredients>\n<Mask Name: Hot Dungeon Resistance Item>",
     "params": [
       0,
       0,
@@ -4744,7 +4744,7 @@
     "traits": [],
     "iconIndex": 743,
     "name": "Resiliant Pelt",
-    "note": "<Upgrade Slots: 2>\n\n<Disassemble Pool: Basic>\nx8-20 Rat Fur: 100%\n</Disassemble Pool: Basic>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>\n\n<Disassemble Pool: Basic>\nx8-20 Rat Fur: 100%\n</Disassemble Pool: Basic>",
     "params": [
       0,
       0,
@@ -4765,7 +4765,7 @@
     "traits": [],
     "iconIndex": 735,
     "name": "Silver Wristbraces",
-    "note": "<Upgrade Slots: 2>\n\n<Disassemble Pool: Advanced>\nx1-2 Iron Cluster: 100%\nx2-4 Iron Cluster: 50%\nx3-6 Iron Cluster: 25%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>\n\n<Disassemble Pool: Advanced>\nx1-2 Iron Cluster: 100%\nx2-4 Iron Cluster: 50%\nx3-6 Iron Cluster: 25%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       8,
@@ -4792,7 +4792,7 @@
     ],
     "iconIndex": 727,
     "name": "Charm of Duality",
-    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nGazer Charm\nRuby Ring\nEmerald Ring\nGazer Goop: 5\n</Synthesis Ingredients>\n<Mask Name: Combination Charm>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nGazer Charm\nRuby Ring\nEmerald Ring\nGazer Goop: 5\n</Synthesis Ingredients>\n<Mask Name: Combination Charm>",
     "params": [
       8,
       8,
@@ -4819,7 +4819,7 @@
     ],
     "iconIndex": 375,
     "name": "Soul Shackles (Tome)",
-    "note": "<Cannot Rename>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(53);\n</Custom Buy Show Eval>",
+    "note": "<Rarity: 3>\n<Cannot Rename>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(53);\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -4840,7 +4840,7 @@
     "traits": [],
     "iconIndex": 767,
     "name": "Silver Buckler",
-    "note": "<Upgrade Slots: 2>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 2>",
     "params": [
       0,
       0,
@@ -4872,7 +4872,7 @@
     ],
     "iconIndex": 274,
     "name": "Selfish Candle",
-    "note": "",
+    "note": "<Rarity: 1>",
     "params": [
       0,
       0,
@@ -4893,7 +4893,7 @@
     "traits": [],
     "iconIndex": 770,
     "name": "Fiery Wristbraces",
-    "note": "<Upgrade Slots: 3>\n\n<Element Amplify Fire: +5%>\n\n<Synthesis Ingredients>\nSilver Wristbraces\nFiery Blood: 5\nEctoplasm: 3\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Upgraded Wristbraces>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 3>\n\n<Element Amplify Fire: +5%>\n\n<Synthesis Ingredients>\nSilver Wristbraces\nFiery Blood: 5\nEctoplasm: 3\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Upgraded Wristbraces>",
     "params": [
       0,
       16,
@@ -4920,7 +4920,7 @@
     ],
     "iconIndex": 275,
     "name": "Taut Rope",
-    "note": "",
+    "note": "<Rarity: 1>",
     "params": [
       0,
       0,
@@ -4947,7 +4947,7 @@
     ],
     "iconIndex": 409,
     "name": "Armor Bracing",
-    "note": "",
+    "note": "<Rarity: 1>",
     "params": [
       0,
       0,
@@ -4979,7 +4979,7 @@
     ],
     "iconIndex": 506,
     "name": "Shield of the Hero",
-    "note": "<Upgrade Slots: 3>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value([7, 14, 'A']);\n</Custom Buy Show Eval>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 3>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value([7, 14, 'A']);\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -5000,7 +5000,7 @@
     "traits": [],
     "iconIndex": 774,
     "name": "Fiery Harp",
-    "note": "<Upgrade Slots: 3>\n<Passive State: 166>\n\n<Synthesis Ingredients>\nConjurer's Harp\nFiery Blood: 5\nEctoplasm: 3\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Upgraded Harp>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 3>\n<Passive State: 166>\n\n<Synthesis Ingredients>\nConjurer's Harp\nFiery Blood: 5\nEctoplasm: 3\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Upgraded Harp>",
     "params": [
       0,
       0,
@@ -5021,7 +5021,7 @@
     "traits": [],
     "iconIndex": 775,
     "name": "Fiery Lace",
-    "note": "<Upgrade Slots: 3>\n\n<Element Amplify Fire: +12%>\n<Element Amplify Ice: +12%>\n<Element Amplify Electric: +12%>\n<Element Amplify Water: +12%>\n<Element Amplify Earth: +12%>\n<Element Amplify Wind: +12%>\n<Element Amplify Plant: +12%>\n<Element Amplify Metal: +12%>\n<Element Amplify Light: +12%>\n<Element Amplify Dark: +12%>\n\n<Synthesis Ingredients>\nElemental Lace\nFiery Blood: 5\nEctoplasm: 3\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Upgraded Lace>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 3>\n\n<Element Amplify Fire: +12%>\n<Element Amplify Ice: +12%>\n<Element Amplify Electric: +12%>\n<Element Amplify Water: +12%>\n<Element Amplify Earth: +12%>\n<Element Amplify Wind: +12%>\n<Element Amplify Plant: +12%>\n<Element Amplify Metal: +12%>\n<Element Amplify Light: +12%>\n<Element Amplify Dark: +12%>\n\n<Synthesis Ingredients>\nElemental Lace\nFiery Blood: 5\nEctoplasm: 3\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Upgraded Lace>",
     "params": [
       0,
       0,
@@ -5048,7 +5048,7 @@
     ],
     "iconIndex": 126,
     "name": "Old Dilong's Wisdom",
-    "note": "<Cannot Rename>",
+    "note": "<Rarity: 2>\n<Cannot Rename>",
     "params": [
       0,
       0,
@@ -5069,7 +5069,7 @@
     "traits": [],
     "iconIndex": 820,
     "name": "Ring of the Woods",
-    "note": "<Passive State: 173>",
+    "note": "<Rarity: 1>\n<Passive State: 173>",
     "params": [
       5,
       0,
@@ -5117,7 +5117,7 @@
     ],
     "iconIndex": 792,
     "name": "Blood-Red Mask",
-    "note": "<Disassemble Pool: Basic>\nx1-x2 Yarn: 100%\n</Disassemble Pool: Basic>",
+    "note": "<Rarity: 1>\n\n<Disassemble Pool: Basic>\nx1-x2 Yarn: 100%\n</Disassemble Pool: Basic>",
     "params": [
       0,
       0,
@@ -5144,7 +5144,7 @@
     ],
     "iconIndex": 1318,
     "name": "Blood Pact",
-    "note": "<Upgrade Slots: 2>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>",
     "params": [
       40,
       0,
@@ -5171,7 +5171,7 @@
     ],
     "iconIndex": 1319,
     "name": "Flesh Doll",
-    "note": "<Upgrade Slots: 2>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>",
     "params": [
       0,
       0,
@@ -5192,7 +5192,7 @@
     "traits": [],
     "iconIndex": 1216,
     "name": "Silver Chainmail",
-    "note": "<Upgrade Slots: 2>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 2>",
     "params": [
       0,
       0,
@@ -5219,7 +5219,7 @@
     ],
     "iconIndex": 796,
     "name": "Mana-Stained Blueroot",
-    "note": "<Upgrade Slots: 2>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>",
     "params": [
       0,
       0,
@@ -5240,7 +5240,7 @@
     "traits": [],
     "iconIndex": 800,
     "name": "Infernal Coin",
-    "note": "<Upgrade Slots: 3>\n<Passive State: 184, 154>\n\n<Vanity:FlameBody,0,$FlameBody,0,FlameBody>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 37;\n</Custom Buy Show Eval>",
+    "note": "<Rarity: 4>\n<Upgrade Slots: 3>\n<Passive State: 184, 154>\n\n<Vanity:FlameBody,0,$FlameBody,0,FlameBody>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 37;\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -5261,7 +5261,7 @@
     "traits": [],
     "iconIndex": 178,
     "name": "Andrew's Wristbraces",
-    "note": "<Upgrade Slots: 4>\n\n<Element Amplify Magical: +5%>\n<Element Amplify Fire: +5%>",
+    "note": "<Rarity: 4>\n<Upgrade Slots: 4>\n\n<Element Amplify Magical: +5%>\n<Element Amplify Fire: +5%>",
     "params": [
       0,
       32,
@@ -5315,7 +5315,7 @@
     ],
     "iconIndex": 347,
     "name": "Green Mage Crystal",
-    "note": "<Upgrade Slots: 1>\n\n<Passive State: 194>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 1>\n\n<Passive State: 194>",
     "params": [
       0,
       0,
@@ -5363,7 +5363,7 @@
     "traits": [],
     "iconIndex": 127,
     "name": "Infernal Knight's Synergy",
-    "note": "<Passive State: 197>\n<Cannot Rename>",
+    "note": "<Rarity: 1>\n<Passive State: 197>\n<Cannot Rename>",
     "params": [
       0,
       0,
@@ -5384,7 +5384,7 @@
     "traits": [],
     "iconIndex": 127,
     "name": "Infernal Mage's Synergy",
-    "note": "<Passive State: 197>\n<Cannot Rename>",
+    "note": "<Rarity: 1>\n<Passive State: 197>\n<Cannot Rename>",
     "params": [
       0,
       0,
@@ -5489,7 +5489,7 @@
     "traits": [],
     "iconIndex": 176,
     "name": "Ring of the Forest",
-    "note": "<Passive State: 199>\n<Optimize Weight: 0.6>",
+    "note": "<Rarity: 2>\n<Passive State: 199>\n<Optimize Weight: 0.6>",
     "params": [
       25,
       0,
@@ -5510,7 +5510,7 @@
     "traits": [],
     "iconIndex": 442,
     "name": "Blue Developer Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Developers,0,Developers,0,Developers_1>\n\n<Custom Equip Requirement Condition>\ncondition = [1, 2].contains(user.actorId());\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name();\ntext += \"\\\\c[0] or \";\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name();\n</Custom Equip Requirement Text>",
+    "note": "<Rarity: 1>\n<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Developers,0,Developers,0,Developers_1>\n\n<Custom Equip Requirement Condition>\ncondition = [1, 2].contains(user.actorId());\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name();\ntext += \"\\\\c[0] or \";\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name();\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -5531,7 +5531,7 @@
     "traits": [],
     "iconIndex": 776,
     "name": "Red Developer Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Developers,1,Developers,1,Developers_2>\n\n<Custom Equip Requirement Condition>\ncondition = [1, 2].contains(user.actorId());\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name();\ntext += \"\\\\c[0] or \";\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name();\n</Custom Equip Requirement Text>",
+    "note": "<Rarity: 1>\n<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Developers,1,Developers,1,Developers_2>\n\n<Custom Equip Requirement Condition>\ncondition = [1, 2].contains(user.actorId());\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name();\ntext += \"\\\\c[0] or \";\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name();\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -5583,7 +5583,7 @@
     ],
     "iconIndex": 710,
     "name": "Tellurium Greaves",
-    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nKnight's Greaves\nFeral Rat Fur: 5\nSteel Ingot: 5\nTellurium Alloy\n</Synthesis Ingredients>\n\n<Disassemble Pool: Advanced>\nx1-2 Iron Cluster: 60%\nx1-2 Tellurium Dust: 60%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nKnight's Greaves\nFeral Rat Fur: 5\nSteel Ingot: 5\nTellurium Alloy\n</Synthesis Ingredients>\n\n<Disassemble Pool: Advanced>\nx1-2 Iron Cluster: 60%\nx1-2 Tellurium Dust: 60%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       5,
@@ -5620,7 +5620,7 @@
     ],
     "iconIndex": 819,
     "name": "Optic Charm",
-    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nJade Charm\nDismembered Eye\n</Synthesis Ingredients>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nJade Charm\nDismembered Eye\n</Synthesis Ingredients>",
     "params": [
       0,
       6,
@@ -5652,7 +5652,7 @@
     ],
     "iconIndex": 750,
     "name": "Tideflame Headpiece",
-    "note": "<Upgrade Slots: 3>\n<Optimize Weight: 0.5>\n\n<Element Amplify Healing: +15%>\n\n<On Creation Eval>\nitem.iconIndex = 750 + item.id % 2;\n</On Creation Eval>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 3>\n<Optimize Weight: 0.5>\n\n<Element Amplify Healing: +15%>\n\n<On Creation Eval>\nitem.iconIndex = 750 + item.id % 2;\n</On Creation Eval>",
     "params": [
       12,
       20,
@@ -5673,7 +5673,7 @@
     "traits": [],
     "iconIndex": 512,
     "name": "Gold Ring",
-    "note": "<Upgrade Slots: 10>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 10>",
     "params": [
       0,
       0,
@@ -5700,7 +5700,7 @@
     ],
     "iconIndex": 371,
     "name": "Waterfall (Tome)",
-    "note": "<Cannot Rename>\n\n<Synthesis Ingredients>\nBubble (Tome)\nAqua Gem: 2\nWater Essence: 3\n</Synthesis Ingredients>",
+    "note": "<Rarity: 2>\n<Cannot Rename>\n\n<Synthesis Ingredients>\nBubble (Tome)\nAqua Gem: 2\nWater Essence: 3\n</Synthesis Ingredients>",
     "params": [
       0,
       0,
@@ -5721,7 +5721,7 @@
     "traits": [],
     "iconIndex": 821,
     "name": "Bloodwave Headband",
-    "note": "<Upgrade Slots: 3>\n<HP Life Steal Physical: +4%>\n\n<Element Amplify Water: +10%>\n\n<Synthesis Ingredients>\nSilver Headband\nFeral Rat Fur: 3\nAqua Gem: 2\nWater Essence: 3\n</Synthesis Ingredients>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 3>\n<HP Life Steal Physical: +4%>\n\n<Element Amplify Water: +10%>\n\n<Synthesis Ingredients>\nSilver Headband\nFeral Rat Fur: 3\nAqua Gem: 2\nWater Essence: 3\n</Synthesis Ingredients>",
     "params": [
       20,
       0,
@@ -5748,7 +5748,7 @@
     ],
     "iconIndex": 822,
     "name": "Vortex Mask",
-    "note": "<Upgrade Slots: 3>\n\n<Element Amplify Water: +10%>\n\n<Synthesis Ingredients>\nSilver Mask\nFeral Rat Fur: 3\nAqua Gem: 2\nWater Essence: 3\n</Synthesis Ingredients>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 3>\n\n<Element Amplify Water: +10%>\n\n<Synthesis Ingredients>\nSilver Mask\nFeral Rat Fur: 3\nAqua Gem: 2\nWater Essence: 3\n</Synthesis Ingredients>",
     "params": [
       0,
       0,
@@ -5775,7 +5775,7 @@
     ],
     "iconIndex": 361,
     "name": "Gilded Coin",
-    "note": "<Upgrade Slots: 4>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 4>",
     "params": [
       0,
       0,
@@ -5807,7 +5807,7 @@
     ],
     "iconIndex": 438,
     "name": "Dullahan Armor",
-    "note": "<Upgrade Slots: 3>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 3>",
     "params": [
       50,
       0,
@@ -5849,7 +5849,7 @@
     ],
     "iconIndex": 482,
     "name": "Haloweave Gloves",
-    "note": "<Upgrade Slots: 2>\n\n<Element Amplify Light: +10%>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(109);\n</Custom Buy Show Eval>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 2>\n\n<Element Amplify Light: +10%>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(109);\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -5876,7 +5876,7 @@
     ],
     "iconIndex": 826,
     "name": "Ice Skates",
-    "note": "<Passive State: 206>",
+    "note": "<Rarity: 3>\n<Passive State: 206>",
     "params": [
       0,
       0,
@@ -5903,7 +5903,7 @@
     ],
     "iconIndex": 830,
     "name": "Blue Mage Crystal",
-    "note": "<Upgrade Slots: 3>\n\n<Passive State: 207>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 3>\n\n<Passive State: 207>",
     "params": [
       0,
       15,
@@ -5924,7 +5924,7 @@
     "traits": [],
     "iconIndex": 126,
     "name": "Sentinel's Persistence",
-    "note": "<Custom Parameters>\nconst turns = $gameParty.inBattle() ? $gameTroop.turnCount() : 1;\natk = mat = turns * 2;\n</Custom Parameters>\n\n<Cannot Rename>",
+    "note": "<Rarity: 2>\n\n<Custom Parameters>\nconst turns = $gameParty.inBattle() ? $gameTroop.turnCount() : 1;\natk = mat = turns * 2;\n</Custom Parameters>\n\n<Cannot Rename>",
     "params": [
       0,
       0,
@@ -5945,7 +5945,7 @@
     "traits": [],
     "iconIndex": 836,
     "name": "Green Developer Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Developers,2,Developers,2,Developers_3>\n\n<Custom Equip Requirement Condition>\ncondition = [1, 2].contains(user.actorId());\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name();\ntext += \"\\\\c[0] or \";\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name();\n</Custom Equip Requirement Text>",
+    "note": "<Rarity: 1>\n<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Developers,2,Developers,2,Developers_3>\n\n<Custom Equip Requirement Condition>\ncondition = [1, 2].contains(user.actorId());\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name();\ntext += \"\\\\c[0] or \";\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name();\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -6061,7 +6061,7 @@
     ],
     "iconIndex": 1320,
     "name": "Stoneheart Aegis",
-    "note": "<Upgrade Slots: 3>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(84) >= 16;\n</Custom Buy Show Eval>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 3>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(84) >= 16;\n</Custom Buy Show Eval>",
     "params": [
       20,
       10,
@@ -6093,7 +6093,7 @@
     ],
     "iconIndex": 1321,
     "name": "Stone Dragon Horns",
-    "note": "<Upgrade Slots: 3>\n\n<Element Amplify Fire: +15%>\n<Element Amplify Earth: +15%>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(84) >= 16;\n</Custom Buy Show Eval>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 3>\n\n<Element Amplify Fire: +15%>\n<Element Amplify Earth: +15%>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(84) >= 16;\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -6120,7 +6120,7 @@
     ],
     "iconIndex": 375,
     "name": "Eclipse (Tome)",
-    "note": "<Cannot Rename>\n\n<Synthesis Ingredients>\nDark Orb (Tome)\nRitual Residue: 2\nDark Essence: 10\n</Synthesis Ingredients>",
+    "note": "<Rarity: 2>\n<Cannot Rename>\n\n<Synthesis Ingredients>\nDark Orb (Tome)\nRitual Residue: 2\nDark Essence: 10\n</Synthesis Ingredients>",
     "params": [
       0,
       0,
@@ -6141,7 +6141,7 @@
     "traits": [],
     "iconIndex": 830,
     "name": "Purple Mage Crystal",
-    "note": "<Upgrade Slots: 2>\n\n<Element Amplify Physical: +5%>\n<Element Amplify Magical: +5%>\n\n<Passive State: 222>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>\n\n<Element Amplify Physical: +5%>\n<Element Amplify Magical: +5%>\n\n<Passive State: 222>",
     "params": [
       0,
       0,

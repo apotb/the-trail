@@ -815,6 +815,7 @@ ItemManager.effectIUSResetStat = function(item, stat) {
         DataManager.getContainer(item)[id - Yanfly.Param.ItemStartingId - 1] = item;
         this._fullReset = true;
         this._resetItem = item;
+        DataManager.initRarity(item);
         break;
     }
     if (Imported.YEP_X_AttachAugments) {

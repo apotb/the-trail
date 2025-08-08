@@ -760,7 +760,7 @@
     ],
     "iconIndex": 396,
     "name": "Bronze Greatsword",
-    "note": "<Weapon Image: 92>\n<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nBronze Sword\nBronze Ingot: 6\nIron Cluster: 3\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>\n\n<Disassemble Pool: Advanced>\nx1-2 Bronze Ingot: 100%\nx1-2 Bronze Ingot: 60%\nx1-2 Bronze Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 1>\n<Weapon Image: 92>\n<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nBronze Sword\nBronze Ingot: 6\nIron Cluster: 3\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>\n\n<Disassemble Pool: Advanced>\nx1-2 Bronze Ingot: 100%\nx1-2 Bronze Ingot: 60%\nx1-2 Bronze Ingot: 30%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
@@ -793,7 +793,7 @@
     ],
     "iconIndex": 419,
     "name": "Bronze Wand",
-    "note": "<Weapon Image: 14>\n<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nEnchanted Stick\nBronze Ingot: 6\nIron Cluster: 3\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>\n\n<Disassemble Pool: Advanced>\nx1 Bronze Ingot: 100%\nx1-3 Bronze Ingot: 75%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 1>\n<Weapon Image: 14>\n<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nEnchanted Stick\nBronze Ingot: 6\nIron Cluster: 3\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>\n\n<Disassemble Pool: Advanced>\nx1 Bronze Ingot: 100%\nx1-3 Bronze Ingot: 75%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       12,
@@ -831,7 +831,7 @@
     ],
     "iconIndex": 420,
     "name": "Mana Staff",
-    "note": "<Weapon Image: 118>\n<Upgrade Slots: 1>\n<MP Life Steal Physical: +5%>\n\n<Synthesis Ingredients>\nWood: 5\nSteel Ingot: 3\nElixir: 2\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>\n\n<Disassemble Pool: Advanced>\nx1 Steel Ingot: 100%\nx1-2 Steel Ingot: 100%\nx1-3 Steel Ingot: 50%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 1>\n<Weapon Image: 118>\n<Upgrade Slots: 1>\n<MP Life Steal Physical: +5%>\n\n<Synthesis Ingredients>\nWood: 5\nSteel Ingot: 3\nElixir: 2\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>\n\n<Disassemble Pool: Advanced>\nx1 Steel Ingot: 100%\nx1-2 Steel Ingot: 100%\nx1-3 Steel Ingot: 50%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       17,
@@ -869,7 +869,7 @@
     ],
     "iconIndex": 691,
     "name": "Bloodlust ★",
-    "note": "<Weapon Image: 206>\n<Upgrade Slots: 1>\n<HP Life Steal Physical: +4%>\n\n<Synthesis Ingredients>\nBloodlust\nBronze Ingot: 2\nSteel Ingot: 2\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\nif (!$gameSystem.isQuestObjectiveCompleted(42, 1)) {\n  $gameSystem.questObjectivesComplete(42, 1);\n  $gameSystem.questObjectivesShow(42, 2);\n}\n</Custom Synthesis Effect>\n\n<Custom Craft Show Eval>\nvisible = !$gameSystem.hasSynthed($dataWeapons[26]);\n</Custom Craft Show Eval>",
+    "note": "<Rarity: 1>\n<Weapon Image: 206>\n<Upgrade Slots: 1>\n<HP Life Steal Physical: +4%>\n\n<Synthesis Ingredients>\nBloodlust\nBronze Ingot: 2\nSteel Ingot: 2\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\nif (!$gameSystem.isQuestObjectiveCompleted(42, 1)) {\n  $gameSystem.questObjectivesComplete(42, 1);\n  $gameSystem.questObjectivesShow(42, 2);\n}\n</Custom Synthesis Effect>\n\n<Custom Craft Show Eval>\nvisible = !$gameSystem.hasSynthed($dataWeapons[26]);\n</Custom Craft Show Eval>",
     "params": [
       5,
       2,
@@ -1066,7 +1066,7 @@
     ],
     "iconIndex": 403,
     "name": "Steel Axe",
-    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nSteel Ingot: 3\nCopper Cluster: 2\nWood: 2\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>\n\n<Disassemble Pool: Advanced>\nx1-2 Steel Ingot: 100%\nx1-2 Steel Ingot: 50%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nSteel Ingot: 3\nCopper Cluster: 2\nWood: 2\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>\n\n<Disassemble Pool: Advanced>\nx1-2 Steel Ingot: 100%\nx1-2 Steel Ingot: 50%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
@@ -1104,7 +1104,7 @@
     ],
     "iconIndex": 385,
     "name": "Sacrificial Dagger",
-    "note": "<Weapon Image: 229>\n<Upgrade Slots: 2>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value([126, 8, 'A']);\n</Custom Buy Show Eval>",
+    "note": "<Rarity: 1>\n<Weapon Image: 229>\n<Upgrade Slots: 2>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value([126, 8, 'A']);\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -1142,7 +1142,7 @@
     ],
     "iconIndex": 564,
     "name": "Shadowspec Sword",
-    "note": "<Weapon Image: 242>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nShadowspec Ingot: 4\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>\n\n<Disassemble Pool: Advanced>\nx2-4 Shadowspec Ingot: 100%\nx1-2 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 2>\n<Weapon Image: 242>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nShadowspec Ingot: 4\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>\n\n<Disassemble Pool: Advanced>\nx2-4 Shadowspec Ingot: 100%\nx1-2 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
@@ -1180,7 +1180,7 @@
     ],
     "iconIndex": 153,
     "name": "Semi-Automatic Glizzy",
-    "note": "<Upgrade Slots: 99>",
+    "note": "<Rarity: 4>\n<Upgrade Slots: 99>",
     "params": [
       0,
       0,
@@ -1248,7 +1248,7 @@
     ],
     "iconIndex": 341,
     "name": "Origin Crystal",
-    "note": "<Upgrade Slots: 10>\n<mat: +900>",
+    "note": "<Rarity: 5>\n<Upgrade Slots: 10>\n<mat: +900>",
     "params": [
       200,
       700,
@@ -1438,7 +1438,7 @@
     ],
     "iconIndex": 540,
     "name": "Leek Sword",
-    "note": "<Upgrade Slots: 3>\n\n<Item Leek Buy Price: 12>\n<Item Leek Sell Price: 12>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 3>\n\n<Item Leek Buy Price: 12>\n<Item Leek Sell Price: 12>",
     "params": [
       10,
       6,
@@ -1476,7 +1476,7 @@
     ],
     "iconIndex": 418,
     "name": "Draconic Wand",
-    "note": "<Weapon Image: 282>\n<Upgrade Slots: 2>\n\n<Disassemble Pool: Advanced>\nx1-3 Dragon Scale: 100%\nx3-6 Wind Essence: 100%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 2>\n<Weapon Image: 282>\n<Upgrade Slots: 2>\n\n<Disassemble Pool: Advanced>\nx1-3 Dragon Scale: 100%\nx3-6 Wind Essence: 100%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       15,
@@ -1509,7 +1509,7 @@
     ],
     "iconIndex": 621,
     "name": "Void Crystal Staff",
-    "note": "<Weapon Image: 117>\n<Upgrade Slots: 2>",
+    "note": "<Rarity: 1>\n<Weapon Image: 117>\n<Upgrade Slots: 2>",
     "params": [
       0,
       20,
@@ -1542,7 +1542,7 @@
     ],
     "iconIndex": 622,
     "name": "Life Crystal Staff",
-    "note": "<Weapon Image: 110>\n<Upgrade Slots: 2>\n<HP Life Steal Physical: +15%>\n<HP Life Steal Magical: +7.5%>\n\n<Synthesis Ingredients>\nVoid Crystal Staff\nLife Crystal\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>",
+    "note": "<Rarity: 2>\n<Weapon Image: 110>\n<Upgrade Slots: 2>\n<HP Life Steal Physical: +15%>\n<HP Life Steal Magical: +7.5%>\n\n<Synthesis Ingredients>\nVoid Crystal Staff\nLife Crystal\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>",
     "params": [
       0,
       20,
@@ -1580,7 +1580,7 @@
     ],
     "iconIndex": 423,
     "name": "Mana Crystal Staff",
-    "note": "<Weapon Image: 109>\n<Upgrade Slots: 2>\n<MP Life Steal Physical: +10%>\n\n<Synthesis Ingredients>\nVoid Crystal Staff\nMana Crystal\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>",
+    "note": "<Rarity: 2>\n<Weapon Image: 109>\n<Upgrade Slots: 2>\n<MP Life Steal Physical: +10%>\n\n<Synthesis Ingredients>\nVoid Crystal Staff\nMana Crystal\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>",
     "params": [
       0,
       20,
@@ -1618,7 +1618,7 @@
     ],
     "iconIndex": 692,
     "name": "Bloodlust ★★",
-    "note": "<Weapon Image: 206>\n<Upgrade Slots: 3>\n<HP Life Steal Physical: +6%>\n\n<Synthesis Ingredients>\nBloodlust ★\nStinger: 5\nTellurium Alloy\nTellurium Core\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\nif (!$gameSystem.isQuestObjectiveCompleted(42, 2)) {\n  $gameSystem.questObjectivesComplete(42, 2);\n  $gameSystem.questObjectivesShow(42, 3);\n}\n</Custom Synthesis Effect>\n\n<Custom Craft Show Eval>\nvisible = !$gameSystem.hasSynthed($dataWeapons[44]);\n</Custom Craft Show Eval>",
+    "note": "<Rarity: 3>\n<Weapon Image: 206>\n<Upgrade Slots: 3>\n<HP Life Steal Physical: +6%>\n\n<Synthesis Ingredients>\nBloodlust ★\nStinger: 5\nTellurium Alloy\nTellurium Core\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\nif (!$gameSystem.isQuestObjectiveCompleted(42, 2)) {\n  $gameSystem.questObjectivesComplete(42, 2);\n  $gameSystem.questObjectivesShow(42, 3);\n}\n</Custom Synthesis Effect>\n\n<Custom Craft Show Eval>\nvisible = !$gameSystem.hasSynthed($dataWeapons[44]);\n</Custom Craft Show Eval>",
     "params": [
       10,
       5,
@@ -1656,7 +1656,7 @@
     ],
     "iconIndex": 1204,
     "name": "Hero Sword Replica",
-    "note": "<Weapon Image: 346>\n<Upgrade Slots: 3>\n\n<Element Amplify Fire: +10%>\n<Element Amplify Ice: +10%>\n<Element Amplify Electric: +10%>\n<Element Amplify Water: +10%>\n<Element Amplify Earth: +10%>\n<Element Amplify Wind: +10%>\n<Element Amplify Plant: +10%>\n<Element Amplify Metal: +10%>\n<Element Amplify Light: +10%>\n<Element Amplify Dark: +10%>\n\n<Synthesis Ingredients>\nSquire Sword\nCopper Sword\nSteel Sword\nBronze Sword\nShadowspec Sword\nBronze Greatsword\nSteel Greatsword\nSteel Axe\nUnstoppable Force\nTellurium Alloy\nTellurium Core\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>",
+    "note": "<Rarity: 3>\n<Weapon Image: 346>\n<Upgrade Slots: 3>\n\n<Element Amplify Fire: +10%>\n<Element Amplify Ice: +10%>\n<Element Amplify Electric: +10%>\n<Element Amplify Water: +10%>\n<Element Amplify Earth: +10%>\n<Element Amplify Wind: +10%>\n<Element Amplify Plant: +10%>\n<Element Amplify Metal: +10%>\n<Element Amplify Light: +10%>\n<Element Amplify Dark: +10%>\n\n<Synthesis Ingredients>\nSquire Sword\nCopper Sword\nSteel Sword\nBronze Sword\nShadowspec Sword\nBronze Greatsword\nSteel Greatsword\nSteel Axe\nUnstoppable Force\nTellurium Alloy\nTellurium Core\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>",
     "params": [
       0,
       0,
@@ -1694,7 +1694,7 @@
     ],
     "iconIndex": 400,
     "name": "Unstoppable Force",
-    "note": "<Weapon Image: 159>\n<Upgrade Slots: 2>\n\n<Disassemble Pool: Advanced>\nx3-5 Steel Ingot: 100%\nx2-4 Steel Ingot: 60%\nx1-3 Steel Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 2>\n<Weapon Image: 159>\n<Upgrade Slots: 2>\n\n<Disassemble Pool: Advanced>\nx3-5 Steel Ingot: 100%\nx2-4 Steel Ingot: 60%\nx1-3 Steel Ingot: 30%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
@@ -1737,7 +1737,7 @@
     ],
     "iconIndex": 398,
     "name": "Steel Greatsword",
-    "note": "<Weapon Image: 86>\n<Upgrade Slots: 2>\n\n<Disassemble Pool: Advanced>\nx3-5 Steel Ingot: 100%\nx2-4 Steel Ingot: 60%\nx1-3 Steel Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 2>\n<Weapon Image: 86>\n<Upgrade Slots: 2>\n\n<Disassemble Pool: Advanced>\nx3-5 Steel Ingot: 100%\nx2-4 Steel Ingot: 60%\nx1-3 Steel Ingot: 30%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
@@ -1780,7 +1780,7 @@
     ],
     "iconIndex": 406,
     "name": "Knuckle Spikes",
-    "note": "<Weapon Image: 262>\n<Upgrade Slots: 2>\n\n<Disassemble Pool: Advanced>\nx3-5 Steel Ingot: 100%\nx2-4 Steel Ingot: 60%\nx1-3 Steel Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 1>\n<Weapon Image: 262>\n<Upgrade Slots: 2>\n\n<Disassemble Pool: Advanced>\nx3-5 Steel Ingot: 100%\nx2-4 Steel Ingot: 60%\nx1-3 Steel Ingot: 30%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
@@ -1813,7 +1813,7 @@
     ],
     "iconIndex": 421,
     "name": "Tellurium Wand",
-    "note": "<Weapon Image: 258>\n<Upgrade Slots: 3>\n\n<Element Amplify Fire: +10%>\n<Element Amplify Ice: +10%>\n<Element Amplify Electric: +10%>\n<Element Amplify Water: +10%>\n<Element Amplify Earth: +10%>\n<Element Amplify Wind: +10%>\n<Element Amplify Plant: +10%>\n<Element Amplify Metal: +10%>\n<Element Amplify Light: +10%>\n<Element Amplify Dark: +10%>\n\n<Synthesis Ingredients>\nBronze Wand\nTellurium Alloy: 3\nTellurium Core\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>",
+    "note": "<Rarity: 3>\n<Weapon Image: 258>\n<Upgrade Slots: 3>\n\n<Element Amplify Fire: +10%>\n<Element Amplify Ice: +10%>\n<Element Amplify Electric: +10%>\n<Element Amplify Water: +10%>\n<Element Amplify Earth: +10%>\n<Element Amplify Wind: +10%>\n<Element Amplify Plant: +10%>\n<Element Amplify Metal: +10%>\n<Element Amplify Light: +10%>\n<Element Amplify Dark: +10%>\n\n<Synthesis Ingredients>\nBronze Wand\nTellurium Alloy: 3\nTellurium Core\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>",
     "params": [
       0,
       22,
@@ -1851,7 +1851,7 @@
     ],
     "iconIndex": 414,
     "name": "Harmony",
-    "note": "<Weapon Image: 294>\n<Upgrade Slots: 3>\n<HP Life Steal Physical: +15%>\n<HP Life Steal Magical: +7.5%>\n<MP Life Steal Physical: +10%>\n\n<Synthesis Ingredients>\nLife Crystal Staff\nMana Crystal Staff\nTellurium Alloy\nTellurium Core\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>",
+    "note": "<Rarity: 3>\n<Weapon Image: 294>\n<Upgrade Slots: 3>\n<HP Life Steal Physical: +15%>\n<HP Life Steal Magical: +7.5%>\n<MP Life Steal Physical: +10%>\n\n<Synthesis Ingredients>\nLife Crystal Staff\nMana Crystal Staff\nTellurium Alloy\nTellurium Core\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>",
     "params": [
       0,
       25,
@@ -1889,7 +1889,7 @@
     ],
     "iconIndex": 562,
     "name": "Shadowspec Warhammer",
-    "note": "<Weapon Image: 58>\n<Upgrade Slots: 2>\n\n<Element Magnify Magical: +20%>\n<Element Magnify Healing: -45%>\n\n<Synthesis Ingredients>\nShadowspec Ingot: 4\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>\n\n<Disassemble Pool: Advanced>\nx2-4 Shadowspec Ingot: 100%\nx1-2 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 2>\n<Weapon Image: 58>\n<Upgrade Slots: 2>\n\n<Element Magnify Magical: +20%>\n<Element Magnify Healing: -45%>\n\n<Synthesis Ingredients>\nShadowspec Ingot: 4\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>\n\n<Disassemble Pool: Advanced>\nx2-4 Shadowspec Ingot: 100%\nx1-2 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       22,
@@ -1937,7 +1937,7 @@
     ],
     "iconIndex": 545,
     "name": "Frost Edge",
-    "note": "<Weapon Image: 373>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nSacrificial Dagger\nFrozen Jewel: 5\nIce Essence: 5\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>",
+    "note": "<Rarity: 2>\n<Weapon Image: 373>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nSacrificial Dagger\nFrozen Jewel: 5\nIce Essence: 5\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>",
     "params": [
       0,
       0,
@@ -1985,7 +1985,7 @@
     ],
     "iconIndex": 706,
     "name": "Grass Knuckles",
-    "note": "<Weapon Image: 202>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nKnuckle Spikes\nEnchanted Dragon Scale\nDragon Scale: 6\nBronze Ingot: 2\nEarth Essence: 5\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>",
+    "note": "<Rarity: 2>\n<Weapon Image: 202>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nKnuckle Spikes\nEnchanted Dragon Scale\nDragon Scale: 6\nBronze Ingot: 2\nEarth Essence: 5\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\n</Custom Synthesis Effect>",
     "params": [
       0,
       0,
@@ -2023,7 +2023,7 @@
     ],
     "iconIndex": 1234,
     "name": "Tellurium Spellbook",
-    "note": "<Upgrade Slots: 3>\n\n<Element Amplify Fire: +10%>\n<Element Amplify Ice: +10%>\n<Element Amplify Electric: +10%>\n<Element Amplify Water: +10%>\n<Element Amplify Earth: +10%>\n<Element Amplify Wind: +10%>\n<Element Amplify Plant: +10%>\n<Element Amplify Metal: +10%>\n<Element Amplify Light: +10%>\n<Element Amplify Dark: +10%>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value([201, 17, 'A']);\n</Custom Buy Show Eval>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 3>\n\n<Element Amplify Fire: +10%>\n<Element Amplify Ice: +10%>\n<Element Amplify Electric: +10%>\n<Element Amplify Water: +10%>\n<Element Amplify Earth: +10%>\n<Element Amplify Wind: +10%>\n<Element Amplify Plant: +10%>\n<Element Amplify Metal: +10%>\n<Element Amplify Light: +10%>\n<Element Amplify Dark: +10%>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value([201, 17, 'A']);\n</Custom Buy Show Eval>",
     "params": [
       0,
       150,
@@ -2137,7 +2137,7 @@
     ],
     "iconIndex": 531,
     "name": "Infernal Sword",
-    "note": "<Weapon Image: 386>\n<Upgrade Slots: 2>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 37;\n</Custom Buy Show Eval>",
+    "note": "<Rarity: 2>\n<Weapon Image: 386>\n<Upgrade Slots: 2>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 37;\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -2175,7 +2175,7 @@
     ],
     "iconIndex": 779,
     "name": "Infernal Wand",
-    "note": "<Weapon Image: 390>\n<Upgrade Slots: 2>\n\n<Element Amplify Fire: +20%>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 37;\n</Custom Buy Show Eval>",
+    "note": "<Rarity: 2>\n<Weapon Image: 390>\n<Upgrade Slots: 2>\n\n<Element Amplify Fire: +20%>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 37;\n</Custom Buy Show Eval>",
     "params": [
       0,
       20,
@@ -2223,7 +2223,7 @@
     ],
     "iconIndex": 390,
     "name": "Stalactite",
-    "note": "<Weapon Image: 77>\n<Upgrade Slots: 3>\n\n<Element Amplify Earth: +10%>",
+    "note": "<Rarity: 2>\n<Weapon Image: 77>\n<Upgrade Slots: 3>\n\n<Element Amplify Earth: +10%>",
     "params": [
       0,
       0,
@@ -2266,7 +2266,7 @@
     ],
     "iconIndex": 823,
     "name": "Blazing Dagger",
-    "note": "<Weapon Image: 386>\n<Upgrade Slots: 2>\n\n<Disassemble Pool: Advanced>\nx1-3 Fire Essence: 100%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 1>\n<Weapon Image: 386>\n<Upgrade Slots: 2>\n\n<Disassemble Pool: Advanced>\nx1-3 Fire Essence: 100%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
@@ -2309,7 +2309,7 @@
     ],
     "iconIndex": 825,
     "name": "Andy's Dusters MK. II",
-    "note": "<Weapon Image: 299>\n<Upgrade Slots: 3>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(109);\n</Custom Buy Show Eval>",
+    "note": "<Rarity: 2>\n<Weapon Image: 299>\n<Upgrade Slots: 3>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(109);\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -2352,7 +2352,7 @@
     ],
     "iconIndex": 1233,
     "name": "Esoteric Tome",
-    "note": "<Weapon Image: 26>\n<Upgrade Slots: 3>\n\n<Element Amplify Magical: +10%>",
+    "note": "<Rarity: 3>\n<Weapon Image: 26>\n<Upgrade Slots: 3>\n\n<Element Amplify Magical: +10%>",
     "params": [
       0,
       200,
@@ -2395,7 +2395,7 @@
     ],
     "iconIndex": 828,
     "name": "Last Breath",
-    "note": "<Weapon Image: 277>\n<Upgrade Slots: 3>",
+    "note": "<Rarity: 3>\n<Weapon Image: 277>\n<Upgrade Slots: 3>",
     "params": [
       0,
       0,
@@ -2433,7 +2433,7 @@
     ],
     "iconIndex": 829,
     "name": "Violet Tendril",
-    "note": "<Weapon Image: 281>\n<Upgrade Slots: 3>\n\n<Element Magnify Magical: +25%>\n<Element Amplify Dark: +25%>\n<Element Magnify Healing: -40%>",
+    "note": "<Rarity: 3>\n<Weapon Image: 281>\n<Upgrade Slots: 3>\n\n<Element Magnify Magical: +25%>\n<Element Amplify Dark: +25%>\n<Element Magnify Healing: -40%>",
     "params": [
       25,
       25,
@@ -2476,7 +2476,7 @@
     ],
     "iconIndex": 1206,
     "name": "Twilight",
-    "note": "<Weapon Image: 278>\n<Upgrade Slots: 3>\n\n<Element Amplify Dark: +10%>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(84) >= 16;\n</Custom Buy Show Eval>",
+    "note": "<Rarity: 3>\n<Weapon Image: 278>\n<Upgrade Slots: 3>\n\n<Element Amplify Dark: +10%>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(84) >= 16;\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,

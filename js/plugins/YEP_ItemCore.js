@@ -570,6 +570,7 @@ DataManager.processItemCoreNotetags = function(group) {
   var note2 = /<(?:NONINDEPENDENT ITEM|not independent item)>/i;
   var note4 = /<(?:INDEPENDENT ITEM|independent item)>/i;
   var note3 = /<(?:PRIORITY NAME)>/i;
+  var note5 = /<rarity:\s*(\d+)>/i;
   for (var n = 1; n < group.length; n++) {
     var obj = group[n];
     var notedata = obj.note.split(/[\r\n]+/);
@@ -584,6 +585,7 @@ DataManager.processItemCoreNotetags = function(group) {
     obj.infoTextBottom = '';
     obj.onCreationEval = '';
     obj.effectsDisplay = [];
+    obj.rarity = 0;
     var evalMode = 'none';
 
    for (var i = 0; i < notedata.length; i++) {
@@ -596,6 +598,8 @@ DataManager.processItemCoreNotetags = function(group) {
         obj.nonIndependent = false;
       } else if (line.match(note3)) {
         obj.setPriorityName = true;
+      } else if (line.match(note5)) {
+        obj.rarity = parseInt(RegExp.$1);
       } else if (line.match(/<(?:INFO EVAL)>/i)) {
         evalMode = 'info eval';
       } else if (line.match(/<\/(?:INFO EVAL)>/i)) {
@@ -632,7 +636,21 @@ DataManager.processItemCoreNotetags = function(group) {
         obj.effectsDisplay.push(JSON.parse(line));
       }
     }
+
+    DataManager.initRarity(obj);
   }
+};
+
+DataManager.initRarity = function(item) {
+    item.rarity = DataManager.getBaseItem(item).rarity;
+    if (item.textColor === 0) {
+      if (item.rarity >= 5) item.textColor = 27;
+      else if (item.rarity >= 4) item.textColor = 21;
+      else if (item.rarity >= 3) item.textColor = 30;
+      else if (item.rarity >= 2) item.textColor = 16;
+      else if (item.rarity >= 1) item.textColor = 24;
+      else item.textColor = 0;
+    }
 };
 
 DataManager.setDatabaseLengths = function() {
@@ -913,7 +931,7 @@ ItemManager.updateItemName = function(item) {
     } else if (eval(Yanfly.Param.ItemNameSpacing)) {
       boostText = ' ' + boostText;
     }
-    fmt = Yanfly.Param.ItemNameFmt;
+    fmt = `\\c[8]%1\\c[${item.textColor}]%2\\c[8]%3%4\\c[0]`;
     item.name = fmt.format(prefix, name, suffix, boostText);
 };
 
@@ -2091,15 +2109,17 @@ Window_ItemInfo.prototype.drawItemInfoC = function(dy) {
 };
 
 Window_ItemInfo.prototype.drawItemInfoD = function(dy) {
+    dy = this.drawInfoTextBottom(dy);
     return dy;
 };
 
 Window_ItemInfo.prototype.drawItemInfoE = function(dy) {
+    dy = this.drawMaterialText(dy);
     return dy;
 };
 
 Window_ItemInfo.prototype.drawItemInfoF = function(dy) {
-    dy = this.drawInfoTextBottom(dy);
+    dy = this.drawItemRarity(dy);
     return dy;
 };
 
@@ -2131,7 +2151,7 @@ Window_ItemInfo.prototype.drawInfoTextBottom = function(dy) {
     if (item.infoTextBottom === undefined) {
       item.infoTextBottom = DataManager.getBaseItem(item).infoTextBottom;
     }
-    let infoText = item.infoTextBottom + this.extraInfoText();
+    let infoText = item.infoTextBottom;
     if (infoText === '') return dy;
     var info = infoText.split(/[\r\n]+/);
     for (var i = 0; i < info.length; ++i) {
@@ -2143,11 +2163,39 @@ Window_ItemInfo.prototype.drawInfoTextBottom = function(dy) {
     return dy;
 };
 
-Window_ItemInfo.prototype.extraInfoText = function() {
-    let info = "";
-    const item = this._item;
-    if (DataManager.isMaterial(item)) info += "Material\n"
-    return info;
+Window_ItemInfo.prototype.drawMaterialText = function(dy) {
+    var item = this._item;
+    if (!DataManager.isMaterial(item)) return dy;
+    let infoText = "Material";
+    var info = infoText.split(/[\r\n]+/);
+    for (var i = 0; i < info.length; ++i) {
+      var line = info[i];
+      this.resetFontSettings();
+      this.drawTextEx(line, this.textPadding(), dy);
+      dy += this.contents.fontSize + 8;
+    }
+    return dy;
+};
+
+Window_ItemInfo.prototype.drawItemRarity = function(dy) {
+    var item = this._item;
+    if (item.rarity === undefined) DataManager.initRarity(item);
+    if (item.rarity >= 5) item.rarityText = "MYTHIC";
+    else if (item.rarity >= 4) item.rarityText = "LEGENDARY";
+    else if (item.rarity >= 3) item.rarityText = "EPIC";
+    else if (item.rarity >= 2) item.rarityText = "RARE";
+    else if (item.rarity >= 1) item.rarityText = "UNCOMMON";
+    else item.rarityText = "COMMON";
+    let infoText = `\\fb\\c[${item.textColor}]${item.rarityText}\\c[0]\\fr`;
+    if (infoText === '') return dy;
+    var info = infoText.split(/[\r\n]+/);
+    for (var i = 0; i < info.length; ++i) {
+      var line = info[i];
+      this.resetFontSettings();
+      this.drawTextEx(line, this.textPadding(), dy);
+      dy += this.contents.fontSize + 8;
+    }
+    return dy;
 };
 
 //=============================================================================
