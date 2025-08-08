@@ -13,6 +13,7 @@ This is just a minor patch that comes with a few changes and squashed bugs. Nota
 - Fixed 2 issues with mouse-based movement:
   - Fixed abrupt stops caused by invisible events triggered by player touch.
   - Fixed being forced to sprint.
+- Fixed an issue related to small text and line height.
 - Fixed P2 still appearing to give the Under Construction quest.
 - Fixed autosave graphic lingering when changing maps during an autosave.
 - Fixed a visual bug with part of the floor in True Telluria Castle - B3.

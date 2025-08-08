@@ -413,9 +413,9 @@ Window_Base.prototype.calcTextHeight = function(textState, all) {
                 if (array[0] === '\x1b}') {
                     this.makeFontSmaller();
                 }
-                if (maxFontSize < this.contents.fontSize) {
+                // if (maxFontSize < this.contents.fontSize) {
                     maxFontSize = this.contents.fontSize;
-                }
+                // }
             } else {
                 break;
             }
