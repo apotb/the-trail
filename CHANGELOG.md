@@ -14,6 +14,7 @@ This is just a minor patch featuring a few additions/changes, as well as more sq
   - Each use in battle increases TP cost by 0.2.
 - Soaked is no longer removed when downed.
 - All monsters respawn after Laeryidyean is defeated.
+- New items now keep the "NEW" indicator until the menu is refreshed.
 - Added a new item category "Meals" which should help de-clutter the Buffs category.
 
 ### Bug Fixes
