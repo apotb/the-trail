@@ -4,6 +4,7 @@ This is just a minor patch featuring a few additions/changes, as well as more sq
 
 ### Additions
 - Implemented a rarity system. Collect COMMON, UNCOMMON, RARE, EPIC, and LEGENDARY items!
+- Added a new achievement: Twilight Idol.
 
 ### Changes
 - Reworked the Purple Mage Crystal. It now increases damage dealt by 30% when below 50% HP.
