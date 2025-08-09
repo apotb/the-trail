@@ -146,6 +146,7 @@ Window_ItemList.prototype.drawItemName = function(item, x, y, width) {
 Galv.NII.Window_ItemList_deactivate = Window_ItemList.prototype.deactivate;
 Window_ItemList.prototype.deactivate = function() {
 	Galv.NII.Window_ItemList_deactivate.call(this);
+	if (!this._itemsToMarkSeen) this._itemsToMarkSeen = new Set();
 	for (const item of this._itemsToMarkSeen) {
 		Galv.NII.becomeOld(item);
 	}
