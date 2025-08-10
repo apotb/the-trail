@@ -18,6 +18,7 @@ This is just a minor patch featuring a few additions/changes, as well as more sq
 - All monsters respawn after Laeryidyean is defeated.
 - New items now keep the "NEW" indicator until the menu is refreshed.
 - Added a new item category "Meals" which should help de-clutter the Buffs category.
+- The recipe for Seafood Dinner now includes 1 Apple.
 
 ### Bug Fixes
 - Fixed a softlock where the Greenfield-Solus Passage was permanently blocked by an NPC, preventing any further progress.
