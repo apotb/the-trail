@@ -26,6 +26,7 @@ This is just a minor patch featuring a few additions/changes, as well as more sq
   - Fixed abrupt stops caused by invisible events triggered by player touch.
   - Fixed being forced to sprint.
 - Fixed an issue related to small text and line height.
+- Fixed the Bits Spent stat not increasing when purchasing memberships at the Adventurer's Guild.
 - Fixed P2 still appearing to give the Under Construction quest.
 - Fixed autosave graphic lingering when changing maps during an autosave.
 - Fixed being able to walk on the water around the large tree in Champion's Square.
