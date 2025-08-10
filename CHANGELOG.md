@@ -13,6 +13,7 @@ This is just a minor patch featuring a few additions/changes, as well as more sq
 - Nerfed Flashbang:
   - Decreased duration from 5 → 4 turns.
   - Each use in battle increases TP cost by 0.2.
+- Non-animated enemies now have shadows.
 - Soaked is no longer removed when downed.
 - All monsters respawn after Laeryidyean is defeated.
 - New items now keep the "NEW" indicator until the menu is refreshed.
