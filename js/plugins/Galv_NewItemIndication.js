@@ -80,6 +80,14 @@ Galv.NII.becomeOld = function(item) {
 	return false;
 };
 
+Galv.NII.isNew = function(item) {
+	if (!item) return false;
+	if (item.groupType === 0) var type = 'items';
+	if (item.groupType === 1) var type = 'weapons';
+	if (item.groupType === 2) var type = 'armors';
+
+	return !$gameSystem._seenItems[type][DataManager.getBaseItem(item).id];
+};
 
 //-----------------------------------------------------------------------------
 //  SCENE BOOT
@@ -118,21 +126,12 @@ Window_ItemList.prototype.initialize = function(x, y, width, height) {
 	this._viewedNewIndex = null;
 };
 
-Window_ItemList.prototype.isNew = function(item) {
-	if (!item) return false;
-	if (item.groupType === 0) var type = 'items';
-	if (item.groupType === 1) var type = 'weapons';
-	if (item.groupType === 2) var type = 'armors';
-
-	return !$gameSystem._seenItems[type][DataManager.getBaseItem(item).id];
-};
-
 Galv.NII.Window_ItemList_drawItemName = Window_ItemList.prototype.drawItemName;
 Window_ItemList.prototype.drawItemName = function(item, x, y, width) {
 	Galv.NII.Window_ItemList_drawItemName.call(this,item,x,y,width);
 	if (!(SceneManager._scene instanceof Scene_Item)) return;
     if (item) {
-		if (this.isNew(item)) {
+		if (Galv.NII.isNew(item)) {
 			var bitmap = ImageManager.loadSystem(Galv.NII.newIcon);
 			var pw = bitmap.width;
 			var ph = bitmap.height;
@@ -166,7 +165,7 @@ Window_ItemList.prototype.updateHelp = function() {
 		this._viewedNewIndex = null;
 	}
 	
-	if (this.isNew(this.item())) {
+	if (Galv.NII.isNew(this.item())) {
 		this._itemsToMarkSeen.add(this.item());
 		this._viewedNewIndex = this.index();
 	}
