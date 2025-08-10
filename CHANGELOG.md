@@ -1,10 +1,10 @@
-# Alpha 17.1 (8/??/2025)
+# Alpha 17.1 (8/10/2025)
 Howdy everyone! It's been a couple months since the last update, but development is finally picking up again!
-This is just a minor patch featuring a few additions/changes, as well as more squashed bugs. Notably, a softlock preventing the player from entering the Greenfield-Solus Passage has been fixed.
+This is just a minor patch, but it adds an item rarity system, as well as fixing a notable softlock.
 
 ### Additions
 - Implemented a rarity system. Collect COMMON, UNCOMMON, RARE, EPIC, and LEGENDARY items!
-- Added a new achievement: Twilight Idol.
+- Added a new achievement "Twilight Idol" for defeating the Sentinel.
 
 ### Changes
 - Reworked the Purple Mage Crystal. It now increases damage dealt by 30% when below 50% HP.
