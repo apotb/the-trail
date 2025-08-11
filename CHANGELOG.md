@@ -31,6 +31,7 @@ This is just a minor patch, but it adds an item rarity system, as well as fixing
 - Fixed autosave graphic lingering when changing maps during an autosave.
 - Fixed being able to walk on the water around the large tree in Champion's Square.
 - Fixed a visual bug with part of the floor in True Telluria Castle - B3.
+- Improved performance in battle.
 
 Expect more news on Alpha 18 within the coming weeks!
 

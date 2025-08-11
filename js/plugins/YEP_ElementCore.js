@@ -495,6 +495,22 @@ Game_BattlerBase.prototype.elementRate = function(elementId) {
   var rate = this.forcedElementRate(elementId);
   if (rate !== undefined) return rate;
   var result = Yanfly.Ele.Game_BtlrBase_elementRate.call(this, elementId);
+  if (this.isActor()) { // Statue buffs
+    if (elementId === 8) {
+      $gameSystem.statueList().forEach(mapId => { // Statue buffs
+        if ($gameSystem.statue(mapId)) result -= 0.01;
+      });
+    }
+    if (elementId === 7) {
+      if ($gameSystem.statue(203)) result -= 0.02;  // Lost Forest
+    }
+    if (elementId === 3) {
+      if ($gameSystem.statue(208)) result -= 0.02;  // Frozen Labyrinth
+    }
+    if (elementId === 2) {
+      if ($gameSystem.statue(88)) result -= 0.02;   // True Telluria Castle
+    }
+  }
   if (this.isAbsorbElement(elementId) && result > 0) {
     result = Math.min(0 - result, 0);
   }
@@ -558,6 +574,13 @@ Game_Battler.prototype.elementAmplifyRate = function(elementId) {
   for (var i = 0; i < length; ++i) {
     var obj = this.states()[i];
     rate += this.getObjElementAmplifyRate(obj, elementId);
+  }
+  if (this.isActor()) {
+    if (elementId === 8) { // Light
+      $gameSystem.statueList().forEach(mapId => { // Statue buffs
+        if ($gameSystem.statue(mapId)) rate += 0.01;
+      });
+    }
   }
   return rate;
 };
