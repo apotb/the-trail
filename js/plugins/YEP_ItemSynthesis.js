@@ -1216,6 +1216,7 @@ Window_SynthesisList.prototype.drawItemName = function(item, x, y, width) {
         text = Yanfly.Util.maskString(text, Yanfly.Param.ISMaskText);
       }*/
     }
+    this.changeTextColor(this.textColor(item.textColor));
     this.drawText(text, x + iconBoxWidth, y, width - iconBoxWidth);
     this.contents.fontItalic = false;
 };
@@ -1294,7 +1295,7 @@ Window_SynthesisIngredients.prototype.drawItemName = function(item, x, y, width,
       var owned = $gameParty.numIndependentItems(DataManager.getSynthesisIngredient(this._item, index));
       var quantity = DataManager.getSynthesisQuantity(this._item, index);
       if (owned >= quantity) {
-        this.changeTextColor(this.powerUpColor());
+        this.changeTextColor(this.textColor(item.textColor));
       } else {
         this.changeTextColor(this.powerDownColor());
       }
