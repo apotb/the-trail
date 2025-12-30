@@ -847,7 +847,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Use your inner magic to conjure up this nifty gadget. Reduces every\nstat of the target by 10% and can be infinitely stacked multiplicatively.",
+    "description": "Use your inner magic to conjure up this nifty gadget! Reduces every stat of the target\nby 10% and can be infinitely stacked multiplicatively. Costs more TP with each use.",
     "effects": [
       {
         "code": 21,
@@ -862,7 +862,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Flashbang",
-    "note": "<Require = 0 BP>\n\n<Party Limit Cost: 1>\n<Max Mastery Level: 0>\n\n<Before Eval>\neval: target._flashbang = target._flashbang || 0;\n</Before Eval>\n\n<Post-Damage Eval>\neval: target._flashbang++;\n</Post-Damage Eval>\n\n<setup action>\nadd state 43: user\nmotion spell: user\nwait: 30\nmotion attack: user\nwait: 30\n</setup action>\n\n<whole action>\naction animation\nwait: 15\nshake screen: 3, 9, 30\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\nwait: 20\n</target action>\n\n<follow action>\nremove state 43: user\n</follow action>",
+    "note": "<Require = 0 BP>\n\n<Custom Party Limit Cost>\ncost = 1 + (user._flashbangUses || 0) * 0.2;\n</Custom Party Limit Cost>\n<Max Mastery Level: 0>\n\n<Before Eval>\neval: target._flashbang = target._flashbang || 0;\neval: user._flashbangUses = user._flashbangUses || 0;\n</Before Eval>\n\n<Post-Damage Eval>\neval: target._flashbang++;\neval: user._flashbangUses++;\n</Post-Damage Eval>\n\n<setup action>\nadd state 43: user\nmotion spell: user\nwait: 30\nmotion attack: user\nwait: 30\n</setup action>\n\n<whole action>\naction animation\nwait: 15\nshake screen: 3, 9, 30\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\nwait: 20\n</target action>\n\n<follow action>\nremove state 43: user\n</follow action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,

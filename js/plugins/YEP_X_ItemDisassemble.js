@@ -878,7 +878,7 @@ Window_DisassemblePool.prototype.drawDisassembleTypePool = function(dy, type) {
       quantity1 = Yanfly.Util.toGroup(quantity1);
       quantity2 = Yanfly.Util.toGroup(quantity2);
       var rate = data[2] + rateBonus;
-      var name = '\\i[' + item.iconIndex + ']' + item.name;
+      var name = '\\i[' + item.iconIndex + ']' + '\\c[' + item.textColor + ']' + item.name;
       if (quantity1 === quantity2) {
         var text = fmt1.format(quantity1, name);
       } else {

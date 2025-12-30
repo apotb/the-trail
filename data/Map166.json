@@ -2196,23 +2196,41 @@
               "code": 111,
               "indent": 0,
               "parameters": [
+                12,
+                "!$gameSystem.isQuestObjectiveCompleted(39, 1)"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
                 8,
                 228
               ]
             },
             {
               "code": 356,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "Quest 39 Complete Objective 1"
               ]
             },
             {
               "code": 356,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "Quest 39 Show Objective 2"
               ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
             },
             {
               "code": 0,

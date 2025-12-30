@@ -621,6 +621,10 @@ Game_System.prototype.setRecallAllowed = function(allow) {
 
 // Statues
 
+Game_System.prototype.statueList = function() {
+    return [15, 24, 188, 51, 84, 83, 108, 148, 124, 212, 89, 91, 203, 208, 88];
+};
+
 Game_System.prototype.totalStatues = function() {
     return $dataStates.filter(s => s).filter(s => s.name.startsWith("Statue - ") && s.name != "Statue - ?").length;
 };
@@ -2498,27 +2502,82 @@ Object.defineProperties(Game_BattlerBase.prototype, {
     // Tactical Points
     tp: { get: function() { return this._tp; }, configurable: true },
     // Maximum Hit Points
-    mhp: { get: function() { return this.param(0); }, configurable: true },
+    mhp: { get: function() {
+        let value = this.param(0);
+        if (this.isActor()) {
+            if ($gameSystem.statue(15)) value += 10;    // Solus Town
+            if ($gameSystem.statue(188)) value += 10;   // Dark Forest
+        }
+        return value;
+    }, configurable: true },
     // Maximum Magic Points
-    mmp: { get: function() { return this.param(1); }, configurable: true },
+    mmp: { get: function() {
+        let value = this.param(1);
+        if (this.isActor()) {
+            if ($gameSystem.statue(24)) value += 5;     // Verdin Village
+        }
+        return value;
+    }, configurable: true },
     // ATtacK power
-    atk: { get: function() { return this.param(2); }, configurable: true },
+    atk: { get: function() {
+        let value = this.param(2);
+        if (this.isActor()) {
+            if ($gameSystem.statue(84)) value += 2;     // Greenfield
+        }
+        return value;
+    }, configurable: true },
     // DEFense power
-    def: { get: function() { return this.param(3); }, configurable: true },
+    def: { get: function() {
+        let value = this.param(3);
+        if (this.isActor()) {
+            if ($gameSystem.statue(108)) value += 2;    // Bladesville
+        }
+        return value;
+    }, configurable: true },
     // Magic ATtack power
-    mat: { get: function() { return this.param(4); }, configurable: true },
+    mat: { get: function() {
+        let value = this.param(4);
+        if (this.isActor()) {
+            if ($gameSystem.statue(83)) value += 2;     // Solus Valley
+        }
+        return value;
+    }, configurable: true },
     // Magic DeFense power
-    mdf: { get: function() { return this.param(5); }, configurable: true },
+    mdf: { get: function() {
+        let value = this.param(5);
+        if (this.isActor()) {
+            if ($gameSystem.statue(124)) value += 2;    // Great Pyramid
+        }
+        return value;
+    }, configurable: true },
     // AGIlity
     agi: { get: function() { return this.param(6); }, configurable: true },
     // LUcK
     luk: { get: function() { return this.param(7); }, configurable: true },
     // HIT rate
-    hit: { get: function() { return this.xparam(0); }, configurable: true },
+    hit: { get: function() {
+        let value = this.xparam(0);
+        if (this.isActor()) {
+            if ($gameSystem.statue(212)) value += 0.01; // Telluria Castle Town
+        }
+        return value;
+    }, configurable: true },
     // EVAsion rate
-    eva: { get: function() { return this.xparam(1); }, configurable: true },
+    eva: { get: function() {
+        let value = this.xparam(1);
+        if (this.isActor()) {
+            if ($gameSystem.statue(89)) value += 0.01;  // Telluria Castle F1
+        }
+        return value;
+    }, configurable: true },
     // CRItical rate
-    cri: { get: function() { return this.xparam(2); }, configurable: true },
+    cri: { get: function() {
+        let value = this.xparam(2);
+        if (this.isActor()) {
+            if ($gameSystem.statue(91)) value += 0.01;  // Telluria Castle F3
+        }
+        return value;
+    }, configurable: true },
     // Critical EVasion rate
     cev: { get: function() { return this.xparam(3); }, configurable: true },
     // Magic EVasion rate
@@ -5633,8 +5692,8 @@ Game_Party.prototype.partyAbility = function(abilityId) {
 Game_Party.prototype.partyStat = function(abilityId, actorId) {
     let stat = 1;
     if (abilityId == Game_Party.ABILITY_GOLD_DOUBLE) {
-        if ($gameSystem.statue(51)) stat += 0.02; // Haven Harbor
-        if ($gameSystem.statue(148)) stat += 0.02; // Crusher Cave
+        if ($gameSystem.statue(51)) stat += 0.02;   // Haven Harbor
+        if ($gameSystem.statue(148)) stat += 0.02;  // Crusher Cave
     }
     this.battleMembers().filter(a => a.actorId() != actorId).forEach(a => stat *= a.partyStat(abilityId));
     return stat;

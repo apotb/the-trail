@@ -469,40 +469,41 @@ Window_StatusInfo.prototype.drawKDARatios = function() {
 Window_StatusInfo.prototype.drawTotalDamageHealing = function() {
 		var lh = this.lineHeight();
 		var p = this.textPadding();
-		this.drawDarkRect(0, lh * 4, this.contents.width, lh);
-		this.drawDarkRect(0, lh * 5, this.contents.width, lh);
-		this.drawDarkRect(0, lh * 6, this.contents.width, lh);
-		this.drawDarkRect(0, lh * 7, this.contents.width, lh);
+		var dw = this.contents.width / 2;
+		this.drawDarkRect(0, lh * 4, dw, lh);
+		this.drawDarkRect(dw, lh * 4, dw, lh);
+		this.drawDarkRect(0, lh * 5, dw, lh);
+		this.drawDarkRect(dw, lh * 5, dw, lh);
 		this.changeTextColor(this.systemColor());
 		var text = Yanfly.Param.BStatsDmgDealt;
-		this.drawText(text, p, lh * 4, this.contents.width - p * 2);
+		this.drawText(text, p, lh * 4, dw - p * 2);
 		text = Yanfly.Param.BStatsDmgTaken;
-		this.drawText(text, p, lh * 5, this.contents.width - p * 2);
+		this.drawText(text, p + dw, lh * 4, dw - p * 2);
 		text = Yanfly.Param.BStatsHealDealt;
-		this.drawText(text, p, lh * 6, this.contents.width - p * 2);
+		this.drawText(text, p, lh * 5, dw - p * 2);
 		text = Yanfly.Param.BStatsHealTaken;
-		this.drawText(text, p, lh * 7, this.contents.width - p * 2);
+		this.drawText(text, p + dw, lh * 5, dw - p * 2);
 		this.changeTextColor(this.normalColor());
 		text = Yanfly.Util.toGroup(this._actor.totalDamageDealt());
-		this.drawText(text, p, lh * 4, this.contents.width - p * 2, 'right');
+		this.drawText(text, p, lh * 4, dw - p * 2, 'right');
 		text = Yanfly.Util.toGroup(this._actor.totalDamageTaken());
-		this.drawText(text, p, lh * 5, this.contents.width - p * 2, 'right');
+		this.drawText(text, p + dw, lh * 4, dw - p * 2, 'right');
 		text = Yanfly.Util.toGroup(this._actor.totalHealingDealt());
-		this.drawText(text, p, lh * 6, this.contents.width - p * 2, 'right');
+		this.drawText(text, p, lh * 5, dw - p * 2, 'right');
 		text = Yanfly.Util.toGroup(this._actor.totalHealingTaken());
-		this.drawText(text, p, lh * 7, this.contents.width - p * 2, 'right');
+		this.drawText(text, p + dw, lh * 5, dw - p * 2, 'right');
 };
 
 Window_StatusInfo.prototype.drawTotalMpUsed = function() {
 		var lh = this.lineHeight();
 		var p = this.textPadding();
-		this.drawDarkRect(0, lh * 8, this.contents.width, lh);
+		this.drawDarkRect(0, lh * 6, this.contents.width, lh);
 		this.changeTextColor(this.systemColor());
 		var text = "Total MP Used";
-		this.drawText(text, p, lh * 8, this.contents.width - p * 2);
+		this.drawText(text, p, lh * 6, this.contents.width - p * 2);
 		this.changeTextColor(this.normalColor());
 		text = Yanfly.Util.toGroup(this._actor.totalMpUsed());
-		this.drawText(text, p, lh * 8, this.contents.width - p * 2, 'right');
+		this.drawText(text, p, lh * 6, this.contents.width - p * 2, 'right');
 };
 
 //=============================================================================

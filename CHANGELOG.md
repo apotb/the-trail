@@ -15,24 +15,40 @@ OUTRO
 Yours truly,
 AP
 
-# Alpha 17.1 (8/5/2025)
+# Alpha 17.1 (8/10/2025)
 Howdy everyone! It's been a couple months since the last update, but development is finally picking up again!
-This is just a minor patch that comes with a few changes and squashed bugs. Notably, a softlock preventing the player from entering the Greenfield-Solus Passage has been fixed.
+This is just a minor patch, but it adds an item rarity system, as well as fixing a notable softlock.
+
+### Additions
+- Implemented a rarity system. Collect COMMON, UNCOMMON, RARE, EPIC, and LEGENDARY items!
+- Added a new achievement "Twilight Idol" for defeating the Sentinel.
 
 ### Changes
+- Reworked the Purple Mage Crystal. It now increases damage dealt by 30% when below 50% HP.
 - Buffed the CRI of Rat Claw, Sharp Tooth, Goblin Fang, and Razor-Sharp Fang.
-- Decrease Flashbang duration from 5 → 4 turns.
+- Damage is now softcapped rather than abruptly cut off at the Dandy Toad Mage and Purple Cultist's transformations.
+- Nerfed Flashbang:
+  - Decreased duration from 5 → 4 turns.
+  - Each use in battle increases TP cost by 0.2.
+- Non-animated enemies now have shadows.
+- Soaked is no longer removed when downed.
 - All monsters respawn after Laeryidyean is defeated.
+- New items now keep the "NEW" indicator until the menu is refreshed.
 - Added a new item category "Meals" which should help de-clutter the Buffs category.
+- The recipe for Seafood Dinner now includes 1 Apple.
 
 ### Bug Fixes
 - Fixed a softlock where the Greenfield-Solus Passage was permanently blocked by an NPC, preventing any further progress.
 - Fixed 2 issues with mouse-based movement:
   - Fixed abrupt stops caused by invisible events triggered by player touch.
   - Fixed being forced to sprint.
+- Fixed an issue related to small text and line height.
+- Fixed the Bits Spent stat not increasing when purchasing memberships at the Adventurer's Guild.
 - Fixed P2 still appearing to give the Under Construction quest.
 - Fixed autosave graphic lingering when changing maps during an autosave.
+- Fixed being able to walk on the water around the large tree in Champion's Square.
 - Fixed a visual bug with part of the floor in True Telluria Castle - B3.
+- Improved performance in battle.
 
 Expect more news on Alpha 18 within the coming weeks!
 

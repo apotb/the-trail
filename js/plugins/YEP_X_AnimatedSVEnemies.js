@@ -2190,7 +2190,7 @@ Game_Enemy.prototype.sideviewShadowScaleY = function() {
 };
 
 Game_Enemy.prototype.sideviewShadowShift = function() {
-    return this.enemy().sideviewShadowShift;
+    return this.enemy().sideviewShadowShift || 0;
 };
 
 Game_Enemy.prototype.spriteScaleX = function() {
@@ -2360,9 +2360,9 @@ Sprite_Enemy.prototype.setTransform = function(battler) {
     this._mainSprite.opacity = 0;
     this._stateSprite.opacity = 0;
     if (battler.svBattlerName()) {
-      this.createShadowSprite();
       this.createWeaponSprite();
       this.createMainSprite();
+      this.createShadowSprite();
       this.createStateSprite();
       this._shadowSprite.alpha = 0.5;
       this._weaponSprite.opacity = 255;
@@ -2377,16 +2377,28 @@ Sprite_Enemy.prototype.createMainSprite = function() {
 
 Sprite_Enemy.prototype.createShadowSprite = function() {
     if (!this._shadowSprite) this._shadowSprite = new Sprite_Base();
-    if (!this._mainSprite || !this._mainSprite.bitmap || !this._mainSprite.bitmap.isReady()) {
+    if (this._svBattlerEnabled) {
+      if (!this._mainSprite || !this._mainSprite.bitmap || !this._mainSprite.bitmap.isReady()) {
         setTimeout(() => this.createShadowSprite(), 50);
         return;
+      }
+      this._shadowSprite.bitmap = this._mainSprite.bitmap;
+    } else {
+      if (!this.bitmap || !this.bitmap.isReady()) {
+        setTimeout(() => this.createShadowSprite(), 50);
+        return;
+      }
+      this._shadowSprite.bitmap = this.bitmap;
     }
-    this._shadowSprite.bitmap = this._mainSprite.bitmap;
     this._shadowSprite.anchor.set(0.5, 1);
     this._shadowSprite.tint = 0x000000;
-    this._shadowSprite.y = -4 + this._enemy.sideviewShadowShift();
+    this._shadowSprite.y = -4 + (this._enemy?.sideviewShadowShift() || 0);
     this._shadowSprite.z = 0.99;
     this.addChildAt(this._shadowSprite, 0);
+    if (!this._svBattlerEnabled) {
+      this._mainSprite.bitmap = this.bitmap;
+      this.addChildAt(this._mainSprite, 1);
+    }
 };
 
 Sprite_Enemy.prototype.createWeaponSprite = function() {
@@ -2568,6 +2580,8 @@ Yanfly.SVE.Sprite_Enemy_updateFrame = Sprite_Enemy.prototype.updateFrame;
 Sprite_Enemy.prototype.updateFrame = function() {
     if (this._svBattlerEnabled) return this.updateSVFrame();
     Yanfly.SVE.Sprite_Enemy_updateFrame.call(this);
+    this._shadowSprite.alpha = 0.5;
+    this._shadowSprite.scale.y = -0.5;
 };
 
 Sprite_Enemy.prototype.updateSVFrame = function() {
