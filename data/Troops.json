@@ -22,156 +22,12 @@
           "enemyValid": false,
           "switchId": 1,
           "switchValid": false,
-          "turnA": 1,
+          "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "People1",
-              6,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\headAlright \\N[1], it's time for battle."
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "Here's the basics: defeat your enemies"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "before they defeat you!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 0,
-            "parameters": []
-          }
-        ],
-        "span": 0
-      },
-      {
-        "conditions": {
-          "actorHp": 50,
-          "actorId": 1,
-          "actorValid": false,
-          "enemyHp": 50,
-          "enemyIndex": 0,
-          "enemyValid": false,
-          "switchId": 1,
-          "switchValid": false,
-          "turnA": 2,
-          "turnB": 0,
-          "turnEnding": false,
-          "turnValid": true
-        },
-        "list": [
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "People1",
-              6,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\headBoost points are the key to success. You'll generate"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "1 BP per turn, except for turns you use a boost."
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "Guarding will net you an extra BP."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "People1",
-              6,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\headTry out an empowered attack against this slime!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 0,
-            "parameters": []
-          }
-        ],
-        "span": 0
-      },
-      {
-        "conditions": {
-          "actorHp": 50,
-          "actorId": 1,
-          "actorValid": false,
-          "enemyHp": 50,
-          "enemyIndex": 0,
-          "enemyValid": false,
-          "switchId": 1,
-          "switchValid": false,
-          "turnA": 3,
-          "turnB": 0,
-          "turnEnding": false,
-          "turnValid": true
-        },
-        "list": [
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "People1",
-              6,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\headKeep attacking, \\N[1]! You've got this!"
-            ]
-          },
           {
             "code": 0,
             "indent": 0,
@@ -258,7 +114,7 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\sol\\N[1]... don't forget... your boosts..."
+              "\\solCivillian... don't forget... your boosts..."
             ]
           },
           {

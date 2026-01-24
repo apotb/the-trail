@@ -1,11 +1,13 @@
-# Alpha 18 (??/??/????)
+# Alpha 18: Back to the Basics (??/??/????)
 INTRO
 
 ### Additions
 - 
 
 ### Changes
-- 
+- Revamped the start of the game.
+  - The game now begins in Verdin Village.
+  - Time starts ticking as soon as you start.
 
 ### Bug Fixes
 - 

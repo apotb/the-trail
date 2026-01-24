@@ -159,6 +159,7 @@ Window_ItemList.prototype.deactivate = function() {
 Galv.NII.Window_ItemList_updateHelp = Window_ItemList.prototype.updateHelp;
 Window_ItemList.prototype.updateHelp = function() {
 	Galv.NII.Window_ItemList_updateHelp.call(this);
+	this._itemsToMarkSeen = this._itemsToMarkSeen || new Set();
 	
 	if (this._viewedNewIndex != null) {
 		this.redrawItem(this._viewedNewIndex);
