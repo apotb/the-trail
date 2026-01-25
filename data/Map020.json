@@ -29565,7 +29565,7 @@
             "skippable": false,
             "wait": false
           },
-          "moveSpeed": 4,
+          "moveSpeed": 5,
           "moveType": 0,
           "priorityType": 1,
           "stepAnime": false,
@@ -33563,6 +33563,20 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 2,
+              "parameters": [
+                "Quest 10 Change Description Entry To 2"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 2,
+              "parameters": [
+                "Quest Set Completed 10"
+              ]
+            },
+            {
               "code": 249,
               "indent": 2,
               "parameters": [
@@ -33603,20 +33617,6 @@
               "indent": 2,
               "parameters": [
                 "Quest Complete!"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 2,
-              "parameters": [
-                "Quest 10 Change Description Entry To 2"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 2,
-              "parameters": [
-                "Quest Set Completed 10"
               ]
             },
             {

@@ -4407,7 +4407,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "need our help!"
+                "need our help. If that's not reason enough to"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "set out on a journey RIGHT NOW, what else is?"
               ]
             },
             {
@@ -4631,6 +4638,13 @@
               ]
             },
             {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Or at least, like, find out if \\c[18]he\\c[0]'s even real."
+              ]
+            },
+            {
               "code": 356,
               "indent": 0,
               "parameters": [
@@ -4786,6 +4800,28 @@
               ]
             },
             {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                38,
+                38,
+                0,
+                0,
+                8
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                37,
+                37,
+                0,
+                0,
+                0
+              ]
+            },
+            {
               "code": 223,
               "indent": 0,
               "parameters": [
@@ -4910,15 +4946,54 @@
               ]
             },
             {
-              "code": 201,
+              "code": 205,
               "indent": 0,
               "parameters": [
-                0,
-                23,
-                6,
-                7,
-                2,
-                2
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 45,
+                      "parameters": [
+                        "TELEPORT TO: 6, 7"
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 16,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 45,
+                  "parameters": [
+                    "TELEPORT TO: 6, 7"
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 16,
+                  "indent": null
+                }
               ]
             },
             {
@@ -4927,9 +5002,16 @@
               "parameters": []
             },
             {
-              "code": 244,
+              "code": 241,
               "indent": 0,
-              "parameters": []
+              "parameters": [
+                {
+                  "name": "town_verdin",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
             },
             {
               "code": 0,
