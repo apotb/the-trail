@@ -47,19 +47,8 @@
         ]
       },
       {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          1,
-          11,
-          0,
-          2,
-          1
-        ]
-      },
-      {
         "code": 231,
-        "indent": 1,
+        "indent": 0,
         "parameters": [
           32,
           "map_adon_2",
@@ -75,7 +64,7 @@
       },
       {
         "code": 232,
-        "indent": 1,
+        "indent": 0,
         "parameters": [
           32,
           0,
@@ -90,16 +79,6 @@
           30,
           false
         ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
       },
       {
         "code": 111,
@@ -173,79 +152,6 @@
           30,
           true
         ]
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          1,
-          11,
-          0,
-          1,
-          0
-        ]
-      },
-      {
-        "code": 230,
-        "indent": 1,
-        "parameters": [
-          30
-        ]
-      },
-      {
-        "code": 231,
-        "indent": 1,
-        "parameters": [
-          32,
-          "map_adon_2",
-          1,
-          0,
-          640,
-          360,
-          100,
-          100,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 232,
-        "indent": 1,
-        "parameters": [
-          32,
-          0,
-          1,
-          0,
-          640,
-          360,
-          100,
-          100,
-          255,
-          0,
-          120,
-          true
-        ]
-      },
-      {
-        "code": 122,
-        "indent": 1,
-        "parameters": [
-          11,
-          11,
-          1,
-          0,
-          1
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
       },
       {
         "code": 111,
@@ -603,104 +509,12 @@
     "id": 5,
     "list": [
       {
-        "code": 231,
-        "indent": 0,
-        "parameters": [
-          61,
-          "NightOverlay",
-          0,
-          0,
-          0,
-          0,
-          100,
-          100,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          12,
-          "$gameMap.indoors()"
-        ]
-      },
-      {
-        "code": 232,
-        "indent": 1,
-        "parameters": [
-          61,
-          0,
-          0,
-          0,
-          0,
-          0,
-          100,
-          100,
-          0,
-          0,
-          1,
-          false
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 411,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 232,
-        "indent": 1,
-        "parameters": [
-          61,
-          0,
-          0,
-          0,
-          0,
-          0,
-          100,
-          100,
-          255,
-          0,
-          1,
-          false
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 245,
-        "indent": 0,
-        "parameters": [
-          {
-            "name": "Night",
-            "volume": 25,
-            "pitch": 100,
-            "pan": 0
-          }
-        ]
-      },
-      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "Adon Night",
+    "name": "",
     "switchId": 1,
     "trigger": 0
   },
@@ -10594,39 +10408,6 @@
         "parameters": [
           37
         ]
-      },
-      {
-        "code": 108,
-        "indent": 0,
-        "parameters": [
-          "# For the bit of Adon at night after exiting the Dark Forest"
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          0,
-          12,
-          0
-        ]
-      },
-      {
-        "code": 117,
-        "indent": 1,
-        "parameters": [
-          5
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
       },
       {
         "code": 108,
