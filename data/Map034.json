@@ -12049,15 +12049,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\-I guess I should introduce myself."
+                "\\-I guess I should introduce myself..."
               ]
             },
             {
-              "code": 320,
+              "code": 355,
               "indent": 0,
               "parameters": [
-                3,
-                ""
+                "$gameActors.actor(3).setRandomName(false);"
               ]
             },
             {
@@ -12070,7 +12069,7 @@
               "indent": 1,
               "parameters": [
                 3,
-                10
+                12
               ]
             },
             {
@@ -12079,10 +12078,11 @@
               "parameters": [
                 [
                   "\\N[3]\\fr?",
-                  "Hold up..."
+                  "Generate random name",
+                  "Wait..."
                 ],
+                2,
                 1,
-                0,
                 1,
                 0
               ]
@@ -12110,14 +12110,27 @@
               "indent": 1,
               "parameters": [
                 1,
-                "Hold up..."
+                "Generate random name"
               ]
             },
             {
-              "code": 230,
+              "code": 355,
               "indent": 2,
               "parameters": [
-                30
+                "$gameActors.actor(3).setRandomName(false);"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                2,
+                "Wait..."
               ]
             },
             {
@@ -12129,6 +12142,13 @@
               "code": 404,
               "indent": 1,
               "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 1,
+              "parameters": [
+                30
+              ]
             },
             {
               "code": 0,

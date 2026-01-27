@@ -20931,11 +20931,10 @@
               ]
             },
             {
-              "code": 320,
+              "code": 355,
               "indent": 1,
               "parameters": [
-                4,
-                ""
+                "$gameActors.actor(4).setRandomName(false);"
               ]
             },
             {
@@ -20948,7 +20947,7 @@
               "indent": 2,
               "parameters": [
                 4,
-                10
+                12
               ]
             },
             {
@@ -20957,10 +20956,11 @@
               "parameters": [
                 [
                   "\\N[4]\\fr?",
-                  "Hold up..."
+                  "Generate random name",
+                  "Wait..."
                 ],
+                2,
                 1,
-                0,
                 1,
                 0
               ]
@@ -20988,14 +20988,27 @@
               "indent": 2,
               "parameters": [
                 1,
-                "Hold up..."
+                "Generate random name"
               ]
             },
             {
-              "code": 230,
+              "code": 355,
               "indent": 3,
               "parameters": [
-                30
+                "$gameActors.actor(4).setRandomName(false);"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 2,
+              "parameters": [
+                2,
+                "Wait..."
               ]
             },
             {
@@ -21007,6 +21020,13 @@
               "code": 404,
               "indent": 2,
               "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 2,
+              "parameters": [
+                30
+              ]
             },
             {
               "code": 0,

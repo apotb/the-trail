@@ -3961,6 +3961,11 @@ Game_Actor.prototype.setName = function(name) {
     this._name = name;
 };
 
+Game_Actor.prototype.setRandomName = function(male) {
+    const names = male ? $dataStrings.names.male : $dataStrings.names.female;
+    this._name = names[Math.floor(Math.random() * names.length)];
+};
+
 Game_Actor.prototype.nickname = function() {
     return this._nickname;
 };
