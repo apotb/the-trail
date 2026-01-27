@@ -14093,6 +14093,52 @@
         "parameters": []
       },
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "### ALPHA 18"
+        ]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Refresh ponds"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "!$gameSystem._pondsReInitialized"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameSystem.initPonds();"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "$gameSystem._pondsReInitialized = true;"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
@@ -16874,10 +16920,12 @@
     "id": 74,
     "list": [
       {
-        "code": 355,
+        "code": 121,
         "indent": 0,
         "parameters": [
-          "$gameSelfSwitches.setValue([43, 103, 'A'], true);"
+          32,
+          32,
+          0
         ]
       },
       {

@@ -1,4 +1,10 @@
 Galv.FISH.ponds = {
+    "Haven Harbor": [
+        [6, 8, true],
+        [7, 12, true],
+        [8, 6, true],
+        [5, 1, '$gameSwitches.value(68) && !$gameSwitches.value(32)']
+    ],
     "The Promenade": [
         [1, 12, true],
         [3, 12, true]
@@ -10,9 +16,6 @@ Galv.FISH.ponds = {
     "North Telluria Field": [
         [2, 5, true],
         [4, 5, '$gameSwitches.value(69)']
-    ],
-    "Fish-Flavored Fish": [
-        [5, 1, true]
     ]
 }
 

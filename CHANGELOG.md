@@ -4,6 +4,15 @@ INTRO
 ### Additions
 - Added random name generation.
 - Added a new early-game fast travel system.
+- Added early-game fishing content:
+  - Crucian Carp
+  - Pond Smelt
+  - Yellow Perch
+  - Carp and Mushroom Stew
+  - Charred Smelt Skewer
+  - Garnished Perch
+  - Good Rod
+  - Enchanted Rod
 
 ### Changes
 - Revamped the start of the game.
