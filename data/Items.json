@@ -4208,7 +4208,7 @@
   {
     "id": 140,
     "animationId": 0,
-    "consumable": false,
+    "consumable": true,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -4216,17 +4216,17 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A mystical feather that allows the owner to jump up to\n2 blocks in any direction. Quivers in usable dungeons.",
+    "description": "",
     "effects": [],
     "hitType": 0,
-    "iconIndex": 336,
-    "itypeId": 2,
-    "name": "Jump Feather",
-    "note": "",
-    "occasion": 3,
+    "iconIndex": 0,
+    "itypeId": 1,
+    "name": "",
+    "note": "Was once the Jump Feather.",
+    "occasion": 0,
     "price": 0,
     "repeats": 1,
-    "scope": 0,
+    "scope": 7,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
