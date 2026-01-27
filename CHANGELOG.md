@@ -2,12 +2,13 @@
 INTRO
 
 ### Additions
-- 
+- Added random name generation.
+- Added a new early-game fast travel system.
 
 ### Changes
 - Revamped the start of the game.
   - The game now begins in Verdin Village.
-  - Time starts ticking as soon as you start.
+  - Time is ticking as soon as you start.
   - Most cutscenes in Adon have been either completely changed or removed.
 - Reduced drop rate of Ring of the Woods/Forest.
 

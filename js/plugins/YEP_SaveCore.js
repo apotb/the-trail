@@ -926,6 +926,17 @@ Window_SaveInfo.prototype.drawGameTitle = function(dy) {
   }
   this.drawText("Last Saved: " + text + " (" + interval + ")", 0, dy + this.lineHeight(), this.contents.width, 'center');
 
+  // Team Name
+  try {
+    let teamName = DataManager.loadGlobalInfo()[this._currentFile].teamName;
+    if (teamName === "Team Name") var text = "";
+    else var text = teamName;
+  } catch (err) {
+    console.error(err);
+    var text = "Error loading team name";
+  }
+  this.drawText(text, 0, dy + this.lineHeight() * 2, this.contents.width, 'center');
+
   return dy + this.lineHeight();
 };
 

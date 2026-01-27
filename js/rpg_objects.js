@@ -5884,6 +5884,10 @@ Game_Party.prototype.hasMembership = function() {
     return this.hasItem($dataItems[231]) || this.hasItem($dataItems[232]) || this.hasItem($dataItems[233]);
 };
 
+Game_Party.prototype.teamName = function() {
+    return $gameActors.actor(19).name();
+}
+
 //-----------------------------------------------------------------------------
 // Game_Troop
 //

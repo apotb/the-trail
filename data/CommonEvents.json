@@ -509,12 +509,82 @@
     "id": 5,
     "list": [
       {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "const prefix = Math.random() < 0.8 ? \"The \" : \"\";"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "const adjectives = $dataStrings.teamName.adjectives; const adjective = adjectives[Math.floor(Math.random() * adjectives.length)];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "const nouns = $dataStrings.teamName.nouns; const noun = nouns[Math.floor(Math.random() * nouns.length)];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "let suffix = \"\";"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "if (Math.random() < 0.4) {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  const places = $dataStrings.teamName.places;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  const place = places[Math.floor(Math.random() * places.length)];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  suffix = ` of ${place}`;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "}"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "$gameActors.actor(19).setName(`${prefix}${adjective} ${noun}${suffix}`);"
+        ]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "Generate Team Name",
     "switchId": 1,
     "trigger": 0
   },

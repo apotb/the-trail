@@ -425,6 +425,7 @@ DataManager.makeSavefileInfo = function() {
     info.playtime   = $gameSystem.playtimeText();
     info.timestamp  = Date.now();
     info.timestamp2 = Date.now();
+    info.teamName   = $gameParty.teamName();
     return info;
 };
 
