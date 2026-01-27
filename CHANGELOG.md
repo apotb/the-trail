@@ -8,9 +8,16 @@ INTRO
   - Crucian Carp
   - Pond Smelt
   - Yellow Perch
+  - Bluegill
+  - Pale Chub
+  - Brook Trout
+  - Sweetfish
   - Carp and Mushroom Stew
   - Charred Smelt Skewer
   - Garnished Perch
+  - Seasoned Bluegill Roast
+  - Earthy Chub Fry
+  - Solus Valley Special
   - Good Rod
   - Enchanted Rod
 

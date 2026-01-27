@@ -1322,7 +1322,7 @@
     "iconIndex": 331,
     "itypeId": 1,
     "name": "Wood",
-    "note": "<Sell Price: 2>\n\n<Disassemble Pool: Wood>\nx1-3 Bark: 100%\nx1 Stick: 75%\n</Disassemble Pool: Wood>",
+    "note": "<Sell Price: 2>\n\n<Disassemble Pool: Wood>\nx1-3 Bark: 100%\nx1 Stick: 75%\nx1 Stick: 75%\n</Disassemble Pool: Wood>",
     "occasion": 3,
     "price": 8,
     "repeats": 1,
@@ -1420,7 +1420,7 @@
     "iconIndex": 297,
     "itypeId": 1,
     "name": "Apple",
-    "note": "<Menu Category: Foodstuffs, Ingredients>\n\n<Custom Show Eval>\nvisible = !$gameTemp.bagOrganized();\n</Custom Show Eval>",
+    "note": "<Menu Category: Foodstuffs, Ingredients>\n<bait:1>\n<baitSink:2>\n<baitImg:bait_red>\n\n<Custom Show Eval>\nvisible = !$gameTemp.bagOrganized();\n</Custom Show Eval>",
     "occasion": 0,
     "price": 12,
     "repeats": 1,
@@ -2842,7 +2842,7 @@
     "iconIndex": 293,
     "itypeId": 1,
     "name": "Brown Mushroom",
-    "note": "<Menu Category: Foodstuffs, Ingredients>\n\n<Custom Show Eval>\nvisible = !$gameTemp.bagOrganized();\n</Custom Show Eval>",
+    "note": "<Menu Category: Foodstuffs, Ingredients>\n<bait:1>\n<baitSink:1.5>\n<baitImg:bait_brown>\n\n<Custom Show Eval>\nvisible = !$gameTemp.bagOrganized();\n</Custom Show Eval>",
     "occasion": 0,
     "price": 6,
     "repeats": 1,
@@ -6102,7 +6102,7 @@
     "iconIndex": 689,
     "itypeId": 1,
     "name": "Advanced Salvage Kit",
-    "note": "<Rarity: 1>\n<Disassembler: Advanced>\n\n<Synthesis Ingredients>\nPetrified Wood: 3\nTarantula Silk: 3\nFeral Bat Wing: 3\nTurtle Scute: 3\nSteel Ingot: 2\nBronze Ingot\n</Synthesis Ingredients>\n<Mask Name: Stronger Salvager>\n<Synthesis SE: Equip3>\n\n<Custom Craft Show Eval>\nvisible = !$gameParty.hasItem($dataItems[207]);\n</Custom Craft Show Eval>",
+    "note": "<Rarity: 1>\n<Disassembler: Advanced>\n\n<Synthesis Ingredients>\nPetrified Wood: 3\nTarantula Silk: 3\nFeral Bat Wing: 3\nTurtle Scute: 3\nSteel Ingot: 2\nBronze Ingot\n</Synthesis Ingredients>\n<Mask Name: Stronger Salvager>\n\n<Custom Craft Show Eval>\nvisible = !$gameParty.hasItem($dataItems[207]);\n</Custom Craft Show Eval>",
     "occasion": 3,
     "price": 50,
     "repeats": 1,
@@ -6513,7 +6513,7 @@
     "iconIndex": 786,
     "itypeId": 1,
     "name": "Seafood Dinner",
-    "note": "<Rarity: 1>\n<Menu Category: Foodstuffs, Meals>\n\n<Synthesis Ingredients>\nFathead Carp\nWhiskerfish\nNorthern Redbelly Dace\nApple\n</Synthesis Ingredients>\n<Mask Name: Shared Seafood>\n<Synthesis SE: Equip3>",
+    "note": "<Rarity: 1>\n<Menu Category: Foodstuffs, Meals>\n\n<Synthesis Ingredients>\nFathead Carp\nWhiskerfish\nNorthern Redbelly Dace\nApple\n</Synthesis Ingredients>\n<Mask Name: Shared Seafood>\n<Synthesis SE: Fire2>",
     "occasion": 0,
     "price": 100,
     "repeats": 1,
@@ -6584,7 +6584,7 @@
     "iconIndex": 787,
     "itypeId": 1,
     "name": "Mana Fritters",
-    "note": "<Rarity: 2>\n<Menu Category: Foodstuffs, Meals>\n\n<Synthesis Ingredients>\nBlue Crab\nStarfruit\nRaw Truffle: 2\n</Synthesis Ingredients>\n<Mask Name: Magical Seafood>\n<Synthesis SE: Equip3>",
+    "note": "<Rarity: 2>\n<Menu Category: Foodstuffs, Meals>\n\n<Synthesis Ingredients>\nBlue Crab\nStarfruit\nRaw Truffle: 2\n</Synthesis Ingredients>\n<Mask Name: Magical Seafood>\n<Synthesis SE: Fire2>",
     "occasion": 0,
     "price": 120,
     "repeats": 1,
@@ -7972,8 +7972,8 @@
       {
         "code": 11,
         "dataId": 0,
-        "value1": 0.4,
-        "value2": 0
+        "value1": 0,
+        "value2": 40
       }
     ],
     "hitType": 0,
@@ -8012,14 +8012,14 @@
         "code": 11,
         "dataId": 0,
         "value1": 0,
-        "value2": 40
+        "value2": 30
       }
     ],
     "hitType": 0,
     "iconIndex": 842,
     "itypeId": 1,
     "name": "Charred Smelt Skewer",
-    "note": "<Menu Category: Foodstuffs, Meals>\n\n<Synthesis Ingredients>\nPond Smelt: 3\n</Synthesis Ingredients>\n<Synthesis SE: Fire2>",
+    "note": "<Menu Category: Foodstuffs, Meals>\n\n<Synthesis Ingredients>\nPond Smelt: 3\nWood\n</Synthesis Ingredients>\n<Synthesis SE: Fire2>",
     "occasion": 0,
     "price": 30,
     "repeats": 1,
@@ -8050,14 +8050,14 @@
       {
         "code": 11,
         "dataId": 0,
-        "value1": 0.3,
-        "value2": 30
+        "value1": 0.2,
+        "value2": 10
       },
       {
         "code": 12,
         "dataId": 0,
         "value1": 0.1,
-        "value2": 0
+        "value2": 5
       }
     ],
     "hitType": 0,
@@ -8069,6 +8069,227 @@
     "price": 70,
     "repeats": 1,
     "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 273,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "A small but sturdy fish found in calm valley waters.\nMore nourishing than harbor fish.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 1687,
+    "itypeId": 1,
+    "name": "Bluegill",
+    "note": "<Menu Category: Fishing>",
+    "occasion": 3,
+    "price": 30,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 274,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "A quick-moving fish that favors clear streams.\nHarder to catch than most valley fish.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 1702,
+    "itypeId": 1,
+    "name": "Pale Chub",
+    "note": "<Menu Category: Fishing>",
+    "occasion": 3,
+    "price": 40,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 275,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "A powerful trout from cold, clean waters.\nHighly prized for its meat.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 1688,
+    "itypeId": 1,
+    "name": "Brook Trout",
+    "note": "<Menu Category: Fishing>",
+    "occasion": 3,
+    "price": 40,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 276,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "A clean-water fish known for its mild yet rich flavor.\nCertainly a somewhat rare find.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 1712,
+    "itypeId": 1,
+    "name": "Sweetfish",
+    "note": "<Rarity: 1>\n<Menu Category: Fishing>",
+    "occasion": 3,
+    "price": 50,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 277,
+    "animationId": 41,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "A nourishing meal consisting of roasted bluegill\nlightly seasoned with tree nuts.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 5,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0,
+        "value2": 80
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 844,
+    "itypeId": 1,
+    "name": "Seasoned Bluegill Roast",
+    "note": "<Menu Category: Foodstuffs, Meals>\n\n<Synthesis Ingredients>\nBluegill: 2\nNuts: 3\n</Synthesis Ingredients>\n<Synthesis SE: Fire2>",
+    "occasion": 0,
+    "price": 70,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 278,
+    "animationId": 41,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Crisp chub and sweet carrots cooked together in a hearty pan fry.\nNot elegant, but has all the nutrients you need for a day on The Trail.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 5,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0.25,
+        "value2": 25
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 845,
+    "itypeId": 1,
+    "name": "Earthy Chub Fry",
+    "note": "<Menu Category: Foodstuffs, Meals>\n\n<Synthesis Ingredients>\nPale Chub: 2\nCarrot: 3\n</Synthesis Ingredients>\n<Synthesis SE: Fire2>",
+    "occasion": 0,
+    "price": 100,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 279,
+    "animationId": 41,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Solus Valley's signature dish, made with the finest fish\nfrom the northern end of the river. Feeds the whole team!",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 5,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0,
+        "value2": 40
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 786,
+    "itypeId": 1,
+    "name": "Solus Valley Special",
+    "note": "<Rarity: 1>\n<Menu Category: Foodstuffs, Meals>\n\n<Synthesis Ingredients>\nBrook Trout: 2\nSweetfish\nApple\n</Synthesis Ingredients>\n<Synthesis SE: Fire2>",
+    "occasion": 0,
+    "price": 140,
+    "repeats": 1,
+    "scope": 8,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0

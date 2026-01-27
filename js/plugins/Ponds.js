@@ -5,6 +5,16 @@ Galv.FISH.ponds = {
         [8, 6, true],
         [5, 1, '$gameSwitches.value(68) && !$gameSwitches.value(32)']
     ],
+    "Solus Valley South": [
+        [6, 10, true],
+        [9, 10, true],
+        [10, 5, true]
+    ],
+    "Solus Valley North": [
+        [9, 12, true],
+        [11, 8, true],
+        [12, 4, true]
+    ],
     "The Promenade": [
         [1, 12, true],
         [3, 12, true]

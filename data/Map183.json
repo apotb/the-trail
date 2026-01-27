@@ -83351,7 +83351,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "THE PROMENADE POND"
+                "\\i[1250] THE PROMENADE POND"
               ]
             },
             {
@@ -83395,7 +83395,7 @@
           "walkAnime": true
         }
       ],
-      "x": 23,
+      "x": 28,
       "y": 16
     },
     {
@@ -85918,8 +85918,8 @@
           "walkAnime": false
         }
       ],
-      "x": 24,
-      "y": 11
+      "x": 22,
+      "y": 14
     },
     {
       "id": 173,
@@ -86089,8 +86089,8 @@
           "walkAnime": false
         }
       ],
-      "x": 29,
-      "y": 14
+      "x": 27,
+      "y": 16
     },
     {
       "id": 174,
@@ -95414,6 +95414,66 @@
       ],
       "x": 98,
       "y": 55
+    },
+    {
+      "id": 257,
+      "name": "EV257",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Other2",
+            "direction": 8,
+            "pattern": 1,
+            "characterIndex": 2
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 23,
+      "y": 14
     }
   ]
 }
