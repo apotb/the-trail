@@ -1,9 +1,15 @@
 # Alpha 18: Back to the Basics (??/??/????)
-INTRO
+There comes a time when enough is enough. Alpha 15's Telluria Field is the highlight of The Trail, but you had to play through a meaningless slog to get there. I spent a long time not wanting to revamp/remove certain parts of the game for nostalgia reasons, but the story simply cannot go on when the first half of it is so poorly put together.
+
+Poorly justified progression, nonsensical dialogue, and a whole lot of fluff that didn't contribute to the story has been changed or outright removed in this update. You'll see the changes right from the very start. If you remember what the dialogue/story was like before, I think you'll find this to be a much better direction for the game.
+
+For the sake of both our time, a lot of specific details have been omitted from the changelog. You'll just have to play to see the full extent of the overhaul!
 
 ### Additions
+- Added a lot of new content before Telluria Field.
 - Added random name generation.
 - Added a new early-game fast travel system.
+- Added a short sound effect when completing a quest objective.
 - Added early-game fishing content:
   - Crucian Carp
   - Pond Smelt
@@ -25,10 +31,10 @@ INTRO
   - Enchanted Rod
 
 ### Changes
-- Revamped the start of the game.
+- Revamped most of the game up to Telluria Field.
   - The game now begins in Verdin Village.
   - Time is ticking as soon as you start.
-  - Most cutscenes in Adon have been either completely changed or removed.
+  - Most cutscenes have been either completely changed or removed.
 - Existing fishing/food content has been overhauled to accommodate new early-game fishing content.
 - Increased max name length from 10 → 12.
 - Reduced drop rate of Ring of the Woods/Forest.
