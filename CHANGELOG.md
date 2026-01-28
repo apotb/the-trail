@@ -38,6 +38,7 @@ For the sake of both our time, a lot of specific details have been omitted from 
 - Existing fishing/food content has been overhauled to accommodate new early-game fishing content.
 - Increased max name length from 10 → 12.
 - Reduced drop rate of Ring of the Woods/Forest.
+- Buffed Earthen Grassrobes Earth resistance from 10% to 25%.
 
 ### Bug Fixes
 - Fixed a bug where Copper Oreleaf couldn't drop Rock Salt.

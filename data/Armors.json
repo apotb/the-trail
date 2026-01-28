@@ -794,13 +794,13 @@
   {
     "id": 37,
     "atypeId": 3,
-    "description": "It feels like dirt, but it still has the softness\nof silk. Reduces damage taken by \\nl[6] attacks.",
+    "description": "It feels like dirt, but it still has the softness of silk.\nReduces damage taken from \\nl[6] attacks by 25%.",
     "etypeId": 4,
     "traits": [
       {
         "code": 11,
         "dataId": 6,
-        "value": 0.9
+        "value": 0.75
       }
     ],
     "iconIndex": 581,
