@@ -25041,6 +25041,13 @@
               ]
             },
             {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameSelfSwitches.setValue([83, 83, 'A'], true);"
+              ]
+            },
+            {
               "code": 126,
               "indent": 1,
               "parameters": [
@@ -25120,6 +25127,13 @@
                   "pitch": 100,
                   "pan": 0
                 }
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "Quest 44 Complete Objective 1"
               ]
             },
             {
@@ -25211,6 +25225,13 @@
               "indent": 1,
               "parameters": [
                 "or the leaderboard, just talk to me!"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameSelfSwitches.setValue([183, 172, 'A'], true);"
               ]
             },
             {
@@ -25491,10 +25512,61 @@
           "conditions": {
             "actorId": 1,
             "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
+            "itemId": 249,
+            "itemValid": true,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Other2",
+            "direction": 8,
+            "pattern": 1,
+            "characterIndex": 2
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 249,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
             "switch1Id": 1,
             "switch1Valid": false,
             "switch2Id": 1,
@@ -25593,7 +25665,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Overpopulated by \\ii[267],"
+                "Overpopulated by \\ii[273],"
               ]
             },
             {

@@ -16,12 +16,11 @@ Galv.FISH.ponds = {
         [12, 4, true]
     ],
     "The Promenade": [
-        [1, 12, true],
-        [3, 12, true]
+        [1, 24, true]
     ],
     "Lake of Telluria": [
-        [1, 8, true],
-        [2, 16, true]
+        [2, 16, true],
+        [3, 8, true]
     ],
     "North Telluria Field": [
         [2, 5, true],

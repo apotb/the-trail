@@ -18,6 +18,9 @@ INTRO
   - Seasoned Bluegill Roast
   - Earthy Chub Fry
   - Solus Valley Special
+  - Honey-Glazed Carp
+  - Seared Dace
+  - Whiskerfish Porridge
   - Good Rod
   - Enchanted Rod
 
@@ -26,11 +29,12 @@ INTRO
   - The game now begins in Verdin Village.
   - Time is ticking as soon as you start.
   - Most cutscenes in Adon have been either completely changed or removed.
+- Existing fishing/food content has been overhauled to accommodate new early-game fishing content.
 - Increased max name length from 10 → 12.
 - Reduced drop rate of Ring of the Woods/Forest.
 
 ### Bug Fixes
-- 
+- Fixed a bug where Copper Oreleaf couldn't drop Rock Salt.
 
 OUTRO
 
