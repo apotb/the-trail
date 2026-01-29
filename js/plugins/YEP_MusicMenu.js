@@ -38,7 +38,7 @@ Yanfly.MusicMenu.version = 1.01;
  *
  * @param Song List
  * @desc All song data. Format:
- * filename; display name; volume; pitch; pan; description; icon
+ * filename; display name; description; icon
  * @type text[]
  * @default []
  *
