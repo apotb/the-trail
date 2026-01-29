@@ -381,9 +381,10 @@ DataManager.saveGameWithoutRescue = function(savefileId) {
 DataManager.loadGameWithoutRescue = function(savefileId) {
     var globalInfo = this.loadGlobalInfo();
     if (this.isThisGameFile(savefileId)) {
-        var json = StorageManager.load(savefileId);
+        var json = JsonEx.parse(StorageManager.load(savefileId));
+        if (json.system._versionId < 81 && !$gameTemp.isPlaytest()) return false; // ALPHA 18 CUTOFF
         this.createGameObjects();
-        this.extractSaveContents(JsonEx.parse(json));
+        this.extractSaveContents(json);
         this._lastAccessedId = savefileId;
         globalInfo[savefileId].timestamp2 = Date.now();
         this.saveGlobalInfo(globalInfo);

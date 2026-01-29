@@ -5,7 +5,7 @@ Poorly justified progression, nonsensical dialogue, and a whole lot of fluff tha
 
 For the sake of both our time, a lot of specific details have been omitted from the changelog, Alpha 14-esque. You'll just have to play to see the full extent of the overhaul!
 
-NOTICE: Old saves will probably run into a lot of random issues. Proceed with caution!
+NOTICE: Old saves will not work with this update!
 
 ### Additions
 - Added a LOT of new content before Telluria Field, including:
