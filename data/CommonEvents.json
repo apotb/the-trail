@@ -5468,11 +5468,21 @@
         "code": 302,
         "indent": 0,
         "parameters": [
-          1,
-          61,
+          0,
+          6,
           0,
           0,
           false
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 0,
+        "parameters": [
+          1,
+          61,
+          0,
+          0
         ]
       },
       {
@@ -10332,7 +10342,7 @@
         "indent": 0,
         "parameters": [
           12,
-          "!$gameSystem._moonRespawnList.contains($gameMap.mapId()) && $gameSystem.chapter() >= 3"
+          "!$gameSystem._moonRespawnList.contains($gameMap.mapId())"
         ]
       },
       {
@@ -16552,16 +16562,6 @@
         "parameters": [
           2,
           26,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 0,
-        "parameters": [
-          0,
-          34,
           0,
           0
         ]

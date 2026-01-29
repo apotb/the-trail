@@ -2258,8 +2258,9 @@
               "code": 111,
               "indent": 0,
               "parameters": [
-                12,
-                "!$gameSelfSwitches.value([8, 78, 'A'])"
+                0,
+                24,
+                1
               ]
             },
             {
@@ -2472,6 +2473,13 @@
                 ],
                 1,
                 false
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameSystem._failedRush1 = true;"
               ]
             },
             {
@@ -2844,7 +2852,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "The door is locked."
+                "A strong gust of sand slams the door shut."
               ]
             },
             {

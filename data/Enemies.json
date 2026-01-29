@@ -1226,14 +1226,14 @@
     ],
     "gold": 25,
     "name": "Goblin",
-    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Goblin_1>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<Enemy Drops>\nHorn: 5%\nWorn Cloth: 75%\nLeather: 75%\nLoaf of Bread: 10%\nLeather Charm: 5%\nGoblin Fang: 5%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Goblin_1>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<AI Priority>\nState === Weak Point +++ Random 75%: Attack, Highest HP\n</AI Priority>\n\n<Enemy Drops>\nHorn: 5%\nWorn Cloth: 75%\nLeather: 75%\nLoaf of Bread: 10%\nLeather Charm: 5%\nGoblin Fang: 5%\n</Enemy Drops>",
     "params": [
       300,
       30,
       14,
       13,
       1,
-      30,
+      20,
       70,
       18
     ]
@@ -1289,7 +1289,7 @@
       16,
       15,
       1,
-      36,
+      30,
       80,
       20
     ]
@@ -2566,7 +2566,7 @@
     ],
     "gold": 500,
     "name": "Rainbow Slime",
-    "note": "<Passive State: 124, 136>\n<Max atk Buff: +50>\n\n<Sideview Battler: NoMatchingSprite/Rainbow Slime>\n<Scale Sprite: 200%>\n<Battle Select Cursor Position Y: Middle>\n\n<DiscoDisco>\n\n<Enemy Drops>\nRare Enemy Certificate: 100%\nWhite Gel: 100%\nCondensed White Gel: 100%\nSlime Scarf: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\n</Enemy Drops>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>",
+    "note": "<Passive State: 124, 136>\n<Max atk Buff: +50>\n\n<Sideview Battler: NoMatchingSprite/Rainbow Slime>\n<Scale Sprite: 200%>\n<Battle Select Cursor Position Y: Middle>\n\n<DiscoDisco>\n\n<Enemy Drops>\nRare Enemy Certificate: 100%\nWhite Gel: 100%\nCondensed White Gel: 100%\nSlime Scarf: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\n</Enemy Drops>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 3: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 3: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 3: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 3: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 3: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 3: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 3: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 3: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 3: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 3: +100%\n</Conditional Red Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Icy Gel Drop>",
     "params": [
       2000,
       50,

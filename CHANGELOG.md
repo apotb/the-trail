@@ -6,10 +6,11 @@ Poorly justified progression, nonsensical dialogue, and a whole lot of fluff tha
 For the sake of both our time, a lot of specific details have been omitted from the changelog. You'll just have to play to see the full extent of the overhaul!
 
 ### Additions
-- Added a lot of new content before Telluria Field.
 - Added random name generation.
 - Added a new early-game fast travel system.
 - Added a short sound effect when completing a quest objective.
+- Added a LOT of new content before Telluria Field, including these items:
+  - Eclipse Potion
 - Added early-game fishing content:
   - Crucian Carp
   - Pond Smelt
@@ -37,11 +38,14 @@ For the sake of both our time, a lot of specific details have been omitted from 
   - Most cutscenes have been either completely changed or removed.
 - Existing fishing/food content has been overhauled to accommodate new early-game fishing content.
 - Increased max name length from 10 → 12.
+- Made Goblins weaker to magic.
 - Reduced drop rate of Ring of the Woods/Forest.
 - Buffed Earthen Grassrobes Earth resistance from 10% to 25%.
 
 ### Bug Fixes
 - Fixed a bug where Copper Oreleaf couldn't drop Rock Salt.
+- Fixed Seshat's Tome drop beginning in Telluria Field being a 1/10,000 drop rather than a 1/100 drop.
+- Fixed a bunch of other random bugs.
 
 OUTRO
 

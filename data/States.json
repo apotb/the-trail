@@ -7523,27 +7523,38 @@
   },
   {
     "id": 223,
-    "autoRemovalTiming": 0,
+    "autoRemovalTiming": 2,
     "chanceByDamage": 100,
-    "traits": [],
-    "iconIndex": 0,
-    "maxTurns": 1,
-    "message1": "",
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.04
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.04
+      }
+    ],
+    "iconIndex": 848,
+    "maxTurns": 18,
+    "message1": " is extra stealthy!",
     "message2": "",
     "message3": "",
-    "message4": "",
-    "minTurns": 1,
+    "message4": " is no longer extra stealthy.",
+    "minTurns": 16,
     "motion": 0,
-    "name": "",
-    "note": "",
+    "name": "Eclipse",
+    "note": "<Category: Bypass Death Removal>\n<Category: buff>\n\n<animationRow:32>\n\n<Help Description>\nIncreases EVA and CRI by 4%.\n</Help Description>",
     "overlay": 0,
-    "priority": 50,
+    "priority": 30,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
-    "removeByWalking": false,
+    "removeByWalking": true,
     "restriction": 0,
-    "stepsToRemove": 100
+    "stepsToRemove": 2000
   },
   {
     "id": 224,
