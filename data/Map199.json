@@ -2394,8 +2394,76 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 1,
+            "switch1Id": 49,
             "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Blacksmith",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "You need the \\fbBLACKSMITH'S BLESSING\\fr to use the magic forge!"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 49,
+            "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 1,
@@ -2598,8 +2666,17 @@
               ]
             },
             {
-              "code": 101,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                0,
+                49,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
               "parameters": [
                 "Blacksmith",
                 0,
@@ -2609,17 +2686,75 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "\\n<Blacksmith>The magic forge is to your right."
+                "\\dnvWelcome, blessed travelers. Feel free to"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "My son can sell you some items."
+                "use the magic forge to your right."
               ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "My son can you sell some items."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Blacksmith",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\dnvWithout the blessing of a Smith, you cannot use the"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "magic forge... and I'm not giving it out anytime soon."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Go to Bladesville and ask my older brother."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 205,
@@ -2755,7 +2890,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\n<Blacksmith>You four... I've seen you in here quite a"
+                "\\dnvYou four... I've seen you in here quite a"
               ]
             },
             {
@@ -2796,7 +2931,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\n<Blacksmith>Perfect. Mind if I see your \\ii[101]?"
+                "\\dnvPerfect. Mind if I see your \\ii[101]?"
               ]
             },
             {
@@ -2981,7 +3116,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\n<Blacksmith>Takes tellurium dust to make a tellurium pickaxe."
+                "\\dnvTakes \\ii[175] to make a \\ii[184]."
               ]
             },
             {
@@ -3019,7 +3154,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\n<Blacksmith>Go to Bladesville. You know where the Abandoned"
+                "\\dnvGo to Bladesville. You know where the Abandoned"
               ]
             },
             {
@@ -3050,7 +3185,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\n<Blacksmith>Forge a \\ii[176] and show me. Then I'll"
+                "\\dnvForge a \\ii[176] and show me. Then I'll"
               ]
             },
             {
@@ -3256,7 +3391,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\n<Blacksmith>The magic forge is to your right."
+                "\\dnvThe magic forge is to your right."
               ]
             },
             {
@@ -3303,7 +3438,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\n<Blacksmith>That's an impressive forging job."
+                "\\dnvThat's an impressive forging job."
               ]
             },
             {
@@ -3327,7 +3462,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\n<Blacksmith>Like I said earlier, your job"
+                "\\dnvLike I said earlier, your job"
               ]
             },
             {
@@ -3447,7 +3582,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\n<Blacksmith>Forge a \\ii[176] and show me. Then I'll"
+                "\\dnvForge a \\ii[176] and show me. Then I'll"
               ]
             },
             {
@@ -4390,7 +4525,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\n<Blacksmith's Son>Hi thewe! Do you want to"
+                "\\n<Donovan's Son>Hi thewe! Do you want to"
               ]
             },
             {
@@ -4436,7 +4571,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\n<Blacksmith's Son>Yay! Hewe they awe..."
+                "\\n<Donovan's Son>Yay! Hewe they awe..."
               ]
             },
             {
@@ -4524,7 +4659,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\n<Blacksmith's Son>Thank yewe for shopping!"
+                "\\n<Donovan's Son>Thank yewe for shopping!"
               ]
             },
             {
@@ -4554,7 +4689,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\n<Blacksmith's Son>Aww..."
+                "\\n<Donovan's Son>Aww..."
               ]
             },
             {
@@ -4581,7 +4716,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\n<Blacksmith's Son>See you latewe!"
+                "\\n<Donovan's Son>See you latewe!"
               ]
             },
             {
@@ -4617,6 +4752,120 @@
       ],
       "x": 10,
       "y": 8
-    }
+    },
+    {
+      "id": 17,
+      "name": "EV017",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "characterIndex": 0
+          },
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "indent": null,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 1,
+          "walkAnime": true,
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                6,
+                -1,
+                4
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "ShowLocation Shop Floor"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                6,
+                -1,
+                6
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "ShowLocation Magic Forge"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ]
+        }
+      ],
+      "x": 15,
+      "y": 10
+    },
+    null
   ]
 }

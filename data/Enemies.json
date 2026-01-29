@@ -1567,7 +1567,7 @@
     ],
     "gold": 60,
     "name": "Dandy Toad Captain",
-    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: DandyToad_4>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nTroop Alive Members > 1 +++ State !== Weak Point +++ Random 20%: Weak Point, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Enemy Drops>\nBell: 5%\nFulfilling Ration: 50%\nPotion: 16.66%\nPotion: 16.66%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: DandyToad_4>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nTroop Alive Members > 1 +++ State !== Weak Point +++ Random 20%: Weak Point, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Enemy Drops>\nBell: 5%\nLoaf of Bread: 50%\nLoaf of Bread: 50%\nBlack Gloves: 20%\nPotion: 20%\nPotion: 20%\n</Enemy Drops>",
     "params": [
       1200,
       60,
@@ -1633,7 +1633,7 @@
     ],
     "gold": 25,
     "name": "Red Slime",
-    "note": "<Element: Fire>\n<Element Absorb: Fire>\n<Passive State: 136>\n\n<Sideview Battler: Monster2_7>\n<Scale Sprite: 200%>\n<Battle Select Cursor Position Y: Middle>\n<Attack Animation: 3>\n\n<AI Priority>\nState === Confused: Purify\nState === Poisoned: Purify\nState === Paralyzed: Purify\n</AI Priority>\n\n<Enemy Drops>\nSlime Scarf: 5%\nRed Gel: 75%\nRed Gel: 75%\nFulfilling Ration: 20%\nElixir: 10%\nHeedup Berry: 10%\nCoal: 50%\nCopper Cluster: 33.33%\nIron Cluster: 20%\nCondensed Red Gel: 5%\nFire Essence: 20%\n</Enemy Drops>",
+    "note": "<Element: Fire>\n<Element Absorb: Fire>\n<Passive State: 136>\n\n<Sideview Battler: Monster2_7>\n<Scale Sprite: 200%>\n<Battle Select Cursor Position Y: Middle>\n<Attack Animation: 3>\n\n<AI Priority>\nState === Confused: Purify\nState === Poisoned: Purify\nState === Paralyzed: Purify\n</AI Priority>\n\n<Enemy Drops>\nSlime Scarf: 5%\nRed Gel: 75%\nRed Gel: 75%\nFulfilling Ration: 20%\nElixir: 10%\nHeedup Berry: 10%\nCondensed Red Gel: 5%\nFire Essence: 20%\n</Enemy Drops>",
     "params": [
       300,
       60,
@@ -1701,14 +1701,14 @@
     ],
     "gold": 30,
     "name": "Bat",
-    "note": "<Armor Weakness: Slashing>\n<Element: Wind>\n\n<Sideview Battler: Monster1_1>\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n\n<Enemy Drops>\nTaut Rope: 5%\nStorm Lens: 5%\nBat Sling: 2%\nBat Wing: 75%\nBat Wing: 75%\nCoal: 50%\nCopper Cluster: 33.33%\nIron Cluster: 20%\nEnchanted Bat Skin: 5%\nShard of Glass: 1%\nWind Essence: 20%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n<Element: Wind>\n\n<Sideview Battler: Monster1_1>\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n\n<Enemy Drops>\nTaut Rope: 5%\nStorm Lens: 5%\nBat Sling: 2%\nBat Wing: 75%\nBat Wing: 75%\nEnchanted Bat Skin: 5%\nShard of Glass: 1%\nWind Essence: 20%\n</Enemy Drops>",
     "params": [
       300,
       35,
       15,
       13,
       1,
-      32,
+      40,
       125,
       7
     ]

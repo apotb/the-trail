@@ -3,15 +3,23 @@ There comes a time when enough is enough. Alpha 15's Telluria Field is the highl
 
 Poorly justified progression, nonsensical dialogue, and a whole lot of fluff that didn't contribute to the story has been changed or outright removed in this update. You'll see the changes right from the very start. If you remember what the dialogue/story was like before, I think you'll find this to be a much better direction for the game.
 
-For the sake of both our time, a lot of specific details have been omitted from the changelog. You'll just have to play to see the full extent of the overhaul!
+For the sake of both our time, a lot of specific details have been omitted from the changelog, Alpha 14-esque. You'll just have to play to see the full extent of the overhaul!
+
+NOTICE: Old saves will probably run into a lot of random issues. Proceed with caution!
 
 ### Additions
+- Added a LOT of new content before Telluria Field, including:
+  - 2 new settlements to explore
+  - New characters
+  - Several new quests
 - Added random name generation.
+- Added team names.
+- Added royal titles.
 - Added a new early-game fast travel system.
 - Added a short sound effect when completing a quest objective.
-- Added a LOT of new content before Telluria Field, including these items:
+- Added 1 item:
   - Eclipse Potion
-- Added early-game fishing content:
+- Added early-game fishing content and 18 items:
   - Crucian Carp
   - Pond Smelt
   - Yellow Perch
@@ -35,20 +43,30 @@ For the sake of both our time, a lot of specific details have been omitted from 
 - Revamped most of the game up to Telluria Field.
   - The game now begins in Verdin Village.
   - Time is ticking as soon as you start.
+  - The Blazing Sands are available as soon as you reach Telluria.
   - Most cutscenes have been either completely changed or removed.
-- Existing fishing/food content has been overhauled to accommodate new early-game fishing content.
+  - A bunch of stuff got rebalanced, shuffled around, or given a spotlight in an overcrowded pool of new content.
+  - Existing fishing/food content has been overhauled to accommodate new early-game fishing content.
 - Increased max name length from 10 → 12.
+- Red Slimes and Bats no longer drop Copper/Iron Clusters and Coal.
+  - This is compensated by 12 new ore nodes in Goblin Grotto, half of which are oreleaf.
 - Made Goblins weaker to magic.
+- Made Bats more resistant to magic.
 - Reduced drop rate of Ring of the Woods/Forest.
 - Buffed Earthen Grassrobes Earth resistance from 10% to 25%.
 - Reordered smithery crafting menus.
+- Changed the color of trees!
 
 ### Bug Fixes
 - Fixed a bug where Copper Oreleaf couldn't drop Rock Salt.
 - Fixed Seshat's Tome drop beginning in Telluria Field being a 1/10,000 drop rather than a 1/100 drop.
 - Fixed a bunch of other random bugs.
 
-OUTRO
+If you happen to stumble upon a "new" item that isn't on here, it's probably because I made a lot of old/bad items more relevant. For example, the Globetrotter Boots, once useless at Telluria Castle Town's tier, now have a much better fit in Solus Valley. So you might be stumbling upon items you never would have even thought to care about in previous versions!
+
+I know I said Alpha 18 would be the Wasteland update, but don't worry, the update's not going anywhere. In fact, the party will finally get to face their most dangerous challenges yet in Alpha 19!
+
+Until then... the journey continues.
 
 Yours truly,
 AP

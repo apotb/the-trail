@@ -3100,24 +3100,30 @@
     "members": [
       {
         "enemyId": 23,
-        "x": 298,
-        "y": 361,
+        "x": 325,
+        "y": 364,
         "hidden": false
       },
       {
         "enemyId": 23,
-        "x": 353,
-        "y": 256,
+        "x": 431,
+        "y": 190,
         "hidden": false
       },
       {
         "enemyId": 35,
-        "x": 228,
-        "y": 286,
+        "x": 102,
+        "y": 355,
         "hidden": true
+      },
+      {
+        "enemyId": 23,
+        "x": 243,
+        "y": 220,
+        "hidden": false
       }
     ],
-    "name": "Red Slime x2",
+    "name": "Red Slime x3",
     "pages": [
       {
         "conditions": {
@@ -3239,9 +3245,15 @@
         "x": 390,
         "y": 205,
         "hidden": false
+      },
+      {
+        "enemyId": 24,
+        "x": 168,
+        "y": 172,
+        "hidden": false
       }
     ],
-    "name": "Bat x2",
+    "name": "Bat x3",
     "pages": [
       {
         "conditions": {
@@ -3277,9 +3289,15 @@
         "x": 249,
         "y": 352,
         "hidden": false
+      },
+      {
+        "enemyId": 25,
+        "x": 372,
+        "y": 190,
+        "hidden": false
       }
     ],
-    "name": "Skeleton Knight",
+    "name": "Skeleton Knight x2",
     "pages": [
       {
         "conditions": {
