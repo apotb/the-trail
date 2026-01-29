@@ -41,6 +41,7 @@ For the sake of both our time, a lot of specific details have been omitted from 
 - Made Goblins weaker to magic.
 - Reduced drop rate of Ring of the Woods/Forest.
 - Buffed Earthen Grassrobes Earth resistance from 10% to 25%.
+- Reordered smithery crafting menus.
 
 ### Bug Fixes
 - Fixed a bug where Copper Oreleaf couldn't drop Rock Salt.

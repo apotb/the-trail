@@ -276,7 +276,7 @@
   {
     "id": 14,
     "atypeId": 1,
-    "description": "Leather boots fortified with metal. They don't give\nmuch defense, but they make movement easier.",
+    "description": "Hide boots fortified with metal. They don't give\nmuch defense, but they make movement easier.",
     "etypeId": 5,
     "traits": [],
     "iconIndex": 529,
@@ -1871,9 +1871,9 @@
         "value": 0.8
       }
     ],
-    "iconIndex": 339,
+    "iconIndex": 667,
     "name": "Skull Hat",
-    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nSkeleton Skull\nDark Essence: 2\n</Synthesis Ingredients>\n<Mask Name: Peculiar Dark Headgear>\n<Synthesis SE: Equip3>",
+    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nNecrotic Skull\nDark Essence: 2\n</Synthesis Ingredients>\n<Mask Name: Peculiar Dark Headgear>\n<Synthesis SE: Equip3>",
     "params": [
       5,
       5,
@@ -2328,7 +2328,7 @@
   {
     "id": 96,
     "atypeId": 1,
-    "description": "A strange charm that provides immunity to\n\\it[21], \\it[20], \\it[22], and \\it[23].",
+    "description": "A strange charm that provides immunity to\n\\it[21], \\it[20], \\it[22], \\it[23], and \\it[56].",
     "etypeId": 6,
     "traits": [
       {
@@ -2375,7 +2375,7 @@
   {
     "id": 97,
     "atypeId": 6,
-    "description": "A powerful shield with the ability to ward away many ailments.\nCombines the effects of \\ia[96] and \\ia[82].",
+    "description": "A powerful light shield with the ability to ward away many ailments.\nCombines the effects of \\ia[96] and \\ia[82].",
     "etypeId": 2,
     "traits": [
       {
