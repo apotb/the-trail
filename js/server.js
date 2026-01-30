@@ -7,6 +7,19 @@ const clients = new Map();
 
 console.log("! Server running on port 8080");
 
+// Ping interval, prevents idle timeouts
+const pingInterval = setInterval(() => {
+    wss.clients.forEach((ws) => {
+        if (ws.isAlive === false) return ws.terminate();
+        ws.isAlive = false;
+        ws.ping();
+    });
+}, 30 * 1000); // Ping every 30 seconds
+
+wss.on('close', () => {
+    clearInterval(pingInterval);
+});
+
 // Setup command interface
 const rl = readline.createInterface({
     input: process.stdin,
@@ -107,6 +120,12 @@ rl.on('line', (input) => {
 });
 
 wss.on('connection', (ws) => {
+    ws.isAlive = true;
+
+    ws.on('pong', () => {
+        ws.isAlive = true;
+    });
+
     ws.on('message', (raw) => {
         try {
             const data = JSON.parse(raw.toString());
