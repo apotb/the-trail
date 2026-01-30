@@ -671,6 +671,7 @@ Window_ShopStatus.prototype.refresh = function() {
     this.resetFontSettings();
     var x = this.textPadding();
     this.drawPossession(x, 0);
+    this.drawMaterialText(x, this.lineHeight());
     if (!this.isEquipItem()) return;
     this.resetTextColor();
     this.resetFontSettings();
@@ -678,22 +679,29 @@ Window_ShopStatus.prototype.refresh = function() {
     if (this.isActorMode()) this.drawActorData();
 };
 
+Window_ShopStatus.prototype.drawMaterialText = function(x, y) {
+    var item = this._item;
+    if (!DataManager.isMaterial(item)) return;
+    this.resetFontSettings();
+    this.drawText("Material", x, y, this.contents.width - x);
+};
+
 Window_ShopStatus.prototype.drawDefaultData = function() {
     this.drawStatDisplayed();
-    this.drawEquipInfo(this.textPadding(), this.lineHeight() * 2);
+    this.drawEquipInfo(this.textPadding(), this.lineHeight() * 3);
 };
 
 Window_ShopStatus.prototype.drawStatDisplayed = function() {
     var paramId = this.paramId();
     var text = TextManager.param(paramId);
     this.changeTextColor(this.normalColor());
-    this.drawText(text, 0, this.lineHeight(), this.contents.width, 'center');
+    this.drawText(text, 0, this.lineHeight() * 2, this.contents.width, 'center');
     if (!Yanfly.Param.ShopStatSwitch) return;
     this.changeTextColor(this.systemColor());
     var text = '<<';
-    this.drawText(text, 0, this.lineHeight(), this.contents.width, 'left');
+    this.drawText(text, 0, this.lineHeight() * 2, this.contents.width, 'left');
     var text = '>>';
-    this.drawText(text, 0, this.lineHeight(), this.contents.width, 'right');
+    this.drawText(text, 0, this.lineHeight() * 2, this.contents.width, 'right');
 };
 
 Window_ShopStatus.prototype.drawActorData = function() {
@@ -713,12 +721,12 @@ Window_ShopStatus.prototype.drawActorDisplayed = function(actor) {
     var text = "\\i[" + $dataClasses[actor._classId].icon + "]" + actor.name();
     var tx = (this.contents.width - this.textWidth(text)) / 2;
     this.changeTextColor(this.normalColor());
-    this.drawTextEx(text, tx, this.lineHeight(), this.contents.width, 'center');
+    this.drawTextEx(text, tx, this.lineHeight() * 2, this.contents.width, 'center');
     this.changeTextColor(this.systemColor());
     var text = '<<';
-    this.drawText(text, 0, this.lineHeight(), this.contents.width, 'left');
+    this.drawText(text, 0, this.lineHeight() * 2, this.contents.width, 'left');
     var text = '>>';
-    this.drawText(text, 0, this.lineHeight(), this.contents.width, 'right');
+    this.drawText(text, 0, this.lineHeight() * 2, this.contents.width, 'right');
 };
 
 Window_ShopStatus.prototype.drawDarkRectEntries = function(actor) {
@@ -733,7 +741,7 @@ Window_ShopStatus.prototype.getRectPosition = function(index) {
     rect.width = Math.floor(this.contents.width / 4);
     rect.height = this.lineHeight();
     rect.x = (index % 4) * rect.width;
-    rect.y = Math.floor(index / 4) * this.lineHeight() + this.lineHeight() * 2;
+    rect.y = Math.floor(index / 4) * this.lineHeight() + this.lineHeight() * 3;
     return rect;
 };
 

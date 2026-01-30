@@ -62,8 +62,10 @@ NOTICE: Old saves will not work with this update!
 - Made Bats more resistant to magic.
 - Reduced drop rate of Ring of the Woods/Forest.
 - Buffed Earthen Grassrobes Earth resistance from 10% to 25%.
-- Reordered smithery crafting menus.
-- Equipment shows more relevant stats.
+- Menu improvements:
+  - Reordered smithery crafting menus.
+  - Shop sell menu shows if an item is a material.
+  - Equipment shows more relevant stats.
 - Changed the color of trees!
 
 ### Bug Fixes
