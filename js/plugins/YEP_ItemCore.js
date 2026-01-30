@@ -641,18 +641,6 @@ DataManager.processItemCoreNotetags = function(group) {
   }
 };
 
-DataManager.initRarity = function(item) {
-    item.rarity = DataManager.getBaseItem(item).rarity;
-    if (item.textColor === 0) {
-      if (item.rarity >= 5) item.textColor = 27;
-      else if (item.rarity >= 4) item.textColor = 21;
-      else if (item.rarity >= 3) item.textColor = 30;
-      else if (item.rarity >= 2) item.textColor = 16;
-      else if (item.rarity >= 1) item.textColor = 24;
-      else item.textColor = 0;
-    }
-};
-
 DataManager.setDatabaseLengths = function() {
     this._baseItemsLength   = $dataItems.length
     this._baseWeaponsLength = $dataWeapons.length
@@ -2180,7 +2168,8 @@ Window_ItemInfo.prototype.drawMaterialText = function(dy) {
 Window_ItemInfo.prototype.drawItemRarity = function(dy) {
     var item = this._item;
     if (item.rarity === undefined) DataManager.initRarity(item);
-    if (item.rarity >= 5) item.rarityText = "MYTHIC";
+    if (item.rarity === 11) item.rarityText = "TROPHY";
+    else if (item.rarity >= 5) item.rarityText = "MYTHIC";
     else if (item.rarity >= 4) item.rarityText = "LEGENDARY";
     else if (item.rarity >= 3) item.rarityText = "EPIC";
     else if (item.rarity >= 2) item.rarityText = "RARE";

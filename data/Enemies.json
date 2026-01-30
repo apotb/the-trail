@@ -2260,7 +2260,7 @@
     ],
     "gold": 380,
     "name": "Henry",
-    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Slashing>\n\n<Sideview Battler: Evil1_2>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<HP Gauge Width: 216>\n\n<Boost Skill 15: Full>\n<Boost Skill 18: Full>\n<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\n\nState !== Foresight +++ User HP% param >= 30% +++ Random 30%: Foresight, User\nState !== Sharpened Dagger +++ User HP% param >= 30%: Sharpen Dagger, User\n\nTroop Alive Members > 1 +++ State !== Inspired: Inspire\n</AI Priority>\n\n<Enemy Drops>\nBell: 5%\nHenry's Tiny Boots: 100%\nHenry's Gloves: 100%\nHenry's Charm: 100%\n</Enemy Drops>",
+    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Slashing>\n\n<Sideview Battler: Evil1_2>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<HP Gauge Width: 216>\n\n<Boost Skill 15: Full>\n<Boost Skill 18: Full>\n<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\n\nState !== Foresight +++ User HP% param >= 30% +++ Random 30%: Foresight, User\nState !== Sharpened Dagger +++ User HP% param >= 30%: Sharpen Dagger, User\n\nTroop Alive Members > 1 +++ State !== Inspired: Inspire\n</AI Priority>\n\n<Enemy Drops>\nBell: 5%\nHenry's Boots: 100%\nHenry's Gloves: 100%\nHenry's Charm: 100%\n</Enemy Drops>",
     "params": [
       3000,
       120,

@@ -6153,5 +6153,90 @@
       0
     ],
     "price": 1200
+  },
+  {
+    "id": 235,
+    "atypeId": 1,
+    "description": "A formidable pair of boots once belonging to Henry.\nModified for enhanced thieving skills, though a bit slow.",
+    "etypeId": 5,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.05
+      }
+    ],
+    "iconIndex": 478,
+    "name": "Henry's Boots",
+    "note": "<Rarity: 11>\n<Menu Category: Memorabilia>\n<Upgrade Slots: 1>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -5,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 236,
+    "atypeId": 1,
+    "description": "An inconspicuous belt resonating with a mix of light and dark power.\nGrants enhanced magical abilities and resistance to \\nl[8]/\\nl[9] damage.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 8,
+        "value": 0.9
+      },
+      {
+        "code": 11,
+        "dataId": 9,
+        "value": 0.9
+      }
+    ],
+    "iconIndex": 181,
+    "name": "The Warden's Belt",
+    "note": "<Rarity: 11>\n<Menu Category: Memorabilia>\n<Upgrade Slots: 1>\n\n<Element Amplify Magical: +5%>",
+    "params": [
+      0,
+      5,
+      0,
+      0,
+      5,
+      5,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 237,
+    "atypeId": 1,
+    "description": "A broken, beat-up helmet. It's lost most of its soulfire,\ncolor, and magic. Increases physical lifesteal by 4%",
+    "etypeId": 3,
+    "traits": [],
+    "iconIndex": 533,
+    "name": "Forgotten General's Helmet",
+    "note": "<Rarity: 11>\n<Menu Category: Memorabilia>\n<Upgrade Slots: 1>\n\n<HP Life Steal Physical: +4%>",
+    "params": [
+      4,
+      0,
+      0,
+      4,
+      0,
+      4,
+      0,
+      0
+    ],
+    "price": 0
   }
 ]

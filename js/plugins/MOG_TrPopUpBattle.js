@@ -233,14 +233,6 @@ SpriteEnemyTrP.prototype.gainDropItems = function() {
 //==============================
 // * create Icon
 //==============================
-const RARITY_COLORS = {
-    1: 0x80ff80,	// Uncommon
-    2: 0x84aaff,	// Rare
-    3: 0xa060e0,	// Epic
-    4: 0xf0c040,	// Legendary
-    5: 0xff80ff,	// Mythic
-};
-
 SpriteEnemyTrP.prototype.createIcon = function () {
     this._iconImg = ImageManager.loadSystem("IconSet");
     this._glowImg = ImageManager.loadSystem("Glow");
@@ -264,7 +256,7 @@ SpriteEnemyTrP.prototype.createIcon = function () {
         if (item.rarity >= 1) {
             const glow = new Sprite(this._glowImg);
             glow.anchor.set(0.5, 0.5);
-            glow.scale.set(0.6 + item.rarity * 0.4);
+            glow.scale.set(0.6 + (item.rarity <= 10 ? item.rarity : 2) * 0.4);
             glow.tint = RARITY_COLORS[item.rarity] || 0xffffff;
             glow.alpha = 0.8;
             glow._baseScale = glow.scale.x;
