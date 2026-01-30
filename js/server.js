@@ -429,7 +429,7 @@ wss.on('connection', (ws) => {
                         ws.send(JSON.stringify({
                             type: "party-start",
                             success: false,
-                            reason: "Party needs at least 2 members to start."
+                            message: "Party needs at least 2 members to start."
                         }));
                         log(`! ${party.name} cannot start, need at least 2 members.`);
                     } else if (party.members.every(m => {
@@ -437,30 +437,25 @@ wss.on('connection', (ws) => {
                         return memberPlayer?.ready;
                     })) {
                         // Notify all party members
-                            for (const memberWS of party.members) {
-                                if (memberWS.readyState === WebSocket.OPEN) {
-                                    memberWS.send(JSON.stringify({
-                                        type: "party-start",
-                                        success: true
-                                    }));
-                                }
+                        for (const memberWS of party.members) {
+                            if (memberWS.readyState === WebSocket.OPEN) {
+                                memberWS.send(JSON.stringify({
+                                    type: "party-start",
+                                    success: true
+                                }));
+                                memberWS.send(JSON.stringify({
+                                    type: "message",
+                                    message: `[PARTY] ${party.name} is starting the battle!`,
+                                    time: Date.now()
+                                }));
                             }
-                            // Send to all party members
-                            for (const memberWS of party.members) {
-                                if (memberWS.readyState === WebSocket.OPEN) {
-                                    memberWS.send(JSON.stringify({
-                                        type: "message",
-                                        message: `[PARTY] ${party.name} is starting the battle!`,
-                                        time: Date.now()
-                                    }));
-                                }
-                            }
-                            log(`! ${party.name} is starting: ${lobbies[party.lobbyId].name}!`);
+                        }
+                        log(`! ${party.name} is starting: ${lobbies[party.lobbyId].name}!`);
                     } else {
                         ws.send(JSON.stringify({
                             type: "party-start",
                             success: false,
-                            reason: "Not all party members are ready."
+                            message: "Not all party members are ready."
                         }));
                         log(`! ${party.name} cannot start, not all members are ready.`);
                     }
@@ -494,9 +489,12 @@ wss.on('connection', (ws) => {
                     // Notify all party members that the party is disbanded
                     for (const memberWS of party.members) {
                         if (memberWS !== ws && memberWS.readyState === WebSocket.OPEN) {
+                            const memberPlayer = clients.get(memberWS);
+                            memberPlayer.partyId = null;
+                            clients.set(memberWS, memberPlayer);
                             memberWS.send(JSON.stringify({
                                 type: "message",
-                                message: `Party "${party.name}" has been disbanded (leader left)`,
+                                message: `[PARTY] The party leader left. Party disbanded.`,
                                 time: Date.now()
                             }));
                         }
@@ -510,11 +508,21 @@ wss.on('connection', (ws) => {
                     if (partyIndex !== -1) {
                         parties.splice(partyIndex, 1);
                     }
-                    log(`! Party "${party.name}" disbanded (leader left)`);
+                    log(`! Party "${party.name}" disbanded (leader disconnected)`);
                 } else {
                     // Just remove the player from the party
                     party.members = party.members.filter(m => m !== ws);
-                    log(`- ${player.name} removed from party "${party.name}"`);
+                    // Notify remaining party members
+                    for (const memberWS of party.members) {
+                        if (memberWS.readyState === WebSocket.OPEN) {
+                            memberWS.send(JSON.stringify({
+                                type: "message",
+                                message: `[PARTY] ${player.name} left the party (disconnected)`,
+                                time: Date.now()
+                            }));
+                        }
+                    }
+                    log(`- ${player.name} removed from party "${party.name}" (disconnected)`);
                 }
             }
         }

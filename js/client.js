@@ -297,62 +297,144 @@ function sendVanity(spriteName=undefined, spriteIndex=undefined) {
 // Lobbies and Parties
 
 function fetchLobby(lobbyId) {
-    if (socket && socket.readyState === WebSocket.OPEN) {
+    return new Promise((resolve) => {
+        if (!socket || socket.readyState !== WebSocket.OPEN) {
+            resolve(null);
+            return;
+        }
+        
+        const listener = (event) => {
+            const data = JSON.parse(event.data);
+            if (data.type === "lobby") {
+                socket.removeEventListener("message", listener);
+                resolve(data);
+            }
+        };
+        
+        socket.addEventListener("message", listener);
         socket.send(JSON.stringify({
             type: "lobby",
             lobbyId
         }));
-    }
-};
+    });
+}
 
 function createParty(lobbyId) {
-    if (socket && socket.readyState === WebSocket.OPEN) {
+    return new Promise((resolve) => {
+        if (!socket || socket.readyState !== WebSocket.OPEN) {
+            resolve({ success: false });
+            return;
+        }
+        
+        const listener = (event) => {
+            const data = JSON.parse(event.data);
+            if (data.type === "party-create") {
+                socket.removeEventListener("message", listener);
+                resolve(data);
+            }
+        };
+        
+        socket.addEventListener("message", listener);
         socket.send(JSON.stringify({
             type: "party-create",
             lobbyId
         }));
-    }
-};
+    });
+}
 
 function joinParty(lobbyId, partyId) {
-    if (socket && socket.readyState === WebSocket.OPEN) {
+    return new Promise((resolve) => {
+        if (!socket || socket.readyState !== WebSocket.OPEN) {
+            resolve({ success: false });
+            return;
+        }
+        
+        const listener = (event) => {
+            const data = JSON.parse(event.data);
+            if (data.type === "party-join") {
+                socket.removeEventListener("message", listener);
+                resolve(data);
+            }
+        };
+        
+        socket.addEventListener("message", listener);
         socket.send(JSON.stringify({
             type: "party-join",
             lobbyId, partyId
         }));
-    }
-};
+    });
+}
 
 function leaveParty() {
-    if (socket && socket.readyState === WebSocket.OPEN) {
+    return new Promise((resolve) => {
+        if (!socket || socket.readyState !== WebSocket.OPEN) {
+            resolve({ success: false });
+            return;
+        }
+        
+        const listener = (event) => {
+            const data = JSON.parse(event.data);
+            if (data.type === "party-leave") {
+                socket.removeEventListener("message", listener);
+                resolve(data);
+            }
+        };
+        
+        socket.addEventListener("message", listener);
         socket.send(JSON.stringify({
             type: "party-leave"
         }));
-    }
-};
+    });
+}
 
 function partyReady() {
-    if (socket && socket.readyState === WebSocket.OPEN) {
+    return new Promise((resolve) => {
+        if (!socket || socket.readyState !== WebSocket.OPEN) {
+            resolve({ success: false });
+            return;
+        }
+        
         socket.send(JSON.stringify({
             type: "party-ready",
         }));
-    }
-};
+        resolve({ success: true });
+    });
+}
 
 function partyUnready() {
-    if (socket && socket.readyState === WebSocket.OPEN) {
+    return new Promise((resolve) => {
+        if (!socket || socket.readyState !== WebSocket.OPEN) {
+            resolve({ success: false });
+            return;
+        }
+        
         socket.send(JSON.stringify({
             type: "party-unready",
         }));
-    }
-};
+        resolve({ success: true });
+    });
+}
 
 function partyStart() {
-    if (socket && socket.readyState === WebSocket.OPEN) {
+    return new Promise((resolve) => {
+        if (!socket || socket.readyState !== WebSocket.OPEN) {
+            resolve({ success: false });
+            return;
+        }
+        
+        const listener = (event) => {
+            const data = JSON.parse(event.data);
+            if (data.type === "party-start") {
+                socket.removeEventListener("message", listener);
+                resolve(data);
+            }
+        };
+        
+        socket.addEventListener("message", listener);
         socket.send(JSON.stringify({
             type: "party-start",
         }));
-    }
+    });
 }
 
 function representative() {
