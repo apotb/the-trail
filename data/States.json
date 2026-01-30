@@ -6441,7 +6441,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Bloodthirsty",
-    "note": "<Custom Passive Condition>\ncondition = $gameParty.battleMembers().some(a => a.hpRate() < 0.5);\n</Custom Passive Condition>\n\n<Help Description>\nGrants an extra turn and increases ATK by 30% when an enemy is below 50% HP.\n</Help Description>",
+    "note": "<animationRow:27>\n\n<Custom Passive Condition>\ncondition = $gameParty.battleMembers().some(a => a.hpRate() < 0.4);\n</Custom Passive Condition>\n\n<Help Description>\nGrants an extra turn and increases ATK by 30% when an enemy is below 40% HP.\n</Help Description>",
     "overlay": 0,
     "priority": 70,
     "removeAtBattleEnd": false,
