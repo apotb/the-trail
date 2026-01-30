@@ -14,6 +14,16 @@ const clients = new Map();
 
 console.log("! Server running on port 8080");
 
+// Lobbies
+const lobbies = {
+    "laeryidyean_ex": {
+        name: "Laeryidyean EX",
+        level: 35,
+        troop: 53,
+        parties: []
+    }
+};
+
 // Ping interval, prevents idle timeouts
 const pingInterval = setInterval(() => {
     wss.clients.forEach((ws) => {
@@ -61,7 +71,20 @@ rl.on('line', (input) => {
     if (command === 'players') {
         console.log(`Players connected: ${clients.size}`);
         for (const [_, player] of clients.entries()) {
-            console.log(` - ${player.name} | ${player.id} | ${player.mapName}`);
+            console.log(` - ${player.name} | ${player.id} | ${player.party?.name || "No Party"} | ${player.mapName}`);
+        }
+    } else if (command === 'lobbies') {
+        console.log(`Lobbies: ${Object.keys(lobbies).length}`);
+        for (const [_, lobby] of Object.entries(lobbies)) {
+            console.log(` - ${lobby.name} | Parties: ${lobby.parties.length}`);
+            for (const party of lobby.parties) {
+                const memberNames = party.members.map(ws => {
+                    const client = clients.get(ws);
+                    const ready = client?.ready ? '✓' : '✗';
+                    return `${client?.name} ${ready}`;
+                }).join(', ');
+                console.log(`   ~ ${party.name}: ${memberNames}`);
+            }
         }
     } else if (command === 'say') {
         const message = `[SERVER] ${args.join(' ')}`;
@@ -114,6 +137,7 @@ rl.on('line', (input) => {
     } else if (command === 'help') {
         console.log(`\nAvailable commands:
   players               List all connected players
+  lobbies               List all lobbies and parties
   say <message>         Broadcast a message to all players
   kick <id>             Kick a player by ID
   stop                  Stops the server
@@ -195,7 +219,93 @@ wss.on('connection', (ws) => {
                 }
             } else if (data.type === "vanity") {
                 // Empty
-            } else if (data.type === "ping") {
+            } 
+
+            // Lobbies and Parties
+            else if (data.type === "lobby") {
+                ws.send(JSON.stringify({
+                    type: "lobby",
+                    lobby: lobbies[data.lobbyId]
+                }));
+            } else if (data.type === "party-create") {
+                const lobby = lobbies[data.lobbyId];
+                if (lobby) {
+                    let player = clients.get(ws);
+                    if (!player) return;
+
+                    const party = {
+                        id: player.id, // Party ID is just party leader's Steam ID
+                        name: `${player.name}'s Party`,
+                        members: [ws],
+                        lobby: lobby,
+                        createdAt: Date.now()
+                    };
+
+                    player.ready = false;
+                    player.party = party;
+                    clients.set(ws, player);
+                    lobby.parties.push(party);
+                    log(`+ Party created in ${lobby.name} by ${player.name}`);
+                }
+            } else if (data.type === "party-join") {
+                const lobby = lobbies[data.lobbyId];
+                if (lobby) {
+                    const party = lobby.parties.find(p => p.id === data.partyId);
+                    if (party && !party.members.includes(ws)) {
+                        // Sucessful join
+                        let player = clients.get(ws);
+                        if (!player) return;
+                        player.ready = false;
+                        player.party = party;
+                        clients.set(ws, player);
+
+                        party.members.push(ws);
+                        ws.send(JSON.stringify({
+                            type: "party-join",
+                            partyId: party.id
+                        }));
+                        log(`+ ${player.name} joined ${party.name} in ${party.lobby.name}`);
+                    }
+                }
+            } else if (data.type === "party-ready") {
+                let player = clients.get(ws);
+                if (!player) return;
+                player.ready = true;
+                clients.set(ws, player);
+                log(`✓ ${player.name} of ${player.party.name} has readied up!`);
+            } else if (data.type === "party-unready") {
+                let player = clients.get(ws);
+                if (!player) return;
+                player.ready = false;
+                clients.set(ws, player);
+                log(`✗ ${player.name} of ${player.party.name} has unreadied.`);
+            } else if (data.type === "party-start") {
+                let player = clients.get(ws);
+                const party = player.party;
+                if (party) {
+                    if (party.members.every(m => m.ready)) {
+                        // Notify all party members
+                            for (const memberWS of party.members) {
+                                if (memberWS.readyState === WebSocket.OPEN) {
+                                    memberWS.send(JSON.stringify({
+                                        type: "party-start",
+                                        success: true
+                                    }));
+                                }
+                            }
+                            log(`! ${party.name} is starting: ${party.lobby.name}!`);
+                    } else {
+                        ws.send(JSON.stringify({
+                            type: "party-start",
+                            success: false
+                        }));
+                        log(`! ${party.name} cannot start, not all members are ready.`);
+                    }
+                }
+            } 
+
+            // Other
+            else if (data.type === "ping") {
                 return ws.send(JSON.stringify({
                     type: "pong",
                     serverTime: Date.now()

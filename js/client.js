@@ -86,6 +86,20 @@ function startMultiplayerConnection(playerName="Guest", ip="the-trail.apotb.com"
                 if (player) player.setImage(data.spriteName, data.spriteIndex);
             }
 
+            // Lobbies and Parties
+
+            if (data.type === "lobby") {
+                console.log(data);
+            }
+
+            if (data.type === "party-join") {
+                $dataTemp._partyId = data.partyId;
+            }
+
+            if (data.type === "party-start") {
+                console.log(data.success);
+            }
+
             // Messages
 
             if (["chat", "message"].includes(data.type)) addChat(data);
@@ -279,6 +293,63 @@ function sendVanity(spriteName=undefined, spriteIndex=undefined) {
         }));
     }
 };
+
+// Lobbies and Parties
+
+function fetchLobby(lobbyId) {
+    if (socket && socket.readyState === WebSocket.OPEN) {
+        socket.send(JSON.stringify({
+            type: "lobby",
+            id: API_STEAM.userId(),
+            lobbyId
+        }));
+    }
+};
+
+function createParty(lobbyId) {
+    if (socket && socket.readyState === WebSocket.OPEN) {
+        socket.send(JSON.stringify({
+            type: "party-create",
+            lobbyId
+        }));
+    }
+};
+
+function joinParty(lobbyId, partyId) {
+    if (socket && socket.readyState === WebSocket.OPEN) {
+        socket.send(JSON.stringify({
+            type: "party-join",
+            lobbyId, partyId
+        }));
+    }
+};
+
+function partyReady() {
+    if (socket && socket.readyState === WebSocket.OPEN) {
+        socket.send(JSON.stringify({
+            type: "party-ready",
+            id: API_STEAM.userId()
+        }));
+    }
+};
+
+function partyUnready() {
+    if (socket && socket.readyState === WebSocket.OPEN) {
+        socket.send(JSON.stringify({
+            type: "party-unready",
+            id: API_STEAM.userId()
+        }));
+    }
+};
+
+function partyStart() {
+    if (socket && socket.readyState === WebSocket.OPEN) {
+        socket.send(JSON.stringify({
+            type: "party-start",
+            id: API_STEAM.userId()
+        }));
+    }
+}
 
 function representative() {
     return $gameActors.actor($gameVariables.value(87) + 1);
