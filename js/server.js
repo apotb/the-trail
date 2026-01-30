@@ -327,6 +327,38 @@ wss.on('connection', (ws) => {
 
     ws.on('close', () => {
         const player = clients.get(ws);
+
+        // Handle party removal/disbanding
+        if (player?.partyId) {
+            const party = findPartyById(player.partyId);
+            if (party) {
+                // If the party leader left, disband the party
+                if (party.id === player.id) {
+                    // Notify all party members that the party is disbanded
+                    for (const memberWS of party.members) {
+                        if (memberWS !== ws && memberWS.readyState === WebSocket.OPEN) {
+                            memberWS.send(JSON.stringify({
+                                type: "message",
+                                message: `Party "${party.name}" has been disbanded (leader left)`,
+                                time: Date.now()
+                            }));
+                        }
+                    }
+                    // Remove party from lobby and global parties list
+                    const lobby = lobbies[party.lobbyId];
+                    if (lobby) {
+                        lobby.parties = lobby.parties.filter(p => p.id !== party.id);
+                    }
+                    parties.splice(parties.indexOf(party), 1);
+                    log(`! Party "${party.name}" disbanded (leader left)`);
+                } else {
+                    // Just remove the player from the party
+                    party.members = party.members.filter(m => m !== ws);
+                    log(`- ${player.name} removed from party "${party.name}"`);
+                }
+            }
+        }
+
         log(`${player.name} left the game`);
         clients.delete(ws);
         broadcast({
