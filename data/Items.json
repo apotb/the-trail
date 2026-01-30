@@ -1295,7 +1295,7 @@
   {
     "id": 42,
     "animationId": 0,
-    "consumable": false,
+    "consumable": true,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -1303,17 +1303,17 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A never-before seen type of ammunition. It may\nhave been shot by a heavily modified crossbow.",
+    "description": "",
     "effects": [],
     "hitType": 0,
-    "iconIndex": 1317,
+    "iconIndex": 0,
     "itypeId": 1,
-    "name": "Unknown Projectile",
-    "note": "<Menu Category: Memorabilia>\n\nWas once the Letter of Recommendation.",
-    "occasion": 3,
+    "name": "",
+    "note": "Was once the Unknown Projectile.\nWas once the Letter of Recommendation.",
+    "occasion": 0,
     "price": 0,
     "repeats": 1,
-    "scope": 0,
+    "scope": 7,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
