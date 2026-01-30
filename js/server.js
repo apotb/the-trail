@@ -277,6 +277,11 @@ wss.on('connection', (ws) => {
                             success: true,
                             partyId: party.id
                         }));
+                        ws.send(JSON.stringify({
+                            type: "message",
+                            message: `[PARTY] You created a party: ${party.name}`,
+                            time: Date.now()
+                        }));
                         log(`+ Party created in ${lobby.name} by ${player.name}`);
                     }
                 }
@@ -300,6 +305,16 @@ wss.on('connection', (ws) => {
                             success: true,
                             partyId: party.id
                         }));
+                        // Send to all party members
+                        for (const memberWS of party.members) {
+                            if (memberWS.readyState === WebSocket.OPEN) {
+                                memberWS.send(JSON.stringify({
+                                    type: "message",
+                                    message: `[PARTY] ${player.name} joined the party`,
+                                    time: Date.now()
+                                }));
+                            }
+                        }
                         log(`+ ${player.name} joined ${party.name} in ${lobbies[party.lobbyId].name}`);
                     } else {
                         ws.send(JSON.stringify({
@@ -323,11 +338,19 @@ wss.on('connection', (ws) => {
                                 clients.set(memberWS, memberPlayer);
                                 memberWS.send(JSON.stringify({
                                     type: "message",
-                                    message: `Party "${party.name}" has been disbanded (leader left)`,
+                                    message: `[PARTY] The party leader left. Party disbanded.`,
                                     time: Date.now()
                                 }));
                             }
                         }
+                        // Clear the leader's partyId
+                        player.partyId = null;
+                        clients.set(ws, player);
+                        ws.send(JSON.stringify({
+                            type: "message",
+                            message: `[PARTY] You disbanded your party.`,
+                            time: Date.now()
+                        }));
                         // Remove party from lobby and global parties list
                         const lobby = lobbies[party.lobbyId];
                         if (lobby) {
@@ -343,6 +366,22 @@ wss.on('connection', (ws) => {
                         party.members = party.members.filter(m => m !== ws);
                         player.partyId = null;
                         clients.set(ws, player);
+                        // Notify remaining party members
+                        for (const memberWS of party.members) {
+                            if (memberWS.readyState === WebSocket.OPEN) {
+                                memberWS.send(JSON.stringify({
+                                    type: "message",
+                                    message: `[PARTY] ${player.name} left the party`,
+                                    time: Date.now()
+                                }));
+                            }
+                        }
+                        // Send message to departing player
+                        ws.send(JSON.stringify({
+                            type: "message",
+                            message: `[PARTY] You left the party.`,
+                            time: Date.now()
+                        }));
                         log(`- ${player.name} left party "${party.name}"`);
                     }
                     ws.send(JSON.stringify({
@@ -355,12 +394,32 @@ wss.on('connection', (ws) => {
                 player.ready = true;
                 clients.set(ws, player);
                 const party = findPartyById(player.partyId);
+                // Send to all party members
+                for (const memberWS of party?.members || []) {
+                    if (memberWS.readyState === WebSocket.OPEN) {
+                        memberWS.send(JSON.stringify({
+                            type: "message",
+                            message: `[PARTY] ${player.name} is ready!`,
+                            time: Date.now()
+                        }));
+                    }
+                }
                 log(`✓ ${player.name} of ${party?.name} has readied up!`);
             } else if (data.type === "party-unready") {
                 if (!player) return;
                 player.ready = false;
                 clients.set(ws, player);
                 const party = findPartyById(player.partyId);
+                // Send to all party members
+                for (const memberWS of party?.members || []) {
+                    if (memberWS.readyState === WebSocket.OPEN) {
+                        memberWS.send(JSON.stringify({
+                            type: "message",
+                            message: `[PARTY] ${player.name} is not ready.`,
+                            time: Date.now()
+                        }));
+                    }
+                }
                 log(`✗ ${player.name} of ${party?.name} has unreadied.`);
             } else if (data.type === "party-start") {
                 if (!player) return;
@@ -383,6 +442,16 @@ wss.on('connection', (ws) => {
                                     memberWS.send(JSON.stringify({
                                         type: "party-start",
                                         success: true
+                                    }));
+                                }
+                            }
+                            // Send to all party members
+                            for (const memberWS of party.members) {
+                                if (memberWS.readyState === WebSocket.OPEN) {
+                                    memberWS.send(JSON.stringify({
+                                        type: "message",
+                                        message: `[PARTY] ${party.name} is starting the battle!`,
+                                        time: Date.now()
                                     }));
                                 }
                             }
