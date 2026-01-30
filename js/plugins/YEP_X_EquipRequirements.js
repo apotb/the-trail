@@ -432,6 +432,11 @@ DataManager.defaultClassRestrictions = function(obj) {
       case 8:  // Gambeson
       case 9:  // Chainmail
       case 11: // Gloves
+      case 12: // Wristbraces
+      case 13: // Necklace
+      case 14: // Gauntlets
+      case 15: // Scarf
+      case 16: // Crystal
         return;
       case 6:  // Light Shield
         return [1, 2, 3];
