@@ -5903,7 +5903,8 @@ Game_Party.prototype.hasMembership = function() {
 };
 
 Game_Party.prototype.teamName = function() {
-    return $gameActors.actor(19).name();
+    const name = $gameActors.actor(19).name();
+    return name === "Team Name" ? "An adventuring party" : name;
 }
 
 //-----------------------------------------------------------------------------

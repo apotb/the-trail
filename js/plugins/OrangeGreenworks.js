@@ -126,7 +126,7 @@ Hudell.OrangeGreenworks = Hudell.OrangeGreenworks || {};
       }
 
       $.steamId = $.greenworks.getSteamId();
-      console.log('Steam User: ', $.steamId.screenName);
+      console.log('Steam User:', $.steamId.screenName);
 
       $.getScreenName = function() {
         return $.steamId.screenName;
