@@ -109,7 +109,7 @@ Game_Temp.prototype.recipeTemplate = function(name) {
                     78, 218, 219, // Headgear
                     125, 126, 127, 128, // Bodygear
                     40, 46, 168, 129, 130, 131, 132, 133, 44, 213, // Boots
-                    149, 45, 148, 115, // Accessories - Telluria Field
+                    149, 45, 238, 148, 115, // Accessories - Telluria Field
                     96, 159, 170, 143, 172, // Accessories - Resistance
                     185, 189, 190, 178, // Accessories - True Telluria Castle
                     161, 162, // Accessories - Seshat

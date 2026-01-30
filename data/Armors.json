@@ -1028,8 +1028,8 @@
     "etypeId": 6,
     "traits": [],
     "iconIndex": 493,
-    "name": "Knight's Gauntlets",
-    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nIron Cluster: 7\n</Synthesis Ingredients>\n<Mask Name: Protective Armwear>\n\n<Disassemble Pool: Advanced>\nx1-2 Iron Cluster: 60%\n</Disassemble Pool: Advanced>",
+    "name": "Iron Gauntlets",
+    "note": "<Synthesis Ingredients>\nIron Cluster: 7\n</Synthesis Ingredients>\n<Mask Name: Protective Armwear>\n\n<Disassemble Pool: Advanced>\nIron Cluster: 80%\nIron Cluster: 65%\nIron Cluster: 50%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
@@ -1040,7 +1040,7 @@
       -1,
       0
     ],
-    "price": 100
+    "price": 200
   },
   {
     "id": 46,
@@ -3819,18 +3819,18 @@
     ],
     "iconIndex": 656,
     "name": "Dragonforce Gauntlets",
-    "note": "<Rarity: 2>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nKnight's Gauntlets\nEnchanted Dragon Scale\nDragon Scale: 6\nSteel Ingot: 3\nEarth Essence: 3\n</Synthesis Ingredients>\n<Mask Name: Offensive Armwear>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nBronze Gauntlets\nEnchanted Dragon Scale\nDragon Scale: 6\nSteel Ingot: 3\nEarth Essence: 3\n</Synthesis Ingredients>\n<Mask Name: Offensive Armwear>",
     "params": [
       0,
       0,
-      6,
-      4,
+      7,
+      5,
       0,
       0,
-      -4,
+      -6,
       0
     ],
-    "price": 750
+    "price": 1800
   },
   {
     "id": 149,
@@ -3851,7 +3851,7 @@
     ],
     "iconIndex": 657,
     "name": "Scaly Gloves",
-    "note": "<Rarity: 1>\n<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nBlack Gloves\nDragon Scale: 3\nVicious Herb: 10\n</Synthesis Ingredients>\n<Mask Name: Covered Gloves>",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nBlack Gloves\nDragon Scale: 3\nVicious Herb: 5\n</Synthesis Ingredients>\n<Mask Name: Covered Gloves>",
     "params": [
       0,
       0,
@@ -3883,7 +3883,7 @@
       0,
       0
     ],
-    "price": 750
+    "price": 500
   },
   {
     "id": 151,
@@ -3915,7 +3915,7 @@
       0,
       0
     ],
-    "price": 750
+    "price": 500
   },
   {
     "id": 152,
@@ -6238,5 +6238,26 @@
       0
     ],
     "price": 0
+  },
+  {
+    "id": 238,
+    "atypeId": 14,
+    "description": "Reinforced gauntlets with extra offensive\nand defensive stat boosts.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 492,
+    "name": "Bronze Gauntlets",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nIron Gauntlets\nBronze Ingot: 5\nVicious Herb: 10\n</Synthesis Ingredients>\n\n<Disassemble Pool: Advanced>\nx1 Bronze Ingot: 80%\nx1 Bronze Ingot: 50%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      0,
+      5,
+      4,
+      0,
+      0,
+      -3,
+      0
+    ],
+    "price": 750
   }
 ]
