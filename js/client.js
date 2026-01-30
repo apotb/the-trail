@@ -89,15 +89,15 @@ function startMultiplayerConnection(playerName="Guest", ip="the-trail.apotb.com"
             // Lobbies and Parties
 
             if (data.type === "lobby") {
-                console.log(data);
+                console.log(data.lobby);
             }
 
             if (data.type === "party-join") {
-                $dataTemp._partyId = data.partyId;
+                console.log(data);
             }
 
             if (data.type === "party-start") {
-                console.log(data.success);
+                console.log(data);
             }
 
             // Messages

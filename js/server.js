@@ -287,7 +287,14 @@ wss.on('connection', (ws) => {
                 if (!player) return;
                 const party = findPartyById(player?.partyId);
                 if (party) {
-                    if (party.members.every(m => {
+                    if (party.members.length < 2) {
+                        ws.send(JSON.stringify({
+                            type: "party-start",
+                            success: false,
+                            reason: "Party needs at least 2 members to start."
+                        }));
+                        log(`! ${party.name} cannot start, need at least 2 members.`);
+                    } else if (party.members.every(m => {
                         const memberPlayer = clients.get(m);
                         return memberPlayer?.ready;
                     })) {
@@ -304,7 +311,8 @@ wss.on('connection', (ws) => {
                     } else {
                         ws.send(JSON.stringify({
                             type: "party-start",
-                            success: false
+                            success: false,
+                            reason: "Not all party members are ready."
                         }));
                         log(`! ${party.name} cannot start, not all members are ready.`);
                     }
@@ -327,9 +335,10 @@ wss.on('connection', (ws) => {
 
     ws.on('close', () => {
         const player = clients.get(ws);
+        if (!player) return;
 
         // Handle party removal/disbanding
-        if (player?.partyId) {
+        if (player.partyId) {
             const party = findPartyById(player.partyId);
             if (party) {
                 // If the party leader left, disband the party
@@ -349,7 +358,10 @@ wss.on('connection', (ws) => {
                     if (lobby) {
                         lobby.parties = lobby.parties.filter(p => p.id !== party.id);
                     }
-                    parties.splice(parties.indexOf(party), 1);
+                    const partyIndex = parties.indexOf(party);
+                    if (partyIndex !== -1) {
+                        parties.splice(partyIndex, 1);
+                    }
                     log(`! Party "${party.name}" disbanded (leader left)`);
                 } else {
                     // Just remove the player from the party
