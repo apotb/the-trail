@@ -440,6 +440,34 @@ Game_System.prototype.smallChest = function() {
     OrangeGreenworks.setStat('smallChests', $gameVariables.value(48));
 };
 
+Game_System.prototype.smallChestsOnMap = function(map) {
+    map = map || $dataMap;
+    if (!map || !map.events) return 0;
+    var mapId = $gameMap.mapId();
+    var count = 0;
+    for (var i = 0; i < map.events.length; i++) {
+        var event = map.events[i];
+        if (!event || !event.pages) continue;
+        if ($gameSelfSwitches.value([mapId, i, 'A'])) continue;
+        var found = false;
+        for (var p = 0; p < event.pages.length; p++) {
+            var list = event.pages[p].list;
+            if (!list) continue;
+            for (var c = 0; c < list.length; c++) {
+                var cmd = list[c];
+                if (cmd.code !== 355 && cmd.code !== 655) continue;
+                if (cmd.parameters && cmd.parameters[0] && cmd.parameters[0].contains("$gameSystem.smallChest(")) {
+                    found = true;
+                    break;
+                }
+            }
+            if (found) break;
+        }
+        if (found) count++;
+    }
+    return count;
+};
+
 // Battle Setups
 
 Game_System.prototype.setBattleSe = function(name, pan, pitch, volume) {
@@ -5839,19 +5867,20 @@ Game_Party.prototype.hasPickaxe = function() {
 
 // Pets
 
+Game_Party.prototype.pet = function() {
+    return $gameActors.actor(7);
+}
+
 Game_Party.prototype.addPet = function(name) {
-    const actor = $gameActors.actor(7);
+    const actor = $gameParty.pet();
     actor.setName(name);
     this.addGuestActor(7);
     switch(name) {
-        case 'Pancakes':
-            actor.setCharacterImage('Dog8', 0);
+        case 'Arlo':
+            actor.setCharacterImage('Dog2', 2);
             break;
         case 'Clover':
             actor.setCharacterImage('Cat1', 4);
-            break;
-        case 'Oreo':
-            actor.setCharacterImage('Bunny', 6);
             break;
         case 'Duncan':
             actor.setCharacterImage('Hamster', 1);
@@ -5860,12 +5889,18 @@ Game_Party.prototype.addPet = function(name) {
             actor.setCharacterImage('Hound', 1);
             OrangeGreenworks.activateAchievement('COLLECT_FIDO');
             break;
-        case 'Tender':
-            actor.setCharacterImage('Fox', 0);
-            break;
         case 'Coco':
             actor.setCharacterImage('Monkey1', 0);
             OrangeGreenworks.activateAchievement('COLLECT_COCO');
+            break;
+        case 'Oreo':
+            actor.setCharacterImage('Bunny', 6);
+            break;
+        case 'Tender':
+            actor.setCharacterImage('Fox', 0);
+            break;
+        case 'Pancakes':
+            actor.setCharacterImage('Dog8', 7);
             break;
         default: // Remove pet
             this.removeGuestActor(7);
@@ -5880,7 +5915,7 @@ Game_Party.prototype.addPetFromItem = function(id) {
 };
 
 Game_Party.prototype.removePet = function() {
-    const actor = $gameActors.actor(7);
+    const actor = $gameParty.pet();
     actor.setName("Pet");
     this.removeGuestActor(7);
     $gamePlayer.refresh();

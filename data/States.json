@@ -1912,7 +1912,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Night Boost",
-    "note": "<animationRow:26>\n\n<Custom Passive Condition>\ncondition = $gameSwitches.value(69) && $gameActors.actor(7).name() != 'Fido';\n</Custom Passive Condition>\n\n<Help Description>\nIncreases MHP, MMP, ATK, DEF, MAT, MDF, AGI, and HRG by 10%.\n</Help Description>",
+    "note": "<animationRow:26>\n\n<Custom Passive Condition>\ncondition = $gameSwitches.value(69) && $gameParty.pet().name() != 'Fido';\n</Custom Passive Condition>\n\n<Help Description>\nIncreases MHP, MMP, ATK, DEF, MAT, MDF, AGI, and HRG by 10%.\n</Help Description>",
     "overlay": 0,
     "priority": 5,
     "removeAtBattleEnd": false,

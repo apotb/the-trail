@@ -7356,7 +7356,7 @@
         "code": 655,
         "indent": 1,
         "parameters": [
-          "if (value > 0 && $gameActors.actor(7).name() == 'Coco') value -= 1;"
+          "if (value > 0 && $gameParty.pet().name() == 'Coco') value -= 1;"
         ]
       },
       {
@@ -10518,6 +10518,52 @@
         "parameters": [
           16
         ]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Arlo ability"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameParty.pet().name() === 'Arlo'"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "const chests = $gameSystem.smallChestsOnMap();"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "console.log(chests);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "if (chests > 0) $gameParty.pet().stateGab(`Arlo sniffs out \\\\c[4]${chests}\\\\c[0] treasure chest${chests > 1 ? 's' : ''}!`);"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
       },
       {
         "code": 0,
