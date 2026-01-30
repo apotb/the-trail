@@ -4033,7 +4033,7 @@
         "indent": 1,
         "parameters": [
           12,
-          "$gameSystem._secUntilAutosave > 0 && !$gameSystem._forceAutosave"
+          "Date.now() < $gameSystem._autosaveTarget && !$gameSystem._forceAutosave"
         ]
       },
       {
@@ -4041,13 +4041,6 @@
         "indent": 2,
         "parameters": [
           60
-        ]
-      },
-      {
-        "code": 355,
-        "indent": 2,
-        "parameters": [
-          "$gameSystem._secUntilAutosave--;"
         ]
       },
       {

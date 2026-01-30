@@ -67,6 +67,7 @@ NOTICE: Old saves will not work with this update!
 - Changed the color of trees!
 
 ### Bug Fixes
+- Fixed a bug where the autosave interval wouldn't count down while in menus or battle.
 - Fixed a bug where Copper Oreleaf couldn't drop Rock Salt.
 - Fixed Seshat's Tome drop beginning in Telluria Field being a 1/10,000 drop rather than a 1/100 drop.
 - Fixed a bunch of other random bugs.
