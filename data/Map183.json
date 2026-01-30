@@ -5485,7 +5485,7 @@
     4355,
     4354,
     4354,
-    4358,
+    4354,
     4354,
     4358,
     3736,
@@ -52477,11 +52477,11 @@
     0,
     0,
     0,
+    201,
     0,
     0,
     0,
-    0,
-    0,
+    201,
     0,
     0,
     0,
@@ -69863,21 +69863,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\smouthWell, well, well. It appears that"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "the noble goody two-shoes globetrotters"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "have made their Telluria Field debut."
+                "\\bmouth'Ey!"
               ]
             },
             {
@@ -69894,31 +69880,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\bmouth'Ey, howsat an insult? We"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "ain't been here either?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Unknown",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\smouthThat's... not important."
+                "\\smouthWell, well, well. So we DO meet again."
               ]
             },
             {
@@ -70265,28 +70227,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2He does have a good point. I noticed all"
+                "\\p2He does have a good point. You guys took our advice"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "the glow-ups! Different colored hats, new"
+                "and switched up your styles! New hats, new haircuts..."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "haircuts... and speaking of hair, Big Mouth,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "since when has yours been brown?"
+                "Big Mouth, do you have natural brown hair?"
               ]
             },
             {
@@ -70310,7 +70265,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "to all 'ave the same hair. Dyed it."
+                "to all 'ave the same hair. Dyed it blonde."
               ]
             },
             {
@@ -71849,14 +71804,14 @@
               "code": 356,
               "indent": 0,
               "parameters": [
-                "Quest 4 Complete Objective 3"
+                "Quest 4 Complete Objective 4"
               ]
             },
             {
               "code": 356,
               "indent": 0,
               "parameters": [
-                "Quest 4 Show Objective 4"
+                "Quest 4 Show Objective 5"
               ]
             },
             {
@@ -83351,14 +83306,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "THE PROMENADE POND"
+                "\\i[1250] THE PROMENADE POND"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Filled to the brim with \\ii[126]\\c[0]s and \\ii[220]\\c[0]."
+                "Filled to the brim with \\ii[126]\\c[0]s."
               ]
             },
             {
@@ -83395,7 +83350,7 @@
           "walkAnime": true
         }
       ],
-      "x": 23,
+      "x": 28,
       "y": 16
     },
     {
@@ -83407,10 +83362,10 @@
           "conditions": {
             "actorId": 1,
             "actorValid": false,
-            "itemId": 1,
+            "itemId": 250,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": false,
+            "selfSwitchValid": true,
             "switch1Id": 1,
             "switch1Valid": false,
             "switch2Id": 1,
@@ -83606,10 +83561,115 @@
               ]
             },
             {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "People2",
+                4,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\n<Fisherman>The \\ii[125] will cost ya' 1800B.\\$"
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 2,
+              "parameters": [
+                [
+                  "Pay the fee",
+                  "Nevermind"
+                ],
+                1,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 2,
+              "parameters": [
+                0,
+                "Pay the fee"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 3,
+              "parameters": [
+                7,
+                1800,
+                0
+              ]
+            },
+            {
+              "code": 119,
+              "indent": 4,
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 3,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 3,
+              "parameters": [
+                "You don't have enough Bits."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 2,
+              "parameters": [
+                1,
+                "Nevermind"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 2,
+              "parameters": []
+            },
+            {
               "code": 119,
               "indent": 2,
               "parameters": [
-                "3"
+                "End"
               ]
             },
             {
@@ -83631,10 +83691,115 @@
               ]
             },
             {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "People2",
+                4,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\n<Fisherman>The \\ii[124] will cost ya' 600B.\\$"
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 2,
+              "parameters": [
+                [
+                  "Pay the fee",
+                  "Nevermind"
+                ],
+                1,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 2,
+              "parameters": [
+                0,
+                "Pay the fee"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 3,
+              "parameters": [
+                7,
+                600,
+                0
+              ]
+            },
+            {
+              "code": 119,
+              "indent": 4,
+              "parameters": [
+                "2"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 3,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 3,
+              "parameters": [
+                "You don't have enough Bits."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 2,
+              "parameters": [
+                1,
+                "Nevermind"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 2,
+              "parameters": []
+            },
+            {
               "code": 119,
               "indent": 2,
               "parameters": [
-                "2"
+                "End"
               ]
             },
             {
@@ -83657,10 +83822,115 @@
               ]
             },
             {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "People2",
+                4,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\n<Fisherman>The \\ii[123] will cost ya' 200B.\\$"
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 2,
+              "parameters": [
+                [
+                  "Pay the fee",
+                  "Nevermind"
+                ],
+                1,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 2,
+              "parameters": [
+                0,
+                "Pay the fee"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 3,
+              "parameters": [
+                7,
+                200,
+                0
+              ]
+            },
+            {
+              "code": 119,
+              "indent": 4,
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 3,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 3,
+              "parameters": [
+                "You don't have enough Bits."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 2,
+              "parameters": [
+                1,
+                "Nevermind"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 2,
+              "parameters": []
+            },
+            {
               "code": 119,
               "indent": 2,
               "parameters": [
-                "1"
+                "End"
               ]
             },
             {
@@ -83998,44 +84268,6 @@
               "code": 101,
               "indent": 0,
               "parameters": [
-                "People2",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\n<Fisherman>It's really a great hobby to have. Easy to get"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "into, and you can profit greatly off of it."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Sell your catches or cook them into fine"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "dishes: you'll benefit either way!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
                 "Actor4",
                 5,
                 0,
@@ -84046,7 +84278,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2Sounds awesome! And you said it's easy to start?"
+                "\\p2Say, we know a thing or two about that!"
               ]
             },
             {
@@ -84063,31 +84295,26 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\n<Fisherman>Yep! All you need is a fishing rod, as well as bait."
+                "\\n<Fisherman>Really? Well then, what kind of rod do you have?"
               ]
             },
             {
-              "code": 401,
+              "code": 250,
               "indent": 0,
               "parameters": [
-                "Something simple like \\ii[128]\\c[0]s should suffice."
+                {
+                  "name": "Equip3",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
               ]
             },
             {
-              "code": 101,
+              "code": 230,
               "indent": 0,
               "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2What's the best place to get a rod?"
+                60
               ]
             },
             {
@@ -84104,36 +84331,22 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\n<Fisherman>Well, you could always go to a specialized shop..."
+                "\\n<Fisherman>A \\ii[250]... not bad for beginners. But if you"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "but those places always upcharge. You know what?"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "I'll make a rod for you from scratch, the good"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "old-fashioned way. How's that sound?"
+                "want to get serious about fishing, it simply won't do."
               ]
             },
             {
               "code": 101,
               "indent": 0,
               "parameters": [
-                "Actor4",
-                5,
+                "People2",
+                4,
                 0,
                 2
               ]
@@ -84142,7 +84355,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2Wow, thank you so much!"
+                "\\n<Fisherman>I know a thing or two about upgrading fishing rods."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "For a small fee and the necessary materials, I can"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "upgrade that rod of yours into something to be"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "proud of. No fish will be safe from your hook!"
               ]
             },
             {
@@ -84197,14 +84431,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\n<Fisherman>For a \\ii[123]\\c[0], I'm just going"
+                "\\n<Fisherman>For a \\ii[123]\\c[0], I just need 5 \\ii[43],"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "to need 5 \\ii[43] and 3 \\ii[53]\\c[0]."
+                "3 \\ii[53]\\c[0], and \\ii[126]. The latter"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "lives in this very pond. Now, go fish!"
               ]
             },
             {
@@ -84404,6 +84645,78 @@
               "parameters": []
             },
             {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                6,
+                6,
+                0,
+                3,
+                0,
+                126,
+                0
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                1,
+                6,
+                0,
+                1,
+                4
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 1,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "People2",
+                4,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\n<Fisherman>Looks like you're missing the \\ii[126]\\c[0]."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Can't find one? They live in this pond!"
+              ]
+            },
+            {
+              "code": 119,
+              "indent": 1,
+              "parameters": [
+                "End"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 126,
               "indent": 0,
               "parameters": [
@@ -84424,10 +84737,20 @@
               ]
             },
             {
+              "code": 126,
+              "indent": 0,
+              "parameters": [
+                126,
+                1,
+                0,
+                1
+              ]
+            },
+            {
               "code": 356,
               "indent": 0,
               "parameters": [
-                "Quest 40 Complete Objective 1 to 3"
+                "Quest 40 Complete Objective 1 to 4"
               ]
             },
             {
@@ -84565,6 +84888,23 @@
               ]
             },
             {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameSelfSwitches.setValue([183, 257, 'A'], true);"
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 0,
+              "parameters": [
+                250,
+                1,
+                0,
+                1
+              ]
+            },
+            {
               "code": 126,
               "indent": 0,
               "parameters": [
@@ -84611,27 +84951,6 @@
               ]
             },
             {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "This pond is the perfect place to start. You won't"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "find much trouble here... though a better rod"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "could open up new options for fishing spots."
-              ]
-            },
-            {
               "code": 101,
               "indent": 0,
               "parameters": [
@@ -84645,28 +84964,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\n<Fisherman>I'm willing to improve your rod. All I need you to bring me is"
+                "\\n<Fisherman>I'm willing to improve your rod again. All I need you to bring me is"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "5 \\ii[204]\\c[0], 3 \\ii[214]\\c[0], and a \\ii[220]\\c[0]."
+                "5 \\ii[204]\\c[0], 5 \\ii[74]\\c[0]s, and a \\ii[220]\\c[0]."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "The latter lives right here!"
+                "The latter lives in the Lake of Telluria!"
               ]
             },
             {
               "code": 356,
               "indent": 0,
               "parameters": [
-                "Quest 40 Show Objective 4 to 7"
+                "Quest 40 Show Objective 5 to 8"
               ]
             },
             {
@@ -84814,7 +85133,7 @@
                 0,
                 3,
                 0,
-                214,
+                74,
                 0
               ]
             },
@@ -84825,7 +85144,7 @@
                 1,
                 6,
                 0,
-                3,
+                5,
                 4
               ]
             },
@@ -84850,7 +85169,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\n<Fisherman>Looks like you're low on \\ii[214]\\c[0]..."
+                "\\n<Fisherman>Looks like you're low on \\ii[74]\\c[0]s..."
               ]
             },
             {
@@ -84922,7 +85241,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Can't find one? They live in this pond!"
+                "Can't find one? They live in the Lake of Telluria!"
               ]
             },
             {
@@ -84946,16 +85265,6 @@
               "code": 126,
               "indent": 0,
               "parameters": [
-                123,
-                1,
-                0,
-                1
-              ]
-            },
-            {
-              "code": 126,
-              "indent": 0,
-              "parameters": [
                 204,
                 1,
                 0,
@@ -84966,10 +85275,10 @@
               "code": 126,
               "indent": 0,
               "parameters": [
-                214,
+                74,
                 1,
                 0,
-                3
+                5
               ]
             },
             {
@@ -84986,7 +85295,7 @@
               "code": 356,
               "indent": 0,
               "parameters": [
-                "Quest 40 Complete Objective 4 to 7"
+                "Quest 40 Complete Objective 5 to 8"
               ]
             },
             {
@@ -85127,6 +85436,16 @@
               "code": 126,
               "indent": 0,
               "parameters": [
+                123,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 0,
+              "parameters": [
                 124,
                 0,
                 0,
@@ -85204,7 +85523,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "an \\ii[199] and a \\ii[222]\\c[0]."
+                "3 \\ii[214], an \\ii[199], and a \\ii[222]\\c[0]."
               ]
             },
             {
@@ -85225,7 +85544,7 @@
               "code": 356,
               "indent": 0,
               "parameters": [
-                "Quest 40 Show Objective 8 to 10"
+                "Quest 40 Show Objective 9 to 12"
               ]
             },
             {
@@ -85298,6 +85617,71 @@
               "parameters": [
                 60
               ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                6,
+                6,
+                0,
+                3,
+                0,
+                214,
+                0
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                1,
+                6,
+                0,
+                3,
+                4
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 1,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "People2",
+                4,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\n<Fisherman>Looks like you're low on \\ii[214]\\c[0]..."
+              ]
+            },
+            {
+              "code": 119,
+              "indent": 1,
+              "parameters": [
+                "End"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 122,
@@ -85447,10 +85831,10 @@
               "code": 126,
               "indent": 0,
               "parameters": [
-                124,
+                214,
                 1,
                 0,
-                1
+                3
               ]
             },
             {
@@ -85477,7 +85861,7 @@
               "code": 356,
               "indent": 0,
               "parameters": [
-                "Quest 40 Complete Objective 8 to 10"
+                "Quest 40 Complete Objective 9 to 12"
               ]
             },
             {
@@ -85612,6 +85996,16 @@
               "indent": 0,
               "parameters": [
                 30
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 0,
+              "parameters": [
+                124,
+                1,
+                0,
+                1
               ]
             },
             {
@@ -85918,8 +86312,8 @@
           "walkAnime": false
         }
       ],
-      "x": 24,
-      "y": 11
+      "x": 22,
+      "y": 14
     },
     {
       "id": 173,
@@ -86089,8 +86483,8 @@
           "walkAnime": false
         }
       ],
-      "x": 29,
-      "y": 14
+      "x": 27,
+      "y": 16
     },
     {
       "id": 174,
@@ -95414,6 +95808,258 @@
       ],
       "x": 98,
       "y": 55
+    },
+    {
+      "id": 257,
+      "name": "EV257",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 250,
+            "itemValid": true,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Other2",
+            "direction": 8,
+            "pattern": 1,
+            "characterIndex": 2
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 250,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Other2",
+            "direction": 8,
+            "pattern": 1,
+            "characterIndex": 2
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 23,
+      "y": 14
+    },
+    {
+      "id": 258,
+      "name": "EV258",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Flame",
+            "direction": 2,
+            "pattern": 0,
+            "characterIndex": 7
+          },
+          "list": [
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Equip3",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 0,
+              "parameters": [
+                92,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 101,
+      "y": 8
     }
   ]
 }

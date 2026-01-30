@@ -14497,26 +14497,8 @@
           "walkAnime": true,
           "list": [
             {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                2,
-                "A",
-                1
-              ]
-            },
-            {
-              "code": 121,
-              "indent": 1,
-              "parameters": [
-                12,
-                12,
-                0
-              ]
-            },
-            {
               "code": 250,
-              "indent": 1,
+              "indent": 0,
               "parameters": [
                 {
                   "name": "Move1",
@@ -14528,87 +14510,7 @@
             },
             {
               "code": 201,
-              "indent": 1,
-              "parameters": [
-                0,
-                8,
-                105,
-                35,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 117,
-              "indent": 1,
-              "parameters": [
-                5
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\p2It's getting pretty dark... how long"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "were we in there? We should stop and"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "set up camp soon."
-              ]
-            },
-            {
-              "code": 123,
-              "indent": 1,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 411,
               "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 250,
-              "indent": 1,
-              "parameters": [
-                {
-                  "name": "Move1",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 201,
-              "indent": 1,
               "parameters": [
                 0,
                 8,
@@ -14620,7 +14522,7 @@
             },
             {
               "code": 223,
-              "indent": 1,
+              "indent": 0,
               "parameters": [
                 [
                   0,
@@ -14631,16 +14533,6 @@
                 1,
                 false
               ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
             },
             {
               "code": 0,
@@ -15896,7 +15788,7 @@
               "parameters": [
                 0,
                 0,
-                40
+                55
               ]
             },
             {
@@ -15904,6 +15796,26 @@
               "indent": 0,
               "parameters": [
                 16,
+                0,
+                0,
+                5
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 0,
+              "parameters": [
+                19,
+                0,
+                0,
+                5
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 0,
+              "parameters": [
+                14,
                 0,
                 0,
                 5
@@ -18122,117 +18034,7 @@
       "x": 25,
       "y": 38
     },
-    {
-      "id": 23,
-      "name": "spikes2",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Other1",
-            "direction": 8,
-            "pattern": 1,
-            "characterIndex": 4
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 54,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Other1",
-            "direction": 2,
-            "pattern": 1,
-            "characterIndex": 4
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": true,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 23,
-      "y": 37
-    },
+    null,
     {
       "id": 24,
       "name": "giantrat-copy",
@@ -19622,165 +19424,6 @@
               "code": 356,
               "indent": 8,
               "parameters": [
-                "CAM EVENT 23 1600"
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 8,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 8,
-              "parameters": [
-                23,
-                {
-                  "list": [
-                    {
-                      "code": 44,
-                      "parameters": [
-                        {
-                          "name": "Sword4",
-                          "volume": 90,
-                          "pitch": 100,
-                          "pan": 0
-                        }
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 18,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        3
-                      ]
-                    },
-                    {
-                      "code": 17,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        3
-                      ]
-                    },
-                    {
-                      "code": 16,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        60
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 44,
-                  "parameters": [
-                    {
-                      "name": "Sword4",
-                      "volume": 90,
-                      "pitch": 100,
-                      "pan": 0
-                    }
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 18,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    3
-                  ]
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 17,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    3
-                  ]
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 16,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    60
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 8,
-              "parameters": [
                 "CAM PLAYER 1600"
               ]
             },
@@ -20078,8 +19721,8 @@
               "indent": 1,
               "parameters": [
                 [
-                  "Yes.",
-                  "No."
+                  "Yes",
+                  "No"
                 ],
                 1,
                 1,
@@ -20504,8 +20147,8 @@
               "indent": 1,
               "parameters": [
                 [
-                  "Yes.",
-                  "No."
+                  "Yes",
+                  "No"
                 ],
                 1,
                 1,
@@ -21227,165 +20870,6 @@
               "code": 356,
               "indent": 8,
               "parameters": [
-                "CAM EVENT 23 1600"
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 8,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 8,
-              "parameters": [
-                23,
-                {
-                  "list": [
-                    {
-                      "code": 44,
-                      "parameters": [
-                        {
-                          "name": "Sword4",
-                          "volume": 90,
-                          "pitch": 100,
-                          "pan": 0
-                        }
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 18,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        3
-                      ]
-                    },
-                    {
-                      "code": 17,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        3
-                      ]
-                    },
-                    {
-                      "code": 16,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        60
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 44,
-                  "parameters": [
-                    {
-                      "name": "Sword4",
-                      "volume": 90,
-                      "pitch": 100,
-                      "pan": 0
-                    }
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 18,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    3
-                  ]
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 17,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    3
-                  ]
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 16,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    60
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 8,
-              "parameters": [
                 "CAM PLAYER 1600"
               ]
             },
@@ -21654,165 +21138,6 @@
               "indent": 8,
               "parameters": [
                 53,
-                {
-                  "list": [
-                    {
-                      "code": 44,
-                      "parameters": [
-                        {
-                          "name": "Sword4",
-                          "volume": 90,
-                          "pitch": 100,
-                          "pan": 0
-                        }
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 18,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        3
-                      ]
-                    },
-                    {
-                      "code": 17,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        3
-                      ]
-                    },
-                    {
-                      "code": 16,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        60
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 44,
-                  "parameters": [
-                    {
-                      "name": "Sword4",
-                      "volume": 90,
-                      "pitch": 100,
-                      "pan": 0
-                    }
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 18,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    3
-                  ]
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 17,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    3
-                  ]
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 16,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    60
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 8,
-              "parameters": [
-                "CAM EVENT 23 1600"
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 8,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 8,
-              "parameters": [
-                23,
                 {
                   "list": [
                     {
@@ -22516,165 +21841,6 @@
               "code": 356,
               "indent": 8,
               "parameters": [
-                "CAM EVENT 23 1600"
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 8,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 8,
-              "parameters": [
-                23,
-                {
-                  "list": [
-                    {
-                      "code": 44,
-                      "parameters": [
-                        {
-                          "name": "Sword4",
-                          "volume": 90,
-                          "pitch": 100,
-                          "pan": 0
-                        }
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 18,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        3
-                      ]
-                    },
-                    {
-                      "code": 17,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        3
-                      ]
-                    },
-                    {
-                      "code": 16,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        60
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 44,
-                  "parameters": [
-                    {
-                      "name": "Sword4",
-                      "volume": 90,
-                      "pitch": 100,
-                      "pan": 0
-                    }
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 18,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    3
-                  ]
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 17,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    3
-                  ]
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 16,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    60
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 8,
-              "parameters": [
                 "CAM PLAYER 1600"
               ]
             },
@@ -22943,165 +22109,6 @@
               "indent": 8,
               "parameters": [
                 53,
-                {
-                  "list": [
-                    {
-                      "code": 44,
-                      "parameters": [
-                        {
-                          "name": "Sword4",
-                          "volume": 90,
-                          "pitch": 100,
-                          "pan": 0
-                        }
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 18,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        3
-                      ]
-                    },
-                    {
-                      "code": 17,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        3
-                      ]
-                    },
-                    {
-                      "code": 16,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        60
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 44,
-                  "parameters": [
-                    {
-                      "name": "Sword4",
-                      "volume": 90,
-                      "pitch": 100,
-                      "pan": 0
-                    }
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 18,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    3
-                  ]
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 17,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    3
-                  ]
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 16,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    60
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 8,
-              "parameters": [
-                "CAM EVENT 23 1600"
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 8,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 8,
-              "parameters": [
-                23,
                 {
                   "list": [
                     {
@@ -23801,165 +22808,6 @@
               "code": 356,
               "indent": 8,
               "parameters": [
-                "CAM EVENT 23 1600"
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 8,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 8,
-              "parameters": [
-                23,
-                {
-                  "list": [
-                    {
-                      "code": 44,
-                      "parameters": [
-                        {
-                          "name": "Sword4",
-                          "volume": 90,
-                          "pitch": 100,
-                          "pan": 0
-                        }
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 18,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        3
-                      ]
-                    },
-                    {
-                      "code": 17,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        3
-                      ]
-                    },
-                    {
-                      "code": 16,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        60
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 44,
-                  "parameters": [
-                    {
-                      "name": "Sword4",
-                      "volume": 90,
-                      "pitch": 100,
-                      "pan": 0
-                    }
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 18,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    3
-                  ]
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 17,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    3
-                  ]
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 16,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    60
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 8,
-              "parameters": [
                 "CAM PLAYER 1600"
               ]
             },
@@ -24228,165 +23076,6 @@
               "indent": 8,
               "parameters": [
                 53,
-                {
-                  "list": [
-                    {
-                      "code": 44,
-                      "parameters": [
-                        {
-                          "name": "Sword4",
-                          "volume": 90,
-                          "pitch": 100,
-                          "pan": 0
-                        }
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 18,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        3
-                      ]
-                    },
-                    {
-                      "code": 17,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        3
-                      ]
-                    },
-                    {
-                      "code": 16,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        60
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 44,
-                  "parameters": [
-                    {
-                      "name": "Sword4",
-                      "volume": 90,
-                      "pitch": 100,
-                      "pan": 0
-                    }
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 18,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    3
-                  ]
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 17,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    3
-                  ]
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 16,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 8,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    60
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 8,
-              "parameters": [
-                "CAM EVENT 23 1600"
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 8,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 8,
-              "parameters": [
-                23,
                 {
                   "list": [
                     {
@@ -25239,8 +23928,8 @@
               "indent": 0,
               "parameters": [
                 [
-                  "Yes.",
-                  "No."
+                  "Yes",
+                  "No"
                 ],
                 1,
                 0,

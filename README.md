@@ -5,6 +5,7 @@ This is necessary whether or not you are using RPG Maker MV.
 Create this file in the root of the directory:
 ```
 STEAM_USERNAME=
+MAC_HOST=
 ```
 
 # 🛠️ How To Self-Compile

@@ -671,6 +671,7 @@ Window_ShopStatus.prototype.refresh = function() {
     this.resetFontSettings();
     var x = this.textPadding();
     this.drawPossession(x, 0);
+    this.drawMaterialText(x, this.lineHeight());
     if (!this.isEquipItem()) return;
     this.resetTextColor();
     this.resetFontSettings();
@@ -678,22 +679,29 @@ Window_ShopStatus.prototype.refresh = function() {
     if (this.isActorMode()) this.drawActorData();
 };
 
+Window_ShopStatus.prototype.drawMaterialText = function(x, y) {
+    var item = this._item;
+    if (!DataManager.isMaterial(item)) return;
+    this.resetFontSettings();
+    this.drawText("Material", x, y, this.contents.width - x);
+};
+
 Window_ShopStatus.prototype.drawDefaultData = function() {
     this.drawStatDisplayed();
-    this.drawEquipInfo(this.textPadding(), this.lineHeight() * 2);
+    this.drawEquipInfo(this.textPadding(), this.lineHeight() * 3);
 };
 
 Window_ShopStatus.prototype.drawStatDisplayed = function() {
     var paramId = this.paramId();
     var text = TextManager.param(paramId);
     this.changeTextColor(this.normalColor());
-    this.drawText(text, 0, this.lineHeight(), this.contents.width, 'center');
+    this.drawText(text, 0, this.lineHeight() * 2, this.contents.width, 'center');
     if (!Yanfly.Param.ShopStatSwitch) return;
     this.changeTextColor(this.systemColor());
     var text = '<<';
-    this.drawText(text, 0, this.lineHeight(), this.contents.width, 'left');
+    this.drawText(text, 0, this.lineHeight() * 2, this.contents.width, 'left');
     var text = '>>';
-    this.drawText(text, 0, this.lineHeight(), this.contents.width, 'right');
+    this.drawText(text, 0, this.lineHeight() * 2, this.contents.width, 'right');
 };
 
 Window_ShopStatus.prototype.drawActorData = function() {
@@ -713,12 +721,12 @@ Window_ShopStatus.prototype.drawActorDisplayed = function(actor) {
     var text = "\\i[" + $dataClasses[actor._classId].icon + "]" + actor.name();
     var tx = (this.contents.width - this.textWidth(text)) / 2;
     this.changeTextColor(this.normalColor());
-    this.drawTextEx(text, tx, this.lineHeight(), this.contents.width, 'center');
+    this.drawTextEx(text, tx, this.lineHeight() * 2, this.contents.width, 'center');
     this.changeTextColor(this.systemColor());
     var text = '<<';
-    this.drawText(text, 0, this.lineHeight(), this.contents.width, 'left');
+    this.drawText(text, 0, this.lineHeight() * 2, this.contents.width, 'left');
     var text = '>>';
-    this.drawText(text, 0, this.lineHeight(), this.contents.width, 'right');
+    this.drawText(text, 0, this.lineHeight() * 2, this.contents.width, 'right');
 };
 
 Window_ShopStatus.prototype.drawDarkRectEntries = function(actor) {
@@ -733,7 +741,7 @@ Window_ShopStatus.prototype.getRectPosition = function(index) {
     rect.width = Math.floor(this.contents.width / 4);
     rect.height = this.lineHeight();
     rect.x = (index % 4) * rect.width;
-    rect.y = Math.floor(index / 4) * this.lineHeight() + this.lineHeight() * 2;
+    rect.y = Math.floor(index / 4) * this.lineHeight() + this.lineHeight() * 3;
     return rect;
 };
 
@@ -744,11 +752,31 @@ Window_ShopStatus.prototype.drawDarkRect = function(dx, dy, dw, dh) {
     this.changePaintOpacity(true);
 };
 
+Window_ShopStatus.prototype.getEquipStatList = function() {
+    if (DataManager.isWeapon(this._item)) return [0, 1, 6, 2, 4, 8, 10];
+    if (DataManager.isArmor(this._item)) return [0, 1, 6, 3, 5, 9, 11];
+    return [];
+};
+
+Window_ShopStatus.prototype.getStatValue = function(item, paramId) {
+    if (!item) return 0;
+    if (paramId < 8) return item.params[paramId];
+    var xparamId = paramId - 8;
+    var value = 0;
+    for (var i = 0; i < item.traits.length; i++) {
+      if (item.traits[i].code === 22 && item.traits[i].dataId === xparamId) {
+        value += item.traits[i].value;
+      }
+    }
+    return value;
+};
+
 Window_ShopStatus.prototype.drawActorStatInfo = function(actor) {
     this.contents.fontSize = Yanfly.Param.ShopStatFontSize;
     var items = this.currentEquippedItem(actor, this._item.etypeId);
     var canEquip = actor.canEquip(this._item);
     canEquip = actor.checkEquipRequirements(this._item);
+    var statList = this.getEquipStatList();
     for (index = 0; index < items.length; index++) {
       item = items[index];
       for (var i = 0; i < 8; ++i) {
@@ -762,11 +790,12 @@ Window_ShopStatus.prototype.drawActorStatInfo = function(actor) {
           var icon = item ? item.iconIndex : Yanfly.Icon.EmptyEquip;
           this.changePaintOpacity(!!item);
           this.drawIcon(icon, rect.x + (rect.width - Window_Base._iconWidth) / 2, rect.y + (this.lineHeight() - Window_Base._iconHeight) / 2)
-        } else {
-          var text = TextManager.param(i - 1);
+        } else if (i <= statList.length) {
+          var paramId = statList[i - 1];
+          var text = TextManager.param(paramId);
           this.drawText(text, rect.x, rect.y, rect.width);
           if (!canEquip) this.drawActorCantEquip(actor, rect);
-          if (canEquip) this.drawActorChange(actor, rect, item, i - 1);
+          if (canEquip) this.drawActorChangeCustom(actor, rect, item, paramId);
         }
       }
       this.changePaintOpacity(true);
@@ -788,6 +817,19 @@ Window_ShopStatus.prototype.drawActorChange = function(actor, rect, item1, i) {
     this.changePaintOpacity(change !== 0);
     this.changeTextColor(this.paramchangeTextColor(change));
     var text = (change > 0 ? '+' : '') + Yanfly.Util.toGroup(change);
+    this.drawText(text, rect.x, rect.y, rect.width, 'right');
+};
+
+Window_ShopStatus.prototype.drawActorChangeCustom = function(actor, rect, item1, paramId) {
+    var newValue = this.getStatValue(this._item, paramId);
+    var oldValue = this.getStatValue(item1, paramId);
+    if (item1 && item1.baseItemId == 157 && paramId < 8) oldValue = $gameSystem.championsTalisman()[paramId];
+    var change = newValue - oldValue;
+    if (paramId >= 8) change = Math.round(change * 100);
+    this.changePaintOpacity(change !== 0);
+    this.changeTextColor(this.paramchangeTextColor(change));
+    var text = (change > 0 ? '+' : '') + Yanfly.Util.toGroup(change);
+    if (paramId >= 8) text += '%';
     this.drawText(text, rect.x, rect.y, rect.width, 'right');
 };
 

@@ -4006,86 +4006,17 @@
           },
           "list": [
             {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                6,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\andyOh. Hey, four new customers."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Welcome to my shop."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                6,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\andyUm... I'm Andy... and I sell"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "equipment geared towards rogues."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                6,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\andyYou can use some of this stuff"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "for other classes too, though."
-              ]
-            },
-            {
               "code": 205,
               "indent": 0,
               "parameters": [
-                0,
+                11,
                 {
                   "list": [
                     {
-                      "code": 18,
+                      "code": 45,
+                      "parameters": [
+                        "TELEPORT TO: 6, 7"
+                      ],
                       "indent": null
                     },
                     {
@@ -4093,7 +4024,7 @@
                     }
                   ],
                   "repeat": false,
-                  "skippable": true,
+                  "skippable": false,
                   "wait": false
                 }
               ]
@@ -4103,7 +4034,47 @@
               "indent": 0,
               "parameters": [
                 {
-                  "code": 18,
+                  "code": 45,
+                  "parameters": [
+                    "TELEPORT TO: 6, 7"
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                12,
+                {
+                  "list": [
+                    {
+                      "code": 45,
+                      "parameters": [
+                        "TELEPORT TO: 6, 7"
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 45,
+                  "parameters": [
+                    "TELEPORT TO: 6, 7"
+                  ],
                   "indent": null
                 }
               ]
@@ -4113,7 +4084,7 @@
               "indent": 0,
               "parameters": [
                 "Shopkeeper1",
-                7,
+                6,
                 0,
                 2
               ]
@@ -4122,14 +4093,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\clara\\}Andy! The small talk! Remember!"
+                "\\andySo as I was saying..."
               ]
             },
             {
               "code": 205,
               "indent": 0,
               "parameters": [
-                0,
+                5,
                 {
                   "list": [
                     {
@@ -4141,7 +4112,7 @@
                     }
                   ],
                   "repeat": false,
-                  "skippable": true,
+                  "skippable": false,
                   "wait": false
                 }
               ]
@@ -4170,14 +4141,38 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\andyOh, I've forgotten my"
+                "\\andyHm?"
               ]
             },
             {
-              "code": 401,
+              "code": 205,
               "indent": 0,
               "parameters": [
-                "manners again, haven't I?"
+                10,
+                {
+                  "list": [
+                    {
+                      "code": 25,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 25,
+                  "indent": null
+                }
               ]
             },
             {
@@ -4194,31 +4189,86 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\andySorry about that, I'm"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "not the best around people."
+                "\\andyHaven't seen you in here before..."
               ]
             },
             {
               "code": 101,
               "indent": 0,
               "parameters": [
-                "Actor4",
+                "Shopkeeper1",
+                14,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\andy...but welcome to my store! How can I help you?"
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
                 5,
-                0,
-                2
+                {
+                  "list": [
+                    {
+                      "code": 16,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
               ]
             },
             {
-              "code": 401,
+              "code": 505,
               "indent": 0,
               "parameters": [
-                "\\p2Hey, it's ok. Don't sweat it."
+                {
+                  "code": 16,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                10,
+                {
+                  "list": [
+                    {
+                      "code": 19,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 19,
+                  "indent": null
+                }
               ]
             },
             {
@@ -4226,7 +4276,7 @@
               "indent": 0,
               "parameters": [
                 "Shopkeeper1",
-                14,
+                6,
                 0,
                 2
               ]
@@ -4235,138 +4285,77 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\andyHeh, thanks."
+                "\\andyOne moment, chief. These are new customers."
               ]
             },
             {
-              "code": 101,
+              "code": 205,
               "indent": 0,
               "parameters": [
-                "Shopkeeper1",
-                14,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\andyWell, I haven't seen you four around"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Solus Valley yet, so welcome to town!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                14,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\andyAnd let me guess... you four are"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "the ones that saved Adon, right?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p3(Are we really that recognizable?)"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4Yeah, totally! I'm \\N[4]."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p3Uh, I'm \\N[3]."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
                 5,
-                0,
-                2
+                {
+                  "list": [
+                    {
+                      "code": 25,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
               ]
             },
             {
-              "code": 401,
+              "code": 505,
               "indent": 0,
               "parameters": [
-                "\\p2I'm \\N[2]! And the"
+                {
+                  "code": 25,
+                  "indent": null
+                }
               ]
             },
             {
-              "code": 401,
+              "code": 205,
               "indent": 0,
               "parameters": [
-                "knight is \\N[1]."
+                10,
+                {
+                  "list": [
+                    {
+                      "code": 25,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 25,
+                  "indent": null
+                }
               ]
             },
             {
               "code": 101,
               "indent": 0,
               "parameters": [
-                "Shopkeeper1",
-                14,
+                "Actor4",
+                3,
                 0,
                 2
               ]
@@ -4375,29 +4364,53 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\andyWell, I'm glad to be able to"
+                "\\p4Did you say... chief?"
               ]
             },
             {
-              "code": 401,
+              "code": 355,
               "indent": 0,
               "parameters": [
-                "sell to you four! I'll do anything"
+                "$gamePlayer.turnTowardEvent(10);"
               ]
             },
             {
-              "code": 401,
+              "code": 205,
               "indent": 0,
               "parameters": [
-                "to help out the world!"
+                5,
+                {
+                  "list": [
+                    {
+                      "code": 16,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 16,
+                  "indent": null
+                }
               ]
             },
             {
               "code": 101,
               "indent": 0,
               "parameters": [
-                "Shopkeeper1",
-                14,
+                "Telluria1",
+                1,
                 0,
                 2
               ]
@@ -4406,14 +4419,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\andyNow that the introductions are"
+                "\\chiefIndeed I am. Welcome to Solus Valley!"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "over... care to buy some stuff?"
+                "What brings you four to our quaint town?"
               ]
             },
             {
@@ -4421,12 +4434,13 @@
               "indent": 0,
               "parameters": [
                 [
-                  "Yeah, definitely!",
-                  "No thanks."
+                  "We're just wandering mercenaries.",
+                  "Serious world-saving business!",
+                  "It's a secret..."
                 ],
-                1,
+                -1,
                 0,
-                2,
+                1,
                 0
               ]
             },
@@ -4435,15 +4449,15 @@
               "indent": 0,
               "parameters": [
                 0,
-                "Yeah, definitely!"
+                "We're just wandering mercenaries."
               ]
             },
             {
               "code": 101,
               "indent": 1,
               "parameters": [
-                "Shopkeeper1",
-                14,
+                "Telluria1",
+                1,
                 0,
                 2
               ]
@@ -4452,38 +4466,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\andyGreat! Let's see what"
+                "\\chiefReally? I see those weapons you carry..."
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "I've got in stock..."
-              ]
-            },
-            {
-              "code": 117,
-              "indent": 1,
-              "parameters": [
-                31
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Shopkeeper1",
-                14,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\andyThanks for coming!"
+                "I hope you don't bring trouble to threaten our peace."
               ]
             },
             {
@@ -4496,15 +4486,15 @@
               "indent": 0,
               "parameters": [
                 1,
-                "No thanks."
+                "Serious world-saving business!"
               ]
             },
             {
               "code": 101,
               "indent": 1,
               "parameters": [
-                "Shopkeeper1",
-                6,
+                "Telluria1",
+                1,
                 0,
                 2
               ]
@@ -4513,15 +4503,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\andyOh."
+                "\\chiefHa! I like the spirit!"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                2,
+                "It's a secret..."
               ]
             },
             {
               "code": 101,
               "indent": 1,
               "parameters": [
-                "Shopkeeper1",
-                6,
+                "Telluria1",
+                1,
                 0,
                 2
               ]
@@ -4530,7 +4533,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\andyWell."
+                "\\chiefI hope you don't bring trouble"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "to threaten our peace..."
               ]
             },
             {
@@ -4547,6 +4557,163 @@
               "code": 101,
               "indent": 0,
               "parameters": [
+                "Actor4",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p3Is your military falling short anywhere?"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "We're offering our services."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Telluria1",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\chiefNot really..."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Telluria1",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\chiefActually, there might be something. But my old legs"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "can't keep me standing much longer. If you'd like"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "to discuss further, meet me at my residence."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "It's in the north-west corner of town."
+              ]
+            },
+            {
+              "code": 221,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                19,
+                19,
+                0,
+                0,
+                4
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Move1",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 222,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gamePlayer.turnTowardEvent(5);"
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                5,
+                {
+                  "list": [
+                    {
+                      "code": 25,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 25,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
                 "Shopkeeper1",
                 14,
                 0,
@@ -4557,21 +4724,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\andyBefore you head out, I have a gift"
+                "\\andySay, if you're going to take him up on that..."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "for you. I'm sure you'll appreciate it."
+                "I've got something that might help you in battle."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Been meaning to get rid of this for a while."
               ]
             },
             {
               "code": 205,
               "indent": 0,
               "parameters": [
-                0,
+                5,
                 {
                   "list": [
                     {
@@ -4776,21 +4950,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\andyThis is an ancient dagger that was"
+                "\\andyI had the opportunity to attend an excavation"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "unearthed below Telluria Castle during"
+                "of the ruins underneath Telluria Castle. That's"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "an excavation."
+                "where this ancient blade was unearthed."
               ]
             },
             {
@@ -4807,7 +4981,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\andyIt was most likely once very powerful."
+                "\\andyAs an expert on daggers, it was bestowed upon me to"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "be studied. It was probably once pretty powerful..."
               ]
             },
             {
@@ -4824,7 +5005,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\andyHowever..."
+                "\\andy...till I spilled some hard cider on it."
               ]
             },
             {
@@ -4841,7 +5022,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\andy..."
+                "\\andyOr maybe it was just under those rocks"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "for a while. Who really knows?"
               ]
             },
             {
@@ -4858,83 +5046,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\andy...I may have... spilled some cider"
+                "\\andyI figure it could be a pretty nice weapon if you"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "on it, negating a lot of its magical"
+                "take the time to improve it. But I don't have that"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "effects..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                6,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\andy...but I prefer to think that it's"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "lost its magic while sitting under all"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "that rock for so long."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                14,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\andyPlease take good care of it! I'm"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "sure that you will be able to one day"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "restore it to its former glory!"
+                "kinda' time. Maybe you'll make better use of it?"
               ]
             },
             {
@@ -4979,30 +5105,6 @@
               "code": 101,
               "indent": 0,
               "parameters": [
-                "Actor4",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4Hey, thanks a bunch! I"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "really appreciate it!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
                 "Shopkeeper1",
                 14,
                 0,
@@ -5013,105 +5115,148 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\andyIt's no problem. If anyone deserves to"
+                "\\andyOh, and of course, since is my shop,"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "keep this archaic weapon, it's you guys."
+                "are you looking to purchase anything?"
               ]
             },
             {
-              "code": 101,
+              "code": 102,
               "indent": 0,
               "parameters": [
-                "Shopkeeper1",
-                14,
+                [
+                  "Yeah, definitely!",
+                  "No thanks."
+                ],
+                1,
                 0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\andyWell, that's about it."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                14,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\andyIf you haven't yet, make sure to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "check out my sister Clara's shop."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "She has strong cleric items and"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "a variety of other magic items!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                14,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\andyGood luck out there!"
-              ]
-            },
-            {
-              "code": 122,
-              "indent": 0,
-              "parameters": [
-                19,
-                19,
-                0,
-                0,
-                4
-              ]
-            },
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
+                2,
                 0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                0,
+                "Yeah, definitely!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                14,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\andyGreat! Let's see what I've got in stock..."
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 1,
+              "parameters": [
+                31
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                14,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\andyThanks for coming!"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                1,
+                "No thanks."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                6,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\andyOh, well."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                5,
+                {
+                  "list": [
+                    {
+                      "code": 25,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": true,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 25,
+                  "indent": null
+                }
               ]
             },
             {
@@ -5137,7 +5282,7 @@
             "wait": false
           },
           "moveSpeed": 4,
-          "moveType": 3,
+          "moveType": 0,
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
@@ -5151,14 +5296,14 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": true,
+            "selfSwitchValid": false,
             "switch1Id": 1,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableId": 19,
+            "variableValid": true,
+            "variableValue": 6
           },
           "directionFix": false,
           "image": {
@@ -6551,14 +6696,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\andyOh, you four again! Glad to see"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "you, welcome back! Wanna' buy anything?"
+                "\\andyYou four again! Wanna' buy anything?"
               ]
             },
             {
@@ -6597,14 +6735,7 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\andyGreat! Let's see what"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "I've got in stock..."
+                "\\andyGreat! Let's see what I've got in stock..."
               ]
             },
             {
@@ -6658,24 +6789,7 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\andyOh."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper1",
-                6,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\andyWell."
+                "\\andyOh, well."
               ]
             },
             {
@@ -6697,23 +6811,6 @@
               "code": 412,
               "indent": 0,
               "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                14,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\andyGood luck out there!"
-              ]
             },
             {
               "code": 0,
@@ -6793,7 +6890,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\claraHeyyyyyyy, new customers!"
+                "\\claraHeyy, new customers! Welcome to my half of Andy and Clara's Rogue and Cleric Store,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "home of 11-time winners of the Adventurer's Guild's Adventuring Couple of the Year Award!"
               ]
             },
             {
@@ -6810,251 +6914,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\claraWelcome to my half of Andy and Clara's"
+                "\\claraI've got aaaaall the cleric items you'll ever need!"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Rogue and Cleric Store, home of the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "coolest twins of all time!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4(Hmph.)"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                15,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\claraI've got aaaaall the cleric"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "items you'll need! Along with"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "a TON of other magic items!"
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                0,
-                {
-                  "list": [
-                    {
-                      "code": 17,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": true,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 17,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                6,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\andy\\}Clara, we talked about this. Calm"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "down a bit, stop scaring the customers!"
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                0,
-                {
-                  "list": [
-                    {
-                      "code": 25,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": true,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 25,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\claraAh, my bad. Sorry if I was"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "a bit too enthusiastic, guys."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Hey, a bit of enthusiasm never hurt"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "anyone. It's fine, don't worry."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                15,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\claraGreat!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                15,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\claraWell, I already know that you four"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "have to be the ones that saved Adon."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "I'm right, right?"
+                "Along with a TON of other magic items!"
               ]
             },
             {
@@ -7062,8 +6929,8 @@
               "indent": 0,
               "parameters": [
                 [
-                  "Yes.",
-                  "No."
+                  "Let's take a look!",
+                  "I'm good for now."
                 ],
                 1,
                 0,
@@ -7076,7 +6943,7 @@
               "indent": 0,
               "parameters": [
                 0,
-                "Yes."
+                "Let's take a look!"
               ]
             },
             {
@@ -7093,330 +6960,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\claraHa! I knew it!"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                1,
-                "No."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Shopkeeper1",
-                15,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\claraAh, you're a comedian \\N[1],"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "aren't you?"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 404,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                15,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\clara\\N[1]..."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\N[2]..."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\N[3]..."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\N[4]..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                15,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\claraThe saviors of Adon, and"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "the greatest hope for Telluria."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\claraBut really, the monster outbreaks"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "have gotten really out of hand lately."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Everything is falling out of balance."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\claraPlease! We need you to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "stop \\c[18]Apocalypse\\c[0]!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p3Oh, you know about \\c[18]him\\c[0] as well?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\claraAndy and I once had a quite a role"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "in the fight back in the day."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\claraBut now we're here, gearing up"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "travelers to go finish the job."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                15,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\claraBut I'm fine with that! It's"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "a respectable occupation!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                15,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\claraWell, enough talking:"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "do you want to buy stuff?"
-              ]
-            },
-            {
-              "code": 102,
-              "indent": 0,
-              "parameters": [
-                [
-                  "Mhm!",
-                  "Meh... not really."
-                ],
-                1,
-                0,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                0,
-                "Mhm!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Shopkeeper1",
-                15,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\claraGreat! Let me pull"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "up my inventory..."
+                "\\claraGreat! Here's what I've got for y'all..."
               ]
             },
             {
@@ -7453,7 +6997,7 @@
               "indent": 0,
               "parameters": [
                 1,
-                "Meh... not really."
+                "I'm good for now."
               ]
             },
             {
@@ -7470,24 +7014,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\claraHm."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Shopkeeper1",
-                15,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\claraIt's fine."
+                "\\claraThat's alright..."
               ]
             },
             {
@@ -7514,45 +7041,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\claraIf you haven't yet, please visit my"
+                "\\claraPsst... if you haven't yet, go buy from Andy!"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "brother Andy to the left. He's got great"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "equipment for rogues, which I'm sure"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "that you'll need out there!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                15,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\claraGood luck in Telluria!"
+                "He deserves all the support!"
               ]
             },
             {
@@ -8480,14 +7976,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\claraWelcome back, saviors of Adon!"
+                "\\claraI've got aaaaall the cleric items you'll ever need!"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Would you like to buy anything?"
+                "Along with a TON of other magic items!"
               ]
             },
             {
@@ -8495,8 +7991,8 @@
               "indent": 0,
               "parameters": [
                 [
-                  "Mhm!",
-                  "Meh... not really."
+                  "Let's take a look!",
+                  "I'm good for now."
                 ],
                 1,
                 0,
@@ -8509,7 +8005,7 @@
               "indent": 0,
               "parameters": [
                 0,
-                "Mhm!"
+                "Let's take a look!"
               ]
             },
             {
@@ -8526,14 +8022,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\claraGreat! Let me pull"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "up my inventory..."
+                "\\claraGreat! Here's what I've got for y'all..."
               ]
             },
             {
@@ -8570,7 +8059,7 @@
               "indent": 0,
               "parameters": [
                 1,
-                "Meh... not really."
+                "I'm good for now."
               ]
             },
             {
@@ -8587,24 +8076,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\claraHm."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Shopkeeper1",
-                15,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\claraIt's fine."
+                "\\claraThat's alright..."
               ]
             },
             {
@@ -8616,23 +8088,6 @@
               "code": 404,
               "indent": 0,
               "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                15,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\claraGood luck in Telluria!"
-              ]
             },
             {
               "code": 0,
@@ -9124,14 +8579,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\vilMaybe I should learn how to fight. Next time"
+                "\\vilMaybe I should learn how to fight. Next"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\c[18]Apocalypse\\c[0] shows up, I'm giving him a fight!"
+                "time I see a monster, it's done for!"
               ]
             },
             {
@@ -9163,6 +8618,621 @@
       ],
       "x": 3,
       "y": 11
+    },
+    {
+      "id": 10,
+      "name": "chief",
+      "note": "<shadow>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 19,
+            "variableValid": false,
+            "variableValue": 4
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Telluria1",
+            "direction": 8,
+            "pattern": 1,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 19,
+            "variableValid": true,
+            "variableValue": 4
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 6,
+      "y": 9
+    },
+    {
+      "id": 11,
+      "name": "EV011",
+      "note": "<Hitbox Up: 1>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 45,
+                      "parameters": [
+                        "MOVE TO: 12, 7"
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 45,
+                  "parameters": [
+                    "MOVE TO: 12, 7"
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "CallEvent 5"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 19,
+            "variableValid": true,
+            "variableValue": 5
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 19,
+            "variableValid": true,
+            "variableValue": 6
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 12,
+      "y": 7
+    },
+    {
+      "id": 12,
+      "name": "EV012",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 4,
+                      "indent": null
+                    },
+                    {
+                      "code": 4,
+                      "indent": null
+                    },
+                    {
+                      "code": 4,
+                      "indent": null
+                    },
+                    {
+                      "code": 4,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 4,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 4,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 4,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 4,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "CallEvent 5"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 19,
+            "variableValid": true,
+            "variableValue": 5
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 19,
+            "variableValid": true,
+            "variableValue": 6
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 7,
+      "y": 13
     }
   ]
 }

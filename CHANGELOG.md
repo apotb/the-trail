@@ -1,23 +1,126 @@
-# Alpha 18: ??? (??/??/2025)
-INTRO
+# Alpha 18: Back to the Basics (??/??/????)
+There comes a time when enough is enough. Alpha 15's Telluria Field is the highlight of The Trail, but you had to play through a meaningless slog to get there. I spent a long time not wanting to revamp/remove certain parts of the game for nostalgia reasons, but the story simply cannot go on when the first half of it is so poorly put together.
+
+Poorly justified progression, nonsensical dialogue, and a whole lot of fluff that didn't contribute to the story has been changed or outright removed in this update. You'll see the changes right from the very start. If you remember what the dialogue/story was like before, I think you'll find this to be a much better direction for the game.
+
+For the sake of both our time, a lot of specific details have been omitted from the changelog, Alpha 14-esque. You'll just have to play to see the full extent of the overhaul!
+
+NOTICE: Old saves will not work with this update!
 
 ### Additions
--
+- Added a LOT of new content before Telluria Field, including:
+  - 2 new settlements to explore
+  - New characters
+  - Several new quests
+- Added random name generation.
+- Added team names.
+- Added royal titles.
+- Added a new early-game fast travel system.
+- Added a short sound effect when completing a quest objective.
+- Added TROPHY rarity.
+- Added 6 items:
+  - Eclipse Potion
+  - Giant Goblin's Fang (weapon)
+  - Henry's Boots (armor)
+  - The Warden's Belt (armor)
+  - Forgotten General's Helmet (armor)
+  - Bronze Gauntlets
+- Added early-game fishing content and 18 items:
+  - Crucian Carp
+  - Pond Smelt
+  - Yellow Perch
+  - Bluegill
+  - Pale Chub
+  - Brook Trout
+  - Sweetfish
+  - Carp and Mushroom Stew
+  - Charred Smelt Skewer
+  - Garnished Perch
+  - Seasoned Bluegill Roast
+  - Earthy Chub Fry
+  - Solus Valley Special
+  - Honey-Glazed Carp
+  - Seared Dace
+  - Whiskerfish Porridge
+  - Good Rod
+  - Enchanted Rod
 
 ### Changes
-- Buffed the CRI of Rat Claw, Sharp Tooth, Goblin Fang, and Razor-Sharp Fang.
-- All monsters respawn after Laeryidyean is defeated.
+- Revamped most of the game up to Telluria Field.
+  - The game now begins in Verdin Village.
+  - Time is ticking as soon as you start.
+  - The Blazing Sands are available as soon as you reach Telluria.
+  - Most cutscenes have been either completely changed or removed.
+  - A bunch of stuff got rebalanced, shuffled around, or given a spotlight in an overcrowded pool of new content.
+  - Existing fishing/food content has been overhauled to accommodate new early-game fishing content.
+- Increased max name length from 10 → 12.
+- You can no longer equip duplicate Wristbraces, Necklaces, Gauntlets, Scarves, or Crystals.
+  - To make this easier to figure out, equipment types are shown next to rarity.
+- Red Slimes and Bats no longer drop Copper/Iron Clusters and Coal.
+  - This is compensated by 12 new ore nodes in Goblin Grotto, half of which are oreleaf.
+- Made Goblins weaker to magic.
+- Made Bats more resistant to magic.
+- Reduced drop rate of Ring of the Woods/Forest.
+- Buffed Earthen Grassrobes Earth resistance from 10% to 25%.
+- Menu improvements:
+  - Reordered smithery crafting menus.
+  - Shop sell menu shows if an item is a material.
+  - Equipment shows more relevant stats.
+- Changed the color of trees!
 
 ### Bug Fixes
-- Fixed many issues with mouse-based movement:
-  - Fixed abrupt stops caused by invisible events triggered by player touch.
-  - Fixed being forced to sprint.
-- Fixed P2 still appearing to give the Under Construction quest.
+- Fixed a bug where the autosave interval wouldn't count down while in menus or battle.
+- Fixed a bug where Copper Oreleaf couldn't drop Rock Salt.
+- Fixed outdated cliff texture in South Field.
+- Fixed wading effect when walking on bridge in South Field.
+- Fixed Seshat's Tome drop beginning in Telluria Field being a 1/10,000 drop rather than a 1/100 drop.
+- Fixed a bunch of other random bugs.
 
-OUTRO
+If you happen to stumble upon a "new" item that isn't on here, it's probably because I made a lot of old/bad items more relevant. For example, the Globetrotter Boots, once useless at Telluria Castle Town's tier, now have a much better fit in Solus Valley. So you might be stumbling upon items you never would have even thought to care about in previous versions!
+
+I know I said Alpha 18 would be the Wasteland update, but don't worry, the update's not going anywhere. In fact, the party will finally get to face their most dangerous challenges yet in Alpha 19!
+
+Until then... the journey continues.
 
 Yours truly,
 AP
+
+# Alpha 17.1 (8/10/2025)
+Howdy everyone! It's been a couple months since the last update, but development is finally picking up again!
+This is just a minor patch, but it adds an item rarity system, as well as fixing a notable softlock.
+
+### Additions
+- Implemented a rarity system. Collect COMMON, UNCOMMON, RARE, EPIC, and LEGENDARY items!
+- Added a new achievement "Twilight Idol" for defeating the Sentinel.
+
+### Changes
+- Reworked the Purple Mage Crystal. It now increases damage dealt by 30% when below 50% HP.
+- Buffed the CRI of Rat Claw, Sharp Tooth, Goblin Fang, and Razor-Sharp Fang.
+- Damage is now softcapped rather than abruptly cut off at the Dandy Toad Mage and Purple Cultist's transformations.
+- Nerfed Flashbang:
+  - Decreased duration from 5 → 4 turns.
+  - Each use in battle increases TP cost by 0.2.
+- Non-animated enemies now have shadows.
+- Soaked is no longer removed when downed.
+- All monsters respawn after Laeryidyean is defeated.
+- New items now keep the "NEW" indicator until the menu is refreshed.
+- Added a new item category "Meals" which should help de-clutter the Buffs category.
+- The recipe for Seafood Dinner now includes 1 Apple.
+
+### Bug Fixes
+- Fixed a softlock where the Greenfield-Solus Passage was permanently blocked by an NPC, preventing any further progress.
+- Fixed 2 issues with mouse-based movement:
+  - Fixed abrupt stops caused by invisible events triggered by player touch.
+  - Fixed being forced to sprint.
+- Fixed an issue related to small text and line height.
+- Fixed the Bits Spent stat not increasing when purchasing memberships at the Adventurer's Guild.
+- Fixed P2 still appearing to give the Under Construction quest.
+- Fixed autosave graphic lingering when changing maps during an autosave.
+- Fixed being able to walk on the water around the large tree in Champion's Square.
+- Fixed a visual bug with part of the floor in True Telluria Castle - B3.
+- Improved performance in battle.
+
+Expect more news on Alpha 18 within the coming weeks!
 
 # Alpha 17: Path of the Purple (5/30/2025)
 Now that you've witnessed the destructive power of Apocalypse first-hand, it's time to take up arms! The thing is, no one really knows where Apocalypse is... so it's up to you to track him down.

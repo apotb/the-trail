@@ -890,7 +890,7 @@ Game_BattlerBase.prototype.partyLimitCost = function(skill) {
     } catch (e) {
       Yanfly.Util.displayError(e, code, 'PARTY LIMIT COST ERROR');
     }
-    return Math.ceil(cost * this.partyLimitCostRate());
+    return Math.trunc(cost * this.partyLimitCostRate() * 100) / 100;
 };
 
 Yanfly.PLG.Game_BattlerBase_paySkillCost =

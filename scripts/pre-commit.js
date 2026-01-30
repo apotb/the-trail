@@ -24,9 +24,12 @@ try {
         // Every file except Animations.json: Pretty the JSON, and write it back
         let command = ''
         files.forEach(file => {
-            const json = fs.readFileSync(`${data_directory}/${file}`)
-            if (`${file}` !== "Animations.json") fs.writeFileSync(`${data_directory}/${file}`, JSON.stringify(JSON.parse(json), null, indent))
-            command += ` ${data_directory}/${file}`
+            const filePath = `${data_directory}/${file}`
+            if (fs.statSync(filePath).isDirectory()) return // Ignore directories
+            if (path.extname(`${file}`).toLowerCase() !== '.json') return // Ignore non JSON files
+            const json = fs.readFileSync(filePath, 'utf8')
+            if (`${file}` !== "Animations.json") fs.writeFileSync(filePath, JSON.stringify(JSON.parse(json), null, indent))
+            command += ` ${filePath}`
         })
 
         // System.json: versionId and editMapId constants
