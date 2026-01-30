@@ -929,7 +929,7 @@ Window_SaveInfo.prototype.drawGameTitle = function(dy) {
   // Team Name
   try {
     let teamName = DataManager.loadGlobalInfo()[this._currentFile].teamName;
-    if (teamName === "Team Name") var text = "";
+    if (teamName === "Team Name") var text = "An adventuring party";
     else var text = teamName;
   } catch (err) {
     console.error(err);
