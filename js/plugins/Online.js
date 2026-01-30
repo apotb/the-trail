@@ -83,26 +83,6 @@ Game_Map.prototype.isRaidMap = function() {
 };
 
 //=============================================================================
-// Sprite_Character
-//=============================================================================
-
-___Sprite_Character__prototype__update___ = Sprite_Character.prototype.update;
-Sprite_Character.prototype.update = function() {
-    ___Sprite_Character__prototype__update___.call(this);
-    // Keep player sprite always on top of other players
-    if (this._character === $gamePlayer && SceneManager._scene._spriteset) {
-        var playerSprite = this;
-        var maxZ = 0;
-        SceneManager._scene._spriteset._characterSprites.forEach(function(sprite) {
-            if (sprite._character && sprite._character.isOtherPlayer && sprite._character.isOtherPlayer()) {
-                if (sprite.z > maxZ) maxZ = sprite.z;
-            }
-        });
-        if (maxZ > 0) playerSprite.z = maxZ + 1;
-    }
-};
-
-//=============================================================================
 // Scene_Menu
 //=============================================================================
 
