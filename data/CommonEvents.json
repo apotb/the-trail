@@ -10535,6 +10535,36 @@
         ]
       },
       {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "$gameSystem.smallChestsOnMap() >= 1"
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 2,
+        "parameters": [
+          {
+            "name": "Dog",
+            "volume": 90,
+            "pitch": 120,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
         "code": 355,
         "indent": 1,
         "parameters": [
@@ -10545,14 +10575,49 @@
         "code": 655,
         "indent": 1,
         "parameters": [
-          "console.log(chests);"
+          "if (chests > 0) {"
         ]
       },
       {
         "code": 655,
         "indent": 1,
         "parameters": [
-          "if (chests > 0) $gameParty.pet().stateGab(`Arlo sniffs out \\\\c[4]${chests}\\\\c[0] treasure chest${chests > 1 ? 's' : ''}!`);"
+          "  const interpreter = $gameMap._interpreter;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  interpreter.setGabText([`Arlo sniffs out \\\\c[4]${chests}\\\\c[0] nearby treasure chest${chests > 1 ? 's' : ''}!`]);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  interpreter.setGabActorSprite([$gameParty.pet().actorId()]);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  interpreter.setGabTime([0]);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  interpreter.forceGab();"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "}"
         ]
       },
       {

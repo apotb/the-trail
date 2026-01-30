@@ -18,13 +18,14 @@ NOTICE: Old saves will not work with this update!
 - Added a new early-game fast travel system.
 - Added a short sound effect when completing a quest objective.
 - Added TROPHY rarity.
-- Added 6 items:
+- Added 7 items:
   - Eclipse Potion
   - Giant Goblin's Fang (weapon)
   - Henry's Boots (armor)
   - The Warden's Belt (armor)
   - Forgotten General's Helmet (armor)
   - Bronze Gauntlets
+  - Arlo's spawn item
 - Added early-game fishing content and 18 items:
   - Crucian Carp
   - Pond Smelt
