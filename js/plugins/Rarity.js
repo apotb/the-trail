@@ -14,8 +14,8 @@ DataManager.initRarity = function(item) {
     }
 };
 
-Window_ItemInfo.prototype.drawItemRarity = function(dy) {
-    var item = this._item;
+___Window_ItemInfo__prototype__drawItemRarity___ = function(window, dy) {
+    var item = window._item;
     if (item.rarity === undefined) DataManager.initRarity(item);
 
     // Rarity Text
@@ -51,9 +51,9 @@ Window_ItemInfo.prototype.drawItemRarity = function(dy) {
     var info = infoText.split(/[\r\n]+/);
     for (var i = 0; i < info.length; ++i) {
       var line = info[i];
-      this.resetFontSettings();
-      this.drawTextEx(line, this.textPadding(), dy);
-      dy += this.contents.fontSize + 8;
+      window.resetFontSettings();
+      window.drawTextEx(line, window.textPadding(), dy);
+      dy += window.contents.fontSize + 8;
     }
     return dy;
 };

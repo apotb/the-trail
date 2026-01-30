@@ -2107,7 +2107,7 @@ Window_ItemInfo.prototype.drawItemInfoE = function(dy) {
 };
 
 Window_ItemInfo.prototype.drawItemInfoF = function(dy) {
-    dy = this.drawItemRarity(dy);
+    dy = ___Window_ItemInfo__prototype__drawItemRarity___(this, dy);
     return dy;
 };
 
