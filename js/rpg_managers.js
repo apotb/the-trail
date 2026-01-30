@@ -1712,6 +1712,8 @@ TextManager.basic = function(basicId) {
 };
 
 TextManager.param = function(paramId) {
+    if (paramId === 10) return 'CRI';
+    if (paramId === 11) return 'CEV';
     return $dataSystem.terms.params[paramId] || '';
 };
 

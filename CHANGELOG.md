@@ -63,6 +63,7 @@ NOTICE: Old saves will not work with this update!
 - Reduced drop rate of Ring of the Woods/Forest.
 - Buffed Earthen Grassrobes Earth resistance from 10% to 25%.
 - Reordered smithery crafting menus.
+- Equipment shows more relevant stats.
 - Changed the color of trees!
 
 ### Bug Fixes
