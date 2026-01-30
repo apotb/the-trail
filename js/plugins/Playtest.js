@@ -21,3 +21,7 @@ all = function() {
     allItems();
     allEquips();
 };
+
+scene = function() {
+    return SceneManager._scene;
+};

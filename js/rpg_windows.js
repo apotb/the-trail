@@ -503,18 +503,6 @@ Window_Base.prototype.drawActorName = function(actor, x, y, width) {
 
 Window_Base.prototype.drawActorClass = function(actor, x, y, width) {
     return this.drawActorTitle(actor, x, y, width);
-    width = width || 168;
-    this.resetTextColor();
-    this.drawIcon(actor.currentClass().icon, x, y, width);
-    x += Window_Base._iconWidth + this.textPadding() / 2;
-    this.drawText(actor.currentClass().name, x, y, width);
-};
-
-Window_Base.prototype.drawActorTitle = function(actor, x, y, width) {
-    console.log(actor);
-    width = width || 168;
-    this.resetTextColor();
-    this.drawTextEx(actor.titleEx(), x, y);
 };
 
 Window_Base.prototype.drawActorEquipIcons = function(actor, x, y, bound) {
@@ -631,15 +619,7 @@ Window_Base.prototype.drawActorTp = function(actor, x, y, width) {
 };
 
 Window_Base.prototype.drawActorSimpleStatus = function(actor, x, y, width) {
-    var lineHeight = this.lineHeight();
-    var x2 = x + 180;
-    var width2 = Math.min(200, width - 180 - this.textPadding());
-    this.drawActorName(actor, x, y);
-    this.drawActorLevel(actor, x, y + lineHeight * 1);
-    this.drawActorIcons(actor, x, y + lineHeight * 2);
-    this.drawActorClass(actor, x2, y);
-    this.drawActorHp(actor, x2, y + lineHeight * 1, width2);
-    this.drawActorMp(actor, x2, y + lineHeight * 2, width2);
+    // YEP_CoreEngine.js
 };
 
 Window_Base.prototype.drawItemName = function(item, x, y, width) {
@@ -1830,7 +1810,7 @@ Window_MenuStatus.prototype.drawActorSimpleStatus = function(actor, x, y, width)
         this.drawActorLevel(actor, x, y + lineHeight * 1);
         this.drawActorIcons(actor, x, y + lineHeight * 2, xpad);
         this.drawActorClass(actor, x2, y, width2);
-        this.drawActorEquipIcons(actor, x2 + width2, y, width2 - this.textWidth(actor.currentClass().name));  
+        this.drawActorEquipIcons(actor, x2 + width2, y, width2 - this.textWidth(actor.title()));  
         this.drawActorHp(actor, x2, y + lineHeight * 1, width2);
         this.drawActorMp(actor, x2, y + lineHeight * 2, width2);
     } else {

@@ -1,3 +1,5 @@
+// Actor
+
 ___Game_Actor__prototype__setup___ = Game_Actor.prototype.setup;
 Game_Actor.prototype.setup = function(actorId) {
     ___Game_Actor__prototype__setup___.call(this, actorId);
@@ -42,6 +44,28 @@ Game_Actor.prototype.titleEx = function() {
     return title;
 };
 
+// Window Base
+
+Window_Base.prototype.drawActorTitle = function(actor, x, y, width) {
+    width = width || 168;
+    this.resetTextColor();
+    this.drawTextEx(actor.titleEx(), x, y);
+};
+
+Window_Base.prototype.drawActorLevel = function(actor, x, y) {
+    this.changeTextColor(this.systemColor());
+    var dw1 = this.textWidth(TextManager.levelA);
+    this.drawText(TextManager.levelA, x, y, dw1);
+    this.resetTextColor();
+    var level = Yanfly.Util.toGroup(actor.level);
+    var dw2 = this.textWidth(Yanfly.Util.toGroup(actor.maxLevel()));
+    this.drawText(level, x + dw1, y, dw2, 'right');
+    // This is all I added:
+    this.drawIcon(actor.currentClass().icon, x + dw1 + dw2 + 4, y + 2);
+};
+
+// Save Info
+
 Window_SaveInfo.prototype.drawPartyTitles = function(dy) {
     if (!Yanfly.Param.SaveInfoActorName) return dy;
     this.resetFontSettings();
@@ -60,4 +84,8 @@ Window_SaveInfo.prototype.drawPartyTitles = function(dy) {
         dx += dw
     }
     return dy += this.lineHeight() / 1.25;
+};
+
+Window_MenuStatus.prototype.drawActorClass = function(actor, x, y, width) {
+    this.drawActorTitle(actor, x, y, width);
 };
