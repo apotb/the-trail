@@ -40,7 +40,7 @@ function startMultiplayerConnection(playerName="Guest", ip="the-trail.apotb.com"
 
                 if (player) {
                     SceneManager._scene._spriteset.createBShadow(player.eventId(), player);
-                    SceneManager._scene._spriteset._characterSprites.find(sprite => sprite && sprite._miniLabel?._character._eventId === player.eventId())._miniLabel.setText(data.name);
+                    SceneManager._scene._spriteset._characterSprites.find(sprite => sprite && sprite._miniLabel?._character._eventId === player.eventId())._miniLabel?.setText(data.name);
                     player.setImage(data.spriteName, data.spriteIndex);
                     player._mapId = data.mapId;
                     player.locate(data.x, data.y);
@@ -84,20 +84,6 @@ function startMultiplayerConnection(playerName="Guest", ip="the-trail.apotb.com"
             if (data.type === "vanity") {
                 let player = $gameTemp._players[data.id];
                 if (player) player.setImage(data.spriteName, data.spriteIndex);
-            }
-
-            // Lobbies and Parties
-
-            if (data.type === "lobby") {
-                console.log(data.lobby);
-            }
-
-            if (data.type === "party-join") {
-                console.log(data);
-            }
-
-            if (data.type === "party-start") {
-                console.log(data);
             }
 
             // Messages
@@ -368,22 +354,53 @@ function joinParty(lobbyId, partyId) {
 function leaveParty() {
     return new Promise((resolve) => {
         if (!socket || socket.readyState !== WebSocket.OPEN) {
+            console.warn("Socket not connected when leaving party");
             resolve({ success: false });
             return;
         }
         
-        const listener = (event) => {
-            const data = JSON.parse(event.data);
-            if (data.type === "party-leave") {
+        let resolved = false;
+        const timeout = setTimeout(() => {
+            if (!resolved) {
+                resolved = true;
                 socket.removeEventListener("message", listener);
-                resolve(data);
+                console.error("Leave party request timed out after 5 seconds");
+                resolve({ success: false });
+            }
+        }, 5 * 1000); // 5 second timeout
+        
+        const listener = (event) => {
+            try {
+                const data = JSON.parse(event.data);
+                if (data.type === "party-leave") {
+                    if (!resolved) {
+                        resolved = true;
+                        clearTimeout(timeout);
+                        socket.removeEventListener("message", listener);
+                        console.log("Party leave response:", data);
+                        resolve(data);
+                    }
+                }
+            } catch (e) {
+                console.error("Error parsing party-leave response:", e);
             }
         };
         
         socket.addEventListener("message", listener);
-        socket.send(JSON.stringify({
-            type: "party-leave"
-        }));
+        try {
+            console.log("Sending party-leave request");
+            socket.send(JSON.stringify({
+                type: "party-leave"
+            }));
+        } catch (e) {
+            if (!resolved) {
+                resolved = true;
+                clearTimeout(timeout);
+                socket.removeEventListener("message", listener);
+                console.error("Failed to send party-leave message:", e);
+                resolve({ success: false });
+            }
+        }
     });
 }
 

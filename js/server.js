@@ -194,8 +194,15 @@ wss.on('connection', (ws) => {
             } else if (data.type === "message") {
                 log(data.message);
             } else if (data.type === "player") {
-                clients.set(ws, data);
-                player = data;
+                // Merge new player data with existing, preserving party info
+                let player = clients.get(ws) || {};
+                const partyId = player.partyId; // Preserve existing partyId
+                player = {
+                    ...player,
+                    ...data,
+                    partyId: partyId // Restore partyId
+                };
+                clients.set(ws, player);
 
                 const otherPlayers = Array.from(clients.entries())
                     .map(([_, pdata]) => pdata)
@@ -310,7 +317,7 @@ wss.on('connection', (ws) => {
                             if (memberWS.readyState === WebSocket.OPEN) {
                                 memberWS.send(JSON.stringify({
                                     type: "message",
-                                    message: `[PARTY] ${player.name} joined the party`,
+                                    message: `[PARTY] ${player.name} joined ${party.name}`,
                                     time: Date.now()
                                 }));
                             }
@@ -325,68 +332,94 @@ wss.on('connection', (ws) => {
                     }
                 }
             } else if (data.type === "party-leave") {
-                if (!player || !player.partyId) return;
-                const party = findPartyById(player.partyId);
-                if (party) {
-                    // If the party leader leaves, disband the party
-                    if (party.id === player.id) {
-                        // Notify all party members
-                        for (const memberWS of party.members) {
-                            if (memberWS !== ws && memberWS.readyState === WebSocket.OPEN) {
-                                const memberPlayer = clients.get(memberWS);
-                                memberPlayer.partyId = null;
-                                clients.set(memberWS, memberPlayer);
-                                memberWS.send(JSON.stringify({
-                                    type: "message",
-                                    message: `[PARTY] The party leader left. Party disbanded.`,
-                                    time: Date.now()
-                                }));
-                            }
-                        }
-                        // Clear the leader's partyId
-                        player.partyId = null;
-                        clients.set(ws, player);
+                try {
+                    if (!player || !player.partyId) {
+                        // Always respond, even if not in a party
                         ws.send(JSON.stringify({
-                            type: "message",
-                            message: `[PARTY] You disbanded your party.`,
-                            time: Date.now()
+                            type: "party-leave",
+                            success: false,
+                            message: "Not in a party"
                         }));
-                        // Remove party from lobby and global parties list
-                        const lobby = lobbies[party.lobbyId];
-                        if (lobby) {
-                            lobby.parties = lobby.parties.filter(p => p.id !== party.id);
-                        }
-                        const partyIndex = parties.indexOf(party);
-                        if (partyIndex !== -1) {
-                            parties.splice(partyIndex, 1);
-                        }
-                        log(`! Party "${party.name}" disbanded (leader left)`);
-                    } else {
-                        // Just remove the player from the party
-                        party.members = party.members.filter(m => m !== ws);
-                        player.partyId = null;
-                        clients.set(ws, player);
-                        // Notify remaining party members
-                        for (const memberWS of party.members) {
-                            if (memberWS.readyState === WebSocket.OPEN) {
-                                memberWS.send(JSON.stringify({
-                                    type: "message",
-                                    message: `[PARTY] ${player.name} left the party`,
-                                    time: Date.now()
-                                }));
-                            }
-                        }
-                        // Send message to departing player
-                        ws.send(JSON.stringify({
-                            type: "message",
-                            message: `[PARTY] You left the party.`,
-                            time: Date.now()
-                        }));
-                        log(`- ${player.name} left party "${party.name}"`);
+                        return;
                     }
+                    const party = findPartyById(player.partyId);
+                    if (party) {
+                        // If the party leader leaves, disband the party
+                        if (party.id === player.id) {
+                            // Notify all party members
+                            for (const memberWS of party.members) {
+                                if (memberWS !== ws && memberWS.readyState === WebSocket.OPEN) {
+                                    const memberPlayer = clients.get(memberWS);
+                                    memberPlayer.partyId = null;
+                                    clients.set(memberWS, memberPlayer);
+                                    memberWS.send(JSON.stringify({
+                                        type: "message",
+                                        message: `[PARTY] The party leader left. Party disbanded.`,
+                                        time: Date.now()
+                                    }));
+                                }
+                            }
+                            // Clear the leader's partyId
+                            player.partyId = null;
+                            clients.set(ws, player);
+                            ws.send(JSON.stringify({
+                                type: "message",
+                                message: `[PARTY] You disbanded your party.`,
+                                time: Date.now()
+                            }));
+                            // Remove party from lobby and global parties list
+                            const lobby = lobbies[party.lobbyId];
+                            if (lobby) {
+                                lobby.parties = lobby.parties.filter(p => p.id !== party.id);
+                            }
+                            const partyIndex = parties.indexOf(party);
+                            if (partyIndex !== -1) {
+                                parties.splice(partyIndex, 1);
+                            }
+                            log(`! Party "${party.name}" disbanded (leader left)`);
+                        } else {
+                            // Just remove the player from the party
+                            party.members = party.members.filter(m => m !== ws);
+                            player.partyId = null;
+                            clients.set(ws, player);
+                            // Notify remaining party members
+                            for (const memberWS of party.members) {
+                                if (memberWS.readyState === WebSocket.OPEN) {
+                                    memberWS.send(JSON.stringify({
+                                        type: "message",
+                                        message: `[PARTY] ${player.name} left the party`,
+                                        time: Date.now()
+                                    }));
+                                }
+                            }
+                            // Send message to departing player
+                            ws.send(JSON.stringify({
+                                type: "message",
+                                message: `[PARTY] You left the party.`,
+                                time: Date.now()
+                            }));
+                            log(`- ${player.name} left party "${party.name}"`);
+                        }
+                        ws.send(JSON.stringify({
+                            type: "party-leave",
+                            success: true
+                        }));
+                    } else {
+                        // Party not found but player has partyId
+                        player.partyId = null;
+                        clients.set(ws, player);
+                        ws.send(JSON.stringify({
+                            type: "party-leave",
+                            success: false,
+                            message: "Party not found"
+                        }));
+                    }
+                } catch (err) {
+                    console.error("Error handling party-leave:", err);
                     ws.send(JSON.stringify({
                         type: "party-leave",
-                        success: true
+                        success: false,
+                        message: "Server error"
                     }));
                 }
             } else if (data.type === "party-ready") {
