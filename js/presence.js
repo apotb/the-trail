@@ -68,7 +68,7 @@ async function setActivity() {
         state: state,
         startTimestamp: startTimestamp,
         largeImageKey: `large_image`,
-        largeImageText: $gameParty.teamName(),
+        largeImageText: $gameParty?.teamName() ?? "Loading...",
         smallImageKey: smallImageKey,
         smallImageText: smallImageText,
         instance: false,
