@@ -2,27 +2,27 @@
   null,
   {
     "id": 1,
-    "battlerName": "Adon_5",
-    "characterIndex": 4,
-    "characterName": "Adon",
-    "classId": 5,
+    "battlerName": "Actor4_1",
+    "characterIndex": 0,
+    "characterName": "Actor4",
+    "classId": 1,
     "equips": [
+      1,
       null,
-      null,
-      5,
-      6,
+      0,
+      1,
       7,
       null,
-      84
+      85
     ],
-    "faceIndex": 4,
-    "faceName": "Adon",
+    "faceIndex": 0,
+    "faceName": "Actor4",
     "traits": [],
     "initialLevel": 1,
     "maxLevel": 99,
     "name": "Player 1",
     "nickname": "",
-    "note": "<Optimize Ignore: 4>",
+    "note": "<Gender: 0>\n<Optimize Ignore: 4>",
     "profile": "A young traveler who hails from Solus Town. He won't\nstop pursuing his goals, no matter what the cost."
   },
   {
@@ -47,7 +47,7 @@
     "maxLevel": 99,
     "name": "Player 2",
     "nickname": "",
-    "note": "<Optimize Ignore: 2, 8>",
+    "note": "<Gender: 0>\n<Optimize Ignore: 2, 8>",
     "profile": "A magic-loving youth who grew up in Verdin Village.\nHe's trying his best with this \"adventuring\" thing."
   },
   {
@@ -72,7 +72,7 @@
     "maxLevel": 99,
     "name": "Player 3",
     "nickname": "",
-    "note": "<Optimize Ignore: 2, 8>",
+    "note": "<Gender: 1>\n<Optimize Ignore: 2, 8>",
     "profile": "An adolescent vagabond with experience on The Trail.\nShe has a hobby of dabbling in healing magic."
   },
   {
@@ -97,7 +97,7 @@
     "maxLevel": 99,
     "name": "Player 4",
     "nickname": "",
-    "note": "<Optimize Ignore: 4>",
+    "note": "<Gender: 1>\n<Optimize Ignore: 4>",
     "profile": "An ex-Bandito with quite a few tricks up her sleeve.\nTaught to have a tough shell, she just wants to unwind."
   },
   {
@@ -116,7 +116,7 @@
     "maxLevel": 99,
     "name": "The Soul",
     "nickname": "",
-    "note": "",
+    "note": "<Gender: 0>",
     "profile": ""
   },
   {
@@ -137,10 +137,10 @@
     "traits": [],
     "initialLevel": 2,
     "maxLevel": 2,
-    "name": "Solus Guard",
+    "name": "Verdin Guard",
     "nickname": "",
-    "note": "<Passive State: 3, 196>\n<Max Level: 2>",
-    "profile": "A guard that the Village Headman sent to escort\nyou from Solus Town to Verdin Village."
+    "note": "<Gender: 0>\n<Passive State: 3, 196>\n<Max Level: 2>",
+    "profile": "A valiant member of Verdin Village's volunteer militia."
   },
   {
     "id": 7,
@@ -158,7 +158,7 @@
     "maxLevel": 1,
     "name": "Dog",
     "nickname": "",
-    "note": "",
+    "note": "<Gender: 0>",
     "profile": ""
   },
   {
@@ -182,7 +182,7 @@
     "maxLevel": 15,
     "name": "Tellurian Knight",
     "nickname": "",
-    "note": "<Passive State: 3, 196>\n<Max Level: 15>",
+    "note": "<Gender: 0>\n<Passive State: 3, 196>\n<Max Level: 15>",
     "profile": "A knight of the Tellurian military."
   },
   {
@@ -206,7 +206,7 @@
     "maxLevel": 12,
     "name": "Tellurian Soldier",
     "nickname": "",
-    "note": "<Passive State: 3, 196>\n<Max Level: 12>",
+    "note": "<Gender: 0>\n<Passive State: 3, 196>\n<Max Level: 12>",
     "profile": "A soldier of the Tellurian military."
   },
   {
@@ -232,7 +232,7 @@
     "maxLevel": 18,
     "name": "Claire",
     "nickname": "",
-    "note": "<Passive State: 3, 196>\n<Max Level: 18>",
+    "note": "<Gender: 1>\n<Passive State: 3, 196>\n<Max Level: 18>",
     "profile": "Leader of her team. Rightfully confident in the abilities of her and\nher group, but her cockiness leads her to refuse help from others."
   },
   {
@@ -258,7 +258,7 @@
     "maxLevel": 18,
     "name": "Davies",
     "nickname": "",
-    "note": "<Passive State: 3, 196>\n<Max Level: 18>",
+    "note": "<Gender: 0>\n<Passive State: 3, 196>\n<Max Level: 18>",
     "profile": "A mysterious man who has seen unimaginable horrors. Faithfully\nfollows Claire, even though she has frequent lapses in judgement."
   },
   {
@@ -284,7 +284,7 @@
     "maxLevel": 18,
     "name": "Cassius",
     "nickname": "",
-    "note": "<Passive State: 3, 196>\n<Max Level: 18>",
+    "note": "<Gender: 0>\n<Passive State: 3, 196>\n<Max Level: 18>",
     "profile": "Brother of Jane. Davies only speaks when necessary, but Cassius is\ntruly a man of few words, refusing to open up even to his own sister."
   },
   {
@@ -310,7 +310,7 @@
     "maxLevel": 18,
     "name": "Jane",
     "nickname": "",
-    "note": "<Passive State: 3, 196>\n<Max Level: 18>",
+    "note": "<Gender: 1>\n<Passive State: 3, 196>\n<Max Level: 18>",
     "profile": "Sister of Cassius. Extremely talkative, enthusiastic, and sometimes\nannoying. Seemingly reads her brother's mind to do the talking for him."
   },
   {
@@ -336,7 +336,7 @@
     "maxLevel": 22,
     "name": "Harold",
     "nickname": "",
-    "note": "<Passive State: 3, 196>\n<Max Level: 22>",
+    "note": "<Gender: 0>\n<Passive State: 3, 196>\n<Max Level: 22>",
     "profile": "Leader of his team. Tries to do the right thing, but is\noften misinformed and led astray. Fights often with Therese."
   },
   {
@@ -362,7 +362,7 @@
     "maxLevel": 22,
     "name": "Therese",
     "nickname": "",
-    "note": "<Passive State: 3, 196>\n<Max Level: 22>",
+    "note": "<Gender: 0>\n<Passive State: 3, 196>\n<Max Level: 22>",
     "profile": "A raging alcoholic that relies on drinking to keep her head\nin the game. Has a hot temper and constantly fights with Harold."
   },
   {
@@ -388,7 +388,7 @@
     "maxLevel": 22,
     "name": "Marsha",
     "nickname": "",
-    "note": "<Passive State: 3, 196>\n<Max Level: 22>",
+    "note": "<Gender: 1>\n<Passive State: 3, 196>\n<Max Level: 22>",
     "profile": "Therese's good friend who often has to de-escalate the\nsituation. Never backs down, but is always understanding."
   },
   {
@@ -414,7 +414,7 @@
     "maxLevel": 22,
     "name": "Lucius",
     "nickname": "",
-    "note": "<Passive State: 3, 196>\n<Max Level: 22>",
+    "note": "<Gender: 0>\n<Passive State: 3, 196>\n<Max Level: 22>",
     "profile": "Calm and collected. His desire to avoid conflict sometimes\nstops him from stepping in when his wisdom is most needed."
   },
   {
@@ -440,7 +440,30 @@
     "maxLevel": 25,
     "name": "Correctional Officer",
     "nickname": "",
-    "note": "<Passive State: 3, 196>\n<Max Level: 25>",
+    "note": "<Gender: 0>\n<Passive State: 3, 196>\n<Max Level: 25>",
     "profile": "Correctional officer working for the Solus Valley Jail."
+  },
+  {
+    "id": 19,
+    "battlerName": "",
+    "characterIndex": 0,
+    "characterName": "",
+    "classId": 1,
+    "equips": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "faceIndex": 0,
+    "faceName": "",
+    "traits": [],
+    "initialLevel": 1,
+    "maxLevel": 99,
+    "name": "Team Name",
+    "nickname": "",
+    "note": "<Gender: 0>",
+    "profile": ""
   }
 ]

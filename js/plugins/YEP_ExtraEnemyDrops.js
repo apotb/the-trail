@@ -634,10 +634,10 @@ DataManager.createGlobalDrops = function(obj) {
     // Origin Crystal (1/50,000 drop, gets more likely as game progresses)
     var item = $dataWeapons[34];
     var arr = [
-      "Eval [0, 1, 2].contains($gameSystem.chapter()): +0.002%",
-      "Eval [3, 4].contains($gameSystem.chapter()): +0.0025%",
-      "Eval [5].contains($gameSystem.chapter()): +0.004%",
-      "Eval [6].contains($gameSystem.chapter()): +0.005%"
+      "Eval [1, 2].contains($gameSystem.chapter()): +0.002%", // 1/50,000
+      "Eval [3].contains($gameSystem.chapter()): +0.0025%",   // 1/40,000
+      "Eval [5].contains($gameSystem.chapter()): +0.004%",    // 1/25,000
+      "Eval [6].contains($gameSystem.chapter()): +0.005%"     // 1/20,000
     ];
     DataManager.createConditionalEnemyDrop(obj, item, arr);
 
@@ -646,10 +646,10 @@ DataManager.createGlobalDrops = function(obj) {
     var rate = 0.02;
     this.createEnemyDrop(obj, id, rate, 3);
 
-    // Origin Crystal (1/100 drop starting in Chapter 5)
+    // Seshat's Tome (1/100 drop starting in Chapter 4)
     var item = $dataArmors[161];
     var arr = [
-      "Eval $gameSystem.chapter() >= 5: +0.01%"
+      "Eval $gameSystem.chapter() >= 4: +1%"
     ];
     DataManager.createConditionalEnemyDrop(obj, item, arr);
 

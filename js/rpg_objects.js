@@ -92,15 +92,29 @@ Game_Temp.prototype.recipeTemplate = function(name) {
         case 'WILL':
             arr = [
                 [68, 74, 213, 92, 93, 50],
-                [32, 51, 23, 30, 24, 25, 26, 27],
-                [78, 48, 47, 46, 129, 44, 96, 45]
+                [27, 23, 30, 24, 25, 26, 32, 51],
+                [47, 48, 78, 40, 46, 129, 44, 45, 96, 161]
             ]
             break;
         case 'CASTLE FORGE':
             arr = [
                 [68, 74, 213, 176, 92, 214, 242, 154, 93, 50, 207],
-                [45, 49, 50, 44, 42, 43, 53, 52, 32, 51, 23, 30, 24, 25, 26, 27],
-                [218, 219, 78, 125, 126, 127, 128, 108, 97, 137, 136, 48, 117, 47, 168, 46, 133, 132, 129, 130, 131, 213, 44, 96, 115, 149, 148, 45, 172, 159, 143, 170, 181, 214, 185, 189, 190, 178, 161, 162, 171, 124, 217, 233]
+                [
+                    27, 23, 30, 24, 25, 26, 32, 51, // Bladesville
+                    42, 43, 53, 52, // Telluria Field
+                    45, 49, 50, 44, // Tellurium
+                ],
+                [
+                    47, 48, 136, 137, 117, 97, 108, // Shields
+                    78, 218, 219, // Headgear
+                    125, 126, 127, 128, // Bodygear
+                    40, 46, 168, 129, 130, 131, 132, 133, 44, 213, // Boots
+                    149, 45, 238, 148, 115, // Accessories - Telluria Field
+                    96, 159, 170, 143, 172, // Accessories - Resistance
+                    185, 189, 190, 178, // Accessories - True Telluria Castle
+                    161, 162, // Accessories - Seshat
+                    124, 217, 233, // Tomes
+                ]
             ]
             break;
         case 'DALIA':
@@ -114,7 +128,7 @@ Game_Temp.prototype.recipeTemplate = function(name) {
             break;
         case 'FIRE':
             arr = [
-                [135, 177, 108, 70, 98, 221, 223, 136, 131, 134, 259],
+                [135, 177, 270, 271, 272, 70, 277, 278, 279, 98, /* shaded brook + bladesville fish */ 108, 134, 131, 136, 280, 281, 282, 259, 221, 223],
                 [],
                 []
             ]
@@ -426,6 +440,34 @@ Game_System.prototype.smallChest = function() {
     OrangeGreenworks.setStat('smallChests', $gameVariables.value(48));
 };
 
+Game_System.prototype.smallChestsOnMap = function(map) {
+    map = map || $dataMap;
+    if (!map || !map.events) return 0;
+    var mapId = $gameMap.mapId();
+    var count = 0;
+    for (var i = 0; i < map.events.length; i++) {
+        var event = map.events[i];
+        if (!event || !event.pages) continue;
+        if ($gameSelfSwitches.value([mapId, i, 'A'])) continue;
+        var found = false;
+        for (var p = 0; p < event.pages.length; p++) {
+            var list = event.pages[p].list;
+            if (!list) continue;
+            for (var c = 0; c < list.length; c++) {
+                var cmd = list[c];
+                if (cmd.code !== 355 && cmd.code !== 655) continue;
+                if (cmd.parameters && cmd.parameters[0] && cmd.parameters[0].contains("$gameSystem.smallChest(")) {
+                    found = true;
+                    break;
+                }
+            }
+            if (found) break;
+        }
+        if (found) count++;
+    }
+    return count;
+};
+
 // Battle Setups
 
 Game_System.prototype.setBattleSe = function(name, pan, pitch, volume) {
@@ -501,10 +543,9 @@ Game_System.prototype.battleTemplate = function(name) {
 // Chapters
 
 Game_System.prototype.chapter = function() {
-    if ($gameVariables.value(84) >= 17)             return 7;
-    if ($gameSwitches.value(109))                   return 6;
-    if ($gameSelfSwitches.value([8, 122, 'A']))     return 5;
-    if ($gameSelfSwitches.value([8, 80, 'B']))      return 4;
+    if ($gameVariables.value(84) >= 17)             return 6;
+    if ($gameSwitches.value(109))                   return 5;
+    if ($gameSwitches.value(82))                    return 4;
     if ($gameSelfSwitches.value([11, 12, 'A']))     return 3;
     if ($gameVariables.value(3) >= 8)               return 2;
     if ($gameVariables.value(2) >= 11)              return 1;
@@ -620,6 +661,10 @@ Game_System.prototype.setRecallAllowed = function(allow) {
 };
 
 // Statues
+
+Game_System.prototype.statueList = function() {
+    return [15, 24, 188, 51, 84, 83, 108, 148, 124, 212, 89, 91, 203, 208, 88];
+};
 
 Game_System.prototype.totalStatues = function() {
     return $dataStates.filter(s => s).filter(s => s.name.startsWith("Statue - ") && s.name != "Statue - ?").length;
@@ -2498,27 +2543,82 @@ Object.defineProperties(Game_BattlerBase.prototype, {
     // Tactical Points
     tp: { get: function() { return this._tp; }, configurable: true },
     // Maximum Hit Points
-    mhp: { get: function() { return this.param(0); }, configurable: true },
+    mhp: { get: function() {
+        let value = this.param(0);
+        if (this.isActor()) {
+            if ($gameSystem.statue(15)) value += 10;    // Solus Town
+            if ($gameSystem.statue(188)) value += 10;   // Dark Forest
+        }
+        return value;
+    }, configurable: true },
     // Maximum Magic Points
-    mmp: { get: function() { return this.param(1); }, configurable: true },
+    mmp: { get: function() {
+        let value = this.param(1);
+        if (this.isActor()) {
+            if ($gameSystem.statue(24)) value += 5;     // Verdin Village
+        }
+        return value;
+    }, configurable: true },
     // ATtacK power
-    atk: { get: function() { return this.param(2); }, configurable: true },
+    atk: { get: function() {
+        let value = this.param(2);
+        if (this.isActor()) {
+            if ($gameSystem.statue(84)) value += 2;     // Greenfield
+        }
+        return value;
+    }, configurable: true },
     // DEFense power
-    def: { get: function() { return this.param(3); }, configurable: true },
+    def: { get: function() {
+        let value = this.param(3);
+        if (this.isActor()) {
+            if ($gameSystem.statue(108)) value += 2;    // Bladesville
+        }
+        return value;
+    }, configurable: true },
     // Magic ATtack power
-    mat: { get: function() { return this.param(4); }, configurable: true },
+    mat: { get: function() {
+        let value = this.param(4);
+        if (this.isActor()) {
+            if ($gameSystem.statue(83)) value += 2;     // Solus Valley
+        }
+        return value;
+    }, configurable: true },
     // Magic DeFense power
-    mdf: { get: function() { return this.param(5); }, configurable: true },
+    mdf: { get: function() {
+        let value = this.param(5);
+        if (this.isActor()) {
+            if ($gameSystem.statue(124)) value += 2;    // Great Pyramid
+        }
+        return value;
+    }, configurable: true },
     // AGIlity
     agi: { get: function() { return this.param(6); }, configurable: true },
     // LUcK
     luk: { get: function() { return this.param(7); }, configurable: true },
     // HIT rate
-    hit: { get: function() { return this.xparam(0); }, configurable: true },
+    hit: { get: function() {
+        let value = this.xparam(0);
+        if (this.isActor()) {
+            if ($gameSystem.statue(212)) value += 0.01; // Telluria Castle Town
+        }
+        return value;
+    }, configurable: true },
     // EVAsion rate
-    eva: { get: function() { return this.xparam(1); }, configurable: true },
+    eva: { get: function() {
+        let value = this.xparam(1);
+        if (this.isActor()) {
+            if ($gameSystem.statue(89)) value += 0.01;  // Telluria Castle F1
+        }
+        return value;
+    }, configurable: true },
     // CRItical rate
-    cri: { get: function() { return this.xparam(2); }, configurable: true },
+    cri: { get: function() {
+        let value = this.xparam(2);
+        if (this.isActor()) {
+            if ($gameSystem.statue(91)) value += 0.01;  // Telluria Castle F3
+        }
+        return value;
+    }, configurable: true },
     // Critical EVasion rate
     cev: { get: function() { return this.xparam(3); }, configurable: true },
     // Magic EVasion rate
@@ -3900,6 +4000,11 @@ Game_Actor.prototype.name = function() {
 
 Game_Actor.prototype.setName = function(name) {
     this._name = name;
+};
+
+Game_Actor.prototype.setRandomName = function(male) {
+    const names = male ? $dataStrings.names.male : $dataStrings.names.female;
+    this._name = names[Math.floor(Math.random() * names.length)];
 };
 
 Game_Actor.prototype.nickname = function() {
@@ -5633,8 +5738,8 @@ Game_Party.prototype.partyAbility = function(abilityId) {
 Game_Party.prototype.partyStat = function(abilityId, actorId) {
     let stat = 1;
     if (abilityId == Game_Party.ABILITY_GOLD_DOUBLE) {
-        if ($gameSystem.statue(51)) stat += 0.02; // Haven Harbor
-        if ($gameSystem.statue(148)) stat += 0.02; // Crusher Cave
+        if ($gameSystem.statue(51)) stat += 0.02;   // Haven Harbor
+        if ($gameSystem.statue(148)) stat += 0.02;  // Crusher Cave
     }
     this.battleMembers().filter(a => a.actorId() != actorId).forEach(a => stat *= a.partyStat(abilityId));
     return stat;
@@ -5762,19 +5867,20 @@ Game_Party.prototype.hasPickaxe = function() {
 
 // Pets
 
+Game_Party.prototype.pet = function() {
+    return $gameActors.actor(7);
+}
+
 Game_Party.prototype.addPet = function(name) {
-    const actor = $gameActors.actor(7);
+    const actor = $gameParty.pet();
     actor.setName(name);
     this.addGuestActor(7);
     switch(name) {
-        case 'Pancakes':
-            actor.setCharacterImage('Dog8', 0);
+        case 'Arlo':
+            actor.setCharacterImage('Dog2', 2);
             break;
         case 'Clover':
             actor.setCharacterImage('Cat1', 4);
-            break;
-        case 'Oreo':
-            actor.setCharacterImage('Bunny', 6);
             break;
         case 'Duncan':
             actor.setCharacterImage('Hamster', 1);
@@ -5783,12 +5889,18 @@ Game_Party.prototype.addPet = function(name) {
             actor.setCharacterImage('Hound', 1);
             OrangeGreenworks.activateAchievement('COLLECT_FIDO');
             break;
-        case 'Tender':
-            actor.setCharacterImage('Fox', 0);
-            break;
         case 'Coco':
             actor.setCharacterImage('Monkey1', 0);
             OrangeGreenworks.activateAchievement('COLLECT_COCO');
+            break;
+        case 'Oreo':
+            actor.setCharacterImage('Bunny', 6);
+            break;
+        case 'Tender':
+            actor.setCharacterImage('Fox', 0);
+            break;
+        case 'Pancakes':
+            actor.setCharacterImage('Dog8', 7);
             break;
         default: // Remove pet
             this.removeGuestActor(7);
@@ -5803,7 +5915,7 @@ Game_Party.prototype.addPetFromItem = function(id) {
 };
 
 Game_Party.prototype.removePet = function() {
-    const actor = $gameActors.actor(7);
+    const actor = $gameParty.pet();
     actor.setName("Pet");
     this.removeGuestActor(7);
     $gamePlayer.refresh();
@@ -5824,6 +5936,11 @@ Game_Party.prototype.killCount = function() {
 Game_Party.prototype.hasMembership = function() {
     return this.hasItem($dataItems[231]) || this.hasItem($dataItems[232]) || this.hasItem($dataItems[233]);
 };
+
+Game_Party.prototype.teamName = function() {
+    const name = $gameActors.actor(19).name();
+    return name === "Team Name" ? "An adventuring party" : name;
+}
 
 //-----------------------------------------------------------------------------
 // Game_Troop

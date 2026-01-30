@@ -7574,14 +7574,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\mayorOk."
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 1,
-              "parameters": [
-                60
+                "\\mayorOh, yes, good! Thank you very much!"
               ]
             },
             {
@@ -7598,45 +7591,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\mayorOh, yes, that's good! Thank you very much!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Telluria1",
-                0,
-                0,
-                2
+                "\\mayorYou see, the problem is, there is a monster at"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\mayorYou see, the problem is, there is"
+                "the lake. It's a Water Elemental that has been"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "a monster at the lake. It's a Water"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "Elemental that has been disturbing"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "the soldiers while they are on errands!"
+                "disturbing the soldiers while they are on errands!"
               ]
             },
             {
@@ -7670,10 +7639,9 @@
               "indent": 2,
               "parameters": [
                 [
-                  "Accept Quest",
-                  "Decline Quest"
+                  "We've got you, Mayor!"
                 ],
-                1,
+                -1,
                 0,
                 2,
                 0
@@ -7684,85 +7652,7 @@
               "indent": 2,
               "parameters": [
                 0,
-                "Accept Quest"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 2,
-              "parameters": [
-                1,
-                "Decline Quest"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 3,
-              "parameters": [
-                "Telluria1",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "\\mayorBut wait... you said you'd"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "help? Please help me!"
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 3,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 3,
-              "parameters": [
-                "Telluria1",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "\\mayor..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 3,
-              "parameters": [
-                "Telluria1",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "\\mayorSo, that is a yes?"
+                "We've got you, Mayor!"
               ]
             },
             {
@@ -7776,58 +7666,41 @@
               "parameters": []
             },
             {
-              "code": 101,
+              "code": 356,
               "indent": 2,
               "parameters": [
-                "Telluria1",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\mayorThank you very much!"
+                "Quest Add 19"
               ]
             },
             {
               "code": 101,
               "indent": 2,
               "parameters": [
-                "Actor4",
-                3,
+                "",
                 0,
-                2
+                1,
+                1
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\p4Oh, and could we ask something of you? We'll"
+                ""
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "defeat this Water Elemental, but we need some"
+                "Watership Down"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "help getting into the Blazing Sands. The entrance"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "is blocked off by a huge pile of rubble."
+                "New Quest!"
               ]
             },
             {
@@ -7844,7 +7717,7 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\mayorOf course! Now, meet me outside the town."
+                "\\mayorThank you! Now, please follow me outside."
               ]
             },
             {
@@ -7886,44 +7759,6 @@
               "parameters": []
             },
             {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "",
-                0,
-                1,
-                1
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "Watership Down"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "New Quest!"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 2,
-              "parameters": [
-                "Quest Add 19"
-              ]
-            },
-            {
               "code": 0,
               "indent": 2,
               "parameters": []
@@ -7937,25 +7772,8 @@
               "code": 101,
               "indent": 2,
               "parameters": [
-                "Telluria1",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\mayorHonestly though, it's-"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
                 "Actor4",
-                5,
+                6,
                 0,
                 2
               ]
@@ -7964,21 +7782,14 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\p2Uh, funny story. We actually just defeated"
+                "\\p3Uh... I think we actually took her out already,"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "her a short while ago without knowing she"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "was bothering anyone."
+                "without even knowing she was bothering you!"
               ]
             },
             {
@@ -8033,283 +7844,7 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\mayorAs a thank you, here is a reward."
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 2,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 4,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 4,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 2,
-              "parameters": [
-                21,
-                {
-                  "list": [
-                    {
-                      "code": 3,
-                      "indent": null
-                    },
-                    {
-                      "code": 3,
-                      "indent": null
-                    },
-                    {
-                      "code": 19,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        60
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 4,
-                      "indent": null
-                    },
-                    {
-                      "code": 18,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        60
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 3,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 3,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 19,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    60
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 4,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 18,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    60
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Telluria1",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\mayorAh! Here it is!"
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 2,
-              "parameters": [
-                21,
-                {
-                  "list": [
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 16,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 16,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 2,
-              "parameters": [
-                {
-                  "name": "Equip3",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 125,
-              "indent": 2,
-              "parameters": [
-                0,
-                0,
-                500
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 2,
-              "parameters": [
-                60
+                "\\mayorIs there anything I can do for you in return?"
               ]
             },
             {
@@ -8317,7 +7852,7 @@
               "indent": 2,
               "parameters": [
                 "Actor4",
-                7,
+                2,
                 0,
                 2
               ]
@@ -8326,7 +7861,14 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\p4Wow! That's a lot of bits! Thank you so much!"
+                "\\p3Yeah, actually. We're just looking for knowledge."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "What do you know about \\c[18]Apocalypse\\c[0]?"
               ]
             },
             {
@@ -8343,28 +7885,7 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\mayorOh, it's nothing. Don't worry. I cannot"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "thank you enough for helping with the Water"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "Elemental. Although... you did say you need"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "help reaching the Blazing Sands, correct?"
+                "\\mayor\\c[18]Apocalypse\\c[0]? When?"
               ]
             },
             {
@@ -8372,7 +7893,7 @@
               "indent": 2,
               "parameters": [
                 "Actor4",
-                1,
+                2,
                 0,
                 2
               ]
@@ -8381,178 +7902,21 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\p2Yep. There's no way we'll be able to clear"
+                "\\p3*sigh*... thank you, Mayor."
               ]
             },
             {
-              "code": 401,
+              "code": 356,
               "indent": 2,
               "parameters": [
-                "that massive pile of dirt on our own."
+                "Quest 19 Claim Reward 2"
               ]
             },
             {
-              "code": 101,
+              "code": 356,
               "indent": 2,
               "parameters": [
-                "Telluria1",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\mayorI'll send a soldier over right away. He'll"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "begin shoveling as soon as he gets there."
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                0,
-                84,
-                0
-              ]
-            },
-            {
-              "code": 121,
-              "indent": 3,
-              "parameters": [
-                85,
-                85,
-                0
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 3,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "\\p2With the soldier from Solus Valley"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "being there too, I'm sure the rubble"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "will be gone in no time!"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 411,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 121,
-              "indent": 3,
-              "parameters": [
-                84,
-                84,
-                0
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 3,
-              "parameters": [
-                "Telluria1",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "\\mayorIf it's as big as you say, I don't think"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "he will be able to do it alone. I'd advise"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "getting help from Solus Valley as well."
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Telluria1",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\mayorWell, that's all I have for you. Thank"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "you for coming to Greenfield, and thank you"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "for your help. Good luck on your journey!"
+                "Quest Set Completed 19"
               ]
             },
             {
@@ -8599,41 +7963,6 @@
               ]
             },
             {
-              "code": 356,
-              "indent": 2,
-              "parameters": [
-                "Quest 19 Show Reward 2"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 2,
-              "parameters": [
-                "Quest 19 Show Reward 3"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 2,
-              "parameters": [
-                "Quest 19 Claim Reward 2"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 2,
-              "parameters": [
-                "Quest 19 Claim Reward 3"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 2,
-              "parameters": [
-                "Quest Set Completed 19"
-              ]
-            },
-            {
               "code": 221,
               "indent": 2,
               "parameters": []
@@ -8644,9 +7973,9 @@
               "parameters": [
                 18,
                 18,
-                1,
                 0,
-                1
+                0,
+                7
               ]
             },
             {
@@ -9631,6 +8960,249 @@
           },
           "list": [
             {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                0,
+                16,
+                1
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                0,
+                15,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "Telluria1",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\mayorWelcome to Greenfield!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\p2Hey, mayor, remember how we helped you with"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "the Water Elemental? We were wondering..."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "if it came down to it, would you vouch for"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\N[1] to become a Tellurian knight?"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "Telluria1",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\mayorWhy, of course! He has demonstrated exactly"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "the type of valor and bravery our knights"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "should have! I am all for it!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\p2Thank you! We'll send you the invite for the ceremony!"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 2,
+              "parameters": [
+                "Quest 20 Complete Objective 1"
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 2,
+              "parameters": [
+                16,
+                16,
+                0
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                0,
+                16,
+                0
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 3,
+              "parameters": [
+                0,
+                17,
+                0
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                0,
+                18,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 5,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 5,
+              "parameters": [
+                "\\p2That's all three leaders! Let's head back to"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 5,
+              "parameters": [
+                "Lord Smirnoff and get this ceremony started!"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 115,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 101,
               "indent": 0,
               "parameters": [
@@ -9881,76 +9453,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\vilI've been waiting for such a long"
+                "\\vilThe soldiers at the desk told me to wait"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "time to meet with the mayor."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People1_3_Old",
-                0,
-                0,
-                2
+                "here for a meeting, but I haven't heard"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\vilHe's so paranoid, though... no"
+                "anything. Come to think of it, they"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "one is being let into his office."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People1_3_Old",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\vilYou'd probably want a letter of recommendation"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "to get in without any trouble. Though I figure you"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "could just storm in... the soldiers aren't paid"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "enough to care."
+                "didn't even ask for my name..."
               ]
             },
             {

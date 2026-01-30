@@ -22,156 +22,12 @@
           "enemyValid": false,
           "switchId": 1,
           "switchValid": false,
-          "turnA": 1,
+          "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "People1",
-              6,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\headAlright \\N[1], it's time for battle."
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "Here's the basics: defeat your enemies"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "before they defeat you!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 0,
-            "parameters": []
-          }
-        ],
-        "span": 0
-      },
-      {
-        "conditions": {
-          "actorHp": 50,
-          "actorId": 1,
-          "actorValid": false,
-          "enemyHp": 50,
-          "enemyIndex": 0,
-          "enemyValid": false,
-          "switchId": 1,
-          "switchValid": false,
-          "turnA": 2,
-          "turnB": 0,
-          "turnEnding": false,
-          "turnValid": true
-        },
-        "list": [
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "People1",
-              6,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\headBoost points are the key to success. You'll generate"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "1 BP per turn, except for turns you use a boost."
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "Guarding will net you an extra BP."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "People1",
-              6,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\headTry out an empowered attack against this slime!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 0,
-            "parameters": []
-          }
-        ],
-        "span": 0
-      },
-      {
-        "conditions": {
-          "actorHp": 50,
-          "actorId": 1,
-          "actorValid": false,
-          "enemyHp": 50,
-          "enemyIndex": 0,
-          "enemyValid": false,
-          "switchId": 1,
-          "switchValid": false,
-          "turnA": 3,
-          "turnB": 0,
-          "turnEnding": false,
-          "turnValid": true
-        },
-        "list": [
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "People1",
-              6,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\headKeep attacking, \\N[1]! You've got this!"
-            ]
-          },
           {
             "code": 0,
             "indent": 0,
@@ -258,7 +114,7 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\sol\\N[1]... don't forget... your boosts..."
+              "\\solCivillian... don't forget... your boosts..."
             ]
           },
           {
@@ -2030,7 +1886,7 @@
             "code": 242,
             "indent": 0,
             "parameters": [
-              2
+              4
             ]
           },
           {
@@ -2071,7 +1927,7 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\laeYou... you have defeated me."
+              "\\lae\\shakeYou... have closed the gap."
             ]
           },
           {
@@ -2088,28 +1944,7 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\laeI suppose... I suppose that this"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "was fair. Yes, you won because"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "I was weak, and you were stronger"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "than I. That is it."
+              "\\lae\\shakeThe world will change. Telluria... you will feel it."
             ]
           },
           {
@@ -2126,227 +1961,7 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\lae\\shakeI couldn't... I couldn't"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "work up the nerve."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Boss1",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\lae\\shakeEven with this damned plague,"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "I can't let go of what makes"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "me... me."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Boss1",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\lae\\shakeI'm not Laeryidyean. I am..."
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "I... am..."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Boss1",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\lae\\shakeI don't even know anymore."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Boss1",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\lae\\shakeI don't remember my name. I"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "don't remember what I looked like."
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "I don't remember my friends, my"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "family. I don't remember anyone."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Boss1",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\lae\\shakeMy memories aren't mine anymore."
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "It's all just jumbled together."
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "Everything is just a meaningless"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "pile of nothingness."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Boss1",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\lae\\shakeAll I remember... is \\c[18]him\\c[0]."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Boss1",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\lae\\shakeI don't deserve to live."
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "Just end this. Land the final"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "blow. Kill me. Free me."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Boss1",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\lae\\lsoffF\\.R\\.E\\.E \\.M\\.E \\.F\\.R\\.O\\.M \\.T\\.H\\.I\\.S \\.C\\.U\\.R\\.S\\.E\\.."
+              "\\lae\\shake\\c[18]He\\c[0] will wait no longer."
             ]
           },
           {
@@ -2389,23 +2004,6 @@
             "indent": 0,
             "parameters": [
               300
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Actor4",
-              2,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\p3\\lsonWell, there we go. We're officially done now."
             ]
           },
           {
@@ -2758,7 +2356,7 @@
             "code": 242,
             "indent": 0,
             "parameters": [
-              2
+              4
             ]
           },
           {
@@ -2772,20 +2370,10 @@
             ]
           },
           {
-            "code": 101,
+            "code": 230,
             "indent": 0,
             "parameters": [
-              "Elemental",
-              16,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\waterOuch."
+              120
             ]
           },
           {
@@ -2802,14 +2390,7 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\waterYou guys... you guys"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "are pretty strong."
+              "\\water\\shakeOuch."
             ]
           },
           {
@@ -2826,14 +2407,7 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\waterDidn't think... didn't"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "think you'd make it this far."
+              "\\water\\shakeDidn't think... you'd really get me..."
             ]
           },
           {
@@ -2850,7 +2424,7 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\water..."
+              "\\water\\shakeEven if I'm gone for now..."
             ]
           },
           {
@@ -2867,113 +2441,7 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\waterI guess... messing with those"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "soldiers wasn't the best idea,"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "was it?"
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Elemental",
-              16,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\water\\shakeBut, still..."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Elemental",
-              16,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\water\\shake...you can't stop the flow of water."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Elemental",
-              16,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\water\\shakeI may be good as dead for now,"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "but I can guarantee you... that..."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Elemental",
-              16,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\water\\shake...that..."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Elemental",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\water...I will be back."
+              "\\water...you can never stop the flow of water."
             ]
           },
           {
@@ -2999,23 +2467,6 @@
             "indent": 0,
             "parameters": [
               120
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Actor4",
-              1,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\p2Huh."
             ]
           },
           {
@@ -3649,24 +3100,30 @@
     "members": [
       {
         "enemyId": 23,
-        "x": 298,
-        "y": 361,
+        "x": 325,
+        "y": 364,
         "hidden": false
       },
       {
         "enemyId": 23,
-        "x": 353,
-        "y": 256,
+        "x": 431,
+        "y": 190,
         "hidden": false
       },
       {
         "enemyId": 35,
-        "x": 228,
-        "y": 286,
+        "x": 102,
+        "y": 355,
         "hidden": true
+      },
+      {
+        "enemyId": 23,
+        "x": 243,
+        "y": 220,
+        "hidden": false
       }
     ],
-    "name": "Red Slime x2",
+    "name": "Red Slime x3",
     "pages": [
       {
         "conditions": {
@@ -3788,9 +3245,15 @@
         "x": 390,
         "y": 205,
         "hidden": false
+      },
+      {
+        "enemyId": 24,
+        "x": 168,
+        "y": 172,
+        "hidden": false
       }
     ],
-    "name": "Bat x2",
+    "name": "Bat x3",
     "pages": [
       {
         "conditions": {
@@ -3826,9 +3289,15 @@
         "x": 249,
         "y": 352,
         "hidden": false
+      },
+      {
+        "enemyId": 25,
+        "x": 372,
+        "y": 190,
+        "hidden": false
       }
     ],
-    "name": "Skeleton Knight",
+    "name": "Skeleton Knight x2",
     "pages": [
       {
         "conditions": {
@@ -5743,7 +5212,7 @@
             "indent": 0,
             "parameters": [
               12,
-              "$gameTroop._enemies.some(e => e.passiveStatesRaw().contains(57)) && $gameActors.actor(7).name() != 'Fido'"
+              "$gameTroop._enemies.some(e => e.passiveStatesRaw().contains(57)) && $gameParty.pet().name() != 'Fido'"
             ]
           },
           {
@@ -5791,7 +5260,14 @@
             "code": 655,
             "indent": 0,
             "parameters": [
-              "  a._watchfulGaze = 0"
+              "  a._watchfulGaze = 0;"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "  a._flashbangUses = 0;"
             ]
           },
           {
@@ -11622,7 +11098,7 @@
             "code": 242,
             "indent": 0,
             "parameters": [
-              2
+              4
             ]
           },
           {
@@ -11826,7 +11302,7 @@
             "code": 242,
             "indent": 0,
             "parameters": [
-              2
+              4
             ]
           },
           {

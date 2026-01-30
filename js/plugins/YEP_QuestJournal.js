@@ -3317,6 +3317,7 @@ Game_System.prototype.questObjectivesCompleteEval = function(questId, obj) {
 };
 
 Game_System.prototype.questObjectivesCompleteRange = function(questId, range) {
+  this.completeObjectiveSound();
   var length = range.length;
   for (var i = 0; i < length; ++i) {
     var objId = parseInt(range[i]);
@@ -3325,6 +3326,7 @@ Game_System.prototype.questObjectivesCompleteRange = function(questId, range) {
 };
 
 Game_System.prototype.questObjectivesCompleteAll = function(questId) {
+  this.completeObjectiveSound();
   this.initQuestSettings();
   var questData = $dataQuests[questId];
   if (!questData) return;
@@ -3333,6 +3335,15 @@ Game_System.prototype.questObjectivesCompleteAll = function(questId) {
     this.questObjectivesComplete(questId, i);
   }
 };
+
+Game_System.prototype.completeObjectiveSound = function() {
+  AudioManager.playSe({
+    "name": 'Decision1',
+    "pan": 0,
+    "pitch": 100,
+    "volume": 90
+  });
+}
 
 Game_System.prototype.questObjectivesFail = function(questId, objectiveId) {
   this.initQuestSettings();

@@ -6066,6 +6066,268 @@
               ]
             },
             {
+              "code": 231,
+              "indent": 0,
+              "parameters": [
+                1,
+                "Scenario",
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 232,
+              "indent": 0,
+              "parameters": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                255,
+                0,
+                180,
+                true
+              ]
+            },
+            {
+              "code": 112,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                2,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Play as a young knight looking for purpose in his life."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "You find yourself in Verdin Village in the midst of a bandit raid."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Begin with \\iw[1], \\ia[1], \\ia[7],"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\ii[11], \\ii[10], \\ii[16] x3"
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 1,
+              "parameters": [
+                [
+                  "CONTINUE",
+                  "NEVERMIND"
+                ],
+                1,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                0,
+                "CONTINUE"
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 2,
+              "parameters": [
+                {
+                  "name": "Explosion2",
+                  "volume": 90,
+                  "pitch": 80,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 129,
+              "indent": 2,
+              "parameters": [
+                1,
+                0,
+                false
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 2,
+              "parameters": [
+                "hide_treasure_popup"
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 2,
+              "parameters": [
+                11,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 2,
+              "parameters": [
+                10,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 2,
+              "parameters": [
+                16,
+                0,
+                0,
+                3
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 2,
+              "parameters": [
+                "show_treasure_popup"
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 2,
+              "parameters": [
+                2,
+                2,
+                0,
+                0,
+                11
+              ]
+            },
+            {
+              "code": 113,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                1,
+                "NEVERMIND"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 413,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 232,
+              "indent": 0,
+              "parameters": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                0,
+                0,
+                120,
+                true
+              ]
+            },
+            {
+              "code": 235,
+              "indent": 0,
+              "parameters": [
+                1
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                120
+              ]
+            },
+            {
               "code": 101,
               "indent": 0,
               "parameters": [
@@ -6092,18 +6354,17 @@
               ]
             },
             {
-              "code": 320,
-              "indent": 0,
-              "parameters": [
-                1,
-                ""
-              ]
-            },
-            {
               "code": 108,
               "indent": 0,
               "parameters": [
                 "# Start of name processing"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameActors.actor(1).setRandomName(true);"
               ]
             },
             {
@@ -6116,7 +6377,7 @@
               "indent": 1,
               "parameters": [
                 1,
-                10
+                12
               ]
             },
             {
@@ -6991,10 +7252,11 @@
               "parameters": [
                 [
                   "\\N[1]\\fr?",
-                  "Hold up..."
+                  "Generate random name",
+                  "Wait..."
                 ],
+                2,
                 1,
-                0,
                 1,
                 0
               ]
@@ -7022,14 +7284,27 @@
               "indent": 1,
               "parameters": [
                 1,
-                "Hold up..."
+                "Generate random name"
               ]
             },
             {
-              "code": 230,
+              "code": 355,
               "indent": 2,
               "parameters": [
-                30
+                "$gameActors.actor(1).setRandomName(true);"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                2,
+                "Wait..."
               ]
             },
             {
@@ -7041,6 +7316,13 @@
               "code": 404,
               "indent": 1,
               "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 1,
+              "parameters": [
+                30
+              ]
             },
             {
               "code": 0,
@@ -7297,7 +7579,7 @@
               "indent": 0,
               "parameters": [
                 10,
-                "Chapter0",
+                "Chapter1",
                 0,
                 0,
                 0,
@@ -7356,50 +7638,7 @@
               "code": 230,
               "indent": 0,
               "parameters": [
-                120
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Open5",
-                  "volume": 50,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                90
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Unknown",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\-\\}Hello? Is \\N[1] home?"
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                60
+                180
               ]
             },
             {
@@ -7407,11 +7646,23 @@
               "indent": 0,
               "parameters": [
                 0,
-                11,
+                20,
                 17,
-                14,
-                4,
+                39,
+                8,
                 2
+              ]
+            },
+            {
+              "code": 241,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
               ]
             },
             {
@@ -9346,7 +9597,7 @@
               "indent": 1,
               "parameters": [
                 10,
-                "Chapter7",
+                "Chapter6",
                 0,
                 0,
                 0,

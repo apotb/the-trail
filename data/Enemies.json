@@ -224,7 +224,7 @@
     ],
     "gold": 8,
     "name": "Blue Slime",
-    "note": "<Passive State: 136>\n\n<Sideview Battler: Monster1_2>\n<Scale Sprite: 200%>\n<Battle Select Cursor Position Y: Middle>\n\n<AI Priority>\nVariable 7 <= 8 +++ Troop Alive Members === 1: Slimeball, Highest HP\nVariable 7 <= 8: Attack, Highest HP\n\nState === On Fire!: Purify\n</AI Priority>\n\n<Enemy Drops>\nBlue Gel: 75%\nBlue Gel: 75%\nRation: 20%\nSmall Elixir: 20%\nCondensed Blue Gel: 5%\nRing of the Woods: 5%\nSlime Scarf: 5%\n</Enemy Drops>",
+    "note": "<Passive State: 136>\n\n<Sideview Battler: Monster1_2>\n<Scale Sprite: 200%>\n<Battle Select Cursor Position Y: Middle>\n\n<AI Priority>\nVariable 7 <= 8 +++ Troop Alive Members === 1: Slimeball, Highest HP\nVariable 7 <= 8: Attack, Highest HP\n\nState === On Fire!: Purify\n</AI Priority>\n\n<Enemy Drops>\nBlue Gel: 75%\nBlue Gel: 75%\nRation: 20%\nSmall Elixir: 20%\nCondensed Blue Gel: 5%\nRing of the Woods: 2.5%\nSlime Scarf: 5%\n</Enemy Drops>",
     "params": [
       75,
       30,
@@ -343,7 +343,7 @@
     ],
     "gold": 12,
     "name": "Giant Rat",
-    "note": "<Armor Weakness: Slashing>\n<Sideview Battler: GiantRat>\n<Sideview Shadow Shift: -4>\n<Attack Animation: 16>\n\n<Enemy Drops>\nRat Fur: 75%\nRat Fur: 75%\nFulfilling Ration: 20%\nFulfilling Ration: 20%\nTough Pelt: 5%\nRat Claw: 5%\nRing of the Woods: 5%\nCopper Wristbraces: 5%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n<Sideview Battler: GiantRat>\n<Sideview Shadow Shift: -4>\n<Attack Animation: 16>\n\n<Enemy Drops>\nRat Fur: 75%\nRat Fur: 75%\nFulfilling Ration: 20%\nFulfilling Ration: 20%\nTough Pelt: 5%\nRat Claw: 5%\nRing of the Woods: 2.5%\nCopper Wristbraces: 5%\n</Enemy Drops>",
     "params": [
       100,
       12,
@@ -408,12 +408,12 @@
     "name": "Smart Mouth",
     "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Bandito_3>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Enemy Drops>\nBell: 5%\nBandito Loot: 100%\nFulfilling Ration: 100%\nSmall Elixir: 100%\nBandito Dagger: 12.5%\nBandito Cloak: 12.5%\nBandito Gloves: 12.5%\nAnti-Magic Charm: 5%\n</Enemy Drops>",
     "params": [
-      320,
+      400,
       10,
       11,
-      10,
+      11,
       1,
-      6,
+      7,
       60,
       60
     ]
@@ -1096,7 +1096,7 @@
       800,
       13,
       15,
-      32,
+      28,
       30,
       20,
       57
@@ -1226,14 +1226,14 @@
     ],
     "gold": 25,
     "name": "Goblin",
-    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Goblin_1>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<Enemy Drops>\nHorn: 5%\nWorn Cloth: 75%\nLeather: 75%\nLoaf of Bread: 10%\nLeather Charm: 5%\nGoblin Fang: 5%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Goblin_1>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<AI Priority>\nState === Weak Point +++ Random 75%: Attack, Highest HP\n</AI Priority>\n\n<Enemy Drops>\nHorn: 5%\nWorn Cloth: 75%\nLeather: 75%\nLoaf of Bread: 10%\nLeather Charm: 5%\nGoblin Fang: 5%\n</Enemy Drops>",
     "params": [
       300,
       30,
       14,
       13,
       1,
-      30,
+      20,
       70,
       18
     ]
@@ -1289,7 +1289,7 @@
       16,
       15,
       1,
-      36,
+      30,
       80,
       20
     ]
@@ -1567,7 +1567,7 @@
     ],
     "gold": 60,
     "name": "Dandy Toad Captain",
-    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: DandyToad_4>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nTroop Alive Members > 1 +++ State !== Weak Point +++ Random 20%: Weak Point, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Enemy Drops>\nBell: 5%\nFulfilling Ration: 50%\nPotion: 16.66%\nPotion: 16.66%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: DandyToad_4>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nTroop Alive Members > 1 +++ State !== Weak Point +++ Random 20%: Weak Point, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Enemy Drops>\nBell: 5%\nLoaf of Bread: 50%\nLoaf of Bread: 50%\nBlack Gloves: 20%\nPotion: 20%\nPotion: 20%\n</Enemy Drops>",
     "params": [
       1200,
       60,
@@ -1633,7 +1633,7 @@
     ],
     "gold": 25,
     "name": "Red Slime",
-    "note": "<Element: Fire>\n<Element Absorb: Fire>\n<Passive State: 136>\n\n<Sideview Battler: Monster2_7>\n<Scale Sprite: 200%>\n<Battle Select Cursor Position Y: Middle>\n<Attack Animation: 3>\n\n<AI Priority>\nState === Confused: Purify\nState === Poisoned: Purify\nState === Paralyzed: Purify\n</AI Priority>\n\n<Enemy Drops>\nSlime Scarf: 5%\nRed Gel: 75%\nRed Gel: 75%\nFulfilling Ration: 20%\nElixir: 10%\nHeedup Berry: 10%\nCoal: 50%\nCopper Cluster: 33.33%\nIron Cluster: 20%\nCondensed Red Gel: 5%\nFire Essence: 20%\n</Enemy Drops>",
+    "note": "<Element: Fire>\n<Element Absorb: Fire>\n<Passive State: 136>\n\n<Sideview Battler: Monster2_7>\n<Scale Sprite: 200%>\n<Battle Select Cursor Position Y: Middle>\n<Attack Animation: 3>\n\n<AI Priority>\nState === Confused: Purify\nState === Poisoned: Purify\nState === Paralyzed: Purify\n</AI Priority>\n\n<Enemy Drops>\nSlime Scarf: 5%\nRed Gel: 75%\nRed Gel: 75%\nFulfilling Ration: 20%\nElixir: 10%\nHeedup Berry: 10%\nCondensed Red Gel: 5%\nFire Essence: 20%\n</Enemy Drops>",
     "params": [
       300,
       60,
@@ -1701,14 +1701,14 @@
     ],
     "gold": 30,
     "name": "Bat",
-    "note": "<Armor Weakness: Slashing>\n<Element: Wind>\n\n<Sideview Battler: Monster1_1>\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n\n<Enemy Drops>\nTaut Rope: 5%\nStorm Lens: 5%\nBat Sling: 2%\nBat Wing: 75%\nBat Wing: 75%\nCoal: 50%\nCopper Cluster: 33.33%\nIron Cluster: 20%\nEnchanted Bat Skin: 5%\nShard of Glass: 1%\nWind Essence: 20%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n<Element: Wind>\n\n<Sideview Battler: Monster1_1>\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n\n<Enemy Drops>\nTaut Rope: 5%\nStorm Lens: 5%\nBat Sling: 2%\nBat Wing: 75%\nBat Wing: 75%\nEnchanted Bat Skin: 5%\nShard of Glass: 1%\nWind Essence: 20%\n</Enemy Drops>",
     "params": [
       300,
       35,
       15,
       13,
       1,
-      32,
+      40,
       125,
       7
     ]
@@ -2260,7 +2260,7 @@
     ],
     "gold": 380,
     "name": "Henry",
-    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Slashing>\n\n<Sideview Battler: Evil1_2>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<HP Gauge Width: 216>\n\n<Boost Skill 15: Full>\n<Boost Skill 18: Full>\n<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\n\nState !== Foresight +++ User HP% param >= 30% +++ Random 30%: Foresight, User\nState !== Sharpened Dagger +++ User HP% param >= 30%: Sharpen Dagger, User\n\nTroop Alive Members > 1 +++ State !== Inspired: Inspire\n</AI Priority>\n\n<Enemy Drops>\nBell: 5%\nHenry's Tiny Boots: 100%\nHenry's Gloves: 100%\nHenry's Charm: 100%\n</Enemy Drops>",
+    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Slashing>\n\n<Sideview Battler: Evil1_2>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<HP Gauge Width: 216>\n\n<Boost Skill 15: Full>\n<Boost Skill 18: Full>\n<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\n\nState !== Foresight +++ User HP% param >= 30% +++ Random 30%: Foresight, User\nState !== Sharpened Dagger +++ User HP% param >= 30%: Sharpen Dagger, User\n\nTroop Alive Members > 1 +++ State !== Inspired: Inspire\n</AI Priority>\n\n<Enemy Drops>\nBell: 5%\nHenry's Boots: 100%\nHenry's Gloves: 100%\nHenry's Charm: 100%\n</Enemy Drops>",
     "params": [
       3000,
       120,
@@ -2566,7 +2566,7 @@
     ],
     "gold": 500,
     "name": "Rainbow Slime",
-    "note": "<Passive State: 124, 136>\n<Max atk Buff: +50>\n\n<Sideview Battler: NoMatchingSprite/Rainbow Slime>\n<Scale Sprite: 200%>\n<Battle Select Cursor Position Y: Middle>\n\n<DiscoDisco>\n\n<Enemy Drops>\nRare Enemy Certificate: 100%\nWhite Gel: 100%\nCondensed White Gel: 100%\nSlime Scarf: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\n</Enemy Drops>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Red Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 5: +100%\n</Conditional Icy Gel Drop>",
+    "note": "<Passive State: 124, 136>\n<Max atk Buff: +50>\n\n<Sideview Battler: NoMatchingSprite/Rainbow Slime>\n<Scale Sprite: 200%>\n<Battle Select Cursor Position Y: Middle>\n\n<DiscoDisco>\n\n<Enemy Drops>\nRare Enemy Certificate: 100%\nWhite Gel: 100%\nCondensed White Gel: 100%\nSlime Scarf: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nGreen Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\n</Enemy Drops>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 3: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 3: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 3: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 3: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 3: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 3: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 3: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 3: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 3: +100%\n</Conditional Red Gel Drop>\n<Conditional Red Gel Drop>\nEval $gameSystem.chapter() >= 3: +100%\n</Conditional Red Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Icy Gel Drop>\n<Conditional Icy Gel Drop>\nEval $gameSystem.chapter() >= 4: +100%\n</Conditional Icy Gel Drop>",
     "params": [
       2000,
       50,
@@ -3142,7 +3142,7 @@
     "battlerHue": 0,
     "battlerName": "Sahuagin",
     "dropItems": [],
-    "exp": 80,
+    "exp": 200,
     "traits": [
       {
         "code": 31,
@@ -3170,13 +3170,13 @@
         "value": 0.08
       }
     ],
-    "gold": 40,
+    "gold": 100,
     "name": "Sahuagin",
-    "note": "<Armor Weakness: Slashing>\n<Element: Water>\n<Passive State: 187>\n\n<Sideview Battler: Sahuagin>\n<Attack Animation: 82>\n\n<Enemy Drops>\nWater Essence: 20%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n<Element: Water>\n<Passive State: 187>\n\n<Sideview Battler: Sahuagin>\n<Attack Animation: 211>\n\n<Enemy Drops>\nWater Essence: 20%\n</Enemy Drops>",
     "params": [
-      800,
+      1500,
       0,
-      24,
+      30,
       24,
       10,
       52,
@@ -3350,7 +3350,7 @@
     ],
     "gold": 40,
     "name": "Feral Bat",
-    "note": "<Armor Weakness: Slashing>\n<Element: Wind>\n\n<Sideview Battler: Bat_1>\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n\n<AI Priority>\nState !== Eye of the Storm +++ Random 40%: Cyclone\n</AI Priority>\n\n<Enemy Drops>\nTaut Rope: 5%\nStorm Lens: 5%\nFeral Bat Wing: 75%\nFeral Bat Wing: 75%\nEnchanted Bat Skin: 5%\nBat Sling: 2%\nRing of the Forest: 5%\nShard of Glass: 1%\nEVA Scroll: 10%\nWind Essence: 20%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n<Element: Wind>\n\n<Sideview Battler: Bat_1>\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n\n<AI Priority>\nState !== Eye of the Storm +++ Random 40%: Cyclone\n</AI Priority>\n\n<Enemy Drops>\nTaut Rope: 5%\nStorm Lens: 5%\nFeral Bat Wing: 75%\nFeral Bat Wing: 75%\nEnchanted Bat Skin: 5%\nBat Sling: 2%\nRing of the Forest: 2.5%\nShard of Glass: 1%\nEVA Scroll: 10%\nWind Essence: 20%\n</Enemy Drops>",
     "params": [
       800,
       0,
@@ -3826,7 +3826,7 @@
     ],
     "gold": 48,
     "name": "Baby Ent",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Plant>\n<Passive State: 136>\n\n<AI Priority>\nState !== Amnesia +++ Random 40%: Amnesia\nState !== Silenced +++ Random 40%: Silence\n</AI Priority>\n\n<Enemy Drops>\nBattle Plan: 5%\nPetrified Wood: 75%\nPetrified Wood: 75%\nMedicinal Root: 16.66%\nMedicinal Root: 16.66%\nWorm: 50%\nWorm: 50%\nWorm: 50%\nMana-Stained Blueroot: 5%\nMCR Scroll: 10%\nPlant Essence: 20%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Plant>\n<Passive State: 136>\n\n<Sideview Shadow Shift: -4>\n\n<AI Priority>\nState !== Amnesia +++ Random 40%: Amnesia\nState !== Silenced +++ Random 40%: Silence\n</AI Priority>\n\n<Enemy Drops>\nBattle Plan: 5%\nPetrified Wood: 75%\nPetrified Wood: 75%\nMedicinal Root: 16.66%\nMedicinal Root: 16.66%\nWorm: 50%\nWorm: 50%\nWorm: 50%\nMana-Stained Blueroot: 5%\nMCR Scroll: 10%\nPlant Essence: 20%\n</Enemy Drops>",
     "params": [
       1800,
       0,
@@ -3882,7 +3882,7 @@
     ],
     "gold": 40,
     "name": "Beet Boxer",
-    "note": "<Armor Weakness: Slashing>\n<Element: Plant>\n<Passive State: 136>\n\n<Enemy Drops>\nVicious Herb: 75%\nVicious Herb: 75%\nWorm: 50%\nWorm: 50%\nWorm: 50%\nMedicinal Herb: 12.5%\nMedicinal Herb: 12.5%\nMedicinal Root: 5%\nRing of the Forest: 5%\nATK Scroll ★: 10%\nPlant Essence: 20%\n</Enemy Drops>\n\n<Conditional Coco's Bananas Drop>\nEval !$gameParty.hasItem($dataItems[78]): +0.5%\n</Conditional Coco's Bananas Drop>",
+    "note": "<Armor Weakness: Slashing>\n<Element: Plant>\n<Passive State: 136>\n\n<Enemy Drops>\nVicious Herb: 75%\nVicious Herb: 75%\nWorm: 50%\nWorm: 50%\nWorm: 50%\nMedicinal Herb: 12.5%\nMedicinal Herb: 12.5%\nMedicinal Root: 5%\nRing of the Forest: 2.5%\nATK Scroll ★: 10%\nPlant Essence: 20%\n</Enemy Drops>\n\n<Conditional Coco's Bananas Drop>\nEval !$gameParty.hasItem($dataItems[78]): +0.5%\n</Conditional Coco's Bananas Drop>",
     "params": [
       1000,
       0,
@@ -3938,7 +3938,7 @@
     ],
     "gold": 40,
     "name": "Baby Turtle",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Earth>\n\n<Enemy Drops>\nTurtle Scute: 75%\nTurtle Scute: 75%\nThick-Skinned Herb: 75%\nThick-Skinned Herb: 75%\nRing of the Forest: 5%\nDEF Scroll ★: 10%\nEarth Essence: 20%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Earth>\n\n<Enemy Drops>\nTurtle Scute: 75%\nTurtle Scute: 75%\nThick-Skinned Herb: 75%\nThick-Skinned Herb: 75%\nRing of the Forest: 2.5%\nDEF Scroll ★: 10%\nEarth Essence: 20%\n</Enemy Drops>",
     "params": [
       1500,
       0,
@@ -4015,7 +4015,7 @@
     ],
     "gold": 100,
     "name": "Giant Turtle",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Earth>\n\n<Enemy Drops>\nGiant Turtle Shell: 50%\nThick-Skinned Herb: 100%\nThick-Skinned Herb: 100%\nThick-Skinned Herb: 75%\nThick-Skinned Herb: 75%\nTurtle Scute: 100%\nTurtle Scute: 100%\nTurtle Scute: 75%\nTurtle Scute: 75%\nRing of the Forest: 5%\nDEF Scroll ★: 10%\nEarth Essence: 20%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Earth>\n\n<Enemy Drops>\nGiant Turtle Shell: 50%\nThick-Skinned Herb: 100%\nThick-Skinned Herb: 100%\nThick-Skinned Herb: 75%\nThick-Skinned Herb: 75%\nTurtle Scute: 100%\nTurtle Scute: 100%\nTurtle Scute: 75%\nTurtle Scute: 75%\nRing of the Forest: 2.5%\nDEF Scroll ★: 10%\nEarth Essence: 20%\n</Enemy Drops>",
     "params": [
       4000,
       0,
@@ -5904,7 +5904,7 @@
     ],
     "gold": 12,
     "name": "Living Plant",
-    "note": "<Armor Weakness: Piercing>\n<Element: Plant>\n<Passive State: 136, 190>\n\n<Sideview Battler: Living Plant>\n<Attack Animation: 211>\n\n<Enemy Drops>\nArmor Bracing: 5%\nYellow Flower: 25%\nYellow Flower: 25%\nWorm: 50%\nWorm: 50%\nWorm: 50%\nSharp Tooth: 5%\nRing of the Woods: 5%\nPlant Essence: 20%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Piercing>\n<Element: Plant>\n<Passive State: 136, 190>\n\n<Sideview Battler: Living Plant>\n<Attack Animation: 211>\n\n<Enemy Drops>\nArmor Bracing: 5%\nYellow Flower: 25%\nYellow Flower: 25%\nWorm: 50%\nWorm: 50%\nWorm: 50%\nSharp Tooth: 5%\nRing of the Woods: 2.5%\nPlant Essence: 20%\n</Enemy Drops>",
     "params": [
       100,
       0,

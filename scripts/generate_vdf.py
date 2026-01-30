@@ -1,8 +1,4 @@
-import os
-import platform
-import json
-import subprocess
-import env
+import os, platform, json, subprocess, env, sys, webbrowser
 
 SCRIPT_DIR = os.path.dirname(__file__)
 OUT_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, "../out"))
@@ -31,6 +27,8 @@ DEPOTS = {
 
 
 def detect_platform():
+    if "-p" in sys.argv:
+        return ["windows", "mac", "linux"]
     system = platform.system()
     if system == "Windows":
         return ["windows", "linux"]
@@ -128,12 +126,24 @@ def write_files(env):
     with open(app_path, "w", encoding="utf-8") as f:
         f.write(generate_app_build_vdf(platform_keys))
     print(f"✔ Wrote {app_path}")
-
-    escaped_app_path = app_path.replace('"', '\\"')
-    print("\n➡ Run this command to upload build:\n")
-    print(f'steamcmd +login {env.get("STEAM_USERNAME")} +run_app_build "{escaped_app_path}" +quit\n')
+    return app_path
 
 
 if __name__ == "__main__":
     env.load()
-    write_files(env)
+    app_path = write_files(env)
+    cmd = [
+        "steamcmd",
+        "+login", env.get("STEAM_USERNAME"),
+        "+run_app_build", app_path,
+        "+quit"
+    ]
+
+    if "-u" in sys.argv:
+        subprocess.run(cmd, cwd=OUT_DIR)
+    else:
+        print("\n➡ Run this command to upload build:\n")
+        print(" ".join(cmd))
+    
+    if "-s" in sys.argv:
+        webbrowser.open("https://partner.steamgames.com/apps/builds/" + str(APP_ID))

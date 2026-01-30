@@ -2,7 +2,7 @@
   {
     "type": "Text",
     "Value": "${$gameVariables.value(36)}",
-    "Condition": "$gameSwitches.value(25)&&$gameSwitches.value(72)&&$gameSystem._showMapQuestWindow",
+    "Condition": "$gameSwitches.value(2)&&$gameSwitches.value(72)&&$gameSystem._showMapQuestWindow",
     "Layer": "0",
     "Font": "GameFont",
     "Max Width": "150",

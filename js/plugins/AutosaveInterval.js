@@ -7,7 +7,7 @@ Game_System.prototype.getAutosaveInterval = function() {
 };
 
 Game_System.prototype.setAutosaveInterval = function(minutes) {
-  this._secUntilAutosave = minutes * 60;
+  this._autosaveTarget = Date.now() + minutes * 60000;
 };
 
 Game_System.prototype.forceAutosave = function() {

@@ -80,6 +80,14 @@ Galv.NII.becomeOld = function(item) {
 	return false;
 };
 
+Galv.NII.isNew = function(item) {
+	if (!item) return false;
+	if (item.groupType === 0) var type = 'items';
+	if (item.groupType === 1) var type = 'weapons';
+	if (item.groupType === 2) var type = 'armors';
+
+	return !$gameSystem._seenItems[type][DataManager.getBaseItem(item).id];
+};
 
 //-----------------------------------------------------------------------------
 //  SCENE BOOT
@@ -113,6 +121,7 @@ Game_System.prototype.initialize = function() {
 
 Galv.NII.Window_ItemList_initialize = Window_ItemList.prototype.initialize;
 Window_ItemList.prototype.initialize = function(x, y, width, height) {
+	this._itemsToMarkSeen = new Set();
 	Galv.NII.Window_ItemList_initialize.call(this, x, y, width, height);
 	this._viewedNewIndex = null;
 };
@@ -122,11 +131,7 @@ Window_ItemList.prototype.drawItemName = function(item, x, y, width) {
 	Galv.NII.Window_ItemList_drawItemName.call(this,item,x,y,width);
 	if (!(SceneManager._scene instanceof Scene_Item)) return;
     if (item) {
-		if (item.itypeId) var type = 'items';
-		if (item.wtypeId) var type = 'weapons';
-		if (item.atypeId) var type = 'armors';
-
-		if (type && !$gameSystem._seenItems[type][DataManager.getBaseItem(item).id]) {
+		if (Galv.NII.isNew(item)) {
 			var bitmap = ImageManager.loadSystem(Galv.NII.newIcon);
 			var pw = bitmap.width;
 			var ph = bitmap.height;
@@ -140,6 +145,11 @@ Window_ItemList.prototype.drawItemName = function(item, x, y, width) {
 Galv.NII.Window_ItemList_deactivate = Window_ItemList.prototype.deactivate;
 Window_ItemList.prototype.deactivate = function() {
 	Galv.NII.Window_ItemList_deactivate.call(this);
+	if (!this._itemsToMarkSeen) this._itemsToMarkSeen = new Set();
+	for (const item of this._itemsToMarkSeen) {
+		Galv.NII.becomeOld(item);
+	}
+	this._itemsToMarkSeen.clear();
 	if (this._viewedNewIndex != null) {
 		this.refresh();
 		this._viewedNewIndex = null;
@@ -149,14 +159,15 @@ Window_ItemList.prototype.deactivate = function() {
 Galv.NII.Window_ItemList_updateHelp = Window_ItemList.prototype.updateHelp;
 Window_ItemList.prototype.updateHelp = function() {
 	Galv.NII.Window_ItemList_updateHelp.call(this);
+	this._itemsToMarkSeen = this._itemsToMarkSeen || new Set();
 	
 	if (this._viewedNewIndex != null) {
 		this.redrawItem(this._viewedNewIndex);
 		this._viewedNewIndex = null;
 	}
 	
-	var addToOld = Galv.NII.becomeOld(this.item());
-	if (addToOld) {
+	if (Galv.NII.isNew(this.item())) {
+		this._itemsToMarkSeen.add(this.item());
 		this._viewedNewIndex = this.index();
 	}
 };
