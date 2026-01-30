@@ -2165,28 +2165,6 @@ Window_ItemInfo.prototype.drawMaterialText = function(dy) {
     return dy;
 };
 
-Window_ItemInfo.prototype.drawItemRarity = function(dy) {
-    var item = this._item;
-    if (item.rarity === undefined) DataManager.initRarity(item);
-    if (item.rarity === 11) item.rarityText = "TROPHY";
-    else if (item.rarity >= 5) item.rarityText = "MYTHIC";
-    else if (item.rarity >= 4) item.rarityText = "LEGENDARY";
-    else if (item.rarity >= 3) item.rarityText = "EPIC";
-    else if (item.rarity >= 2) item.rarityText = "RARE";
-    else if (item.rarity >= 1) item.rarityText = "UNCOMMON";
-    else item.rarityText = "COMMON";
-    let infoText = `\\fb\\c[${item.textColor}]${item.rarityText}\\c[0]\\fr`;
-    if (infoText === '') return dy;
-    var info = infoText.split(/[\r\n]+/);
-    for (var i = 0; i < info.length; ++i) {
-      var line = info[i];
-      this.resetFontSettings();
-      this.drawTextEx(line, this.textPadding(), dy);
-      dy += this.contents.fontSize + 8;
-    }
-    return dy;
-};
-
 //=============================================================================
 // Window_ItemActionCommand
 //=============================================================================

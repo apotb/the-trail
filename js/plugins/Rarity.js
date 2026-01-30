@@ -14,6 +14,50 @@ DataManager.initRarity = function(item) {
     }
 };
 
+Window_ItemInfo.prototype.drawItemRarity = function(dy) {
+    var item = this._item;
+    if (item.rarity === undefined) DataManager.initRarity(item);
+
+    // Rarity Text
+    if (item.rarity === 11) item.rarityText = "TROPHY";
+    else if (item.rarity >= 5) item.rarityText = "MYTHIC";
+    else if (item.rarity >= 4) item.rarityText = "LEGENDARY";
+    else if (item.rarity >= 3) item.rarityText = "EPIC";
+    else if (item.rarity >= 2) item.rarityText = "RARE";
+    else if (item.rarity >= 1) item.rarityText = "UNCOMMON";
+    else item.rarityText = "COMMON";
+
+    // Type Text
+    if (DataManager.isItem(item)) {
+      if (item.consumable) item.typeText = "CONSUMABLE";
+      else if (item.types.contains("KEY")) item.typeText = "KEY ITEM";
+      else item.typeText = "ITEM";
+    }
+    else if (DataManager.isWeapon(item)) {
+      if (item.wtypeId === 1) item.typeText = "WEAPON";
+      else item.typeText = $dataSystem.weaponTypes[item.wtypeId].toUpperCase();
+    }
+    else if (DataManager.isArmor(item)) {
+      if (item.atypeId === 1) {
+        item.typeText = $dataSystem.equipTypes[item.etypeId].toUpperCase();
+        if ([3, 4, 5].contains(item.etypeId)) item.typeText += " ARMOR";
+      }
+      else item.typeText = $dataSystem.armorTypes[item.atypeId].toUpperCase();
+    }
+    else item.typeText = "";
+    
+    let infoText = `\\fb\\c[${item.textColor}]${item.rarityText} ${item.typeText}\\c[0]\\fr`;
+    if (infoText === '') return dy;
+    var info = infoText.split(/[\r\n]+/);
+    for (var i = 0; i < info.length; ++i) {
+      var line = info[i];
+      this.resetFontSettings();
+      this.drawTextEx(line, this.textPadding(), dy);
+      dy += this.contents.fontSize + 8;
+    }
+    return dy;
+};
+
 //==============================
 // MOG_TrPopUpBattle.js
 //==============================

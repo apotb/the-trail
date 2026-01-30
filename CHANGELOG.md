@@ -53,6 +53,8 @@ NOTICE: Old saves will not work with this update!
   - A bunch of stuff got rebalanced, shuffled around, or given a spotlight in an overcrowded pool of new content.
   - Existing fishing/food content has been overhauled to accommodate new early-game fishing content.
 - Increased max name length from 10 → 12.
+- You can no longer equip duplicate Wristbraces, Necklaces, Gauntlets, Scarves, or Crystals.
+  - To make this easier to figure out, equipment types are shown next to rarity.
 - Red Slimes and Bats no longer drop Copper/Iron Clusters and Coal.
   - This is compensated by 12 new ore nodes in Goblin Grotto, half of which are oreleaf.
 - Made Goblins weaker to magic.

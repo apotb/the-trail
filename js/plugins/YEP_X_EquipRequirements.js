@@ -562,7 +562,18 @@ Game_BattlerBase.prototype.meetAllEquipRequirements = function(item, slot=-1) {
   }
   if (item.id < Yanfly.Param.ItemStartingId) return true; // Non-independent items, if they somehow exist
   if (this.isEquipTypeLocked(item.etypeId)) return true; // Guest party members
-  if (slot > -1) if (this.equips().some((e, i) => e && e.groupType === item.groupType && (e.baseItemId === item.baseItemId || (e.atypeId === 11 && item.atypeId === 11)) && i !== slot && e !== item)) return false; // No duplicates; includes gloves
+  if (slot > -1) if (this.equips().some((e, i) => e && e.groupType === item.groupType && (e.baseItemId === item.baseItemId ||
+    (e.atypeId === 11 && item.atypeId === 11) || // Gloves
+    (e.atypeId === 12 && item.atypeId === 12) || // Wristbraces
+    (e.atypeId === 11 && item.atypeId === 14) || // Gloves vs Gauntlets
+    (e.atypeId === 14 && item.atypeId === 11) || // Gauntlets vs Gloves
+    (e.atypeId === 12 && item.atypeId === 14) || // Wristbraces vs Gauntlets
+    (e.atypeId === 14 && item.atypeId === 12) || // Gauntlets vs Wristbraces
+    (e.atypeId === 13 && item.atypeId === 13) || // Necklace
+    (e.atypeId === 14 && item.atypeId === 14) || // Gauntlets
+    (e.atypeId === 15 && item.atypeId === 15) || // Scarf
+    (e.atypeId === 16 && item.atypeId === 16)    // Crystal
+  ) && i !== slot && e !== item)) return false; // No duplicates, including certain armor types
   if (!this.checkEquipRequirements(item)) return false; // Per-item equip requirements
   return true;
 };
