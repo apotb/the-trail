@@ -14,7 +14,7 @@ const clients = new Map();
 
 console.log("! Server running on port 8080");
 
-// Lobbies
+// Lobbies and Parties
 const lobbies = {
     "laeryidyean_ex": {
         name: "Laeryidyean EX",
@@ -23,6 +23,12 @@ const lobbies = {
         parties: []
     }
 };
+
+const parties = [];
+
+function findPartyById(partyId) {
+    return parties.find(p => p.id === partyId);
+}
 
 // Ping interval, prevents idle timeouts
 const pingInterval = setInterval(() => {
@@ -71,7 +77,8 @@ rl.on('line', (input) => {
     if (command === 'players') {
         console.log(`Players connected: ${clients.size}`);
         for (const [_, player] of clients.entries()) {
-            console.log(` - ${player.name} | ${player.id} | ${player.party?.name || "No Party"} | ${player.mapName}`);
+            const partyName = player.partyId ? findPartyById(player.partyId)?.name || "Unknown" : "No Party";
+            console.log(` - ${player.name} | ${player.id} | ${partyName} | ${player.mapName}`);
         }
     } else if (command === 'lobbies') {
         console.log(`Lobbies: ${Object.keys(lobbies).length}`);
@@ -161,6 +168,7 @@ wss.on('connection', (ws) => {
         try {
             const data = JSON.parse(raw.toString());
             let exclude = [ws];
+            let player = clients.get(ws);
             if (data.type === "chat") {
                 // Check and censor profanity
                 if (matcher.hasMatch(data.message)) {
@@ -176,31 +184,29 @@ wss.on('connection', (ws) => {
                 log(data.message);
             } else if (data.type === "player") {
                 clients.set(ws, data);
+                player = data;
 
                 const otherPlayers = Array.from(clients.entries())
                     .map(([_, pdata]) => pdata)
                     .filter((pdata) => pdata.id !== data.id);
 
-                for (const player of otherPlayers) {
+                for (const p of otherPlayers) {
                     ws.send(JSON.stringify({
                         type: "player",
-                        ...player
+                        ...p
                     }));
                 }
             } else if (data.type === "move") {
-                let player = clients.get(ws);
                 if (!player) return;
                 player.x = data.x;
                 player.y = data.y;
                 player.direction = data.direction;
                 clients.set(ws, player);
             } else if (data.type === "turn") {
-                let player = clients.get(ws);
                 if (!player) return;
                 player.direction = data.direction;
                 clients.set(ws, player);
             } else if (data.type === "transfer") {
-                let player = clients.get(ws);
                 if (!player) return;
                 player.mapId = data.mapId;
                 player.x = data.x;
@@ -211,12 +217,10 @@ wss.on('connection', (ws) => {
                     .map(([_, pdata]) => pdata)
                     .filter((pdata) => pdata.mapId !== data.mapId)));
             } else if (data.type === "jump") {
-                let player = clients.get(ws);
-                if (player) {
-                    player.x += data.xPlus;
-                    player.y += data.yPlus;
-                    clients.set(ws, player);
-                }
+                if (!player) return;
+                player.x += data.xPlus;
+                player.y += data.yPlus;
+                clients.set(ws, player);
             } else if (data.type === "vanity") {
                 // Empty
             } 
@@ -226,37 +230,37 @@ wss.on('connection', (ws) => {
                 ws.send(JSON.stringify({
                     type: "lobby",
                     lobby: lobbies[data.lobbyId]
+                }, (key, value) => {
+                    // Replace WebSocket with player data
+                    if (value instanceof WebSocket) return clients.get(value) || null;
+                    return value;
                 }));
             } else if (data.type === "party-create") {
                 const lobby = lobbies[data.lobbyId];
-                if (lobby) {
-                    let player = clients.get(ws);
-                    if (!player) return;
-
+                if (lobby && player) {
                     const party = {
                         id: player.id, // Party ID is just party leader's Steam ID
                         name: `${player.name}'s Party`,
                         members: [ws],
-                        lobby: lobby,
+                        lobbyId: data.lobbyId,
                         createdAt: Date.now()
                     };
 
                     player.ready = false;
-                    player.party = party;
+                    player.partyId = party.id;
                     clients.set(ws, player);
+                    parties.push(party);
                     lobby.parties.push(party);
                     log(`+ Party created in ${lobby.name} by ${player.name}`);
                 }
             } else if (data.type === "party-join") {
                 const lobby = lobbies[data.lobbyId];
-                if (lobby) {
-                    const party = lobby.parties.find(p => p.id === data.partyId);
+                if (lobby && player) {
+                    const party = findPartyById(data.partyId);
                     if (party && !party.members.includes(ws)) {
                         // Sucessful join
-                        let player = clients.get(ws);
-                        if (!player) return;
                         player.ready = false;
-                        player.party = party;
+                        player.partyId = party.id;
                         clients.set(ws, player);
 
                         party.members.push(ws);
@@ -264,26 +268,29 @@ wss.on('connection', (ws) => {
                             type: "party-join",
                             partyId: party.id
                         }));
-                        log(`+ ${player.name} joined ${party.name} in ${party.lobby.name}`);
+                        log(`+ ${player.name} joined ${party.name} in ${lobbies[party.lobbyId].name}`);
                     }
                 }
             } else if (data.type === "party-ready") {
-                let player = clients.get(ws);
                 if (!player) return;
                 player.ready = true;
                 clients.set(ws, player);
-                log(`✓ ${player.name} of ${player.party.name} has readied up!`);
+                const party = findPartyById(player.partyId);
+                log(`✓ ${player.name} of ${party?.name} has readied up!`);
             } else if (data.type === "party-unready") {
-                let player = clients.get(ws);
                 if (!player) return;
                 player.ready = false;
                 clients.set(ws, player);
-                log(`✗ ${player.name} of ${player.party.name} has unreadied.`);
+                const party = findPartyById(player.partyId);
+                log(`✗ ${player.name} of ${party?.name} has unreadied.`);
             } else if (data.type === "party-start") {
-                let player = clients.get(ws);
-                const party = player.party;
+                if (!player) return;
+                const party = findPartyById(player?.partyId);
                 if (party) {
-                    if (party.members.every(m => m.ready)) {
+                    if (party.members.every(m => {
+                        const memberPlayer = clients.get(m);
+                        return memberPlayer?.ready;
+                    })) {
                         // Notify all party members
                             for (const memberWS of party.members) {
                                 if (memberWS.readyState === WebSocket.OPEN) {
@@ -293,7 +300,7 @@ wss.on('connection', (ws) => {
                                     }));
                                 }
                             }
-                            log(`! ${party.name} is starting: ${party.lobby.name}!`);
+                            log(`! ${party.name} is starting: ${lobbies[party.lobbyId].name}!`);
                     } else {
                         ws.send(JSON.stringify({
                             type: "party-start",

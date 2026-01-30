@@ -300,7 +300,6 @@ function fetchLobby(lobbyId) {
     if (socket && socket.readyState === WebSocket.OPEN) {
         socket.send(JSON.stringify({
             type: "lobby",
-            id: API_STEAM.userId(),
             lobbyId
         }));
     }
@@ -328,7 +327,6 @@ function partyReady() {
     if (socket && socket.readyState === WebSocket.OPEN) {
         socket.send(JSON.stringify({
             type: "party-ready",
-            id: API_STEAM.userId()
         }));
     }
 };
@@ -337,7 +335,6 @@ function partyUnready() {
     if (socket && socket.readyState === WebSocket.OPEN) {
         socket.send(JSON.stringify({
             type: "party-unready",
-            id: API_STEAM.userId()
         }));
     }
 };
@@ -346,7 +343,6 @@ function partyStart() {
     if (socket && socket.readyState === WebSocket.OPEN) {
         socket.send(JSON.stringify({
             type: "party-start",
-            id: API_STEAM.userId()
         }));
     }
 }
