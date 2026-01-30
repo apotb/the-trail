@@ -135,6 +135,11 @@ wss.on('connection', (ws) => {
                 player.y = data.y;
                 player.direction = data.direction;
                 clients.set(ws, player);
+            } else if (data.type === "turn") {
+                let player = clients.get(ws);
+                if (!player) return;
+                player.direction = data.direction;
+                clients.set(ws, player);
             } else if (data.type === "transfer") {
                 let player = clients.get(ws);
                 if (!player) return;

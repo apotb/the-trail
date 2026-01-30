@@ -63,6 +63,13 @@ function startMultiplayerConnection(playerName="Guest", ip="the-trail.apotb.com"
                 }
             }
 
+            if (data.type === "turn") {
+                let player = $gameTemp._players[data.id];
+                if (player) {
+                    player.setDirection(data.direction);
+                }
+            }
+
             if (data.type === "transfer") {
                 deletePlayer(data.id);
             }
@@ -223,6 +230,16 @@ function sendMove(direction) {
             y: $gamePlayer.y,
             direction: direction,
             speed: $gamePlayer.realMoveSpeed()
+        }));
+    }
+}
+
+function sendTurn(direction) {
+    if (socket && socket.readyState === WebSocket.OPEN) {
+        socket.send(JSON.stringify({
+            type: "turn",
+            id: API_STEAM.userId(),
+            direction: direction
         }));
     }
 }
