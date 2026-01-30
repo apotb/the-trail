@@ -1,6 +1,13 @@
 // server.js
 const WebSocket = require('ws');
 const readline = require('readline');
+const { RegExpMatcher, englishDataset, englishRecommendedTransformers } = require('obscenity');
+
+// Setup profanity filter
+const matcher = new RegExpMatcher({
+    ...englishDataset.build(),
+    ...englishRecommendedTransformers,
+});
 
 const wss = new WebSocket.Server({ port: 8080 });
 const clients = new Map();
@@ -131,6 +138,15 @@ wss.on('connection', (ws) => {
             const data = JSON.parse(raw.toString());
             let exclude = [ws];
             if (data.type === "chat") {
+                // Check and censor profanity
+                if (matcher.hasMatch(data.message)) {
+                    data.message = matcher.getAllMatches(data.message)
+                        .reduce((text, match) => {
+                            return text.slice(0, match.startIndex) + 
+                                   '*'.repeat(match.endIndex - match.startIndex) + 
+                                   text.slice(match.endIndex);
+                        }, data.message);
+                }
                 log(`${data.name}: ${data.message}`);
             } else if (data.type === "message") {
                 log(data.message);
