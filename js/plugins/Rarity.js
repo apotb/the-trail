@@ -1,16 +1,20 @@
 //==============================
 // YEP_ItemCore.js
 //==============================
+const RARITY_COLOR_CODES = {
+    0: 0,    // Common
+    1: 24,   // Uncommon
+    2: 16,   // Rare
+    3: 30,   // Epic
+    4: 21,   // Legendary
+    5: 27,   // Mythic
+   11: 25,   // Trophy
+};
+
 DataManager.initRarity = function(item) {
     item.rarity = DataManager.getBaseItem(item).rarity;
-    if (item.textColor === 0) {
-      if (item.rarity === 11) item.textColor = 25;
-      else if (item.rarity >= 5) item.textColor = 27;
-      else if (item.rarity >= 4) item.textColor = 21;
-      else if (item.rarity >= 3) item.textColor = 30;
-      else if (item.rarity >= 2) item.textColor = 16;
-      else if (item.rarity >= 1) item.textColor = 24;
-      else item.textColor = 0;
+    if (!item.textColor) {
+      item.textColor = RARITY_COLOR_CODES[item.rarity] || 0;
     }
 };
 
@@ -67,7 +71,7 @@ const RARITY_COLORS = {
     3: 0xa060e0,	// Epic
     4: 0xf0c040,	// Legendary
     5: 0xff80ff,	// Mythic
-	11:0xc08080,	// Trophy
+	  11:0xc08080,	// Trophy
 };
 
 //==============================
@@ -79,5 +83,5 @@ const RARITY_COLORS_HEX = {
     3: '#a060e0',	// Epic
     4: '#f0c040',	// Legendary
     5: '#ff80ff',	// Mythic
-	11:'#c08080',	// Trophy
+	  11:'#c08080',	// Trophy
 };

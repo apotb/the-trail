@@ -996,6 +996,7 @@ Window_SaveInfo.prototype.drawContents = function(dy) {
     this._saveContents = JsonEx.parse(this._saveContents);
     dy = this.drawPartyGraphics(dy);
     dy = this.drawPartyNames(dy);
+    dy = this.drawPartyTitles(dy);
     dy = this.drawPartyLevels(dy);
     this.drawColumnData(dy);
   } catch (e) {
@@ -1077,7 +1078,7 @@ Window_SaveInfo.prototype.drawPartyNames = function(dy) {
     }
     dx += dw
   }
-  return dy += this.lineHeight();
+  return dy += this.lineHeight() / 1.5;
 };
 
 Window_SaveInfo.prototype.drawPartyLevels = function(dy) {
