@@ -2,10 +2,10 @@
 const WebSocket = require('ws');
 const readline = require('readline');
 
-const wss = new WebSocket.Server({ port: 17404 });
+const wss = new WebSocket.Server({ port: 8080 });
 const clients = new Map();
 
-console.log("! Server running on port 17404");
+console.log("! Server running on port 8080");
 
 // Setup command interface
 const rl = readline.createInterface({

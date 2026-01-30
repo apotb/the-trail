@@ -6,10 +6,12 @@ const MAP_CHAT_LIMIT = 10;
 const BATTLE_CHAT_LIMIT = 5;
 const CHAT_TIME = 15 * 1000;
 
-function startMultiplayerConnection(playerName="Guest", ip="the-trail.apotb.com", port="17404") {
+function startMultiplayerConnection(playerName="Guest", ip="the-trail.apotb.com", port="8080") {
     if (socket && socket.readyState === WebSocket.OPEN) return; // prevent duplicates
 
-    socket = new WebSocket(`ws://${ip}:${port}`);
+    const url = `ws://${ip}:${port}`;
+    console.log(`🔌 Attempting to connect to ${url}...`);
+    socket = new WebSocket(url);
 
     socket.onopen = async () => {
         console.log("✅ Connected to server!");
