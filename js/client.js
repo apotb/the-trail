@@ -323,6 +323,14 @@ function joinParty(lobbyId, partyId) {
     }
 };
 
+function leaveParty() {
+    if (socket && socket.readyState === WebSocket.OPEN) {
+        socket.send(JSON.stringify({
+            type: "party-leave"
+        }));
+    }
+};
+
 function partyReady() {
     if (socket && socket.readyState === WebSocket.OPEN) {
         socket.send(JSON.stringify({

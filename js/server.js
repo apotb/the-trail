@@ -30,6 +30,17 @@ function findPartyById(partyId) {
     return parties.find(p => p.id === partyId);
 }
 
+function addPlayerToParty(ws, player, party) {
+    if (!player || !party) return false;
+    if (party.members.includes(ws)) return false;
+    
+    player.ready = false;
+    player.partyId = party.id;
+    clients.set(ws, player);
+    party.members.push(ws);
+    return true;
+}
+
 // Ping interval, prevents idle timeouts
 const pingInterval = setInterval(() => {
     wss.clients.forEach((ws) => {
@@ -238,38 +249,106 @@ wss.on('connection', (ws) => {
             } else if (data.type === "party-create") {
                 const lobby = lobbies[data.lobbyId];
                 if (lobby && player) {
+                    // Check if player is already in a party
+                    if (player.partyId) {
+                        ws.send(JSON.stringify({
+                            type: "party-create",
+                            success: false,
+                            message: "You are already in a party. Leave your current party first."
+                        }));
+                        return;
+                    }
+
                     const party = {
                         id: player.id, // Party ID is just party leader's Steam ID
                         name: `${player.name}'s Party`,
-                        members: [ws],
+                        members: [],
                         lobbyId: data.lobbyId,
                         createdAt: Date.now()
                     };
 
-                    player.ready = false;
-                    player.partyId = party.id;
-                    clients.set(ws, player);
                     parties.push(party);
                     lobby.parties.push(party);
-                    log(`+ Party created in ${lobby.name} by ${player.name}`);
+
+                    // Add the creator to their own party
+                    if (addPlayerToParty(ws, player, party)) {
+                        ws.send(JSON.stringify({
+                            type: "party-create",
+                            success: true,
+                            partyId: party.id
+                        }));
+                        log(`+ Party created in ${lobby.name} by ${player.name}`);
+                    }
                 }
             } else if (data.type === "party-join") {
                 const lobby = lobbies[data.lobbyId];
                 if (lobby && player) {
-                    const party = findPartyById(data.partyId);
-                    if (party && !party.members.includes(ws)) {
-                        // Sucessful join
-                        player.ready = false;
-                        player.partyId = party.id;
-                        clients.set(ws, player);
-
-                        party.members.push(ws);
+                    // Check if player is already in a party
+                    if (player.partyId) {
                         ws.send(JSON.stringify({
                             type: "party-join",
+                            success: false,
+                            message: "You are already in a party. Leave your current party first."
+                        }));
+                        return;
+                    }
+
+                    const party = findPartyById(data.partyId);
+                    if (party && addPlayerToParty(ws, player, party)) {
+                        ws.send(JSON.stringify({
+                            type: "party-join",
+                            success: true,
                             partyId: party.id
                         }));
                         log(`+ ${player.name} joined ${party.name} in ${lobbies[party.lobbyId].name}`);
+                    } else {
+                        ws.send(JSON.stringify({
+                            type: "party-join",
+                            success: false,
+                            message: "Could not join party."
+                        }));
                     }
+                }
+            } else if (data.type === "party-leave") {
+                if (!player || !player.partyId) return;
+                const party = findPartyById(player.partyId);
+                if (party) {
+                    // If the party leader leaves, disband the party
+                    if (party.id === player.id) {
+                        // Notify all party members
+                        for (const memberWS of party.members) {
+                            if (memberWS !== ws && memberWS.readyState === WebSocket.OPEN) {
+                                const memberPlayer = clients.get(memberWS);
+                                memberPlayer.partyId = null;
+                                clients.set(memberWS, memberPlayer);
+                                memberWS.send(JSON.stringify({
+                                    type: "message",
+                                    message: `Party "${party.name}" has been disbanded (leader left)`,
+                                    time: Date.now()
+                                }));
+                            }
+                        }
+                        // Remove party from lobby and global parties list
+                        const lobby = lobbies[party.lobbyId];
+                        if (lobby) {
+                            lobby.parties = lobby.parties.filter(p => p.id !== party.id);
+                        }
+                        const partyIndex = parties.indexOf(party);
+                        if (partyIndex !== -1) {
+                            parties.splice(partyIndex, 1);
+                        }
+                        log(`! Party "${party.name}" disbanded (leader left)`);
+                    } else {
+                        // Just remove the player from the party
+                        party.members = party.members.filter(m => m !== ws);
+                        player.partyId = null;
+                        clients.set(ws, player);
+                        log(`- ${player.name} left party "${party.name}"`);
+                    }
+                    ws.send(JSON.stringify({
+                        type: "party-leave",
+                        success: true
+                    }));
                 }
             } else if (data.type === "party-ready") {
                 if (!player) return;
