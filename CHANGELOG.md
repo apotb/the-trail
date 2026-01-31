@@ -15,7 +15,7 @@ NOTICE: Old saves will not work with this update!
 - Added random name generation.
 - Added team names.
 - Added royal titles.
-- Added a new early-game fast travel system.
+- Added a new fast travel system.
 - Added a short sound effect when completing a quest objective.
 - Added TROPHY rarity.
 - Added 7 items:

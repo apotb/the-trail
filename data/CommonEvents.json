@@ -14041,12 +14041,114 @@
     "id": 70,
     "list": [
       {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "Galv.MAPT.createMap(0,\"map0\","
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "[],"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "[[\"fg1\",0.2,-0.2,60]]"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          ");"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "Galv.MAPT.setLocation(0,\"Solus Town\",\"loc_solus_town\",2016,276,9,31,30,\"Home sweet home. Not much to do here, though.\",1,86,8);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "Galv.MAPT.setLocation(0,\"Verdin Village\",\"loc_verdin_village\",2400,664,20,21,32,\"A quaint mountain village. Watch out for Banditos!\",1,95,34);"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameTemp._isPlaytest"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "Galv.MAPT.setLocation(0,\"Campsite\",\"loc_camp\",2580,1072,34,16,21,\"A cozy spot to camp out for the night.\",1,105,45);"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "Galv.MAPT.setLocation(0,\"Haven Harbor\",\"loc_haven_harbor\",2472,1356,43,11,39,\"Biggest city in Adon. Trade capital of the world.\",1,102,58);"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "Galv.MAPT.setLocation(0,\"Laeryidyean's Forest\",\"loc_laeryidyeans_forest\",2580,2240,167,31,15,\"Dangerous territory home to a skeleton lord.\",1,106,93);"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "Galv.MAPT.setLocation(0,\"Solus Valley\",\"loc_solus_valley\",1812,2772,83,7,34,\"Peaceful valley settlement. Once a colony of Solus Town.\",1,76,115);"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "Galv.MAPT.setLocation(0,\"Telluria Castle\",\"loc_telluria_castle\",1548,1520,183,47,71,\"The center of Tellurian society.\",1,57,63);"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "Galv.MAPT.setLocation(0,\"Frozen Labyrinth\",\"loc_frozen_labyrinth\",948,732,207,29,40,\"A remote dungeon in the frigid corner of Telluria Field.\",1,42,27);"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "Init Fast Travel",
     "switchId": 1,
     "trigger": 0
   },
@@ -14054,12 +14156,906 @@
     "id": 71,
     "list": [
       {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "People2",
+          3,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "\\neilWhere am I taking you?"
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          78,
+          78,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          79,
+          79,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          80,
+          80,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "Galv.MAPT.openMap(0);"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          78,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "var x1 = $gameVariables.value(94);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "var y1 = $gameVariables.value(95);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "var x2 = $gameVariables.value(91);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "var y2 = $gameVariables.value(92);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "var d = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "var cost = Math.max(10, Math.round(d * 4));"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "$gameVariables.setValue(93, cost);"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "People2",
+          3,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "\\neilThat'll be \\V[93]B.\\$"
+        ]
+      },
+      {
+        "code": 102,
+        "indent": 0,
+        "parameters": [
+          [
+            "Pay the toll",
+            "Nevermind"
+          ],
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "code": 402,
+        "indent": 0,
+        "parameters": [
+          0,
+          "Pay the toll"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "$gameParty.gold() >= $gameVariables.value(93)"
+        ]
+      },
+      {
+        "code": 125,
+        "indent": 2,
+        "parameters": [
+          1,
+          1,
+          93
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "You don't have enough Bits."
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 402,
+        "indent": 0,
+        "parameters": [
+          1,
+          "Nevermind"
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 404,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "People2",
+          3,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "\\neilLet's get moving!"
+        ]
+      },
+      {
+        "code": 221,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 216,
+        "indent": 0,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "a_Move1",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          96,
+          96,
+          0,
+          0,
+          8
+        ]
+      },
+      {
+        "code": 201,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          94,
+          95,
+          2,
+          2
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 0,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 41,
+                "parameters": [
+                  "Vehicle1",
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 33,
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": false
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 41,
+            "parameters": [
+              "Vehicle1",
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 33,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 241,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "map_ship",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 222,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 121,
+        "indent": 0,
+        "parameters": [
+          112,
+          112,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 0,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._vehicleType = 'ship'"
+                ],
+                "indent": null
+              },
+              {
+                "code": 29,
+                "parameters": [
+                  5
+                ],
+                "indent": 0
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._vehicleType = 'ship'"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 29,
+            "parameters": [
+              5
+            ],
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          94,
+          0,
+          76,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          95,
+          0,
+          115,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 94, 118"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 94, 118"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          78,
+          0,
+          83,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 1,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 94, 118"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 94, 118"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 112,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "$gamePlayer.x === $gameVariables.value(91) && $gamePlayer.y === $gameVariables.value(92)"
+        ]
+      },
+      {
+        "code": 113,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 205,
+        "indent": 1,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this.moveToPoint($gameVariables.value(91), $gameVariables.value(92))"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this.moveToPoint($gameVariables.value(91), $gameVariables.value(92))"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 413,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 205,
+        "indent": 0,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 29,
+                "parameters": [
+                  4
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._vehicleType = 'walk'"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  30
+                ],
+                "indent": null
+              },
+              {
+                "code": 19,
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 29,
+            "parameters": [
+              4
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._vehicleType = 'walk'"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              30
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 19,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 121,
+        "indent": 0,
+        "parameters": [
+          112,
+          112,
+          1
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 221,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          53
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 0,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 34,
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": false
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 34,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 216,
+        "indent": 0,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "a_Move1",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 201,
+        "indent": 0,
+        "parameters": [
+          1,
+          78,
+          79,
+          80,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 222,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "People2",
+          3,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "\\neilHere we are! Now don't look so seasick..."
+        ]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "Captain O'Neil",
     "switchId": 1,
     "trigger": 0
   },
