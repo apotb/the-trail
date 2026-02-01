@@ -5893,7 +5893,7 @@ Game_Party.prototype.addPet = function(name) {
             actor.setCharacterImage('Dog2', 2);
             break;
         case 'Clover':
-            actor.setCharacterImage('Cat1', 4);
+            actor.setCharacterImage('Cat1', 6);
             break;
         case 'Duncan':
             actor.setCharacterImage('Hamster', 1);
