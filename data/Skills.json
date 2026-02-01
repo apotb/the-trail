@@ -3488,14 +3488,8 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Decreases the amount of damage taken.\nNullifies all incoming \\nl[3] damage.",
+    "description": "Decreases the amount of damage taken. Gain 1 BP.\nNullifies all incoming \\nl[3] damage.",
     "effects": [
-      {
-        "code": 21,
-        "dataId": 2,
-        "value1": 1,
-        "value2": 0
-      },
       {
         "code": 21,
         "dataId": 71,
@@ -3722,22 +3716,29 @@
       "type": 0,
       "variance": 20
     },
-    "description": "",
-    "effects": [],
+    "description": "Decreases the amount of damage taken. Gain 1 BP.\nParty members take 15% less damage.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 225,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
-    "iconIndex": 0,
-    "message1": "",
+    "iconIndex": 499,
+    "message1": " guards.",
     "message2": "",
     "mpCost": 0,
-    "name": "",
-    "note": "",
-    "occasion": 0,
+    "name": "Party Guard",
+    "note": "<Bypass Target Change>\n\n<Require = 0 BP>\n<User BP: +1>\n\n<Max Mastery Level: 0>",
+    "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
-    "scope": 1,
-    "speed": 0,
-    "stypeId": 1,
+    "scope": 11,
+    "speed": 1000,
+    "stypeId": 0,
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0

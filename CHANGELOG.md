@@ -9,7 +9,7 @@ NOTICE: Old saves will not work with this update!
 
 ### Additions
 - Added a LOT of new content before Telluria Field, including:
-  - 2 new settlements to explore
+  - Northern/Southern Desert Garrison
   - New characters
   - Several new quests
 - Added random name generation.
@@ -18,8 +18,11 @@ NOTICE: Old saves will not work with this update!
 - Added a new fast travel system.
 - Added a short sound effect when completing a quest objective.
 - Added TROPHY rarity.
-- Added 7 items:
+- Added 10 items:
   - Eclipse Potion
+  - Desert Gambeson
+  - Field Medic Kit
+  - Tower Shield
   - Giant Goblin's Fang (weapon)
   - Henry's Boots (armor)
   - The Warden's Belt (armor)

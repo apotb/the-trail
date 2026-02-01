@@ -2327,6 +2327,11 @@
     "stepsToRemove": 100,
     "traits": [
       {
+        "code": 62,
+        "dataId": 1,
+        "value": 0
+      },
+      {
         "code": 11,
         "dataId": 3,
         "value": 0
@@ -7560,8 +7565,14 @@
     "id": 224,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "traits": [],
-    "iconIndex": 0,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.1
+      }
+    ],
+    "iconIndex": 26,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -7569,10 +7580,10 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "",
-    "note": "",
-    "overlay": 0,
-    "priority": 50,
+    "name": "Desert Resolve",
+    "note": "<Custom Passive Condition>\ncondition = user.isStateCategoryAffected('DEBUFF');\n</Custom Passive Condition>\n\n<Help Description>\nIncreases HRG by 10% when afflicted with a debuff.\n</Help Description>",
+    "overlay": 6,
+    "priority": 5,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
@@ -7582,9 +7593,9 @@
   },
   {
     "id": 225,
-    "autoRemovalTiming": 0,
+    "autoRemovalTiming": 1,
     "chanceByDamage": 100,
-    "traits": [],
+    "description": "",
     "iconIndex": 0,
     "maxTurns": 1,
     "message1": "",
@@ -7593,34 +7604,41 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "",
-    "note": "",
+    "name": "Party Guard",
+    "note": "<Alive Ally Aura: 226>\n\n<Custom Apply Effect>\nuser.friends().refreshMembers();\n</Custom APply Effect>\n\n<Custom Remove Effect>\nuser.friends().refreshMembers();\n</Custom Remove Effect>",
     "overlay": 0,
-    "priority": 50,
-    "removeAtBattleEnd": false,
+    "priority": 0,
+    "removeAtBattleEnd": true,
     "removeByDamage": false,
-    "removeByRestriction": false,
+    "removeByRestriction": true,
     "removeByWalking": false,
     "restriction": 0,
-    "stepsToRemove": 100
+    "stepsToRemove": 100,
+    "traits": [
+      {
+        "code": 62,
+        "dataId": 1,
+        "value": 0
+      }
+    ]
   },
   {
     "id": 226,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [],
-    "iconIndex": 0,
-    "maxTurns": 1,
+    "iconIndex": 499,
+    "maxTurns": 10,
     "message1": "",
     "message2": "",
     "message3": "",
     "message4": "",
-    "minTurns": 1,
+    "minTurns": 10,
     "motion": 0,
-    "name": "",
-    "note": "",
+    "name": "Tower Shield",
+    "note": "<Custom React Effect>\nvalue = Math.ceil(value * 0.85);\n</Custom React Effect>\n\n<Help Description>\nProtected by a \\ia[240]. Take 15% less damage.\n</Help Description>",
     "overlay": 0,
-    "priority": 50,
+    "priority": 5,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
