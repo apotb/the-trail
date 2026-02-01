@@ -7558,8 +7558,16 @@
         ]
       },
       {
-        "code": 101,
+        "code": 111,
         "indent": 3,
+        "parameters": [
+          12,
+          "$gameMap.mapId() === 111"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 4,
         "parameters": [
           "People1",
           5,
@@ -7569,10 +7577,47 @@
       },
       {
         "code": 401,
+        "indent": 4,
+        "parameters": [
+          "\\innSee those cots? That's where you'll be sleeping."
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 4,
+        "parameters": []
+      },
+      {
+        "code": 411,
         "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 101,
+        "indent": 4,
+        "parameters": [
+          "People1",
+          5,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 4,
         "parameters": [
           "\\innThere's three rooms available upstairs."
         ]
+      },
+      {
+        "code": 0,
+        "indent": 4,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 3,
+        "parameters": []
       },
       {
         "code": 125,
@@ -7744,8 +7789,16 @@
         ]
       },
       {
-        "code": 101,
+        "code": 111,
         "indent": 4,
+        "parameters": [
+          12,
+          "$gameMap.mapId() === 111"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 5,
         "parameters": [
           "People1",
           5,
@@ -7755,10 +7808,47 @@
       },
       {
         "code": 401,
+        "indent": 5,
+        "parameters": [
+          "\\innSee those cots? That's where you'll be sleeping."
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 5,
+        "parameters": []
+      },
+      {
+        "code": 411,
         "indent": 4,
+        "parameters": []
+      },
+      {
+        "code": 101,
+        "indent": 5,
+        "parameters": [
+          "People1",
+          5,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 5,
         "parameters": [
           "\\innThere's two rooms available upstairs."
         ]
+      },
+      {
+        "code": 0,
+        "indent": 5,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 4,
+        "parameters": []
       },
       {
         "code": 125,
@@ -7912,8 +8002,16 @@
         ]
       },
       {
-        "code": 101,
+        "code": 111,
         "indent": 4,
+        "parameters": [
+          12,
+          "$gameMap.mapId() === 111"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 5,
         "parameters": [
           "People1",
           5,
@@ -7923,10 +8021,47 @@
       },
       {
         "code": 401,
+        "indent": 5,
+        "parameters": [
+          "\\innSee those cots? That's where you'll be sleeping."
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 5,
+        "parameters": []
+      },
+      {
+        "code": 411,
         "indent": 4,
+        "parameters": []
+      },
+      {
+        "code": 101,
+        "indent": 5,
+        "parameters": [
+          "People1",
+          5,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 5,
         "parameters": [
           "\\innThere's a room available upstairs."
         ]
+      },
+      {
+        "code": 0,
+        "indent": 5,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 4,
+        "parameters": []
       },
       {
         "code": 125,

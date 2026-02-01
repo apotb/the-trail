@@ -431,7 +431,7 @@ Game_System.prototype.restoreRareEnemyTries = function() {
 // Small Chests
 
 Game_System.prototype.totalSmallChests = function() {
-    return 38;
+    return 39;
 };
 
 Game_System.prototype.smallChest = function() {
