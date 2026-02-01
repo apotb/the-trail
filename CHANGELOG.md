@@ -70,7 +70,7 @@ NOTICE: Old saves will not work with this update!
   - Reordered smithery crafting menus.
   - Shop sell menu shows if an item is a material.
   - Equipment shows more relevant stats.
-- Changed the color of trees!
+- New trees!
 
 ### Bug Fixes
 - Fixed a bug where the autosave interval wouldn't count down while in menus or battle.
