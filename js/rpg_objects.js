@@ -2085,6 +2085,7 @@ Game_Action.prototype.apply = function(target) {
             this.executeDamage(target, value);
         }
         this.item().effects.forEach(function(effect) {
+            if (this.item().itemCategory?.contains('Meals')) effect = this.duncan(effect); // DUNCAN
             this.applyItemEffect(target, effect);
         }, this);
         this.applyItemUserEffect(target);
@@ -2094,6 +2095,18 @@ Game_Action.prototype.apply = function(target) {
         if (SceneManager._scene._sideStatusWindows[index].children.find(c => c instanceof Window_BattleSideName)) SceneManager._scene._sideStatusWindows[index].children.find(c => c instanceof Window_BattleSideName).refresh()
     }
 };
+
+Game_Action.prototype.duncan = function(effect) {
+    if ($gameParty.pet().name() === "Duncan") {
+        if (effect.code === Game_Action.EFFECT_RECOVER_HP || effect.code === Game_Action.EFFECT_RECOVER_MP) {
+            // Create a shallow copy to avoid modifying original item data
+            effect = Object.assign({}, effect);
+            effect.value1 = Math.floor(effect.value1 * 1.5 * 100) / 100;
+            effect.value2 = Math.floor(effect.value2 * 1.5);
+        }
+    }
+    return effect;
+}
 
 /*Game_Action.prototype.makeDamageValue = function(target, critical) {
     // YEP_DamageCore.js

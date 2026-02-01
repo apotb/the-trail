@@ -16,9 +16,13 @@ NOTICE: Old saves will not work with this update!
 - Added team names.
 - Added royal titles.
 - Added a new fast travel system.
+- Finished the pet shop in Telluria Castle Town! Added 3 new pets:
+  - Arlo
+  - Clover
+  - Duncan
 - Added a short sound effect when completing a quest objective.
 - Added TROPHY rarity.
-- Added 10 items:
+- Added 12 items:
   - Eclipse Potion
   - Desert Gambeson
   - Field Medic Kit
@@ -28,7 +32,9 @@ NOTICE: Old saves will not work with this update!
   - The Warden's Belt (armor)
   - Forgotten General's Helmet (armor)
   - Bronze Gauntlets
-  - Arlo's spawn item
+  - Arlo's Bandana
+  - Clover's Bell
+  - Duncan's Detos
 - Added early-game fishing content and 18 items:
   - Crucian Carp
   - Pond Smelt
@@ -70,6 +76,7 @@ NOTICE: Old saves will not work with this update!
   - Reordered smithery crafting menus.
   - Shop sell menu shows if an item is a material.
   - Equipment shows more relevant stats.
+  - Battle item menu shows multipliers from PHA and other effects like Duncan.
 - New trees!
 
 ### Bug Fixes
