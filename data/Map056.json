@@ -1392,6 +1392,13 @@
           },
           "list": [
             {
+              "code": 108,
+              "indent": 0,
+              "parameters": [
+                "<Icon On Event: 254>"
+              ]
+            },
+            {
               "code": 111,
               "indent": 0,
               "parameters": [
@@ -1494,6 +1501,20 @@
               ]
             },
             {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Just walk up to 'em... they choose you!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "I can manage your pets too!"
+              ]
+            },
+            {
               "code": 123,
               "indent": 1,
               "parameters": [
@@ -1529,6 +1550,20 @@
               ]
             },
             {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Just walk up to 'em... they choose you!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "I can manage your pets too!"
+              ]
+            },
+            {
               "code": 0,
               "indent": 1,
               "parameters": []
@@ -1544,7 +1579,7 @@
               "parameters": [
                 [
                   "Summon pet",
-                  "Remove pet",
+                  "Leave pet <<,a[7].name() === 'Pet'>>",
                   "Goodbye"
                 ],
                 2,
@@ -1562,11 +1597,82 @@
               ]
             },
             {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "People4",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\n<Mimi>Show me your pet's favorite item, and"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "we can get get get it from your home!"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "!$gameParty.items().some(i => i.itemCategory.contains('Pets'))"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "People4",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\n<Mimi>Oh no... looks like you don't have a pet pet pet..."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "the perfect opportunity to buy one of these cuties!!"
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
               "code": 122,
               "indent": 1,
               "parameters": [
-                35,
-                35,
+                78,
+                78,
                 0,
                 0,
                 0
@@ -1576,7 +1682,7 @@
               "code": 355,
               "indent": 1,
               "parameters": [
-                "$gameMap._interpreter._params = [35, \"Pets\"];"
+                "$gameMap._interpreter._params = [78, \"Pets\"];"
               ]
             },
             {
@@ -1594,53 +1700,101 @@
               ]
             },
             {
-              "code": 355,
+              "code": 111,
               "indent": 1,
+              "parameters": [
+                1,
+                78,
+                0,
+                0,
+                5
+              ]
+            },
+            {
+              "code": 221,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 355,
+              "indent": 2,
               "parameters": [
                 "SceneManager._scene._spriteset.destroyAllBShadows()"
               ]
             },
             {
               "code": 655,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
-                ""
+                "const id = $gameVariables.value(78);"
               ]
             },
             {
               "code": 655,
-              "indent": 1,
-              "parameters": [
-                "const id = $gameVariables.value(35);"
-              ]
-            },
-            {
-              "code": 655,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "if (id > 0) $gameParty.addPetFromItem(id);"
               ]
             },
             {
               "code": 655,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "else $gameParty.removePet();"
               ]
             },
             {
               "code": 655,
-              "indent": 1,
-              "parameters": [
-                ""
-              ]
-            },
-            {
-              "code": 655,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "SceneManager._scene._spriteset.createCharacterShadows()"
               ]
+            },
+            {
+              "code": 117,
+              "indent": 2,
+              "parameters": [
+                85
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 2,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 222,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "People4",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\n<Mimi>There's \\N[7]! What a cutie cutie cutie!!"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
             },
             {
               "code": 0,
@@ -1652,21 +1806,83 @@
               "indent": 0,
               "parameters": [
                 1,
-                "Remove pet"
+                "Leave pet <<,a[7].name() === 'Pet'>>"
               ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "$gameParty.pet().name() === 'Pet'"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "You don't have a pet with you."
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "People4",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\n<Mimi>We'll make sure \\N[7] gets back"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "to your home safe safe safe!"
+              ]
+            },
+            {
+              "code": 221,
+              "indent": 1,
+              "parameters": []
             },
             {
               "code": 355,
               "indent": 1,
               "parameters": [
                 "SceneManager._scene._spriteset.destroyAllBShadows()"
-              ]
-            },
-            {
-              "code": 655,
-              "indent": 1,
-              "parameters": [
-                ""
               ]
             },
             {
@@ -1680,15 +1896,27 @@
               "code": 655,
               "indent": 1,
               "parameters": [
-                ""
+                "SceneManager._scene._spriteset.createCharacterShadows()"
               ]
             },
             {
-              "code": 655,
+              "code": 117,
               "indent": 1,
               "parameters": [
-                "SceneManager._scene._spriteset.createCharacterShadows()"
+                85
               ]
+            },
+            {
+              "code": 230,
+              "indent": 1,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 222,
+              "indent": 1,
+              "parameters": []
             },
             {
               "code": 0,
@@ -2353,7 +2581,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\n<Mimi>Aw, it looks like he really likes you!"
+                "\\n<Mimi>Aw, it looks like he really really really likes you!"
               ]
             },
             {
@@ -2409,7 +2637,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "adventurer who wants to find it all!"
+                "adventurer who wants to find it all all all!"
               ]
             },
             {
@@ -2433,7 +2661,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "He's only 3000B!\\$"
+                "He's only 3000 Bits Bits Bits!\\$"
               ]
             },
             {
@@ -2481,7 +2709,7 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\n<Mimi>Yippee! He'll be the best friend you've ever had!"
+                "\\n<Mimi>Yippee! He'll be the best best best friend you've ever had!"
               ]
             },
             {
@@ -2509,7 +2737,7 @@
               "code": 655,
               "indent": 2,
               "parameters": [
-                "$gameParty.addPetFromItem(283);"
+                "$gameParty.addPet('Arlo');"
               ]
             },
             {
@@ -2702,7 +2930,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "waiting right here for you!"
+                "waiting right here for you you you!"
               ]
             },
             {
@@ -2872,21 +3100,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\n<Mimi>Aw, that's Jackson... he's an old boy."
+                "\\n<Mimi>Aw, that's Jackson... he's an old boy. I can"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "I can barely even take him for walks"
+                "barely even take him for walks anymore. It's"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "anymore. It's sad when they age..."
+                "sad sad sad when they age..."
               ]
             },
             {
@@ -3172,7 +3400,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "I literally just just just fed him..."
+                "I literally just fed fed fed him..."
               ]
             },
             {
@@ -3252,7 +3480,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "He's only 3000B!\\$"
+                "He's only 3000 Bits Bits Bits!\\$"
               ]
             },
             {
@@ -3300,7 +3528,7 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\n<Mimi>Yippee! Make sure you watch what he eats!"
+                "\\n<Mimi>Yippee! Make sure you watch what he eats eats eats!"
               ]
             },
             {
@@ -3328,7 +3556,7 @@
               "code": 655,
               "indent": 2,
               "parameters": [
-                "$gameParty.addPetFromItem(285);"
+                "$gameParty.addPet('Duncan');"
               ]
             },
             {
@@ -4138,7 +4366,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "She's only 3000B!\\$"
+                "She's only 3000 Bits Bits Bits!\\$"
               ]
             },
             {
@@ -4186,14 +4414,14 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\n<Mimi>Yippee! She can mostly take care of herself,"
+                "\\n<Mimi>Yippee! She can mostly take care of herself, just make"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "just make sure to play with her now and then!"
+                "sure to play play play with her now and then!"
               ]
             },
             {
@@ -4221,7 +4449,7 @@
               "code": 655,
               "indent": 2,
               "parameters": [
-                "$gameParty.addPetFromItem(284);"
+                "$gameParty.addPet('Clover');"
               ]
             },
             {
@@ -4331,28 +4559,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\n<Mimi>Well, Clover's the last of a long breed of hunting cats!"
+                "\\n<Mimi>Well, Clover's the last of a long breed of hunting cats! A strange"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "A strange experiment started by a Tellurian noble a hundred"
+                "experiment started by a Tellurian noble a hundred years ago..."
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "years ago... dogs proved to be much better, so the project"
+                "dogs proved to be much much much better, so the project was"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "was abandoned. But Clover still has that killer instinct!"
+                "abandoned. But Clover still has that killer instinct!"
               ]
             },
             {
@@ -4646,7 +4874,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "until he quits that habit."
+                "until he quits quits quits that habit."
               ]
             },
             {
@@ -4738,6 +4966,104 @@
       ],
       "x": 8,
       "y": 7
+    },
+    {
+      "id": 10,
+      "name": "EV010",
+      "note": "<shadow>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "People3",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 6
+          },
+          "list": [
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People3",
+                6,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\knightMimi insists on having a pet delivery/retrieval service,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "and the only organization capable of a worldwide operation"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "like that is the Tellurian military. Our hiring costs are"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "absurd, she's going to go out of business at this rate..."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 7,
+      "y": 8
     }
   ]
 }

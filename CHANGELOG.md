@@ -16,7 +16,7 @@ NOTICE: Old saves will not work with this update!
 - Added team names.
 - Added royal titles.
 - Added a new fast travel system.
-- Finished the pet shop in Telluria Castle Town! Added 3 new pets:
+- Finished the pet shop in Telluria Castle Town! See all your collected pets back home! Added 3 new pets:
   - Arlo
   - Clover
   - Duncan
