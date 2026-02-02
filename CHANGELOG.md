@@ -85,6 +85,7 @@ NOTICE: Old saves will not work with this update!
 - Fixed outdated cliff texture in South Field.
 - Fixed wading effect when walking on bridge in South Field.
 - Fixed Seshat's Tome drop beginning in Telluria Field being a 1/10,000 drop rather than a 1/100 drop.
+- Fixed buggy appearance of First Cleric statue in Frozen Labyrinth.
 - Fixed a bunch of other random bugs.
 
 If you happen to stumble upon a "new" item that isn't on here, it's probably because I made a lot of old/bad items more relevant. For example, the Globetrotter Boots, once useless at Telluria Castle Town's tier, now have a much better fit in Solus Valley. So you might be stumbling upon items you never would have even thought to care about in previous versions!
