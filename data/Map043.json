@@ -17422,7 +17422,7 @@
           "image": {
             "tileId": 0,
             "characterName": "People2",
-            "direction": 2,
+            "direction": 4,
             "pattern": 1,
             "characterIndex": 3
           },
@@ -17621,6 +17621,17 @@
               "code": 122,
               "indent": 0,
               "parameters": [
+                96,
+                96,
+                0,
+                0,
+                43
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
                 94,
                 94,
                 0,
@@ -17673,7 +17684,7 @@
           "walkAnime": true
         }
       ],
-      "x": 10,
+      "x": 11,
       "y": 38
     },
     {
@@ -22077,7 +22088,7 @@
           "image": {
             "tileId": 0,
             "characterName": "People2",
-            "direction": 8,
+            "direction": 6,
             "pattern": 1,
             "characterIndex": 4
           },
@@ -22127,7 +22138,7 @@
         }
       ],
       "x": 10,
-      "y": 39
+      "y": 38
     },
     {
       "id": 63,

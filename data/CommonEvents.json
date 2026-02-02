@@ -11456,11 +11456,6 @@
     "id": 55,
     "list": [
       {
-        "code": 115,
-        "indent": 0,
-        "parameters": []
-      },
-      {
         "code": 108,
         "indent": 0,
         "parameters": [
@@ -11606,11 +11601,6 @@
         "parameters": [
           "$gameTemp.reserveCommonEvent(70);"
         ]
-      },
-      {
-        "code": 0,
-        "indent": 0,
-        "parameters": []
       },
       {
         "code": 0,
@@ -14210,7 +14200,7 @@
         "code": 355,
         "indent": 0,
         "parameters": [
-          "Galv.MAPT.setLocation(0,\"Solus Town\",\"loc_solus_town\",2016,276,9,8,28,\"Home sweet home. Not much to do here, though.\",1,86,8);"
+          "Galv.MAPT.setLocation(0,\"Solus Town\",\"loc_solus_town\",2016,276,9,8,28,\"Home sweet home. Not much to do here, though.\",1,80,15);"
         ]
       },
       {
@@ -14267,7 +14257,7 @@
         "code": 355,
         "indent": 1,
         "parameters": [
-          "Galv.MAPT.setLocation(0,\"Frozen Labyrinth\",\"loc_frozen_labyrinth\",948,732,207,29,40,\"A remote dungeon in the frigid corner of Telluria Field.\",1,42,27);"
+          "Galv.MAPT.setLocation(0,\"Frozen Labyrinth\",\"loc_frozen_labyrinth\",948,732,207,29,40,\"A remote dungeon in the frigid corner of Telluria Field.\",1,43,32);"
         ]
       },
       {
@@ -14603,8 +14593,8 @@
         "code": 122,
         "indent": 0,
         "parameters": [
-          96,
-          96,
+          88,
+          88,
           0,
           0,
           8
@@ -14615,11 +14605,18 @@
         "indent": 0,
         "parameters": [
           1,
-          96,
+          88,
           94,
           95,
           2,
           2
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          37
         ]
       },
       {
@@ -14766,30 +14763,33 @@
         ]
       },
       {
-        "code": 111,
+        "code": 108,
         "indent": 0,
         "parameters": [
-          1,
-          94,
-          0,
-          76,
-          0
+          "* Solus Valley Helper"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Solus Valley - Start"
         ]
       },
       {
         "code": 111,
-        "indent": 1,
+        "indent": 0,
         "parameters": [
           1,
-          95,
+          96,
           0,
-          115,
+          83,
           0
         ]
       },
       {
         "code": 205,
-        "indent": 2,
+        "indent": 1,
         "parameters": [
           -1,
           {
@@ -14813,12 +14813,95 @@
       },
       {
         "code": 505,
-        "indent": 2,
+        "indent": 1,
         "parameters": [
           {
             "code": 45,
             "parameters": [
               "MOVE TO: 94, 118"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Verdin Village - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Solus Valley - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          20,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          83,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 110, 19"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 110, 19"
             ],
             "indent": null
           }
@@ -14843,6 +14926,1329 @@
         "code": 412,
         "indent": 0,
         "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Campsite - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Solus Valley - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          34,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          83,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 98, 35"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 110, 19"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 98, 35"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 110, 19"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Laeryidyean's Forest - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Solus Town - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          167,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          9,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 99, 107"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 99, 107"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Solus Valley - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Verdin Village - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          83,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          20,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 110, 19"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 110, 19"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Solus Valley - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Haven Harbor - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          83,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          43,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 96, 98"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 96, 98"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Solus Valley - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Telluria Castle - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          83,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          183,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 99, 107"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 80, 61"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 99, 107"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 80, 61"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Telluria Castle - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Laeryidyean's Forest - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          183,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          167,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 80, 61"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 80, 61"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Telluria Castle - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Solus Valley - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          183,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          83,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 80, 61"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 99, 107"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 80, 61"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 99, 107"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Frozen Labyrinth - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Verdin Village - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          207,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          20,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 48, 27"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 48, 27"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Frozen Labyrinth - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Campsite - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          207,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          34,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 48, 27"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 48, 27"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Frozen Labyrinth - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Haven Harbor - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          207,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          43,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 48, 27"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 48, 27"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Frozen Labyrinth - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Laeryidyean's Forest - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          207,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          167,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 45, 62"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 80, 61"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 45, 62"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 80, 61"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Frozen Labyrinth - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Solus Valley - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          207,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          83,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 48, 27"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 79, 13"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 48, 27"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 79, 13"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Frozen Labyrinth - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Telluria Castle - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          207,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          183,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 45, 62"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 45, 62"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "* Solus Valley Helper"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Solus Valley - Target"
+        ]
       },
       {
         "code": 111,
@@ -14901,6 +16307,13 @@
         "code": 412,
         "indent": 0,
         "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Begin Movement Loop"
+        ]
       },
       {
         "code": 112,
@@ -15163,6 +16576,13 @@
           80,
           0,
           2
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          37
         ]
       },
       {

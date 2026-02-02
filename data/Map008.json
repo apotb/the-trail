@@ -15111,7 +15111,7 @@
     2914,
     2948,
     2088,
-    2076,
+    2060,
     2076,
     2056,
     2048,
@@ -15249,10 +15249,10 @@
     2912,
     2912,
     2912,
-    2914,
-    2932,
-    2932,
-    2948,
+    2918,
+    2957,
+    2080,
+    2954,
     2088,
     2076,
     2056,
@@ -15389,10 +15389,10 @@
     2912,
     2912,
     2912,
-    2912,
-    2912,
-    2912,
-    2914,
+    2936,
+    2083,
+    2087,
+    2929,
     2932,
     2948,
     2088,
@@ -15528,11 +15528,11 @@
     2912,
     2912,
     2912,
-    2912,
-    2912,
-    2912,
-    2912,
-    2912,
+    2916,
+    2950,
+    2080,
+    2946,
+    2913,
     2912,
     2914,
     2948,
@@ -15668,10 +15668,10 @@
     2912,
     2912,
     2912,
-    2912,
-    2912,
-    2912,
-    2912,
+    2936,
+    2083,
+    2087,
+    2928,
     2916,
     2940,
     2940,
@@ -15808,10 +15808,10 @@
     2912,
     2912,
     2912,
-    2912,
-    2912,
-    2916,
-    2940,
+    2936,
+    2080,
+    2947,
+    2941,
     2950,
     2082,
     2068,
@@ -15948,9 +15948,9 @@
     2912,
     2912,
     2916,
-    2940,
-    2940,
     2950,
+    2080,
+    2956,
     2082,
     2068,
     2049,
@@ -16089,7 +16089,7 @@
     2912,
     2936,
     2082,
-    2068,
+    2051,
     2068,
     2049,
     2048,
@@ -34709,7 +34709,7 @@
     2988,
     2998,
     0,
-    0,
+    3098,
     0,
     0,
     0,
@@ -34849,10 +34849,10 @@
     0,
     0,
     0,
-    0,
-    3099,
-    3089,
+    3075,
     3101,
+    0,
+    3098,
     0,
     0,
     0,
@@ -34989,11 +34989,11 @@
     3099,
     3093,
     0,
+    3100,
     0,
     0,
-    0,
-    0,
-    0,
+    3073,
+    3092,
     0,
     0,
     0,
@@ -35131,9 +35131,9 @@
     3093,
     0,
     0,
-    0,
-    0,
-    0,
+    3099,
+    3085,
+    3094,
     0,
     0,
     0,
@@ -60039,7 +60039,7 @@
     0,
     0,
     0,
-    3,
+    0,
     0,
     0,
     0,
@@ -60872,7 +60872,7 @@
     0,
     0,
     0,
-    0,
+    3,
     0,
     0,
     0,
@@ -62655,7 +62655,7 @@
     0,
     0,
     0,
-    3,
+    0,
     0,
     0,
     0,
@@ -63354,7 +63354,7 @@
     0,
     0,
     0,
-    0,
+    3,
     0,
     0,
     0,
@@ -117686,13 +117686,6 @@
           "walkAnime": true,
           "list": [
             {
-              "code": 355,
-              "indent": 0,
-              "parameters": [
-                "Galv.MAPT.openMap(0);"
-              ]
-            },
-            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -130081,8 +130074,8 @@
                 0,
                 0,
                 8,
-                42,
-                27
+                43,
+                32
               ]
             },
             {
@@ -130223,8 +130216,8 @@
                 1,
                 0,
                 8,
-                42,
-                27
+                43,
+                32
               ]
             },
             {
@@ -130264,8 +130257,8 @@
                 0,
                 0,
                 8,
-                44,
-                27
+                41,
+                33
               ]
             },
             {
@@ -130330,8 +130323,8 @@
           "walkAnime": true
         }
       ],
-      "x": 43,
-      "y": 27
+      "x": 42,
+      "y": 32
     },
     {
       "id": 89,
@@ -133162,7 +133155,117 @@
       "x": 68,
       "y": 113
     },
-    null,
+    {
+      "id": 104,
+      "name": "EV104",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "B",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 104,
+            "characterName": "",
+            "characterIndex": 0,
+            "direction": 2,
+            "pattern": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 112,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 104,
+            "characterName": "",
+            "characterIndex": 0,
+            "direction": 2,
+            "pattern": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 2,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 98,
+      "y": 110
+    },
     {
       "id": 105,
       "name": "EV105",
@@ -135760,8 +135863,8 @@
                 0,
                 0,
                 8,
-                86,
-                8
+                80,
+                15
               ]
             },
             {
@@ -135902,8 +136005,8 @@
                 1,
                 0,
                 8,
-                88,
-                8
+                80,
+                15
               ]
             },
             {
@@ -135943,8 +136046,8 @@
                 0,
                 0,
                 8,
-                86,
-                8
+                79,
+                13
               ]
             },
             {
@@ -136009,8 +136112,8 @@
           "walkAnime": true
         }
       ],
-      "x": 87,
-      "y": 8
+      "x": 80,
+      "y": 14
     },
     {
       "id": 120,
@@ -154878,7 +154981,7 @@
               "code": 355,
               "indent": 1,
               "parameters": [
-                "Galv.MAPT.setLocation(0,\"Frozen Labyrinth\",\"loc_frozen_labyrinth\",948,732,207,29,40,\"A remote dungeon in the frigid corner of Telluria Field.\",1,42,27);"
+                "Galv.MAPT.setLocation(0,\"Frozen Labyrinth\",\"loc_frozen_labyrinth\",948,732,207,29,40,\"A remote dungeon in the frigid corner of Telluria Field.\",1,43,32);"
               ]
             },
             {
