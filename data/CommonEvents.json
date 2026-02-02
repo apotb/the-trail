@@ -14370,35 +14370,49 @@
         "code": 355,
         "indent": 0,
         "parameters": [
-          "var x1 = $gameVariables.value(94);"
+          "var x1 = $gameVariables.value(94), y1 = $gameVariables.value(95);"
         ]
       },
       {
         "code": 655,
         "indent": 0,
         "parameters": [
-          "var y1 = $gameVariables.value(95);"
+          "var x2 = $gameVariables.value(91), y2 = $gameVariables.value(92);"
         ]
       },
       {
         "code": 655,
         "indent": 0,
         "parameters": [
-          "var x2 = $gameVariables.value(91);"
+          "var mapWidth = 140, mapHeight = 140;"
         ]
       },
       {
         "code": 655,
         "indent": 0,
         "parameters": [
-          "var y2 = $gameVariables.value(92);"
+          "var dx = Math.abs(x2 - x1), dy = Math.abs(y2 - y1);"
         ]
       },
       {
         "code": 655,
         "indent": 0,
         "parameters": [
-          "var d = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));"
+          "dx = Math.min(dx, mapWidth - dx);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "dy = Math.min(dy, mapHeight - dy);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "var d = Math.sqrt(dx * dx + dy * dy);"
         ]
       },
       {
