@@ -4221,7 +4221,7 @@
   {
     "id": 140,
     "animationId": 0,
-    "consumable": true,
+    "consumable": false,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -4229,17 +4229,17 @@
       "type": 0,
       "variance": 20
     },
-    "description": "",
+    "description": "An endorsement from a leader of a Southern Tellurian city.\nBring 3 to Lord Smirnoff to become a Tellurian knight!",
     "effects": [],
     "hitType": 0,
-    "iconIndex": 0,
-    "itypeId": 1,
-    "name": "",
-    "note": "Was once the Jump Feather.",
-    "occasion": 0,
+    "iconIndex": 235,
+    "itypeId": 2,
+    "name": "Sealed Writ",
+    "note": "<Rarity: 2>\n\nWas once the Jump Feather.",
+    "occasion": 3,
     "price": 0,
     "repeats": 1,
-    "scope": 7,
+    "scope": 0,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0

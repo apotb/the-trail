@@ -22,20 +22,21 @@ NOTICE: Old saves will not work with this update!
   - Duncan
 - Added a short sound effect when completing a quest objective.
 - Added TROPHY rarity.
-- Added 13 items:
+- Added 14 items:
   - Eclipse Potion
   - Desert Gambeson
   - Field Medic Kit
   - Tower Shield
   - Bronze Gauntlets
   - Smirnoff's Lightning Lance
-  - Arlo's Bandana
-  - Clover's Bell
-  - Duncan's Detos
   - Giant Goblin's Fang (weapon)
   - Henry's Boots (armor)
   - The Warden's Belt (armor)
   - Forgotten General's Helmet (armor)
+  - Arlo's Bandana
+  - Clover's Bell
+  - Duncan's Detos
+  - Sealed Writ
 - Added early-game fishing content and 18 items:
   - Crucian Carp
   - Pond Smelt
