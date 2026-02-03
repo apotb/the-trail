@@ -2570,5 +2570,53 @@
     ],
     "price": 0,
     "wtypeId": 1
+  },
+  {
+    "id": 68,
+    "animationId": 15,
+    "description": "Ripped from the hands of Baron Smirnoff. A powerful two-handed\nweapon imbued with \\nl[4] energy. Can apply \\it[52].",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 17,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 4,
+        "value": 0
+      },
+      {
+        "code": 54,
+        "dataId": 2,
+        "value": 1
+      },
+      {
+        "code": 32,
+        "dataId": 52,
+        "value": 0.5
+      }
+    ],
+    "iconIndex": 1208,
+    "name": "Smirnoff's Lightning Lance",
+    "note": "<Rarity: 11>\n<Menu Category: Memorabilia>\n<Weapon Image: 146>\n<Upgrade Slots: 2>\n\n<Element Amplify Electric: +10%>",
+    "params": [
+      0,
+      15,
+      24,
+      6,
+      30,
+      0,
+      -12,
+      0
+    ],
+    "price": 0,
+    "wtypeId": 6
   }
 ]

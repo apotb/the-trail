@@ -10,8 +10,8 @@ NOTICE: Old saves will not work with this update!
 ### Additions
 - Added a LOT of new content before Telluria Field, including:
   - Northern/Southern Desert Garrison
-  - New characters
   - Several new quests
+  - A new boss fight...
 - Added random name generation.
 - Added team names.
 - Added royal titles.
@@ -22,19 +22,20 @@ NOTICE: Old saves will not work with this update!
   - Duncan
 - Added a short sound effect when completing a quest objective.
 - Added TROPHY rarity.
-- Added 12 items:
+- Added 13 items:
   - Eclipse Potion
   - Desert Gambeson
   - Field Medic Kit
   - Tower Shield
+  - Bronze Gauntlets
+  - Smirnoff's Lightning Lance
+  - Arlo's Bandana
+  - Clover's Bell
+  - Duncan's Detos
   - Giant Goblin's Fang (weapon)
   - Henry's Boots (armor)
   - The Warden's Belt (armor)
   - Forgotten General's Helmet (armor)
-  - Bronze Gauntlets
-  - Arlo's Bandana
-  - Clover's Bell
-  - Duncan's Detos
 - Added early-game fishing content and 18 items:
   - Crucian Carp
   - Pond Smelt
@@ -68,6 +69,7 @@ NOTICE: Old saves will not work with this update!
   - To make this easier to figure out, equipment types are shown next to rarity.
 - Red Slimes and Bats no longer drop Copper/Iron Clusters and Coal.
   - This is compensated by 12 new ore nodes in Goblin Grotto, half of which are oreleaf.
+- Bubble is now guaranteed to apply Soaked.
 - Made Goblins weaker to magic.
 - Made Bats more resistant to magic.
 - Reduced drop rate of Ring of the Woods/Forest.
@@ -81,6 +83,7 @@ NOTICE: Old saves will not work with this update!
 
 ### Bug Fixes
 - Fixed a bug where the autosave interval wouldn't count down while in menus or battle.
+- Fixed Soaked not doubling incoming Electric damage.
 - Fixed a bug where Copper Oreleaf couldn't drop Rock Salt.
 - Fixed outdated cliff texture in South Field.
 - Fixed wading effect when walking on bridge in South Field.

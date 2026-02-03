@@ -1270,12 +1270,12 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Smack an enemy with a few bubbles. Can soak the target, changing their element\nrates and reducing their AGI and EVA. \\c[27]\\bpdamage[300]%\\c[0] MAT rate.",
+    "description": "Smack an enemy with a few bubbles. Makes the target \\it[33], changing their element\nrates and reducing their AGI and EVA. \\c[27]\\bpdamage[300]%\\c[0] MAT rate.",
     "effects": [
       {
         "code": 21,
         "dataId": 33,
-        "value1": 0.25,
+        "value1": 1,
         "value2": 0
       }
     ],
@@ -1307,12 +1307,12 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Drench the entire enemy team with water. Despite the sheer\nvolume of water, the soaked debuff still isn't always applied.",
+    "description": "Drench the entire enemy team with water.\nApplies the \\it[33] debuff.",
     "effects": [
       {
         "code": 21,
         "dataId": 33,
-        "value1": 0.33,
+        "value1": 1,
         "value2": 0
       }
     ],
@@ -1320,7 +1320,7 @@
     "iconIndex": 1392,
     "message1": " casts %1!",
     "message2": "",
-    "mpCost": 18,
+    "mpCost": 25,
     "name": "Waterfall",
     "note": "<Critical Multiplier Formula>\nif (user.isEnemy()) value *= 0;\n</Critical Multiplier Formula>\n\n<action copy: skill:29>",
     "occasion": 1,
@@ -5445,6 +5445,43 @@
     "scope": 11,
     "speed": 0,
     "stypeId": 3,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 157,
+    "animationId": 76,
+    "damage": {
+      "critical": true,
+      "elementId": 4,
+      "formula": "// Damage Formula",
+      "type": 1,
+      "variance": 5
+    },
+    "description": "Summon a terrifying electric field on the battlefield.\n10 lightning strikes will quickly pepper your enemies.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 52,
+        "value1": 0.1,
+        "value2": 0
+      }
+    ],
+    "hitType": 2,
+    "iconIndex": 1483,
+    "message1": " summons a lightning storm!",
+    "message2": "",
+    "mpCost": 67,
+    "name": "Lightning Storm",
+    "note": "<Damage Formula>\nthis._chain = this._chain || 1;\nvalue = a.mat * 2 - b.mdf * 2;\n// value /= this._chain;\nthis._chain++;\n</Damage Formula>\n\n<Custom Target Eval>\n// Fix for #9\nif (user.isEnemy()) {\n  id = Math.floor(Math.random() * foes.aliveMembers().length);\n  target = foes.aliveMembers()[id];\n}\n// Adds the selected target to the target list.\ntargets.push(target);\n// Grab the group of alive foes as candidates.\nvar members = foes.aliveMembers().filter(member => {\n  if (member.hasState(211)) return false; // Sentinel Statue\n  return true;\n});\n// This is the number of extra targets to select with Chain Lightning.\nvar extraTargets = 9\n// Loop the extra targets.\nwhile (extraTargets--) {\n  // Grab a random foe from the alive foes.\n  var member = members[Math.floor(Math.random() * members.length)];\n  // Check to see if the member exists.\n  if (member) {\n    // Add the member to the group of targets.\n    targets.push(member);\n  }\n}\n</Custom Target Eval>\n\n<setup action>\nmotion chant: user\nwait: 30\ntint screen: dark, 60\nwait: 30\nmotion spell: user\nanimation 78: user\nwait for animation\n</setup action>\n\n<whole action>\n</whole action>\n\n<target action>\naction animation\nwait: 5\naction effect\nwait: 5\nclear battle log\n</target action>\n\n<follow action>\ntint screen: normal, 60\neval: user._storms = (user._storms || 0) + 1;\n</follow action>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 2,
+    "speed": 0,
+    "stypeId": 2,
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0

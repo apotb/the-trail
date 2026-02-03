@@ -1139,6 +1139,11 @@
         "code": 11,
         "dataId": 3,
         "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 4,
+        "value": 2
       }
     ],
     "iconIndex": 107,
@@ -1150,7 +1155,7 @@
     "minTurns": 5,
     "motion": 0,
     "name": "Soaked",
-    "note": "<Category: Water>\n<Category: debuff>\n<Category: weak debuff>\n<Category: Bypass Death Removal>\n\n<animationRow:21>\n<yAnchor: 0.75>\n\n<Help Description>\nDecreases AGI by 50% and EVA by 20%. Doubles incoming \\nl[3] damage.\n</Help Description>",
+    "note": "<Category: Water>\n<Category: debuff>\n<Category: weak debuff>\n<Category: Bypass Death Removal>\n\n<animationRow:21>\n<yAnchor: 0.75>\n\n<Help Description>\nDecreases AGI by 50% and EVA by 20%. Doubles incoming \\nl[3] and \\nl[4] damage.\n</Help Description>",
     "overlay": 0,
     "priority": 48,
     "removeAtBattleEnd": false,
