@@ -27468,6 +27468,65 @@
               ]
             },
             {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                0,
+                119,
+                1
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "The game will periodically autosave."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Interval can be adjusted in options."
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 1,
+              "parameters": [
+                119,
+                119,
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameSystem.forceAutosave();"
+              ]
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -29775,7 +29834,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2Cooking's, like, my thing. Arguably more than"
+                "\\p2Cooking's sorta' my thing. Arguably more than"
               ]
             },
             {
@@ -38740,7 +38799,7 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 0,
             "characterName": "People4",
@@ -38802,6 +38861,148 @@
               "indent": 0,
               "parameters": [
                 "They should grow back pretty quickly."
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 36,
+                      "indent": null
+                    },
+                    {
+                      "code": 18,
+                      "indent": null
+                    },
+                    {
+                      "code": 35,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 36,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 18,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 35,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People4",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\vilYou can pick flowers too! Pick enough and"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "you can sell them for a quick buck..."
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 36,
+                      "indent": null
+                    },
+                    {
+                      "code": 19,
+                      "indent": null
+                    },
+                    {
+                      "code": 35,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 36,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 19,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 35,
+                  "indent": null
+                }
               ]
             },
             {
