@@ -543,12 +543,12 @@ Game_System.prototype.battleTemplate = function(name) {
 // Chapters
 
 Game_System.prototype.chapter = function() {
-    if ($gameVariables.value(84) >= 17)             return 6;
-    if ($gameSwitches.value(109))                   return 5;
-    if ($gameSwitches.value(82))                    return 4;
-    if ($gameSelfSwitches.value([11, 12, 'A']))     return 3;
-    if ($gameVariables.value(3) >= 8)               return 2;
-    if ($gameVariables.value(2) >= 11)              return 1;
+    if ($gameVariables.value(84) >= 17)                 return 6;
+    if ($gameSwitches.value(109))                       return 5;
+    if ($gameSwitches.value(82))                        return 4;
+    if ($gameSystem.isQuestObjectiveCompleted(4, 1))    return 3;
+    if ($gameVariables.value(3) >= 8)                   return 2;
+    if ($gameVariables.value(2) >= 11)                  return 1;
     return 0;
 };
 
