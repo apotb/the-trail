@@ -3064,6 +3064,7 @@ Game_BattlerBase.prototype.isEquipTypeSealed = function(etypeId) {
 
 Game_BattlerBase.prototype.slotType = function() {
     var set = this.traitsSet(Game_BattlerBase.TRAIT_SLOT_TYPE);
+    if (this.equips()[1]?.traits.some(t => t.code === Game_BattlerBase.TRAIT_SLOT_TYPE && t.value === 1)) set.splice(0, 1); // Dual wield fix
     return set.length > 0 ? Math.max.apply(null, set) : 0;
 };
 

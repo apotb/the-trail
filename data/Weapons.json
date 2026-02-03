@@ -114,6 +114,11 @@
         "code": 31,
         "dataId": 15,
         "value": 0
+      },
+      {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
       }
     ],
     "iconIndex": 150,
@@ -411,6 +416,11 @@
         "code": 31,
         "dataId": 15,
         "value": 0
+      },
+      {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
       }
     ],
     "iconIndex": 150,
@@ -477,6 +487,11 @@
         "code": 31,
         "dataId": 15,
         "value": 0
+      },
+      {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
       }
     ],
     "iconIndex": 384,
@@ -578,6 +593,11 @@
         "value": 0
       },
       {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
+      },
+      {
         "code": 32,
         "dataId": 34,
         "value": 0.1
@@ -614,6 +634,11 @@
         "code": 31,
         "dataId": 16,
         "value": 0
+      },
+      {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
       },
       {
         "code": 32,
@@ -862,6 +887,11 @@
         "value": 0
       },
       {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
+      },
+      {
         "code": 32,
         "dataId": 34,
         "value": 0.16
@@ -1095,6 +1125,11 @@
         "code": 31,
         "dataId": 15,
         "value": 0
+      },
+      {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
       },
       {
         "code": 22,
@@ -1611,6 +1646,11 @@
         "value": 0
       },
       {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
+      },
+      {
         "code": 32,
         "dataId": 34,
         "value": 0.2
@@ -1766,6 +1806,11 @@
         "code": 31,
         "dataId": 16,
         "value": 0
+      },
+      {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
       },
       {
         "code": 32,
@@ -1925,6 +1970,11 @@
         "value": 0
       },
       {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
+      },
+      {
         "code": 32,
         "dataId": 8,
         "value": 0.1
@@ -1971,6 +2021,11 @@
         "code": 31,
         "dataId": 16,
         "value": 0
+      },
+      {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
       },
       {
         "code": 32,
@@ -2052,6 +2107,11 @@
         "code": 31,
         "dataId": 16,
         "value": 0
+      },
+      {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
       },
       {
         "code": 32,
@@ -2259,6 +2319,11 @@
         "value": 0
       },
       {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
+      },
+      {
         "code": 32,
         "dataId": 7,
         "value": 0.2
@@ -2295,6 +2360,11 @@
         "code": 31,
         "dataId": 16,
         "value": 0
+      },
+      {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
       },
       {
         "code": 32,
@@ -2381,6 +2451,11 @@
         "code": 31,
         "dataId": 15,
         "value": 0
+      },
+      {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
       },
       {
         "code": 22,
@@ -2531,7 +2606,7 @@
   {
     "id": 67,
     "animationId": 6,
-    "description": "An extremely large fang. Its tip\nis sharp enough to cut rocks.",
+    "description": "An extremely large fang. Its tip is sharp enough to cut rocks.\nRequires the strength of both hands to wield in battle.",
     "etypeId": 1,
     "traits": [
       {
@@ -2541,8 +2616,13 @@
       },
       {
         "code": 31,
-        "dataId": 15,
+        "dataId": 17,
         "value": 0
+      },
+      {
+        "code": 54,
+        "dataId": 2,
+        "value": 1
       },
       {
         "code": 22,

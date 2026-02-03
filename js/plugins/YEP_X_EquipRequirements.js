@@ -431,6 +431,7 @@ DataManager.defaultClassRestrictions = function(obj) {
       case 1:  // Generic
       case 8:  // Gambeson
       case 9:  // Chainmail
+      case 6:  // Light Shield
       case 11: // Gloves
       case 12: // Wristbraces
       case 13: // Necklace
@@ -438,8 +439,6 @@ DataManager.defaultClassRestrictions = function(obj) {
       case 15: // Scarf
       case 16: // Crystal
         return;
-      case 6:  // Light Shield
-        return [1, 2, 3];
       case 2:  // Plate Armor
       case 7:  // Heavy Shield
         return 1;
@@ -579,6 +578,7 @@ Game_BattlerBase.prototype.meetAllEquipRequirements = function(item, slot=-1) {
     (e.atypeId === 15 && item.atypeId === 15) || // Scarf
     (e.atypeId === 16 && item.atypeId === 16)    // Crystal
   ) && i !== slot && e !== item)) return false; // No duplicates, including certain armor types
+  if (!item.traits.some(t => t.code === Game_BattlerBase.TRAIT_SLOT_TYPE && t.value === 1) && slot === 1) return false; // Dual wield fix
   if (!this.checkEquipRequirements(item)) return false; // Per-item equip requirements
   return true;
 };

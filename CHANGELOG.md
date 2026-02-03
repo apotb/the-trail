@@ -57,6 +57,7 @@ NOTICE: Old saves will not work with this update!
   - Enchanted Rod
 
 ### Changes
+- Player 4 can now use shields! Equip a dagger or knuckles in her 1st weapon slot to use her dual wield.
 - Revamped most of the game up to Telluria Field.
   - The game now begins in Verdin Village.
   - Time is ticking as soon as you start.
