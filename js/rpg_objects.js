@@ -5499,7 +5499,7 @@ Game_Party.prototype.name = function() {
     } else if (numBattleMembers === 1) {
         return this.leader().name();
     } else {
-        return TextManager.partyName.format(this.leader().name());
+        return this.teamName() !=='An adventuring party' ? this.teamName() : TextManager.partyName.format(this.leader().name());
     }
 };
 
