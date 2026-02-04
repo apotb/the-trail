@@ -11,9 +11,9 @@ Game_Actor.prototype.isFemale = function() {
 };
 
 Game_Actor.prototype.title = function() {
-    this._title = this._title || 0;
+    let titleId = this._title || Number(this.actor().meta['Title']);
     let pair = [];
-    switch (this._title) {
+    switch (titleId) {
         case 0: pair = ["Commoner", "Commoner"]; break;
         case 1: pair = ["Acolyte", "Acolyte"]; break;
         case 2: pair = ["Squire", "Squire"]; break;
@@ -32,13 +32,13 @@ Game_Actor.prototype.title = function() {
 };
 
 Game_Actor.prototype.titleEx = function() {
-    let title = this._title || 0;
+    let titleId = this._title || Number(this.actor().meta['Title']);
     let rarity = 0;
-    if (title >= 11) rarity = 5;
-    else if (title >= 9) rarity = 4;
-    else if (title >= 7) rarity = 3;
-    else if (title >= 4) rarity = 2;
-    else if (title >= 2) rarity = 1;
+    if (titleId >= 11) rarity = 5;
+    else if (titleId >= 9) rarity = 4;
+    else if (titleId >= 7) rarity = 3;
+    else if (titleId >= 4) rarity = 2;
+    else if (titleId >= 2) rarity = 1;
     let color = RARITY_COLOR_CODES[rarity] || 0;
     title = `\\fb\\c[${color}]${this.title().toUpperCase()}\\c[0]\\fr`;
     return title;
