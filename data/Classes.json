@@ -117,11 +117,6 @@
         "skillId": 148
       },
       {
-        "level": 1,
-        "note": "",
-        "skillId": 127
-      },
-      {
         "level": 3,
         "note": "",
         "skillId": 3
@@ -2224,7 +2219,7 @@
       }
     ],
     "name": "Cleric",
-    "note": "<Icon: 463>\n\n<Equip Slot>\nWeapon\nOffhand\nHead\nBody\nFeet\nAccessory\nAccessory\nAccessory\nM. Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nHP% param <= 25%: Cure II, Lowest HP%\nHP% param <= 50%: Cure I, Lowest HP%\nRandom 50%: Shield of Faith, Lowest HP\nAlways: Channel Divinity I, Lowest MDF\nAlways: Mana Wisp, Lowest MDF\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 56 + Math.floor(level / 5);\n</Custom LUK Formula>",
+    "note": "<Icon: 463>\n\n<Equip Slot>\nWeapon\nOffhand\nHead\nBody\nFeet\nAccessory\nAccessory\nAccessory\nM. Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nHP% param <= 30%: Cure II, Lowest HP%\nHP% param <= 60%: Cure I, Lowest HP%\nRandom 50%: Shield of Faith, Lowest HP\nAlways: Channel Divinity I, Lowest MDF\nAlways: Mana Wisp, Lowest MDF\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 56 + Math.floor(level / 5);\n</Custom LUK Formula>",
     "params": [
       [
         1,
@@ -3217,7 +3212,7 @@
       }
     ],
     "name": "Rogue",
-    "note": "<Icon: 466>\n\n<Equip Slot>\nWeapon\nOffhand\nHead\nBody\nFeet\nAccessory\nAccessory\nAccessory\nM. Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nState !== Sharpened Dagger +++ User HP% param >= 30%: Sharpen Dagger, User\nAlways: Attack\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 52 + Math.floor(level / 5);\n</Custom LUK Formula>",
+    "note": "<Icon: 466>\n\n<Equip Slot>\nWeapon\nOffhand\nHead\nBody\nFeet\nAccessory\nAccessory\nAccessory\nM. Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nState !== Sharpened Dagger +++ User HP% param >= 30%: Sharpen Dagger, User\nAlways: Attack, Lowest HP\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 52 + Math.floor(level / 5);\n</Custom LUK Formula>",
     "params": [
       [
         0,

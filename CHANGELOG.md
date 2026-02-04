@@ -71,16 +71,17 @@ NOTICE: Old saves will not work with this update!
   - To make this easier to figure out, equipment types are shown next to rarity.
 - Red Slimes and Bats no longer drop Copper/Iron Clusters and Coal.
   - This is compensated by 12 new ore nodes in Goblin Grotto, half of which are oreleaf.
-- Bubble is now guaranteed to apply Soaked.
-- Made Goblins weaker to magic.
-- Made Bats more resistant to magic.
-- Reduced drop rate of Ring of the Woods/Forest.
-- Buffed Earthen Grassrobes Earth resistance from 10% to 25%.
 - Menu improvements:
   - Reordered smithery crafting menus.
   - Shop sell menu shows if an item is a material.
   - Equipment shows more relevant stats.
   - Battle item menu shows multipliers from PHA and other effects like Duncan.
+- Bubble is now guaranteed to apply Soaked.
+- Made Goblins weaker to magic.
+- Made Bats more resistant to magic.
+- Reduced drop rate of Ring of the Woods/Forest.
+- Buffed Earthen Grassrobes Earth resistance from 10% to 25%.
+- All levels of Well Fed last 33% more steps.
 - New trees!
 
 ### Bug Fixes
