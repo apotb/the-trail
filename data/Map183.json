@@ -71336,7 +71336,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\knightWhat's this? You are the \\N[9],"
+                "\\knightWhat's this? You are the \\N[19],"
               ]
             },
             {
@@ -86967,7 +86967,7 @@
               "code": 205,
               "indent": 0,
               "parameters": [
-                14,
+                179,
                 {
                   "list": [
                     {
@@ -87018,7 +87018,7 @@
               "code": 205,
               "indent": 0,
               "parameters": [
-                16,
+                186,
                 {
                   "list": [
                     {
@@ -87069,7 +87069,7 @@
               "code": 205,
               "indent": 0,
               "parameters": [
-                15,
+                187,
                 {
                   "list": [
                     {
@@ -87250,7 +87250,7 @@
               "code": 205,
               "indent": 0,
               "parameters": [
-                13,
+                179,
                 {
                   "list": [
                     {
@@ -87281,7 +87281,7 @@
               "code": 205,
               "indent": 0,
               "parameters": [
-                14,
+                180,
                 {
                   "list": [
                     {
@@ -87312,11 +87312,11 @@
               "code": 205,
               "indent": 0,
               "parameters": [
-                15,
+                186,
                 {
                   "list": [
                     {
-                      "code": 18,
+                      "code": 19,
                       "indent": null
                     },
                     {
@@ -87334,7 +87334,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "code": 18,
+                  "code": 19,
                   "indent": null
                 }
               ]
@@ -87343,11 +87343,11 @@
               "code": 205,
               "indent": 0,
               "parameters": [
-                16,
+                187,
                 {
                   "list": [
                     {
-                      "code": 17,
+                      "code": 19,
                       "indent": null
                     },
                     {
@@ -87365,9 +87365,16 @@
               "indent": 0,
               "parameters": [
                 {
-                  "code": 17,
+                  "code": 19,
                   "indent": null
                 }
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "CAM EVENT 188 1600"
               ]
             },
             {
@@ -87470,7 +87477,7 @@
               "code": 205,
               "indent": 0,
               "parameters": [
-                13,
+                0,
                 {
                   "list": [
                     {
@@ -87619,7 +87626,7 @@
               "code": 205,
               "indent": 0,
               "parameters": [
-                17,
+                188,
                 {
                   "list": [
                     {
@@ -87682,7 +87689,7 @@
               "code": 205,
               "indent": 0,
               "parameters": [
-                12,
+                189,
                 {
                   "list": [
                     {
@@ -87807,7 +87814,7 @@
               "code": 205,
               "indent": 0,
               "parameters": [
-                17,
+                188,
                 {
                   "list": [
                     {
@@ -87849,7 +87856,7 @@
               "code": 205,
               "indent": 0,
               "parameters": [
-                17,
+                188,
                 {
                   "list": [
                     {
@@ -87905,6 +87912,13 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "CAM PLAYER 1600"
+              ]
+            },
+            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -87927,7 +87941,7 @@
               "code": 205,
               "indent": 0,
               "parameters": [
-                12,
+                189,
                 {
                   "list": [
                     {
@@ -87954,6 +87968,18 @@
                     },
                     {
                       "code": 16,
+                      "indent": null
+                    },
+                    {
+                      "code": 44,
+                      "parameters": [
+                        {
+                          "name": "Open2",
+                          "volume": 90,
+                          "pitch": 100,
+                          "pan": 0
+                        }
+                      ],
                       "indent": null
                     },
                     {
@@ -88038,6 +88064,24 @@
               "indent": 0,
               "parameters": [
                 {
+                  "code": 44,
+                  "parameters": [
+                    {
+                      "name": "Open2",
+                      "volume": 90,
+                      "pitch": 100,
+                      "pan": 0
+                    }
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
                   "code": 38,
                   "indent": null
                 }
@@ -88060,7 +88104,7 @@
               "code": 205,
               "indent": 0,
               "parameters": [
-                13,
+                179,
                 {
                   "list": [
                     {
@@ -88091,7 +88135,7 @@
               "code": 205,
               "indent": 0,
               "parameters": [
-                14,
+                180,
                 {
                   "list": [
                     {
@@ -88115,6 +88159,68 @@
                 {
                   "code": 17,
                   "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                186,
+                {
+                  "list": [
+                    {
+                      "code": 18,
+                      "indent": 0
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 18,
+                  "indent": 0
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                187,
+                {
+                  "list": [
+                    {
+                      "code": 17,
+                      "indent": 0
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 17,
+                  "indent": 0
                 }
               ]
             },
@@ -90291,22 +90397,13 @@
               ]
             },
             {
-              "code": 125,
-              "indent": 0,
-              "parameters": [
-                0,
-                0,
-                500
-              ]
-            },
-            {
               "code": 126,
               "indent": 0,
               "parameters": [
                 213,
                 0,
                 0,
-                3
+                2
               ]
             },
             {
@@ -96378,6 +96475,104 @@
       ],
       "x": 29,
       "y": 65
+    },
+    {
+      "id": 262,
+      "name": "EV262",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 74,
+            "characterName": "",
+            "characterIndex": 0,
+            "direction": 2,
+            "pattern": 0
+          },
+          "list": [
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "DEVELOPER NOTE"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "I bet the town seems kind a little barren for its size!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "As more side quests and other content are added,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "all of Telluria Castle Town will get more fleshed out."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 89,
+      "y": 61
     }
   ]
 }
