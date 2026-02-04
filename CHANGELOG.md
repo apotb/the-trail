@@ -84,6 +84,7 @@ NOTICE: Old saves will not work with this update!
 - New trees!
 
 ### Bug Fixes
+- Fixed a bug where the autosave interval would reset when changing maps.
 - Fixed a bug where the autosave interval wouldn't count down while in menus or battle.
 - Fixed Soaked not doubling incoming Electric damage.
 - Fixed a bug where Copper Oreleaf couldn't drop Rock Salt.
