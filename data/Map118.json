@@ -5971,7 +5971,7 @@
               "code": 230,
               "indent": 0,
               "parameters": [
-                10
+                30
               ]
             },
             {
@@ -5981,6 +5981,55 @@
                 12,
                 "$gameSelfSwitches.value([118, 3, 'A'])"
               ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                1,
+                38,
+                0,
+                7,
+                0
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                1,
+                37,
+                0,
+                45,
+                0
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 3,
+              "parameters": [
+                "$gameSystem.forceAutosave();"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
             },
             {
               "code": 111,

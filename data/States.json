@@ -1455,6 +1455,11 @@
         "code": 23,
         "dataId": 0,
         "value": 0
+      },
+      {
+        "code": 23,
+        "dataId": 9,
+        "value": 0
       }
     ],
     "iconIndex": 1346,
@@ -2001,7 +2006,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Strength Within the Blade",
-    "note": "<animationRow:27>\n\n<HP Life Steal Physical: +50%>\n\n<Custom Confirm Effect>\n// Registers the HP value of the user.\nuser._confirmHp = user.hp;\n</Custom Confirm Effect>\n\n<Custom Establish Effect>\n// Check to see if the effect deals damage to HP and is a physical attack.\nif (value > 0 && this.isHpEffect() && this.isPhysical()) {\n  // Check to see if the user is at full HP.\n  if (user.hp === user.mhp) {\n    // Get the user's Life Steal results.\n    var result = user.result();\n    // Get the overheal amount.\n    var overheal = -1 * result.hpDamage + user._confirmHp - user.mhp;\n    // Check if the overheal amount is above 0.\n    if (overheal > 0) {\n      // Adds a barrier to the user based on the overheal amount.\n      user.gainBarrier(overheal, 0);\n      user.customPopup(\"+\" + overheal, 3);\n    }\n  }\n}\n</Custom Establish Effect>\n\n<Help Description>\nIncreases physical lifesteal by 50%. Overhealed lifesteal is converted to a magical barrier.\n</Help Description>",
+    "note": "<animationRow:27>\n\n<HP Life Steal Physical: +30%>\n\n<Custom Confirm Effect>\n// Registers the HP value of the user.\nuser._confirmHp = user.hp;\n</Custom Confirm Effect>\n\n<Custom Establish Effect>\n// Check to see if the effect deals damage to HP and is a physical attack.\nif (value > 0 && this.isHpEffect() && this.isPhysical()) {\n  // Check to see if the user is at full HP.\n  if (user.hp === user.mhp) {\n    // Get the user's Life Steal results.\n    var result = user.result();\n    // Get the overheal amount.\n    var overheal = -1 * result.hpDamage + user._confirmHp - user.mhp;\n    // Check if the overheal amount is above 0.\n    if (overheal > 0) {\n      // Adds a barrier to the user based on the overheal amount.\n      user.gainBarrier(overheal, 0);\n      user.customPopup(\"+\" + overheal, 3);\n    }\n  }\n}\n</Custom Establish Effect>\n\n<Help Description>\nIncreases physical lifesteal by 30%. Overhealed lifesteal is converted to a magical barrier.\n</Help Description>",
     "overlay": 4,
     "priority": 70,
     "removeAtBattleEnd": true,
@@ -7641,7 +7646,7 @@
     "minTurns": 10,
     "motion": 0,
     "name": "Tower Shield",
-    "note": "<Custom React Effect>\nvalue = Math.ceil(value * 0.85);\n</Custom React Effect>\n\n<Help Description>\nProtected by a \\ia[240]. Take 15% less damage.\n</Help Description>",
+    "note": "<Custom React Effect>\nvalue = Math.ceil(value * 0.75);\n</Custom React Effect>\n\n<Help Description>\nProtected by a \\ia[240]. Take 25% less damage.\n</Help Description>",
     "overlay": 0,
     "priority": 5,
     "removeAtBattleEnd": false,
@@ -7655,8 +7660,39 @@
     "id": 227,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "traits": [],
-    "iconIndex": 0,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 21,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 33,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 34,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 39,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 36,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 52,
+        "value": 1
+      }
+    ],
+    "iconIndex": 106,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -7664,10 +7700,10 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "",
-    "note": "",
+    "name": "Electric Field",
+    "note": "<Help Description>\nImmune to \\it[21], \\it[33], \\it[34], \\it[39], \\it[36], and \\it[52].\n</Help Description>",
     "overlay": 0,
-    "priority": 50,
+    "priority": 10,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,

@@ -1380,12 +1380,12 @@
     "name": "Giant Goblin",
     "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Slashing>\n\n<Sideview Battler: Goblin_2>\n<Scale Sprite: 200%>\n<HP Gauge Width: 216>\n\n<Enemy Drops>\nHorn: 5%\nGiant Goblin's Fang: 100%\nGiant Goblin's Rage: 100%\nTerra: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 75%\nLeather: 75%\nLeather: 75%\nLeather: 50%\nLeather: 50%\nLeather: 50%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 75%\nWorn Cloth: 75%\nWorn Cloth: 50%\nWorn Cloth: 50%\n</Enemy Drops>",
     "params": [
-      5000,
+      4000,
       999,
       17,
       16,
       1,
-      36,
+      30,
       50,
       16
     ]
@@ -1962,11 +1962,11 @@
     ],
     "gold": 400,
     "name": "The Warden",
-    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Slashing>\n<Element: Dark>\n\n<Sideview Battler: Evil1_4>\n<Weapon Image: 229>\n<Attack Animation: 6>\n<HP Gauge Width: 216>\n\n<AI Priority>\nState === Poisoned +++ User HP% param >= 33%: Dispell, User\n</AI Priority>\n\n<Enemy Drops>\nThe Warden's Trade-off: 100%\nThe Warden's Belt: 100%\nShadowplate Armor: 100%\nPhantasmal Robes: 100%\nPhantasmal Vestments: 100%\nShadowspec Leathers: 100%\nPhantasmal Scarf: 100%\nAncient Outfit: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
+    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Slashing>\n<Element: Dark>\n\n<Sideview Battler: Evil1_4>\n<Weapon Image: 229>\n<Attack Animation: 6>\n<HP Gauge Width: 216>\n\n<AI Priority>\nState === Poisoned +++ User HP% param >= 33%: Dispell, User\n</AI Priority>\n\n<Enemy Drops>\nThe Warden's Trade-off: 100%\nThe Warden's Belt: 100%\nPhantasmal Scarf: 100%\nAncient Outfit: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
     "params": [
       7500,
       999,
-      19,
+      23,
       23,
       45,
       50,
@@ -2112,7 +2112,7 @@
     "params": [
       12000,
       9999,
-      26,
+      27,
       30,
       61,
       60,
@@ -7016,16 +7016,16 @@
     ],
     "gold": 500,
     "name": "Baron Smirnoff",
-    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Slashing>\n\n<Sideview Battler: Evil1_8>\n<Sideview No Collapse>\n<Weapon Image: 146>\n<Attack Animation: 15>\n<Sideview Attack Motion: thrust>\n<HP Gauge Width: 288>\n\n<AI Priority>\nUser HP% param <= 50% +++ Eval user._storms === 0: Lightning Storm\nUser HP% param <= 25% +++ Eval user._storms === 1: Lightning Storm\n</AI Priority>\n\n<Enemy Drops>\nSmirnoff's Lightning Lance: 100%\nLoaf of Bread: 50%\nLoaf of Bread: 50%\nLoaf of Bread: 50%\nOmelette: 50%\nCarp and Mushroom Stew: 50%\nGarnished Perch: 50%\nSolus Valley Special: 50%\nHoney-Glazed Carp: 50%\nSmall Potion: 50%\nSmall Potion: 50%\nPotion: 50%\nPotion: 50%\nLarge Potion: 50%\nLarge Potion: 50%\nTome of Experience: 50%\nTome of Experience: 50%\n</Enemy Drops>",
+    "note": "<Cannot Select: Item Scroll of Silver Sands>\n<Passive State: 227>\n\n<Armor Weakness: Slashing>\n\n<Sideview Battler: Evil1_8>\n<Sideview No Collapse>\n<Weapon Image: 146>\n<Attack Animation: 15>\n<Sideview Attack Motion: thrust>\n<HP Gauge Width: 288>\n\n<AI Priority>\nUser HP% param <= 50% +++ Eval user._storms === 0: Lightning Storm\nUser HP% param <= 25% +++ Eval user._storms === 1: Lightning Storm\n</AI Priority>\n\n<Enemy Drops>\nSmirnoff's Lightning Lance: 100%\nLoaf of Bread: 50%\nLoaf of Bread: 50%\nLoaf of Bread: 50%\nOmelette: 50%\nCarp and Mushroom Stew: 50%\nGarnished Perch: 50%\nSolus Valley Special: 50%\nHoney-Glazed Carp: 50%\nSmall Potion: 50%\nSmall Potion: 50%\nPotion: 50%\nPotion: 50%\nLarge Potion: 50%\nLarge Potion: 50%\nTome of Experience: 50%\nTome of Experience: 50%\n</Enemy Drops>",
     "params": [
       9000,
       0,
-      27,
-      27,
-      54,
-      54,
-      108,
-      54
+      25,
+      25,
+      50,
+      50,
+      100,
+      50
     ]
   },
   {
@@ -7096,7 +7096,7 @@
     ],
     "gold": 0,
     "name": "Baron Ripoff",
-    "note": "<Element: Electric>\n<Element Absorb: Electric>\n<Passive State: 150>\n\n<Sideview Battler: NoMatchingSprite/Baron Ripoff>\n<Scale Sprite: 200%>\n<Attack Animation: 5>\n<Sideview Attack Motion: thrust>\n<HP Gauge Width: 180>\n\n<Enemy Drops>\nElectric Essence: 20%\n</Enemy Drops>",
+    "note": "<Element: Electric>\n<Element Absorb: Electric>\n<Passive State: 150, 227>\n\n<Sideview Battler: NoMatchingSprite/Baron Ripoff>\n<Scale Sprite: 200%>\n<Attack Animation: 5>\n<Sideview Attack Motion: thrust>\n<HP Gauge Width: 180>\n\n<Enemy Drops>\nElectric Essence: 20%\n</Enemy Drops>",
     "params": [
       1500,
       0,

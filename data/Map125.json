@@ -19880,6 +19880,13 @@
               ]
             },
             {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameParty.refreshMembers();"
+              ]
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -20313,10 +20320,24 @@
           },
           "list": [
             {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameTemp._coolDoorSoul = true;"
+              ]
+            },
+            {
               "code": 117,
               "indent": 0,
               "parameters": [
                 15
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "delete $gameTemp._coolDoorSoul;"
               ]
             },
             {

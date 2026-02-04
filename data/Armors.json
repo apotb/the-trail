@@ -837,9 +837,9 @@
       0,
       8,
       0,
-      0,
-      1,
+      3,
       2,
+      4,
       0,
       0
     ],
@@ -907,12 +907,12 @@
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.04
+        "value": 0.06
       },
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.01
+        "value": 0.015
       }
     ],
     "iconIndex": 174,
@@ -1026,14 +1026,20 @@
     "atypeId": 14,
     "description": "A set of heavily enforced gauntlets. They've been\nspecially made to provide defense and support attacks.",
     "etypeId": 6,
-    "traits": [],
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.01
+      }
+    ],
     "iconIndex": 493,
     "name": "Iron Gauntlets",
     "note": "<Synthesis Ingredients>\nIron Cluster: 7\n</Synthesis Ingredients>\n<Mask Name: Protective Armwear>\n\n<Disassemble Pool: Advanced>\nIron Cluster: 80%\nIron Cluster: 65%\nIron Cluster: 50%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
-      3,
+      4,
       3,
       0,
       0,
@@ -1082,7 +1088,7 @@
     "traits": [],
     "iconIndex": 160,
     "name": "Copper Buckler",
-    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nCopper Cluster: 8\n</Synthesis Ingredients>\n<Mask Name: Respectable Light Shield>\n\n<Disassemble Pool: Advanced>\nx1-2 Copper Cluster: 60%\n</Disassemble Pool: Advanced>",
+    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nCopper Cluster: 6\n</Synthesis Ingredients>\n<Mask Name: Respectable Light Shield>\n\n<Disassemble Pool: Advanced>\nx1-2 Copper Cluster: 60%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
@@ -1420,12 +1426,12 @@
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.08
+        "value": 0.1
       },
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.02
+        "value": 0.025
       }
     ],
     "iconIndex": 481,
@@ -1623,12 +1629,12 @@
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.02
+        "value": 0.04
       },
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.005
+        "value": 0.01
       }
     ],
     "iconIndex": 174,
@@ -1718,9 +1724,15 @@
   {
     "id": 72,
     "atypeId": 1,
-    "description": "A group of dense red gel, with the texture of a of\na gem. Can be equipped or sold for a pretty good price.",
+    "description": "A group of dense red gel, with the texture of a of a gem. Can be equipped or\nsold for a pretty good price. Grants 50% chance to resist \\it[7]\\c[0].",
     "etypeId": 6,
-    "traits": [],
+    "traits": [
+      {
+        "code": 13,
+        "dataId": 7,
+        "value": 0.5
+      }
+    ],
     "iconIndex": 358,
     "name": "Condensed Red Gel",
     "note": "<Rarity: 1>\n<Upgrade Slots: 2>\n<Optimize Weight: 0.5>\n\n<Disassemble Pool: Advanced>\nx5-10 Red Gel: 100%\n</Disassemble Pool: Advanced>",
@@ -3815,6 +3827,11 @@
         "code": 32,
         "dataId": 91,
         "value": 1
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.03
       }
     ],
     "iconIndex": 656,
@@ -3823,7 +3840,7 @@
     "params": [
       0,
       0,
-      7,
+      8,
       5,
       0,
       0,
@@ -3841,12 +3858,12 @@
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.06
+        "value": 0.08
       },
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.015
+        "value": 0.02
       }
     ],
     "iconIndex": 657,
@@ -4687,9 +4704,19 @@
   {
     "id": 178,
     "atypeId": 1,
-    "description": "It's burning hot, yet feels only lukewarm to the touch. Provides immunity\nto \\it[7], \\it[102], \\it[82], \\it[149], and \\it[125].",
+    "description": "It's burning hot, yet feels only lukewarm to the touch. Grants several buffs\nand provides immunity to \\it[7], \\it[102], \\it[82], \\it[149], and \\it[125].",
     "etypeId": 6,
     "traits": [
+      {
+        "code": 23,
+        "dataId": 3,
+        "value": 2
+      },
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 0.8
+      },
       {
         "code": 14,
         "dataId": 7,
@@ -4723,12 +4750,12 @@
     ],
     "iconIndex": 722,
     "name": "Fiery Tablet",
-    "note": "<Rarity: 2>\n<Upgrade Slots: 1>\n<Passive State: 126>\n\n<Element Amplify Fire: +10%>\n\n<Synthesis Ingredients>\nSelfish Candle\nWanted Poster\nSleepy Hourglass\nFire Resistance Potion: 5\nFiery Blood: 10\n</Synthesis Ingredients>\n<Mask Name: Hot Dungeon Resistance Item>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 1>\n<Passive State: 126>\n\n<Element Amplify Fire: +10%>\n\n<Synthesis Ingredients>\nBlood Pact\nFlesh Doll\nSelfish Candle\nWanted Poster\nSleepy Hourglass\nFlesh Doll\nFire Resistance Potion: 5\nFiery Blood: 10\n</Synthesis Ingredients>\n<Mask Name: Hot Dungeon Resistance Item>",
     "params": [
+      40,
       0,
       0,
-      0,
-      0,
+      10,
       0,
       0,
       0,
@@ -5829,12 +5856,12 @@
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.1
+        "value": 0.12
       },
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.025
+        "value": 0.03
       },
       {
         "code": 22,
@@ -6244,14 +6271,20 @@
     "atypeId": 14,
     "description": "Reinforced gauntlets with extra offensive\nand defensive stat boosts.",
     "etypeId": 6,
-    "traits": [],
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.02
+      }
+    ],
     "iconIndex": 492,
     "name": "Bronze Gauntlets",
     "note": "<Rarity: 2>\n<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nIron Gauntlets\nBronze Ingot: 5\nVicious Herb: 10\n</Synthesis Ingredients>\n\n<Disassemble Pool: Advanced>\nx1 Bronze Ingot: 80%\nx1 Bronze Ingot: 50%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
-      5,
+      6,
       4,
       0,
       0,
@@ -6279,12 +6312,12 @@
       -3,
       0
     ],
-    "price": 500
+    "price": 200
   },
   {
     "id": 240,
     "atypeId": 7,
-    "description": "A large shield used for holding out against hordes of enemies.\nWhen guarding, party members take 15% less damage.",
+    "description": "A large shield used for holding out against hordes of enemies.\nWhen guarding, party members take 25% less damage.",
     "etypeId": 2,
     "traits": [],
     "iconIndex": 499,
@@ -6300,7 +6333,7 @@
       -9,
       0
     ],
-    "price": 500
+    "price": 200
   },
   {
     "id": 241,
