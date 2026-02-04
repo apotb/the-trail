@@ -94,6 +94,7 @@ NOTICE: Old saves will not work with this update!
 - Fixed outdated cliff texture in South Field.
 - Fixed wading effect when walking on bridge in South Field.
 - Fixed Seshat's Tome drop beginning in Telluria Field being a 1/10,000 drop rather than a 1/200 drop.
+- Fixed Red Mushroom appearing in Recovery category.
 - Fixed buggy appearance of First Cleric statue in Frozen Labyrinth.
 - Fixed a bunch of other random bugs.
 
