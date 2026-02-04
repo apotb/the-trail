@@ -4012,52 +4012,6 @@
         "indent": 1,
         "parameters": [
           12,
-          "Date.now() > $gameSystem._autosaveTarget"
-        ]
-      },
-      {
-        "code": 355,
-        "indent": 2,
-        "parameters": [
-          "let minutes = $gameSystem.getAutosaveInterval();"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 2,
-        "parameters": [
-          "if (minutes === 0) minutes = 1 / 60;"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 2,
-        "parameters": [
-          "$gameSystem.setAutosaveInterval(minutes);"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 230,
-        "indent": 1,
-        "parameters": [
-          30
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 1,
-        "parameters": [
-          12,
           "Date.now() < $gameSystem._autosaveTarget && !$gameSystem._forceAutosave"
         ]
       },
@@ -4065,7 +4019,7 @@
         "code": 230,
         "indent": 2,
         "parameters": [
-          30
+          60
         ]
       },
       {
@@ -4219,7 +4173,35 @@
         "code": 230,
         "indent": 1,
         "parameters": [
-          59
+          29
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "let minutes = $gameSystem.getAutosaveInterval();"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "if (minutes === 0) minutes = 1 / 60;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "$gameSystem.setAutosaveInterval(minutes);"
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          30
         ]
       },
       {
