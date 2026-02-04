@@ -4281,7 +4281,7 @@
     ],
     "gold": 250,
     "name": "Baby Dragon",
-    "note": "<Armor Weakness: Piercing>\n<Element: Earth, Wind>\n<Passive State: 145>\n\n<Breathing Speed: 20>\n<Floating>\n<Floating Rate: 0.05>\n<Attack Animation: 211>\n\n<AI Priority>\nTurn % 4 === 1: Future Sight, Highest HP\nTurn % 4 === 2: Cyclone\nTurn % 4 === 3: Spike Shock\nTurn % 4 === 0: Spike Shock\n</AI Priority>\n\n<Enemy Drops>\nDragon Scale: 100%\nDragon Scale: 100%\nDragon Scale: 50%\nDragon Scale: 25%\nDragon Scale: 12.5%\nDragonfruit: 50%\nMDF Scroll ★: 10%\nEarth Essence: 100%\nWind Essence: 100%\n</Enemy Drops>\n\n<Conditional Enchanted Dragon Scale Drop>\nSwitch 95 ON: +75%\n</Conditional Enchanted Dragon Scale Drop>\n\n<Conditional Enchanted Dragon Scale Drop>\nSwitch 95 ON: +75%\n</Conditional Enchanted Dragon Scale Drop>\n\n<Conditional Dragon Scale Helmet Drop>\nSwitch 95 ON: +50%\n</Conditional Dragon Scale Helmet Drop>\n\n<Conditional Sorrowful Headpiece Drop>\nSwitch 95 ON: +50%\n</Conditional Sorrowful Headpiece Drop>",
+    "note": "<Armor Weakness: Piercing>\n<Element: Earth, Wind>\n<Passive State: 145>\n\n<Breathing Speed: 20>\n<Floating>\n<Floating Rate: 0.05>\n<Attack Animation: 211>\n\n<AI Priority>\nTurn % 4 === 1: Future Sight, Highest HP\nTurn % 4 === 2: Cyclone\nTurn % 4 === 3: Spike Shock\nTurn % 4 === 0: Spike Shock\n</AI Priority>\n\n<Enemy Drops>\nDragon Scale: 100%\nDragon Scale: 100%\nDragon Scale: 50%\nDragon Scale: 25%\nDragon Scale: 12.5%\nDragonfruit: 50%\nMDF Scroll ★: 10%\nEarth Essence: 100%\nWind Essence: 100%\n</Enemy Drops>\n\n<Conditional Enchanted Dragon Scale Drop>\nSwitch 95 ON: +75%\n</Conditional Enchanted Dragon Scale Drop>\n\n<Conditional Enchanted Dragon Scale Drop>\nSwitch 95 ON: +75%\n</Conditional Enchanted Dragon Scale Drop>\n\n<Conditional Dragon Scale Helmet Drop>\nSwitch 95 ON: +25%\n</Conditional Dragon Scale Helmet Drop>\n\n<Conditional Sorrowful Headpiece Drop>\nSwitch 95 ON: +25%\n</Conditional Sorrowful Headpiece Drop>",
     "params": [
       6000,
       0,
@@ -5563,13 +5563,13 @@
     ],
     "gold": 80,
     "name": "Fire Imp",
-    "note": "<Armor Weakness: Slashing>\n<Element: Fire>\n\n<Sideview Battler: Monster4_3>\n<Attack Animation: 18>\n\n<Enemy Drops>\nFiery Blood: 75%\nFiery Blood: 75%\nFire Resistance Potion: 50%\nFlarestone: 10%\nSelfish Candle: 5%\nFire Essence: 20%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n<Element: Fire>\n\n<Sideview Battler: Monster4_3>\n<Attack Animation: 18>\n\n<AI Priority>\nRandom 80%: Fire II, Highest HP\n</AI Priority>\n\n<Enemy Drops>\nFiery Blood: 75%\nFiery Blood: 75%\nFire Resistance Potion: 50%\nFlarestone: 10%\nSelfish Candle: 5%\nFire Essence: 20%\n</Enemy Drops>",
     "params": [
       2000,
       0,
       33,
       30,
-      62,
+      60,
       55,
       140,
       45
@@ -6232,7 +6232,7 @@
     ],
     "gold": 0,
     "name": "???",
-    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 139, 147, 150>\n<Light Break: 5>\n\n<Sideview Battler: NoMatchingSprite/Apocalypse's Shadow>\n<Weapon Image: 266>\n<Attack Animation: 8>\n<HP Gauge Width: 180>\n<HP Gauge Color 1: 15>\n<HP Gauge Color 2: 14>\n\n<AI Priority>\nEval user.timesStruckElement(8) >= 1: Dark Orb\n</AI Priority>\n\n<Enemy Drops>\nInfernal Knight's Synergy: 100%\nInfernal Mage's Synergy: 100%\nInfernal Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 139, 147, 150>\n<Light Break: 5>\n\n<Sideview Battler: NoMatchingSprite/Apocalypse's Shadow>\n<Weapon Image: 266>\n<Attack Animation: 8>\n<HP Gauge Width: 180>\n<HP Gauge Color 1: 15>\n<HP Gauge Color 2: 14>\n\n<AI Priority>\nEval user.timesStruckElement(8) >= 1: Dark Orb\n</AI Priority>\n\n<Enemy Drops>\nInfernal Knight's Synergy: 100%\nInfernal Mage's Synergy: 100%\nInfernal Essence: 100%\n</Enemy Drops>",
     "params": [
       4000,
       0,

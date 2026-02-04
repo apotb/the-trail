@@ -9026,12 +9026,18 @@
       },
       {
         "enemyId": 85,
+        "x": 132,
+        "y": 328,
+        "hidden": true
+      },
+      {
+        "enemyId": 73,
         "x": 225,
         "y": 202,
-        "hidden": true
+        "hidden": false
       }
     ],
-    "name": "Poltergeist x2",
+    "name": "Poltergeist x3",
     "pages": [
       {
         "conditions": {
@@ -9061,7 +9067,7 @@
             "code": 335,
             "indent": 1,
             "parameters": [
-              1
+              2
             ]
           },
           {
@@ -10228,8 +10234,8 @@
     "members": [
       {
         "enemyId": 79,
-        "x": 300,
-        "y": 301,
+        "x": 294,
+        "y": 286,
         "hidden": false
       }
     ],

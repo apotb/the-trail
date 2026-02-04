@@ -1309,7 +1309,7 @@
     "message3": " is still poisoned.",
     "message4": " found the antidote.",
     "minTurns": 3,
-    "motion": 1,
+    "motion": 0,
     "name": "Poisoned",
     "note": "<Category: debuff>\n<Category: moderate debuff>\n\n<animationRow:29>\n\n<HRG Rate: 0%>\n\n<Custom Apply Effect>\nthis._toxicCounter = this._toxicCounter || 1;\n</Custom Apply Effect>\n\n<Custom Remove Effect>\nthis._toxicCounter = 1;\n</Custom Remove Effect>\n\n<Custom Battle Effect>\nthis._toxicCounter = 1;\n</Custom Battle Effect>\n\n<Custom Regenerate Effect>\nvar n = this._toxicCounter / 20;\nvar value = Math.floor(n * user.mhp * -1);\nuser.gainHp(value);\nthis._toxicCounter += 1;\nthis.startAnimation(59);\n</Custom Regenerate Effect>\n\n<Help Description>\n5% of current HP is lost at the end of every turn. For every turn this state has been applied, another 5% is lost. Removes all HRG.\n</Help Description>",
     "overlay": 1,
