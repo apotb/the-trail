@@ -1870,62 +1870,23 @@ Window_ItemStatus.prototype.drawEquipInfo = function(item) {
     } else {
       rect.width = this.contents.width / 2;
     }
-
-    var isWeapon = DataManager.isWeapon(item);
-    var statMap = isWeapon ? [
-      [0, false], // MHP
-      [1, false], // MMP
-      [2, false], // ATK
-      [4, false], // MAT
-      [6, false], // AGI
-      [7, false], // LUK/INT
-      [0, true],  // HIT
-      [2, true]   // CRI
-    ] : [
-      [0, false], // MHP
-      [1, false], // MMP
-      [3, false], // DEF
-      [5, false], // MDF
-      [6, false], // AGI
-      [7, false], // LUK/INT
-      [1, true],  // EVA
-      [3, true]   // CEV
-    ];
-
     for (var i = 0; i < 8; ++i) {
       rect = this.getRectPosition(rect, i);
       var dx = rect.x + this.textPadding();
       var dw = rect.width - this.textPadding() * 2;
-      var paramIndex = statMap[i][0];
-      var isXParam = statMap[i][1];
-
       this.changeTextColor(this.systemColor());
-      if (isXParam) {
-        this.drawText(TextManager.param(paramIndex + 8), dx, rect.y, dw);
-        var trait = item.traits.find(function(t) {
-          return t.code === 22 && t.dataId === paramIndex;
-        });
-        var value = trait ? trait.value : 0;
-        var percent = Math.floor(value * 100);
-        this.changeTextColor(this.paramchangeTextColor(percent));
-        var text = (percent >= 0 ? '+' : '') + Yanfly.Util.toGroup(percent) + '%';
-        if (text === '+0%') this.changePaintOpacity(false);
-        this.drawText(text, dx, rect.y, dw, 'right');
-        this.changePaintOpacity(true);
-      } else {
-        this.drawText(TextManager.param(paramIndex), dx, rect.y, dw);
-        this.changeTextColor(this.paramchangeTextColor(item.params[paramIndex]));
-        var text = Yanfly.Util.toGroup(item.params[paramIndex]);
-        if (item.groupType === 2 && item.baseItemId === 157) {
-          var stat = $gameSystem.championsTalisman()[paramIndex];
-          this.changeTextColor(this.paramchangeTextColor(stat));
-          text = stat;
-        }
-        if (item.params[paramIndex] >= 0) text = '+' + text;
-        if (text === '+0') this.changePaintOpacity(false);
-        this.drawText(text, dx, rect.y, dw, 'right');
-        this.changePaintOpacity(true);
+      this.drawText(TextManager.param(i), dx, rect.y, dw);
+      this.changeTextColor(this.paramchangeTextColor(item.params[i]));
+      var text = Yanfly.Util.toGroup(item.params[i]);
+      if (item.groupType === 2) if (item.baseItemId === 157) { // Champion's Talisman
+        stat = $gameSystem.championsTalisman()[i];
+        this.changeTextColor(this.paramchangeTextColor(stat));
+        text = stat;
       }
+      if (item.params[i] >= 0) text = '+' + text;
+      if (text === '+0') this.changePaintOpacity(false);
+      this.drawText(text, dx, rect.y, dw, 'right');
+      this.changePaintOpacity(true);
     }
 };
 
