@@ -13528,6 +13528,30 @@
     "id": 66,
     "list": [
       {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "Adon",
+          6,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "\\adamSo do we have a deal?"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "80\\G for the \\iw[11]?\\$"
+        ]
+      },
+      {
         "code": 102,
         "indent": 0,
         "parameters": [
@@ -13550,8 +13574,17 @@
         ]
       },
       {
-        "code": 101,
+        "code": 111,
         "indent": 1,
+        "parameters": [
+          7,
+          80,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
         "parameters": [
           "Adon",
           6,
@@ -13561,18 +13594,9 @@
       },
       {
         "code": 401,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "\\adamReally? That's great!"
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 1,
-        "parameters": [
-          7,
-          30,
-          0
         ]
       },
       {
@@ -13593,7 +13617,7 @@
         "parameters": [
           1,
           0,
-          30
+          80
         ]
       },
       {
@@ -13629,6 +13653,34 @@
         "indent": 2,
         "parameters": [
           "\\adamI hope you enjoy your new \\iw[11]!"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest 15 Change Description Entry To 2"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest 15 Complete Objective 1"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest 15 Claim Reward 1"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest Set Completed 15"
         ]
       },
       {
@@ -13672,34 +13724,6 @@
         "indent": 2,
         "parameters": [
           "Quest Complete!"
-        ]
-      },
-      {
-        "code": 356,
-        "indent": 2,
-        "parameters": [
-          "Quest 15 Change Description Entry To 2"
-        ]
-      },
-      {
-        "code": 356,
-        "indent": 2,
-        "parameters": [
-          "Quest 15 Complete Objective 1"
-        ]
-      },
-      {
-        "code": 356,
-        "indent": 2,
-        "parameters": [
-          "Quest 15 Claim Reward 1"
-        ]
-      },
-      {
-        "code": 356,
-        "indent": 2,
-        "parameters": [
-          "Quest Set Completed 15"
         ]
       },
       {
@@ -13794,8 +13818,8 @@
         "code": 101,
         "indent": 2,
         "parameters": [
-          "Adon",
-          6,
+          "",
+          0,
           0,
           2
         ]
@@ -13804,14 +13828,7 @@
         "code": 401,
         "indent": 2,
         "parameters": [
-          "\\adamWait a second... you don't have enough"
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 2,
-        "parameters": [
-          "bits! Come back once you've got 30\\G."
+          "You don't have enough Bits."
         ]
       },
       {

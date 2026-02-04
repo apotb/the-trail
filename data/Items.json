@@ -3650,7 +3650,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A peculiar book that allows an experienced adventurer to permanently increase their INT.\nMore intelligence equals more crit damage! A single person can only read 5 of these.",
+    "description": "These will make you smarter or something... in a\nfuture update! Just hold on to them for now.",
     "effects": [
       {
         "code": 44,
@@ -3664,7 +3664,7 @@
     "itypeId": 1,
     "name": "INT Book",
     "note": "<Rarity: 3>\n\n<Before Eval>\n$gameTemp._actorId = target.actorId();\n</Before Eval>",
-    "occasion": 2,
+    "occasion": 3,
     "price": 0,
     "repeats": 1,
     "scope": 7,
