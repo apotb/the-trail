@@ -2057,7 +2057,7 @@
   {
     "id": 54,
     "animationId": 122,
-    "description": "A metal-lined book filled with illegible writing. Trades some MAT for a\nmassive amount of MMP. Increases MMP by +10% after all other calculations.",
+    "description": "A metal-lined book filled with illegible writing. Trades some MAT for a massive\namount of MMP. Increases MMP by +10% after all other calculations. Two-handed.",
     "etypeId": 1,
     "traits": [
       {
@@ -2069,6 +2069,11 @@
         "code": 31,
         "dataId": 16,
         "value": 0
+      },
+      {
+        "code": 54,
+        "dataId": 2,
+        "value": 1
       },
       {
         "code": 21,
@@ -2408,6 +2413,11 @@
         "code": 31,
         "dataId": 16,
         "value": 0
+      },
+      {
+        "code": 54,
+        "dataId": 2,
+        "value": 1
       },
       {
         "code": 21,
