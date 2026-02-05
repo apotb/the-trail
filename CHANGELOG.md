@@ -1,9 +1,11 @@
 # Alpha 18: Back to the Basics (??/??/????)
-There comes a time when enough is enough. Alpha 15's Telluria Field is the highlight of The Trail, but you had to play through a meaningless slog to get there. I spent a long time not wanting to revamp/remove certain parts of the game for nostalgia reasons, but the story simply cannot go on when the first half of it is so poorly put together.
+It's about time we returned to what made The Trail great in the first place! In my opinion, the latest content has felt a little distanced from the humble beginnings of the game. This update serves to unify systems/content from previous updates to make the Overworld feel much more cohesive from start to finish.
 
-Poorly justified progression, nonsensical dialogue, and a whole lot of fluff that didn't contribute to the story has been changed or outright removed in this update. You'll see the changes right from the very start. If you remember what the dialogue/story was like before, I think you'll find this to be a much better direction for the game.
+Adon has seen the most changes - rightfully so, considering it's every players' first introduction to the game. Verdin Village is the new starting point, and while the overarching story (defeat Apocalypse) is still there, the way it's presented has completely and fundamentally changed. Systems such as cooking and fishing have much more presence earlier in the game, and a reworked fast travel system provides a much faster way to get around the world.
 
-For the sake of both our time, a lot of specific details have been omitted from the changelog, Alpha 14-esque. You'll just have to play to see the full extent of the overhaul!
+The Easin Plains and Blazing Sands have gotten refreshed as well! No more piles of dirt: two new military locations serve to add atmosphere and better progression. Will you go from town to town like before, or will you rush to Bladesville to snag a pickaxe? And now, there's a powerful boss waiting to test you before reaching Telluria Castle...
+
+From pets to royal titles to the ability to name your squad, Alpha 18 adds a whole bunch of features that make The Trail feel... more like The Trail. For the sake of both our time, a lot of specific details have been omitted from the changelog, Alpha 14-esque. You'll just have to play to see the full extent of the overhaul!
 
 NOTICE: Old saves will not work with this update!
 
@@ -25,8 +27,8 @@ NOTICE: Old saves will not work with this update!
 - Added 14 items:
   - Eclipse Potion
   - Desert Gambeson
-  - Field Medic Kit
   - Tower Shield
+  - Field Medic Kit
   - Bronze Gauntlets
   - Smirnoff's Lightning Lance
   - Giant Goblin's Fang (weapon)
@@ -37,7 +39,7 @@ NOTICE: Old saves will not work with this update!
   - Clover's Bell
   - Duncan's Detos
   - Sealed Writ
-- Added early-game fishing content and 18 items:
+- Added early-game fishing content and 18 fishing-related items:
   - Crucian Carp
   - Pond Smelt
   - Yellow Perch
@@ -65,7 +67,7 @@ NOTICE: Old saves will not work with this update!
   - Time is ticking as soon as you start.
   - The Blazing Sands are available as soon as you reach Telluria.
   - Most cutscenes have been either completely changed or removed.
-  - A bunch of stuff got rebalanced, shuffled around, or given a spotlight in an overcrowded pool of new content.
+  - A bunch of stuff got rebalanced, shuffled around, or given a spotlight where options are over-saturated.
   - Existing fishing/food content has been overhauled to accommodate new early-game fishing content.
 - Increased max name length from 10 → 12.
 - You can no longer equip duplicate Wristbraces, Necklaces, Gauntlets, Scarves, or Crystals.
@@ -84,6 +86,7 @@ NOTICE: Old saves will not work with this update!
 - Buffed Earthen Grassrobes Earth resistance from 10% to 25%.
 - All levels of Well Fed last 33% more steps.
 - New trees!
+- A lot of balance changes and other tweaks were made that aren't listed here.
 
 ### Bug Fixes
 - Fixed a bug where the autosave interval would reset when changing maps.
@@ -97,7 +100,7 @@ NOTICE: Old saves will not work with this update!
 - Fixed buggy appearance of First Cleric statue in Frozen Labyrinth.
 - Fixed a bunch of other random bugs.
 
-If you happen to stumble upon a "new" item that isn't on here, it's probably because I made a lot of old/bad items more relevant. For example, the Globetrotter Boots, once useless at Telluria Castle Town's tier, now have a much better fit in Solus Valley. So you might be stumbling upon items you never would have even thought to care about in previous versions!
+If you happen to stumble upon a "new" item that isn't on here, it's probably because I made a lot of old/bad items more relevant. For example, the Globetrotter Boots, once useless at Telluria Castle Town's tier, now have a much better fit in Solus Valley. So you might be finding yourself using items you never would have even thought to care about in previous versions!
 
 I know I said Alpha 18 would be the Wasteland update, but don't worry, the update's not going anywhere. In fact, the party will finally get to face their most dangerous challenges yet in Alpha 19!
 
