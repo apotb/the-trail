@@ -14891,6 +14891,13 @@
         ]
       },
       {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameMap.vehicles().forEach(v => v.setThrough(true));"
+        ]
+      },
+      {
         "code": 222,
         "indent": 0,
         "parameters": []
@@ -16890,6 +16897,13 @@
         "code": 412,
         "indent": 0,
         "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameMap.vehicles().forEach(v => v.setThrough(false));"
+        ]
       },
       {
         "code": 222,
