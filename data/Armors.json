@@ -4761,7 +4761,7 @@
       0,
       0
     ],
-    "price": 1000
+    "price": 2000
   },
   {
     "id": 179,
@@ -6338,13 +6338,13 @@
   {
     "id": 241,
     "atypeId": 1,
-    "description": "Crucial equipment used to rescue injured soldiers in battle.\nDoubles the effect of healing items used by the holder.",
+    "description": "Crucial equipment used to rescue injured soldiers in battle.\nApplies a x1.5 modifier to all healing items used by the holder.",
     "etypeId": 6,
     "traits": [
       {
         "code": 23,
         "dataId": 3,
-        "value": 2
+        "value": 1.5
       }
     ],
     "iconIndex": 1322,
