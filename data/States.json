@@ -7720,7 +7720,13 @@
     "id": 228,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "traits": [],
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 3,
+        "value": 1.1
+      }
+    ],
     "iconIndex": 0,
     "maxTurns": 1,
     "message1": "",
@@ -7729,10 +7735,10 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "",
-    "note": "",
+    "name": "[P] Resourceful",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>",
     "overlay": 0,
-    "priority": 50,
+    "priority": 0,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
