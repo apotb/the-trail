@@ -4725,7 +4725,10 @@ Game_Actor.prototype.updateStateSteps = function(state) {
 
 Game_Actor.prototype.showAddedStates = function() {
     this.result().addedStateObjects().forEach(function(state) {
-        if (state.message1 && !($gamePlayer.terrainTag() == 5 && state.id == 33)) { // Water
+        if (state.message1 && 
+            !($gamePlayer.terrainTag() == 5 && state.id == 33) &&
+            !([4, 5, 6, 97].contains(state.id)) // Well Fed
+        ) { // Water
             // $gameMessage.add(this._name + state.message1);
             this.stateGab(`${this._name}${state.message1} \\c[3]+\\it[${state.id}]`)
         }
