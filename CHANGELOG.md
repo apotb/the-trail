@@ -77,7 +77,7 @@ NOTICE: Old saves will not work with this update!
 - Menu improvements:
   - Reordered smithery crafting menus.
   - Shop sell menu shows if an item is a material.
-  - Battle item menu shows multipliers from PHA and other effects like Duncan.
+  - Item recovery previews show multipliers from PHA and other effects like Duncan.
 - Bubble is now guaranteed to apply Soaked.
 - Fiery Tablet recipe includes Blood Pact and Flesh Doll, as well as now having the effects of both.
 - Made Goblins weaker to magic.

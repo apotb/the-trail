@@ -1930,23 +1930,39 @@ Window_ItemStatus.prototype.drawItemData = function(i, dx, dy, dw) {
       effect = this.getEffect(Game_Action.EFFECT_RECOVER_HP);
       value = (effect) ? effect.value1 : '---';
       if (value === 0) value = '---';
-      if (value !== '---' && value !== 0 && typeof value == 'number') value *= 100;
+      if (value !== '---' && value !== 0 && typeof value == 'number') {
+        value *= 100;
+        value *= this.parent.parent.user().pha; // PHA
+        if ($gameParty.pet().name() === "Duncan" && this._item.itemCategory?.contains('Meals')) value *= 1.5; // DUNCAN
+      }
     }
     if (i === 1) {
       effect = this.getEffect(Game_Action.EFFECT_RECOVER_HP);
       value = (effect) ? effect.value2 : '---';
       if (value === 0) value = '---';
+      if (value !== '---' && value !== 0 && typeof value == 'number') {
+        value *= this.parent.parent.user().pha; // PHA
+        if ($gameParty.pet().name() === "Duncan" && this._item.itemCategory?.contains('Meals')) value *= 1.5; // DUNCAN
+      }
     }
     if (i === 2) {
       effect = this.getEffect(Game_Action.EFFECT_RECOVER_MP);
       value = (effect) ? effect.value1 : '---';
       if (value === 0) value = '---';
-      if (value !== '---' && value !== 0 && typeof value == 'number') value *= 100;
+      if (value !== '---' && value !== 0 && typeof value == 'number') {
+        value *= 100;
+        value *= this.parent.parent.user().pha; // PHA
+        if ($gameParty.pet().name() === "Duncan" && this._item.itemCategory?.contains('Meals')) value *= 1.5; // DUNCAN
+      }
     }
     if (i === 3) {
       effect = this.getEffect(Game_Action.EFFECT_RECOVER_MP);
       value = (effect) ? effect.value2 : '---';
       if (value === 0) value = '---';
+      if (value !== '---' && value !== 0 && typeof value == 'number') {
+        value *= this.parent.parent.user().pha; // PHA
+        if ($gameParty.pet().name() === "Duncan" && this._item.itemCategory?.contains('Meals')) value *= 1.5; // DUNCAN
+      }
     }
     if (i >= 4) {
       icons = this.getItemIcons(i, icons);
@@ -1974,6 +1990,10 @@ Window_ItemStatus.prototype.drawItemData = function(i, dx, dy, dw) {
       this.changePaintOpacity(true);
     }
 };
+
+Window_ItemStatus.prototype.duncan = function() {
+  // Edgar-type function
+}
 
 Window_ItemStatus.prototype.getEffect = function(code) {
     let targetEffect = null;
