@@ -27,7 +27,8 @@ NOTICE: Old saves will not work with this update!
 - Added a short sound effect when completing a quest objective.
 - Added new rogue passive skill "Resourceful" at level 15.
   - Moved Low Blow to L18, Shield Break to L22, and removed Focus Up.
-- Added 14 items:
+- Added 15 items:
+  - Flora's Rose
   - Eclipse Potion
   - Desert Gambeson
   - Tower Shield

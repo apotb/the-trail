@@ -6361,5 +6361,32 @@
       0
     ],
     "price": 500
+  },
+  {
+    "id": 242,
+    "atypeId": 1,
+    "description": "Fits snugly behind your ear, leaving the bloom poking out.\nProvides some MP and +5% MP regeneration per turn.",
+    "etypeId": 3,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 8,
+        "value": 0.05
+      }
+    ],
+    "iconIndex": 314,
+    "name": "Flora's Rose",
+    "note": "<Rarity: 1>",
+    "params": [
+      0,
+      5,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 30
   }
 ]
