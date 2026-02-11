@@ -90,6 +90,7 @@ NOTICE: Old saves will not work with this update!
 - Buffed Earthen Grassrobes Earth resistance from 10% to 25%.
 - All levels of Well Fed last 33% more steps.
 - Thrown items now count as physical hits.
+- Heated Metal now absorbs Fire attacks.
 - New trees!
 - A lot of balance changes and other tweaks were made that aren't listed here.
 
