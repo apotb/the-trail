@@ -87,6 +87,7 @@ NOTICE: Old saves will not work with this update!
 - Made Goblins weaker to magic.
 - Made Bats more resistant to magic.
 - Reduced drop rate of Ring of the Woods/Forest.
+- Buffed Green/Blue Gel HP/MP recovery from 2 → 5.
 - Buffed Earthen Grassrobes Earth resistance from 10% to 25%.
 - All levels of Well Fed last 33% more steps.
 - Thrown items now count as physical hits.
