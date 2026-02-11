@@ -2191,7 +2191,7 @@ Window_ItemInfo.prototype.drawMaterialText = function(dy) {
 
 Window_ItemInfo.prototype.drawSalvageText = function(dy) {
     var item = this._item;
-    if (!item.canDisassemble || item.disassemblerTypes.length > 0) return dy;
+    if (Object.keys(item.disassembleItems).length === 0) return dy;
     let infoText = "Can be salvaged";
     var info = infoText.split(/[\r\n]+/);
     for (var i = 0; i < info.length; ++i) {
