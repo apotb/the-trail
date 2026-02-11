@@ -120,6 +120,8 @@ Window_ItemList.prototype.sortItemList = function(data) {
     var isSalvagingWindow = this._ext === 'Salvaging';
     var isUpgradersWindow = this._ext === 'Upgraders';
     var isKeyItemWindow = this._category === 'keyItem';
+    var rarityCategories = ['WeaponCat', 'ArmorCat', 'weapon', 'WType', 'armor', 'EType'];
+    var isRarityWindow = rarityCategories.indexOf(this._category) !== -1;
     
     // Cache sort keys to avoid repeated function calls
     var sortKeys = this._data.map(function(item) {
@@ -128,13 +130,16 @@ Window_ItemList.prototype.sortItemList = function(data) {
         var hasDisassemblerTypes = baseItem && baseItem.disassemblerTypes && baseItem.disassemblerTypes.length > 0;
         var hasKeyItemOccasion = baseItem && (baseItem.occasion === 0 || baseItem.occasion === 2);
         var weight = isUpgradersWindow ? MSX.AlphabeticalSort.getUpgraderWeight(item) : 0;
+        var rarityValue = isRarityWindow && baseItem && baseItem.rarity ? baseItem.rarity : 0;
+        var rarity = rarityValue === 11 ? 2 : rarityValue;
         return {
             name: DataManager.getSortName(item).toLowerCase(),
             wellFed: isMealsWindow ? MSX.AlphabeticalSort.getWellFedLevel(item) : 0,
             recovery: recoveryInfo,
             hasDisassemblerTypes: hasDisassemblerTypes,
             hasKeyItemOccasion: hasKeyItemOccasion,
-            weight: weight
+            weight: weight,
+            rarity: rarity
         };
     });
 
@@ -152,6 +157,11 @@ Window_ItemList.prototype.sortItemList = function(data) {
         // If in Key Item window, prioritize occassion 0 or 2
         if (isKeyItemWindow && keyA.hasKeyItemOccasion !== keyB.hasKeyItemOccasion) {
             return keyA.hasKeyItemOccasion ? -1 : 1;
+        }
+
+        // If in rarity window, sort by rarity descending (highest first)
+        if (isRarityWindow && keyA.rarity !== keyB.rarity) {
+            return keyB.rarity - keyA.rarity;
         }
         
         // If in Salvaging window, prioritize items with disassemblerTypes
