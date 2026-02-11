@@ -3393,7 +3393,7 @@ Window_ShopNumber.prototype.processNumberChange = function() {
             this.changeNumber(-1);
         }
         if (Input.isRepeated('up')) {
-            this.changeNumber(10);
+            this.changeNumber(this.number() !== 1 ? 10 : 9);
         }
         if (Input.isRepeated('down')) {
             this.changeNumber(-10);
@@ -3420,7 +3420,7 @@ Window_ShopNumber.prototype.onButtonUp = function() {
 };
 
 Window_ShopNumber.prototype.onButtonUp2 = function() {
-    this.changeNumber(10);
+    this.changeNumber(this.number() !== 1 ? 10 : 9);
 };
 
 Window_ShopNumber.prototype.onButtonDown = function() {

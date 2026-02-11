@@ -81,6 +81,7 @@ NOTICE: Old saves will not work with this update!
   - Reordered smithery crafting menus.
   - Shop sell menu shows if an item is a material.
   - Item recovery previews show multipliers from PHA and other effects like Duncan.
+  - Pressing UP when buying/selling items while the current quantity is 1 will go to 10 instead of 11.
 - Bubble is now guaranteed to apply Soaked.
 - Fiery Tablet recipe includes Blood Pact and Flesh Doll, as well as now having the effects of both.
 - Made Goblins weaker to magic.
