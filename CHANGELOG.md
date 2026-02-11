@@ -101,6 +101,7 @@ NOTICE: Old saves will not work with this update!
 - Fixed Soaked not doubling incoming Electric damage.
 - Fixed Decimation applying Fatigue to the user.
 - Fixed a bug where Copper Oreleaf couldn't drop Rock Salt.
+- Fixed equip comparison menu showing wrong colors for incoming physical/magical damage.
 - Fixed outdated cliff texture in South Field.
 - Fixed wading effect when walking on bridge in South Field.
 - Fixed Seshat's Tome drop beginning in Telluria Field being a 1/10,000 drop rather than a 1/200 drop.
