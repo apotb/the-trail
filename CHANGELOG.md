@@ -105,6 +105,7 @@ NOTICE: Old saves will not work with this update!
 - Fixed being able to select the same ingredient multiple times for crafting.
 - Fixed being able to craft items multiple times without resources available.
 - Fixed item upgrades not transferring when crafting.
+- Fixed automatically equipping crafting upgrades sometimes equipping the wrong thing.
 - Fixed outdated cliff texture in South Field.
 - Fixed wading effect when walking on bridge in South Field.
 - Fixed Seshat's Tome drop beginning in Telluria Field being a 1/10,000 drop rather than a 1/200 drop.
