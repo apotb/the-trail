@@ -10857,8 +10857,16 @@
               ]
             },
             {
-              "code": 101,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                12,
+                "$gameParty.bloodlustOwned()"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 11,
@@ -10868,14 +10876,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p4I feel... this power inside me."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 11,
@@ -10885,14 +10893,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p4The blade... \\iw[18]."
               ]
             },
             {
               "code": 250,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Up2",
@@ -10904,7 +10912,7 @@
             },
             {
               "code": 224,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 [
                   255,
@@ -10918,14 +10926,14 @@
             },
             {
               "code": 230,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 60
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 3,
@@ -10935,10 +10943,20 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p4I can feel its power."
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 241,
@@ -10994,8 +11012,16 @@
               ]
             },
             {
-              "code": 205,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                12,
+                "$gameParty.bloodlustOwned()"
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 1,
               "parameters": [
                 4,
                 {
@@ -11016,7 +11042,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 3,
@@ -11026,7 +11052,7 @@
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 6,
                 {
@@ -11047,7 +11073,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 3,
@@ -11057,7 +11083,7 @@
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
@@ -11093,7 +11119,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 29,
@@ -11106,7 +11132,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 37,
@@ -11116,7 +11142,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 2,
@@ -11126,7 +11152,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 2,
@@ -11136,7 +11162,7 @@
             },
             {
               "code": 241,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "",
@@ -11148,7 +11174,7 @@
             },
             {
               "code": 250,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Attack3",
@@ -11160,7 +11186,7 @@
             },
             {
               "code": 250,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Damage1",
@@ -11172,7 +11198,7 @@
             },
             {
               "code": 250,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Ice4",
@@ -11184,7 +11210,7 @@
             },
             {
               "code": 250,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Saint3",
@@ -11196,7 +11222,7 @@
             },
             {
               "code": 223,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 [
                   255,
@@ -11210,14 +11236,14 @@
             },
             {
               "code": 230,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 50
               ]
             },
             {
               "code": 250,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Collapse1",
@@ -11229,14 +11255,14 @@
             },
             {
               "code": 230,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 120
               ]
             },
             {
               "code": 122,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 46,
                 46,
@@ -11247,7 +11273,7 @@
             },
             {
               "code": 223,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 [
                   -68,
@@ -11261,14 +11287,14 @@
             },
             {
               "code": 230,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 120
               ]
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
@@ -11322,7 +11348,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 18,
@@ -11332,7 +11358,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 15,
@@ -11345,7 +11371,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 19,
@@ -11355,7 +11381,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 15,
@@ -11368,7 +11394,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 16,
@@ -11378,7 +11404,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 15,
@@ -11391,7 +11417,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 17,
@@ -11401,7 +11427,7 @@
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 3,
@@ -11411,14 +11437,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p4Huh... what just..."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 3,
@@ -11428,14 +11454,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p4..."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 3,
@@ -11445,14 +11471,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p4\\iw[18]\\c[0]... it's... glowing?"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 3,
@@ -11462,21 +11488,21 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p4Glowing bright red... almost"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "like... it absorbed them...?"
               ]
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
@@ -11504,7 +11530,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 15,
@@ -11517,7 +11543,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 18,
@@ -11527,7 +11553,7 @@
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 3,
@@ -11537,21 +11563,21 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p4Oh shit... Henry! Henry! Are you alright?"
               ]
             },
             {
               "code": 230,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 120
               ]
             },
             {
               "code": 241,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "theme_rogue",
@@ -11563,7 +11589,7 @@
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 15,
@@ -11573,14 +11599,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p4Oh no, oh no, oh no..."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 3,
@@ -11590,14 +11616,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p4How can I..."
               ]
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
@@ -11648,7 +11674,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 29,
@@ -11661,7 +11687,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 4,
@@ -11671,7 +11697,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 3,
@@ -11681,7 +11707,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 3,
@@ -11691,7 +11717,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 1,
@@ -11701,7 +11727,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 17,
@@ -11711,7 +11737,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 15,
@@ -11721,6 +11747,95 @@
                   "indent": null
                 }
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                88,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 1,
+              "parameters": [
+                46,
+                46,
+                0,
+                0,
+                13
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 1,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\p4That was a close one..."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\p4Oh shit... Henry! Henry! Are you alright?"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 1,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 101,
@@ -11830,8 +11945,16 @@
               ]
             },
             {
-              "code": 101,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                12,
+                "$gameParty.bloodlustOwned()"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 3,
@@ -11841,14 +11964,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p4This had better work. Sorry if this hurts, Henry."
               ]
             },
             {
               "code": 250,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Slash2",
@@ -11860,7 +11983,7 @@
             },
             {
               "code": 250,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Heal1",
@@ -11872,7 +11995,7 @@
             },
             {
               "code": 224,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 [
                   255,
@@ -11886,14 +12009,14 @@
             },
             {
               "code": 230,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 60
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 3,
@@ -11903,17 +12026,27 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p4Hey, the glowing stopped..."
               ]
             },
             {
               "code": 230,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 60
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 101,
@@ -11963,7 +12096,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\henHey... AGH, what is this pain? What the hell happened?!"
+                "\\henHey... AGGHH, what is this pain? What the hell happened?!"
               ]
             },
             {
@@ -12221,8 +12354,16 @@
               ]
             },
             {
-              "code": 101,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                12,
+                "$gameParty.bloodlustOwned()"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 3,
@@ -12232,10 +12373,47 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p4That guy... uh... dropped? He left some papers."
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\p4Looks like that guy dropped some papers."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 122,
