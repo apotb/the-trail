@@ -439,7 +439,9 @@ Window_ItemList.prototype.includes = function(item) {
         if (DataManager.isMaterial(item)) return item;
         break;
       case 'Drops':
-        if (DataManager.isItem(item)) if (Yanfly.EED.ItemDropIDs.contains(item.id)) return item;
+        if (DataManager.isItem(item)) if (Yanfly.EED.ItemDropIDs.contains(item.id) &&
+                                          item.rarity !== 11 &&
+                                          !item.meta['Upgrade Effect']) return item;
         break;
       case 'Upgraders':
         if (DataManager.isItem(item)) if (item.meta['Upgrade Effect']) return item;
