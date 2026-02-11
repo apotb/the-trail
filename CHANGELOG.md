@@ -104,6 +104,7 @@ NOTICE: Old saves will not work with this update!
 - Fixed equip comparison menu showing wrong colors for incoming physical/magical damage.
 - Fixed being able to select the same ingredient multiple times for crafting.
 - Fixed being able to craft items multiple times without resources available.
+- Fixed item upgrades not transferring when crafting.
 - Fixed outdated cliff texture in South Field.
 - Fixed wading effect when walking on bridge in South Field.
 - Fixed Seshat's Tome drop beginning in Telluria Field being a 1/10,000 drop rather than a 1/200 drop.

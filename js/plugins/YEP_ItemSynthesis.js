@@ -1980,7 +1980,7 @@ Scene_Synthesis.prototype.doBuy = async function(number) {
         database = DataManager.getDatabase(this._item);
         item = database[database.length - 1];
         upgradeStats[1].forEach(upgrade => {
-          const upgrader = $dataItems[Yanfly.ItemIdRef[upgrade.match(/\\i\[\d+\]\s*([^\\]*)/)[1].trim().toUpperCase()]];
+          const upgrader = $dataItems[Yanfly.ItemIdRef[upgrade[0].match(/\\i\[\d+\]\s*([^\\]*)/)[1].trim().toUpperCase()]];
           $gameParty.gainItem(upgrader, 1);
           ItemManager.applyIUSEffects(item, upgrader);
         });
