@@ -2397,6 +2397,7 @@ Sprite_Enemy.prototype.createShadowSprite = function() {
     this.addChildAt(this._shadowSprite, 0);
     if (!this._svBattlerEnabled) {
       this._mainSprite.bitmap = this.bitmap;
+      this._mainSprite.opacity = 0;
       this.addChildAt(this._mainSprite, 1);
     }
 };

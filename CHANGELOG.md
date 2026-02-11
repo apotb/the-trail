@@ -106,6 +106,7 @@ NOTICE: Old saves will not work with this update!
 - Fixed Red Mushroom appearing in Recovery category.
 - Fixed buggy appearance of First Cleric statue in Frozen Labyrinth.
 - Fixed Record Fish in Career Stats not updating.
+- Fixed Heated Metal not changing Attacker/Defender Tellurium Golem sprites.
 - Fixed a bunch of other random bugs.
 
 If you happen to stumble upon a "new" item that isn't on here, it's probably because I made a lot of old/bad items more relevant. For example, the Globetrotter Boots, once useless at Telluria Castle Town's tier, now have a much better fit in Solus Valley. So you might be finding yourself using items you never would have even thought to care about in previous versions!
