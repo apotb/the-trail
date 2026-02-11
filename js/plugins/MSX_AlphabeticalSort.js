@@ -57,6 +57,30 @@ MSX.AlphabeticalSort.getWellFedLevel = function(item) {
     return 0;
 };
 
+MSX.AlphabeticalSort.getRecoveryInfo = function(item) {
+    var baseItem = DataManager.getBaseItem(item);
+    if (!baseItem || !baseItem.effects) return { hasHP: false, hasMP: false, hpPercent: 0, hpFlat: 0, mpPercent: 0, mpFlat: 0 };
+    
+    var hpPercent = 0, hpFlat = 0, mpPercent = 0, mpFlat = 0;
+    var hasHP = false, hasMP = false;
+    
+    for (var i = 0; i < baseItem.effects.length; i++) {
+        var effect = baseItem.effects[i];
+        if (effect.code === 11) {
+            hasHP = true;
+            hpPercent = Math.abs(effect.value1 || 0);
+            hpFlat = Math.abs(effect.value2 || 0);
+        }
+        if (effect.code === 12) {
+            hasMP = true;
+            mpPercent = Math.abs(effect.value1 || 0);
+            mpFlat = Math.abs(effect.value2 || 0);
+        }
+    }
+    
+    return { hasHP: hasHP, hasMP: hasMP, hpPercent: hpPercent, hpFlat: hpFlat, mpPercent: mpPercent, mpFlat: mpFlat };
+};
+
 Window_ItemList.prototype.sortItemList = function(data) {
     var allItems = data || $gameParty.allItems();
     this._data = allItems.filter(function(item) {
@@ -75,12 +99,15 @@ Window_ItemList.prototype.sortItemList = function(data) {
     })(this._data, 'baseItemId');
 
     var isMealsWindow = this._ext === 'Meals';
+    var isRecoveryWindow = this._ext === 'Recovery';
     
     // Cache sort keys to avoid repeated function calls
     var sortKeys = this._data.map(function(item) {
+        var recoveryInfo = isRecoveryWindow ? MSX.AlphabeticalSort.getRecoveryInfo(item) : { hasHP: false, hasMP: false, hpValue: 0, mpValue: 0 };
         return {
             name: DataManager.getSortName(item).toLowerCase(),
-            wellFed: isMealsWindow ? MSX.AlphabeticalSort.getWellFedLevel(item) : 0
+            wellFed: isMealsWindow ? MSX.AlphabeticalSort.getWellFedLevel(item) : 0,
+            recovery: recoveryInfo
         };
     });
 
@@ -93,6 +120,47 @@ Window_ItemList.prototype.sortItemList = function(data) {
         // If in Meals window, sort by Well Fed level first
         if (isMealsWindow && keyA.wellFed !== keyB.wellFed) {
             return keyB.wellFed - keyA.wellFed; // Sort by level descending (best first)
+        }
+        
+        // If in Recovery window, sort by recovery type and amount
+        if (isRecoveryWindow) {
+            // Determine priority: both HP+MP > HP only > MP only
+            var priorityA = (keyA.recovery.hasHP && keyA.recovery.hasMP) ? 3 : (keyA.recovery.hasHP ? 2 : (keyA.recovery.hasMP ? 1 : 0));
+            var priorityB = (keyB.recovery.hasHP && keyB.recovery.hasMP) ? 3 : (keyB.recovery.hasHP ? 2 : (keyB.recovery.hasMP ? 1 : 0));
+            
+            if (priorityA !== priorityB) {
+                return priorityB - priorityA; // Higher priority first
+            }
+            
+            // Within same category, prioritize percentage healing over flat healing
+            var hasPercentA = (keyA.recovery.hasHP && keyA.recovery.hpPercent > 0) || (keyA.recovery.hasMP && keyA.recovery.mpPercent > 0);
+            var hasPercentB = (keyB.recovery.hasHP && keyB.recovery.hpPercent > 0) || (keyB.recovery.hasMP && keyB.recovery.mpPercent > 0);
+            
+            if (hasPercentA !== hasPercentB) {
+                return hasPercentA ? -1 : 1; // Percentage healing first
+            }
+            
+            // Sort by recovery amount descending (highest first)
+            if (keyA.recovery.hasHP && keyA.recovery.hasMP && keyB.recovery.hasHP && keyB.recovery.hasMP) {
+                // Use percentage if available, otherwise use flat
+                var valueA = keyA.recovery.hpPercent + keyA.recovery.mpPercent || keyA.recovery.hpFlat + keyA.recovery.mpFlat;
+                var valueB = keyB.recovery.hpPercent + keyB.recovery.mpPercent || keyB.recovery.hpFlat + keyB.recovery.mpFlat;
+                if (valueA !== valueB) {
+                    return valueB - valueA;
+                }
+            } else if (keyA.recovery.hasHP && keyB.recovery.hasHP) {
+                var valueA = keyA.recovery.hpPercent > 0 ? keyA.recovery.hpPercent : keyA.recovery.hpFlat;
+                var valueB = keyB.recovery.hpPercent > 0 ? keyB.recovery.hpPercent : keyB.recovery.hpFlat;
+                if (valueA !== valueB) {
+                    return valueB - valueA;
+                }
+            } else if (keyA.recovery.hasMP && keyB.recovery.hasMP) {
+                var valueA = keyA.recovery.mpPercent > 0 ? keyA.recovery.mpPercent : keyA.recovery.mpFlat;
+                var valueB = keyB.recovery.mpPercent > 0 ? keyB.recovery.mpPercent : keyB.recovery.mpFlat;
+                if (valueA !== valueB) {
+                    return valueB - valueA;
+                }
+            }
         }
 
         // Then sort alphabetically
