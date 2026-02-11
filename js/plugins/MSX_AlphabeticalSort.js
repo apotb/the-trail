@@ -119,18 +119,21 @@ Window_ItemList.prototype.sortItemList = function(data) {
     var isRecoveryWindow = this._ext === 'Recovery';
     var isSalvagingWindow = this._ext === 'Salvaging';
     var isUpgradersWindow = this._ext === 'Upgraders';
+    var isKeyItemWindow = this._category === 'keyItem';
     
     // Cache sort keys to avoid repeated function calls
     var sortKeys = this._data.map(function(item) {
         var recoveryInfo = (isRecoveryWindow || isMealsWindow) ? MSX.AlphabeticalSort.getRecoveryInfo(item) : { hasHP: false, hasMP: false, hpPercent: 0, hpFlat: 0, mpPercent: 0, mpFlat: 0 };
         var baseItem = DataManager.getBaseItem(item);
         var hasDisassemblerTypes = baseItem && baseItem.disassemblerTypes && baseItem.disassemblerTypes.length > 0;
+        var hasKeyItemOccasion = baseItem && (baseItem.occasion === 0 || baseItem.occasion === 2);
         var weight = isUpgradersWindow ? MSX.AlphabeticalSort.getUpgraderWeight(item) : 0;
         return {
             name: DataManager.getSortName(item).toLowerCase(),
             wellFed: isMealsWindow ? MSX.AlphabeticalSort.getWellFedLevel(item) : 0,
             recovery: recoveryInfo,
             hasDisassemblerTypes: hasDisassemblerTypes,
+            hasKeyItemOccasion: hasKeyItemOccasion,
             weight: weight
         };
     });
@@ -144,6 +147,11 @@ Window_ItemList.prototype.sortItemList = function(data) {
         // If in Meals window, sort by Well Fed level first
         if (isMealsWindow && keyA.wellFed !== keyB.wellFed) {
             return keyB.wellFed - keyA.wellFed; // Sort by level descending (best first)
+        }
+
+        // If in Key Item window, prioritize occassion 0 or 2
+        if (isKeyItemWindow && keyA.hasKeyItemOccasion !== keyB.hasKeyItemOccasion) {
+            return keyA.hasKeyItemOccasion ? -1 : 1;
         }
         
         // If in Salvaging window, prioritize items with disassemblerTypes
