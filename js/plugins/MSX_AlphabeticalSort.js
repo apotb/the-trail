@@ -42,6 +42,21 @@ DataManager.getSortName = function(item) {
     return DataManager.getBaseItem(item).name;
 }
 
+MSX.AlphabeticalSort.getWellFedLevel = function(item) {
+    var baseItem = DataManager.getBaseItem(item);
+    if (!baseItem || !baseItem.effects) return 0;
+
+    var levelMap = { 6: 1, 4: 2, 5: 3, 97: 4 };
+
+    for (var i = 0; i < baseItem.effects.length; i++) {
+        var effect = baseItem.effects[i];
+        if (effect.code === 21 && levelMap.hasOwnProperty(effect.dataId)) {
+            return levelMap[effect.dataId];
+        }
+    }
+    return 0;
+};
+
 Window_ItemList.prototype.sortItemList = function(data) {
     var allItems = data || $gameParty.allItems();
     this._data = allItems.filter(function(item) {
@@ -58,11 +73,33 @@ Window_ItemList.prototype.sortItemList = function(data) {
             return false;
         }).reverse();
     })(this._data, 'baseItemId');
-    this._data.sort(function(a,b){
-        if (DataManager.getSortName(a).toLowerCase() < DataManager.getSortName(b).toLowerCase()) return -1;
-        if (DataManager.getSortName(a).toLowerCase() > DataManager.getSortName(b).toLowerCase()) return 1;
-        return 0;
+
+    var isMealsWindow = this._ext === 'Meals';
+    
+    // Cache sort keys to avoid repeated function calls
+    var sortKeys = this._data.map(function(item) {
+        return {
+            name: DataManager.getSortName(item).toLowerCase(),
+            wellFed: isMealsWindow ? MSX.AlphabeticalSort.getWellFedLevel(item) : 0
+        };
     });
+
+    this._data.sort(function(a,b){
+        var indexA = this._data.indexOf(a);
+        var indexB = this._data.indexOf(b);
+        var keyA = sortKeys[indexA];
+        var keyB = sortKeys[indexB];
+        
+        // If in Meals window, sort by Well Fed level first
+        if (isMealsWindow && keyA.wellFed !== keyB.wellFed) {
+            return keyB.wellFed - keyA.wellFed; // Sort by level descending (best first)
+        }
+
+        // Then sort alphabetically
+        if (keyA.name < keyB.name) return -1;
+        if (keyA.name > keyB.name) return 1;
+        return 0;
+    }.bind(this));
     if (this.includes(null)) {
         this._data.push(null);
     }
