@@ -16,6 +16,7 @@ Game_Temp.prototype.initialize = function() {
     this._commonEventId = 0;
     this._destinationX = null;
     this._destinationY = null;
+    this._recentNames = [];
 };
 
 Game_Temp.prototype.isPlaytest = function() {
@@ -4018,7 +4019,27 @@ Game_Actor.prototype.setName = function(name) {
 
 Game_Actor.prototype.setRandomName = function(male) {
     const names = male ? $dataStrings.names.male : $dataStrings.names.female;
-    this._name = names[Math.floor(Math.random() * names.length)];
+    const recentNames = $gameTemp._recentNames || [];
+    const maxRecentNames = 15;
+
+    // Filter out recently used names
+    let availableNames = names.filter(name => !recentNames.includes(name));
+
+    // If all names were recently used, just use all names
+    if (availableNames.length === 0) {
+        availableNames = names;
+    }
+
+    // Pick a random name from available names
+    const selectedName = availableNames[Math.floor(Math.random() * availableNames.length)];
+    this._name = selectedName;
+
+    // Track this name in recent names
+    recentNames.push(selectedName);
+    if (recentNames.length > maxRecentNames) {
+        recentNames.shift();
+    }
+    $gameTemp._recentNames = recentNames;
 };
 
 Game_Actor.prototype.nickname = function() {
