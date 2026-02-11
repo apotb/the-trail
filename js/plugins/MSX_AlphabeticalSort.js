@@ -124,6 +124,7 @@ Window_ItemList.prototype.sortItemList = function(data) {
     var isSalvagingWindow = this._ext === 'Salvaging';
     var isUpgradersWindow = this._ext === 'Upgraders';
     var isKeyItemWindow = this._category === 'keyItem';
+    var isDropsWindow = this._ext === 'Drops';
     var rarityCategories = ['WeaponCat', 'ArmorCat', 'weapon', 'WType', 'armor', 'EType'];
     var isRarityWindow = rarityCategories.indexOf(this._category) !== -1;
     
@@ -136,6 +137,7 @@ Window_ItemList.prototype.sortItemList = function(data) {
         var weight = isUpgradersWindow ? MSX.AlphabeticalSort.getUpgraderWeight(item) : 0;
         var rarityValue = isRarityWindow && baseItem && baseItem.rarity ? baseItem.rarity : 0;
         var rarity = rarityValue === 11 ? 2 : rarityValue;
+        var price = isDropsWindow && baseItem && baseItem.price ? baseItem.price : 0;
         return {
             name: DataManager.getSortName(item).toLowerCase(),
             wellFed: isMealsWindow ? MSX.AlphabeticalSort.getWellFedLevel(item) : 0,
@@ -143,7 +145,8 @@ Window_ItemList.prototype.sortItemList = function(data) {
             hasDisassemblerTypes: hasDisassemblerTypes,
             hasKeyItemOccasion: hasKeyItemOccasion,
             weight: weight,
-            rarity: rarity
+            rarity: rarity,
+            price: price
         };
     });
 
@@ -166,6 +169,11 @@ Window_ItemList.prototype.sortItemList = function(data) {
         // If in rarity window, sort by rarity descending (highest first)
         if (isRarityWindow && keyA.rarity !== keyB.rarity) {
             return keyB.rarity - keyA.rarity;
+        }
+
+        // If in Drops window, sort by price descending (highest first)
+        if (isDropsWindow && keyA.price !== keyB.price) {
+            return keyB.price - keyA.price;
         }
         
         // If in Salvaging window, prioritize items with disassemblerTypes
