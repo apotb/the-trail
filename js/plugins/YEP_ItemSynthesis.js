@@ -1591,22 +1591,7 @@ Window_SynthesisNumber.prototype.update = function() {
 Window_SynthesisNumber.prototype.playOkSound = function() {
 };
 
-Window_SynthesisNumber.prototype.processNumberChange = function() {
-    if (this.isOpenAndActive()) {
-        if (Input.isRepeated('right')) {
-          this.changeNumber(1);
-        }
-        if (Input.isRepeated('left')) {
-          this.changeNumber(-1);
-        }
-        if (Input.isRepeated('up')) {
-          this.changeNumber(10);
-        }
-        if (Input.isRepeated('down')) {
-          this.changeNumber(-10);
-        }
-    }
-};
+Window_SynthesisNumber.prototype.processNumberChange = Window_ShopNumber.prototype.processNumberChange;
 
 Window_SynthesisNumber.prototype.changeNumber = function(amount) {
     var lastNumber = this._number;
@@ -1622,21 +1607,13 @@ Window_SynthesisNumber.prototype.updateCursor = function() {
                        this.cursorWidth(), this.lineHeight());
 };
 
-Window_SynthesisNumber.prototype.onButtonUp = function() {
-    this.changeNumber(1);
-};
+Window_SynthesisNumber.prototype.onButtonUp = Window_ShopNumber.prototype.onButtonUp;
 
-Window_SynthesisNumber.prototype.onButtonUp2 = function() {
-    this.changeNumber(10);
-};
+Window_SynthesisNumber.prototype.onButtonUp2 = Window_ShopNumber.prototype.onButtonUp2;
 
-Window_SynthesisNumber.prototype.onButtonDown = function() {
-    this.changeNumber(-1);
-};
+Window_SynthesisNumber.prototype.onButtonDown = Window_ShopNumber.prototype.onButtonDown;
 
-Window_SynthesisNumber.prototype.onButtonDown2 = function() {
-    this.changeNumber(-10);
-};
+Window_SynthesisNumber.prototype.onButtonDown2 = Window_ShopNumber.prototype.onButtonDown2;
 
 Window_SynthesisNumber.prototype.onButtonOk = function() {
     this.processOk();
