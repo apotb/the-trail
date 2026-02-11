@@ -219,6 +219,7 @@ _.giveUp = function() {
 	$gamePlayer.showFollowers();
 	$gameSystem.battleTemplate('normal');
 	if ($gameMap.inTrueTelluriaCastle()) $gameSystem.setBattleBgm('battle_castle');
+	$gameTemp.reserveCommonEvent(37);
 };
 
 _.informInvalidCommonEvent = [
