@@ -96,6 +96,7 @@ NOTICE: Old saves will not work with this update!
 ### Bug Fixes
 - Fixed a bug where the autosave interval would reset when changing maps.
 - Fixed a bug where the autosave interval wouldn't count down while in menus or battle.
+- Fixed autosave interval option not saving.
 - Fixed Soaked not doubling incoming Electric damage.
 - Fixed a bug where Copper Oreleaf couldn't drop Rock Salt.
 - Fixed outdated cliff texture in South Field.
