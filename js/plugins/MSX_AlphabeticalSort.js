@@ -81,6 +81,23 @@ MSX.AlphabeticalSort.getRecoveryInfo = function(item) {
     return { hasHP: hasHP, hasMP: hasMP, hpPercent: hpPercent, hpFlat: hpFlat, mpPercent: mpPercent, mpFlat: mpFlat };
 };
 
+MSX.AlphabeticalSort.getUpgraderWeight = function(item) {
+    var baseItem = DataManager.getBaseItem(item);
+    if (!baseItem || !baseItem.upgradeEffect) return 0;
+    
+    var weightEffect = baseItem.upgradeEffect.find(function(s) {
+        return s.contains('Weight: ');
+    });
+    
+    if (weightEffect) {
+        var weightStr = weightEffect.split('Weight: ')[1];
+        var weight = parseInt(weightStr, 10);
+        return isNaN(weight) ? 0 : weight;
+    }
+    
+    return 0;
+};
+
 Window_ItemList.prototype.sortItemList = function(data) {
     var allItems = data || $gameParty.allItems();
     this._data = allItems.filter(function(item) {
@@ -101,17 +118,20 @@ Window_ItemList.prototype.sortItemList = function(data) {
     var isMealsWindow = this._ext === 'Meals';
     var isRecoveryWindow = this._ext === 'Recovery';
     var isSalvagingWindow = this._ext === 'Salvaging';
+    var isUpgradersWindow = this._ext === 'Upgraders';
     
     // Cache sort keys to avoid repeated function calls
     var sortKeys = this._data.map(function(item) {
         var recoveryInfo = (isRecoveryWindow || isMealsWindow) ? MSX.AlphabeticalSort.getRecoveryInfo(item) : { hasHP: false, hasMP: false, hpPercent: 0, hpFlat: 0, mpPercent: 0, mpFlat: 0 };
         var baseItem = DataManager.getBaseItem(item);
         var hasDisassemblerTypes = baseItem && baseItem.disassemblerTypes && baseItem.disassemblerTypes.length > 0;
+        var weight = isUpgradersWindow ? MSX.AlphabeticalSort.getUpgraderWeight(item) : 0;
         return {
             name: DataManager.getSortName(item).toLowerCase(),
             wellFed: isMealsWindow ? MSX.AlphabeticalSort.getWellFedLevel(item) : 0,
             recovery: recoveryInfo,
-            hasDisassemblerTypes: hasDisassemblerTypes
+            hasDisassemblerTypes: hasDisassemblerTypes,
+            weight: weight
         };
     });
 
@@ -129,6 +149,11 @@ Window_ItemList.prototype.sortItemList = function(data) {
         // If in Salvaging window, prioritize items with disassemblerTypes
         if (isSalvagingWindow && keyA.hasDisassemblerTypes !== keyB.hasDisassemblerTypes) {
             return keyA.hasDisassemblerTypes ? -1 : 1; // Items with disassemblerTypes first
+        }
+        
+        // If in Upgraders window, sort by weight descending (highest first)
+        if (isUpgradersWindow && keyA.weight !== keyB.weight) {
+            return keyB.weight - keyA.weight; // Higher weight first
         }
         
         // If in Recovery window OR Meals window (after Well Fed tier), sort by recovery type and amount
