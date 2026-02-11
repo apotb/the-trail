@@ -103,7 +103,7 @@ Window_ItemList.prototype.sortItemList = function(data) {
     
     // Cache sort keys to avoid repeated function calls
     var sortKeys = this._data.map(function(item) {
-        var recoveryInfo = isRecoveryWindow ? MSX.AlphabeticalSort.getRecoveryInfo(item) : { hasHP: false, hasMP: false, hpValue: 0, mpValue: 0 };
+        var recoveryInfo = (isRecoveryWindow || isMealsWindow) ? MSX.AlphabeticalSort.getRecoveryInfo(item) : { hasHP: false, hasMP: false, hpPercent: 0, hpFlat: 0, mpPercent: 0, mpFlat: 0 };
         return {
             name: DataManager.getSortName(item).toLowerCase(),
             wellFed: isMealsWindow ? MSX.AlphabeticalSort.getWellFedLevel(item) : 0,
@@ -122,8 +122,8 @@ Window_ItemList.prototype.sortItemList = function(data) {
             return keyB.wellFed - keyA.wellFed; // Sort by level descending (best first)
         }
         
-        // If in Recovery window, sort by recovery type and amount
-        if (isRecoveryWindow) {
+        // If in Recovery window OR Meals window (after Well Fed tier), sort by recovery type and amount
+        if (isRecoveryWindow || isMealsWindow) {
             // Determine priority: both HP+MP > HP only > MP only
             var priorityA = (keyA.recovery.hasHP && keyA.recovery.hasMP) ? 3 : (keyA.recovery.hasHP ? 2 : (keyA.recovery.hasMP ? 1 : 0));
             var priorityB = (keyB.recovery.hasHP && keyB.recovery.hasMP) ? 3 : (keyB.recovery.hasHP ? 2 : (keyB.recovery.hasMP ? 1 : 0));
