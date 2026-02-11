@@ -22,8 +22,9 @@ NOTICE: Old saves will not work with this update!
   - Arlo
   - Clover
   - Duncan
-- Added a short sound effect when completing a quest objective.
+- Your days on The Trail will now be tracked.
 - Added TROPHY rarity.
+- Added a short sound effect when completing a quest objective.
 - Added new rogue passive skill "Resourceful" at level 15.
   - Moved Low Blow to L18, Shield Break to L22, and removed Focus Up.
 - Added 14 items:

@@ -559,7 +559,8 @@ Imported["SumRndmDde Gold Window Customizer"] = 1.06;
 				this.drawCurrencyValue($gameParty.numItems(item), item.name + RegExp.$1, x, y + (i * lh), width, item);
 			} else if(_.info[i].match(/variable:\s*(\d+)/i)) {
 				var id = parseInt(RegExp.$1);
-				this.drawCurrencyValue($gameVariables.value(id), $dataSystem.variables[id], x, y + (i * lh), width, 'override');
+				let text = '\\fs[20]' + $dataSystem.variables[id] + " " + $gameVariables.value(id);
+				this.drawTextEx(text, x + width - this.textWidthEx(text), y + (i * lh));
 			} else if(_.info[i].match(/switch:\s*(\d+)/i)) {
 				var id = parseInt(RegExp.$1);
 				var str = ($gameSwitches.value(id)) ? _.onLabel : _.offLabel;
