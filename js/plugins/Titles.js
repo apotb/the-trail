@@ -74,7 +74,7 @@ Window_SaveInfo.prototype.drawPartyTitles = function(dy) {
     var dw = this.contents.width / length;;
     dw = Math.floor(dw);
     var dx = 0;
-    for (var i = 0; i < length; ++i) {
+    for (var i = 0; i < length - Number(this._drawPet); ++i) {
         var actorId = this._saveContents.party._actors[i];
         var member = this._saveContents.actors._data[actorId];
         if (member) {
