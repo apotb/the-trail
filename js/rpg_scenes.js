@@ -1279,7 +1279,8 @@ Scene_Item.prototype.createItemWindow = function() {
     this._categoryWindow.setItemWindow(this._itemWindow);
 };
 
-Scene_Item.prototype.user = function() {
+// Changed from Scene_Item to Scene_Base
+Scene_Base.prototype.user = function() {
     var members = $gameParty.movableMembers();
     var bestActor = members[0];
     var bestPha = 0;

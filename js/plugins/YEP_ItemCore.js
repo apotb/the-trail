@@ -1932,7 +1932,7 @@ Window_ItemStatus.prototype.drawItemData = function(i, dx, dy, dw) {
       if (value === 0) value = '---';
       if (value !== '---' && value !== 0 && typeof value == 'number') {
         value *= 100;
-        value *= this.parent.parent.user().pha; // PHA
+        value *= this.parent.parent.user()?.pha; // PHA
         if ($gameParty.pet().name() === "Duncan" && this._item.itemCategory?.contains('Meals')) value *= 1.5; // DUNCAN
       }
     }
@@ -1941,7 +1941,7 @@ Window_ItemStatus.prototype.drawItemData = function(i, dx, dy, dw) {
       value = (effect) ? effect.value2 : '---';
       if (value === 0) value = '---';
       if (value !== '---' && value !== 0 && typeof value == 'number') {
-        value *= this.parent.parent.user().pha; // PHA
+        value *= this.parent.parent.user()?.pha; // PHA
         if ($gameParty.pet().name() === "Duncan" && this._item.itemCategory?.contains('Meals')) value *= 1.5; // DUNCAN
       }
     }
@@ -1951,7 +1951,7 @@ Window_ItemStatus.prototype.drawItemData = function(i, dx, dy, dw) {
       if (value === 0) value = '---';
       if (value !== '---' && value !== 0 && typeof value == 'number') {
         value *= 100;
-        value *= this.parent.parent.user().pha; // PHA
+        value *= this.parent.parent.user()?.pha; // PHA
         if ($gameParty.pet().name() === "Duncan" && this._item.itemCategory?.contains('Meals')) value *= 1.5; // DUNCAN
       }
     }
@@ -1960,7 +1960,7 @@ Window_ItemStatus.prototype.drawItemData = function(i, dx, dy, dw) {
       value = (effect) ? effect.value2 : '---';
       if (value === 0) value = '---';
       if (value !== '---' && value !== 0 && typeof value == 'number') {
-        value *= this.parent.parent.user().pha; // PHA
+        value *= this.parent.parent.user()?.pha; // PHA
         if ($gameParty.pet().name() === "Duncan" && this._item.itemCategory?.contains('Meals')) value *= 1.5; // DUNCAN
       }
     }
