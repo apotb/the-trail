@@ -99,6 +99,7 @@ NOTICE: Old saves will not work with this update!
 - Fixed a bug where the autosave interval wouldn't count down while in menus or battle.
 - Fixed autosave interval option not saving.
 - Fixed Soaked not doubling incoming Electric damage.
+- Fixed Decimation applying Fatigue to the user.
 - Fixed a bug where Copper Oreleaf couldn't drop Rock Salt.
 - Fixed outdated cliff texture in South Field.
 - Fixed wading effect when walking on bridge in South Field.
