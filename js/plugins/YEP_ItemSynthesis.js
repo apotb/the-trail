@@ -1972,6 +1972,7 @@ Scene_Synthesis.prototype.doBuy = async function(number) {
           if (item.etypeId === this._item.etypeId) {
             upgradeStats[3] = actor;
             upgradeStats[4] = equipSlot;
+            if (item.traits.some(t => t.code === Game_BattlerBase.TRAIT_SLOT_TYPE && t.value === 1)) actor._forceDualWield = true;
           }
         }
         $gameParty.gainIndependentItem(item, -1, true)
@@ -1988,8 +1989,10 @@ Scene_Synthesis.prototype.doBuy = async function(number) {
         });
         ItemManager.setPriorityName(item, upgradeStats[2]);
         ItemManager.updateItemName(item);
-        console.log(upgradeStats, item);
-        if (upgradeStats[3]) upgradeStats[3].changeEquip(upgradeStats[4], item);
+        if (upgradeStats[3]) {
+          upgradeStats[3].changeEquip(upgradeStats[4], item);
+          delete upgradeStats[3]._forceDualWield;
+        }
       }
       $gameSystem.addSynth(this._item);
       delete $gameTemp._independentItems;

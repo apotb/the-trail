@@ -3069,7 +3069,7 @@ Game_BattlerBase.prototype.slotType = function() {
 };
 
 Game_BattlerBase.prototype.isDualWield = function() {
-    return this.slotType() === 1;
+    return this.slotType() === 1 || this._forceDualWield;
 };
 
 Game_BattlerBase.prototype.actionPlusSet = function() {
