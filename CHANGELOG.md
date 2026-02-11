@@ -101,6 +101,7 @@ NOTICE: Old saves will not work with this update!
 - Fixed Seshat's Tome drop beginning in Telluria Field being a 1/10,000 drop rather than a 1/200 drop.
 - Fixed Red Mushroom appearing in Recovery category.
 - Fixed buggy appearance of First Cleric statue in Frozen Labyrinth.
+- Fixed Record Fish in Career Stats not updating.
 - Fixed a bunch of other random bugs.
 
 If you happen to stumble upon a "new" item that isn't on here, it's probably because I made a lot of old/bad items more relevant. For example, the Globetrotter Boots, once useless at Telluria Castle Town's tier, now have a much better fit in Solus Valley. So you might be finding yourself using items you never would have even thought to care about in previous versions!
