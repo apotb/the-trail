@@ -98,6 +98,10 @@ MSX.AlphabeticalSort.getUpgraderWeight = function(item) {
     return 0;
 };
 
+MSX.AlphabeticalSort.normalizeRarity = function(rarity) {
+    return rarity === 11 ? 2 : rarity;
+};
+
 Window_ItemList.prototype.sortItemList = function(data) {
     var allItems = data || $gameParty.allItems();
     this._data = allItems.filter(function(item) {
@@ -233,6 +237,40 @@ if(MSX.AlphabeticalSort.sortItemList){
         }
     };
 }
+
+MSX.AlphabeticalSort.Window_EquipItem_makeItemList = Window_EquipItem.prototype.makeItemList;
+Window_EquipItem.prototype.makeItemList = function() {
+    MSX.AlphabeticalSort.Window_EquipItem_makeItemList.call(this);
+    if (!this._data || this._data.length <= 1) return;
+
+    var hasNull = this.includes(null);
+    if (hasNull) {
+        this._data = this._data.filter(function(item) {
+            return item;
+        });
+    }
+
+    this._data.sort(function(a, b) {
+        var baseA = DataManager.getBaseItem(a);
+        var baseB = DataManager.getBaseItem(b);
+        var rarityA = MSX.AlphabeticalSort.normalizeRarity(baseA && baseA.rarity ? baseA.rarity : 0);
+        var rarityB = MSX.AlphabeticalSort.normalizeRarity(baseB && baseB.rarity ? baseB.rarity : 0);
+
+        if (rarityA !== rarityB) {
+            return rarityB - rarityA; // Higher rarity first
+        }
+
+        var nameA = DataManager.getSortName(a).toLowerCase();
+        var nameB = DataManager.getSortName(b).toLowerCase();
+        if (nameA < nameB) return -1;
+        if (nameA > nameB) return 1;
+        return 0;
+    });
+
+    if (hasNull) {
+        this._data.push(null);
+    }
+};
 
 if(MSX.AlphabeticalSort.sortSkillList){
     Window_SkillList.prototype.makeItemList = function() {
