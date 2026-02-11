@@ -4022,10 +4022,18 @@ Game_Actor.prototype.setRandomName = function(male) {
     const recentNames = $gameTemp._recentNames || [];
     const maxRecentNames = 15;
 
-    // Filter out recently used names
-    let availableNames = names.filter(name => !recentNames.includes(name));
+    // Get names of current party members
+    const partyNames = $gameParty ? $gameParty.members().map(member => member.name()) : [];
 
-    // If all names were recently used, just use all names
+    // Filter out recently used names and current party member names
+    let availableNames = names.filter(name => !recentNames.includes(name) && !partyNames.includes(name));
+
+    // If all names were recently used, just filter out party names
+    if (availableNames.length === 0) {
+        availableNames = names.filter(name => !partyNames.includes(name));
+    }
+
+    // If even that doesn't work, use all names
     if (availableNames.length === 0) {
         availableNames = names;
     }
