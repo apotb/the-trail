@@ -2126,6 +2126,7 @@ Window_ItemInfo.prototype.drawItemInfoD = function(dy) {
 
 Window_ItemInfo.prototype.drawItemInfoE = function(dy) {
     dy = this.drawMaterialText(dy);
+    dy = this.drawSalvageText(dy);
     return dy;
 };
 
@@ -2183,6 +2184,20 @@ Window_ItemInfo.prototype.drawMaterialText = function(dy) {
       var line = info[i];
       this.resetFontSettings();
       this.drawTextEx(line, this.textPadding(), dy);
+      dy += this.contents.fontSize + 8;
+    }
+    return dy;
+};
+
+Window_ItemInfo.prototype.drawSalvageText = function(dy) {
+    var item = this._item;
+    if (!item.canDisassemble || item.disassemblerTypes.length > 0) return dy;
+    let infoText = "Can be salvaged";
+    var info = infoText.split(/[\r\n]+/);
+    for (var i = 0; i < info.length; ++i) {
+      var line = info[i];
+      this.resetFontSettings();
+      this.drawTextEx(line, this.textPadding(),   dy);
       dy += this.contents.fontSize + 8;
     }
     return dy;

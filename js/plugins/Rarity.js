@@ -33,7 +33,8 @@ ___Window_ItemInfo__prototype__drawItemRarity___ = function(window, dy) {
 
     // Type Text
     if (DataManager.isItem(item)) {
-      if (item.consumable) item.typeText = "CONSUMABLE";
+      if (item.disassemblerTypes.length > 0) item.typeText = "SALVAGE KIT"; 
+      else if (item.consumable) item.typeText = "CONSUMABLE";
       else if (item.types.contains("KEY")) item.typeText = "KEY ITEM";
       else item.typeText = "ITEM";
     }

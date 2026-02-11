@@ -61,6 +61,7 @@ NOTICE: Old saves will not work with this update!
   - Whiskerfish Porridge
   - Good Rod
   - Enchanted Rod
+- Added "Can be salvaged" tooltip to items that... well, can be salvaged.
 
 ### Changes
 - Player 4 can now use shields! Equip a dagger or knuckles in her 1st weapon slot to use her dual wield.
@@ -75,6 +76,7 @@ NOTICE: Old saves will not work with this update!
 - Increased max name length from 10 → 12.
 - You can no longer equip duplicate Wristbraces, Necklaces, Gauntlets, Scarves, or Crystals.
   - To make this easier to figure out, equipment types are shown next to rarity.
+  - Several other item distinctions have been added as well, mostly just for flavor!
 - Red Slimes and Bats no longer drop Copper/Iron Clusters and Coal.
   - This is compensated by 12 new ore nodes in Goblin Grotto, half of which are oreleaf.
 - Menu improvements:
