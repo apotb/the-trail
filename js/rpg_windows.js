@@ -3984,6 +3984,7 @@ Window_NameInput.prototype.onNameOk = function() {
             SoundManager.playBuzzer();
         }
     } else {
+        this._editWindow._name = this._editWindow._name.trim();
         SoundManager.playOk();
         this.callOkHandler();
     }
