@@ -34,7 +34,11 @@ ___Window_ItemInfo__prototype__drawItemRarity___ = function(window, dy) {
     // Type Text
     if (DataManager.isItem(item)) {
       if (item.disassemblerTypes.length > 0) item.typeText = "SALVAGE KIT"; 
+      else if (!!item.meta.rod) item.typeText = "FISHING ROD";
+      else if (!!item.meta.bait) item.typeText = "BAIT";
       else if (item.consumable) item.typeText = "CONSUMABLE";
+      else if (item.upgradeEffect.length > 0) item.typeText = "UPGRADER";
+      else if (!!item.meta.Pet) item.typeText = "PET ITEM";
       else if (item.types.contains("KEY")) item.typeText = "KEY ITEM";
       else item.typeText = "ITEM";
     }
