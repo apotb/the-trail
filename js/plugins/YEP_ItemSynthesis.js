@@ -1849,7 +1849,7 @@ Scene_Synthesis.prototype.createItemChoiceWindow = function() {
       __makeItemList__.call(this);
       this._data = this._data.filter(ingredient => {
         const baseItem = $gameParty.getNotUpgradedIndependentItem(DataManager.getBaseItem(ingredient));
-        return $gameParty.allEquips().contains(ingredient) || ingredient.boostCount > 0 || (ingredient.priorityName != '' && ingredient.priorityName != baseItem.name) || ingredient == baseItem;
+        return $gameParty.allEquips().contains(ingredient) || ingredient.boostCount > 0 || (ingredient.priorityName !== '' && ingredient.priorityName !== baseItem.name) || ingredient === baseItem;
       });
     };
 
@@ -1931,7 +1931,7 @@ Scene_Synthesis.prototype.doBuy = async function(number) {
       var price = number * this._item.synthCost;
       $gameParty.loseGold(price);
       var items = [];
-      var independentItems = [];
+      $gameTemp._independentItems = [];
       for (var i = 0; i < this._item.synthIngredients.length; ++i) {
         var ingredient = DataManager.getSynthesisIngredient(this._item, i);
         var quantity = DataManager.getSynthesisQuantity(this._item, i);
@@ -1943,17 +1943,23 @@ Scene_Synthesis.prototype.doBuy = async function(number) {
           for (var j = 0; j < quantity; ++j) {
             if ($gameParty.allItemsAndEquips().filter(i => i.baseItemId == ingredient.id && i.groupType == ingredient.groupType).length > $gameParty.numNotUpgradedIndependentItems(ingredient)) await this.chooseIndependentItem(ingredient);
             else $gameVariables.setValue(35, ingredient);
-            if ($gameVariables.value(35) == 0) return reject();
-            independentItems.push($gameVariables.value(35));
+            if ($gameVariables.value(35) === 0) {
+              delete $gameTemp._independentItems;
+              return reject();
+            }
+            $gameTemp._independentItems.push($gameVariables.value(35));
           }
         } else {
           items.push([ingredient, quantity]);
         }
       }
-      if (independentItems.contains(0)) return reject();
+      if ($gameTemp._independentItems.contains(0)) {
+        delete $gameTemp._independentItems;
+        return reject();
+      }
       items.forEach(item => $gameParty.loseItem(item[0], item[1], false));
       upgradeStats = [-1, [], '', undefined, undefined];
-      independentItems.forEach(item => {
+      $gameTemp._independentItems.forEach(item => {
         if ((item._weight || -1) > upgradeStats[0]) {
           upgradeStats[0] = (item._weight || 0);
           upgradeStats[1] = item.slotsApplied;
@@ -1983,6 +1989,7 @@ Scene_Synthesis.prototype.doBuy = async function(number) {
         if (upgradeStats[3]) upgradeStats[3].changeEquip(upgradeStats[4], item);
       }
       $gameSystem.addSynth(this._item);
+      delete $gameTemp._independentItems;
       resolve();
     });
 };

@@ -1403,6 +1403,7 @@ Game_Party.prototype.numNotUpgradedIndependentItems = function(baseItem) {
       if (!item) continue;
       if (item.boostCount && item.boostCount !== 0) continue;
       if (item.priorityName && item.priorityName != item.baseItemName) continue;
+      if ($gameTemp._independentItems?.contains(item)) continue;
       if (item.baseItemId && item.baseItemId === id) value += 1;
     }
   }
@@ -1422,6 +1423,7 @@ Game_Party.prototype.getNotUpgradedIndependentItem = function(baseItem) {
     if (!item) continue;
     if (item.boostCount && item.boostCount !== 0) continue;
     if (item.priorityName && item.priorityName != item.baseItemName) continue;
+    if ($gameTemp._independentItems?.contains(item)) continue;
     if (item.baseItemId && item.baseItemId === id) value = item;
   }
   return value;

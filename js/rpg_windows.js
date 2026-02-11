@@ -4389,6 +4389,7 @@ Window_EventItem.prototype.updatePlacement = function() {
 Window_EventItem.prototype.includes = function(item) {
     var itypeId = $gameMessage.itemChoiceItypeId();
     if (!item) return false;
+    if ($gameTemp._independentItems?.contains(item)) return false;
     if ((DataManager.isWeapon(itypeId) && DataManager.isWeapon(item)) || (DataManager.isArmor(itypeId) && DataManager.isArmor(item))) return item.baseItemId == itypeId.id;
     if (typeof itypeId == "string") return DataManager.isItem(item) && item.itemCategory.contains(itypeId);
     if (typeof itypeid == "number") return DataManager.isItem(item) && item.itypeId === itypeId;
