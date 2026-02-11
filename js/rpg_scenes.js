@@ -1133,9 +1133,9 @@ Scene_ItemBase.prototype.item = function() {
     return this._itemWindow.item();
 };
 
-Scene_ItemBase.prototype.user = function() {
+/*Scene_ItemBase.prototype.user = function() {
     return null;
-};
+};*/
 
 Scene_ItemBase.prototype.isCursorLeft = function() {
     return this._itemWindow.index() % 2 === 0;
