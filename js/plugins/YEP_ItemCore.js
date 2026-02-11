@@ -1234,6 +1234,7 @@ Game_Party.prototype.registerNewItem = function(baseItem, newItem) {
     if (container) {
       var lastNumber = this.numItems(newItem);
       container[newItem.id] = 1;
+      $gameTemp._latestNewItem = newItem;
     }
 };
 

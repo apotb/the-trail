@@ -1969,16 +1969,18 @@ Scene_Synthesis.prototype.doBuy = async function(number) {
           actor = $gameParty.members().find(a => a.equips().contains(item));
           equipSlot = $gameParty.members().find(m => m.equips().includes(item))?.equips().findIndex(e => e == item);
           if (!actor) [actor, equipSlot] = [upgradeStats[3], upgradeStats[4]];
-          upgradeStats[3] = actor;
-          upgradeStats[4] = equipSlot;
+          if (item.etypeId === this._item.etypeId) {
+            upgradeStats[3] = actor;
+            upgradeStats[4] = equipSlot;
+          }
         }
         $gameParty.gainIndependentItem(item, -1, true)
+        DataManager.removeIndependentItem(item, true);
       });
       number *= this._item.craftAmount;
       $gameParty.gainItem(this._item, number);
       if (DataManager.isIndependent(this._item)) {
-        database = DataManager.getDatabase(this._item);
-        item = database[database.length - 1];
+        item = $gameTemp._latestNewItem;
         upgradeStats[1].forEach(upgrade => {
           const upgrader = $dataItems[Yanfly.ItemIdRef[upgrade[0].match(/\\i\[\d+\]\s*([^\\]*)/)[1].trim().toUpperCase()]];
           $gameParty.gainItem(upgrader, 1);
@@ -1986,6 +1988,7 @@ Scene_Synthesis.prototype.doBuy = async function(number) {
         });
         ItemManager.setPriorityName(item, upgradeStats[2]);
         ItemManager.updateItemName(item);
+        console.log(upgradeStats, item);
         if (upgradeStats[3]) upgradeStats[3].changeEquip(upgradeStats[4], item);
       }
       $gameSystem.addSynth(this._item);
