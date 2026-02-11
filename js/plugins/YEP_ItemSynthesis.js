@@ -1998,7 +1998,7 @@ Scene_Synthesis.prototype.chooseIndependentItem = function(item) {
   return new Promise((resolve, reject) => {
     $gameMessage.setItemChoice(35, item);
     this._itemChoiceWindow.start();
-    
+
     const __close__ = this._itemChoiceWindow.close;
     this._itemChoiceWindow.close = function() {
       __close__.call(this);
@@ -2031,6 +2031,7 @@ Scene_Synthesis.prototype.customSynthEffect = function(number) {
 
 Scene_Synthesis.prototype.endNumberInput = function() {
     this._numberWindow.hide();
+    this._numberWindow.deactivate();
     this._itemWindow.hide();
     this._statusWindow.hide();
     this._listWindow.activate();
