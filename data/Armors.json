@@ -4710,12 +4710,12 @@
       {
         "code": 23,
         "dataId": 3,
-        "value": 2
+        "value": 1.5
       },
       {
         "code": 23,
         "dataId": 6,
-        "value": 0.8
+        "value": 0.9
       },
       {
         "code": 14,
@@ -5160,13 +5160,13 @@
   {
     "id": 195,
     "atypeId": 1,
-    "description": "Sign your soul away... oh, never mind, this just needs a drop\nof your blood. Doubles the effectiveness of recovery items.",
+    "description": "Sign your soul away... oh, never mind, this just needs a drop of\nyour blood. Healing items used by the holder are x1.5 more effective.",
     "etypeId": 6,
     "traits": [
       {
         "code": 23,
         "dataId": 3,
-        "value": 2
+        "value": 1.5
       }
     ],
     "iconIndex": 1318,
@@ -5193,7 +5193,7 @@
       {
         "code": 23,
         "dataId": 6,
-        "value": 0.8
+        "value": 0.9
       }
     ],
     "iconIndex": 1319,

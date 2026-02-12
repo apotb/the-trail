@@ -87,7 +87,8 @@ NOTICE: Old saves will not work with this update!
   - Item recovery previews show multipliers from PHA and other effects like Duncan.
   - Pressing UP when buying/selling/crafting items while the current quantity is 1 will go to 10 instead of 11.
 - Bubble is now guaranteed to apply Soaked.
-- Fiery Tablet recipe includes Blood Pact and Flesh Doll, as well as now having the effects of both.
+- Fiery Tablet recipe includes Blood Pact and Flesh Doll and inherits the effects of both.
+  - Also halved the effects of both accessories... they were hard to get, but kind of OP!
 - Made Goblins weaker to magic.
 - Made Bats more resistant to magic.
 - Reduced drop rate of Ring of the Woods/Forest.
