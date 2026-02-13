@@ -83,6 +83,7 @@ NOTICE: Old saves will not work with this update!
     - I hope the new "Wandering Swordsman" scenario can be a considered an improved perspective on the Overworld we already had. Apocalypse isn't going anywhere, but you'll have to put in the work to learn about him! That'll be harder than before, considering you're now just a commoner and not a destined champion...
   - A bunch of items/features were rebalanced, shuffled around, or at least given a niche use.
   - Existing fishing/food content has been overhauled to accommodate the new fishing content.
+- Lighting has been revamped. Thanks to ApocalypseGamer1 for the contribution!
 - Player 4 can now use light shields!
   - Equip a dagger or knuckles in her 1st weapon slot to use her dual wield.
   - Equip any other type of weapon to let her use a light shield.

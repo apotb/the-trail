@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 55,
   "height": 48,
-  "note": "",
+  "note": "<Dungeon>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -18826,8 +18826,8 @@
     },
     {
       "id": 34,
-      "name": "EV034",
-      "note": "Fire 200 #e6292c",
+      "name": "firebowl-test",
+      "note": "<Copy Event: 158, 12>",
       "pages": [
         {
           "conditions": {
@@ -18845,7 +18845,7 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 0,
             "characterName": "!Other2",
@@ -18854,27 +18854,6 @@
             "characterIndex": 7
           },
           "list": [
-            {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "<s_emittance: bgs/Fire>"
-              ]
-            },
-            {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "<s_e_radius: 4>"
-              ]
-            },
-            {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "<s_e_volume: 20>"
-              ]
-            },
             {
               "code": 0,
               "indent": 0,

@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 21,
-  "note": "",
+  "note": "<Dungeon>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -3818,7 +3818,7 @@
     {
       "id": 1,
       "name": "candle1",
-      "note": "Fire 50 #e6292c B30 1",
+      "note": "Fire 50 #e25822 B30 1",
       "pages": [
         {
           "conditions": {
@@ -4986,6 +4986,13 @@
               "code": 356,
               "indent": 0,
               "parameters": [
+                "Tint set #000000"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
                 "Light radius 50 #FFFFFF B70"
               ]
             },
@@ -5652,7 +5659,7 @@
     {
       "id": 18,
       "name": "candle2",
-      "note": "Fire 50 #e6292c B30 2",
+      "note": "Fire 50 #e25822 B30 2",
       "pages": [
         {
           "conditions": {
@@ -6541,7 +6548,7 @@
     {
       "id": 19,
       "name": "candle3",
-      "note": "Fire 50 #e6292c B30 3",
+      "note": "Fire 50 #e25822 B30 3",
       "pages": [
         {
           "conditions": {
@@ -7318,7 +7325,7 @@
     {
       "id": 20,
       "name": "candle4",
-      "note": "Fire 50 #e6292c B30 4",
+      "note": "Fire 50 #e25822 B30 4",
       "pages": [
         {
           "conditions": {
@@ -8207,7 +8214,7 @@
     {
       "id": 21,
       "name": "candle5",
-      "note": "Fire 50 #e6292c B30 5",
+      "note": "Fire 50 #e25822 B30 5",
       "pages": [
         {
           "conditions": {
@@ -9208,7 +9215,7 @@
     {
       "id": 22,
       "name": "candle6",
-      "note": "Fire 50 #e6292c B30 6",
+      "note": "Fire 50 #e25822 B30 6",
       "pages": [
         {
           "conditions": {
@@ -10097,7 +10104,7 @@
     {
       "id": 23,
       "name": "candle7",
-      "note": "Fire 50 #e6292c B30 7",
+      "note": "Fire 50 #e25822 B30 7",
       "pages": [
         {
           "conditions": {
@@ -10874,7 +10881,7 @@
     {
       "id": 24,
       "name": "candle8",
-      "note": "Fire 50 #e6292c B30 8",
+      "note": "Fire 50 #e25822 B30 8",
       "pages": [
         {
           "conditions": {
@@ -11763,7 +11770,7 @@
     {
       "id": 25,
       "name": "candle9",
-      "note": "Fire 50 #e6292c B30 9",
+      "note": "Fire 50 #e25822 B30 9",
       "pages": [
         {
           "conditions": {

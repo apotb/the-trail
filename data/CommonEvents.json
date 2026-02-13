@@ -2899,7 +2899,7 @@
         "code": 356,
         "indent": 4,
         "parameters": [
-          "Light color 10 #e6292c"
+          "Light color 10 #e25822"
         ]
       },
       {
@@ -6292,37 +6292,10 @@
         ]
       },
       {
-        "code": 231,
+        "code": 117,
         "indent": 2,
         "parameters": [
-          61,
-          "NightOverlay",
-          0,
-          0,
-          0,
-          0,
-          100,
-          100,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 232,
-        "indent": 2,
-        "parameters": [
-          61,
-          0,
-          0,
-          0,
-          0,
-          0,
-          100,
-          100,
-          255,
-          0,
-          600,
-          false
+          57
         ]
       },
       {
@@ -6428,21 +6401,10 @@
         ]
       },
       {
-        "code": 232,
+        "code": 117,
         "indent": 2,
         "parameters": [
-          61,
-          0,
-          0,
-          0,
-          0,
-          0,
-          100,
-          100,
-          0,
-          0,
-          600,
-          false
+          58
         ]
       },
       {
@@ -6610,6 +6572,36 @@
         "code": 108,
         "indent": 0,
         "parameters": [
+          "# If in dungeon, do nothing"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$dataMap.note.contains(\"<Dungeon>\")"
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
           "# If indoors, remove the screen tint"
         ]
       },
@@ -6622,113 +6614,11 @@
         ]
       },
       {
-        "code": 232,
+        "code": 356,
         "indent": 1,
         "parameters": [
-          61,
-          0,
-          0,
-          0,
-          0,
-          0,
-          100,
-          100,
-          0,
-          0,
-          1,
-          false
+          "Tint set #ffffff"
         ]
-      },
-      {
-        "code": 235,
-        "indent": 1,
-        "parameters": [
-          69
-        ]
-      },
-      {
-        "code": 108,
-        "indent": 1,
-        "parameters": [
-          "# Telluria Castle tint"
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 1,
-        "parameters": [
-          12,
-          "[89, 90, 91].contains($gameMap.mapId())"
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 2,
-        "parameters": [
-          1,
-          38,
-          0,
-          5,
-          4
-        ]
-      },
-      {
-        "code": 223,
-        "indent": 3,
-        "parameters": [
-          [
-            -68,
-            -68,
-            -68,
-            0
-          ],
-          1,
-          false
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 3,
-        "parameters": []
-      },
-      {
-        "code": 411,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 223,
-        "indent": 3,
-        "parameters": [
-          [
-            0,
-            0,
-            0,
-            0
-          ],
-          1,
-          false
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 3,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 0,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 1,
-        "parameters": []
       },
       {
         "code": 115,
@@ -6762,21 +6652,10 @@
         ]
       },
       {
-        "code": 232,
+        "code": 356,
         "indent": 1,
         "parameters": [
-          61,
-          0,
-          0,
-          0,
-          0,
-          0,
-          100,
-          100,
-          255,
-          0,
-          1,
-          false
+          "Tint set #53454f"
         ]
       },
       {
@@ -6797,21 +6676,10 @@
         "parameters": []
       },
       {
-        "code": 232,
+        "code": 356,
         "indent": 1,
         "parameters": [
-          61,
-          0,
-          0,
-          0,
-          0,
-          0,
-          100,
-          100,
-          0,
-          0,
-          1,
-          false
+          "Tint set #ffffff"
         ]
       },
       {
@@ -6838,21 +6706,10 @@
     "id": 38,
     "list": [
       {
-        "code": 232,
+        "code": 356,
         "indent": 0,
         "parameters": [
-          61,
-          0,
-          0,
-          0,
-          0,
-          0,
-          100,
-          100,
-          0,
-          0,
-          1,
-          false
+          "Tint set #ffffff"
         ]
       },
       {
@@ -12166,7 +12023,7 @@
         "indent": 0,
         "parameters": [
           12,
-          "$gameMap.tileset().meta['Inside']"
+          "$gameMap.indoors()"
         ]
       },
       {
@@ -12270,139 +12127,18 @@
     "id": 57,
     "list": [
       {
-        "code": 243,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 242,
+        "code": 356,
         "indent": 0,
         "parameters": [
-          1
+          "Tint fade #fb9062 20"
         ]
       },
       {
-        "code": 250,
+        "code": 356,
         "indent": 0,
         "parameters": [
-          {
-            "name": "Ocarina",
-            "volume": 90,
-            "pitch": 100,
-            "pan": 0
-          }
+          "Tint fade #53454f 35"
         ]
-      },
-      {
-        "code": 230,
-        "indent": 0,
-        "parameters": [
-          300
-        ]
-      },
-      {
-        "code": 244,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          0,
-          93,
-          1
-        ]
-      },
-      {
-        "code": 212,
-        "indent": 1,
-        "parameters": [
-          -1,
-          247,
-          false
-        ]
-      },
-      {
-        "code": 121,
-        "indent": 1,
-        "parameters": [
-          93,
-          93,
-          0
-        ]
-      },
-      {
-        "code": 101,
-        "indent": 1,
-        "parameters": [
-          "",
-          0,
-          0,
-          2
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 1,
-        "parameters": [
-          "The flow of time has sped up!"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 411,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 212,
-        "indent": 1,
-        "parameters": [
-          -1,
-          248,
-          false
-        ]
-      },
-      {
-        "code": 121,
-        "indent": 1,
-        "parameters": [
-          93,
-          93,
-          1
-        ]
-      },
-      {
-        "code": 101,
-        "indent": 1,
-        "parameters": [
-          "",
-          0,
-          0,
-          2
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 1,
-        "parameters": [
-          "The flow of time has returned to normal."
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
       },
       {
         "code": 0,
@@ -12410,7 +12146,7 @@
         "parameters": []
       }
     ],
-    "name": "TIME - Magical Ocarina",
+    "name": "TIME - Tint System Day to Night",
     "switchId": 1,
     "trigger": 0
   },
@@ -12418,139 +12154,17 @@
     "id": 58,
     "list": [
       {
-        "code": 250,
+        "code": 356,
         "indent": 0,
         "parameters": [
-          {
-            "name": "BattleCry",
-            "volume": 90,
-            "pitch": 100,
-            "pan": 0
-          }
+          "Tint fade #fb9062 20"
         ]
       },
       {
-        "code": 230,
+        "code": 356,
         "indent": 0,
         "parameters": [
-          240
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          12,
-          "!$gameMap.events().some(e => e._monster && $gameSelfSwitches.value([$gameMap.mapId(), e.eventId(), 'A']))"
-        ]
-      },
-      {
-        "code": 101,
-        "indent": 1,
-        "parameters": [
-          "",
-          0,
-          0,
-          2
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 1,
-        "parameters": [
-          "Nothing happened..."
-        ]
-      },
-      {
-        "code": 115,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 221,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 250,
-        "indent": 0,
-        "parameters": [
-          {
-            "name": "Monster2",
-            "volume": 90,
-            "pitch": 100,
-            "pan": 0
-          }
-        ]
-      },
-      {
-        "code": 355,
-        "indent": 0,
-        "parameters": [
-          "$gameMap.events().filter(e => e._monster).forEach(e => {"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 0,
-        "parameters": [
-          "  $gameSelfSwitches.setValue([$gameMap.mapId(), e.eventId(), 'A'], false)"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 0,
-        "parameters": [
-          "});"
-        ]
-      },
-      {
-        "code": 230,
-        "indent": 0,
-        "parameters": [
-          60
-        ]
-      },
-      {
-        "code": 222,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 101,
-        "indent": 0,
-        "parameters": [
-          "",
-          0,
-          0,
-          2
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 0,
-        "parameters": [
-          "Monsters have returned to this dungeon!"
-        ]
-      },
-      {
-        "code": 126,
-        "indent": 0,
-        "parameters": [
-          218,
-          1,
-          0,
-          1
+          "Tint fade #ffffff 35"
         ]
       },
       {
@@ -12559,7 +12173,7 @@
         "parameters": []
       }
     ],
-    "name": "Battle Cry",
+    "name": "TIME - Tint System Night to Day",
     "switchId": 1,
     "trigger": 0
   },
@@ -18248,6 +17862,303 @@
       }
     ],
     "name": "Refresh Home Pets",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 86,
+    "list": [
+      {
+        "code": 243,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 242,
+        "indent": 0,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "Ocarina",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          300
+        ]
+      },
+      {
+        "code": 244,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          0,
+          93,
+          1
+        ]
+      },
+      {
+        "code": 212,
+        "indent": 1,
+        "parameters": [
+          -1,
+          247,
+          false
+        ]
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          93,
+          93,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "The flow of time has sped up!"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 212,
+        "indent": 1,
+        "parameters": [
+          -1,
+          248,
+          false
+        ]
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          93,
+          93,
+          1
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "The flow of time has returned to normal."
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "TIME - Magical Ocarina",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 87,
+    "list": [
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "BattleCry",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          240
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "!$gameMap.events().some(e => e._monster && $gameSelfSwitches.value([$gameMap.mapId(), e.eventId(), 'A']))"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Nothing happened..."
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 221,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "Monster2",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameMap.events().filter(e => e._monster).forEach(e => {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  $gameSelfSwitches.setValue([$gameMap.mapId(), e.eventId(), 'A'], false)"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "});"
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 222,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Monsters have returned to this dungeon!"
+        ]
+      },
+      {
+        "code": 126,
+        "indent": 0,
+        "parameters": [
+          218,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Battle Cry",
     "switchId": 1,
     "trigger": 0
   }
