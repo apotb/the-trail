@@ -1591,22 +1591,7 @@ Window_SynthesisNumber.prototype.update = function() {
 Window_SynthesisNumber.prototype.playOkSound = function() {
 };
 
-Window_SynthesisNumber.prototype.processNumberChange = function() {
-    if (this.isOpenAndActive()) {
-        if (Input.isRepeated('right')) {
-          this.changeNumber(1);
-        }
-        if (Input.isRepeated('left')) {
-          this.changeNumber(-1);
-        }
-        if (Input.isRepeated('up')) {
-          this.changeNumber(10);
-        }
-        if (Input.isRepeated('down')) {
-          this.changeNumber(-10);
-        }
-    }
-};
+Window_SynthesisNumber.prototype.processNumberChange = Window_ShopNumber.prototype.processNumberChange;
 
 Window_SynthesisNumber.prototype.changeNumber = function(amount) {
     var lastNumber = this._number;
@@ -1622,21 +1607,13 @@ Window_SynthesisNumber.prototype.updateCursor = function() {
                        this.cursorWidth(), this.lineHeight());
 };
 
-Window_SynthesisNumber.prototype.onButtonUp = function() {
-    this.changeNumber(1);
-};
+Window_SynthesisNumber.prototype.onButtonUp = Window_ShopNumber.prototype.onButtonUp;
 
-Window_SynthesisNumber.prototype.onButtonUp2 = function() {
-    this.changeNumber(10);
-};
+Window_SynthesisNumber.prototype.onButtonUp2 = Window_ShopNumber.prototype.onButtonUp2;
 
-Window_SynthesisNumber.prototype.onButtonDown = function() {
-    this.changeNumber(-1);
-};
+Window_SynthesisNumber.prototype.onButtonDown = Window_ShopNumber.prototype.onButtonDown;
 
-Window_SynthesisNumber.prototype.onButtonDown2 = function() {
-    this.changeNumber(-10);
-};
+Window_SynthesisNumber.prototype.onButtonDown2 = Window_ShopNumber.prototype.onButtonDown2;
 
 Window_SynthesisNumber.prototype.onButtonOk = function() {
     this.processOk();
@@ -1849,7 +1826,7 @@ Scene_Synthesis.prototype.createItemChoiceWindow = function() {
       __makeItemList__.call(this);
       this._data = this._data.filter(ingredient => {
         const baseItem = $gameParty.getNotUpgradedIndependentItem(DataManager.getBaseItem(ingredient));
-        return $gameParty.allEquips().contains(ingredient) || ingredient.boostCount > 0 || (ingredient.priorityName != '' && ingredient.priorityName != baseItem.name) || ingredient == baseItem;
+        return $gameParty.allEquips().contains(ingredient) || ingredient.boostCount > 0 || (ingredient.priorityName !== '' && ingredient.priorityName !== baseItem.name) || ingredient === baseItem;
       });
     };
 
@@ -1931,7 +1908,7 @@ Scene_Synthesis.prototype.doBuy = async function(number) {
       var price = number * this._item.synthCost;
       $gameParty.loseGold(price);
       var items = [];
-      var independentItems = [];
+      $gameTemp._independentItems = [];
       for (var i = 0; i < this._item.synthIngredients.length; ++i) {
         var ingredient = DataManager.getSynthesisIngredient(this._item, i);
         var quantity = DataManager.getSynthesisQuantity(this._item, i);
@@ -1943,17 +1920,23 @@ Scene_Synthesis.prototype.doBuy = async function(number) {
           for (var j = 0; j < quantity; ++j) {
             if ($gameParty.allItemsAndEquips().filter(i => i.baseItemId == ingredient.id && i.groupType == ingredient.groupType).length > $gameParty.numNotUpgradedIndependentItems(ingredient)) await this.chooseIndependentItem(ingredient);
             else $gameVariables.setValue(35, ingredient);
-            if ($gameVariables.value(35) == 0) return reject();
-            independentItems.push($gameVariables.value(35));
+            if ($gameVariables.value(35) === 0) {
+              delete $gameTemp._independentItems;
+              return reject();
+            }
+            $gameTemp._independentItems.push($gameVariables.value(35));
           }
         } else {
           items.push([ingredient, quantity]);
         }
       }
-      if (independentItems.contains(0)) return reject();
+      if ($gameTemp._independentItems.contains(0)) {
+        delete $gameTemp._independentItems;
+        return reject();
+      }
       items.forEach(item => $gameParty.loseItem(item[0], item[1], false));
       upgradeStats = [-1, [], '', undefined, undefined];
-      independentItems.forEach(item => {
+      $gameTemp._independentItems.forEach(item => {
         if ((item._weight || -1) > upgradeStats[0]) {
           upgradeStats[0] = (item._weight || 0);
           upgradeStats[1] = item.slotsApplied;
@@ -1963,26 +1946,33 @@ Scene_Synthesis.prototype.doBuy = async function(number) {
           actor = $gameParty.members().find(a => a.equips().contains(item));
           equipSlot = $gameParty.members().find(m => m.equips().includes(item))?.equips().findIndex(e => e == item);
           if (!actor) [actor, equipSlot] = [upgradeStats[3], upgradeStats[4]];
-          upgradeStats[3] = actor;
-          upgradeStats[4] = equipSlot;
+          if (item.etypeId === this._item.etypeId) {
+            upgradeStats[3] = actor;
+            upgradeStats[4] = equipSlot;
+            if (item.traits.some(t => t.code === Game_BattlerBase.TRAIT_SLOT_TYPE && t.value === 1)) actor._forceDualWield = true;
+          }
         }
         $gameParty.gainIndependentItem(item, -1, true)
+        DataManager.removeIndependentItem(item, true);
       });
       number *= this._item.craftAmount;
       $gameParty.gainItem(this._item, number);
       if (DataManager.isIndependent(this._item)) {
-        database = DataManager.getDatabase(this._item);
-        item = database[database.length - 1];
+        item = $gameTemp._latestNewItem;
         upgradeStats[1].forEach(upgrade => {
-          const upgrader = $dataItems[Yanfly.ItemIdRef[upgrade.match(/\\i\[\d+\]\s*([^\\]*)/)[1].trim().toUpperCase()]];
+          const upgrader = $dataItems[Yanfly.ItemIdRef[upgrade[0].match(/\\i\[\d+\]\s*([^\\]*)/)[1].trim().toUpperCase()]];
           $gameParty.gainItem(upgrader, 1);
           ItemManager.applyIUSEffects(item, upgrader);
         });
         ItemManager.setPriorityName(item, upgradeStats[2]);
         ItemManager.updateItemName(item);
-        if (upgradeStats[3]) upgradeStats[3].changeEquip(upgradeStats[4], item);
+        if (upgradeStats[3]) {
+          upgradeStats[3].changeEquip(upgradeStats[4], item);
+          delete upgradeStats[3]._forceDualWield;
+        }
       }
       $gameSystem.addSynth(this._item);
+      delete $gameTemp._independentItems;
       resolve();
     });
 };
@@ -1991,7 +1981,7 @@ Scene_Synthesis.prototype.chooseIndependentItem = function(item) {
   return new Promise((resolve, reject) => {
     $gameMessage.setItemChoice(35, item);
     this._itemChoiceWindow.start();
-    
+
     const __close__ = this._itemChoiceWindow.close;
     this._itemChoiceWindow.close = function() {
       __close__.call(this);
@@ -2024,6 +2014,7 @@ Scene_Synthesis.prototype.customSynthEffect = function(number) {
 
 Scene_Synthesis.prototype.endNumberInput = function() {
     this._numberWindow.hide();
+    this._numberWindow.deactivate();
     this._itemWindow.hide();
     this._statusWindow.hide();
     this._listWindow.activate();

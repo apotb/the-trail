@@ -2653,12 +2653,12 @@
     0,
     0,
     0,
-    3531,
+    3521,
     3533,
     0,
     3198,
     3531,
-    3533,
+    3521,
     0,
     0,
     0,
@@ -15437,7 +15437,8 @@
               "indent": 0,
               "parameters": [
                 [
-                  "He's actually a monster..."
+                  "\\c[18]He\\c[0]'s actually a monster...",
+                  "No"
                 ],
                 -1,
                 0,
@@ -15450,7 +15451,20 @@
               "indent": 0,
               "parameters": [
                 0,
-                "He's actually a monster..."
+                "\\c[18]He\\c[0]'s actually a monster..."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                1,
+                "No"
               ]
             },
             {
@@ -18957,21 +18971,57 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\mastMost certainly! I wish there were more knights"
+                "\\mastMost certainly! I wish there were more knights like"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "like \\N[1]! Might've been able to help me"
+                "\\N[1]! Might've been able to help me out with"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "out with the Crushers..."
+                "the Crushers... here, take this \\ii[140]"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "as evidence of my endorsement."
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 2,
+              "parameters": [
+                140,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 2,
+              "parameters": [
+                {
+                  "name": "Equip3",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 2,
+              "parameters": [
+                60
               ]
             },
             {
@@ -19062,7 +19112,14 @@
               "code": 401,
               "indent": 5,
               "parameters": [
-                "Lord Smirnoff and get this ceremony started!"
+                "Baron Smirnoff and get this ceremony started!"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 5,
+              "parameters": [
+                "Quest 20 Show Objective 4"
               ]
             },
             {

@@ -3499,6 +3499,80 @@
               ]
             },
             {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "What's your name, traveler?"
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 2,
+              "parameters": [
+                [
+                  "\\N[1]",
+                  "Give fake name"
+                ],
+                1,
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 2,
+              "parameters": [
+                0,
+                "\\N[1]"
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 3,
+              "parameters": [
+                204,
+                204,
+                0,
+                4,
+                "$gameActors.actor(1).name()"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 2,
+              "parameters": [
+                1,
+                "Give fake name"
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 3,
+              "parameters": [
+                204,
+                204,
+                0,
+                4,
+                "$gameTemp.generateGoofyName(true)"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 2,
+              "parameters": []
+            },
+            {
               "code": 101,
               "indent": 2,
               "parameters": [
@@ -3512,14 +3586,14 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\mikeWhat's your name? \\N[1], you say? Nice to meet"
+                "\\mike\\c[1]\\V[204]\\c[0], you say? Nice to meet you!"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "you! Would you like to browse my wares?"
+                "Would you like to browse my wares?"
               ]
             },
             {
@@ -3788,21 +3862,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\mikeHaha, welcome back, \\N[1] and"
+                "\\mikeHaha, welcome back, \\c[1]\\V[204]\\c[0] and friends!"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "friends! Are you interested in"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "seeing what I've got to sell today?"
+                "Would you like to browse my wares?"
               ]
             },
             {
@@ -3820,12 +3887,12 @@
               "indent": 0,
               "parameters": [
                 [
-                  "Definitely!",
-                  "No, sorry."
+                  "Shop",
+                  "Goodbye"
                 ],
                 1,
                 0,
-                2,
+                1,
                 0
               ]
             },
@@ -3834,7 +3901,7 @@
               "indent": 0,
               "parameters": [
                 0,
-                "Definitely!"
+                "Shop"
               ]
             },
             {
@@ -3966,6 +4033,16 @@
               "code": 605,
               "indent": 1,
               "parameters": [
+                1,
+                69,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 1,
+              "parameters": [
                 2,
                 13,
                 0,
@@ -3983,20 +4060,13 @@
               ]
             },
             {
-              "code": 101,
+              "code": 605,
               "indent": 1,
               "parameters": [
-                "Shopkeeper1",
+                2,
+                243,
                 0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\mikeGlad to be of service!"
+                0
               ]
             },
             {
@@ -4009,24 +4079,7 @@
               "indent": 0,
               "parameters": [
                 1,
-                "No, sorry."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Shopkeeper1",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\mikeI understand. These things are expensive!"
+                "Goodbye"
               ]
             },
             {
@@ -4071,28 +4124,21 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\mikeYou four have come a very long way,"
+                "\\mikeYou've come a long way, \\c[1]\\V[204]\\c[0]. Keep on pushing, "
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "I'm proud of what you've done! Keep"
+                "and one day you'll finally take down"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "on pushing, and one day you'll finally"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "take down \\c[18]Apocalypse\\c[0] himself!"
+                "\\c[18]Apocalypse himself\\c[0]!"
               ]
             },
             {
@@ -4114,6 +4160,23 @@
               "code": 412,
               "indent": 0,
               "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Shopkeeper1",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\mikeAlright then! Good bye!"
+              ]
             },
             {
               "code": 123,

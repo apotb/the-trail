@@ -5570,6 +5570,15 @@
           "walkAnime": true,
           "list": [
             {
+              "code": 121,
+              "indent": 0,
+              "parameters": [
+                77,
+                77,
+                1
+              ]
+            },
+            {
               "code": 230,
               "indent": 0,
               "parameters": [
@@ -6051,7 +6060,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\mattIt's barely been three days! I'm sorry"
+                "\\mattIt's not even been three days! I'm sorry"
               ]
             },
             {
@@ -6155,11 +6164,35 @@
               ]
             },
             {
-              "code": 230,
+              "code": 102,
               "indent": 0,
               "parameters": [
-                60
+                [
+                  "What have you been up to?"
+                ],
+                -1,
+                0,
+                1,
+                0
               ]
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                0,
+                "What have you been up to?"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 101,
@@ -6175,7 +6208,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\mattWhat are we doing out here? Well, you know how the"
+                "\\mattJust business, as usual... do you remember that the"
               ]
             },
             {

@@ -114,7 +114,7 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\solCivillian... don't forget... your boosts..."
+              "\\solCivilian... don't forget... your boosts..."
             ]
           },
           {
@@ -9026,12 +9026,18 @@
       },
       {
         "enemyId": 85,
+        "x": 132,
+        "y": 328,
+        "hidden": true
+      },
+      {
+        "enemyId": 73,
         "x": 225,
         "y": 202,
-        "hidden": true
+        "hidden": false
       }
     ],
-    "name": "Poltergeist x2",
+    "name": "Poltergeist x3",
     "pages": [
       {
         "conditions": {
@@ -9061,7 +9067,7 @@
             "code": 335,
             "indent": 1,
             "parameters": [
-              1
+              2
             ]
           },
           {
@@ -10228,8 +10234,8 @@
     "members": [
       {
         "enemyId": 79,
-        "x": 300,
-        "y": 301,
+        "x": 294,
+        "y": 286,
         "hidden": false
       }
     ],
@@ -11095,13 +11101,6 @@
         },
         "list": [
           {
-            "code": 242,
-            "indent": 0,
-            "parameters": [
-              4
-            ]
-          },
-          {
             "code": 101,
             "indent": 0,
             "parameters": [
@@ -11185,18 +11184,6 @@
             "indent": 0,
             "parameters": [
               "$gameTroop._enemies[0]._phase = 2;"
-            ]
-          },
-          {
-            "code": 241,
-            "indent": 0,
-            "parameters": [
-              {
-                "name": "battle_apocalypse_2",
-                "volume": 90,
-                "pitch": 100,
-                "pan": 0
-              }
             ]
           },
           {
@@ -13159,6 +13146,611 @@
           "turnValid": false
         },
         "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 118,
+    "members": [
+      {
+        "enemyId": 91,
+        "x": 195,
+        "y": 265,
+        "hidden": false
+      },
+      {
+        "enemyId": 92,
+        "x": 411,
+        "y": 184,
+        "hidden": true
+      },
+      {
+        "enemyId": 92,
+        "x": 345,
+        "y": 376,
+        "hidden": true
+      }
+    ],
+    "name": "Baron Smirnoff",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameTemp._bossRush"
+            ]
+          },
+          {
+            "code": 115,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              0,
+              0,
+              24
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 75,
+          "enemyIndex": 0,
+          "enemyValid": true,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": true,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Evil1",
+              7,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "\\smirnoffI'm getting bored... let's end this."
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "You're no match for my electric projections!"
+            ]
+          },
+          {
+            "code": 250,
+            "indent": 0,
+            "parameters": [
+              {
+                "name": "Ice4",
+                "volume": 90,
+                "pitch": 70,
+                "pan": 0
+              }
+            ]
+          },
+          {
+            "code": 250,
+            "indent": 0,
+            "parameters": [
+              {
+                "name": "Starlight",
+                "volume": 90,
+                "pitch": 100,
+                "pan": 0
+              }
+            ]
+          },
+          {
+            "code": 225,
+            "indent": 0,
+            "parameters": [
+              1,
+              9,
+              90,
+              true
+            ]
+          },
+          {
+            "code": 225,
+            "indent": 0,
+            "parameters": [
+              1,
+              9,
+              180,
+              false
+            ]
+          },
+          {
+            "code": 250,
+            "indent": 0,
+            "parameters": [
+              {
+                "name": "Item3",
+                "volume": 90,
+                "pitch": 70,
+                "pan": 0
+              }
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 0,
+            "parameters": [
+              1
+            ]
+          },
+          {
+            "code": 337,
+            "indent": 0,
+            "parameters": [
+              1,
+              223,
+              false
+            ]
+          },
+          {
+            "code": 230,
+            "indent": 0,
+            "parameters": [
+              60
+            ]
+          },
+          {
+            "code": 250,
+            "indent": 0,
+            "parameters": [
+              {
+                "name": "Item3",
+                "volume": 90,
+                "pitch": 70,
+                "pan": 0
+              }
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 0,
+            "parameters": [
+              2
+            ]
+          },
+          {
+            "code": 337,
+            "indent": 0,
+            "parameters": [
+              2,
+              223,
+              false
+            ]
+          },
+          {
+            "code": 230,
+            "indent": 0,
+            "parameters": [
+              60
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Evil1",
+              7,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "\\smirnoffThis is the end of the line, commoners!"
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "Go back to your little villages!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": true,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": true,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Evil1",
+              7,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "\\smirnoffThis is far as you shall go!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 25,
+          "enemyIndex": 0,
+          "enemyValid": true,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": true,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Evil1",
+              7,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "\\smirnoffI grow tired of your insolence! This ends now!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 0,
+          "enemyIndex": 0,
+          "enemyValid": true,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 331,
+            "indent": 0,
+            "parameters": [
+              -1,
+              1,
+              0,
+              9999,
+              true
+            ]
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameTemp._bossRush"
+            ]
+          },
+          {
+            "code": 115,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 313,
+            "indent": 0,
+            "parameters": [
+              0,
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "code": 242,
+            "indent": 0,
+            "parameters": [
+              2
+            ]
+          },
+          {
+            "code": 230,
+            "indent": 0,
+            "parameters": [
+              120
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Evil1",
+              31,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "\\smirnoffWell... well... well..."
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Evil1",
+              31,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "\\smirnoffNice work... commoners..."
+            ]
+          },
+          {
+            "code": 230,
+            "indent": 0,
+            "parameters": [
+              120
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Evil1",
+              31,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "\\smirnoffI might... need to take... a nap..."
+            ]
+          },
+          {
+            "code": 230,
+            "indent": 0,
+            "parameters": [
+              60
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              0,
+              1,
+              24
+            ]
+          },
+          {
+            "code": 230,
+            "indent": 0,
+            "parameters": [
+              120
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 119,
+    "members": [
+      {
+        "enemyId": 26,
+        "x": 224,
+        "y": 368,
+        "hidden": false
+      },
+      {
+        "enemyId": 85,
+        "x": 129,
+        "y": 256,
+        "hidden": true
+      },
+      {
+        "enemyId": 26,
+        "x": 288,
+        "y": 208,
+        "hidden": false
+      }
+    ],
+    "name": "Lost Soul x2",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              1
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Gilded Ghost joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
           {
             "code": 0,
             "indent": 0,

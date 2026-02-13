@@ -16,10 +16,10 @@
       4,
       0,
       0,
-      0,
+      -1,
       0
     ],
-    "price": 0
+    "price": 20
   },
   {
     "id": 2,
@@ -40,7 +40,7 @@
       0,
       0
     ],
-    "price": 0
+    "price": 20
   },
   {
     "id": 3,
@@ -61,7 +61,7 @@
       0,
       0
     ],
-    "price": 0
+    "price": 20
   },
   {
     "id": 4,
@@ -82,7 +82,7 @@
       1,
       0
     ],
-    "price": 0
+    "price": 20
   },
   {
     "id": 5,
@@ -103,7 +103,7 @@
       0,
       0
     ],
-    "price": 0
+    "price": 10
   },
   {
     "id": 6,
@@ -124,7 +124,7 @@
       0,
       0
     ],
-    "price": 0
+    "price": 10
   },
   {
     "id": 7,
@@ -145,7 +145,7 @@
       1,
       0
     ],
-    "price": 0
+    "price": 10
   },
   {
     "id": 8,
@@ -268,7 +268,7 @@
       3,
       0,
       0,
-      0,
+      -1,
       0
     ],
     "price": 15
@@ -292,7 +292,7 @@
       4,
       0
     ],
-    "price": 10
+    "price": 12
   },
   {
     "id": 15,
@@ -334,7 +334,7 @@
       0,
       0
     ],
-    "price": 120
+    "price": 80
   },
   {
     "id": 17,
@@ -355,7 +355,7 @@
       0,
       0
     ],
-    "price": 120
+    "price": 80
   },
   {
     "id": 18,
@@ -400,7 +400,7 @@
       7,
       0,
       0,
-      -1,
+      -2,
       0
     ],
     "price": 80
@@ -442,7 +442,7 @@
       4,
       0,
       0,
-      -1,
+      -5,
       0
     ],
     "price": 60
@@ -556,7 +556,7 @@
       0,
       0
     ],
-    "price": 250
+    "price": 120
   },
   {
     "id": 27,
@@ -786,7 +786,7 @@
       10,
       0,
       0,
-      -2,
+      -3,
       0
     ],
     "price": 120
@@ -837,9 +837,9 @@
       0,
       8,
       0,
-      0,
-      1,
+      3,
       2,
+      4,
       0,
       0
     ],
@@ -907,12 +907,12 @@
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.04
+        "value": 0.06
       },
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.01
+        "value": 0.015
       }
     ],
     "iconIndex": 174,
@@ -1026,18 +1026,24 @@
     "atypeId": 14,
     "description": "A set of heavily enforced gauntlets. They've been\nspecially made to provide defense and support attacks.",
     "etypeId": 6,
-    "traits": [],
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.02
+      }
+    ],
     "iconIndex": 493,
     "name": "Iron Gauntlets",
-    "note": "<Synthesis Ingredients>\nIron Cluster: 7\n</Synthesis Ingredients>\n<Mask Name: Protective Armwear>\n\n<Disassemble Pool: Advanced>\nIron Cluster: 80%\nIron Cluster: 65%\nIron Cluster: 50%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 1>\n<Synthesis Ingredients>\nIron Cluster: 7\n</Synthesis Ingredients>\n<Mask Name: Protective Armwear>\n\n<Disassemble Pool: Advanced>\nIron Cluster: 80%\nIron Cluster: 65%\nIron Cluster: 50%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
-      3,
-      3,
+      6,
+      4,
       0,
       0,
-      -1,
+      -3,
       0
     ],
     "price": 200
@@ -1082,7 +1088,7 @@
     "traits": [],
     "iconIndex": 160,
     "name": "Copper Buckler",
-    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nCopper Cluster: 8\n</Synthesis Ingredients>\n<Mask Name: Respectable Light Shield>\n\n<Disassemble Pool: Advanced>\nx1-2 Copper Cluster: 60%\n</Disassemble Pool: Advanced>",
+    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nCopper Cluster: 6\n</Synthesis Ingredients>\n<Mask Name: Respectable Light Shield>\n\n<Disassemble Pool: Advanced>\nx1-2 Copper Cluster: 60%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
@@ -1111,7 +1117,7 @@
       6,
       0,
       0,
-      -2,
+      -8,
       0
     ],
     "price": 100
@@ -1139,7 +1145,7 @@
       0,
       0,
       0,
-      0
+      3
     ],
     "price": 300
   },
@@ -1192,7 +1198,7 @@
       10,
       0,
       3,
-      -3,
+      -4,
       0
     ],
     "price": 400
@@ -1398,7 +1404,7 @@
     "traits": [],
     "iconIndex": 522,
     "name": "Soulstealer's Necklace",
-    "note": "<Rarity: 3>\n<Upgrade Slots: 2>\n<HP Life Steal Physical: +5%>\n<HP Life Steal Magical: +5%>\n<HP Life Steal Certain: +5%>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(53);\n</Custom Buy Show Eval>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 2>\n<HP Life Steal Physical: +5%>\n<HP Life Steal Magical: +5%>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(53);\n</Custom Buy Show Eval>",
     "params": [
       25,
       0,
@@ -1420,12 +1426,12 @@
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.08
+        "value": 0.1
       },
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.02
+        "value": 0.025
       }
     ],
     "iconIndex": 481,
@@ -1623,12 +1629,12 @@
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.02
+        "value": 0.04
       },
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.005
+        "value": 0.01
       }
     ],
     "iconIndex": 174,
@@ -1718,9 +1724,15 @@
   {
     "id": 72,
     "atypeId": 1,
-    "description": "A group of dense red gel, with the texture of a of\na gem. Can be equipped or sold for a pretty good price.",
+    "description": "A group of dense red gel, with the texture of a of a gem. Can be equipped or\nsold for a pretty good price. Grants 50% chance to resist \\it[7]\\c[0].",
     "etypeId": 6,
-    "traits": [],
+    "traits": [
+      {
+        "code": 13,
+        "dataId": 7,
+        "value": 0.5
+      }
+    ],
     "iconIndex": 358,
     "name": "Condensed Red Gel",
     "note": "<Rarity: 1>\n<Upgrade Slots: 2>\n<Optimize Weight: 0.5>\n\n<Disassemble Pool: Advanced>\nx5-10 Red Gel: 100%\n</Disassemble Pool: Advanced>",
@@ -2511,7 +2523,7 @@
   {
     "id": 102,
     "atypeId": 1,
-    "description": "Increases bits received at the end of battle by\n10%. Stacks if equipped on multiple party members.",
+    "description": "Increases Bits received at the end of battle by\n10%. Stacks if equipped on multiple party members.",
     "etypeId": 8,
     "traits": [
       {
@@ -2713,7 +2725,7 @@
       12,
       0,
       0,
-      -5,
+      -20,
       0
     ],
     "price": 6000
@@ -2904,7 +2916,7 @@
       8,
       0,
       0,
-      -5,
+      -10,
       0
     ],
     "price": 1000
@@ -2941,7 +2953,7 @@
       8,
       0,
       0,
-      -5,
+      -10,
       0
     ],
     "price": 1500
@@ -3113,15 +3125,15 @@
     ],
     "iconIndex": 737,
     "name": "True Shadowplate Armor",
-    "note": "<Rarity: 2>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nShadowplate Armor\nTurtle Scute: 5\nShadowspec Ingot: 2\n</Synthesis Ingredients>\n<Mask Name: Repaired Dark Heavy Armor>\n\n<Disassemble Pool: Advanced>\nx1-4 Turtle Scute: 100%\nx1 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nShadowplate Armor\nTurtle Scute: 5\nShadowspec Ingot: 2\n</Synthesis Ingredients>\n<Mask Name: Repaired Dark Heavy Armor>\n\n<Disassemble Pool: Advanced>\nx1-4 Turtle Scute: 100%\nx1 Shadowspec Ingot: 75%\nx1 Shadowspec Ingot: 75%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       8,
       0,
-      16,
+      15,
       0,
       8,
-      -3,
+      -4,
       0
     ],
     "price": 1200
@@ -3140,7 +3152,7 @@
     ],
     "iconIndex": 738,
     "name": "True Phantasmal Robes",
-    "note": "<Rarity: 2>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nPhantasmal Robes\nIcy Gel: 5\nShadowspec Ingot: 2\n</Synthesis Ingredients>\n<Mask Name: Repaired Light Robes>\n\n<Disassemble Pool: Advanced>\nx1-4 Icy Gel: 100%\nx1 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nPhantasmal Robes\nIcy Gel: 5\nShadowspec Ingot: 2\n</Synthesis Ingredients>\n<Mask Name: Repaired Light Robes>\n\n<Disassemble Pool: Advanced>\nx1-4 Icy Gel: 100%\nx1 Shadowspec Ingot: 75%\nx1 Shadowspec Ingot: 75%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       9,
@@ -3161,7 +3173,7 @@
     "traits": [],
     "iconIndex": 739,
     "name": "True Phantasmal Vestments",
-    "note": "<Rarity: 2>\n<Upgrade Slots: 2>\n\n<Element Amplify Healing: +7.5%>\n\n<Synthesis Ingredients>\nPhantasmal Vestments\nTarantula Silk: 5\nShadowspec Ingot: 2\n</Synthesis Ingredients>\n<Mask Name: Repaired Basic Vestments>\n\n<Disassemble Pool: Advanced>\nx1-4 Tarantula Silk: 100%\nx1 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>\n\n<Element Amplify Healing: +7.5%>\n\n<Synthesis Ingredients>\nPhantasmal Vestments\nTarantula Silk: 5\nShadowspec Ingot: 2\n</Synthesis Ingredients>\n<Mask Name: Repaired Basic Vestments>\n\n<Disassemble Pool: Advanced>\nx1-4 Tarantula Silk: 100%\nx1 Shadowspec Ingot: 75%\nx1 Shadowspec Ingot: 75%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       6,
@@ -3188,7 +3200,7 @@
     ],
     "iconIndex": 740,
     "name": "True Shadowspec Leathers",
-    "note": "<Rarity: 2>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nShadowspec Leathers\nFeral Bat Wing: 5\nShadowspec Ingot: 2\n</Synthesis Ingredients>\n<Mask Name: Repaired Dark Leathers>\n\n<Disassemble Pool: Advanced>\nx1-4 Feral Bat Wing: 100%\nx1 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nShadowspec Leathers\nFeral Bat Wing: 5\nShadowspec Ingot: 2\n</Synthesis Ingredients>\n<Mask Name: Repaired Dark Leathers>\n\n<Disassemble Pool: Advanced>\nx1-4 Feral Bat Wing: 100%\nx1 Shadowspec Ingot: 75%\nx1 Shadowspec Ingot: 75%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       5,
@@ -3461,7 +3473,7 @@
       9,
       0,
       0,
-      -2,
+      -12,
       0
     ],
     "price": 400
@@ -3482,7 +3494,7 @@
       12,
       0,
       0,
-      -3,
+      -15,
       0
     ],
     "price": 1500
@@ -3815,19 +3827,24 @@
         "code": 32,
         "dataId": 91,
         "value": 1
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.04
       }
     ],
     "iconIndex": 656,
     "name": "Dragonforce Gauntlets",
-    "note": "<Rarity: 2>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nBronze Gauntlets\nEnchanted Dragon Scale\nDragon Scale: 6\nSteel Ingot: 3\nEarth Essence: 3\n</Synthesis Ingredients>\n<Mask Name: Offensive Armwear>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nBronze Gauntlets\nEnchanted Dragon Scale\nDragon Scale: 6\nSteel Ingot: 3\nEarth Essence: 3\n</Synthesis Ingredients>\n<Mask Name: Offensive Armwear>",
     "params": [
       0,
       0,
-      7,
-      5,
+      10,
+      6,
       0,
       0,
-      -6,
+      -10,
       0
     ],
     "price": 1800
@@ -3841,12 +3858,12 @@
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.06
+        "value": 0.08
       },
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.015
+        "value": 0.02
       }
     ],
     "iconIndex": 657,
@@ -4090,7 +4107,7 @@
     "params": [
       0,
       0,
-      3,
+      5,
       0,
       0,
       0,
@@ -4374,7 +4391,7 @@
     ],
     "iconIndex": 474,
     "name": "Hermes Boots",
-    "note": "<Rarity: 3>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nSpeedster Boots\nWind Catalyst\nEnchanted Bat Skin\nFeral Bat Wing: 5\nWind Essence: 5\nEnchanted Dragon Scale\nFrozen Jewel\n</Synthesis Ingredients>\n<Mask Name: Ridiculously Fast Footwear>\n<Synthesis SE: Equip3>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nSpeedster Boots\nWind Catalyst\nEnchanted Bat Skin\nFeral Bat Wing: 5\nWind Essence: 5\n</Synthesis Ingredients>\n<Mask Name: Ridiculously Fast Footwear>\n<Synthesis SE: Equip3>",
     "params": [
       0,
       0,
@@ -4687,9 +4704,19 @@
   {
     "id": 178,
     "atypeId": 1,
-    "description": "It's burning hot, yet feels only lukewarm to the touch. Provides immunity\nto \\it[7], \\it[102], \\it[82], \\it[149], and \\it[125].",
+    "description": "It's burning hot, yet feels only lukewarm to the touch. Grants several buffs\nand provides immunity to \\it[7], \\it[102], \\it[82], \\it[149], and \\it[125].",
     "etypeId": 6,
     "traits": [
+      {
+        "code": 23,
+        "dataId": 3,
+        "value": 1.5
+      },
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 0.9
+      },
       {
         "code": 14,
         "dataId": 7,
@@ -4723,18 +4750,18 @@
     ],
     "iconIndex": 722,
     "name": "Fiery Tablet",
-    "note": "<Rarity: 2>\n<Upgrade Slots: 1>\n<Passive State: 126>\n\n<Element Amplify Fire: +10%>\n\n<Synthesis Ingredients>\nSelfish Candle\nWanted Poster\nSleepy Hourglass\nFire Resistance Potion: 5\nFiery Blood: 10\n</Synthesis Ingredients>\n<Mask Name: Hot Dungeon Resistance Item>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 3>\n<Passive State: 126>\n\n<Element Amplify Fire: +10%>\n\n<Synthesis Ingredients>\nBlood Pact\nFlesh Doll\nSelfish Candle\nWanted Poster\nSleepy Hourglass\nFlesh Doll\nFire Resistance Potion: 5\nFiery Blood: 10\n</Synthesis Ingredients>\n<Mask Name: Hot Dungeon Resistance Item>",
     "params": [
+      40,
       0,
       0,
-      0,
-      0,
+      10,
       0,
       0,
       0,
       0
     ],
-    "price": 1000
+    "price": 2000
   },
   {
     "id": 179,
@@ -4848,7 +4875,7 @@
       5,
       0,
       0,
-      -1,
+      -2,
       0
     ],
     "price": 500
@@ -4987,7 +5014,7 @@
       10,
       0,
       10,
-      -2,
+      -10,
       0
     ],
     "price": 5000
@@ -5133,13 +5160,13 @@
   {
     "id": 195,
     "atypeId": 1,
-    "description": "Sign your soul away... oh, never mind, this just needs a drop\nof your blood. Doubles the effectiveness of recovery items.",
+    "description": "Sign your soul away... oh, never mind, this just needs a drop of\nyour blood. Healing items used by the holder are x1.5 more effective.",
     "etypeId": 6,
     "traits": [
       {
         "code": 23,
         "dataId": 3,
-        "value": 2
+        "value": 1.5
       }
     ],
     "iconIndex": 1318,
@@ -5166,7 +5193,7 @@
       {
         "code": 23,
         "dataId": 6,
-        "value": 0.8
+        "value": 0.9
       }
     ],
     "iconIndex": 1319,
@@ -5197,13 +5224,13 @@
       0,
       0,
       0,
-      15,
+      18,
       0,
       0,
       0,
       0
     ],
-    "price": 750
+    "price": 1000
   },
   {
     "id": 198,
@@ -5764,7 +5791,7 @@
   {
     "id": 220,
     "atypeId": 1,
-    "description": "A golden artifact from a forgotten time, this coin whispers\ndreams of boundless treasure. Multiplies bit drops by 1.25x.",
+    "description": "A golden artifact from a forgotten time, this coin whispers\ndreams of boundless treasure. Multiplies Bit drops by 1.25x.",
     "etypeId": 6,
     "traits": [
       {
@@ -5829,12 +5856,12 @@
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.1
+        "value": 0.12
       },
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.025
+        "value": 0.03
       },
       {
         "code": 22,
@@ -6045,7 +6072,7 @@
   {
     "id": 231,
     "atypeId": 6,
-    "description": "Despite the fact that it's a giant hunk of stone, it's pretty easy\nto pick up. Must be some of the \\c[30]Purple\\c[0] still lingering within.",
+    "description": "Despite the fact that it's a giant hunk of stone, it somehow feels\neasy to pick up. Must be some of the \\c[30]Purple\\c[0] still lingering within.",
     "etypeId": 2,
     "traits": [
       {
@@ -6069,7 +6096,7 @@
       10,
       0,
       5,
-      -10,
+      -15,
       0
     ],
     "price": 5000
@@ -6244,20 +6271,149 @@
     "atypeId": 14,
     "description": "Reinforced gauntlets with extra offensive\nand defensive stat boosts.",
     "etypeId": 6,
-    "traits": [],
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.03
+      }
+    ],
     "iconIndex": 492,
     "name": "Bronze Gauntlets",
     "note": "<Rarity: 2>\n<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nIron Gauntlets\nBronze Ingot: 5\nVicious Herb: 10\n</Synthesis Ingredients>\n\n<Disassemble Pool: Advanced>\nx1 Bronze Ingot: 80%\nx1 Bronze Ingot: 50%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
+      8,
       5,
-      4,
+      0,
+      0,
+      -6,
+      0
+    ],
+    "price": 750
+  },
+  {
+    "id": 239,
+    "atypeId": 8,
+    "description": "Leather armor specialized to endure harsh desert conditions and prolonged\ncombat. Increases health regeneration by 10% when afflicted by a debuff.",
+    "etypeId": 4,
+    "traits": [],
+    "iconIndex": 434,
+    "name": "Desert Gambeson",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>\n\n<Passive State: 224>\n\n<Disassemble Pool: Basic>\nx2-4 Leather: 100%\nx1-3 Leather: 75%\nx1-3 Leather: 50%\n</Disassemble Pool: Basic>",
+    "params": [
+      5,
+      0,
+      0,
+      12,
       0,
       0,
       -3,
       0
     ],
-    "price": 750
+    "price": 200
+  },
+  {
+    "id": 240,
+    "atypeId": 7,
+    "description": "A large shield used for holding out against hordes of enemies.\nWhen guarding, party members take 25% less damage.",
+    "etypeId": 2,
+    "traits": [],
+    "iconIndex": 499,
+    "name": "Tower Shield",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>\n<Replace Guard: 106>\n\n<Disassemble Pool: Advanced>\nx1-2 Steel Ingot: 100%\nx1-2 Steel Ingot: 50%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      0,
+      0,
+      6,
+      0,
+      0,
+      -9,
+      0
+    ],
+    "price": 200
+  },
+  {
+    "id": 241,
+    "atypeId": 1,
+    "description": "Crucial equipment used to rescue injured soldiers in battle.\nApplies a x1.5 modifier to all healing items used by the holder.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 3,
+        "value": 1.5
+      }
+    ],
+    "iconIndex": 1322,
+    "name": "Field Medic Kit",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>",
+    "params": [
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 242,
+    "atypeId": 1,
+    "description": "Fits snugly behind your ear, leaving the bloom poking out.\nProvides some MP and +5% MP regeneration per turn.",
+    "etypeId": 3,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 8,
+        "value": 0.05
+      }
+    ],
+    "iconIndex": 314,
+    "name": "Flora's Rose",
+    "note": "<Rarity: 1>",
+    "params": [
+      0,
+      5,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 30
+  },
+  {
+    "id": 243,
+    "atypeId": 14,
+    "description": "A pair of small metal fist coverings forged by Dirty Mike. Enhances ATK and DEF,\nthough you can't equip gloves, wristbraces, or another set of gauntlets with this on.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.01
+      }
+    ],
+    "iconIndex": 491,
+    "name": "Squire Gauntlets",
+    "note": "",
+    "params": [
+      0,
+      0,
+      3,
+      2,
+      0,
+      0,
+      -1,
+      0
+    ],
+    "price": 120
   }
 ]

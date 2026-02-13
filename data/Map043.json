@@ -17422,7 +17422,7 @@
           "image": {
             "tileId": 0,
             "characterName": "People2",
-            "direction": 2,
+            "direction": 4,
             "pattern": 1,
             "characterIndex": 3
           },
@@ -17459,7 +17459,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\n<Captain>Hm? And who might you be?"
+                "\\neilHm? And who might you be?"
               ]
             },
             {
@@ -17493,7 +17493,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\n<Captain>Yes..."
+                "\\neilYes..."
               ]
             },
             {
@@ -17534,7 +17534,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\n<Captain>Yeah... you know what, maybe I could do that."
+                "\\neilYeah... you know what, maybe I could do that."
               ]
             },
             {
@@ -17565,7 +17565,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\n<Captain>Let me know where you're trying to go,"
+                "\\neilLet me know where you're trying to go,"
               ]
             },
             {
@@ -17604,1553 +17604,57 @@
               "parameters": []
             },
             {
-              "code": 101,
+              "code": 355,
               "indent": 0,
               "parameters": [
-                "People2",
-                3,
-                0,
-                2
+                "Galv.MAPT.initLocation(\"Haven Harbor\");"
               ]
             },
             {
-              "code": 401,
+              "code": 655,
               "indent": 0,
               "parameters": [
-                "\\n<Captain>Where am I taking you?"
-              ]
-            },
-            {
-              "code": 102,
-              "indent": 0,
-              "parameters": [
-                [
-                  "Solus Town",
-                  "Verdin Village",
-                  "??? <<s[12],s[1]>>",
-                  "Laeryidyean's Forest <<!s[12]>>",
-                  "Nevermind"
-                ],
-                4,
-                0,
-                1,
-                0
-              ]
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                0,
-                "Solus Town"
+                "Galv.MAPT.setObject(0,\"Player\",\"obj_player\",2502,1386,2);"
               ]
             },
             {
               "code": 122,
-              "indent": 1,
+              "indent": 0,
               "parameters": [
-                62,
-                62,
+                96,
+                96,
                 0,
                 0,
-                9
+                43
               ]
             },
             {
               "code": 122,
-              "indent": 1,
+              "indent": 0,
               "parameters": [
-                79,
-                79,
+                94,
+                94,
                 0,
                 0,
-                31
+                102
               ]
             },
             {
               "code": 122,
-              "indent": 1,
-              "parameters": [
-                80,
-                80,
-                0,
-                0,
-                30
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People2",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\n<Captain>That's far! That'll be 120B.\\$"
-              ]
-            },
-            {
-              "code": 102,
-              "indent": 1,
-              "parameters": [
-                [
-                  "Pay the toll",
-                  "Nevermind"
-                ],
-                1,
-                0,
-                1,
-                0
-              ]
-            },
-            {
-              "code": 402,
-              "indent": 1,
-              "parameters": [
-                0,
-                "Pay the toll"
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                7,
-                120,
-                0
-              ]
-            },
-            {
-              "code": 125,
-              "indent": 3,
-              "parameters": [
-                1,
-                0,
-                120
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 411,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 3,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "You don't have enough Bits."
-              ]
-            },
-            {
-              "code": 115,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 1,
-              "parameters": [
-                1,
-                "Nevermind"
-              ]
-            },
-            {
-              "code": 115,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 404,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 402,
               "indent": 0,
               "parameters": [
-                1,
-                "Verdin Village"
-              ]
-            },
-            {
-              "code": 122,
-              "indent": 1,
-              "parameters": [
-                62,
-                62,
+                95,
+                95,
                 0,
                 0,
-                20
+                58
               ]
-            },
-            {
-              "code": 122,
-              "indent": 1,
-              "parameters": [
-                79,
-                79,
-                0,
-                0,
-                21
-              ]
-            },
-            {
-              "code": 122,
-              "indent": 1,
-              "parameters": [
-                80,
-                80,
-                0,
-                0,
-                32
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People2",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\n<Captain>Sure, that'll be a flat 100B.\\$"
-              ]
-            },
-            {
-              "code": 102,
-              "indent": 1,
-              "parameters": [
-                [
-                  "Pay the toll",
-                  "Nevermind"
-                ],
-                1,
-                0,
-                1,
-                0
-              ]
-            },
-            {
-              "code": 402,
-              "indent": 1,
-              "parameters": [
-                0,
-                "Pay the toll"
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                7,
-                100,
-                0
-              ]
-            },
-            {
-              "code": 125,
-              "indent": 3,
-              "parameters": [
-                1,
-                0,
-                100
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 411,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 3,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "You don't have enough Bits."
-              ]
-            },
-            {
-              "code": 115,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 1,
-              "parameters": [
-                1,
-                "Nevermind"
-              ]
-            },
-            {
-              "code": 115,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 404,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                2,
-                "??? <<s[12],s[1]>>"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                3,
-                "Laeryidyean's Forest <<!s[12]>>"
-              ]
-            },
-            {
-              "code": 122,
-              "indent": 1,
-              "parameters": [
-                62,
-                62,
-                0,
-                0,
-                167
-              ]
-            },
-            {
-              "code": 122,
-              "indent": 1,
-              "parameters": [
-                79,
-                79,
-                0,
-                0,
-                31
-              ]
-            },
-            {
-              "code": 122,
-              "indent": 1,
-              "parameters": [
-                80,
-                80,
-                0,
-                0,
-                15
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 1,
-              "parameters": [
-                2,
-                "B",
-                1
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "People2",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\n<Captain>Larry-huh? You're gonna' have to show me a map."
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 2,
-              "parameters": [
-                {
-                  "name": "Equip3",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 2,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "People2",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\n<Captain>Okay... wait, is that..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "People2",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\n<Captain>Are you suicidal? That place is uncharted and extremely dangerous!"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "It's said there's a skeleton lord who can raise the bodies of his"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "enemies from the dead, then force them fight for him!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "People2",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\n<Captain>But if you insist..."
-              ]
-            },
-            {
-              "code": 123,
-              "indent": 2,
-              "parameters": [
-                "B",
-                0
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People2",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\n<Captain>150B, on account of the danger."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "Same price on the way back.\\$"
-              ]
-            },
-            {
-              "code": 102,
-              "indent": 1,
-              "parameters": [
-                [
-                  "Pay the toll",
-                  "Nevermind"
-                ],
-                1,
-                0,
-                1,
-                0
-              ]
-            },
-            {
-              "code": 402,
-              "indent": 1,
-              "parameters": [
-                0,
-                "Pay the toll"
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                7,
-                150,
-                0
-              ]
-            },
-            {
-              "code": 125,
-              "indent": 3,
-              "parameters": [
-                1,
-                0,
-                150
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 411,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 3,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "You don't have enough Bits."
-              ]
-            },
-            {
-              "code": 115,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 1,
-              "parameters": [
-                1,
-                "Nevermind"
-              ]
-            },
-            {
-              "code": 115,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 404,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                4,
-                "Nevermind"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People2",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\n<Captain>Alright, then..."
-              ]
-            },
-            {
-              "code": 115,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 404,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People2",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\n<Captain>Let's get moving!"
-              ]
-            },
-            {
-              "code": 221,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 216,
-              "indent": 0,
-              "parameters": [
-                1
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "a_Move1",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 201,
-              "indent": 0,
-              "parameters": [
-                0,
-                8,
-                102,
-                58,
-                6,
-                2
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 41,
-                      "parameters": [
-                        "Vehicle1",
-                        1
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 33,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 41,
-                  "parameters": [
-                    "Vehicle1",
-                    1
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 33,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 241,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "map_ship",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 222,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                1,
-                62,
-                0,
-                9,
-                0
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 1,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 37,
-                      "indent": 0
-                    },
-                    {
-                      "code": 29,
-                      "parameters": [
-                        5
-                      ],
-                      "indent": 0
-                    },
-                    {
-                      "code": 45,
-                      "parameters": [
-                        "MOVE TO: 79, 58"
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 45,
-                      "parameters": [
-                        "MOVE TO: 79, 8"
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 45,
-                      "parameters": [
-                        "MOVE TO: 86, 8"
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 29,
-                      "parameters": [
-                        4
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 38,
-                      "indent": null
-                    },
-                    {
-                      "code": 19,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 37,
-                  "indent": 0
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 29,
-                  "parameters": [
-                    5
-                  ],
-                  "indent": 0
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 45,
-                  "parameters": [
-                    "MOVE TO: 79, 58"
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 45,
-                  "parameters": [
-                    "MOVE TO: 79, 8"
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 45,
-                  "parameters": [
-                    "MOVE TO: 86, 8"
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 29,
-                  "parameters": [
-                    4
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 38,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 19,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                1,
-                62,
-                0,
-                20,
-                0
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 1,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 37,
-                      "indent": 0
-                    },
-                    {
-                      "code": 29,
-                      "parameters": [
-                        5
-                      ],
-                      "indent": 0
-                    },
-                    {
-                      "code": 45,
-                      "parameters": [
-                        "MOVE TO: 95, 58"
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 45,
-                      "parameters": [
-                        "MOVE TO: 95, 34"
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 29,
-                      "parameters": [
-                        4
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 38,
-                      "indent": null
-                    },
-                    {
-                      "code": 19,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 37,
-                  "indent": 0
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 29,
-                  "parameters": [
-                    5
-                  ],
-                  "indent": 0
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 45,
-                  "parameters": [
-                    "MOVE TO: 95, 58"
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 45,
-                  "parameters": [
-                    "MOVE TO: 95, 34"
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 29,
-                  "parameters": [
-                    4
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 38,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 19,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                1,
-                62,
-                0,
-                167,
-                0
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 1,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 37,
-                      "indent": 0
-                    },
-                    {
-                      "code": 29,
-                      "parameters": [
-                        5
-                      ],
-                      "indent": 0
-                    },
-                    {
-                      "code": 45,
-                      "parameters": [
-                        "MOVE TO: 102, 78"
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 45,
-                      "parameters": [
-                        "MOVE TO: 105, 78"
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 45,
-                      "parameters": [
-                        "MOVE TO: 105, 91"
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 3,
-                      "indent": null
-                    },
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 29,
-                      "parameters": [
-                        4
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 38,
-                      "indent": null
-                    },
-                    {
-                      "code": 19,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 37,
-                  "indent": 0
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 29,
-                  "parameters": [
-                    5
-                  ],
-                  "indent": 0
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 45,
-                  "parameters": [
-                    "MOVE TO: 102, 78"
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 45,
-                  "parameters": [
-                    "MOVE TO: 105, 78"
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 45,
-                  "parameters": [
-                    "MOVE TO: 105, 91"
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 3,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 29,
-                  "parameters": [
-                    4
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 38,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 19,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 221,
-              "indent": 0,
-              "parameters": []
             },
             {
               "code": 117,
               "indent": 0,
               "parameters": [
-                53
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 34,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 34,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 216,
-              "indent": 0,
-              "parameters": [
-                0
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "a_Move1",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 201,
-              "indent": 0,
-              "parameters": [
-                1,
-                62,
-                79,
-                80,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 222,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People2",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\n<Captain>Here we are! Now don't look so seasick..."
+                71
               ]
             },
             {
@@ -19180,7 +17684,7 @@
           "walkAnime": true
         }
       ],
-      "x": 10,
+      "x": 11,
       "y": 38
     },
     {
@@ -23584,7 +22088,7 @@
           "image": {
             "tileId": 0,
             "characterName": "People2",
-            "direction": 8,
+            "direction": 6,
             "pattern": 1,
             "characterIndex": 4
           },
@@ -23634,7 +22138,7 @@
         }
       ],
       "x": 10,
-      "y": 39
+      "y": 38
     },
     {
       "id": 63,
@@ -24015,9 +22519,186 @@
       "x": 28,
       "y": 26
     },
-    null,
-    null,
-    null,
+    {
+      "id": 66,
+      "name": "EV066",
+      "note": "<Sprite Offset X: +24>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Sign1",
+            "direction": 6,
+            "pattern": 0,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 2,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 34,
+      "y": 23
+    },
+    {
+      "id": 67,
+      "name": "EV067",
+      "note": "<Sprite Offset X: -24>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Sign1",
+            "direction": 2,
+            "pattern": 0,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 2,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 22,
+      "y": 23
+    },
+    {
+      "id": 68,
+      "name": "EV068",
+      "note": "<Sprite Offset X: +24>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Sign1",
+            "direction": 2,
+            "pattern": 2,
+            "characterIndex": 4
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 2,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 18,
+      "y": 4
+    },
     {
       "id": 69,
       "name": "EV069",
@@ -24752,8 +23433,126 @@
       "x": 18,
       "y": 23
     },
-    null,
-    null,
+    {
+      "id": 70,
+      "name": "EV070",
+      "note": "<Sprite Offset X: -24>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Sign1",
+            "direction": 6,
+            "pattern": 0,
+            "characterIndex": 5
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 2,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 20,
+      "y": 5
+    },
+    {
+      "id": 71,
+      "name": "EV071",
+      "note": "<Sprite Offset X: +24>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Sign1",
+            "direction": 2,
+            "pattern": 0,
+            "characterIndex": 4
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 2,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 13,
+      "y": 10
+    },
     null,
     null,
     {
@@ -27868,6 +26667,13 @@
               ]
             },
             {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "The one just north of Laeryidyean's Forest."
+              ]
+            },
+            {
               "code": 101,
               "indent": 1,
               "parameters": [
@@ -28158,6 +26964,13 @@
               "indent": 2,
               "parameters": [
                 "from an uninhabited island on the Adonian Archipelago."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "The one just north of Laeryidyean's Forest."
               ]
             },
             {

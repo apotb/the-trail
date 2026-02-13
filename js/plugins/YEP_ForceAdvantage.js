@@ -112,6 +112,7 @@ BattleManager.startBattle = function() {
 };
 
 BattleManager.checkForceAdvantage = function(str) {
+  this.clover();
   if (str === undefined) return;
   var str = str.toUpperCase();
   if (['PRE-EMPTIVE', 'PREEMPTIVE', 'FIRST STRIKE', 'PLAYER'].contains(str)) {
@@ -122,6 +123,13 @@ BattleManager.checkForceAdvantage = function(str) {
     this._surprise = true;
   } else if (['NONE', 'NORMAL', 'NEUTRAL'].contains(str)) {
     this._preemptive = false;
+    this._surprise = false;
+  }
+};
+
+BattleManager.clover = function() {
+  if ($gameParty.pet().name() === 'Clover' && Math.random() < 0.15) {
+    this._preemptive = true;
     this._surprise = false;
   }
 };

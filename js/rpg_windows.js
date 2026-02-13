@@ -3397,7 +3397,7 @@ Window_ShopNumber.prototype.processNumberChange = function() {
             this.changeNumber(-1);
         }
         if (Input.isRepeated('up')) {
-            this.changeNumber(10);
+            this.changeNumber(this.number() !== 1 ? 10 : 9);
         }
         if (Input.isRepeated('down')) {
             this.changeNumber(-10);
@@ -3424,7 +3424,7 @@ Window_ShopNumber.prototype.onButtonUp = function() {
 };
 
 Window_ShopNumber.prototype.onButtonUp2 = function() {
-    this.changeNumber(10);
+    this.changeNumber(this.number() !== 1 ? 10 : 9);
 };
 
 Window_ShopNumber.prototype.onButtonDown = function() {
@@ -3988,6 +3988,7 @@ Window_NameInput.prototype.onNameOk = function() {
             SoundManager.playBuzzer();
         }
     } else {
+        this._editWindow._name = this._editWindow._name.trim();
         SoundManager.playOk();
         this.callOkHandler();
     }
@@ -4393,6 +4394,7 @@ Window_EventItem.prototype.updatePlacement = function() {
 Window_EventItem.prototype.includes = function(item) {
     var itypeId = $gameMessage.itemChoiceItypeId();
     if (!item) return false;
+    if ($gameTemp._independentItems?.contains(item)) return false;
     if ((DataManager.isWeapon(itypeId) && DataManager.isWeapon(item)) || (DataManager.isArmor(itypeId) && DataManager.isArmor(item))) return item.baseItemId == itypeId.id;
     if (typeof itypeId == "string") return DataManager.isItem(item) && item.itemCategory.contains(itypeId);
     if (typeof itypeid == "number") return DataManager.isItem(item) && item.itypeId === itypeId;

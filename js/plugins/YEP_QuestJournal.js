@@ -3337,12 +3337,14 @@ Game_System.prototype.questObjectivesCompleteAll = function(questId) {
 };
 
 Game_System.prototype.completeObjectiveSound = function() {
-  AudioManager.playSe({
-    "name": 'Decision1',
-    "pan": 0,
-    "pitch": 100,
-    "volume": 90
-  });
+  if (ConfigManager['mapQuestWindow']) {
+    AudioManager.playSe({
+      "name": 'Decision1',
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    });
+  }
 }
 
 Game_System.prototype.questObjectivesFail = function(questId, objectiveId) {

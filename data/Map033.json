@@ -16632,7 +16632,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\adamOh, hello once again, \\N[1]! What"
+                "\\adamOh, hello once again, \\c[1]\\V[205]\\c[0]! What"
               ]
             },
             {
@@ -16781,21 +16781,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\adamI'm not sure if I'm up for this,"
+                "\\adamI'm not sure if I'm up for this, but I may as well try."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "but I may as well try. I'll see you"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "around, \\N[1] and \\N[2]!"
+                "I'll see you on the other side, \\c[1]\\V[205]\\c[0]!"
               ]
             },
             {
@@ -16852,21 +16845,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2Hey... let's go after him. I'm not"
+                "\\p2Hey... let's go after him. I'm not trying"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "trying to steal his loot, but I'm still"
+                "to steal his loot, but I'm still interested"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "interested in seeing what he finds."
+                "in seeing what he finds."
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Quest Add 14"
               ]
             },
             {
@@ -16898,13 +16898,6 @@
               "indent": 0,
               "parameters": [
                 "New Quest!"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest Add 14"
               ]
             },
             {
@@ -17381,8 +17374,8 @@
           "walkAnime": false
         }
       ],
-      "x": 17,
-      "y": 7
+      "x": 20,
+      "y": 10
     },
     {
       "id": 15,
@@ -17611,8 +17604,8 @@
           "walkAnime": false
         }
       ],
-      "x": 18,
-      "y": 7
+      "x": 21,
+      "y": 10
     },
     {
       "id": 16,
@@ -24786,8 +24779,8 @@
           "walkAnime": false
         }
       ],
-      "x": 20,
-      "y": 28
+      "x": 17,
+      "y": 7
     }
   ]
 }

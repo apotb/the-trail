@@ -43,7 +43,7 @@
     "iconIndex": 201,
     "itypeId": 2,
     "name": "Leek",
-    "note": "<Rarity: 1>",
+    "note": "<Rarity: 1>\n<Menu Category: Memorabilia>",
     "occasion": 3,
     "price": 0,
     "repeats": 1,
@@ -162,7 +162,7 @@
     "name": "Eclipse Potion",
     "note": "<Rarity: 1>\n\nWas once the Small Package.",
     "occasion": 0,
-    "price": 200,
+    "price": 100,
     "repeats": 1,
     "scope": 7,
     "speed": 0,
@@ -344,7 +344,7 @@
         "code": 11,
         "dataId": 0,
         "value1": 0,
-        "value2": 2
+        "value2": 5
       }
     ],
     "hitType": 0,
@@ -422,7 +422,7 @@
   {
     "id": 15,
     "animationId": 0,
-    "consumable": false,
+    "consumable": true,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -430,17 +430,17 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A key to Room 1 of the Verdin Village inn.\nIt's a literal key item.",
+    "description": "",
     "effects": [],
     "hitType": 0,
-    "iconIndex": 240,
-    "itypeId": 2,
-    "name": "Room 1 Key",
-    "note": "",
-    "occasion": 3,
+    "iconIndex": 0,
+    "itypeId": 1,
+    "name": "",
+    "note": "Was once the Room 1 Key.",
+    "occasion": 0,
     "price": 0,
     "repeats": 1,
-    "scope": 0,
+    "scope": 7,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
@@ -592,7 +592,7 @@
         "code": 12,
         "dataId": 0,
         "value1": 0,
-        "value2": 2
+        "value2": 5
       }
     ],
     "hitType": 0,
@@ -632,7 +632,7 @@
     "iconIndex": 231,
     "itypeId": 2,
     "name": "Map of Telluria",
-    "note": "Was once the Ration (Rat Jerky).",
+    "note": "<Rarity: 1>\n\nWas once the Ration (Rat Jerky).",
     "occasion": 2,
     "price": 0,
     "repeats": 1,
@@ -2320,7 +2320,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Summons Fido the skeleton dog. ABILITY: Zero'd Out\nDisables enemy \\it[57] buffs, but drop rates stay increased.",
+    "description": "A flawless silver collar with a gemstone inserted. Summons Fido the skeleton dog.\nZERO'D OUT: Disables enemy \\it[57] buffs, but drop rates stay increased.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 166,
@@ -2346,7 +2346,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Summons Coco the monkey. ABILITY: Bountiful Harvest\nHis nature powers will halve all item respawn times.",
+    "description": "An eternally ripe comb of 'nanners. Summons Coco the monkey.\nBOUNTIFUL HARAVEST: Coco's nature powers will halve all item respawn times.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 1875,
@@ -2433,7 +2433,7 @@
         "value2": 0
       }
     ],
-    "hitType": 0,
+    "hitType": 1,
     "iconIndex": 551,
     "itypeId": 1,
     "name": "Red Gel",
@@ -3650,7 +3650,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A peculiar book that allows an experienced adventurer to permanently increase their INT.\nMore intelligence equals more crit damage! A single person can only read 5 of these.",
+    "description": "These will make you smarter or something... in a\nfuture update! Just hold on to them for now.",
     "effects": [
       {
         "code": 44,
@@ -3664,7 +3664,7 @@
     "itypeId": 1,
     "name": "INT Book",
     "note": "<Rarity: 3>\n\n<Before Eval>\n$gameTemp._actorId = target.actorId();\n</Before Eval>",
-    "occasion": 2,
+    "occasion": 3,
     "price": 0,
     "repeats": 1,
     "scope": 7,
@@ -4144,7 +4144,7 @@
   {
     "id": 138,
     "animationId": 0,
-    "consumable": true,
+    "consumable": false,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -4221,7 +4221,7 @@
   {
     "id": 140,
     "animationId": 0,
-    "consumable": true,
+    "consumable": false,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -4229,17 +4229,17 @@
       "type": 0,
       "variance": 20
     },
-    "description": "",
+    "description": "An endorsement from a leader of a Southern Tellurian city.\nBring 3 to Lord Smirnoff to become a Tellurian knight!",
     "effects": [],
     "hitType": 0,
-    "iconIndex": 0,
-    "itypeId": 1,
-    "name": "",
-    "note": "Was once the Jump Feather.",
-    "occasion": 0,
+    "iconIndex": 235,
+    "itypeId": 2,
+    "name": "Sealed Writ",
+    "note": "<Rarity: 2>\n\nWas once the Jump Feather.",
+    "occasion": 3,
     "price": 0,
     "repeats": 1,
-    "scope": 7,
+    "scope": 0,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
@@ -6085,7 +6085,7 @@
         "value2": 0
       }
     ],
-    "hitType": 0,
+    "hitType": 1,
     "iconIndex": 688,
     "itypeId": 1,
     "name": "Vial of Poison",
@@ -6352,7 +6352,7 @@
         "value2": 0
       }
     ],
-    "hitType": 0,
+    "hitType": 1,
     "iconIndex": 697,
     "itypeId": 1,
     "name": "Icy Gel",
@@ -6617,7 +6617,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "This fruit, while lightly poisonous, isn't dangerous to humans. It's\nsaid that it contains magical qualities that can spice up any dish.",
+    "description": "This fruit, while lightly poisonous, isn't thaaat dangerous to humans.\nIt's said that it contains magical qualities that can spice up any dish.",
     "effects": [
       {
         "code": 21,
@@ -6628,7 +6628,7 @@
       {
         "code": 11,
         "dataId": 0,
-        "value1": 0.05,
+        "value1": -0.05,
         "value2": 0
       },
       {
@@ -7469,7 +7469,7 @@
         "value2": 0
       }
     ],
-    "hitType": 0,
+    "hitType": 1,
     "iconIndex": 768,
     "itypeId": 1,
     "name": "Fiery Blood",
@@ -7839,7 +7839,7 @@
         "value2": 0
       }
     ],
-    "hitType": 0,
+    "hitType": 1,
     "iconIndex": 809,
     "itypeId": 1,
     "name": "Holy Water",
@@ -8435,12 +8435,12 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Summons Arlo the dog. ABILITY: Keen Nose\nSniffs out nearby small chests.",
+    "description": "A stylish bandana for a lil' rascal. Summons Arlo the dog.\nKEEN NOSE: Sniffs out nearby small chests.",
     "effects": [],
     "hitType": 0,
-    "iconIndex": 635,
+    "iconIndex": 849,
     "itypeId": 2,
-    "name": "Arlo",
+    "name": "Arlo's Bandana",
     "note": "<Rarity: 2>\n<Menu Category: Pets>\n<Pet: Arlo>",
     "occasion": 3,
     "price": 0,
@@ -8461,13 +8461,13 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Summons Clover the cat. ABILITY: ???\nAbility description",
+    "description": "Rings when she walks. Summons Clover the cat.\nFELINE INSTINCT: 15% chance to start battle with advantage.",
     "effects": [],
     "hitType": 0,
-    "iconIndex": 635,
+    "iconIndex": 254,
     "itypeId": 2,
-    "name": "Clover",
-    "note": "<Rarity: 2>\n<Menu Category: Pets>\n<Pet: Clover>",
+    "name": "Clover's Bell",
+    "note": "<Rarity: 2>\n<Menu Category: Pets>\n<Pet: Clover>\n\nHardcoded in YEP_ForceAdvantage.js - BattleManager.clover",
     "occasion": 3,
     "price": 0,
     "repeats": 1,
@@ -8487,13 +8487,13 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Summons Duncan the guinea pig. ABILITY: ???\nAbility description",
+    "description": "Duncan's favorite off-brand chips! Summons Duncan the hamster.\nGOURMET: Meals restores 50% more HP/MP.",
     "effects": [],
     "hitType": 0,
-    "iconIndex": 635,
+    "iconIndex": 543,
     "itypeId": 2,
-    "name": "Duncan",
-    "note": "<Rarity: 2>\n<Menu Category: Pets>\n<Pet: Duncan>",
+    "name": "Duncan's Detos",
+    "note": "<Rarity: 2>\n<Menu Category: Pets>\n<Pet: Duncan>\n\nHardcoded in rpg_objects.js - Game_Action.prototype.duncan\nHardocded in Olivia_OctoBattle.js - Window_BattleItem.prototype.drawItemName",
     "occasion": 3,
     "price": 0,
     "repeats": 1,

@@ -20082,7 +20082,7 @@
         }
       ],
       "x": 23,
-      "y": 34
+      "y": 33
     },
     {
       "id": 28,
@@ -20405,7 +20405,127 @@
       "x": 43,
       "y": 15
     },
-    null,
+    {
+      "id": 30,
+      "name": "EV030",
+      "note": "<shadow>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 13,
+            "variableValid": false,
+            "variableValue": 11
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "People2",
+            "direction": 6,
+            "pattern": 1,
+            "characterIndex": 3
+          },
+          "list": [
+            {
+              "code": 108,
+              "indent": 0,
+              "parameters": [
+                "<Icon On Event: 199>"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "Galv.MAPT.initLocation(\"Frozen Labyrinth\");"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "Galv.MAPT.setObject(0,\"Player\",\"obj_player\",978,742,2);"
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                96,
+                96,
+                0,
+                0,
+                207
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                94,
+                94,
+                0,
+                0,
+                43
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                95,
+                95,
+                0,
+                0,
+                32
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                71
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 29,
+      "y": 39
+    },
     {
       "id": 31,
       "name": "EV031",
@@ -21478,7 +21598,83 @@
       "x": 26,
       "y": 12
     },
-    null,
+    {
+      "id": 34,
+      "name": "EV034",
+      "note": "<shadow>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 13,
+            "variableValid": false,
+            "variableValue": 11
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "People2",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 4
+          },
+          "list": [
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People2",
+                4,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\sailWant a ride? You'll have to ask the boss."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 30,
+      "y": 39
+    },
     {
       "id": 35,
       "name": "EV035",

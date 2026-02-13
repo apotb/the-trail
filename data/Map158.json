@@ -6583,33 +6583,52 @@
               ]
             },
             {
-              "code": 101,
+              "code": 111,
               "indent": 0,
               "parameters": [
-                "",
-                0,
+                4,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                5,
                 0,
                 2
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "Cook something up?"
+                "\\p2Let's get cookin'!"
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 102,
               "indent": 0,
               "parameters": [
                 [
-                  "Yes",
-                  "No"
+                  "Cook",
+                  "Leave"
                 ],
                 1,
                 0,
-                2,
+                1,
                 0
               ]
             },
@@ -6618,7 +6637,7 @@
               "indent": 0,
               "parameters": [
                 0,
-                "Yes."
+                "Cook"
               ]
             },
             {
@@ -6631,7 +6650,7 @@
               "indent": 0,
               "parameters": [
                 1,
-                "No."
+                "Leave"
               ]
             },
             {
@@ -6648,6 +6667,13 @@
               "code": 404,
               "indent": 0,
               "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                15
+              ]
             },
             {
               "code": 355,
@@ -8494,7 +8520,7 @@
                 0,
                 2,
                 1,
-                3
+                2
               ]
             },
             {
@@ -8529,6 +8555,56 @@
                 0,
                 56
               ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "$gameSystem._questsKnown.contains(1) && $gameSystem.isQuestObjectiveUncleared(1, 1)"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "Quest 1 Complete Objective 1"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "$gameSystem.isQuestObjectiveCompleted(1, 1) && $gameSystem.isQuestObjectiveCompleted(1, 2) && $gameSystem.isQuestObjectiveCompleted(1, 3)"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 2,
+              "parameters": [
+                "Quest 1 Show Objective 4"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,
@@ -8652,7 +8728,7 @@
                 0,
                 2,
                 1,
-                3
+                2
               ]
             },
             {
@@ -8687,6 +8763,56 @@
                 0,
                 56
               ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "$gameSystem._questsKnown.contains(1) && $gameSystem.isQuestObjectiveUncleared(1, 2)"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "Quest 1 Complete Objective 2"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "$gameSystem.isQuestObjectiveCompleted(1, 1) && $gameSystem.isQuestObjectiveCompleted(1, 2) && $gameSystem.isQuestObjectiveCompleted(1, 3)"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 2,
+              "parameters": [
+                "Quest 1 Show Objective 4"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,
@@ -8809,7 +8935,7 @@
                 0,
                 2,
                 1,
-                3
+                2
               ]
             },
             {
@@ -8844,6 +8970,56 @@
                 0,
                 56
               ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "$gameSystem._questsKnown.contains(1) && $gameSystem.isQuestObjectiveUncleared(1, 3)"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "Quest 1 Complete Objective 3"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "$gameSystem.isQuestObjectiveCompleted(1, 1) && $gameSystem.isQuestObjectiveCompleted(1, 2) && $gameSystem.isQuestObjectiveCompleted(1, 3)"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 2,
+              "parameters": [
+                "Quest 1 Show Objective 4"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,
@@ -11366,33 +11542,52 @@
               ]
             },
             {
-              "code": 101,
+              "code": 111,
               "indent": 0,
               "parameters": [
-                "",
-                0,
+                4,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                5,
                 0,
                 2
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "Cook something up?"
+                "\\p2Let's get cookin'!"
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 102,
               "indent": 0,
               "parameters": [
                 [
-                  "Yes",
-                  "No"
+                  "Cook",
+                  "Leave"
                 ],
                 1,
                 0,
-                2,
+                1,
                 0
               ]
             },
@@ -11401,7 +11596,7 @@
               "indent": 0,
               "parameters": [
                 0,
-                "Yes."
+                "Cook"
               ]
             },
             {
@@ -11414,7 +11609,7 @@
               "indent": 0,
               "parameters": [
                 1,
-                "No."
+                "Leave"
               ]
             },
             {
@@ -11431,6 +11626,13 @@
               "code": 404,
               "indent": 0,
               "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                15
+              ]
             },
             {
               "code": 355,
@@ -12259,6 +12461,11 @@
               ]
             },
             {
+              "code": 115,
+              "indent": 1,
+              "parameters": []
+            },
+            {
               "code": 0,
               "indent": 1,
               "parameters": []
@@ -12269,18 +12476,62 @@
               "parameters": []
             },
             {
-              "code": 223,
+              "code": 111,
               "indent": 1,
               "parameters": [
+                12,
+                "[89, 90, 91].contains($gameMap.mapId())"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                1,
+                38,
+                0,
+                5,
+                4
+              ]
+            },
+            {
+              "code": 223,
+              "indent": 3,
+              "parameters": [
                 [
-                  0,
-                  0,
-                  0,
+                  -68,
+                  -68,
+                  -68,
                   0
                 ],
                 120,
                 true
               ]
+            },
+            {
+              "code": 115,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
             },
             {
               "code": 0,
@@ -12291,6 +12542,20 @@
               "code": 412,
               "indent": 0,
               "parameters": []
+            },
+            {
+              "code": 223,
+              "indent": 0,
+              "parameters": [
+                [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                120,
+                true
+              ]
             },
             {
               "code": 0,
@@ -12450,8 +12715,8 @@
               "code": 101,
               "indent": 2,
               "parameters": [
-                "",
-                0,
+                "Actor4",
+                5,
                 0,
                 2
               ]
@@ -12460,7 +12725,7 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "Cook up something at Dalia's bowl?"
+                "\\p2Let's get cookin'!"
               ]
             },
             {
@@ -12482,7 +12747,7 @@
               "indent": 2,
               "parameters": [
                 0,
-                "Yes."
+                "Yes"
               ]
             },
             {
@@ -12495,7 +12760,7 @@
               "indent": 2,
               "parameters": [
                 1,
-                "No."
+                "No"
               ]
             },
             {
@@ -12655,8 +12920,8 @@
               "code": 101,
               "indent": 1,
               "parameters": [
-                "",
-                0,
+                "Actor4",
+                5,
                 0,
                 2
               ]
@@ -12665,7 +12930,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Cook up something at the bowl?"
+                "\\p2Let's get cookin'!"
               ]
             },
             {
@@ -12687,7 +12952,7 @@
               "indent": 1,
               "parameters": [
                 0,
-                "Yes."
+                "Yes"
               ]
             },
             {
@@ -12700,7 +12965,7 @@
               "indent": 1,
               "parameters": [
                 1,
-                "No."
+                "No"
               ]
             },
             {
@@ -42072,33 +42337,52 @@
               ]
             },
             {
-              "code": 101,
+              "code": 111,
               "indent": 0,
               "parameters": [
-                "",
-                0,
+                4,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                5,
                 0,
                 2
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "Cook something up?"
+                "\\p2Let's get cookin'!"
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 102,
               "indent": 0,
               "parameters": [
                 [
-                  "Yes",
-                  "No"
+                  "Cook",
+                  "Leave"
                 ],
                 1,
                 0,
-                2,
+                1,
                 0
               ]
             },
@@ -42107,7 +42391,7 @@
               "indent": 0,
               "parameters": [
                 0,
-                "Yes."
+                "Cook"
               ]
             },
             {
@@ -42120,7 +42404,7 @@
               "indent": 0,
               "parameters": [
                 1,
-                "No."
+                "Leave"
               ]
             },
             {
@@ -42137,6 +42421,13 @@
               "code": 404,
               "indent": 0,
               "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                15
+              ]
             },
             {
               "code": 355,

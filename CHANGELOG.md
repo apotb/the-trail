@@ -1,31 +1,54 @@
 # Alpha 18: Back to the Basics (??/??/????)
-There comes a time when enough is enough. Alpha 15's Telluria Field is the highlight of The Trail, but you had to play through a meaningless slog to get there. I spent a long time not wanting to revamp/remove certain parts of the game for nostalgia reasons, but the story simply cannot go on when the first half of it is so poorly put together.
+It's about time we returned to what made The Trail great in the first place! In my opinion, the latest content has felt somewhat distanced from the humble beginnings of the game. This update serves to unify systems/content from previous updates to make the Overworld feel much more cohesive from start to finish.
 
-Poorly justified progression, nonsensical dialogue, and a whole lot of fluff that didn't contribute to the story has been changed or outright removed in this update. You'll see the changes right from the very start. If you remember what the dialogue/story was like before, I think you'll find this to be a much better direction for the game.
+Adon has seen the most changes - rightfully so, considering it's every players' first introduction to the game. Verdin Village is the new starting point, and while the overarching story (defeat Apocalypse) is still there, the way it's presented has completely and fundamentally changed. Systems such as cooking and fishing have much more presence earlier in the game, and a fancy new fast travel system provides a much more Trail-esque way to get around the world.
 
-For the sake of both our time, a lot of specific details have been omitted from the changelog, Alpha 14-esque. You'll just have to play to see the full extent of the overhaul!
+The Easin Plains and Blazing Sands have gotten refreshed as well! No more piles of dirt: two new military locations serve to add atmosphere and better progression. Will you take the classic route from Greenfield to Solus Valley to Bladesville, or will you mix it up? Rushing to the Blazing Sands isn't a bad idea: snag a pickaxe early, take a stab at Henry, or loot some armor from the Great Pyramid! And now, there's a powerful boss waiting to test you before reaching Telluria Castle...
+
+From pets to royal titles to the ability to name your team, Alpha 18 adds a whole bunch of features that make The Trail feel more like... well, The Trail. For the sake of both our time, a lot of specific details have been omitted from the changelog. You'll just have to play to see the full extent of the overhaul!
 
 NOTICE: Old saves will not work with this update!
 
 ### Additions
-- Added a LOT of new content before Telluria Field, including:
-  - 2 new settlements to explore
-  - New characters
+- Added new content throughout the game, including:
+  - Northern/Southern Desert Garrison
+  - Eating at Larry's Marvelous Diner
   - Several new quests
+  - Giving people fake names
+  - A new boss fight...
 - Added random name generation.
 - Added team names.
 - Added royal titles.
-- Added a new early-game fast travel system.
-- Added a short sound effect when completing a quest objective.
+- Added a new fast travel system.
+- Finished the pet shop in Telluria Castle Town! See all your collected pets back home! Added 3 new pets:
+  - Arlo
+  - Clover
+  - Duncan
+- Your days on The Trail will now be tracked.
 - Added TROPHY rarity.
-- Added 6 items:
+- Added a short sound effect when completing a quest objective.
+- Added new rogue passive skill "Resourceful" at level 15.
+  - Moved Low Blow to L18, Shield Break to L22, and removed Focus Up.
+- Added 17 items:
+  - Rookie Spear
+  - Squire Gauntlets
+  - Flora's Rose
   - Eclipse Potion
-  - Giant Goblin's Fang (weapon)
-  - Henry's Boots (armor)
-  - The Warden's Belt (armor)
-  - Forgotten General's Helmet (armor)
+  - Desert Gambeson
+  - Tower Shield
+  - Field Medic Kit
   - Bronze Gauntlets
-- Added early-game fishing content and 18 items:
+  - Smirnoff's Lightning Lance
+  - Arlo's Bandana
+  - Clover's Bell
+  - Duncan's Detos
+  - Sealed Writ
+  - The following 4 were once just trophies, but are now equipment:
+    - Giant Goblin's Fang
+    - Henry's Boots
+    - The Warden's Belt
+    - Forgotten General's Helmet
+- Added fishing progression throughout the game, with 18 new fishing-related items:
   - Crucian Carp
   - Pond Smelt
   - Yellow Perch
@@ -44,41 +67,85 @@ NOTICE: Old saves will not work with this update!
   - Whiskerfish Porridge
   - Good Rod
   - Enchanted Rod
+- Added "Can be salvaged" tooltip to items that... well, can be salvaged.
 
 ### Changes
 - Revamped most of the game up to Telluria Field.
   - The game now begins in Verdin Village.
-  - Time is ticking as soon as you start.
-  - The Blazing Sands are available as soon as you reach Telluria.
-  - Most cutscenes have been either completely changed or removed.
-  - A bunch of stuff got rebalanced, shuffled around, or given a spotlight in an overcrowded pool of new content.
-  - Existing fishing/food content has been overhauled to accommodate new early-game fishing content.
+  - Time starts ticking right after the first cutscene!
+  - Dirty Mike, Larry, and Matilda get their own brick-and-mortar locations in town.
+  - Adon's progression has been improved to fit its role as the player's first introduction to The Trail.
+  - The Blazing Sands are available as soon as you reach Telluria. No more dirt!
+  - Many cutscenes have been either completely changed or removed.
+    - Notably, mentions of the "Champion Program" and other prophetic depictions of the player have been removed. The player's selection by the Village Headman have been a facet of the game's since the Pre-Alpha days, so why scrap it so far in development? To be honest, I don't know how it even got into the game in the first place.
+    - The original source material for The Trail was a text-based game narrated by Brendan in a Google Doc. It featured an epic adventure across the Overworld, and set the foundations for Verdin Village, the Banditos, and so much more. But the key difference was that there was no overarching goal from the start - rather, the point of the "game" was to discover purpose on our own.
+    - That feeling of adventure and discovery was never fully translated to this video game. How can a new player be intrigued if they're told at the very beginning they're destined to save the world, before even leaving the first town?
+    - I hope the new "Wandering Swordsman" scenario can be a considered an improved perspective on the Overworld we already had. Apocalypse isn't going anywhere, but you'll have to put in the work to learn about him! That'll be harder than before, considering you're now just a commoner and not a destined champion...
+  - A bunch of items/features were rebalanced, shuffled around, or at least given a niche use.
+  - Existing fishing/food content has been overhauled to accommodate the new fishing content.
+- Player 4 can now use light shields!
+  - Equip a dagger or knuckles in her 1st weapon slot to use her dual wield.
+  - Equip any other type of weapon to let her use a light shield.
+- Plant element now takes half damage from Electric attacks.
 - Increased max name length from 10 → 12.
 - You can no longer equip duplicate Wristbraces, Necklaces, Gauntlets, Scarves, or Crystals.
   - To make this easier to figure out, equipment types are shown next to rarity.
+  - Many other item distinctions have been added as well, some of them just for flavor!
 - Red Slimes and Bats no longer drop Copper/Iron Clusters and Coal.
   - This is compensated by 12 new ore nodes in Goblin Grotto, half of which are oreleaf.
-- Made Goblins weaker to magic.
-- Made Bats more resistant to magic.
-- Reduced drop rate of Ring of the Woods/Forest.
-- Buffed Earthen Grassrobes Earth resistance from 10% to 25%.
 - Menu improvements:
+  - Several item categories get a custom sort order, making inventory management way easier!
+    - Key Items: prioritizes usable from menu
+    - Weapons/Armor: sorted by rarity descending
+    - Recovery: sorted by HP/MP, then HP, then MP. Within each sub-category, items are sorted by recovery descending, with priority given to % healing rather than flat healing.
+    - Drops: sorted by value descending
+    - Meals: sorted by level of Well Fed descending, sub-category sorted by recovery descending
+    - Upgraders: sorted by hidden "weight" value descending (better ones are first)
+    - Salvaging: prioritizes salvage kits
   - Reordered smithery crafting menus.
   - Shop sell menu shows if an item is a material.
-  - Equipment shows more relevant stats.
-- Changed the color of trees!
+  - Item recovery previews show multipliers from PHA and other effects like Duncan.
+  - Pressing UP when buying/selling/crafting items while the current quantity is 1 will go to 10 instead of 11.
+- Bubble is now guaranteed to apply Soaked.
+- Fiery Tablet recipe includes Blood Pact and Flesh Doll and inherits the effects of both.
+  - Also halved the effects of both accessories... they were hard to get, but kind of OP!
+- Made Goblins weaker to magic.
+- Made Bats more resistant to magic.
+- Polar Bears now drop Leather.
+- Reduced drop rate of Ring of the Woods/Forest.
+- Buffed Green/Blue Gel HP/MP recovery from 2 → 5.
+- Buffed Earthen Grassrobes Earth resistance from 10% to 25%.
+- All levels of Well Fed last much longer and are not removed when HP drops to 0.
+- Thrown items now count as physical hits.
+- Heated Metal now absorbs Fire attacks.
+- Name input now trims whitespace.
+- New trees!
+- A lot of balance changes and other tweaks were made that aren't listed here.
 
 ### Bug Fixes
+- Fixed a bug where the autosave interval would reset when changing maps.
 - Fixed a bug where the autosave interval wouldn't count down while in menus or battle.
+- Fixed autosave interval option not saving.
+- Fixed Soaked not doubling incoming Electric damage.
+- Fixed Decimation applying Fatigue to the user.
 - Fixed a bug where Copper Oreleaf couldn't drop Rock Salt.
+- Fixed equip comparison menu showing wrong colors for incoming physical/magical damage.
+- Fixed being able to select the same ingredient multiple times for crafting.
+- Fixed being able to craft items multiple times without resources available.
+- Fixed item upgrades not transferring when crafting.
+- Fixed automatically equipping crafting upgrades sometimes equipping the wrong thing.
 - Fixed outdated cliff texture in South Field.
 - Fixed wading effect when walking on bridge in South Field.
-- Fixed Seshat's Tome drop beginning in Telluria Field being a 1/10,000 drop rather than a 1/100 drop.
+- Fixed Seshat's Tome drop beginning in Telluria Field being a 1/10,000 drop rather than a 1/200 drop.
+- Fixed Red Mushroom appearing in Recovery category.
+- Fixed buggy appearance of First Cleric statue in Frozen Labyrinth.
+- Fixed Record Fish in Career Stats not updating.
+- Fixed Heated Metal not changing Attacker/Defender Tellurium Golem sprites.
 - Fixed a bunch of other random bugs.
 
-If you happen to stumble upon a "new" item that isn't on here, it's probably because I made a lot of old/bad items more relevant. For example, the Globetrotter Boots, once useless at Telluria Castle Town's tier, now have a much better fit in Solus Valley. So you might be stumbling upon items you never would have even thought to care about in previous versions!
+If you happen to stumble upon a "new" item that isn't on here, it's probably because I made a lot of old/bad items more relevant. For example, the Globetrotter Boots, once useless at Telluria Castle Town's tier, now have a much better fit in Solus Valley. I hope you'll find yourself using items you never would have thought to care about in previous versions!
 
-I know I said Alpha 18 would be the Wasteland update, but don't worry, the update's not going anywhere. In fact, the party will finally get to face their most dangerous challenges yet in Alpha 19!
+I know I said Alpha 18 would be the Wasteland update, but don't worry, it's not going anywhere. The party's most dangerous challenges still lie ahead! Alpha 19 might be the Wasteland, or perhaps it'll explore one of the various side quests that are currently up in the air... until then, keep an eye out for leeks/announcements, as well as the new roadmap accessible in-game!
 
 Until then... the journey continues.
 

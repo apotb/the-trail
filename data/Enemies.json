@@ -101,13 +101,23 @@
         "code": 22,
         "dataId": 2,
         "value": -10
+      },
+      {
+        "code": 22,
+        "dataId": 3,
+        "value": 10
+      },
+      {
+        "code": 13,
+        "dataId": 7,
+        "value": 10
       }
     ],
     "gold": 30,
     "name": "Big Mouth",
     "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Bandito_2>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<AI Priority>\nParty Alive Members === 3: Attack, Lowest DEF\nParty Alive Members === 2: Attack, Highest Level\n</AI Priority>\n\n<Enemy Drops>\nBell: 5%\nBandito Loot: 100%\nWater Bottle: 100%\nSmall Potion: 100%\nBandito Dagger: 12.5%\nBandito Cloak: 12.5%\nBandito Gloves: 12.5%\nAnti-Magic Charm: 5%\n</Enemy Drops>",
     "params": [
-      125,
+      375,
       5,
       10,
       8,
@@ -1380,12 +1390,12 @@
     "name": "Giant Goblin",
     "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Slashing>\n\n<Sideview Battler: Goblin_2>\n<Scale Sprite: 200%>\n<HP Gauge Width: 216>\n\n<Enemy Drops>\nHorn: 5%\nGiant Goblin's Fang: 100%\nGiant Goblin's Rage: 100%\nTerra: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 75%\nLeather: 75%\nLeather: 75%\nLeather: 50%\nLeather: 50%\nLeather: 50%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 75%\nWorn Cloth: 75%\nWorn Cloth: 50%\nWorn Cloth: 50%\n</Enemy Drops>",
     "params": [
-      5000,
+      4000,
       999,
       17,
       16,
       1,
-      36,
+      30,
       50,
       16
     ]
@@ -1962,11 +1972,11 @@
     ],
     "gold": 400,
     "name": "The Warden",
-    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Slashing>\n<Element: Dark>\n\n<Sideview Battler: Evil1_4>\n<Weapon Image: 229>\n<Attack Animation: 6>\n<HP Gauge Width: 216>\n\n<AI Priority>\nState === Poisoned +++ User HP% param >= 33%: Dispell, User\n</AI Priority>\n\n<Enemy Drops>\nThe Warden's Trade-off: 100%\nThe Warden's Belt: 100%\nShadowplate Armor: 100%\nPhantasmal Robes: 100%\nPhantasmal Vestments: 100%\nShadowspec Leathers: 100%\nPhantasmal Scarf: 100%\nAncient Outfit: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
+    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Slashing>\n<Element: Dark>\n\n<Sideview Battler: Evil1_4>\n<Weapon Image: 229>\n<Attack Animation: 6>\n<HP Gauge Width: 216>\n\n<AI Priority>\nState === Poisoned +++ User HP% param >= 33%: Dispell, User\n</AI Priority>\n\n<Enemy Drops>\nThe Warden's Trade-off: 100%\nThe Warden's Belt: 100%\nPhantasmal Scarf: 100%\nAncient Outfit: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
     "params": [
       7500,
       999,
-      19,
+      23,
       23,
       45,
       50,
@@ -2112,7 +2122,7 @@
     "params": [
       12000,
       9999,
-      26,
+      27,
       30,
       61,
       60,
@@ -3116,7 +3126,7 @@
     ],
     "gold": 100,
     "name": "Darkhound",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 136>\n\n<Sideview Battler: Hound_3>\n<Sideview No Collapse>\n<Battle Select Cursor Position Y: Middle>\n<Attack Animation: 133>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nNecrotic Skull: 20% +30%\nIron Wristbraces: 5% +5%\nEnchanted Anti-Magic Charm: 5% +5%\nINT Scroll: 10% +10%\nDark Essence: 20% +20%\n</Night Boost>\n\n<Conditional Fido's Collar Drop>\nEval !$gameParty.hasItem($dataItems[77]): +1%\n</Conditional Fido's Collar Drop>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 136>\n\n<Sideview Battler: Hound_3>\n<Sideview No Collapse>\n<Battle Select Cursor Position Y: Middle>\n<Attack Animation: 133>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nNecrotic Skull: 20% +30%\nSilver Wristbraces: 5% +5%\nEnchanted Anti-Magic Charm: 5% +5%\nINT Scroll: 10% +10%\nDark Essence: 20% +20%\n</Night Boost>\n\n<Conditional Fido's Collar Drop>\nEval !$gameParty.hasItem($dataItems[77]): +1%\n</Conditional Fido's Collar Drop>",
     "params": [
       1500,
       0,
@@ -4281,7 +4291,7 @@
     ],
     "gold": 250,
     "name": "Baby Dragon",
-    "note": "<Armor Weakness: Piercing>\n<Element: Earth, Wind>\n<Passive State: 145>\n\n<Breathing Speed: 20>\n<Floating>\n<Floating Rate: 0.05>\n<Attack Animation: 211>\n\n<AI Priority>\nTurn % 4 === 1: Future Sight, Highest HP\nTurn % 4 === 2: Cyclone\nTurn % 4 === 3: Spike Shock\nTurn % 4 === 0: Spike Shock\n</AI Priority>\n\n<Enemy Drops>\nDragon Scale: 100%\nDragon Scale: 100%\nDragon Scale: 50%\nDragon Scale: 25%\nDragon Scale: 12.5%\nDragonfruit: 50%\nMDF Scroll ★: 10%\nEarth Essence: 100%\nWind Essence: 100%\n</Enemy Drops>\n\n<Conditional Enchanted Dragon Scale Drop>\nSwitch 95 ON: +75%\n</Conditional Enchanted Dragon Scale Drop>\n\n<Conditional Enchanted Dragon Scale Drop>\nSwitch 95 ON: +75%\n</Conditional Enchanted Dragon Scale Drop>\n\n<Conditional Dragon Scale Helmet Drop>\nSwitch 95 ON: +50%\n</Conditional Dragon Scale Helmet Drop>\n\n<Conditional Sorrowful Headpiece Drop>\nSwitch 95 ON: +50%\n</Conditional Sorrowful Headpiece Drop>",
+    "note": "<Armor Weakness: Piercing>\n<Element: Earth, Wind>\n<Passive State: 145>\n\n<Breathing Speed: 20>\n<Floating>\n<Floating Rate: 0.05>\n<Attack Animation: 211>\n\n<AI Priority>\nTurn % 4 === 1: Future Sight, Highest HP\nTurn % 4 === 2: Cyclone\nTurn % 4 === 3: Spike Shock\nTurn % 4 === 0: Spike Shock\n</AI Priority>\n\n<Enemy Drops>\nDragon Scale: 100%\nDragon Scale: 100%\nDragon Scale: 50%\nDragon Scale: 25%\nDragon Scale: 12.5%\nDragonfruit: 50%\nMDF Scroll ★: 10%\nEarth Essence: 100%\nWind Essence: 100%\n</Enemy Drops>\n\n<Conditional Enchanted Dragon Scale Drop>\nSwitch 95 ON: +75%\n</Conditional Enchanted Dragon Scale Drop>\n\n<Conditional Enchanted Dragon Scale Drop>\nSwitch 95 ON: +75%\n</Conditional Enchanted Dragon Scale Drop>\n\n<Conditional Dragon Scale Helmet Drop>\nSwitch 95 ON: +25%\n</Conditional Dragon Scale Helmet Drop>\n\n<Conditional Sorrowful Headpiece Drop>\nSwitch 95 ON: +25%\n</Conditional Sorrowful Headpiece Drop>",
     "params": [
       6000,
       0,
@@ -4767,7 +4777,7 @@
     ],
     "gold": 1500,
     "name": "Ethereal Bat",
-    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Slashing>\n<Element: Wind, Light>\n\n<Sideview Battler: NoMatchingSprite/Ethereal Bat>\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n\n<AI Priority>\nState !== Used Ethereal Echolocation: Ethereal Echolocation\nState !== Eye of the Storm +++ Random 40%: Cyclone\n</AI Priority>\n\n<Enemy Drops>\nStorm Lens: 5%\nEthereal Bat Wing: 100%\nWind Catalyst: 100%\nBat Sling: 100%\nEnchanted Bat Skin: 5%\nShard of Glass: 1%\nWind Essence: 100%\nWind Essence: 100%\nWind Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\n</Enemy Drops>\n<Conditional Ethereal Bat's Spirit Drop>\nSwitch 96 OFF: +100%\n</Conditional Ethereal Bat's Spirit Drop>",
+    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Slashing>\n<Element: Wind, Light>\n\n<Sideview Battler: NoMatchingSprite/Ethereal Bat>\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<HP Gauge Width: 216>\n\n<AI Priority>\nState !== Used Ethereal Echolocation: Ethereal Echolocation\nState !== Eye of the Storm +++ Random 40%: Cyclone\n</AI Priority>\n\n<Enemy Drops>\nStorm Lens: 5%\nEthereal Bat Wing: 100%\nWind Catalyst: 100%\nBat Sling: 100%\nEnchanted Bat Skin: 5%\nShard of Glass: 1%\nWind Essence: 100%\nWind Essence: 100%\nWind Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\n</Enemy Drops>\n<Conditional Ethereal Bat's Spirit Drop>\nSwitch 96 OFF: +100%\n</Conditional Ethereal Bat's Spirit Drop>",
     "params": [
       12000,
       0,
@@ -4843,7 +4853,7 @@
     ],
     "gold": 0,
     "name": "Vampiric Spirit",
-    "note": "<Element: Wind, Light>\n<Passive State: 111, 115, 147>\n\n<Sideview Battler: NoMatchingSprite/Vampiric Spirit>\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n\n<Enemy Drops>\nWind Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
+    "note": "<Element: Wind, Light>\n<Passive State: 111, 115, 147>\n\n<Sideview Battler: NoMatchingSprite/Vampiric Spirit>\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<HP Gauge Width: 180>\n\n<Enemy Drops>\nWind Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
     "params": [
       3000,
       0,
@@ -4919,7 +4929,7 @@
     ],
     "gold": 0,
     "name": "Vigorous Spirit",
-    "note": "<Element: Wind, Light>\n<Passive State: 112, 116, 147>\n\n<Sideview Battler: NoMatchingSprite/Vigorous Spirit>\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n\n<Enemy Drops>\nWind Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
+    "note": "<Element: Wind, Light>\n<Passive State: 112, 116, 147>\n\n<Sideview Battler: NoMatchingSprite/Vigorous Spirit>\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<HP Gauge Width: 180>\n\n<Enemy Drops>\nWind Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
     "params": [
       3000,
       0,
@@ -4995,7 +5005,7 @@
     ],
     "gold": 0,
     "name": "Dexterous Spirit",
-    "note": "<Element: Wind, Light>\n<Passive State: 113, 117, 147>\n\n<Sideview Battler: NoMatchingSprite/Dexterous Spirit>\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n\n<Enemy Drops>\nWind Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
+    "note": "<Element: Wind, Light>\n<Passive State: 113, 117, 147>\n\n<Sideview Battler: NoMatchingSprite/Dexterous Spirit>\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<HP Gauge Width: 180>\n\n<Enemy Drops>\nWind Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
     "params": [
       3000,
       0,
@@ -5071,7 +5081,7 @@
     ],
     "gold": 0,
     "name": "Belligerent Spirit",
-    "note": "<Element: Wind, Light>\n<Passive State: 114, 118, 147>\n\n<Sideview Battler: NoMatchingSprite/Belligerent Spirit>\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n\n<Enemy Drops>\nWind Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
+    "note": "<Element: Wind, Light>\n<Passive State: 114, 118, 147>\n\n<Sideview Battler: NoMatchingSprite/Belligerent Spirit>\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<HP Gauge Width: 180>\n\n<Enemy Drops>\nWind Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
     "params": [
       3000,
       0,
@@ -5137,7 +5147,7 @@
     ],
     "gold": 48,
     "name": "Polar Bear",
-    "note": "<Armor Weakness: Slashing>\n<Element: Ice>\n<Passive State: 144>\n\n<Sideview Battler: Bear_2>\n<Attack Animation: 19>\n\n<Enemy Drops>\nWarm Scarf: 5%\nRaw Bear Meat: 75%\nRaw Bear Meat: 75%\nHoney: 25%\nFrozen Jewel: 20%\nIce Skates: 0.5%\nIce Essence: 20%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n<Element: Ice>\n<Passive State: 144>\n\n<Sideview Battler: Bear_2>\n<Attack Animation: 19>\n\n<Enemy Drops>\nWarm Scarf: 5%\nRaw Bear Meat: 75%\nRaw Bear Meat: 75%\nLeather: 75%\nLeather: 75%\nHoney: 25%\nFrozen Jewel: 20%\nIce Skates: 0.5%\nIce Essence: 20%\n</Enemy Drops>",
     "params": [
       1800,
       0,
@@ -5563,13 +5573,13 @@
     ],
     "gold": 80,
     "name": "Fire Imp",
-    "note": "<Armor Weakness: Slashing>\n<Element: Fire>\n\n<Sideview Battler: Monster4_3>\n<Attack Animation: 18>\n\n<Enemy Drops>\nFiery Blood: 75%\nFiery Blood: 75%\nFire Resistance Potion: 50%\nFlarestone: 10%\nSelfish Candle: 5%\nFire Essence: 20%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n<Element: Fire>\n\n<Sideview Battler: Monster4_3>\n<Attack Animation: 18>\n\n<AI Priority>\nRandom 80%: Fire II, Highest HP\n</AI Priority>\n\n<Enemy Drops>\nFiery Blood: 75%\nFiery Blood: 75%\nFire Resistance Potion: 50%\nFlarestone: 10%\nSelfish Candle: 5%\nFire Essence: 20%\n</Enemy Drops>",
     "params": [
       2000,
       0,
       33,
       30,
-      62,
+      60,
       55,
       140,
       45
@@ -6232,7 +6242,7 @@
     ],
     "gold": 0,
     "name": "???",
-    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 139, 147, 150>\n<Light Break: 5>\n\n<Sideview Battler: NoMatchingSprite/Apocalypse's Shadow>\n<Weapon Image: 266>\n<Attack Animation: 8>\n<HP Gauge Width: 216>\n<HP Gauge Color 1: 15>\n<HP Gauge Color 2: 14>\n\n<AI Priority>\nEval user.timesStruckElement(8) >= 1: Dark Orb\n</AI Priority>\n\n<Enemy Drops>\nInfernal Knight's Synergy: 100%\nInfernal Mage's Synergy: 100%\nInfernal Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 139, 147, 150>\n<Light Break: 5>\n\n<Sideview Battler: NoMatchingSprite/Apocalypse's Shadow>\n<Weapon Image: 266>\n<Attack Animation: 8>\n<HP Gauge Width: 180>\n<HP Gauge Color 1: 15>\n<HP Gauge Color 2: 14>\n\n<AI Priority>\nEval user.timesStruckElement(8) >= 1: Dark Orb\n</AI Priority>\n\n<Enemy Drops>\nInfernal Knight's Synergy: 100%\nInfernal Mage's Synergy: 100%\nInfernal Essence: 100%\n</Enemy Drops>",
     "params": [
       4000,
       0,
@@ -6373,7 +6383,7 @@
     ],
     "gold": 50,
     "name": "Dullahan",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 147>\n\n<Sideview Battler: Dullahan_1>\n<Weapon Image: 242>\n<Attack Animation: 126>\n\n<Boost Skill 30: Full>\n<Boost Skill 32: Full>\n<Boost Skill 84: Full>\n<AI Priority>\nTroop Alive Members > 1 +++ State !== Magic Prone +++ Random 40%: Magic Proneness, Highest MDF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire\nTroop Alive Members > 1 +++ State !== Hold the Line I +++ Random 80%: Hold the Line I\n</AI Priority>\n\n<Enemy Drops>\nDullahan Armor: 100%\nDark Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>\n\n<Night Boost>\nLarge Potion: 75% +25%\nLarge Potion: 50% +50%\nLarge Potion: 25% +25%\nRuby Ring: 5% +5%\nEmerald Ring: 5% +5%\n</Night Boost>\n\n<Conditional Sauna Key Drop>\nSauna Key Count < 1: +100%\n</Conditional Sauna Key Drop>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 147>\n\n<Sideview Battler: Dullahan_1>\n<Weapon Image: 242>\n<Attack Animation: 126>\n<HP Gauge Width: 180>\n\n<Boost Skill 30: Full>\n<Boost Skill 32: Full>\n<Boost Skill 84: Full>\n<AI Priority>\nTroop Alive Members > 1 +++ State !== Magic Prone +++ Random 40%: Magic Proneness, Highest MDF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire\nTroop Alive Members > 1 +++ State !== Hold the Line I +++ Random 80%: Hold the Line I\n</AI Priority>\n\n<Enemy Drops>\nDullahan Armor: 100%\nDark Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>\n\n<Night Boost>\nLarge Potion: 75% +25%\nLarge Potion: 50% +50%\nLarge Potion: 25% +25%\nRuby Ring: 5% +5%\nEmerald Ring: 5% +5%\n</Night Boost>\n\n<Conditional Sauna Key Drop>\nSauna Key Count < 1: +100%\n</Conditional Sauna Key Drop>",
     "params": [
       3000,
       20,
@@ -6506,7 +6516,7 @@
     ],
     "gold": 50,
     "name": "Insane Mage",
-    "note": "<Element: Light>\n<Passive State: 147>\n\n<Sideview Battler: FortSoul_3>\n<Sideview No Collapse>\n<Weapon Image: 25>\n<Attack Animation: 122>\n\n<Boost Skill 15: Full>\n<AI Priority>\nState === On Fire!: Bubble\nHP% param <= 30% +++ Random 60%: Cure II, Lowest HP%\n</AI Priority>\n\n<Enemy Drops>\nScroll of Silver Sands: 100%\nLarge Elixir: 75%\nLarge Elixir: 50%\nLarge Elixir: 25%\nLight Essence: 100%\n</Enemy Drops>",
+    "note": "<Element: Light>\n<Passive State: 147>\n\n<Sideview Battler: FortSoul_3>\n<Sideview No Collapse>\n<Weapon Image: 25>\n<Attack Animation: 122>\n<HP Gauge Width: 180>\n\n<Boost Skill 15: Full>\n<AI Priority>\nState === On Fire!: Bubble\nHP% param <= 30% +++ Random 60%: Cure II, Lowest HP%\n</AI Priority>\n\n<Enemy Drops>\nScroll of Silver Sands: 100%\nLarge Elixir: 75%\nLarge Elixir: 50%\nLarge Elixir: 25%\nLight Essence: 100%\n</Enemy Drops>",
     "params": [
       3000,
       0,
@@ -6906,6 +6916,206 @@
       80,
       10,
       10
+    ]
+  },
+  {
+    "id": 91,
+    "actions": [
+      {
+        "conditionParam1": 0.75,
+        "conditionParam2": 1,
+        "conditionType": 2,
+        "rating": 5,
+        "skillId": 9
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0.75,
+        "conditionType": 2,
+        "rating": 5,
+        "skillId": 64
+      },
+      {
+        "conditionParam1": 0.5,
+        "conditionParam2": 1,
+        "conditionType": 2,
+        "rating": 5,
+        "skillId": 37
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0.5,
+        "conditionType": 2,
+        "rating": 5,
+        "skillId": 38
+      },
+      {
+        "conditionParam1": 0.5,
+        "conditionParam2": 1,
+        "conditionType": 2,
+        "rating": 4,
+        "skillId": 121
+      },
+      {
+        "conditionParam1": 0.5,
+        "conditionParam2": 1,
+        "conditionType": 2,
+        "rating": 4,
+        "skillId": 94
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0.5,
+        "conditionType": 2,
+        "rating": 4,
+        "skillId": 59
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0.5,
+        "conditionType": 2,
+        "rating": 4,
+        "skillId": 117
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Baron Smirnoff",
+    "dropItems": [],
+    "exp": 1500,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 1.1
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.1
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.1
+      },
+      {
+        "code": 63,
+        "dataId": 1,
+        "value": 1
+      },
+      {
+        "code": 32,
+        "dataId": 52,
+        "value": 0.5
+      },
+      {
+        "code": 61,
+        "dataId": 0,
+        "value": 1
+      }
+    ],
+    "gold": 500,
+    "name": "Baron Smirnoff",
+    "note": "<Cannot Select: Item Scroll of Silver Sands>\n<Passive State: 227>\n\n<Armor Weakness: Slashing>\n\n<Sideview Battler: Evil1_8>\n<Sideview No Collapse>\n<Weapon Image: 146>\n<Attack Animation: 15>\n<Sideview Attack Motion: thrust>\n<HP Gauge Width: 288>\n\n<AI Priority>\nUser HP% param <= 50% +++ Eval user._storms === 0: Lightning Storm\nUser HP% param <= 25% +++ Eval user._storms === 1: Lightning Storm\n</AI Priority>\n\n<Enemy Drops>\nSmirnoff's Lightning Lance: 100%\nLoaf of Bread: 50%\nLoaf of Bread: 50%\nLoaf of Bread: 50%\nOmelette: 50%\nCarp and Mushroom Stew: 50%\nGarnished Perch: 50%\nSolus Valley Special: 50%\nHoney-Glazed Carp: 50%\nSmall Potion: 50%\nSmall Potion: 50%\nPotion: 50%\nPotion: 50%\nLarge Potion: 50%\nLarge Potion: 50%\nTome of Experience: 50%\nTome of Experience: 50%\n</Enemy Drops>",
+    "params": [
+      9000,
+      0,
+      25,
+      25,
+      50,
+      50,
+      100,
+      50
+    ]
+  },
+  {
+    "id": 92,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 64
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 41
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 108
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Baron Ripoff",
+    "dropItems": [],
+    "exp": 0,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 4,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 1.05
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.05
+      },
+      {
+        "code": 32,
+        "dataId": 52,
+        "value": 0.5
+      }
+    ],
+    "gold": 0,
+    "name": "Baron Ripoff",
+    "note": "<Element: Electric>\n<Element Absorb: Electric>\n<Passive State: 150, 227>\n\n<Sideview Battler: NoMatchingSprite/Baron Ripoff>\n<Scale Sprite: 200%>\n<Attack Animation: 5>\n<Sideview Attack Motion: thrust>\n<HP Gauge Width: 180>\n\n<Enemy Drops>\nElectric Essence: 20%\n</Enemy Drops>",
+    "params": [
+      1500,
+      0,
+      20,
+      25,
+      50,
+      50,
+      100,
+      60
     ]
   }
 ]

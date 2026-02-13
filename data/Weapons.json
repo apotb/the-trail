@@ -30,7 +30,7 @@
       0,
       0
     ],
-    "price": 0,
+    "price": 20,
     "wtypeId": 2
   },
   {
@@ -63,7 +63,7 @@
       0,
       0
     ],
-    "price": 0,
+    "price": 20,
     "wtypeId": 3
   },
   {
@@ -96,7 +96,7 @@
       0,
       0
     ],
-    "price": 0,
+    "price": 20,
     "wtypeId": 4
   },
   {
@@ -114,6 +114,11 @@
         "code": 31,
         "dataId": 15,
         "value": 0
+      },
+      {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
       }
     ],
     "iconIndex": 150,
@@ -129,7 +134,7 @@
       0,
       0
     ],
-    "price": 0,
+    "price": 20,
     "wtypeId": 5
   },
   {
@@ -162,7 +167,7 @@
       0,
       0
     ],
-    "price": 20,
+    "price": 15,
     "wtypeId": 2
   },
   {
@@ -411,6 +416,11 @@
         "code": 31,
         "dataId": 15,
         "value": 0
+      },
+      {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
       }
     ],
     "iconIndex": 150,
@@ -477,6 +487,11 @@
         "code": 31,
         "dataId": 15,
         "value": 0
+      },
+      {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
       }
     ],
     "iconIndex": 384,
@@ -578,6 +593,11 @@
         "value": 0
       },
       {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
+      },
+      {
         "code": 32,
         "dataId": 34,
         "value": 0.1
@@ -614,6 +634,11 @@
         "code": 31,
         "dataId": 16,
         "value": 0
+      },
+      {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
       },
       {
         "code": 32,
@@ -862,6 +887,11 @@
         "value": 0
       },
       {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
+      },
+      {
         "code": 32,
         "dataId": 34,
         "value": 0.16
@@ -1095,6 +1125,11 @@
         "code": 31,
         "dataId": 15,
         "value": 0
+      },
+      {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
       },
       {
         "code": 22,
@@ -1611,6 +1646,11 @@
         "value": 0
       },
       {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
+      },
+      {
         "code": 32,
         "dataId": 34,
         "value": 0.2
@@ -1766,6 +1806,11 @@
         "code": 31,
         "dataId": 16,
         "value": 0
+      },
+      {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
       },
       {
         "code": 32,
@@ -1925,6 +1970,11 @@
         "value": 0
       },
       {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
+      },
+      {
         "code": 32,
         "dataId": 8,
         "value": 0.1
@@ -1973,6 +2023,11 @@
         "value": 0
       },
       {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
+      },
+      {
         "code": 32,
         "dataId": 23,
         "value": 0.16
@@ -2002,7 +2057,7 @@
   {
     "id": 54,
     "animationId": 122,
-    "description": "A metal-lined book filled with illegible writing. Trades some MAT for a\nmassive amount of MMP. Increases MMP by +10% after all other calculations.",
+    "description": "A metal-lined book filled with illegible writing. Trades some MAT for a massive\namount of MMP. Increases MMP by +10% after all other calculations. Two-handed.",
     "etypeId": 1,
     "traits": [
       {
@@ -2014,6 +2069,11 @@
         "code": 31,
         "dataId": 16,
         "value": 0
+      },
+      {
+        "code": 54,
+        "dataId": 2,
+        "value": 1
       },
       {
         "code": 21,
@@ -2052,6 +2112,11 @@
         "code": 31,
         "dataId": 16,
         "value": 0
+      },
+      {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
       },
       {
         "code": 32,
@@ -2259,6 +2324,11 @@
         "value": 0
       },
       {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
+      },
+      {
         "code": 32,
         "dataId": 7,
         "value": 0.2
@@ -2295,6 +2365,11 @@
         "code": 31,
         "dataId": 16,
         "value": 0
+      },
+      {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
       },
       {
         "code": 32,
@@ -2340,6 +2415,11 @@
         "value": 0
       },
       {
+        "code": 54,
+        "dataId": 2,
+        "value": 1
+      },
+      {
         "code": 21,
         "dataId": 1,
         "value": 1.1
@@ -2381,6 +2461,11 @@
         "code": 31,
         "dataId": 15,
         "value": 0
+      },
+      {
+        "code": 55,
+        "dataId": 1,
+        "value": 1
       },
       {
         "code": 22,
@@ -2530,8 +2615,8 @@
   },
   {
     "id": 67,
-    "animationId": 6,
-    "description": "An extremely large fang. Its tip\nis sharp enough to cut rocks.",
+    "animationId": 11,
+    "description": "An extremely large fang. Its tip is sharp enough to cut rocks.\nRequires the strength of both hands to wield in battle.",
     "etypeId": 1,
     "traits": [
       {
@@ -2541,8 +2626,13 @@
       },
       {
         "code": 31,
-        "dataId": 15,
+        "dataId": 17,
         "value": 0
+      },
+      {
+        "code": 54,
+        "dataId": 2,
+        "value": 1
       },
       {
         "code": 22,
@@ -2557,7 +2647,7 @@
     ],
     "iconIndex": 668,
     "name": "Giant Goblin's Fang",
-    "note": "<Rarity: 11>\n<Menu Category: Memorabilia>\n<Upgrade Slots: 1>",
+    "note": "<Rarity: 11>\n<Menu Category: Memorabilia>\n<Weapon Image: 27>\n<Upgrade Slots: 1>",
     "params": [
       0,
       0,
@@ -2569,6 +2659,102 @@
       0
     ],
     "price": 0,
-    "wtypeId": 1
+    "wtypeId": 6
+  },
+  {
+    "id": 68,
+    "animationId": 15,
+    "description": "Ripped from the hands of Baron Smirnoff. A powerful two-handed\nweapon imbued with \\nl[4] energy. Can apply \\it[52].",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 17,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 4,
+        "value": 0
+      },
+      {
+        "code": 54,
+        "dataId": 2,
+        "value": 1
+      },
+      {
+        "code": 32,
+        "dataId": 52,
+        "value": 0.5
+      }
+    ],
+    "iconIndex": 1208,
+    "name": "Smirnoff's Lightning Lance",
+    "note": "<Rarity: 11>\n<Menu Category: Memorabilia>\n<Weapon Image: 146>\n<Upgrade Slots: 2>\n\n<Element Amplify Electric: +10%>",
+    "params": [
+      0,
+      15,
+      24,
+      6,
+      30,
+      0,
+      -12,
+      0
+    ],
+    "price": 0,
+    "wtypeId": 6
+  },
+  {
+    "id": 69,
+    "animationId": 11,
+    "description": "A basic spear intended for those just setting out on The Trail.\nIncreases accuracy and crit chance by 10%, though requires two hands.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 17,
+        "value": 0
+      },
+      {
+        "code": 54,
+        "dataId": 2,
+        "value": 1
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.1
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.1
+      }
+    ],
+    "iconIndex": 146,
+    "name": "Rookie Spear",
+    "note": "",
+    "params": [
+      0,
+      0,
+      5,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 30,
+    "wtypeId": 6
   }
 ]

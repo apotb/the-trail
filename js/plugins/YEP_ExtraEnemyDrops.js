@@ -646,10 +646,10 @@ DataManager.createGlobalDrops = function(obj) {
     var rate = 0.02;
     this.createEnemyDrop(obj, id, rate, 3);
 
-    // Seshat's Tome (1/100 drop starting in Chapter 4)
+    // Seshat's Tome (1/200 drop starting in Chapter 4)
     var item = $dataArmors[161];
     var arr = [
-      "Eval $gameSystem.chapter() >= 4: +1%"
+      "Eval $gameSystem.chapter() >= 4: +0.5%"
     ];
     DataManager.createConditionalEnemyDrop(obj, item, arr);
 

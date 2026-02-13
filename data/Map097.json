@@ -3788,42 +3788,8 @@
               "code": 111,
               "indent": 0,
               "parameters": [
-                2,
-                "A",
-                0
-              ]
-            },
-            {
-              "code": 119,
-              "indent": 1,
-              "parameters": [
-                "transfer"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                9,
-                18,
-                true
-              ]
-            },
-            {
-              "code": 118,
-              "indent": 1,
-              "parameters": [
-                "transfer"
+                12,
+                "$gameParty.bloodlustOwned()"
               ]
             },
             {
@@ -3847,14 +3813,6 @@
                 17,
                 24,
                 2,
-                0
-              ]
-            },
-            {
-              "code": 123,
-              "indent": 1,
-              "parameters": [
-                "A",
                 0
               ]
             },
@@ -5303,7 +5261,7 @@
             "switch2Valid": false,
             "variableId": 19,
             "variableValid": true,
-            "variableValue": 6
+            "variableValue": 4
           },
           "directionFix": false,
           "image": {
@@ -8900,58 +8858,7 @@
             "switch2Valid": false,
             "variableId": 19,
             "variableValid": true,
-            "variableValue": 5
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 19,
-            "variableValid": true,
-            "variableValue": 6
+            "variableValue": 4
           },
           "directionFix": false,
           "image": {
@@ -9142,58 +9049,7 @@
             "switch2Valid": false,
             "variableId": 19,
             "variableValid": true,
-            "variableValue": 5
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 19,
-            "variableValid": true,
-            "variableValue": 6
+            "variableValue": 4
           },
           "directionFix": false,
           "image": {

@@ -36,12 +36,12 @@
       },
       {
         "code": 51,
-        "dataId": 2,
+        "dataId": 6,
         "value": 1
       },
       {
         "code": 51,
-        "dataId": 6,
+        "dataId": 2,
         "value": 1
       },
       {
@@ -96,6 +96,11 @@
       },
       {
         "code": 52,
+        "dataId": 16,
+        "value": 1
+      },
+      {
+        "code": 52,
         "dataId": 2,
         "value": 1
       },
@@ -115,11 +120,6 @@
         "level": 1,
         "note": "",
         "skillId": 148
-      },
-      {
-        "level": 1,
-        "note": "",
-        "skillId": 127
       },
       {
         "level": 3,
@@ -1069,6 +1069,11 @@
       },
       {
         "code": 51,
+        "dataId": 6,
+        "value": 1
+      },
+      {
+        "code": 51,
         "dataId": 3,
         "value": 1
       },
@@ -1115,6 +1120,11 @@
       {
         "code": 52,
         "dataId": 15,
+        "value": 1
+      },
+      {
+        "code": 52,
+        "dataId": 16,
         "value": 1
       },
       {
@@ -2072,6 +2082,11 @@
       },
       {
         "code": 51,
+        "dataId": 6,
+        "value": 1
+      },
+      {
+        "code": 51,
         "dataId": 4,
         "value": 1
       },
@@ -2123,6 +2138,11 @@
       {
         "code": 52,
         "dataId": 15,
+        "value": 1
+      },
+      {
+        "code": 52,
+        "dataId": 16,
         "value": 1
       },
       {
@@ -2214,7 +2234,7 @@
       }
     ],
     "name": "Cleric",
-    "note": "<Icon: 463>\n\n<Equip Slot>\nWeapon\nOffhand\nHead\nBody\nFeet\nAccessory\nAccessory\nAccessory\nM. Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nHP% param <= 25%: Cure II, Lowest HP%\nHP% param <= 50%: Cure I, Lowest HP%\nRandom 50%: Shield of Faith, Lowest HP\nAlways: Channel Divinity I, Lowest MDF\nAlways: Mana Wisp, Lowest MDF\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 56 + Math.floor(level / 5);\n</Custom LUK Formula>",
+    "note": "<Icon: 463>\n\n<Equip Slot>\nWeapon\nOffhand\nHead\nBody\nFeet\nAccessory\nAccessory\nAccessory\nM. Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nHP% param <= 30%: Cure II, Lowest HP%\nHP% param <= 60%: Cure I, Lowest HP%\nRandom 50%: Shield of Faith, Lowest HP\nAlways: Channel Divinity I, Lowest MDF\nAlways: Mana Wisp, Lowest MDF\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 56 + Math.floor(level / 5);\n</Custom LUK Formula>",
     "params": [
       [
         1,
@@ -3064,13 +3084,13 @@
         "value": 0.05
       },
       {
-        "code": 55,
+        "code": 51,
         "dataId": 1,
         "value": 1
       },
       {
         "code": 51,
-        "dataId": 1,
+        "dataId": 6,
         "value": 1
       },
       {
@@ -3125,12 +3145,22 @@
       },
       {
         "code": 52,
+        "dataId": 16,
+        "value": 1
+      },
+      {
+        "code": 52,
         "dataId": 5,
         "value": 1
       },
       {
         "code": 52,
         "dataId": 10,
+        "value": 1
+      },
+      {
+        "code": 52,
+        "dataId": 6,
         "value": 1
       }
     ],
@@ -3158,12 +3188,12 @@
       {
         "level": 15,
         "note": "",
-        "skillId": 69
+        "skillId": 158
       },
       {
         "level": 18,
         "note": "",
-        "skillId": 70
+        "skillId": 69
       },
       {
         "level": 20,
@@ -3173,7 +3203,7 @@
       {
         "level": 22,
         "note": "",
-        "skillId": 122
+        "skillId": 70
       },
       {
         "level": 24,
@@ -3202,7 +3232,7 @@
       }
     ],
     "name": "Rogue",
-    "note": "<Icon: 466>\n\n<Equip Slot>\nWeapon\nOffhand\nHead\nBody\nFeet\nAccessory\nAccessory\nAccessory\nM. Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nState !== Sharpened Dagger +++ User HP% param >= 30%: Sharpen Dagger, User\nAlways: Attack\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 52 + Math.floor(level / 5);\n</Custom LUK Formula>",
+    "note": "<Icon: 466>\n\n<Equip Slot>\nWeapon\nOffhand\nHead\nBody\nFeet\nAccessory\nAccessory\nAccessory\nM. Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nState !== Sharpened Dagger +++ User HP% param >= 30%: Sharpen Dagger, User\nAlways: Attack, Lowest HP\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 52 + Math.floor(level / 5);\n</Custom LUK Formula>",
     "params": [
       [
         0,
@@ -4057,6 +4087,11 @@
         "value": 1
       },
       {
+        "code": 51,
+        "dataId": 6,
+        "value": 1
+      },
+      {
         "code": 52,
         "dataId": 1,
         "value": 1
@@ -4094,6 +4129,11 @@
       {
         "code": 52,
         "dataId": 15,
+        "value": 1
+      },
+      {
+        "code": 52,
+        "dataId": 16,
         "value": 1
       }
     ],
@@ -4955,12 +4995,12 @@
       },
       {
         "code": 51,
-        "dataId": 2,
+        "dataId": 6,
         "value": 1
       },
       {
         "code": 51,
-        "dataId": 6,
+        "dataId": 2,
         "value": 1
       },
       {
@@ -5001,6 +5041,11 @@
       {
         "code": 52,
         "dataId": 15,
+        "value": 1
+      },
+      {
+        "code": 52,
+        "dataId": 16,
         "value": 1
       },
       {
@@ -5883,6 +5928,11 @@
       },
       {
         "code": 51,
+        "dataId": 6,
+        "value": 1
+      },
+      {
+        "code": 51,
         "dataId": 2,
         "value": 1
       },
@@ -5939,6 +5989,11 @@
       {
         "code": 52,
         "dataId": 15,
+        "value": 1
+      },
+      {
+        "code": 52,
+        "dataId": 16,
         "value": 1
       },
       {
@@ -6851,6 +6906,11 @@
       },
       {
         "code": 51,
+        "dataId": 6,
+        "value": 1
+      },
+      {
+        "code": 51,
         "dataId": 2,
         "value": 1
       },
@@ -6902,6 +6962,11 @@
       {
         "code": 52,
         "dataId": 15,
+        "value": 1
+      },
+      {
+        "code": 52,
+        "dataId": 16,
         "value": 1
       },
       {
@@ -7819,6 +7884,11 @@
       },
       {
         "code": 51,
+        "dataId": 6,
+        "value": 1
+      },
+      {
+        "code": 51,
         "dataId": 2,
         "value": 0
       },
@@ -7870,6 +7940,11 @@
       {
         "code": 52,
         "dataId": 15,
+        "value": 1
+      },
+      {
+        "code": 52,
+        "dataId": 16,
         "value": 1
       },
       {

@@ -5042,12 +5042,16 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
     this.changeTextColor(this.textColor(31));
     item.effects.filter(e => e.code == 11).forEach(e => {
       if (e.value1 > 0) {
-        text = " +" + (e.value1 * 100) + "%";
+        let multiplier = this.battler().pha;
+        if ($gameParty.pet().name() === 'Duncan' && item.itemCategory?.contains('Meals')) multiplier *= 1.5;
+        text = " +" + Math.floor(e.value1 * 100 * multiplier) + "%";
         this.drawText(text, x, y, width);
         x += this.contents.measureTextWidth(text);
       }
       if (e.value2 > 0) {
-        text = " +" + e.value2;
+        let multiplier = this.battler().pha;
+        if ($gameParty.pet().name() === 'Duncan' && item.itemCategory?.contains('Meals')) multiplier *= 1.5;
+        text = " +" + Math.floor(e.value2 * multiplier);
         this.drawText(text, x, y, width);
         x += this.contents.measureTextWidth(text);
       }
@@ -5056,12 +5060,16 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
     this.changeTextColor(this.textColor(16));
     item.effects.filter(e => e.code == 12).forEach(e => {
       if (e.value1 > 0) {
-        text = " +" + (e.value1 * 100) + "%";
+        let multiplier = this.battler().pha;
+        if ($gameParty.pet().name() === 'Duncan' && item.itemCategory?.contains('Meals')) multiplier *= 1.5;
+        text = " +" + Math.floor(e.value1 * 100 * multiplier) + "%";
         this.drawText(text, x, y, width);
         x += this.contents.measureTextWidth(text);
       }
       if (e.value2 > 0) {
-        text = " +" + e.value2;
+        let multiplier = this.battler().pha;
+        if ($gameParty.pet().name() === 'Duncan' && item.itemCategory?.contains('Meals')) multiplier *= 1.5;
+        text = " +" + Math.floor(e.value2 * multiplier);
         this.drawText(text, x, y, width);
         x += this.contents.measureTextWidth(text);
       }

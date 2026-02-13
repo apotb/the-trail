@@ -4474,6 +4474,43 @@
               ]
             },
             {
+              "code": 205,
+              "indent": 2,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 45,
+                      "parameters": [
+                        "this.clearIconOnEvent();"
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 2,
+              "parameters": [
+                {
+                  "code": 45,
+                  "parameters": [
+                    "this.clearIconOnEvent();"
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
               "code": 242,
               "indent": 2,
               "parameters": [
@@ -5283,7 +5320,7 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\willOne of Apocalypse's strongest generals took"
+                "\\willOne of \\c[18]Apocalypse\\c[0]'s strongest generals took"
               ]
             },
             {
@@ -5571,43 +5608,6 @@
               "code": 412,
               "indent": 2,
               "parameters": []
-            },
-            {
-              "code": 205,
-              "indent": 2,
-              "parameters": [
-                0,
-                {
-                  "list": [
-                    {
-                      "code": 45,
-                      "parameters": [
-                        "this.clearIconOnEvent();"
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 45,
-                  "parameters": [
-                    "this.clearIconOnEvent();"
-                  ],
-                  "indent": null
-                }
-              ]
             },
             {
               "code": 115,

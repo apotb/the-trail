@@ -9635,7 +9635,127 @@
   ],
   "events": [
     null,
-    null,
+    {
+      "id": 1,
+      "name": "EV001",
+      "note": "<shadow>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 13,
+            "variableValid": false,
+            "variableValue": 11
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "People2",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 3
+          },
+          "list": [
+            {
+              "code": 108,
+              "indent": 0,
+              "parameters": [
+                "<Icon On Event: 199>"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "Galv.MAPT.initLocation(\"Solus Valley\");"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "Galv.MAPT.setObject(0,\"Player\",\"obj_player\",1842,2802,2);"
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                96,
+                96,
+                0,
+                0,
+                83
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                94,
+                94,
+                0,
+                0,
+                77
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                95,
+                95,
+                0,
+                0,
+                116
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                71
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 7,
+      "y": 33
+    },
     {
       "id": 2,
       "name": "EV002",
@@ -9720,7 +9840,83 @@
       "x": 13,
       "y": 39
     },
-    null,
+    {
+      "id": 3,
+      "name": "EV003",
+      "note": "<shadow>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 13,
+            "variableValid": false,
+            "variableValue": 11
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "People2",
+            "direction": 6,
+            "pattern": 1,
+            "characterIndex": 4
+          },
+          "list": [
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People2",
+                4,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\sailWant a ride? You'll have to ask the boss."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 6,
+      "y": 33
+    },
     {
       "id": 4,
       "name": "EV004",
@@ -13446,7 +13642,105 @@
       "x": 7,
       "y": 10
     },
-    null,
+    {
+      "id": 25,
+      "name": "EV025",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                2,
+                "A",
+                1
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "Galv.MAPT.setLocation(0,\"Solus Valley\",\"loc_solus_valley\",1812,2772,83,7,34,\"Peaceful valley settlement. Once a colony of Solus Town.\",1,76,115);"
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 1,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 214,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 4,
+          "walkAnime": true
+        }
+      ],
+      "x": 9,
+      "y": 37
+    },
     null,
     null,
     null,
@@ -13542,28 +13836,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\dogWoof, woof! (Some classes can equip"
+                "\\dogWoof, woof! (Shields are the usual choice for offhand"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "a weapon and a defensive item such as"
+                "equipment, with heavier shields only being"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "a shield, while others can hold two"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "weapons, even two of the same kind!)"
+                "usable by certain classes such as knights."
               ]
             },
             {
@@ -13592,28 +13879,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\dogWoof, woof woof. (Rogues in particular can make"
+                "\\dogWoof, woof woof. (If you're a rogue and equip"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "good use of this, as having two weapons equipped"
+                "a dagger or some brass knuckles, you'll be"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "that can each apply a different status effect gives"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "you a much higher chance of weakening the enemy.)"
+                "able to equip a second weapon in offhand!)"
               ]
             },
             {
@@ -13626,66 +13906,6 @@
                   "pitch": 120,
                   "pan": 0
                 }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Nature1",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\dogWoof; woof. (Just remember that using"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "heavy two-handed weapons like greatswords"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "will restrict the user from offhanding.)"
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Dog",
-                  "volume": 90,
-                  "pitch": 120,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Nature1",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\dogWoof. (Use this knowledge well.)"
               ]
             },
             {
@@ -16556,28 +16776,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\vilMy son has also been adventuring across"
+                "\\vilMy son has also been adventuring across the Overworld."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "the Overworld. He really wants to be the"
+                "He really wants to prove his worth, so he's been"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Solus Valley champion, so he's been trying"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "to get stronger and prove his worth."
+                "adventuring and training to become stronger!"
               ]
             },
             {
@@ -16594,21 +16807,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\vilHe recently stopped by our home"
+                "\\vilHe recently stopped by our home and"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "and told me about something really"
+                "told me about something really"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "interesting he encountered."
+                "interesting he encountered..."
               ]
             },
             {
@@ -16625,7 +16838,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3And what might this be?"
+                "\\p3And what might that be?"
               ]
             },
             {
@@ -22263,7 +22476,7 @@
                 [
                   "Career Stats",
                   "Leaderboard",
-                  "Thanks."
+                  "Goodbye"
                 ],
                 2,
                 0,
@@ -22330,7 +22543,7 @@
               "indent": 0,
               "parameters": [
                 2,
-                "Thanks."
+                "Goodbye"
               ]
             },
             {

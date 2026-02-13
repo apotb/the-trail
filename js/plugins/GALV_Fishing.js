@@ -893,7 +893,7 @@ Galv.FISH.addRecords = function(fishId,length,weight) {
 		$gameSystem.fishing.caught[fishId].weight = Math.max(weight,$gameSystem.fishing.caught[fishId].weight);
 		
 		// set record fish data if bigger
-		if (length > $gameSystem.fishing.recordFish.length) {
+		if (length > Number($gameSystem.fishing.recordFish.length)) {
 			$gameSystem.fishing.recordFish.id = fishId;
 			$gameSystem.fishing.recordFish.length = length;
 			$gameSystem.fishing.recordFish.weight = weight;

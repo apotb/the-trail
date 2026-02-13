@@ -16,6 +16,7 @@ Game_Temp.prototype.initialize = function() {
     this._commonEventId = 0;
     this._destinationX = null;
     this._destinationY = null;
+    this._recentNames = [];
 };
 
 Game_Temp.prototype.isPlaytest = function() {
@@ -172,6 +173,13 @@ Game_Temp.prototype.openHours = function(open, close) {
 
 Game_Temp.prototype.bagOrganized = function() {
     return $gameSwitches.value(14) && $gameParty.inBattle();
+};
+
+// Other
+
+Game_Temp.prototype.generateGoofyName = function(male) {
+    const names = $dataStrings.names.goofy[male ? "male" : "female"];
+    return names[Math.floor(Math.random() * names.length)];
 };
 
 //-----------------------------------------------------------------------------
@@ -431,7 +439,7 @@ Game_System.prototype.restoreRareEnemyTries = function() {
 // Small Chests
 
 Game_System.prototype.totalSmallChests = function() {
-    return 38;
+    return 39;
 };
 
 Game_System.prototype.smallChest = function() {
@@ -543,12 +551,12 @@ Game_System.prototype.battleTemplate = function(name) {
 // Chapters
 
 Game_System.prototype.chapter = function() {
-    if ($gameVariables.value(84) >= 17)             return 6;
-    if ($gameSwitches.value(109))                   return 5;
-    if ($gameSwitches.value(82))                    return 4;
-    if ($gameSelfSwitches.value([11, 12, 'A']))     return 3;
-    if ($gameVariables.value(3) >= 8)               return 2;
-    if ($gameVariables.value(2) >= 11)              return 1;
+    if ($gameVariables.value(84) >= 17)                 return 6;
+    if ($gameSwitches.value(109))                       return 5;
+    if ($gameSwitches.value(82))                        return 4;
+    if ($gameSystem.isQuestObjectiveCompleted(4, 1))    return 3;
+    if ($gameVariables.value(3) >= 4)                   return 2;
+    if ($gameVariables.value(2) >= 11)                  return 1;
     return 0;
 };
 
@@ -2085,6 +2093,7 @@ Game_Action.prototype.apply = function(target) {
             this.executeDamage(target, value);
         }
         this.item().effects.forEach(function(effect) {
+            if (this.item().itemCategory?.contains('Meals')) effect = this.duncan(effect); // DUNCAN
             this.applyItemEffect(target, effect);
         }, this);
         this.applyItemUserEffect(target);
@@ -2094,6 +2103,18 @@ Game_Action.prototype.apply = function(target) {
         if (SceneManager._scene._sideStatusWindows[index].children.find(c => c instanceof Window_BattleSideName)) SceneManager._scene._sideStatusWindows[index].children.find(c => c instanceof Window_BattleSideName).refresh()
     }
 };
+
+Game_Action.prototype.duncan = function(effect) {
+    if ($gameParty.pet().name() === "Duncan") {
+        if (effect.code === Game_Action.EFFECT_RECOVER_HP || effect.code === Game_Action.EFFECT_RECOVER_MP) {
+            // Create a shallow copy to avoid modifying original item data
+            effect = Object.assign({}, effect);
+            effect.value1 = Math.floor(effect.value1 * 1.5 * 100) / 100;
+            effect.value2 = Math.floor(effect.value2 * 1.5);
+        }
+    }
+    return effect;
+}
 
 /*Game_Action.prototype.makeDamageValue = function(target, critical) {
     // YEP_DamageCore.js
@@ -3051,11 +3072,12 @@ Game_BattlerBase.prototype.isEquipTypeSealed = function(etypeId) {
 
 Game_BattlerBase.prototype.slotType = function() {
     var set = this.traitsSet(Game_BattlerBase.TRAIT_SLOT_TYPE);
+    if (this.equips()[1]?.traits.some(t => t.code === Game_BattlerBase.TRAIT_SLOT_TYPE && t.value === 1)) set.splice(0, 1); // Dual wield fix
     return set.length > 0 ? Math.max.apply(null, set) : 0;
 };
 
 Game_BattlerBase.prototype.isDualWield = function() {
-    return this.slotType() === 1;
+    return this.slotType() === 1 || this._forceDualWield;
 };
 
 Game_BattlerBase.prototype.actionPlusSet = function() {
@@ -4003,8 +4025,36 @@ Game_Actor.prototype.setName = function(name) {
 };
 
 Game_Actor.prototype.setRandomName = function(male) {
-    const names = male ? $dataStrings.names.male : $dataStrings.names.female;
-    this._name = names[Math.floor(Math.random() * names.length)];
+    const names = $dataStrings.names.hero[male ? "male" : "female"];
+    const recentNames = $gameTemp._recentNames || [];
+    const maxRecentNames = 15;
+
+    // Get names of current party members
+    const partyNames = $gameParty ? $gameParty.members().map(member => member.name()) : [];
+
+    // Filter out recently used names and current party member names
+    let availableNames = names.filter(name => !recentNames.includes(name) && !partyNames.includes(name));
+
+    // If all names were recently used, just filter out party names
+    if (availableNames.length === 0) {
+        availableNames = names.filter(name => !partyNames.includes(name));
+    }
+
+    // If even that doesn't work, use all names
+    if (availableNames.length === 0) {
+        availableNames = names;
+    }
+
+    // Pick a random name from available names
+    const selectedName = availableNames[Math.floor(Math.random() * availableNames.length)];
+    this._name = selectedName;
+
+    // Track this name in recent names
+    recentNames.push(selectedName);
+    if (recentNames.length > maxRecentNames) {
+        recentNames.shift();
+    }
+    $gameTemp._recentNames = recentNames;
 };
 
 Game_Actor.prototype.nickname = function() {
@@ -4711,7 +4761,10 @@ Game_Actor.prototype.updateStateSteps = function(state) {
 
 Game_Actor.prototype.showAddedStates = function() {
     this.result().addedStateObjects().forEach(function(state) {
-        if (state.message1 && !($gamePlayer.terrainTag() == 5 && state.id == 33)) { // Water
+        if (state.message1 && 
+            !($gamePlayer.terrainTag() == 5 && state.id == 33) &&
+            !([4, 5, 6, 97].contains(state.id)) // Well Fed
+        ) { // Water
             // $gameMessage.add(this._name + state.message1);
             this.stateGab(`${this._name}${state.message1} \\c[3]+\\it[${state.id}]`)
         }
@@ -5486,7 +5539,7 @@ Game_Party.prototype.name = function() {
     } else if (numBattleMembers === 1) {
         return this.leader().name();
     } else {
-        return TextManager.partyName.format(this.leader().name());
+        return this.teamName() !=='An adventuring party' ? this.teamName() : TextManager.partyName.format(this.leader().name());
     }
 };
 
@@ -5880,7 +5933,7 @@ Game_Party.prototype.addPet = function(name) {
             actor.setCharacterImage('Dog2', 2);
             break;
         case 'Clover':
-            actor.setCharacterImage('Cat1', 4);
+            actor.setCharacterImage('Cat1', 6);
             break;
         case 'Duncan':
             actor.setCharacterImage('Hamster', 1);

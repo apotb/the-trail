@@ -8239,7 +8239,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\adam...Wait, could it be? \\N[1] and"
+                "\\adam...Wait, could it be? \\c[1]\\V[205]\\c[0] and"
               ]
             },
             {
@@ -9254,7 +9254,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\adamHello \\N[1]. How are you doing?"
+                "\\adamHello \\c[1]\\V[205]\\c[0]. How are you doing?"
               ]
             },
             {
@@ -9352,6 +9352,34 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 2,
+              "parameters": [
+                "Quest 16 Change Description Entry To 2"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 2,
+              "parameters": [
+                "Quest 16 Complete Objective 2"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 2,
+              "parameters": [
+                "Quest 16 Claim Reward 1"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 2,
+              "parameters": [
+                "Quest Set Completed 16"
+              ]
+            },
+            {
               "code": 249,
               "indent": 2,
               "parameters": [
@@ -9395,34 +9423,6 @@
               ]
             },
             {
-              "code": 356,
-              "indent": 2,
-              "parameters": [
-                "Quest 16 Change Description Entry To 2"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 2,
-              "parameters": [
-                "Quest 16 Complete Objective 2"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 2,
-              "parameters": [
-                "Quest 16 Claim Reward 1"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 2,
-              "parameters": [
-                "Quest Set Completed 16"
-              ]
-            },
-            {
               "code": 101,
               "indent": 2,
               "parameters": [
@@ -9436,28 +9436,7 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\adamThanks for all the help you've"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "given me all the way down Adon!"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "Now, here's that \\ii[23]"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "that I promised you."
+                "\\adamNow, here's that \\ii[23] that I promised you."
               ]
             },
             {
@@ -9503,45 +9482,21 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\adamYep, here it is. I'm pretty sure"
+                "\\adamI think I'll go to Haven Harbor to hitch a ride"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "you know how to use it already."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Adon",
-                6,
-                0,
-                2
+                "back home to Verdin Village. So long, \\c[1]\\V[205]\\c[0]"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\adamSo long, \\N[1] and friends. I really"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "do hope that I'll get to see all of"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "you at least one more time."
+                "and company. Thank you for all you've done!"
               ]
             },
             {
@@ -9615,7 +9570,7 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "it! \\N[1], if you don't want to do"
+                "it! \\c[1]\\V[205]\\c[0], if you don't want to do"
               ]
             },
             {
@@ -10027,177 +9982,8 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\solWell, here's the Bandito Hideout."
+                "\\solReally don't feel like going in there..."
               ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People3",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\solCan't be arsed to actually"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "do anything, though."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People3",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\solBrought so many \\ii[14]\\c[0]s and I'm"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "not even gonna' use them. Huh."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People3",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\solMind takin' some off my hands?"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "I'll sell them at a discount."
-              ]
-            },
-            {
-              "code": 102,
-              "indent": 0,
-              "parameters": [
-                [
-                  "YES YES PLEASE I NEED MP",
-                  "I'm good."
-                ],
-                1,
-                0,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                0,
-                "YES YES PLEASE I NEED MP"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People3",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\solHere they are..."
-              ]
-            },
-            {
-              "code": 302,
-              "indent": 1,
-              "parameters": [
-                0,
-                14,
-                0,
-                0,
-                true
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                1,
-                "I'm good."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People3",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\solAh, alright. That's fine."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "G'luck in there."
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 404,
-              "indent": 0,
-              "parameters": []
             },
             {
               "code": 0,
@@ -10372,14 +10158,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\solLegally, I don't have to go"
+                "\\solI know we're soldiers, but still!"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "inside... right?"
+                "Do we legally have to go in...?"
               ]
             },
             {
@@ -11458,6 +11244,13 @@
               ]
             },
             {
+              "code": 117,
+              "indent": 1,
+              "parameters": [
+                37
+              ]
+            },
+            {
               "code": 101,
               "indent": 1,
               "parameters": [
@@ -12062,6 +11855,15 @@
               ]
             },
             {
+              "code": 212,
+              "indent": 0,
+              "parameters": [
+                -1,
+                1,
+                false
+              ]
+            },
+            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -12087,7 +11889,7 @@
                     {
                       "code": 14,
                       "parameters": [
-                        2,
+                        3,
                         0
                       ],
                       "indent": null
@@ -12123,7 +11925,7 @@
                 {
                   "code": 14,
                   "parameters": [
-                    2,
+                    3,
                     0
                   ],
                   "indent": null

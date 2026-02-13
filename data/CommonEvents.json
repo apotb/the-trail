@@ -980,8 +980,8 @@
         "code": 101,
         "indent": 0,
         "parameters": [
-          "People1",
-          6,
+          "Adon",
+          2,
           0,
           2
         ]
@@ -990,7 +990,7 @@
         "code": 401,
         "indent": 0,
         "parameters": [
-          "\\head\\N[1]! You mustn't give up!"
+          "\\matt\\N[1]! You mustn't give up!"
         ]
       },
       {
@@ -1020,8 +1020,8 @@
         "code": 101,
         "indent": 1,
         "parameters": [
-          "People1",
-          6,
+          "Adon",
+          2,
           0,
           2
         ]
@@ -1030,7 +1030,7 @@
         "code": 401,
         "indent": 1,
         "parameters": [
-          "\\headThe world is counting on you!"
+          "\\mattThe world is counting on you!"
         ]
       },
       {
@@ -1058,8 +1058,8 @@
         "code": 101,
         "indent": 1,
         "parameters": [
-          "People1",
-          6,
+          "Adon",
+          2,
           0,
           2
         ]
@@ -1068,7 +1068,7 @@
         "code": 401,
         "indent": 1,
         "parameters": [
-          "\\headWe all need you to save the world!"
+          "\\mattWe all need you to save the world!"
         ]
       },
       {
@@ -1096,8 +1096,8 @@
         "code": 101,
         "indent": 1,
         "parameters": [
-          "People1",
-          6,
+          "Adon",
+          2,
           0,
           2
         ]
@@ -1106,14 +1106,14 @@
         "code": 401,
         "indent": 1,
         "parameters": [
-          "\\headThe fate of the world is"
+          "\\mattThe fate of the world"
         ]
       },
       {
         "code": 401,
         "indent": 1,
         "parameters": [
-          "weighing on your shoulders!"
+          "rests on your shoulders!"
         ]
       },
       {
@@ -1141,8 +1141,8 @@
         "code": 101,
         "indent": 1,
         "parameters": [
-          "People1",
-          6,
+          "Adon",
+          2,
           0,
           2
         ]
@@ -1151,7 +1151,7 @@
         "code": 401,
         "indent": 1,
         "parameters": [
-          "\\headYou must save the world!"
+          "\\mattYou must save the world!"
         ]
       },
       {
@@ -1179,8 +1179,8 @@
         "code": 101,
         "indent": 1,
         "parameters": [
-          "People1",
-          6,
+          "Adon",
+          2,
           0,
           2
         ]
@@ -1189,14 +1189,14 @@
         "code": 401,
         "indent": 1,
         "parameters": [
-          "\\headYou are the only one"
+          "\\mattYou are the only one"
         ]
       },
       {
         "code": 401,
         "indent": 1,
         "parameters": [
-          "that can save the world!"
+          "that can save us!"
         ]
       },
       {
@@ -1487,23 +1487,38 @@
         ]
       },
       {
-        "code": 301,
+        "code": 111,
         "indent": 1,
         "parameters": [
+          12,
+          "$gameTemp._coolDoorSoul"
+        ]
+      },
+      {
+        "code": 301,
+        "indent": 2,
+        "parameters": [
           0,
-          38,
+          119,
           true,
           true
         ]
       },
       {
         "code": 601,
-        "indent": 1,
+        "indent": 2,
         "parameters": []
       },
       {
+        "code": 118,
+        "indent": 3,
+        "parameters": [
+          "Win"
+        ]
+      },
+      {
         "code": 123,
-        "indent": 2,
+        "indent": 3,
         "parameters": [
           "A",
           0
@@ -1511,22 +1526,29 @@
       },
       {
         "code": 115,
-        "indent": 2,
+        "indent": 3,
         "parameters": []
       },
       {
         "code": 0,
-        "indent": 2,
+        "indent": 3,
         "parameters": []
       },
       {
         "code": 602,
-        "indent": 1,
+        "indent": 2,
         "parameters": []
       },
       {
+        "code": 118,
+        "indent": 3,
+        "parameters": [
+          "Escape"
+        ]
+      },
+      {
         "code": 123,
-        "indent": 2,
+        "indent": 3,
         "parameters": [
           "B",
           0
@@ -1534,22 +1556,29 @@
       },
       {
         "code": 115,
-        "indent": 2,
+        "indent": 3,
         "parameters": []
       },
       {
         "code": 0,
-        "indent": 2,
+        "indent": 3,
         "parameters": []
       },
       {
         "code": 603,
-        "indent": 1,
+        "indent": 2,
         "parameters": []
       },
       {
+        "code": 118,
+        "indent": 3,
+        "parameters": [
+          "Lose"
+        ]
+      },
+      {
         "code": 311,
-        "indent": 2,
+        "indent": 3,
         "parameters": [
           0,
           0,
@@ -1561,11 +1590,97 @@
       },
       {
         "code": 0,
-        "indent": 2,
+        "indent": 3,
         "parameters": []
       },
       {
         "code": 604,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 301,
+        "indent": 2,
+        "parameters": [
+          0,
+          38,
+          true,
+          true
+        ]
+      },
+      {
+        "code": 601,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 119,
+        "indent": 3,
+        "parameters": [
+          "Win"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 602,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 119,
+        "indent": 3,
+        "parameters": [
+          "Escape"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 603,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 119,
+        "indent": 3,
+        "parameters": [
+          "Lose"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 604,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
         "indent": 1,
         "parameters": []
       },
@@ -2668,6 +2783,54 @@
           12,
           "$gameMap.inRuinedFort()"
         ]
+      },
+      {
+        "code": 111,
+        "indent": 3,
+        "parameters": [
+          0,
+          58,
+          1
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 4,
+        "parameters": [
+          "Actor4",
+          1,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 4,
+        "parameters": [
+          "\\p2I'm scared to flip this thing... let's go"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 4,
+        "parameters": [
+          "ask Will about it first."
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 4,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 4,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 3,
+        "parameters": []
       },
       {
         "code": 250,
@@ -4003,27 +4166,6 @@
     "id": 28,
     "list": [
       {
-        "code": 355,
-        "indent": 0,
-        "parameters": [
-          "let minutes = $gameSystem.getAutosaveInterval();"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 0,
-        "parameters": [
-          "if (minutes == 0) minutes = 1 / 60;"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 0,
-        "parameters": [
-          "$gameSystem.setAutosaveInterval(minutes);"
-        ]
-      },
-      {
         "code": 112,
         "indent": 0,
         "parameters": []
@@ -4194,7 +4336,35 @@
         "code": 230,
         "indent": 1,
         "parameters": [
-          59
+          29
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "let minutes = $gameSystem.getAutosaveInterval();"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "if (minutes === 0) minutes = 1 / 60;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "$gameSystem.setAutosaveInterval(minutes);"
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          30
         ]
       },
       {
@@ -5919,6 +6089,17 @@
         ]
       },
       {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          101,
+          101,
+          1,
+          0,
+          1
+        ]
+      },
+      {
         "code": 0,
         "indent": 1,
         "parameters": []
@@ -6459,6 +6640,13 @@
         ]
       },
       {
+        "code": 235,
+        "indent": 1,
+        "parameters": [
+          69
+        ]
+      },
+      {
         "code": 108,
         "indent": 1,
         "parameters": [
@@ -6680,6 +6868,341 @@
   {
     "id": 39,
     "list": [
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Would you like to rest here?"
+        ]
+      },
+      {
+        "code": 102,
+        "indent": 0,
+        "parameters": [
+          [
+            "Yep.",
+            "Nope."
+          ],
+          1,
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "code": 402,
+        "indent": 0,
+        "parameters": [
+          0,
+          "Yep."
+        ]
+      },
+      {
+        "code": 221,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 217,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 249,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "Inn",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          300
+        ]
+      },
+      {
+        "code": 314,
+        "indent": 1,
+        "parameters": [
+          0,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 2,
+        "parameters": [
+          52,
+          52,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 2,
+        "parameters": [
+          "$gameParty.refreshMembers();"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 2,
+        "parameters": [
+          1,
+          38,
+          0,
+          21,
+          1
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 3,
+        "parameters": [
+          "$gameSystem.nextMoonPhase();"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 3,
+        "parameters": [
+          1,
+          38,
+          0,
+          5,
+          4
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 4,
+        "parameters": [
+          "$gameSystem.nextMoonPhase();"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 4,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 2,
+        "parameters": [
+          1,
+          38,
+          0,
+          16,
+          1
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 3,
+        "parameters": [
+          101,
+          101,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 2,
+        "parameters": [
+          1,
+          38,
+          0,
+          15,
+          2
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 3,
+        "parameters": [
+          38,
+          38,
+          1,
+          0,
+          8
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 122,
+        "indent": 3,
+        "parameters": [
+          38,
+          38,
+          2,
+          0,
+          16
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 222,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "Recovery",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "",
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          ""
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Your party was healed!"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameSystem.setSafePlace();"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 402,
+        "indent": 0,
+        "parameters": [
+          1,
+          "Nope."
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 404,
+        "indent": 0,
+        "parameters": []
+      },
       {
         "code": 0,
         "indent": 0,
@@ -7558,8 +8081,16 @@
         ]
       },
       {
-        "code": 101,
+        "code": 111,
         "indent": 3,
+        "parameters": [
+          12,
+          "$gameMap.mapId() === 111"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 4,
         "parameters": [
           "People1",
           5,
@@ -7569,10 +8100,47 @@
       },
       {
         "code": 401,
+        "indent": 4,
+        "parameters": [
+          "\\innSee those cots? That's where you'll be sleeping."
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 4,
+        "parameters": []
+      },
+      {
+        "code": 411,
         "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 101,
+        "indent": 4,
+        "parameters": [
+          "People1",
+          5,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 4,
         "parameters": [
           "\\innThere's three rooms available upstairs."
         ]
+      },
+      {
+        "code": 0,
+        "indent": 4,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 3,
+        "parameters": []
       },
       {
         "code": 125,
@@ -7744,8 +8312,16 @@
         ]
       },
       {
-        "code": 101,
+        "code": 111,
         "indent": 4,
+        "parameters": [
+          12,
+          "$gameMap.mapId() === 111"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 5,
         "parameters": [
           "People1",
           5,
@@ -7755,10 +8331,47 @@
       },
       {
         "code": 401,
+        "indent": 5,
+        "parameters": [
+          "\\innSee those cots? That's where you'll be sleeping."
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 5,
+        "parameters": []
+      },
+      {
+        "code": 411,
         "indent": 4,
+        "parameters": []
+      },
+      {
+        "code": 101,
+        "indent": 5,
+        "parameters": [
+          "People1",
+          5,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 5,
         "parameters": [
           "\\innThere's two rooms available upstairs."
         ]
+      },
+      {
+        "code": 0,
+        "indent": 5,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 4,
+        "parameters": []
       },
       {
         "code": 125,
@@ -7912,8 +8525,16 @@
         ]
       },
       {
-        "code": 101,
+        "code": 111,
         "indent": 4,
+        "parameters": [
+          12,
+          "$gameMap.mapId() === 111"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 5,
         "parameters": [
           "People1",
           5,
@@ -7923,10 +8544,47 @@
       },
       {
         "code": 401,
+        "indent": 5,
+        "parameters": [
+          "\\innSee those cots? That's where you'll be sleeping."
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 5,
+        "parameters": []
+      },
+      {
+        "code": 411,
         "indent": 4,
+        "parameters": []
+      },
+      {
+        "code": 101,
+        "indent": 5,
+        "parameters": [
+          "People1",
+          5,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 5,
         "parameters": [
           "\\innThere's a room available upstairs."
         ]
+      },
+      {
+        "code": 0,
+        "indent": 5,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 4,
+        "parameters": []
       },
       {
         "code": 125,
@@ -8389,6 +9047,17 @@
         "indent": 3,
         "parameters": [
           "$gameSystem.nextMoonPhase();"
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 3,
+        "parameters": [
+          101,
+          101,
+          1,
+          0,
+          1
         ]
       },
       {
@@ -10535,6 +11204,36 @@
         ]
       },
       {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "$gameSystem.smallChestsOnMap() >= 1"
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 2,
+        "parameters": [
+          {
+            "name": "Dog",
+            "volume": 90,
+            "pitch": 120,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
         "code": 355,
         "indent": 1,
         "parameters": [
@@ -10545,14 +11244,49 @@
         "code": 655,
         "indent": 1,
         "parameters": [
-          "console.log(chests);"
+          "if (chests > 0) {"
         ]
       },
       {
         "code": 655,
         "indent": 1,
         "parameters": [
-          "if (chests > 0) $gameParty.pet().stateGab(`Arlo sniffs out \\\\c[4]${chests}\\\\c[0] treasure chest${chests > 1 ? 's' : ''}!`);"
+          "  const interpreter = $gameMap._interpreter;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  interpreter.setGabText([`Arlo sniffs out \\\\c[4]${chests}\\\\c[0] nearby treasure chest${chests > 1 ? 's' : ''}!`]);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  interpreter.setGabActorSprite([$gameParty.pet().actorId()]);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  interpreter.setGabTime([0]);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  interpreter.forceGab();"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "}"
         ]
       },
       {
@@ -11373,41 +12107,39 @@
         ]
       },
       {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          12,
-          "!$gameSystem._pondsReInitialized"
-        ]
-      },
-      {
         "code": 355,
-        "indent": 1,
+        "indent": 0,
         "parameters": [
           "$gameSystem.initPonds();"
         ]
       },
       {
-        "code": 655,
-        "indent": 1,
+        "code": 108,
+        "indent": 0,
         "parameters": [
-          "$gameSystem._pondsReInitialized = true;"
+          "# Refresh fast travel"
         ]
       },
       {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameSystem._travelMaps = {maps:{},current:null};"
+        ]
       },
       {
-        "code": 412,
+        "code": 655,
         "indent": 0,
-        "parameters": []
+        "parameters": [
+          "$gameSystem._travelMapsId = 0;"
+        ]
       },
       {
-        "code": 0,
+        "code": 655,
         "indent": 0,
-        "parameters": []
+        "parameters": [
+          "$gameTemp.reserveCommonEvent(70);"
+        ]
       },
       {
         "code": 0,
@@ -13323,6 +14055,30 @@
     "id": 66,
     "list": [
       {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "Adon",
+          6,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "\\adamSo do we have a deal?"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "80\\G for the \\iw[11]?\\$"
+        ]
+      },
+      {
         "code": 102,
         "indent": 0,
         "parameters": [
@@ -13345,8 +14101,17 @@
         ]
       },
       {
-        "code": 101,
+        "code": 111,
         "indent": 1,
+        "parameters": [
+          7,
+          80,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
         "parameters": [
           "Adon",
           6,
@@ -13356,18 +14121,9 @@
       },
       {
         "code": 401,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "\\adamReally? That's great!"
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 1,
-        "parameters": [
-          7,
-          30,
-          0
         ]
       },
       {
@@ -13388,7 +14144,7 @@
         "parameters": [
           1,
           0,
-          30
+          80
         ]
       },
       {
@@ -13424,6 +14180,34 @@
         "indent": 2,
         "parameters": [
           "\\adamI hope you enjoy your new \\iw[11]!"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest 15 Change Description Entry To 2"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest 15 Complete Objective 1"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest 15 Claim Reward 1"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest Set Completed 15"
         ]
       },
       {
@@ -13467,34 +14251,6 @@
         "indent": 2,
         "parameters": [
           "Quest Complete!"
-        ]
-      },
-      {
-        "code": 356,
-        "indent": 2,
-        "parameters": [
-          "Quest 15 Change Description Entry To 2"
-        ]
-      },
-      {
-        "code": 356,
-        "indent": 2,
-        "parameters": [
-          "Quest 15 Complete Objective 1"
-        ]
-      },
-      {
-        "code": 356,
-        "indent": 2,
-        "parameters": [
-          "Quest 15 Claim Reward 1"
-        ]
-      },
-      {
-        "code": 356,
-        "indent": 2,
-        "parameters": [
-          "Quest Set Completed 15"
         ]
       },
       {
@@ -13589,8 +14345,8 @@
         "code": 101,
         "indent": 2,
         "parameters": [
-          "Adon",
-          6,
+          "",
+          0,
           0,
           2
         ]
@@ -13599,14 +14355,7 @@
         "code": 401,
         "indent": 2,
         "parameters": [
-          "\\adamWait a second... you don't have enough"
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 2,
-        "parameters": [
-          "bits! Come back once you've got 30\\G."
+          "You don't have enough Bits."
         ]
       },
       {
@@ -14004,12 +14753,114 @@
     "id": 70,
     "list": [
       {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "Galv.MAPT.createMap(0,\"map0\","
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "[],"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "[[\"fg1\",0.2,-0.2,60]]"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          ");"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "Galv.MAPT.setLocation(0,\"Solus Town\",\"loc_solus_town\",2016,276,9,8,28,\"Home sweet home. Not much to do here, though.\",1,80,15);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "Galv.MAPT.setLocation(0,\"Verdin Village\",\"loc_verdin_village\",2400,664,20,21,32,\"A quaint mountain village. Watch out for Banditos!\",1,95,34);"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameTemp._isPlaytest"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "Galv.MAPT.setLocation(0,\"Campsite\",\"loc_camp\",2580,1072,34,16,21,\"A cozy spot to camp out for the night.\",1,105,45);"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "Galv.MAPT.setLocation(0,\"Haven Harbor\",\"loc_haven_harbor\",2472,1356,43,11,39,\"Biggest city in Adon. Trade capital of the world.\",1,102,58);"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "Galv.MAPT.setLocation(0,\"Laeryidyean's Forest\",\"loc_laeryidyeans_forest\",2580,2240,167,31,15,\"Dangerous territory home to a skeleton lord.\",1,106,93);"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "Galv.MAPT.setLocation(0,\"Solus Valley\",\"loc_solus_valley\",1812,2772,83,7,34,\"Peaceful valley settlement. Once a colony of Solus Town.\",1,76,115);"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "Galv.MAPT.setLocation(0,\"Telluria Castle\",\"loc_telluria_castle\",1548,1520,183,47,71,\"The center of Tellurian society.\",1,57,63);"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "Galv.MAPT.setLocation(0,\"Frozen Labyrinth\",\"loc_frozen_labyrinth\",948,732,207,29,40,\"A remote dungeon in the frigid corner of Telluria Field.\",1,43,32);"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "Init Fast Travel",
     "switchId": 1,
     "trigger": 0
   },
@@ -14017,12 +14868,2464 @@
     "id": 71,
     "list": [
       {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "People2",
+          3,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "\\neilWhere am I taking you?"
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          78,
+          78,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          79,
+          79,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          80,
+          80,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "Galv.MAPT.openMap(0);"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          78,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "var x1 = $gameVariables.value(94), y1 = $gameVariables.value(95);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "var x2 = $gameVariables.value(91), y2 = $gameVariables.value(92);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "var mapWidth = 140, mapHeight = 140;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "var dx = Math.abs(x2 - x1), dy = Math.abs(y2 - y1);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "dx = Math.min(dx, mapWidth - dx);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "dy = Math.min(dy, mapHeight - dy);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "var d = Math.sqrt(dx * dx + dy * dy);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "var cost = Math.max(10, Math.round(d * 2));"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "$gameVariables.setValue(93, cost);"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "People2",
+          3,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "\\neilThat'll be \\V[93]B.\\$"
+        ]
+      },
+      {
+        "code": 102,
+        "indent": 0,
+        "parameters": [
+          [
+            "Pay the toll",
+            "Nevermind"
+          ],
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "code": 402,
+        "indent": 0,
+        "parameters": [
+          0,
+          "Pay the toll"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "$gameParty.gold() >= $gameVariables.value(93)"
+        ]
+      },
+      {
+        "code": 125,
+        "indent": 2,
+        "parameters": [
+          1,
+          1,
+          93
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "You don't have enough Bits."
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 402,
+        "indent": 0,
+        "parameters": [
+          1,
+          "Nevermind"
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 404,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "People2",
+          3,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "\\neilLet's get moving!"
+        ]
+      },
+      {
+        "code": 221,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 216,
+        "indent": 0,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "a_Move1",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          88,
+          88,
+          0,
+          0,
+          8
+        ]
+      },
+      {
+        "code": 201,
+        "indent": 0,
+        "parameters": [
+          1,
+          88,
+          94,
+          95,
+          2,
+          2
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          37
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 0,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 41,
+                "parameters": [
+                  "Vehicle1",
+                  1
+                ],
+                "indent": null
+              },
+              {
+                "code": 33,
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": false
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 41,
+            "parameters": [
+              "Vehicle1",
+              1
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 33,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 241,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "map_ship",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameMap.vehicles().forEach(v => v.setThrough(true));"
+        ]
+      },
+      {
+        "code": 222,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 121,
+        "indent": 0,
+        "parameters": [
+          112,
+          112,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 0,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._vehicleType = 'ship'"
+                ],
+                "indent": null
+              },
+              {
+                "code": 29,
+                "parameters": [
+                  5
+                ],
+                "indent": 0
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._vehicleType = 'ship'"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 29,
+            "parameters": [
+              5
+            ],
+            "indent": 0
+          }
+        ]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "* Solus Valley Helper"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Solus Valley - Start"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          83,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 1,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 94, 118"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 94, 118"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Verdin Village - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Solus Valley - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          20,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          83,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 110, 19"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 110, 19"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Campsite - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Solus Valley - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          34,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          83,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 98, 35"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 110, 19"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 98, 35"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 110, 19"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Laeryidyean's Forest - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Solus Town - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          167,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          9,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 99, 107"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 99, 107"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Solus Valley - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Verdin Village - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          83,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          20,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 110, 19"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 110, 19"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Solus Valley - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Haven Harbor - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          83,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          43,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 96, 98"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 96, 98"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Solus Valley - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Telluria Castle - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          83,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          183,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 99, 107"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 80, 61"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 99, 107"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 80, 61"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Telluria Castle - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Laeryidyean's Forest - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          183,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          167,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 80, 61"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 80, 61"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Telluria Castle - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Solus Valley - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          183,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          83,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 80, 61"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 99, 107"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 80, 61"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 99, 107"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Frozen Labyrinth - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Verdin Village - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          207,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          20,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 48, 27"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 48, 27"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Frozen Labyrinth - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Campsite - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          207,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          34,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 48, 27"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 48, 27"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Frozen Labyrinth - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Haven Harbor - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          207,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          43,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 48, 27"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 48, 27"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Frozen Labyrinth - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Laeryidyean's Forest - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          207,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          167,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 45, 62"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 80, 61"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 45, 62"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 80, 61"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Frozen Labyrinth - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Solus Valley - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          207,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          83,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 48, 27"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 79, 13"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 48, 27"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 79, 13"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Frozen Labyrinth - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Telluria Castle - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          207,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          183,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 45, 62"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 45, 62"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "* Solus Valley Helper"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Solus Valley - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          78,
+          0,
+          83,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 1,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 94, 118"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 94, 118"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Begin Movement Loop"
+        ]
+      },
+      {
+        "code": 112,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "$gamePlayer.x === $gameVariables.value(91) && $gamePlayer.y === $gameVariables.value(92)"
+        ]
+      },
+      {
+        "code": 113,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 205,
+        "indent": 1,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this.moveToPoint($gameVariables.value(91), $gameVariables.value(92))"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this.moveToPoint($gameVariables.value(91), $gameVariables.value(92))"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 413,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 205,
+        "indent": 0,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 29,
+                "parameters": [
+                  4
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._vehicleType = 'walk'"
+                ],
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  30
+                ],
+                "indent": null
+              },
+              {
+                "code": 19,
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 29,
+            "parameters": [
+              4
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "this._vehicleType = 'walk'"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 15,
+            "parameters": [
+              30
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 19,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 121,
+        "indent": 0,
+        "parameters": [
+          112,
+          112,
+          1
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 221,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          53
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 0,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 34,
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": false
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 34,
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 216,
+        "indent": 0,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "a_Move1",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 201,
+        "indent": 0,
+        "parameters": [
+          1,
+          78,
+          79,
+          80,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          37
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameMap.mapId() === 207 && $gameSelfSwitches.value([8, 153, 'A'])"
+        ]
+      },
+      {
+        "code": 129,
+        "indent": 1,
+        "parameters": [
+          10,
+          0,
+          false
+        ]
+      },
+      {
+        "code": 129,
+        "indent": 1,
+        "parameters": [
+          11,
+          0,
+          false
+        ]
+      },
+      {
+        "code": 129,
+        "indent": 1,
+        "parameters": [
+          12,
+          0,
+          false
+        ]
+      },
+      {
+        "code": 129,
+        "indent": 1,
+        "parameters": [
+          13,
+          0,
+          false
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 129,
+        "indent": 1,
+        "parameters": [
+          10,
+          1,
+          false
+        ]
+      },
+      {
+        "code": 129,
+        "indent": 1,
+        "parameters": [
+          11,
+          1,
+          false
+        ]
+      },
+      {
+        "code": 129,
+        "indent": 1,
+        "parameters": [
+          12,
+          1,
+          false
+        ]
+      },
+      {
+        "code": 129,
+        "indent": 1,
+        "parameters": [
+          13,
+          1,
+          false
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameMap.vehicles().forEach(v => v.setThrough(false));"
+        ]
+      },
+      {
+        "code": 222,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "People2",
+          3,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "\\neilHere we are! Now don't look so seasick..."
+        ]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "Captain O'Neil",
     "switchId": 1,
     "trigger": 0
   },
@@ -14428,6 +17731,52 @@
         ]
       },
       {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "let minutes = $gameSystem.getAutosaveInterval();"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "if (minutes === 0) minutes = 1 / 60;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "$gameSystem.setAutosaveInterval(minutes);"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gamePlayer.isDebugThrough()"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "DebugManager.gameSpeed = 3;"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
@@ -14802,6 +18151,131 @@
       }
     ],
     "name": "Exit Airship",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 85,
+    "list": [
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameSelfSwitches.setValue("
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  [10, 3, 'A'],"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  $gameParty.pet().name() === 'Arlo'"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          ");"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameSelfSwitches.setValue("
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  [10, 27, 'A'],"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  $gameParty.pet().name() === 'Clover'"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          ");"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameSelfSwitches.setValue("
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  [11, 13, 'A'],"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  $gameParty.pet().name() === 'Duncan'"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          ");"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameSelfSwitches.setValue("
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  [11, 16, 'A'],"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  $gameParty.pet().name() === 'Fido'"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          ");"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Refresh Home Pets",
     "switchId": 1,
     "trigger": 0
   }

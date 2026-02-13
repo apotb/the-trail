@@ -1234,6 +1234,7 @@ Game_Party.prototype.registerNewItem = function(baseItem, newItem) {
     if (container) {
       var lastNumber = this.numItems(newItem);
       container[newItem.id] = 1;
+      $gameTemp._latestNewItem = newItem;
     }
 };
 
@@ -1403,6 +1404,7 @@ Game_Party.prototype.numNotUpgradedIndependentItems = function(baseItem) {
       if (!item) continue;
       if (item.boostCount && item.boostCount !== 0) continue;
       if (item.priorityName && item.priorityName != item.baseItemName) continue;
+      if ($gameTemp._independentItems?.contains(item)) continue;
       if (item.baseItemId && item.baseItemId === id) value += 1;
     }
   }
@@ -1422,6 +1424,7 @@ Game_Party.prototype.getNotUpgradedIndependentItem = function(baseItem) {
     if (!item) continue;
     if (item.boostCount && item.boostCount !== 0) continue;
     if (item.priorityName && item.priorityName != item.baseItemName) continue;
+    if ($gameTemp._independentItems?.contains(item)) continue;
     if (item.baseItemId && item.baseItemId === id) value = item;
   }
   return value;
@@ -1870,62 +1873,23 @@ Window_ItemStatus.prototype.drawEquipInfo = function(item) {
     } else {
       rect.width = this.contents.width / 2;
     }
-
-    var isWeapon = DataManager.isWeapon(item);
-    var statMap = isWeapon ? [
-      [0, false], // MHP
-      [1, false], // MMP
-      [2, false], // ATK
-      [4, false], // MAT
-      [6, false], // AGI
-      [7, false], // LUK/INT
-      [0, true],  // HIT
-      [2, true]   // CRI
-    ] : [
-      [0, false], // MHP
-      [1, false], // MMP
-      [3, false], // DEF
-      [5, false], // MDF
-      [6, false], // AGI
-      [7, false], // LUK/INT
-      [1, true],  // EVA
-      [3, true]   // CEV
-    ];
-
     for (var i = 0; i < 8; ++i) {
       rect = this.getRectPosition(rect, i);
       var dx = rect.x + this.textPadding();
       var dw = rect.width - this.textPadding() * 2;
-      var paramIndex = statMap[i][0];
-      var isXParam = statMap[i][1];
-
       this.changeTextColor(this.systemColor());
-      if (isXParam) {
-        this.drawText(TextManager.param(paramIndex + 8), dx, rect.y, dw);
-        var trait = item.traits.find(function(t) {
-          return t.code === 22 && t.dataId === paramIndex;
-        });
-        var value = trait ? trait.value : 0;
-        var percent = Math.floor(value * 100);
-        this.changeTextColor(this.paramchangeTextColor(percent));
-        var text = (percent >= 0 ? '+' : '') + Yanfly.Util.toGroup(percent) + '%';
-        if (text === '+0%') this.changePaintOpacity(false);
-        this.drawText(text, dx, rect.y, dw, 'right');
-        this.changePaintOpacity(true);
-      } else {
-        this.drawText(TextManager.param(paramIndex), dx, rect.y, dw);
-        this.changeTextColor(this.paramchangeTextColor(item.params[paramIndex]));
-        var text = Yanfly.Util.toGroup(item.params[paramIndex]);
-        if (item.groupType === 2 && item.baseItemId === 157) {
-          var stat = $gameSystem.championsTalisman()[paramIndex];
-          this.changeTextColor(this.paramchangeTextColor(stat));
-          text = stat;
-        }
-        if (item.params[paramIndex] >= 0) text = '+' + text;
-        if (text === '+0') this.changePaintOpacity(false);
-        this.drawText(text, dx, rect.y, dw, 'right');
-        this.changePaintOpacity(true);
+      this.drawText(TextManager.param(i), dx, rect.y, dw);
+      this.changeTextColor(this.paramchangeTextColor(item.params[i]));
+      var text = Yanfly.Util.toGroup(item.params[i]);
+      if (item.groupType === 2) if (item.baseItemId === 157) { // Champion's Talisman
+        stat = $gameSystem.championsTalisman()[i];
+        this.changeTextColor(this.paramchangeTextColor(stat));
+        text = stat;
       }
+      if (item.params[i] >= 0) text = '+' + text;
+      if (text === '+0') this.changePaintOpacity(false);
+      this.drawText(text, dx, rect.y, dw, 'right');
+      this.changePaintOpacity(true);
     }
 };
 
@@ -1969,23 +1933,39 @@ Window_ItemStatus.prototype.drawItemData = function(i, dx, dy, dw) {
       effect = this.getEffect(Game_Action.EFFECT_RECOVER_HP);
       value = (effect) ? effect.value1 : '---';
       if (value === 0) value = '---';
-      if (value !== '---' && value !== 0 && typeof value == 'number') value *= 100;
+      if (value !== '---' && value !== 0 && typeof value == 'number') {
+        value *= 100;
+        value *= this.parent.parent.user()?.pha; // PHA
+        if ($gameParty.pet().name() === "Duncan" && this._item.itemCategory?.contains('Meals')) value *= 1.5; // DUNCAN
+      }
     }
     if (i === 1) {
       effect = this.getEffect(Game_Action.EFFECT_RECOVER_HP);
       value = (effect) ? effect.value2 : '---';
       if (value === 0) value = '---';
+      if (value !== '---' && value !== 0 && typeof value == 'number') {
+        value *= this.parent.parent.user()?.pha; // PHA
+        if ($gameParty.pet().name() === "Duncan" && this._item.itemCategory?.contains('Meals')) value *= 1.5; // DUNCAN
+      }
     }
     if (i === 2) {
       effect = this.getEffect(Game_Action.EFFECT_RECOVER_MP);
       value = (effect) ? effect.value1 : '---';
       if (value === 0) value = '---';
-      if (value !== '---' && value !== 0 && typeof value == 'number') value *= 100;
+      if (value !== '---' && value !== 0 && typeof value == 'number') {
+        value *= 100;
+        value *= this.parent.parent.user()?.pha; // PHA
+        if ($gameParty.pet().name() === "Duncan" && this._item.itemCategory?.contains('Meals')) value *= 1.5; // DUNCAN
+      }
     }
     if (i === 3) {
       effect = this.getEffect(Game_Action.EFFECT_RECOVER_MP);
       value = (effect) ? effect.value2 : '---';
       if (value === 0) value = '---';
+      if (value !== '---' && value !== 0 && typeof value == 'number') {
+        value *= this.parent.parent.user()?.pha; // PHA
+        if ($gameParty.pet().name() === "Duncan" && this._item.itemCategory?.contains('Meals')) value *= 1.5; // DUNCAN
+      }
     }
     if (i >= 4) {
       icons = this.getItemIcons(i, icons);
@@ -2013,6 +1993,10 @@ Window_ItemStatus.prototype.drawItemData = function(i, dx, dy, dw) {
       this.changePaintOpacity(true);
     }
 };
+
+Window_ItemStatus.prototype.duncan = function() {
+  // Edgar-type function
+}
 
 Window_ItemStatus.prototype.getEffect = function(code) {
     let targetEffect = null;
@@ -2142,6 +2126,7 @@ Window_ItemInfo.prototype.drawItemInfoD = function(dy) {
 
 Window_ItemInfo.prototype.drawItemInfoE = function(dy) {
     dy = this.drawMaterialText(dy);
+    dy = this.drawSalvageText(dy);
     return dy;
 };
 
@@ -2199,6 +2184,20 @@ Window_ItemInfo.prototype.drawMaterialText = function(dy) {
       var line = info[i];
       this.resetFontSettings();
       this.drawTextEx(line, this.textPadding(), dy);
+      dy += this.contents.fontSize + 8;
+    }
+    return dy;
+};
+
+Window_ItemInfo.prototype.drawSalvageText = function(dy) {
+    var item = this._item;
+    if (Object.keys(item.disassembleItems).length === 0) return dy;
+    let infoText = "Can be salvaged";
+    var info = infoText.split(/[\r\n]+/);
+    for (var i = 0; i < info.length; ++i) {
+      var line = info[i];
+      this.resetFontSettings();
+      this.drawTextEx(line, this.textPadding(),   dy);
       dy += this.contents.fontSize + 8;
     }
     return dy;
