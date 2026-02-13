@@ -2035,7 +2035,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "I can tell by that look in your eyes!"
+                "I can tell by that look in your eyes."
               ]
             },
             {
@@ -2150,7 +2150,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\mikeYou are... \\V[204]! I'll make sure to remember that!"
+                "\\mikeYou are... \\c[1]\\V[204]\\c[0]! I'll make sure to remember that!"
               ]
             },
             {
@@ -2216,7 +2216,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\mikeWelcome back, \\V[204]! Would you"
+                "\\mikeWelcome back, \\c[1]\\V[204]\\c[0]! Would you"
               ]
             },
             {
@@ -2280,7 +2280,7 @@
               "indent": 1,
               "parameters": [
                 1,
-                10,
+                1,
                 0,
                 0,
                 false
@@ -2291,7 +2291,37 @@
               "indent": 1,
               "parameters": [
                 1,
+                4,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 1,
+              "parameters": [
+                1,
+                10,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 1,
+              "parameters": [
+                1,
                 8,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 1,
+              "parameters": [
+                1,
+                69,
                 0,
                 0
               ]
@@ -2311,7 +2341,37 @@
               "indent": 1,
               "parameters": [
                 2,
+                1,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 1,
+              "parameters": [
+                2,
+                4,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 1,
+              "parameters": [
+                2,
                 14,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 1,
+              "parameters": [
+                2,
+                243,
                 0,
                 0
               ]
@@ -2719,159 +2779,89 @@
           },
           "list": [
             {
-              "code": 101,
+              "code": 205,
               "indent": 0,
               "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "You need the \\fbBLACKSMITH'S BLESSING\\fr to use the magic forge!"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 49,
-            "switch1Valid": true,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "!$Blacksmith",
-            "direction": 4,
-            "pattern": 1,
-            "characterIndex": 0
-          },
-          "list": [
-            {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "<Icon on Event: 284>"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Craft something at Will's magic forge?"
-              ]
-            },
-            {
-              "code": 102,
-              "indent": 0,
-              "parameters": [
-                [
-                  "Yes",
-                  "No"
-                ],
-                1,
-                0,
                 2,
-                0
+                {
+                  "list": [
+                    {
+                      "code": 18,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
               ]
             },
             {
-              "code": 402,
+              "code": 505,
               "indent": 0,
               "parameters": [
+                {
+                  "code": 18,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Shopkeeper1",
                 0,
-                "Yes."
+                0,
+                2
               ]
             },
             {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 402,
+              "code": 401,
               "indent": 0,
               "parameters": [
-                1,
-                "No."
+                "\\mikeSlow down, partner! That anvil"
               ]
             },
             {
-              "code": 115,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 404,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 355,
+              "code": 401,
               "indent": 0,
               "parameters": [
-                "$gameTemp.recipeTemplate('WILL');"
+                "is not open for public use..."
               ]
             },
             {
-              "code": 356,
+              "code": 205,
               "indent": 0,
               "parameters": [
-                "OpenSynthesis"
+                2,
+                {
+                  "list": [
+                    {
+                      "code": 16,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 16,
+                  "indent": null
+                }
               ]
             },
             {

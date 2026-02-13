@@ -3586,7 +3586,7 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\mike\\V[204], you say? Nice to meet you!"
+                "\\mike\\c[1]\\V[204]\\c[0], you say? Nice to meet you!"
               ]
             },
             {
@@ -3862,7 +3862,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\mikeHaha, welcome back, \\V[204] and friends!"
+                "\\mikeHaha, welcome back, \\c[1]\\V[204]\\c[0] and friends!"
               ]
             },
             {
@@ -4033,6 +4033,16 @@
               "code": 605,
               "indent": 1,
               "parameters": [
+                1,
+                69,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 1,
+              "parameters": [
                 2,
                 13,
                 0,
@@ -4045,6 +4055,16 @@
               "parameters": [
                 2,
                 14,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 1,
+              "parameters": [
+                2,
+                243,
                 0,
                 0
               ]
@@ -4104,7 +4124,7 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\mikeYou've come a long way, \\V[204]. Keep on pushing, "
+                "\\mikeYou've come a long way, \\c[1]\\V[204]\\c[0]. Keep on pushing, "
               ]
             },
             {

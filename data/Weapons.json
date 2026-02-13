@@ -30,7 +30,7 @@
       0,
       0
     ],
-    "price": 0,
+    "price": 20,
     "wtypeId": 2
   },
   {
@@ -63,7 +63,7 @@
       0,
       0
     ],
-    "price": 0,
+    "price": 20,
     "wtypeId": 3
   },
   {
@@ -96,7 +96,7 @@
       0,
       0
     ],
-    "price": 0,
+    "price": 20,
     "wtypeId": 4
   },
   {
@@ -134,7 +134,7 @@
       0,
       0
     ],
-    "price": 0,
+    "price": 20,
     "wtypeId": 5
   },
   {
@@ -167,7 +167,7 @@
       0,
       0
     ],
-    "price": 20,
+    "price": 15,
     "wtypeId": 2
   },
   {
@@ -2707,6 +2707,54 @@
       0
     ],
     "price": 0,
+    "wtypeId": 6
+  },
+  {
+    "id": 69,
+    "animationId": 11,
+    "description": "A basic spear intended for those just setting out on The Trail.\nIncreases accuracy and crit chance by 10%, though requires two hands.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 17,
+        "value": 0
+      },
+      {
+        "code": 54,
+        "dataId": 2,
+        "value": 1
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.1
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.1
+      }
+    ],
+    "iconIndex": 146,
+    "name": "Rookie Spear",
+    "note": "",
+    "params": [
+      0,
+      0,
+      5,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 30,
     "wtypeId": 6
   }
 ]
