@@ -12,6 +12,7 @@ NOTICE: Old saves will not work with this update!
 ### Additions
 - Added new content throughout the game, including:
   - Northern/Southern Desert Garrison
+  - Eating at Larry's Marvelous Diner
   - Several new quests
   - Giving people fake names
   - A new boss fight...
