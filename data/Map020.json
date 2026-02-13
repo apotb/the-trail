@@ -31130,6 +31130,20 @@
             "list": [
               {
                 "code": 1,
+                "indent": null
+              },
+              {
+                "code": 1,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 2,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 2,
                 "indent": null,
                 "parameters": []
               },
@@ -31159,94 +31173,12 @@
                 "parameters": []
               },
               {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
                 "code": 1,
                 "indent": null,
                 "parameters": []
               },
               {
                 "code": 1,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 1,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 1,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 15,
-                "indent": null,
-                "parameters": [
-                  60
-                ]
-              },
-              {
-                "code": 4,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 4,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 4,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 4,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 4,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 4,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 2,
                 "indent": null,
                 "parameters": []
               },
@@ -31268,29 +31200,44 @@
                 "parameters": []
               },
               {
-                "code": 3,
+                "code": 2,
                 "indent": null,
                 "parameters": []
+              },
+              {
+                "code": 4,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 4,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 4,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 2,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 2,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "indent": null,
+                "parameters": [
+                  60
+                ]
               },
               {
                 "code": 3,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 3,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 1,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 1,
-                "indent": null,
-                "parameters": []
+                "indent": null
               },
               {
                 "code": 3,
@@ -32180,9 +32127,10 @@
               "indent": 2,
               "parameters": [
                 [
-                  "\\N[1]"
+                  "\\N[1]",
+                  "Give fake name"
                 ],
-                -1,
+                1,
                 0,
                 1,
                 0
@@ -32194,6 +32142,41 @@
               "parameters": [
                 0,
                 "\\N[1]"
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 3,
+              "parameters": [
+                205,
+                205,
+                0,
+                4,
+                "$gameActors.actor(1).name()"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 2,
+              "parameters": [
+                1,
+                "Give fake name"
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 3,
+              "parameters": [
+                205,
+                205,
+                0,
+                4,
+                "$gameTemp.generateGoofyName(true)"
               ]
             },
             {
@@ -32220,7 +32203,7 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\adam\\N[1]... a pleasure to meet you!"
+                "\\adam\\c[1]\\V[205]\\c[0]... a pleasure to meet you!"
               ]
             },
             {
@@ -32515,24 +32498,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\adamOh, it's my good friend \\N[1]!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Adon",
-                6,
-                0,
-                2
+                "\\adamOh, it's my good friend \\c[1]\\V[205]\\c[0]!"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\adamGreat to see you again!"
+                "Great to see you again!"
               ]
             },
             {
@@ -32560,58 +32533,10 @@
               ]
             },
             {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Adon",
-                6,
-                0,
-                2
-              ]
-            },
-            {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\adamYou've inspired me so much."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Adon",
-                6,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\adamAnd while I know that I'll never"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "live up to the things you did, I'm"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "happy to know I helped Adon at"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "least a little bit."
+                "You've... inspired me."
               ]
             },
             {
@@ -32628,14 +32553,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\adamI can't think of a good enough"
+                "\\adamEven if I can't go out and kill skeleton lords"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "way to thank you."
+                "like you, I'm happy to know I at least got to"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "help you out a litte bit."
               ]
             },
             {
@@ -32652,7 +32584,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\adamThis is all I can give."
+                "\\adamI can't think of a good enough way to"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "thank you. This is all I can give."
               ]
             },
             {
@@ -32697,7 +32636,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\adamHere you go. Thank you so much."
+                "\\adamTake these Bits, you'll need them in Telluria. Thank you so much."
               ]
             },
             {
@@ -35560,13 +35499,12 @@
               ]
             },
             {
-              "code": 126,
+              "code": 125,
               "indent": 0,
               "parameters": [
-                9,
                 0,
                 0,
-                1
+                25
               ]
             },
             {
@@ -35797,13 +35735,12 @@
               ]
             },
             {
-              "code": 126,
+              "code": 125,
               "indent": 0,
               "parameters": [
-                14,
                 0,
                 0,
-                1
+                25
               ]
             },
             {

@@ -2220,18 +2220,9 @@
               ]
             },
             {
-              "code": 111,
+              "code": 101,
               "indent": 1,
               "parameters": [
-                0,
-                24,
-                0
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
                 "People1",
                 4,
                 0,
@@ -2240,99 +2231,17 @@
             },
             {
               "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\joeAh, it's \\N[1]! First you saved my"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "store's items, and now you've saved"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "my continent! I'm so grateful!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "People1",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\joeI doubt my items are going to help"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "you much at this point, but hey,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "would you like to buy some?"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 411,
               "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "People1",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
               "parameters": [
                 "\\joeWelcome back, \\N[1]! Would you"
               ]
             },
             {
               "code": 401,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 "like to buy something?"
               ]
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 1,
-              "parameters": []
             },
             {
               "code": 119,
@@ -2383,6 +2292,37 @@
               ]
             },
             {
+              "code": 102,
+              "indent": 0,
+              "parameters": [
+                [
+                  "I know you!"
+                ],
+                -1,
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                0,
+                "I know you!"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 101,
               "indent": 0,
               "parameters": [
@@ -2396,7 +2336,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\-Hm? You... know me?"
+                "\\-Hm? I've never seen you before..."
               ]
             },
             {
@@ -2430,21 +2370,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\joeYou must come from a different town! All"
+                "\\joeYou must come from a different town! All of the"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "of the general store owners around the"
+                "general store around the world are owned by"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "world are me and my cousins!"
+                "me and my cousins, the Joe family!"
               ]
             },
             {
@@ -2526,7 +2466,91 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Now where is that loot that you saved?"
+                "What's your name?"
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 0,
+              "parameters": [
+                [
+                  "\\N[1]",
+                  "Give fake name"
+                ],
+                1,
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                0,
+                "\\N[1]"
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 1,
+              "parameters": [
+                206,
+                206,
+                0,
+                4,
+                "$gameActors.actor(1).name()"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                1,
+                "Give fake name"
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 1,
+              "parameters": [
+                206,
+                206,
+                0,
+                4,
+                "$gameTemp.generateGoofyName(true)"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People1",
+                4,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\joe\\c[1]\\V[206], eh? You've got the \\ii[13]?"
               ]
             },
             {
@@ -2564,7 +2588,7 @@
               "code": 230,
               "indent": 0,
               "parameters": [
-                90
+                60
               ]
             },
             {
@@ -2581,7 +2605,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\joeYes, this is it! Thank you!"
+                "\\joeYes, this is everything! Thank you!"
               ]
             },
             {
@@ -2598,14 +2622,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\joeNow let me get everything"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "set up again..."
+                "\\joeNow let me get the store set back up..."
               ]
             },
             {
@@ -2754,14 +2771,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\joeAlright, the shop is all set up! I'd"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "call your job done!"
+                "\\joeAll good now! I'd call your work here... done!"
               ]
             },
             {
@@ -2778,7 +2788,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\joeHere, take this as a reward..."
+                "\\joeHere, take this as a reward."
               ]
             },
             {
@@ -2834,6 +2844,41 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Quest 7 Complete Objective 2"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Quest 7 Show Reward 1"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Quest 7 Claim Reward 1"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Quest 7 Change Description Entry To 2"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Quest Set Completed 7"
+              ]
+            },
+            {
               "code": 249,
               "indent": 0,
               "parameters": [
@@ -2877,41 +2922,6 @@
               ]
             },
             {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 7 Complete Objective 2"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 7 Show Reward 1"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 7 Claim Reward 1"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 7 Change Description Entry To 2"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest Set Completed 7"
-              ]
-            },
-            {
               "code": 101,
               "indent": 0,
               "parameters": [
@@ -2940,12 +2950,12 @@
               "indent": 0,
               "parameters": [
                 [
-                  "Yep!",
-                  "Not now."
+                  "Shop",
+                  "Goodbye"
                 ],
                 1,
                 0,
-                2,
+                1,
                 0
               ]
             },
@@ -2954,7 +2964,7 @@
               "indent": 0,
               "parameters": [
                 0,
-                "Yep!"
+                "Shop"
               ]
             },
             {
@@ -2971,7 +2981,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\joeHere's what I have."
+                "\\joeHere's what I've got."
               ]
             },
             {
@@ -2979,23 +2989,6 @@
               "indent": 1,
               "parameters": [
                 16
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People1",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\joeThanks for coming!"
               ]
             },
             {
@@ -3008,24 +3001,7 @@
               "indent": 0,
               "parameters": [
                 1,
-                "Not now."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People1",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\joeOh well... come back soon!"
+                "Goodbye"
               ]
             },
             {
@@ -3037,6 +3013,23 @@
               "code": 404,
               "indent": 0,
               "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People1",
+                4,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\joeCome back soon!"
+              ]
             },
             {
               "code": 123,
