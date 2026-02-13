@@ -3557,9 +3557,9 @@
     0,
     0,
     0,
-    3139,
-    3137,
-    3137,
+    0,
+    0,
+    3147,
     3137,
     3143,
     0,
@@ -3597,7 +3597,7 @@
     0,
     0,
     0,
-    3136,
+    0,
     0,
     0,
     0,
@@ -3637,7 +3637,7 @@
     0,
     0,
     0,
-    3136,
+    3146,
     0,
     0,
     0,
@@ -5798,7 +5798,7 @@
     0,
     0,
     0,
-    0,
+    756,
     0,
     0,
     0,
@@ -7516,7 +7516,7 @@
     0,
     0,
     0,
-    0,
+    81,
     0,
     0,
     101,
@@ -7554,7 +7554,7 @@
     0,
     0,
     0,
-    0,
+    81,
     0,
     0,
     0,
@@ -7636,7 +7636,7 @@
     0,
     0,
     0,
-    0,
+    82,
     0,
     108,
     108,
@@ -7676,7 +7676,7 @@
     0,
     0,
     0,
-    0,
+    82,
     0,
     108,
     108,
@@ -7797,8 +7797,8 @@
     0,
     0,
     0,
-    0,
-    756,
+    112,
+    113,
     757,
     756,
     757,
@@ -7837,8 +7837,8 @@
     0,
     0,
     0,
-    0,
-    0,
+    120,
+    121,
     0,
     0,
     758,
@@ -13069,118 +13069,6 @@
           "walkAnime": true,
           "list": [
             {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "<Icon on Event: 5>"
-              ]
-            },
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Scarecrow was straightened!"
-              ]
-            },
-            {
-              "code": 122,
-              "indent": 0,
-              "parameters": [
-                47,
-                47,
-                0,
-                0,
-                1
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 104,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true,
-          "list": [
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "A straight scarecrow."
-              ]
-            },
-            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -13661,165 +13549,7 @@
       "x": 34,
       "y": 27
     },
-    {
-      "id": 17,
-      "name": "EV017",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 47,
-            "variableValid": true,
-            "variableValue": 1
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "That box under the cliff looked peculiar..."
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 47,
-            "variableValid": true,
-            "variableValue": 2
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 19,
-      "y": 31
-    },
+    null,
     {
       "id": 18,
       "name": "EV018",
@@ -14925,12 +14655,23 @@
               ]
             },
             {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                47,
+                47,
+                0,
+                0,
+                1
+              ]
+            },
+            {
               "code": 125,
               "indent": 0,
               "parameters": [
                 0,
                 0,
-                20
+                25
               ]
             },
             {

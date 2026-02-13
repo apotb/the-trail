@@ -1580,8 +1580,8 @@
     0,
     0,
     3024,
-    3032,
-    0,
+    3010,
+    3044,
     0,
     0,
     0,
@@ -1614,9 +1614,9 @@
     0,
     0,
     3024,
-    3032,
-    0,
-    0,
+    3008,
+    3010,
+    3044,
     0,
     0,
     0,
@@ -1648,9 +1648,9 @@
     0,
     0,
     3048,
-    3018,
-    3028,
-    3044,
+    3016,
+    3008,
+    3032,
     0,
     0,
     0,
@@ -2431,8 +2431,8 @@
     0,
     0,
     0,
-    112,
-    114,
+    0,
+    120,
     115,
     114,
     115,
@@ -2465,8 +2465,8 @@
     0,
     0,
     0,
-    120,
-    121,
+    0,
+    0,
     120,
     122,
     123,
@@ -3281,7 +3281,7 @@
     0,
     0,
     0,
-    0,
+    967,
     0,
     0,
     0,
@@ -3316,7 +3316,7 @@
     0,
     0,
     0,
-    0,
+    967,
     0,
     0,
     0,
@@ -3349,8 +3349,8 @@
     0,
     0,
     0,
-    967,
-    967,
+    0,
+    0,
     0,
     0,
     0,
@@ -8508,7 +8508,7 @@
         }
       ],
       "x": 19,
-      "y": 22
+      "y": 20
     },
     {
       "id": 19,
@@ -8568,7 +8568,7 @@
         }
       ],
       "x": 20,
-      "y": 22
+      "y": 21
     },
     {
       "id": 20,
@@ -12431,7 +12431,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "whatever gets us to Haven Harbor!"
+                "we're both looking for more stuff to do!"
               ]
             },
             {
@@ -12448,79 +12448,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3Haven Harbor, you say? I've heard talk of the place..."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Adon's capital of trade, a port town so rich even"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "the limestones glisten like gold. Boating, fishing,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "and numerous shops... an adventurer's dream."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2So you get what I'm talking about!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                6,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p3Yeah, for sure. I'd love to see that place too!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p3Are you going there for anything specific?"
+                "\\p3So you're not out here for anything specific?"
               ]
             },
             {
@@ -12988,7 +12916,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3Well, the two of us started out when we realized"
+                "\\p2Well, the two of us started out when we realized"
               ]
             },
             {
@@ -13019,7 +12947,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3...then you can come along for the ride!"
+                "\\p2...then you can come along for the ride!"
               ]
             },
             {
@@ -13115,14 +13043,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2I second the motion. Just take"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "this \\ii[17] first..."
+                "\\p2I second the motion!"
               ]
             },
             {
@@ -13483,6 +13404,154 @@
               "indent": 0,
               "parameters": [
                 "\\p3Mine can stay here... it was an old model, anyway."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p2Let's keep heading south until we hit Haven Harbor."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "It's the biggest city on the continent! If \\c[18]Apocalypse\\c[0]"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "is actually real, Haven Harbor is where we'll find"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "people talking about \\c[18]him\\c[0]."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p3Haven Harbor, you say? I've heard talk of the place..."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Adon's capital of trade, a port town so rich even"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "the limestones glisten like gold. Boating, fishing,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "and numerous shops... an adventurer's dream."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p2So you get what I'm talking about!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                6,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p3Yeah, for sure. I'd love to see that place too!"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Quest Add 11"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Sector By Sector"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "New Quest!"
               ]
             },
             {

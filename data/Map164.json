@@ -6223,14 +6223,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Play as a young knight looking for purpose in his life."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "You find yourself in Verdin Village in the midst of a bandit raid."
+                "Play as a young knight wandering The Trail. You find yourself in Verdin Village in the midst of a bandit raid."
               ]
             },
             {
@@ -6244,7 +6237,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Begin with \\iw[1], \\ia[1], \\ia[7], \\ii[11], \\ii[10], \\ii[16] x3"
+                "Begin with \\iw[1], \\ia[1], \\ia[7], \\ii[16] x3,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\ii[11], \\ii[10], \\ii[18], and \\ii[137]."
               ]
             },
             {
@@ -6312,6 +6312,26 @@
               "indent": 2,
               "parameters": [
                 10,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 2,
+              "parameters": [
+                18,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 2,
+              "parameters": [
+                137,
                 0,
                 0,
                 1

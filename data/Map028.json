@@ -8962,46 +8962,6 @@
               "code": 205,
               "indent": 1,
               "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 17,
-                      "indent": null
-                    },
-                    {
-                      "code": 0,
-                      "indent": null,
-                      "parameters": []
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 17,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 355,
-              "indent": 1,
-              "parameters": [
-                "$gamePlayer.followers()._data.forEach(f => f.setDirection(4));"
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 1,
-              "parameters": [
                 21,
                 {
                   "list": [
@@ -9076,6 +9036,167 @@
               ]
             },
             {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\p2..."
+              ]
+            },
+            {
+              "code": 213,
+              "indent": 1,
+              "parameters": [
+                23,
+                1,
+                false
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                23,
+                {
+                  "list": [
+                    {
+                      "code": 16,
+                      "indent": null
+                    },
+                    {
+                      "code": 14,
+                      "parameters": [
+                        0,
+                        0
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 16,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 14,
+                  "parameters": [
+                    0,
+                    0
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\p2GAHHH!! Get away from me!... oh, wait, is that..."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\p2...\\N[2]! No way! So you actually made it through?"
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 1,
+              "parameters": [
+                [
+                  "Yeah! I don't know where to go next, though..."
+                ],
+                -1,
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                0,
+                "Yeah! I don't know where to go next, though..."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\p2Me neither, I'm kind of just wandering around..."
+              ]
+            },
+            {
               "code": 250,
               "indent": 1,
               "parameters": [
@@ -9102,7 +9223,76 @@
               "code": 230,
               "indent": 1,
               "parameters": [
-                60
+                30
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 17,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 17,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                23,
+                {
+                  "list": [
+                    {
+                      "code": 17,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 17,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 1,
+              "parameters": [
+                30
               ]
             },
             {
@@ -9196,7 +9386,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\-Come on, Milky. They'll be here any-"
+                "\\-Come on, Milky. He'll be here any-"
               ]
             },
             {
@@ -9455,17 +9645,45 @@
               ]
             },
             {
-              "code": 355,
+              "code": 205,
               "indent": 1,
               "parameters": [
-                "$gamePlayer.followers()._data[0].setDirection(8);"
+                23,
+                {
+                  "list": [
+                    {
+                      "code": 19,
+                      "indent": null
+                    },
+                    {
+                      "code": 0,
+                      "indent": null,
+                      "parameters": []
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
               ]
             },
             {
-              "code": 655,
+              "code": 505,
               "indent": 1,
               "parameters": [
-                "$gamePlayer.followers()._data[0]._balloonId = 2;"
+                {
+                  "code": 19,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 213,
+              "indent": 1,
+              "parameters": [
+                23,
+                2,
+                false
               ]
             },
             {
@@ -9511,10 +9729,36 @@
               ]
             },
             {
-              "code": 355,
+              "code": 205,
               "indent": 1,
               "parameters": [
-                "$gamePlayer.followers()._data.forEach(f => f.setDirection(4));"
+                23,
+                {
+                  "list": [
+                    {
+                      "code": 17,
+                      "indent": null
+                    },
+                    {
+                      "code": 0,
+                      "indent": null,
+                      "parameters": []
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 17,
+                  "indent": null
+                }
               ]
             },
             {
@@ -9986,28 +10230,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\p2Nice to meet you. I'm \\N[2], the two of us"
+                "\\p2Nice to meet you, I'm \\N[2]. We aren't technically"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "decided we might as well travel together"
+                "traveling together... but hey, if we're going"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "if we're going the same way. But we've"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "got big plans! Isn't that right, \\N[1]!"
+                "the same direction, we might as well team up."
               ]
             },
             {
@@ -10024,46 +10261,46 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\markGlad to be acquainted! Now, what"
+                "\\markI like the spirit. Glad to be acquainted!"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "brings you to my abode?"
+                "Now, what brings you to my abode?"
               ]
             },
             {
-              "code": 101,
+              "code": 102,
               "indent": 1,
               "parameters": [
-                "Actor4",
-                5,
+                [
+                  "Kind of stumbled upon it..."
+                ],
+                -1,
                 0,
-                2
+                1,
+                0
               ]
             },
             {
-              "code": 401,
+              "code": 402,
               "indent": 1,
               "parameters": [
-                "\\p2We kind of just stumbled upon it. We're trying"
+                0,
+                "Kind of stumbled upon it..."
               ]
             },
             {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "to make it to Haven Harbor, but the map can"
-              ]
+              "code": 0,
+              "indent": 2,
+              "parameters": []
             },
             {
-              "code": 401,
+              "code": 404,
               "indent": 1,
-              "parameters": [
-                "only help so much..."
-              ]
+              "parameters": []
             },
             {
               "code": 101,
@@ -10118,6 +10355,298 @@
               "indent": 1,
               "parameters": [
                 "\\p2Sounds like a good cause... and we need the experience."
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 16,
+                      "indent": null
+                    },
+                    {
+                      "code": 0,
+                      "indent": null,
+                      "parameters": []
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 16,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 1,
+              "parameters": [
+                [
+                  "Let's team up!",
+                  "Let's team up..."
+                ],
+                1,
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                0,
+                "Let's team up!"
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 2,
+              "parameters": [
+                23,
+                {
+                  "list": [
+                    {
+                      "code": 19,
+                      "indent": null
+                    },
+                    {
+                      "code": 0,
+                      "indent": null,
+                      "parameters": []
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 2,
+              "parameters": [
+                {
+                  "code": 19,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\p2That's what I was thinking!"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                1,
+                "Let's team up..."
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 2,
+              "parameters": [
+                23,
+                {
+                  "list": [
+                    {
+                      "code": 19,
+                      "indent": null
+                    },
+                    {
+                      "code": 0,
+                      "indent": null,
+                      "parameters": []
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 2,
+              "parameters": [
+                {
+                  "code": 19,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\p2C'mon, you know it's for the best!"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 129,
+              "indent": 1,
+              "parameters": [
+                2,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 313,
+              "indent": 1,
+              "parameters": [
+                0,
+                2,
+                1,
+                3
+              ]
+            },
+            {
+              "code": 249,
+              "indent": 1,
+              "parameters": [
+                {
+                  "name": "Victory1",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\N[2] has joined your party!"
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 17,
+                      "indent": null
+                    },
+                    {
+                      "code": 0,
+                      "indent": null,
+                      "parameters": []
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 17,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                23,
+                {
+                  "list": [
+                    {
+                      "code": 17,
+                      "indent": null
+                    },
+                    {
+                      "code": 0,
+                      "indent": null,
+                      "parameters": []
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 17,
+                  "indent": null
+                }
               ]
             },
             {
@@ -10203,7 +10732,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\markLet's leave my property, I'll show you the way from there."
+                "\\markLet's leave this place, I'll show you the way from there."
               ]
             },
             {
@@ -10827,7 +11356,7 @@
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 7,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 3
           },
           "directionFix": false,
