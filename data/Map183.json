@@ -76546,7 +76546,7 @@
     {
       "id": 112,
       "name": "EV112",
-      "note": "<Sprite Offset X: -24> <shadow>",
+      "note": "<Sprite Offset X: -24>",
       "pages": [
         {
           "conditions": {
@@ -76928,7 +76928,7 @@
     {
       "id": 117,
       "name": "EV117",
-      "note": "<Sprite Offset X: -24> <shadow>",
+      "note": "<Sprite Offset X: -24>",
       "pages": [
         {
           "conditions": {
@@ -77108,7 +77108,7 @@
     {
       "id": 119,
       "name": "EV119",
-      "note": "<Sprite Offset X: +24> <shadow>",
+      "note": "<Sprite Offset X: +24>",
       "pages": [
         {
           "conditions": {
@@ -77620,7 +77620,7 @@
     {
       "id": 122,
       "name": "EV122",
-      "note": "<Sprite Offset X: -24> <shadow>",
+      "note": "<Sprite Offset X: -24>",
       "pages": [
         {
           "conditions": {
@@ -78413,7 +78413,7 @@
     {
       "id": 129,
       "name": "EV129",
-      "note": "<Sprite Offset X: +24> <shadow>",
+      "note": "<Sprite Offset X: +24>",
       "pages": [
         {
           "conditions": {
@@ -78708,7 +78708,7 @@
     {
       "id": 133,
       "name": "EV133",
-      "note": "<Sprite Offset X: -72> <shadow>",
+      "note": "<Sprite Offset X: -72>",
       "pages": [
         {
           "conditions": {
@@ -79331,7 +79331,7 @@
     {
       "id": 140,
       "name": "EV140",
-      "note": "<Sprite Offset X: -24> <shadow>",
+      "note": "<Sprite Offset X: -24>",
       "pages": [
         {
           "conditions": {
@@ -80621,7 +80621,7 @@
     {
       "id": 153,
       "name": "EV153",
-      "note": "<Sprite Offset X: +24> <shadow>",
+      "note": "<Sprite Offset X: +24>",
       "pages": [
         {
           "conditions": {
@@ -81861,7 +81861,7 @@
     {
       "id": 163,
       "name": "EV163",
-      "note": "<Sprite Offset X: +24> <shadow>",
+      "note": "<Sprite Offset X: +24>",
       "pages": [
         {
           "conditions": {
@@ -82491,7 +82491,7 @@
     {
       "id": 166,
       "name": "EV166",
-      "note": "<Sprite Offset X: -24> <shadow>",
+      "note": "<Sprite Offset X: -24>",
       "pages": [
         {
           "conditions": {
@@ -82551,7 +82551,7 @@
     {
       "id": 167,
       "name": "EV167",
-      "note": "<Sprite Offset X: +24> <shadow>",
+      "note": "<Sprite Offset X: +24>",
       "pages": [
         {
           "conditions": {
@@ -96578,6 +96578,126 @@
       ],
       "x": 89,
       "y": 61
+    },
+    {
+      "id": 263,
+      "name": "EV263",
+      "note": "<Sprite Offset X: +24>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Sign1",
+            "direction": 4,
+            "pattern": 2,
+            "characterIndex": 4
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 2,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 16,
+      "y": 9
+    },
+    {
+      "id": 264,
+      "name": "EV264",
+      "note": "<Sprite Offset X: -24>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Sign1",
+            "direction": 6,
+            "pattern": 0,
+            "characterIndex": 5
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 2,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 20,
+      "y": 23
     }
   ]
 }
