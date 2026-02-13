@@ -1,30 +1,30 @@
 Galv.FISH.ponds = {
     "Haven Harbor": [
-        [6, 8, true],
-        [7, 12, true],
-        [8, 6, true],
-        [5, 1, '$gameSwitches.value(68) && !$gameSwitches.value(32)']
+        [267, 8, true],
+        [268, 12, true],
+        [269, 6, true],
+        [258, 1, '$gameSwitches.value(68) && !$gameSwitches.value(32)']
     ],
     "Solus Valley South": [
-        [6, 10, true],
-        [9, 10, true],
-        [10, 5, true]
+        [267, 10, true],
+        [273, 10, true],
+        [274, 5, true]
     ],
     "Solus Valley North": [
-        [9, 12, true],
-        [11, 8, true],
-        [12, 4, true]
+        [273, 12, true],
+        [275, 8, true],
+        [276, 4, true]
     ],
     "The Promenade": [
-        [1, 24, true]
+        [126, 24, true]
     ],
     "Lake of Telluria": [
-        [2, 16, true],
-        [3, 8, true]
+        [127, 16, true],
+        [220, 8, true]
     ],
     "North Telluria Field": [
-        [2, 5, true],
-        [4, 5, '$gameSwitches.value(69)']
+        [127, 5, true],
+        [222, 5, '$gameSwitches.value(69)']
     ]
 }
 
