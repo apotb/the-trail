@@ -111,6 +111,7 @@ NOTICE: Old saves will not work with this update!
   - Also halved the effects of both accessories... they were hard to get, but kind of OP!
 - Made Goblins weaker to magic.
 - Made Bats more resistant to magic.
+- Polar Bears now drop Leather.
 - Reduced drop rate of Ring of the Woods/Forest.
 - Buffed Green/Blue Gel HP/MP recovery from 2 → 5.
 - Buffed Earthen Grassrobes Earth resistance from 10% to 25%.
