@@ -175,6 +175,13 @@ Game_Temp.prototype.bagOrganized = function() {
     return $gameSwitches.value(14) && $gameParty.inBattle();
 };
 
+// Other
+
+Game_Temp.prototype.generateGoofyName = function(male) {
+    const names = $dataStrings.names.goofy[male ? "male" : "female"];
+    return names[Math.floor(Math.random() * names.length)];
+};
+
 //-----------------------------------------------------------------------------
 // Game_System
 //
@@ -4018,7 +4025,7 @@ Game_Actor.prototype.setName = function(name) {
 };
 
 Game_Actor.prototype.setRandomName = function(male) {
-    const names = male ? $dataStrings.names.male : $dataStrings.names.female;
+    const names = $dataStrings.names.hero[male ? "male" : "female"];
     const recentNames = $gameTemp._recentNames || [];
     const maxRecentNames = 15;
 

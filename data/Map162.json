@@ -201,8 +201,8 @@
     2816,
     2816,
     2816,
-    2840,
     2946,
+    2932,
     2932,
     2932,
     2932,
@@ -219,8 +219,8 @@
     2816,
     2816,
     2816,
-    2840,
     2928,
+    2912,
     2912,
     2912,
     2912,
@@ -237,8 +237,8 @@
     2844,
     2844,
     2844,
-    2854,
     2928,
+    2912,
     2912,
     2912,
     2912,
@@ -523,8 +523,8 @@
     0,
     0,
     4347,
-    4337,
     4349,
+    0,
     0,
     0,
     0,
@@ -1036,7 +1036,7 @@
     64,
     0,
     25,
-    0,
+    52,
     0,
     0,
     0,
@@ -1054,7 +1054,7 @@
     72,
     0,
     0,
-    0,
+    60,
     0,
     0,
     0,
@@ -1072,7 +1072,7 @@
     0,
     0,
     0,
-    0,
+    53,
     0,
     0,
     0,
@@ -1090,43 +1090,7 @@
     115,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    104,
-    104,
-    104,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
+    61,
     0,
     0,
     0,
@@ -1154,6 +1118,13 @@
     0,
     104,
     104,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     104,
     0,
     0,
@@ -1162,6 +1133,35 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    108,
+    0,
+    0,
+    0,
+    104,
+    98,
+    104,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    104,
+    104,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    104,
     0,
     0,
     0,
@@ -2028,152 +2028,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\larHello hello! Welcome to my humble"
+                "\\larWelcome to my diner! Is this your first time here?"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "shop! I am Larry, the owner! And if"
+                "In that case, thank you for choosing to eat at"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "the chitchat is correct..."
+                "Larry's Marvelous Diner! On behalf of the"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "you are \\N[1]!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Shopkeeper1",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\lar\\}Now, before you say anything, I know"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "this technically isn't a diner, but"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "it's a good name and I'm keeping it."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Shopkeeper1",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\larAnyways."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Shopkeeper1",
-                9,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\larI've heard you have some sort of"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "mission. I wish a warm welcome"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "into Verdin Village, and safe passage"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "on your travels!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Shopkeeper1",
-                9,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\larOn my behalf, you may have a free"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\ii[16]! Every \\ii[16] is hand-prepared"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "and hand-wrapped, making each"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "one a delicious experience!"
+                "establishment, here's a free \\ii[16]!"
               ]
             },
             {
@@ -2219,14 +2095,152 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\larYou can't get these anywhere else!"
+                "\\larEach \\ii[16] is manually prepared and wrapped, containing"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Are you interested in buying some?"
+                "all the nutrients you need for a day on The Trail."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Because Traveling Can Be Tasty!™"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                9,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\larNow, I didn't quite catch your name..."
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 1,
+              "parameters": [
+                [
+                  "\\N[1]",
+                  "Give fake name"
+                ],
+                1,
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                0,
+                "\\N[1]"
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 2,
+              "parameters": [
+                203,
+                203,
+                0,
+                4,
+                "$gameActors.actor(1).name()"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                1,
+                "Give fake name"
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 2,
+              "parameters": [
+                203,
+                203,
+                0,
+                4,
+                "$gameTemp.generateGoofyName(true)"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                9,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\larWell then, \\V[202], feel free to seat yourself."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "I'll be right there to help you! If you'd"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "like to take some \\ii[16]\\c[0]s to go,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "you can buy 'em right here!"
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 1,
+              "parameters": [
+                10,
+                10,
+                0
               ]
             },
             {
@@ -2240,17 +2254,8 @@
               "parameters": []
             },
             {
-              "code": 111,
-              "indent": 1,
-              "parameters": [
-                0,
-                24,
-                1
-              ]
-            },
-            {
               "code": 101,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 "Shopkeeper1",
                 9,
@@ -2260,61 +2265,17 @@
             },
             {
               "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\larAh, you've come back to try"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "some of my rations?"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 411,
               "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 2,
               "parameters": [
-                "Shopkeeper1",
-                9,
-                0,
-                2
+                "\\larFeel free to seat yourself, \\V[202]."
               ]
             },
             {
               "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\larWhy, hello there, \\N[1]! It's always good to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "see you! Would you like to buy some food?"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
               "indent": 1,
-              "parameters": []
+              "parameters": [
+                "I'll be right there to help you!"
+              ]
             },
             {
               "code": 0,
@@ -2331,12 +2292,12 @@
               "indent": 0,
               "parameters": [
                 [
-                  "Sure.",
-                  "Sorry, not hungry."
+                  "Shop",
+                  "Goodbye"
                 ],
                 1,
                 0,
-                2,
+                1,
                 0
               ]
             },
@@ -2345,7 +2306,7 @@
               "indent": 0,
               "parameters": [
                 0,
-                "Sure."
+                "Shop"
               ]
             },
             {
@@ -2362,7 +2323,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\larGreat! Let me grab them now..."
+                "\\larGreat! Here's some \\ii[16]\\c[0]s to go..."
               ]
             },
             {
@@ -2396,7 +2357,7 @@
               "indent": 0,
               "parameters": [
                 1,
-                "Sorry, not hungry."
+                "Goodbye"
               ]
             },
             {
@@ -2413,41 +2374,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\larGreat! Let me-"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Shopkeeper1",
-                1,
-                0,
-                2
+                "\\larCome back to Larry's Marvelous Diner!"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\lar..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Shopkeeper1",
-                9,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\larWell, I appreciate your honesty!"
+                "Because Traveling Can Be Tasty!™"
               ]
             },
             {
@@ -2459,32 +2393,6 @@
               "code": 404,
               "indent": 0,
               "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                9,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\larGood luck on your journey!"
-              ]
-            },
-            {
-              "code": 121,
-              "indent": 0,
-              "parameters": [
-                10,
-                10,
-                0
-              ]
             },
             {
               "code": 0,

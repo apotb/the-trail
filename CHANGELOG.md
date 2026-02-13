@@ -13,6 +13,7 @@ NOTICE: Old saves will not work with this update!
 - Added new content throughout the game, including:
   - Northern/Southern Desert Garrison
   - Several new quests
+  - Giving people fake names
   - A new boss fight...
 - Added random name generation.
 - Added team names.
@@ -110,7 +111,7 @@ NOTICE: Old saves will not work with this update!
 - Reduced drop rate of Ring of the Woods/Forest.
 - Buffed Green/Blue Gel HP/MP recovery from 2 → 5.
 - Buffed Earthen Grassrobes Earth resistance from 10% to 25%.
-- All levels of Well Fed last 33% more steps.
+- All levels of Well Fed last much longer and are not removed when HP drops to 0.
 - Thrown items now count as physical hits.
 - Heated Metal now absorbs Fire attacks.
 - Name input now trims whitespace.
