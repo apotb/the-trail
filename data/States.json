@@ -864,16 +864,6 @@
         "code": 22,
         "dataId": 1,
         "value": -10
-      },
-      {
-        "code": 23,
-        "dataId": 6,
-        "value": 10
-      },
-      {
-        "code": 23,
-        "dataId": 7,
-        "value": 10
       }
     ],
     "iconIndex": 0,
@@ -885,7 +875,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Death Sequence",
-    "note": "<State Motion: Dying>\n\n<HRG Rate: 0%>",
+    "note": "<State Motion: Dying>\n\n<HRG Rate: 0%>\n\n<Custom React Effect>\nvalue = Math.ceil(value * 10);\n</Custom React Effect>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
@@ -7759,10 +7749,10 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "",
-    "note": "",
+    "name": "Skeleton",
+    "note": "<Custom React Effect>\nvalue = Math.ceil(value * 10);\n</Custom React Effect>",
     "overlay": 0,
-    "priority": 50,
+    "priority": 0,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
