@@ -1946,7 +1946,7 @@ Scene_Synthesis.prototype.doBuy = async function(number) {
           actor = $gameParty.members().find(a => a.equips().contains(item));
           equipSlot = $gameParty.members().find(m => m.equips().includes(item))?.equips().findIndex(e => e == item);
           if (!actor) [actor, equipSlot] = [upgradeStats[3], upgradeStats[4]];
-          if (item.etypeId === this._item.etypeId) {
+          if (item.etypeId === this._item.etypeId && actor.canEquip(this._item)) {
             upgradeStats[3] = actor;
             upgradeStats[4] = equipSlot;
             if (item.traits.some(t => t.code === Game_BattlerBase.TRAIT_SLOT_TYPE && t.value === 1)) actor._forceDualWield = true;
