@@ -110,6 +110,7 @@ NOTICE: Old saves will not work with this update!
 - Bubble is now guaranteed to apply Soaked.
 - Fiery Tablet recipe includes Blood Pact and Flesh Doll and inherits the effects of both.
   - Also halved the effects of both accessories... they were hard to get, but kind of OP!
+- Removed Earth element from Tarantula.
 - Made Goblins weaker to magic.
 - Made Bats more resistant to magic.
 - Polar Bears now drop Leather.
