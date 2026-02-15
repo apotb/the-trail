@@ -132,6 +132,8 @@ NOTICE: Old saves will not work with this update!
 - Fixed Decimation applying Fatigue to the user.
 - Fixed a bug where Copper Oreleaf couldn't drop Rock Salt.
 - Fixed equip comparison menu showing wrong colors for incoming physical/magical damage.
+- Fixed final hits on bosses counting for the Damage Dealt stat.
+- Fixed final hits on bosses and the Skeleton enemy cheesing the "It's Super Effective!" achievement.
 - Fixed being able to select the same ingredient multiple times for crafting.
 - Fixed being able to craft items multiple times without resources available.
 - Fixed item upgrades not transferring when crafting.
