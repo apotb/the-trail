@@ -1952,8 +1952,7 @@ Scene_Synthesis.prototype.doBuy = async function(number) {
             if (item.traits.some(t => t.code === Game_BattlerBase.TRAIT_SLOT_TYPE && t.value === 1)) actor._forceDualWield = true;
           }
         }
-        $gameParty.gainIndependentItem(item, -1, true)
-        DataManager.removeIndependentItem(item, true);
+        $gameParty.gainIndependentItem(item, -1, true);
       });
       number *= this._item.craftAmount;
       $gameParty.gainItem(this._item, number);
