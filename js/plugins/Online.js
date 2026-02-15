@@ -288,7 +288,7 @@ Scene_LobbyParties.prototype.create = function() {
 };
 
 Scene_LobbyParties.prototype.createCommandWindow = function() {
-    this._commandWindow = new Window_PartyCommand();
+    this._commandWindow = new Window_OnlinePartyCommand();
     this._commandWindow.setHandler('browse', this.browseCommand.bind(this));
     this._commandWindow.setHandler('create', this.createCommand.bind(this));
     this._commandWindow.setHandler('leave', this.leaveCommand.bind(this));
@@ -495,38 +495,38 @@ Scene_LobbyParties.prototype.loadLobbyData = async function(lobbyId) {
 };
 
 //=============================================================================
-// Window_PartyCommand
+// Window_OnlinePartyCommand
 //=============================================================================
 
-function Window_PartyCommand() {
+function Window_OnlinePartyCommand() {
     this.initialize.apply(this, arguments);
 }
 
-Window_PartyCommand.prototype = Object.create(Window_Command.prototype);
-Window_PartyCommand.prototype.constructor = Window_PartyCommand;
+Window_OnlinePartyCommand.prototype = Object.create(Window_Command.prototype);
+Window_OnlinePartyCommand.prototype.constructor = Window_OnlinePartyCommand;
 
-Window_PartyCommand.prototype.initialize = function() {
+Window_OnlinePartyCommand.prototype.initialize = function() {
     Window_Command.prototype.initialize.call(this, 0, 0);
     this._partyListWindow = null;
 };
 
-Window_PartyCommand.prototype.windowWidth = function() {
+Window_OnlinePartyCommand.prototype.windowWidth = function() {
     return Graphics.boxWidth;
 };
 
-Window_PartyCommand.prototype.maxCols = function() {
+Window_OnlinePartyCommand.prototype.maxCols = function() {
     return 3;
 };
 
-Window_PartyCommand.prototype.itemTextAlign = function() {
+Window_OnlinePartyCommand.prototype.itemTextAlign = function() {
     return 'center';
 };
 
-Window_PartyCommand.prototype.setPartyListWindow = function(window) {
+Window_OnlinePartyCommand.prototype.setPartyListWindow = function(window) {
     this._partyListWindow = window;
 };
 
-Window_PartyCommand.prototype.makeCommandList = function() {
+Window_OnlinePartyCommand.prototype.makeCommandList = function() {
     var hasParties = this._partyListWindow && this._partyListWindow.maxItems() > 0;
     var inParty = $gameTemp._inParty || false;
     var isReady = $gameTemp._isReady || false;
