@@ -2,7 +2,7 @@
     var _Game_Actor_changeEquip = Game_Actor.prototype.changeEquip;
     Game_Actor.prototype.changeEquip = function(slotId, item) {
         _Game_Actor_changeEquip.call(this, slotId, item);
-        if (item.meta['Vanity']) this.updateVanity();
+        if (item?.meta['Vanity']) this.updateVanity();
     };
 
     Game_Actor.prototype.getVanity = function () {
