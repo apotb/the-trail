@@ -556,6 +556,7 @@
 
 function createCharacterReflection(character) {
     const sprite = new Sprite_Character(character); // Create a new sprite for the character's reflection
+    sprite._isReflectionSprite = true; // Flag so we can skip balloon icons on reflections
     sprite.opacity = reflectOpacity; // Set the opacity of the reflection
     sprite.scale.y = -reflectScale * reflectVerticalScale; // Invert the Y scale for the reflection
     sprite.scale.x = reflectHorizontalScale; // Set the horizontal scale of the reflection
@@ -584,6 +585,19 @@ function createCharacterReflection(character) {
 
     return sprite;
 }
+
+// Prevent reflection sprites from hijacking balloon icons.
+// MV calls update() on every child sprite; without this guard a reflection's
+// Sprite_Character will consume the balloon request and clear it before the
+// "real" character sprite sees it, so the balloon ends up attached to the
+// reflection layer (rendered below the map) or never appears. Skipping the
+// balloon logic for reflections leaves the request untouched for the main
+// sprite.
+const _SWR_SWR_updateBalloon = Sprite_Character.prototype.updateBalloon;
+Sprite_Character.prototype.updateBalloon = function() {
+    if (this._isReflectionSprite) return; // Let the primary sprite handle it
+    _SWR_SWR_updateBalloon.call(this);
+};
 
 
 //==============================================================================
