@@ -17922,6 +17922,14 @@
           },
           "list": [
             {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "C",
+                1
+              ]
+            },
+            {
               "code": 301,
               "indent": 0,
               "parameters": [
@@ -17942,14 +17950,6 @@
               "parameters": [
                 "A",
                 0
-              ]
-            },
-            {
-              "code": 123,
-              "indent": 1,
-              "parameters": [
-                "C",
-                1
               ]
             },
             {
@@ -18079,8 +18079,37 @@
               "code": 123,
               "indent": 0,
               "parameters": [
+                "C",
+                0
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
                 "D",
                 1
+              ]
+            },
+            {
+              "code": 213,
+              "indent": 0,
+              "parameters": [
+                0,
+                1,
+                false
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "AlarmBear",
+                  "volume": 90,
+                  "pitch": 80,
+                  "pan": 0
+                }
               ]
             },
             {
@@ -18093,17 +18122,7 @@
           "moveRoute": {
             "list": [
               {
-                "code": 45,
-                "parameters": [
-                  "this._chaseRange = 12"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
-                ],
+                "code": 25,
                 "indent": null
               },
               {
