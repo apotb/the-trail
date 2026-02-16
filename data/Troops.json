@@ -13760,5 +13760,43 @@
         "span": 0
       }
     ]
+  },
+  {
+    "id": 120,
+    "members": [
+      {
+        "enemyId": 93,
+        "x": 258,
+        "y": 301,
+        "hidden": false
+      }
+    ],
+    "name": "Brown Bear",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
   }
 ]

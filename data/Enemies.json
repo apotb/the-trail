@@ -323,7 +323,7 @@
     "battlerHue": 0,
     "battlerName": "Giant Rat",
     "dropItems": [],
-    "exp": 20,
+    "exp": 30,
     "traits": [
       {
         "code": 31,
@@ -351,12 +351,12 @@
         "value": 0.04
       }
     ],
-    "gold": 12,
+    "gold": 0,
     "name": "Giant Rat",
     "note": "<Armor Weakness: Slashing>\n<Sideview Battler: GiantRat>\n<Sideview Shadow Shift: -4>\n<Attack Animation: 16>\n\n<Enemy Drops>\nRat Fur: 75%\nRat Fur: 75%\nFulfilling Ration: 20%\nFulfilling Ration: 20%\nTough Pelt: 5%\nRat Claw: 5%\nRing of the Woods: 2.5%\nCopper Wristbraces: 5%\n</Enemy Drops>",
     "params": [
       100,
-      12,
+      0,
       10,
       8,
       1,
@@ -7111,6 +7111,74 @@
       50,
       100,
       60
+    ]
+  },
+  {
+    "id": 93,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0.5,
+        "conditionType": 2,
+        "rating": 4,
+        "skillId": 41
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Polar Bear",
+    "dropItems": [],
+    "exp": 30,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 1
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.95
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.03
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.05
+      },
+      {
+        "code": 61,
+        "dataId": 0,
+        "value": 0.5
+      }
+    ],
+    "gold": 0,
+    "name": "Brown Bear",
+    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Bear_1>\n<Attack Animation: 16>\n\n<Enemy Drops>\nRaw Bear Meat: 75%\nRaw Bear Meat: 75%\nLeather: 75%\nLeather: 75%\nHoney: 25%\n</Enemy Drops>",
+    "params": [
+      250,
+      0,
+      11,
+      9,
+      1,
+      1,
+      50,
+      50
     ]
   }
 ]
