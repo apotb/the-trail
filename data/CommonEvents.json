@@ -6659,6 +6659,59 @@
         ]
       },
       {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "$gameMap.parallaxName() === ''"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 2,
+        "parameters": [
+          "$gameMap.changeParallax("
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  '!SkyNight',"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  true, true,"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  0.5, 0.25"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          ");"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
         "code": 235,
         "indent": 1,
         "parameters": [
@@ -6681,6 +6734,59 @@
         "parameters": [
           "Tint set #ffffff"
         ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "$gameMap.parallaxName() === ''"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 2,
+        "parameters": [
+          "$gameMap.changeParallax("
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  '!SkyDay',"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  true, true,"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  0.5, 0.25"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          ");"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
       },
       {
         "code": 0,
@@ -12141,6 +12247,122 @@
         ]
       },
       {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameMap.parallaxName() === '!SkyDay'"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "setTimeout(function() {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  $gameMap.changeParallax("
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "    '!SkyDusk',"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "    true, true,"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "   0.5, 0.25"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  );"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "}, 5 * 1000);"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "setTimeout(function() {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  $gameMap.changeParallax("
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "    '!SkyNight',"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "    true, true,"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "    0.5, 0.25"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  );"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "}, 30 * 1000);"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
@@ -12166,6 +12388,122 @@
         "parameters": [
           "Tint fade #ffffff 35"
         ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameMap.parallaxName() === '!SkyNight'"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "setTimeout(function() {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  $gameMap.changeParallax("
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "    '!SkyDusk',"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "    true, true,"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "   0.5, 0.25"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  );"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "}, 5 * 1000);"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "setTimeout(function() {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  $gameMap.changeParallax("
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "    '!SkyDay',"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "    true, true,"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "    0.5, 0.25"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  );"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "}, 30 * 1000);"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
       },
       {
         "code": 0,
@@ -17323,6 +17661,13 @@
   {
     "id": 77,
     "list": [
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          37
+        ]
+      },
       {
         "code": 117,
         "indent": 0,

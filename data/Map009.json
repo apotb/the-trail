@@ -872,16 +872,16 @@
     2928,
     2912,
     2936,
-    2859,
-    2861,
     1644,
+    1641,
+    1641,
     1641,
     2080,
     1641,
     1641,
     1643,
-    2859,
-    2853,
+    2850,
+    2852,
     2944,
     4499,
     4498,
@@ -915,16 +915,16 @@
     2928,
     2912,
     2936,
-    1644,
-    1641,
-    1642,
-    1657,
+    1634,
+    1649,
+    1649,
+    1649,
     2483,
-    1657,
-    1657,
-    1640,
-    1643,
-    2848,
+    1649,
+    1649,
+    1632,
+    2856,
+    2841,
     2944,
     4505,
     4504,
@@ -960,13 +960,13 @@
     2950,
     1642,
     1657,
-    1658,
-    2862,
-    2080,
-    2859,
-    2853,
-    1656,
-    1632,
+    1657,
+    1657,
+    2483,
+    1657,
+    1657,
+    1640,
+    1643,
     2848,
     2944,
     4747,
@@ -1007,8 +1007,8 @@
     2082,
     2051,
     2084,
-    2857,
-    2853,
+    2862,
+    1656,
     1632,
     2860,
     2953,
@@ -1051,7 +1051,7 @@
     2048,
     2050,
     2084,
-    2848,
+    2858,
     1640,
     1643,
     2859,
@@ -1087,8 +1087,8 @@
     2928,
     2912,
     2936,
-    2832,
-    2840,
+    2856,
+    2854,
     2088,
     2076,
     2056,
@@ -1130,10 +1130,10 @@
     2928,
     2912,
     2936,
-    2832,
-    2818,
-    2836,
-    2852,
+    2907,
+    2901,
+    2859,
+    2861,
     2088,
     2086,
     2850,
@@ -1173,11 +1173,11 @@
     2928,
     2912,
     2936,
-    2834,
-    2844,
-    2844,
-    2846,
-    2839,
+    2858,
+    2905,
+    2897,
+    2909,
+    2851,
     2849,
     2845,
     2844,
@@ -4744,7 +4744,7 @@
     0,
     0,
     0,
-    88,
+    0,
     0,
     0,
     0,
@@ -4831,9 +4831,9 @@
     0,
     0,
     0,
-    186,
     0,
-    186,
+    0,
+    0,
     0,
     0,
     0,
@@ -4878,7 +4878,7 @@
     0,
     0,
     186,
-    90,
+    0,
     0,
     0,
     0,
@@ -4957,7 +4957,7 @@
     0,
     0,
     0,
-    94,
+    0,
     186,
     0,
     0,
@@ -5000,7 +5000,7 @@
     0,
     0,
     0,
-    94,
+    0,
     0,
     186,
     186,
@@ -5044,7 +5044,7 @@
     0,
     0,
     94,
-    91,
+    0,
     0,
     0,
     186,
@@ -6679,7 +6679,7 @@
     0,
     219,
     0,
-    0,
+    88,
     0,
     0,
     0,
@@ -6721,11 +6721,11 @@
     0,
     0,
     227,
+    192,
     0,
     0,
     0,
-    0,
-    0,
+    195,
     0,
     0,
     0,
@@ -6764,8 +6764,8 @@
     0,
     0,
     0,
-    0,
-    0,
+    200,
+    203,
     0,
     0,
     0,
@@ -6892,7 +6892,7 @@
     0,
     0,
     0,
-    0,
+    101,
     0,
     0,
     0,
@@ -6935,7 +6935,7 @@
     0,
     0,
     0,
-    0,
+    93,
     0,
     0,
     0,
@@ -8701,35 +8701,6 @@
     0,
     0,
     0,
-    5,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    5,
-    0,
-    0,
-    5,
-    0,
-    0,
-    0,
-    0,
-    5,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    5,
-    0,
     0,
     0,
     0,
@@ -8743,6 +8714,35 @@
     0,
     0,
     5,
+    0,
+    0,
+    5,
+    0,
+    0,
+    0,
+    0,
+    5,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    5,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0,
@@ -11704,7 +11704,7 @@
         }
       ],
       "x": 27,
-      "y": 21
+      "y": 22
     },
     {
       "id": 2,
@@ -15156,7 +15156,7 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Door1",
+            "characterName": "!Door4",
             "direction": 2,
             "pattern": 0,
             "characterIndex": 4
@@ -15234,7 +15234,7 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Door1",
+            "characterName": "!Door4",
             "direction": 2,
             "pattern": 0,
             "characterIndex": 4
@@ -23502,7 +23502,27 @@
                 "indent": null
               },
               {
-                "code": 1,
+                "code": 2,
+                "indent": null
+              },
+              {
+                "code": 2,
+                "indent": null
+              },
+              {
+                "code": 2,
+                "indent": null
+              },
+              {
+                "code": 4,
+                "indent": null
+              },
+              {
+                "code": 2,
+                "indent": null
+              },
+              {
+                "code": 2,
                 "indent": null
               },
               {
@@ -23519,6 +23539,34 @@
               },
               {
                 "code": 1,
+                "indent": null
+              },
+              {
+                "code": 1,
+                "indent": null
+              },
+              {
+                "code": 1,
+                "indent": null
+              },
+              {
+                "code": 3,
+                "indent": null
+              },
+              {
+                "code": 3,
+                "indent": null
+              },
+              {
+                "code": 3,
+                "indent": null
+              },
+              {
+                "code": 3,
+                "indent": null
+              },
+              {
+                "code": 3,
                 "indent": null
               },
               {
@@ -25871,11 +25919,11 @@
           },
           "directionFix": false,
           "image": {
-            "tileId": 211,
-            "characterName": "",
+            "tileId": 0,
+            "characterName": "!$Windows",
             "characterIndex": 0,
-            "direction": 2,
-            "pattern": 0
+            "direction": 4,
+            "pattern": 1
           },
           "list": [
             {
@@ -25931,11 +25979,11 @@
           },
           "directionFix": false,
           "image": {
-            "tileId": 211,
-            "characterName": "",
+            "tileId": 0,
+            "characterName": "!$Windows",
             "characterIndex": 0,
-            "direction": 2,
-            "pattern": 0
+            "direction": 4,
+            "pattern": 1
           },
           "list": [
             {
@@ -25991,11 +26039,11 @@
           },
           "directionFix": false,
           "image": {
-            "tileId": 211,
-            "characterName": "",
+            "tileId": 0,
+            "characterName": "!$Windows",
             "characterIndex": 0,
-            "direction": 2,
-            "pattern": 0
+            "direction": 4,
+            "pattern": 1
           },
           "list": [
             {
@@ -26051,11 +26099,11 @@
           },
           "directionFix": false,
           "image": {
-            "tileId": 211,
-            "characterName": "",
+            "tileId": 0,
+            "characterName": "!$Windows",
             "characterIndex": 0,
-            "direction": 2,
-            "pattern": 0
+            "direction": 4,
+            "pattern": 1
           },
           "list": [
             {
@@ -26111,11 +26159,11 @@
           },
           "directionFix": false,
           "image": {
-            "tileId": 211,
-            "characterName": "",
+            "tileId": 0,
+            "characterName": "!$Windows",
             "characterIndex": 0,
-            "direction": 2,
-            "pattern": 0
+            "direction": 4,
+            "pattern": 1
           },
           "list": [
             {
@@ -26171,11 +26219,11 @@
           },
           "directionFix": false,
           "image": {
-            "tileId": 211,
-            "characterName": "",
+            "tileId": 0,
+            "characterName": "!$Windows",
             "characterIndex": 0,
-            "direction": 2,
-            "pattern": 0
+            "direction": 4,
+            "pattern": 1
           },
           "list": [
             {
@@ -26231,11 +26279,11 @@
           },
           "directionFix": false,
           "image": {
-            "tileId": 211,
-            "characterName": "",
+            "tileId": 0,
+            "characterName": "!$Windows",
             "characterIndex": 0,
-            "direction": 2,
-            "pattern": 0
+            "direction": 4,
+            "pattern": 1
           },
           "list": [
             {
@@ -26291,11 +26339,11 @@
           },
           "directionFix": false,
           "image": {
-            "tileId": 211,
-            "characterName": "",
+            "tileId": 0,
+            "characterName": "!$Windows",
             "characterIndex": 0,
-            "direction": 2,
-            "pattern": 0
+            "direction": 4,
+            "pattern": 1
           },
           "list": [
             {
