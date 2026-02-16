@@ -129,7 +129,12 @@ Game_Temp.prototype.recipeTemplate = function(name) {
             break;
         case 'FIRE':
             arr = [
-                [135, 177, 270, 271, 272, 70, 277, 278, 279, 98, /* shaded brook + bladesville fish */ 108, 134, 131, 136, 280, 281, 282, 259, 221, 223],
+                [
+                    135, 177, 270, 271, 272, // Adon
+                    70, 277, 278, 279, /* shaded brook fish */ // Easin Plains
+                    108, 98, /* oasis fish */ // Blazing Sands
+                    134, 131, 136, 280, 281, 282, 259, 221, 223 // Telluria Field
+                ],
                 [],
                 []
             ]
