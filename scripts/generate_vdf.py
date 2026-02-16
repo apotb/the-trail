@@ -134,17 +134,22 @@ if __name__ == "__main__":
     app_path = write_files(env)
     cmd = [
         "steamcmd",
-        "+force_install_dir", os.path.abspath(os.path.join(OUT_DIR, ".steamcmd")),
         "+login", env.get("STEAM_USERNAME"),
         "+run_app_build", app_path,
         "+quit"
     ]
 
     if "-u" in sys.argv:
-        subprocess.run(cmd, cwd=OUT_DIR)
+        steamcmd_dir = os.path.join(OUT_DIR, ".steam")
+        os.makedirs(steamcmd_dir, exist_ok=True)
+
+        child_env = os.environ.copy()
+        child_env["HOME"] = steamcmd_dir
+
+        subprocess.run(cmd, cwd=OUT_DIR, env=child_env)
     else:
         print("\n➡ Run this command to upload build:\n")
-        print(" ".join(cmd))
-    
+        print(f'HOME="{os.path.join(OUT_DIR, ".steam")}" ' + " ".join(cmd))
+
     if "-s" in sys.argv:
         webbrowser.open("https://partner.steamgames.com/apps/builds/" + str(APP_ID))
