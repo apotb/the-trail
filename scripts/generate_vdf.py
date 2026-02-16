@@ -134,6 +134,7 @@ if __name__ == "__main__":
     app_path = write_files(env)
     cmd = [
         "steamcmd",
+        "+force_install_dir", os.path.abspath(os.path.join(OUT_DIR, ".steamcmd")),
         "+login", env.get("STEAM_USERNAME"),
         "+run_app_build", app_path,
         "+quit"
