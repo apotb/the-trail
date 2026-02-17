@@ -6229,6 +6229,97 @@
         "code": 108,
         "indent": 0,
         "parameters": [
+          "# If it's 20:00 - 20:59, make it dusk"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          38,
+          0,
+          20,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          0,
+          126,
+          0
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          126,
+          126,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "!$gameMap.indoors()"
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 2,
+        "parameters": [
+          57
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
           "# If it's 21:00 - 23:59, make it night, as long as it's not already night"
         ]
       },
@@ -6284,6 +6375,15 @@
         ]
       },
       {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          126,
+          126,
+          1
+        ]
+      },
+      {
         "code": 111,
         "indent": 1,
         "parameters": [
@@ -6295,7 +6395,7 @@
         "code": 117,
         "indent": 2,
         "parameters": [
-          57
+          88
         ]
       },
       {
@@ -6380,7 +6480,7 @@
         "code": 108,
         "indent": 0,
         "parameters": [
-          "# If it's neither of the above time, make it day, as long as it's still night"
+          "# If it's neither of the above time, make it dawn, as long as it's still night"
         ]
       },
       {
@@ -6471,11 +6571,111 @@
         ]
       },
       {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          127,
+          127,
+          0
+        ]
+      },
+      {
         "code": 355,
         "indent": 1,
         "parameters": [
           "$gameSystem.nextMoonPhase();"
         ]
+      },
+      {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "If it's later than 6:00, transition from dawn to day"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          38,
+          0,
+          6,
+          1
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          0,
+          127,
+          1
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          127,
+          127,
+          1
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "!$gameMap.indoors()"
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 2,
+        "parameters": [
+          89
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
       },
       {
         "code": 115,
@@ -6643,6 +6843,13 @@
         ]
       },
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Night"
+        ]
+      },
+      {
         "code": 111,
         "indent": 0,
         "parameters": [
@@ -6719,20 +6926,41 @@
         ]
       },
       {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 1,
         "parameters": []
       },
       {
-        "code": 411,
+        "code": 412,
         "indent": 0,
         "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Dusk"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          0,
+          126,
+          0
+        ]
       },
       {
         "code": 356,
         "indent": 1,
         "parameters": [
-          "Tint set #ffffff"
+          "Tint set #fb9062"
         ]
       },
       {
@@ -6754,7 +6982,7 @@
         "code": 655,
         "indent": 2,
         "parameters": [
-          "  '!SkyDay',"
+          "  '!SkySun',"
         ]
       },
       {
@@ -6787,6 +7015,169 @@
         "code": 412,
         "indent": 1,
         "parameters": []
+      },
+      {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Dawn"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          0,
+          127,
+          0
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "Tint set #fb9062"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "$gameMap.parallaxName() === ''"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 2,
+        "parameters": [
+          "$gameMap.changeParallax("
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  '!SkySun',"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  true, true,"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  0.5, 0.25"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          ");"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Day"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "Tint set #ffffff"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameMap.parallaxName() === ''"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameMap.changeParallax("
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  '!SkyDay',"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  true, true,"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  0.5, 0.25"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          ");"
+        ]
       },
       {
         "code": 0,
@@ -12236,14 +12627,7 @@
         "code": 356,
         "indent": 0,
         "parameters": [
-          "Tint fade #fb9062 20"
-        ]
-      },
-      {
-        "code": 356,
-        "indent": 0,
-        "parameters": [
-          "Tint fade #53454f 35"
+          "Tint fade #fb9062 35"
         ]
       },
       {
@@ -12272,7 +12656,7 @@
         "code": 655,
         "indent": 1,
         "parameters": [
-          "    '!SkyDusk',"
+          "    '!SkySun',"
         ]
       },
       {
@@ -12300,56 +12684,7 @@
         "code": 655,
         "indent": 1,
         "parameters": [
-          "}, 5 * 1000);"
-        ]
-      },
-      {
-        "code": 355,
-        "indent": 1,
-        "parameters": [
-          "setTimeout(function() {"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "  $gameMap.changeParallax("
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "    '!SkyNight',"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "    true, true,"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "    0.5, 0.25"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "  );"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "}, 30 * 1000);"
+          "}, 10 * 1000);"
         ]
       },
       {
@@ -12368,7 +12703,7 @@
         "parameters": []
       }
     ],
-    "name": "TIME - Tint System Day to Night",
+    "name": "TIME - Day to Dusk",
     "switchId": 1,
     "trigger": 0
   },
@@ -12379,14 +12714,7 @@
         "code": 356,
         "indent": 0,
         "parameters": [
-          "Tint fade #fb9062 20"
-        ]
-      },
-      {
-        "code": 356,
-        "indent": 0,
-        "parameters": [
-          "Tint fade #ffffff 35"
+          "Tint fade #fb9062 35"
         ]
       },
       {
@@ -12415,7 +12743,7 @@
         "code": 655,
         "indent": 1,
         "parameters": [
-          "    '!SkyDusk',"
+          "    '!SkySun',"
         ]
       },
       {
@@ -12443,56 +12771,7 @@
         "code": 655,
         "indent": 1,
         "parameters": [
-          "}, 5 * 1000);"
-        ]
-      },
-      {
-        "code": 355,
-        "indent": 1,
-        "parameters": [
-          "setTimeout(function() {"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "  $gameMap.changeParallax("
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "    '!SkyDay',"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "    true, true,"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "    0.5, 0.25"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "  );"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "}, 30 * 1000);"
+          "}, 20 * 1000);"
         ]
       },
       {
@@ -12511,7 +12790,7 @@
         "parameters": []
       }
     ],
-    "name": "TIME - Tint System Night to Day",
+    "name": "TIME - Night to Dawn",
     "switchId": 1,
     "trigger": 0
   },
@@ -18504,6 +18783,180 @@
       }
     ],
     "name": "Battle Cry",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 88,
+    "list": [
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "Tint fade #53454f 35"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameMap.parallaxName() === '!SkySun'"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "setTimeout(function() {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  $gameMap.changeParallax("
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "    '!SkyNight',"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "    true, true,"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "   0.5, 0.25"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  );"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "}, 20 * 1000);"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "TIME - Dusk to Night",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 89,
+    "list": [
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "Tint fade #ffffff 35"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameMap.parallaxName() === '!SkySun'"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "setTimeout(function() {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  $gameMap.changeParallax("
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "    '!SkyDay',"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "    true, true,"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "   0.5, 0.25"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  );"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "}, 10 * 1000);"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "TIME - Dawn to Day",
     "switchId": 1,
     "trigger": 0
   }

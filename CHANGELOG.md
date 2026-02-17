@@ -26,6 +26,7 @@ NOTICE: Old saves will not work with this update!
   - Duncan
 - Your days on The Trail will now be tracked.
 - Added reflections and scrolling clouds on water.
+- Added sunsets and sunrises!
 - Added TROPHY rarity.
 - Added a short sound effect when completing a quest objective.
 - Added new rogue passive skill "Resourceful" at level 15.
