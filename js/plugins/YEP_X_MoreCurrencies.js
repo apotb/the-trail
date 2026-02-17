@@ -974,10 +974,10 @@ Window_ShopSell.prototype.updateHelp = function() {
 
 Window_ShopNumber.prototype.isDrawGoldCurrency = function() {
     var item = this._item;
-    if (item.variableBuyPrices && item.variableBuyPrices.length > 0) {
+    if (item?.variableBuyPrices && item.variableBuyPrices.length > 0) {
       return this._item.price > 0;
     }
-    if (item.itemBuyPrices && item.itemBuyPrices.length > 0) {
+    if (item?.itemBuyPrices && item.itemBuyPrices.length > 0) {
       return this._item.price > 0;
     }
     return true;
@@ -1026,7 +1026,7 @@ Window_ShopNumber.prototype.getVariableCurrency = function() {
     if (this.isSelling()) {
       var currencies = this._item.variableSellPrices;
     } else {
-      var currencies = this._item.variableBuyPrices;
+      var currencies = this._item?.variableBuyPrices ?? [];
     }
     return currencies;
 };
@@ -1074,7 +1074,7 @@ Window_ShopNumber.prototype.getItemCostCurrency = function() {
     if (this.isSelling()) {
       var currencies = this._item.itemSellPrices;
     } else {
-      var currencies = this._item.itemBuyPrices;
+      var currencies = this._item?.itemBuyPrices ?? [];
     }
     return currencies;
 };
@@ -1122,7 +1122,7 @@ Window_ShopNumber.prototype.getWeaponCostCurrency = function() {
     if (this.isSelling()) {
       var currencies = this._item.weaponSellPrices;
     } else {
-      var currencies = this._item.weaponBuyPrices;
+      var currencies = this._item?.weaponBuyPrices ?? [];
     }
     return currencies;
 };
@@ -1170,7 +1170,7 @@ Window_ShopNumber.prototype.getArmorCostCurrency = function() {
     if (this.isSelling()) {
       var currencies = this._item.armorSellPrices;
     } else {
-      var currencies = this._item.armorBuyPrices;
+      var currencies = this._item?.armorBuyPrices ?? [];
     }
     return currencies;
 };
