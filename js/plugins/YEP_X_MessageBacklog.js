@@ -533,6 +533,12 @@ Window_Message.prototype.updateBacklogInput = function() {
 };
 
 Window_Message.prototype.openBacklogWindow = function() {
+  this._backlogWindow._restoreNameWindow =
+    !!(Yanfly.nameWindow && Yanfly.nameWindow.visible);
+  if (Yanfly.nameWindow) {
+    Yanfly.nameWindow.hide();
+    Yanfly.nameWindow.deactivate();
+  }
   this._backlogWindow.fullActivate();
 };
 
@@ -729,6 +735,7 @@ Window_MessageBacklog.prototype.constructor = Window_MessageBacklog;
 Window_MessageBacklog.prototype.initialize = function() {
   this._touchHold = 0;
   this._ready = false;
+  this._restoreNameWindow = false;
   Window_Command.prototype.initialize.call(this, 0, 0);
   this.createScrollSprite(this);
   this.setBackgroundType(Yanfly.Param.MsgBacklogBgType);
@@ -877,6 +884,10 @@ Window_MessageBacklog.prototype.fullDeactivate = function() {
     this._returnWindow.activate();
     this._returnWindow = undefined;
   }
+  if (this._restoreNameWindow && Yanfly.nameWindow) {
+    Yanfly.nameWindow.show();
+  }
+  this._restoreNameWindow = false;
   if (this._backgroundPicture) this.setBgPictureOpacity(0)
 };
 
