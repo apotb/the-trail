@@ -8605,5 +8605,38 @@
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
+  },
+  {
+    "id": 290,
+    "animationId": 41,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Ouch! Tangy and flavorful, but picking out the spines takes way too long\nto eat this in battle. Somewhat valuable due to taking a while to grow back.",
+    "effects": [
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0,
+        "value2": 25
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 334,
+    "itypeId": 1,
+    "name": "Cactus Flesh",
+    "note": "<Menu Category: Foodstuffs, Ingredients>",
+    "occasion": 2,
+    "price": 12,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
   }
 ]
