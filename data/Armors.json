@@ -1800,7 +1800,7 @@
       10,
       0
     ],
-    "price": 100
+    "price": 120
   },
   {
     "id": 75,
@@ -6435,6 +6435,70 @@
       5,
       0,
       0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 120
+  },
+  {
+    "id": 245,
+    "atypeId": 1,
+    "description": "A flake of snake skin with the magic of the Blazing Sands imbued within.\nGrants a 50% chance to resist \\it[39], \\it[7], and \\it[162].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 13,
+        "dataId": 39,
+        "value": 0.5
+      },
+      {
+        "code": 13,
+        "dataId": 7,
+        "value": 0.5
+      },
+      {
+        "code": 13,
+        "dataId": 162,
+        "value": 0.5
+      }
+    ],
+    "iconIndex": 850,
+    "name": "Enchanted Snake Skin",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>",
+    "params": [
+      3,
+      2,
+      0,
+      0,
+      0,
+      1,
+      4,
+      0
+    ],
+    "price": 120
+  },
+  {
+    "id": 246,
+    "atypeId": 1,
+    "description": "A sharp fang recovered from a rattlesnake.\nCan't poison anyone without poison glands.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.03
+      }
+    ],
+    "iconIndex": 325,
+    "name": "Rattlesnake Fang",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>",
+    "params": [
+      0,
+      0,
+      5,
       0,
       0,
       0,

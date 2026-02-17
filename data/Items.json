@@ -8638,5 +8638,44 @@
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
+  },
+  {
+    "id": 291,
+    "animationId": 41,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "A small cut of meat from a rattlesnake.\nWill definitely poison you if eaten raw.",
+    "effects": [
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0,
+        "value2": 5
+      },
+      {
+        "code": 21,
+        "dataId": 39,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 291,
+    "itypeId": 1,
+    "name": "Raw Snake Meat",
+    "note": "<Menu Category: Foodstuffs, Ingredients>\n\n<Custom Show Eval>\nvisible = !$gameTemp.bagOrganized();\n</Custom Show Eval>",
+    "occasion": 0,
+    "price": 12,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
   }
 ]

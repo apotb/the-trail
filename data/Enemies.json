@@ -1715,7 +1715,7 @@
       1,
       40,
       125,
-      7
+      25
     ]
   },
   {
@@ -7179,6 +7179,69 @@
       1,
       50,
       50
+    ]
+  },
+  {
+    "id": 94,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0.5,
+        "conditionType": 2,
+        "rating": 5,
+        "skillId": 115
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Rattlesnake",
+    "dropItems": [],
+    "exp": 35,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 17,
+        "value": 1
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.98
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.11
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.08
+      }
+    ],
+    "gold": 25,
+    "name": "Rattlesnake",
+    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Snake1_5>\n<Attack Animation: 211>\n\n<Enemy Drops>\nCloth Mask: 5%\nRaw Snake Meat: 75%\nRaw Snake Meat: 75%\nVial of Poison: 10%\nEnchanted Snake Skin: 5%\nRattlesnake Fang: 5%\nShard of Glass: 1%\n</Enemy Drops>",
+    "params": [
+      300,
+      0,
+      16,
+      16,
+      1,
+      40,
+      100,
+      15
     ]
   }
 ]
