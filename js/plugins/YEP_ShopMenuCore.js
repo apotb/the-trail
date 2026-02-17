@@ -949,9 +949,9 @@ Scene_Shop.prototype.create = function() {
     this.createBuyWindow();
     this.createSellWindow();
     this.createGoldWindow();
-    this.createOwnerSprite();
     this.createStatusWindow();
     this.createActorWindow();
+    this.createOwnerSprite();
 };
 
 Scene_Shop.prototype.createCommandWindow = function() {
@@ -1169,8 +1169,8 @@ Scene_Shop.prototype.createOwnerSprite = function() {
     this._ownerSprite = new Sprite(bitmap);
     this._ownerSprite.anchor.x = 0.5;
     this._ownerSprite.anchor.y = 1;
-    this._ownerSprite.x = 1024;
-    this._ownerSprite.y = 288;
+    this._ownerSprite.x = 1120;
+    this._ownerSprite.y = 360;
     this.addChild(this._ownerSprite);
 };
 
