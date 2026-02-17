@@ -25,3 +25,15 @@ all = function() {
 scene = function() {
     return SceneManager._scene;
 };
+
+item = function(name, amount=1) {
+    $gameParty.gainItem($dataItems[Yanfly.ItemIdRef[name]], amount);
+};
+
+weapon = function(name, amount=1) {
+    $gameParty.gainItem($dataWeapons[Yanfly.WeaponIdRef[name]], amount);
+};
+
+armor = function(name, amount=1) {
+    $gameParty.gainItem($dataArmors[Yanfly.ArmorIdRef[name]], amount);
+};
