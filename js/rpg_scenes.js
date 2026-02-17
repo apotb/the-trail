@@ -2009,6 +2009,7 @@ Scene_Shop.prototype.activateSellWindow = function() {
 };
 
 Scene_Shop.prototype.commandBuy = function() {
+    this._infoWindow.show();
     this._dummyWindow.hide();
     this.activateBuyWindow();
 };
@@ -2032,6 +2033,7 @@ Scene_Shop.prototype.onBuyOk = function() {
 };
 
 Scene_Shop.prototype.onBuyCancel = function() {
+    this._infoWindow.hide();
     this._commandWindow.activate();
     this._dummyWindow.show();
     this._buyWindow.hide();
@@ -2041,6 +2043,7 @@ Scene_Shop.prototype.onBuyCancel = function() {
 };
 
 Scene_Shop.prototype.onCategoryOk = function() {
+    this._infoWindow.show();
     this.activateSellWindow();
     this._sellWindow.select(0);
 };
@@ -2065,6 +2068,7 @@ Scene_Shop.prototype.onSellOk = function() {
 };
 
 Scene_Shop.prototype.onSellCancel = function() {
+    this._infoWindow.hide();
     this._sellWindow.deselect();
     this._categoryWindow.activate();
     this._statusWindow.setItem(null);

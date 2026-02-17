@@ -319,7 +319,7 @@ Game_Temp.prototype.clearShopGoods = function() {
 //=============================================================================
 
 Window_ShopCommand.prototype.windowWidth = function() {
-    return 240;
+    return 640;
 };
 
 Window_ShopCommand.prototype.maxCols = function() {
@@ -942,11 +942,11 @@ Scene_Shop.prototype.create = function() {
     this.failSafeGoods();
     this.createHelpWindow();
     this.createCommandWindow();
-    this.createInfoWindow();
     this.createDummyWindow();
     this.createNumberWindow();
-    this.createBuyWindow();
     this.createCategoryWindow();
+    this.createInfoWindow();
+    this.createBuyWindow();
     this.createSellWindow();
     this.createGoldWindow();
     this.createStatusWindow();
@@ -973,6 +973,7 @@ Scene_Shop.prototype.createInfoWindow = function() {
     var ww = Graphics.boxWidth - wx;
     var wh = this._commandWindow.height;
     this._infoWindow = new Window_ShopInfo(wx, wy, ww, wh);
+    this._infoWindow.hide();
     this.addWindow(this._infoWindow);
 };
 
