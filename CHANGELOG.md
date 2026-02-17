@@ -107,7 +107,7 @@ NOTICE: Old saves will not work with this update!
     - Upgraders: sorted by hidden "weight" value descending (better ones are first)
     - Salvaging: prioritizes salvage kits
   - Reordered smithery crafting menus.
-  - Shop sell menu shows if an item is a material.
+  - Shop menu shows shopkeeper busts, and while selling items indicates if they are materials.
   - Item recovery previews show multipliers from PHA and other effects like Duncan.
   - Pressing UP when buying/selling/crafting items while the current quantity is 1 will go to 10 instead of 11.
 - Bubble is now guaranteed to apply Soaked.

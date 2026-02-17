@@ -949,6 +949,7 @@ Scene_Shop.prototype.create = function() {
     this.createBuyWindow();
     this.createSellWindow();
     this.createGoldWindow();
+    this.createOwnerSprite();
     this.createStatusWindow();
     this.createActorWindow();
 };
@@ -1158,6 +1159,19 @@ Scene_Shop.prototype.onActorCommon = function() {
     var actor = $gameParty.members()[index];
     $gameParty.setMenuActor(actor);
     SoundManager.playOk();
+};
+
+Scene_Shop.prototype.createOwnerSprite = function() {
+    var owner = $gameTemp._shopOwner;
+    if (!owner) return;
+    var bitmap = ImageManager.loadBitmap('img/busts/', owner, 0, true);
+    delete $gameTemp._shopOwner;
+    this._ownerSprite = new Sprite(bitmap);
+    this._ownerSprite.anchor.x = 0.5;
+    this._ownerSprite.anchor.y = 1;
+    this._ownerSprite.x = 1024;
+    this._ownerSprite.y = 288;
+    this.addChild(this._ownerSprite);
 };
 
 Yanfly.Shop.Scene_Shop_sellingPrice = Scene_Shop.prototype.sellingPrice;
