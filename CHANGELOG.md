@@ -35,6 +35,7 @@ NOTICE: Old saves will not work with this update!
   - Rookie Spear
   - Squire Gauntlets
   - Flora's Rose
+  - Bear's Paw Talisman
   - Eclipse Potion
   - Desert Gambeson
   - Tower Shield

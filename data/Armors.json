@@ -6415,5 +6415,32 @@
       0
     ],
     "price": 120
+  },
+  {
+    "id": 244,
+    "atypeId": 1,
+    "description": "You've heard of the monkey's paw, now here's... this.\nAllegedly NOT made from a real bear paw.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.05
+      }
+    ],
+    "iconIndex": 407,
+    "name": "Bear's Paw Talisman",
+    "note": "<Rarity: 1>\n<Item Raw Bear Meat Buy Price: 5>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(130);\n</Custom Buy Show Eval>",
+    "params": [
+      5,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 120
   }
 ]
