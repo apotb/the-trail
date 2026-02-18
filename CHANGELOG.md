@@ -135,6 +135,7 @@ NOTICE: Old saves will not work with this update!
 - A lot of balance changes and other tweaks were made that aren't listed here.
 
 ### Bug Fixes
+- Fixed enemies not disappearing after defeat if the battle was retried.
 - Fixed a bug where the autosave interval would reset when changing maps.
 - Fixed a bug where the autosave interval wouldn't count down while in menus or battle.
 - Fixed autosave interval option not saving.
