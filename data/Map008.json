@@ -25198,11 +25198,11 @@
     0,
     0,
     0,
+    3186,
+    3188,
+    3146,
     0,
-    0,
-    0,
-    0,
-    0,
+    3146,
     3048,
     3046,
     0,
@@ -25338,14 +25338,14 @@
     0,
     0,
     0,
+    3168,
+    3176,
+    3136,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
+    3123,
+    3149,
+    3194,
+    3146,
     0,
     0,
     2898,
@@ -25478,14 +25478,14 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
+    3168,
+    3176,
+    3145,
+    3127,
+    3143,
+    3186,
+    3178,
+    3136,
     0,
     0,
     2904,
@@ -25618,15 +25618,15 @@
     3483,
     3473,
     3477,
-    3195,
-    3189,
-    3147,
-    3141,
-    0,
-    0,
-    0,
-    0,
-    3139,
+    3192,
+    3162,
+    3188,
+    3148,
+    3186,
+    3157,
+    3190,
+    3121,
+    3125,
     3149,
     3186,
     3172,
@@ -25759,14 +25759,14 @@
     0,
     3457,
     3476,
-    3193,
-    3189,
-    3145,
-    3141,
-    0,
-    0,
+    3192,
+    3162,
+    3172,
+    3153,
+    3176,
     3138,
-    3130,
+    3105,
+    3128,
     3186,
     3153,
     3156,
@@ -25900,12 +25900,12 @@
     3480,
     3450,
     3476,
-    3193,
-    3197,
-    3145,
-    3149,
-    0,
+    3192,
+    3180,
+    3160,
+    3176,
     3144,
+    3132,
     3142,
     3192,
     3180,
@@ -26042,9 +26042,9 @@
     3442,
     3460,
     3476,
-    3195,
+    3192,
+    3182,
     3197,
-    3150,
     0,
     0,
     0,
@@ -64682,7 +64682,7 @@
     0,
     0,
     0,
-    0,
+    4,
     0,
     0,
     0,
@@ -121161,169 +121161,7 @@
       "x": 50,
       "y": 43
     },
-    {
-      "id": 31,
-      "name": "EV031",
-      "note": "<Hitbox Down: 3>",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true,
-          "list": [
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                1,
-                10,
-                0,
-                12,
-                4
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\p2Hey. \\N[1], where are you going? It's"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "dark, we can't go on further... let's"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "go check out the campsite we saw."
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 1,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 115,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
-        }
-      ],
-      "x": 109,
-      "y": 39
-    },
+    null,
     {
       "id": 32,
       "name": "EV032",
@@ -123280,7 +123118,90 @@
       "x": 80,
       "y": 82
     },
-    null,
+    {
+      "id": 45,
+      "name": "EV045",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Move1",
+                  "pan": 0,
+                  "pitch": 100,
+                  "volume": 90
+                }
+              ]
+            },
+            {
+              "code": 201,
+              "indent": 0,
+              "parameters": [
+                0,
+                37,
+                1,
+                12,
+                6,
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 110,
+      "y": 41
+    },
     {
       "id": 46,
       "name": "darkhound-copy",
@@ -123341,316 +123262,7 @@
       "x": 45,
       "y": 48
     },
-    {
-      "id": 47,
-      "name": "EV047",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "<Region Trigger: 109>"
-              ]
-            },
-            {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "<Icon on Event: 609>"
-              ]
-            },
-            {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "<Icon on Event Buffer X: -24>"
-              ]
-            },
-            {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "<Icon on Event Buffer Y: -12>"
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Move1",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                6,
-                -1,
-                6
-              ]
-            },
-            {
-              "code": 201,
-              "indent": 1,
-              "parameters": [
-                0,
-                37,
-                1,
-                12,
-                6,
-                0
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                6,
-                -1,
-                2
-              ]
-            },
-            {
-              "code": 201,
-              "indent": 1,
-              "parameters": [
-                0,
-                37,
-                1,
-                12,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                6,
-                -1,
-                4
-              ]
-            },
-            {
-              "code": 201,
-              "indent": 1,
-              "parameters": [
-                0,
-                37,
-                25,
-                12,
-                4,
-                0
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                6,
-                -1,
-                8
-              ]
-            },
-            {
-              "code": 201,
-              "indent": 1,
-              "parameters": [
-                0,
-                37,
-                25,
-                12,
-                8,
-                0
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 10,
-            "variableValid": true,
-            "variableValue": 20
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "<Region Trigger: 109>"
-              ]
-            },
-            {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "<Icon on Event: 608>"
-              ]
-            },
-            {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "<Icon on Event Buffer X: -24>"
-              ]
-            },
-            {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "<Icon on Event Buffer Y: -12>"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "CallEvent 47"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 118,
-      "y": 40
-    },
+    null,
     {
       "id": 48,
       "name": "darkhound-copy",
@@ -137988,228 +137600,8 @@
       "x": 118,
       "y": 33
     },
-    {
-      "id": 136,
-      "name": "EV136",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 10,
-            "variableValid": true,
-            "variableValue": 12
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Other1",
-            "direction": 4,
-            "pattern": 1,
-            "characterIndex": 5
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 10,
-            "variableValid": true,
-            "variableValue": 20
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 115,
-      "y": 40
-    },
-    {
-      "id": 137,
-      "name": "EV137",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 10,
-            "variableValid": true,
-            "variableValue": 12
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Other1",
-            "direction": 4,
-            "pattern": 1,
-            "characterIndex": 5
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 10,
-            "variableValid": true,
-            "variableValue": 20
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 113,
-      "y": 41
-    },
+    null,
+    null,
     {
       "id": 138,
       "name": "EV138",

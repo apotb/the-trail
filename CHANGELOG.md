@@ -11,6 +11,7 @@ NOTICE: Old saves will not work with this update!
 
 ### Additions
 - Added new content throughout the game, including:
+  - Haven Falls and Haven Falls Cavern
   - Northern/Southern Desert Garrison
   - Eating at Larry's Marvelous Diner
   - Several new quests
@@ -31,11 +32,12 @@ NOTICE: Old saves will not work with this update!
 - Added a short sound effect when completing a quest objective.
 - Added new rogue passive skill "Resourceful" at level 15.
   - Moved Low Blow to L18, Shield Break to L22, and removed Focus Up.
-- Added 24 items:
+- Added 25 items:
   - Rookie Spear
   - Squire Gauntlets
   - Flora's Rose
   - Bear's Paw Talisman
+  - Hood of Sneaks
   - Eclipse Potion
   - Desert Gambeson
   - Tower Shield

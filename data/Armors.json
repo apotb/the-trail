@@ -6506,5 +6506,37 @@
       0
     ],
     "price": 120
+  },
+  {
+    "id": 247,
+    "atypeId": 1,
+    "description": "A tightly woven hood designed for stealth.\nRewarded for taking a hidden path.",
+    "etypeId": 3,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.2
+      },
+      {
+        "code": 22,
+        "dataId": 3,
+        "value": 0.02
+      }
+    ],
+    "iconIndex": 852,
+    "name": "Hood of Sneaks",
+    "note": "<Rarity: 1>\n\n<Disassemble Pool: Basic>\nx2-x4 Yarn: 100%\n</Disassemble Pool: Basic>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value([182, 41, 'A']);\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      10,
+      0
+    ],
+    "price": 120
   }
 ]
