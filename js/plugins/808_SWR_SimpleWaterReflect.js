@@ -586,16 +586,23 @@ function createCharacterReflection(character) {
     return sprite;
 }
 
-// Prevent reflection sprites from hijacking balloon icons.
-// MV calls update() on every child sprite; without this guard a reflection's
-// Sprite_Character will consume the balloon request and clear it before the
-// "real" character sprite sees it, so the balloon ends up attached to the
-// reflection layer (rendered below the map) or never appears. Skipping the
-// balloon logic for reflections leaves the request untouched for the main
-// sprite.
+// Prevent reflection sprites from hijacking animations or balloon icons.
+// Sprite_Character.update() calls updateAnimation() then updateBalloon() on
+// every sprite. Without these guards, the reflection instance will consume the
+// pending animation/balloon requests first, play them on the hidden reflection
+// layer, and clear the request so the visible sprite never shows them (and
+// event 'Wait for Animation/Balloon' will return immediately). Skipping the
+// animation/balloon logic for reflections leaves the requests intact for the
+// real, visible character sprite.
+const _SWR_SWR_updateAnimation = Sprite_Character.prototype.updateAnimation;
+Sprite_Character.prototype.updateAnimation = function() {
+    if (this._isReflectionSprite) return;
+    _SWR_SWR_updateAnimation.call(this);
+};
+
 const _SWR_SWR_updateBalloon = Sprite_Character.prototype.updateBalloon;
 Sprite_Character.prototype.updateBalloon = function() {
-    if (this._isReflectionSprite) return; // Let the primary sprite handle it
+    if (this._isReflectionSprite) return;
     _SWR_SWR_updateBalloon.call(this);
 };
 
