@@ -10707,7 +10707,7 @@ Game_Interpreter.prototype.command213 = function() {
     if (this._character) {
         this._character.requestBalloon(this._params[1]);
         if (this._params[2]) {
-            this.setWaitMode('balloon');
+            this.wait(60); // this.setWaitMode('balloon');
         }
     }
     return true;
