@@ -915,6 +915,26 @@ Window_MapTravelList.prototype.makeItemList = function() {
 	for (var l in locs) {
 		this._data.push(locs[l]);
 	};
+	var fixedOrder = [
+		"Solus Town",
+		"Verdin Village",
+		"Campsite",
+		"Haven Harbor",
+		"Laeryidyean's Forest",
+		"Solus Valley",
+		"Bladesville",
+		"Telluria Castle",
+		"Frozen Labyrinth"
+	];
+	var maxOrder = Number.MAX_SAFE_INTEGER;
+	this._data.sort(function(a, b) {
+		var aIndex = fixedOrder.indexOf(a.name);
+		var bIndex = fixedOrder.indexOf(b.name);
+		if (aIndex === -1) aIndex = maxOrder;
+		if (bIndex === -1) bIndex = maxOrder;
+		if (aIndex !== bIndex) return aIndex - bIndex;
+		return a.name.localeCompare(b.name);
+	});
 };
 
 Window_MapTravelList.prototype.drawItem = function(index) {
