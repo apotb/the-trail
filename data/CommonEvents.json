@@ -15006,7 +15006,7 @@
         "indent": 0,
         "parameters": [
           12,
-          "$gameTemp._isPlaytest"
+          "$gameTemp._isPlaytest && $gamePlayer.isDebugThrough()"
         ]
       },
       {
@@ -15035,6 +15035,13 @@
         "indent": 1,
         "parameters": [
           "Galv.MAPT.setLocation(0,\"Solus Valley\",\"loc_solus_valley\",1812,2772,83,7,34,\"Peaceful valley settlement. Once a colony of Solus Town.\",1,76,115);"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "Galv.MAPT.setLocation(0,\"Bladesville\",\"loc_bladesville\",1536,1884,108,21,39,\"Dangerous desert settlement with high gang activity. Watch for snakes!\",1,61,78);"
         ]
       },
       {
@@ -17485,6 +17492,52 @@
           13,
           1,
           false
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameMap.mapId() === 108"
+        ]
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          74,
+          74,
+          0
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          74,
+          74,
+          1
         ]
       },
       {
