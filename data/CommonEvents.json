@@ -15542,7 +15542,28 @@
         "code": 355,
         "indent": 0,
         "parameters": [
-          "$gameMap.vehicles().forEach(v => v.setThrough(true));"
+          "$gameMap.vehicles().forEach(v => {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  v.setThrough(true);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  v.setTransparent(true);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "});"
         ]
       },
       {
@@ -18400,7 +18421,28 @@
         "code": 355,
         "indent": 0,
         "parameters": [
-          "$gameMap.vehicles().forEach(v => v.setThrough(false));"
+          "$gameMap.vehicles().forEach(v => {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  v.setThrough(false);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  v.setTransparent(false);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "});"
         ]
       },
       {
