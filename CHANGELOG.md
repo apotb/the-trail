@@ -104,6 +104,7 @@ NOTICE: Old saves will not work with this update!
 - Red Slimes and Bats no longer drop Copper/Iron Clusters and Coal.
   - This is compensated by 12 new ore nodes in Goblin Grotto, half of which are oreleaf.
 - Menu improvements:
+  - You can buy/sell multiple weapons/armors at once!
   - Several item categories get a custom sort order, making inventory management way easier!
     - Key Items: prioritizes usable from menu
     - Weapons/Armor: sorted by rarity descending

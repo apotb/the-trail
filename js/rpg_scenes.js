@@ -2128,6 +2128,13 @@ Scene_Shop.prototype.maxBuy = function() {
 };
 
 Scene_Shop.prototype.maxSell = function() {
+    if (DataManager.isIndependent(this._item)) {
+        if (DataManager.isBaseItem(this._item)) {
+            return $gameParty.numNotUpgradedIndependentItems(DataManager.getDatabase(this._item)[this._item.baseItemId]);
+        } else {
+            return 1;
+        }
+    }
     return $gameParty.numItems(this._item);
 };
 

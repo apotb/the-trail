@@ -1193,6 +1193,7 @@ Game_Party.prototype.seenItem = function(item) {
 
 Game_Party.prototype.gainIndependentItem = function(item, amount, includeEquip) {
     var arr = [];
+    var ids = [];
     if (amount > 0) {
       for (var i = 0; i < amount; ++i) {
         var newItem = DataManager.registerNewItem(item);
@@ -1202,11 +1203,15 @@ Game_Party.prototype.gainIndependentItem = function(item, amount, includeEquip) 
     } else if (amount < 0) {
       amount = Math.abs(amount);
       for (var i = 0; i < amount; ++i) {
-        if (item.baseItemId) {
+        if (item.baseItemId && !ids.contains(item.id)) {
           this.removeIndependentItem(item, includeEquip);
+          ids.push(item.id);
         } else if (DataManager.isIndependent(item)) {
-          var target = $gameParty.getMatchingBaseItem(item, includeEquip);
-          if (target !== null) this.removeIndependentItem(target, includeEquip);
+          var target = $gameParty.getMatchingBaseItem(DataManager.getBaseItem(item), includeEquip);
+          if (target !== null) {
+            this.removeIndependentItem(target, includeEquip);
+            DataManager.removeIndependentItem(target);
+          }
         } else {
           this.removeBaseItem(item, includeEquip);
         }
@@ -1262,9 +1267,7 @@ Game_Party.prototype.removeBaseItem = function(item, includeEquip) {
 
 Game_Party.prototype.getMatchingBaseItem = function(baseItem, equipped) {
     if (!baseItem) return null;
-    if (DataManager.isItem(baseItem)) var group = this.items();
-    if (DataManager.isWeapon(baseItem)) var group = this.weapons();
-    if (DataManager.isArmor(baseItem)) var group = this.armors();
+    var group = DataManager.getDatabase(baseItem);
     if (equipped) {
       for (var a = 0; a < this.members().length; ++a) {
         var actor = this.members()[a];
@@ -1329,12 +1332,6 @@ Game_Party.prototype.independentItemSort = function(a, b) {
     if (aa < bb) return -1;
     if (aa >= bb) return 1;
     return 0;
-};
-
-Yanfly.Item.Game_Party_maxItems = Game_Party.prototype.maxItems;
-Game_Party.prototype.maxItems = function(item) {
-    if (DataManager.isIndependent(item)) return 1;
-    return Yanfly.Item.Game_Party_maxItems.call(this, item);
 };
 
 Yanfly.Item.Game_Party_hasItem = Game_Party.prototype.hasItem;
@@ -1659,7 +1656,6 @@ Yanfly.Item.Scene_Shop_doSell = Scene_Shop.prototype.doSell;
 Scene_Shop.prototype.doSell = function(number) {
     Yanfly.Item.Scene_Shop_doSell.call(this, number);
     if (!DataManager.isIndependent(this._item)) return;
-    DataManager.removeIndependentItem(this._item);
 };
 
 //=============================================================================
