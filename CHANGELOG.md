@@ -31,7 +31,7 @@ NOTICE: Old saves will not work with this update!
 - Added a short sound effect when completing a quest objective.
 - Added new rogue passive skill "Resourceful" at level 15.
   - Moved Low Blow to L18, Shield Break to L22, and removed Focus Up.
-- Added 23 items:
+- Added 24 items:
   - Rookie Spear
   - Squire Gauntlets
   - Flora's Rose
@@ -45,6 +45,7 @@ NOTICE: Old saves will not work with this update!
   - Enchanted Snake Skin
   - Rattlesnake Fang
   - Cast-Iron Pot
+  - Dalia's Delight
   - Bronze Gauntlets
   - Smirnoff's Lightning Lance
   - Arlo's Bandana

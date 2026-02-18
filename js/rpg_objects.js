@@ -118,7 +118,6 @@ Game_Temp.prototype.recipeTemplate = function(name) {
                     68, 74, 213, 176, // Ingots/Alloys
                     92, 214, 242, // Materials
                     154, 93, // Usable Items
-                    289, // Cast-Iron Pot
                     50, 207 // Salvage Kits
                 ],
                 [
@@ -151,8 +150,8 @@ Game_Temp.prototype.recipeTemplate = function(name) {
                     134, 131, 136, 280, 281, 282, 259, 221, 223 // Telluria Field
                 ],
                 [
-                    111, 129, // Fruitcakes
-                    282, 259, // Stews
+                    111, 129, 292, // Bladesville
+                    282, 259, // Telluria Field
                     71, 72, 117, 196, 197 // Drinks
                 ]
             ]
