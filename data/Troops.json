@@ -1182,7 +1182,7 @@
           "actorHp": 50,
           "actorId": 1,
           "actorValid": false,
-          "enemyHp": 30,
+          "enemyHp": 50,
           "enemyIndex": 0,
           "enemyValid": true,
           "switchId": 1,
@@ -1944,7 +1944,14 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\lae\\shakeThe world will change. Telluria... you will feel it."
+              "\\lae\\shakeThe world will change.\\! Telluria... will feel it first.\\!"
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "Nothing... will remain the same."
             ]
           },
           {
@@ -1961,7 +1968,7 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\lae\\shake\\c[18]He\\c[0] will wait no longer."
+              "\\lae\\shake\\c[18]He\\c[0] will slumber no longer."
             ]
           },
           {

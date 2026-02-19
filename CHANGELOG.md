@@ -130,6 +130,7 @@ NOTICE: Old saves will not work with this update!
 - Buffed Green/Blue Gel HP/MP recovery from 2 → 5.
 - Buffed Earthen Grassrobes Earth resistance from 10% to 25%.
 - All levels of Well Fed last much longer and are not removed when HP drops to 0.
+- Well Rested lasts twice as many steps, from 1000 → 2000.
 - Thrown items now count as physical hits.
 - Heated Metal now absorbs Fire attacks.
 - The Bandito Cloak, as well as all cloaks from now on, are usable by anyone.
