@@ -134,6 +134,7 @@ NOTICE: Old saves will not work with this update!
 - Heated Metal now absorbs Fire attacks.
 - Screenshots hide the gab window and location name display window.
 - Name input now trims whitespace.
+- The treasure popup's duration has increased from 60 → 90 frames.
 - New trees!
 - A lot of balance changes and other tweaks were made that aren't listed here.
 
