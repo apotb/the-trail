@@ -19,5 +19,5 @@ del /f /q .\out\%MAC_DIR%.zip
 call npm run windows
 call npm run linux
 
-:: Generate VDF files for all platforms, upload builds, and open Steamworks website
+:: Generate VDF files for all platforms and command to upload builds
 python scripts\generate_vdf.py -p -u -s

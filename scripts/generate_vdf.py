@@ -149,7 +149,15 @@ if __name__ == "__main__":
         subprocess.run(cmd, cwd=OUT_DIR, env=child_env)
     else:
         print("\n➡ Run this command to upload build:\n")
-        print(f'HOME="{os.path.join(OUT_DIR, ".steam")}" ' + " ".join(cmd))
+        steam_home = os.path.join(OUT_DIR, ".steam")
+        if platform.system() == "Windows":
+            print(f'set "HOME={steam_home}" && ' + " ".join(cmd))
+        else:
+            print(f'HOME="{steam_home}" ' + " ".join(cmd))
 
     if "-s" in sys.argv:
-        webbrowser.open("https://partner.steamgames.com/apps/builds/" + str(APP_ID))
+        url = "https://partner.steamgames.com/apps/builds/" + str(APP_ID)
+        if platform.system() == "Windows":
+            os.startfile(url)
+        else:
+            webbrowser.open(url)
