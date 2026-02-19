@@ -132,6 +132,7 @@ NOTICE: Old saves will not work with this update!
 - All levels of Well Fed last much longer and are not removed when HP drops to 0.
 - Thrown items now count as physical hits.
 - Heated Metal now absorbs Fire attacks.
+- Screenshots hide the gab window and location name display window.
 - Name input now trims whitespace.
 - New trees!
 - A lot of balance changes and other tweaks were made that aren't listed here.
