@@ -66,7 +66,7 @@
   {
     "id": 4,
     "atypeId": 5,
-    "description": "A run-of-the-mill leather cloak owned by\nan ex-Bandito. Dyed red to fit her style.",
+    "description": "A run-of-the-mill leather outfit owned by\nan ex-Bandito. Dyed red to fit her style.",
     "etypeId": 4,
     "traits": [],
     "iconIndex": 455,
@@ -76,7 +76,7 @@
       0,
       0,
       0,
-      3,
+      2,
       0,
       0,
       1,
@@ -360,7 +360,7 @@
   {
     "id": 18,
     "atypeId": 10,
-    "description": "A unique style of Bandito uniform with a\nfocus on evasion rather than raw defense.",
+    "description": "A unique style of Bandito uniform with a focus on evasion rather than\nraw defense. Grants a 10% chance to dodge hits. Not magic, though!",
     "etypeId": 4,
     "traits": [
       {
@@ -371,15 +371,15 @@
     ],
     "iconIndex": 450,
     "name": "Bandito Cloak",
-    "note": "<Disassemble Pool: Basic>\nx1-2 item 51: 100%\nx1 Leather: 60%\n</Disassemble Pool: Basic>",
+    "note": "<Disassemble Pool: Basic>\nx1-2 Worn Cloth: 100%\nx1-2 Leather: 60%\n</Disassemble Pool: Basic>",
     "params": [
       0,
       0,
       0,
-      2,
-      0,
-      0,
       1,
+      0,
+      0,
+      5,
       0
     ],
     "price": 30
@@ -6312,7 +6312,7 @@
       -3,
       0
     ],
-    "price": 200
+    "price": 300
   },
   {
     "id": 240,
@@ -6333,7 +6333,7 @@
       -9,
       0
     ],
-    "price": 200
+    "price": 300
   },
   {
     "id": 241,
@@ -6538,5 +6538,59 @@
       0
     ],
     "price": 120
+  },
+  {
+    "id": 248,
+    "atypeId": 10,
+    "description": "Fur is both incredibly insulating AND incredibly comfortable! Grants a 20% chance\nto dodge a hit. However, the ones that DO hit aren't received very well...",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.2
+      }
+    ],
+    "iconIndex": 452,
+    "name": "Fur Cloak",
+    "note": "<Disassemble Pool: Basic>\nx5-8 Worn Cloth: 100%\nx3-6 Worn Cloth: 75%\nx1-4 Worn Cloth: 50%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      10,
+      0
+    ],
+    "price": 120
+  },
+  {
+    "id": 249,
+    "atypeId": 10,
+    "description": "Each one was weaved by Andy over the course of a month, with the help of Clara.\nGrants an incredible 30% evasion chance! Though not much defense for the price...",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.3
+      }
+    ],
+    "iconIndex": 449,
+    "name": "Assassin's Cloak",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 2>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(109);\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      20,
+      0
+    ],
+    "price": 1000
   }
 ]
