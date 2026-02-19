@@ -584,14 +584,15 @@ Game_System.prototype.chapter = function() {
 
 Game_System.prototype.championsTalisman = function() {
     return [
-        [0, 0, 0, 0, 0, 0, 0, 0],       // 0
-        [1, 1, 0, 0, 0, 0, 1, 0],       // 1
-        [2, 2, 1, 1, 1, 1, 2, 1],       // 2
-        [4, 3, 2, 2, 2, 2, 3, 1],       // 3
-        [8, 5, 3, 3, 3, 3, 5, 2],       // 4
-        [12, 7, 4, 4, 5, 5, 7, 2],      // 5
-        [16, 10, 5, 5, 7, 7, 9, 3],     // 6
-        [20, 15, 5, 5, 7, 7, 11, 3]     // 7
+        [0, 0, 0, 0, 0, 0, 0, 0],       // Prologue: Unused
+        [0, 0, 0, 0, 0, 0, 0, 0],       // Chapter 1: Into Verdin
+        [1, 1, 0, 0, 0, 0, 1, 0],       // Chapter 2: A Motley Crew
+        [2, 2, 1, 1, 1, 1, 2, 1],       // Chapter 3: The Journey Continues
+        [4, 3, 2, 2, 2, 2, 3, 1],       // Chapter 4: The Root of all Evil
+        [8, 5, 3, 3, 3, 3, 5, 2],       // Chapter 5: The Great Collapse
+        [12, 7, 4, 4, 5, 5, 7, 2],      // Chapter 6: Path of the Purple
+        [16, 10, 5, 5, 7, 7, 9, 3],     // Chapter 7: ???
+        [20, 15, 5, 5, 7, 7, 11, 3]     // Chapter 8: ???
     ][this.chapter()];
 };
 
