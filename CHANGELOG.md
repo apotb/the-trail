@@ -11,6 +11,7 @@ NOTICE: Old saves will not work with this update!
 
 ### Additions
 - Added new content throughout the game, including:
+  - Haven Falls and Haven Falls Cavern
   - Northern/Southern Desert Garrison
   - Eating at Larry's Marvelous Diner
   - Several new quests
@@ -26,18 +27,27 @@ NOTICE: Old saves will not work with this update!
   - Duncan
 - Your days on The Trail will now be tracked.
 - Added reflections and scrolling clouds on water.
+- Added sunsets and sunrises!
 - Added TROPHY rarity.
 - Added a short sound effect when completing a quest objective.
 - Added new rogue passive skill "Resourceful" at level 15.
   - Moved Low Blow to L18, Shield Break to L22, and removed Focus Up.
-- Added 17 items:
+- Added 25 items:
   - Rookie Spear
   - Squire Gauntlets
   - Flora's Rose
+  - Bear's Paw Talisman
+  - Hood of Sneaks
   - Eclipse Potion
   - Desert Gambeson
   - Tower Shield
   - Field Medic Kit
+  - Cactus Flesh
+  - Raw Snake Meat
+  - Enchanted Snake Skin
+  - Rattlesnake Fang
+  - Cast-Iron Pot
+  - Dalia's Delight
   - Bronze Gauntlets
   - Smirnoff's Lightning Lance
   - Arlo's Bandana
@@ -96,6 +106,7 @@ NOTICE: Old saves will not work with this update!
 - Red Slimes and Bats no longer drop Copper/Iron Clusters and Coal.
   - This is compensated by 12 new ore nodes in Goblin Grotto, half of which are oreleaf.
 - Menu improvements:
+  - You can buy/sell multiple weapons/armors at once!
   - Several item categories get a custom sort order, making inventory management way easier!
     - Key Items: prioritizes usable from menu
     - Weapons/Armor: sorted by rarity descending
@@ -105,7 +116,7 @@ NOTICE: Old saves will not work with this update!
     - Upgraders: sorted by hidden "weight" value descending (better ones are first)
     - Salvaging: prioritizes salvage kits
   - Reordered smithery crafting menus.
-  - Shop sell menu shows if an item is a material.
+  - Shop menu shows shopkeeper busts, and while selling items indicates if they are materials.
   - Item recovery previews show multipliers from PHA and other effects like Duncan.
   - Pressing UP when buying/selling/crafting items while the current quantity is 1 will go to 10 instead of 11.
 - Bubble is now guaranteed to apply Soaked.
@@ -121,11 +132,13 @@ NOTICE: Old saves will not work with this update!
 - All levels of Well Fed last much longer and are not removed when HP drops to 0.
 - Thrown items now count as physical hits.
 - Heated Metal now absorbs Fire attacks.
+- Screenshots hide the gab window and location name display window.
 - Name input now trims whitespace.
 - New trees!
 - A lot of balance changes and other tweaks were made that aren't listed here.
 
 ### Bug Fixes
+- Fixed enemies not disappearing after defeat if the battle was retried.
 - Fixed a bug where the autosave interval would reset when changing maps.
 - Fixed a bug where the autosave interval wouldn't count down while in menus or battle.
 - Fixed autosave interval option not saving.
@@ -139,6 +152,8 @@ NOTICE: Old saves will not work with this update!
 - Fixed being able to craft items multiple times without resources available.
 - Fixed item upgrades not transferring when crafting.
 - Fixed automatically equipping crafting upgrades sometimes equipping the wrong thing.
+- Fixed choices not showing in message backlog.
+- Fixed name box showing over message backlog if a battle has been completed without changing maps.
 - Fixed outdated cliff texture in South Field.
 - Fixed wading effect when walking on bridge in South Field.
 - Fixed Seshat's Tome drop beginning in Telluria Field being a 1/10,000 drop rather than a 1/200 drop.

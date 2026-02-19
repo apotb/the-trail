@@ -303,6 +303,7 @@ _.BattleManager_processAbort = BattleManager.processAbort;
 BattleManager.processAbort = function() {
 	_.BattleManager_processAbort.apply(this, arguments);
 	$gameTemp.initRetry();
+    $gameMap._interpreter._branch[$gameMap._interpreter._indent] = 1;
 };
 
 _.BattleManager_processDefeat = BattleManager.processDefeat;

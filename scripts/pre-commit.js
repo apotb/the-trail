@@ -35,15 +35,20 @@ try {
         // System.json: versionId and editMapId constants
         let system = JSON.parse(fs.readFileSync(`${data_directory}/System.json`))
         system.versionId = 0
-        system.editMapId = 164
+        system.editMapId = 8
         fs.writeFileSync(`${data_directory}/System.json`, JSON.stringify(system, null, indent))
 
         // MapInfos.json: all scrollX and scrollY values set to 0
         let maps = JSON.parse(fs.readFileSync(`${data_directory}/MapInfos.json`))
         for (i = 1; i < maps.length; i++) {
             if (maps[i] !== null) {
-                maps[i].scrollX = 0
-                maps[i].scrollY = 0
+                if (i === 8) { // The Overworld
+                    maps[i].scrollX = 3360
+                    maps[i].scrollY = 3360
+                } else {
+                    maps[i].scrollX = 0
+                    maps[i].scrollY = 0
+                }
             }
         }
         fs.writeFileSync(`${data_directory}/MapInfos.json`, JSON.stringify(maps, null, indent))

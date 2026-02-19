@@ -88,7 +88,22 @@ Game_Temp.prototype.synthArmors = function() {
     })
 };
 
+Game_Temp.prototype.synthPan = function() {
+    if (!this._synthWeapons) return [];
+        return this._synthWeapons.map(function(id) {
+            return $dataItems[id];
+    })
+};
+
+Game_Temp.prototype.synthPot = function() {
+    if (!this._synthArmors) return [];
+        return this._synthArmors.map(function(id) {
+            return $dataItems[id];
+    })
+};
+
 Game_Temp.prototype.recipeTemplate = function(name) {
+    this._lastRecipeTemplate = name;
     switch (name.toUpperCase()) {
         case 'WILL':
             arr = [
@@ -99,7 +114,12 @@ Game_Temp.prototype.recipeTemplate = function(name) {
             break;
         case 'CASTLE FORGE':
             arr = [
-                [68, 74, 213, 176, 92, 214, 242, 154, 93, 50, 207],
+                [
+                    68, 74, 213, 176, // Ingots/Alloys
+                    92, 214, 242, // Materials
+                    154, 93, // Usable Items
+                    50, 207 // Salvage Kits
+                ],
                 [
                     27, 23, 30, 24, 25, 26, 32, 51, // Bladesville
                     42, 43, 53, 52, // Telluria Field
@@ -118,20 +138,22 @@ Game_Temp.prototype.recipeTemplate = function(name) {
                 ]
             ]
             break;
-        case 'DALIA':
-        case 'CASTLE FOOD':
-        case 'FOOD':
-            arr = [
-                [71, 72, 111, 129, 117, 196, 197],
-                [],
-                []
-            ]
-            break;
         case 'FIRE':
             arr = [
-                [135, 177, 270, 271, 272, 70, 277, 278, 279, 98, /* shaded brook + bladesville fish */ 108, 134, 131, 136, 280, 281, 282, 259, 221, 223],
-                [],
-                []
+                [
+                    151 // Charcoal
+                ],
+                [
+                    135, 177, 270, 271, 272, // Adon
+                    70, 277, 278, 279, /* shaded brook fish */ // Easin Plains
+                    108, 98, /* oasis fish */ // Blazing Sands
+                    134, 131, 136, 280, 281, 282, 259, 221, 223 // Telluria Field
+                ],
+                [
+                    111, 129, 292, // Bladesville
+                    282, 259, // Telluria Field
+                    71, 72, 117, 196, 197 // Drinks
+                ]
             ]
             break;
         case 'PICKAXE':
@@ -439,7 +461,7 @@ Game_System.prototype.restoreRareEnemyTries = function() {
 // Small Chests
 
 Game_System.prototype.totalSmallChests = function() {
-    return 39;
+    return 42;
 };
 
 Game_System.prototype.smallChest = function() {
@@ -5676,7 +5698,6 @@ Game_Party.prototype.discardMembersEquip = function(item, amount) {
 
 Game_Party.prototype.loseItem = function(item, amount, includeEquip) {
     this.gainItem(item, -amount, includeEquip);
-    if (DataManager.isIndependent(item)) setTimeout(() => DataManager.removeIndependentItem(item), 100);
 };
 
 Game_Party.prototype.consumeItem = function(item) {

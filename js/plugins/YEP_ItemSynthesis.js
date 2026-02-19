@@ -959,9 +959,15 @@ Window_SynthesisCommand.prototype.makeCommandList = function() {
 };
 
 Window_SynthesisCommand.prototype.addItemCommands = function() {
-    this.addCommand(Yanfly.Param.ISItemCmd, 'item', Scene_Synthesis.availableItems().length > 0);
-    this.addCommand(Yanfly.Param.ISWeaponCmd, 'weapon', Scene_Synthesis.availableWeapons().length > 0);
-    this.addCommand(Yanfly.Param.ISArmorCmd, 'armor', Scene_Synthesis.availableArmors(0).length > 0);
+    if ($gameTemp._lastRecipeTemplate === 'FIRE') {
+      this.addCommand("Pan Recipes", 'pan', $gameParty.hasItem($dataItems[137]));
+      this.addCommand("Pot Recipes", 'pot', $gameParty.hasItem($dataItems[289]));
+      this.addCommand(Yanfly.Param.ISItemCmd, 'item');
+    } else {
+      this.addCommand(Yanfly.Param.ISItemCmd, 'item', Scene_Synthesis.availableItems().length > 0);
+      this.addCommand(Yanfly.Param.ISWeaponCmd, 'weapon', Scene_Synthesis.availableWeapons().length > 0);
+      this.addCommand(Yanfly.Param.ISArmorCmd, 'armor', Scene_Synthesis.availableArmors(0).length > 0);
+    }
 };
 
 Window_SynthesisCommand.prototype.addCustomCommand = function() {
@@ -1164,19 +1170,27 @@ Window_SynthesisList.prototype.refresh = function() {
 };
 
 Window_SynthesisList.prototype.makeItemList = function() {
-    switch (this._commandWindow.currentSymbol()) {
-      case 'item':
-        data = Scene_Synthesis.availableItems();
-        break;
-      case 'weapon':
-        data = Scene_Synthesis.availableWeapons();
-        break;
-      case 'armor':
-        data = Scene_Synthesis.availableArmors();
-        break;
-      default:
-        data = [];
-        break;
+    let data = [];
+    if (this._commandWindow.isCurrentItemEnabled()) {
+      switch (this._commandWindow.currentSymbol()) {
+        case 'item':
+          data = Scene_Synthesis.availableItems();
+          break;
+        case 'weapon':
+          data = Scene_Synthesis.availableWeapons();
+          break;
+        case 'armor':
+          data = Scene_Synthesis.availableArmors();
+          break;
+        case 'pan':
+          data = Scene_Synthesis.availablePanRecipes();
+          break;
+        case 'pot':
+          data = Scene_Synthesis.availablePotRecipes();
+          break;
+        default:
+          break;
+      }
     }
     this._data = data;
 };
@@ -1729,6 +1743,14 @@ Scene_Synthesis.availableWeapons = function() {
 Scene_Synthesis.availableArmors = function() {
     return $gameTemp.synthArmors();
     // return this.getAvailableItems(2);
+};
+
+Scene_Synthesis.availablePanRecipes = function() {
+    return $gameTemp.synthPan();
+};
+
+Scene_Synthesis.availablePotRecipes = function() {
+    return $gameTemp.synthPot();
 };
 
 Scene_Synthesis.prototype.refreshWindows = function() {

@@ -1223,6 +1223,13 @@
     "id": 11,
     "list": [
       {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameTemp._shopOwner = \"People3_5\";"
+        ]
+      },
+      {
         "code": 302,
         "indent": 0,
         "parameters": [
@@ -1854,6 +1861,13 @@
   {
     "id": 16,
     "list": [
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameTemp._shopOwner = \"People1_5\";"
+        ]
+      },
       {
         "code": 111,
         "indent": 0,
@@ -5486,6 +5500,13 @@
     "id": 31,
     "list": [
       {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameTemp._shopOwner = \"Shopkeeper1_15\";"
+        ]
+      },
+      {
         "code": 302,
         "indent": 0,
         "parameters": [
@@ -5589,6 +5610,13 @@
   {
     "id": 32,
     "list": [
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameTemp._shopOwner = \"Shopkeeper1_16\";"
+        ]
+      },
       {
         "code": 302,
         "indent": 0,
@@ -6229,6 +6257,97 @@
         "code": 108,
         "indent": 0,
         "parameters": [
+          "# If it's 20:00 - 20:59, make it dusk"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          38,
+          0,
+          20,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          0,
+          126,
+          0
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          126,
+          126,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "!$gameMap.indoors()"
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 2,
+        "parameters": [
+          57
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
           "# If it's 21:00 - 23:59, make it night, as long as it's not already night"
         ]
       },
@@ -6284,6 +6403,15 @@
         ]
       },
       {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          126,
+          126,
+          1
+        ]
+      },
+      {
         "code": 111,
         "indent": 1,
         "parameters": [
@@ -6295,7 +6423,7 @@
         "code": 117,
         "indent": 2,
         "parameters": [
-          57
+          88
         ]
       },
       {
@@ -6380,7 +6508,7 @@
         "code": 108,
         "indent": 0,
         "parameters": [
-          "# If it's neither of the above time, make it day, as long as it's still night"
+          "# If it's neither of the above time, make it dawn, as long as it's still night"
         ]
       },
       {
@@ -6471,11 +6599,111 @@
         ]
       },
       {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          127,
+          127,
+          0
+        ]
+      },
+      {
         "code": 355,
         "indent": 1,
         "parameters": [
           "$gameSystem.nextMoonPhase();"
         ]
+      },
+      {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "If it's later than 6:00, transition from dawn to day"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          38,
+          0,
+          6,
+          1
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          0,
+          127,
+          1
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          127,
+          127,
+          1
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "!$gameMap.indoors()"
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 2,
+        "parameters": [
+          89
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
       },
       {
         "code": 115,
@@ -6643,6 +6871,13 @@
         ]
       },
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Night"
+        ]
+      },
+      {
         "code": 111,
         "indent": 0,
         "parameters": [
@@ -6719,20 +6954,41 @@
         ]
       },
       {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 1,
         "parameters": []
       },
       {
-        "code": 411,
+        "code": 412,
         "indent": 0,
         "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Dusk"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          0,
+          126,
+          0
+        ]
       },
       {
         "code": 356,
         "indent": 1,
         "parameters": [
-          "Tint set #ffffff"
+          "Tint set #fb9062"
         ]
       },
       {
@@ -6754,7 +7010,7 @@
         "code": 655,
         "indent": 2,
         "parameters": [
-          "  '!SkyDay',"
+          "  '!SkySun',"
         ]
       },
       {
@@ -6787,6 +7043,169 @@
         "code": 412,
         "indent": 1,
         "parameters": []
+      },
+      {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Dawn"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          0,
+          127,
+          0
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "Tint set #fb9062"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "$gameMap.parallaxName() === ''"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 2,
+        "parameters": [
+          "$gameMap.changeParallax("
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  '!SkySun',"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  true, true,"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  0.5, 0.25"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          ");"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Day"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "Tint set #ffffff"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameMap.parallaxName() === ''"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameMap.changeParallax("
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  '!SkyDay',"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  true, true,"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  0.5, 0.25"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          ");"
+        ]
       },
       {
         "code": 0,
@@ -7689,7 +8108,43 @@
           31,
           0,
           0,
+          182
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          42
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          31,
+          31,
+          0,
+          0,
           183
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          42
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          31,
+          31,
+          0,
+          0,
+          184
         ]
       },
       {
@@ -10569,6 +11024,13 @@
     "id": 46,
     "list": [
       {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameTemp._shopOwner = \"Telluria1_3\";"
+        ]
+      },
+      {
         "code": 302,
         "indent": 0,
         "parameters": [
@@ -12236,14 +12698,7 @@
         "code": 356,
         "indent": 0,
         "parameters": [
-          "Tint fade #fb9062 20"
-        ]
-      },
-      {
-        "code": 356,
-        "indent": 0,
-        "parameters": [
-          "Tint fade #53454f 35"
+          "Tint fade #fb9062 35"
         ]
       },
       {
@@ -12258,98 +12713,35 @@
         "code": 355,
         "indent": 1,
         "parameters": [
-          "setTimeout(function() {"
+          "$gameMap.changeParallax("
         ]
       },
       {
         "code": 655,
         "indent": 1,
         "parameters": [
-          "  $gameMap.changeParallax("
+          "  '!SkySun',"
         ]
       },
       {
         "code": 655,
         "indent": 1,
         "parameters": [
-          "    '!SkyDusk',"
+          "  true, true,"
         ]
       },
       {
         "code": 655,
         "indent": 1,
         "parameters": [
-          "    true, true,"
+          "  0.5, 0.25"
         ]
       },
       {
         "code": 655,
         "indent": 1,
         "parameters": [
-          "   0.5, 0.25"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "  );"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "}, 5 * 1000);"
-        ]
-      },
-      {
-        "code": 355,
-        "indent": 1,
-        "parameters": [
-          "setTimeout(function() {"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "  $gameMap.changeParallax("
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "    '!SkyNight',"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "    true, true,"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "    0.5, 0.25"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "  );"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "}, 30 * 1000);"
+          ");"
         ]
       },
       {
@@ -12368,7 +12760,7 @@
         "parameters": []
       }
     ],
-    "name": "TIME - Tint System Day to Night",
+    "name": "TIME - Day to Dusk",
     "switchId": 1,
     "trigger": 0
   },
@@ -12379,14 +12771,7 @@
         "code": 356,
         "indent": 0,
         "parameters": [
-          "Tint fade #fb9062 20"
-        ]
-      },
-      {
-        "code": 356,
-        "indent": 0,
-        "parameters": [
-          "Tint fade #ffffff 35"
+          "Tint fade #fb9062 35"
         ]
       },
       {
@@ -12401,98 +12786,35 @@
         "code": 355,
         "indent": 1,
         "parameters": [
-          "setTimeout(function() {"
+          "$gameMap.changeParallax("
         ]
       },
       {
         "code": 655,
         "indent": 1,
         "parameters": [
-          "  $gameMap.changeParallax("
+          "  '!SkySun',"
         ]
       },
       {
         "code": 655,
         "indent": 1,
         "parameters": [
-          "    '!SkyDusk',"
+          "  true, true,"
         ]
       },
       {
         "code": 655,
         "indent": 1,
         "parameters": [
-          "    true, true,"
+          "  0.5, 0.25"
         ]
       },
       {
         "code": 655,
         "indent": 1,
         "parameters": [
-          "   0.5, 0.25"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "  );"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "}, 5 * 1000);"
-        ]
-      },
-      {
-        "code": 355,
-        "indent": 1,
-        "parameters": [
-          "setTimeout(function() {"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "  $gameMap.changeParallax("
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "    '!SkyDay',"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "    true, true,"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "    0.5, 0.25"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "  );"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "}, 30 * 1000);"
+          ");"
         ]
       },
       {
@@ -12511,7 +12833,7 @@
         "parameters": []
       }
     ],
-    "name": "TIME - Tint System Night to Day",
+    "name": "TIME - Night to Dawn",
     "switchId": 1,
     "trigger": 0
   },
@@ -12987,20 +13309,10 @@
         "indent": 0,
         "parameters": [
           0,
-          16,
+          289,
           0,
           0,
           false
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 0,
-        "parameters": [
-          0,
-          19,
-          0,
-          0
         ]
       },
       {
@@ -14410,6 +14722,13 @@
     "id": 67,
     "list": [
       {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameTemp._shopOwner = \"Shopkeeper1_4\";"
+        ]
+      },
+      {
         "code": 302,
         "indent": 0,
         "parameters": [
@@ -14705,6 +15024,48 @@
     "id": 70,
     "list": [
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Recommended to update:"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "  var fixedOrder = [ ..."
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "In function:"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "  Window_MapTravelList.prototype.makeItemList"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "In file:"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "  GALV_MapTravel.js"
+        ]
+      },
+      {
         "code": 355,
         "indent": 0,
         "parameters": [
@@ -14751,7 +15112,7 @@
         "indent": 0,
         "parameters": [
           12,
-          "$gameTemp._isPlaytest"
+          "$gameTemp._isPlaytest && $gamePlayer.isDebugThrough()"
         ]
       },
       {
@@ -14780,6 +15141,13 @@
         "indent": 1,
         "parameters": [
           "Galv.MAPT.setLocation(0,\"Solus Valley\",\"loc_solus_valley\",1812,2772,83,7,34,\"Peaceful valley settlement. Once a colony of Solus Town.\",1,76,115);"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "Galv.MAPT.setLocation(0,\"Bladesville\",\"loc_bladesville\",1536,1884,108,21,39,\"Dangerous desert settlement with high gang activity. Watch for snakes!\",1,61,78);"
         ]
       },
       {
@@ -15238,7 +15606,28 @@
         "code": 355,
         "indent": 0,
         "parameters": [
-          "$gameMap.vehicles().forEach(v => v.setThrough(true));"
+          "$gameMap.vehicles().forEach(v => {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  v.setThrough(true);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  v.setTransparent(true);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "});"
         ]
       },
       {
@@ -15488,6 +15877,99 @@
         "code": 108,
         "indent": 0,
         "parameters": [
+          "Verdin Village - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Bladesville - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          20,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          108,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 80, 61"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 80, 61"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
           "Campsite - Start"
         ]
       },
@@ -15601,6 +16083,192 @@
         "code": 108,
         "indent": 0,
         "parameters": [
+          "Campsite - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Bladesville - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          34,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          108,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 80, 61"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 80, 61"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Haven Harbor - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Bladesville - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          43,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          108,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 80, 61"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 80, 61"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
           "Laeryidyean's Forest - Start"
         ]
       },
@@ -15665,6 +16333,99 @@
             "code": 45,
             "parameters": [
               "MOVE TO: 99, 107"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Laeryidyean's Forest - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Bladesville - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          167,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          108,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 80, 61"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 80, 61"
             ],
             "indent": null
           }
@@ -15887,6 +16648,139 @@
         "code": 408,
         "indent": 0,
         "parameters": [
+          "Bladesville - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          83,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          108,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 94, 130"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 52, 130"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 47, 93"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 94, 130"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 52, 130"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 47, 93"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Solus Valley - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
           "Telluria Castle - Target"
         ]
       },
@@ -15964,6 +16858,212 @@
             "code": 45,
             "parameters": [
               "MOVE TO: 80, 61"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Bladesville - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Laeryidyean's Forest - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          108,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          167,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 80, 61"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 80, 61"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Bladesville - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
+          "Solus Valley - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          108,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          83,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 47, 93"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 52, 130"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 47, 93"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 52, 130"
             ],
             "indent": null
           }
@@ -16711,6 +17811,99 @@
         "code": 408,
         "indent": 0,
         "parameters": [
+          "Bladesville - Target"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          96,
+          0,
+          207,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          0,
+          108,
+          0
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 2,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "MOVE TO: 45, 62"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": true
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 2,
+        "parameters": [
+          {
+            "code": 45,
+            "parameters": [
+              "MOVE TO: 45, 62"
+            ],
+            "indent": null
+          }
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Frozen Labyrinth - Start"
+        ]
+      },
+      {
+        "code": 408,
+        "indent": 0,
+        "parameters": [
           "Telluria Castle - Target"
         ]
       },
@@ -17243,10 +18436,77 @@
         "parameters": []
       },
       {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameMap.mapId() === 108"
+        ]
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          74,
+          74,
+          0
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          74,
+          74,
+          1
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 355,
         "indent": 0,
         "parameters": [
-          "$gameMap.vehicles().forEach(v => v.setThrough(false));"
+          "$gameMap.vehicles().forEach(v => {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  v.setThrough(false);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  v.setTransparent(false);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "});"
         ]
       },
       {
@@ -18532,6 +19792,152 @@
       }
     ],
     "name": "Battle Cry",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 88,
+    "list": [
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "Tint fade #53454f 35"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameMap.parallaxName() === '!SkySun'"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameMap.changeParallax("
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  '!SkyNight',"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  true, true,"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  0.5, 0.25"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          ");"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "TIME - Dusk to Night",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 89,
+    "list": [
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "Tint fade #ffffff 35"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameMap.parallaxName() === '!SkySun'"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameMap.changeParallax("
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  '!SkyDay',"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  true, true,"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  0.5, 0.25"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          ");"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "TIME - Dawn to Day",
     "switchId": 1,
     "trigger": 0
   }

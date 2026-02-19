@@ -319,7 +319,7 @@ Game_Temp.prototype.clearShopGoods = function() {
 //=============================================================================
 
 Window_ShopCommand.prototype.windowWidth = function() {
-    return 240;
+    return 640;
 };
 
 Window_ShopCommand.prototype.maxCols = function() {
@@ -942,15 +942,16 @@ Scene_Shop.prototype.create = function() {
     this.failSafeGoods();
     this.createHelpWindow();
     this.createCommandWindow();
-    this.createInfoWindow();
     this.createDummyWindow();
     this.createNumberWindow();
-    this.createBuyWindow();
     this.createCategoryWindow();
+    this.createInfoWindow();
+    this.createBuyWindow();
     this.createSellWindow();
     this.createGoldWindow();
     this.createStatusWindow();
     this.createActorWindow();
+    this.createOwnerSprite();
 };
 
 Scene_Shop.prototype.createCommandWindow = function() {
@@ -973,6 +974,7 @@ Scene_Shop.prototype.createInfoWindow = function() {
     var ww = Graphics.boxWidth - wx;
     var wh = this._commandWindow.height;
     this._infoWindow = new Window_ShopInfo(wx, wy, ww, wh);
+    this._infoWindow.hide();
     this.addWindow(this._infoWindow);
 };
 
@@ -1157,6 +1159,19 @@ Scene_Shop.prototype.onActorCommon = function() {
     var actor = $gameParty.members()[index];
     $gameParty.setMenuActor(actor);
     SoundManager.playOk();
+};
+
+Scene_Shop.prototype.createOwnerSprite = function() {
+    var owner = $gameTemp._shopOwner;
+    if (!owner) return;
+    var bitmap = ImageManager.loadBitmap('img/busts/', owner, 0, true);
+    delete $gameTemp._shopOwner;
+    this._ownerSprite = new Sprite(bitmap);
+    this._ownerSprite.anchor.x = 0.5;
+    this._ownerSprite.anchor.y = 1;
+    this._ownerSprite.x = 1120;
+    this._ownerSprite.y = 360;
+    this.addChild(this._ownerSprite);
 };
 
 Yanfly.Shop.Scene_Shop_sellingPrice = Scene_Shop.prototype.sellingPrice;

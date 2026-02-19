@@ -484,8 +484,8 @@
       },
       {
         "enemyId": 35,
-        "x": 210,
-        "y": 331,
+        "x": 222,
+        "y": 256,
         "hidden": true
       }
     ],
@@ -741,37 +741,31 @@
     "id": 10,
     "members": [
       {
-        "enemyId": 4,
-        "x": 324,
-        "y": 349,
+        "enemyId": 6,
+        "x": 366,
+        "y": 289,
         "hidden": false
       },
       {
         "enemyId": 6,
-        "x": 390,
-        "y": 280,
+        "x": 300,
+        "y": 409,
         "hidden": false
       },
       {
         "enemyId": 32,
-        "x": 192,
-        "y": 409,
+        "x": 153,
+        "y": 325,
         "hidden": true
       },
       {
-        "enemyId": 35,
+        "enemyId": 6,
         "x": 216,
-        "y": 295,
-        "hidden": true
-      },
-      {
-        "enemyId": 80,
-        "x": 297,
-        "y": 181,
+        "y": 220,
         "hidden": false
       }
     ],
-    "name": "Blue Slime, Giant Rat, Living Plant",
+    "name": "Giant Rat x3",
     "pages": [
       {
         "conditions": {
@@ -819,48 +813,6 @@
             "indent": 1,
             "parameters": [
               "An Albino Rat joined the enemy troop!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 1,
-            "parameters": []
-          },
-          {
-            "code": 412,
-            "indent": 0,
-            "parameters": []
-          },
-          {
-            "code": 111,
-            "indent": 0,
-            "parameters": [
-              12,
-              "$gameSystem.rareEnemyRoll()"
-            ]
-          },
-          {
-            "code": 335,
-            "indent": 1,
-            "parameters": [
-              3
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 1,
-            "parameters": [
-              "",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 1,
-            "parameters": [
-              "A Rainbow Slime joined the enemy troop!"
             ]
           },
           {
@@ -941,6 +893,12 @@
         "x": 432,
         "y": 256,
         "hidden": false
+      },
+      {
+        "enemyId": 35,
+        "x": 171,
+        "y": 265,
+        "hidden": true
       }
     ],
     "name": "Blue Slime x3",
@@ -958,9 +916,51 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              3
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Rainbow Slime joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
           {
             "code": 0,
             "indent": 0,
@@ -2905,8 +2905,27 @@
   },
   {
     "id": 31,
-    "members": [],
-    "name": "",
+    "members": [
+      {
+        "enemyId": 94,
+        "x": 370,
+        "y": 199,
+        "hidden": false
+      },
+      {
+        "enemyId": 94,
+        "x": 279,
+        "y": 343,
+        "hidden": false
+      },
+      {
+        "enemyId": 94,
+        "x": 197,
+        "y": 214,
+        "hidden": false
+      }
+    ],
+    "name": "Rattlesnake x3",
     "pages": [
       {
         "conditions": {
@@ -13751,6 +13770,44 @@
             "indent": 0,
             "parameters": []
           },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 120,
+    "members": [
+      {
+        "enemyId": 93,
+        "x": 258,
+        "y": 301,
+        "hidden": false
+      }
+    ],
+    "name": "Brown Bear",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
           {
             "code": 0,
             "indent": 0,

@@ -323,7 +323,7 @@
     "battlerHue": 0,
     "battlerName": "Giant Rat",
     "dropItems": [],
-    "exp": 20,
+    "exp": 30,
     "traits": [
       {
         "code": 31,
@@ -351,12 +351,12 @@
         "value": 0.04
       }
     ],
-    "gold": 12,
+    "gold": 0,
     "name": "Giant Rat",
     "note": "<Armor Weakness: Slashing>\n<Sideview Battler: GiantRat>\n<Sideview Shadow Shift: -4>\n<Attack Animation: 16>\n\n<Enemy Drops>\nRat Fur: 75%\nRat Fur: 75%\nFulfilling Ration: 20%\nFulfilling Ration: 20%\nTough Pelt: 5%\nRat Claw: 5%\nRing of the Woods: 2.5%\nCopper Wristbraces: 5%\n</Enemy Drops>",
     "params": [
       100,
-      12,
+      0,
       10,
       8,
       1,
@@ -1715,7 +1715,7 @@
       1,
       40,
       125,
-      7
+      25
     ]
   },
   {
@@ -5142,7 +5142,7 @@
     ],
     "gold": 48,
     "name": "Polar Bear",
-    "note": "<Armor Weakness: Slashing>\n<Element: Ice>\n<Passive State: 144>\n\n<Sideview Battler: Bear_2>\n<Attack Animation: 19>\n\n<Enemy Drops>\nWarm Scarf: 5%\nRaw Bear Meat: 75%\nRaw Bear Meat: 75%\nLeather: 75%\nLeather: 75%\nHoney: 25%\nFrozen Jewel: 20%\nIce Skates: 0.5%\nIce Essence: 20%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n<Element: Ice>\n<Passive State: 144>\n\n<Sideview Battler: Bear_2>\n<Attack Animation: 19>\n\n<Enemy Drops>\nWarm Scarf: 5%\nRaw Bear Meat: 75%\nRaw Bear Meat: 75%\nLeather: 75%\nLeather: 75%\nHoney: 50%\nHoney: 50%\nFrozen Jewel: 20%\nIce Skates: 0.5%\nIce Essence: 20%\n</Enemy Drops>",
     "params": [
       1800,
       0,
@@ -7111,6 +7111,137 @@
       50,
       100,
       60
+    ]
+  },
+  {
+    "id": 93,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0.5,
+        "conditionType": 2,
+        "rating": 4,
+        "skillId": 41
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Brown Bear",
+    "dropItems": [],
+    "exp": 30,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 1
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.95
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.03
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.05
+      },
+      {
+        "code": 61,
+        "dataId": 0,
+        "value": 1
+      }
+    ],
+    "gold": 0,
+    "name": "Brown Bear",
+    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Bear_1>\n<Attack Animation: 16>\n\n<Enemy Drops>\nRaw Bear Meat: 75%\nRaw Bear Meat: 75%\nLeather: 75%\nLeather: 75%\nHoney: 50%\nHoney: 50%\n</Enemy Drops>",
+    "params": [
+      300,
+      0,
+      11,
+      10,
+      1,
+      1,
+      50,
+      50
+    ]
+  },
+  {
+    "id": 94,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0.5,
+        "conditionType": 2,
+        "rating": 5,
+        "skillId": 115
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Rattlesnake",
+    "dropItems": [],
+    "exp": 35,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 17,
+        "value": 1
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.98
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.11
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.08
+      }
+    ],
+    "gold": 25,
+    "name": "Rattlesnake",
+    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Snake1_5>\n<Attack Animation: 211>\n\n<Enemy Drops>\nCloth Mask: 5%\nRaw Snake Meat: 75%\nRaw Snake Meat: 75%\nVial of Poison: 10%\nEnchanted Snake Skin: 5%\nRattlesnake Fang: 5%\nShard of Glass: 1%\n</Enemy Drops>",
+    "params": [
+      300,
+      0,
+      16,
+      16,
+      1,
+      40,
+      100,
+      15
     ]
   }
 ]

@@ -3503,13 +3503,13 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 1,
+            "switch1Id": 5,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
+            "variableId": 3,
             "variableValid": false,
-            "variableValue": 0
+            "variableValue": 8
           },
           "directionFix": false,
           "image": {
@@ -3519,13 +3519,40 @@
             "pattern": 1,
             "characterIndex": 0
           },
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "indent": null,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true,
           "list": [
+            {
+              "code": 108,
+              "indent": 0,
+              "parameters": [
+                "<Icon on Event: 576>"
+              ]
+            },
             {
               "code": 111,
               "indent": 0,
               "parameters": [
-                0,
-                48,
+                2,
+                "A",
                 1
               ]
             },
@@ -3534,429 +3561,6 @@
               "indent": 1,
               "parameters": [
                 "Shopkeeper2",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\dalHello, I'm Dalia, and welcome to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "Dalia's Bear 'n Grille. How may"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "I help you..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\p2Hey! We're looking up to pick up"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "some ingredients for cooking."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Shopkeeper2",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\dalSure... let me just see today's specials..."
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 1,
-              "parameters": [
-                0,
-                {
-                  "list": [
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 19,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        30
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 3,
-                      "indent": null
-                    },
-                    {
-                      "code": 3,
-                      "indent": null
-                    },
-                    {
-                      "code": 3,
-                      "indent": null
-                    },
-                    {
-                      "code": 3,
-                      "indent": null
-                    },
-                    {
-                      "code": 19,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        30
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 19,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    30
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 3,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 3,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 3,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 3,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 19,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    30
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Shopkeeper2",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\dalSo... what brings your four here?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Actor4",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\p3Oh, nothing much. We're just adventuring"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "around the world. Came from Adon."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Shopkeeper2",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\dalHm..."
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 1,
-              "parameters": [
-                0,
-                {
-                  "list": [
-                    {
-                      "code": 16,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 16,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Shopkeeper2",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\dalWait. Adon, you say?"
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 1,
-              "parameters": [
-                0,
-                {
-                  "list": [
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 16,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 16,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Shopkeeper2",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\dalYou... with the goggles..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Shopkeeper2",
                 8,
                 0,
                 2
@@ -3966,88 +3570,96 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\dal...you're \\N[1]! Leader of the \\N[19]!"
+                "\\daliaWelcome to Dalia's Bear 'n Grille! Is this your first time here?"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "I had a hunch when you walked in, but I didn't want to be wrong..."
+                "You don't look like you're from the desert... so, welcome!"
               ]
             },
             {
-              "code": 101,
+              "code": 401,
               "indent": 1,
               "parameters": [
-                "Shopkeeper2",
-                8,
+                "I'm Dalia, obviously... mind if I ask for your name?"
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 1,
+              "parameters": [
+                [
+                  "\\N[1]",
+                  "Give fake name"
+                ],
+                1,
                 0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\dalApologies for my abruptness earlier; welcome to my"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "humble shop! I run it by myself, with the help of"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "Rex and Steven over there. Are you ready to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "look at the menu?"
-              ]
-            },
-            {
-              "code": 121,
-              "indent": 1,
-              "parameters": [
-                48,
-                48,
+                1,
                 0
               ]
             },
             {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 411,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 101,
+              "code": 402,
               "indent": 1,
               "parameters": [
-                "Shopkeeper2",
-                8,
                 0,
-                2
+                "\\N[1]"
               ]
             },
             {
-              "code": 401,
+              "code": 122,
+              "indent": 2,
+              "parameters": [
+                207,
+                207,
+                0,
+                4,
+                "$gameActors.actor(1).name()"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 402,
               "indent": 1,
               "parameters": [
-                "\\dalAre you ready to look at the menu?"
+                1,
+                "Give fake name"
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 2,
+              "parameters": [
+                207,
+                207,
+                0,
+                4,
+                "$gameTemp.generateGoofyName(true)"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 1,
+              "parameters": [
+                "A",
+                0
               ]
             },
             {
@@ -4061,16 +3673,48 @@
               "parameters": []
             },
             {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Shopkeeper2",
+                8,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\daliaWelcome in, \\c[1]\\V[207]\\c[0]! It's harsh out there, but I sell"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "cooking supplies and various ingredients you can use"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "to spice up your travels. You interested?"
+              ]
+            },
+            {
               "code": 102,
               "indent": 0,
               "parameters": [
                 [
-                  "Yeah, sure!",
-                  "No, thanks though."
+                  "Shop",
+                  "Got any good recipes?",
+                  "Goodbye"
                 ],
-                1,
-                0,
                 2,
+                0,
+                1,
                 0
               ]
             },
@@ -4079,7 +3723,7 @@
               "indent": 0,
               "parameters": [
                 0,
-                "Yeah, sure!"
+                "Shop"
               ]
             },
             {
@@ -4096,7 +3740,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\dalHere it is."
+                "\\daliaHere's what I've got in stock:"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameTemp._shopOwner = \"Shopkeeper2_9\";"
               ]
             },
             {
@@ -4104,23 +3755,6 @@
               "indent": 1,
               "parameters": [
                 61
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Shopkeeper2",
-                8,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\dalThank you for your business."
               ]
             },
             {
@@ -4133,7 +3767,31 @@
               "indent": 0,
               "parameters": [
                 1,
-                "No, thanks though."
+                "Got any good recipes?"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper2",
+                8,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\daliaIt's actually perfect timing that you asked that..."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "I'm trying to revive an old family recipe right now!"
               ]
             },
             {
@@ -4150,7 +3808,167 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\dalThat's fine... maybe some other time."
+                "\\daliaManaging the store all on my own is taxing, though,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "and I haven't had much time or funds to acquire"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "ingredients for personal projects..."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper2",
+                8,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\dalia...but you know what? If you can get me those ingredients,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "maybe the secret family recipe doesn't have to be so secret..."
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "Quest Add 46"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Ssssssecret Family Recipe!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "New Quest!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper2",
+                8,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\daliaI guess I can tell you what it is... it's a pie!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Hopefully that gets you excited! I don't even"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "need that much, just five \\ii[291]\\c[0],"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "three \\ii[290]\\c[0], and a \\ii[120]\\c[0]."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper2",
+                8,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\daliaJust be careful hunting those snakes, they'll unleash the poison"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "within their glands if they feel threatened! If you're scared at"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "the thought of poisonous infections, it might not be a bad idea to"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "buy a \\ii[289] from me to brew some \\ii[117]\\c[0]..."
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 1,
+              "parameters": [
+                "B",
+                0
               ]
             },
             {
@@ -4164,21 +3982,77 @@
               "parameters": []
             },
             {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                2,
+                "Goodbye"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
               "code": 404,
               "indent": 0,
               "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Shopkeeper2",
+                8,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\daliaThanks for choosing Dalia's! Come again!"
+              ]
             },
             {
               "code": 0,
               "indent": 0,
               "parameters": []
             }
-          ],
+          ]
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "B",
+            "selfSwitchValid": true,
+            "switch1Id": 5,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 3,
+            "variableValid": false,
+            "variableValue": 8
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Shopkeeper2",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 0
+          },
           "moveFrequency": 3,
           "moveRoute": {
             "list": [
               {
                 "code": 0,
+                "indent": null,
                 "parameters": []
               }
             ],
@@ -4186,13 +4060,706 @@
             "skippable": false,
             "wait": false
           },
-          "moveSpeed": 4,
+          "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": true,
+          "list": [
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Shopkeeper2",
+                8,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\daliaWelcome in, \\c[1]\\V[207]\\c[0]! It's harsh out there, but I sell"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "cooking supplies and various ingredients you can use"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "to spice up your travels. You interested?"
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 0,
+              "parameters": [
+                [
+                  "Shop",
+                  "Turn in quest <<ss[121]>>",
+                  "Goodbye"
+                ],
+                2,
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                0,
+                "Shop"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper2",
+                8,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\daliaHere's what I've got in stock:"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameTemp._shopOwner = \"Shopkeeper2_9\";"
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 1,
+              "parameters": [
+                61
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                1,
+                "Turn in quest <<ss[121]>>"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper2",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\daliaYou've got all the ingredients?"
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 1,
+              "parameters": [
+                {
+                  "name": "Equip3",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 1,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "$gameParty.numItems($dataItems[291]) >= 5"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                12,
+                "$gameParty.numItems($dataItems[290]) >= 3"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 3,
+              "parameters": [
+                8,
+                120
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 4,
+              "parameters": [
+                291,
+                1,
+                0,
+                5
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 4,
+              "parameters": [
+                290,
+                1,
+                0,
+                3
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 4,
+              "parameters": [
+                120,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 4,
+              "parameters": [
+                "Quest 46 Complete All Objectives"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 4,
+              "parameters": [
+                "Shopkeeper2",
+                8,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 4,
+              "parameters": [
+                "\\daliaYou... you actually did it! I honestly forgot that I asked."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 4,
+              "parameters": [
+                "Finally, my family's old recipe can be revived. Thank you!"
+              ]
+            },
+            {
+              "code": 221,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 4,
+              "parameters": [
+                "Shopkeeper2",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 4,
+              "parameters": [
+                "\\daliaRight, Dalia, you can make a pie..."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 4,
+              "parameters": [
+                "don't mess this up!"
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 4,
+              "parameters": [
+                {
+                  "name": "Equip3",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 4,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 4,
+              "parameters": [
+                {
+                  "name": "Water3",
+                  "volume": 90,
+                  "pitch": 150,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 4,
+              "parameters": [
+                30
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 4,
+              "parameters": [
+                {
+                  "name": "Water3",
+                  "volume": 90,
+                  "pitch": 150,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 4,
+              "parameters": [
+                30
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 4,
+              "parameters": [
+                {
+                  "name": "Water3",
+                  "volume": 90,
+                  "pitch": 150,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 4,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 4,
+              "parameters": [
+                "Shopkeeper2",
+                8,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 4,
+              "parameters": [
+                "\\daliaNot bad... looks delicious, actually!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 4,
+              "parameters": [
+                "And the taste..."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 4,
+              "parameters": [
+                "Shopkeeper2",
+                8,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 4,
+              "parameters": [
+                "\\dalia...it's just like the original!"
+              ]
+            },
+            {
+              "code": 222,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 4,
+              "parameters": [
+                "Shopkeeper2",
+                8,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 4,
+              "parameters": [
+                "\\daliaNo disrespect to great-grandma, but that wasn't as hard to bake as she made it out to be."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 4,
+              "parameters": [
+                "All you need is the right ingredients and the right recipe, and anyone can make a pie"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 4,
+              "parameters": [
+                "just as delicious as she used to! By Trailia, what a woman she was..."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 4,
+              "parameters": [
+                "Shopkeeper2",
+                8,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 4,
+              "parameters": [
+                "\\daliaHere, I had enough for two."
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 4,
+              "parameters": [
+                292,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 4,
+              "parameters": [
+                {
+                  "name": "Equip3",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 4,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 4,
+              "parameters": [
+                "Shopkeeper2",
+                8,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 4,
+              "parameters": [
+                "\\daliaI'll also give you the recipe, as promised."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 4,
+              "parameters": [
+                "Cook it up at a fire using a \\ii[289]\\c[0]!"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 4,
+              "parameters": [
+                "Quest 46 Claim All Rewards"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 4,
+              "parameters": [
+                "Quest 46 Change Description Entry to 2"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 4,
+              "parameters": [
+                "Quest Set Completed 46"
+              ]
+            },
+            {
+              "code": 249,
+              "indent": 4,
+              "parameters": [
+                {
+                  "name": "Item",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 4,
+              "parameters": [
+                "",
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 4,
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 4,
+              "parameters": [
+                "Ssssssecret Family Recipe!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 4,
+              "parameters": [
+                "Quest Complete!"
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 4,
+              "parameters": [
+                121,
+                121,
+                0
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper2",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\daliaThat's not everything I asked for... c'mon,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "I'm a busy person, don't waste my time!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper2",
+                8,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\daliaScared of the snakes? Just be careful... once you've got 'em injured"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "enough, that's when they'll use their poison! If you're scared at"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "the thought of poisonous infections, it might not be a bad idea to"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "buy a \\ii[289] from me to brew some \\ii[117]\\c[0]..."
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                2,
+                "Goodbye"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Shopkeeper2",
+                8,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\daliaThanks for choosing Dalia's Bear 'n Grille! Come again!"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ]
         }
       ],
       "x": 15,
@@ -4261,7 +4828,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\dalHey, sorry, but could you not"
+                "\\daliaHey, sorry, but could you not"
               ]
             },
             {
@@ -4285,7 +4852,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\dalIf you really want to, just talk to me."
+                "\\daliaIf you really want to, just talk to me."
               ]
             },
             {
@@ -4427,7 +4994,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\dalHey, sorry, but could you not"
+                "\\daliaHey, sorry, but could you not"
               ]
             },
             {
@@ -4451,7 +5018,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\dalIf you really want to, just talk to me."
+                "\\daliaIf you really want to, just talk to me."
               ]
             },
             {
@@ -4593,7 +5160,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\dalRex loves to run around the"
+                "\\daliaRex loves to run around the"
               ]
             },
             {
@@ -4617,7 +5184,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\dalSorry if he gets in your way... but"
+                "\\daliaSorry if he gets in your way... but"
               ]
             },
             {
@@ -4775,7 +5342,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\dalSteven likes to act tough, but don't"
+                "\\daliaSteven likes to act tough, but don't"
               ]
             },
             {
@@ -4799,7 +5366,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\dalHe always tries to defend Rex when"
+                "\\daliaHe always tries to defend Rex when"
               ]
             },
             {
@@ -4849,6 +5416,7 @@
       ],
       "x": 6,
       "y": 16
-    }
+    },
+    null
   ]
 }
