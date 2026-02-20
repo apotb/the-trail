@@ -1445,12 +1445,10 @@
               ]
             },
             {
-              "code": 121,
+              "code": 355,
               "indent": 0,
               "parameters": [
-                3,
-                3,
-                0
+                "$gameSelfSwitches.setValue([35, 11, 'A'] , true);"
               ]
             },
             {
@@ -1769,7 +1767,7 @@
                   ],
                   "repeat": false,
                   "skippable": false,
-                  "wait": false
+                  "wait": true
                 }
               ]
             },
@@ -2640,15 +2638,6 @@
               ]
             },
             {
-              "code": 121,
-              "indent": 0,
-              "parameters": [
-                3,
-                3,
-                1
-              ]
-            },
-            {
               "code": 122,
               "indent": 0,
               "parameters": [
@@ -3454,9 +3443,9 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": false,
+            "selfSwitchValid": true,
             "switch1Id": 3,
-            "switch1Valid": true,
+            "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 10,
