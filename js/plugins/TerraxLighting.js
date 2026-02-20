@@ -2216,14 +2216,17 @@ Imported.TerraxLighting = true;
 											}
 										}
 
-										// kill switch
-										if (killswitch == 'A' || killswitch == 'B' || killswitch == 'C' || killswitch == 'D') {
-											key = [map_id, evid, killswitch];
-											if ($gameSelfSwitches.value(key) == true) {
-												state = false;
-												//Graphics.Debug('Deathswitch',killswitch);
-											}
-										}
+						// kill switch
+						// Lights with an id (controlled via plugin commands Light on/off)
+						// should ignore the global killswitch self switch to avoid conflicts
+						// when the same self switch letter is used (commonly 'D').
+						if (lightid === 0 && (killswitch == 'A' || killswitch == 'B' || killswitch == 'C' || killswitch == 'D')) {
+							key = [map_id, evid, killswitch];
+							if ($gameSelfSwitches.value(key) == true) {
+								state = false;
+								//Graphics.Debug('Deathswitch',killswitch);
+							}
+						}
 
 
 
