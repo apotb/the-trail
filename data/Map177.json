@@ -3831,10 +3831,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "Boss1",
+            "characterName": "Adon",
             "direction": 8,
             "pattern": 1,
-            "characterIndex": 0
+            "characterIndex": 7
           },
           "list": [
             {
@@ -4691,7 +4691,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\laeI'm asking you... why did you come this far?"
+                "\\laeI'm asking you a question... why did you come this far?"
               ]
             },
             {
@@ -4715,14 +4715,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "We know you're in the way."
+                "We know you're standing in the way."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "And we're not turning back."
+                "And we aren't turning back."
               ]
             },
             {
@@ -4739,7 +4739,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\laeI see... so that's how it's being told now."
+                "\\laeI see... so that's how they spin the narrative now."
               ]
             },
             {
@@ -4801,7 +4801,200 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\laeYou sound certain. I will humor you."
+                "\\laeYou have conviction in your words. I will humor you."
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 15,
+                      "parameters": [
+                        120
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 41,
+                      "parameters": [
+                        "Boss1",
+                        0
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 44,
+                      "parameters": [
+                        {
+                          "name": "Equip3",
+                          "volume": 90,
+                          "pitch": 100,
+                          "pan": 0
+                        }
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 15,
+                      "parameters": [
+                        30
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 44,
+                      "parameters": [
+                        {
+                          "name": "Sword1",
+                          "volume": 90,
+                          "pitch": 50,
+                          "pan": 0
+                        }
+                      ],
+                      "indent": 0
+                    },
+                    {
+                      "code": 15,
+                      "parameters": [
+                        150
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 16,
+                      "indent": null
+                    },
+                    {
+                      "code": 15,
+                      "parameters": [
+                        120
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "parameters": [
+                    120
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 41,
+                  "parameters": [
+                    "Boss1",
+                    0
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 44,
+                  "parameters": [
+                    {
+                      "name": "Equip3",
+                      "volume": 90,
+                      "pitch": 100,
+                      "pan": 0
+                    }
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "parameters": [
+                    30
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 44,
+                  "parameters": [
+                    {
+                      "name": "Sword1",
+                      "volume": 90,
+                      "pitch": 50,
+                      "pan": 0
+                    }
+                  ],
+                  "indent": 0
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "parameters": [
+                    150
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 16,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "parameters": [
+                    120
+                  ],
+                  "indent": null
+                }
               ]
             },
             {
@@ -4818,7 +5011,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\laeIf you can defeat me, the way forward will open."
+                "\\laeDefeat me, and the path forward will open."
               ]
             },
             {
@@ -4835,7 +5028,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\lae\\c[18]Apocalypse\\c[0] will make his move."
+                "\\laeBut now that you've made your move...\\!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "it's \\c[18]Apocalypse\\c[0]'s turn."
               ]
             },
             {
@@ -4919,37 +5119,6 @@
               "indent": 0,
               "parameters": [
                 90
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                0,
-                {
-                  "list": [
-                    {
-                      "code": 16,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 16,
-                  "indent": null
-                }
               ]
             },
             {
@@ -5211,6 +5380,31 @@
               "parameters": [
                 "OrangeGreenworks.activateAchievement('BOSS_LAERYIDYEAN');"
               ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "$gameSystem.playtime() / 60 / 60 < 1"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "OrangeGreenworks.activateAchievement('SPEEDRUN_LAERYIDYEAN');"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 121,

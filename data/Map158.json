@@ -6842,7 +6842,7 @@
     {
       "id": 10,
       "name": "waterfall-template",
-      "note": "",
+      "note": "<reflect_off>",
       "pages": [
         {
           "conditions": {
@@ -19805,13 +19805,9 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
-              {
-                "code": 9,
-                "indent": null
-              },
               {
                 "code": 45,
                 "parameters": [
@@ -19823,6 +19819,17 @@
                 "code": 45,
                 "parameters": [
                   "this._chaseSpeed = 3"
+                ],
+                "indent": null
+              },
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -20246,9 +20253,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 3"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 3"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -20256,14 +20277,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 3"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 3"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -20687,9 +20701,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -20697,14 +20725,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 4"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -21049,9 +21070,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 5"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -21059,14 +21094,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 5"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -21411,9 +21439,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 5"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -21421,14 +21463,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 5"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -21777,20 +21812,27 @@
           "moveRoute": {
             "list": [
               {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
+              {
                 "code": 9,
                 "indent": null
               },
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 4"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -22135,9 +22177,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -22145,14 +22201,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 4"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -22497,9 +22546,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 4,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 5"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -22507,14 +22570,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 5"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 5"
+                  "this._waitCount = Math.floor((Math.random() * 61) + 30);"
                 ],
                 "indent": null
               },
@@ -22938,9 +22994,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 6"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -22948,14 +23018,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 6"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 5"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -23300,9 +23363,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 6"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -23310,14 +23387,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 6"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -23763,9 +23833,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 6"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 3"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -23773,14 +23857,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 6"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 3"
+                  "this._waitCount = Math.floor((Math.random() * 151) + 120);"
                 ],
                 "indent": null
               },
@@ -24125,9 +24202,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 4,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 6"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -24135,14 +24226,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 6"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 5"
+                  "this._waitCount = Math.floor((Math.random() * 61) + 30);"
                 ],
                 "indent": null
               },
@@ -24566,9 +24650,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 8"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 3"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -24576,14 +24674,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 8"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 3"
+                  "this._waitCount = Math.floor((Math.random() * 121) + 90);"
                 ],
                 "indent": null
               },
@@ -25007,9 +25098,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 8"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 3"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -25017,14 +25122,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 8"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 3"
+                  "this._waitCount = Math.floor((Math.random() * 121) + 90);"
                 ],
                 "indent": null
               },
@@ -25448,9 +25546,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 7"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -25458,14 +25570,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 7"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 5"
+                  "this._waitCount = Math.floor((Math.random() * 61) + 30);"
                 ],
                 "indent": null
               },
@@ -25889,9 +25994,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 6"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -25899,14 +26018,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 6"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -26251,9 +26363,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 9"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -26261,14 +26387,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 9"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -26850,9 +26969,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 4,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 8"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -26860,14 +26993,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 8"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 5"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -27370,9 +27496,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 7"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -27380,14 +27520,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 4"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 7"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -27890,9 +28023,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 3"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 3"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -27900,14 +28047,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 3"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 3"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -28481,9 +28621,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 1,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -28491,14 +28645,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 4"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 121) + 180);"
                 ],
                 "indent": null
               },
@@ -28869,9 +29016,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "if ($gameVariables.value(12) != 10) this._chaseRange = 5"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "if ($gameVariables.value(12) != 10) this._chaseSpeed = 5"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -28879,14 +29040,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "if ($gameVariables.value(12) != 10) this._chaseRange = 5"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "if ($gameVariables.value(12) != 10) this._chaseSpeed = 5"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -29231,9 +29385,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 3"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 3"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -29241,14 +29409,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 3"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 3"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -29593,9 +29754,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 1,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 5"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -29603,14 +29778,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 5"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 121) + 180);"
                 ],
                 "indent": null
               },
@@ -29955,9 +30123,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 2,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 8"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -29965,14 +30147,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 8"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 121) + 90);"
                 ],
                 "indent": null
               },
@@ -30493,9 +30668,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 6"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -30503,14 +30692,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 6"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 5"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -30855,9 +31037,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 6"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -30865,14 +31061,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 6"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 121) + 90);"
                 ],
                 "indent": null
               },
@@ -31217,9 +31406,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 6"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -31227,14 +31430,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 6"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 5"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -31579,9 +31775,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 1,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 9"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 7"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -31589,14 +31799,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 9"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 7"
+                  "this._waitCount = Math.floor((Math.random() * 181) + 180);"
                 ],
                 "indent": null
               },
@@ -31941,9 +32144,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 5"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 3"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -31951,14 +32168,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 5"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 3"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -32303,9 +32513,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 9"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -32313,14 +32537,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 9"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -32665,9 +32882,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 9"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -32675,14 +32906,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 9"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -33027,7 +33251,7 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 2,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
               {
@@ -33051,7 +33275,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._waitCount = Math.floor((Math.random() * 31) + 60);"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -33414,14 +33638,14 @@
                 "indent": null
               },
               {
-                "code": 15,
-                "parameters": [
-                  75
-                ],
-                "indent": 0
+                "code": 9,
+                "indent": null
               },
               {
-                "code": 9,
+                "code": 45,
+                "parameters": [
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
+                ],
                 "indent": null
               },
               {
@@ -33688,14 +33912,14 @@
                 "indent": null
               },
               {
-                "code": 15,
-                "parameters": [
-                  60
-                ],
-                "indent": 0
+                "code": 9,
+                "indent": null
               },
               {
-                "code": 9,
+                "code": 45,
+                "parameters": [
+                  "this._waitCount = Math.floor((Math.random() * 61) + 30);"
+                ],
                 "indent": null
               },
               {
@@ -34167,7 +34391,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._waitCount = Math.floor((Math.random() * 31) + 60);"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -34615,7 +34839,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._waitCount = Math.floor((Math.random() * 61) + 90);"
+                  "this._waitCount = Math.floor((Math.random() * 121) + 90);"
                 ],
                 "indent": null
               },
@@ -36611,17 +36835,7 @@
               "code": 126,
               "indent": 0,
               "parameters": [
-                27,
-                0,
-                0,
-                1
-              ]
-            },
-            {
-              "code": 126,
-              "indent": 0,
-              "parameters": [
-                28,
+                30,
                 0,
                 0,
                 1
@@ -36641,7 +36855,17 @@
               "code": 126,
               "indent": 0,
               "parameters": [
-                30,
+                28,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 0,
+              "parameters": [
+                27,
                 0,
                 0,
                 1
@@ -37560,7 +37784,7 @@
               "code": 126,
               "indent": 0,
               "parameters": [
-                60,
+                61,
                 0,
                 0,
                 1
@@ -37570,7 +37794,7 @@
               "code": 126,
               "indent": 0,
               "parameters": [
-                61,
+                60,
                 0,
                 0,
                 1
@@ -38130,7 +38354,7 @@
               "code": 126,
               "indent": 0,
               "parameters": [
-                263,
+                264,
                 0,
                 0,
                 1
@@ -38140,7 +38364,7 @@
               "code": 126,
               "indent": 0,
               "parameters": [
-                264,
+                263,
                 0,
                 0,
                 1
@@ -39059,10 +39283,10 @@
               "code": 126,
               "indent": 0,
               "parameters": [
-                162,
+                40,
                 0,
                 0,
-                2
+                1
               ]
             },
             {
@@ -39079,10 +39303,10 @@
               "code": 126,
               "indent": 0,
               "parameters": [
-                40,
+                162,
                 0,
                 0,
-                1
+                2
               ]
             },
             {
@@ -39602,9 +39826,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 1,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -39612,14 +39850,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 4"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 121) + 180);"
                 ],
                 "indent": null
               },
@@ -39988,7 +40219,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._waitCount = Math.floor((Math.random() * 31) + 60);"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -40357,7 +40588,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._waitCount = Math.floor((Math.random() * 31) + 60);"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -40897,7 +41128,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._waitCount = Math.floor((Math.random() * 31) + 60);"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -41266,7 +41497,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._waitCount = Math.floor((Math.random() * 31) + 60);"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -41635,7 +41866,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._waitCount = Math.floor((Math.random() * 31) + 60);"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -42175,7 +42406,7 @@
     {
       "id": 171,
       "name": "streetlight-template",
-      "note": "fire 250 #ffbb61",
+      "note": "fire 250 #ffbb61 <reflect_off>",
       "pages": [
         {
           "conditions": {
@@ -42185,8 +42416,8 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
+            "switch1Id": 131,
+            "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 1,
@@ -42305,7 +42536,7 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 69,
+            "switch1Id": 131,
             "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
@@ -42425,7 +42656,7 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 69,
+            "switch1Id": 131,
             "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
@@ -42545,7 +42776,7 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 69,
+            "switch1Id": 131,
             "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
@@ -42665,7 +42896,7 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 69,
+            "switch1Id": 131,
             "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
@@ -42785,7 +43016,7 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 69,
+            "switch1Id": 131,
             "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
@@ -42956,7 +43187,7 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 69,
+            "switch1Id": 131,
             "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
@@ -43627,9 +43858,9 @@
           "directionFix": true,
           "image": {
             "tileId": 0,
-            "characterName": "!Flame",
-            "direction": 6,
-            "pattern": 1,
+            "characterName": "!Flame2",
+            "direction": 2,
+            "pattern": 0,
             "characterIndex": 0
           },
           "list": [
@@ -43654,7 +43885,7 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 0,
           "walkAnime": false
@@ -43667,7 +43898,7 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 69,
+            "switch1Id": 131,
             "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
@@ -43787,7 +44018,7 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 69,
+            "switch1Id": 131,
             "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
@@ -43907,7 +44138,7 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 69,
+            "switch1Id": 131,
             "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
@@ -44027,7 +44258,7 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 69,
+            "switch1Id": 131,
             "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
@@ -44147,7 +44378,7 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 69,
+            "switch1Id": 131,
             "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
@@ -44253,6 +44484,267 @@
       ],
       "x": 32,
       "y": 9
+    },
+    {
+      "id": 199,
+      "name": "stove-template",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 112,
+            "characterName": "",
+            "characterIndex": 0,
+            "direction": 2,
+            "pattern": 0
+          },
+          "list": [
+            {
+              "code": 108,
+              "indent": 0,
+              "parameters": [
+                "<Icon on Event: 1299>"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                4,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\p2Let's get cookin'!"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "It's a stove."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 102,
+              "indent": 0,
+              "parameters": [
+                [
+                  "Cook",
+                  "Leave"
+                ],
+                1,
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                0,
+                "Cook"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                1,
+                "Leave"
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                15
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameTemp.recipeTemplate('FIRE');"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "OpenSynthesis"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 29,
+      "y": 2
+    },
+    {
+      "id": 200,
+      "name": "stove-copy",
+      "note": "<Copy Event: 158, 199>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 112,
+            "characterName": "",
+            "characterIndex": 0,
+            "direction": 2,
+            "pattern": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 29,
+      "y": 3
     }
   ]
 }

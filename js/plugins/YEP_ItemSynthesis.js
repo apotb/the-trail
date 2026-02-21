@@ -1505,12 +1505,9 @@ Window_SynthesisNumber.prototype.drawNumber = function() {
     var width = this.cursorWidth() - this.textPadding();
     this.resetTextColor();
     number = this._number;
-    if (SceneManager._scene._listWindow.item()) number *= SceneManager._scene._listWindow.item().craftAmount;
-    if (DataManager.isItem(this._item)) {
-      this.drawText(number, x, y, width, 'right');
-    } else {
-      this.drawText("Confirm?", x - width, y, width * 2, 'right');
-    }
+    number = this._number * this._item?.craftAmount ?? 1;
+    if (DataManager.isItem(this._item)) this.drawText(number, x, y, width, 'right');
+    else this.drawText("Confirm?", x - width, y, width * 2, 'right');
 };
 
 Window_SynthesisNumber.prototype.drawIngredients = function() {
@@ -1605,7 +1602,23 @@ Window_SynthesisNumber.prototype.update = function() {
 Window_SynthesisNumber.prototype.playOkSound = function() {
 };
 
-Window_SynthesisNumber.prototype.processNumberChange = Window_ShopNumber.prototype.processNumberChange;
+Window_SynthesisNumber.prototype.processNumberChange = function() {
+    if (!DataManager.isItem(this._item)) return;
+    if (this.isOpenAndActive()) {
+        if (Input.isRepeated('right')) {
+            this.changeNumber(1);
+        }
+        if (Input.isRepeated('left')) {
+            this.changeNumber(-1);
+        }
+        if (Input.isRepeated('up')) {
+            this.changeNumber(this.number() !== 1 ? 10 : 9);
+        }
+        if (Input.isRepeated('down')) {
+            this.changeNumber(-10);
+        }
+    }
+};
 
 Window_SynthesisNumber.prototype.changeNumber = function(amount) {
     var lastNumber = this._number;
@@ -1621,13 +1634,21 @@ Window_SynthesisNumber.prototype.updateCursor = function() {
                        this.cursorWidth(), this.lineHeight());
 };
 
-Window_SynthesisNumber.prototype.onButtonUp = Window_ShopNumber.prototype.onButtonUp;
+Window_SynthesisNumber.prototype.onButtonUp = function() {
+    if (DataManager.isItem(this._item)) this.changeNumber(1);
+};
 
-Window_SynthesisNumber.prototype.onButtonUp2 = Window_ShopNumber.prototype.onButtonUp2;
+Window_SynthesisNumber.prototype.onButtonUp2 = function() {
+    if (DataManager.isItem(this._item)) this.changeNumber(this.number() !== 1 ? 10 : 9);
+};
 
-Window_SynthesisNumber.prototype.onButtonDown = Window_ShopNumber.prototype.onButtonDown;
+Window_SynthesisNumber.prototype.onButtonDown = function() {
+    if (DataManager.isItem(this._item)) this.changeNumber(-1);
+};
 
-Window_SynthesisNumber.prototype.onButtonDown2 = Window_ShopNumber.prototype.onButtonDown2;
+Window_SynthesisNumber.prototype.onButtonDown2 = function() {
+    if (DataManager.isItem(this._item)) this.changeNumber(-10);
+};
 
 Window_SynthesisNumber.prototype.onButtonOk = function() {
     this.processOk();
@@ -2045,6 +2066,7 @@ Scene_Synthesis.prototype.endNumberInput = function() {
 Scene_Synthesis.prototype.onNumberCancel = function() {
     SoundManager.playCancel();
     this.endNumberInput();
+    this._statusWindow.setItem(null);
 };
 
 Scene_Synthesis.prototype.maxBuy = function() {

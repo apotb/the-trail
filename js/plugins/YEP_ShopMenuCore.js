@@ -1135,14 +1135,18 @@ Scene_Shop.prototype.createActorWindow = function() {
 };
 
 Scene_Shop.prototype.commandEquip = function() {  
+    this._commandWindow.deactivate();
     this._actorWindow.activate();
     this._actorWindow.show();
     this._actorWindow.select(0);
+    if (this._ownerSprite) this._ownerSprite.visible = false;
 };
 
 Scene_Shop.prototype.onActorOk = function() {
     this.onActorCommon();
     if (this._commandWindow.currentSymbol() === 'equip') {
+      $gameTemp._shopReturnToEquip = true;
+      $gameTemp._shopReturnToEquipActorIndex = this._actorWindow.index();
       SceneManager.push(Scene_Equip);
     }
 };
@@ -1151,6 +1155,7 @@ Scene_Shop.prototype.onActorCancel = function() {
     this._actorWindow.hide();
     this._actorWindow.deselect();
     this._commandWindow.activate();
+    if (this._ownerSprite) this._ownerSprite.visible = true;
 };
 
 Scene_Shop.prototype.onActorCommon = function() {
@@ -1162,16 +1167,38 @@ Scene_Shop.prototype.onActorCommon = function() {
 };
 
 Scene_Shop.prototype.createOwnerSprite = function() {
-    var owner = $gameTemp._shopOwner;
-    if (!owner) return;
-    var bitmap = ImageManager.loadBitmap('img/busts/', owner, 0, true);
-    delete $gameTemp._shopOwner;
+    // Preserve owner name across scene hops (eg. returning from Equip).
+    this._shopOwnerName = this._shopOwnerName || $gameTemp._shopOwner;
+    if (!this._shopOwnerName) return;
+    var bitmap = ImageManager.loadBitmap('img/busts/', this._shopOwnerName, 0, true);
     this._ownerSprite = new Sprite(bitmap);
     this._ownerSprite.anchor.x = 0.5;
     this._ownerSprite.anchor.y = 1;
     this._ownerSprite.x = 1120;
     this._ownerSprite.y = 360;
     this.addChild(this._ownerSprite);
+};
+
+// Remember return-from-equip state so the actor window is shown again.
+Yanfly.Shop.Scene_Shop_start = Scene_Shop.prototype.start;
+Scene_Shop.prototype.start = function() {
+    Yanfly.Shop.Scene_Shop_start.call(this);
+    if ($gameTemp._shopReturnToEquip) {
+      var index = $gameTemp._shopReturnToEquipActorIndex || 0;
+      delete $gameTemp._shopReturnToEquipActorIndex;
+      $gameTemp._shopReturnToEquip = false;
+      this._commandWindow.selectSymbol('equip');
+      this.commandEquip();
+      this._actorWindow.select(index);
+    }
+};
+
+// Clear the shop owner data only when actually exiting the shop (not when
+// detouring to the equip scene).
+Yanfly.Shop.Scene_Shop_terminate = Scene_Shop.prototype.terminate;
+Scene_Shop.prototype.terminate = function() {
+    Yanfly.Shop.Scene_Shop_terminate.call(this);
+    if (!$gameTemp._shopReturnToEquip) delete $gameTemp._shopOwner;
 };
 
 Yanfly.Shop.Scene_Shop_sellingPrice = Scene_Shop.prototype.sellingPrice;

@@ -401,7 +401,12 @@ Scene_Boot.prototype.start = function() {
     } else {
         this.checkPlayerLocation();
         DataManager.setupNewGame();
-        SceneManager.goto(Scene_Title);
+        if (!DataManager.isAnySavefileExists()) {
+            DataManager.setupNewGame();
+            SceneManager.goto(Scene_Map);
+        } else {
+            SceneManager.goto(Scene_Title);
+        }
         Window_TitleCommand.initCommandPosition();
     }
 };

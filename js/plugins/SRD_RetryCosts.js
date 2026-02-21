@@ -254,6 +254,7 @@ Game_Party.prototype.canPayRetryCosts = function() {
 };
 
 Game_Party.prototype.canPayItemRetryCosts = function() {
+	if (eval($gameSystem.goldRetryCost) > 0) return true;
 	const items = eval('[' + $gameSystem.itemRetryCost + ']');
 	if(!items) return true;
 	for(let i = 0; i < items.length; i++) {
@@ -277,6 +278,7 @@ Game_Party.prototype.payRetryCosts = function() {
 };
 
 Game_Party.prototype.payItemRetryCosts = function() {
+	if (eval($gameSystem.goldRetryCost) > 0) return;
 	const items = eval('[' + $gameSystem.itemRetryCost + ']');
 	if(!items) return;
 	for(let i = 0; i < items.length; i++) {
@@ -375,9 +377,10 @@ Sprite_RetryCosts.prototype.calculateLinesGold = function() {
 };
 
 Sprite_RetryCosts.prototype.calculateLinesItems = function() {
-	if($gameSystem.itemRetryCost) {
-		for(let i = 0; i < $gameSystem.itemRetryCost.length; i++) {
-			const info = $gameSystem.itemRetryCost[i];
+	if($gameSystem.itemRetryCost && eval($gameSystem.goldRetryCost) <= 0) {
+		const items = eval('[' + $gameSystem.itemRetryCost + ']');
+		for(let i = 0; i < items.length; i++) {
+			const info = items[i];
 			const item = $dataItems[info[0]];
 			if(item) {
 				this._numOfLines++;
@@ -429,9 +432,10 @@ Sprite_RetryCosts.prototype.createGoldLabel = function(line) {
 };
 
 Sprite_RetryCosts.prototype.createItemLabel = function(line) {
-	if($gameSystem.itemRetryCost) {
-		for(let i = 0; i < $gameSystem.itemRetryCost.length; i++) {
-			const info = $gameSystem.itemRetryCost[i];
+	if($gameSystem.itemRetryCost && eval($gameSystem.goldRetryCost) <= 0) {
+		const items = eval('[' + $gameSystem.itemRetryCost + ']');
+		for(let i = 0; i < items.length; i++) {
+			const info = items[i];
 			const item = $dataItems[info[0]];
 			if(item) {
 				const y = (line * this._lineHeight) + 6;

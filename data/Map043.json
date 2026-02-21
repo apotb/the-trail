@@ -162,11 +162,11 @@
     2840,
     6112,
     6466,
-    6474,
     6466,
     6466,
     6466,
-    6478,
+    6466,
+    6470,
     3744,
     3728,
     3752,
@@ -15128,7 +15128,7 @@
               "indent": 0,
               "parameters": [
                 "Actor4",
-                3,
+                7,
                 0,
                 2
               ]
@@ -15137,7 +15137,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4\\N[4]. It's a pleasure to meet you."
+                "\\p4\\N[4]. It's a pleasure to meet you!"
               ]
             },
             {
@@ -17340,7 +17340,7 @@
     {
       "id": 25,
       "name": "EV025",
-      "note": "",
+      "note": "<reflect_off>",
       "pages": [
         {
           "conditions": {
@@ -19366,7 +19366,7 @@
     {
       "id": 36,
       "name": "EV036",
-      "note": "",
+      "note": "<reflect_off>",
       "pages": [
         {
           "conditions": {
@@ -19426,7 +19426,7 @@
     {
       "id": 37,
       "name": "EV037",
-      "note": "",
+      "note": "<reflect_off>",
       "pages": [
         {
           "conditions": {
@@ -19486,7 +19486,7 @@
     {
       "id": 38,
       "name": "EV038",
-      "note": "",
+      "note": "<reflect_off>",
       "pages": [
         {
           "conditions": {
@@ -19546,7 +19546,7 @@
     {
       "id": 39,
       "name": "EV039",
-      "note": "",
+      "note": "<reflect_off>",
       "pages": [
         {
           "conditions": {
@@ -19606,7 +19606,7 @@
     {
       "id": 40,
       "name": "EV040",
-      "note": "",
+      "note": "<reflect_off>",
       "pages": [
         {
           "conditions": {
@@ -19666,7 +19666,7 @@
     {
       "id": 41,
       "name": "EV041",
-      "note": "",
+      "note": "<reflect_off>",
       "pages": [
         {
           "conditions": {
@@ -19726,7 +19726,7 @@
     {
       "id": 42,
       "name": "EV042",
-      "note": "",
+      "note": "<reflect_off>",
       "pages": [
         {
           "conditions": {
@@ -19786,7 +19786,7 @@
     {
       "id": 43,
       "name": "EV043",
-      "note": "",
+      "note": "<reflect_off>",
       "pages": [
         {
           "conditions": {
@@ -19846,7 +19846,7 @@
     {
       "id": 44,
       "name": "EV044",
-      "note": "",
+      "note": "<reflect_off>",
       "pages": [
         {
           "conditions": {
@@ -19906,7 +19906,7 @@
     {
       "id": 45,
       "name": "EV045",
-      "note": "",
+      "note": "<reflect_off>",
       "pages": [
         {
           "conditions": {
@@ -19966,7 +19966,7 @@
     {
       "id": 46,
       "name": "EV046",
-      "note": "",
+      "note": "<reflect_off>",
       "pages": [
         {
           "conditions": {
@@ -20026,7 +20026,7 @@
     {
       "id": 47,
       "name": "EV047",
-      "note": "",
+      "note": "<reflect_off>",
       "pages": [
         {
           "conditions": {
@@ -20086,7 +20086,7 @@
     {
       "id": 48,
       "name": "EV048",
-      "note": "",
+      "note": "<reflect_off>",
       "pages": [
         {
           "conditions": {
@@ -20146,7 +20146,7 @@
     {
       "id": 49,
       "name": "EV049",
-      "note": "",
+      "note": "<reflect_off>",
       "pages": [
         {
           "conditions": {
@@ -20206,7 +20206,7 @@
     {
       "id": 50,
       "name": "EV050",
-      "note": "",
+      "note": "<reflect_off>",
       "pages": [
         {
           "conditions": {
@@ -22143,7 +22143,7 @@
     {
       "id": 63,
       "name": "EV063",
-      "note": "",
+      "note": "<reflect_off>",
       "pages": [
         {
           "conditions": {
@@ -22176,89 +22176,11 @@
               "parameters": []
             },
             {
-              "code": 111,
+              "code": 117,
               "indent": 0,
               "parameters": [
-                0,
-                69,
-                1
+                90
               ]
-            },
-            {
-              "code": 355,
-              "indent": 1,
-              "parameters": [
-                "Galv.FISH.changePond('bg','back1');"
-              ]
-            },
-            {
-              "code": 655,
-              "indent": 1,
-              "parameters": [
-                "Galv.FISH.changePond('surface','surface1');"
-              ]
-            },
-            {
-              "code": 655,
-              "indent": 1,
-              "parameters": [
-                "Galv.FISH.changePond('under','under1');"
-              ]
-            },
-            {
-              "code": 655,
-              "indent": 1,
-              "parameters": [
-                "Galv.FISH.changePond('land','land1');"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 411,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 355,
-              "indent": 1,
-              "parameters": [
-                "Galv.FISH.changePond('bg','back2');"
-              ]
-            },
-            {
-              "code": 655,
-              "indent": 1,
-              "parameters": [
-                "Galv.FISH.changePond('surface','surface2');"
-              ]
-            },
-            {
-              "code": 655,
-              "indent": 1,
-              "parameters": [
-                "Galv.FISH.changePond('under','under2');"
-              ]
-            },
-            {
-              "code": 655,
-              "indent": 1,
-              "parameters": [
-                "Galv.FISH.changePond('land','land2');"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
             },
             {
               "code": 355,
@@ -27983,7 +27905,14 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "Check out the Archipelago, ASAP!"
+                "Hop on your boat and check out that"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "island in the Archipelago, ASAP!"
               ]
             },
             {

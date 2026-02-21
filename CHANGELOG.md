@@ -32,13 +32,15 @@ NOTICE: Old saves will not work with this update!
 - Added a short sound effect when completing a quest objective.
 - Added new rogue passive skill "Resourceful" at level 15.
   - Moved Low Blow to L18, Shield Break to L22, and removed Focus Up.
-- Added 25 items:
+- Added 29 items:
   - Rookie Spear
   - Squire Gauntlets
   - Flora's Rose
   - Bear's Paw Talisman
   - Hood of Sneaks
   - Eclipse Potion
+  - Fur Cloak
+  - Assassin's Cloak
   - Desert Gambeson
   - Tower Shield
   - Field Medic Kit
@@ -47,6 +49,7 @@ NOTICE: Old saves will not work with this update!
   - Enchanted Snake Skin
   - Rattlesnake Fang
   - Cast-Iron Pot
+  - Recall Potion
   - Dalia's Delight
   - Bronze Gauntlets
   - Smirnoff's Lightning Lance
@@ -119,9 +122,11 @@ NOTICE: Old saves will not work with this update!
   - Shop menu shows shopkeeper busts, and while selling items indicates if they are materials.
   - Item recovery previews show multipliers from PHA and other effects like Duncan.
   - Pressing UP when buying/selling/crafting items while the current quantity is 1 will go to 10 instead of 11.
+- Removed skills Magic Prone/Resistant and Contingence.
 - Bubble is now guaranteed to apply Soaked.
 - Fiery Tablet recipe includes Blood Pact and Flesh Doll and inherits the effects of both.
   - Also halved the effects of both accessories... they were hard to get, but kind of OP!
+- Heavily nerfed the Champion's Talisman
 - Removed Earth element from Tarantula.
 - Made Goblins weaker to magic.
 - Made Bats more resistant to magic.
@@ -130,10 +135,13 @@ NOTICE: Old saves will not work with this update!
 - Buffed Green/Blue Gel HP/MP recovery from 2 → 5.
 - Buffed Earthen Grassrobes Earth resistance from 10% to 25%.
 - All levels of Well Fed last much longer and are not removed when HP drops to 0.
+- Well Rested lasts twice as many steps, from 1000 → 2000.
 - Thrown items now count as physical hits.
 - Heated Metal now absorbs Fire attacks.
+- The Bandito Cloak, as well as all cloaks from now on, are usable by anyone.
 - Screenshots hide the gab window and location name display window.
 - Name input now trims whitespace.
+- The treasure popup's duration has increased from 60 → 90 frames.
 - New trees!
 - A lot of balance changes and other tweaks were made that aren't listed here.
 
@@ -144,6 +152,7 @@ NOTICE: Old saves will not work with this update!
 - Fixed autosave interval option not saving.
 - Fixed Soaked not doubling incoming Electric damage.
 - Fixed Decimation applying Fatigue to the user.
+- Fixed items like the Archaic Hourglass being usable in the retry item menu, breaking the game.
 - Fixed a bug where Copper Oreleaf couldn't drop Rock Salt.
 - Fixed equip comparison menu showing wrong colors for incoming physical/magical damage.
 - Fixed final hits on bosses counting for the Damage Dealt stat.
@@ -154,6 +163,7 @@ NOTICE: Old saves will not work with this update!
 - Fixed automatically equipping crafting upgrades sometimes equipping the wrong thing.
 - Fixed choices not showing in message backlog.
 - Fixed name box showing over message backlog if a battle has been completed without changing maps.
+- Fixed Lost Soul triggering Game Over if encountered with a Soulfire Lantern in inventory but not equipped.
 - Fixed outdated cliff texture in South Field.
 - Fixed wading effect when walking on bridge in South Field.
 - Fixed Seshat's Tome drop beginning in Telluria Field being a 1/10,000 drop rather than a 1/200 drop.

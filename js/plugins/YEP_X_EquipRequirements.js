@@ -431,6 +431,7 @@ DataManager.defaultClassRestrictions = function(obj) {
       case 1:  // Generic
       case 8:  // Gambeson
       case 9:  // Chainmail
+      case 10: // Cloak
       case 6:  // Light Shield
       case 11: // Gloves
       case 12: // Wristbraces
@@ -447,7 +448,6 @@ DataManager.defaultClassRestrictions = function(obj) {
       case 4:  // Vestments
         return 3;
       case 5:  // Leathers
-      case 10: // Cloak
         return 4;
   }
   console.error("MISSING CLASS RESTRICTION:", obj.name);
