@@ -1490,7 +1490,7 @@
         "indent": 0,
         "parameters": [
           12,
-          "$gameSwitches.value(61) || $gameParty.hasItem($dataArmors[50], true)"
+          "$gameSwitches.value(61) || $gameParty.checkIndependentItemIsEquipped($dataArmors[50])"
         ]
       },
       {
