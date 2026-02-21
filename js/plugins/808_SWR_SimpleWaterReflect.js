@@ -693,7 +693,7 @@ function shouldReflectEvent(event) {
     let reflectOff = false; // Initialize reflectOff flag
 
     // Check the note field of the event for reflection tags
-    const note = event.event().note;
+    const note = event.event()?.note;
     if (/<reflect_on>/i.test(note)) {
         reflectOn = true; // Enable reflection if <reflect_on> tag is found
     }
