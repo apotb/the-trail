@@ -800,11 +800,11 @@ StorageManager.localFileDirectoryPath = function() {
     const path = require('path');
     let directoryPath;
     if (process.platform === 'win32') {
-        directoryPath = path.join(process.env.APPDATA, '.thetrail/');
+        directoryPath = path.join(process.env.APPDATA, '.thetrail2/');
     } else if (process.platform === 'darwin') {
         directoryPath = path.join(process.env.HOME, 'Library', 'Application Support', 'The Trail/');
     } else {
-        directoryPath = path.join(process.env.HOME, '.local', 'share', '.thetrail/');
+        directoryPath = path.join(process.env.HOME, '.local', 'share', '.thetrail2/');
     }
     if (!fs.existsSync(directoryPath)) fs.mkdirSync(directoryPath, { recursive: true });
     return directoryPath;
