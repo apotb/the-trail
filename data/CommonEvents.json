@@ -15801,16 +15801,60 @@
         ]
       },
       {
-        "code": 241,
+        "code": 111,
         "indent": 0,
         "parameters": [
-          {
-            "name": "map_ship",
-            "volume": 90,
-            "pitch": 100,
-            "pan": 0
-          }
+          1,
+          88,
+          0,
+          108,
+          0
         ]
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          74,
+          74,
+          0
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          74,
+          74,
+          1
+        ]
+      },
+      {
+        "code": 235,
+        "indent": 1,
+        "parameters": [
+          69
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
       },
       {
         "code": 355,
@@ -15838,6 +15882,18 @@
         "indent": 0,
         "parameters": [
           "});"
+        ]
+      },
+      {
+        "code": 241,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "map_ship",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
         ]
       },
       {
@@ -18654,32 +18710,39 @@
         ]
       },
       {
-        "code": 121,
+        "code": 111,
         "indent": 1,
         "parameters": [
-          74,
-          74,
+          0,
+          69,
+          1
+        ]
+      },
+      {
+        "code": 231,
+        "indent": 2,
+        "parameters": [
+          69,
+          "Godrays",
+          0,
+          0,
+          0,
+          0,
+          100,
+          100,
+          255,
           0
         ]
       },
       {
         "code": 0,
-        "indent": 1,
+        "indent": 2,
         "parameters": []
       },
       {
-        "code": 411,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 121,
+        "code": 412,
         "indent": 1,
-        "parameters": [
-          74,
-          74,
-          1
-        ]
+        "parameters": []
       },
       {
         "code": 0,
