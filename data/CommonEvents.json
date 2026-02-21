@@ -18705,8 +18705,20 @@
         "code": 111,
         "indent": 0,
         "parameters": [
-          12,
-          "$gameMap.mapId() === 108"
+          1,
+          78,
+          0,
+          108,
+          0
+        ]
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          74,
+          74,
+          0
         ]
       },
       {
@@ -18743,6 +18755,25 @@
         "code": 412,
         "indent": 1,
         "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          74,
+          74,
+          1
+        ]
       },
       {
         "code": 0,
@@ -19413,28 +19444,28 @@
         "code": 655,
         "indent": 0,
         "parameters": [
-          "  $gameSystem.recall()[0],"
+          "  $gameSystem.safePlace()[0],"
         ]
       },
       {
         "code": 655,
         "indent": 0,
         "parameters": [
-          "  $gameSystem.recall()[1],"
+          "  $gameSystem.safePlace()[1],"
         ]
       },
       {
         "code": 655,
         "indent": 0,
         "parameters": [
-          "  $gameSystem.recall()[2],"
+          "  $gameSystem.safePlace()[2],"
         ]
       },
       {
         "code": 655,
         "indent": 0,
         "parameters": [
-          "  $gameSystem.recall()[3],"
+          "  $gameSystem.safePlace()[3],"
         ]
       },
       {
@@ -19449,6 +19480,80 @@
         "indent": 0,
         "parameters": [
           ");"
+        ]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "### Fix for Blazing Sands tint"
+        ]
+      },
+      {
+        "code": 235,
+        "indent": 0,
+        "parameters": [
+          69
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameSystem.safePlace()[0] === 121"
+        ]
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          74,
+          74,
+          0
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          74,
+          74,
+          1
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "###"
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          37
         ]
       },
       {

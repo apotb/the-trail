@@ -1883,7 +1883,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Stuck between a rock and a hard place? Drinking this\npotion will warp your party to a safe(r) location.",
+    "description": "Stuck between a rock and a hard place? Drinking this potion will warp your\nparty to a safe(r) location. Can be used to negate the cost of giving up.",
     "effects": [
       {
         "code": 44,
@@ -1893,12 +1893,12 @@
       }
     ],
     "hitType": 0,
-    "iconIndex": 705,
+    "iconIndex": 677,
     "itypeId": 1,
     "name": "Recall Potion",
-    "note": "<Rarity: 1>\n\nWas once the WILL'S RECIPES.",
+    "note": "<Rarity: 3>\n\n<Synthesis Ingredients>\nWater Jug\nEctoplasm: 2\nRitual Residue\nIce Cube: 15\n</Synthesis Ingredients>\n<Synthesis SE: Splash>\n<Synthesis Pitch: 120>\n\nWas once the WILL'S RECIPES.",
     "occasion": 2,
-    "price": 100,
+    "price": 300,
     "repeats": 1,
     "scope": 8,
     "speed": 0,
@@ -3512,7 +3512,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A bottle of bitter medicine. Cures \\it[39]\\c[0].",
+    "description": "A bottle of bitter medicine. Cures \\it[39]\\c[0]\nand grants resistance to it for a while.",
     "effects": [
       {
         "code": 22,
@@ -5792,7 +5792,7 @@
       }
     ],
     "hitType": 0,
-    "iconIndex": 677,
+    "iconIndex": 194,
     "itypeId": 1,
     "name": "Dispel Potion",
     "note": "<Rarity: 1>\n\n<Synthesis Ingredients>\nWater Jug\nMedicinal Herb: 3\nMedicinal Root: 2\nIce Cube: 5\n</Synthesis Ingredients>\n<Synthesis SE: Splash>\n<Synthesis Pitch: 120>",
@@ -5825,7 +5825,7 @@
       }
     ],
     "hitType": 0,
-    "iconIndex": 194,
+    "iconIndex": 705,
     "itypeId": 1,
     "name": "Stimulant",
     "note": "<Rarity: 2>\n\n<Synthesis Ingredients>\nWater Jug\nMedicinal Herb: 10\nMedicinal Root: 5\nIce Cube: 15\n</Synthesis Ingredients>\n<Synthesis SE: Splash>\n<Synthesis Pitch: 120>",

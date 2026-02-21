@@ -152,7 +152,7 @@ Game_Temp.prototype.recipeTemplate = function(name) {
                 [
                     111, 129, 292, // Bladesville
                     282, 259, // Telluria Field
-                    71, 72, 117, 196, 197 // Drinks
+                    71, 72, 117, 196, 197, 63 // Drinks
                 ]
             ]
             break;
@@ -669,19 +669,6 @@ Game_System.prototype.setSafePlace = function() {
 };
 
 // Recall Potion
-
-Game_System.prototype.recall = function() {
-    let arr = [this._recallMap, this._recallX, this._recallY, this._recallDirection];
-    if (arr.contains(undefined)) return [$gameMap.mapId(), $gamePlayer.x, $gamePlayer.y, $gamePlayer.direction()];
-    else return arr;
-};
-
-Game_System.prototype.setRecall = function() {
-    this._recallMap = $gameMap.mapId();
-    this._recallX = $gamePlayer.x;
-    this._recallY = $gamePlayer.y;
-    this._recallDirection = $gamePlayer.direction();
-};
 
 Game_System.prototype.recallAllowed = function() {
     return this._recallAllowed || true;
