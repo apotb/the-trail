@@ -2066,6 +2066,7 @@ Scene_Synthesis.prototype.endNumberInput = function() {
 Scene_Synthesis.prototype.onNumberCancel = function() {
     SoundManager.playCancel();
     this.endNumberInput();
+    this._statusWindow.setItem(null);
 };
 
 Scene_Synthesis.prototype.maxBuy = function() {
