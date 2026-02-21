@@ -5382,6 +5382,31 @@
               ]
             },
             {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "$gameSystem.playtime() / 60 / 60 < 1"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "OrangeGreenworks.activateAchievement('SPEEDRUN_LAERYIDYEAN');"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 121,
               "indent": 0,
               "parameters": [
