@@ -68,17 +68,34 @@ MSX.AlphabeticalSort.getRecoveryInfo = function(item) {
         var effect = baseItem.effects[i];
         if (effect.code === 11) {
             hasHP = true;
-            hpPercent = Math.abs(effect.value1 || 0);
-            hpFlat = Math.abs(effect.value2 || 0);
+            hpPercent = Math.max(0, effect.value1 || 0);
+            hpFlat = Math.max(0, effect.value2 || 0);
         }
         if (effect.code === 12) {
             hasMP = true;
-            mpPercent = Math.abs(effect.value1 || 0);
-            mpFlat = Math.abs(effect.value2 || 0);
+            mpPercent = Math.max(0, effect.value1 || 0);
+            mpFlat = Math.max(0, effect.value2 || 0);
         }
     }
     
     return { hasHP: hasHP, hasMP: hasMP, hpPercent: hpPercent, hpFlat: hpFlat, mpPercent: mpPercent, mpFlat: mpFlat };
+};
+
+MSX.AlphabeticalSort.hasPositiveRecovery = function(item) {
+    var baseItem = DataManager.getBaseItem(item);
+    if (!baseItem || !baseItem.effects) return false;
+
+    var hasPositive = false;
+    for (var i = 0; i < baseItem.effects.length; i++) {
+        var effect = baseItem.effects[i];
+        if (effect.code === 11 || effect.code === 12) {
+            var v1 = effect.value1 || 0;
+            var v2 = effect.value2 || 0;
+            if (v1 < 0 || v2 < 0) return false; // any negative recovery disqualifies item
+            if (v1 > 0 || v2 > 0) hasPositive = true;
+        }
+    }
+    return hasPositive;
 };
 
 MSX.AlphabeticalSort.getUpgraderWeight = function(item) {
@@ -107,6 +124,9 @@ Window_ItemList.prototype.sortItemList = function(data) {
     this._data = allItems.filter(function(item) {
         return this.includes(item);
     }, this);
+    if (this._ext === 'Recovery') {
+        this._data = this._data.filter(MSX.AlphabeticalSort.hasPositiveRecovery);
+    }
     this._data = ((arr, key) => {
         const seen = new Map();
         return arr.reverse().filter(obj => {
