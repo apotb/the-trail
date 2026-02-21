@@ -401,7 +401,7 @@ Scene_Boot.prototype.start = function() {
     } else {
         this.checkPlayerLocation();
         DataManager.setupNewGame();
-        if (!$gameSwitches.value(1)) {
+        if (!DataManager.isAnySavefileExists()) {
             DataManager.setupNewGame();
             SceneManager.goto(Scene_Map);
         } else {
