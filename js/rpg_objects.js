@@ -3325,6 +3325,8 @@ Game_BattlerBase.prototype.paySkillCost = function(skill) {
 Game_BattlerBase.prototype.isOccasionOk = function(item) {
     if ($gameParty.inBattle()) {
         return item.occasion === 0 || item.occasion === 1;
+    } else if ($gameTemp._retrying) {
+        return !Object.keys(item.meta).contains('Retry Disable') && (item.occasion === 0 || item.occasion === 2);
     } else {
         return item.occasion === 0 || item.occasion === 2;
     }

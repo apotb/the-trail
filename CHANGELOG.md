@@ -152,6 +152,7 @@ NOTICE: Old saves will not work with this update!
 - Fixed autosave interval option not saving.
 - Fixed Soaked not doubling incoming Electric damage.
 - Fixed Decimation applying Fatigue to the user.
+- Fixed items like the Archaic Hourglass being usable in the retry item menu, breaking the game.
 - Fixed a bug where Copper Oreleaf couldn't drop Rock Salt.
 - Fixed equip comparison menu showing wrong colors for incoming physical/magical damage.
 - Fixed final hits on bosses counting for the Damage Dealt stat.
