@@ -121,6 +121,7 @@ NOTICE: Old saves will not work with this update!
   - Shop menu shows shopkeeper busts, and while selling items indicates if they are materials.
   - Item recovery previews show multipliers from PHA and other effects like Duncan.
   - Pressing UP when buying/selling/crafting items while the current quantity is 1 will go to 10 instead of 11.
+- Removed skills Magic Prone/Resistant and Contingence.
 - Bubble is now guaranteed to apply Soaked.
 - Fiery Tablet recipe includes Blood Pact and Flesh Doll and inherits the effects of both.
   - Also halved the effects of both accessories... they were hard to get, but kind of OP!
