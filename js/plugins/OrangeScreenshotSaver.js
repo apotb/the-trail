@@ -23,7 +23,7 @@ var OrangeScreenshotSaver = OrangeScreenshotSaver || {};
 
   $.generateFileName = function(){
     var date = new Date();
-    return '' + date.getFullYear() + '_' + (date.getMonth() + 1) + '_' + date.getDate() + '_' + date.getHours() + '_' + date.getMinutes() + '_' + date.getSeconds() + '_' + date.getMilliseconds() + (DataManager.isMapLoaded() ? ('_' + ($gameVariables?.value(74)?.[DataManager.latestSavefileId()]) || '') : '_Title') + '.png';
+    return '' + date.getFullYear() + '_' + (date.getMonth() + 1) + '_' + date.getDate() + '_' + date.getHours() + '_' + date.getMinutes() + '_' + date.getSeconds() + '_' + date.getMilliseconds() + '.png';
   };
 
   $.saveScreenshot = function(){
