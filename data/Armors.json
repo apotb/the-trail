@@ -6446,36 +6446,41 @@
   {
     "id": 245,
     "atypeId": 1,
-    "description": "A flake of snake skin with the magic of the Blazing Sands imbued within.\nGrants a 50% chance to resist \\it[39], \\it[7], and \\it[162].",
+    "description": "A flake of snake skin with the magic of the Blazing Sands imbued within.\nGrants a 75% chance to resist \\it[39], \\it[7], and \\it[162].",
     "etypeId": 6,
     "traits": [
       {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.02
+      },
+      {
         "code": 13,
         "dataId": 39,
-        "value": 0.5
+        "value": 0.75
       },
       {
         "code": 13,
         "dataId": 7,
-        "value": 0.5
+        "value": 0.75
       },
       {
         "code": 13,
         "dataId": 162,
-        "value": 0.5
+        "value": 0.75
       }
     ],
     "iconIndex": 850,
     "name": "Enchanted Snake Skin",
     "note": "<Rarity: 1>\n<Upgrade Slots: 1>",
     "params": [
+      4,
       3,
-      2,
       0,
       0,
       0,
       1,
-      4,
+      5,
       0
     ],
     "price": 120
