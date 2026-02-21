@@ -120,7 +120,7 @@ Window_ItemList.prototype.sortItemList = function(data) {
     })(this._data, 'baseItemId');
 
     var isMealsWindow = this._ext === 'Meals';
-    var isRecoveryWindow = this._ext === 'Recovery';
+    var isRecoveryWindow = this._ext === 'Recovery' || this instanceof Window_BattleItem;
     var isSalvagingWindow = this._ext === 'Salvaging';
     var isUpgradersWindow = this._ext === 'Upgraders';
     var isKeyItemWindow = this._category === 'keyItem';
