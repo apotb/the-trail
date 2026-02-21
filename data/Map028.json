@@ -4118,7 +4118,7 @@
     0,
     0,
     0,
-    0,
+    84,
     0,
     0,
     108,
@@ -8298,8 +8298,8 @@
     },
     {
       "id": 9,
-      "name": "fire-copy",
-      "note": "<Copy Event: 158, 7>",
+      "name": "firepit-copy",
+      "note": "<Copy Event: 158, 169>",
       "pages": [
         {
           "conditions": {
@@ -8321,9 +8321,9 @@
           "image": {
             "tileId": 0,
             "characterName": "!Flame",
-            "direction": 2,
+            "direction": 4,
             "pattern": 1,
-            "characterIndex": 2
+            "characterIndex": 3
           },
           "list": [
             {
