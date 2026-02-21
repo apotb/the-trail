@@ -4896,8 +4896,8 @@
     },
     {
       "id": 18,
-      "name": "EV018",
-      "note": "",
+      "name": "stove-copy",
+      "note": "<Copy Event: 158, 199>",
       "pages": [
         {
           "conditions": {
@@ -4915,7 +4915,7 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 112,
             "characterName": "",
@@ -4924,23 +4924,6 @@
             "pattern": 0
           },
           "list": [
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "It's a stove."
-              ]
-            },
             {
               "code": 0,
               "indent": 0,
@@ -4965,7 +4948,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 8,
