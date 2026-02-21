@@ -637,6 +637,11 @@ Scene_Retry.prototype.initialize = function() {
 
 Scene_Retry.prototype.create = function() {
 	Scene_Base.prototype.create.call(this);
+	if ($gameTemp._retryReturnToActor === undefined) {
+		$gameTemp._retryReturnToActor = false;
+		$gameTemp._retryLastActorId = null;
+		$gameTemp._retryLastActorIndex = 0;
+	}
 	this.createBackground();
 	this.createWindowLayer();
 	this.createCommandWindow();
@@ -650,6 +655,27 @@ Scene_Retry.prototype.start = function() {
 	if (!$gameTemp._retrying) {
 		this.startFadeIn(this.fadeSpeed(), false);
 		$gameTemp._retrying = true;
+	}
+	this.resumeActorSelectionIfNeeded();
+};
+
+Scene_Retry.prototype.resumeActorSelectionIfNeeded = function() {
+	if ($gameTemp._retryReturnToActor) {
+		const actor = $gameTemp._retryLastActorId ? $gameActors.actor($gameTemp._retryLastActorId) : null;
+		if (actor) {
+			$gameParty.setMenuActor(actor);
+		}
+		this._commandWindow.deactivate();
+		const status = this._statusWindow;
+		status.openness = 255; // show instantly
+		status.visible = true;
+		status._opening = false;
+		status._closing = false;
+		let idx = $gameTemp._retryLastActorIndex || 0;
+		if (idx < 0 || idx >= $gameParty.members().length) idx = 0;
+		status.select(idx);
+		status.setTopRow(idx);
+		status.activate();
 	}
 };
 
@@ -704,16 +730,25 @@ Scene_Retry.prototype.commandPersonal = function() {
 	this._statusWindow.selectLast();
 	this._statusWindow.activate();
 	this._statusWindow.open();
+	$gameTemp._retryReturnToActor = false;
 };
 
 Scene_Retry.prototype.commandStartBattle = function() {
 	Window_RetryCommand._lastCommandSymbol = null;
+	$gameTemp._retryReturnToActor = false;
 	SceneManager.goto(Scene_Battle);
 };
 
 Scene_Retry.prototype.onPersonalOk = function() {
 	const symbol = this._commandWindow.currentSymbol();
 	const id = parseInt(symbol.match(/command(\d+)/)[1]);
+	const actor = this._statusWindow.item ? this._statusWindow.item() : $gameParty.menuActor();
+	if (actor) {
+		$gameParty.setMenuActor(actor);
+		$gameTemp._retryLastActorId = actor.actorId();
+		$gameTemp._retryLastActorIndex = this._statusWindow.index();
+		$gameTemp._retryReturnToActor = true;
+	}
 	eval(_.commands[id].eval);
 };
 
@@ -721,6 +756,7 @@ Scene_Retry.prototype.onPersonalCancel = function() {
 	this._statusWindow.deselect();
 	this._statusWindow.close();
 	this._commandWindow.activate();
+	$gameTemp._retryReturnToActor = false;
 };
 
 Scene_Retry.prototype.playRetryMusic = function() {
