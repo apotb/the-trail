@@ -4165,29 +4165,19 @@
         "parameters": []
       },
       {
-        "code": 111,
-        "indent": 1,
-        "parameters": [
-          12,
-          "Date.now() < $gameSystem._autosaveTarget && !$gameSystem._forceAutosave"
-        ]
-      },
-      {
         "code": 230,
-        "indent": 2,
+        "indent": 1,
         "parameters": [
           60
         ]
       },
       {
-        "code": 0,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 411,
+        "code": 111,
         "indent": 1,
-        "parameters": []
+        "parameters": [
+          12,
+          "Date.now() >= $gameSystem._autosaveTarget || $gameSystem._forceAutosave"
+        ]
       },
       {
         "code": 113,
@@ -4219,7 +4209,7 @@
         "indent": 0,
         "parameters": [
           12,
-          "$gameSystem.getAutosaveInterval() > 0 || $gameSystem._forceAutosave"
+          "($gameSystem.getAutosaveInterval() > 0 || $gameSystem._forceAutosave) && !Object.keys($dataMap.meta).contains('Disable Autosave')"
         ]
       },
       {
