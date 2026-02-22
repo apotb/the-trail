@@ -28298,7 +28298,7 @@
     {
       "id": 96,
       "name": "EV096",
-      "note": "<Sprite Offset Y: +14>",
+      "note": "<Sprite Offset X: +8> <Sprite Offset Y: +18>",
       "pages": [
         {
           "conditions": {
@@ -28432,6 +28432,26 @@
               "parameters": [
                 "A",
                 0
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 0,
+              "parameters": [
+                49,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 0,
+              "parameters": [
+                48,
+                0,
+                0,
+                1
               ]
             },
             {
