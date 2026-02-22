@@ -7550,6 +7550,11 @@
         "code": 22,
         "dataId": 2,
         "value": 0.04
+      },
+      {
+        "code": 22,
+        "dataId": 4,
+        "value": 0.04
       }
     ],
     "iconIndex": 848,
@@ -7561,7 +7566,7 @@
     "minTurns": 16,
     "motion": 0,
     "name": "Eclipse",
-    "note": "<Category: Bypass Death Removal>\n<Category: buff>\n\n<animationRow:32>\n\n<Help Description>\nIncreases EVA and CRI by 4%.\n</Help Description>",
+    "note": "<Category: Bypass Death Removal>\n<Category: buff>\n\n<animationRow:32>\n\n<Help Description>\nIncreases EVA, CRI, and MEV by 4%.\n</Help Description>",
     "overlay": 0,
     "priority": 30,
     "removeAtBattleEnd": false,
