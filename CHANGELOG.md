@@ -895,7 +895,7 @@ This small update contains a new pair of boots, a leaderboard for kills, and sev
 ### Changes
 - Fire takes 25% damage from Ice instead of 0%.
 - Ethereal Bat Wing can drop more than once.
-- Reduced bits/EXP variation from 5% to 3%.
+- Reduced Bits/EXP variation from 5% to 3%.
 - Moved Iron Boots from forge to smithery shop.
 - Flower Boots can be crafted at Will's forge.
 - Adjusted a few tellurium related recipes.
@@ -1314,7 +1314,7 @@ I hope you all feel the power as you progress through Telluria Field! But will y
 - Random encounters are now blocked in a 6-tile radius around any visible enemy encounter.
 - Lots of dialogues were shortened. Many cutscenes were reworked, and a few were even removed.
 - Replaced Player 2's 2nd magic equip slot with an offhand slot (light shields).
-- Retrying battles is now free, and you have the option to give up. This will return you to the last safe place you rested at; however, this will cost you half of your bits.
+- Retrying battles is now free, and you have the option to give up. This will return you to the last safe place you rested at; however, this will cost you half of your Bits.
 - Time now moves indoors.
 - Shops are now open 24/7.
 - Vehicles can travel under bridges.
@@ -1341,7 +1341,7 @@ I hope you all feel the power as you progress through Telluria Field! But will y
   - Potion: +90 HP → +60 HP
   - Elixir: +36 MP → +24 MP
   - Ether: +108 HP → +72 HP; +42 MP → +30 MP
-  - Small Ether and Ether are cheaper. They no longer require bits to craft.
+  - Small Ether and Ether are cheaper. They no longer require Bits to craft.
 - Reworked Well Fed to make the buff more enticing and encourage cooking.
   - Ration: Reduced from Well Fed to Somewhat Well Fed.
   - Fulfilling Ration, Loaf of Bread: Reduced from Very Well Fed to Well Fed.
