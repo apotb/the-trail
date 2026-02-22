@@ -104,6 +104,11 @@
  * @desc Should the reflection face the direction of the character?
  * @default false
  *
+ * @param Disable Map IDs
+ * @type text
+ * @desc Comma-separated Map IDs where reflections are completely disabled. Example: 5,12,18
+ * @default 
+ *
  * @help
  *    Simple Water Reflection
  *==============================================================================
@@ -402,7 +407,8 @@
         reflectionAngle: Number(parameters['Reflection Angle'] || 5), // Angle of the reflection
         reflectionLayer: Number(parameters['Reflection Layer'] || -1), // Z-index layer of the reflection
         directionalReflection: JSON.parse(parameters['Directional Reflection'] || 'false'), // Should reflection follow the character's direction?
-        reflectRegionsSet: new Set(parameters['Reflect Regions'].split(',').map(Number)) // Set of region IDs where reflections should appear
+        reflectRegionsSet: new Set(parameters['Reflect Regions'].split(',').map(Number)), // Set of region IDs where reflections should appear
+        disabledMapsSet: new Set((parameters['Disable Map IDs'] || '').split(',').map(Number).filter(n => !Number.isNaN(n))) // Maps where reflections are fully disabled
     };
 
     // Shortcuts for global parameters
@@ -424,6 +430,7 @@
     let reflectionLayer = window.simpleWaterReflectParams.reflectionLayer;
     let directionalReflection = window.simpleWaterReflectParams.directionalReflection;
     const reflectRegionsSet = window.simpleWaterReflectParams.reflectRegionsSet;
+    const disabledMapsSet = window.simpleWaterReflectParams.disabledMapsSet;
    
     // Add functions to get and set the values of directionalReflection and reflectionOffset
     window.getDirectionalReflection = function() {
@@ -746,7 +753,9 @@ function shouldReflectEvent(event) {
 // Determines if a character is in a region that allows reflections.
 
 function isInReflectRegion(character) {
-    return true;
+    // Allow opting out of reflections on a per-map basis.
+    if (disabledMapsSet.has($gameMap.mapId())) return false;
+
     const x = character.x; // Get the x-coordinate of the character.
     const y = character.y; // Get the y-coordinate of the character.
     const regionId = $gameMap.regionId(x, y); // Get the region ID of the tile the character is on.
