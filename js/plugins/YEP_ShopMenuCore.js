@@ -331,7 +331,7 @@ Window_ShopCommand.prototype.numVisibleRows = function() {
 };
 
 Window_ShopCommand.prototype.makeCommandList = function() {
-    this._commandOrder = Yanfly.Param.ShopCommandOrder.split(' ');
+    this._commandOrder = !$gameTemp._ledger ? Yanfly.Param.ShopCommandOrder.split(' ') : ['Buy'];
     for (var i = 0; i < this._commandOrder.length; ++i) {
       var command = this._commandOrder[i];
       this.createCommand(command);
@@ -341,7 +341,7 @@ Window_ShopCommand.prototype.makeCommandList = function() {
 Window_ShopCommand.prototype.createCommand = function(command) {
     command = command.toUpperCase();
     if (command === 'BUY') {
-      this.addCommand(TextManager.buy, 'buy');
+      this.addCommand(!$gameTemp._ledger ? TextManager.buy : (!$gameTemp._viewingUpgrades ? 'Research Upgrades' : 'View Researched Upgrades'), 'buy');
     } else if (command === 'SELL') {
       this.addCommand(TextManager.sell, 'sell', !this._purchaseOnly);
     } else if (command === 'CANCEL') {

@@ -14,6 +14,7 @@ NOTICE: Old saves will not work with this update!
   - Haven Falls and Haven Falls Cavern
   - Northern/Southern Desert Garrison
   - Eating at Larry's Marvelous Diner
+  - Potato peeling
   - Several new quests
   - Giving people fake names
   - A new boss fight...
@@ -32,7 +33,7 @@ NOTICE: Old saves will not work with this update!
 - Added a short sound effect when completing a quest objective.
 - Added new rogue passive skill "Resourceful" at level 15.
   - Moved Low Blow to L18, Shield Break to L22, and removed Focus Up.
-- Added 29 items:
+- Added 30 items:
   - Rookie Spear
   - Squire Gauntlets
   - Flora's Rose
@@ -52,6 +53,7 @@ NOTICE: Old saves will not work with this update!
   - Recall Potion
   - Dalia's Delight
   - Bronze Gauntlets
+  - Potato
   - Smirnoff's Lightning Lance
   - Arlo's Bandana
   - Clover's Bell
@@ -166,8 +168,9 @@ NOTICE: Old saves will not work with this update!
 - Fixed choices not showing in message backlog.
 - Fixed name box showing over message backlog if a battle has been completed without changing maps.
 - Fixed Lost Soul triggering Game Over if encountered with a Soulfire Lantern in inventory but not equipped.
+- Fixed time display hiding during events.
 - Fixed outdated cliff texture in South Field.
-- Fixed wading effect when walking on bridge in South Field.
+- Fixed wading effect when walking over several different bridges.
 - Fixed Seshat's Tome drop beginning in Telluria Field being a 1/10,000 drop rather than a 1/200 drop.
 - Fixed Red Mushroom appearing in Recovery category.
 - Fixed buggy appearance of First Cleric statue in Frozen Labyrinth.

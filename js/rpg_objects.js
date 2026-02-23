@@ -698,6 +698,82 @@ Game_System.prototype.statuesFound = function(total) {
     return this._statues.filter(s => !!s).length + (total ? "/" + this.totalStatues() : "");
 };
 
+// Potatoes
+
+Game_System.prototype.potatoesPerSecond = function(building='') {
+    let base = 0;
+    const multiplier = this.globalPotatoProduction();
+
+    // Potato Rats
+    if (building === 'Potato Rat' || building === '') {
+        let production = 0.1;
+        if ($gameParty.hasItem($dataItems[294])) production *= 2; // Calloused Hands
+        if ($gameParty.hasItem($dataItems[295])) production *= 2; // Starch Salve
+        if ($gameParty.hasItem($dataItems[296])) production *= 2; // Ambidextrous
+        if ($gameParty.hasItem($dataItems[297])) production += 0.1 * this.nonRatBuildings(); // Rat Army
+        if ($gameParty.hasItem($dataItems[298])) production += 0.4 * this.nonRatBuildings(); // Rat Dominion
+        if ($gameParty.hasItem($dataItems[299])) production += 4.5 * this.nonRatBuildings(); // The Rat Accord
+        base += production * $gameVariables.value(122) * multiplier;
+    }
+
+    // Cellmates
+    if (building === 'Cellmate' || building === '') {
+        let production = 1;
+        if ($gameParty.hasItem($dataItems[300])) production *= 2; // Shared Rations
+        if ($gameParty.hasItem($dataItems[301])) production *= 2; // Improvised Recipes
+        if ($gameParty.hasItem($dataItems[302])) production *= 2; // Shifts
+        if ($gameParty.hasItem($dataItems[303])) production *= 2; // Unions
+        if ($gameParty.hasItem($dataItems[304])) production *= 2; // Culinary Tradition
+        if ($gameParty.hasItem($dataItems[319])) production *= 2; // Guard Cellmates
+        if ($gameParty.hasItem($dataItems[320])) production *= 2; // Nun Cellmates
+        base += production * $gameVariables.value(123) * multiplier;
+    }
+
+    // Bribed Guards
+    if (building === 'Bribed Guard' || building === '') {
+        let production = 8;
+        if ($gameParty.hasItem($dataItems[305])) production *= 2; // Bigger Bribes
+        if ($gameParty.hasItem($dataItems[306])) production *= 2; // Wrong Delivery
+        if ($gameParty.hasItem($dataItems[307])) production *= 2; // Inventory Adjustment
+        if ($gameParty.hasItem($dataItems[308])) production *= 2; // Night Shift Drop-Off
+        if ($gameParty.hasItem($dataItems[309])) production *= 2; // Supply Route
+        if ($gameParty.hasItem($dataItems[319])) production *= 1 + 0.01 * $gameVariables.value(123); // Guard Cellmates
+        base += production * $gameVariables.value(124) * multiplier;
+    }
+
+    // Ritual Circles
+    if (building === 'Ritual Circle' || building === '') {
+        let production = 47;
+        if ($gameParty.hasItem($dataItems[310])) production *= 2; // Shared Chants
+        if ($gameParty.hasItem($dataItems[311])) production *= 2; // Established Routine
+        if ($gameParty.hasItem($dataItems[312])) production *= 2; // Sacred Formation
+        if ($gameParty.hasItem($dataItems[313])) production *= 2; // Ritual Doctrine
+        if ($gameParty.hasItem($dataItems[314])) production *= 2; // Order of the Spud
+        if ($gameParty.hasItem($dataItems[320])) production *= 1 + 0.01 * $gameVariables.value(123); // Nun Cellmates
+        base += production * $gameVariables.value(125) * multiplier;
+    }
+
+    return Math.round(base * 10) / 10;
+};
+
+Game_System.prototype.totalBuildings = function() {
+    return $gameVariables.value(122) + $gameVariables.value(123) + $gameVariables.value(124) + $gameVariables.value(125);
+};
+
+Game_System.prototype.nonRatBuildings = function() {
+    return this.totalBuildings() - $gameVariables.value(122);
+};
+
+Game_System.prototype.globalPotatoProduction = function() {
+    let multiplier = 1;
+    if ($gameParty.hasItem($dataItems[321])) multiplier *= 1.25; // Bigger Potatoes
+    if ($gameParty.hasItem($dataItems[323])) multiplier *= 1 + 0.01 * this.totalBuildings(); // The Potato Manifesto
+    if ($gameParty.hasItem($dataItems[324])) multiplier *= 1.5; // Logistics
+    if ($gameParty.hasItem($dataItems[325])) multiplier *= 1 + 0.02 * $gameVariables.value(125); // Blessed Spuds
+    if ($gameParty.hasItem($dataItems[326])) multiplier *= 1 + 0.01 * this.totalBuildings(); // Industrial Revolution
+    return multiplier;
+};
+
 // Constants
 
 Game_System.prototype.exhaustionTime = function() {
@@ -2577,8 +2653,12 @@ Object.defineProperties(Game_BattlerBase.prototype, {
     mhp: { get: function() {
         let value = this.param(0);
         if (this.isActor()) {
-            if ($gameSystem.statue(15)) value += 10;    // Solus Town
-            if ($gameSystem.statue(188)) value += 10;   // Dark Forest
+            if ($gameSystem.statue(15)) value += 10; // Solus Town
+            if ($gameSystem.statue(188)) value += 10; // Dark Forest
+            if ($gameParty.hasItem($dataItems[327])) value += 3; // Starch Adaptation
+            if ($gameParty.hasItem($dataItems[329])) value += 3; // Endurance Training
+            if ($gameParty.hasItem($dataItems[330])) value += 3; // Institutionalized
+            if ($gameParty.hasItem($dataItems[331])) value += 3; // Potato Lord
         }
         return value;
     }, configurable: true },
@@ -5802,8 +5882,12 @@ Game_Party.prototype.partyAbility = function(abilityId) {
 Game_Party.prototype.partyStat = function(abilityId, actorId) {
     let stat = 1;
     if (abilityId == Game_Party.ABILITY_GOLD_DOUBLE) {
-        if ($gameSystem.statue(51)) stat += 0.02;   // Haven Harbor
-        if ($gameSystem.statue(148)) stat += 0.02;  // Crusher Cave
+        if ($gameSystem.statue(51)) stat += 0.02; // Haven Harbor
+        if ($gameSystem.statue(148)) stat += 0.02; // Crusher Cave
+        if ($gameParty.hasItem($dataItems[328])) stat += 0.01; // Prison Bartering
+        if ($gameParty.hasItem($dataItems[330])) stat += 0.01; // Mafia Ties
+        if ($gameParty.hasItem($dataItems[331])) stat += 0.01; // Institutionalized
+        if ($gameParty.hasItem($dataItems[332])) stat += 0.01; // Potato Lord
     }
     this.battleMembers().filter(a => a.actorId() != actorId).forEach(a => stat *= a.partyStat(abilityId));
     return stat;

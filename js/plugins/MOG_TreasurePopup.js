@@ -421,7 +421,7 @@ TreasureIcons.prototype.waitD = function() {
 //==============================
 TreasureIcons.prototype.setupNew = function(data) {
 	this._item = data[0];
-	this._amount = data[1];
+	this._amount = Yanfly.Util.toGroup(data[1]);
 	var name = this._item ? this._item.name + " x " + this._amount : this._amount;
 	var wd = this._name.bitmap.measureTextWidth(name);
 	this._cx = data[2] - ((Window_Base._iconWidth + 12 + wd) / 2) + Moghunter.trpopup_X + this.screenX() ;
