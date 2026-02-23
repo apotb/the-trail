@@ -70,7 +70,7 @@ Game_System.prototype.fishRespawnTick = function() {
         respawn = this.fishing.respawn[pond];
         for (const fish in respawn) {
             respawn[fish]++;
-            if (respawn[fish] >= Galv.FISH.fish[fish].respawn) {
+            if (respawn[fish] >= Galv.FISH.fish[fish]?.respawn) {
                 this.respawnFish(pond, fish);
                 respawn[fish] = 0;
             }
