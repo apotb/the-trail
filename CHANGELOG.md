@@ -126,6 +126,7 @@ NOTICE: Old saves will not work with this update!
   - Pressing UP when buying/selling/crafting items while the current quantity is 1 will go to 10 instead of 11.
 - Removed skills Magic Prone/Resistant and Contingence.
 - Bubble is now guaranteed to apply Soaked.
+- Aqua Gem and Flarestone now give a 50% chance to apply Soaked/Burning Up! respectively.
 - Fiery Tablet recipe includes Blood Pact and Flesh Doll and inherits the effects of both.
   - Also halved the effects of both accessories... they were hard to get, but kind of OP!
 - Heavily nerfed the Champion's Talisman
