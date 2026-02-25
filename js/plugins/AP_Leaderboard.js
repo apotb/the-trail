@@ -254,7 +254,7 @@ Window_Leaderboard.prototype.initialize = function() {
 
 Window_Leaderboard.prototype.leaderboards = function() {
     let lb = API_LEADERBOARD.leaderboards();
-    if ($gameTemp._lbFish) lb = lb.slice(4);
+    if ($gameTemp._lbFish) lb = lb.slice(4, 5);
     else if ($gameTemp._lbPotatoes) lb = lb.slice(5);
     else lb = lb.slice(0, 4);
     return lb;
