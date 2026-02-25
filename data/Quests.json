@@ -551,7 +551,7 @@
       "Type": "Side Quests",
       "Difficulty": "\\i[127] Pushover",
       "From": "Jeremy",
-      "Location": "Solus Town - The Tipsy Oyster",
+      "Location": "The Tipsy Oyster",
       "Description": [
         "\\c[4]Jeremy\\c[0] asked me to pitch in some items for \\c[4]finishing repairs of the Solus Town tavern\\c[0]. They can be acquired by \\c[4]fighting enemies\\c[0], \\c[4]picking them up off the ground\\c[0], and \\c[4]cooking\\c[0]... I'll have to keep an eye out.",
         "\\c[4]We gave the materials to Jeremy\\c[0]! He thanked us for our help, afterwards giving us \\c[4]another quest\\c[0]."
@@ -588,7 +588,7 @@
       "Type": "Side Quests",
       "Difficulty": "\\i[127] Pushover",
       "From": "Jeremy",
-      "Location": "Solus Town - The Tipsy Oyster",
+      "Location": "The Tipsy Oyster",
       "Description": [
         "\\c[4]Jeremy\\c[0] asked us to find ingredients to test new \\c[4]potion recipes\\c[0], which he offered to give us a \\c[4]free sample\\c[0] of once they're perfected. Said ingredients can be acquired by \\c[4]fighting enemies\\c[0] or \\c[4]buying them in shops\\c[0], just like how we got everything to repair the tavern before. We should get right to it, I'm excited to try out Jeremy's new drinks!",
         "\\c[4]We gave the ingredients to Jeremy\\c[0]! He put the finishing touches on his \\ii[60] and \\ii[61], gave us a \\c[4]free sample of each\\c[0], thanked us for our help, and... \\c[4]immediately gave us another quest\\c[0].\\n<br><br>\\n\\c[0]Wow, I am excited to take a sip of these drinks..."
@@ -723,7 +723,7 @@
         1
       ],
       "Rewards List": [
-        "The ability to craft!"
+        "\\fbBLACKSMITH'S BLESSING\\fr"
       ],
       "Visible Rewards": [
         1
@@ -850,7 +850,7 @@
       "From": "The King of Telluria",
       "Location": "Telluria Castle - Chamber of the Seal",
       "Description": [
-        "So... \\c[4]the First Knight's sword might still be out there somewhere\\c[0]. It must have been \\c[4]over a hundred thousand years since he wielded it\\c[0], no? But... \\c[4]I suppose any advantage over \\c[18]Apocalypse\\c[4] is worth looking into\\c[0]."
+        "So... the \\c[4]First Knight's sword\\c[0] might still be \\c[4]out there somewhere\\c[0]. It must have been over a \\c[4]hundred thousand years\\c[0] since he wielded it, no? But... I suppose any \\c[4]advantage over \\c[18]Apocalypse\\c[0] is worth looking into."
       ],
       "Objectives List": [
         "Learn more about the \\c[4]First Knight's sword\\c[0]"
@@ -903,7 +903,7 @@
       "Type": "Side Quests",
       "Difficulty": "\\i[127]\\i[127] Easy Peasy",
       "From": "Jeremy",
-      "Location": "Solus Town - The Tipsy Oyster",
+      "Location": "The Tipsy Oyster",
       "Description": [
         "Construction starts again! This time around, \\c[4]Jeremy\\c[0] wants us to get materials for chairs and tables. I'm sure that more seating will attract a lot more people to the tavern.",
         "\\c[4]Jeremy got the materials\\c[0], and \\c[4]construction on new seating has begun\\c[0]! Like last time, he wants us to help out with \\c[4]another potion ingredient hunt\\c[0]."
@@ -911,7 +911,7 @@
       "Objectives List": [
         "Get \\ii[204] x10",
         "Get \\ii[214] x5",
-        "Get \\ii[221] x1",
+        "Get \\ii[221]\\c[0] x1",
         "Give the items to \\c[4]Jeremy\\c[0]"
       ],
       "Visible Objectives": [
@@ -933,7 +933,7 @@
       "Type": "Side Quests",
       "Difficulty": "\\i[127]\\i[127] Easy Peasy",
       "From": "Jeremy",
-      "Location": "Solus Town - The Tipsy Oyster",
+      "Location": "The Tipsy Oyster",
       "Description": [
         "\\c[4]Jeremy\\c[0]'s back to \\c[4]potion brewing\\c[0]. We're back to hunting for materials in dangerous places... but hey, anything for some \\c[4]free samples\\c[0], right?",
         "\\c[4]Jeremy's demands were satisfied\\c[0]! The materials we got provided the final touches to the \\ii[162] and \\ii[39]. We got \\c[4]free samples of each\\c[0], I'm excited to try them! Oh, and \\c[4]Jeremy\\c[0]'s tasked us with \\c[4]yet more material gathering\\c[0]."
@@ -970,7 +970,7 @@
       "id": 36,
       "Title": "\\i[112]Keeping In Touch",
       "Type": "Main Quests",
-      "Difficulty": "\\i[126]\\i[126]\\i[126]\\i[126] A Bit Tricky",
+      "Difficulty": "\\i[125]\\i[125]\\i[125]\\i[125]\\i[125] Tough Objective",
       "From": "Village Headman",
       "Location": "Solus Town - Church",
       "Description": [
@@ -1259,8 +1259,7 @@
         "\\ii[292]"
       ],
       "Visible Rewards": [
-        1,
-        2
+        1
       ],
       "Subtext": []
     }
