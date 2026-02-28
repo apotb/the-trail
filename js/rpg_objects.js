@@ -337,6 +337,7 @@ Game_System.prototype.windowTone = function() {
 
 Game_System.prototype.setWindowTone = function(value) {
     this._windowTone = value;
+    $gameTemp._updateWindowTone = true;
 };
 
 Game_System.prototype.battleBgm = function() {
