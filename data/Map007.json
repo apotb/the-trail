@@ -34185,6 +34185,13 @@
               "parameters": []
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "ShowActiveQuestWindow"
+              ]
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -36275,7 +36282,21 @@
               "code": 230,
               "indent": 0,
               "parameters": [
-                120
+                60
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "HideActiveQuestWindow"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
               ]
             },
             {

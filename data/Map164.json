@@ -8209,6 +8209,13 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "HideActiveQuestWindow"
+              ]
+            },
+            {
               "code": 230,
               "indent": 0,
               "parameters": [
@@ -8291,7 +8298,21 @@
               "code": 230,
               "indent": 0,
               "parameters": [
-                180
+                120
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "ShowActiveQuestWindow"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
               ]
             },
             {
@@ -10741,6 +10762,20 @@
               "indent": 1,
               "parameters": [
                 "Quest 37 Show Objective 10"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "ShowActiveQuestWindow"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameSystem.setRecallAllowed(true);"
               ]
             },
             {

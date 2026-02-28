@@ -17137,6 +17137,20 @@
               "parameters": []
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "ShowActiveQuestWindow"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameSystem.setRecallAllowed(true);"
+              ]
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -18018,6 +18032,13 @@
             "tileId": 0
           },
           "list": [
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "HideActiveQuestWindow"
+              ]
+            },
             {
               "code": 242,
               "indent": 0,
@@ -19577,6 +19598,13 @@
               "indent": 0,
               "parameters": [
                 0
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameSystem.setRecallAllowed(false);"
               ]
             },
             {

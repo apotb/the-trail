@@ -4333,6 +4333,13 @@
               "parameters": []
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "HideActiveQuestWindow"
+              ]
+            },
+            {
               "code": 205,
               "indent": 0,
               "parameters": [
@@ -5503,6 +5510,13 @@
               "indent": 0,
               "parameters": [
                 60
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameSystem.setRecallAllowed(false);"
               ]
             },
             {
