@@ -1,4 +1,4 @@
-# Alpha 18: Back to the Basics (2/27/2026)
+# Alpha 18: Back to the Basics (2/28/2026)
 It's about time we returned to what made The Trail great in the first place! In my opinion, the latest content has felt somewhat distanced from the humble beginnings of the game. This update serves to unify systems/content from previous updates to make the Overworld feel much more cohesive from start to finish.
 
 Adon has seen the most changes - rightfully so, considering it's every players' first introduction to the game. Verdin Village is the new starting point, and while the overarching story (defeat Apocalypse) is still there, the way it's presented has completely and fundamentally changed. Systems such as cooking and fishing have much more presence earlier in the game, and a fancy new fast travel system provides a much more Trail-esque way to get around the world.
