@@ -6240,8 +6240,8 @@
               "indent": 0,
               "parameters": [
                 [
-                  "Yes.",
-                  "No."
+                  "Yes",
+                  "No"
                 ],
                 1,
                 0,
@@ -6480,82 +6480,14 @@
     {
       "id": 7,
       "name": "fire-template",
-      "note": "",
+      "note": "Fire 150 #e25822",
       "pages": [
         {
           "conditions": {
             "actorId": 1,
             "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 48,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Flame",
-            "direction": 2,
-            "pattern": 1,
-            "characterIndex": 2
-          },
-          "list": [
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "A steadily burning flame."
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
             "itemId": 137,
-            "itemValid": true,
+            "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
             "switch1Id": 48,
@@ -6583,33 +6515,52 @@
               ]
             },
             {
-              "code": 101,
+              "code": 111,
               "indent": 0,
               "parameters": [
-                "",
-                0,
+                4,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                5,
                 0,
                 2
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "Cook something up?"
+                "\\p2Let's get cookin'!"
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 102,
               "indent": 0,
               "parameters": [
                 [
-                  "Yes.",
-                  "No."
+                  "Cook",
+                  "Leave"
                 ],
                 1,
                 0,
-                2,
+                1,
                 0
               ]
             },
@@ -6618,7 +6569,7 @@
               "indent": 0,
               "parameters": [
                 0,
-                "Yes."
+                "Cook"
               ]
             },
             {
@@ -6631,7 +6582,7 @@
               "indent": 0,
               "parameters": [
                 1,
-                "No."
+                "Leave"
               ]
             },
             {
@@ -6648,6 +6599,13 @@
               "code": 404,
               "indent": 0,
               "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                15
+              ]
             },
             {
               "code": 355,
@@ -6695,7 +6653,7 @@
             "actorValid": false,
             "itemId": 1,
             "itemValid": false,
-            "selfSwitchCh": "A",
+            "selfSwitchCh": "D",
             "selfSwitchValid": true,
             "switch1Id": 1,
             "switch1Valid": false,
@@ -6884,7 +6842,7 @@
     {
       "id": 10,
       "name": "waterfall-template",
-      "note": "",
+      "note": "<reflect_off>",
       "pages": [
         {
           "conditions": {
@@ -7027,7 +6985,7 @@
     {
       "id": 12,
       "name": "firebowl-template",
-      "note": "Fire 200 #e6292c",
+      "note": "Fire 200 #e25822",
       "pages": [
         {
           "conditions": {
@@ -7168,7 +7126,7 @@
     {
       "id": 14,
       "name": "fortfirebowl-template",
-      "note": "Fire 200 #e6292c 10",
+      "note": "Fire 200 #e25822 10",
       "pages": [
         {
           "conditions": {
@@ -7588,7 +7546,7 @@
                 0,
                 2,
                 2,
-                3
+                4
               ]
             },
             {
@@ -7620,8 +7578,9 @@
                 61,
                 61,
                 0,
-                0,
-                16
+                2,
+                16,
+                24
               ]
             },
             {
@@ -7858,8 +7817,9 @@
                 61,
                 61,
                 0,
-                0,
-                24
+                2,
+                24,
+                36
               ]
             },
             {
@@ -8041,7 +8001,7 @@
                 35,
                 0,
                 2,
-                5,
+                3,
                 7
               ]
             },
@@ -8074,8 +8034,9 @@
                 61,
                 61,
                 0,
-                0,
-                36
+                2,
+                36,
+                54
               ]
             },
             {
@@ -8257,8 +8218,8 @@
                 35,
                 0,
                 2,
-                3,
-                5
+                2,
+                4
               ]
             },
             {
@@ -8290,8 +8251,9 @@
                 61,
                 61,
                 0,
-                0,
-                48
+                2,
+                48,
+                72
               ]
             },
             {
@@ -8493,8 +8455,8 @@
                 35,
                 0,
                 2,
-                2,
-                3
+                1,
+                2
               ]
             },
             {
@@ -8526,9 +8488,60 @@
                 61,
                 61,
                 0,
-                0,
-                56
+                2,
+                56,
+                84
               ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "$gameSystem._questsKnown.contains(1) && $gameSystem.isQuestObjectiveUncleared(1, 1)"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "Quest 1 Complete Objective 1"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "$gameSystem.isQuestObjectiveCompleted(1, 1) && $gameSystem.isQuestObjectiveCompleted(1, 2) && $gameSystem.isQuestObjectiveCompleted(1, 3)"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 2,
+              "parameters": [
+                "Quest 1 Show Objective 4"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,
@@ -8651,8 +8664,8 @@
                 35,
                 0,
                 2,
-                2,
-                3
+                1,
+                2
               ]
             },
             {
@@ -8684,9 +8697,60 @@
                 61,
                 61,
                 0,
-                0,
-                56
+                2,
+                56,
+                84
               ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "$gameSystem._questsKnown.contains(1) && $gameSystem.isQuestObjectiveUncleared(1, 2)"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "Quest 1 Complete Objective 2"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "$gameSystem.isQuestObjectiveCompleted(1, 1) && $gameSystem.isQuestObjectiveCompleted(1, 2) && $gameSystem.isQuestObjectiveCompleted(1, 3)"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 2,
+              "parameters": [
+                "Quest 1 Show Objective 4"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,
@@ -8752,7 +8816,7 @@
     },
     {
       "id": 27,
-      "name": "bherb-template",
+      "name": "bflower-template",
       "note": "",
       "pages": [
         {
@@ -8808,8 +8872,8 @@
                 35,
                 0,
                 2,
-                2,
-                3
+                1,
+                2
               ]
             },
             {
@@ -8841,9 +8905,60 @@
                 61,
                 61,
                 0,
-                0,
-                56
+                2,
+                56,
+                84
               ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "$gameSystem._questsKnown.contains(1) && $gameSystem.isQuestObjectiveUncleared(1, 3)"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "Quest 1 Complete Objective 3"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "$gameSystem.isQuestObjectiveCompleted(1, 1) && $gameSystem.isQuestObjectiveCompleted(1, 2) && $gameSystem.isQuestObjectiveCompleted(1, 3)"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 2,
+              "parameters": [
+                "Quest 1 Show Objective 4"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,
@@ -9029,7 +9144,7 @@
     },
     {
       "id": 30,
-      "name": "bherb-copy",
+      "name": "bflower-copy",
       "note": "<Copy Event: 158, 27>",
       "pages": [
         {
@@ -9479,7 +9594,7 @@
                 0,
                 2,
                 1,
-                10
+                20
               ]
             },
             {
@@ -10807,8 +10922,9 @@
                 61,
                 61,
                 0,
-                0,
-                60
+                2,
+                60,
+                90
               ]
             },
             {
@@ -11262,8 +11378,8 @@
     },
     {
       "id": 43,
-      "name": "firewlight-template",
-      "note": "Fire 150 #e6292c",
+      "name": "cactus-template",
+      "note": "",
       "pages": [
         {
           "conditions": {
@@ -11273,7 +11389,7 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 48,
+            "switch1Id": 1,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
@@ -11286,25 +11402,54 @@
             "tileId": 0,
             "characterName": "!Flame",
             "direction": 2,
-            "pattern": 1,
-            "characterIndex": 2
+            "pattern": 0,
+            "characterIndex": 7
           },
           "list": [
             {
-              "code": 101,
+              "code": 122,
               "indent": 0,
               "parameters": [
-                "",
+                35,
+                35,
                 0,
-                0,
-                2
+                2,
+                1,
+                3
               ]
             },
             {
-              "code": 401,
+              "code": 126,
               "indent": 0,
               "parameters": [
-                "A steadily burning flame."
+                290,
+                0,
+                1,
+                35
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Equip3",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                61,
+                61,
+                0,
+                2,
+                72,
+                108
               ]
             },
             {
@@ -11337,115 +11482,27 @@
           "conditions": {
             "actorId": 1,
             "actorValid": false,
-            "itemId": 137,
-            "itemValid": true,
+            "itemId": 1,
+            "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 48,
+            "switch1Id": 1,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableId": 61,
+            "variableValid": true,
+            "variableValue": 1
           },
-          "directionFix": true,
+          "directionFix": false,
           "image": {
-            "tileId": 0,
-            "characterName": "!Flame",
+            "characterIndex": 0,
+            "characterName": "",
             "direction": 2,
-            "pattern": 1,
-            "characterIndex": 2
+            "pattern": 0,
+            "tileId": 0
           },
           "list": [
-            {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "<Icon on Event: 1299>"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Cook something up?"
-              ]
-            },
-            {
-              "code": 102,
-              "indent": 0,
-              "parameters": [
-                [
-                  "Yes.",
-                  "No."
-                ],
-                1,
-                0,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                0,
-                "Yes."
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                1,
-                "No."
-              ]
-            },
-            {
-              "code": 115,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 404,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 355,
-              "indent": 0,
-              "parameters": [
-                "$gameTemp.recipeTemplate('FIRE');"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "OpenSynthesis"
-              ]
-            },
             {
               "code": 0,
               "indent": 0,
@@ -11466,11 +11523,11 @@
           },
           "moveSpeed": 3,
           "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
+          "priorityType": 0,
+          "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         }
       ],
       "x": 22,
@@ -11478,7 +11535,7 @@
     },
     {
       "id": 44,
-      "name": "firewlight-copy",
+      "name": "cactus-copy",
       "note": "<Copy Event: 158, 43>",
       "pages": [
         {
@@ -11502,8 +11559,8 @@
             "tileId": 0,
             "characterName": "!Flame",
             "direction": 2,
-            "pattern": 1,
-            "characterIndex": 2
+            "pattern": 0,
+            "characterIndex": 7
           },
           "list": [
             {
@@ -12259,6 +12316,11 @@
               ]
             },
             {
+              "code": 115,
+              "indent": 1,
+              "parameters": []
+            },
+            {
               "code": 0,
               "indent": 1,
               "parameters": []
@@ -12269,18 +12331,62 @@
               "parameters": []
             },
             {
-              "code": 223,
+              "code": 111,
               "indent": 1,
               "parameters": [
+                12,
+                "[89, 90, 91].contains($gameMap.mapId())"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                1,
+                38,
+                0,
+                5,
+                4
+              ]
+            },
+            {
+              "code": 223,
+              "indent": 3,
+              "parameters": [
                 [
-                  0,
-                  0,
-                  0,
+                  -68,
+                  -68,
+                  -68,
                   0
                 ],
                 120,
                 true
               ]
+            },
+            {
+              "code": 115,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
             },
             {
               "code": 0,
@@ -12291,6 +12397,20 @@
               "code": 412,
               "indent": 0,
               "parameters": []
+            },
+            {
+              "code": 223,
+              "indent": 0,
+              "parameters": [
+                [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                120,
+                true
+              ]
             },
             {
               "code": 0,
@@ -12412,372 +12532,6 @@
             "pattern": 0
           },
           "list": [
-            {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "<Icon on Event: 1298>"
-              ]
-            },
-            {
-              "code": 117,
-              "indent": 0,
-              "parameters": [
-                47
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                1,
-                62,
-                0,
-                139,
-                0
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 1,
-              "parameters": [
-                0,
-                48,
-                0
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "Cook up something at Dalia's bowl?"
-              ]
-            },
-            {
-              "code": 102,
-              "indent": 2,
-              "parameters": [
-                [
-                  "Yes.",
-                  "No."
-                ],
-                1,
-                0,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 402,
-              "indent": 2,
-              "parameters": [
-                0,
-                "Yes."
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 2,
-              "parameters": [
-                1,
-                "No."
-              ]
-            },
-            {
-              "code": 115,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 404,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 411,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 205,
-              "indent": 2,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 18,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": true,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 18,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 2,
-              "parameters": [
-                3,
-                {
-                  "list": [
-                    {
-                      "code": 17,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 17,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper2",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\-Hey... can you not?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper2",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\-Just ask me to use the bowl"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "and I'll let you... probably."
-              ]
-            },
-            {
-              "code": 115,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 411,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "Cook up something at the bowl?"
-              ]
-            },
-            {
-              "code": 102,
-              "indent": 1,
-              "parameters": [
-                [
-                  "Yes.",
-                  "No."
-                ],
-                1,
-                0,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 402,
-              "indent": 1,
-              "parameters": [
-                0,
-                "Yes."
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 1,
-              "parameters": [
-                1,
-                "No."
-              ]
-            },
-            {
-              "code": 115,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 404,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                0,
-                82,
-                0
-              ]
-            },
-            {
-              "code": 355,
-              "indent": 1,
-              "parameters": [
-                "$gameTemp.recipeTemplate('CASTLE FOOD');"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 411,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 355,
-              "indent": 1,
-              "parameters": [
-                "$gameTemp.recipeTemplate('DALIA');"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "OpenSynthesis"
-              ]
-            },
             {
               "code": 0,
               "indent": 0,
@@ -16671,8 +16425,9 @@
                 61,
                 61,
                 0,
-                0,
-                36
+                2,
+                48,
+                72
               ]
             },
             {
@@ -16904,8 +16659,8 @@
                 61,
                 0,
                 2,
-                2,
-                12
+                24,
+                26
               ]
             },
             {
@@ -17058,7 +16813,7 @@
               "indent": 0,
               "parameters": [
                 12,
-                "Math.random() < 0.2"
+                "Math.random() < 0.4"
               ]
             },
             {
@@ -17101,8 +16856,8 @@
                 61,
                 0,
                 2,
-                2,
-                12
+                24,
+                26
               ]
             },
             {
@@ -17255,7 +17010,7 @@
               "indent": 0,
               "parameters": [
                 12,
-                "Math.random() < 0.2"
+                "Math.random() < 0.6"
               ]
             },
             {
@@ -17298,8 +17053,8 @@
                 61,
                 0,
                 2,
-                2,
-                12
+                24,
+                26
               ]
             },
             {
@@ -17452,7 +17207,7 @@
               "indent": 0,
               "parameters": [
                 12,
-                "Math.random() < 0.2"
+                "Math.random() < 0.8"
               ]
             },
             {
@@ -17495,8 +17250,8 @@
                 61,
                 0,
                 2,
-                2,
-                12
+                24,
+                26
               ]
             },
             {
@@ -17649,7 +17404,7 @@
               "indent": 0,
               "parameters": [
                 12,
-                "Math.random() < 0.2"
+                "Math.random() < 1.0"
               ]
             },
             {
@@ -17692,8 +17447,8 @@
                 61,
                 0,
                 2,
-                2,
-                12
+                24,
+                26
               ]
             },
             {
@@ -18661,8 +18416,9 @@
                 61,
                 61,
                 0,
-                0,
-                72
+                2,
+                68,
+                76
               ]
             },
             {
@@ -18974,8 +18730,9 @@
                 61,
                 61,
                 0,
-                0,
-                96
+                2,
+                92,
+                100
               ]
             },
             {
@@ -19338,8 +19095,9 @@
                 61,
                 61,
                 0,
-                0,
-                48
+                2,
+                44,
+                52
               ]
             },
             {
@@ -19702,8 +19460,9 @@
                 61,
                 61,
                 0,
-                0,
-                60
+                2,
+                56,
+                64
               ]
             },
             {
@@ -20059,13 +19818,9 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
-              {
-                "code": 9,
-                "indent": null
-              },
               {
                 "code": 45,
                 "parameters": [
@@ -20077,6 +19832,17 @@
                 "code": 45,
                 "parameters": [
                   "this._chaseSpeed = 3"
+                ],
+                "indent": null
+              },
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -20365,8 +20131,16 @@
               "parameters": []
             },
             {
-              "code": 301,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                12,
+                "$gameMap.mapId() === 33"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
               "parameters": [
                 0,
                 7,
@@ -20376,12 +20150,12 @@
             },
             {
               "code": 601,
-              "indent": 0,
+              "indent": 1,
               "parameters": []
             },
             {
               "code": 123,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "A",
                 0
@@ -20389,17 +20163,17 @@
             },
             {
               "code": 0,
-              "indent": 1,
+              "indent": 2,
               "parameters": []
             },
             {
               "code": 602,
-              "indent": 0,
+              "indent": 1,
               "parameters": []
             },
             {
               "code": 123,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "B",
                 0
@@ -20407,11 +20181,82 @@
             },
             {
               "code": 0,
-              "indent": 1,
+              "indent": 2,
               "parameters": []
             },
             {
               "code": 604,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                12,
+                true,
+                false
+              ]
+            },
+            {
+              "code": 601,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 2,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 602,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 2,
+              "parameters": [
+                "B",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 604,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
               "indent": 0,
               "parameters": []
             },
@@ -20421,9 +20266,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 3"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 3"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -20431,14 +20290,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 3"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 3"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -20727,8 +20579,16 @@
               "parameters": []
             },
             {
-              "code": 301,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                12,
+                "$gameMap.mapId() === 33"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
               "parameters": [
                 0,
                 9,
@@ -20738,12 +20598,12 @@
             },
             {
               "code": 601,
-              "indent": 0,
+              "indent": 1,
               "parameters": []
             },
             {
               "code": 123,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "A",
                 0
@@ -20751,17 +20611,17 @@
             },
             {
               "code": 0,
-              "indent": 1,
+              "indent": 2,
               "parameters": []
             },
             {
               "code": 602,
-              "indent": 0,
+              "indent": 1,
               "parameters": []
             },
             {
               "code": 123,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "B",
                 0
@@ -20769,11 +20629,82 @@
             },
             {
               "code": 0,
-              "indent": 1,
+              "indent": 2,
               "parameters": []
             },
             {
               "code": 604,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                10,
+                true,
+                false
+              ]
+            },
+            {
+              "code": 601,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 2,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 602,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 2,
+              "parameters": [
+                "B",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 604,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
               "indent": 0,
               "parameters": []
             },
@@ -20783,9 +20714,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -20793,14 +20738,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 4"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -21145,9 +21083,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 5"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -21155,14 +21107,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 5"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -21507,9 +21452,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 5"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -21517,14 +21476,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 5"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -21873,20 +21825,27 @@
           "moveRoute": {
             "list": [
               {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
+              {
                 "code": 9,
                 "indent": null
               },
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 4"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -22231,9 +22190,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -22241,14 +22214,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 4"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -22593,9 +22559,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 4,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 5"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -22603,14 +22583,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 5"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 5"
+                  "this._waitCount = Math.floor((Math.random() * 61) + 30);"
                 ],
                 "indent": null
               },
@@ -23034,9 +23007,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 6"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -23044,14 +23031,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 6"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 5"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -23396,9 +23376,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 6"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -23406,14 +23400,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 6"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -23859,9 +23846,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 6"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 3"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -23869,14 +23870,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 6"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 3"
+                  "this._waitCount = Math.floor((Math.random() * 151) + 120);"
                 ],
                 "indent": null
               },
@@ -24221,9 +24215,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 4,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 6"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -24231,14 +24239,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 6"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 5"
+                  "this._waitCount = Math.floor((Math.random() * 61) + 30);"
                 ],
                 "indent": null
               },
@@ -24662,9 +24663,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 8"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 3"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -24672,14 +24687,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 8"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 3"
+                  "this._waitCount = Math.floor((Math.random() * 121) + 90);"
                 ],
                 "indent": null
               },
@@ -25103,9 +25111,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 8"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 3"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -25113,14 +25135,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 8"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 3"
+                  "this._waitCount = Math.floor((Math.random() * 121) + 90);"
                 ],
                 "indent": null
               },
@@ -25544,9 +25559,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 7"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -25554,14 +25583,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 7"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 5"
+                  "this._waitCount = Math.floor((Math.random() * 61) + 30);"
                 ],
                 "indent": null
               },
@@ -25985,9 +26007,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 6"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -25995,14 +26031,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 6"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -26347,9 +26376,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 9"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -26357,14 +26400,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 9"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -26946,9 +26982,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 4,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 8"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -26956,14 +27006,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 8"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 5"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -27466,9 +27509,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 7"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -27476,14 +27533,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 4"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 7"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -27986,9 +28036,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 3"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 3"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -27996,14 +28060,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 3"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 3"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -28577,9 +28634,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 1,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -28587,14 +28658,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 4"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 121) + 180);"
                 ],
                 "indent": null
               },
@@ -28965,9 +29029,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "if ($gameVariables.value(12) != 10) this._chaseRange = 5"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "if ($gameVariables.value(12) != 10) this._chaseSpeed = 5"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -28975,14 +29053,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "if ($gameVariables.value(12) != 10) this._chaseRange = 5"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "if ($gameVariables.value(12) != 10) this._chaseSpeed = 5"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -29327,9 +29398,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 3"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 3"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -29337,14 +29422,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 3"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 3"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -29689,9 +29767,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 1,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 5"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -29699,14 +29791,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 5"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 121) + 180);"
                 ],
                 "indent": null
               },
@@ -30051,9 +30136,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 2,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 8"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -30061,14 +30160,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 8"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 121) + 90);"
                 ],
                 "indent": null
               },
@@ -30589,9 +30681,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 6"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -30599,14 +30705,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 6"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 5"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -30951,9 +31050,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 6"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -30961,14 +31074,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 6"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 121) + 90);"
                 ],
                 "indent": null
               },
@@ -31313,9 +31419,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 6"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -31323,14 +31443,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 6"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 5"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -31675,9 +31788,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 1,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 9"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 7"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -31685,14 +31812,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 9"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 7"
+                  "this._waitCount = Math.floor((Math.random() * 181) + 180);"
                 ],
                 "indent": null
               },
@@ -32037,9 +32157,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 5"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 3"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -32047,14 +32181,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 5"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 3"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -32399,9 +32526,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 9"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -32409,14 +32550,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 9"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -32761,9 +32895,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 9"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -32771,14 +32919,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 9"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -33123,7 +33264,7 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 2,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
               {
@@ -33147,7 +33288,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._waitCount = Math.floor((Math.random() * 31) + 60);"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -33510,14 +33651,14 @@
                 "indent": null
               },
               {
-                "code": 15,
-                "parameters": [
-                  75
-                ],
-                "indent": 0
+                "code": 9,
+                "indent": null
               },
               {
-                "code": 9,
+                "code": 45,
+                "parameters": [
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
+                ],
                 "indent": null
               },
               {
@@ -33784,14 +33925,14 @@
                 "indent": null
               },
               {
-                "code": 15,
-                "parameters": [
-                  60
-                ],
-                "indent": 0
+                "code": 9,
+                "indent": null
               },
               {
-                "code": 9,
+                "code": 45,
+                "parameters": [
+                  "this._waitCount = Math.floor((Math.random() * 61) + 30);"
+                ],
                 "indent": null
               },
               {
@@ -34263,7 +34404,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._waitCount = Math.floor((Math.random() * 31) + 60);"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -34711,7 +34852,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._waitCount = Math.floor((Math.random() * 61) + 90);"
+                  "this._waitCount = Math.floor((Math.random() * 121) + 90);"
                 ],
                 "indent": null
               },
@@ -36707,17 +36848,7 @@
               "code": 126,
               "indent": 0,
               "parameters": [
-                27,
-                0,
-                0,
-                1
-              ]
-            },
-            {
-              "code": 126,
-              "indent": 0,
-              "parameters": [
-                28,
+                30,
                 0,
                 0,
                 1
@@ -36737,7 +36868,17 @@
               "code": 126,
               "indent": 0,
               "parameters": [
-                30,
+                28,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 0,
+              "parameters": [
+                27,
                 0,
                 0,
                 1
@@ -37656,7 +37797,7 @@
               "code": 126,
               "indent": 0,
               "parameters": [
-                60,
+                61,
                 0,
                 0,
                 1
@@ -37666,7 +37807,7 @@
               "code": 126,
               "indent": 0,
               "parameters": [
-                61,
+                60,
                 0,
                 0,
                 1
@@ -38226,7 +38367,7 @@
               "code": 126,
               "indent": 0,
               "parameters": [
-                263,
+                264,
                 0,
                 0,
                 1
@@ -38236,7 +38377,7 @@
               "code": 126,
               "indent": 0,
               "parameters": [
-                264,
+                263,
                 0,
                 0,
                 1
@@ -39155,10 +39296,10 @@
               "code": 126,
               "indent": 0,
               "parameters": [
-                162,
+                40,
                 0,
                 0,
-                2
+                1
               ]
             },
             {
@@ -39175,10 +39316,10 @@
               "code": 126,
               "indent": 0,
               "parameters": [
-                40,
+                162,
                 0,
                 0,
-                1
+                2
               ]
             },
             {
@@ -39698,9 +39839,23 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 1,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
               {
                 "code": 9,
                 "indent": null
@@ -39708,14 +39863,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 4"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
+                  "this._waitCount = Math.floor((Math.random() * 121) + 180);"
                 ],
                 "indent": null
               },
@@ -40084,7 +40232,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._waitCount = Math.floor((Math.random() * 31) + 60);"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -40453,7 +40601,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._waitCount = Math.floor((Math.random() * 31) + 60);"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -40691,7 +40839,7 @@
     {
       "id": 161,
       "name": "forttorch-template",
-      "note": "Fire 100 #e6292c d1 10",
+      "note": "Fire 100 #e25822 d1 10",
       "pages": [
         {
           "conditions": {
@@ -40993,7 +41141,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._waitCount = Math.floor((Math.random() * 31) + 60);"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -41362,7 +41510,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._waitCount = Math.floor((Math.random() * 31) + 60);"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -41731,7 +41879,7 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._waitCount = Math.floor((Math.random() * 31) + 60);"
+                  "this._waitCount = Math.floor((Math.random() * 91) + 60);"
                 ],
                 "indent": null
               },
@@ -41965,6 +42113,2651 @@
       ],
       "x": 43,
       "y": 6
+    },
+    {
+      "id": 169,
+      "name": "fire-template",
+      "note": "Fire 150 #e25822",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 48,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Flame",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 3
+          },
+          "list": [
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "A steadily burning flame."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 137,
+            "itemValid": true,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 48,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Flame",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 3
+          },
+          "list": [
+            {
+              "code": 108,
+              "indent": 0,
+              "parameters": [
+                "<Icon on Event: 1299>"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                4,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\p2Let's get cookin'!"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 102,
+              "indent": 0,
+              "parameters": [
+                [
+                  "Cook",
+                  "Leave"
+                ],
+                1,
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                0,
+                "Cook"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                1,
+                "Leave"
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                15
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameTemp.recipeTemplate('FIRE');"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "OpenSynthesis"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 18,
+      "y": 2
+    },
+    {
+      "id": 170,
+      "name": "firepit-copy",
+      "note": "<Copy Event: 158, 169>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Flame",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 3
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 18,
+      "y": 3
+    },
+    {
+      "id": 171,
+      "name": "streetlight-template",
+      "note": "fire 250 #ffbb61 <reflect_off>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 131,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Windows",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 2,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 20,
+      "y": 8
+    },
+    {
+      "id": 172,
+      "name": "streetlight-copy",
+      "note": "<Copy Event: 158, 171>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Windows",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 2,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 20,
+      "y": 9
+    },
+    {
+      "id": 173,
+      "name": "window-template",
+      "note": "light 100 #ffbb73",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 131,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Windows",
+            "direction": 2,
+            "pattern": 0,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 21,
+      "y": 8
+    },
+    {
+      "id": 174,
+      "name": "window-copy",
+      "note": "<Copy Event: 158, 173>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 69,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Windows",
+            "direction": 2,
+            "pattern": 0,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 21,
+      "y": 9
+    },
+    {
+      "id": 175,
+      "name": "windowbush-template",
+      "note": "light 100 #ffbb73",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 131,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Windows",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 22,
+      "y": 8
+    },
+    {
+      "id": 176,
+      "name": "windowbush-copy",
+      "note": "<Copy Event: 158, 175>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 69,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Windows",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 22,
+      "y": 9
+    },
+    {
+      "id": 177,
+      "name": "windowflowers-template",
+      "note": "light 100 #ffbb73",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 131,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Windows",
+            "direction": 2,
+            "pattern": 2,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 23,
+      "y": 8
+    },
+    {
+      "id": 178,
+      "name": "windowflowers-copy",
+      "note": "<Copy Event: 158, 177>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 69,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Windows",
+            "direction": 2,
+            "pattern": 2,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 23,
+      "y": 9
+    },
+    {
+      "id": 179,
+      "name": "blankwindow-template",
+      "note": "light 100 #ffbb73",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 131,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 2,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 24,
+      "y": 8
+    },
+    {
+      "id": 180,
+      "name": "blankwindow-copy",
+      "note": "<Copy Event: 158, 179>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 69,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 2,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 24,
+      "y": 9
+    },
+    {
+      "id": 181,
+      "name": "shortwindow-template",
+      "note": "light 100 #ffbb73",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 131,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Windows",
+            "direction": 4,
+            "pattern": 0,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 25,
+      "y": 8
+    },
+    {
+      "id": 182,
+      "name": "shortwindow-copy",
+      "note": "<Copy Event: 158, 181>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 69,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Windows",
+            "direction": 4,
+            "pattern": 0,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 25,
+      "y": 9
+    },
+    {
+      "id": 183,
+      "name": "lamp-template",
+      "note": "fire 100 #ffbb61",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 69,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Flame",
+            "direction": 8,
+            "pattern": 1,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 131,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Flame",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 26,
+      "y": 8
+    },
+    {
+      "id": 184,
+      "name": "lamp-copy",
+      "note": "<Copy Event: 158, 183>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 69,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Flame",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 26,
+      "y": 9
+    },
+    {
+      "id": 185,
+      "name": "nolight-template",
+      "note": "light 0 #000000",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 69,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 2,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 27,
+      "y": 8
+    },
+    {
+      "id": 186,
+      "name": "nolight-copy",
+      "note": "<Copy Event: 158, 185>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 69,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 2,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 27,
+      "y": 9
+    },
+    {
+      "id": 187,
+      "name": "rattlesnake-template",
+      "note": "<shadow> <Monster>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Snake1",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 4
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "this.checkCliff()"
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 0,
+              "parameters": [
+                0,
+                31,
+                true,
+                false
+              ]
+            },
+            {
+              "code": 601,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 1,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 602,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 1,
+              "parameters": [
+                "B",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 604,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 5,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 7"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 9,
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._waitCount = Math.floor((Math.random() * 301) + 180);"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "B",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Snake1",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 4
+          },
+          "list": [
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 25,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 25,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 213,
+              "indent": 0,
+              "parameters": [
+                0,
+                8,
+                true
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "B",
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 4,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 3
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 69,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 44,
+      "y": 5
+    },
+    {
+      "id": 188,
+      "name": "rattlesnake-copy",
+      "note": "<Copy Event: 158, 187>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Snake1",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 4
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 5,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 4,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 44,
+      "y": 6
+    },
+    {
+      "id": 189,
+      "name": "lampwall-template",
+      "note": "fire 100 #ffbb61",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 69,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Flame2",
+            "direction": 2,
+            "pattern": 0,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 131,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Flame",
+            "direction": 6,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 28,
+      "y": 8
+    },
+    {
+      "id": 190,
+      "name": "lampwall-copy",
+      "note": "<Copy Event: 158, 189>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 69,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Flame",
+            "direction": 6,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 28,
+      "y": 9
+    },
+    {
+      "id": 191,
+      "name": "tallwindowtop-template",
+      "note": "light 100 #ffbb73",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 131,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Windows",
+            "direction": 6,
+            "pattern": 0,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 29,
+      "y": 8
+    },
+    {
+      "id": 192,
+      "name": "tallwindowtop-copy",
+      "note": "<Copy Event: 158, 191>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 69,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Windows",
+            "direction": 6,
+            "pattern": 0,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 29,
+      "y": 9
+    },
+    {
+      "id": 193,
+      "name": "tallwindowbottom-template",
+      "note": "light 100 #ffbb73",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 131,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Windows",
+            "direction": 8,
+            "pattern": 0,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 30,
+      "y": 8
+    },
+    {
+      "id": 194,
+      "name": "tallwindowbottom-copy",
+      "note": "<Copy Event: 158, 193>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 69,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Windows",
+            "direction": 8,
+            "pattern": 0,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 30,
+      "y": 9
+    },
+    {
+      "id": 195,
+      "name": "tallwindowbottom2-template",
+      "note": "light 100 #ffbb73",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 131,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Windows",
+            "direction": 6,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 31,
+      "y": 8
+    },
+    {
+      "id": 196,
+      "name": "tallwindowbottom2-copy",
+      "note": "<Copy Event: 158, 195>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 69,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Windows",
+            "direction": 6,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 31,
+      "y": 9
+    },
+    {
+      "id": 197,
+      "name": "tallwindowbottom3-template",
+      "note": "light 100 #ffbb73",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 131,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Windows",
+            "direction": 8,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 32,
+      "y": 8
+    },
+    {
+      "id": 198,
+      "name": "tallwindowbottom3-copy",
+      "note": "<Copy Event: 158, 197>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 69,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Windows",
+            "direction": 8,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 32,
+      "y": 9
+    },
+    {
+      "id": 199,
+      "name": "stove-template",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 112,
+            "characterName": "",
+            "characterIndex": 0,
+            "direction": 2,
+            "pattern": 0
+          },
+          "list": [
+            {
+              "code": 108,
+              "indent": 0,
+              "parameters": [
+                "<Icon on Event: 1299>"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                4,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\p2Let's get cookin'!"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "It's a stove."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 102,
+              "indent": 0,
+              "parameters": [
+                [
+                  "Cook",
+                  "Leave"
+                ],
+                1,
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                0,
+                "Cook"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                1,
+                "Leave"
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                15
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameTemp.recipeTemplate('FIRE');"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "OpenSynthesis"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 29,
+      "y": 2
+    },
+    {
+      "id": 200,
+      "name": "stove-copy",
+      "note": "<Copy Event: 158, 199>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 112,
+            "characterName": "",
+            "characterIndex": 0,
+            "direction": 2,
+            "pattern": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 29,
+      "y": 3
     }
   ]
 }

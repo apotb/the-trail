@@ -6626,21 +6626,38 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\headOh, good morning, \\N[1]! I'm sure you're"
+                "\\headGood morning, \\N[1]. I'll start with the good news:"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "ready to set sail to Telluria, so I'll"
+                "you're getting a boat! Haven Harbor was eager to"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "keep this brief."
+                "donate a sturdy boat for world-saving purposes."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People1",
+                6,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\headNow, for more..."
               ]
             },
             {
@@ -6882,7 +6899,7 @@
                     {
                       "code": 15,
                       "parameters": [
-                        60
+                        120
                       ],
                       "indent": null
                     },
@@ -6983,7 +7000,7 @@
                 {
                   "code": 15,
                   "parameters": [
-                    60
+                    120
                   ],
                   "indent": null
                 }
@@ -7440,6 +7457,20 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Quest 4 Complete Objective 2"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Quest Add 36"
+              ]
+            },
+            {
               "code": 101,
               "indent": 0,
               "parameters": [
@@ -7468,20 +7499,6 @@
               "indent": 0,
               "parameters": [
                 "New Quest!"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 4 Complete Objective 2"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest Add 36"
               ]
             },
             {
@@ -7640,21 +7657,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\headI'm not one to be very emotional,"
+                "\\headYou and your brother are really something."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "but... I'm very, very proud of you."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "I always knew you were this capable."
+                "Your folks would be proud."
               ]
             },
             {
@@ -7671,28 +7681,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\headI know we are still far, far away from"
+                "\\headI know we're still far away from the end, but if anyone"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "the end, but if I'm being perfectly honest,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "I truly believe you will be the one to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "defeat \\c[18]Apocalypse\\c[0]."
+                "can defeat \\c[18]Apocalypse\\c[0], it'll be a Solus-born warrior!"
               ]
             },
             {
@@ -7709,27 +7705,34 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\headYou've done exceptional thus"
+                "\\headMake sure to stop by Solus Valley in Telluria,"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "far. Do the world some more good."
+                "they'll treat you with hospitality. Best of luck,"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Good luck, \\N[1]."
+                "\\N[1], and may Trailia be with you."
               ]
             },
             {
               "code": 221,
               "indent": 0,
               "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Quest 4 Show Objective 3"
+              ]
             },
             {
               "code": 250,
@@ -8161,6 +8164,13 @@
               "indent": 1,
               "parameters": [
                 "\\nunHere is our current stock..."
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameTemp._shopOwner = \"People2_3\";"
               ]
             },
             {

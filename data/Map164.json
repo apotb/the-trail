@@ -5736,6 +5736,13 @@
           },
           "list": [
             {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                70
+              ]
+            },
+            {
               "code": 111,
               "indent": 0,
               "parameters": [
@@ -5783,6 +5790,17 @@
                 2,
                 1,
                 100
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                101,
+                101,
+                0,
+                0,
+                1
               ]
             },
             {
@@ -6066,6 +6084,903 @@
               ]
             },
             {
+              "code": 231,
+              "indent": 0,
+              "parameters": [
+                1,
+                "Scenario1",
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 231,
+              "indent": 0,
+              "parameters": [
+                2,
+                "Scenario0",
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 231,
+              "indent": 0,
+              "parameters": [
+                3,
+                "ScenarioIcons",
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 232,
+              "indent": 0,
+              "parameters": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                255,
+                0,
+                180,
+                false
+              ]
+            },
+            {
+              "code": 232,
+              "indent": 0,
+              "parameters": [
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                255,
+                0,
+                180,
+                false
+              ]
+            },
+            {
+              "code": 232,
+              "indent": 0,
+              "parameters": [
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                255,
+                0,
+                180,
+                true
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                97,
+                97,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 112,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 112,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 112,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 3,
+              "parameters": [
+                12,
+                "Input.isTriggered('ok')"
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 4,
+              "parameters": [
+                121,
+                121,
+                0
+              ]
+            },
+            {
+              "code": 113,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                12,
+                "Input.isTriggered('left')"
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 5,
+              "parameters": [
+                97,
+                97,
+                2,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 5,
+              "parameters": [
+                1,
+                97,
+                0,
+                0,
+                4
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 6,
+              "parameters": [
+                97,
+                97,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 6,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 113,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 5,
+              "parameters": [
+                12,
+                "Input.isTriggered('right')"
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 6,
+              "parameters": [
+                97,
+                97,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 6,
+              "parameters": [
+                1,
+                97,
+                0,
+                2,
+                3
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 7,
+              "parameters": [
+                97,
+                97,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 7,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 6,
+              "parameters": []
+            },
+            {
+              "code": 113,
+              "indent": 6,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 6,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 6,
+              "parameters": [
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 6,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 413,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                0,
+                121,
+                0
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 3,
+              "parameters": [
+                121,
+                121,
+                1
+              ]
+            },
+            {
+              "code": 113,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 235,
+              "indent": 3,
+              "parameters": [
+                1
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 3,
+              "parameters": [
+                1,
+                97,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 231,
+              "indent": 4,
+              "parameters": [
+                1,
+                "Scenario2",
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                255,
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 3,
+              "parameters": [
+                1,
+                97,
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 231,
+              "indent": 4,
+              "parameters": [
+                1,
+                "Scenario1",
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                255,
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 3,
+              "parameters": [
+                1,
+                97,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 231,
+              "indent": 4,
+              "parameters": [
+                1,
+                "Scenario3",
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                255,
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 3,
+              "parameters": [
+                5
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 413,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 232,
+              "indent": 1,
+              "parameters": [
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                0,
+                0,
+                60,
+                false
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                1,
+                97,
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "",
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\>Play as a young knight wandering The Trail. You find yourself in Verdin Village in the midst of a bandit raid."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\>The Overworld is threatened by \\c[18]evil\\c[0], with efforts underway to locate the source."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\>Begin with \\iw[1], \\ia[1], \\ia[7], \\ii[16] x3,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\>\\ii[11], \\ii[10], \\ii[18], and \\ii[137]."
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 2,
+              "parameters": [
+                [
+                  "CONTINUE",
+                  "NEVERMIND"
+                ],
+                1,
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 2,
+              "parameters": [
+                0,
+                "CONTINUE"
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 3,
+              "parameters": [
+                {
+                  "name": "Explosion2",
+                  "volume": 90,
+                  "pitch": 80,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 129,
+              "indent": 3,
+              "parameters": [
+                1,
+                0,
+                false
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 3,
+              "parameters": [
+                "hide_treasure_popup"
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 3,
+              "parameters": [
+                11,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 3,
+              "parameters": [
+                10,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 3,
+              "parameters": [
+                18,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 3,
+              "parameters": [
+                137,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 3,
+              "parameters": [
+                16,
+                0,
+                0,
+                3
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 3,
+              "parameters": [
+                "show_treasure_popup"
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 3,
+              "parameters": [
+                2,
+                2,
+                0,
+                0,
+                11
+              ]
+            },
+            {
+              "code": 113,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 2,
+              "parameters": [
+                1,
+                "NEVERMIND"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "",
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\>This scenario is not yet in The Trail."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\>It'll be added in a future update!"
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 2,
+              "parameters": [
+                [
+                  "OKAY"
+                ],
+                -1,
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 2,
+              "parameters": [
+                0,
+                "OKAY"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 232,
+              "indent": 1,
+              "parameters": [
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                255,
+                0,
+                60,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 413,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 232,
+              "indent": 0,
+              "parameters": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                0,
+                0,
+                120,
+                false
+              ]
+            },
+            {
+              "code": 232,
+              "indent": 0,
+              "parameters": [
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                0,
+                0,
+                120,
+                true
+              ]
+            },
+            {
+              "code": 235,
+              "indent": 0,
+              "parameters": [
+                1
+              ]
+            },
+            {
+              "code": 235,
+              "indent": 0,
+              "parameters": [
+                2
+              ]
+            },
+            {
+              "code": 235,
+              "indent": 0,
+              "parameters": [
+                3
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                120
+              ]
+            },
+            {
               "code": 101,
               "indent": 0,
               "parameters": [
@@ -6092,18 +7007,17 @@
               ]
             },
             {
-              "code": 320,
-              "indent": 0,
-              "parameters": [
-                1,
-                ""
-              ]
-            },
-            {
               "code": 108,
               "indent": 0,
               "parameters": [
                 "# Start of name processing"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameActors.actor(1).setRandomName(true);"
               ]
             },
             {
@@ -6116,7 +7030,7 @@
               "indent": 1,
               "parameters": [
                 1,
-                10
+                12
               ]
             },
             {
@@ -6921,7 +7835,7 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\dalI don't... fine, you can use"
+                "\\daliaI don't... fine, you can use"
               ]
             },
             {
@@ -6991,10 +7905,11 @@
               "parameters": [
                 [
                   "\\N[1]\\fr?",
-                  "Hold up..."
+                  "Generate random name",
+                  "Wait..."
                 ],
+                2,
                 1,
-                0,
                 1,
                 0
               ]
@@ -7022,14 +7937,27 @@
               "indent": 1,
               "parameters": [
                 1,
-                "Hold up..."
+                "Generate random name"
               ]
             },
             {
-              "code": 230,
+              "code": 355,
               "indent": 2,
               "parameters": [
-                30
+                "$gameActors.actor(1).setRandomName(true);"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                2,
+                "Wait..."
               ]
             },
             {
@@ -7041,6 +7969,13 @@
               "code": 404,
               "indent": 1,
               "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 1,
+              "parameters": [
+                30
+              ]
             },
             {
               "code": 0,
@@ -7274,6 +8209,13 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "HideActiveQuestWindow"
+              ]
+            },
+            {
               "code": 230,
               "indent": 0,
               "parameters": [
@@ -7297,7 +8239,7 @@
               "indent": 0,
               "parameters": [
                 10,
-                "Chapter0",
+                "Chapter1",
                 0,
                 0,
                 0,
@@ -7360,39 +8302,10 @@
               ]
             },
             {
-              "code": 250,
+              "code": 356,
               "indent": 0,
               "parameters": [
-                {
-                  "name": "Open5",
-                  "volume": 50,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                90
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Unknown",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\-\\}Hello? Is \\N[1] home?"
+                "ShowActiveQuestWindow"
               ]
             },
             {
@@ -7407,11 +8320,30 @@
               "indent": 0,
               "parameters": [
                 0,
-                11,
+                20,
                 17,
-                14,
-                4,
+                39,
+                8,
                 2
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                37
+              ]
+            },
+            {
+              "code": 241,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
               ]
             },
             {
@@ -9346,7 +10278,7 @@
               "indent": 1,
               "parameters": [
                 10,
-                "Chapter7",
+                "Chapter6",
                 0,
                 0,
                 0,
@@ -9428,6 +10360,13 @@
                 4,
                 8,
                 2
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Tint set #6e6e6e"
               ]
             },
             {
@@ -9823,6 +10762,20 @@
               "indent": 1,
               "parameters": [
                 "Quest 37 Show Objective 10"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "ShowActiveQuestWindow"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameSystem.setRecallAllowed(true);"
               ]
             },
             {

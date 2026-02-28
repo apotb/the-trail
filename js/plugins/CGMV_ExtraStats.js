@@ -182,7 +182,7 @@ Game_Action.prototype.executeHpDamage = function(target, value) {
 			$gameVariables.setValue(CGMV.ExtraStats.DamageHealed, oldDamageHealed + Math.abs(value));
 		}
 	}
-	else if(target.isEnemy()) {
+	else if(target.isEnemy() && !target.hasState(26)) {
 		var oldDamageDealt = $gameVariables.value(CGMV.ExtraStats.DamageDealt);
 		$gameVariables.setValue(CGMV.ExtraStats.DamageDealt, oldDamageDealt + value);
 		OrangeGreenworks.setStat('damageDealt', oldDamageDealt + value);

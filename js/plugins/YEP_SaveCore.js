@@ -926,6 +926,15 @@ Window_SaveInfo.prototype.drawGameTitle = function(dy) {
   }
   this.drawText("Last Saved: " + text + " (" + interval + ")", 0, dy + this.lineHeight(), this.contents.width, 'center');
 
+  // Team Name
+  try {
+    var text = DataManager.loadGlobalInfo()[this._currentFile].teamName;
+  } catch (err) {
+    console.error(err);
+    var text = "Error loading team name";
+  }
+  this.drawText(text, 0, dy + this.lineHeight() * 2, this.contents.width, 'center');
+
   return dy + this.lineHeight();
 };
 
@@ -983,8 +992,15 @@ Window_SaveInfo.prototype.drawContents = function(dy) {
   }
   try {
     this._saveContents = JsonEx.parse(this._saveContents);
+    if (this._saveContents.actors.actor(7).name() !== 'Pet') {
+      this._drawPet = true;
+      this._saveContents.party._actors.push(this._saveContents.party.pet().actorId());
+    } else {
+      this._drawPet = false;
+    }
     dy = this.drawPartyGraphics(dy);
     dy = this.drawPartyNames(dy);
+    dy = this.drawPartyTitles(dy);
     dy = this.drawPartyLevels(dy);
     this.drawColumnData(dy);
   } catch (e) {
@@ -1003,7 +1019,7 @@ Window_SaveInfo.prototype.drawPartyGraphics = function(dy) {
     var actorId = this._saveContents.party._actors[i];
     var member = this._saveContents.actors._data[actorId];
     if (member) {
-      if (Yanfly.Param.SaveInfoPartyType === 1) {
+      if (Yanfly.Param.SaveInfoPartyType === 1 || (i + 1 === length && this._drawPet)) {
         var name = member.characterName();
         var index = member.characterIndex();
         this.drawCharacter(name, index, dx, dy);
@@ -1066,7 +1082,7 @@ Window_SaveInfo.prototype.drawPartyNames = function(dy) {
     }
     dx += dw
   }
-  return dy += this.lineHeight();
+  return dy += this.lineHeight() / 1.5;
 };
 
 Window_SaveInfo.prototype.drawPartyLevels = function(dy) {
@@ -1077,7 +1093,7 @@ Window_SaveInfo.prototype.drawPartyLevels = function(dy) {
   dw = Math.floor(dw);
   var dx = 0;
   var fmt = Yanfly.Param.SaveInfoActorLvFmt;
-  for (var i = 0; i < length; ++i) {
+  for (var i = 0; i < length - Number(this._drawPet); ++i) {
     var actorId = this._saveContents.party._actors[i];
     var member = this._saveContents.actors._data[actorId];
     if (member) {

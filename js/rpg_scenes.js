@@ -401,7 +401,12 @@ Scene_Boot.prototype.start = function() {
     } else {
         this.checkPlayerLocation();
         DataManager.setupNewGame();
-        SceneManager.goto(Scene_Title);
+        if (!DataManager.isAnySavefileExists()) {
+            DataManager.setupNewGame();
+            SceneManager.goto(Scene_Map);
+        } else {
+            SceneManager.goto(Scene_Title);
+        }
         Window_TitleCommand.initCommandPosition();
     }
 };
@@ -699,7 +704,9 @@ Scene_Map.prototype.updateDestination = function() {
     if (this.isMapTouchOk()) {
         this.processMapTouch();
     } else {
-        $gameTemp.clearDestination();
+        setTimeout(() => {
+            if (!this.isMapTouchOk()) $gameTemp.clearDestination();
+        }, 100);
         this._touchCount = 0;
     }
 };
@@ -1131,9 +1138,9 @@ Scene_ItemBase.prototype.item = function() {
     return this._itemWindow.item();
 };
 
-Scene_ItemBase.prototype.user = function() {
+/*Scene_ItemBase.prototype.user = function() {
     return null;
-};
+};*/
 
 Scene_ItemBase.prototype.isCursorLeft = function() {
     return this._itemWindow.index() % 2 === 0;
@@ -1277,7 +1284,8 @@ Scene_Item.prototype.createItemWindow = function() {
     this._categoryWindow.setItemWindow(this._itemWindow);
 };
 
-Scene_Item.prototype.user = function() {
+// Changed from Scene_Item to Scene_Base
+Scene_Base.prototype.user = function() {
     var members = $gameParty.movableMembers();
     var bestActor = members[0];
     var bestPha = 0;
@@ -2006,6 +2014,7 @@ Scene_Shop.prototype.activateSellWindow = function() {
 };
 
 Scene_Shop.prototype.commandBuy = function() {
+    this._infoWindow.show();
     this._dummyWindow.hide();
     this.activateBuyWindow();
 };
@@ -2029,6 +2038,7 @@ Scene_Shop.prototype.onBuyOk = function() {
 };
 
 Scene_Shop.prototype.onBuyCancel = function() {
+    this._infoWindow.hide();
     this._commandWindow.activate();
     this._dummyWindow.show();
     this._buyWindow.hide();
@@ -2038,6 +2048,7 @@ Scene_Shop.prototype.onBuyCancel = function() {
 };
 
 Scene_Shop.prototype.onCategoryOk = function() {
+    this._infoWindow.show();
     this.activateSellWindow();
     this._sellWindow.select(0);
 };
@@ -2062,6 +2073,7 @@ Scene_Shop.prototype.onSellOk = function() {
 };
 
 Scene_Shop.prototype.onSellCancel = function() {
+    this._infoWindow.hide();
     this._sellWindow.deselect();
     this._categoryWindow.activate();
     this._statusWindow.setItem(null);
@@ -2121,6 +2133,13 @@ Scene_Shop.prototype.maxBuy = function() {
 };
 
 Scene_Shop.prototype.maxSell = function() {
+    if (DataManager.isIndependent(this._item)) {
+        if (DataManager.isBaseItem(this._item)) {
+            return $gameParty.numNotUpgradedIndependentItems(DataManager.getDatabase(this._item)[this._item.baseItemId]);
+        } else {
+            return 1;
+        }
+    }
     return $gameParty.numItems(this._item);
 };
 

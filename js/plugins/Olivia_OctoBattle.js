@@ -5027,6 +5027,7 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
     Window_PartyCommand.prototype.updateFadeOut.call(this);
   };
   Window_BattleItem.prototype.drawItemName = function (item, x, y, width) {
+    this.setItemTextColor(item);
     Window_BattleSkill.prototype.drawItemName.call(this, item, x, y, width);
     x = this.contents.measureTextWidth(item.name) + Math.round(Window_Base._iconWidth * this.scaleRate()) + 4;
     this.contents.fontSize = 12;
@@ -5041,12 +5042,16 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
     this.changeTextColor(this.textColor(31));
     item.effects.filter(e => e.code == 11).forEach(e => {
       if (e.value1 > 0) {
-        text = " +" + (e.value1 * 100) + "%";
+        let multiplier = this.battler().pha;
+        if ($gameParty.pet().name() === 'Duncan' && item.itemCategory?.contains('Meals')) multiplier *= 1.5;
+        text = " +" + Math.floor(e.value1 * 100 * multiplier) + "%";
         this.drawText(text, x, y, width);
         x += this.contents.measureTextWidth(text);
       }
       if (e.value2 > 0) {
-        text = " +" + e.value2;
+        let multiplier = this.battler().pha;
+        if ($gameParty.pet().name() === 'Duncan' && item.itemCategory?.contains('Meals')) multiplier *= 1.5;
+        text = " +" + Math.floor(e.value2 * multiplier);
         this.drawText(text, x, y, width);
         x += this.contents.measureTextWidth(text);
       }
@@ -5055,12 +5060,16 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
     this.changeTextColor(this.textColor(16));
     item.effects.filter(e => e.code == 12).forEach(e => {
       if (e.value1 > 0) {
-        text = " +" + (e.value1 * 100) + "%";
+        let multiplier = this.battler().pha;
+        if ($gameParty.pet().name() === 'Duncan' && item.itemCategory?.contains('Meals')) multiplier *= 1.5;
+        text = " +" + Math.floor(e.value1 * 100 * multiplier) + "%";
         this.drawText(text, x, y, width);
         x += this.contents.measureTextWidth(text);
       }
       if (e.value2 > 0) {
-        text = " +" + e.value2;
+        let multiplier = this.battler().pha;
+        if ($gameParty.pet().name() === 'Duncan' && item.itemCategory?.contains('Meals')) multiplier *= 1.5;
+        text = " +" + Math.floor(e.value2 * multiplier);
         this.drawText(text, x, y, width);
         x += this.contents.measureTextWidth(text);
       }
@@ -5602,6 +5611,7 @@ if (Olivia.OctoBattle[_0x3084("0x1c")][_0x3084("0x30")]) {
       actor._postVictoryLv = actor._level;
     }, this);
     $gameTemp.initRetry();
+    $gameMap._interpreter._branch[$gameMap._interpreter._indent] = 0;
   };
   BattleManager[_0x3084("0x8e")] = function () {
     AudioManager[_0x3084("0x97")](Olivia[_0x3084("0x3")][_0x3084("0x1c")][_0x3084("0x68")]);

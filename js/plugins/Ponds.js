@@ -1,18 +1,30 @@
 Galv.FISH.ponds = {
+    "Haven Harbor": [
+        [267, 8, true],
+        [268, 12, true],
+        [269, 6, true],
+        [258, 1, '$gameSwitches.value(68) && !$gameSwitches.value(32)']
+    ],
+    "Solus Valley South": [
+        [267, 10, true],
+        [273, 10, true],
+        [274, 5, true]
+    ],
+    "Solus Valley North": [
+        [273, 12, true],
+        [275, 8, true],
+        [276, 4, true]
+    ],
     "The Promenade": [
-        [1, 12, true],
-        [3, 12, true]
+        [126, 24, true]
     ],
     "Lake of Telluria": [
-        [1, 8, true],
-        [2, 16, true]
+        [127, 16, true],
+        [220, 8, true]
     ],
     "North Telluria Field": [
-        [2, 5, true],
-        [4, 5, '$gameSwitches.value(69)']
-    ],
-    "Fish-Flavored Fish": [
-        [5, 1, true]
+        [127, 5, true],
+        [222, 5, '$gameSwitches.value(69)']
     ]
 }
 
@@ -58,7 +70,7 @@ Game_System.prototype.fishRespawnTick = function() {
         respawn = this.fishing.respawn[pond];
         for (const fish in respawn) {
             respawn[fish]++;
-            if (respawn[fish] >= Galv.FISH.fish[fish].respawn) {
+            if (respawn[fish] >= Galv.FISH.fish[fish]?.respawn) {
                 this.respawnFish(pond, fish);
                 respawn[fish] = 0;
             }

@@ -84,13 +84,28 @@
       "rows": "4",
       "cols": "4"
     },
-    "Window_ShopCommand": {
-      "width": "640",
-      "rows": "4"
-    },
     "Window_ShopInfo": {
-      "x": 640,
+      "x": 0,
       "width": "640"
+    },
+    "Window_Gold": {
+      "x": 0,
+      "width": 768
+    },
+    "Window_ShopStatus": {
+      "y": 360
+    },
+    "Window_Base": {
+      "height": 360
+    },
+    "Window_ShopBuy": {
+      "height": 360
+    },
+    "Window_ShopSell": {
+      "height": 360
+    },
+    "Window_ShopNumber": {
+      "height": 360
     }
   },
   "Scene_EquipCustomize": {

@@ -517,7 +517,7 @@ Yanfly.Item.version = 1.30;
 Yanfly.Parameters = PluginManager.parameters('YEP_ItemCore');
 Yanfly.Param = Yanfly.Param || {};
 
-Yanfly.Param.ItemMaxItems = Number(Yanfly.Parameters['Max Items']);
+Yanfly.Param.ItemMaxItems = eval(Yanfly.Parameters['Max Items']);
 Yanfly.Param.ItemMaxWeapons = eval(Yanfly.Parameters['Max Weapons']);
 Yanfly.Param.ItemMaxArmors = eval(Yanfly.Parameters['Max Armors']);
 Yanfly.Param.ItemStartingId = Number(Yanfly.Parameters['Starting ID']);
@@ -568,7 +568,9 @@ DataManager.isDatabaseLoaded = function() {
 DataManager.processItemCoreNotetags = function(group) {
   var note1 = /<(?:RANDOM VARIANCE):[ ](\d+)>/i;
   var note2 = /<(?:NONINDEPENDENT ITEM|not independent item)>/i;
+  var note4 = /<(?:INDEPENDENT ITEM|independent item)>/i;
   var note3 = /<(?:PRIORITY NAME)>/i;
+  var note5 = /<rarity:\s*(\d+)>/i;
   for (var n = 1; n < group.length; n++) {
     var obj = group[n];
     var notedata = obj.note.split(/[\r\n]+/);
@@ -576,13 +578,14 @@ DataManager.processItemCoreNotetags = function(group) {
     obj.randomVariance = Yanfly.Param.ItemRandomVariance;
     obj.textColor = 0;
     if (Imported.YEP_CoreEngine) obj.textColor = Yanfly.Param.ColorNormal;
-    obj.nonIndependent = false;
+    obj.nonIndependent = DataManager.isItem(obj); // Items are not independent by default
     obj.setPriorityName = false;
     obj.infoEval = '';
     obj.infoTextTop = '';
     obj.infoTextBottom = '';
     obj.onCreationEval = '';
     obj.effectsDisplay = [];
+    obj.rarity = 0;
     var evalMode = 'none';
 
    for (var i = 0; i < notedata.length; i++) {
@@ -591,8 +594,12 @@ DataManager.processItemCoreNotetags = function(group) {
        obj.randomVariance = parseInt(RegExp.$1);
       } else if (line.match(note2)) {
         obj.nonIndependent = true;
+      } else if (line.match(note4)) {
+        obj.nonIndependent = false;
       } else if (line.match(note3)) {
         obj.setPriorityName = true;
+      } else if (line.match(note5)) {
+        obj.rarity = parseInt(RegExp.$1);
       } else if (line.match(/<(?:INFO EVAL)>/i)) {
         evalMode = 'info eval';
       } else if (line.match(/<\/(?:INFO EVAL)>/i)) {
@@ -629,6 +636,8 @@ DataManager.processItemCoreNotetags = function(group) {
         obj.effectsDisplay.push(JSON.parse(line));
       }
     }
+
+    DataManager.initRarity(obj);
   }
 };
 
@@ -910,7 +919,7 @@ ItemManager.updateItemName = function(item) {
     } else if (eval(Yanfly.Param.ItemNameSpacing)) {
       boostText = ' ' + boostText;
     }
-    fmt = Yanfly.Param.ItemNameFmt;
+    fmt = `\\c[8]%1\\c[${item.textColor}]%2\\c[8]%3%4\\c[0]`;
     item.name = fmt.format(prefix, name, suffix, boostText);
 };
 
@@ -1044,7 +1053,10 @@ Game_Actor.prototype.hasArmor = function(armor) {
 
 Game_Actor.prototype.hasBaseItem = function(baseItem) {
     if (!DataManager.isIndependent(baseItem)) return false;
-    var type = (DataManager.isWeapon(baseItem)) ? 'weapon' : 'armor';
+    var type = '';
+    if (DataManager.isWeapon(baseItem)) type = 'weapon';
+    if (DataManager.isArmor(baseItem)) type = 'armor';
+    if (type === '') false;
     for (var i = 0; i < this.equips().length; ++i) {
       var equip = this.equips()[i];
       if (!equip) continue;
@@ -1181,6 +1193,7 @@ Game_Party.prototype.seenItem = function(item) {
 
 Game_Party.prototype.gainIndependentItem = function(item, amount, includeEquip) {
     var arr = [];
+    var ids = [];
     if (amount > 0) {
       for (var i = 0; i < amount; ++i) {
         var newItem = DataManager.registerNewItem(item);
@@ -1190,11 +1203,15 @@ Game_Party.prototype.gainIndependentItem = function(item, amount, includeEquip) 
     } else if (amount < 0) {
       amount = Math.abs(amount);
       for (var i = 0; i < amount; ++i) {
-        if (item.baseItemId) {
+        if (item.baseItemId && !ids.contains(item.id)) {
           this.removeIndependentItem(item, includeEquip);
+          ids.push(item.id);
         } else if (DataManager.isIndependent(item)) {
-          var target = $gameParty.getMatchingBaseItem(item, includeEquip);
-          if (target !== null) this.removeIndependentItem(target, includeEquip);
+          var target = $gameParty.getMatchingBaseItem(DataManager.getBaseItem(item), includeEquip);
+          if (target !== null) {
+            this.removeIndependentItem(target, includeEquip);
+            DataManager.removeIndependentItem(target);
+          }
         } else {
           this.removeBaseItem(item, includeEquip);
         }
@@ -1222,6 +1239,7 @@ Game_Party.prototype.registerNewItem = function(baseItem, newItem) {
     if (container) {
       var lastNumber = this.numItems(newItem);
       container[newItem.id] = 1;
+      $gameTemp._latestNewItem = newItem;
     }
 };
 
@@ -1249,9 +1267,7 @@ Game_Party.prototype.removeBaseItem = function(item, includeEquip) {
 
 Game_Party.prototype.getMatchingBaseItem = function(baseItem, equipped) {
     if (!baseItem) return null;
-    if (DataManager.isItem(baseItem)) var group = this.items();
-    if (DataManager.isWeapon(baseItem)) var group = this.weapons();
-    if (DataManager.isArmor(baseItem)) var group = this.armors();
+    var group = DataManager.getDatabase(baseItem);
     if (equipped) {
       for (var a = 0; a < this.members().length; ++a) {
         var actor = this.members()[a];
@@ -1316,12 +1332,6 @@ Game_Party.prototype.independentItemSort = function(a, b) {
     if (aa < bb) return -1;
     if (aa >= bb) return 1;
     return 0;
-};
-
-Yanfly.Item.Game_Party_maxItems = Game_Party.prototype.maxItems;
-Game_Party.prototype.maxItems = function(item) {
-    if (DataManager.isIndependent(item)) return 1;
-    return Yanfly.Item.Game_Party_maxItems.call(this, item);
 };
 
 Yanfly.Item.Game_Party_hasItem = Game_Party.prototype.hasItem;
@@ -1391,6 +1401,7 @@ Game_Party.prototype.numNotUpgradedIndependentItems = function(baseItem) {
       if (!item) continue;
       if (item.boostCount && item.boostCount !== 0) continue;
       if (item.priorityName && item.priorityName != item.baseItemName) continue;
+      if ($gameTemp._independentItems?.contains(item)) continue;
       if (item.baseItemId && item.baseItemId === id) value += 1;
     }
   }
@@ -1410,6 +1421,7 @@ Game_Party.prototype.getNotUpgradedIndependentItem = function(baseItem) {
     if (!item) continue;
     if (item.boostCount && item.boostCount !== 0) continue;
     if (item.priorityName && item.priorityName != item.baseItemName) continue;
+    if ($gameTemp._independentItems?.contains(item)) continue;
     if (item.baseItemId && item.baseItemId === id) value = item;
   }
   return value;
@@ -1422,6 +1434,7 @@ DataManager.isBaseItem = function(item, baseItem=DataManager.getBaseItem(item), 
   } else {
     if (item.priorityName && item.priorityName != item.baseItemName) return false;
   }
+  if (DataManager.isItem(item) && item.baseItemId === 248) return false; // Food
   return item.baseItemId && item.baseItemId == baseItem.id;
 };
 
@@ -1643,7 +1656,6 @@ Yanfly.Item.Scene_Shop_doSell = Scene_Shop.prototype.doSell;
 Scene_Shop.prototype.doSell = function(number) {
     Yanfly.Item.Scene_Shop_doSell.call(this, number);
     if (!DataManager.isIndependent(this._item)) return;
-    DataManager.removeIndependentItem(this._item);
 };
 
 //=============================================================================
@@ -1917,23 +1929,39 @@ Window_ItemStatus.prototype.drawItemData = function(i, dx, dy, dw) {
       effect = this.getEffect(Game_Action.EFFECT_RECOVER_HP);
       value = (effect) ? effect.value1 : '---';
       if (value === 0) value = '---';
-      if (value !== '---' && value !== 0 && typeof value == 'number') value *= 100;
+      if (value !== '---' && value !== 0 && typeof value == 'number') {
+        value *= 100;
+        value *= this.parent.parent.user()?.pha; // PHA
+        if ($gameParty.pet().name() === "Duncan" && this._item.itemCategory?.contains('Meals')) value *= 1.5; // DUNCAN
+      }
     }
     if (i === 1) {
       effect = this.getEffect(Game_Action.EFFECT_RECOVER_HP);
       value = (effect) ? effect.value2 : '---';
       if (value === 0) value = '---';
+      if (value !== '---' && value !== 0 && typeof value == 'number') {
+        value *= this.parent.parent.user()?.pha; // PHA
+        if ($gameParty.pet().name() === "Duncan" && this._item.itemCategory?.contains('Meals')) value *= 1.5; // DUNCAN
+      }
     }
     if (i === 2) {
       effect = this.getEffect(Game_Action.EFFECT_RECOVER_MP);
       value = (effect) ? effect.value1 : '---';
       if (value === 0) value = '---';
-      if (value !== '---' && value !== 0 && typeof value == 'number') value *= 100;
+      if (value !== '---' && value !== 0 && typeof value == 'number') {
+        value *= 100;
+        value *= this.parent.parent.user()?.pha; // PHA
+        if ($gameParty.pet().name() === "Duncan" && this._item.itemCategory?.contains('Meals')) value *= 1.5; // DUNCAN
+      }
     }
     if (i === 3) {
       effect = this.getEffect(Game_Action.EFFECT_RECOVER_MP);
       value = (effect) ? effect.value2 : '---';
       if (value === 0) value = '---';
+      if (value !== '---' && value !== 0 && typeof value == 'number') {
+        value *= this.parent.parent.user()?.pha; // PHA
+        if ($gameParty.pet().name() === "Duncan" && this._item.itemCategory?.contains('Meals')) value *= 1.5; // DUNCAN
+      }
     }
     if (i >= 4) {
       icons = this.getItemIcons(i, icons);
@@ -1962,10 +1990,20 @@ Window_ItemStatus.prototype.drawItemData = function(i, dx, dy, dw) {
     }
 };
 
+Window_ItemStatus.prototype.duncan = function() {
+  // Edgar-type function
+}
+
 Window_ItemStatus.prototype.getEffect = function(code) {
-    var targetEffect;
+    let targetEffect = null;
     this._item.effects.forEach(function(effect) {
-      if (effect.code === code) targetEffect = effect;
+      if (effect.code === code) {
+        if (!targetEffect) targetEffect = JsonEx.makeDeepCopy(effect);
+        else {
+          targetEffect.value1 += effect.value1;
+          targetEffect.value2 += effect.value2;
+        }
+      }
     }, this);
     this._item.effectsDisplay.forEach(function(effect) {
       if (effect.code === code) targetEffect = effect;
@@ -2078,15 +2116,18 @@ Window_ItemInfo.prototype.drawItemInfoC = function(dy) {
 };
 
 Window_ItemInfo.prototype.drawItemInfoD = function(dy) {
+    dy = this.drawInfoTextBottom(dy);
     return dy;
 };
 
 Window_ItemInfo.prototype.drawItemInfoE = function(dy) {
+    dy = this.drawMaterialText(dy);
+    dy = this.drawSalvageText(dy);
     return dy;
 };
 
 Window_ItemInfo.prototype.drawItemInfoF = function(dy) {
-    dy = this.drawInfoTextBottom(dy);
+    dy = ___Window_ItemInfo__prototype__drawItemRarity___(this, dy);
     return dy;
 };
 
@@ -2118,12 +2159,41 @@ Window_ItemInfo.prototype.drawInfoTextBottom = function(dy) {
     if (item.infoTextBottom === undefined) {
       item.infoTextBottom = DataManager.getBaseItem(item).infoTextBottom;
     }
-    if (item.infoTextBottom === '') return dy;
-    var info = item.infoTextBottom.split(/[\r\n]+/);
+    let infoText = item.infoTextBottom;
+    if (infoText === '') return dy;
+    var info = infoText.split(/[\r\n]+/);
     for (var i = 0; i < info.length; ++i) {
       var line = info[i];
       this.resetFontSettings();
       this.drawTextEx(line, this.textPadding(), dy);
+      dy += this.contents.fontSize + 8;
+    }
+    return dy;
+};
+
+Window_ItemInfo.prototype.drawMaterialText = function(dy) {
+    var item = this._item;
+    if (!DataManager.isMaterial(item)) return dy;
+    let infoText = "Material";
+    var info = infoText.split(/[\r\n]+/);
+    for (var i = 0; i < info.length; ++i) {
+      var line = info[i];
+      this.resetFontSettings();
+      this.drawTextEx(line, this.textPadding(), dy);
+      dy += this.contents.fontSize + 8;
+    }
+    return dy;
+};
+
+Window_ItemInfo.prototype.drawSalvageText = function(dy) {
+    var item = this._item;
+    if (Object.keys(item.disassembleItems).length === 0) return dy;
+    let infoText = "Can be salvaged";
+    var info = infoText.split(/[\r\n]+/);
+    for (var i = 0; i < info.length; ++i) {
+      var line = info[i];
+      this.resetFontSettings();
+      this.drawTextEx(line, this.textPadding(),   dy);
       dy += this.contents.fontSize + 8;
     }
     return dy;

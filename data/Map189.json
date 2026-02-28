@@ -4363,28 +4363,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\n<Guild Member>When I was younger, I used to hoard all the"
+                "\\n<Exotics Trader>When I was a young'un, I adventured the Overworld and hoarded all the treasure I could find."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "items I would find while exploring. However, my"
+                "My adventuring days are long over, so I figure it's best I get everything off my hands."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "adventuring days are long over, so I figure it's"
+                "But I won't sell to just any peasant. Only established travelers or esteemed collectors"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "for the best to get everything off my hands."
+                "with membership to the Adventurer's Guild may gaze upon my wares!"
               ]
             },
             {
@@ -4401,14 +4401,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\n<Guild Member>Would you like to buy anything from me?"
+                "\\n<Exotics Trader>Would you like to take a look at what I've got? I'm always"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "I have some rather... exclusive items."
+                "digging up something new, and let's just say I have"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "some rather... exclusive items."
               ]
             },
             {
@@ -4460,7 +4467,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\n<Guild Member>Alright... I'll be here if you change your mind."
+                "\\n<Exotics Trader>Alright... I'll be here if you change your mind."
               ]
             },
             {
@@ -4492,17 +4499,24 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\n<Guild Member>I have plenty... let's see what I brought in today."
+                "\\n<Exotics Trader>I have plenty... let's see what I brought in today."
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameTemp._shopOwner = \"People4_7\";"
               ]
             },
             {
               "code": 302,
               "indent": 0,
               "parameters": [
+                2,
+                247,
                 1,
-                11,
-                0,
-                0,
+                240,
                 false
               ]
             },
@@ -4511,9 +4525,19 @@
               "indent": 0,
               "parameters": [
                 1,
+                11,
+                1,
+                60
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 0,
+              "parameters": [
+                1,
                 21,
-                0,
-                0
+                1,
+                240
               ]
             },
             {
@@ -4522,8 +4546,8 @@
               "parameters": [
                 2,
                 36,
-                0,
-                0
+                1,
+                240
               ]
             },
             {
@@ -4532,8 +4556,8 @@
               "parameters": [
                 1,
                 22,
-                0,
-                0
+                1,
+                240
               ]
             },
             {
@@ -4542,8 +4566,8 @@
               "parameters": [
                 2,
                 37,
-                0,
-                0
+                1,
+                240
               ]
             },
             {
@@ -4810,7 +4834,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\n<Guild Member>Have a good day."
+                "\\n<Exotics Trader>Have a good day."
               ]
             },
             {
@@ -5117,6 +5141,17 @@
               "code": 125,
               "indent": 3,
               "parameters": [
+                1,
+                0,
+                100000
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 3,
+              "parameters": [
+                25,
+                25,
                 1,
                 0,
                 100000
@@ -5435,6 +5470,17 @@
               "code": 125,
               "indent": 3,
               "parameters": [
+                1,
+                0,
+                10000
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 3,
+              "parameters": [
+                25,
+                25,
                 1,
                 0,
                 10000
@@ -6035,6 +6081,17 @@
               ]
             },
             {
+              "code": 122,
+              "indent": 2,
+              "parameters": [
+                25,
+                25,
+                1,
+                0,
+                1000
+              ]
+            },
+            {
               "code": 126,
               "indent": 2,
               "parameters": [
@@ -6200,7 +6257,7 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "have enough bits. If you would still like"
+                "have enough Bits. If you would still like"
               ]
             },
             {
@@ -7181,8 +7238,8 @@
               "indent": 0,
               "parameters": [
                 [
-                  "Yes.",
-                  "No."
+                  "Yes",
+                  "No"
                 ],
                 1,
                 0,
@@ -7421,7 +7478,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\n<Captain>I've sailed the world and learned a lot of things from"
+                "\\n<Captain O. Reagen Eiser>I've sailed the world and learned a lot of things from"
               ]
             },
             {
@@ -7481,7 +7538,7 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\n<Captain>Here, let me tell you..."
+                "\\n<Captain O. Reagen Eiser>Here, let me tell you..."
               ]
             },
             {
@@ -7532,7 +7589,7 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\n<Captain>There you go. Looking through your bag"
+                "\\n<Captain O. Reagen Eiser>There you go. Looking through your bag"
               ]
             },
             {
@@ -7574,7 +7631,7 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\n<Captain>Come back if you're ever interested."
+                "\\n<Captain O. Reagen Eiser>Come back if you're ever interested."
               ]
             },
             {
@@ -7625,7 +7682,14 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\n<Captain>Want your bag to go back to normal?"
+                "\\n<Captain O. Reagen Eiser>Currently, you've opted to hide ingredients and weak healing items from"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "your bag during battle. Want your battle bag to go back to normal?"
               ]
             },
             {
@@ -7690,7 +7754,7 @@
               "code": 401,
               "indent": 3,
               "parameters": [
-                "\\n<Captain>Come back if you'd ever like to re-organize."
+                "\\n<Captain O. Reagen Eiser>Come back if you'd ever like to re-organize."
               ]
             },
             {
@@ -7725,7 +7789,7 @@
               "code": 401,
               "indent": 3,
               "parameters": [
-                "\\n<Captain>Come back if you're ever interested."
+                "\\n<Captain O. Reagen Eiser>Come back if you're ever interested."
               ]
             },
             {
@@ -7767,7 +7831,14 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\n<Captain>Want to re-organize your bag?"
+                "\\n<Captain O. Reagen Eiser>Want to re-organize your battle bag? It'll hide ingredients"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "and weak healing items from your bag during battle."
               ]
             },
             {
@@ -7832,7 +7903,7 @@
               "code": 401,
               "indent": 3,
               "parameters": [
-                "\\n<Captain>There you go. Looking through your bag"
+                "\\n<Captain O. Reagen Eiser>There you go. Looking through your bag"
               ]
             },
             {
@@ -7874,7 +7945,7 @@
               "code": 401,
               "indent": 3,
               "parameters": [
-                "\\n<Captain>Come back if you're ever interested."
+                "\\n<Captain O. Reagen Eiser>Come back if you're ever interested."
               ]
             },
             {
@@ -8132,7 +8203,7 @@
               "parameters": [
                 0,
                 53,
-                15,
+                13,
                 5,
                 2,
                 0

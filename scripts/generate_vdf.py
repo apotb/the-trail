@@ -1,13 +1,10 @@
-import os
-import platform
-import json
-import subprocess
+import os, platform, json, subprocess, env, sys, webbrowser
 
 SCRIPT_DIR = os.path.dirname(__file__)
-OUT_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, "../../out"))
+OUT_DIR = os.path.abspath(os.path.join(SCRIPT_DIR, "../out"))
 LOG_PATH = os.path.join(OUT_DIR, "logs")
-VERSION_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, "../../data/Version.json"))
-CONFIG_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, "../config.json"))
+VERSION_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, "../data/Version.json"))
+CONFIG_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, "config.json"))
 with open(CONFIG_PATH, "r", encoding="utf-8") as f:
     DEMO = json.load(f).get("demo", False)
 
@@ -16,20 +13,22 @@ APP_ID = 3544920 if not DEMO else 3580480
 DEPOTS = {
     "windows": {
         "id": str(APP_ID + 1),
-        "folder": "../../out/windows" if not DEMO else "../../out/windows-demo"
+        "folder": "../out/windows" if not DEMO else "../out/windows-demo"
     },
     "mac": {
         "id": str(APP_ID + 2),
-        "folder": "../../out/mac" if not DEMO else "../../out/mac-demo"
+        "folder": "../out/mac" if not DEMO else "../out/mac-demo"
     },
     "linux": {
         "id": str(APP_ID + 3),
-        "folder": "../../out/linux" if not DEMO else "../../out/linux-demo"
+        "folder": "../out/linux" if not DEMO else "../out/linux-demo"
     }
 }
 
 
 def detect_platform():
+    if "-p" in sys.argv:
+        return ["windows", "mac", "linux"]
     system = platform.system()
     if system == "Windows":
         return ["windows", "linux"]
@@ -39,17 +38,28 @@ def detect_platform():
         raise RuntimeError(f"Unsupported OS: {system}")
 
 
-def get_git_hash():
+def get_git_info():
     try:
-        result = subprocess.run(
+        branch = subprocess.run(
+            ["git", "rev-parse", "--abbrev-ref", "HEAD"],
+            cwd=os.path.abspath(os.path.join(SCRIPT_DIR, "..")),
+            stdout=subprocess.PIPE,
+            stderr=subprocess.DEVNULL,
+            check=True,
+            text=True
+        ).stdout.strip()
+        hash = subprocess.run(
             ["git", "rev-parse", "--short", "HEAD"],
             cwd=os.path.abspath(os.path.join(SCRIPT_DIR, "..")),
             stdout=subprocess.PIPE,
             stderr=subprocess.DEVNULL,
             check=True,
             text=True
-        )
-        return result.stdout.strip()
+        ).stdout.strip()
+        return {
+            "branch": branch,
+            "hash": hash
+        }
     except Exception:
         return "nogit"
 
@@ -63,11 +73,11 @@ def get_build_description():
         print(f"⚠ Failed to read Version.json: {e}")
         version_id = "Unnamed Build"
 
-    git_hash = get_git_hash()
-    return f"{version_id} ({git_hash})"
+    git_info = get_git_info()
+    return f"{version_id} {git_info['branch']}@{git_info['hash']}"
 
 
-def generate_depot_vdf(name, depot):
+def generate_depot_vdf(depot):
     content_root = os.path.abspath(os.path.join(SCRIPT_DIR, depot["folder"]))
     return f'''"DepotBuildConfig"
 {{
@@ -101,7 +111,7 @@ def generate_app_build_vdf(platform_keys):
 }}'''
 
 
-def write_files():
+def write_files(env):
     platform_keys = detect_platform()
     os.makedirs(OUT_DIR, exist_ok=True)
 
@@ -109,18 +119,45 @@ def write_files():
         depot = DEPOTS[key]
         path = os.path.join(OUT_DIR, f'depot_build_{depot["id"]}.vdf')
         with open(path, "w", encoding="utf-8") as f:
-            f.write(generate_depot_vdf(key, depot))
+            f.write(generate_depot_vdf(depot))
         print(f"✔ Wrote {path}")
 
     app_path = os.path.join(OUT_DIR, f'app_build_{APP_ID}.vdf')
     with open(app_path, "w", encoding="utf-8") as f:
         f.write(generate_app_build_vdf(platform_keys))
     print(f"✔ Wrote {app_path}")
-
-    escaped_app_path = app_path.replace('"', '\\"')
-    print("\n➡ Run this command to upload build:")
-    print(f'steamcmd +login STEAM_USERNAME +run_app_build "{escaped_app_path}" +quit')
+    return app_path
 
 
 if __name__ == "__main__":
-    write_files()
+    env.load()
+    app_path = write_files(env)
+    cmd = [
+        "steamcmd",
+        "+login", env.get("STEAM_USERNAME"),
+        "+run_app_build", app_path,
+        "+quit"
+    ]
+
+    if "-u" in sys.argv:
+        steamcmd_dir = os.path.join(OUT_DIR, ".steam")
+        os.makedirs(steamcmd_dir, exist_ok=True)
+
+        child_env = os.environ.copy()
+        child_env["HOME"] = steamcmd_dir
+
+        subprocess.run(cmd, cwd=OUT_DIR, env=child_env)
+    else:
+        print("\n➡ Run this command to upload build:\n")
+        steam_home = os.path.join(OUT_DIR, ".steam")
+        if platform.system() == "Windows":
+            print(f'set "HOME={steam_home}" && ' + " ".join(cmd))
+        else:
+            print(f'HOME="{steam_home}" ' + " ".join(cmd))
+
+    if "-s" in sys.argv:
+        url = "https://partner.steamgames.com/apps/builds/" + str(APP_ID)
+        if platform.system() == "Windows":
+            os.startfile(url)
+        else:
+            webbrowser.open(url)

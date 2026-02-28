@@ -990,709 +990,6 @@ Yanfly.Quest.version = 1.02;
  * @parent ---Quest Menu---
  * @desc Amount of unused quests in the game
  * @default 0
- *
- * @param ---Quest List---
- * @default
- *
- * @param Quest 1
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 2
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 3
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 4
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 5
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 6
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 7
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 8
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 9
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 10
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 11
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 12
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 13
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 14
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 15
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 16
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 17
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 18
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 19
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- * 
- * @param Quest 20
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 21
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 22
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 23
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 24
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 25
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 26
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 27
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 28
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 29
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 30
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 31
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 32
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 33
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 34
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 35
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 36
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 37
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 38
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 39
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 40
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 41
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 42
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 43
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 44
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 45
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 46
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 47
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 48
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 49
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 50
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 51
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 52
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 53
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 54
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 55
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 56
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 57
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 58
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 59
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 60
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 61
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 62
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 63
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 64
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 65
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 66
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 67
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 68
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 69
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 70
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 71
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 72
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 73
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 74
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 75
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 76
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 77
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 78
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 79
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 80
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 81
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 82
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 83
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 84
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 85
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 86
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 87
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 88
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 89
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 90
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 91
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 92
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 93
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 94
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 95
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 96
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 97
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 98
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 99
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
- *
- * @param Quest 100
- * @parent ---Quest List---
- * @type struct<Quest>
- * @desc Modify the data used by this quest entry.
- * Refer to Help for more information about each setting.
- * @default
  */
 //=============================================================================
 /* Plugin Parameter Structure Settings
@@ -2597,96 +1894,6 @@ Yanfly.Quest.version = 1.02;
  * @default "// Variables:\n//   questId - ID of the quest whose subtext is changed\n//   index - Subtext index being changed to\n//\n// console.log('Quest ' + questId + ' subtext index changed to ' + index)"
  * 
  */
-/* ----------------------------------------------------------------------------
- * Quest Parameter Structure
- * ---------------------------------------------------------------------------
- */
-/*~struct~Quest:
- *
- * @param Title
- * @desc Title of the quest.
- * Text codes allowed.
- * @default \i[87]Untitled Quest
- *
- * @param Type
- * @parent Title
- * @type combo
- * @option Main Quests
- * @option Side Stories
- * @option Side Quests
- * @option Character Quests
- * @desc What type of quest is this?
- * @default Main Quests
- *
- * @param Difficulty
- * @parent Title
- * @type select
- * @option Pushover
- * @value \i[127] Pushover
- * @option Easy Peasy
- * @value \i[127]\i[127] Easy Peasy
- * @option Slight Challenge
- * @value \i[126]\i[126]\i[126] Slight Challenge
- * @option A Bit Tricky
- * @value \i[126]\i[126]\i[126]\i[126] A Bit Tricky
- * @option Tough Objective
- * @value \i[125]\i[125]\i[125]\i[125]\i[125] Tough Objective
- * @option Legendary Challenge
- * @value \i[125]\i[125]\i[125]\i[125]\i[125]\i[125] Legendary Challenge
- * @desc Difficulty level for this quest.
- * Text codes allowed.
- * @default Easy Peasy
- *
- * @param From
- * @parent Title
- * @desc Insert the name of the NPC who issued this quest.
- * Text codes allowed.
- * @default NPC Name
- *
- * @param Location
- * @parent Title
- * @desc Insert the location of the NPC who issued this quest.
- * Text codes allowed.
- * @default Location Name
- *
- * @param Description
- * @parent Title
- * @type note[]
- * @desc Type out the description used for this quest.
- * Text codes allowed.
- * @default ["\"This is the \\\\c[4]default\\\\c[0] quest description.\"","\"This is the \\\\c[4]default\\\\c[0] quest description.\\n\\nYou can insert multiple description entries in case you\\never want to update the quest description midway while the\\nquest is in progress.\""]
- *
- * @param Objectives List
- * @type note[]
- * @desc The objectives to be completed for this quest.
- * Text codes allowed.
- * @default ["\"\\\\c[4]First\\\\c[0] objective to be cleared.\"","\"\\\\c[4]Second\\\\c[0] objective, but it's hidden.\"","\"To make other objectives appear,\\nenable them through the \\\\c[4]'Visible\\nObjectives'\\\\c[0] plugin parameter or by\\nusing a plugin command to make\\nthem appear\""]
- *
- * @param Visible Objectives
- * @parent Objectives List
- * @type number[]
- * @min 1
- * @desc The objectives that are visible from the start.
- * @default ["1"]
- *
- * @param Rewards List
- * @type note[]
- * @desc The reward list for this quest.
- * Text codes allowed.
- * @default ["\"\\\\i[176]Potion x5\"","\"\\\\i[178]Ether x3\"","\"To make other rewards appear,\\nenable them through the \\\\c[4]'Visible\\nRewards'\\\\c[0] plugin parameter or by\\nusing a plugin command to make\\nthem appear\""]
- * 
- * @param Visible Rewards
- * @parent Rewards List
- * @type number[]
- * @min 1
- * @desc The rewards that are visible from the start.
- * @default ["1"]
- *
- * @param Subtext
- * @type note[]
- * @desc Subtext to be displayed with the quest.
- * @default ["\"\"","\"This is a subtext. It is used as\\nextra text that you may want to\\nplace on your quest journal that\\ndiffers from the description.\""]
- */
 //=============================================================================
 
 if (Utils.RPGMAKER_VERSION && Utils.RPGMAKER_VERSION >= "1.3.5") {
@@ -2731,8 +1938,37 @@ TouchInput._onMouseMove = function(event) {
 // DataManager
 //=============================================================================
 
+var $questRawData = null;
 var $dataQuests = [null];
 Yanfly.Quest.totalCount = 0;
+
+// Extend database loading to include external quest data stored in data/Quests.json
+Yanfly.Quest.DataManager_loadDatabase = DataManager.loadDatabase;
+DataManager.loadDatabase = function() {
+  Yanfly.Quest.DataManager_loadDatabase.call(this);
+  this._databaseFiles.push({ name: '$questRawData', src: 'Quests.json' });
+  this.loadDataFile('$questRawData', 'Quests.json');
+  this._questDatabaseCreated = false;
+};
+
+// Wait for Quests.json to load before building the in-memory quest list.
+Yanfly.Quest.DataManager_isDatabaseLoaded = DataManager.isDatabaseLoaded;
+DataManager.isDatabaseLoaded = function() {
+  if (!Yanfly.Quest.DataManager_isDatabaseLoaded.call(this)) return false;
+  if (!this._questDatabaseCreated) {
+    if ($questRawData && Array.isArray($questRawData.quests)) {
+      this.questDatabaseCreateFromFile($questRawData.quests);
+    } else if (Array.isArray($questRawData)) {
+      // Support plain array root for backwards compatibility with hand-made files.
+      this.questDatabaseCreateFromFile($questRawData);
+    } else {
+      // Fallback to plugin parameters if Quests.json is missing or empty.
+      this.questDatabaseCreate();
+    }
+    this._questDatabaseCreated = true;
+  }
+  return true;
+};
 
 DataManager.questDatabaseAdd = function(id, data) {
   if (!data) return $dataQuests.push(null);
@@ -2804,7 +2040,34 @@ DataManager.questDatabaseCreate = function() {
   };
 };
 
-DataManager.questDatabaseCreate();
+// Build quest database from an external array (typically loaded from Quests.json).
+// Accepts either an object with a `quests` array or a plain array.
+DataManager.questDatabaseCreateFromFile = function(list) {
+  var quests = Array.isArray(list) ? list : [];
+  $dataQuests = [null];
+  Yanfly.Quest.totalCount = 0;
+  for (var i = 0; i < quests.length; ++i) {
+    var data = quests[i];
+    if (!data) continue;
+    // Clone to avoid mutating original entry.
+    data = JSON.parse(JSON.stringify(data));
+    var id = data.id || (i + 1);
+    // Normalize array fields into JSON strings so the existing add logic can parse them.
+    // Objectives/Descriptions/Rewards/Subtext entries must themselves be JSON strings
+    // because downstream code performs JSON.parse on each element.
+    var quoteItems = function(arr) {
+      return (arr || []).map(function(s) { return JSON.stringify(String(s || '')); });
+    };
+    var toJson = function(arr) { return JSON.stringify(arr || []); };
+    if (Array.isArray(data['Description'])) data['Description'] = toJson(quoteItems(data['Description']));
+    if (Array.isArray(data['Objectives List'])) data['Objectives List'] = toJson(quoteItems(data['Objectives List']));
+    if (Array.isArray(data['Visible Objectives'])) data['Visible Objectives'] = toJson(data['Visible Objectives']);
+    if (Array.isArray(data['Rewards List'])) data['Rewards List'] = toJson(quoteItems(data['Rewards List']));
+    if (Array.isArray(data['Visible Rewards'])) data['Visible Rewards'] = toJson(data['Visible Rewards']);
+    if (Array.isArray(data['Subtext'])) data['Subtext'] = toJson(quoteItems(data['Subtext']));
+    this.questDatabaseAdd(id, data);
+  }
+};
 
 //=============================================================================
 // Game_Temp
@@ -3317,6 +2580,7 @@ Game_System.prototype.questObjectivesCompleteEval = function(questId, obj) {
 };
 
 Game_System.prototype.questObjectivesCompleteRange = function(questId, range) {
+  this.completeObjectiveSound();
   var length = range.length;
   for (var i = 0; i < length; ++i) {
     var objId = parseInt(range[i]);
@@ -3325,6 +2589,7 @@ Game_System.prototype.questObjectivesCompleteRange = function(questId, range) {
 };
 
 Game_System.prototype.questObjectivesCompleteAll = function(questId) {
+  this.completeObjectiveSound();
   this.initQuestSettings();
   var questData = $dataQuests[questId];
   if (!questData) return;
@@ -3333,6 +2598,17 @@ Game_System.prototype.questObjectivesCompleteAll = function(questId) {
     this.questObjectivesComplete(questId, i);
   }
 };
+
+Game_System.prototype.completeObjectiveSound = function() {
+  if (ConfigManager['mapQuestWindow']) {
+    AudioManager.playSe({
+      "name": 'Decision1',
+      "pan": 0,
+      "pitch": 100,
+      "volume": 90
+    });
+  }
+}
 
 Game_System.prototype.questObjectivesFail = function(questId, objectiveId) {
   this.initQuestSettings();

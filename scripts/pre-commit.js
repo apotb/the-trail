@@ -24,23 +24,31 @@ try {
         // Every file except Animations.json: Pretty the JSON, and write it back
         let command = ''
         files.forEach(file => {
-            const json = fs.readFileSync(`${data_directory}/${file}`)
-            if (`${file}` !== "Animations.json") fs.writeFileSync(`${data_directory}/${file}`, JSON.stringify(JSON.parse(json), null, indent))
-            command += ` ${data_directory}/${file}`
+            const filePath = `${data_directory}/${file}`
+            if (fs.statSync(filePath).isDirectory()) return // Ignore directories
+            if (path.extname(`${file}`).toLowerCase() !== '.json') return // Ignore non JSON files
+            const json = fs.readFileSync(filePath, 'utf8')
+            if (`${file}` !== "Animations.json") fs.writeFileSync(filePath, JSON.stringify(JSON.parse(json), null, indent))
+            command += ` ${filePath}`
         })
 
         // System.json: versionId and editMapId constants
         let system = JSON.parse(fs.readFileSync(`${data_directory}/System.json`))
         system.versionId = 0
-        system.editMapId = 164
+        system.editMapId = 8
         fs.writeFileSync(`${data_directory}/System.json`, JSON.stringify(system, null, indent))
 
         // MapInfos.json: all scrollX and scrollY values set to 0
         let maps = JSON.parse(fs.readFileSync(`${data_directory}/MapInfos.json`))
         for (i = 1; i < maps.length; i++) {
             if (maps[i] !== null) {
-                maps[i].scrollX = 0
-                maps[i].scrollY = 0
+                if (i === 8) { // The Overworld
+                    maps[i].scrollX = 3360
+                    maps[i].scrollY = 3360
+                } else {
+                    maps[i].scrollX = 0
+                    maps[i].scrollY = 0
+                }
             }
         }
         fs.writeFileSync(`${data_directory}/MapInfos.json`, JSON.stringify(maps, null, indent))

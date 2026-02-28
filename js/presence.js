@@ -7,11 +7,15 @@ const RPC = new DiscordRPC.Client({
 const startTimestamp = Date.now();
 var refreshes = -1;
 const smallImageKeys = [`power`, `quests`, `bits`, `hammer`, `chest`];
+let rpcReady = false;
+let activityInterval = null;
+let loginRetryTimeout = null;
+let isShuttingDown = false;
 
 DiscordRPC.register(clientId);
 
 async function setActivity() {
-    if (!RPC) return;
+    if (!RPC || !rpcReady) return;
 
     refreshes++;
 
@@ -64,7 +68,7 @@ async function setActivity() {
         state: state,
         startTimestamp: startTimestamp,
         largeImageKey: `large_image`,
-        largeImageText: `Saving the world!`,
+        largeImageText: $gameParty?.teamName() ?? "Loading...",
         smallImageKey: smallImageKey,
         smallImageText: smallImageText,
         instance: false,
@@ -72,13 +76,87 @@ async function setActivity() {
 }
 
 RPC.on('ready', async () => {
+    rpcReady = true;
     setActivity();
 
-    setInterval(() => {
+    if (activityInterval) clearInterval(activityInterval);
+    activityInterval = setInterval(() => {
         setActivity();
     }, 15 * 1000);
 });
 
-RPC.login({
-    clientId: clientId
-}).catch(err => console.error(err));
+RPC.on('disconnected', () => {
+    rpcReady = false;
+    if (activityInterval) {
+        clearInterval(activityInterval);
+        activityInterval = null;
+    }
+    scheduleLoginRetry();
+});
+
+RPC.on('error', () => {
+    rpcReady = false;
+    if (activityInterval) {
+        clearInterval(activityInterval);
+        activityInterval = null;
+    }
+    scheduleLoginRetry();
+});
+
+function scheduleLoginRetry() {
+    if (isShuttingDown) return;
+    if (loginRetryTimeout) return;
+    loginRetryTimeout = setTimeout(() => {
+        loginRetryTimeout = null;
+        login();
+    }, 10 * 1000);
+}
+
+function login() {
+    RPC.login({ clientId: clientId }).catch(() => {
+        scheduleLoginRetry();
+    });
+}
+
+async function cleanupPresence() {
+    if (isShuttingDown) return;
+    isShuttingDown = true;
+    try {
+        if (activityInterval) clearInterval(activityInterval);
+        if (loginRetryTimeout) clearTimeout(loginRetryTimeout);
+        if (rpcReady) {
+            await RPC.clearActivity();
+        }
+    } catch (e) {
+        // ignore cleanup errors
+    } finally {
+        try {
+            RPC.destroy();
+        } catch (e) {
+            // ignore destroy errors
+        }
+    }
+}
+
+process.on('exit', () => {
+    cleanupPresence();
+});
+process.on('SIGINT', () => {
+    cleanupPresence();
+    process.exit(0);
+});
+process.on('SIGTERM', () => {
+    cleanupPresence();
+    process.exit(0);
+});
+process.on('uncaughtException', (err) => {
+    console.error(err);
+    cleanupPresence();
+    process.exit(1);
+});
+process.on('unhandledRejection', (err) => {
+    console.error(err);
+    cleanupPresence();
+});
+
+login();

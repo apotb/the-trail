@@ -461,6 +461,7 @@ if (typeof Imported !== 'undefined') {
     };
 
     Window_ChoiceList.prototype.callOkHandler = function () {
+        this.backlogAddSelectedChoice();
         $gameMessage.onChoice($gameMessage._visibleChoiceIndexes[this.index()]);
         this._messageWindow.terminateMessage();
         this.close();

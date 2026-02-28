@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 23,
   "height": 38,
-  "note": "<Unlocked>",
+  "note": "<Unlocked>\n<Dungeon>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -7362,15 +7362,6 @@
           },
           "list": [
             {
-              "code": 121,
-              "indent": 0,
-              "parameters": [
-                70,
-                70,
-                1
-              ]
-            },
-            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -7474,15 +7465,6 @@
           "trigger": 1,
           "walkAnime": true,
           "list": [
-            {
-              "code": 121,
-              "indent": 0,
-              "parameters": [
-                70,
-                70,
-                1
-              ]
-            },
             {
               "code": 250,
               "indent": 0,
@@ -8934,7 +8916,7 @@
     {
       "id": 11,
       "name": "EV011",
-      "note": "Fire 100 #e6292c <Sprite Offset Y: -12>",
+      "note": "Fire 100 #e25822 <Sprite Offset Y: -12>",
       "pages": [
         {
           "conditions": {
@@ -9016,9 +8998,9 @@
           "image": {
             "tileId": 0,
             "characterName": "!Flame",
-            "direction": 4,
+            "direction": 6,
             "pattern": 1,
-            "characterIndex": 1
+            "characterIndex": 0
           },
           "list": [
             {
@@ -9076,9 +9058,9 @@
           "image": {
             "tileId": 0,
             "characterName": "!Flame",
-            "direction": 4,
+            "direction": 6,
             "pattern": 1,
-            "characterIndex": 1
+            "characterIndex": 0
           },
           "list": [
             {
@@ -9136,9 +9118,9 @@
           "image": {
             "tileId": 0,
             "characterName": "!Flame",
-            "direction": 4,
+            "direction": 6,
             "pattern": 1,
-            "characterIndex": 1
+            "characterIndex": 0
           },
           "list": [
             {
@@ -9196,9 +9178,9 @@
           "image": {
             "tileId": 0,
             "characterName": "!Flame",
-            "direction": 4,
+            "direction": 6,
             "pattern": 1,
-            "characterIndex": 1
+            "characterIndex": 0
           },
           "list": [
             {
@@ -9256,9 +9238,9 @@
           "image": {
             "tileId": 0,
             "characterName": "!Flame",
-            "direction": 4,
+            "direction": 6,
             "pattern": 1,
-            "characterIndex": 1
+            "characterIndex": 0
           },
           "list": [
             {
@@ -9316,9 +9298,9 @@
           "image": {
             "tileId": 0,
             "characterName": "!Flame",
-            "direction": 4,
+            "direction": 6,
             "pattern": 1,
-            "characterIndex": 1
+            "characterIndex": 0
           },
           "list": [
             {
@@ -9376,9 +9358,9 @@
           "image": {
             "tileId": 0,
             "characterName": "!Flame",
-            "direction": 4,
+            "direction": 6,
             "pattern": 1,
-            "characterIndex": 1
+            "characterIndex": 0
           },
           "list": [
             {
@@ -9436,9 +9418,9 @@
           "image": {
             "tileId": 0,
             "characterName": "!Flame",
-            "direction": 4,
+            "direction": 6,
             "pattern": 1,
-            "characterIndex": 1
+            "characterIndex": 0
           },
           "list": [
             {
@@ -9496,9 +9478,9 @@
           "image": {
             "tileId": 0,
             "characterName": "!Flame",
-            "direction": 4,
+            "direction": 6,
             "pattern": 1,
-            "characterIndex": 1
+            "characterIndex": 0
           },
           "list": [
             {

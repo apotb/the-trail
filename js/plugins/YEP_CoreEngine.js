@@ -2431,13 +2431,7 @@ Window_Base.prototype.gaugeHeight = function() {
 };
 
 Window_Base.prototype.drawActorLevel = function(actor, x, y) {
-    this.changeTextColor(this.systemColor());
-    var dw1 = this.textWidth(TextManager.levelA);
-    this.drawText(TextManager.levelA, x, y, dw1);
-    this.resetTextColor();
-    var level = Yanfly.Util.toGroup(actor.level);
-    var dw2 = this.textWidth(Yanfly.Util.toGroup(actor.maxLevel()));
-    this.drawText(level, x + dw1, y, dw2, 'right');
+    // Titles.js
 };
 
 Window_Base.prototype.drawCurrentAndMax = function(current, max, x, y,
@@ -2500,6 +2494,7 @@ Window_Base.prototype.drawActorSimpleStatus = function(actor, x, y, width) {
     this.drawActorLevel(actor, x, y + lineHeight * 1);
     this.drawActorIcons(actor, x, y + lineHeight * 2);
     this.drawActorClass(actor, x2, y, width2);
+    this.drawActorEquipIcons(actor, x2 + width2, y, width2 - this.textWidth(actor.title()));
     this.drawActorHp(actor, x2, y + lineHeight * 1, width2);
     this.drawActorMp(actor, x2, y + lineHeight * 2, width2);
     if (Yanfly.Param.MenuTpGauge) {

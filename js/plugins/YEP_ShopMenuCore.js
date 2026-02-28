@@ -319,7 +319,7 @@ Game_Temp.prototype.clearShopGoods = function() {
 //=============================================================================
 
 Window_ShopCommand.prototype.windowWidth = function() {
-    return 240;
+    return 640;
 };
 
 Window_ShopCommand.prototype.maxCols = function() {
@@ -331,7 +331,7 @@ Window_ShopCommand.prototype.numVisibleRows = function() {
 };
 
 Window_ShopCommand.prototype.makeCommandList = function() {
-    this._commandOrder = Yanfly.Param.ShopCommandOrder.split(' ');
+    this._commandOrder = !$gameTemp._ledger ? Yanfly.Param.ShopCommandOrder.split(' ') : ['Buy'];
     for (var i = 0; i < this._commandOrder.length; ++i) {
       var command = this._commandOrder[i];
       this.createCommand(command);
@@ -341,7 +341,7 @@ Window_ShopCommand.prototype.makeCommandList = function() {
 Window_ShopCommand.prototype.createCommand = function(command) {
     command = command.toUpperCase();
     if (command === 'BUY') {
-      this.addCommand(TextManager.buy, 'buy');
+      this.addCommand(!$gameTemp._ledger ? TextManager.buy : (!$gameTemp._viewingUpgrades ? 'Research Upgrades' : 'View Researched Upgrades'), 'buy');
     } else if (command === 'SELL') {
       this.addCommand(TextManager.sell, 'sell', !this._purchaseOnly);
     } else if (command === 'CANCEL') {
@@ -671,6 +671,7 @@ Window_ShopStatus.prototype.refresh = function() {
     this.resetFontSettings();
     var x = this.textPadding();
     this.drawPossession(x, 0);
+    this.drawMaterialText(x, this.lineHeight());
     if (!this.isEquipItem()) return;
     this.resetTextColor();
     this.resetFontSettings();
@@ -678,22 +679,29 @@ Window_ShopStatus.prototype.refresh = function() {
     if (this.isActorMode()) this.drawActorData();
 };
 
+Window_ShopStatus.prototype.drawMaterialText = function(x, y) {
+    var item = this._item;
+    if (!DataManager.isMaterial(item)) return;
+    this.resetFontSettings();
+    this.drawText("Material", x, y, this.contents.width - x);
+};
+
 Window_ShopStatus.prototype.drawDefaultData = function() {
     this.drawStatDisplayed();
-    this.drawEquipInfo(this.textPadding(), this.lineHeight() * 2);
+    this.drawEquipInfo(this.textPadding(), this.lineHeight() * 3);
 };
 
 Window_ShopStatus.prototype.drawStatDisplayed = function() {
     var paramId = this.paramId();
     var text = TextManager.param(paramId);
     this.changeTextColor(this.normalColor());
-    this.drawText(text, 0, this.lineHeight(), this.contents.width, 'center');
+    this.drawText(text, 0, this.lineHeight() * 2, this.contents.width, 'center');
     if (!Yanfly.Param.ShopStatSwitch) return;
     this.changeTextColor(this.systemColor());
     var text = '<<';
-    this.drawText(text, 0, this.lineHeight(), this.contents.width, 'left');
+    this.drawText(text, 0, this.lineHeight() * 2, this.contents.width, 'left');
     var text = '>>';
-    this.drawText(text, 0, this.lineHeight(), this.contents.width, 'right');
+    this.drawText(text, 0, this.lineHeight() * 2, this.contents.width, 'right');
 };
 
 Window_ShopStatus.prototype.drawActorData = function() {
@@ -713,12 +721,12 @@ Window_ShopStatus.prototype.drawActorDisplayed = function(actor) {
     var text = "\\i[" + $dataClasses[actor._classId].icon + "]" + actor.name();
     var tx = (this.contents.width - this.textWidth(text)) / 2;
     this.changeTextColor(this.normalColor());
-    this.drawTextEx(text, tx, this.lineHeight(), this.contents.width, 'center');
+    this.drawTextEx(text, tx, this.lineHeight() * 2, this.contents.width, 'center');
     this.changeTextColor(this.systemColor());
     var text = '<<';
-    this.drawText(text, 0, this.lineHeight(), this.contents.width, 'left');
+    this.drawText(text, 0, this.lineHeight() * 2, this.contents.width, 'left');
     var text = '>>';
-    this.drawText(text, 0, this.lineHeight(), this.contents.width, 'right');
+    this.drawText(text, 0, this.lineHeight() * 2, this.contents.width, 'right');
 };
 
 Window_ShopStatus.prototype.drawDarkRectEntries = function(actor) {
@@ -733,7 +741,7 @@ Window_ShopStatus.prototype.getRectPosition = function(index) {
     rect.width = Math.floor(this.contents.width / 4);
     rect.height = this.lineHeight();
     rect.x = (index % 4) * rect.width;
-    rect.y = Math.floor(index / 4) * this.lineHeight() + this.lineHeight() * 2;
+    rect.y = Math.floor(index / 4) * this.lineHeight() + this.lineHeight() * 3;
     return rect;
 };
 
@@ -934,15 +942,16 @@ Scene_Shop.prototype.create = function() {
     this.failSafeGoods();
     this.createHelpWindow();
     this.createCommandWindow();
-    this.createInfoWindow();
     this.createDummyWindow();
     this.createNumberWindow();
-    this.createBuyWindow();
     this.createCategoryWindow();
+    this.createInfoWindow();
+    this.createBuyWindow();
     this.createSellWindow();
     this.createGoldWindow();
     this.createStatusWindow();
     this.createActorWindow();
+    this.createOwnerSprite();
 };
 
 Scene_Shop.prototype.createCommandWindow = function() {
@@ -965,6 +974,7 @@ Scene_Shop.prototype.createInfoWindow = function() {
     var ww = Graphics.boxWidth - wx;
     var wh = this._commandWindow.height;
     this._infoWindow = new Window_ShopInfo(wx, wy, ww, wh);
+    this._infoWindow.hide();
     this.addWindow(this._infoWindow);
 };
 
@@ -1125,14 +1135,18 @@ Scene_Shop.prototype.createActorWindow = function() {
 };
 
 Scene_Shop.prototype.commandEquip = function() {  
+    this._commandWindow.deactivate();
     this._actorWindow.activate();
     this._actorWindow.show();
     this._actorWindow.select(0);
+    if (this._ownerSprite) this._ownerSprite.visible = false;
 };
 
 Scene_Shop.prototype.onActorOk = function() {
     this.onActorCommon();
     if (this._commandWindow.currentSymbol() === 'equip') {
+      $gameTemp._shopReturnToEquip = true;
+      $gameTemp._shopReturnToEquipActorIndex = this._actorWindow.index();
       SceneManager.push(Scene_Equip);
     }
 };
@@ -1141,6 +1155,7 @@ Scene_Shop.prototype.onActorCancel = function() {
     this._actorWindow.hide();
     this._actorWindow.deselect();
     this._commandWindow.activate();
+    if (this._ownerSprite) this._ownerSprite.visible = true;
 };
 
 Scene_Shop.prototype.onActorCommon = function() {
@@ -1149,6 +1164,41 @@ Scene_Shop.prototype.onActorCommon = function() {
     var actor = $gameParty.members()[index];
     $gameParty.setMenuActor(actor);
     SoundManager.playOk();
+};
+
+Scene_Shop.prototype.createOwnerSprite = function() {
+    // Preserve owner name across scene hops (eg. returning from Equip).
+    this._shopOwnerName = this._shopOwnerName || $gameTemp._shopOwner;
+    if (!this._shopOwnerName) return;
+    var bitmap = ImageManager.loadBitmap('img/busts/', this._shopOwnerName, 0, true);
+    this._ownerSprite = new Sprite(bitmap);
+    this._ownerSprite.anchor.x = 0.5;
+    this._ownerSprite.anchor.y = 1;
+    this._ownerSprite.x = 1120;
+    this._ownerSprite.y = 360;
+    this.addChild(this._ownerSprite);
+};
+
+// Remember return-from-equip state so the actor window is shown again.
+Yanfly.Shop.Scene_Shop_start = Scene_Shop.prototype.start;
+Scene_Shop.prototype.start = function() {
+    Yanfly.Shop.Scene_Shop_start.call(this);
+    if ($gameTemp._shopReturnToEquip) {
+      var index = $gameTemp._shopReturnToEquipActorIndex || 0;
+      delete $gameTemp._shopReturnToEquipActorIndex;
+      $gameTemp._shopReturnToEquip = false;
+      this._commandWindow.selectSymbol('equip');
+      this.commandEquip();
+      this._actorWindow.select(index);
+    }
+};
+
+// Clear the shop owner data only when actually exiting the shop (not when
+// detouring to the equip scene).
+Yanfly.Shop.Scene_Shop_terminate = Scene_Shop.prototype.terminate;
+Scene_Shop.prototype.terminate = function() {
+    Yanfly.Shop.Scene_Shop_terminate.call(this);
+    if (!$gameTemp._shopReturnToEquip) delete $gameTemp._shopOwner;
 };
 
 Yanfly.Shop.Scene_Shop_sellingPrice = Scene_Shop.prototype.sellingPrice;

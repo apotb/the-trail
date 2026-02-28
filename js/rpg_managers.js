@@ -381,9 +381,10 @@ DataManager.saveGameWithoutRescue = function(savefileId) {
 DataManager.loadGameWithoutRescue = function(savefileId) {
     var globalInfo = this.loadGlobalInfo();
     if (this.isThisGameFile(savefileId)) {
-        var json = StorageManager.load(savefileId);
+        var json = JsonEx.parse(StorageManager.load(savefileId));
+        if (json.system._versionId < 81 && !$gameTemp.isPlaytest()) return false; // ALPHA 18 CUTOFF
         this.createGameObjects();
-        this.extractSaveContents(JsonEx.parse(json));
+        this.extractSaveContents(json);
         this._lastAccessedId = savefileId;
         globalInfo[savefileId].timestamp2 = Date.now();
         this.saveGlobalInfo(globalInfo);
@@ -425,6 +426,7 @@ DataManager.makeSavefileInfo = function() {
     info.playtime   = $gameSystem.playtimeText();
     info.timestamp  = Date.now();
     info.timestamp2 = Date.now();
+    info.teamName   = $gameParty.teamName();
     return info;
 };
 
@@ -458,7 +460,7 @@ DataManager.extractSaveContents = function(contents) {
 };
 
 DataManager.saveFileIcon = function(savefileId) {
-    if ($gameSystem.chapter() >= 6) icon = 766;
+    if ($gameSystem.chapter() >= 5) icon = 766;
     else if ($gameSystem.chapter() >= 3) icon = 231;
     else icon = Yanfly.Param.SaveIconSaved;
 
@@ -798,11 +800,11 @@ StorageManager.localFileDirectoryPath = function() {
     const path = require('path');
     let directoryPath;
     if (process.platform === 'win32') {
-        directoryPath = path.join(process.env.APPDATA, '.thetrail/');
+        directoryPath = path.join(process.env.APPDATA, '.thetrail2/');
     } else if (process.platform === 'darwin') {
         directoryPath = path.join(process.env.HOME, 'Library', 'Application Support', 'The Trail/');
     } else {
-        directoryPath = path.join(process.env.HOME, '.local', 'share', '.thetrail/');
+        directoryPath = path.join(process.env.HOME, '.local', 'share', '.thetrail2/');
     }
     if (!fs.existsSync(directoryPath)) fs.mkdirSync(directoryPath, { recursive: true });
     return directoryPath;
@@ -878,8 +880,6 @@ ImageManager.loadParallax = function(filename, hue) {
 };
 
 ImageManager.loadPicture = function(filename, hue) {
-    if (filename == "god-rays-png-8") filename = "Godrays"; // DELETE AFTER ALPHA 15
-    if (filename == "MadeWithMv") filename = "Godrays"; // DELETE AFTER ALPHA 16
     return this.loadBitmap('img/pictures/', filename, hue, true);
 };
 

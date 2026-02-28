@@ -1,7 +1,7 @@
 {
   "autoplayBgm": true,
   "autoplayBgs": true,
-  "battleback1Name": "Grassland",
+  "battleback1Name": "Meadow",
   "battleback2Name": "Forest",
   "bgm": {
     "name": "dungeon_laeryidyean",
@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 29,
-  "note": "",
+  "note": "<Dungeon>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -9217,8 +9217,8 @@
               "code": 122,
               "indent": 0,
               "parameters": [
-                31,
-                31,
+                78,
+                78,
                 0,
                 3,
                 7,
@@ -9230,8 +9230,8 @@
               "code": 122,
               "indent": 0,
               "parameters": [
-                32,
-                32,
+                79,
+                79,
                 0,
                 3,
                 5,
@@ -9243,8 +9243,8 @@
               "code": 122,
               "indent": 0,
               "parameters": [
-                33,
-                33,
+                80,
+                80,
                 0,
                 3,
                 5,
@@ -9269,6 +9269,13 @@
               "indent": 0,
               "parameters": [
                 60
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Tint set #6e6e6e"
               ]
             },
             {
@@ -9372,8 +9379,8 @@
           "walkAnime": true
         }
       ],
-      "x": 11,
-      "y": 23
+      "x": 17,
+      "y": 15
     },
     {
       "id": 8,
@@ -9602,8 +9609,8 @@
           "walkAnime": false
         }
       ],
-      "x": 12,
-      "y": 23
+      "x": 18,
+      "y": 15
     },
     {
       "id": 9,
@@ -10099,8 +10106,8 @@
               "code": 122,
               "indent": 0,
               "parameters": [
-                31,
-                31,
+                78,
+                78,
                 0,
                 3,
                 7,
@@ -10112,8 +10119,8 @@
               "code": 122,
               "indent": 0,
               "parameters": [
-                32,
-                32,
+                79,
+                79,
                 0,
                 3,
                 5,
@@ -10125,8 +10132,8 @@
               "code": 122,
               "indent": 0,
               "parameters": [
-                33,
-                33,
+                80,
+                80,
                 0,
                 3,
                 5,
@@ -10151,6 +10158,13 @@
               "indent": 0,
               "parameters": [
                 60
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Tint set #6e6e6e"
               ]
             },
             {
@@ -10904,6 +10918,13 @@
             "tileId": 0
           },
           "list": [
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Tint set #000000"
+              ]
+            },
             {
               "code": 356,
               "indent": 0,
@@ -11794,8 +11815,8 @@
               "code": 122,
               "indent": 0,
               "parameters": [
-                31,
-                31,
+                78,
+                78,
                 0,
                 3,
                 7,
@@ -11807,8 +11828,8 @@
               "code": 122,
               "indent": 0,
               "parameters": [
-                32,
-                32,
+                79,
+                79,
                 0,
                 3,
                 5,
@@ -11820,8 +11841,8 @@
               "code": 122,
               "indent": 0,
               "parameters": [
-                33,
-                33,
+                80,
+                80,
                 0,
                 3,
                 5,
@@ -19038,6 +19059,7 @@
       ],
       "x": 19,
       "y": 13
-    }
+    },
+    null
   ]
 }

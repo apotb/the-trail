@@ -3096,7 +3096,8 @@
               "parameters": [
                 [
                   "Um... yeah, sure.",
-                  "Bruh."
+                  "Ask about \\c[18]Apocalypse\\c[0] <<s[12] || ss[121]>>",
+                  "Uh... no thanks."
                 ],
                 1,
                 0,
@@ -3134,6 +3135,13 @@
               "indent": 1,
               "parameters": [
                 "I'll pull the stuff up."
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameTemp._shopOwner = \"Shopkeeper1_13\";"
               ]
             },
             {
@@ -3298,7 +3306,70 @@
               "indent": 0,
               "parameters": [
                 1,
-                "Bruh."
+                "Ask about \\c[18]Apocalypse\\c[0] <<s[12] || ss[121]>>"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                4,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\bob\\c[18]Apocalypse\\c[0]?!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Shopkeeper1",
+                4,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\bobThat... sounds bad for business! I don't"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "want it anywhere near here!"
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 1,
+              "parameters": [
+                121,
+                121,
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                2,
+                "Uh... no thanks."
               ]
             },
             {
@@ -3501,9 +3572,10 @@
                   "Weapon Types",
                   "Armor Types",
                   "Equipment",
-                  "That'll be all."
+                  "Ask about \\c[18]Apocalypse\\c[0] <<s[12] || ss[121]>>",
+                  "Goodbye"
                 ],
-                4,
+                5,
                 0,
                 2,
                 0
@@ -3562,28 +3634,14 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\jamAs a knight, I'd recommend holding"
+                "\\jamAnyone can hold a light shield, but only a knight"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "a heavy shield, but you can use any"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "kind you want. Clerics and mages can"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "only hold light shields."
+                "like you can wield a powerful heavy shield."
               ]
             },
             {
@@ -3600,21 +3658,21 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\jamRogues can hold another weapon, but"
+                "\\jamRogues can hold another weapon, as long as they're"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "keep in mind that they can't hold the"
+                "holding a dagger or a set of knuckles in their"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "same weapon in both hands."
+                "main hand."
               ]
             },
             {
@@ -3755,6 +3813,30 @@
               ]
             },
             {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "Shopkeeper1",
+                13,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\jamThere's some types like spears that can be used by"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "everyone. Mix and match to see what works best!"
+              ]
+            },
+            {
               "code": 0,
               "indent": 2,
               "parameters": []
@@ -3781,52 +3863,21 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\jamThere's plenty of cool bodygear out there!"
+                "\\jamThere's plenty of cool bodygear out there! Many are tailored"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "Some are specific to a certain class, while"
+                "to specific classes, but some are usable by anyone and offer"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "others can be used by just about anyone."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper1",
-                13,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\jamFor example, rogues can use either leathers"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "or cloaks. The latter trades pure defense"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "for an increased evasion stat."
+                "unique buffs, such as gambesons, chainmail, and cloaks!"
               ]
             },
             {
@@ -3906,6 +3957,44 @@
               ]
             },
             {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "Shopkeeper1",
+                13,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\jamAlso note that you can't double up some kinds of accessories."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "For example, you can't wear two pairs of gloves. You also"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "can't wear wristbraces or gloves with a set of gauntlets"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "on. You can pretty much use common sense!"
+              ]
+            },
+            {
               "code": 0,
               "indent": 2,
               "parameters": []
@@ -3979,7 +4068,130 @@
               "indent": 1,
               "parameters": [
                 4,
-                "That'll be all."
+                "Ask about \\c[18]Apocalypse\\c[0] <<s[12] || ss[121]>>"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "Shopkeeper1",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\jamSay that again... \\c[18]Apocalypse\\c[0]?"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "Shopkeeper1",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\jamCome to think of it... I think I have heard talk of \\c[18]him\\c[0]."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "It sounds crazy, but the guy I heard it from IS pretty crazy..."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "Actor4",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\p3Really? What's his name?"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "Shopkeeper1",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\jamIt's my next door neighbor, Sam Payne, the guy who"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "runs the magic shop. He's always been an expert"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "when it comes to weird stuff like this. If anyone"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "knows if \\c[18]Apocalypse\\c[0] is real, it's Sam."
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 2,
+              "parameters": [
+                121,
+                121,
+                0
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                5,
+                "Goodbye"
               ]
             },
             {
@@ -6915,7 +7127,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "your bits... er... yeah!"
+                "your Bits... er... yeah!"
               ]
             },
             {
@@ -7302,25 +7514,6 @@
               "parameters": []
             },
             {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Move1",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                60
-              ]
-            },
-            {
               "code": 216,
               "indent": 0,
               "parameters": [
@@ -7341,6 +7534,13 @@
                 1,
                 0,
                 2
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
               ]
             },
             {

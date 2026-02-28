@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 43,
   "height": 33,
-  "note": "<Unlocked>",
+  "note": "<Unlocked>\n<Dungeon>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -310,8 +310,8 @@
     5970,
     5962,
     3244,
-    3244,
-    3244,
+    3232,
+    3232,
     3330,
     3322,
     3217,
@@ -351,9 +351,9 @@
     5952,
     5960,
     3244,
-    3244,
-    3330,
-    3297,
+    3240,
+    3238,
+    3312,
     3320,
     3244,
     3244,
@@ -393,8 +393,8 @@
     5966,
     5981,
     3244,
-    3336,
-    3308,
+    3339,
+    3309,
     3334,
     3244,
     5971,
@@ -435,9 +435,9 @@
     6326,
     3232,
     3244,
-    3244,
-    3244,
-    3244,
+    3328,
+    3235,
+    3239,
     5968,
     6326,
     1536,
@@ -610,7 +610,7 @@
     5969,
     5973,
     8063,
-    7698,
+    7684,
     7684,
     7665,
     7668,
@@ -937,7 +937,7 @@
     1536,
     1536,
     5968,
-    3242,
+    3232,
     3330,
     3316,
     3316,
@@ -4369,7 +4369,7 @@
     0,
     0,
     0,
-    52,
+    0,
     0,
     0,
     0,
@@ -4411,7 +4411,7 @@
     0,
     60,
     0,
-    0,
+    52,
     0,
     0,
     0,
@@ -4453,7 +4453,7 @@
     0,
     0,
     0,
-    52,
+    0,
     0,
     0,
     0,
@@ -4494,7 +4494,7 @@
     0,
     0,
     0,
-    0,
+    52,
     0,
     0,
     0,
@@ -4669,7 +4669,7 @@
     0,
     0,
     0,
-    57,
+    101,
     0,
     0,
     0,
@@ -4682,7 +4682,7 @@
     0,
     73,
     0,
-    57,
+    101,
     0,
     0,
     0,
@@ -4996,7 +4996,7 @@
     0,
     0,
     0,
-    57,
+    101,
     0,
     0,
     0,
@@ -8156,7 +8156,7 @@
     {
       "id": 1,
       "name": "EV001",
-      "note": "",
+      "note": "<reflect_off>",
       "pages": [
         {
           "conditions": {
@@ -8216,7 +8216,7 @@
     {
       "id": 2,
       "name": "EV002",
-      "note": "",
+      "note": "<reflect_off>",
       "pages": [
         {
           "conditions": {
@@ -8276,7 +8276,7 @@
     {
       "id": 3,
       "name": "EV003",
-      "note": "",
+      "note": "<reflect_off>",
       "pages": [
         {
           "conditions": {
@@ -8336,7 +8336,7 @@
     {
       "id": 4,
       "name": "EV004",
-      "note": "",
+      "note": "<reflect_off>",
       "pages": [
         {
           "conditions": {
@@ -10056,16 +10056,24 @@
               "code": 111,
               "indent": 0,
               "parameters": [
-                0,
-                87,
+                2,
+                "A",
                 1
               ]
             },
             {
-              "code": 216,
+              "code": 355,
               "indent": 1,
               "parameters": [
-                1
+                "$gameSystem.forceAutosave();"
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 1,
+              "parameters": [
+                "A",
+                0
               ]
             },
             {
@@ -10491,20 +10499,10 @@
               "code": 126,
               "indent": 0,
               "parameters": [
-                9,
+                72,
                 0,
                 0,
-                3
-              ]
-            },
-            {
-              "code": 126,
-              "indent": 0,
-              "parameters": [
-                14,
-                0,
-                0,
-                3
+                1
               ]
             },
             {
@@ -11316,6 +11314,50 @@
               ]
             },
             {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                2,
+                "A",
+                1
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\p2How discrete..."
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 1,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -11328,8 +11370,8 @@
     },
     {
       "id": 25,
-      "name": "EV025",
-      "note": "",
+      "name": "copper-copy",
+      "note": "<Copy Event: 158, 2>",
       "pages": [
         {
           "conditions": {
@@ -11349,303 +11391,11 @@
           },
           "directionFix": false,
           "image": {
-            "characterIndex": 0,
+            "tileId": 56,
             "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Hey, guys..."
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                1,
-                19,
-                0,
-                16,
-                1
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\p2I have a hunch that the Giant"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "Goblin might be just ahead."
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 411,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\p2I have a hunch that there"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "might be a boss just ahead."
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Let's be careful."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p3And why exactly do you"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "have this hunch?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Oh, I looked ahead at that sign."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2I can barely make it out from"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "here, but I can tell that it says"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\"BOSS ROOM AHEAD.\""
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p3Oh, ok. That makes sense."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p3Let's make sure we're ready"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "before entering, then."
-              ]
-            },
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
-              "code": 355,
-              "indent": 0,
-              "parameters": [
-                "$gameSystem.forceAutosave();"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
             "characterIndex": 0,
-            "characterName": "",
             "direction": 2,
-            "pattern": 0,
-            "tileId": 0
+            "pattern": 0
           },
           "list": [
             {
@@ -11675,8 +11425,8 @@
           "walkAnime": true
         }
       ],
-      "x": 24,
-      "y": 9
+      "x": 23,
+      "y": 24
     },
     {
       "id": 26,
@@ -11741,7 +11491,7 @@
     {
       "id": 27,
       "name": "EV027",
-      "note": "Fire 200 #e6292c",
+      "note": "Fire 200 #e25822",
       "pages": [
         {
           "conditions": {
@@ -11822,7 +11572,7 @@
     {
       "id": 28,
       "name": "EV028",
-      "note": "Fire 200 #e6292c",
+      "note": "Fire 200 #e25822",
       "pages": [
         {
           "conditions": {
@@ -11903,7 +11653,7 @@
     {
       "id": 29,
       "name": "EV029",
-      "note": "Fire 200 #e6292c",
+      "note": "Fire 200 #e25822",
       "pages": [
         {
           "conditions": {
@@ -11984,7 +11734,7 @@
     {
       "id": 30,
       "name": "EV030",
-      "note": "Fire 200 #e6292c",
+      "note": "Fire 200 #e25822",
       "pages": [
         {
           "conditions": {
@@ -12065,7 +11815,7 @@
     {
       "id": 31,
       "name": "EV031",
-      "note": "Fire 200 #e6292c",
+      "note": "Fire 200 #e25822",
       "pages": [
         {
           "conditions": {
@@ -12146,7 +11896,7 @@
     {
       "id": 32,
       "name": "EV032",
-      "note": "Fire 200 #e6292c",
+      "note": "Fire 200 #e25822",
       "pages": [
         {
           "conditions": {
@@ -12227,7 +11977,7 @@
     {
       "id": 33,
       "name": "EV033",
-      "note": "Fire 200 #e6292c",
+      "note": "Fire 200 #e25822",
       "pages": [
         {
           "conditions": {
@@ -12308,7 +12058,7 @@
     {
       "id": 34,
       "name": "EV034",
-      "note": "Fire 200 #e6292c",
+      "note": "Fire 200 #e25822",
       "pages": [
         {
           "conditions": {
@@ -12389,7 +12139,7 @@
     {
       "id": 35,
       "name": "EV035",
-      "note": "Fire 200 #e6292c",
+      "note": "Fire 200 #e25822",
       "pages": [
         {
           "conditions": {
@@ -12584,6 +12334,966 @@
       ],
       "x": 16,
       "y": 5
+    },
+    {
+      "id": 37,
+      "name": "carrot-copy",
+      "note": "<Copy Event: 158, 71>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Farming",
+            "direction": 6,
+            "pattern": 2,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 37,
+      "y": 7
+    },
+    {
+      "id": 38,
+      "name": "carrot-copy",
+      "note": "<Copy Event: 158, 71>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Farming",
+            "direction": 6,
+            "pattern": 2,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 37,
+      "y": 6
+    },
+    {
+      "id": 39,
+      "name": "carrot-copy",
+      "note": "<Copy Event: 158, 71>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Farming",
+            "direction": 6,
+            "pattern": 2,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 32,
+      "y": 5
+    },
+    {
+      "id": 40,
+      "name": "copper-copy",
+      "note": "<Copy Event: 158, 2>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 56,
+            "characterName": "",
+            "characterIndex": 0,
+            "direction": 2,
+            "pattern": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 26,
+      "y": 25
+    },
+    {
+      "id": 41,
+      "name": "copper-copy",
+      "note": "<Copy Event: 158, 2>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 56,
+            "characterName": "",
+            "characterIndex": 0,
+            "direction": 2,
+            "pattern": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 7,
+      "y": 21
+    },
+    {
+      "id": 42,
+      "name": "iron-copy",
+      "note": "<Copy Event: 158, 4>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 57,
+            "characterName": "",
+            "characterIndex": 0,
+            "direction": 2,
+            "pattern": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 2,
+      "y": 11
+    },
+    {
+      "id": 43,
+      "name": "iron-copy",
+      "note": "<Copy Event: 158, 4>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 57,
+            "characterName": "",
+            "characterIndex": 0,
+            "direction": 2,
+            "pattern": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 12,
+      "y": 12
+    },
+    {
+      "id": 44,
+      "name": "iron-copy",
+      "note": "<Copy Event: 158, 4>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 57,
+            "characterName": "",
+            "characterIndex": 0,
+            "direction": 2,
+            "pattern": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 12,
+      "y": 17
+    },
+    {
+      "id": 45,
+      "name": "copperoreleaf-copy",
+      "note": "<Copy Event: 158, 33>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Oreleaf",
+            "direction": 4,
+            "pattern": 0,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 36,
+      "y": 9
+    },
+    {
+      "id": 46,
+      "name": "copperoreleaf-copy",
+      "note": "<Copy Event: 158, 33>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Oreleaf",
+            "direction": 4,
+            "pattern": 0,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 30,
+      "y": 11
+    },
+    {
+      "id": 47,
+      "name": "copperoreleaf-copy",
+      "note": "<Copy Event: 158, 33>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Oreleaf",
+            "direction": 4,
+            "pattern": 0,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 34,
+      "y": 13
+    },
+    {
+      "id": 48,
+      "name": "ironoreleaf-copy",
+      "note": "<Copy Event: 158, 35>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Oreleaf",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 35,
+      "y": 22
+    },
+    {
+      "id": 49,
+      "name": "ironoreleaf-copy",
+      "note": "<Copy Event: 158, 35>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Oreleaf",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 30,
+      "y": 19
+    },
+    {
+      "id": 50,
+      "name": "ironoreleaf-copy",
+      "note": "<Copy Event: 158, 35>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Oreleaf",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 31,
+      "y": 27
+    },
+    {
+      "id": 51,
+      "name": "carrot-copy",
+      "note": "<Copy Event: 158, 71>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Farming",
+            "direction": 6,
+            "pattern": 2,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 32,
+      "y": 6
+    },
+    {
+      "id": 52,
+      "name": "carrot-copy",
+      "note": "<Copy Event: 158, 71>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Farming",
+            "direction": 6,
+            "pattern": 2,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 31,
+      "y": 6
     }
   ]
 }

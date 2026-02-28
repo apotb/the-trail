@@ -42,7 +42,7 @@
   ],
   "encounterStep": 60,
   "height": 52,
-  "note": "<Unlocked>",
+  "note": "<Unlocked>\n<Dungeon>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -16624,15 +16624,6 @@
           },
           "list": [
             {
-              "code": 121,
-              "indent": 0,
-              "parameters": [
-                70,
-                70,
-                1
-              ]
-            },
-            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -19485,7 +19476,7 @@
     {
       "id": 37,
       "name": "EV037",
-      "note": "Fire 200 #e6292c 10",
+      "note": "Fire 200 #e25822 10",
       "pages": [
         {
           "conditions": {
@@ -36486,8 +36477,8 @@
               "indent": 1,
               "parameters": [
                 [
-                  "Yes.",
-                  "No."
+                  "Yes",
+                  "No"
                 ],
                 1,
                 0,
@@ -46622,8 +46613,8 @@
               "indent": 1,
               "parameters": [
                 [
-                  "Yes.",
-                  "No."
+                  "Yes",
+                  "No"
                 ],
                 1,
                 0,

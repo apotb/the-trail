@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 40,
-  "note": "",
+  "note": "<Dungeon>",
   "parallaxLoopX": true,
   "parallaxLoopY": true,
   "parallaxName": "UndergroundHaven",
@@ -8823,7 +8823,21 @@
               "code": 230,
               "indent": 0,
               "parameters": [
-                120
+                60
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "HideActiveQuestWindow"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
               ]
             },
             {

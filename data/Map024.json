@@ -3601,7 +3601,7 @@
     485,
     485,
     485,
-    482,
+    486,
     0,
     0,
     0,
@@ -7317,6 +7317,13 @@
               "indent": 1,
               "parameters": [
                 "\\nunHere is our current stock..."
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameTemp._shopOwner = \"People2_3\";"
               ]
             },
             {

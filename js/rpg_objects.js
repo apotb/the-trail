@@ -16,6 +16,7 @@ Game_Temp.prototype.initialize = function() {
     this._commonEventId = 0;
     this._destinationX = null;
     this._destinationY = null;
+    this._recentNames = [];
 };
 
 Game_Temp.prototype.isPlaytest = function() {
@@ -87,36 +88,72 @@ Game_Temp.prototype.synthArmors = function() {
     })
 };
 
+Game_Temp.prototype.synthPan = function() {
+    if (!this._synthWeapons) return [];
+        return this._synthWeapons.map(function(id) {
+            return $dataItems[id];
+    })
+};
+
+Game_Temp.prototype.synthPot = function() {
+    if (!this._synthArmors) return [];
+        return this._synthArmors.map(function(id) {
+            return $dataItems[id];
+    })
+};
+
 Game_Temp.prototype.recipeTemplate = function(name) {
+    this._lastRecipeTemplate = name;
     switch (name.toUpperCase()) {
         case 'WILL':
             arr = [
                 [68, 74, 213, 92, 93, 50],
-                [32, 51, 23, 30, 24, 25, 26, 27],
-                [78, 48, 47, 46, 129, 44, 96, 45]
+                [27, 23, 30, 24, 25, 26, 32, 51],
+                [47, 48, 78, 40, 46, 129, 44, 45, 96, 161]
             ]
             break;
         case 'CASTLE FORGE':
             arr = [
-                [68, 74, 213, 176, 92, 214, 242, 154, 93, 50, 207],
-                [45, 49, 50, 44, 42, 43, 53, 52, 32, 51, 23, 30, 24, 25, 26, 27],
-                [218, 219, 78, 125, 126, 127, 128, 108, 97, 137, 136, 48, 117, 47, 168, 46, 133, 132, 129, 130, 131, 213, 44, 96, 115, 149, 148, 45, 172, 159, 143, 170, 181, 214, 185, 189, 190, 178, 161, 162, 171, 124, 217, 233]
-            ]
-            break;
-        case 'DALIA':
-        case 'CASTLE FOOD':
-        case 'FOOD':
-            arr = [
-                [71, 72, 111, 129, 117, 196, 197],
-                [],
-                []
+                [
+                    68, 74, 213, 176, // Ingots/Alloys
+                    92, 214, 242, // Materials
+                    154, 93, // Usable Items
+                    50, 207 // Salvage Kits
+                ],
+                [
+                    27, 23, 30, 24, 25, 26, 32, 51, // Bladesville
+                    42, 43, 53, 52, // Telluria Field
+                    45, 49, 50, 44, // Tellurium
+                ],
+                [
+                    47, 48, 136, 137, 117, 97, 108, // Shields
+                    78, 218, 219, // Headgear
+                    125, 126, 127, 128, // Bodygear
+                    40, 46, 168, 129, 130, 131, 132, 133, 44, 213, // Boots
+                    149, 45, 238, 148, 115, // Accessories - Telluria Field
+                    96, 159, 170, 143, 172, // Accessories - Resistance
+                    185, 189, 190, 178, // Accessories - True Telluria Castle
+                    161, 162, // Accessories - Seshat
+                    124, 217, 233, // Tomes
+                ]
             ]
             break;
         case 'FIRE':
             arr = [
-                [135, 177, 108, 70, 98, 221, 223, 136, 131, 134, 259],
-                [],
-                []
+                [
+                    151 // Charcoal
+                ],
+                [
+                    135, 177, 270, 271, 272, // Adon
+                    70, 277, 278, 279, /* shaded brook fish */ // Easin Plains
+                    108, 98, /* oasis fish */ // Blazing Sands
+                    134, 131, 136, 280, 281, 282, 259, 221, 223 // Telluria Field
+                ],
+                [
+                    111, 129, 292, // Bladesville
+                    282, 259, // Telluria Field
+                    71, 72, 117, 196, 197, 63 // Drinks
+                ]
             ]
             break;
         case 'PICKAXE':
@@ -158,6 +195,13 @@ Game_Temp.prototype.openHours = function(open, close) {
 
 Game_Temp.prototype.bagOrganized = function() {
     return $gameSwitches.value(14) && $gameParty.inBattle();
+};
+
+// Other
+
+Game_Temp.prototype.generateGoofyName = function(male) {
+    const names = $dataStrings.names.goofy[male ? "male" : "female"];
+    return names[Math.floor(Math.random() * names.length)];
 };
 
 //-----------------------------------------------------------------------------
@@ -293,6 +337,7 @@ Game_System.prototype.windowTone = function() {
 
 Game_System.prototype.setWindowTone = function(value) {
     this._windowTone = value;
+    $gameTemp._updateWindowTone = true;
 };
 
 Game_System.prototype.battleBgm = function() {
@@ -417,13 +462,41 @@ Game_System.prototype.restoreRareEnemyTries = function() {
 // Small Chests
 
 Game_System.prototype.totalSmallChests = function() {
-    return 38;
+    return 42;
 };
 
 Game_System.prototype.smallChest = function() {
     $gameVariables.setValue(48, $gameVariables.value(48) + 1);
     $gameVariables.setValue(50, $gameVariables.value(48) + "/" + this.totalSmallChests());
     OrangeGreenworks.setStat('smallChests', $gameVariables.value(48));
+};
+
+Game_System.prototype.smallChestsOnMap = function(map) {
+    map = map || $dataMap;
+    if (!map || !map.events) return 0;
+    var mapId = $gameMap.mapId();
+    var count = 0;
+    for (var i = 0; i < map.events.length; i++) {
+        var event = map.events[i];
+        if (!event || !event.pages) continue;
+        if ($gameSelfSwitches.value([mapId, i, 'A'])) continue;
+        var found = false;
+        for (var p = 0; p < event.pages.length; p++) {
+            var list = event.pages[p].list;
+            if (!list) continue;
+            for (var c = 0; c < list.length; c++) {
+                var cmd = list[c];
+                if (cmd.code !== 355 && cmd.code !== 655) continue;
+                if (cmd.parameters && cmd.parameters[0] && cmd.parameters[0].contains("$gameSystem.smallChest(")) {
+                    found = true;
+                    break;
+                }
+            }
+            if (found) break;
+        }
+        if (found) count++;
+    }
+    return count;
 };
 
 // Battle Setups
@@ -501,26 +574,26 @@ Game_System.prototype.battleTemplate = function(name) {
 // Chapters
 
 Game_System.prototype.chapter = function() {
-    if ($gameVariables.value(84) >= 17)             return 7;
-    if ($gameSwitches.value(109))                   return 6;
-    if ($gameSelfSwitches.value([8, 122, 'A']))     return 5;
-    if ($gameSelfSwitches.value([8, 80, 'B']))      return 4;
-    if ($gameSelfSwitches.value([11, 12, 'A']))     return 3;
-    if ($gameVariables.value(3) >= 8)               return 2;
-    if ($gameVariables.value(2) >= 11)              return 1;
+    if ($gameVariables.value(84) >= 17)                 return 6;
+    if ($gameSwitches.value(109))                       return 5;
+    if ($gameSwitches.value(82))                        return 4;
+    if ($gameSystem.isQuestObjectiveCompleted(4, 1))    return 3;
+    if ($gameVariables.value(3) >= 4)                   return 2;
+    if ($gameVariables.value(2) >= 11)                  return 1;
     return 0;
 };
 
 Game_System.prototype.championsTalisman = function() {
     return [
-        [0, 0, 0, 0, 0, 0, 0, 0],       // 0
-        [1, 1, 0, 0, 0, 0, 1, 0],       // 1
-        [2, 2, 1, 1, 1, 1, 2, 1],       // 2
-        [4, 3, 2, 2, 2, 2, 3, 1],       // 3
-        [8, 5, 3, 3, 3, 3, 5, 2],       // 4
-        [12, 7, 4, 4, 5, 5, 7, 2],      // 5
-        [16, 10, 5, 5, 7, 7, 9, 3],     // 6
-        [20, 15, 5, 5, 7, 7, 11, 3]     // 7
+        [0, 0, 0, 0, 0, 0, 0, 0],       // Prologue: Unused
+        [0, 0, 0, 0, 0, 0, 0, 0],       // Chapter 1: Into Verdin
+        [1, 1, 0, 0, 0, 0, 1, 0],       // Chapter 2: A Motley Crew
+        [2, 2, 1, 1, 1, 1, 2, 1],       // Chapter 3: The Journey Continues
+        [4, 3, 2, 2, 2, 2, 3, 1],       // Chapter 4: The Root of all Evil
+        [8, 5, 3, 3, 3, 3, 5, 2],       // Chapter 5: The Great Collapse
+        [12, 7, 4, 4, 5, 5, 7, 2],      // Chapter 6: Path of the Purple
+        [16, 10, 5, 5, 7, 7, 9, 3],     // Chapter 7: ???
+        [20, 15, 5, 5, 7, 7, 11, 3]     // Chapter 8: ???
     ][this.chapter()];
 };
 
@@ -560,7 +633,6 @@ Game_System.prototype.nextMoonPhase = function() {
     if (this._moonPhase > 7) {
         this._moonPhase = 0;
         this._moonRespawn = true;
-        this._moonCycleComplete = true;
     }
     $gameVariables.setValue(76, this._moonPhase);
 };
@@ -599,19 +671,6 @@ Game_System.prototype.setSafePlace = function() {
 
 // Recall Potion
 
-Game_System.prototype.recall = function() {
-    let arr = [this._recallMap, this._recallX, this._recallY, this._recallDirection];
-    if (arr.contains(undefined)) return [$gameMap.mapId(), $gamePlayer.x, $gamePlayer.y, $gamePlayer.direction()];
-    else return arr;
-};
-
-Game_System.prototype.setRecall = function() {
-    this._recallMap = $gameMap.mapId();
-    this._recallX = $gamePlayer.x;
-    this._recallY = $gamePlayer.y;
-    this._recallDirection = $gamePlayer.direction();
-};
-
 Game_System.prototype.recallAllowed = function() {
     return this._recallAllowed || true;
 };
@@ -621,6 +680,10 @@ Game_System.prototype.setRecallAllowed = function(allow) {
 };
 
 // Statues
+
+Game_System.prototype.statueList = function() {
+    return [15, 24, 188, 51, 84, 83, 108, 148, 124, 212, 89, 91, 203, 208, 88];
+};
 
 Game_System.prototype.totalStatues = function() {
     return $dataStates.filter(s => s).filter(s => s.name.startsWith("Statue - ") && s.name != "Statue - ?").length;
@@ -634,6 +697,82 @@ Game_System.prototype.statue = function(mapId) {
 Game_System.prototype.statuesFound = function(total) {
     this._statues = this._statues || [];
     return this._statues.filter(s => !!s).length + (total ? "/" + this.totalStatues() : "");
+};
+
+// Potatoes
+
+Game_System.prototype.potatoesPerSecond = function(building='') {
+    let base = 0;
+    const multiplier = this.globalPotatoProduction();
+
+    // Potato Rats
+    if (building === 'Potato Rat' || building === '') {
+        let production = 0.1;
+        if ($gameParty.hasItem($dataItems[294])) production *= 2; // Calloused Hands
+        if ($gameParty.hasItem($dataItems[295])) production *= 2; // Starch Salve
+        if ($gameParty.hasItem($dataItems[296])) production *= 2; // Ambidextrous
+        if ($gameParty.hasItem($dataItems[297])) production += 0.1 * this.nonRatBuildings(); // Rat Army
+        if ($gameParty.hasItem($dataItems[298])) production += 0.4 * this.nonRatBuildings(); // Rat Dominion
+        if ($gameParty.hasItem($dataItems[299])) production += 4.5 * this.nonRatBuildings(); // The Rat Accord
+        base += production * $gameVariables.value(122) * multiplier;
+    }
+
+    // Cellmates
+    if (building === 'Cellmate' || building === '') {
+        let production = 1;
+        if ($gameParty.hasItem($dataItems[300])) production *= 2; // Shared Rations
+        if ($gameParty.hasItem($dataItems[301])) production *= 2; // Improvised Recipes
+        if ($gameParty.hasItem($dataItems[302])) production *= 2; // Shifts
+        if ($gameParty.hasItem($dataItems[303])) production *= 2; // Unions
+        if ($gameParty.hasItem($dataItems[304])) production *= 2; // Culinary Tradition
+        if ($gameParty.hasItem($dataItems[319])) production *= 2; // Guard Cellmates
+        if ($gameParty.hasItem($dataItems[320])) production *= 2; // Nun Cellmates
+        base += production * $gameVariables.value(123) * multiplier;
+    }
+
+    // Bribed Guards
+    if (building === 'Bribed Guard' || building === '') {
+        let production = 8;
+        if ($gameParty.hasItem($dataItems[305])) production *= 2; // Bigger Bribes
+        if ($gameParty.hasItem($dataItems[306])) production *= 2; // Wrong Delivery
+        if ($gameParty.hasItem($dataItems[307])) production *= 2; // Inventory Adjustment
+        if ($gameParty.hasItem($dataItems[308])) production *= 2; // Night Shift Drop-Off
+        if ($gameParty.hasItem($dataItems[309])) production *= 2; // Supply Route
+        if ($gameParty.hasItem($dataItems[319])) production *= 1 + 0.01 * $gameVariables.value(123); // Guard Cellmates
+        base += production * $gameVariables.value(124) * multiplier;
+    }
+
+    // Ritual Circles
+    if (building === 'Ritual Circle' || building === '') {
+        let production = 47;
+        if ($gameParty.hasItem($dataItems[310])) production *= 2; // Shared Chants
+        if ($gameParty.hasItem($dataItems[311])) production *= 2; // Established Routine
+        if ($gameParty.hasItem($dataItems[312])) production *= 2; // Sacred Formation
+        if ($gameParty.hasItem($dataItems[313])) production *= 2; // Ritual Doctrine
+        if ($gameParty.hasItem($dataItems[314])) production *= 2; // Order of the Spud
+        if ($gameParty.hasItem($dataItems[320])) production *= 1 + 0.01 * $gameVariables.value(123); // Nun Cellmates
+        base += production * $gameVariables.value(125) * multiplier;
+    }
+
+    return Math.round(base * 10) / 10;
+};
+
+Game_System.prototype.totalBuildings = function() {
+    return $gameVariables.value(122) + $gameVariables.value(123) + $gameVariables.value(124) + $gameVariables.value(125);
+};
+
+Game_System.prototype.nonRatBuildings = function() {
+    return this.totalBuildings() - $gameVariables.value(122);
+};
+
+Game_System.prototype.globalPotatoProduction = function() {
+    let multiplier = 1;
+    if ($gameParty.hasItem($dataItems[321])) multiplier *= 1.25; // Bigger Potatoes
+    if ($gameParty.hasItem($dataItems[323])) multiplier *= 1 + 0.01 * this.totalBuildings(); // The Potato Manifesto
+    if ($gameParty.hasItem($dataItems[324])) multiplier *= 1.5; // Logistics
+    if ($gameParty.hasItem($dataItems[325])) multiplier *= 1 + 0.02 * $gameVariables.value(125); // Blessed Spuds
+    if ($gameParty.hasItem($dataItems[326])) multiplier *= 1 + 0.01 * this.totalBuildings(); // Industrial Revolution
+    return multiplier;
 };
 
 // Constants
@@ -2041,6 +2180,7 @@ Game_Action.prototype.apply = function(target) {
             this.executeDamage(target, value);
         }
         this.item().effects.forEach(function(effect) {
+            if (this.item().itemCategory?.contains('Meals')) effect = this.duncan(effect); // DUNCAN
             this.applyItemEffect(target, effect);
         }, this);
         this.applyItemUserEffect(target);
@@ -2050,6 +2190,18 @@ Game_Action.prototype.apply = function(target) {
         if (SceneManager._scene._sideStatusWindows[index].children.find(c => c instanceof Window_BattleSideName)) SceneManager._scene._sideStatusWindows[index].children.find(c => c instanceof Window_BattleSideName).refresh()
     }
 };
+
+Game_Action.prototype.duncan = function(effect) {
+    if ($gameParty.pet().name() === "Duncan") {
+        if (effect.code === Game_Action.EFFECT_RECOVER_HP || effect.code === Game_Action.EFFECT_RECOVER_MP) {
+            // Create a shallow copy to avoid modifying original item data
+            effect = Object.assign({}, effect);
+            effect.value1 = Math.floor(effect.value1 * 1.5 * 100) / 100;
+            effect.value2 = Math.floor(effect.value2 * 1.5);
+        }
+    }
+    return effect;
+}
 
 /*Game_Action.prototype.makeDamageValue = function(target, critical) {
     // YEP_DamageCore.js
@@ -2499,27 +2651,86 @@ Object.defineProperties(Game_BattlerBase.prototype, {
     // Tactical Points
     tp: { get: function() { return this._tp; }, configurable: true },
     // Maximum Hit Points
-    mhp: { get: function() { return this.param(0); }, configurable: true },
+    mhp: { get: function() {
+        let value = this.param(0);
+        if (this.isActor()) {
+            if ($gameSystem.statue(15)) value += 10; // Solus Town
+            if ($gameSystem.statue(188)) value += 10; // Dark Forest
+            if ($gameParty.hasItem($dataItems[327])) value += 3; // Starch Adaptation
+            if ($gameParty.hasItem($dataItems[329])) value += 3; // Endurance Training
+            if ($gameParty.hasItem($dataItems[330])) value += 3; // Institutionalized
+            if ($gameParty.hasItem($dataItems[331])) value += 3; // Potato Lord
+        }
+        return value;
+    }, configurable: true },
     // Maximum Magic Points
-    mmp: { get: function() { return this.param(1); }, configurable: true },
+    mmp: { get: function() {
+        let value = this.param(1);
+        if (this.isActor()) {
+            if ($gameSystem.statue(24)) value += 5;     // Verdin Village
+        }
+        return value;
+    }, configurable: true },
     // ATtacK power
-    atk: { get: function() { return this.param(2); }, configurable: true },
+    atk: { get: function() {
+        let value = this.param(2);
+        if (this.isActor()) {
+            if ($gameSystem.statue(84)) value += 2;     // Greenfield
+        }
+        return value;
+    }, configurable: true },
     // DEFense power
-    def: { get: function() { return this.param(3); }, configurable: true },
+    def: { get: function() {
+        let value = this.param(3);
+        if (this.isActor()) {
+            if ($gameSystem.statue(108)) value += 2;    // Bladesville
+        }
+        return value;
+    }, configurable: true },
     // Magic ATtack power
-    mat: { get: function() { return this.param(4); }, configurable: true },
+    mat: { get: function() {
+        let value = this.param(4);
+        if (this.isActor()) {
+            if ($gameSystem.statue(83)) value += 2;     // Solus Valley
+        }
+        return value;
+    }, configurable: true },
     // Magic DeFense power
-    mdf: { get: function() { return this.param(5); }, configurable: true },
+    mdf: { get: function() {
+        let value = this.param(5);
+        if (this.isActor()) {
+            if ($gameSystem.statue(124)) value += 2;    // Great Pyramid
+        }
+        return value;
+    }, configurable: true },
     // AGIlity
     agi: { get: function() { return this.param(6); }, configurable: true },
     // LUcK
     luk: { get: function() { return this.param(7); }, configurable: true },
     // HIT rate
-    hit: { get: function() { return this.xparam(0); }, configurable: true },
+    hit: { get: function() {
+        let value = this.xparam(0);
+        if (this.isActor()) {
+            if ($gameSystem.statue(212)) value += 0.01; // Telluria Castle Town
+        }
+        return value;
+    }, configurable: true },
     // EVAsion rate
-    eva: { get: function() { return this.xparam(1); }, configurable: true },
+    eva: { get: function() {
+        let value = this.xparam(1);
+        if (this.isActor()) {
+            if ($gameSystem.statue(89)) value += 0.01;  // Telluria Castle F1
+        }
+        return value;
+    }, configurable: true },
     // CRItical rate
-    cri: { get: function() { return this.xparam(2); }, configurable: true },
+    cri: { get: function() {
+        let value = this.xparam(2);
+        if (this.isActor()) {
+            if ($gameSystem.statue(91)) value += 0.01;  // Telluria Castle F3
+        }
+        return value;
+    }, configurable: true },
     // Critical EVasion rate
     cev: { get: function() { return this.xparam(3); }, configurable: true },
     // Magic EVasion rate
@@ -2952,11 +3163,12 @@ Game_BattlerBase.prototype.isEquipTypeSealed = function(etypeId) {
 
 Game_BattlerBase.prototype.slotType = function() {
     var set = this.traitsSet(Game_BattlerBase.TRAIT_SLOT_TYPE);
+    if (this.equips()[1]?.traits.some(t => t.code === Game_BattlerBase.TRAIT_SLOT_TYPE && t.value === 1)) set.splice(0, 1); // Dual wield fix
     return set.length > 0 ? Math.max.apply(null, set) : 0;
 };
 
 Game_BattlerBase.prototype.isDualWield = function() {
-    return this.slotType() === 1;
+    return this.slotType() === 1 || this._forceDualWield;
 };
 
 Game_BattlerBase.prototype.actionPlusSet = function() {
@@ -3194,6 +3406,8 @@ Game_BattlerBase.prototype.paySkillCost = function(skill) {
 Game_BattlerBase.prototype.isOccasionOk = function(item) {
     if ($gameParty.inBattle()) {
         return item.occasion === 0 || item.occasion === 1;
+    } else if ($gameTemp._retrying) {
+        return !Object.keys(item.meta).contains('Retry Disable') && (item.occasion === 0 || item.occasion === 2);
     } else {
         return item.occasion === 0 || item.occasion === 2;
     }
@@ -3903,6 +4117,39 @@ Game_Actor.prototype.setName = function(name) {
     this._name = name;
 };
 
+Game_Actor.prototype.setRandomName = function(male) {
+    const names = $dataStrings.names.hero[male ? "male" : "female"];
+    const recentNames = $gameTemp._recentNames || [];
+    const maxRecentNames = 15;
+
+    // Get names of current party members
+    const partyNames = $gameParty ? $gameParty.members().map(member => member.name()) : [];
+
+    // Filter out recently used names and current party member names
+    let availableNames = names.filter(name => !recentNames.includes(name) && !partyNames.includes(name));
+
+    // If all names were recently used, just filter out party names
+    if (availableNames.length === 0) {
+        availableNames = names.filter(name => !partyNames.includes(name));
+    }
+
+    // If even that doesn't work, use all names
+    if (availableNames.length === 0) {
+        availableNames = names;
+    }
+
+    // Pick a random name from available names
+    const selectedName = availableNames[Math.floor(Math.random() * availableNames.length)];
+    this._name = selectedName;
+
+    // Track this name in recent names
+    recentNames.push(selectedName);
+    if (recentNames.length > maxRecentNames) {
+        recentNames.shift();
+    }
+    $gameTemp._recentNames = recentNames;
+};
+
 Game_Actor.prototype.nickname = function() {
     return this._nickname;
 };
@@ -4607,7 +4854,10 @@ Game_Actor.prototype.updateStateSteps = function(state) {
 
 Game_Actor.prototype.showAddedStates = function() {
     this.result().addedStateObjects().forEach(function(state) {
-        if (state.message1 && !($gamePlayer.terrainTag() == 5 && state.id == 33)) { // Water
+        if (state.message1 && 
+            !($gamePlayer.terrainTag() == 5 && state.id == 33) &&
+            !([4, 5, 6, 97].contains(state.id)) // Well Fed
+        ) { // Water
             // $gameMessage.add(this._name + state.message1);
             this.stateGab(`${this._name}${state.message1} \\c[3]+\\it[${state.id}]`)
         }
@@ -5382,7 +5632,7 @@ Game_Party.prototype.name = function() {
     } else if (numBattleMembers === 1) {
         return this.leader().name();
     } else {
-        return TextManager.partyName.format(this.leader().name());
+        return this.teamName() !=='An adventuring party' ? this.teamName() : TextManager.partyName.format(this.leader().name());
     }
 };
 
@@ -5635,6 +5885,10 @@ Game_Party.prototype.partyStat = function(abilityId, actorId) {
     if (abilityId == Game_Party.ABILITY_GOLD_DOUBLE) {
         if ($gameSystem.statue(51)) stat += 0.02; // Haven Harbor
         if ($gameSystem.statue(148)) stat += 0.02; // Crusher Cave
+        if ($gameParty.hasItem($dataItems[328])) stat += 0.01; // Prison Bartering
+        if ($gameParty.hasItem($dataItems[330])) stat += 0.01; // Mafia Ties
+        if ($gameParty.hasItem($dataItems[331])) stat += 0.01; // Institutionalized
+        if ($gameParty.hasItem($dataItems[332])) stat += 0.01; // Potato Lord
     }
     this.battleMembers().filter(a => a.actorId() != actorId).forEach(a => stat *= a.partyStat(abilityId));
     return stat;
@@ -5762,19 +6016,20 @@ Game_Party.prototype.hasPickaxe = function() {
 
 // Pets
 
+Game_Party.prototype.pet = function() {
+    return $gameActors.actor(7);
+}
+
 Game_Party.prototype.addPet = function(name) {
-    const actor = $gameActors.actor(7);
+    const actor = $gameParty.pet();
     actor.setName(name);
     this.addGuestActor(7);
     switch(name) {
-        case 'Pancakes':
-            actor.setCharacterImage('Dog8', 0);
+        case 'Arlo':
+            actor.setCharacterImage('Dog2', 2);
             break;
         case 'Clover':
-            actor.setCharacterImage('Cat1', 4);
-            break;
-        case 'Oreo':
-            actor.setCharacterImage('Bunny', 6);
+            actor.setCharacterImage('Cat1', 6);
             break;
         case 'Duncan':
             actor.setCharacterImage('Hamster', 1);
@@ -5783,12 +6038,18 @@ Game_Party.prototype.addPet = function(name) {
             actor.setCharacterImage('Hound', 1);
             OrangeGreenworks.activateAchievement('COLLECT_FIDO');
             break;
-        case 'Tender':
-            actor.setCharacterImage('Fox', 0);
-            break;
         case 'Coco':
             actor.setCharacterImage('Monkey1', 0);
             OrangeGreenworks.activateAchievement('COLLECT_COCO');
+            break;
+        case 'Oreo':
+            actor.setCharacterImage('Bunny', 6);
+            break;
+        case 'Tender':
+            actor.setCharacterImage('Fox', 0);
+            break;
+        case 'Pancakes':
+            actor.setCharacterImage('Dog8', 7);
             break;
         default: // Remove pet
             this.removeGuestActor(7);
@@ -5803,7 +6064,7 @@ Game_Party.prototype.addPetFromItem = function(id) {
 };
 
 Game_Party.prototype.removePet = function() {
-    const actor = $gameActors.actor(7);
+    const actor = $gameParty.pet();
     actor.setName("Pet");
     this.removeGuestActor(7);
     $gamePlayer.refresh();
@@ -5824,6 +6085,11 @@ Game_Party.prototype.killCount = function() {
 Game_Party.prototype.hasMembership = function() {
     return this.hasItem($dataItems[231]) || this.hasItem($dataItems[232]) || this.hasItem($dataItems[233]);
 };
+
+Game_Party.prototype.teamName = function() {
+    const name = $gameActors.actor(19).name();
+    return name === "Team Name" ? "An adventuring party" : name;
+}
 
 //-----------------------------------------------------------------------------
 // Game_Troop
@@ -8357,7 +8623,7 @@ Game_Player.prototype.updateDashing = function() {
         return;
     }
     if (this.canMove() && !this.isInVehicle() && !$gameMap.isDashDisabled()) {
-        this._dashing = this.isDashButtonPressed() || $gameTemp.isDestinationValid();
+        this._dashing = this.isDashButtonPressed()/* || $gameTemp.isDestinationValid()*/;
     } else {
         this._dashing = false;
     }

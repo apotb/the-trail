@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 50,
-  "note": "<Unlocked>",
+  "note": "<Dungeon>\n<Unlocked>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -14443,13 +14443,6 @@
               "indent": 0,
               "parameters": [
                 "\\n<Jane>Let's get out of here, I'm cold."
-              ]
-            },
-            {
-              "code": 355,
-              "indent": 0,
-              "parameters": [
-                "$gameSelfSwitches.setValue([8, 153, 'A'], false);"
               ]
             },
             {

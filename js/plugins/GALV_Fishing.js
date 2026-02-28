@@ -34,6 +34,14 @@ Galv.FISH = Galv.FISH || {};        // Galv's stuff
  * 
  * @author Galv - galvs-scripts.com
  *
+ * @param --- FISH ---
+ * @desc
+ * @default
+ * 
+ * @param Fish
+ * @type struct<Fish>[]
+ * @default []
+ * 
  * @param --- OPTIONS ---
  * @desc
  * @default
@@ -266,210 +274,6 @@ Galv.FISH = Galv.FISH || {};        // Galv's stuff
  * @desc The size of the fish sprite in record scene (1 is 100%)
  * @default 1
  *
- * @param --- FISH ---
- * @desc
- * @default
- *
- * @param Fish 1
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default Name,5,0,1,2|8,-1,23,1|2|3,30|2,true,140|310,23|52,,0,0
- *
- * @param Fish 2
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 3
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 4
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 5
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 6
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 7
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 8
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 9
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 10
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 11
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 12
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 13
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 14
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 15
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 16
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 17
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 18
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 19
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 20
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 21
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 22
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 23
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 24
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 25
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 26
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 27
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 28
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 29
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 30
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 31
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 32
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 33
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 34
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 35
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 36
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 37
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 38
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 39
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 40
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 41
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 42
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 43
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 44
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 45
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 46
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 47
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 48
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 49
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
- * @param Fish 50
- * @desc img,speed,pull,move,lvl|lvl,x,item,bait|bait|bait,range|range,stats,length|length,weight|weight,ctxt,cevent,anim
- * @default
- *
  * @help
  *   Galv's Fishing Mini Game
  * ----------------------------------------------------------------------------
@@ -665,6 +469,74 @@ Galv.FISH = Galv.FISH || {};        // Galv's stuff
  * Galv.FISH.changePond('speed',[0,0,0.5]);  // change scroll speed for bgs
  * Galv.FISH.changePond('music',{name:'Field1',pan:0,pitch:100,volume:80});
  */
+/*~struct~Fish:
+ * @param img
+ * @default fish_green
+ * 
+ * @param speed
+ * @desc The higher the speed, the quicker the fish moves across the pond
+ * @default 8
+ * 
+ * @param pull
+ * @desc The higher the pull, the more difficult it is to reel in and the quicker
+ * @default 0
+ * 
+ * @param move
+ * @desc -1 unmovable, 0 inanimate, 1 passive, 2 erratic
+ * @default 1
+ * 
+ * @param lvl
+ * @desc Minimum|Maximum level
+ * @default 0|10
+ * 
+ * @param x
+ * @desc Starting X position (-1 for random)
+ * @default -1
+ * 
+ * @param item
+ * @type item
+ * @default 1
+ * 
+ * @param bait
+ * @desc Bait IDs separated by |
+ * @default 1|2|3
+ * 
+ * @param range
+ * @desc Detect range|Take range
+ * @default 20|2
+ * 
+ * @param stats
+ * @type boolean
+ * @desc Include in fish stats window
+ * @default true
+ * 
+ * @param length
+ * @desc Minimum|Maximum length (cm)
+ * @default 40|80
+ * 
+ * @param weight
+ * @desc Minimum|Maximum weight (kg)
+ * @default 10|25
+ * 
+ * @param ctxt
+ * @desc Custom catch text (optional)
+ * @default 
+ * 
+ * @param cevent
+ * @type common_event
+ * @desc Common event to run when caught
+ * @default 0
+ * 
+ * @param anim
+ * @type animation
+ * @desc Animation when caught
+ * @default 
+ * 
+ * @param respawn
+ * @type number
+ * @desc Hours until respawn
+ * @default 0
+ */
 
 //-----------------------------------------------------------------------------
 //  CODE STUFFS
@@ -814,50 +686,42 @@ Galv.FISH.loseBaitOnCatch = PluginManager.parameters('GALV_Fishing')["Lose Bait"
 
 
 
-Galv.FISH.createFish = function(id,txt) {
-	var a = txt.split(",");
-	var lvl = a[4].split("|");
-	var baits = a[7].split("|");
+Galv.FISH.createFish = function(id,obj) {
+	var lvl = obj.lvl.split("|");
+	var baits = obj.bait.split("|");
 	for (var i = 0; i < baits.length; i++) {
 		baits[i] = Number(baits[i]);
 	}
-	var range = a[8].split("|");
-	var length = a[10].split("|");
-	var weight = a[11].split("|");
+	var range = obj.range.split("|");
+	var length = obj.length.split("|");
+	var weight = obj.weight.split("|");
 	
-	Galv.FISH.fish[id] = {
-		graphic: a[0],                    // the image used from /Graphics/GFish/ folder.
-		speed: Number(a[1]) * 0.1,              // the swim speed of the fish. 10? is default.
-		pull: Number(a[2]),               //the higher their pull, the more difficult it is to reel in and quicker the line will break.
-		move: Number(a[3]),               // -1 = unmovable, 0 = inanimate, 1 = passive, 2 = erratic
-		level: [Number(lvl[0]),Number(lvl[1])],   // ARRAY [lowest,highest] fish swims. 0 = ground, 10 = water surface
-		x: Number(a[5]),                  // the fish will start in this x position. -1 is random.
-		item: Number(a[6]),               // the item id that will be gained if fish is caught
-		baits: baits.slice(0),            // ARRAY list of bait types that the fish will eat.
-		range: [Number(range[0]),Number(range[1])],              // ARRAY [detect,take] distance from bait a fish will detect and take it default is detect 20, take 2.
-		stats: a[9].toLowerCase() == 'true' ? true : false,      // true or false if fish is to display in stats window
-		length: [Number(length[0]),Number(length[1])],           // no gameplay effect. For fish stats only. rand between [min,max]
-		weight: [Number(weight[0]),Number(weight[1])],           // no gameplay effect. For fish stats only. rand between [min,max]
-		customText: a[12],                                       // text displayed instead of the item name when catching a fish and in the fish stat scene.
-		cevent: Number(a[13]),                                   // When this fish is caught, it will exit and run common event
-		anim: Number(a[14]),                                     // animation Id played on player instead of default
-		respawn: Number(a[15])									 // hours for 1 of this fish to respawn
+	Galv.FISH.fish[Number(obj.item)] = {
+		id: id, 													// used for order in career stats
+		graphic: obj.img,                    						// the image used from /Graphics/GFish/ folder.
+		speed: Number(obj.speed) * 0.1,              				// the swim speed of the fish. 10? is default.
+		pull: Number(obj.pull),               						//the higher their pull, the more difficult it is to reel in and quicker the line will break.
+		move: Number(obj.move),               						// -1 = unmovable, 0 = inanimate, 1 = passive, 2 = erratic
+		level: [Number(lvl[0]),Number(lvl[1])], 					// ARRAY [lowest,highest] fish swims. 0 = ground, 10 = water surface
+		x: Number(obj.x),                  							// the fish will start in this x position. -1 is random.
+		item: Number(obj.item),               						// the item id that will be gained if fish is caught
+		baits: baits.slice(0),            							// ARRAY list of bait types that the fish will eat.
+		range: [Number(range[0]),Number(range[1])],         		// ARRAY [detect,take] distance from bait a fish will detect and take it default is detect 20, take 2.
+		stats: obj.stats.toLowerCase() == 'true' ? true : false, 	// true or false if fish is to display in stats window
+		length: [Number(length[0]),Number(length[1])],      		// no gameplay effect. For fish stats only. rand between [min,max]
+		weight: [Number(weight[0]),Number(weight[1])],      		// no gameplay effect. For fish stats only. rand between [min,max]
+		customText: obj.ctxt,                                  		// text displayed instead of the item name when catching a fish and in the fish stat scene.
+		cevent: Number(obj.cevent),                              	// When this fish is caught, it will exit and run common event
+		anim: Number(obj.anim),                                		// animation Id played on player instead of default
+		respawn: Number(obj.respawn)								// hours for 1 of this fish to respawn
 	};
-	if (Galv.FISH.fish[id].stats) Galv.FISH.fishTotal += 1;
+	if (Galv.FISH.fish[Number(obj.item)].stats) Galv.FISH.fishTotal += 1;
 };
 
 // Build all fish in plugin settings
-var i = 1;
-while (i) {
-	txt = PluginManager.parameters('GALV_Fishing')["Fish " + i];
-	if (txt != undefined) {
-		if (txt.length > 0) Galv.FISH.createFish(i,txt);
-		i += 1;
-	} else {
-		i = 0;
-	}
-}
-
+JSON.parse(PluginManager.parameters('GALV_Fishing')['Fish']).map(f => JSON.parse(f)).forEach((f,i) => {
+	Galv.FISH.createFish(i+1,f);
+});
 
 Galv.FISH.cacheAll = function() {
 	// cache all fish, animations, bgs here (although most done on load
@@ -893,7 +757,7 @@ Galv.FISH.addRecords = function(fishId,length,weight) {
 		$gameSystem.fishing.caught[fishId].weight = Math.max(weight,$gameSystem.fishing.caught[fishId].weight);
 		
 		// set record fish data if bigger
-		if (length > $gameSystem.fishing.recordFish.length) {
+		if (length > Number($gameSystem.fishing.recordFish.length)) {
 			$gameSystem.fishing.recordFish.id = fishId;
 			$gameSystem.fishing.recordFish.length = length;
 			$gameSystem.fishing.recordFish.weight = weight;
@@ -952,11 +816,11 @@ Galv.FISH.totalCaught = function() {
 
 Galv.FISH.fishName = function(fishId) {
 	var data = Galv.FISH.fish[fishId];
-	if (data.item) {
+	if (data?.item) {
 		var item = $dataItems[data.item];
 		var txt = item.name;
 	} else {
-		var txt = data.graphic;
+		var txt = data?.graphic ?? 'ERROR fishName';
 	}
 	return txt;
 };
@@ -2078,7 +1942,7 @@ Sprite_Fish.prototype.fish = function() {
 };
 
 Sprite_Fish.prototype.setBitmap = function() {
-	var img = this.fish().graphic;
+	var img = this.fish()?.graphic ?? 'fish_green';
 	this.bitmap = ImageManager.loadFishGraphic(img);
 	this.anchor.x = 0.5;
 	this.anchor.y = 0.5;
@@ -2986,6 +2850,8 @@ Window_FishRecordList.prototype.includes = function(item) {
 
 Window_FishRecordList.prototype.makeItemList = function() {
 	this._data = Object.keys($gameSystem.fishing.caught).map(function (key) { return $gameSystem.fishing.caught[key]; });
+	this._data = this._data.filter(function(item) { return !!Galv.FISH.fish[item.id]; });
+	this._data.sort(function(a, b) { return Galv.FISH.fish[a.id].id - Galv.FISH.fish[b.id].id; });
 };
 
 Window_FishRecordList.prototype.drawItem = function(index) {
@@ -2994,7 +2860,7 @@ Window_FishRecordList.prototype.drawItem = function(index) {
     if (name) {
         var rect = this.itemRect(index);
         rect.width -= this.textPadding();
-		this.drawIcon($dataItems[Galv.FISH.fish[fishId].item].iconIndex, rect.x + 4, rect.y + 2);
+		this.drawIcon($dataItems[Galv.FISH.fish[fishId]?.item]?.iconIndex ?? 0, rect.x + 4, rect.y + 2);
         this.drawText(name, rect.x + 40, rect.y, rect.width);
     }
 };

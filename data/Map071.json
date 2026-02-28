@@ -14514,8 +14514,17 @@
               "parameters": []
             },
             {
-              "code": 101,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                0,
+                8,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
               "parameters": [
                 "Shopkeeper1",
                 10,
@@ -14525,31 +14534,27 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "\\matOhhhh, \\N[2]! Aaamazing jooob!"
+                "\\mat\\c[0]Thaaaaank you for your worrrrrk, \\c[1]\\V[202]\\c[0]!"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "Iiii'mmm sooo proud of youuu!"
+                "You have made us prouuuuuud to know you!"
               ]
             },
             {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Aaand youuu threee did greeat"
-              ]
+              "code": 0,
+              "indent": 1,
+              "parameters": []
             },
             {
-              "code": 401,
+              "code": 412,
               "indent": 0,
-              "parameters": [
-                "as weeeeeell!"
-              ]
+              "parameters": []
             },
             {
               "code": 111,
@@ -14772,21 +14777,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\mattWell, lil' bro, next stop is"
+                "\\mattWell, lil' bro, next stop is Solus Town."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Solus Town. Time to bring it"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "all home!"
+                "Time to bring it all home!"
               ]
             },
             {
@@ -15570,11 +15568,306 @@
       "x": 20,
       "y": 31
     },
-    null,
-    null,
-    null,
-    null,
-    null,
+    {
+      "id": 14,
+      "name": "shortwindow-copy",
+      "note": "<Copy Event: 158, 181>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 69,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Windows",
+            "direction": 4,
+            "pattern": 0,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 19,
+      "y": 28
+    },
+    {
+      "id": 15,
+      "name": "shortwindow-copy",
+      "note": "<Copy Event: 158, 181>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 69,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Windows",
+            "direction": 4,
+            "pattern": 0,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 18,
+      "y": 30
+    },
+    {
+      "id": 16,
+      "name": "shortwindow-copy",
+      "note": "<Copy Event: 158, 181>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 69,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Windows",
+            "direction": 4,
+            "pattern": 0,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 20,
+      "y": 30
+    },
+    {
+      "id": 17,
+      "name": "shortwindow-copy",
+      "note": "<Copy Event: 158, 181>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 69,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Windows",
+            "direction": 4,
+            "pattern": 0,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 21,
+      "y": 30
+    },
+    {
+      "id": 18,
+      "name": "shortwindow-copy",
+      "note": "<Copy Event: 158, 181>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 69,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$Windows",
+            "direction": 4,
+            "pattern": 0,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 22,
+      "y": 30
+    },
     null,
     null,
     null,

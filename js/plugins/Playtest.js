@@ -10,7 +10,7 @@ resetItems = function() {
 };
 
 allItems = function() {
-    $dataItems.filter(item => item && item.name !== '').forEach(item => $gameParty.gainItem(item, 9999));
+    $dataItems.filter(item => item && item.name !== '' && !DataManager.isIndependent(item)).forEach(item => $gameParty.gainItem(item, 9999));
 };
 
 allEquips = function() {
@@ -20,4 +20,20 @@ allEquips = function() {
 all = function() {
     allItems();
     allEquips();
+};
+
+scene = function() {
+    return SceneManager._scene;
+};
+
+item = function(name, amount=1) {
+    $gameParty.gainItem($dataItems[Yanfly.ItemIdRef[name]], amount);
+};
+
+weapon = function(name, amount=1) {
+    $gameParty.gainItem($dataWeapons[Yanfly.WeaponIdRef[name]], amount);
+};
+
+armor = function(name, amount=1) {
+    $gameParty.gainItem($dataArmors[Yanfly.ArmorIdRef[name]], amount);
 };

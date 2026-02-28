@@ -1,7 +1,7 @@
 {
   "autoplayBgm": true,
   "autoplayBgs": true,
-  "battleback1Name": "Grassland",
+  "battleback1Name": "Meadow",
   "battleback2Name": "Forest",
   "bgm": {
     "name": "dungeon_laeryidyean",
@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 28,
-  "note": "",
+  "note": "<Dungeon>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -6432,6 +6432,13 @@
             "tileId": 0
           },
           "list": [
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Tint set #000000"
+              ]
+            },
             {
               "code": 356,
               "indent": 0,

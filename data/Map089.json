@@ -11130,125 +11130,6 @@
           },
           "list": [
             {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                1,
-                55,
-                0,
-                26,
-                1
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 1,
-              "parameters": [
-                1,
-                57,
-                0,
-                17,
-                4
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\p2Hey, we should at least talk to everyone at the Champion's Banquet."
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 2,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 4,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 4,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 217,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 115,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 411,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 121,
-              "indent": 2,
-              "parameters": [
-                97,
-                97,
-                0
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -11409,7 +11290,66 @@
       "x": 23,
       "y": 39
     },
-    null,
+    {
+      "id": 14,
+      "name": "stove-copy",
+      "note": "<Copy Event: 158, 199>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 112,
+            "characterName": "",
+            "characterIndex": 0,
+            "direction": 2,
+            "pattern": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 31,
+      "y": 11
+    },
     {
       "id": 15,
       "name": "EV015",
@@ -11502,11 +11442,7 @@
                 "Telluria1",
                 3,
                 0,
-                183,
-                55,
-                30,
-                2,
-                0
+                2
               ]
             },
             {
@@ -12178,7 +12114,7 @@
               "code": 356,
               "indent": 1,
               "parameters": [
-                "ShowLocation Dining Room"
+                "ShowLocation Dining Hall"
               ]
             },
             {
@@ -13172,28 +13108,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3You know, that stuff he said about"
+                "\\p3You know, that stuff he said about Telluria undergoing changes?"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "being plagued and not knowing who he"
+                "We're here now, and it doesn't seem like anything's that"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "is? Having his memories jumbled up with"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "someone else's, or something like that?"
+                "crazy... but I'm still on edge."
               ]
             },
             {
@@ -13210,7 +13139,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3It scares me. It really, really scares me."
+                "\\p3I'm scared, honestly."
               ]
             },
             {
@@ -13870,7 +13799,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2The Champion's Banquet is upstairs, right?"
+                "\\p2Let's go upstairs for that meeting!"
               ]
             },
             {
@@ -14277,7 +14206,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "be rested for the Champion's Banquet tomorrow."
+                "be rested for that meeting in the morning."
               ]
             },
             {
@@ -17426,7 +17355,7 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\p2Hey, we should at least talk to everyone at the Champion's Banquet."
+                "\\p2Hey, we should at least talk to everyone at the banquet."
               ]
             },
             {
@@ -17534,14 +17463,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\p2The king is waiting on us... let's"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "make our way to the throne room."
+                "\\p2The meeting is upstairs, not outside, \\N[1]..."
               ]
             },
             {
@@ -19402,7 +19324,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "a ton of bits. You know, adventurer stuff."
+                "a ton of Bits. You know, adventurer stuff."
               ]
             },
             {
@@ -19582,7 +19504,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "a ton of bits. You know, adventurer stuff."
+                "a ton of Bits. You know, adventurer stuff."
               ]
             },
             {
@@ -22441,7 +22363,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\n<Kitchen Worker>Welcome, champions!"
+                "\\n<Kitchen Worker>Welcome, adventurers!"
               ]
             },
             {

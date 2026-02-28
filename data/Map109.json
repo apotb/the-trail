@@ -16,7 +16,7 @@
     "volume": 90
   },
   "disableDashing": false,
-  "displayName": "Village Chief's House - F2",
+  "displayName": "Village Chief's Residence - F2",
   "encounterList": [],
   "encounterStep": 30,
   "height": 22,
@@ -266,13 +266,13 @@
     1536,
     6784,
     3240,
-    3212,
+    3228,
     3228,
     3238,
     6784,
     3240,
     3228,
-    3212,
+    3228,
     3228,
     3238,
     6784,
@@ -288,15 +288,15 @@
     1536,
     1536,
     6771,
-    6797,
-    3232,
-    6795,
+    6785,
+    6785,
+    6785,
     6785,
     6783,
     6785,
-    6797,
-    3232,
-    6795,
+    6785,
+    6785,
+    6785,
     6785,
     6791,
     3216,
@@ -312,13 +312,13 @@
     1536,
     6784,
     7142,
-    3232,
+    7146,
     7139,
     7138,
     7138,
     7138,
     7142,
-    3232,
+    7146,
     7139,
     7138,
     7142,
@@ -335,13 +335,13 @@
     1536,
     6784,
     7148,
-    3232,
+    3242,
     7145,
     7144,
     7144,
     7144,
     7148,
-    3232,
+    3242,
     7145,
     7144,
     7148,
@@ -2336,36 +2336,13 @@
     0,
     0,
     0,
-    5,
-    0,
-    0,
-    0,
-    0,
-    0,
-    5,
-    0,
-    0,
-    0,
-    5,
     0,
     0,
     0,
     0,
     0,
     0,
-    5,
     0,
-    0,
-    0,
-    0,
-    0,
-    5,
-    0,
-    0,
-    0,
-    0,
-    0,
-    5,
     0,
     0,
     0,
@@ -2381,18 +2358,18 @@
     0,
     0,
     0,
+    0,
     5,
     0,
     0,
     0,
     0,
     0,
+    5,
     0,
     0,
     0,
-    0,
-    0,
-    0,
+    5,
     0,
     0,
     0,
@@ -2450,7 +2427,7 @@
     0,
     0,
     0,
-    0,
+    5,
     0,
     0,
     0,
@@ -2537,6 +2514,7 @@
     0,
     0,
     0,
+    5,
     0,
     0,
     0,
@@ -2817,9 +2795,15 @@
     0,
     0,
     0,
+    204,
+    204,
+    204,
     0,
     0,
     0,
+    204,
+    204,
+    204,
     0,
     0,
     0,
@@ -2834,9 +2818,15 @@
     0,
     0,
     0,
+    201,
+    204,
+    201,
     0,
     0,
     0,
+    201,
+    204,
+    201,
     0,
     0,
     0,
@@ -2851,9 +2841,15 @@
     0,
     0,
     0,
+    201,
+    204,
+    201,
     0,
     0,
     0,
+    201,
+    204,
+    201,
     0,
     0,
     0,
@@ -2868,11 +2864,15 @@
     0,
     0,
     0,
+    201,
+    204,
+    201,
     0,
     0,
     0,
-    0,
-    0,
+    201,
+    204,
+    201,
     0,
     0,
     0,
@@ -3398,7 +3398,7 @@
     {
       "id": 6,
       "name": "EV006",
-      "note": "<shadow>",
+      "note": "",
       "pages": [
         {
           "conditions": {
@@ -3418,278 +3418,13 @@
           },
           "directionFix": false,
           "image": {
-            "tileId": 0,
-            "characterName": "Telluria1",
+            "tileId": 513,
+            "characterName": "",
+            "characterIndex": 0,
             "direction": 2,
-            "pattern": 1,
-            "characterIndex": 1
+            "pattern": 0
           },
           "list": [
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                30
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 19,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 19,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p3AH! Uh... hello."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Telluria1",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\chiefSo it is you four... sorry if I startled"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "you. I heard plenty about the great work"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "you've done in Adon, and I've been eagerly"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "anticipating your arrival in Solus Valley."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Telluria1",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\chiefI'd be happy to help you with whatever you"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "need. However... I need some help from you first."
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                0,
-                {
-                  "list": [
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 17,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 17,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                0,
-                {
-                  "list": [
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 39,
-                      "indent": null
-                    },
-                    {
-                      "code": 44,
-                      "parameters": [
-                        {
-                          "name": "Move1",
-                          "volume": 90,
-                          "pitch": 100,
-                          "pan": 0
-                        }
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 39,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 44,
-                  "parameters": [
-                    {
-                      "name": "Move1",
-                      "volume": 90,
-                      "pitch": 100,
-                      "pan": 0
-                    }
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 122,
-              "indent": 0,
-              "parameters": [
-                19,
-                19,
-                1,
-                0,
-                1
-              ]
-            },
             {
               "code": 0,
               "indent": 0,
@@ -3701,6 +3436,240 @@
             "list": [
               {
                 "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 2,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 4,
+      "y": 12
+    },
+    {
+      "id": 7,
+      "name": "EV007",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 513,
+            "characterName": "",
+            "characterIndex": 0,
+            "direction": 2,
+            "pattern": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 2,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 10,
+      "y": 12
+    },
+    {
+      "id": 8,
+      "name": "EV008",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 512,
+            "characterName": "",
+            "characterIndex": 0,
+            "direction": 2,
+            "pattern": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 2,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 4,
+      "y": 11
+    },
+    {
+      "id": 9,
+      "name": "EV009",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 512,
+            "characterName": "",
+            "characterIndex": 0,
+            "direction": 2,
+            "pattern": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 2,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 10,
+      "y": 11
+    },
+    {
+      "id": 10,
+      "name": "EV010",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 13,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 6,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 3,
+            "variableValid": false,
+            "variableValue": 9
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Door1",
+            "direction": 2,
+            "pattern": 0,
+            "characterIndex": 4
+          },
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "indent": null,
                 "parameters": []
               }
             ],
@@ -3713,1486 +3682,8 @@
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
-          "trigger": 3,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 19,
-            "variableValid": true,
-            "variableValue": 5
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 18,
-      "y": 7
-    },
-    {
-      "id": 7,
-      "name": "chiefagain",
-      "note": "<shadow>",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 19,
-            "variableValid": true,
-            "variableValue": 20
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "Telluria1",
-            "direction": 4,
-            "pattern": 1,
-            "characterIndex": 1
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 19,
-            "variableValid": true,
-            "variableValue": 21
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 8,
-      "y": 15
-    },
-    {
-      "id": 8,
-      "name": "EV008",
-      "note": "<Hitbox Right: 1>",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 19,
-            "variableValid": true,
-            "variableValue": 20
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                1,
-                19,
-                0,
-                20,
-                3
-              ]
-            },
-            {
-              "code": 115,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 117,
-              "indent": 0,
-              "parameters": [
-                47
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                1,
-                63,
-                0,
-                15,
-                0
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 1,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        60
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    60
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Hey!"
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                7,
-                {
-                  "list": [
-                    {
-                      "code": 18,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 18,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                0,
-                88,
-                1
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Telluria1",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\chiefOh! You four are back! The large"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "goblin is out of the picture?"
-              ]
-            },
-            {
-              "code": 102,
-              "indent": 1,
-              "parameters": [
-                [
-                  "Yep!",
-                  "Well..."
-                ],
-                1,
-                0,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 402,
-              "indent": 1,
-              "parameters": [
-                0,
-                "Yep!"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 1,
-              "parameters": [
-                1,
-                "Well..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Telluria1",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\chiefYes, well? Did you"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "or did you not?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Actor4",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\p4I think what \\N[1] is trying to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "say is that we had a bit of trouble,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "but we did manage to take it down!"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 404,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Telluria1",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\chiefThat's great!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Telluria1",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\chiefWith the organizer of the goblins"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "gone, we'll be able to freely fish in"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "the area. Thank you so much for all"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "of the help today!"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "Quest 21 Complete Objective 4"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "Quest 21 Change Description Entry To 3"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "Quest Set Completed 21"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 411,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Telluria1",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\chiefWith that Giant Goblin out of the way,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "fishing around the Goblin Grotto should"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "be considerably easier!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Telluria1",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\chiefYou've done good work today."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "Thank you for everything."
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "Quest 21 Complete Objective 4"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "Quest 21 Claim Reward 2"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "Quest Set Completed 21"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 249,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Item",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                1,
-                1
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "The Chief's Chores"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Quest Complete!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Telluria1",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\chiefAs promised, I will aid you in your"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "mission to reach the desert. A soldier is"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "on his way to the border as we speak."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "I have a few additional rewards as well."
-              ]
-            },
-            {
-              "code": 203,
-              "indent": 0,
-              "parameters": [
-                0,
-                0,
-                9,
-                15,
-                0
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                7,
-                {
-                  "list": [
-                    {
-                      "code": 3,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 3,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Equip3",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 125,
-              "indent": 0,
-              "parameters": [
-                0,
-                0,
-                200
-              ]
-            },
-            {
-              "code": 126,
-              "indent": 0,
-              "parameters": [
-                32,
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 126,
-              "indent": 0,
-              "parameters": [
-                33,
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 126,
-              "indent": 0,
-              "parameters": [
-                45,
-                0,
-                0,
-                3
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                7,
-                {
-                  "list": [
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 18,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 18,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Telluria1",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\chiefI hope you four will be able"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "to enter the desert soon."
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                0,
-                84,
-                0
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "Quest 21 Change Description Entry To 3"
-              ]
-            },
-            {
-              "code": 121,
-              "indent": 1,
-              "parameters": [
-                85,
-                85,
-                0
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Telluria1",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\chiefIf he's already got someone there to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "help him, I'm sure it will be done in"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "no time. I'd really recommend heading"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "there quickly if he does."
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 411,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "Quest 21 Change Description Entry To 4"
-              ]
-            },
-            {
-              "code": 121,
-              "indent": 1,
-              "parameters": [
-                84,
-                84,
-                0
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Telluria1",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\chiefI doubt he'll be able to move all"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "that rubble by himself... you may need"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "assistance from Greenfield up north."
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Telluria1",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\chiefBy the way, I recently spoke with someone"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "else on the Dandy Toad hunt. If you're still"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "interested, head to Haven Harbor and look"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "around the docks for someone named Kevin."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4Four-Toed Kevin! Guys, I say we check in on him!"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest Add 24"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                1,
-                1
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "The Dandy Toads of Adon"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "New Quest!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Telluria1",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\chiefIt was good to work with you"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "four. Stay safe out there!"
-              ]
-            },
-            {
-              "code": 221,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Move1",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 122,
-              "indent": 0,
-              "parameters": [
-                19,
-                19,
-                0,
-                0,
-                22
-              ]
-            },
-            {
-              "code": 222,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
           "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 14,
-      "y": 13
-    },
-    null,
-    null,
-    {
-      "id": 11,
-      "name": "EV011",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": true,
-          "trigger": 1,
-          "walkAnime": true,
-          "list": [
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                6,
-                -1,
-                8
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "ShowLocation Master Bedroom"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
-        }
-      ],
-      "x": 10,
-      "y": 13
-    },
-    {
-      "id": 12,
-      "name": "EV012",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": true,
-          "trigger": 1,
-          "walkAnime": true,
+          "walkAnime": false,
           "list": [
             {
               "code": 111,
@@ -5221,6 +3712,360 @@
               "parameters": []
             },
             {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Open1",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 17,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 15,
+                      "indent": null,
+                      "parameters": [
+                        3
+                      ]
+                    },
+                    {
+                      "code": 18,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 15,
+                      "indent": null,
+                      "parameters": [
+                        3
+                      ]
+                    },
+                    {
+                      "code": 19,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 37,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 0,
+                      "indent": null,
+                      "parameters": []
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 17,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "indent": null,
+                  "parameters": [
+                    3
+                  ]
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 18,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "indent": null,
+                  "parameters": [
+                    3
+                  ]
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 19,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 37,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 37,
+                      "indent": null
+                    },
+                    {
+                      "code": 12,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 12,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 38,
+                      "indent": null
+                    },
+                    {
+                      "code": 0,
+                      "indent": null,
+                      "parameters": []
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": true,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 37,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 12,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 12,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 38,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 217,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 18,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 15,
+                      "indent": null,
+                      "parameters": [
+                        3
+                      ]
+                    },
+                    {
+                      "code": 17,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 15,
+                      "indent": null,
+                      "parameters": [
+                        3
+                      ]
+                    },
+                    {
+                      "code": 16,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 38,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 0,
+                      "indent": null,
+                      "parameters": []
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 18,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "indent": null,
+                  "parameters": [
+                    3
+                  ]
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 17,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "indent": null,
+                  "parameters": [
+                    3
+                  ]
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 16,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 38,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Open4",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -5229,6 +4074,449 @@
         }
       ],
       "x": 4,
+      "y": 13
+    },
+    null,
+    null,
+    {
+      "id": 13,
+      "name": "EV013",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 13,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 6,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 3,
+            "variableValid": false,
+            "variableValue": 9
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Door1",
+            "direction": 2,
+            "pattern": 0,
+            "characterIndex": 4
+          },
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "indent": null,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": false,
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                6,
+                -1,
+                8
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "ShowLocation Master Bedroom"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Open1",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 17,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 15,
+                      "indent": null,
+                      "parameters": [
+                        3
+                      ]
+                    },
+                    {
+                      "code": 18,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 15,
+                      "indent": null,
+                      "parameters": [
+                        3
+                      ]
+                    },
+                    {
+                      "code": 19,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 37,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 0,
+                      "indent": null,
+                      "parameters": []
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 17,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "indent": null,
+                  "parameters": [
+                    3
+                  ]
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 18,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "indent": null,
+                  "parameters": [
+                    3
+                  ]
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 19,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 37,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 37,
+                      "indent": null
+                    },
+                    {
+                      "code": 12,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 12,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 38,
+                      "indent": null
+                    },
+                    {
+                      "code": 0,
+                      "indent": null,
+                      "parameters": []
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": true,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 37,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 12,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 12,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 38,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 217,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 18,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 15,
+                      "indent": null,
+                      "parameters": [
+                        3
+                      ]
+                    },
+                    {
+                      "code": 17,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 15,
+                      "indent": null,
+                      "parameters": [
+                        3
+                      ]
+                    },
+                    {
+                      "code": 16,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 38,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 0,
+                      "indent": null,
+                      "parameters": []
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 18,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "indent": null,
+                  "parameters": [
+                    3
+                  ]
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 17,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "indent": null,
+                  "parameters": [
+                    3
+                  ]
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 16,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 38,
+                  "indent": null,
+                  "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Open4",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ]
+        }
+      ],
+      "x": 10,
       "y": 13
     }
   ]

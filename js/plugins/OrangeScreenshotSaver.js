@@ -30,6 +30,10 @@ var OrangeScreenshotSaver = OrangeScreenshotSaver || {};
     if (!Utils.isNwjs()) return;
     try {
       $gameSystem.setShowMapQuestWindow(false);
+      if (scene() instanceof Scene_Map) {
+        scene()._gabWindow?.hide();
+        scene()._mapNameWindow?.hide();
+      }
 
       if (!fs.existsSync(screenshotPath)) {
         fs.mkdirSync(screenshotPath, { recursive: true });
@@ -48,6 +52,10 @@ var OrangeScreenshotSaver = OrangeScreenshotSaver || {};
   
           setTimeout(function() {
             $gameSystem.setShowMapQuestWindow(true);
+            if (scene() instanceof Scene_Map) {
+              scene()._gabWindow?.show();
+              scene()._mapNameWindow?.show();
+            }
           }, 100);
         });
       }, 100);

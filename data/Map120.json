@@ -2672,13 +2672,6 @@
           },
           "list": [
             {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "<Icon on Event: 576>"
-              ]
-            },
-            {
               "code": 205,
               "indent": 0,
               "parameters": [
@@ -2889,14 +2882,24 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\willThere you four are! The adventurers that slayed"
+                "\\willWelcome to Will's Smith Shop! What brings you to this establishment?"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Laeryidyean... I am honored to meet you all."
+                "\\p2Looking for knowledge... and we heard you have a magic forge?"
               ]
             },
             {
@@ -2913,601 +2916,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\willI'm assuming you're here for the magic"
+                "\\willThat is correct! Though it's not open to the public... my bloodline"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "forge? Follow me, I'll show you around."
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                0,
-                {
-                  "list": [
-                    {
-                      "code": 3,
-                      "indent": null
-                    },
-                    {
-                      "code": 3,
-                      "indent": null
-                    },
-                    {
-                      "code": 3,
-                      "indent": null
-                    },
-                    {
-                      "code": 3,
-                      "indent": null
-                    },
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 3,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 3,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 3,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 3,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 18,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 18,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                0,
-                {
-                  "list": [
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 16,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 16,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                0,
-                {
-                  "list": [
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                0,
-                {
-                  "list": [
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 18,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 18,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Telluria1",
-                2,
-                0,
-                2
+                "has guarded all 3 of Trailia's Eternal Flames for hundreds of years."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\willHere's the forge room. Smithing tables,"
+                "If I let anybody use the magic forge, it'd only be a matter time"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "metal reserves, a cooling vat... and of"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "course, the magic forge itself."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Telluria1",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\willThis forge can create powerful magic-imbued"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "equipment. It has been guarded by my family"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "for hundreds and hundreds of years."
+                "till someone spills their drink on the sacred fire!"
               ]
             },
             {
@@ -3524,7 +2954,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3Interesting story... so, can we get forging?"
+                "\\p3So if it's not open to the public, how does anyone else use it?"
               ]
             },
             {
@@ -3541,28 +2971,45 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\willWell... I was actually going to get to that next."
+                "\\willOnly those with the blessing of a Smith may use a magic forge."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "I foolishly brought several tools critical to forge"
+                "I think it's been at least 3 years since I last gave my blessing..."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "maintainence with me to the mine. I was ambushed by"
+                "but if you're interested, tell me a bit about yourselves?"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                6,
+                0,
+                2
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "monsters and unfortunately dropped everything I needed."
+                "\\p3We are the \\N[19]! In the name of Trailia, we swear"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "to defend the people of the Overworld from evil!"
               ]
             },
             {
@@ -3579,28 +3026,59 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\willI'll do as much as I can to set up the"
+                "\\willA righteous cause... you know what, I might have a deal for you. I was"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "forge for now. If you four can go to the"
+                "on a mining trip at the abandoned mine just north of town,"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "mine and retrieve my items, you'll be able"
+                "when I was surrounded by monsters! Luckily I got out in the"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "to start crafting as soon as you return!"
+                "nick of time... but I had to drop everything I had to escape."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Telluria1",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\willIf you can get those items back, I'll give you my blessing."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "And if you need knowledge, I've got plenty of that too!"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Quest Add 27"
               ]
             },
             {
@@ -3635,13 +3113,6 @@
               ]
             },
             {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest Add 27"
-              ]
-            },
-            {
               "code": 101,
               "indent": 0,
               "parameters": [
@@ -3655,7 +3126,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\willWhile you're there, you may as well mine some ore."
+                "\\willYou'll need the proper tool if you're going mining..."
               ]
             },
             {
@@ -3666,11 +3137,19 @@
                 {
                   "list": [
                     {
-                      "code": 3,
+                      "code": 2,
                       "indent": null
                     },
                     {
-                      "code": 16,
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 19,
                       "indent": null
                     },
                     {
@@ -3693,7 +3172,19 @@
                       "indent": null
                     },
                     {
-                      "code": 18,
+                      "code": 3,
+                      "indent": null
+                    },
+                    {
+                      "code": 3,
+                      "indent": null
+                    },
+                    {
+                      "code": 3,
+                      "indent": null
+                    },
+                    {
+                      "code": 16,
                       "indent": null
                     },
                     {
@@ -3711,7 +3202,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "code": 3,
+                  "code": 2,
                   "indent": null
                 }
               ]
@@ -3721,7 +3212,27 @@
               "indent": 0,
               "parameters": [
                 {
-                  "code": 16,
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 19,
                   "indent": null
                 }
               ]
@@ -3762,7 +3273,37 @@
               "indent": 0,
               "parameters": [
                 {
-                  "code": 18,
+                  "code": 3,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 3,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 3,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 16,
                   "indent": null
                 }
               ]
@@ -3797,49 +3338,121 @@
               ]
             },
             {
-              "code": 205,
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Telluria1",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\willIf you're trying to get to the mine, do NOT leave town!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Exit my shop and head straight north, you can't miss it."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "While you're here... would you like to buy anything?"
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 0,
+              "parameters": [
+                [
+                  "Sure!",
+                  "Not right now."
+                ],
+                1,
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 402,
               "indent": 0,
               "parameters": [
                 0,
-                {
-                  "list": [
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 18,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
+                "Sure!"
               ]
             },
             {
-              "code": 505,
-              "indent": 0,
+              "code": 101,
+              "indent": 1,
               "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
+                "Telluria1",
+                2,
+                0,
+                2
               ]
             },
             {
-              "code": 505,
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\willHere's what I've got:"
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 1,
+              "parameters": [
+                46
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 402,
               "indent": 0,
               "parameters": [
-                {
-                  "code": 18,
-                  "indent": null
-                }
+                1,
+                "Not right now."
               ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Telluria1",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\willThat's quite alright."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 101,
@@ -3855,42 +3468,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\willThe mine is accessed by following a path"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "leading to the north end of town. Leave the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "building and go up, I'm sure you'll find it."
-              ]
-            },
-            {
-              "code": 221,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 217,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 203,
-              "indent": 0,
-              "parameters": [
-                0,
-                0,
-                11,
-                6,
-                2
+                "\\willGood luck in the mine!"
               ]
             },
             {
@@ -3914,11 +3492,6 @@
               "parameters": [
                 "target.clearIconOnEvent();"
               ]
-            },
-            {
-              "code": 222,
-              "indent": 0,
-              "parameters": []
             },
             {
               "code": 0,
@@ -4048,14 +3621,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\willAh, welcome back, adventurers!"
+                "\\willWelcome back, \\N[19]!"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Do you need anything from me?"
+                "How can I help you?"
               ]
             },
             {
@@ -4105,78 +3678,14 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\willAh, alright. I'll see what I've got today."
+                "\\willHere's what I've got:"
               ]
             },
             {
-              "code": 302,
+              "code": 117,
               "indent": 2,
               "parameters": [
-                2,
-                113,
-                0,
-                0,
-                false
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                39,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                43,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                67,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                64,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                55,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                54,
-                0,
-                0
+                46
               ]
             },
             {
@@ -4222,45 +3731,28 @@
               ]
             },
             {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Telluria1",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\willOh, you do? That's great!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Telluria1",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\willCan I have them back?"
-              ]
-            },
-            {
               "code": 111,
               "indent": 2,
               "parameters": [
                 8,
                 100
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 3,
+              "parameters": [
+                "Telluria1",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 3,
+              "parameters": [
+                "\\willReally! Fantastic!"
               ]
             },
             {
@@ -4287,7 +3779,7 @@
               "code": 401,
               "indent": 3,
               "parameters": [
-                "\\will..."
+                "\\willDo you now? I don't seem them in front of me..."
               ]
             },
             {
@@ -4304,21 +3796,14 @@
               "code": 401,
               "indent": 3,
               "parameters": [
-                "\\willI'm still preparing the forge, so"
+                "\\willIf you're trying to get to the mine, do NOT leave town!"
               ]
             },
             {
               "code": 401,
               "indent": 3,
               "parameters": [
-                "rushing back here without the items"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "isn't going to do anything for you."
+                "Exit my shop and head straight north, you can't miss it."
               ]
             },
             {
@@ -4467,14 +3952,129 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\willAs I promised, the forge is ready."
+                "\\willCan't believe I'm actually doing this... but I did"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "Start making some powerful gear!"
+                "make a promise. Go ahead, use the magic forge and"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "craft some new equipment for yourselves!"
+              ]
+            },
+            {
+              "code": 249,
+              "indent": 2,
+              "parameters": [
+                {
+                  "name": "Victory1",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "You have received the \\fbBLACKSMITH'S BLESSING\\fr!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "Gain access to all three magic forges powered by Trailia's Eternal Flames!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "Telluria1",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\willOnce you reach Telluria Castle, go to the local smithery."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "It's run by my younger brother Donovan, and contains an"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "even stronger magic forge!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "Telluria1",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\willAnything else I can help you with? If I recall"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "correctly, you were looking for information."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "Actor4",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\p3Right... is the name \\c[18]Apocalypse\\c[0] familiar to you at all?"
               ]
             },
             {
@@ -4508,21 +4108,38 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\willSo... you four are going to Telluria Castle"
+                "\\willI haven't heard that name in a long time..."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "Telluria1",
+                2,
+                0,
+                2
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "next? I'm assuming that you don't know the"
+                "\\willI actually specialized in researching \\c[18]him\\c[0]."
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "location of \\c[18]Apocalypse\\c[0] just yet."
+                "Well, technically, an event involving \\c[18]him\\c[0]."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "It took place roughly a millenium ago."
               ]
             },
             {
@@ -4530,7 +4147,7 @@
               "indent": 2,
               "parameters": [
                 "Actor4",
-                3,
+                2,
                 0,
                 2
               ]
@@ -4539,7 +4156,7 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\p4Yeah..."
+                "\\p3So you haven't heard the rumors of \\c[18]his\\c[0] return?"
               ]
             },
             {
@@ -4556,28 +4173,45 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\willTelluria Castle is where all the"
+                "\\will\\c[18]Apocalypse\\c[0] is coming back? They must be rumors indeed..."
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "strongest adventurers gather. If"
+                "if \\c[18]he\\c[0] returns to the Overworld, we can all consider"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "anyone will know something, it'll"
+                "ourselves good as dead. What \\c[18]he\\c[0] did 1000 years ago"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "be someone there."
+                "was unspeakable... a slaughter like no other."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "Actor4",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\p3Sounds interesting..."
               ]
             },
             {
@@ -4594,21 +4228,28 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\willBut if you don't have to leave right"
+                "\\willI won't bore you with the details if it won't help"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "away, I really need your help. And"
+                "your mission. But trust me, this history matters."
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "it's not another personal favor."
+                "In fact, the effects of \\c[18]Apocalypse\\c[0]'s actions can"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "still be felt in the Blazing Sands to this day."
               ]
             },
             {
@@ -4625,34 +4266,22 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\willThe Blazing Sands have a dark history..."
+                "\\willIf you're interested in helping me conclude"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "if you're interested in helping me out"
+                "research on some ancient conflicts, just say"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "with concluding some ancient conflicts,"
+                "the word. If not, that's quite alright..."
               ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "just say the word. Good luck out there."
-              ]
-            },
-            {
-              "code": 221,
-              "indent": 2,
-              "parameters": []
             },
             {
               "code": 355,
@@ -4675,25 +4304,6 @@
                 49,
                 49,
                 0
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 2,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 222,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 356,
-              "indent": 2,
-              "parameters": [
-                "Quest 4 Show Objective 3"
               ]
             },
             {
@@ -4857,6 +4467,43 @@
               ]
             },
             {
+              "code": 205,
+              "indent": 2,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 45,
+                      "parameters": [
+                        "this.clearIconOnEvent();"
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 2,
+              "parameters": [
+                {
+                  "code": 45,
+                  "parameters": [
+                    "this.clearIconOnEvent();"
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
               "code": 242,
               "indent": 2,
               "parameters": [
@@ -4961,28 +4608,21 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\willThe Blazing Sands have long been"
+                "\\willThe Blazing Sands have long been a region"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "a region home to prosperity and"
+                "home to prosperity and magic. However, it's"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "magic. However, it's also home to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "fear and despair."
+                "also home to fear and despair."
               ]
             },
             {
@@ -4992,14 +4632,6 @@
                 0,
                 {
                   "list": [
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
                     {
                       "code": 16,
                       "indent": null
@@ -5011,26 +4643,6 @@
                   "repeat": false,
                   "skippable": false,
                   "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
                 }
               ]
             },
@@ -5058,21 +4670,21 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\willI'm sure you four already know the"
+                "\\willI'm sure you four already know the story"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "story of the Great Collapse. Have you"
+                "of the Great Collapse. Have you seen the"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "ever heard about the ruined fortress?"
+                "Ruined Fortress in this very desert?"
               ]
             },
             {
@@ -5080,8 +4692,8 @@
               "indent": 2,
               "parameters": [
                 [
-                  "Yes.",
-                  "No."
+                  "Yes",
+                  "No"
                 ],
                 1,
                 0,
@@ -5094,7 +4706,7 @@
               "indent": 2,
               "parameters": [
                 0,
-                "Yes."
+                "Yes"
               ]
             },
             {
@@ -5111,7 +4723,7 @@
               "code": 401,
               "indent": 3,
               "parameters": [
-                "\\willGood. Keep it in mind."
+                "\\willGood, so you know what I'm talking about."
               ]
             },
             {
@@ -5124,7 +4736,7 @@
               "indent": 2,
               "parameters": [
                 1,
-                "No."
+                "No"
               ]
             },
             {
@@ -5141,14 +4753,14 @@
               "code": 401,
               "indent": 3,
               "parameters": [
-                "\\willNo? For future reference, it's"
+                "\\willWell, for future reference, it's in"
               ]
             },
             {
               "code": 401,
               "indent": 3,
               "parameters": [
-                "on the east end of the desert."
+                "the north-eastern Blazing Sands."
               ]
             },
             {
@@ -5469,7 +5081,7 @@
                       "indent": null
                     },
                     {
-                      "code": 2,
+                      "code": 18,
                       "indent": null
                     },
                     {
@@ -5507,7 +5119,7 @@
               "indent": 2,
               "parameters": [
                 {
-                  "code": 2,
+                  "code": 18,
                   "indent": null
                 }
               ]
@@ -5636,7 +5248,11 @@
                 {
                   "list": [
                     {
-                      "code": 3,
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 2,
                       "indent": null
                     },
                     {
@@ -5658,7 +5274,17 @@
               "indent": 2,
               "parameters": [
                 {
-                  "code": 3,
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 2,
+              "parameters": [
+                {
+                  "code": 2,
                   "indent": null
                 }
               ]
@@ -5687,7 +5313,7 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\willOne of Apocalypse's strongest generals took"
+                "\\willOne of \\c[18]Apocalypse\\c[0]'s strongest generals took"
               ]
             },
             {
@@ -5977,43 +5603,6 @@
               "parameters": []
             },
             {
-              "code": 205,
-              "indent": 2,
-              "parameters": [
-                0,
-                {
-                  "list": [
-                    {
-                      "code": 45,
-                      "parameters": [
-                        "this.clearIconOnEvent();"
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 45,
-                  "parameters": [
-                    "this.clearIconOnEvent();"
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
               "code": 115,
               "indent": 2,
               "parameters": []
@@ -6085,14 +5674,7 @@
               "code": 401,
               "indent": 3,
               "parameters": [
-                "\\willI can see you trying to hold"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "in a laugh, \\N[2]."
+                "\\willNot funny..."
               ]
             },
             {
@@ -6144,20 +5726,10 @@
               ]
             },
             {
-              "code": 101,
-              "indent": 3,
-              "parameters": [
-                "Telluria1",
-                2,
-                0,
-                2
-              ]
-            },
-            {
               "code": 401,
               "indent": 3,
               "parameters": [
-                "\\willMind if I take a quick look?"
+                "Mind if I take a quick look?"
               ]
             },
             {
@@ -6323,7 +5895,14 @@
               "code": 401,
               "indent": 3,
               "parameters": [
-                "what you have to do. Go save those souls!"
+                "what you have to do. Make haste to the"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 3,
+              "parameters": [
+                "Ruined Fort, and save those souls!"
               ]
             },
             {
@@ -6495,21 +6074,14 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\willSorry about that, just have"
+                "\\willSorry about that, just have to stay consistent."
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "to stay consistent. Can't make"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "exceptions even for you guys."
+                "Can't make exceptions even for you four."
               ]
             },
             {
@@ -7440,6 +7012,23 @@
           },
           "list": [
             {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "You need the \\fbBLACKSMITH'S BLESSING\\fr to use the magic forge!"
+              ]
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -7519,8 +7108,8 @@
               "indent": 0,
               "parameters": [
                 [
-                  "Yes.",
-                  "No."
+                  "Yes",
+                  "No"
                 ],
                 1,
                 0,
@@ -7851,7 +7440,7 @@
               "code": 356,
               "indent": 1,
               "parameters": [
-                "ShowLocation Forge Room"
+                "ShowLocation Magic Forge"
               ]
             },
             {

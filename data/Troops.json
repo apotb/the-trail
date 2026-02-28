@@ -22,156 +22,12 @@
           "enemyValid": false,
           "switchId": 1,
           "switchValid": false,
-          "turnA": 1,
+          "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "People1",
-              6,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\headAlright \\N[1], it's time for battle."
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "Here's the basics: defeat your enemies"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "before they defeat you!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 0,
-            "parameters": []
-          }
-        ],
-        "span": 0
-      },
-      {
-        "conditions": {
-          "actorHp": 50,
-          "actorId": 1,
-          "actorValid": false,
-          "enemyHp": 50,
-          "enemyIndex": 0,
-          "enemyValid": false,
-          "switchId": 1,
-          "switchValid": false,
-          "turnA": 2,
-          "turnB": 0,
-          "turnEnding": false,
-          "turnValid": true
-        },
-        "list": [
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "People1",
-              6,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\headBoost points are the key to success. You'll generate"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "1 BP per turn, except for turns you use a boost."
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "Guarding will net you an extra BP."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "People1",
-              6,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\headTry out an empowered attack against this slime!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 0,
-            "parameters": []
-          }
-        ],
-        "span": 0
-      },
-      {
-        "conditions": {
-          "actorHp": 50,
-          "actorId": 1,
-          "actorValid": false,
-          "enemyHp": 50,
-          "enemyIndex": 0,
-          "enemyValid": false,
-          "switchId": 1,
-          "switchValid": false,
-          "turnA": 3,
-          "turnB": 0,
-          "turnEnding": false,
-          "turnValid": true
-        },
-        "list": [
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "People1",
-              6,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\headKeep attacking, \\N[1]! You've got this!"
-            ]
-          },
           {
             "code": 0,
             "indent": 0,
@@ -258,7 +114,7 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\sol\\N[1]... don't forget... your boosts..."
+              "\\solCivilian... don't forget... your boosts..."
             ]
           },
           {
@@ -628,8 +484,8 @@
       },
       {
         "enemyId": 35,
-        "x": 210,
-        "y": 331,
+        "x": 222,
+        "y": 256,
         "hidden": true
       }
     ],
@@ -885,37 +741,31 @@
     "id": 10,
     "members": [
       {
-        "enemyId": 4,
-        "x": 324,
-        "y": 349,
+        "enemyId": 6,
+        "x": 366,
+        "y": 289,
         "hidden": false
       },
       {
         "enemyId": 6,
-        "x": 390,
-        "y": 280,
+        "x": 300,
+        "y": 409,
         "hidden": false
       },
       {
         "enemyId": 32,
-        "x": 192,
-        "y": 409,
+        "x": 153,
+        "y": 325,
         "hidden": true
       },
       {
-        "enemyId": 35,
+        "enemyId": 6,
         "x": 216,
-        "y": 295,
-        "hidden": true
-      },
-      {
-        "enemyId": 80,
-        "x": 297,
-        "y": 181,
+        "y": 220,
         "hidden": false
       }
     ],
-    "name": "Blue Slime, Giant Rat, Living Plant",
+    "name": "Giant Rat x3",
     "pages": [
       {
         "conditions": {
@@ -963,48 +813,6 @@
             "indent": 1,
             "parameters": [
               "An Albino Rat joined the enemy troop!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 1,
-            "parameters": []
-          },
-          {
-            "code": 412,
-            "indent": 0,
-            "parameters": []
-          },
-          {
-            "code": 111,
-            "indent": 0,
-            "parameters": [
-              12,
-              "$gameSystem.rareEnemyRoll()"
-            ]
-          },
-          {
-            "code": 335,
-            "indent": 1,
-            "parameters": [
-              3
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 1,
-            "parameters": [
-              "",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 1,
-            "parameters": [
-              "A Rainbow Slime joined the enemy troop!"
             ]
           },
           {
@@ -1085,6 +893,12 @@
         "x": 432,
         "y": 256,
         "hidden": false
+      },
+      {
+        "enemyId": 35,
+        "x": 171,
+        "y": 265,
+        "hidden": true
       }
     ],
     "name": "Blue Slime x3",
@@ -1102,9 +916,51 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              3
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Rainbow Slime joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
           {
             "code": 0,
             "indent": 0,
@@ -1326,7 +1182,7 @@
           "actorHp": 50,
           "actorId": 1,
           "actorValid": false,
-          "enemyHp": 30,
+          "enemyHp": 50,
           "enemyIndex": 0,
           "enemyValid": true,
           "switchId": 1,
@@ -2030,7 +1886,7 @@
             "code": 242,
             "indent": 0,
             "parameters": [
-              2
+              4
             ]
           },
           {
@@ -2071,7 +1927,7 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\laeYou... you have defeated me."
+              "\\lae\\shakeYou... have closed the gap."
             ]
           },
           {
@@ -2088,28 +1944,14 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\laeI suppose... I suppose that this"
+              "\\lae\\shakeThe world will change.\\! Telluria... will feel it first.\\!"
             ]
           },
           {
             "code": 401,
             "indent": 0,
             "parameters": [
-              "was fair. Yes, you won because"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "I was weak, and you were stronger"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "than I. That is it."
+              "Nothing... will remain the same."
             ]
           },
           {
@@ -2126,227 +1968,7 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\lae\\shakeI couldn't... I couldn't"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "work up the nerve."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Boss1",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\lae\\shakeEven with this damned plague,"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "I can't let go of what makes"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "me... me."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Boss1",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\lae\\shakeI'm not Laeryidyean. I am..."
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "I... am..."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Boss1",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\lae\\shakeI don't even know anymore."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Boss1",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\lae\\shakeI don't remember my name. I"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "don't remember what I looked like."
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "I don't remember my friends, my"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "family. I don't remember anyone."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Boss1",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\lae\\shakeMy memories aren't mine anymore."
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "It's all just jumbled together."
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "Everything is just a meaningless"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "pile of nothingness."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Boss1",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\lae\\shakeAll I remember... is \\c[18]him\\c[0]."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Boss1",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\lae\\shakeI don't deserve to live."
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "Just end this. Land the final"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "blow. Kill me. Free me."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Boss1",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\lae\\lsoffF\\.R\\.E\\.E \\.M\\.E \\.F\\.R\\.O\\.M \\.T\\.H\\.I\\.S \\.C\\.U\\.R\\.S\\.E\\.."
+              "\\lae\\shake\\c[18]He\\c[0] will slumber no longer."
             ]
           },
           {
@@ -2389,23 +2011,6 @@
             "indent": 0,
             "parameters": [
               300
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Actor4",
-              2,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\p3\\lsonWell, there we go. We're officially done now."
             ]
           },
           {
@@ -2758,7 +2363,7 @@
             "code": 242,
             "indent": 0,
             "parameters": [
-              2
+              4
             ]
           },
           {
@@ -2772,20 +2377,10 @@
             ]
           },
           {
-            "code": 101,
+            "code": 230,
             "indent": 0,
             "parameters": [
-              "Elemental",
-              16,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\waterOuch."
+              120
             ]
           },
           {
@@ -2802,14 +2397,7 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\waterYou guys... you guys"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "are pretty strong."
+              "\\water\\shakeOuch."
             ]
           },
           {
@@ -2826,14 +2414,7 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\waterDidn't think... didn't"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "think you'd make it this far."
+              "\\water\\shakeDidn't think... you'd really get me..."
             ]
           },
           {
@@ -2850,7 +2431,7 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\water..."
+              "\\water\\shakeEven if I'm gone for now..."
             ]
           },
           {
@@ -2867,113 +2448,7 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\waterI guess... messing with those"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "soldiers wasn't the best idea,"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "was it?"
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Elemental",
-              16,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\water\\shakeBut, still..."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Elemental",
-              16,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\water\\shake...you can't stop the flow of water."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Elemental",
-              16,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\water\\shakeI may be good as dead for now,"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "but I can guarantee you... that..."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Elemental",
-              16,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\water\\shake...that..."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Elemental",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\water...I will be back."
+              "\\water...you can never stop the flow of water."
             ]
           },
           {
@@ -2999,23 +2474,6 @@
             "indent": 0,
             "parameters": [
               120
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Actor4",
-              1,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\p2Huh."
             ]
           },
           {
@@ -3454,8 +2912,27 @@
   },
   {
     "id": 31,
-    "members": [],
-    "name": "",
+    "members": [
+      {
+        "enemyId": 94,
+        "x": 370,
+        "y": 199,
+        "hidden": false
+      },
+      {
+        "enemyId": 94,
+        "x": 279,
+        "y": 343,
+        "hidden": false
+      },
+      {
+        "enemyId": 94,
+        "x": 197,
+        "y": 214,
+        "hidden": false
+      }
+    ],
+    "name": "Rattlesnake x3",
     "pages": [
       {
         "conditions": {
@@ -3649,24 +3126,30 @@
     "members": [
       {
         "enemyId": 23,
-        "x": 298,
-        "y": 361,
+        "x": 325,
+        "y": 364,
         "hidden": false
       },
       {
         "enemyId": 23,
-        "x": 353,
-        "y": 256,
+        "x": 431,
+        "y": 190,
         "hidden": false
       },
       {
         "enemyId": 35,
-        "x": 228,
-        "y": 286,
+        "x": 102,
+        "y": 355,
         "hidden": true
+      },
+      {
+        "enemyId": 23,
+        "x": 243,
+        "y": 220,
+        "hidden": false
       }
     ],
-    "name": "Red Slime x2",
+    "name": "Red Slime x3",
     "pages": [
       {
         "conditions": {
@@ -3788,9 +3271,15 @@
         "x": 390,
         "y": 205,
         "hidden": false
+      },
+      {
+        "enemyId": 24,
+        "x": 168,
+        "y": 172,
+        "hidden": false
       }
     ],
-    "name": "Bat x2",
+    "name": "Bat x3",
     "pages": [
       {
         "conditions": {
@@ -3826,9 +3315,15 @@
         "x": 249,
         "y": 352,
         "hidden": false
+      },
+      {
+        "enemyId": 25,
+        "x": 372,
+        "y": 190,
+        "hidden": false
       }
     ],
-    "name": "Skeleton Knight",
+    "name": "Skeleton Knight x2",
     "pages": [
       {
         "conditions": {
@@ -4511,6 +4006,13 @@
               0,
               1,
               24
+            ]
+          },
+          {
+            "code": 230,
+            "indent": 0,
+            "parameters": [
+              120
             ]
           },
           {
@@ -5743,7 +5245,7 @@
             "indent": 0,
             "parameters": [
               12,
-              "$gameTroop._enemies.some(e => e.passiveStatesRaw().contains(57)) && $gameActors.actor(7).name() != 'Fido'"
+              "$gameTroop._enemies.some(e => e.passiveStatesRaw().contains(57)) && $gameParty.pet().name() != 'Fido'"
             ]
           },
           {
@@ -5791,7 +5293,14 @@
             "code": 655,
             "indent": 0,
             "parameters": [
-              "  a._watchfulGaze = 0"
+              "  a._watchfulGaze = 0;"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "  a._flashbangUses = 0;"
             ]
           },
           {
@@ -9550,12 +9059,18 @@
       },
       {
         "enemyId": 85,
+        "x": 132,
+        "y": 328,
+        "hidden": true
+      },
+      {
+        "enemyId": 73,
         "x": 225,
         "y": 202,
-        "hidden": true
+        "hidden": false
       }
     ],
-    "name": "Poltergeist x2",
+    "name": "Poltergeist x3",
     "pages": [
       {
         "conditions": {
@@ -9585,7 +9100,7 @@
             "code": 335,
             "indent": 1,
             "parameters": [
-              1
+              2
             ]
           },
           {
@@ -10752,8 +10267,8 @@
     "members": [
       {
         "enemyId": 79,
-        "x": 300,
-        "y": 301,
+        "x": 294,
+        "y": 286,
         "hidden": false
       }
     ],
@@ -11619,13 +11134,6 @@
         },
         "list": [
           {
-            "code": 242,
-            "indent": 0,
-            "parameters": [
-              2
-            ]
-          },
-          {
             "code": 101,
             "indent": 0,
             "parameters": [
@@ -11709,18 +11217,6 @@
             "indent": 0,
             "parameters": [
               "$gameTroop._enemies[0]._phase = 2;"
-            ]
-          },
-          {
-            "code": 241,
-            "indent": 0,
-            "parameters": [
-              {
-                "name": "battle_apocalypse_2",
-                "volume": 90,
-                "pitch": 100,
-                "pan": 0
-              }
             ]
           },
           {
@@ -11826,7 +11322,7 @@
             "code": 242,
             "indent": 0,
             "parameters": [
-              2
+              4
             ]
           },
           {
@@ -13666,6 +13162,649 @@
       }
     ],
     "name": "Cleftface Zealot x3",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 118,
+    "members": [
+      {
+        "enemyId": 91,
+        "x": 195,
+        "y": 265,
+        "hidden": false
+      },
+      {
+        "enemyId": 92,
+        "x": 411,
+        "y": 184,
+        "hidden": true
+      },
+      {
+        "enemyId": 92,
+        "x": 345,
+        "y": 376,
+        "hidden": true
+      }
+    ],
+    "name": "Baron Smirnoff",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameTemp._bossRush"
+            ]
+          },
+          {
+            "code": 115,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              0,
+              0,
+              24
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 75,
+          "enemyIndex": 0,
+          "enemyValid": true,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": true,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Evil1",
+              7,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "\\smirnoffI'm getting bored... let's end this."
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "You're no match for my electric projections!"
+            ]
+          },
+          {
+            "code": 250,
+            "indent": 0,
+            "parameters": [
+              {
+                "name": "Ice4",
+                "volume": 90,
+                "pitch": 70,
+                "pan": 0
+              }
+            ]
+          },
+          {
+            "code": 250,
+            "indent": 0,
+            "parameters": [
+              {
+                "name": "Starlight",
+                "volume": 90,
+                "pitch": 100,
+                "pan": 0
+              }
+            ]
+          },
+          {
+            "code": 225,
+            "indent": 0,
+            "parameters": [
+              1,
+              9,
+              90,
+              true
+            ]
+          },
+          {
+            "code": 225,
+            "indent": 0,
+            "parameters": [
+              1,
+              9,
+              180,
+              false
+            ]
+          },
+          {
+            "code": 250,
+            "indent": 0,
+            "parameters": [
+              {
+                "name": "Item3",
+                "volume": 90,
+                "pitch": 70,
+                "pan": 0
+              }
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 0,
+            "parameters": [
+              1
+            ]
+          },
+          {
+            "code": 337,
+            "indent": 0,
+            "parameters": [
+              1,
+              223,
+              false
+            ]
+          },
+          {
+            "code": 230,
+            "indent": 0,
+            "parameters": [
+              60
+            ]
+          },
+          {
+            "code": 250,
+            "indent": 0,
+            "parameters": [
+              {
+                "name": "Item3",
+                "volume": 90,
+                "pitch": 70,
+                "pan": 0
+              }
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 0,
+            "parameters": [
+              2
+            ]
+          },
+          {
+            "code": 337,
+            "indent": 0,
+            "parameters": [
+              2,
+              223,
+              false
+            ]
+          },
+          {
+            "code": 230,
+            "indent": 0,
+            "parameters": [
+              60
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Evil1",
+              7,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "\\smirnoffThis is the end of the line, commoners!"
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "Go back to your little villages!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": true,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": true,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Evil1",
+              7,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "\\smirnoffThis is far as you shall go!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 25,
+          "enemyIndex": 0,
+          "enemyValid": true,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": true,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Evil1",
+              7,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "\\smirnoffI grow tired of your insolence! This ends now!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 0,
+          "enemyIndex": 0,
+          "enemyValid": true,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 331,
+            "indent": 0,
+            "parameters": [
+              -1,
+              1,
+              0,
+              9999,
+              true
+            ]
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameTemp._bossRush"
+            ]
+          },
+          {
+            "code": 115,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 313,
+            "indent": 0,
+            "parameters": [
+              0,
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "code": 242,
+            "indent": 0,
+            "parameters": [
+              2
+            ]
+          },
+          {
+            "code": 230,
+            "indent": 0,
+            "parameters": [
+              120
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Evil1",
+              31,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "\\smirnoffWell... well... well..."
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Evil1",
+              31,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "\\smirnoffNice work... commoners..."
+            ]
+          },
+          {
+            "code": 230,
+            "indent": 0,
+            "parameters": [
+              120
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Evil1",
+              31,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "\\smirnoffI might... need to take... a nap..."
+            ]
+          },
+          {
+            "code": 230,
+            "indent": 0,
+            "parameters": [
+              60
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              0,
+              1,
+              24
+            ]
+          },
+          {
+            "code": 230,
+            "indent": 0,
+            "parameters": [
+              120
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 119,
+    "members": [
+      {
+        "enemyId": 26,
+        "x": 224,
+        "y": 368,
+        "hidden": false
+      },
+      {
+        "enemyId": 85,
+        "x": 129,
+        "y": 256,
+        "hidden": true
+      },
+      {
+        "enemyId": 26,
+        "x": 288,
+        "y": 208,
+        "hidden": false
+      }
+    ],
+    "name": "Lost Soul x2",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              1
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Gilded Ghost joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 120,
+    "members": [
+      {
+        "enemyId": 93,
+        "x": 258,
+        "y": 301,
+        "hidden": false
+      }
+    ],
+    "name": "Brown Bear",
     "pages": [
       {
         "conditions": {

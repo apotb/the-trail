@@ -410,9 +410,9 @@ DataManager.defaultClassRestrictions = function(obj) {
   if (obj.name == "") return;
   if (DataManager.isWeapon(obj)) switch (obj.wtypeId) {
     case 1:  // Generic
+    case 6:  // Spear
       return;
     case 2:  // Sword
-    case 6:  // Spear
     case 7:  // Axe
     case 11: // Greatsword
       return 1;
@@ -431,10 +431,15 @@ DataManager.defaultClassRestrictions = function(obj) {
       case 1:  // Generic
       case 8:  // Gambeson
       case 9:  // Chainmail
-      case 11: // Gloves
-        return;
+      case 10: // Cloak
       case 6:  // Light Shield
-        return [1, 2, 3];
+      case 11: // Gloves
+      case 12: // Wristbraces
+      case 13: // Necklace
+      case 14: // Gauntlets
+      case 15: // Scarf
+      case 16: // Crystal
+        return;
       case 2:  // Plate Armor
       case 7:  // Heavy Shield
         return 1;
@@ -443,7 +448,6 @@ DataManager.defaultClassRestrictions = function(obj) {
       case 4:  // Vestments
         return 3;
       case 5:  // Leathers
-      case 10: // Cloak
         return 4;
   }
   console.error("MISSING CLASS RESTRICTION:", obj.name);
@@ -562,7 +566,19 @@ Game_BattlerBase.prototype.meetAllEquipRequirements = function(item, slot=-1) {
   }
   if (item.id < Yanfly.Param.ItemStartingId) return true; // Non-independent items, if they somehow exist
   if (this.isEquipTypeLocked(item.etypeId)) return true; // Guest party members
-  if (slot > -1) if (this.equips().some((e, i) => e && e.groupType === item.groupType && (e.baseItemId === item.baseItemId || (e.atypeId === 11 && item.atypeId === 11)) && i !== slot && e !== item)) return false; // No duplicates; includes gloves
+  if (slot > -1) if (this.equips().some((e, i) => e && e.groupType === item.groupType && (e.baseItemId === item.baseItemId ||
+    (e.atypeId === 11 && item.atypeId === 11) || // Gloves
+    (e.atypeId === 12 && item.atypeId === 12) || // Wristbraces
+    (e.atypeId === 11 && item.atypeId === 14) || // Gloves vs Gauntlets
+    (e.atypeId === 14 && item.atypeId === 11) || // Gauntlets vs Gloves
+    (e.atypeId === 12 && item.atypeId === 14) || // Wristbraces vs Gauntlets
+    (e.atypeId === 14 && item.atypeId === 12) || // Gauntlets vs Wristbraces
+    (e.atypeId === 13 && item.atypeId === 13) || // Necklace
+    (e.atypeId === 14 && item.atypeId === 14) || // Gauntlets
+    (e.atypeId === 15 && item.atypeId === 15) || // Scarf
+    (e.atypeId === 16 && item.atypeId === 16)    // Crystal
+  ) && i !== slot && e !== item)) return false; // No duplicates, including certain armor types
+  if (!item.traits.some(t => t.code === Game_BattlerBase.TRAIT_SLOT_TYPE && t.value === 1) && item.etypeId === 1 && slot === 1) return false; // Dual wield fix
   if (!this.checkEquipRequirements(item)) return false; // Per-item equip requirements
   return true;
 };

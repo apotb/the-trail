@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 53,
-  "note": "<Unlocked>",
+  "note": "<Unlocked>\n<Dungeon>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -18825,8 +18825,8 @@
               "indent": 1,
               "parameters": [
                 [
-                  "Yes.",
-                  "No."
+                  "Yes",
+                  "No"
                 ],
                 1,
                 1,
@@ -29208,8 +29208,8 @@
               "indent": 1,
               "parameters": [
                 [
-                  "Yes.",
-                  "No."
+                  "Yes",
+                  "No"
                 ],
                 1,
                 1,
@@ -30021,7 +30021,237 @@
       "x": 24,
       "y": 39
     },
-    null,
+    {
+      "id": 38,
+      "name": "EV038",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "characterIndex": 4,
+            "characterName": "!Chest",
+            "direction": 2,
+            "pattern": 1,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Chest1",
+                  "pan": 0,
+                  "pitch": 100,
+                  "volume": 90
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 36
+                    },
+                    {
+                      "code": 17
+                    },
+                    {
+                      "code": 15,
+                      "parameters": [
+                        3
+                      ]
+                    },
+                    {
+                      "code": 18
+                    },
+                    {
+                      "code": 15,
+                      "parameters": [
+                        3
+                      ]
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 36
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 17
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "parameters": [
+                    3
+                  ]
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 18
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "parameters": [
+                    3
+                  ]
+                }
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 128,
+              "indent": 0,
+              "parameters": [
+                53,
+                0,
+                0,
+                1,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "characterIndex": 4,
+            "characterName": "!Chest",
+            "direction": 8,
+            "pattern": 1,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 35,
+      "y": 37
+    },
     {
       "id": 39,
       "name": "spikes4",
@@ -30886,7 +31116,7 @@
     {
       "id": 43,
       "name": "EV043",
-      "note": "Fire 100 #e6292c d1",
+      "note": "Fire 100 #e25822 d1",
       "pages": [
         {
           "conditions": {
@@ -30946,7 +31176,7 @@
     {
       "id": 44,
       "name": "EV044",
-      "note": "Fire 100 #e6292c d1",
+      "note": "Fire 100 #e25822 d1",
       "pages": [
         {
           "conditions": {
@@ -31006,7 +31236,7 @@
     {
       "id": 45,
       "name": "EV045",
-      "note": "Fire 100 #e6292c",
+      "note": "Fire 100 #e25822",
       "pages": [
         {
           "conditions": {
@@ -31087,7 +31317,7 @@
     {
       "id": 46,
       "name": "EV046",
-      "note": "Fire 100 #e6292c d1",
+      "note": "Fire 100 #e25822 d1",
       "pages": [
         {
           "conditions": {
@@ -31147,7 +31377,7 @@
     {
       "id": 47,
       "name": "EV047",
-      "note": "Fire 100 #e6292c",
+      "note": "Fire 100 #e25822",
       "pages": [
         {
           "conditions": {
@@ -31228,7 +31458,7 @@
     {
       "id": 48,
       "name": "EV048",
-      "note": "Fire 100 #e6292c d1",
+      "note": "Fire 100 #e25822 d1",
       "pages": [
         {
           "conditions": {
@@ -31288,7 +31518,7 @@
     {
       "id": 49,
       "name": "EV049",
-      "note": "Fire 100 #e6292c d1",
+      "note": "Fire 100 #e25822 d1",
       "pages": [
         {
           "conditions": {
@@ -31348,7 +31578,7 @@
     {
       "id": 50,
       "name": "EV050",
-      "note": "Fire 100 #e6292c d1",
+      "note": "Fire 100 #e25822 d1",
       "pages": [
         {
           "conditions": {
@@ -31408,7 +31638,7 @@
     {
       "id": 51,
       "name": "EV051",
-      "note": "Fire 100 #e6292c d1",
+      "note": "Fire 100 #e25822 d1",
       "pages": [
         {
           "conditions": {
@@ -31468,7 +31698,7 @@
     {
       "id": 52,
       "name": "EV052",
-      "note": "Fire 100 #e6292c d1",
+      "note": "Fire 100 #e25822 d1",
       "pages": [
         {
           "conditions": {
@@ -31528,7 +31758,7 @@
     {
       "id": 53,
       "name": "EV053",
-      "note": "Fire 100 #e6292c d1",
+      "note": "Fire 100 #e25822 d1",
       "pages": [
         {
           "conditions": {
@@ -31588,7 +31818,7 @@
     {
       "id": 54,
       "name": "EV054",
-      "note": "Fire 100 #e6292c d1",
+      "note": "Fire 100 #e25822 d1",
       "pages": [
         {
           "conditions": {
@@ -31648,7 +31878,7 @@
     {
       "id": 55,
       "name": "EV055",
-      "note": "Fire 100 #e6292c d1",
+      "note": "Fire 100 #e25822 d1",
       "pages": [
         {
           "conditions": {
@@ -31708,7 +31938,7 @@
     {
       "id": 56,
       "name": "EV056",
-      "note": "Fire 100 #e6292c d1",
+      "note": "Fire 100 #e25822 d1",
       "pages": [
         {
           "conditions": {
@@ -31768,7 +31998,7 @@
     {
       "id": 57,
       "name": "EV057",
-      "note": "Fire 100 #e6292c d1",
+      "note": "Fire 100 #e25822 d1",
       "pages": [
         {
           "conditions": {
@@ -31828,7 +32058,7 @@
     {
       "id": 58,
       "name": "EV058",
-      "note": "Fire 100 #e6292c d1",
+      "note": "Fire 100 #e25822 d1",
       "pages": [
         {
           "conditions": {
@@ -31888,7 +32118,7 @@
     {
       "id": 59,
       "name": "EV059",
-      "note": "Fire 100 #e6292c",
+      "note": "Fire 100 #e25822",
       "pages": [
         {
           "conditions": {
@@ -31969,7 +32199,7 @@
     {
       "id": 60,
       "name": "EV060",
-      "note": "Fire 100 #e6292c",
+      "note": "Fire 100 #e25822",
       "pages": [
         {
           "conditions": {
@@ -32050,7 +32280,7 @@
     {
       "id": 61,
       "name": "EV061",
-      "note": "Fire 100 #e6292c",
+      "note": "Fire 100 #e25822",
       "pages": [
         {
           "conditions": {
@@ -32131,7 +32361,7 @@
     {
       "id": 62,
       "name": "EV062",
-      "note": "Fire 100 #e6292c d1",
+      "note": "Fire 100 #e25822 d1",
       "pages": [
         {
           "conditions": {
@@ -32191,7 +32421,7 @@
     {
       "id": 63,
       "name": "EV063",
-      "note": "Fire 100 #e6292c d1",
+      "note": "Fire 100 #e25822 d1",
       "pages": [
         {
           "conditions": {
@@ -32251,7 +32481,7 @@
     {
       "id": 64,
       "name": "EV064",
-      "note": "Fire 100 #e6292c d1",
+      "note": "Fire 100 #e25822 d1",
       "pages": [
         {
           "conditions": {
@@ -32311,7 +32541,7 @@
     {
       "id": 65,
       "name": "EV065",
-      "note": "Fire 100 #e6292c d1",
+      "note": "Fire 100 #e25822 d1",
       "pages": [
         {
           "conditions": {
@@ -32371,7 +32601,7 @@
     {
       "id": 66,
       "name": "EV066",
-      "note": "Fire 100 #e6292c d1",
+      "note": "Fire 100 #e25822 d1",
       "pages": [
         {
           "conditions": {
@@ -32431,7 +32661,7 @@
     {
       "id": 67,
       "name": "EV067",
-      "note": "Fire 100 #e6292c d1",
+      "note": "Fire 100 #e25822 d1",
       "pages": [
         {
           "conditions": {
@@ -32491,7 +32721,7 @@
     {
       "id": 68,
       "name": "EV068",
-      "note": "Fire 100 #e6292c d1",
+      "note": "Fire 100 #e25822 d1",
       "pages": [
         {
           "conditions": {
@@ -32551,7 +32781,7 @@
     {
       "id": 69,
       "name": "EV069",
-      "note": "Fire 100 #e6292c d1",
+      "note": "Fire 100 #e25822 d1",
       "pages": [
         {
           "conditions": {
@@ -32611,7 +32841,7 @@
     {
       "id": 70,
       "name": "EV070",
-      "note": "Fire 100 #e6292c",
+      "note": "Fire 100 #e25822",
       "pages": [
         {
           "conditions": {
@@ -32692,7 +32922,7 @@
     {
       "id": 71,
       "name": "EV071",
-      "note": "Fire 100 #e6292c",
+      "note": "Fire 100 #e25822",
       "pages": [
         {
           "conditions": {
@@ -32881,7 +33111,237 @@
       "x": 49,
       "y": 15
     },
-    null,
+    {
+      "id": 73,
+      "name": "EV073",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "characterIndex": 4,
+            "characterName": "!Chest",
+            "direction": 2,
+            "pattern": 1,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Chest1",
+                  "pan": 0,
+                  "pitch": 100,
+                  "volume": 90
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 36
+                    },
+                    {
+                      "code": 17
+                    },
+                    {
+                      "code": 15,
+                      "parameters": [
+                        3
+                      ]
+                    },
+                    {
+                      "code": 18
+                    },
+                    {
+                      "code": 15,
+                      "parameters": [
+                        3
+                      ]
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 36
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 17
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "parameters": [
+                    3
+                  ]
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 18
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "parameters": [
+                    3
+                  ]
+                }
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 128,
+              "indent": 0,
+              "parameters": [
+                52,
+                0,
+                0,
+                1,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "characterIndex": 4,
+            "characterName": "!Chest",
+            "direction": 8,
+            "pattern": 1,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 5,
+      "y": 5
+    },
     null,
     {
       "id": 75,

@@ -533,6 +533,16 @@ Window_Message.prototype.updateBacklogInput = function() {
 };
 
 Window_Message.prototype.openBacklogWindow = function() {
+  if (Yanfly.nameWindow) {
+    this._backlogWindow._restoreNameWindow = Yanfly.nameWindow.visible;
+    this._backlogWindow._restoreNameWindowActive = Yanfly.nameWindow.active;
+    this._backlogWindow._restoreNameWindowCloseCounter =
+      Yanfly.nameWindow._closeCounter;
+    // Prevent the name window from auto-closing while backlog is open.
+    Yanfly.nameWindow._closeCounter = Number.MAX_SAFE_INTEGER;
+    Yanfly.nameWindow.hide();
+    Yanfly.nameWindow.deactivate();
+  }
   this._backlogWindow.fullActivate();
 };
 
@@ -729,6 +739,7 @@ Window_MessageBacklog.prototype.constructor = Window_MessageBacklog;
 Window_MessageBacklog.prototype.initialize = function() {
   this._touchHold = 0;
   this._ready = false;
+  this._restoreNameWindow = false;
   Window_Command.prototype.initialize.call(this, 0, 0);
   this.createScrollSprite(this);
   this.setBackgroundType(Yanfly.Param.MsgBacklogBgType);
@@ -877,6 +888,16 @@ Window_MessageBacklog.prototype.fullDeactivate = function() {
     this._returnWindow.activate();
     this._returnWindow = undefined;
   }
+  if (this._restoreNameWindow && Yanfly.nameWindow) {
+    Yanfly.nameWindow.show();
+    // Restore the original close counter so the name box can close normally.
+    var counter = this._restoreNameWindowCloseCounter;
+    if (counter !== undefined) Yanfly.nameWindow._closeCounter = counter;
+    if (this._restoreNameWindowActive) Yanfly.nameWindow.activate();
+  }
+  this._restoreNameWindow = false;
+  this._restoreNameWindowActive = false;
+  this._restoreNameWindowCloseCounter = undefined;
   if (this._backgroundPicture) this.setBgPictureOpacity(0)
 };
 

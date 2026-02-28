@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 42,
-  "note": "<Unlocked>",
+  "note": "<Dungeon>\n<Unlocked>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -13361,7 +13361,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "long enough to get the civillians through safetly."
+                "long enough to get the civilians through safely."
               ]
             },
             {
@@ -14602,6 +14602,20 @@
                 7,
                 6,
                 0
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Tint set #6e6e6e"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Light radius 0 #FFFFFF"
               ]
             },
             {
@@ -19308,7 +19322,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2And check it out... looks like they "
+                "\\p2And check it out... looks like the soldiers "
               ]
             },
             {
