@@ -152494,13 +152494,22 @@
               "code": 111,
               "indent": 0,
               "parameters": [
+                2,
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
                 12,
                 "!$gameSelfSwitches.value([209, 2, 'A'])"
               ]
             },
             {
               "code": 129,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 10,
                 0,
@@ -152509,7 +152518,7 @@
             },
             {
               "code": 129,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 11,
                 0,
@@ -152518,7 +152527,7 @@
             },
             {
               "code": 129,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 12,
                 0,
@@ -152527,12 +152536,22 @@
             },
             {
               "code": 129,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 13,
                 0,
                 false
               ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
             },
             {
               "code": 0,
