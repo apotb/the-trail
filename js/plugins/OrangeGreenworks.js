@@ -186,6 +186,13 @@ Hudell.OrangeGreenworks = Hudell.OrangeGreenworks || {};
           return;
         }
 
+        if ($gameTemp.isDemo()) {
+          $gameSystem._demo = $gameSystem._demo || {};
+          $gameSystem._demo.achievements = $gameSystem._demo.achievements || [];
+          $gameSystem._demo.achievements.push(achievementName);
+          return;
+        }
+        
         $.greenworks.activateAchievement(achievementName, $._achievementSuccess, $._achievementError(achievementName));
       };
 
@@ -320,6 +327,14 @@ Hudell.OrangeGreenworks = Hudell.OrangeGreenworks || {};
         if (!$.isSteamRunning()) {
           console.log('Steam isn\'t running');
           return false;
+        }
+
+        if ($gameTemp.isDemo()) {
+          $gameSystem._demo = $gameSystem._demo || {};
+          $gameSystem._demo.stats = $gameSystem._demo.stats || {};
+          $gameSystem._demo.stats[name] = $gameSystem._demo.stats[name] || 0;
+          if (value > $gameSystem._demo.stats[name]) $gameSystem._demo.stats[name] = value;
+          return;
         }
         
         return $.greenworks.setStat(name, value);

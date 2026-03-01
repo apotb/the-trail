@@ -4107,12 +4107,136 @@
     "id": 26,
     "list": [
       {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameSystem._demo = $gameSystem._demo || {};"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "!$gameTemp.isDemo()"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "$gameSystem._demo.achievements"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 2,
+        "parameters": [
+          "$gameSystem._demo.achievements.forEach(a => {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  OrangeGreenworks.activateAchievement(a);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "});"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "delete $gameSystem._demo.achievements;"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "$gameSystem._demo.stats"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 2,
+        "parameters": [
+          "for (const stat in $gameSystem._demo.stats) {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  value = $gameSystem._demo.stats[stat];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  OrangeGreenworks.setStat(stat, value);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "}"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "delete $gameSystem._demo.stats;"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "Demo Greenworks",
     "switchId": 1,
     "trigger": 0
   },
