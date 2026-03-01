@@ -28,7 +28,7 @@ Game_Temp.prototype.isDemo = function() {
 };
 
 Game_Temp.prototype.isSteamPlaytest = function() {
-    return false;
+    return true;
 };
 
 Game_Temp.prototype.reserveCommonEvent = function(commonEventId) {
