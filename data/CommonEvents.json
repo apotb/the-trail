@@ -4118,7 +4118,7 @@
         "indent": 0,
         "parameters": [
           12,
-          "!$gameTemp.isDemo()"
+          "!($gameTemp.isDemo() || $gameTemp.isSteamPlaytest())"
         ]
       },
       {

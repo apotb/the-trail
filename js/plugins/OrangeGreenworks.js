@@ -186,7 +186,7 @@ Hudell.OrangeGreenworks = Hudell.OrangeGreenworks || {};
           return;
         }
 
-        if ($gameTemp.isDemo()) {
+        if ($gameTemp.isDemo() || $gameTemp.isSteamPlaytest()) {
           $gameSystem._demo = $gameSystem._demo || {};
           $gameSystem._demo.achievements = $gameSystem._demo.achievements || [];
           $gameSystem._demo.achievements.push(achievementName);
@@ -329,7 +329,7 @@ Hudell.OrangeGreenworks = Hudell.OrangeGreenworks || {};
           return false;
         }
 
-        if ($gameTemp.isDemo()) {
+        if ($gameTemp.isDemo() || $gameTemp.isSteamPlaytest()) {
           $gameSystem._demo = $gameSystem._demo || {};
           $gameSystem._demo.stats = $gameSystem._demo.stats || {};
           $gameSystem._demo.stats[name] = $gameSystem._demo.stats[name] || 0;
