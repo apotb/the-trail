@@ -1,6 +1,12 @@
 # Alpha 18.1 (3/1/2026)
 SHORT DESC
 
+### Main Game vs Demo vs Playtest
+- We have introduced a new Playtest on Steam for The Trail, giving each version of the game a specific purpose:
+  - MAIN GAME: the full experience for trusted testers, accessed via Steam key bot in Discord
+  - DEMO: play through Chapter 3, cannot earn achievements
+  - PLAYTEST: identical to the main game, but you cannot earn achievements
+
 ### Additions
 - 
 
