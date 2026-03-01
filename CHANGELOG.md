@@ -1,3 +1,15 @@
+# Alpha 18.1 (3/1/2026)
+SHORT DESC
+
+### Additions
+- 
+
+### Changes
+- 
+
+### Bug Fixes
+- Fixed Dandy Toad Camp not appearing.
+
 # Alpha 18: Back to the Basics (2/28/2026)
 It's about time we returned to what made The Trail great in the first place! In my opinion, the latest content has felt somewhat distanced from the humble beginnings of the game. This update serves to unify systems/content from previous updates to make the Overworld feel much more cohesive from start to finish.
 
