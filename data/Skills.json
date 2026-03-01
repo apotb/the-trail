@@ -549,11 +549,11 @@
       "type": 0,
       "variance": 0
     },
-    "description": "Steal an enemy's bits. Useful as a hit-and-run tactic, but since no bits\nwill be dropped after the enemy's defeat, this is a situational skill.",
+    "description": "Steal an enemy's Bits. Useful as a hit-and-run tactic, but since no Bits\nwill be dropped after the enemy's defeat, this is a situational skill.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 262,
-    "message1": " snags some bits!",
+    "message1": " snags some Bits!",
     "message2": "",
     "mpCost": 4,
     "name": "Steal Bits",
@@ -1270,7 +1270,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Smack an enemy with a few bubbles. Makes the target \\it[33], changing their element\nrates and reducing their AGI and EVA. \\c[27]\\bpdamage[300]%\\c[0] MAT rate.",
+    "description": "Smack an enemy with dense bubbles. Makes the target \\it[33], adding weakness to\n\\it[4] attacks as well as reducing agility/evasion. \\c[27]\\bpdamage[300]%\\c[0] MAT rate.",
     "effects": [
       {
         "code": 21,

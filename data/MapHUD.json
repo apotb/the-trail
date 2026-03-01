@@ -44,6 +44,92 @@
   },
   {
     "type": "Text",
+    "Value": "🥔 ${Yanfly.Util.toGroup($gameParty.numItems($dataItems[293]))}",
+    "Condition": "$gameMap.mapId() === 57 && $gamePlayer.regionId() === 101 && $gameSystem._lifetimePotatoes > 0",
+    "Layer": "0",
+    "Font": "GameFont",
+    "Max Width": "1280",
+    "Align": "center",
+    "Font Size": "30",
+    "Text Color": "#ffffff",
+    "Text Alpha": "255",
+    "Outline Color": "#000000",
+    "Outline Alpha": "127",
+    "animateInfo": {
+      "x": {
+        "spd": 0,
+        "loop": false,
+        "min": 0,
+        "max": 0
+      },
+      "y": {
+        "spd": 0,
+        "loop": false,
+        "min": 0,
+        "max": 0
+      },
+      "s": {
+        "spd": 0,
+        "loop": false,
+        "min": 1,
+        "max": 1
+      },
+      "r": {
+        "spd": 0,
+        "loop": false,
+        "min": 0,
+        "max": 0
+      }
+    },
+    "id": 2,
+    "x": 640,
+    "y": 120
+  },
+  {
+    "type": "Text",
+    "Value": "${$gameSystem.potatoesPerSecond() > 0 ? '+' : ''}${Yanfly.Util.toGroup($gameSystem.potatoesPerSecond())} 🥔/s",
+    "Condition": "$gameMap.mapId() === 57 && $gamePlayer.regionId() === 101 && $gameSystem._lifetimePotatoes > 0",
+    "Layer": "0",
+    "Font": "GameFont",
+    "Max Width": "1280",
+    "Align": "center",
+    "Font Size": "16",
+    "Text Color": "#ffffff",
+    "Text Alpha": "255",
+    "Outline Color": "#000000",
+    "Outline Alpha": "127",
+    "animateInfo": {
+      "x": {
+        "spd": 0,
+        "loop": false,
+        "min": 0,
+        "max": 0
+      },
+      "y": {
+        "spd": 0,
+        "loop": false,
+        "min": 0,
+        "max": 0
+      },
+      "s": {
+        "spd": 0,
+        "loop": false,
+        "min": 1,
+        "max": 1
+      },
+      "r": {
+        "spd": 0,
+        "loop": false,
+        "min": 0,
+        "max": 0
+      }
+    },
+    "id": 3,
+    "x": 640,
+    "y": 156
+  },
+  {
+    "type": "Text",
     "Value": "${getChat()[0]}",
     "Condition": "getChat()[0]",
     "Layer": "0",
@@ -81,7 +167,7 @@
         "max": 0
       }
     },
-    "id": 2,
+    "id": 4,
     "x": 304,
     "y": 705
   },
@@ -124,7 +210,7 @@
         "max": 0
       }
     },
-    "id": 3,
+    "id": 5,
     "x": 304,
     "y": 675
   },
@@ -167,7 +253,7 @@
         "max": 0
       }
     },
-    "id": 3,
+    "id": 6,
     "x": 304,
     "y": 645
   },
@@ -210,7 +296,7 @@
         "max": 0
       }
     },
-    "id": 3,
+    "id": 7,
     "x": 304,
     "y": 615
   },
@@ -253,7 +339,7 @@
         "max": 0
       }
     },
-    "id": 3,
+    "id": 8,
     "x": 304,
     "y": 585
   },
@@ -296,7 +382,7 @@
         "max": 0
       }
     },
-    "id": 3,
+    "id": 9,
     "x": 304,
     "y": 555
   },
@@ -339,7 +425,7 @@
         "max": 0
       }
     },
-    "id": 3,
+    "id": 10,
     "x": 304,
     "y": 525
   },
@@ -382,7 +468,7 @@
         "max": 0
       }
     },
-    "id": 3,
+    "id": 11,
     "x": 304,
     "y": 495
   },
@@ -425,7 +511,7 @@
         "max": 0
       }
     },
-    "id": 3,
+    "id": 12,
     "x": 304,
     "y": 465
   },
@@ -468,7 +554,7 @@
         "max": 0
       }
     },
-    "id": 3,
+    "id": 13,
     "x": 304,
     "y": 435
   }

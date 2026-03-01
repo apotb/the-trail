@@ -220,6 +220,7 @@ _.giveUp = function() {
 	$gameSystem.battleTemplate('normal');
 	if ($gameMap.inTrueTelluriaCastle()) $gameSystem.setBattleBgm('battle_castle');
 	$gameTemp.reserveCommonEvent(37);
+	$gameSystem.setShowMapQuestWindow(true);
 };
 
 _.informInvalidCommonEvent = [

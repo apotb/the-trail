@@ -21241,6 +21241,20 @@
               ]
             },
             {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameSystem._followerOpacity = 63;"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "$gameSystem.setRecallAllow(false);"
+              ]
+            },
+            {
               "code": 235,
               "indent": 0,
               "parameters": [
@@ -25365,8 +25379,8 @@
     },
     {
       "id": 42,
-      "name": "lamp-copy",
-      "note": "<Copy Event: 158, 183>",
+      "name": "lampwall-copy",
+      "note": "<Copy Event: 158, 189>",
       "pages": [
         {
           "conditions": {
@@ -25388,9 +25402,9 @@
           "image": {
             "tileId": 0,
             "characterName": "!Flame",
-            "direction": 4,
+            "direction": 6,
             "pattern": 1,
-            "characterIndex": 1
+            "characterIndex": 0
           },
           "list": [
             {
@@ -25425,8 +25439,8 @@
     },
     {
       "id": 43,
-      "name": "lamp-copy",
-      "note": "<Copy Event: 158, 183>",
+      "name": "lampwall-copy",
+      "note": "<Copy Event: 158, 189>",
       "pages": [
         {
           "conditions": {
@@ -25448,9 +25462,9 @@
           "image": {
             "tileId": 0,
             "characterName": "!Flame",
-            "direction": 4,
+            "direction": 6,
             "pattern": 1,
-            "characterIndex": 1
+            "characterIndex": 0
           },
           "list": [
             {

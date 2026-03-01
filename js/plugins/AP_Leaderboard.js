@@ -50,7 +50,8 @@ API_LEADERBOARD.leaderboards = function() {
         ["Damage Dealt", $gameVariables.value(CGMV.ExtraStats.DamageDealt)],
         ["Enemies Defeated", $gameParty.killCount()],
         ["Playtime", $gameSystem.playtime()],
-        ["Fish Caught", Galv.FISH.totalCaught()]
+        ["Fish Caught", Galv.FISH.totalCaught()],
+        ["Potatoes Peeled", $gameSystem._lifetimePotatoes]
     ];
 };
 
@@ -100,7 +101,6 @@ API_LEADERBOARD.setData = function(data) {
 };
 
 API_LEADERBOARD.push = function() {
-    if ($gameTemp.isDemo()) return;
     const promises = this.leaderboards().map(l => this.addToLeaderboard(l[0], l[1]));
     return Promise.all(promises);
 };
@@ -254,7 +254,8 @@ Window_Leaderboard.prototype.initialize = function() {
 
 Window_Leaderboard.prototype.leaderboards = function() {
     let lb = API_LEADERBOARD.leaderboards();
-    if ($gameTemp._lbFish) lb = lb.slice(4);
+    if ($gameTemp._lbFish) lb = lb.slice(4, 5);
+    else if ($gameTemp._lbPotatoes) lb = lb.slice(5);
     else lb = lb.slice(0, 4);
     return lb;
 };

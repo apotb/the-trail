@@ -3884,8 +3884,136 @@
         ]
       },
       {
-        "code": 122,
+        "code": 111,
         "indent": 0,
+        "parameters": [
+          8,
+          79
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          79,
+          79,
+          0,
+          0,
+          17
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          80,
+          80,
+          0,
+          0,
+          20
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "Evil2",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "\\ssWhat's this? \\ii[79]\\c[0]! I'll be taking those, you thief!"
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "Disappointment",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 126,
+        "indent": 1,
+        "parameters": [
+          79,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "Quest 29 Normalize Objective 4"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "Quest 29 Hide Objective 5"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameSelfSwitches.setValue([57, 16, 'A'], false);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "$gameSelfSwitches.setValue([57, 17, 'A'], false);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "Moghunter.trpopup_waitD = 0;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "$gameSelfSwitches.setValue([57, 40, 'B'], false);"
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 122,
+        "indent": 1,
         "parameters": [
           79,
           79,
@@ -3896,7 +4024,7 @@
       },
       {
         "code": 122,
-        "indent": 0,
+        "indent": 1,
         "parameters": [
           80,
           80,
@@ -3904,6 +4032,16 @@
           0,
           55
         ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
       },
       {
         "code": 117,
@@ -3969,136 +4107,12 @@
     "id": 26,
     "list": [
       {
-        "code": 355,
-        "indent": 0,
-        "parameters": [
-          "$gameSystem._demo = $gameSystem._demo || {};"
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          12,
-          "!$gameTemp.isDemo()"
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 1,
-        "parameters": [
-          12,
-          "$gameSystem._demo.achievements"
-        ]
-      },
-      {
-        "code": 355,
-        "indent": 2,
-        "parameters": [
-          "$gameSystem._demo.achievements.forEach(a => {"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 2,
-        "parameters": [
-          "  OrangeGreenworks.activateAchievement(a);"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 2,
-        "parameters": [
-          "});"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 2,
-        "parameters": [
-          "delete $gameSystem._demo.achievements;"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 1,
-        "parameters": [
-          12,
-          "$gameSystem._demo.stats"
-        ]
-      },
-      {
-        "code": 355,
-        "indent": 2,
-        "parameters": [
-          "for (const stat in $gameSystem._demo.stats) {"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 2,
-        "parameters": [
-          "  value = $gameSystem._demo.stats[stat];"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 2,
-        "parameters": [
-          "  OrangeGreenworks.setStat(stat, value);"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 2,
-        "parameters": [
-          "}"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 2,
-        "parameters": [
-          "delete $gameSystem._demo.stats;"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "Demo Greenworks",
+    "name": "",
     "switchId": 1,
     "trigger": 0
   },
@@ -4165,29 +4179,19 @@
         "parameters": []
       },
       {
-        "code": 111,
-        "indent": 1,
-        "parameters": [
-          12,
-          "Date.now() < $gameSystem._autosaveTarget && !$gameSystem._forceAutosave"
-        ]
-      },
-      {
         "code": 230,
-        "indent": 2,
+        "indent": 1,
         "parameters": [
           60
         ]
       },
       {
-        "code": 0,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 411,
+        "code": 111,
         "indent": 1,
-        "parameters": []
+        "parameters": [
+          12,
+          "Date.now() >= $gameSystem._autosaveTarget || $gameSystem._forceAutosave"
+        ]
       },
       {
         "code": 113,
@@ -4219,7 +4223,7 @@
         "indent": 0,
         "parameters": [
           12,
-          "$gameSystem.getAutosaveInterval() > 0 || $gameSystem._forceAutosave"
+          "($gameSystem.getAutosaveInterval() > 0 || $gameSystem._forceAutosave) && !Object.keys($dataMap.meta).contains('Disable Autosave')"
         ]
       },
       {
@@ -9184,7 +9188,7 @@
         "code": 401,
         "indent": 4,
         "parameters": [
-          "You don't have enough bits."
+          "You don't have enough Bits."
         ]
       },
       {

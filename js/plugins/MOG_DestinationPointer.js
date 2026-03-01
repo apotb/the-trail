@@ -182,7 +182,8 @@ Sprite_DestinationPointer.prototype.getData = function() {
 Sprite_DestinationPointer.prototype.createSpritePointer = function() {
     this._pointer = new Sprite(this._bitmapImg1);
     this._pointer.anchor.x = 0.5;
-    this._pointer.anchor.y = 0.5;	
+    this._pointer.anchor.y = 0.5;
+	this._pointer.setColorTone($gameSystem.windowTone());
     this.addChild(this._pointer);
 };
 
@@ -357,6 +358,10 @@ Sprite_DestinationPointer.prototype.updateBase = function() {
     if ($gameTemp.isDestinationValid()){
 		this.opacity = 255;
         this.updateSprites();
+		if ($gameTemp._updateWindowTone) {
+			this._pointer.setColorTone($gameSystem.windowTone());
+			$gameTemp._updateWindowTone = false;
+		}
     } else {
         this.updateDisabled();
     };

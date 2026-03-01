@@ -216,7 +216,7 @@ Scene_MenuBase.prototype.update = function() {
 // * Update Particles
 //==============================
 Scene_MenuBase.prototype.update_particles = function() {
-   for (var i = 0; i < this._sprite_particles.length; i++) {
+   for (var i = 0; i < this._sprite_particles?.length ?? 0; i++) {
         this._sprite_particles[i].x += this._sprite_particles_data[i][0];
 		this._sprite_particles[i].y += this._sprite_particles_data[i][1];
 		this._sprite_particles[i].opacity += 4;

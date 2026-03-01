@@ -1,4 +1,4 @@
-# Alpha 18: Back to the Basics (??/??/????)
+# Alpha 18: Back to the Basics (2/28/2026)
 It's about time we returned to what made The Trail great in the first place! In my opinion, the latest content has felt somewhat distanced from the humble beginnings of the game. This update serves to unify systems/content from previous updates to make the Overworld feel much more cohesive from start to finish.
 
 Adon has seen the most changes - rightfully so, considering it's every players' first introduction to the game. Verdin Village is the new starting point, and while the overarching story (defeat Apocalypse) is still there, the way it's presented has completely and fundamentally changed. Systems such as cooking and fishing have much more presence earlier in the game, and a fancy new fast travel system provides a much more Trail-esque way to get around the world.
@@ -14,6 +14,7 @@ NOTICE: Old saves will not work with this update!
   - Haven Falls and Haven Falls Cavern
   - Northern/Southern Desert Garrison
   - Eating at Larry's Marvelous Diner
+  - Potato peeling
   - Several new quests
   - Giving people fake names
   - A new boss fight...
@@ -32,7 +33,7 @@ NOTICE: Old saves will not work with this update!
 - Added a short sound effect when completing a quest objective.
 - Added new rogue passive skill "Resourceful" at level 15.
   - Moved Low Blow to L18, Shield Break to L22, and removed Focus Up.
-- Added 29 items:
+- Added 30 items:
   - Rookie Spear
   - Squire Gauntlets
   - Flora's Rose
@@ -52,6 +53,7 @@ NOTICE: Old saves will not work with this update!
   - Recall Potion
   - Dalia's Delight
   - Bronze Gauntlets
+  - Potato
   - Smirnoff's Lightning Lance
   - Arlo's Bandana
   - Clover's Bell
@@ -124,6 +126,7 @@ NOTICE: Old saves will not work with this update!
   - Pressing UP when buying/selling/crafting items while the current quantity is 1 will go to 10 instead of 11.
 - Removed skills Magic Prone/Resistant and Contingence.
 - Bubble is now guaranteed to apply Soaked.
+- Aqua Gem and Flarestone now give a 50% chance to apply Soaked/Burning Up! respectively.
 - Fiery Tablet recipe includes Blood Pact and Flesh Doll and inherits the effects of both.
   - Also halved the effects of both accessories... they were hard to get, but kind of OP!
 - Heavily nerfed the Champion's Talisman
@@ -136,6 +139,7 @@ NOTICE: Old saves will not work with this update!
 - Buffed Earthen Grassrobes Earth resistance from 10% to 25%.
 - All levels of Well Fed last much longer and are not removed when HP drops to 0.
 - Well Rested lasts twice as many steps, from 1000 → 2000.
+- Forage-able items now have slightly randomized respawn times.
 - Thrown items now count as physical hits.
 - Heated Metal now absorbs Fire attacks.
 - The Bandito Cloak, as well as all cloaks from now on, are usable by anyone.
@@ -157,6 +161,7 @@ NOTICE: Old saves will not work with this update!
 - Fixed equip comparison menu showing wrong colors for incoming physical/magical damage.
 - Fixed final hits on bosses counting for the Damage Dealt stat.
 - Fixed final hits on bosses and the Skeleton enemy cheesing the "It's Super Effective!" achievement.
+- Fixed damage reduction effects (e.g. Green Mage Crystal) decreasing the effect of healing skills.
 - Fixed being able to select the same ingredient multiple times for crafting.
 - Fixed being able to craft items multiple times without resources available.
 - Fixed item upgrades not transferring when crafting.
@@ -164,8 +169,9 @@ NOTICE: Old saves will not work with this update!
 - Fixed choices not showing in message backlog.
 - Fixed name box showing over message backlog if a battle has been completed without changing maps.
 - Fixed Lost Soul triggering Game Over if encountered with a Soulfire Lantern in inventory but not equipped.
+- Fixed time display hiding during events.
 - Fixed outdated cliff texture in South Field.
-- Fixed wading effect when walking on bridge in South Field.
+- Fixed wading effect when walking over several different bridges.
 - Fixed Seshat's Tome drop beginning in Telluria Field being a 1/10,000 drop rather than a 1/200 drop.
 - Fixed Red Mushroom appearing in Recovery category.
 - Fixed buggy appearance of First Cleric statue in Frozen Labyrinth.
@@ -895,7 +901,7 @@ This small update contains a new pair of boots, a leaderboard for kills, and sev
 ### Changes
 - Fire takes 25% damage from Ice instead of 0%.
 - Ethereal Bat Wing can drop more than once.
-- Reduced bits/EXP variation from 5% to 3%.
+- Reduced Bits/EXP variation from 5% to 3%.
 - Moved Iron Boots from forge to smithery shop.
 - Flower Boots can be crafted at Will's forge.
 - Adjusted a few tellurium related recipes.
@@ -1314,7 +1320,7 @@ I hope you all feel the power as you progress through Telluria Field! But will y
 - Random encounters are now blocked in a 6-tile radius around any visible enemy encounter.
 - Lots of dialogues were shortened. Many cutscenes were reworked, and a few were even removed.
 - Replaced Player 2's 2nd magic equip slot with an offhand slot (light shields).
-- Retrying battles is now free, and you have the option to give up. This will return you to the last safe place you rested at; however, this will cost you half of your bits.
+- Retrying battles is now free, and you have the option to give up. This will return you to the last safe place you rested at; however, this will cost you half of your Bits.
 - Time now moves indoors.
 - Shops are now open 24/7.
 - Vehicles can travel under bridges.
@@ -1341,7 +1347,7 @@ I hope you all feel the power as you progress through Telluria Field! But will y
   - Potion: +90 HP → +60 HP
   - Elixir: +36 MP → +24 MP
   - Ether: +108 HP → +72 HP; +42 MP → +30 MP
-  - Small Ether and Ether are cheaper. They no longer require bits to craft.
+  - Small Ether and Ether are cheaper. They no longer require Bits to craft.
 - Reworked Well Fed to make the buff more enticing and encourage cooking.
   - Ration: Reduced from Well Fed to Somewhat Well Fed.
   - Fulfilling Ration, Loaf of Bread: Reduced from Very Well Fed to Well Fed.

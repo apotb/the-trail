@@ -117,7 +117,7 @@
     "name": "Big Mouth",
     "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Bandito_2>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<AI Priority>\nParty Alive Members === 3: Attack, Lowest DEF\nParty Alive Members === 2: Attack, Highest Level\n</AI Priority>\n\n<Enemy Drops>\nBell: 5%\nBandito Loot: 100%\nWater Bottle: 100%\nSmall Potion: 100%\nBandito Dagger: 12.5%\nBandito Cloak: 12.5%\nBandito Gloves: 12.5%\nAnti-Magic Charm: 5%\n</Enemy Drops>",
     "params": [
-      375,
+      360,
       5,
       10,
       8,
@@ -720,7 +720,7 @@
     ],
     "gold": 4,
     "name": "Skeleton",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 136, 137, 229>\n\n<Sideview Battler: Monster2_1>\n<Attack Animation: 133>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nDark Essence: 20% +20%\n</Night Boost>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 137, 229>\n\n<Sideview Battler: Monster2_1>\n<Attack Animation: 133>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       1,
       15,
@@ -795,7 +795,7 @@
     ],
     "gold": 20,
     "name": "Skeleton Mage",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 136, 137>\n\n<Sideview Battler: Monster2_2>\n<Weapon Image: 6>\n<Attack Animation: 122>\n\n<Boost Skill 11: Full>\n<AI Priority>\nHP% param <= 30% +++ Random 60%: Cure I, Lowest HP%\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Elixir: 20% +20%\nElixir: 10% +10%\nMAT Scroll: 10% +10%\nRuby Ring: 5% +5%\nDark Essence: 20% +20%\n</Night Boost>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 137>\n\n<Sideview Battler: Monster2_2>\n<Weapon Image: 6>\n<Attack Animation: 122>\n\n<Boost Skill 11: Full>\n<AI Priority>\nHP% param <= 30% +++ Random 60%: Cure I, Lowest HP%\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Elixir: 20% +20%\nElixir: 10% +10%\nMAT Scroll: 10% +10%\nRuby Ring: 5% +5%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       150,
       30,
@@ -856,7 +856,7 @@
     ],
     "gold": 20,
     "name": "Skeleton Warrior",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 136, 137>\n\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<AI Priority>\nTroop Alive Members > 3 +++ State !== Hold the Line I +++ Random 20%: Hold the Line I\nTroop Alive Members > 1 +++ State !== Weak Point +++ Random 20%: Weak Point\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Potion: 20% +20%\nPotion: 10% +10%\nATK Scroll: 10% +10%\nEmerald Ring: 5% +5%\nDark Essence: 20% +20%\n</Night Boost>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 137>\n\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<AI Priority>\nTroop Alive Members > 3 +++ State !== Hold the Line I +++ Random 20%: Hold the Line I\nTroop Alive Members > 1 +++ State !== Weak Point +++ Random 20%: Weak Point\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Potion: 20% +20%\nPotion: 10% +10%\nATK Scroll: 10% +10%\nEmerald Ring: 5% +5%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       180,
       10,
@@ -1095,7 +1095,7 @@
     ],
     "gold": 600,
     "name": "Laeryidyean",
-    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 136, 137, 141>\n\n<Sideview Battler: Boss1_1>\n<Weapon Image: 2>\n<Attack Animation: 6>\n<HP Gauge Width: 288>\n\n<Boost Skill 60: Full>\n<AI Priority>\nState === Weak Point +++ User HP% param >= 50%: Purify, User\nState !== Magic Enhance +++ User HP% param >= 50%: Magic Enhance, User\nEval user._phase == 2 +++ Switch 21 Off: Darkfire\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nLaeryidyean's Skull: 100%\nLaeryidyean's Strength: 100%\nSkeletal Outfit: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 137, 141>\n\n<Sideview Battler: Boss1_1>\n<Weapon Image: 2>\n<Attack Animation: 6>\n<HP Gauge Width: 288>\n\n<Boost Skill 60: Full>\n<AI Priority>\nState === Weak Point +++ User HP% param >= 50%: Purify, User\nState !== Magic Enhance +++ User HP% param >= 50%: Magic Enhance, User\nEval user._phase == 2 +++ Switch 21 Off: Darkfire\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nLaeryidyean's Skull: 100%\nLaeryidyean's Strength: 100%\nSkeletal Outfit: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
     "params": [
       4000,
       800,
@@ -1781,7 +1781,7 @@
     ],
     "gold": 35,
     "name": "Skeleton Knight",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 136, 137>\n\n<Sideview Battler: Monster2_5>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Ether: 20% +20%\nEther: 10% +10%\nRuby Ring: 5% +5%\nEmerald Ring: 5% +5%\nDark Essence: 20% +20%\nMalicious Essence: 20% +20%\n</Night Boost>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 137>\n\n<Sideview Battler: Monster2_5>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Ether: 20% +20%\nEther: 10% +10%\nRuby Ring: 5% +5%\nEmerald Ring: 5% +5%\nDark Essence: 20% +20%\nMalicious Essence: 20% +20%\n</Night Boost>",
     "params": [
       1000,
       20,
@@ -2684,7 +2684,7 @@
     ],
     "gold": 50,
     "name": "Will o' Wisp",
-    "note": "<Element: Fire, Dark>\n<Element Absorb: Fire>\n<Passive State: 57, 129, 147>\n\n<Sideview Battler: NoMatchingSprite/Will o' Wisp>\n<Floating>\n<Attack Animation: 3>\n\n<Boost Skill 74: Full>\n<AI Priority>\nUser HP% param <= 75% +++ Random 30%: Steam Therapy, User\n</AI Priority>\n\n<Enemy Drops>\nPhantasmal Charm: 100%\nFlarestone: 10%\nBlazing Dagger: 5%\nSelfish Candle: 5%\nPocket Mirror: 5%\nFire Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
+    "note": "<Element: Fire, Dark>\n<Element Absorb: Fire>\n<Passive State: 57, 129, 147>\n\n<Sideview Battler: NoMatchingSprite/Will o' Wisp>\n<Floating>\n<Attack Animation: 3>\n<HP Gauge Width: 180>\n\n<Boost Skill 74: Full>\n<AI Priority>\nUser HP% param <= 75% +++ Random 30%: Steam Therapy, User\n</AI Priority>\n\n<Enemy Drops>\nPhantasmal Charm: 100%\nFlarestone: 10%\nBlazing Dagger: 5%\nSelfish Candle: 5%\nPocket Mirror: 5%\nFire Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
     "params": [
       3000,
       400,
@@ -2982,7 +2982,7 @@
     ],
     "gold": 4000,
     "name": "Laeryidyean EX",
-    "note": "<Cannot Select: Item Scroll of Silver Sands>>\n\n<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 136, 137, 139, 141>\n<Light Break: 3>\n\n<Sideview Battler: NoMatchingSprite/Laeryidyean EX>\n<Weapon Image: 266>\n<Attack Animation: 8>\n<HP Gauge Width: 360>\n<HP Gauge Color 1: 15>\n<HP Gauge Color 2: 14>\n\n<AI Priority>\nState === State 7 +++ User HP% param >= 35%: Bubble\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nPocket Mirror: 5%\nBattle Plan: 5%\nSleepy Hourglass: 5%\nSelfish Candle: 5%\nAncient Key: 100%\nSemi-Automatic Glizzy: 100%\nAndrew's Guidance: 100%\nOrigin Crystal: 1%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "note": "<Cannot Select: Item Scroll of Silver Sands>>\n\n<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 137, 139, 141>\n<Light Break: 3>\n\n<Sideview Battler: NoMatchingSprite/Laeryidyean EX>\n<Weapon Image: 266>\n<Attack Animation: 8>\n<HP Gauge Width: 360>\n<HP Gauge Color 1: 15>\n<HP Gauge Color 2: 14>\n\n<AI Priority>\nState === State 7 +++ User HP% param >= 35%: Bubble\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nPocket Mirror: 5%\nBattle Plan: 5%\nSleepy Hourglass: 5%\nSelfish Candle: 5%\nAncient Key: 100%\nSemi-Automatic Glizzy: 100%\nAndrew's Guidance: 100%\nOrigin Crystal: 1%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
     "params": [
       120000,
       9999,
@@ -5679,7 +5679,7 @@
     ],
     "gold": 1000,
     "name": "Infernal Skeleton Knight",
-    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Bludgeoning>\n<Element: Fire, Dark>\n<Passive State: 136, 137>\n\n<Sideview Battler: Monster4_1>\n<Sideview No Collapse>\n<Weapon Image: 266>\n<Attack Animation: 8>\n<HP Gauge Width: 216>\n\n<AI Priority>\nEval !user.hasState(143) +++ State !== Hold the Line III +++ Random 50%: Hold the Line III\n\nEval user.hasState(143) +++ User HP% param < 10% +++ Random 75%: Backstab\n\nState !== Weak Point +++ Random 30%: Nasty Glare\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nInfernal Sword: 100%\nLarge Potion: 100%\nLarge Potion: 100%\nLarge Potion: 100%\nLarge Ether: 100%\nFire Essence: 100%\nFire Essence: 100%\nFire Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\n</Night Boost>",
+    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Bludgeoning>\n<Element: Fire, Dark>\n<Passive State: 137>\n\n<Sideview Battler: Monster4_1>\n<Sideview No Collapse>\n<Weapon Image: 266>\n<Attack Animation: 8>\n<HP Gauge Width: 216>\n\n<AI Priority>\nEval !user.hasState(143) +++ State !== Hold the Line III +++ Random 50%: Hold the Line III\n\nEval user.hasState(143) +++ User HP% param < 10% +++ Random 75%: Backstab\n\nState !== Weak Point +++ Random 30%: Nasty Glare\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nInfernal Sword: 100%\nLarge Potion: 100%\nLarge Potion: 100%\nLarge Potion: 100%\nLarge Ether: 100%\nFire Essence: 100%\nFire Essence: 100%\nFire Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\n</Night Boost>",
     "params": [
       8000,
       0,
@@ -5790,7 +5790,7 @@
     ],
     "gold": 1000,
     "name": "Infernal Skeleton Mage",
-    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Slashing>\n<Element: Fire, Dark>\n<Passive State: 136, 137>\n\n<Sideview Battler: Monster4_2>\n<Sideview No Collapse>\n<Weapon Image: 270>\n<Attack Animation: 147>\n<HP Gauge Width: 216>\n\n<Boost Skill 31: Full>\n<Boost Skill 60: Full>\n<AI Priority>\nEval !user.hasState(143) +++ State !== Amnesia +++ State !== Silenced +++ Random 50%: Disable\nEval !user.hasState(143) +++ State !== Magic Resistant +++ Random 25%: Magic Resistance, Lowest MDF\nEval !user.hasState(143) +++ HP% param <= 90% +++ HP% param > 50% +++ Random 25%: Cure I, Lowest HP%\nEval !user.hasState(143) +++ HP% param <= 50% +++ Random 25%: Cure II, Lowest HP%\n\nEval user.hasState(143) +++ State !== Magic Enhance: Magic Enhance, User\nEval user.hasState(143) +++ HP% param <= 90% +++ Random 25%: Cure II, Lowest HP%\n\n\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nInfernal Wand: 100%\nLarge Elixir: 100%\nLarge Elixir: 100%\nLarge Elixir: 100%\nLarge Ether: 100%\nFire Essence: 100%\nFire Essence: 100%\nFire Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\n</Night Boost>",
+    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Slashing>\n<Element: Fire, Dark>\n<Passive State: 137>\n\n<Sideview Battler: Monster4_2>\n<Sideview No Collapse>\n<Weapon Image: 270>\n<Attack Animation: 147>\n<HP Gauge Width: 216>\n\n<Boost Skill 31: Full>\n<Boost Skill 60: Full>\n<AI Priority>\nEval !user.hasState(143) +++ State !== Amnesia +++ State !== Silenced +++ Random 50%: Disable\nEval !user.hasState(143) +++ State !== Magic Resistant +++ Random 25%: Magic Resistance, Lowest MDF\nEval !user.hasState(143) +++ HP% param <= 90% +++ HP% param > 50% +++ Random 25%: Cure I, Lowest HP%\nEval !user.hasState(143) +++ HP% param <= 50% +++ Random 25%: Cure II, Lowest HP%\n\nEval user.hasState(143) +++ State !== Magic Enhance: Magic Enhance, User\nEval user.hasState(143) +++ HP% param <= 90% +++ Random 25%: Cure II, Lowest HP%\n\n\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nInfernal Wand: 100%\nLarge Elixir: 100%\nLarge Elixir: 100%\nLarge Elixir: 100%\nLarge Ether: 100%\nFire Essence: 100%\nFire Essence: 100%\nFire Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\n</Night Boost>",
     "params": [
       8000,
       0,
@@ -6179,7 +6179,7 @@
     ],
     "gold": 3000,
     "name": "Apocalypse",
-    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 136, 137, 139, 141>\n<Light Break: 5>\n\n<Sideview Battler: Boss1_2>\n<Sideview No Collapse>\n<Sideview Dying Motion: walk>\n<Sideview Dead Motion: walk>\n<Weapon Image: 266>\n<Attack Animation: 8>\n<HP Gauge Width: 360>\n<HP Gauge Color 1: 15>\n<HP Gauge Color 2: 14>\n\n<Boost Skill 60: Full>\n<AI Priority>\nEval user.timesStruckElement(8) == 0: Guard\nState !== Magic Enhance +++ User HP% param >= 35%: Magic Enhance, User\nEval user._phase == 2 +++ Switch 110 Off: Darkfire\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nSleepy Hourglass: 5%\nChip of Golden Armor: 100%\nInfernal Coin: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 137, 139, 141>\n<Light Break: 5>\n\n<Sideview Battler: Boss1_2>\n<Sideview No Collapse>\n<Sideview Dying Motion: walk>\n<Sideview Dead Motion: walk>\n<Weapon Image: 266>\n<Attack Animation: 8>\n<HP Gauge Width: 360>\n<HP Gauge Color 1: 15>\n<HP Gauge Color 2: 14>\n\n<Boost Skill 60: Full>\n<AI Priority>\nEval user.timesStruckElement(8) == 0: Guard\nState !== Magic Enhance +++ User HP% param >= 35%: Magic Enhance, User\nEval user._phase == 2 +++ Switch 110 Off: Darkfire\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nSleepy Hourglass: 5%\nChip of Golden Armor: 100%\nInfernal Coin: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
     "params": [
       70000,
       0,
@@ -7021,13 +7021,13 @@
     ],
     "gold": 500,
     "name": "Baron Smirnoff",
-    "note": "<Cannot Select: Item Scroll of Silver Sands>\n<Passive State: 227>\n\n<Armor Weakness: Slashing>\n\n<Sideview Battler: Evil1_8>\n<Sideview No Collapse>\n<Weapon Image: 146>\n<Attack Animation: 15>\n<Sideview Attack Motion: thrust>\n<HP Gauge Width: 288>\n\n<AI Priority>\nUser HP% param <= 50% +++ Eval user._storms === 0: Lightning Storm\nUser HP% param <= 25% +++ Eval user._storms === 1: Lightning Storm\n</AI Priority>\n\n<Enemy Drops>\nSmirnoff's Lightning Lance: 100%\nLoaf of Bread: 50%\nLoaf of Bread: 50%\nLoaf of Bread: 50%\nOmelette: 50%\nCarp and Mushroom Stew: 50%\nGarnished Perch: 50%\nSolus Valley Special: 50%\nHoney-Glazed Carp: 50%\nSmall Potion: 50%\nSmall Potion: 50%\nPotion: 50%\nPotion: 50%\nLarge Potion: 50%\nLarge Potion: 50%\nTome of Experience: 50%\nTome of Experience: 50%\n</Enemy Drops>",
+    "note": "<Cannot Select: Item Scroll of Silver Sands>\n<Passive State: 227>\n\n<Armor Weakness: Slashing>\n\n<Sideview Battler: Evil1_8>\n<Sideview No Collapse>\n<Weapon Image: 146>\n<Attack Animation: 15>\n<Sideview Attack Motion: thrust>\n<HP Gauge Width: 288>\n\n<AI Priority>\nUser HP% param <= 50% +++ Eval !user._storms: Lightning Storm\nUser HP% param <= 25% +++ Eval user._storms === 1: Lightning Storm\n</AI Priority>\n\n<Enemy Drops>\nSmirnoff's Lightning Lance: 100%\nLoaf of Bread: 50%\nLoaf of Bread: 50%\nLoaf of Bread: 50%\nOmelette: 50%\nCarp and Mushroom Stew: 50%\nGarnished Perch: 50%\nSolus Valley Special: 50%\nHoney-Glazed Carp: 50%\nSmall Potion: 50%\nSmall Potion: 50%\nPotion: 50%\nPotion: 50%\nLarge Potion: 50%\nLarge Potion: 50%\nTome of Experience: 50%\nTome of Experience: 50%\n</Enemy Drops>",
     "params": [
       9000,
       0,
       25,
       25,
-      50,
+      45,
       50,
       100,
       50
@@ -7100,14 +7100,14 @@
       }
     ],
     "gold": 0,
-    "name": "Baron Ripoff",
+    "name": "Baron Projection",
     "note": "<Element: Electric>\n<Element Absorb: Electric>\n<Passive State: 150, 227>\n\n<Sideview Battler: NoMatchingSprite/Baron Ripoff>\n<Scale Sprite: 200%>\n<Attack Animation: 5>\n<Sideview Attack Motion: thrust>\n<HP Gauge Width: 180>\n\n<Enemy Drops>\nElectric Essence: 20%\n</Enemy Drops>",
     "params": [
       1500,
       0,
       20,
       25,
-      50,
+      40,
       50,
       100,
       60
