@@ -7,21 +7,22 @@ VERSION_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, "../data/Version.json"))
 CONFIG_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, "config.json"))
 with open(CONFIG_PATH, "r", encoding="utf-8") as f:
     DEMO = json.load(f).get("demo", False)
+    PLAYTEST = json.load(f).get("playtest", False)
 
-APP_ID = 3544920 if not DEMO else 3580480
+APP_ID = 4481480 if PLAYTEST else 3580480 if DEMO else 3544920
 
 DEPOTS = {
     "windows": {
         "id": str(APP_ID + 1),
-        "folder": "../out/windows" if not DEMO else "../out/windows-demo"
+        "folder": f"../out/windows{'-demo' if DEMO else ''}{'-playtest' if PLAYTEST else ''}"
     },
     "mac": {
         "id": str(APP_ID + 2),
-        "folder": "../out/mac" if not DEMO else "../out/mac-demo"
+        "folder": f"../out/mac{'-demo' if DEMO else ''}{'-playtest' if PLAYTEST else ''}"
     },
     "linux": {
         "id": str(APP_ID + 3),
-        "folder": "../out/linux" if not DEMO else "../out/linux-demo"
+        "folder": f"../out/linux{'-demo' if DEMO else ''}{'-playtest' if PLAYTEST else ''}"
     }
 }
 
