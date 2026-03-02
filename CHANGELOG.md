@@ -11,7 +11,8 @@ SHORT DESC
 - 
 
 ### Changes
-- Buffed Skeleton Warrior and Skeleton Mage.
+- Buffed Skeleton Warrior and Skeleton Mage, both offensively and defensively.
+- Buffed Earthen Grassrobes DEF from 5 → 8.
 
 ### Bug Fixes
 - Fixed Dandy Toad Camp not appearing.
