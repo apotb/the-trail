@@ -416,14 +416,14 @@
     ],
     "gold": 30,
     "name": "Smart Mouth",
-    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Bandito_3>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Enemy Drops>\nBell: 5%\nBandito Loot: 100%\nFulfilling Ration: 100%\nSmall Elixir: 100%\nBandito Dagger: 12.5%\nBandito Cloak: 12.5%\nBandito Gloves: 12.5%\nAnti-Magic Charm: 5%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Bandito_3>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<AI Priority>\nUser HP% param <= 20%: Backstab, Lowest DEF\nTurn === 1: Low Blow, Lowest HP\n</AI Priority>\n\n<Enemy Drops>\nBell: 5%\nBandito Loot: 100%\nFulfilling Ration: 100%\nSmall Elixir: 100%\nBandito Dagger: 12.5%\nBandito Cloak: 12.5%\nBandito Gloves: 12.5%\nAnti-Magic Charm: 5%\n</Enemy Drops>",
     "params": [
       400,
       10,
       11,
       11,
       1,
-      7,
+      9,
       60,
       60
     ]
@@ -476,8 +476,8 @@
     "params": [
       120,
       10,
-      9,
-      9,
+      10,
+      10,
       1,
       6,
       40,
@@ -605,7 +605,7 @@
       10,
       10,
       1,
-      6,
+      9,
       60,
       60
     ]
@@ -666,7 +666,7 @@
       11,
       11,
       1,
-      6,
+      11,
       80,
       50
     ]

@@ -16,6 +16,7 @@ SHORT DESC
 ### Bug Fixes
 - Fixed Dandy Toad Camp not appearing.
 - Fixed Giant Rat dropping just 30 EXP instead of 20 EXP and 12B.
+- Fixed Smart Mouth being able to KO P3 at the campsite battle.
 - Fixed Steam Cloud not working with new save extension.
 - Fixed a few wall lamps using floor lamp sprite.
 
