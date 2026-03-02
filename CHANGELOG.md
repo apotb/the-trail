@@ -21,6 +21,7 @@ SHORT DESC
 - Fixed Giant Rat dropping just 30 EXP instead of 20 EXP and 12B.
 - Fixed Smart Mouth being able to KO P3 at the campsite battle.
 - Fixed Steam Cloud not working with new save extension.
+- Fixed Recall Potion showing as the retry cost if the party has less than 2 Bits.
 - Fixed a few wall lamps using floor lamp sprite.
 
 # Alpha 18: Back to the Basics (2/28/2026)
