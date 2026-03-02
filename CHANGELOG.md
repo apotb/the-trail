@@ -15,6 +15,7 @@ SHORT DESC
 
 ### Bug Fixes
 - Fixed Dandy Toad Camp not appearing.
+- Fixed Giant Rat dropping just 30 EXP instead of 20 EXP and 12B
 - Fixed Steam Cloud not working with new save extension.
 
 # Alpha 18: Back to the Basics (2/28/2026)
