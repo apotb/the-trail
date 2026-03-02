@@ -22,6 +22,7 @@ SHORT DESC
 - Fixed Smart Mouth being able to KO P3 at the campsite battle.
 - Fixed Steam Cloud not working with new save extension.
 - Fixed Recall Potion showing as the retry cost if the party has less than 2 Bits.
+- Fixed quest "High Protein Diet" showing Dirty Mike as the quest giver rather than Larry.
 - Fixed a few wall lamps using floor lamp sprite.
 
 # Alpha 18: Back to the Basics (2/28/2026)
