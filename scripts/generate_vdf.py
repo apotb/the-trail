@@ -6,8 +6,9 @@ LOG_PATH = os.path.join(OUT_DIR, "logs")
 VERSION_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, "../data/Version.json"))
 CONFIG_PATH = os.path.abspath(os.path.join(SCRIPT_DIR, "config.json"))
 with open(CONFIG_PATH, "r", encoding="utf-8") as f:
-    DEMO = json.load(f).get("demo", False)
-    PLAYTEST = json.load(f).get("playtest", False)
+    config = json.load(f)
+    DEMO = config.get("demo", False)
+    PLAYTEST = config.get("playtest", False)
 
 APP_ID = 4481480 if PLAYTEST else 3580480 if DEMO else 3544920
 
