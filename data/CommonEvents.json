@@ -12721,6 +12721,27 @@
     "id": 55,
     "list": [
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "### ALPHA 18.1"
+        ]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Update game over common events array"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameSystem._GOCCommonEvents = [0, 0, 10];"
+        ]
+      },
+      {
         "code": 115,
         "indent": 0,
         "parameters": []

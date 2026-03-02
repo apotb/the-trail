@@ -15,6 +15,7 @@ SHORT DESC
 - Buffed Earthen Grassrobes DEF from 5 → 8.
 
 ### Bug Fixes
+- Fixed time system tint disappearing after a game over.
 - Fixed Dandy Toad Camp not appearing.
 - Fixed Giant Rat dropping just 30 EXP instead of 20 EXP and 12B.
 - Fixed Smart Mouth being able to KO P3 at the campsite battle.
