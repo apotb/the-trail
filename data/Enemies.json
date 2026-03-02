@@ -797,12 +797,12 @@
     "name": "Skeleton Mage",
     "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 137>\n\n<Sideview Battler: Monster2_2>\n<Weapon Image: 6>\n<Attack Animation: 122>\n\n<Boost Skill 11: Full>\n<AI Priority>\nHP% param <= 30% +++ Random 60%: Cure I, Lowest HP%\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Elixir: 20% +20%\nElixir: 10% +10%\nMAT Scroll: 10% +10%\nRuby Ring: 5% +5%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
-      150,
+      180,
       30,
       8,
       9,
-      20,
-      20,
+      23,
+      25,
       30,
       18
     ]
@@ -858,10 +858,10 @@
     "name": "Skeleton Warrior",
     "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 137>\n\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<AI Priority>\nTroop Alive Members > 3 +++ State !== Hold the Line I +++ Random 20%: Hold the Line I\nTroop Alive Members > 1 +++ State !== Weak Point +++ Random 20%: Weak Point\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Potion: 20% +20%\nPotion: 10% +10%\nATK Scroll: 10% +10%\nEmerald Ring: 5% +5%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
-      180,
+      240,
       10,
       12,
-      13,
+      15,
       1,
       12,
       15,

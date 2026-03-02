@@ -11,7 +11,7 @@ SHORT DESC
 - 
 
 ### Changes
-- 
+- Buffed Skeleton Warrior and Skeleton Mage.
 
 ### Bug Fixes
 - Fixed Dandy Toad Camp not appearing.
