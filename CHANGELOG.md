@@ -11,10 +11,18 @@ SHORT DESC
 - 
 
 ### Changes
-- 
+- Buffed Skeleton Warrior and Skeleton Mage, both offensively and defensively.
+- Buffed Earthen Grassrobes DEF from 5 → 8.
 
 ### Bug Fixes
+- Fixed time system tint disappearing after a game over.
+- Fixed time system tint not working during celebrations after Laeryidyean's defeat.
 - Fixed Dandy Toad Camp not appearing.
+- Fixed Giant Rat dropping just 30 EXP instead of 20 EXP and 12B.
+- Fixed Smart Mouth being able to KO P3 at the campsite battle.
+- Fixed Steam Cloud not working with new save extension.
+- Fixed Recall Potion showing as the retry cost if the party has less than 2 Bits.
+- Fixed a few wall lamps using floor lamp sprite.
 
 # Alpha 18: Back to the Basics (2/28/2026)
 It's about time we returned to what made The Trail great in the first place! In my opinion, the latest content has felt somewhat distanced from the humble beginnings of the game. This update serves to unify systems/content from previous updates to make the Overworld feel much more cohesive from start to finish.
