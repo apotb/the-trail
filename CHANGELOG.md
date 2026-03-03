@@ -15,6 +15,7 @@ SHORT DESC
 - Increased MP cost of Shield of Faith and Aegis of Trailia by 33%.
 - Buffed Skeleton Warrior and Skeleton Mage, both offensively and defensively.
 - Buffed Earthen Grassrobes DEF from 5 → 8.
+- Mage Crystals and Tower Shield now use PDR/MDR stats rather than isolated damage reduction formulas.
 
 ### Bug Fixes
 - Fixed crash caused by menu particle rendering.
