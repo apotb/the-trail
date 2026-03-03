@@ -28,6 +28,7 @@ SHORT DESC
 - Fixed "Buffs" category still using Ration icon, even though Rations are now in the Meals category.
 - Fixed Recall Potion showing as the retry cost if the party has less than 2 Bits.
 - Fixed a certain tile for the Bandito Hideout transfer taking you to the wrong side.
+- Fixed the campfire with the sword in it not lighting on/off correctly.
 - Fixed quest "High Protein Diet" showing Dirty Mike as the quest giver rather than Larry.
 - Fixed the autosave in the Great Pyramid sometimes happening after the Warden's cutscene has begun.
 - Fixed a few wall lamps using floor lamp sprite.
