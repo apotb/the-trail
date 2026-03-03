@@ -14,6 +14,7 @@ SHORT DESC
 
 ### Changes
 - Increased MP cost of Shield of Faith and Aegis of Trailia by 33%.
+- Items that cannot be sold will not be shown while selling.
 - Buffed Skeleton Warrior and Skeleton Mage, both offensively and defensively.
 - Buffed Earthen Grassrobes DEF from 5 → 8.
 - Mage Crystals and Tower Shield now use PDR/MDR stats rather than isolated damage reduction formulas.
