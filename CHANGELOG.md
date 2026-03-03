@@ -9,6 +9,7 @@ SHORT DESC
 
 ### Additions
 - Quest objectives that require gathering items will show how many you have.
+- You can now change your team name as well as generate random names at the ID forger in Bladesville.
 
 ### Changes
 - Buffed Skeleton Warrior and Skeleton Mage, both offensively and defensively.

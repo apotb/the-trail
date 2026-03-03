@@ -2570,7 +2570,8 @@
                   "\\N[1]",
                   "\\N[2]",
                   "\\N[3]",
-                  "\\N[4]"
+                  "\\N[4]",
+                  "\\N[19]"
                 ],
                 -1,
                 0,
@@ -2611,12 +2612,105 @@
               ]
             },
             {
-              "code": 303,
+              "code": 112,
               "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 4,
+              "parameters": [
+                30
+              ]
+            },
+            {
+              "code": 303,
+              "indent": 4,
               "parameters": [
                 1,
                 12
               ]
+            },
+            {
+              "code": 102,
+              "indent": 4,
+              "parameters": [
+                [
+                  "\\N[1]\\fr?",
+                  "Generate random name",
+                  "Wait..."
+                ],
+                2,
+                1,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 4,
+              "parameters": [
+                0,
+                "\\N[1]\\fr?"
+              ]
+            },
+            {
+              "code": 113,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 4,
+              "parameters": [
+                1,
+                "Generate random name"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 5,
+              "parameters": [
+                "$gameActors.actor(1).setRandomName(true);"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 4,
+              "parameters": [
+                2,
+                "Wait..."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 413,
+              "indent": 3,
+              "parameters": []
             },
             {
               "code": 356,
@@ -2952,12 +3046,105 @@
               ]
             },
             {
-              "code": 303,
+              "code": 112,
               "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 4,
+              "parameters": [
+                30
+              ]
+            },
+            {
+              "code": 303,
+              "indent": 4,
               "parameters": [
                 2,
                 12
               ]
+            },
+            {
+              "code": 102,
+              "indent": 4,
+              "parameters": [
+                [
+                  "\\N[2]\\fr?",
+                  "Generate random name",
+                  "Wait..."
+                ],
+                2,
+                1,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 4,
+              "parameters": [
+                0,
+                "\\N[2]\\fr?"
+              ]
+            },
+            {
+              "code": 113,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 4,
+              "parameters": [
+                1,
+                "Generate random name"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 5,
+              "parameters": [
+                "$gameActors.actor(2).setRandomName(true);"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 4,
+              "parameters": [
+                2,
+                "Wait..."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 413,
+              "indent": 3,
+              "parameters": []
             },
             {
               "code": 356,
@@ -3293,12 +3480,105 @@
               ]
             },
             {
-              "code": 303,
+              "code": 112,
               "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 4,
+              "parameters": [
+                30
+              ]
+            },
+            {
+              "code": 303,
+              "indent": 4,
               "parameters": [
                 3,
                 12
               ]
+            },
+            {
+              "code": 102,
+              "indent": 4,
+              "parameters": [
+                [
+                  "\\N[3]\\fr?",
+                  "Generate random name",
+                  "Wait..."
+                ],
+                2,
+                1,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 4,
+              "parameters": [
+                0,
+                "\\N[3]\\fr?"
+              ]
+            },
+            {
+              "code": 113,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 4,
+              "parameters": [
+                1,
+                "Generate random name"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 5,
+              "parameters": [
+                "$gameActors.actor(3).setRandomName(false);"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 4,
+              "parameters": [
+                2,
+                "Wait..."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 413,
+              "indent": 3,
+              "parameters": []
             },
             {
               "code": 0,
@@ -3338,11 +3618,256 @@
               ]
             },
             {
-              "code": 303,
+              "code": 112,
               "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 4,
+              "parameters": [
+                30
+              ]
+            },
+            {
+              "code": 303,
+              "indent": 4,
               "parameters": [
                 4,
                 12
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 4,
+              "parameters": [
+                [
+                  "\\N[4]\\fr?",
+                  "Generate random name",
+                  "Wait..."
+                ],
+                2,
+                1,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 4,
+              "parameters": [
+                0,
+                "\\N[4]\\fr?"
+              ]
+            },
+            {
+              "code": 113,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 4,
+              "parameters": [
+                1,
+                "Generate random name"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 5,
+              "parameters": [
+                "$gameActors.actor(4).setRandomName(false);"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 4,
+              "parameters": [
+                2,
+                "Wait..."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 413,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 2,
+              "parameters": [
+                4,
+                "\\N[19]"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 3,
+              "parameters": [
+                "Actor1",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 3,
+              "parameters": [
+                "\\-Alright, what do you wanna'"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 3,
+              "parameters": [
+                "change your team's name to?"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 3,
+              "parameters": [
+                "$gameTemp._windowNameEditWidth = 720;"
+              ]
+            },
+            {
+              "code": 112,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 4,
+              "parameters": [
+                30
+              ]
+            },
+            {
+              "code": 303,
+              "indent": 4,
+              "parameters": [
+                19,
+                48
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 4,
+              "parameters": [
+                [
+                  "\\N[19]\\fr!",
+                  "Generate random name",
+                  "Uh..."
+                ],
+                2,
+                1,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 4,
+              "parameters": [
+                0,
+                "\\N[19]\\fr!"
+              ]
+            },
+            {
+              "code": 113,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 4,
+              "parameters": [
+                1,
+                "Generate random name"
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 5,
+              "parameters": [
+                5
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 4,
+              "parameters": [
+                2,
+                "Uh..."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 413,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 355,
+              "indent": 3,
+              "parameters": [
+                "delete $gameTemp._windowNameEditWidth;"
               ]
             },
             {
