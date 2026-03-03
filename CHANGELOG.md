@@ -12,6 +12,7 @@ SHORT DESC
 - You can now change your team name as well as generate random names at the ID forger in Bladesville.
 
 ### Changes
+- Increased MP cost of Shield of Faith and Aegis of Trailia by 33%.
 - Buffed Skeleton Warrior and Skeleton Mage, both offensively and defensively.
 - Buffed Earthen Grassrobes DEF from 5 → 8.
 
