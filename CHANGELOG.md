@@ -8,7 +8,7 @@ SHORT DESC
   - PLAYTEST: identical to the main game, but you cannot earn achievements
 
 ### Additions
-- 
+- Quest objectives that require gathering items will show how many you have.
 
 ### Changes
 - Buffed Skeleton Warrior and Skeleton Mage, both offensively and defensively.
