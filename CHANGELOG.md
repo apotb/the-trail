@@ -33,6 +33,7 @@ SHORT DESC
 - Fixed a certain tile for the Bandito Hideout transfer taking you to the wrong side.
 - Fixed the campfire with the sword in it not lighting on/off correctly.
 - Fixed issues related to Laeryidyean's Forest tint.
+- Fixed Tellurium Greaves recipe not including Iron Greaves.
 - Fixed quest "High Protein Diet" showing Dirty Mike as the quest giver rather than Larry.
 - Fixed the autosave in the Great Pyramid sometimes happening after the Warden's cutscene has begun.
 - Fixed a few wall lamps using floor lamp sprite.
