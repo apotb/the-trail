@@ -24,9 +24,10 @@ SHORT DESC
 - Fixed Giant Rat dropping just 30 EXP instead of 20 EXP and 12B.
 - Fixed Smart Mouth being able to KO P3 at the campsite battle.
 - Fixed Steam Cloud not working with new save extension.
-- Fixed Recall Potion showing as the retry cost if the party has less than 2 Bits.
-- Fixed quest "High Protein Diet" showing Dirty Mike as the quest giver rather than Larry.
 - Fixed "Buffs" category still using Ration icon, even though Rations are now in the Meals category.
+- Fixed Recall Potion showing as the retry cost if the party has less than 2 Bits.
+- Fixed a certain tile for the Bandito Hideout transfer taking you to the wrong side.
+- Fixed quest "High Protein Diet" showing Dirty Mike as the quest giver rather than Larry.
 - Fixed a few wall lamps using floor lamp sprite.
 
 # Alpha 18: Back to the Basics (2/28/2026)
