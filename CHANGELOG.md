@@ -15,6 +15,7 @@ SHORT DESC
 - Buffed Earthen Grassrobes DEF from 5 → 8.
 
 ### Bug Fixes
+- Fixed crash caused by menu particle rendering.
 - Fixed time system tint disappearing after a game over.
 - Fixed time system tint not working during celebrations after Laeryidyean's defeat.
 - Fixed Dandy Toad Camp not appearing.
