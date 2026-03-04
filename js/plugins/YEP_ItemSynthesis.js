@@ -2059,6 +2059,7 @@ Scene_Synthesis.prototype.endNumberInput = function() {
     this._numberWindow.deactivate();
     this._itemWindow.hide();
     this._statusWindow.hide();
+    this._statusWindow.setItem(null);
     this._listWindow.activate();
     this._ingredientsWindow.show();
 };
@@ -2066,7 +2067,6 @@ Scene_Synthesis.prototype.endNumberInput = function() {
 Scene_Synthesis.prototype.onNumberCancel = function() {
     SoundManager.playCancel();
     this.endNumberInput();
-    this._statusWindow.setItem(null);
 };
 
 Scene_Synthesis.prototype.maxBuy = function() {

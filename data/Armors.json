@@ -1152,7 +1152,7 @@
   {
     "id": 50,
     "atypeId": 1,
-    "description": "Allows the wearer to see the undead, preventing\nthem from being scared of the unknown.",
+    "description": "Allows the wearer to see the undead, preventing them from being scared of the unknown.\nProvides immunity to the terrifying effects of Lost Souls, so choose the recipient carefully!",
     "etypeId": 6,
     "traits": [
       {
@@ -2738,7 +2738,7 @@
     "traits": [],
     "iconIndex": 629,
     "name": "Retro Knight Outfit",
-    "note": "<Rarity: 3>\n<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,0,Actor4_Old,0,Actor4_1>\n\n<Synthesis Ingredients>\nKnight Token\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Knight Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
+    "note": "<Rarity: 3>\n<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,0,Actor4_Old,0,Actor4_1>\n\n<Synthesis Ingredients>\nKnight Token\nLeek: 2\n</Synthesis Ingredients>\n<Mask Name: Old-School Knight Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -2759,7 +2759,7 @@
     "traits": [],
     "iconIndex": 433,
     "name": "Retro Mage Outfit",
-    "note": "<Rarity: 3>\n<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,1,Actor4_Old,1,Actor4_2>\n\n<Synthesis Ingredients>\nMage Token\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Mage Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
+    "note": "<Rarity: 3>\n<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,1,Actor4_Old,1,Actor4_2>\n\n<Synthesis Ingredients>\nMage Token\nLeek: 2\n</Synthesis Ingredients>\n<Mask Name: Old-School Mage Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -2780,7 +2780,7 @@
     "traits": [],
     "iconIndex": 630,
     "name": "Retro Cleric Outfit",
-    "note": "<Rarity: 3>\n<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,2,Actor4_Old,2,Actor4_3>\n\n<Synthesis Ingredients>\nCleric Token\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Cleric Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 3;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 3 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(3).name()\n</Custom Equip Requirement Text>",
+    "note": "<Rarity: 3>\n<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,2,Actor4_Old,2,Actor4_3>\n\n<Synthesis Ingredients>\nCleric Token\nLeek: 2\n</Synthesis Ingredients>\n<Mask Name: Old-School Cleric Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 3;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 3 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(3).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -2801,7 +2801,7 @@
     "traits": [],
     "iconIndex": 631,
     "name": "Retro Rogue Outfit",
-    "note": "<Rarity: 3>\n<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,3,Actor4_Old,3,Actor4_4>\n\n<Synthesis Ingredients>\nRogue Token\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Rogue Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 4;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 4 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
+    "note": "<Rarity: 3>\n<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,3,Actor4_Old,3,Actor4_4>\n\n<Synthesis Ingredients>\nRogue Token\nLeek: 2\n</Synthesis Ingredients>\n<Mask Name: Old-School Rogue Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 4;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 4 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -5610,7 +5610,7 @@
     ],
     "iconIndex": 710,
     "name": "Tellurium Greaves",
-    "note": "<Rarity: 3>\n<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nKnight's Greaves\nFeral Rat Fur: 5\nSteel Ingot: 5\nTellurium Alloy\n</Synthesis Ingredients>\n\n<Disassemble Pool: Advanced>\nx1-2 Iron Cluster: 60%\nx1-2 Tellurium Dust: 60%\n</Disassemble Pool: Advanced>",
+    "note": "<Rarity: 3>\n<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nIron Greaves\nFeral Rat Fur: 5\nSteel Ingot: 5\nTellurium Alloy\n</Synthesis Ingredients>\n\n<Disassemble Pool: Advanced>\nx1-2 Iron Cluster: 60%\nx1-2 Tellurium Dust: 60%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       5,

@@ -209,7 +209,7 @@ Scene_MenuBase.prototype.reset_particles = function(i) {
 var _mog_mpart_scbase_update = Scene_MenuBase.prototype.update;
 Scene_MenuBase.prototype.update = function() {
 	_mog_mpart_scbase_update.call(this);
-	if (SceneManager._mpart) {this.update_particles()};	
+	if (SceneManager._mpart && !!this.update_particles) {this.update_particles()};
 };
 
 //==============================

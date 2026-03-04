@@ -1145,6 +1145,7 @@ Game_Party.prototype.gainItem = function(item, amount, includeEquip) {
       Yanfly.Item.Game_Party_gainItem.call(this, item, amount, includeEquip);
     }
     this.seenItem(item);
+    if (item !== $dataItems[293]) $gameSystem.refreshActiveQuestWindow();
     // Leek
     if (item == $dataItems[2]) {
       $gameSystem._leeks = ($gameSystem._leeks || 0) + 1;
