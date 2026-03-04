@@ -1,3 +1,45 @@
+# Alpha 18.1: Music Update Vol. 1 - Welcome to Adon (3/4/2026)
+The Music Update is back! After being reverted during Alpha 15's development, many of the custom tracks have returned, featuring new samples and better mastering. Enjoy the new sounds of Adon!
+
+### Main Game vs Demo vs Playtest
+- We have introduced a new Playtest on Steam for The Trail, giving each version of the game a specific purpose:
+  - MAIN GAME: the full experience for trusted testers, accessed via Steam key bot in Discord, intended for dedicated players
+  - DEMO: play through Chapter 3, cannot earn achievements, intended for promotion/Steam Next Fests
+  - PLAYTEST: identical to the main game, but you cannot earn achievements, intended for the general public after/instead of the demo
+
+### Additions
+- Volume 1 of the Music Update is here! Experience the updated soundtrack as you journey through Adon.
+- Quest objectives that require gathering items will show how many you have.
+- You can now change your team name as well as generate random names at the ID forger in Bladesville.
+- Added a hint regarding the Archaic Hourglass to the Ruined Fort.
+
+### Changes
+- Increased MP cost of Shield of Faith and Aegis of Trailia by 33%.
+- Items that cannot be sold will not be shown while selling.
+- Buffed Skeleton Warrior and Skeleton Mage, both offensively and defensively.
+- Buffed Earthen Grassrobes DEF from 5 → 8.
+- Mage Crystals and Tower Shield now use PDR/MDR stats rather than isolated damage reduction formulas.
+- Lowered potatoes needed for Potato Tastes Better Than Key achievement from 10 billion to 1 billion.
+- Rebalanced Leek costs.
+
+### Bug Fixes
+- Fixed crash caused by menu particle rendering.
+- Fixed time system tint disappearing after a game over.
+- Fixed time system tint not working during celebrations after Laeryidyean's defeat.
+- Fixed Dandy Toad Camp not appearing.
+- Fixed Giant Rat dropping just 30 EXP instead of 20 EXP and 12B.
+- Fixed Smart Mouth being able to KO P3 at the campsite battle.
+- Fixed Steam Cloud not working with new save extension.
+- Fixed "Buffs" category still using Ration icon, even though Rations are now in the Meals category.
+- Fixed Recall Potion showing as the retry cost if the party has less than 2 Bits.
+- Fixed a certain tile for the Bandito Hideout transfer taking you to the wrong side.
+- Fixed the campfire with the sword in it not lighting on/off correctly.
+- Fixed issues related to Laeryidyean's Forest tint.
+- Fixed Tellurium Greaves recipe not including Iron Greaves.
+- Fixed quest "High Protein Diet" showing Dirty Mike as the quest giver rather than Larry.
+- Fixed the autosave in the Great Pyramid sometimes happening after the Warden's cutscene has begun.
+- Fixed a few wall lamps using floor lamp sprite.
+
 # Alpha 18: Back to the Basics (2/28/2026)
 It's about time we returned to what made The Trail great in the first place! In my opinion, the latest content has felt somewhat distanced from the humble beginnings of the game. This update serves to unify systems/content from previous updates to make the Overworld feel much more cohesive from start to finish.
 

@@ -263,6 +263,9 @@ if(MSX.AlphabeticalSort.sortItemList){
         if(Imported.YEP_ItemCore){
             if (SceneManager._scene instanceof Scene_Item) this.listEquippedItems();
         }
+        if (this instanceof Window_ShopSell) this._data = this._data.filter(function(item) {
+            return item?.price > 0;
+        });
     };
 }
 

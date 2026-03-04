@@ -377,7 +377,7 @@ Sprite_RetryCosts.prototype.calculateLinesGold = function() {
 };
 
 Sprite_RetryCosts.prototype.calculateLinesItems = function() {
-	if($gameSystem.itemRetryCost && eval($gameSystem.goldRetryCost) <= 0) {
+	if($gameSystem.itemRetryCost && eval($gameSystem.goldRetryCost) <= 0 && $gameParty.gold() >= 2) {
 		const items = eval('[' + $gameSystem.itemRetryCost + ']');
 		for(let i = 0; i < items.length; i++) {
 			const info = items[i];

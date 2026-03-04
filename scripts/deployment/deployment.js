@@ -11,6 +11,7 @@ const util = require('util');
 const execPromise = util.promisify(exec);
 
 const DEMO = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'config.json'))).demo;
+const PLAYTEST = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'config.json'))).playtest;
 
 function dlNwjs(platform, directory, extract=".", extension="zip") {
     const versionName = `nwjs-v0.94.0-${platform}`;
@@ -178,7 +179,7 @@ async function deployment(directory, platform) {
 
     if (!config) throw new Error(`Unsupported build target: ${platform}`);
 
-    const finalPath = path.join(rootPath, "out", `${platform}${DEMO ? "-demo" : ""}`);
+    const finalPath = path.join(rootPath, "out", `${platform}${DEMO ? "-demo" : ""}${PLAYTEST ? "-playtest" : ""}`);
     if (fs.existsSync(finalPath)) {
         try {
             fs.rmSync(finalPath, { recursive: true, force: true, maxRetries: 3 });
@@ -214,9 +215,9 @@ async function deployment(directory, platform) {
         const plistPath = path.join(nwjsPath, "The Trail.app", "Contents", "Info.plist");
         let plistContent = fs.readFileSync(plistPath, "utf8");
         plistContent = plistContent
-            .replace(/<key>CFBundleDisplayName<\/key>\s*<string>.*?<\/string>/, `<key>CFBundleDisplayName</key>\n\t<string>The Trail${DEMO ? " Demo": ""}</string>`)
-            .replace(/<key>CFBundleName<\/key>\s*<string>.*?<\/string>/, `<key>CFBundleName</key>\n\t<string>The Trail${DEMO ? " Demo": ""}</string>`)
-            .replace(/<key>CFBundleIdentifier<\/key>\s*<string>.*?<\/string>/, `<key>CFBundleIdentifier</key>\n\t<string>com.thetrailteam.thetrail${DEMO ? "demo": ""}</string>`);
+            .replace(/<key>CFBundleDisplayName<\/key>\s*<string>.*?<\/string>/, `<key>CFBundleDisplayName</key>\n\t<string>The Trail${DEMO ? " Demo": ""}${PLAYTEST ? " Playtest": ""}</string>`)
+            .replace(/<key>CFBundleName<\/key>\s*<string>.*?<\/string>/, `<key>CFBundleName</key>\n\t<string>The Trail${DEMO ? " Demo": ""}${PLAYTEST ? " Playtest": ""}</string>`)
+            .replace(/<key>CFBundleIdentifier<\/key>\s*<string>.*?<\/string>/, `<key>CFBundleIdentifier</key>\n\t<string>com.thetrailteam.thetrail${DEMO ? "demo": ""}${PLAYTEST ? "playtest": ""}</string>`);
         fs.writeFileSync(plistPath, plistContent);
         console.log("Updated Info.plist with display name, name, and identifier.");
     }

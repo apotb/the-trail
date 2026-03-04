@@ -3001,8 +3001,8 @@
     },
     {
       "id": 2,
-      "name": "lamp-copy",
-      "note": "<Copy Event: 158, 183>",
+      "name": "lampwall-copy",
+      "note": "<Copy Event: 158, 189>",
       "pages": [
         {
           "conditions": {
@@ -3024,9 +3024,9 @@
           "image": {
             "tileId": 0,
             "characterName": "!Flame",
-            "direction": 4,
+            "direction": 6,
             "pattern": 1,
-            "characterIndex": 1
+            "characterIndex": 0
           },
           "list": [
             {
@@ -3056,8 +3056,8 @@
           "walkAnime": false
         }
       ],
-      "x": 16,
-      "y": 3
+      "x": 17,
+      "y": 2
     },
     null,
     {
