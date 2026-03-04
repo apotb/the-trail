@@ -1,13 +1,14 @@
-# Alpha 18.1 (3/1/2026)
-SHORT DESC
+# Alpha 18.1: Music Update Vol. 1 - Welcome to Adon (3/4/2026)
+The Music Update is back! After being reverted during Alpha 15's development, many of the custom tracks have returned, featuring new samples and better mastering. Enjoy the new sounds of Adon!
 
 ### Main Game vs Demo vs Playtest
 - We have introduced a new Playtest on Steam for The Trail, giving each version of the game a specific purpose:
-  - MAIN GAME: the full experience for trusted testers, accessed via Steam key bot in Discord
-  - DEMO: play through Chapter 3, cannot earn achievements
-  - PLAYTEST: identical to the main game, but you cannot earn achievements
+  - MAIN GAME: the full experience for trusted testers, accessed via Steam key bot in Discord, intended for dedicated players
+  - DEMO: play through Chapter 3, cannot earn achievements, intended for promotion/Steam Next Fests
+  - PLAYTEST: identical to the main game, but you cannot earn achievements, intended for the general public after/instead of the demo
 
 ### Additions
+- Volume 1 of the Music Update is here! Experience the updated soundtrack as you journey through Adon.
 - Quest objectives that require gathering items will show how many you have.
 - You can now change your team name as well as generate random names at the ID forger in Bladesville.
 - Added a hint regarding the Archaic Hourglass to the Ruined Fort.
