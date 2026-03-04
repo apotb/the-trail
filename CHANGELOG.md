@@ -19,6 +19,7 @@ SHORT DESC
 - Buffed Earthen Grassrobes DEF from 5 → 8.
 - Mage Crystals and Tower Shield now use PDR/MDR stats rather than isolated damage reduction formulas.
 - Lowered potatoes needed for Potato Tastes Better Than Key achievement from 10 billion to 1 billion.
+- Rebalanced Leek costs.
 
 ### Bug Fixes
 - Fixed crash caused by menu particle rendering.
