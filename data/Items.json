@@ -2378,7 +2378,7 @@
     "iconIndex": 234,
     "itypeId": 2,
     "name": "Classified Documents",
-    "note": "<Rarity: 2>\n\nWas once the Enchanting Crystal.",
+    "note": "<Rarity: 1>\n\nWas once the Enchanting Crystal.",
     "occasion": 3,
     "price": 0,
     "repeats": 1,
@@ -3094,7 +3094,7 @@
     "occasion": 2,
     "price": 50,
     "repeats": 1,
-    "scope": 8,
+    "scope": 0,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
@@ -3127,7 +3127,7 @@
     "occasion": 2,
     "price": 50,
     "repeats": 1,
-    "scope": 8,
+    "scope": 0,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
@@ -9961,6 +9961,98 @@
     "price": 75,
     "repeats": 1,
     "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 341,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "A concerning set of documents containing details for an\nillegal mining operation as well as a mysterious new weapon.",
+    "effects": [
+      {
+        "code": 44,
+        "dataId": 91,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 234,
+    "itypeId": 2,
+    "name": "Terry's Plans",
+    "note": "<Rarity: 2>",
+    "occasion": 2,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 342,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Banned weapon enhancements manufactured by Terry.\nUsed to craft \\iw[44].",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 244,
+    "itypeId": 1,
+    "name": "Illegally Manufactured Parts",
+    "note": "<Rarity: 3>",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 343,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "A large chunk of metal ripped off a Mechanical Worm. Features\nan inscription of the Ruined Citadel signed by \"The Inventor\".",
+    "effects": [
+      {
+        "code": 44,
+        "dataId": 92,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 860,
+    "itypeId": 2,
+    "name": "Inscribed Mechanical Plating",
+    "note": "<Rarity: 3>",
+    "occasion": 2,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0

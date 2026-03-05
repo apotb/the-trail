@@ -22410,6 +22410,20 @@
               ]
             },
             {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "delete $gameSystem._followerOpacity;"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "$gameSystem.setRecallAllow(true);"
+              ]
+            },
+            {
               "code": 111,
               "indent": 0,
               "parameters": [

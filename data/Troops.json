@@ -13831,5 +13831,85 @@
         "span": 0
       }
     ]
+  },
+  {
+    "id": 121,
+    "members": [
+      {
+        "enemyId": 21,
+        "x": 341,
+        "y": 211,
+        "hidden": false
+      },
+      {
+        "enemyId": 22,
+        "x": 418,
+        "y": 334,
+        "hidden": false
+      },
+      {
+        "enemyId": 22,
+        "x": 462,
+        "y": 169,
+        "hidden": false
+      },
+      {
+        "enemyId": 20,
+        "x": 92,
+        "y": 361,
+        "hidden": false
+      },
+      {
+        "enemyId": 20,
+        "x": 241,
+        "y": 163,
+        "hidden": false
+      },
+      {
+        "enemyId": 21,
+        "x": 303,
+        "y": 358,
+        "hidden": false
+      },
+      {
+        "enemyId": 20,
+        "x": 114,
+        "y": 196,
+        "hidden": false
+      },
+      {
+        "enemyId": 20,
+        "x": 204,
+        "y": 301,
+        "hidden": false
+      }
+    ],
+    "name": "Dandy Toad Mage x2, Dandy Toad Captain x2, Dandy Toad x4",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
   }
 ]

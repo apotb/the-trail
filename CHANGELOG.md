@@ -2,6 +2,10 @@
 Happy 8th Trailiversary, everyone! REST OF INTRO
 
 ### Additions
+- Added 3 new items:
+  - Terry's Plans
+  - Illegally Manufactured Parts
+  - Inscribed Mechanical Plating
 - Added 8 psychoactive compounds:
   - Darts
   - Icy Hot
@@ -16,6 +20,7 @@ Happy 8th Trailiversary, everyone! REST OF INTRO
 - Cleric AI is more aggressive when it comes to healing.
 
 ### Bug Fixes
+- Fixed party members being translucent and not being able to use Recall Potion after leaving Sand Stomper Sanctum.
 - Fixed duplicate light shining from Bandito Hideout entrance.
 
 OUTRO

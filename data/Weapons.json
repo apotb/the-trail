@@ -1658,7 +1658,7 @@
     ],
     "iconIndex": 692,
     "name": "Bloodlust ★★",
-    "note": "<Rarity: 3>\n<Weapon Image: 206>\n<Upgrade Slots: 3>\n<HP Life Steal Physical: +6%>\n\n<Synthesis Ingredients>\nBloodlust ★\nStinger: 5\nTellurium Alloy\nTellurium Core\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\nif (!$gameSystem.isQuestObjectiveCompleted(42, 2)) {\n  $gameSystem.questObjectivesComplete(42, 2);\n  $gameSystem.questObjectivesShow(42, 3);\n}\n</Custom Synthesis Effect>\n\n<Custom Craft Show Eval>\nvisible = !$gameSystem.hasSynthed($dataWeapons[44]);\n</Custom Craft Show Eval>",
+    "note": "<Rarity: 3>\n<Weapon Image: 206>\n<Upgrade Slots: 3>\n<HP Life Steal Physical: +6%>\n\n<Synthesis Ingredients>\nBloodlust ★\nIllegally Manufactured Parts\nStinger: 5\nTellurium Alloy\nTellurium Core\n</Synthesis Ingredients>\n<Custom Synthesis Effect>\nOrangeGreenworks.activateAchievement('COLLECT_WEAPON');\nif (!$gameSystem.isQuestObjectiveCompleted(42, 2)) {\n  $gameSystem.questObjectivesComplete(42, 2);\n  $gameSystem.questObjectivesShow(42, 3);\n}\n</Custom Synthesis Effect>\n\n<Custom Craft Show Eval>\nvisible = !$gameSystem.hasSynthed($dataWeapons[44]);\n</Custom Craft Show Eval>",
     "params": [
       10,
       5,

@@ -765,7 +765,7 @@
         "After Henry slipped and told us that \\c[4]the Crushers are receiving money from a mysterious source\\c[0], the \\c[4]Town Master\\c[0] instructed us to \\c[4]help out the Crushers\\c[0] instead of fighting against them. \\c[4]Henry\\c[0] said he'll try to set up a meeting with \\c[4]the mysterious guy\\c[0].\\n<br><br>\\n\\c[0]This is already many layers thicker than the Bandito ordeal... and here I thought we just had to deal with some gang of idiots and be back on our merry way.",
         "\\c[4]Henry\\c[0] has mysteriously gone missing? That's strange. Our best lead right now is that he is at \\c[4]a meeting with the mysterious organzation\\c[0] somewhere in \\c[4]Haven Harbor\\c[0]... probably.\\n<br><br>\\n\\c[4]Sam Payne\\c[0]... he helped us a lot with Laeryidyean. I'm sure it wouldn't be too much of a stretch to bet that \\c[4]he knows something about all this\\c[4], right?",
         "\\c[4]Henry\\c[0] is somewhere in the \\c[4]Haven Harbor Underground\\c[0], according to \\c[4]Sam Payne\\c[0]. We need to enter it via \\c[4]the rightmost door in Sam's basement\\c[0] and go find \\c[4]Henry\\c[0].\\n<br><br>\\n\\c[0]How did we never find out about this before? I did always wonder what that steel door under Sam's shop was.",
-        "It would appear that a mysterious group known as the \\c[4]Catalysts\\c[0] have orchestrated some massive scheme. Their leader, \\c[4]Terry\\c[0], has been focusing the group's efforts on \\c[4]designing and creating some sort of super-powerful handheld weapon\\c[0]. There also appears to be plans to... \\c[4]drain the oasis and mine underneath it to find some rare ore\\c[0]?\\n<br><br>\\n\\c[0]When \\N[4] told me about this, it all seemed a bit ridiculous, but when she actually showed us the plans, it started to dawn on us that this was really their plan... whatever their plan is. A lot of questions are still up in the air; the \\c[4]Town Master\\c[0] will contact us once more after he mulls over the recent events.\\n<br><br>\\n\\c[0]Wow... this is a lot to think about. I'm going to need to take a few nights just to process everything that just happened."
+        "It would appear that a mysterious group known as the \\c[4]Catalysts\\c[0] have orchestrated some massive scheme. Their leader, \\c[4]Terry\\c[0], has been focusing the group's efforts on \\c[4]designing and creating some sort of super-powerful handheld weapon\\c[0]. There also appears to be plans to... \\c[4]drain the oasis and mine underneath it to find some rare ore\\c[0]?\\n<br><br>\\n\\c[0]When \\N[4] told me about this, it all seemed a bit ridiculous, but when she actually showed us \\ii[341], it started to dawn on us that this was really their plan... whatever their plan is. A lot of questions are still up in the air; the \\c[4]Town Master\\c[0] will contact us once more after he mulls over the recent events.\\n<br><br>\\n\\c[0]Wow... this is a lot to think about. I'm going to need to take a few nights just to process everything that just happened."
       ],
       "Objectives List": [
         "Raid the \\c[4]Crusher base\\c[0] at the \\c[4]northwest of the oasis\\c[0]",
@@ -1260,6 +1260,84 @@
       "Visible Rewards": [
         1
       ],
+      "Subtext": []
+    },
+    {
+      "id": 47,
+      "Title": "\\i[635]War Machines",
+      "Type": "Side Stories",
+      "Difficulty": "\\i[126]\\i[126]\\i[126]\\i[126] A Bit Tricky",
+      "From": "General",
+      "Location": "Telluria Castle",
+      "Description": [
+        "DEBRIEFED BY GENERAL",
+        "HEADING TO POISON SWAMP",
+        "INVESTIGATING RUINED CITADEL",
+        "REACH THE TOP OF THE CITADEL",
+        "QUEST COMPLETE"
+      ],
+      "Objectives List": [
+        "Investigate the \\c[4]Dandy Toads\\c[0] at the \\c[4]Oasis\\c[0]",
+        "Investigate \\ii[341] in \\c[4]Haven Harbor\\c[0]",
+        "Investigate the \\c[4]Poison Swamp\\c[0] in \\c[4]Southern Telluria\\c[0]",
+        "Investigate the \\c[4]Ruined Citadel\\c[0]",
+        "Reach the top of \\c[4]The Inventor's Citadel\\c[0]"
+      ],
+      "Visible Objectives": [
+        1,
+        2
+      ],
+      "Rewards List": [],
+      "Visible Rewards": [],
+      "Subtext": []
+    },
+    {
+      "id": 48,
+      "Title": "\\i[276]Illegal Mining Operation",
+      "Type": "Side Quests",
+      "Difficulty": "\\i[126]\\i[126]\\i[126] Slight Challenge",
+      "From": "Town Master",
+      "Location": "Telluria Castle",
+      "Description": [
+        "INVESTIGATE OASIS",
+        "ESCAPE SINKHOLE",
+        "QUEST COMPLETE"
+      ],
+      "Objectives List": [
+        "Stop the \\c[4]Dandy Toads\\c[0] at the \\c[4]Oasis\\c[0]",
+        "Escape the \\c[4]sinkhole\\c[0]"
+      ],
+      "Visible Objectives": [
+        1
+      ],
+      "Rewards List": [],
+      "Visible Rewards": [],
+      "Subtext": []
+    },
+    {
+      "id": 49,
+      "Title": "\\i[244]Blood Runs Deep",
+      "Type": "Side Quests",
+      "Difficulty": "\\i[126]\\i[126]\\i[126] Slight Challenge",
+      "From": "Sam Payne",
+      "Location": "Haven Harbor",
+      "Description": [
+        "TALK TO SAM PAYNE AND HENRY",
+        "TALK TO SHADE",
+        "INFILTRATE AND DESTROY THE FACTORY",
+        "QUEST COMPLETE"
+      ],
+      "Objectives List": [
+        "Speak to \\c[4]Shade\\c[0] in the \\c[4]Haven Harbor Underground\\c[0]",
+        "Infiltrate and destroy \\c[4]Terry's Factory\\c[0] with \\c[4]Shade\\c[0]"
+      ],
+      "Visible Objectives": [
+        1
+      ],
+      "Rewards List": [
+        "\\ii[342]"
+      ],
+      "Visible Rewards": [],
       "Subtext": []
     }
   ]

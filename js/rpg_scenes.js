@@ -584,7 +584,11 @@ Scene_Map.prototype.onMapLoaded = function() {
     if (this._transfer) {
         $gamePlayer.performTransfer();
     }
-    if ($dataMap.displayName == "Solus Town" && $gameSwitches.value(81)) $dataMap.data = $dataMapReplace['Solus Town']['Snow'];
+    if ($dataMap.displayName === "Solus Town" && $gameSwitches.value(81)) $dataMap.data = $dataMapReplace['Solus Town']['Snow'];
+    if ($dataMap.displayName === "Oasis") {
+        if ($gameSwitches.value(142)) $dataMap.data = $dataMapReplace['Oasis']['Sinkhole'];
+        else if ($gameSwitches.value(141)) $dataMap.data = $dataMapReplace['Oasis']['Drill'];
+    }
     this.createDisplayObjects();
 };
 
