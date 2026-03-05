@@ -1,8 +1,16 @@
 # Alpha 19: The 8th Trailiversary! (3/11/2026)
-INTRO
+Happy 8th Trailiversary, everyone! REST OF INTRO
 
 ### Additions
-- 
+- Added 8 psychoactive compounds:
+  - Darts
+  - Icy Hot
+  - Blizzy
+  - Pow-Powder
+  - Magic Mushroom
+  - Holy Blotter
+  - GetUp™
+  - HurtLess®
 
 ### Changes
 - Cleric AI is more aggressive when it comes to healing.
