@@ -10,7 +10,7 @@ INTRO
 ### Bug Fixes
 - 
 
-# Alpha 18.1: Music Update Vol. 1 - Welcome to Adon (3/4/2026)
+# Alpha 18.1: The Music Update Vol. 1 - Welcome to Adon (3/4/2026)
 The Music Update is back! After being reverted during Alpha 15's development, many of the custom tracks have returned, featuring new samples and better mastering. Enjoy the new sounds of Adon!
 
 ### Main Game vs Demo vs Playtest
