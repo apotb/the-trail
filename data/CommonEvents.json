@@ -2972,6 +2972,17 @@
         ]
       },
       {
+        "code": 122,
+        "indent": 4,
+        "parameters": [
+          44,
+          44,
+          0,
+          0,
+          2
+        ]
+      },
+      {
         "code": 243,
         "indent": 4,
         "parameters": []
@@ -3094,17 +3105,6 @@
         "indent": 4,
         "parameters": [
           "Your souls will be a fine addition to my collection."
-        ]
-      },
-      {
-        "code": 122,
-        "indent": 4,
-        "parameters": [
-          44,
-          44,
-          0,
-          0,
-          2
         ]
       },
       {
@@ -4107,12 +4107,136 @@
     "id": 26,
     "list": [
       {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameSystem._demo = $gameSystem._demo || {};"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "!($gameTemp.isDemo() || $gameTemp.isSteamPlaytest())"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "$gameSystem._demo.achievements"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 2,
+        "parameters": [
+          "$gameSystem._demo.achievements.forEach(a => {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  OrangeGreenworks.activateAchievement(a);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "});"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "delete $gameSystem._demo.achievements;"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "$gameSystem._demo.stats"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 2,
+        "parameters": [
+          "for (const stat in $gameSystem._demo.stats) {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  value = $gameSystem._demo.stats[stat];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "  OrangeGreenworks.setStat(stat, value);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "}"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "delete $gameSystem._demo.stats;"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "Demo Greenworks",
     "switchId": 1,
     "trigger": 0
   },
@@ -12597,6 +12721,27 @@
     "id": 55,
     "list": [
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "### ALPHA 18.1"
+        ]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Update game over common events array"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameSystem._GOCCommonEvents = [0, 0, 10];"
+        ]
+      },
+      {
         "code": 115,
         "indent": 0,
         "parameters": []
@@ -18818,6 +18963,34 @@
         "parameters": []
       },
       {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          78,
+          0,
+          167,
+          0
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "Tint set #6e6e6e"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 355,
         "indent": 0,
         "parameters": [
@@ -19319,6 +19492,52 @@
         "indent": 1,
         "parameters": [
           "DebugManager.gameSpeed = 3;"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameTemp.isDemo()"
+        ]
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          6,
+          6,
+          0
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          6,
+          6,
+          1
         ]
       },
       {

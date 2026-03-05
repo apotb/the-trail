@@ -2,7 +2,7 @@
 
 :: Variables
 for /f %%i in ('python -c "import os; print([line.split('=')[1].strip() for line in open('.env') if line.startswith('MAC_HOST=')][0])"') do set MAC_HOST=%%i
-for /f %%i in ('python -c "import json; print('mac-demo' if json.load(open('scripts/config.json')).get('demo', False) else 'mac')"') do set MAC_DIR=%%i
+for /f %%i in ('python -c "import json; cfg=json.load(open('scripts/config.json')); print('mac-playtest' if cfg.get('playtest', False) else 'mac-demo' if cfg.get('demo', False) else 'mac')"') do set MAC_DIR=%%i
 for /f %%i in ('git rev-parse --abbrev-ref HEAD') do set BRANCH=%%i
 
 :: Connect to MAC_HOST and get build

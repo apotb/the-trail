@@ -27,6 +27,10 @@ Game_Temp.prototype.isDemo = function() {
     return false;
 };
 
+Game_Temp.prototype.isSteamPlaytest = function() {
+    return false;
+};
+
 Game_Temp.prototype.reserveCommonEvent = function(commonEventId) {
     this._commonEventId = commonEventId;
 };
@@ -462,7 +466,7 @@ Game_System.prototype.restoreRareEnemyTries = function() {
 // Small Chests
 
 Game_System.prototype.totalSmallChests = function() {
-    return 42;
+    return 43;
 };
 
 Game_System.prototype.smallChest = function() {
