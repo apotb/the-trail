@@ -2229,7 +2229,7 @@
       }
     ],
     "name": "Cleric",
-    "note": "<Icon: 463>\n\n<Equip Slot>\nWeapon\nOffhand\nHead\nBody\nFeet\nAccessory\nAccessory\nAccessory\nM. Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nHP% param <= 30%: Cure II, Lowest HP%\nHP% param <= 60%: Cure I, Lowest HP%\nRandom 50%: Shield of Faith, Lowest HP\nAlways: Channel Divinity I, Lowest MDF\nAlways: Mana Wisp, Lowest MDF\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 56 + Math.floor(level / 5);\n</Custom LUK Formula>",
+    "note": "<Icon: 463>\n\n<Equip Slot>\nWeapon\nOffhand\nHead\nBody\nFeet\nAccessory\nAccessory\nAccessory\nM. Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nHP% param <= 60%: Cure II, Lowest HP%\nHP% param <= 80%: Cure I, Lowest HP%\nRandom 50%: Shield of Faith, Lowest HP\nAlways: Channel Divinity I, Lowest MDF\nAlways: Mana Wisp, Lowest MDF\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 56 + Math.floor(level / 5);\n</Custom LUK Formula>",
     "params": [
       [
         1,
