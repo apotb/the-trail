@@ -1,4 +1,4 @@
-# Alpha 18.2
+# Alpha 19: The 8th Trailiversary! (3/11/2026)
 INTRO
 
 ### Additions
@@ -9,6 +9,11 @@ INTRO
 
 ### Bug Fixes
 - Fixed duplicate light shining from Bandito Hideout entrance.
+
+OUTRO
+
+Yours truly,
+THE TRAIL TEAM
 
 # Alpha 18.1: The Music Update Vol. 1 - Welcome to Adon (3/4/2026)
 The Music Update is back! After being reverted during Alpha 15's development, many of the custom tracks have returned, featuring new samples and better mastering. Enjoy the new sounds of Adon!
