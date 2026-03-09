@@ -17,6 +17,7 @@ Happy 8th Trailiversary, everyone! REST OF INTRO
   - HurtLess®
 
 ### Changes
+- Updated the logo.
 - Cleric AI is more aggressive when it comes to healing.
 
 ### Bug Fixes
