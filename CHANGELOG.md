@@ -2,6 +2,7 @@
 Happy 8th Trailiversary, everyone! REST OF INTRO
 
 ### Additions
+- Dalia can now serve you food.
 - Added 3 new items:
   - Terry's Plans
   - Illegally Manufactured Parts
@@ -19,6 +20,7 @@ Happy 8th Trailiversary, everyone! REST OF INTRO
 ### Changes
 - Updated the logo.
 - Cleric AI is more aggressive when it comes to healing.
+- Dalia's side quest also gets a "HELP WANTED" sign so it's more obvious.
 
 ### Bug Fixes
 - Fixed party members being translucent and not being able to use Recall Potion after leaving Sand Stomper Sanctum.

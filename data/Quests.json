@@ -1213,7 +1213,7 @@
       "Type": "Side Quests",
       "Difficulty": "\\i[127]\\i[127] Easy Peasy",
       "From": "Larry",
-      "Location": "Verdin Villag - Larry's Marvelous Diner",
+      "Location": "Verdin Village - Larry's Marvelous Diner",
       "Description": [
         "There's a \\c[4]\\\"HELP WANTED\\\" sign\\c[0] outside \\c[4]Larry's Marvelous Diner\\c[0] asking for \\c[4]\\\"BEAR HUNTERS OF ANY SKILL LEVEL\\\"\\c[0]... I should go ask \\c[4]Larry\\c[0] what's up with that.",
         "When I asked \\c[4]Larry\\c[0] about the \\c[4]\\\"HELP WANTED sign\\c[0], he told me he wasn't offering a job, but rather a \\c[4]bounty\\c[0]... on \\c[4]bears\\c[0].\\n<br><br>\\n\\c[0]In desperate need of \\ii[107], \\c[4]Larry\\c[0] has offered to pay us \\i[262]150B for just \\c[4]five\\c[0] of 'em. What a steal!\\n<br><br>\\n\\c[0]Shouldn't be too hard... according to \\c[4]Larry\\c[0], there are \\c[4]Brown Bears\\c[0] scattered throughout \\c[4]Adon\\c[0].",
@@ -1239,27 +1239,25 @@
       "Type": "Side Quests",
       "Difficulty": "\\i[127]\\i[127] Easy Peasy",
       "From": "Dalia",
-      "Location": "Bladesville",
+      "Location": "Bladesville - Dalia's Bear 'n Grille",
       "Description": [
+        "There's a \\c[4]\\\"HELP WANTED\\\" sign\\c[0] outside \\c[4]Dalia's Bear 'n Grille\\c[0] asking for \\c[4]\\\"RATTLESNAKE HUNTERS OF ANY SKILL LEVEL\\\"\\c[0]... I should go ask \\c[4]Dalia\\c[0] what's up with that.",
         "\\c[4]Dalia\\c[0], owner of \\c[4]Dalia's Bear 'n Grille\\c[0] in \\c[4]Bladesville\\c[0], told us about a \\c[4]old family recipe\\c[0] she's trying to revive. However, she's low on ingredients, and requires \\c[4]five\\c[0] \\ii[291]\\c[0], \\c[4]three\\c[0] \\ii[290]\\c[0], and a \\ii[120]\\c[0].\\n<br><br>\\nApparently, the final result is some delicious pie... I wonder how it'll taste?",
         "We fulfilled \\c[4]Dalia\\c[0]'s request! Using the ingredients we gave her, she baked a \\c[4]delicious pie\\c[0] unlike anything I've tasted before! She gave us \\c[4]a complimentary sample\\c[0], and let us in on the secret \\c[4]recipe\\c[0] as promised."
       ],
       "Objectives List": [
-        "Bring \\c[4]Dalia\\c[0] \\compare<\\qi[291]:5>\\qi[291]\\c[0]/\\c[4]5\\c[0] \\ii[291]",
-        "Bring \\c[4]Dalia\\c[0] \\compare<\\qi[290]:3>\\qi[290]\\c[0]/\\c[4]3\\c[0] \\ii[290]",
-        "Bring \\c[4]Dalia\\c[0] \\compare<\\qi[120]:1>\\qi[120]\\c[0]/\\c[4]1\\c[0] \\ii[120]"
+        "Ask \\c[4]Dalia\\c[0] about the \\c[4]\\\"HELP WANTED\\\" sign\\c[0]",
+        "Bring \\c[4]Dalia\\c[0] \\compare<\\qi[291]:5>\\qi[291]\\c[0]/\\c[4]5\\c[0] \\ii[291]\\c[0]",
+        "Bring \\c[4]Dalia\\c[0] \\compare<\\qi[290]:3>\\qi[290]\\c[0]/\\c[4]3\\c[0] \\ii[290]\\c[0]",
+        "Bring \\c[4]Dalia\\c[0] \\compare<\\qi[120]:1>\\qi[120]\\c[0]/\\c[4]1\\c[0] \\ii[120]\\c[0]"
       ],
       "Visible Objectives": [
-        1,
-        2,
-        3
+        1
       ],
       "Rewards List": [
         "\\ii[292]"
       ],
-      "Visible Rewards": [
-        1
-      ],
+      "Visible Rewards": [],
       "Subtext": []
     },
     {

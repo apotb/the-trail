@@ -8708,7 +8708,7 @@
     "iconIndex": 2114,
     "itypeId": 1,
     "name": "Dalia's Delight",
-    "note": "<Rarity: 1>\n<Menu Category: Foodstuffs, Meals>\n\n<Remove State Category: Ice>\n<Remove State Category: Water>\n\n<Synthesis Ingredients>\nRaw Snake Meat: 5\nCactus Flesh: 3\nHeedup Berry\nWheat: 2\nHoney\n</Synthesis Ingredients>\n\n<Custom Craft Show Eval>\nvisible = $gameSystem.isQuestObjectiveCompleted(46, 1);\n</Custom Craft Show Eval>",
+    "note": "<Rarity: 1>\n<Menu Category: Foodstuffs, Meals>\n\n<Remove State Category: Ice>\n<Remove State Category: Water>\n\n<Synthesis Ingredients>\nRaw Snake Meat: 5\nCactus Flesh: 3\nHeedup Berry\nWheat: 2\nHoney\n</Synthesis Ingredients>\n\n<Custom Craft Show Eval>\nvisible = $gameSwitches.value(134);\n</Custom Craft Show Eval>",
     "occasion": 0,
     "price": 150,
     "repeats": 1,
