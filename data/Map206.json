@@ -16603,7 +16603,7 @@
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
             "switch1Id": 97,
-            "switch1Valid": true,
+            "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 1,
@@ -17094,6 +17094,14 @@
               "code": 111,
               "indent": 0,
               "parameters": [
+                8,
+                186
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
                 1,
                 55,
                 0,
@@ -17102,18 +17110,35 @@
               ]
             },
             {
-              "code": 111,
-              "indent": 1,
-              "parameters": [
-                8,
-                186
-              ]
-            },
-            {
               "code": 356,
               "indent": 2,
               "parameters": [
                 "Quest 4 Show Objective 10"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "!$gameSystem._failedRush2"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 2,
+              "parameters": [
+                "OrangeGreenworks.activateAchievement('PROGRESS_RUSH2');"
               ]
             },
             {
@@ -18016,7 +18041,7 @@
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
             "switch1Id": 97,
-            "switch1Valid": true,
+            "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 1,
@@ -18428,8 +18453,17 @@
               ]
             },
             {
-              "code": 101,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                0,
+                97,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 2,
@@ -18439,31 +18473,89 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p3Just the opposite, in fact. We need a piece"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "of a golden tablet to break the seal on a"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "door under Telluria Castle. We believe that"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\c[18]Apocalypse\\c[0] himself is lurking within."
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\p3Just the opposite, in fact. We've dedicated our"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "journey to taking down \\c[18]Apocalypse\\c[0], in honor"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "of our goddess Trailia! And we were wondering"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "if whatever's in that chest might help..."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 101,
@@ -19059,8 +19151,17 @@
               ]
             },
             {
-              "code": 101,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                0,
+                97,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
               "parameters": [
                 "Dilong",
                 0,
@@ -19070,31 +19171,82 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\dilBut you say that it will break the seal"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "on a door that is sealing \\c[18]Apocalypse\\c[0]"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "himself... then of course I will allow you"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "four to pass and take this tablet piece!"
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Dilong",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\dilBut you say that you don't even know what it does..."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "well, I can only hope it will help you in your"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "journey to seal away the demon \\c[18]Apocalypse\\c[0]."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 356,
@@ -19193,7 +19345,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Adventuers, I grant you my blessing:"
+                "Adventurers, I grant you my blessing:"
               ]
             },
             {

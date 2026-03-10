@@ -3,6 +3,7 @@ Happy 8th Trailiversary, everyone! REST OF INTRO
 
 ### Additions
 - Dalia can now serve you food.
+- Added a new achievement: "On My Own Terms"
 - Added 3 new items:
   - Terry's Plans
   - Illegally Manufactured Parts
@@ -18,12 +19,14 @@ Happy 8th Trailiversary, everyone! REST OF INTRO
   - HurtLess®
 
 ### Changes
+- You can now defeat Dilong and complete the Frozen Labyrinth before entering Telluria Castle Town.
 - Updated the logo.
 - Cleric AI is more aggressive when it comes to healing.
 - Dalia's side quest also gets a "HELP WANTED" sign so it's more obvious.
 
 ### Bug Fixes
 - Fixed party members being translucent and not being able to use Recall Potion after leaving Sand Stomper Sanctum.
+- Fixed getting Frozen Labyrinth party members early when fast traveling to Frozen Labyrinth.
 - Fixed duplicate light shining from Bandito Hideout entrance.
 
 OUTRO

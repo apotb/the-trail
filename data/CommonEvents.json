@@ -18805,7 +18805,7 @@
         "indent": 0,
         "parameters": [
           12,
-          "$gameMap.mapId() === 207 && !$gameSelfSwitches.value([209, 2, 'A'])"
+          "$gameMap.mapId() === 207 && $gameSelfSwitches.value([208, 62, 'A']) && !$gameSelfSwitches.value([209, 2, 'A'])"
         ]
       },
       {
