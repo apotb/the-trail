@@ -9688,6 +9688,41 @@
         "code": 11.1,
         "dataId": 8,
         "value": -0.01
+      },
+      {
+        "code": 11.1,
+        "dataId": 5,
+        "value": -0.02
+      }
+    ],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Statue - Skeleton Cove",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Element Amplify Light: +1%>\n\n<Custom Passive Condition>\ncondition = $gameSystem.statue(198);\n</Custom Passive Condition>\n\n<Statue Icon: 99>\n<Statue Buff: -2% Incoming Water>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 306,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 11.1,
+        "dataId": 8,
+        "value": -0.01
       }
     ],
     "iconIndex": 0,
@@ -9710,7 +9745,7 @@
     "stepsToRemove": 100
   },
   {
-    "id": 306,
+    "id": 307,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [
@@ -9740,7 +9775,7 @@
     "stepsToRemove": 100
   },
   {
-    "id": 307,
+    "id": 308,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [
@@ -9770,7 +9805,7 @@
     "stepsToRemove": 100
   },
   {
-    "id": 308,
+    "id": 309,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [
@@ -9800,7 +9835,7 @@
     "stepsToRemove": 100
   },
   {
-    "id": 309,
+    "id": 310,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [
@@ -9830,7 +9865,7 @@
     "stepsToRemove": 100
   },
   {
-    "id": 310,
+    "id": 311,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [
@@ -9860,7 +9895,7 @@
     "stepsToRemove": 100
   },
   {
-    "id": 311,
+    "id": 312,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [
@@ -9890,7 +9925,7 @@
     "stepsToRemove": 100
   },
   {
-    "id": 312,
+    "id": 313,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [
@@ -9920,7 +9955,7 @@
     "stepsToRemove": 100
   },
   {
-    "id": 313,
+    "id": 314,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [
@@ -9955,7 +9990,7 @@
     "stepsToRemove": 100
   },
   {
-    "id": 314,
+    "id": 315,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [
@@ -9990,7 +10025,7 @@
     "stepsToRemove": 100
   },
   {
-    "id": 315,
+    "id": 316,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [
@@ -10015,36 +10050,6 @@
     "motion": 0,
     "name": "Statue - True Telluria Castle",
     "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Element Amplify Light: +1%>\n\n<Custom Passive Condition>\ncondition = $gameSystem.statue(88);\n</Custom Passive Condition>\n\n<Statue Icon: 96>\n<Statue Buff: -2% Incoming Fire>",
-    "overlay": 0,
-    "priority": 0,
-    "removeAtBattleEnd": false,
-    "removeByDamage": false,
-    "removeByRestriction": false,
-    "removeByWalking": false,
-    "restriction": 0,
-    "stepsToRemove": 100
-  },
-  {
-    "id": 316,
-    "autoRemovalTiming": 0,
-    "chanceByDamage": 100,
-    "traits": [
-      {
-        "code": 11.1,
-        "dataId": 8,
-        "value": -0.01
-      }
-    ],
-    "iconIndex": 0,
-    "maxTurns": 1,
-    "message1": "",
-    "message2": "",
-    "message3": "",
-    "message4": "",
-    "minTurns": 1,
-    "motion": 0,
-    "name": "Statue - ?",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Element Amplify Light: +1%>\n\n<Custom Passive Condition>\ncondition = $gameSystem.statue(0);\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,

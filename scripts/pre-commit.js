@@ -156,10 +156,10 @@ function tilesetFunction(tilesets) {
         flags[i] = tilesets[4].flags[i - E]
     }
 
-    // Copy D flags (Custom) to all non-TOB tilesets, based off tileset 2
+    // Copy D flags (Custom) to all non-ToB/WaC tilesets, based off tileset 2
     flags = tilesets[2].flags
     for (i = 1; i < tilesets.length; i++) {
-        if (tilesets[i].name.startsWith('ToB')) continue;
+        if (tilesets[i].name.startsWith('ToB') || tilesets[i].name.startsWith('WaC')) continue;
         for (j = D; j < E; j++) {
             tilesets[i].flags[j] = flags[j];
         }

@@ -2,9 +2,11 @@
 Happy 8th Trailiversary, everyone! REST OF INTRO
 
 ### Additions
+- Added Skeleton Cove.
 - Dalia can now serve you food.
 - Added a new achievement: "On My Own Terms"
-- Added 3 new items:
+- Added 4 new items:
+  - Blue Flower
   - Terry's Plans
   - Illegally Manufactured Parts
   - Inscribed Mechanical Plating
@@ -19,6 +21,7 @@ Happy 8th Trailiversary, everyone! REST OF INTRO
   - HurtLess®
 
 ### Changes
+- Revamped Laeryidyean's Forest.
 - You can now defeat Dilong and complete the Frozen Labyrinth before entering Telluria Castle Town.
 - Updated the logo.
 - Cleric AI is more aggressive when it comes to healing.

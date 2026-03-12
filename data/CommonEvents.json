@@ -6720,6 +6720,13 @@
         ]
       },
       {
+        "code": 117,
+        "indent": 1,
+        "parameters": [
+          95
+        ]
+      },
+      {
         "code": 111,
         "indent": 1,
         "parameters": [
@@ -6913,6 +6920,13 @@
           127,
           127,
           0
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 1,
+        "parameters": [
+          94
         ]
       },
       {
@@ -7580,12 +7594,12 @@
         "indent": 0,
         "parameters": [
           [
-            "Yep.",
-            "Nope."
+            "Yes",
+            "No"
           ],
           1,
           0,
-          2,
+          1,
           0
         ]
       },
@@ -7594,7 +7608,7 @@
         "indent": 0,
         "parameters": [
           0,
-          "Yep."
+          "Yes"
         ]
       },
       {
@@ -7880,7 +7894,7 @@
         "indent": 0,
         "parameters": [
           1,
-          "Nope."
+          "No"
         ]
       },
       {
@@ -8470,6 +8484,42 @@
           31,
           0,
           0,
+          192
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          42
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          31,
+          31,
+          0,
+          0,
+          193
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          42
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          31,
+          31,
+          0,
+          0,
           198
         ]
       },
@@ -8507,6 +8557,150 @@
           0,
           0,
           211
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          42
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          31,
+          31,
+          0,
+          0,
+          220
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          42
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          31,
+          31,
+          0,
+          0,
+          221
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          42
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          31,
+          31,
+          0,
+          0,
+          222
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          42
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          31,
+          31,
+          0,
+          0,
+          223
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          42
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          31,
+          31,
+          0,
+          0,
+          224
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          42
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          31,
+          31,
+          0,
+          0,
+          225
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          42
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          31,
+          31,
+          0,
+          0,
+          230
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          42
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          31,
+          31,
+          0,
+          0,
+          231
         ]
       },
       {
@@ -21083,5 +21277,508 @@
     "name": "Inscribed Mechanical Plating",
     "switchId": 1,
     "trigger": 0
+  },
+  {
+    "id": 93,
+    "list": [
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameParty.numItems($dataItems[145]) >= 3"
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 1,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "Actor4",
+          5,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "\\p3Three's a magic number... why don't we look around"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "and see what these \\ii[145]\\c[0]s open?"
+        ]
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          139,
+          139,
+          0
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Skeleton Keys",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 94,
+    "list": [
+      {
+        "code": 121,
+        "indent": 0,
+        "parameters": [
+          135,
+          135,
+          1
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          96
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Skeleton Cove High Tide",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 95,
+    "list": [
+      {
+        "code": 121,
+        "indent": 0,
+        "parameters": [
+          135,
+          135,
+          0
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          96
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Skeleton Cove Low Tide",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 96,
+    "list": [
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          62,
+          62,
+          0,
+          3,
+          7,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          78,
+          78,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          62,
+          0,
+          194,
+          0
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          78,
+          78,
+          0,
+          0,
+          195
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          62,
+          0,
+          195,
+          0
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          78,
+          78,
+          0,
+          0,
+          194
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          62,
+          0,
+          198,
+          0
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          78,
+          78,
+          0,
+          0,
+          200
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          62,
+          0,
+          200,
+          0
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          78,
+          78,
+          0,
+          0,
+          198
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          78,
+          0,
+          0,
+          5
+        ]
+      },
+      {
+        "code": 281,
+        "indent": 1,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameSystem.setRecallAllowed(false);"
+        ]
+      },
+      {
+        "code": 112,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 2,
+        "parameters": [
+          12,
+          "$gamePlayer.regionId() === 101"
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 3,
+        "parameters": [
+          15
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 113,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 413,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 221,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          79,
+          79,
+          0,
+          3,
+          5,
+          -1,
+          0
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          80,
+          80,
+          0,
+          3,
+          5,
+          -1,
+          1
+        ]
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          140,
+          140,
+          0
+        ]
+      },
+      {
+        "code": 201,
+        "indent": 1,
+        "parameters": [
+          1,
+          78,
+          79,
+          80,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Skeleton Cove Tide Change",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 97,
+    "list": [
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          30
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "Water1",
+            "volume": 90,
+            "pitch": 80,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          90
+        ]
+      },
+      {
+        "code": 222,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 281,
+        "indent": 0,
+        "parameters": [
+          0
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameSystem.setRecallAllowed(true);"
+        ]
+      },
+      {
+        "code": 121,
+        "indent": 0,
+        "parameters": [
+          140,
+          140,
+          1
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Skeleton Cove Transfer",
+    "switchId": 140,
+    "trigger": 1
   }
 ]
