@@ -5,8 +5,10 @@ Happy 8th Trailiversary, everyone! REST OF INTRO
 - Added Skeleton Cove.
 - Dalia can now serve you food.
 - Added a new achievement: "On My Own Terms"
-- Added 4 new items:
+- Added 6 new items:
   - Blue Flower
+  - Sunken Crest
+  - Pressure Charm
   - Terry's Plans
   - Illegally Manufactured Parts
   - Inscribed Mechanical Plating

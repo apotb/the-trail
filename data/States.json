@@ -8051,25 +8051,46 @@
     "id": 238,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "traits": [],
-    "iconIndex": 0,
-    "maxTurns": 1,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 6,
+        "value": 4
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.4
+      },
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 4,
+        "value": 0.5
+      }
+    ],
+    "iconIndex": 862,
+    "maxTurns": 7,
     "message1": "",
     "message2": "",
     "message3": "",
     "message4": "",
-    "minTurns": 1,
+    "minTurns": 5,
     "motion": 0,
-    "name": "",
-    "note": "",
+    "name": "Sunken Crest",
+    "note": "<Category: Bypass Death Removal>\n\n<Custom Passive Condition>\ncondition = user.hasState(33);\n</Custom Passive Condition>\n\n<Help Description>\nQuadruples AGI and grants +40% EVA while \\it[33]\\c[0]. Removes weakness to \\nl[3] and \\nl[4] attacks.\n</Help Description>",
     "overlay": 0,
-    "priority": 50,
+    "priority": 10,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
     "removeByWalking": false,
     "restriction": 0,
-    "stepsToRemove": 100
+    "stepsToRemove": 800
   },
   {
     "id": 239,
@@ -8084,10 +8105,10 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "",
-    "note": "",
+    "name": "Pressure Charm",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Confirm Effect>\nvar boost = 0.15;\nvar multiplier = boost * (1 - target.hpRate()) + 1;\nvalue = Math.ceil(value * multiplier);\n</Custom Confirm Effect>",
     "overlay": 0,
-    "priority": 50,
+    "priority": 0,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,

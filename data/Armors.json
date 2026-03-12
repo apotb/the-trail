@@ -6597,5 +6597,47 @@
       0
     ],
     "price": 1000
+  },
+  {
+    "id": 250,
+    "atypeId": 1,
+    "description": "Recovered from the depths of Skeleton Cove. While \\it[33], you'll be incredibly agile,\nand you'll take normal damage from \\nl[3]\\c[0]/\\nl[4]\\c[0] attacks.",
+    "etypeId": 8,
+    "traits": [],
+    "iconIndex": 861,
+    "name": "Sunken Crest",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 1>\n\n<Passive State: 238>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(137);\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      3,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0
+    ],
+    "price": 250
+  },
+  {
+    "id": 251,
+    "atypeId": 1,
+    "description": "Imbued with the pressure of the depths. Wounded foes feel the weight the most.\nOutgoing damage increases as target HP approaches 0 (up to 15%).",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 863,
+    "name": "Pressure Charm",
+    "note": "<Rarity: 2>\n<Upgrade Slots: 1>\n\n<Passive State: 239>\n\n<Custom Buy Show Eval>\nvisible = false;\n</Custom Buy Show Eval>",
+    "params": [
+      3,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 250
   }
 ]
