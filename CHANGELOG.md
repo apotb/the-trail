@@ -49,7 +49,6 @@ Happy 8th Trailiversary, everyone! REST OF INTRO
 ### Changes
 - Revamped Laeryidyean's Forest.
 - You can now defeat Dilong and complete the Frozen Labyrinth before entering Telluria Castle Town.
-- Updated the logo.
 - Cleric AI is more aggressive when it comes to healing.
 - Dalia's side quest also gets a "HELP WANTED" sign so it's more obvious.
 
