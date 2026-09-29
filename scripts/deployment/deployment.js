@@ -26,42 +26,10 @@ function dlNwjs(platform, directory, extract=".", extension="zip") {
     const extractArchive = async () => {
         if (extension === "zip") {
             if (process.platform === "win32") {
-                return new Promise((resolve, reject) => {
-                    console.log("Unzipping...");
-                    yauzl.open(archivePath, { lazyEntries: true }, function (err, zipfile) {
-                        if (err) return reject(err);
-                        zipfile.readEntry();
-
-                        zipfile.on("entry", function (entry) {
-                            const destination = path.join(extractPath, entry.fileName);
-                            if (/\/$/.test(entry.fileName)) {
-                                fs.mkdir(destination, { recursive: true }, (err) => {
-                                    if (err) return reject(err);
-                                    zipfile.readEntry();
-                                });
-                            } else {
-                                fs.mkdir(path.dirname(destination), { recursive: true }, (err) => {
-                                    if (err) return reject(err);
-                                    zipfile.openReadStream(entry, (err, readStream) => {
-                                        if (err) return reject(err);
-                                        const writer = fs.createWriteStream(destination);
-                                        readStream.pipe(writer);
-                                        writer.on("finish", () => zipfile.readEntry());
-                                        writer.on("error", reject);
-                                        readStream.on("error", reject);
-                                    });
-                                });
-                            }
-                        });
-
-                        zipfile.on("end", () => {
-                            console.log("Unzip complete.");
-                            resolve();
-                        });
-
-                        zipfile.on("error", reject);
-                    });
-                });
+                console.log("Extracting with tar...");
+                await fsp.mkdir(extractPath, { recursive: true });
+                await execPromise(`tar -xf "${archivePath}" -C "${extractPath}"`);
+                return;
             } else {
                 console.log("Extracting with system unzip...");
                 await execPromise(`unzip -q "${archivePath}" -d "${extractPath}"`);
